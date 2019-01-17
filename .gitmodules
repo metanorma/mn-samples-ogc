@@ -1,0 +1,6 @@
+[submodule "ogc-wfs"]
+	path = ogc-wfs
+	url = https://github.com/riboseinc/ogc-wfs/
+[submodule "ogc-tcpnp"]
+	path = ogc-tcpnp
+	url = https://github.com/riboseinc/ogc-tcpnp
