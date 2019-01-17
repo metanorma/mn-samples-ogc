@@ -1,8 +1,8 @@
-[submodule "sources/ogc-wfs"]
-	path = sources/ogc-wfs
+[submodule "repos/ogc-wfs"]
+	path = repos/ogc-wfs
 	url = https://github.com/riboseinc/ogc-wfs
 	branch = gh-pages
-[submodule "sources/ogc-tcpnp"]
-	path = sources/ogc-tcpnp
+[submodule "repos/ogc-tcpnp"]
+	path = repos/ogc-tcpnp
 	url = https://github.com/riboseinc/ogc-tcpnp
 	branch = gh-pages
