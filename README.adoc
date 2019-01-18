@@ -78,6 +78,18 @@ creates `documents.html` from `documents.rxl`.
 creates `documents.rxl` from Metanorma output located in `documents/`.
 
 
+=== Updating document repos
+
+Update the submodules:
+
+[source,sh]
+----
+git submodule foreach git pull
+git add repos
+git commit -m 'Update document repos'
+----
+
+
 
 == License
 
