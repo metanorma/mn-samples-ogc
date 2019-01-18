@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/riboseinc/relaton-cli
-  revision: 56f553a2ed4651e2b0a9c60eeda7f1038154069e
+  revision: 49143b30cc09da01ae492f7be27f92365c55c696
   specs:
     relaton-cli (0.1.6)
       liquid
@@ -71,7 +71,7 @@ GEM
     isoics (0.1.7)
     json (2.1.0)
     liquid (4.0.1)
-    metanorma (0.3.5)
+    metanorma (0.3.6)
       asciidoctor
     metanorma-acme (1.0.9)
       asciidoctor (~> 1.5.7)
