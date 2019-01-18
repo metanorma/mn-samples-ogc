@@ -12,13 +12,76 @@ This repository contains three documents converted to Metanorma
 format from the OGC series, used to demonstrate usage
 of Metanorma in the OGC context.
 
-Documents:
+Documents shown include:
 
-* WFS
+* Web Feature Service (WFS)
+** Repo: https://github.com/riboseinc/ogc-wfs
 
-* TCPNP
+* Technical Committee Policies and Procedures
+** Repo: https://github.com/riboseinc/ogc-tcpnp
+
+
+== Structure
+
+`repos/`::
+git repositories of Metanorma OGC documents (branch `gh-pages`), added as
+submodules in this directory. These are the Metanorma XML documents
+we need here.
+
+`source/`::
+(automatically generated) extracted Metanorma XML documents from `repos/`.
+This is where the Metanorma XML documents will be processed into output
+formats.
+
+`documents/`::
+(automatically generated) generated Metanorma output from XML files
+in `source/`.
+
+`published/`::
+(automatically generated) published Metanorma OGC documents together
+with the Relaton index (`index.html`).
+
+
+== Usage
+
+This repository uses `make` to run these processes.
+
+To build the site, run:
+
+[source,sh]
+----
+make publish
+----
+
+The resulting HTML site will be built in `published/`.
+
+
+
+To build the documents, just run:
+
+[source,sh]
+----
+make
+----
+
+This runs the `documents.html` target.
+
+
+
+
+Other specific `make` targets are:
+
+`documents.html`::
+creates `documents.html` from `documents.rxl`.
+
+`documents.rxl`::
+creates `documents.rxl` from Metanorma output located in `documents/`.
+
+
 
 == License
 
 These documents are privately shared by OGC and the copyright of such
 documents (as well as their converted text) remain unchanged.
+
+All other code and information, copyright Ribose.
