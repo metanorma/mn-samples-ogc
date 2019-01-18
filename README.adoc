@@ -1,0 +1,24 @@
+= OGC documents in Metanorma
+
+image:https://travis-ci.com/riboseinc/mn-ogc-documents.svg?branch=master["Build Status", link="https://travis-ci.com/riboseinc/mn-ogc-documents"]
+
+These documents are available in its rendered forms here:
+
+* https://riboseinc.github.io/mn-ogc-documents/[OGC Publications in Metanorma (HTML)]
+
+== General
+
+This repository contains three documents converted to Metanorma
+format from the OGC series, used to demonstrate usage
+of Metanorma in the OGC context.
+
+Documents:
+
+* WFS
+
+* TCPNP
+
+== License
+
+These documents are privately shared by OGC and the copyright of such
+documents (as well as their converted text) remain unchanged.
