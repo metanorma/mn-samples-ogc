@@ -11,8 +11,8 @@ GIT
       ruby-jing
 
 GIT
-  remote: https://github.com/riboseinc/relaton-cli
-  revision: ab7d46c6658758a56a1636e86160ba90852f6764
+  remote: https://github.com/metanorma/relaton-cli
+  revision: a9f7b5a1b2506c6ac4b298bdc9f8ea0fe12e1ba8
   specs:
     relaton-cli (0.1.9)
       liquid
