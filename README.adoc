@@ -1,6 +1,6 @@
 = OGC documents in Metanorma
 
-image:https://travis-ci.com/riboseinc/mn-ogc-documents.svg?branch=master["Build Status", link="https://travis-ci.com/riboseinc/mn-ogc-documents"]
+image:https://travis-ci.com/metanorma/mn-ogc-documents.svg?branch=master["Build Status", link="https://travis-ci.com/metanorma/mn-ogc-documents"]
 
 These documents are available in its rendered forms here:
 
@@ -15,10 +15,10 @@ of Metanorma in the OGC context.
 Documents shown include:
 
 * Web Feature Service (WFS)
-** Repo: https://github.com/riboseinc/ogc-wfs
+** Repo: https://github.com/metanorma/ogc-wfs
 
 * Technical Committee Policies and Procedures
-** Repo: https://github.com/riboseinc/ogc-tcpnp
+** Repo: https://github.com/metanorma/ogc-tcpnp
 
 
 == Structure
