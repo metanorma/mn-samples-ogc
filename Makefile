@@ -61,6 +61,9 @@ documents.html: documents.rxl
 clean:
 	rm -rf documents published *_images sources/*.{rxl,xml,html,pdf,doc}
 
+distclean:
+	rm -rf sources
+
 bundle:
 	if [ "x" == "${METANORMA_DOCKER}x" ]; then bundle; fi
 
@@ -124,3 +127,9 @@ deploy: deploy_key
 	./deploy.sh
 
 .PHONY: publish deploy
+
+init-modules:
+	git submodule update -init
+
+update-modules:
+	git submodule foreach git pull
