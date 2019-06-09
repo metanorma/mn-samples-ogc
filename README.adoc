@@ -4,7 +4,7 @@ image:https://travis-ci.com/metanorma/mn-ogc-documents.svg?branch=master["Build 
 
 These documents are available in its rendered forms here:
 
-* https://riboseinc.github.io/mn-ogc-documents/[OGC Publications in Metanorma (HTML)]
+* https://metanorma.github.io/mn-ogc-documents/[OGC Publications in Metanorma (HTML)]
 
 == General
 
