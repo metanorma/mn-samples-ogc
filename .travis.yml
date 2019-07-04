@@ -5,13 +5,17 @@ dist: xenial
 env:
   global:
     - JAVA_OPTS="java.awt.headless=true"
-    - COMMIT_AUTHOR_EMAIL="travis-ci@metanorma.org"
+    - COMMIT_AUTHOR_EMAIL="$(yq r metanorma.yml metanorma.deploy.email)"
 rvm:
   - 2.5
 cache: bundler
+addons:
+  snaps:
+    - jq
+    - yq
 before_install:
   - gem update --system
-  - gem install bundler
+  - gem install bundler -v "~> 2"
   - sudo bash -c "curl -L https://raw.githubusercontent.com/metanorma/metanorma-linux-setup/master/ubuntu.sh | bash"
   - nvm use mn-node 
 script:
