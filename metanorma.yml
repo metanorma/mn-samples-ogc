@@ -1,0 +1,21 @@
+---
+metanorma:
+  deploy:
+    email: "travis-ci@metanorma.org"
+  formats:
+    - xml
+    - rxl
+    - html
+    - doc
+    - pdf
+  source:
+    built_targets:
+      sources/ogc-tcpnp.xml: repos/ogc-tcpnp/ogc-tcpnp.xml
+      sources/17-069.xml: repos/ogc-wfs/17-069.xml
+    built_type:
+      sources/ogc-tcpnp.xml: ogc
+      sources/17-069.xml: ogc
+relaton:
+  collection:
+    organization: "OGC: The Open Geospatial Consortium"
+    name: "OGC Publications in Metanorma"
