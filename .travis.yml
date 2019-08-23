@@ -2,7 +2,6 @@ language: ruby
 dist: xenial
 env:
   global:
-    - JAVA_OPTS="java.awt.headless=true"
     - COMMIT_AUTHOR_EMAIL="$(yq r metanorma.yml metanorma.deploy.email)"
 addons:
   apt:
@@ -22,9 +21,9 @@ addons:
     - yq
 before_install:
   - gem update --system
-  - gem install bundler -v "~> 2"
+  - gem install bundler
+  - npm install -g puppeteer
   - sudo bash -c "curl -L https://raw.githubusercontent.com/metanorma/metanorma-linux-setup/master/ubuntu.sh | bash"
-  #- nvm use mn-node
 script:
   - make clean all publish
 deploy:
