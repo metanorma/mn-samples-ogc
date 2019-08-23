@@ -53,19 +53,21 @@ documents/%.xml: documents sources/images sources/%.html
 	mv sources/$(addsuffix .*,$*) documents; \
 	unset GLOBIGNORE
 
+sources:
+	mkdir -p $@
+
 # Build canonical XML output
 # If XML file is provided, copy it over
 # Otherwise, build it using adoc
-sources/%.xml:	| bundle
+sources/%.xml:	sources | bundle
 	BUILT_TARGET=$(shell yq r metanorma.yml metanorma.source.built_targets[$@]); \
-	BUILT_TYPE=$(shell yq r metanorma.yml metanorma.source.built_type[$@]); \
 	if [ "$$BUILT_TARGET" != "null" ]; then \
 	cp "$$BUILT_TARGET" $@; \
 	fi
 
 # Build derivative output
 sources/%.html sources/%.doc sources/%.pdf:	sources/%.xml
-	BUILT_TYPE=$(shell yq r metanorma.yml metanorma.source.built_type[$^]); \
+	BUILT_TYPE=$(shell yq r metanorma.yml metanorma.source.built_type[$<]); \
 	RAW_COMMAND="$(COMPILE_CMD)"; \
 	if [ "$$BUILT_TYPE" != "null" ]; then \
 	COMMAND="$${RAW_COMMAND/FILENAME/-t $$BUILT_TYPE $<}"; \
