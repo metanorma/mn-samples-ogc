@@ -32,7 +32,8 @@ XMI	 := $(patsubst sources/models/%,sources/xmi/%,$(patsubst %.wsd,%.xmi,$(WSD))
 PNG	 := $(patsubst sources/models/%,sources/images/%,$(patsubst %.wsd,%.png,$(WSD)))
 
 COMPILE_CMD_LOCAL := bundle exec metanorma FILENAME
-COMPILE_CMD_DOCKER := docker run -v "$$(pwd)":/metanorma/ ribose/metanorma "metanorma FILENAME"
+METANORMA_DOCKER_IMAGE ?= metanorma/metanorma
+COMPILE_CMD_DOCKER := docker run -v "$$(pwd)":/metanorma/ $(METANORMA_DOCKER_IMAGE) "metanorma FILENAME"
 
 ifdef METANORMA_DOCKER
   COMPILE_CMD := $(COMPILE_CMD_DOCKER)
