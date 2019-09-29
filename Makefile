@@ -31,14 +31,11 @@ WSD  := $(wildcard sources/models/*.wsd)
 XMI	 := $(patsubst sources/models/%,sources/xmi/%,$(patsubst %.wsd,%.xmi,$(WSD)))
 PNG	 := $(patsubst sources/models/%,sources/images/%,$(patsubst %.wsd,%.png,$(WSD)))
 
-COMPILE_CMD_LOCAL := bundle exec metanorma FILENAME
-METANORMA_DOCKER_IMAGE ?= metanorma/metanorma
-COMPILE_CMD_DOCKER := docker run -v "$$(pwd)":/metanorma/ $(METANORMA_DOCKER_IMAGE) "metanorma FILENAME"
-
 ifdef METANORMA_DOCKER
-  COMPILE_CMD := $(COMPILE_CMD_DOCKER)
+  PREFIX_CMD := echo "Running via docker..."; docker run -v "$$(pwd)":/metanorma/ $(METANORMA_DOCKER)
+
 else
-  COMPILE_CMD := $(COMPILE_CMD_LOCAL)
+  PREFIX_CMD := echo "Running locally..."; bundle exec
 endif
 
 _OUT_FILES := $(foreach FORMAT,$(FORMATS),$(shell echo $(FORMAT) | tr '[:lower:]' '[:upper:]'))
@@ -69,24 +66,22 @@ sources/%.xml:	sources | bundle
 # Build derivative output
 sources/%.html sources/%.doc sources/%.pdf:	sources/%.xml
 	BUILT_TYPE=$(shell yq r metanorma.yml metanorma.source.built_type[$<]); \
-	RAW_COMMAND="$(COMPILE_CMD)"; \
 	if [ "$$BUILT_TYPE" != "null" ]; then \
-	COMMAND="$${RAW_COMMAND/FILENAME/-t $$BUILT_TYPE $<}"; \
+	${PREFIX_CMD} metanorma -t $$BUILT_TYPE $<; \
 	else \
-	COMMAND="$${RAW_COMMAND/FILENAME/$<}"; \
-	fi; \
-	$$COMMAND;
+	${PREFIX_CMD} metanorma $<; \
+	fi
 
 documents.rxl: $(XML)
 	echo "$(FORMATS)"; \
 	echo "$(XML)"; \
-	bundle exec relaton concatenate \
+	${PREFIX_CMD} relaton concatenate \
 	  -t "$(shell yq r metanorma.yml relaton.collection.name)" \
 		-g "$(shell yq r metanorma.yml relaton.collection.organization)" \
 		documents $@
 
 documents.html: documents.rxl
-	bundle exec relaton xml2html documents.rxl
+	${PREFIX_CMD} relaton xml2html documents.rxl
 
 # %.v3.xml %.xml %.html %.doc %.pdf %.txt: sources/images %.adoc | bundle
 # 	FILENAME=$^; \
