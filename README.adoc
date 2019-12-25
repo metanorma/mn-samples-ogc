@@ -46,6 +46,13 @@ with the Relaton index (`index.html`).
 
 This repository uses `make` to run these processes.
 
+=== Pre-requisites
+
+* Make sure to initialize submodules:
+  the easiest way is to clone this repository with `--recursive` flag.
+  
+=== Building deliverables
+
 To build the site, run:
 
 [source,sh]
