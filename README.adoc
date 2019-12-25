@@ -51,6 +51,8 @@ This repository uses `make` to run these processes.
 * Make sure to initialize submodules:
   the easiest way is to clone this repository with `--recursive` flag.
   
+* Have `puppeteer` NPM package installed globally.
+  
 === Building deliverables
 
 To build the site, run:
