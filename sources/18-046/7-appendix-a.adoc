@@ -1,0 +1,299 @@
+
+[appendix, obligation=informative]
+== Call for Participation
+
+This annex includes the Call for Participation in its original form together with the clarifications and corrections applied.
+
+=== Corrigenda
+
+The following table identifies all corrections that have been applied to this call compared to the original release. Minor editorial changes (spelling, grammar, etc.) are not included.
+
+[%unnumbered]
+|===
+h| Section h| Description
+| <<main_body,Main Body>> | Travel cost compensation clarification added
+| <<cloud_infrastructure,Cloud Infrastructure>> | Details on OpenStack added
+| <<technical_architecture_intro,Technical Architecture, Section Introduction, last paragraph>> | Additional role added. Now, participants can provide applications together with application packages, clients instances, or server instances.
+| <<cloud_infrastructure,Technical Architecture, Section Cloud Infrastructure>> | Details on available cloud infrastructure added
+|===
+
+[[main_body]]
+=== Introduction
+
+The Open Geospatial Consortium (OGC®) is releasing this *_Call for Participation_* ("CFP") to solicit proposals for the _Earth Observation Exploitation Platform Hackathon 2018_ ("the Hackathon") initiative. The Hackathon builds on results from the recently concluded http://www.opengeospatial.org/projects/initiatives/testbed13[Testbed-13] initiative and paves the way for Tested-14 and subsequent initiatives in the context of deployment and execution of applications in cloud environments. The goal is to demonstrate that the Testbed-13 results, described in the Engineering Reports http://docs.opengeospatial.org/per/17-023.html[OGC Testbed-13: Exploitation Platform Application Package (OGC 17-023)] and http://docs.opengeospatial.org/per/17-024.html[OGC Testbed-13: Application Deployment and Execution Service (OGC 17-024)] are fit for purpose. Further background on Testbed-13 Cloud work is provided by http://docs.opengeospatial.org/per/17-035.html[OGC Testbed-13: Cloud (OGC 17-035)]. Given that these Engineering Reports state several options, this Hackathon shall identify the best solution and identify any missing elements as basis for Testbed-14. More details are provided in section <<annexB,Technical Architecture>>.
+
+Under this CFP, the OGC will provide reimbursements of travel expenses on behalf of sponsoring organizations ("Sponsors"). This CFP requests proposals from organizations ("Bidders") wishing to participate. Bidders do not need to be OGC member organizations. Any Bidder interested in participation should respond by submitting a proposal per the instructions provided <<proposal_submission,herein>>. All proposals will be reviewed by the organization team, consisting of OGC, the European Space Agency (ESA), and Natural Resources Canada (NRCan). The organization team applies the following selection criteria: Clear statement of the bidder’s motivation to participate in the Hackathon, sufficient prior knowledge and software code to implement the Hackathon architecture within the timeframe of the Hackathon, description of intended future use of the technology, and reasonable travel costs compensation request. OGC reserves the right to cap the number of participants to ensure a reasonable size of the Hackathon. Travel cost compensation is only available to entities from ESA Member States and Canada, except for Hungary.
+
+The Hackathon is executed under the OGC http://www.opengeospatial.org/ogc/programs/ip[Innovation Program] that provides global, hands-on, collaborative prototyping for rapid development and delivery of candidate specifications to other Innovation Program activities and to the OGC Standards Program.
+
+==== Benefits of Participation
+
+This Hackathon provides a business opportunity for stakeholders to experiment with the latest results from Testbed-13 in the context of ESA’s Earth Observation (EO) https://tep.eo.esa.int/about-tep[Exploitation Platforms]. Participants will establish design decisions that influence the upcoming http://www.opengeospatial.org/projects/initiatives/testbed14[Testbed-14] and future work in the context of application handling in cloud environments operated by the sponsoring organizations. Participants will have the opportunity to network and establish direct relationships with other participants and with sponsors. They will also be part of the essential initial stages of the standardization process. During the Demonstration Meeting, participants will have the opportunity to visit the _ESA Operations Centre_ in Darmstadt (Germany), including the _Main Control Room._
+
+==== Hackathon Policies and Procedures
+
+O<http://www.opengeospatial.org/ogc/policies/conduct[GC Principles of Conduct] will govern all personal and public interactions in this initiative. The http://www.opengeospatial.org/ogc/policies/ippp[OGC Innovation Program Policies and Procedures] apply together with the http://www.opengeospatial.org/ogc/policies/conduct[OGC Principles of Conduct] and the http://www.opengeospatial.org/about/ipr[OGC Intellectual Property Rights Policy].
+
+One Hackathon objective is to support the OGC http://www.opengeospatial.org/ogc/programs/spec[Standards Program] in the development and publication of open standards. Each Participant will be required to allow OGC to copyright and publish documents based in whole or in part upon intellectual property contributed by the Participant during Hackathon performance. Specific requirements are described under the "Copyrights" clauses of the http://www.opengeospatial.org/about/ipr[OGC Intellectual Property Rights Policy].
+
+Each Participant shall contribute to the Hackathon Results Engineering Report.
+
+This Hackathon seeks to deliver technical demonstrations in the form of software demonstrations at the <<demonstration_workshop,Demonstration Workshop>>. Recording and publication of these demonstrations will be discussed at the <<kickoff_workshop,Kick-off workshop>>. Software implementations remain with the participants and do not need to be made available after the Hackathon.
+
+Experiences and lessons learned from the Hackathon will be captured in the Hackathon Results Engineering Report. This report will be edited by OGC staff with contributions by all participants.
+
+There are no reporting duties during the Hackathon. Communication is reduced to the kick-off workshop, a Final Decision web conference, a Demonstration Preparation web conference, and the physical demonstration meeting. Please find further <<events,details here>>.
+
+==== Initiative Roles
+
+The roles generally played in any OCG Innovation Program initiative are defined in the http://www.opengeospatial.org/ogc/policies/ippp[OGC Innovation Program Policies and Procedures], including Sponsors, Bidders, Participants, Observers, and the Innovation Program Team ("IP Team").
+
+Compared to other Innovation Program initiatives, the Hackathon provides maximal flexibility and minimal organizational and communication overhead on the participants.
+
+[[proposal_submission]]
+=== Proposal Submission
+
+In order to participate in this Hackathon, it is sufficient to fill out this https://goo.gl/forms/iH1I5WYYDg5pcMk53[Application Form]. By submitting your application, you express your:
+
+* interest to participate in the Hackathon and willingness to travel to the demonstration meeting,
+
+* willingness to participate in the kick-off meeting either in person or remotely, and
+
+* acceptance of the <<policies_procedures,Hackathon Policies and Procedures>>.
+
+Proposals must be submitted before the appropriate response due date indicated in the <<master_schedule,Master Schedule>>. Organizations are invited to team up with other organizations or to submit proposals individually. Teaming up can even be discussed during the setup phase of kick-off.
+
+This CFP is open to OGC members and non-members. Information submitted in response to this CFP will be accessible to OGC and Sponsor staff members. This information will remain in the control of these stakeholders and will not be used for other purposes without prior written consent of the Bidder. Each Participant selected to participate in this Hackathon will be required to enter into a Participation Agreement contract ("PA") with the OGC.
+
+=== Questions and Clarifications
+
+Once the original CFP has been published, OGC is organizing a _CFP Clarifications phone conference_. Bidders may submit questions via timely submission of email(s) to the OGC Technology Desk (techdesk@opengeospatial.org) prior to the _CFP Clarifications phone conference_ or pose questions during the conference. Question submitters will remain anonymous, and answers will be regularly compiled and published on the http://www.opengeospatial.org/projects/initiatives/cloudhackathon[CFP clarifications page].
+
+[[master_schedule]]
+=== Master Schedule
+
+The following table details the major Testbed milestones and events:
+
+.Master schedule
+|===
+h| Milestone h| Date h| Event
+| _M01_ | 13 February 2018 | CFP Release
+| _M02_ | 19 February 2018 | Clarification Webinar (17:00 CET, <<annex_clarifications,login instructions>>)
+| _M03_ | *06 March 2018* | CFP Proposal Submission Deadline (11:59pm U.S. Eastern time)
+| _M04_ | 10 March 2018 | Bidder Notifications
+| _M05_ | 22 March 2018 | All CFP Participation Agreements Signed
+| _M06_ | *22 March 2018* | *Kickoff Workshop* (Orleans, France, 13:30-15:00CET)
+| _M07_ | ?? April 2018 | Decision Conference: Final Decision Making for Hackathon Details
+| _M08_ | 19 April 2018 | Preparation Conference for demo meeting
+| _M09_ | *03-04 May 2018* | *Demonstration Workshop* (@ http://www.esa.int/About_Us/ESOC/Where_missions_come_alive[ESOC] Darmstadt) Start: Thursday 14:00, ends Friday 16:00
+| _M10_ | 31 May 2018 | Publication of the Hackathon results Engineering Report
+|===
+
+[[events]]
+=== Sequence of Events, Phases, and Milestones
+
+[[kickoff_workshop]]
+*Kickoff Workshop:* A Kickoff Workshop ("Kickoff") is a face-to-face meeting with the option to attend via Web conference (GoToMeeting). It is guided by OGC staff and sponsors and allows participants to exchange ideas. The main purpose is to refine the Hackathon architecture and settle upon specific interface models to be used as a baseline for prototype component interoperability. Participants will be *_required_* to attend the Kickoff either in person or by Web conference.
+
+*Decision Conference:* Conducted one week after the kick-off meeting, the Decision Conference web conference will decide any outstanding design decisions from the kick-off meeting. It is the conference with all participants prior to the _Preparation Conference._
+
+After the Decision Conference, all Hackathon activities will be conducted remotely. Communication overhead is reduced to email-list discussions.
+
+*Preparation Conference:* This webinar discusses details for the _Demonstration Meeting._
+
+[[demonstration_workshop]]
+*Demonstration Workshop:* Physical meeting, where participants demonstrate their results.
+
+After the demonstration meeting, all participants, sponsors, and OGC staff develop the _Hackathon Results Engineering Report._
+
+[[technical_architecture]]
+=== Technical Architecture
+
+[[technical_architecture_intro]]
+==== Introduction
+
+This Annex provides background information on the OGC baseline, describes the Hackathon architecture, and identifies all requirements and corresponding work items.
+
+The Hackathon builds on results from the recently concluded http://www.opengeospatial.org/projects/initiatives/testbed13[Testbed-13] initiative and paves the way for Tested-14 and subsequent initiatives in the context of deployment and execution of applications in cloud environments. The goal is to demonstrate that the Testbed-13 results, described in the Engineering Reports OGC Testbed-13: Exploitation Platform Application Package, http://docs.opengeospatial.org/per/17-023.html[OGC Testbed-13: Application Deployment and Execution Service], and http://docs.opengeospatial.org/per/17-035.html[OGC Testbed-13: Cloud] are fit for purpose. Given that these Engineering Reports state several options, this Hackathon shall identify the best solution and identify any missing elements as basis for Testbed-14 and future initiatives.
+
+ESA has started in 2014 the Earth Observation Exploitation Platforms initiative that created an ecosystem of interconnected Thematic Exploitation Platforms (TEP) for Earth Observation data. Testbed-13 focused on two key aspects:
+
+[class=steps]
+. To allow TEP users to develop applications on the their local machines, then to upload these to the TEP in form of Docker containers with complementing metadadata to allow for automated deployment and execution.
+
+. The automated deployment and execution of these containerized applications with subsequent standards-based result access using cloud platforms.
+
+The metadata describing an application in its Docker container is bundled in a so called *_Application Package_*. Details on this Application Package are described in the http://docs.opengeospatial.org/per/17-023.html[OGC Testbed-13: Exploitation Platform Application Package Engineering Report]. An Application Package encapsulates the description of the application itself, i.e. the application metadata, a reference to the application software container, metadata about the container itself and its resource types, deployment, execution, and mapping instructions of external data to container-specific locations for input and result data, and auxiliary information such as Web-based catalogues for data discovery and selection.
+
+The Application Package developer uploads the Docker container that includes the application to a Docker Hub and provides the Application Package to the TEP (Thematic Exploitation Platform). The TEP uses an _Application Deployment and Execution Service_ (ADES) as described in the http://docs.opengeospatial.org/per/17-024.html[OGC Testbed-13: Application Deployment and Execution Service Engineering Report]. This service, implemented as a WPS v2.0 profile, allows the dynamic deployment and execution of the Docker container on cloud infrastructure.
+
+The Hackathon shall verify the specifications provided in the Engineering Reports, shall develop recommendations where the Engineering Reports describe several options, and shall detect any missing elements or defects that need to be corrected in future initiatives.
+
+Participants can provide either a client application or a server application or both to the Hackathon. Alternatively, participants can provide alternative applications if these applications work on Sentinel-1 input data (or the input data can be made available by the participant). In the case of application provision, the participant needs to provide the application together with the corresponding application package. In case a participant provides both the client and the server application, then the participant agrees to pro-actively engage with others participants to ensure proper interoperability testing. At the demonstration meeting, we will test all server instances with all clients. Given that we will agree on the interface between client and server during the initial phase of the Hackathon, clients and servers can be developed independently of each other. A simple CURL client will be used as reference. Each server will receive the same two calls as described in the <<hackaton_scenario,Hackathon Scenario>> below. Clients will be evaluated based on functionality and ease of use. Servers will be evaluated based on performance.
+
+[[policies_procedures]]
+==== Hackathon Implementation
+
+[[hackaton_scenario]]
+*Scenario*
+
+The Hackathon shall implement the following scenario:
+
+* Canada’s forest cover an area of 348 million hectares, which is 35% of Canada’s land area and 9% of the world’s forested area. Because vast areas are inaccessible, researchers use satellites such as Sentinel-1 to gain valuable insights into Canada’s forest ecosystem.
+
+* The Hackathon shall evaluate the extent of wild fires based on Sentinel-1 data for the summer of 2017 over the Northwest Territories, Canada. Organizers will provide the Sentinel Application Platform (SNAP) Software Toolbox together with a pre-defined workflow packaged in a Docker container. Thus, Hackathon participants can use the Docker container "as is" and do not need to modify the container or the application. The SNAP workflow in that Docker container requires two types of data: Digital Elevation Model (DEM) data and Sentinel-1 data. Both will be made available to the participants as cloud resources.
+
+* Participants need to develop the _Application Package_ for the application in the Docker container. This is a joint effort to ensure that all Application Packages look the same.
+
+* An _Application Deployment and Execution Service_ (ADES) needs to be set up that supports two requests:
+
+** The registration of the _Application Package_ as a new process. Here, the client will issue a WPS request that includes the _Application Package_ either inline or by reference (to be decided during the Hackathon).
+
+** The execution of that new process, which includes the deployment and execution of the Docker container on cloud platforms provided by sponsors.
+
+* The ADES can be setup on server operated by the participant.
+
+* The ADES shall provide a WPS interface that allows a client to execute the processing of all Sentinel-1 scenes over the Northwest Territories. Roughly 300 Sentinel files need to be processed.
+
+* The client application will issue the same deployment and execution requests to all ADES implementations. Two requests will be tested:
+
+** The first request calls the ADES to deploy the Docker Container only once and to process a single Sentinel-1 scene.
+
+** The second request calls the ADES to deploy the Docker Container n-times to process all Sentinel-1 scenes. It is up to the ADES to either execute the same Container sequentially or to optimize performance and to deploy the Container n-times for max parallel processing. The results do not need to be processed any further (in particular no mosaicing required).
+
+*** The resulting scenes will be accessed by the client. In both cases, the ADES shall return a URL that contains all results in a single folder.
+
+* Results are accessed and downloaded.
+
+
+*Design Decisions*
+
+The Hackathon participants need to agree on the following design decisions:
+
+* Implementation scenario details
+
+* Application Package details to ensure that a single Docker image works for all teams
+
+* ADES profile details
+
+* Result access details
+
+*Implementations*
+
+The Hackathon participants shall demonstrate the following elements:
+
+* Overall, the capacity to process a large amount of data in an interoperable way across an heterogeneous environment
+
+* The Application Package describing the wild fire application
+
+* The ADES that registers the Application Package and allows deployment and execution for a single or all scenes. The ADES shall be implemented as a WPS v2.0.
+
+* The result access mechanism
+
+* The client (for client developers only)
+
+==== Hackathon Trophy
+
+The winning team will receive the Hackathon Trophy and prizes. The winner will be selected by all teams being present at the <<demonstration_workshop,Demonstration Workshop>>.
+
+==== Hackathon Baseline
+
+===== Deliverables
+
+This Hackathon seeks to deliver technical demonstrations in the form of software demonstrations at the <<demonstration_workshop,Demonstration Workshop>>. Recording and publication of these demonstrations will be discussed at the <<kickoff_workshop,Kick-off workshop>>. Software implementations remain with the participants and do not need to be made available after the Hackathon.
+
+Experiences and lessons learned from the Hackathon will be captured in the Hackathon Results Engineering Report. This report will be edited by OGC staff with contributions by all participants.
+
+===== Data
+
+The Hackathon will use Sentinel-1 data provided by the sponsoring organizations. The Digital Elevation Model (DEM) data required by the SNAP workflow will be provided either online or as part of the Docker Image. In any case, this process will be transparent to the participants, because the Docker Image will retrieve the required files automatically. This step only requires correct configuration in the _Application Package._
+
+All data will be made available to the participants free of charge. The data is stored on cloud infrastructure and can be accessed via Web APIs (based on HTTP REST).
+
+[[cloud_infrastructure]]
+===== Cloud Infrastructure
+
+Cloud infrastructure will be made available by the sponsoring organizations. The cloud will support VMs running Linux. The following clouds will be provided by the sponsors:
+
+* OpenStack version Pike September 2017 (private cloud hosted by NRCan)
+
+* http://www.cloudferro.com/en/eocloud/[Cloudferro] (ESA)
+
+The following commercial cloud providers offered to support the activity:
+
+* Amazon Web Services
+
+* Cloudsigma
+
+=== Glossary
+
+CFP:: Call for Participation
+
+Application Package:: Atom or XML based file that contains all information about the application that is packaged in a Docker container
+
+TEP:: ESA https://tep.eo.esa.int/about-tep[Thematic Exploitation Platform]. In short, an EO exploitation platform is a collaborative, virtual work environment providing access to EO data and the tools, processors, and Information and Communication Technology resources required to work with them, through one coherent interface. As such the EP may be seen as a new ground segments operations approach, complementary to the traditional operations concept.
+
+ADES:: Application Deployment and Execution Service: WPS v2.0 interface that supports the registration of an Application Package as a new service and its deployment and execution.
+
+SNAP:: A common architecture for all Sentinel Toolboxes is called the http://step.esa.int/main/toolboxes/snap/[Sentinel Application Platform (SNAP)]. The SNAP architecture is ideal for Earth Observation processing and analysis due to the following technological innovations: Extensibility, Portability, Modular Rich Client Platform, Generic EO Data Abstraction, Tiled Memory Management, and a Graph Processing Framework.
+
+Sentinel-1:: https://en.wikipedia.org/wiki/Sentinel-1[Sentinel-1] is a space mission funded by the European Union and carried out by the ESA within the Copernicus Programme, consisting of a constellation of two satellites. The payload of Sentinel-1 is a Synthetic Aperture Radar in C band that provides continuous imagery (day, night and all weather).
+
+ESA:: http://www.esa.int/ESA[European Space Agency]
+
+NRCan:: http://www.nrcan.gc.ca/home[Natural Resources Canada]
+
+OGC:: http://www.opengeospatial.org/[Open Geospatial Consortium]
+
+Testbed-13/14:: OGC’s leading annual Innovation Program initiative with a volume of ~5M USD per year.
+
+[[annex_clarifications]]
+=== Clarifications
+
+The clarifications Webinar took place on Mon Feb 19th, 11:00 AM EST. The Webinar was recorded. The recording is available https://portal.opengeospatial.org/files/?artifact_id=77795[online (23MB file!)]. The following questions have been raised:
+
+*_1. Can I participate as a cloud provider?_*
+
+YES, you can participate as a cloud provider by making computing resources, Virtual Machines, or storage capacity available. In that case, please contact Ingo Simonis directly at isimonis@opengeospatial.org.
+
+*_2. Can I provide a different application as well?_*
+
+YES, if you do provide the corresponding application package in addition. In principle, we can run any type of application as long as the application is properly described, follows the data location mapping approaches agreed upon at the kick-off meeting, and loads the required data from a Web accessible archive.
+
+*_3. What level of flexibility do you have regarding the architecture defined in the annex <<annexB,Technical Architecture>>?_*
+
+In principle, this Hackathon has the goal to identify the best solution for the given problem, i.e. the provisioning of arbitrary applications in heterogeneous clouds to allow their execution close to the actual data. Testbed-13 has addressed this problem and documented a set of solutions and recommendations in the <<main_body,Engineering Reports listed above>>. This does not mean that we are 100% bound to what was developed in Testbed-13. We want to use it as a baseline, but allow room for discussions that may lead to modifications. Therefore we welcome additional ideas. In any case, the goal is to develop a sustainable solution for an Application Package that allows executing arbitrary applications in different environments. This solution shall lead to an open OGC standard.
+
+*_4. A parallel set of studies has been run by us that led to a solution that allows running processes in cloud environments easily. We continue this work in other research projects. Would that solution be of interest to the Hackathon?_*
+
+YES, as said before, the goal is to develop an open standard. Currently, we are still trying to understand the best solution for the given problem. We are aware that many research projects address this challenge. The goal here is to develop the best solution in an open, collaborative approach, following the well-established OGC consensus process that eventually leads to an open standard. We invite all research projects to join us in this activity. We invite all interested parties to join our ad hoc meeting during the next OGC Technical Committee meeting in Orleans, Tuesday, March 20th, 15:15-16:45h. At that meeting, we will discuss the topic in general with the goal to coordinate between different activities, standardization efforts, and R&D work executed in different organizations or consortia.
+
+*_5. We are surprised that we need to submit a proposal in order to participate. Is it possible to join the Hackathon just to learn?_*
+
+The proposal serves the purpose to allow us understanding your motivation to join the Hackathon and to learn about your background. The https://goo.gl/forms/iH1I5WYYDg5pcMk53[Application Form] is very simple and should not take more than 5min to provide brief answers to the few questions. If you like, you can participate as an observer, though we appreciate your more active participation.
+
+*_6. We do have a fully functional implementation of what you are trying to develop here. Does it make sense for us to demonstrate our solution?_*
+
+We are interested in developing the best solution that shall be released as an open standard eventually. If you are willing to through your solution as an example into the consensus process, then we appreciate your participation. Key is the willingness to help us, not the interest to sell a given product.
+
+*_7. Is the Hackathon only open to Testbed-13 participants?_*
+
+No, the Hackathon is open to everyone, even non-OGC members. The results of Testbed-13 are publicly available, and there is absolutely no requirement for previous participation in the Testbed. Being familiar with the OGC process, in particular the consensus principle, certainly helps, though.
+
+*_8. What is the link with Testbed-14?_*
+
+Testbed-14 will build on results from Testbed-13 and this Hackathon. Testbed-14 focuses on three aspects: First, complex workflows where a workflow includes several processing steps that feed into each other and that might be distributed across several clouds. Second, security aspects, and third billing and quoting, as application consumers are not running any software locally, costs may occur on the clouds that need to be covered.
+
+*_9. What profile are participants expected to have?_*
+
+We expect that any organisation with EO Exploitation and/or Cloud Processing or similar experience will be able join. In essence anyone with the skills and the willingness to work in consensus towards interoperability can participate.
+
+*_10. What Cloud Infrastructure will be available?_*
+
+The following commercial cloud providers offered to support the activity:
+
+* Amazon Web Services
+
+* Cloudsigma
+
+The conditions will be disclosed at the kick-off meeting.

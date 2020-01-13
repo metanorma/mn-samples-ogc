@@ -1,0 +1,74 @@
+
+== Summary
+
+The _Earth Observation Exploitation Platform Hackathon 2018_ was conducted to evaluate the standards based architecture for deploying and executing arbitrary applications close to the physical location of the data in heterogeneous cloud environments. The Hackathon was very successful in demonstrating both efficiency and sustainability of the architecture developed in Testbed-13. Efficient, because it was possible to setup the full execution workflow of 128 Sentinel-1 images within the 1.5 days of the Hackathon in a multi-vendor environment. Sustainable, because the architectural approach provides sufficient flexibility to cater for possible extensions and exchange of cloud & container middleware.
+
+The Hackathon produced a number of suggestions for future work items. These include new tools to facilitate the process of Application Package generation to make it even simpler for scientists to bring their applications to the market; a more detailed specification to further improve the level of interoperability; and a best practice document with lots of examples that illustrate the necessary steps to make applications available.
+
+Hackathon participants highlighted that such a level of robustness, flexibility, and maturity of the application-to-the-cloud architecture has been developed in nine months only during Testbed-13. The participants recommend to continue interlacing major OGC Innovation Program activities, such as testbeds, with short term rapid prototyping initiatives such as hackathons. Almost all participants of the Hackathon had been new to the OGC Innovation Program. These participants emphasized that the Hackathon provided an outstanding opportunity for newcomers to get quickly familiar with the latest standardization efforts and helped tremendously in understanding investments and new market opportunities for applications-in-the-cloud.
+
+=== Requirements & Research Motivation
+
+The Hackathon was conducted to stress-test results from https://www.opengeospatial.org/projects/initiatives/testbed13[Testbed-13] and to evaluate the benefit of having hackathons in between major OGC Innovation Program initiatives such as testbeds. Further on, the goal was to attract organizations that have not participated in the development of the applications-in-the-cloud architecture developments of Testbed-13 for a critical review.
+
+=== Prior-After Comparison
+
+Organizationally, it turned out that having hackathons in between Testbeds is extremely valuable. Hackathons attract new organizations, allow exploring alternatives very efficiently, and help shaping upcoming initiatives with experiences and suggestions from the Hackathon discussions.
+
+On the engineering side, Testbed-13 produced a number of alternative options without giving clear guidance on the preferred approach. This was issue was addressed successfully in the Hackathon. It turned out that the general architecture, interface design and Application Package model have been confirmed during the Hackathon. This is an important achievement, as it allows to continue the development of standardized approaches for application provision, ad-hoc deployment and dynamic execution in cloud environments in future OGC Innovation Program initiatives.
+
+Interesting alternatives have been developed that include a WPS instance as essential part of a Docker Image. This approach (which can be considered a micro-service approach, as each instance contains a full service interface) gives more flexibility to the application developer. All mappings (e.g. the mounting of external data to internal paths) can be realized on the programmatic level. This approach requires higher programming skills if no tools are available to configure the embedded WPS service and to package the application on behalf of the developer.
+
+=== Recommendations for Future Work
+
+The results of this Engineering Report serve as direct input for the Earth Observation Clouds thread in http://www.opengeospatial.org/projects/initiatives/testbed14[Testbed-14]. It is recommended to address the following aspects:
+
+* More complex applications that involve data from multiple clouds,
+
+* Fully secured environments,
+
+* Develop tools that generate Application Packages or at least support scientists in this task,
+
+* Develop best practices illustrating service setup and Application Package examples, and
+
+* Provide more detailed specifications to enhance the level of interoperability.
+
+=== Document contributor contact points
+
+All questions regarding this document should be directed to the editor or the contributors:
+
+*Contacts*
+
+[%unnumbered]
+|===
+h| Name h| Organization
+| Ingo Simonis (editor) | OGC
+| Benjamin Pross | 52°North
+| Matthes Rieke | 52°North
+| Christoph Stasch | 52°North
+| Vincent Gaudissart | CS
+| Christophe Triquet | CS
+| Armin Costa | Eurac Research
+| Alexander Jacob | Eurac Research
+| Paulo Sacramento | Solenix
+| Daniel Robinson | Solenix
+| Bernard Valentin | Space Applications Services
+| Leslie Gale | Space Applications Services
+| Marian Neagul | UVT
+| Teodora Selea | UVT
+| Silviu Panica | IeAT
+| Jeroen Dries | VITO
+| David Pérez | Thales Alenia Space
+| Alejandro Mousist | Thales Alenia Space
+| Elisa Callejo | Thales Alenia Space
+|===
+
+=== Cloud Providers
+
+A special thank you to our CloudSigma, CloudFerro and Amazon for making cloud resources available to the Hackathon!
+
+=== Foreword
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
+
+Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.

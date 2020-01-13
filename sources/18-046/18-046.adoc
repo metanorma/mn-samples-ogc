@@ -1,0 +1,41 @@
+= OGC Earth Observation Exploitation Platform Hackathon 2018 Engineering Report
+:doctype: standard
+:language: en
+:revdate: 2018-12-20
+:status: published
+:committee: technical
+:docnumber: OGC 18-046
+:received-date: 2018-12-20
+:issued-date: 2018-07-10
+:published-date: 2018-06-12
+:external-id: http://www.opengis.net/doc/PER/eoep-Hack2018
+:fullname: Ingo Simonis
+:role: editor
+:keywords: 
+:submitting-organizations: 
+:docfile: 18-046.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+
+include::1-summary.adoc[]
+
+include::2-terms_and_definitions.adoc[]
+
+include::3-introduction.adoc[]
+
+include::4-key_findings.adoc[]
+
+include::5-implementation_challenge.adoc[]
+
+//include::6.adoc[]
+
+include::6-solutions.adoc[]
+
+include::7-appendix-a.adoc[]
+
+include::8-appendix-b.adoc[]
+
+include::9-appendix-c.adoc[]

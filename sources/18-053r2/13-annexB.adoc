@@ -1,0 +1,31 @@
+
+[[annexB]]
+[appendix,obligation=non-normative]
+== Contributor Acknowledgements (Non-normative)
+
+[[Section3]]
+
+Matt Amato +
+Erik Andersson +
+Dan Bagnell +
+Ray Bentley +
+Jannes Bolling +
+Dylan Brown +
+Sarah Chow +
+Paul Connelly +
+Volker Coors +
+Tom Fili +
+Leesa Fini +
+Ralf Gutbell +
+Frederic Houbie +
+Christopher Mitchell, Ph.D. +
+Claus Nagel +
+Jean-Philippe Pons +
+Carl Reed +
+Kevin Ring +
+Scott Simmons +
+Stan Tillman +
+Piero Toffanin +
+Pano Voudouris +
+Dave Wesloh
+

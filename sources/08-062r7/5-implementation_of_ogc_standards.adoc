@@ -1,0 +1,50 @@
+
+== Implementations of OGC Standards
+
+OGC standards have been implemented through several activities as described below.
+
+[[ogc_compliance_test_program]]
+=== OGC Compliance Test Program
+
+The purpose of the http://www.opengeospatial.org/compliance[OGC Compliance Testing Program] is to permit vendors and users to take advantage of the standards that OGC has created. The program provides a process for testing compliance of products to OpenGIS® Implementation Specifications.
+
+When a vendor has completed compliance testing and OGC has confirmed its successful completion, vendors who agree to the terms of the OGC Trademark License Agreement that accompanies this program, and who have paid their trademark license fees, may use OGC's marks (trademarks or certification marks) to indicate to their customers that they have achieved compliance with OpenGIS Implementation Specifications.
+
+The http://cite.opengeospatial.org/instructions[OGC Compliance Testing Portal] is the home of the OGC’s on-line compliance testing resources. The portal provides test scripts in an automated test environment for the adopted OGC Standards for OGC web services. In addition, the OGC provides a tool to validate Geography Markup Language (GML). If you want to try out compliant software, take a look at the http://cite.opengeospatial.org/reference[Reference Implementations] as open-source applications.
+
+The Compliance Test engine is an open-source application allowing integrators and software developers to host the compliance test tools in their own development laboratories. Although only tests performed at the OGC compliance site can be used as the basis for certification, organizations find it valuable to perform the same tests in their labs to support development and integration. http://portal.opengeospatial.org/files/?artifact_id=33085[Compliance Test Language (CTL)] Best Practice is an XML grammar for documenting and scripting suites of tests for verifying that an implementation of a specification complies with the specification.
+
+Previously developed off-line http://www.opengeospatial.org/compliance/downloads[Compliance Test Suites for download] include: Catalog Service Interface 1.0, Coordinate Transformation 1.0, Gridded Coverages 1.0, Simple Features SQL 1.1, Simple Features COM 1.1, Simple Features CORBA 1.0. Those suites are hosted on the OGC site.
+
+In addition, OGC provides on-line tools for http://cite.opengeospatial.org/test_engine/georss_validator[GeoRSS], http://cite.opengeospatial.org/test_engine/gml/2.1.2[Geography Markup Language] (GML) 2.1.2, and http://cite.opengeospatial.org/test_engine/wmc/1.1.0[Web Map Context] (WMC) 1.1.0 validation. These validation tools are not associated with official OGC Compliance Certification and are simply provided as a community resource.
+
+=== Registered Implementations
+
+Implementations of OGC Specifications can be registered on the OGC website including those that have been certified OGC Compliant. The lists of http://www.opengeospatial.org/resource/products[Compliant and Implementing Products] identify publicly available products and services that either implement or have been tested Compliant to OpenGIS Specifications. You may also http://www.opengeospatial.org/resource/products/registration[Register Your Products] at this site.
+
+=== OGC Network, Cookbooks and Demos
+
+The http://www.ogcnetwork.net/networks[OGC Network]™ is a window onto the dynamic, constantly changing geospatial web. Here you will find the latest information on OGC-compatible software, services, and information models (e.g. GML profiles, SLD examples, etc.). From this site you can quickly locate OGC-compatible geospatial web services, the latest XML schema documents, discussion forums, conformance testing resources, and GML profile working areas. http://www.opengeospatial.org/resource/cookbooks[OGC Cookbooks] are free, online, easy-to-use technical documents for developers. http://www.opengeospatial.org/resource/demos[On-line demonstrations] of OGC specifications and interoperable software are available from previous OGC Interoperability Program initiatives.
+
+=== Strategic implementations of OGC Standards
+
+==== GEOINT Standards managed by NGA
+
+The US National System for Geospatial Intelligence (NSG) is the combination of technologies, policies, capabilities, doctrine, activities, people, data and communities needed to produce geospatial intelligence (GEOINT) in an integrated, multi-intelligence, multidomain environment. GEOINT is defined as the exploitation and analysis of imagery and geospatial information to describe, assess, and visually depict physical features and geographically referenced activities on the Earth. GEOINT consists of imagery, imagery intelligence, and geospatial information.
+
+The http://www.gwg.nga.mil/[GEOINT Standards Working Group (GWG)] provides the forum for the coordination of GEOINT standard activities. The GWG is led by the National Geospatial-Intelligence Agency’s (NGA) National Center for Geospatial Intelligence Standards (NCGIS). Through the GWG, NGA has collaboratively defined a common baseline of standards including many OGC as described in “http://portal.opengeospatial.org/files/?artifact_id=19983[Enabling a Common Vision].”
+
+The GWG manages GEOINT standards lifecycle recommendations for developing and promoting standards interoperability in support of net-centricity. NGA and the geospatial community are well positioned to achieve coordinated implementation of these standards – the result will not only be enhanced interoperability, but also the ability to, at the lowest tactical level, return value-added content from the warriors on the front lines for re-use by others.
+
+==== FGDC/USGS
+
+The US http://www.fgdc.gov/[Federal Geographic Data Committee (FGDC)] is an interagency committee that promotes the coordinated development, use, sharing, and dissemination of geospatial data on a national basis. FGDC activities are administered through the FGDC Secretariat, hosted by the U.S. Geological Survey (USGS).
+
+The partner agencies of FGDC are developing http://www.geoplatform.gov/[the Geospatial Platform] to more effectively provide place-based products and services to the American public. Through the FGDC, the Geospatial Platform will adopt and enforce open and interoperable standards to leverage the work already accomplished by national and international standards organizations including OGC Web Services (features, map, processing, coverage, etc.), Location Services, Metadata, Registries, Data Quality and other applicable standards specifically dealing with geospatial data.
+
+==== NASA
+
+The US National Aeronautics and Space Agency’s http://esto.nasa.gov/[Earth Science Technology Office (ESTO)] demonstrates and provides technologies that can be reliably and confidently applied to a broad range of science measurements and missions as well as facilitate practical applications that benefit society at large. ESTO developments in advanced information systems are used to process, archive, access, visualize, and communicate science data. ESTO has sponsored several implementations of OGC standards including the following.
+
+The NASA SensorWeb is an interoperable environment for a diverse set of satellite sensors via the use of software and the Internet. This capability can be used to better understand physical phenomena, such as volcanic eruptions, fires and floods. Furthermore, it facilitates science investigation since it becomes much easier to enlist existing satellite, airborne and ground sensors for required observations. The http://eo1.gsfc.nasa.gov/new/sensorwebexp/Components.html[NASA SensorWeb Architecture] implements multiple OGC Standards.
+

@@ -1,0 +1,146 @@
+
+== Reusable Patterns for Deployment
+
+Previous sections defined the information and services standards that serve as building blocks for deployments. To support reusable deployments several patterns are defined that use the OGC standards in ways that accomplish many typical tasks.
+
+=== Publish, Find and Bind Pattern
+
+OGC web services utilize the popular publish/find/bind pattern shown in <<fig5>> for dynamic binding between service providers and in a distributed environment.
+
+[[fig5]]
+.Publish/Find/Bind Pattern
+image::images/005.png[width=auto,height=auto]
+
+In <<fig5>>, there are three essential roles:
+
+* *Service:* publishes services to a broker (registry) and delivers services to service requestors.
+
+* *Service Consumer:* performs service discovery operations on the service broker to find the service providers it needs and then accesses service providers for provision of the desired service.
+
+* *Service Directory:* helps service providers and service requestors to find each other by acting as a registry or clearinghouse of services.
+
+As shown, there are three essential kinds of operations performed by services:
+
+* *Publish:* used to register data and services to a directory (such as registry, catalog or clearinghouse). A service provider contacts the service directory to publish (or unpublish) a service. A service provider typically publishes service metadata describing its capabilities and network address.
+
+* *Find:* used by service consumers to discover specific service types or instances. Service consumers describe the kinds of services they’re looking for to the directory and the directory responds by delivering the results that match the request. Service consumers typically use metadata published to find services of interest.
+
+* *Bind:* used when a service consumer invokes a services. A service consumer typically uses service metadata provided by the registry to bind to a service provider. The service consumers can either use a proxy generator to generate the code that can bind to the service, or can use the service description to implement the binding before accessing that service.
+
+OGC has developed a framework for defining specialized catalogues that support registration processes such as those described in ISO 19135: establishing, maintaining, and publishing registers of identifiers and meanings that are assigned to items of geographic information. The Catalog Service for the Web (CSW) – as defined in the OGC Catalogue Specification (CAT) – has been augmented by an ebRIM Information Model to establish an OGC framework for registration of geospatial information.
+
+=== Geospatial Portal and Clients
+
+For users to achieve the value of geospatial data and services, user interfaces must exist that allow access. Portals have become a regular and familiar user interface to web-based users. Client applications hosted on user hardware continue to serve a large portion of the user community. Portal and application clients are discussed in this section.
+
+The OGC http://portal.opengeospatial.org/files/?artifact_id=6669[Geospatial Portal Reference Architecture] Discussion Paper was developed to assist the global geospatial technology community in implementing standards-based geospatial portal solutions. The document is a resource for rapid development and informed acquisition of portals and portal-exploiting applications that can plug and play with geospatial data and services in your organization and other organizations in your community and around the world.
+
+A Web portal is a single point of access to information, which is linked from various logically related Internet-based applications and is of interest to various types of users. Portals present information from diverse sources in a unified way; they provide a consistent look and feel with access control and procedures for multiple applications, which otherwise would have been different entities altogether. Since all the applications share information through portals, there is better communication between various types of users. Another advantage of portals is that they can make event-driven campaigns.
+
+The http://portal.opengeospatial.org/files/?artifact_id=12911[OWS Integrated Client] Discussion Paper describes the core concept of providing a unified environment that allows a user to visualize, analyze, and/or edit data from numerous OGC Web Services simultaneously. An Integrated Client unifies common service discovery, feature production, imagery exploitation, portrayal management, processing, and sensor web enablement functionalities, and provides an environment for visualizing, analyzing and/or editing data from these sources/services.
+
+Portals and application clients represent just the tip of geospatial Decision Support Services (DSS) which aim to provide interoperable access to distributed geospatial web services to aid decision makers in forming, analyzing, and selecting alternatives, see <<fig7>>. GeoDSS includes workflow management to produce context-specific results from information and knowledge from multiple communities. One objective of geospatial web services is to allow decision makers to access and use information that may have been collected for other purposes.
+
+[[fig6]]
+.GeoDSS Integrated OWS Client
+image::images/006.png[width=auto,height=auto]
+
+=== Multi-Tier Architectures
+
+Services and data are packaged as components to define a deployment architecture. As an aid to managing the deployment, components can be classified into client, business process and access tiers (See <<fig7>>). Client tier components provide the user interface of the system. Business process tier components provide the mediation and processing functionality of the system. Access tier components offer persistent storage of data along with data acquisition and dissemination services. <<fig7>> is an example of tiered architecture from the OGC Best Practice http://portal.opengeospatial.org/files/?artifact_id=39475[GIGAS Methodology for comparative analysis of information and data management systems].
+
+[[fig7]]
+.Service tiers in OWS architecture
+image::images/007.png[width=auto,height=auto]
+
+[[spatial_data_infrastructures]]
+=== Spatial Data Infrastructures
+
+OGC standards are key elements of the interoperability strategy of several Spatial Data Infrastructures (SDIs).
+
+http://www.gsdi.org/gsdicookbookindex.asp[The SDI Cookbook], published by the GSDI, remarks that “SDI” is often used to denote the relevant base collection of technologies, policies and institutional arrangements that facilitate the availability of and access to spatial data. An SDI must be more than a single data set or database: an SDI hosts geographic data and attributes; sufficient documentation (metadata); a means to discover, visualize, and evaluate the data (catalogues and Web mapping); and some method to provide access to the geographic data.
+
+The http://portal.opengeospatial.org/files/?artifact_id=22873[OGC Web Services Architectural Profile for the NSG] describes how the various OGC specifications relate to the web service architecture implementation at the US National Geospatial-Intelligence Agency and the National System for Geospatial-Intelligence (NSG). The document enables organizations that interface with the NSG to understand how to produce and consume data and services in an interoperable environment.
+
+http://www.geoconnections.org/en/aboutGeo.html[GeoConnections] helps decision-makers “use online location-based (or "geospatial") information, such as maps and satellite images, to tackle some of Canada's most pressing challenges.” GeoConnections strongly advocates the use of standards endorsed for the Canadian Geospatial Data Infrastructure (CGDI) to achieve interoperability for richer and more useful information than a single data set can provide. GeoConnections was an early supporter of WMS development and was an early adopter of the WMS standard. Recently the http://portal.opengeospatial.org/files/?artifact_id=26610[OGC Canadian Geospatial Data Infrastructure WFS and GML] gives guidelines and recommendations for administrators, users and implementers of WFS serving GML-encoded response documents. This OGC document is applicable to the design, implementation and operation of Web Feature Service networks.
+
+The Directive of the European Parliament and Council establishing an Infrastructure for Spatial Information in the European Community (http://eur-lex.europa.eu/JOHtml.do?uri=OJ:L:2007:108:SOM:EN:HTML[INSPIRE]) directs Member States to establish and operate a network of services for discovery, viewing, and transformation. The services are to be easy to use, available to the public and accessible via the Internet. http://inspire.jrc.it/[Implementation of the directives] by the European Commission is proceeding with significant uptake of OGC standards envisioned.
+
+The http://www.earthobservations.org/documents.shtml[GEOSS 10 Year Plan], published by the Group on Earth Observations, states that to enable implementation of the GEOSS architecture, GEOSS will draw on existing Spatial Data Infrastructure (SDI) components as institutional and technical precedents in areas such as geodetic reference frames, common geographic data, and standard protocols. The http://www.ogcnetwork.net/AIpilot[GEO Architecture Implementation Pilot] is defining and deploying the GEOSS Core Architecture for exchange and dissemination of observations including considerable uptake of OGC web services.
+
+The http://portal.opengeospatial.org/files/?artifact_id=25184[OGC Federated Earth Observation Missions (FedEO) Pilot] Discussion Paper describes the application of OGC services to Earth Observation. The FedEO Pilot was conducted in conjunction with and in support of the GEOSS Architecture Implementation Pilot. The FedEO pilot used and extended the GEOSS Architecture with additional services, e.g., Product Programming, Service Orchestration, Processing Services, Orthorectification and Reprojection Services and Order Service.
+
+=== Sensor Webs
+
+The http://portal.opengeospatial.org/files/?artifact_id=29405&version=2[OGC Sensor Web Enablement Architecture Best Practice] provides a description of the general architecture that applies to SWE. The Sensor Web is a revolutionary concept towards achieving a collaborative, coherent, consistent, and consolidated sensor data collection, fusion and distribution system. It can be viewed as a new breed of Internet for monitoring spatio-temporal phenomena appearing in the physical environment in real time.
+
+The Sensor Web represents a meta-platform that integrates arbitrary sensors and sensor networks; each maintained and operated by individual institutions (<<fig8>>). The architectural design of the Sensor Web allows the integration of individual sensors as much as the integration of complete sensor systems without the need of fundamental changes to the legacy systems.
+
+[[fig8]]
+.Sensor Web: Aggregation of Sensor Networks
+image::images/008.png[width=auto,height=auto]
+
+The retrieval and processing of sensor data, but also the management of sensor devices (i.e. tasking), is often carried out by means of distributed software entities that interoperate via the Internet. At its stage of completion, billions of sensors will be connected and produce georeferenced observation data. Every single sensor provides a small mosaic stone that helps us to generate a consolidated view of the world, to get a better understanding of the past, present, and future situation of our planet as well as active processes and correlations.
+
+The http://portal.opengeospatial.org/files/?artifact_id=35888[Specification of the Sensor Service Architecture (SensorSA) – OGC Discussion Paper] – presents specifies the SWE-based architecture used in the Sensors Anywhere (SANY) Project. The document describes a generic service-oriented architecture integrating the access to, the management and the processing of sensor-related information based on OGC standards and resulting from the requirements analysis of diverse application domains such as maritime risk management, observation of geo-hazards and monitoring of air quality.
+
+=== Earth Observation
+
+Profiles of multiple OGC standards have been developed to support Earth Observations:
+
+* http://portal.opengeospatial.org/files/?artifact_id=35528[Catalogue Services 2.0 EP for ebRIM Application Profile: EO Products] Standard
+
+* https://portal.opengeospatial.org/files/?artifact_id=32713&version=2[GML 3.1.1 Application Schema for EO products] Best Practice
+
+* http://portal.opengeospatial.org/files/?artifact_id=30912[Web Map Services - Application Profile for EO Products] Best Practice
+
+* http://portal.opengeospatial.org/files/?artifact_id=22114[Ordering Services for Earth Observation Products] Best Practice
+
+* http://portal.opengeospatial.org/files/?artifact_id=40677[User Management for Earth Observation Services] Best Practice
+
+* http://portal.opengeospatial.org/files/?artifact_id=25199[Sensor Planning Service Application Profile for EO Sensors] Best Practice
+
+* (WCS Earth Observations Profile – currently under development)
+
+Several of these documents were developed within ESA's Heterogeneous Mission Accessibility (HMA) project. For more information see for example, the http://portal.opengeospatial.org/files/?artifact_id=25184[OGC Federated Earth Observations (FedEO) Pilot Engineering Report].
+
+=== Geoprocessing Workflows
+
+OGC has implemented workflow and service chaining beginning with the first OGC Web Services Testbed. The OWS-6 http://portal.opengeospatial.org/files/?artifact_id=34968[Geoprocessing Workflow Architecture Engineering Report] provides a summary of past Geoprocessing Workflow implementations and methods in SOA environments from OWS testbeds and other implementations. The ER also summarizes the key developed concepts for deploying Geoprocessing Workflows using OGC and other standards.
+
+Geoprocessing Workflows integrate data and services in an interoperable way, where each part of the workflow is responsible for only a specific task, without being aware of the general purpose of the workflow. Due to the distributed nature of geographic data, geoprocessing workflows provide flexible means of processing highly distributed and complex data for a wide variety of uses. <<fig9>> shows the process of creating and executing a workflow composition. Several technologies, e.g., BPEL, are available for the composition and execution of workflows. OGC services are used in workflows. WPS can be used to encapsulate a workflow hiding the details.
+
+[[fig9]]
+.Composition and Execution of a Workflow
+image::images/009.png[width=auto,height=auto]
+
+=== Data Fusion
+
+Making new connections in existing data is a powerful method to gain understanding of the world. Data fusion in distributed information environments with interoperability based on open standards is radically changing the classical domains of data fusion while inventing entirely new ways to discern relationships in data with little structure. The http://portal.opengeospatial.org/files/?artifact_id=41573[OGC Fusion Standards Study, Phase 2 Engineering Report] summarizes two phases of the OGC Fusion Standards study and of fusion prototypes developed during the OWS-7 and OWS-8 Testbeds.
+
+Three categories were used to organize the OGC Data Fusion study: Observation (sensor) fusion, Object/Feature fusion, and Decision fusion. The study considered classical fusion as exemplified by the JDL and OODA models as well as how fusion is achieved by new technology such as web-based mash-ups and mobile Internet. The study considers both OGC standards, e.g., WPS, as well open standards from other standards organizations.
+
+The http://portal.opengeospatial.org/files/?artifact_id=37139[SANY Fusion and Modelling Architecture] – an OGC Discussion Paper – reports the SANY project’s best practice for using OGC standards to provide generic fusion processing services. Concrete case studies are documented and a detailed appendix is provided with example of XML request and responses.
+
+=== Building Information Modeling and Services
+
+The Architecture, Engineering, Construction, Owner, Operator, Phase 1 (AECOO-1) Testbed developed and implemented methods to streamline communications between parties in the conceptual design phase to get an early understanding of the tradeoffs between construction cost and energy efficiency. To that end, the project developed the interoperability components required for these analyses in collaborative team settings. These were Information Delivery Manuals (IDMs) for quantity takeoffs and energy analysis business processes, and used these to define Model View Definitions (MVDs)—standards-based subsets of Industry Foundation Classes (IFCs). AECOO-1 was conducted in response the felt need that overall productivity loss and fragmentation in the capital facilities development industries is no longer tolerable. All stakeholders need to practice the best way they know, and practice profitably; software interoperability problems must not hold them back. Non-interoperable software and data is cause for loss of competition across the market. For more information see: http://portal.opengeospatial.org/files/?artifact_id=37223[Summary of the Architecture, Engineering, Construction, Owner, Operator Phase 1 (AECOO-1) Joint Testbed]
+
+=== Events Architecture: publish/subscribe
+
+The http://portal.opengeospatial.org/files/?artifact_id=39509[OWS-7 Event Architecture Engineering Report] addresses realization of an Event-Driven Spatial Data Infrastructure (ED-SDI). An ED-SDI is a traditional SDI where services and clients also communicate by means of events. This leads to improved activity of the whole infrastructure which is important if timely communication of information is critical – which is the case for example in aviation and emergency response scenarios. A major part of this report is concerned with a common approach on publish/subscribe for OGC Web Services. [Note: a Pub/Sub Standards Working Group is currently in process in OGC based on this ER and other activities.] The ER provides an abstract model for pubsub in OWS. Then functional requirements are developed based upon the model. Finally, a mapping is performed for a given publish / subscribe technology which shows how well the technology supports the requirements.
+
+=== Securing OGC Web Services
+
+OGC Web Services can be secured with information technology standards developed by other standards organizations. The following reports describe several implementations.
+
+The http://portal.opengeospatial.org/files/?artifact_id=20859[OWS-4 Trusted Geo Services Interoperability Program Report] describes the exchange of trusted messages between OGC Web Services and clients for these services. The document addresses the service protocol, service request, chaining with other services and service response required to form a complete trusted services chain.
+
+The http://portal.opengeospatial.org/files/?artifact_id=35461[OWS-6 Security Engineering Report] describes work accomplished during the OWS-6 Testbed to investigate and implement security measures for OGC web services. The document offers insight into ways to apply existing security standards from W3C, OASIS, and others with the architecture of OGC web services and standards.
+
+The http://portal.opengeospatial.org/files/?artifact_id=34273[OWS-6 Secure Sensor Web Engineering Report] applies standards-based security solutions for making the OGC SWE services ready for handling of sensors in the intelligence domain. This brings in the requirement for handling sensors that eventually produce classified information and the main objective of accreditation.
+
+The http://portal.opengeospatial.org/files/?artifact_id=41734[OGC Authentication Interoperability Engineering Report] presents results as guidance to both implementers and organizations deploying solutions that involve basic authentication. The OGC Authentication Interoperability Experiment (Auth IE) tested and documented ways of transferring basic authentication information between OGC clients and OGC services.
+
+The http://portal.opengeospatial.org/files/?artifact_id=40144[OWS-7 Towards secure interconnection of OGC Web Services with SWIM Engineering Report] provides guidance to properly enable security in the near future such that a seamless, interoperable but secure interconnection between OGC Web Services and FUSE ESB technology stack as selected by use in the System Wide Information Management (SWIM) System of the US Federal Aviation Administration (FAA) can be achieved.
+

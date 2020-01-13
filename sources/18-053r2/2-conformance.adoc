@@ -1,0 +1,6 @@
+
+== Conformance
+
+Sections 7 through 11 of this document describe the Objects and Properties required to implement 3D Tiles. Conformance is relative to these elements and as partly expressed via the associated 3D Tiles JSON schema documents located at https://github.com/AnalyticalGraphicsInc/3d-tiles/releases/tag/1.0/specification/schema[https://github.com/AnalyticalGraphicsInc/3d-tiles/releases/tag/1.0/specification/schema]
+
+All figures, examples, notes, and background information are non-normative.

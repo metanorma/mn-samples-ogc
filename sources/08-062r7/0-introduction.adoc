@@ -1,0 +1,42 @@
+
+[preface]
+== Introduction
+
+The OGC Reference Model (ORM) describes the OGC Standards Baseline focusing on relationships between the baseline documents. The OGC Standards Baseline (SB) consists of the approved OGC Abstract and Implementation Standards (Interface, Encoding, Profile, and Application Schema – normative documents) and OGC Best Practice documents (informative documents).
+
+What is the purpose of the ORM?
+
+* To provide an overview of OGC Standards Baseline;
+
+* To provide insight into the current state of the work of the OGC;
+
+* As a basis for coordination and understanding of the documents in the OGC SB;
+
+* To provide a useful resource for defining architectures for specific applications.
+
+Why Read This Document?
+
+* To better understand the OGC Standards Baseline;
+
+* To better understand the ongoing work of the OGC;
+
+* To gain an understanding necessary to make contributions to the OGC process;
+
+* To aid in implementing one or more of the OpenGIS Standards.
+
+How to read this document
+
+* Interested in an overview of *the consortium*? – See Section 1.
+
+* Interested in the geospatial *information standards*? – See Section 2.
+
+* Interested in geospatial *service standards*? – See Section 3.
+
+* Interested in OGC-based *development patterns*? – See Section 4.
+
+* Interested in *implementations* of OGC-based systems? – See Section 5.
+
+The ORM contains numerous links to OGC resources. For more detail on any topic be sure to select the link and access the detailed information. For example, definitions of terms used in the ORM are available in the on-line https://www.opengeospatial.org/ogc/glossary/[OGC Glossary]
+
+The ORM provides just an overview of the results of extensive development by hundreds of OGC Member Organizations and tens of thousands of individuals who have contributed to the development of the OGC Standards Baseline. A revision history of the ORM is provided at the end for the document.
+
