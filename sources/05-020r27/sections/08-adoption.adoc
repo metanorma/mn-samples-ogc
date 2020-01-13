@@ -158,7 +158,8 @@ Any submission requires that three or more distinct Member organizations support
 The steps in the OGC Consensus Standards Process are as follows.
 
 [%unnumbered]
-======  Submission of the OGC Consensus Standards process package to the OGC (All)
+===== Submission of the OGC Consensus Standards process package to the OGC (All)
+
 The OGC Consensus Standards process Submission team shall provide the submission package to the OGC TCC. The TCC shall review the proposal in terms of required documents.
 
 For a Community standard, the submission package shall include:

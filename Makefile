@@ -60,7 +60,7 @@ sources:
 # Build canonical XML output
 # If XML file is provided, copy it over
 # Otherwise, build it using adoc
-sources/%.xml:	sources | bundle
+sources/%.xml: | sources bundle
 	BUILT_TARGET=$(shell yq r metanorma.yml metanorma.source.built_targets[$@]); \
 	if [ "$$BUILT_TARGET" != "null" ]; then \
 	cp "$$BUILT_TARGET" $@; \

@@ -15,7 +15,7 @@
 :status: published
 :toc:
 :imagesdir: images
-:docfile: ogc-05-020r27.adoc
+:docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
