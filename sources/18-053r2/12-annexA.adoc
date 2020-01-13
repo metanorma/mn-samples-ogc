@@ -1,0 +1,6 @@
+
+[[annexA]]
+[appendix,obligation=normative]
+== Conformance Class Abstract Test Suite
+
+An Abstract Test Suite is not required for a Community Standard

@@ -1,0 +1,210 @@
+
+== Geospatial Services
+
+=== Services Architecture
+The widespread application of computers and use of information systems have led to the increased analysis of geospatial data within multiple disciplines. Geospatial datasets are increasingly being shared, exchanged, and used for purposes other than their producers’ intended ones. Geographic information systems, sensors systems, automated mapping, facilities management, traffic analysis, geopositioning systems, and other technologies for geospatial information are entering a period of radical integration.
+
+
+The OGC Abstract Specification http://portal.opengeospatial.org/files/?artifact_id=1221[Topic 12 - The OpenGIS Service Architecture] provides a framework for developers to create software that enables users to access and process geospatial data from a variety of sources across generic computing interfaces within an open information technology environment.
+
+* "a framework for developers" means that the OGC Standards are based on a comprehensive, common (i.e., formed by consensus for general use) plan for interoperable geoprocessing.
+
+* "access and process" means that geodata users can query remote databases and control remote processing resources, for example in information systems using service oriented architecture.
+
+* "from a variety of sources" means that users will have access to data acquired in a variety of ways and stored in a wide variety databases and knowledge bases.
+
+* "across generic computing interfaces" means that OGC services enable reliable communication between otherwise disparate software resources that are equipped to use these interfaces.
+
+* "within an open information technology environment" means that this OGC standard enables geoprocessing to take place outside of the closed environment of monolithic GIS, remote sensing, and automated systems that constrain access based on proprietary interfaces.
+
+There are multiple choices of information technology for defining, developing and deploying service networks, i.e., distributed computing platforms. OGC standards are defined for multiple distributed computing platforms while maintaining common geospatial semantics across the underlying technology. OGC defines one conceptual specification as the basis for multiple platform-specific implementation specifications.
+
+Development of standards may proceed from conceptual to implementation or from implementation to conceptual. In either case, a specification is not considered complete until it has a conceptual model and at least one implementation.
+
+OGC services are defined using fundamental principles of service-oriented architecture:
+
+* A *Service* is a distinct part of the functionality that is provided by an entity through interfaces,
+
+* An *Interface* is a named set of operations that characterize the behavior of an entity,
+
+* An *Operation* is a specification of a transformation or query that an object may be called to execute. Each operation has a name and a list of parameters.
+
+Application and extension of the OGC Service Architecture is described in http://portal.opengeospatial.org/files/?artifact_id=23286[The Reference Model for the ORCHESTRA Architecture] available as an OGC Best Practice.
+
+
+[[ogc_web_services]]
+=== OGC Web Services
+
+OGC Web Services (OWS) are defined using open non-proprietary Internet standards; in particular the World Wide Web (WWW) standards of HTTP, Uniform Resource Locators (URLs), Multipurpose Internet Mail Extensions (MIME) types and the Extensible Markup Language (XML).
+
+The http://portal.opengeospatial.org/files/?artifact_id=13140[OGC Web Services Architecture Description] Best Practice Document summarizes significant aspects of the OGC web services architecture. This architecture is a service-oriented architecture, with all components providing one or more services to other services or to clients.
+
+The OpenGIS http://www.opengeospatial.org/standards/common[Web Service Common] Implementation Standard provides specifics that are common to OWS interface Implementation Standards. These common aspects are primarily some of the parameters and data structures used in operation requests and responses. Each Implementation Standard details additional aspects of that interface, including specifying all additional parameters and data structures needed in all operation requests and responses.
+
+OGC recognizes the need to accommodate multiple architecture styles and patterns, e.g., SOAP and REST. By a motion in the TC meeting of December 2008, the OGC promoted “development of service oriented architecture standards using platform-independent abstract specifications and platform-dependent implementation specifications for all OGC service standards that support both procedure-oriented and resource-oriented service styles or patterns.” It was recognized that this requirement could be dropped for service standards for which multiple bindings or patterns are not appropriate. While OGC standards have been developed and adopted with bindings of several styles, development of bindings to new architectural patterns continues.
+
+
+=== OWS Web Mapping Services
+
+The OpenGIS http://www.opengeospatial.org/standards/wms[Web Map Service (WMS)] Implementation Specification, also published as ISO 19128, provides three operations (GetCapabilities, GetMap, and GetFeatureInfo) in support of the creation and display of registered and superimposed map-like views of information that come simultaneously from multiple remote and heterogeneous sources.
+
+The OpenGIS http://www.opengeospatial.org/standards/wmts[Web Map Tile Service (WMTS)] provides for serving spatially referenced data using tile images with predefined content, extent, and resolution. WMTS trades the flexibility of custom map rendering – as provided by WMS – for the scalability possible by serving a fixed set of tiles. The fixed set of tiles also enables the use of standard network mechanisms for scalability such as distributed cache systems. WMTS includes both resource (REST) and procedure oriented architectural styles (KVP and SOAP).
+
+The OGC has defined http://www.opengeospatial.org/standards/wms[profiles of WMS]:
+
+[%unnumbered]
+|===
+h| WMS Profiles h| Document Type
+| Styled Layer Descriptor Profile of WMS | Standard
+| Web Map Service - Application Profile for EO Products | Best Practice
+| DGIWG WMS 1.3 Profile and systems requirements for interoperability for use within a military environment | Best Practice
+|===
+
+The OpenGIS http://www.opengeospatial.org/standards/sld[Styled Layer Descriptor (SLD) Profile of WMS], explains how WMS can be extended to allow user-defined symbolization of feature and coverage data. This profile defines how the Symbology Encoding standard can be used with WMS. SLD is used in combination with SE Standard. SLD allows for user-defined layers and named or user-defined styling in WMS. If a WMS is to symbolize features using a user-defined symbolization, the source of the feature data must be identified. The features may be in a remote WFS or WCS, or from a specific default feature/coverage store. WMS servers using remote feature data are also called Feature Portrayal Services (FPS), while those using remote coverage data are Coverage Portrayal Services (CPS).
+
+The OpenGIS http://www.opengeospatial.org/standards/symbol[Symbology Encoding (SE)] Implementation Standard specifies the format of a map-styling language for producing georeferenced maps with user-defined styling. SE is an XML language for styling information used to portray Feature and Coverage data. SE may be used together with SLD. As SE is a grammar for styling map data independent of any service interface specification it can be used flexibly by a number of services that style georeferenced information or store styling information that can be used by other services.
+
+The OpenGIS http://www.opengeospatial.org/standards/wmc[Web Map Context Documents] Implementation Standard defines how a specific grouping of one or more maps from one or more WMS servers can be described in a portable, platform-independent format for storage in a repository or for transmission between clients. A Context Document contains sufficient information for Client software to reproduce the map, and ancillary metadata used to annotate or describe the maps and their provenance for the benefit of human viewers. (Based on the success of the Web Map Context, an OGC Standards Working Group is currently developing an OGC OWS Context Document standard.)
+
+The OGC http://www.opengeospatial.org/standards/kml[KML] Standard defines an XML grammar used to encode and transport representations of geographic data for display in an earth browser. Put simply: KML encodes what to show in an earth browser, and how to show it. (See also <<maps_kml_pdfs>>)
+
+=== OWS Data Access services
+
+==== Web Feature Service
+
+The OpenGIS http://www.opengeospatial.org/standards/wfs[Web Feature Service (WFS)] Implementation Specification, also published as ISO 19142, allows a client to retrieve and update geospatial data encoded in Geography Markup Language (GML) from multiple Web Feature Services. The specification defines interfaces for data access and manipulation operations on geographic features. Via these interfaces, a Web user or service can combine, use and manage geodata from different sources. A Transactional WFS (WFS-T) includes an optional Transaction operation to insert, update, or delete a feature.
+
+The OGC http://portal.opengeospatial.org/files/?artifact_id=15529[Gazetteer Service] Best Practices Document defines an Application Profile of the WFS Implementation Standard by specifying a minimum set of Feature Types and operations required to support an instance of a gazetteer service. The information model of the standard is a GML application schema that defines a general feature type to be served by a Gazetteer Service.
+
+==== Web Coverage Service
+
+The OpenGIS http://www.opengeospatial.org/standards/wcs[Web Coverage Service (WCS)] Implementation Specification supports electronic retrieval of geospatial data as "coverages" – that is, digital geospatial information representing space/time-varying phenomena. WCS provides access to coverage data in forms that are useful for client-side rendering, as input into scientific models, and for other clients.
+
+Similar to WMS and WFS, WCS allows clients to choose portions of a server's information holdings based on spatial constraints and other query criteria. Unlike WMS, WCS defines a rich syntax for requests against Coverages; and returns data with its original semantics (instead of pictures) that may be interpreted, extrapolated, etc., and not just portrayed. Unlike WFS, WCS focuses on coverages as a specialized class of features with correspondingly streamlined functionality.
+
+As described in the WCS 2.0: Core and Extensions Best Practice, WCS 2.0 consists of a set of normative specifications, collectively referred to as “the WCS suite”:
+
+* WCS 2.0 Interface Standard - Core
+
+* GML 3.2 Application Schema for WCS
+
+* A set of extensions to the WCS Core:
+
+** KVP Protocol Binding Extension
+
+** XML/SOAP Protocol Binding Extension
+
+** XML/POST Protocol Binding Extension
+
+==== Web Coverage Processing Service
+
+The OpenGIS http://www.opengeospatial.org/standards/wcps[Web Coverage Processing Service (WCPS)] defines a language for retrieval and processing of multi-dimensional geospatial coverages representing sensor, image, or statistics data. The WCPS language is independent from any particular service. In a separate document, WCPS has been defined as an extension of the WCS adding a ProcessCoverages operation to form requests of arbitrary complexity allowing, e.g., multi-valued coverage results.
+
+==== Filter Encoding
+
+The OpenGIS http://www.opengeospatial.org/standards/filter[Filter Encoding (FE)] Implementation Standard, also published as ISO 19143, describes an XML and KVP encoding of a system neutral syntax for expressing projections, selection and sorting clauses collectively called a query expression. FE can be used with a number of OGC web services. For example, WFS may use FE in a GetFeature operation.
+
+==== Table Joining Service
+
+The OpenGIS http://www.opengeospatial.org/standards/tjs[Georeferenced Table Joining Service (TJS)] Implementation Standard offers a way to expose data that contains geographic identifiers but does not contain geographic referencing by coordinates. The geographic identifiers are defined in a spatial framework that partitions the surface of the earth into a set of management units, e.g., postal codes. TJS allows the data to be accessed and merged with spatial coordinates from the framework, in order to enable mapping or geospatial analysis.
+
+==== GeoRSS
+
+http://www.georss.org/[GeoRSS] (Geographically Encoded Objects for RSS feeds) is a proposal for geo-enabling, or tagging, "really simple syndication" (RSS) feeds with location information. There are two GeoRSS serializations: GeoRSS GML and GeoRSS Simple. GeoRSS GML is a formal GML Profile, and supports a greater range of features than GeoRSS Simple, notably coordinate reference systems other than WGS84 latitude/longitude. Additional information can be found in the OGC White Paper: http://portal.opengeospatial.org/files/?artifact_id=15755[An Introduction to GeoRSS].
+
+
+=== Catalogue Service for the Web
+
+The Catalogue Service for the Web (CSW) is one binding defined in the OpenGIS http://www.opengeospatial.org/standards/cat[Catalogue Services Implementation Standard (CAT)]. The Catalog standard defines common interfaces to discover, browse, and query metadata about data, services, and other potential resources for several bindings: Z39.50, CORBA, and HTTP.
+
+OGC has defined several profiles of CSW with some common elements required. All CSW implementations must support the CAT core queryables and returnable properties. The common CSW record syntax is an XML-based encoding of Dublin Core metadata terms.
+
+[%unnumbered]
+|===
+h| CSW Profile h| Document Type
+| Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile | Standard
+| CSW-ebRIM Registry Service - Part 1: ebRIM profile of CSW | Standard
+| CSW-ebRIM Registry Service – Part 2: Basic extension package | Standard
+| CSW-ebRIM Registry Service – Part 3: Abstract Test Suite | Standard
+| Catalogue Services Standard 2.0 Extension Package for ebRIM Application Profile: Earth Observation Products | Standard
+| FGDC CSDGM Application Profile for CSW 2.0 | Best Practice
+
+|===
+
+The OpenGIS http://www.opengeospatial.org/standards/specifications/catalog[Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile] specifies interfaces, bindings, and encodings required to publish and access digital catalogues of metadata for geospatial data, services, and applications that comply with a profile for ISO19115 metadata for geodata/geospatial applications and ISO19119-based metadata for tightly and loosely-coupled geospatial services.
+
+The several parts of the http://www.opengeospatial.org/standards/specifications/catalog[CSW-ebRIM Registry Service] apply CSW to the OASIS ebXML registry information model (ebRIM 3.0) providing a general and flexible web-based registry service (WRS). WRS enables users—human or software agents—to locate, access, and make use of resources in an open, distributed system. WRS provides facilities for retrieving, storing, and managing many kinds of resource descriptions. An extension mechanism (called Extension Packages) permits registry content to be tailored for more specialized application domains.
+
+The http://portal.opengeospatial.org/files/?artifact_id=35528[Catalogue Services Standard 2.0 Extension Package for ebRIM Application Profile: Earth Observation Products] standard specifies an Extension Package for ebRIM Application Profile of CSW 2.0. This application profile enables CSW-ebRIM catalogues to handle a variety of metadata pertaining to earth observation, like EO Products defined in the OGC GML Application Schema for EO Products.
+
+=== Processing Services and Service Chaining
+
+The OpenGIS http://www.opengeospatial.org/standards/wps[Web Processing Service (WPS)] Implementation Standard defines an interface that facilitates the publishing of geospatial processes, and the discovery of and binding to those processes by clients. Processes include any algorithm, calculation or model that operates on spatially referenced data. A WPS may offer calculations as simple as subtracting one set of spatially referenced numbers from another (e.g., determining the difference in influenza cases between two different seasons), or as complicated as a global climate change model. The data required by the WPS can be delivered across a network using OGC Web Services.
+
+A WPS process may be an atomic function that performs a specific geospatial calculation. Chaining of WPS processes facilitates the creation of repeatable workflows.
+WPS processes can be incorporated into service chains in a number of ways:
+
+* A BPEL engine can be used to orchestrate a service chain that includes one or more WPS processes. Business Processing Execution Language is a standard issued by OASIS.
+
+* A WPS process can be designed to call a sequence of web services including other WPS processes, thus acting as the service-chaining engine.
+
+* Simple service chains can be encoded as part of the execute query. Such cascading service chains can be executed via the GET interface.
+
+OGC Abstract Specification Topic 12: http://portal.opengeospatial.org/files/?artifact_id=1221[OpenGIS Service Architecture] defines service chaining as the combination of services in a dependent series to achieve larger tasks. Topic 12 addresses the syntactic concepts of service chaining, e.g., data structure of a chain, and the semantic concepts, e.g., does a specific chain produce a valid result? Service chaining enables users to combine data and services in ways that are not pre-defined by the data or service providers.
+
+[[swe_services]]
+=== Sensor Web Enablement (SWE) Services
+
+The goal of OGC’s Sensor Web Enablement (SWE) is to enable all types of Web and/or Internet-accessible sensors, instruments, and imaging devices to be accessible and, where applicable, controllable via the Web. The vision is to define and approve the standards foundation for "plug-and-play" Web-based sensor networks.
+
+OGC had established Web Service standards for geospatial data:
+
+* The OpenGIS http://www.opengeospatial.org/standards/sos[Sensor Observation Service (SOS)] Implementation Standard defines a web service interface for requesting, filtering, and retrieving observations and sensor system information. Observations may be from in-situ sensors (e.g., water monitoring devices) or dynamic sensors (e.g., imagers on Earth-observation satellites).
+
+* The OpenGIS http://www.opengeospatial.org/standards/sps[Sensor Planning Service (SPS)] Implementation Standard defines an interface to task sensors or models. Using SPS, sensors can be reprogrammed or calibrated, sensor missions can be started or changed, simulation models executed and controlled. The feasibility of a tasking request can be checked and alternatives may be provided. The OGC http://www.opengeospatial.org/standards/sps[SPS Earth Observation Satellite Tasking Extension] supports the programming process of Earth Observation (EO) sensor systems used by many satellite data providers.
+
+* The OGC http://portal.opengeospatial.org/files/?artifact_id=15588[Sensor Alert Service (SAS)] Best Practice Document defines a web service interface for publishing and subscribing to alerts from sensors. Sensor nodes advertise with an SAS. If an event occurs the node will send it to the SAS via the publish operation. A consumer (interested party) may subscribe to events disseminated by the SAS. If an event occurs the SAS will alert all clients subscribed to this event type.
+
+* The OpenGIS http://www.opengeospatial.org/standards/swes[SWE Service Model] Implementation Standard provides data types and mechanisms reused by other SWE standards.
+
+=== Location-Based Mobile Services
+
+==== Open GeoSMS
+
+The OpenGIS Open GeoSMS standard defines an encoding for location enabling the Short Message Service. SMS is a communication service for phone, web or mobile communication systems that provides exchange of short text messages between fixed line or mobile phone devices. The OGC Open GeoSMS encoding standard facilitates communication of location content using the extended SMS devices or applications for achieving interoperable communications while still maintaining human readability of the content.
+
+==== OpenLS
+
+The OpenGIS Location Services (OpenLS) standards define an open platform for position access and location-based applications targeting Mobile Terminals. The OpenLS Core Services exchange content in the form of Abstract Data Types shown in <<fig4>>. The five Core OpenLS services are defined in a single document, the http://www.opengeospatial.org/standards/ols[OpenGIS Location Services (OpenLS): Core Services Implementation Standard]:
+
+[class=steps]
+. *Directory Service.* Provides access to an online directory (e.g. Yellow Pages) enabling an application to find the location of a specific or nearest place, product, or service.
+
+. *Gateway Service.* Retrieves the position of a known Mobile Terminal from the network. This interface is modelled after the LIF/OMA Mobile Location Protocol (MLP), Standard Location Immediate Service, specified in Open Mobile Alliance MLP.
+
+. *Location Utility Service* (Geocoder/Reverse Geocoder) Geocoding converts a text description of a location, such as a place name, street address, or postal code to a position structured as Point geometry. Reverse Geocoding converts a position into a feature (Address with Point), where the address may be a street address, intersection address, place name, or postal code.
+
+. *Presentation Service.* Creates maps and other graphic depictions of selected geospatial data, with a set of ADTs as logical layers.
+
+. *Route Service.* Determines travel routes and navigation information between two or more points.
+
+The http://www.opengeospatial.org/standards/ols[OpenLS: Part 6-Navigation Service Implementation Standard] is an enhanced version of the Route Service that determines travel routes and navigation information between two or more points.
+
+The http://www.opengeospatial.org/standards/ols[OpenLS Tracking Service Interface Standard] supports a very simple functionality allowing a collection of movable objects to be tracked as they move and change orientation.
+
+[[fig4]]
+.OpenLS Information Model
+image::images/004.png[height=auto,width=auto]
+
+
+=== Fine-Grained Services
+
+OGC specifications apply to environments as diverse as the Internet and to workgroup clusters. For web services, the client and server have very little knowledge of one another. Specifications designed for this environment are classified as coarse-grained profiles. At the other extreme, the interface between a client and server is fine-grained exposing greater detail on the server’s holdings. OGC has standardized several fine-grained specifications:
+
+* The OpenGIS® Implementation Specification for Geographic information - http://www.opengeospatial.org/standards/sfa[Simple feature access - Part 1: Common architecture], also published as ISO 19125-1, describes the common architecture for simple feature geometry. The simple feature geometry object model is Distributed-Computing-Platform neutral and uses Unified Modeling Language (UML) notation. The base Geometry class has subclasses for point, curve, surface and geometry collection. Each geometric object is associated with a coordinate reference system, which describes the coordinate space in which the geometric object is defined.
+
+* The OpenGIS Implementation Specification for Geographic information - http://www.opengeospatial.org/standards/sfs[Simple feature access - Part 2: SQL option], also published as ISO 19125-2, defines a Structured Query Language (SQL) schema that supports storage, retrieval, query and update of features. This standard is dependent on components defined in Part 1 of this standard. In an SQL-implementation, a collection of features of a single type is stored as a "feature table" usually with some geometric-valued attributes (columns). Each feature is primarily represented as a row in this feature table.
+
+* The OpenGIS http://www.opengeospatial.org/standards/ct[Coordinate Transformation Service] Implementation Specification defines interfaces for general positioning, coordinate systems, and coordinate transformations. The specification provides an abstract model in UML along with profiles for Java and Interface Description Language (IDL).
+
+* The OGC http://www.opengeospatial.org/standards/geoapi[GeoAPI Implementation Standard] defines, through the GeoAPI library, a Java language API including a set of types and methods that can be used for the manipulation of geographic information structured following OGC specifications. This standard standardizes the informatics contract between the client code which manipulates normalized data structures of geographic information based on the published API and the library code able both to instantiate and operate on these data structures according to the rules required by the published API and by OGC standards.

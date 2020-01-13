@@ -1,0 +1,54 @@
+= 3D Tiles Specification 1.0
+:doctype: standard
+:language: en
+:revdate: 2018-04-07
+:status: published
+:committee: technical
+:docnumber: 18-053r2
+:received-date: 2018-06-04
+:issued-date: 2018-12-14
+:published-date: 2019-01-31
+:external-id: http://www.opengis.net/docs/CS/3DTiles/1.0
+:fullname: Patrick Cozzi
+:fullname_2: Sean Lilley
+:fullname_3: Gabby Getz
+:role: editor
+:keywords: 
+:submitting-organizations: 
+:docfile: 18-053r2.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+
+include::0-front_material.adoc[]
+
+include::1-scope.adoc[]
+
+include::2-conformance.adoc[]
+
+include::3-references.adoc[]
+
+include::4-terms_and_definitions.adoc[]
+
+include::5-conventions.adoc[]
+
+include::6-specification.adoc[]
+
+include::7-property_reference.adoc[]
+
+include::8-feature_table.adoc[]
+
+include::9-batch_table.adoc[]
+
+include::10-tile_format_specification.adoc[]
+
+include::11-declarative_styling_specification.adoc[]
+
+include::12-annexA.adoc[]
+
+include::13-annexB.adoc[]
+
+include::14-annexC.adoc[]
+

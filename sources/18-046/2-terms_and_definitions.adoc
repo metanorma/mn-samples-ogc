@@ -1,0 +1,22 @@
+
+== Terms and definitions
+
+For the purposes of this report, the definitions specified in Clause 4 of the OWS Common Implementation Standard https://portal.opengeospatial.org/files/?artifact_id=38867&version=2[OGC 06-121r9] shall apply.
+
+=== Abbreviated terms
+
+[%unnumbered]
+|===
+| ADES | Application Deployment and Execution Service
+| AP | Application Package
+| EMS | Exploitation Platform Management Service
+| EO | Earth Observation
+| EP | Exploitation Platform
+| IAAS | Infrastructure as a Service
+| MEP | Mission Exploitation Platform
+| PAAS | Platform as a Service
+| SOA | Service Oriented Architecture
+| WPD | Web Processing Service ProcessDescriptor
+| WPS | Web Processing Service
+|===
+
