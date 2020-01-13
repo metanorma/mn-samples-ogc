@@ -1,0 +1,4 @@
+
+[[adoption-of-this-policy-document]]
+== Adoption of This Policy Document
+In order to be accepted or modified, this document must be ratified by electronic vote per <<tc-electronic-voting>> rules.
