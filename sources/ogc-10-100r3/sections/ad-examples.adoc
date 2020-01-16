@@ -1,0 +1,1113 @@
+
+[[annex-examples]]
+[appendix,obligation=informative]
+== Examples
+
+=== News item example
+The following is a GML application schema that defines two features types, _Reporter_ and _NewsItem_ and complies with the coding patterns described in this document:
+
+[%unnumbered]
+----
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<schema
+    targetNamespace="http://www.cubewerx.com/cw"
+    xmlns:cw="http://www.cubewerx.com/cw"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+    elementFormDefault="qualified"
+    version="1.0">
+    
+    <annotation>
+        <appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+            <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+        </appinfo>
+    </annotation>
+    <!-- ============================================================= -->
+    <!-- === includes and imports === -->
+    <!-- ============================================================= -->
+    <import namespace="http://www.opengis.net/gml/3.2"
+            schemaLocation="http://schemas.opengis.net/gml/3.2.1/base/gml.xsd"/>
+    <import namespace="http://www.opengis.net/gmlsf/2.0"
+            schemaLocation="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd"/>
+    <!-- =========================================================
+        define feature types
+        ========================================================= -->
+    <element name="Reporter" type="cw:ReporterType"
+            substitutionGroup="gml:AbstractFeature"/>
+    <!-- ============================================================= -->
+    <complexType name="ReporterType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureType">
+                <sequence>
+                    <element name="reporterId">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="9"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element name="firstName" minOccurs="0" maxOccurs="1">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="20"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element name="lastName" minOccurs="0" maxOccurs="1">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="20"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element name="organization" minOccurs="0" maxOccurs="1">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="50"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element name="email" minOccurs="0" maxOccurs="1">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="50"/>
+                            </restriction>
+                        </simpleType>
+                        </element>
+                        <element name="age" minOccurs="0" maxOccurs="1">
+                            <simpleType>
+                                <restriction base="integer">
+                                    <totalDigits value="10"/>
+                                </restriction>
+                            </simpleType>
+                        </element>
+                        <element name="photo" minOccurs="0" maxOccurs="1">
+                            <complexType>
+                                <simpleContent>
+                                    <extension base="base64Binary">
+                                        <attribute name="url" type="anyURI" use="optional"/>
+                                        <attribute name="mimeType" type="string"
+                                            use="required"/>
+                                        <attribute name="role" type="string" use="optional"/>
+                                    </extension>
+                                </simpleContent>
+                            </complexType>
+                        </element>
+                    </sequence>
+                </extension>
+            </complexContent>
+        </complexType>
+        <!-- ============================================================= -->
+        <element name="NewsItem" type="cw:NewsItemType"
+            substitutionGroup="gml:AbstractFeature"/>
+        <!-- ============================================================= -->
+        <complexType name="NewsItemType">
+            <complexContent>
+                <extension base="gml:AbstractFeatureType">
+                    <sequence>
+                        <element name="location" type="gml:PointPropertyType"
+                            minOccurs="1" maxOccurs="1"/>
+                        <element name="reporterId" minOccurs="1" maxOccurs="1">
+                            <simpleType>
+                                <restriction base="string">
+                                    <maxLength value="9"/>
+                                </restriction>
+                            </simpleType>
+                        </element>
+                        <element name="eventDate" type="dateTime" minOccurs="1"
+                            maxOccurs="1"/>
+                        <element name="byLine" minOccurs="1" maxOccurs="1">
+                            <simpleType>
+                                <restriction base="string">
+                                    <maxLength value="30"/>
+                                </restriction>
+                            </simpleType>
+                        </element>
+                        <element name="details" minOccurs="1" maxOccurs="1">
+                            <simpleType>
+                                <restriction base="string">
+                                    <maxLength value="20000"/>
+                                </restriction>
+                            </simpleType>
+                        </element>
+                        <element name="image" minOccurs="0" maxOccurs="5">
+                            <complexType>
+                                <simpleContent>
+                                    <extension base="base64Binary">
+                                        <attribute name="url" type="anyURI" use="optional"/>
+                                        <attribute name="mimeType" type="string"
+                                            use="required"/>
+                                        <attribute name="role" type="string" use="optional"/>
+                                    </extension>
+                                </simpleContent>
+                            </complexType>
+                        </element>
+                    </sequence>
+                </extension>
+            </complexContent>
+        </complexType>
+        <!-- ============================================================= -->
+        <!-- Define a feature collection for a set of news items -->
+        <!-- ============================================================= -->
+        <element name="NewsItems"
+                type="cw:NewsItemsType"
+                substitutionGroup="gml:AbstractGML"/>
+        <complexType name="NewsItemsType">
+            <complexContent>
+                <extension base="gml:AbstractFeatureType">
+                    <sequence minOccurs="1" maxOccurs="unbounded">
+                        <element name="featureMember">
+                            <complexType>
+                                <complexContent>
+                                    <extension base="gml:AbstractFeatureMemberType">
+                                        <sequence>
+                                            <element ref="gml:AbstractFeature"/>
+                                        </sequence>
+                                    </extension>
+                                </complexContent>
+                            </complexType>
+                        </element>
+                    </sequence>
+                </extension>
+            </complexContent>
+        </complexType>
+</schema>
+----
+
+
+=== Roads_bts example from the CIPI1.2 testbed
+
+[%unnumbered]
+----
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<schema
+    targetNamespace="http://www.opengis.org/cipi1.2/level0/bts"
+    xmlns:bts="http://www.opengis.org/cipi1.2/level0/bts"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified"
+    version="1.0">
+    <annotation>
+        <appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+        <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+        </appinfo>
+    </annotation>
+    <!-- ============================================================= -->
+    <!-- === includes and imports === -->
+    <!-- ============================================================= -->
+    <import namespace="http://www.opengis.net/gml/3.2"
+        schemaLocation="http://schemas.opengis.net/gml/3.2.1/base/gml.xsd"/>
+    <import namespace="http://www.opengis.net/gmlsf/2.0"
+        schemaLocation="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd"/>
+    <!-- =========================================================
+        define feature types
+        ========================================================= -->
+    <element name="Roads_bts" type="bts:Roads_btsType"
+                substitutionGroup="gml:AbstractFeature"/>
+    <!-- ============================================================= -->
+    <complexType name="Roads_btsType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureType">
+                <sequence>
+                    <element maxOccurs="1" minOccurs="1" name="Objectid_1">
+                        <simpleType>
+                            <restriction base="integer">
+                                <totalDigits value="10"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="1" name="Objectid">
+                        <simpleType>
+                            <restriction base="integer">
+                                <totalDigits value="10"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="1" name="FNode_">
+                        <simpleType>
+                            <restriction base="integer">
+                                <totalDigits value="10"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="1" name="TNode_">
+                        <simpleType>
+                            <restriction base="integer">
+                                <totalDigits value="10"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="0" name="LPoly_">
+                        <simpleType>
+                            <restriction base="integer">
+                                <totalDigits value="10"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="0" name="RPoly_">
+                        <simpleType>
+                            <restriction base="integer">
+                                <totalDigits value="10"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="0" name="Length"
+                        type="gml:MeasureType"/>
+                    <element maxOccurs="1" minOccurs="1" name="Bdt_roads_">
+                        <simpleType>
+                            <restriction base="integer">
+                                <totalDigits value="10"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="1" name="Bdt_roads1">
+                        <simpleType>
+                            <restriction base="integer">
+                                <totalDigits value="10"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="0" name="Prefix">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="2"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="0" name="Name">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="30"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="0" name="Type">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="4"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="0" name="Suffix">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="2"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="1" name="Fcc">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="3"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="1" name="Fips">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="11"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="0" name="Shape_len">
+                        <simpleType>
+                            <restriction base="decimal">
+                                <totalDigits value="30"/>
+                                <fractionDigits value="15"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element maxOccurs="1" minOccurs="0" name="Geometry"
+                        type="gml:CurvePropertyType"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ============================================================= -->
+    <!-- Define a feature collection for a set of Roads_bts -->
+    <!-- ============================================================= -->
+    <element name="Roads"
+            type="bts:RoadsType"
+            substitutionGroup="gml:AbstractGML"/>
+    <complexType name="RoadsType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureType">
+                <sequence minOccurs="1" maxOccurs="unbounded">
+                    <element name="featureMember">
+                        <complexType>
+                            <complexContent>
+                                <extension base="gml:AbstractFeatureMemberType">
+                                    <sequence>
+                                        <element ref="gml:AbstractFeature"/>
+                                    </sequence>
+                                </extension>
+                            </complexContent>
+                        </complexType>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+</schema>
+----
+
+
+=== Hydrography model example
+
+[%unnumbered]
+----
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<schema
+    targetNamespace="http://www.fgdc.gov/framework/073004/hydro"
+    xmlns:hyd="http://www.fgdc.gov/framework/073004/hydro"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified"
+    version="0.0.4">
+    
+    <annotation>    
+        <appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+            <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+        </appinfo>
+    </annotation>
+    <!-- ============================================================= -->
+    <!-- === includes and imports === -->
+    <!-- ============================================================= -->
+    <import namespace="http://www.opengis.net/gml/3.2"
+        schemaLocation="http://schemas.opengis.net/gml/3.2.1/base/gml.xsd"/>
+    <import namespace="http://www.opengis.net/gmlsf/2.0"
+    schemaLocation="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd"/>
+    <!-- ============================================================= -->
+    <!-- IDENTIFIER -->
+    <!-- ============================================================= -->
+    <complexType name="IdentifierPropertyType">
+        <sequence>
+            <element ref="hyd:Identifier"/>
+        </sequence>
+    </complexType>
+    <!-- ============================================================= -->
+    <element name="Identifier">
+        <complexType>
+            <sequence>
+                <element name="identifier" type="string"/>
+                <element name="idAuthority" type="string" minOccurs="0"
+                    maxOccurs="1"/>
+                <element name="description" type="string" minOccurs="0"
+                    maxOccurs="1"/>
+            </sequence>
+        </complexType>
+    </element>
+    <!-- ============================================================= -->
+    <!-- EXTERNALRESOURCE -->
+    <!-- ============================================================= -->
+    <complexType name="ExternalResourcePropertyType">
+        <sequence>
+            <element ref="hyd:ExternalResource"/>
+        </sequence>
+    </complexType>
+    <!-- ============================================================= -->
+    <element name="ExternalResource">
+        <complexType>
+            <sequence>
+                <element name="url" type="anyURI"/>
+                <element name="urlType" minOccurs="0" maxOccurs="1">
+                    <complexType>
+                        <simpleContent>
+                            <restriction base="gml:CodeType">
+                                <attribute name="codeSpace" type="anyURI"
+                                    default="../Dictionaries/ResourceTypesDictionary.xml"/>
+                            </restriction>
+                        </simpleContent>
+                    </complexType>
+                </element>
+                <element name="urlDescription" type="string" minOccurs="0"
+                    maxOccurs="1"/>
+            </sequence>
+        </complexType>
+    </element>
+    <!-- ============================================================= -->
+    <!-- RESPONSIBLEPARTY -->
+    <!-- ============================================================= -->
+    <complexType name="ResponsiblePartyPropertyType">
+        <sequence>
+            <element ref="hyd:ResponsibleParty"/>
+        </sequence>
+    </complexType>
+    <!-- ============================================================= -->
+    <element name="ResponsibleParty">
+        <complexType>
+            <sequence>
+                <element name="individualName" type="string"/>
+                <element name="organizationName" type="string" minOccurs="0"
+                    maxOccurs="1"/>
+                <element name="positionName" type="string" minOccurs="0"
+                    maxOccurs="1"/>
+                <element name="contactInfo" type="string" minOccurs="0"
+                    maxOccurs="1"/>
+                <element name="role" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+    <!-- ============================================================= -->
+    <!-- EXTENDEDATTRIBUTE -->
+    <!-- ============================================================= -->
+    <complexType name="ExtendedAttributePropertyType">
+        <sequence>
+            <element ref="hyd:ExtendedAttribute"/>
+        </sequence>
+    </complexType>
+    <!-- ============================================================= -->
+    <element name="ExtendedAttribute">
+        <complexType>
+            <sequence>
+                <element name="authority" type="string"/>
+                <element name="link" type="hyd:ExternalResourcePropertyType"
+                    minOccurs="0" maxOccurs="1"/>
+                <element name="name" type="string"/>
+                <element name="type" minOccurs="0" maxOccurs="1">
+                    <complexType>
+                        <simpleContent>
+                            <restriction base="gml:CodeType">
+                                <attribute name="codeSpace" type="anyURI" use="optional"
+                                    default="../Dictionaries/DatatypeDictionary.xml"/>
+                            </restriction>
+                        </simpleContent>
+                    </complexType>
+                </element>
+                <element name="value" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+    <!-- ============================================================= -->
+    <!-- NAME -->
+    <!-- ============================================================= -->
+    <complexType name="NamePropertyType">
+        <sequence>
+            <element ref="hyd:Name"/>
+        </sequence>
+    </complexType>
+    <!-- ============================================================= -->
+    <element name="Name">
+        <complexType>
+            <sequence>
+                <element name="name" type="string"/>
+                <element name="nameId" type="hyd:IdentifierPropertyType"
+                    minOccurs="0" maxOccurs="1"/>
+            </sequence>
+        </complexType>
+    </element>
+    <!-- ============================================================= -->
+    <!-- REPRESENTATION -->
+    <!-- ============================================================= -->
+    <complexType name="RepresentationPropertyType">
+        <sequence>
+            <element ref="hyd:Representation"/>
+        </sequence>
+    </complexType>
+    <!-- ============================================================= -->
+    <element name="Representation">
+        <complexType>
+            <sequence>
+                <element name="representationId" type="hyd:IdentifierPropertyType"
+                    minOccurs="0" maxOccurs="1"/>
+            </sequence>
+        </complexType>
+    </element>
+    <!-- ============================================================= -->
+    <!-- MEASUREMENT -->
+    <!-- ============================================================= -->
+    <complexType name="MeasurementPropertyType">
+        <sequence>
+            <element ref="hyd:Measurement"/>
+        </sequence>
+    </complexType>
+    <!-- ============================================================= -->
+    <element name="Measurement">
+        <complexType>
+            <sequence>
+                <element name="accuracy" type="string" minOccurs="0" maxOccurs="1"/>
+                <element name="reportingOrganization"
+                    type="hyd:ResponsiblePartyPropertyType"/>
+                <element name="units">
+                    <complexType>
+                        <simpleContent>
+                            <restriction base="gml:CodeType">
+                                <attribute name="codeSpace" type="anyURI" use="optional"
+                                    default="../Dictionaries/UnitsDictionary.xml"/>
+                            </restriction>
+                        </simpleContent>
+                    </complexType>
+                </element>
+                <element name="value" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+    <!-- ============================================================= -->
+    <!-- ============================================================= -->
+    <complexType name="ComputedNetworkValuesPropertyType">
+        <sequence>
+            <element ref="hyd:ComputedNetworkValues"/>
+        </sequence>
+    </complexType>
+    <!-- ============================================================= -->
+    <element name="ComputedNetworkValues">
+        <complexType>
+            <sequence>
+                <element name="fromNode" type="integer"/>
+                <element name="toNode" type="integer"/>
+                <element name="hydrologicSequenceNumber" type="integer"/>
+                <element name="startFlag" type="integer"/>
+                <element name="terminalFlag" type="integer"/>
+                <element name="terminalDrainId" type="integer"/>
+                <element name="levelPathId" type="integer"/>
+                <element name="arbolateSumKm" type="gml:MeasureType"/>
+                <element name="pathLengthKm" type="gml:MeasureType"/>
+                <element name="thinner" type="integer"/>
+                <element name="divergenceFlag" type="integer"/>
+                <element name="drainStreamLevel" type="integer"/>
+                <element name="downstreamDrainLevel" type="integer"/>
+                <element name="streamOrder" type="integer"/>
+                <element name="upstreamLevelPathId" type="integer"/>
+                <element name="upstreamHydrologicSequenceNumber" type="integer"/>
+                <element name="upstreamMinimumHydrologicSequenceNumber"
+                    type="integer"/>
+                <element name="downstreamLevelPathId" type="integer"/>
+                <element name="downstreamDrainCount" type="integer"/>
+                <element name="downstreamMinorHydrologicSequenceNumber"
+                    type="integer"/>
+            </sequence>
+        </complexType>
+    </element>
+    <!-- ============================================================= -->
+    <!-- HYDRO COLLECTION -->
+    <!-- ============================================================= -->
+    <element name="HydroCollection" type="hyd:HydroCollectionType"
+        substitutionGroup="gml:AbstractFeature"/>
+    <!-- ============================================================= -->
+    <complexType name="HydroCollectionType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureType">
+                <sequence>
+                    <element name="metadata" type="anyURI"
+                        minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="featureMember" maxOccurs="unbounded">
+                        <complexType>
+                            <annotation>
+                                <appinfo source="urn:xgml:
+                                targetElement">hyd:HydroComplex/@gml:id</appinfo>
+                            </annotation>
+                            <sequence>
+                                <element ref="gml:AbstractFeature"/>
+                            </sequence>
+                        </complexType>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ============================================================= -->
+    <!-- HYDRO COMPLEX -->
+    <!-- ============================================================= -->
+    <element name="HydroComplex" type="hyd:HydroComplexType"
+    substitutionGroup="gml:AbstractFeature"/>
+    <!-- ============================================================= -->
+    <complexType name="HydroComplexType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureType">
+                <sequence>
+                    <element name="featureId" type="hyd:IdentifierPropertyType"/>
+                    <element name="linkedResource"
+                        type="hyd:ExternalResourcePropertyType" minOccurs="0"
+                        maxOccurs="1"/>
+                    <element name="metadata" type="anyURI" minOccurs="0"
+                        maxOccurs="unbounded"/>
+                    <element name="featureDate" type="date"/>
+                    <element name="name" type="hyd:NamePropertyType" minOccurs="0"
+                        maxOccurs="unbounded"/>
+                    <element name="measure" type="hyd:MeasurementPropertyType"
+                        minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="representation"
+                        type="hyd:RepresentationPropertyType" minOccurs="0"
+                        maxOccurs="unbounded"/>
+                    <element name="attribute"
+                        type="hyd:ExtendedAttributePropertyType" minOccurs="0"
+                        maxOccurs="unbounded"/>
+                    <element name="compositeType" minOccurs="1" maxOccurs="1">
+                        <complexType>
+                            <simpleContent>
+                                <restriction base="gml:CodeType">
+                                    <attribute name="codeSpace" type="anyURI"
+                                        use="optional"
+                                            default="../Dictionaries/CompositeTypeDictionary.xml"/>
+                                </restriction>
+                            </simpleContent>
+                        </complexType>
+                    </element>
+                    <element name="element" type="gml:ReferenceType" minOccurs="1"
+                        maxOccurs="unbounded">
+                        <annotation>
+                            <appinfo source="urn:xgml:
+    targetElement">hyd:HydroElement/@gml:id</appinfo>
+                        </annotation>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+        <!-- ============================================================= -->
+    </complexType>
+    <!-- ============================================================= -->
+    <!-- HYDRO ELEMENT -->
+    <!-- ============================================================= -->
+    <element name="HydroElement" type="hyd:HydroElementType"
+        substitutionGroup="gml:AbstractFeature"/>
+    <complexType name="HydroElementType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureType">
+                <sequence>
+                    <element name="featureId" type="hyd:IdentifierPropertyType"/>
+                    <element name="linkedResource"
+                        type="hyd:ExternalResourcePropertyType" minOccurs="0"
+                        maxOccurs="1"/>
+                    <element name="metadata" type="anyURI" minOccurs="0"
+                        maxOccurs="unbounded"/>
+                    <element name="featureDate" type="date"/>
+                    <element name="name" type="hyd:NamePropertyType" minOccurs="0"
+                        maxOccurs="unbounded"/>
+                    <element name="measure" type="hyd:MeasurementPropertyType"
+                        minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="representation"
+                        type="hyd:RepresentationPropertyType" minOccurs="0"
+                        maxOccurs="unbounded"/>
+                    <element name="attribute"
+                        type="hyd:ExtendedAttributePropertyType" minOccurs="0"
+                        maxOccurs="unbounded"/>
+                    <!-- ====================================================== -->
+                    <element name="featureType">
+                        <complexType>
+                            <simpleContent>
+                                <restriction base="gml:CodeType">
+                                    <attribute name="codeSpace" type="anyURI"
+                                    use="optional"
+                                    default="../Dictionaries/HydroFeatureTypeDictionary.xml"/>
+                                </restriction>
+                            </simpleContent>
+                        </complexType>
+                    </element>
+                    <element name="featureCode" minOccurs="0" maxOccurs="1">
+                        <complexType>
+                            <simpleContent>
+                                <restriction base="gml:CodeType">
+                                    <attribute name="codeSpace" type="anyURI"
+                                        use="optional"
+default="../Dictionaries/HydroFeatureCodeTypeDictionary.xml"/>
+                                </restriction>
+                            </simpleContent>
+                        </complexType>
+                    </element>
+                    <element name="geometry" type="gml:GeometryPropertyType"
+                        minOccurs="1" maxOccurs="1"/>
+                    <element name="flowDirection" minOccurs="0" maxOccurs="1">
+                        <complexType>
+                            <simpleContent>
+                                <restriction base="gml:CodeType">
+                                    <attribute name="codeSpace" type="anyURI"
+                                        use="optional"
+                                        default="../Dictionaries/FlowCodeDictionary.xml"/>
+                                </restriction>
+                            </simpleContent>
+                        </complexType>
+                    </element>
+                    <!-- ====================================================== -->
+                    <element name="computedNetworkValues"
+                        type="hyd:ComputedNetworkValuesPropertyType" minOccurs="0"
+                        maxOccurs="1"/>
+                    </sequence>
+                </extension>
+            </complexContent>
+        </complexType>
+        <!-- ============================================================= -->
+        <!-- FEATURERELATIONSHIP -->
+        <!-- ============================================================= -->
+        <element name="FeatureRelationship" type="hyd:FeatureRelationshipType"
+            substitutionGroup="gml:AbstractFeature"/>
+        <complexType name="FeatureRelationshipType">
+            <complexContent>
+                <extension base="gml:AbstractFeatureType">
+                    <sequence>
+                        <element name="sourceFeature" type="gml:ReferenceType">
+                            <annotation>
+                                <appinfo source="urn:xgml:
+    targetElement">hyd:HydroFeature/@gml:id</appinfo>
+                            </annotation>
+                        </element>
+                        <element name="targetFeature" type="gml:ReferenceType"
+                            minOccurs="1" maxOccurs="unbounded">
+                            <annotation>
+                                <appinfo source="urn:xgml:
+    targetElement">hyd:HydroFeature/@gml:id</appinfo>
+                            </annotation>
+                        </element>
+                        <element name="type">
+                            <complexType>
+                                <simpleContent>
+                                    <restriction base="gml:CodeType">
+                                        <attribute name="codeSpace" type="anyURI"
+                                            use="optional"
+                                            default="../Dictionaries/RelationshipTypeDictionary.xml"/>
+                                    </restriction>
+                                </simpleContent>
+                            </complexType>
+                        </element>
+                        <element name="attribute"
+                            type="hyd:ExtendedAttributePropertyType" minOccurs="0"
+                            maxOccurs="unbounded"/>
+                    </sequence>
+                </extension>
+            </complexContent>
+        </complexType>
+        <!-- ============================================================= -->
+        <!-- EVENT -->
+        <!-- ============================================================= -->
+        <element name="Event" type="hyd:EventType" substitutionGroup="gml:AbstractFeature"/>
+        <complexType name="EventType">
+            <complexContent>
+                <extension base="gml:AbstractFeatureType">
+                    <sequence>
+                        <element name="date" type="date" minOccurs="0" maxOccurs="1"/>
+                        <element name="eventID" type="gml:ReferenceType" minOccurs="1"
+                            maxOccurs="1">
+                            <annotation>
+                                <appinfo source="urn:xgml:
+    targetElement">hyd:Identifier/@gml:id</appinfo>
+                            </annotation>
+                        </element>
+                        <element name="relatedURL" type="anyURI" minOccurs="0"
+                            maxOccurs="unbounded"/>
+                        <element name="metadata" type="anyURI" minOccurs="0"
+                            maxOccurs="1"/>
+                        <element name="eventType">
+                            <complexType>
+                                <simpleContent>
+                                    <restriction base="gml:CodeType">
+                                        <attribute name="codeSpace" type="anyURI"
+                                            use="optional"
+                                            default="../Dictionaries/EventTypeDictionary.xml"/>
+                                    </restriction>
+                                </simpleContent>
+                            </complexType>
+                        </element>
+                        <element name="dataType">
+                            <complexType>
+                                <simpleContent>
+                                    <restriction base="gml:CodeType">
+                                        <attribute name="codeSpace" type="anyURI"
+                                            use="optional"
+                                            fixed="../Dictionaries/DatatypeDictionary.xml"/>
+                                    </restriction>
+                                </simpleContent>
+                            </complexType>
+                        </element>
+                        <element name="eventValue" type="string"/>
+                        <element name="location" type="gml:GeometryPropertyType"
+                            minOccurs="0" maxOccurs="1"/>
+                        <element name="measure" type="hyd:MeasurementPropertyType"
+                            minOccurs="0" maxOccurs="unbounded"/>
+                        <element name="attribute"
+                            type="hyd:ExtendedAttributePropertyType" minOccurs="0"
+                            maxOccurs="unbounded"/>
+                    </sequence>
+                </extension>
+            </complexContent>
+        </complexType>
+        <!-- ============================================================= -->
+        <!-- UNMEASUREDEVENT -->
+        <!-- ============================================================= -->
+        <element name="UnmeasuredEvent" type="hyd:UnmeasuredEventType"
+            substitutionGroup="gml:AbstractFeature"/>
+        <complexType name="UnmeasuredEventType">
+            <complexContent>
+                <extension base="gml:AbstractFeatureType">
+                    <sequence>
+                        <element name="event" type="gml:ReferenceType">
+                            <annotation>
+                                <appinfo source="urn:xgml:
+    targetElement">hyd:Event/@gml:id</appinfo>
+                            </annotation>
+                        </element>
+                        <element name="location" type="gml:GeometryPropertyType"/>
+                    </sequence>
+                </extension>
+            </complexContent>
+        </complexType>
+        <!-- ============================================================= -->
+        <!-- MEASUREDEVENT -->
+        <!-- ============================================================= -->
+        <element name="MeasuredEvent" type="hyd:MeasuredEventType"
+            substitutionGroup="gml:AbstractFeature"/>
+        <complexType name="MeasuredEventType">
+            <complexContent>
+                <extension base="gml:AbstractFeatureType">
+                    <sequence>
+                        <element name="event" type="gml:ReferenceType">
+                            <annotation>
+                                <appinfo source="urn:xgml:
+    targetElement">hyd:Event/@gml:id</appinfo>
+                            </annotation>
+                        </element>
+                        <element name="startPosition" type="gml:PointPropertyType"/>
+                        <element name="endPosition" type="gml:PointPropertyType"
+                            minOccurs="0" maxOccurs="1"/>
+                        <element name="startOffset" type="gml:MeasureType" minOccurs="0"
+                            maxOccurs="1"/>
+                        <element name="endOffset" type="gml:MeasureType" minOccurs="0"
+                            maxOccurs="1"/>
+                    </sequence>
+                </extension>
+            </complexContent>
+        </complexType>
+        <!-- ============================================================= -->
+        <!-- EVENT ON -->
+        <!-- ============================================================= -->
+        <element name="EventOn" type="hyd:EventOnType"
+            substitutionGroup="gml:AbstractFeature"/>
+        <complexType name="EventOnType">
+            <complexContent>
+                <extension base="gml:AbstractFeatureType">
+                    <sequence>
+                        <element name="feature" type="gml:ReferenceType" minOccurs="1"
+                            maxOccurs="unbounded">
+                            <annotation>
+                                <appinfo source="urn:xgml:
+    targetElement">hyd:HydroFeature/@gml:id</appinfo>
+                            </annotation>
+                        </element>
+                        <element name="event" type="gml:ReferenceType" minOccurs="0"
+                            maxOccurs="unbounded">
+                            <annotation>
+                                <appinfo source="urn:xgml:
+    targetElement">hyd:Event/@gml:id</appinfo>
+                            </annotation>
+                        </element>
+                    </sequence>
+                </extension>
+            </complexContent>
+        </complexType>
+</schema>
+----
+
+=== Internationalized string example
+The following schema defines a single internationalized string element:
+
+[%unnumbered]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+    targetNamespace="http://www.opengis.net/test"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:test="http://www.opengis.net/test"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+    elementFormDefault="qualified"
+    version="1.0">
+
+    <annotation>
+        <appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+            <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+        </appinfo>
+    </annotation>
+    <!-- ============================================================= -->
+    <!-- === includes and imports === -->
+    <!-- ============================================================= -->
+    <import namespace="http://www.w3.org/XML/1998/namespace"
+        schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+    <import namespace="http://www.opengis.net/gml/3.2"
+        schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    <import namespace="http://www.opengis.net/gmlsf/2.0"
+schemaLocation="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd"/>
+    <!-- ============================================================= -->
+    <!-- Language string type -->
+    <!-- ============================================================= -->
+    <complexType name="LanguageStringType">
+        <simpleContent>
+            <extension base="string">
+                <attribute ref="xml:lang" use="optional"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <!-- ============================================================= -->
+    <!-- Define a feature type -->
+    <!-- ============================================================= -->
+    <element name="Description" type="test:DescriptionType"
+        substitutionGroup="gml:AbstractFeature"/>
+    <complexType name="DescriptionType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureType">
+                <sequence>
+                    <element name="descId">
+                        <simpleType>
+                            <restriction base="string">
+                                <maxLength value="9"/>
+                            </restriction>
+                        </simpleType>
+                    </element>
+                    <element name="descText" maxOccurs="unbounded">
+                        <complexType>
+                            <simpleContent>
+                                <restriction base="test:LanguageStringType">
+                                    <maxLength value="20"/>
+                                </restriction>
+                            </simpleContent>
+                        </complexType>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <!-- ============================================================= -->
+    <!-- Define a feature collection -->
+    <!-- ============================================================= -->
+    <element name="Descriptions"
+            type="test:DescriptionsType"
+            substitutionGroup="gml:AbstractGML"/>
+    <complexType name="DescriptionsType">
+        <complexContent>
+            <extension base="gml:AbstractFeatureType">
+                <sequence minOccurs="1" maxOccurs="unbounded">
+                    <element name="featureMember">
+                        <complexType>
+                            <complexContent>
+                                <extension base="gml:AbstractFeatureMemberType">
+                                    <sequence>
+                                        <element ref="gml:AbstractFeature"/>
+                                    </sequence>
+                                </extension>
+                            </complexContent>
+                        </complexType>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+</schema>
+----
+
+An instance document might be:
+
+[%unnumbered]
+----
+<?xml version="1.0"?>
+<test:Descriptions gml:id="ID0"
+    xmlns:test="http://www.opengis.net/test"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/test ./test.xsd">
+    <test:featureMember>
+        <test:Description gml:id="ID1">
+            <test:descId>12345</test:descId>
+            <test:descText xml:lang="en">Hello world.</test:descText>
+            <test:descText xml:lang="fr">Bonjour monde.</test:descText>
+            <test:descText xml:lang="el">Γειά σου κόσμος</test:descText>
+        </test:Description>
+    </test:featureMember>
+</test:Descriptions>
+----
+
+=== Circle-by-center-point Example
+The following example illustrates a schema that declares one geometric property whose value is a circle.
+
+[%unnumbered]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    targetNamespace="http://www.someserver.com/rz"
+    xmlns:myns="http://www.someserver.com/rz"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    elementFormDefault="qualified"
+    xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+    version="myns:2003">
+    
+    <xsd:annotation>
+        <xsd:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+            <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+        </xsd:appinfo>
+    </xsd:annotation>
+    
+    <!-- ============================================================= -->
+    <!-- === includes and imports === -->
+    <!-- ============================================================= -->
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"
+            schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+    <xsd:import namespace="http://www.opengis.net/gml/3.2"
+            schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    <xsd:import namespace="http://www.opengis.net/gmlsf/2.0"
+schemaLocation="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd"/>
+    <xsd:element name="RadZones"
+                type="myns:RadZonesType"
+                substitutionGroup="gml:AbstractFeature"/>
+    <xsd:complexType name="RadZonesType">
+        <xsd:complexContent>
+            <xsd:extension base="gml:AbstractFeatureType">
+                <xsd:sequence>
+                    <xsd:element name="title" type="xsd:string"/>
+                    <xsd:element name="abstract" type="xsd:string" minOccurs="0"/>
+                    <xsd:element name="rems" type="gml:MeasureType"/>
+                    <xsd:element name="where"
+                                type="gml:SurfacePropertyType"
+                                maxOccurs="unbounded"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+</xsd:schema>
+----
+
+An instance document might be:
+
+[%unnumbered]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<rz:RadZones
+    gml:id="RZ001"
+    xmlns:rz="http://www.someserver.com/rz"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.someserver.com/rz
+                        http://www.someserver.com/schemas/RadZones.xsd
+                        http://www.opengis.net/gml/3.2
+                        http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+    <rz:title>Radiation Hot Spots</rz:title>
+    <rz:abstract>Radiation hot spots in the vicinity of the AnyTown nuclear reactor. Only
+readings that exceed the background radiation of 100 millirems per hour.</rz:abstract>
+    <rz:rems uom="REM">170</rz:rems>
+    <rz:where>
+        <gml:Surface
+            gml:id="RZ001_1"
+            srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <gml:patches>
+                <gml:PolygonPatch>
+                    <gml:exterior>
+                        <gml:Ring>
+                            <gml:curveMember>
+                                <gml:Curve gml:id="C01">
+                                    <gml:segments>
+                                        <gml:CircleByCenterPoint numArc="1">
+                                            <gml:pos>51.389 30.099</gml:pos>
+                                            <gml:radius uom="m">20000</gml:radius>
+                                        </gml:CircleByCenterPoint>
+                                    </gml:segments>
+                                </gml:Curve>
+                            </gml:curveMember>
+                        </gml:Ring>
+                    </gml:exterior>
+                </gml:PolygonPatch>
+            </gml:patches>
+        </gml:Surface>
+    </rz:where>
+</rz:RadZones>
+----

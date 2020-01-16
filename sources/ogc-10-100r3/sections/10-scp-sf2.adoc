@@ -1,0 +1,10 @@
+
+[[schema-coding-patterns-for-compliance-level-sf-2]]
+== Schema coding patterns for compliance level SF-2
+[[schema-coding-patterns-for-compliance-level-sf-2-introduction]]
+=== Introduction
+Compliance level SF-2 is the least restrictive of the compliance levels defined in this profile and is intended to include all the feature encoding abilities provided by the OpenGIS(R) Simple Features Specification for SQL, Version 1.1 [1]. Unlike compliance levels SF-0 and SF-1, application schemas that comply with compliance level SF-2 have no restrictions whatsoever placed on non-spatial properties. Spatial properties, however, are limited to the set of geometric property types supported by compliance levels SF-0 and SF-1 with the caveats noted in this clause.
+
+[[changes-from-compliance-levels-sf-0-and-sf-1]]
+=== Changes from compliance levels SF-0 and SF-1
+Application schemas that comply with level SF-2 shall comply with all the sub-clauses in <<schema-coding-patterns-common-to-all-compliance-levels>> and in <<root-element-encoding>> and <<importing-and-including-schemas>>. In addition, application schemas that comply with level SF-2 shall comply with <<defining-feature-collections>> that describes how to define feature collections, and <<declaring-elements-with-geometric-content>> that describes which geometric property types are supported and how they are to be encoded in conformant application schemas.

@@ -1,0 +1,141 @@
+
+[[schema-coding-patterns-for-compliance-level-sf-1]]
+== Schema coding patterns for compliance level SF-1
+
+[[schema-coding-patterns-for-compliance-level-sf-1-introduction]]
+=== Introduction
+This clause describes a rigid coding pattern for GML application schemas that comply with level SF-1 of this profile. All the coding rules defined for compliance level SF-0, in <<schema-coding-patterns-common-to-all-compliance-levels>> and <<schema-coding-patterns-for-compliance-level-sf-0>>, apply to schemas that conform with level SF-1 except for the changes and additions noted in <<changes-from-compliance-level-sf-0>> and <<additions-to-compliance-level-sf-0>>.
+
+[[changes-from-compliance-level-sf-0]]
+=== Changes from compliance level SF-0
+
+[[changes-from-compliance-level-sf-0-basic-data-types]]
+==== Basic data types
+In additions to the basic data types listed in <<feature-property-encoding>>, schemas that comply with compliance level SF-1 of this profile also allow:
+
+. User defined types composed of elements with spatial and non-spatial scalar types as defined in this profile
+
+<<declaring-elements-with-complex-content>> describes how user defined types shall be declared in application schemas that comply with level SF-1.
+
+[[changes-from-compliance-level-sf-0-cardinality]]
+==== Cardinality
+The maximum cardinality that can be declared in an application schema that complies with level SF-0 is 1. This means that the attribute *minOccurs* can have values of 0 or 1 and the attribute *maxOccurs* can only have the value of 1.
+
+This restriction is relaxed for application schemas that comply with level SF-1 of this profile. The attribute *minOccurs* can have a value of 0 or N, where N is a non-negative integer greater than zero. The attribute *maxOccurs* can have a value of 0, N or _unbounded_, where N is a non-negative integer greater than zero and the special value "_unbounded_" is used to indicate that the element may recur an unlimited number of times in an instance document.
+
+In the XML schemas fragments presented as templates in <<schema-coding-patterns-for-compliance-level-sf-0>>, all instance of *minOccurs="0|1"* shall be replaced by *minOccurs="0|N"* and all instances of *maxOccurs="1"* shall be replaced by *maxOccurs="0|N|unbounded"* for compliance level SF-1.
+
+[[changes-from-compliance-level-sf-0-multiplicity]]
+==== Multiplicity
+For compliance level SF-1, the attributes *minOccurs* and *maxOccurs* can have the values 0, any positive integer N or the string "unbounded".
+
+[[changes-from-compliance-level-sf-0-null-values]]
+==== Null values
+Unlike compliance level SF-0, level SF-1 allows the use of the *nillable* attribute when declaring elements in an application schema.
+
+<<table-changes-from-compliance-level-sf-0-null-values>>, which is similar to <<table-feature-property-encoding-null-values>> in <<feature-property-encoding-null-values>>, summarizes how the various combinations of *minOccurs*, *maxOccurs*, *nillable*, an element's content and the *nil* attribute are interpreted to set the value of a feature property for GML application schemas that comply with level SF-1. The table takes into account the fact that elements
+can have a maximum cardinality that is greater than 1.
+
+
+[[table-changes-from-compliance-level-sf-0-null-values]]
+.Interpretation of feature property value
+[cols="5",options="header"]
+|===
+|Value of minOccurs facet on element declaration in GML application schema
+|Value of maxOccurs facet on element declaration in GML application schema
+|Value of nillable attribute on element declaration in GML application schema
+|Existence of element in GML instance document
+|Interpretation of feature property value
+
+|0 |0 |false or true |no |Not allowed by this profile.
+|0 |0 |false or true |yes |Invalid combination
+|0 |>=1 |false |no |Property value is interpreted as being absent.
+|0 |>=1 |true |yes, with xsi:nill='true' |Property value is null
+|0 |>=1 |false or true |yes, without xsi:nil="true" |Property value is the content of the element.
+|>=1 |0 |false or true |no |Invalid according to XML Schema.
+|>=1 |0 |false or true |yes |Invalid according to XML Schema.
+|>=1 |>=1 |false |no |Invalid according to XML Schema.
+|>=1 |>=1 |true |yes, with xsi:nill='true' |Property value is null
+|>=1 |>=1 |false or true |yes, without xsi:nil="true" |Property value is the content of the element.
+|===
+
+This standard does not assign any specific semantics to a property element with a xsi:nil attribute with a value "`true`" vs. the omission of a property element.
+
+[[additions-to-compliance-level-sf-0]]
+=== Additions to compliance level SF-0
+[[additions-to-compliance-level-sf-0-introduction]]
+==== Introduction
+Application schemas that comply with level SF-0 can only declare, with the exception of geometric property types, feature properties that have simple or scalar values. For compliance level SF-1, the restriction is eased and conformant schemas are allowed to declare compound or complex valued feature properties. For example, the following schema fragment:
+
+[%unnumbered]
+----
+<xsd:complexType name="IdentifierPropertyType">
+    <xsd:sequence>
+        <xsd:element ref="fw:Identifier"/>
+    </xsd:sequence>
+</xsd:complexType>
+<xsd:element name="Identifier">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="identifier" type="xsd:string"/>
+            <xsd:element name="idAuthority" type="xsd:string"
+                            minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="description" type="xsd:string"
+                            minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:element>
+----
+
+declares a complex feature property called *Identifier* as an element that contains three sub-elements, *identifier*, *idAuthority* and *description*.
+
+[[declaring-elements-with-complex-content]]
+==== Declaring elements with complex content
+The following XML-Schema fragment shows how to declare a property element with
+complex content.
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2               type="userDefinedNamePropertyType"
+3               [minOccurs="0|N"] [maxOccurs="0|N|unbounded"]>
+----
+
+The value of the mandatory name attribute, _propertyName_, is a placeholder for the name of the element being declared which shall be the name of the feature property being encoded.
+
+The value of the mandatory type attribute, _userDefinedNamePropertyType_, is a placeholder for the name of a user-defined type that shall be declared as described in <<declaring-a-user-defined-type>>.
+
+The attributes minOccurs and maxOccurs may be specified and indicate the minimum and maximum number of times that the element shall appear in an instance document. If minOccurs and maxOccurs are omitted, then they are assumed to have the default values defined in XML-Schema for these facets -one (1). The combination minOccurs = maxOccurs = 0 is specifically forbidden by this profile.
+
+[[declaring-a-user-defined-type]]
+==== Declaring a user defined type
+The following XML-Schema fragments shows how to declare a used-defined complex type.
+
+[%unnumbered]
+----
+1 <xsd:complexType name="userDefinedNamePropertyType">
+2   <xsd:sequence>
+3       <xsd:element ref="tns:userDefinedName"
+4           [minOccurs="0|N"] [maxOccurs=")|N|unbounded"]/>
+5   </xsd:sequence>
+6 </xsd:complexType>
+7
+8 <xsd:element name="userDefinedName">
+9   <xsd:complexType>
+10      <xsd:sequence | xsd:choice [minOccurs="1"] [maxOccurs="1]>
+11
+12      <!-- ...one or more element declarations as described in clause 8.4.4... -->
+13
+14      </xsd:sequence | xsd:choice>
+15  </xsd:complexType>
+16 </xsd:element>
+----
+
+
+The mandatory attribute name, in line 1, contains the name of the user-defined type. The value _userDefinedName_ is a placeholder the name the user chooses for the type. This type name shall include the suffix PropertyType that is a convention used in GML to indicate that this type may be used to declare feature property elements. In order to adhere to the GML object-property rule, the user-defined type declaration shall reference an element with complex content that contains the desired fields for the complex type. As shown in line 3, the value of the mandatory ref element shall be a qualified element name. The value tns is a placeholder for the namespace prefix of this element. The value _userDefinedName_ is a placeholder for the actual name of the element with complex content. It is recommended that the name of the element match the value userDefinedName used in line 1 as the prefix for the name of the user-defined type.
+
+Line 8 declares an element with complex content. The value of the mandatory name attribute shall match the name of the element referenced in line 3. The comment at line 12 is used to indicate that the element named in line 8 shall contain zero or more element declarations that represent the fields of the complex type. These element declarations shall match the scalar non-spatial or spatial property patterns defined in <<schema-coding-patterns-for-compliance-level-sf-0>>. In other words, a complex type cannot contain a field that is itself a complex type (with the exception of the spatial property types declared in <<table-supported-gml-geometric-property-types>>).
+
+At line 10, the content model of the element may be declared using a sequence or choice model group. The use of the sequence model group means that the order in which fields appear in an instance document shall match the order in which they are declared in a compliant application schema document. The use of the choice model group means that one of the fields may appear in an instance document. The minOccurs and maxOccurs attributes of the sequence or choice model group shall not have a value other than 1.
+
+It should be noted that the complex type defined at line 1 can be used to define any number of feature property elements of the same type.

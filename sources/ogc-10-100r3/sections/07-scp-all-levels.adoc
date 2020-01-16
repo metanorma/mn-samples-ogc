@@ -1,0 +1,42 @@
+
+[[schema-coding-patterns-common-to-all-compliance-levels]]
+== Schema coding patterns common to all compliance levels
+
+=== Introduction
+This clause contains discussion and schema coding patterns that apply to all compliance levels defined in this profile.
+
+=== Schema processing
+Compliance to this profile can be viewed from two perspectives: from the perspective of application schema generators and the perspective of application schema consumers.
+
+An application schema generator is any process that generates GML application schemas that comply with this profile. These schemas may be static documents or generated on the fly. In general, schema generators only need to support that subset of this profile that allows them to encode their data and may ignore the rest. For example, a web feature service that only serves point data will never need to output a schema (in response to a DescribeFeatureType request) that includes curves, surfaces or any of the other supported geometric types. Similarly, a system that does not support value cardinality greater than one will never generate a schema where maxOccurs is greater than one.
+
+A schema consumer, on the other hand, is any system that reads and interprets GML application schemas that comply with this profile. Schema consumers shall be prepared to deal with all aspects of one or more compliance levels defined in this profile, even if it is to report that the system cannot process a particular aspect of this profile. For example, a web feature service client may not be able to use heterogeneous geometry collections, but it shall be able to recognize this structure in the schema and possibly raise an exception.
+
+=== Metadata handling
+This profile prohibits use of *gml:metaDataProperty* elements for referencing metadata in instance documents. Instead, application schema designers may declare metadata feature property elements in a GML application schema, for recording metadata associated with features. If the metadata used to describe features is based on an external schema that does not comply with this profile, then such metadata shall be referenced from a complaint application schema. Otherwise, the metadata can be encoded inline in a complaint application schema.
+
+[[identifying-the-compliance-level]]
+=== Identifying the compliance level
+This profile defines three compliance levels as described in <<conformance>>. In order for a client to be able to properly interpret a schema, it shall be able to identify the compliance level of the schema. An XML annotation shall be used for this purpose. The annotation shall be placed at the top most nesting level of the schema such that the XPath expression:
+
+[%unnumbered]
+----
+/xsd:schema/xsd:annotation/xsd:appinfo/gmlsf:ComplianceLevel
+----
+
+can be used to determine the compliance level of the application schema.
+
+The following schema fragment shows how this annotation shall be declared in an application schema:
+
+[%unnumbered]
+----
+1 <xsd:annotation>
+2   <xsd:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+3       <gmlsf:ComplianceLevel>0|1|2</gmlsf:ComplianceLevel>
+4   </xsd:appinfo>
+5 </xsd:annotation>
+----
+
+In line 2, the *appinfo* element is used to contain the compliance level declaration for the application schema. The source attribute shall point to the gmlsfLevels.xsd schema, where the *ComplianceLevel* element is declared.
+
+Line 3 uses the *gmlsf:ComplianceLevel* element to declare the compliance level of an application schema. The contents of the *ComplianceLevel* element shall be 0 for schemas that comply with level SF-0, 1 for schemas that comply with level SF-1 and 2 for schemas that comply with level SF-2.
