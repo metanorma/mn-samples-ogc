@@ -6,7 +6,7 @@
 :issued-date: 2012-04-05
 :published-date: 2012-04-05
 :external-id: http://www.opengis.net/spec/gmlsf/2.0.1
-:committee: Technical
+:committee: technical
 :fullname: Linda van den Brink
 :fullname_2: Clemens Portele
 :fullname_3: Panagiotis (Peter) A. Vretanos
