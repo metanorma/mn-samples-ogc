@@ -1,0 +1,21 @@
+
+[[annex-mapping-to-sql-mm-geometric-types]]
+[appendix,obligation=informative]
+== Mapping to SQL/MM geometric types 
+The following table maps all the geometric property types supported by this profile to their equivalent SQL/MM geometry types. The information in <<table-gml-geometric-property-types-mapped-to-sql-mm-types>> was compiled from the mapping presented in Table 14 of the SQL/MM specification [7].
+
+[[table-gml-geometric-property-types-mapped-to-sql-mm-types]]
+.GML geometric property types mapped to SQL/MM types.
+[cols="2",options="header"]
+|===
+|GML Geometric Property Type |Equivalent SQL/MM Type
+
+|gml:PointPropertyType |ST_Point
+|gml:CurvePropertyType |ST_LineString.
+|gml:SurfacePropertyType |ST_Polygon
+|gml:GeometryPropertyType |ST_Geometry
+|gml:MultiPointPropertyType |ST_MultiPoint
+|gml:MultiCurvePropertyType |ST_MultiCurve
+|gml:MultiSurfacePropertyType |ST_MultiSurface
+|gml:MultiGeometryPropertyType |ST_GeomCollection
+|===

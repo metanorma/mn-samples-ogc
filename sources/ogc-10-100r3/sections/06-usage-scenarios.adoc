@@ -1,0 +1,24 @@
+
+== Usage scenarios
+
+=== Simple desktop or browser based map viewer
+Allow users to select a collection of features for access and subsequent visualization by a client application.
+
+=== Get a collection of features using spatial and non-spatial constraints
+A client application is able to process a schema description of the features that a WFS serves sufficiently to be able to generate a valid WFS query that uses spatial and nonspatial
+constraints, to obtain one or more feature instances.
+
+=== "Value-add" editor (edit geometry and other attribute values)
+Users are able to augment geo-spatial information supplied by a data producer with data of their own, creating new feature instances or modifying existing feature instances.
+
+=== Create feature instances of specified type or id
+A client application is able to process a schema description of the features that a WFS serves sufficiently to be able to generate a valid, new feature instances that can then be inserted into the feature store using a WFS Transaction request.
+
+=== Update features with modified geometry and/or property values
+A client application is able to process a schema description of the features that a WFS serves sufficiently to understand the type of each property of a feature and be able to generate a valid Transaction request that updates the values of one or more properties of a feature. The properties may be spatial or non-spatial.
+
+=== Create GML application schema corresponding to known spatial data format
+An application schema designer is able create a GML application schema that corresponds to data stored in a file with a well know spatial data format. This application schema can then be used to validate GML instance documents generated from the data in source file.
+
+=== Create GML application schemas based on a simple UML class diagram
+An application schema designer creates a GML application schema based on a UML simple class diagram. A simple UML model is one that defines classes that would correspond to geographic features whose attributes could be mapped to the property types supported by one of the compliance levels defined in this profile.

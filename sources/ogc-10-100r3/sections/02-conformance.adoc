@@ -1,0 +1,55 @@
+
+[[conformance]]
+== Conformance
+
+=== Intruduction
+This document defines three compliance levels called SF-0, SF-1, and SF-2.
+
+Compliance level SF-0 limits the property types of both spatial and non-spatial properties. Non-spatial properties are limited to being of type: integer, measurement, date, boolean, binary, URI, character or real; and cardinality of non-spatial properties is limited to at most one. Spatial properties are limited to being of type: point, curve with linear and/or circular arc interpolation, planar surface, or aggregates thereof. In GML instance documents compliant with level SF-0, values for a particular property may be encoded inline or by-reference but not both. By-reference property values are only supported through the use of the type gml:ReferenceType. The more generalized GML property-type pattern allowing mixed inline and by-reference encoded property values within the same instance document is disallowed in this level. Compliance level SF-1 supports everything in compliance level SF-0 but removes the restriction on value cardinality and allows user defined non-spatial property types to be used. As with compliance level SF-0, in GML instance documents compliant with level SF-1, values for a particular property may be encoded inline or by-reference but not both. By-reference property values are only supported through the use of the type gml:ReferenceType. The more generalized GML property-type pattern allowing mixed inline and by-reference encoded property values within the same instance document is disallowed in this level.
+
+Finally, compliance level SF-2 essentially corresponds to the OGC Simple Features specification [1]. There are no restrictions placed on non-spatial properties. Spatial properties, however, are limited to the set of geometric types supported by compliance levels SF-0 and SF-1. In instance documents, the restriction on remote or referenced geometric property values, found in compliance levels SF-0 and SF-1, is removed.
+
+The rationale for these specific compliance levels and associated restrictions is based on practical experience by implementers gained since 2003. Level SF-0 is the most restrictive, but much existing geospatial data can be represented within its stated restrictions. Building servers and clients to compliance level SF-0 will create greater opportunity for interoperable data exchange, because of the reduced number of optional aspects permitted and the corresponding reduction in vendor-specific functionality likely to occur. Compliance level SF-1 has been found to be useful in projects requiring multivalued (non-spatial) properties of features. And compliance level SF-2 allows servers to host sophisticated information models without complicating the spatial properties beyond those allowed in levels SF-0 and SF-1. This level allows all Simple Features for SQL (SF-SQL) databases to represent any data they may have. The benefit of restricting the geometry model to the types included here, is to foster maximum interoperability of the geospatial location data. <<compliance-level-capabilities-matrix>> summarizes the capabilities of each compliance level.
+
+
+[[compliance-level-capabilities-matrix]]
+.Compliance level capabilities matrix
+[cols="4",options="header"]
+|===
+| |Level SF-0 |Level SF-1 |Level SF-2
+
+|restricted set of built-in nonspatial
+property types |Yes{blank}footnote:one[string, integer, measurement, date, real, binary, boolean, URI] |Yes{blank}footnote:one[] |No
+
+|restricted set of spatial property types |Yes{blank}footnote:two[Point, Curve (LineString), Surface (Polygon), Geometry, MultiPoint, MultiCurve, MultiSurface, MultiGeometry] |Yes{blank}footnote:two[] |Yes{blank}footnote:two[]
+
+|user-defined property types |No |Yes |Yes
+
+|use of nillable and xsi:nil |No |Yes |Yes
+
+|cardinality of properties |0 or 1 |0...unbounded |0...unbounded
+
+|non-spatial property values references |Yes{blank}footnote:three[In levels 0 and 1, remote values for properties are supported only through the use of the type gml:ReferenceType. The more generalized GML property-type pattern allowing mixed inline and byreference encoded property values within the same instance document is disallowed.] |Yes{blank}footnote:three[] |Yes
+
+|spatial property values references |Yes{blank}footnote:three[] |Yes{blank}footnote:three[] |Yes
+|===
+
+
+=== Compliance levels
+<<table-compliance-levels>> lists the compliance levels defined in this document. The table specifies a numeric identifier for each compliance level, the relevant sub-clauses in <<schema-coding-patterns-common-to-all-compliance-levels>> and <<schema-coding-patterns-for-compliance-level-sf-0>> and <<schema-coding-patterns-for-compliance-level-sf-2>> that apply to the compliance level, and the compliance tests in Annex A that shall be satisfied by each level.
+
+[[table-compliance-levels]]
+.Compliance levels
+[cols="3",options="header"]
+|===
+|Compliance level Identifier |Relevant sub-clauses |Compliance tests
+
+|SF-0 |7, 8 |A.1, A.2, A.3, A.4, A.5, A.6, A.7, A.8, A.9, A.10.1, A.10.2, A.10.3, A.10.4, A.10.5, A.10.6, A.10.7, A.10.8, A.10.9, A.10.10, A.10.11, A.10.12. A.10.13
+|SF-1 |7, 9 |All compliance tests defined in <<annex-compliance-testing>>.
+|SF-2 |7, 10 |A.1, A.2, A.3, A.4, A.5, A.6, A.7, A.9, A.10.8
+|===
+
+
+NOTE: Some sub-clauses and compliance tests listed above contain provisions that depend on the compliance level.
+
+Compliance with this profile shall be checked using all the relevant tests in <<annex-compliance-testing>>, as specified in <<table-compliance-levels>> for each compliance level.

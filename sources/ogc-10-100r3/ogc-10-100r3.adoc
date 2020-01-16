@@ -1,0 +1,55 @@
+= Geography Markup Language (GML) simple features profile (with Corrigendum)
+:title: Geography Markup Language (GML) simple features profile (with Corrigendum)
+:edition: 2.0
+:docnumber: 10-100r3
+:received-date: 2011-05-24 
+:issued-date: 2012-04-05
+:published-date: 2012-04-05
+:external-id: http://www.opengis.net/spec/gmlsf/2.0.1
+:committee: Technical
+:fullname: Linda van den Brink
+:fullname_2: Clemens Portele
+:fullname_3: Panagiotis (Peter) A. Vretanos
+:copyright-year: 2012
+:language: en
+:script: Latn
+:doctype: standard
+:docsubtype: profile
+:submitting-organizations: CubeWerx Inc.; interactive instruments GmbH; Geonovum; Cadcorp Ltd.; CubeWerx Inc.; ESRI; Galdos Systems Inc.; interactive instruments GmbH; PCI Geomatics
+:status: published
+:toc:
+:imagesdir: images
+:docfile: ogc-10-100r3.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+
+include::sections/00-preface.adoc[]
+include::sections/01-scope.adoc[]
+include::sections/02-conformance.adoc[]
+include::sections/03-norm-ref.adoc[]
+include::sections/04-term-def.adoc[]
+include::sections/05-conventions.adoc[]
+include::sections/06-usage-scenarios.adoc[]
+include::sections/07-scp-all-levels.adoc[]
+include::sections/08-scp-sf0.adoc[]
+include::sections/09-scp-sf1.adoc[]
+include::sections/10-scp-sf2.adoc[]
+include::sections/aa-compliance-testing.adoc[]
+include::sections/ab-gmlsLevels.adoc[]
+include::sections/ac-sql-mm.adoc[]
+include::sections/ad-examples.adoc[]
+include::sections/ae-schematron-rules.adoc[]
+
+
+
+
+
+
+
+
+
+
+

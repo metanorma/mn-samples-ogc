@@ -1,0 +1,722 @@
+
+[[schema-coding-patterns-for-compliance-level-sf-0]]
+== Schema coding patterns for compliance level SF-0
+
+=== Introduction
+This clause describes a rigid coding pattern for GML application schemas that comply with level SF-0 of this profile. The main motivation behind this pattern is to limit the set of XML-Schema and GML capabilities that can be used to code a GML application schema. This in turn simplifies the task of building clients that can ingest schema documents that comply with this coding pattern and understand the structure of the feature types defined within.
+
+The schema fragments defined in the following sub-clauses shall be combined to create a complete GML application schema that complies to level SF-0 of this profile. The schema fragments shall be structurally encoded exactly as presented in the document. This means that all mandatory elements and attributes presented in the fragment shall be included as shown even if they are optional in XML-Schema. Furthermore, no other optional elements, attributes or facets that might be defined in XML-Schema or GML may be used unless specified in this document.
+
+Please note that these requirements have absolutely nothing to do with the formatting of the XML fragments or the order in which elements or type definitions are declared. They are structural and syntactic requirements, not formatting requirements. White spaces can be used freely to format the generated schema documents in any way.
+
+[[root-element-encoding]]
+=== Root element encoding
+The following XML fragment shows how to encode the GML application schema document's root element:
+
+[%unnumbered]
+----
+1 <xsd:schema
+2   targetNamespace="target_name_space"
+3   xmlns:prefix="target_name_space"
+4   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+5   xmlns:gml="http://www.opengis.net/gml/3.2"
+6   xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+7   elementFormDefault="qualified"
+8   version="99.99.99">
+----
+
+The attributes shown for the schema element can be specified in any order.
+
+Line 2 declares the target namespace for the elements defined in the application schema document. The value _target_name_space_ is a placeholder for the actual namespace identifier. As a GML application schema is revised, all first and second level revision changes shall require a new namespace identifier and thus a new value for the _target_name_space_ placeholder.
+
+[example]
+To illustrate this requirement, consider a GML application schema which declares that its initial version is 2.3.0, and that the elements in the schema belong to a namespace with the identifier _http://www.someserver.com/...some path.../2.3.0_. If the next revision of the schema changes the version from 2.3.0 to 2.3.1 then the namespace identifier can remain the same. If, however, the next revision of the schema changes the version from 2.3.0 to 2.4.0 then a new namespace identifier must be used for the new revision of the schema (e.g. _http://www.someserver.com/...some path.../2.4.0_ for this example).
+
+Line 3 defines a prefix for the target namespace. The value _prefix_ is a placeholder for an actual prefix value. A compliant schema may also declare the target namespace to be the default namespace in which case no prefix is defined.
+
+Line 4 declares the prefix for the XML-Schema namespace, which contains all the elements used to define a schema. In this document, the prefix *xsd* is used to represent the namespace for the XML-Schema elements. However, a schema document that complies with this profile may set the prefix to have any desired value as long as it is correctly bound to the XML-Schema namespace (http://www.w3.org/2001/XMLSchema). A compliant schema may also declare the XML-Schema namespace as the default namespace as long as the default namespace has
+not been previously bound.
+
+NOTE: Like GML, the application schema examples in Annex D use no prefix for the XML-Schema namespace (http://www.w3.org/2001/XMLSchema).
+
+Line 5 declares the prefix *gml* for the GML namespace. Although this profile recommends that this prefix be named *gml*, a compliant schema may use any name that conforms to XML-Schema for this prefix as long at it is correctly bound to the GML namespace for prefixes (http://www.opengis.net/gml/3.2).
+
+Line 6 declares the mandatory prefix gmlsf for the namespace of the *ComplianceLevel element* declared in _gmlsfLevels.xsd_. As described in <<identifying-the-compliance-level>>, the *ComplianceLevel* element shall be used inside an *appinfo* element to declare the compliance level of an application schema. Although this profile recommends that this prefix be named gmlsf, a compliant schema may use any name that conforms to XMLSchema for this prefix as long at it is correctly bound to the namespace http://www.opengis.net/gmlsf/2.0.
+
+Line 7 sets the default value for the *elementFormDefault* attribute for elements to *qualified*. This indicates that locally defined elements are added to the target namespace.
+
+Finally, the *version* attribute should be set to reflect the version of the application schema document being generated. The value "`99.99.99`" is a placeholder for any version value, in any format, that has meaning to the entity or organization creating the schema document.
+
+[[importing-and-including-schemas]]
+=== Importing and including schemas
+
+==== Importing the GML schema
+
+The following XML fragment imports the GML schema:
+
+[%unnumbered]
+----
+1 <xsd:import namespace="http://www.opengis.net/gml/3.2"
+2 schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+----
+
+The value of the *namespace* attribute shall match the GML namespace declaration in the root element.
+
+The schema to be imported shall be the complete GML schema, denoted above using the file name _gml.xsd_.
+
+The value of the *schemaLocation* attribute shall be a URL (absolute or relative) that resolves to the contents of the GML Schema. The schema fragment above shows a URL that points to the physical file, _schemas.opengis.net/gml/3.2.1/gml.xsd_, but any URL may be used (e.g. an HTTP GET request that resolves to the appropriate schema). It should be noted that the *schemaLocation* attribute is a hint for schema aware parsers and may not necessarily be resolved or used. However, application schemas that comply with this
+profile shall still specify the *schemaLocation* attribute.
+
+==== Importing the compliance levels schema
+The following XML fragment imports the schema that declares the *ComplianceLevel* element used to declare the compliance level of an application schema:
+
+[%unnumbered]
+----
+1 <xsd:import namespace="http://www.opengis.net/gmlsf/2.0"
+2       schemaLocation="http://...schema repository path.../gmlsfLevels.xsd"/>
+----
+
+The value of the *namespace* attribute shall match the *gmlsf* namespace declaration in the root element.
+
+The value of the *schemaLocation* attribute shall be a URL (absolute or relative) that resolves to the contents of the schema file _gmlsfLevels.xsd_. The schema fragment above shows a URL that points to the physical file, gmlsfLevels.xsd, but any URL may be used (e.g. an HTTP GET request that resolves to a schema). It should be noted that the schemaLocation attribute is a hint for schema aware parsers and may not necessarily be resolved or used. However, application schemas that comply with this profile shall specify the schemaLocation attribute.
+
+
+==== Importing and including other application schemas
+An application schema compliant with this profile may import or include other application schemas based on this profile as long as the imported schemas have compliance level declaration that is less than or equal to the importing schema's compliance level and are also compliant with this profile. The only exceptions are those imported schemas required for compliance by this standard (i.e. gml.xsd). The coding pattern for importing is the same as that used in <<importing-and-including-schemas>> except that the namespace and schemaLocation attributes shall be correct for the schema being imported.
+
+[[coding-pattern-for-feature-types]]
+=== Coding pattern for feature types
+
+==== Introduction
+In GML, a feature is encoded as an XML element with the name of the feature-type. A property of a feature is also encoded as an XML element, whose name is the name of the property. This clause defines the XML-Schema and GML data types that may be used to declare elements that represent features and properties of features.
+
+Following the GML lexical convention, this profile uses _UpperCamelCase_ for the XML element names representing Objects or Feature Types, and _lowerCamelCase_ for the XML element names representing properties. This provides a visual clue distinguishing the two "layers" within long XML documents with nested elements, and thus assists checking of the Object/property pattern by developers and users.
+
+[[defining-feature-collections]]
+==== Defining feature collections
+The following XML-Schema fragment shows how to define a feature collection in a GML application schema that complies with level SF-0 of this profile:
+
+[%unnumbered]
+----
+1 <element name="FeatureCollectionName"
+2               type="[prefix:]FeatureCollectionNameType"
+3               substitutionGroup="gml:AbstractGML"/>
+4 <complexType name="FeatureCollectionNameType">
+5   <complexContent>
+6       <extension base="gml:AbstractFeatureType">
+7               <sequence minOccurs="0" maxOccurs="unbounded">
+8                   <element name="featureMember">
+9                       <complexType>
+10                          <complexContent>
+11                              <extension base="gml:AbstractFeatureMemberType">
+12                                  <sequence>
+13                                      <element ref="gml:AbstractFeature"/>
+14                                  </sequence>
+15                              </extension>
+16                          </complexContent>
+17                      </complexType>
+18                  </element>
+19              </sequence>
+20          </extension>
+21      </complexContent>
+22 </complexType>
+----
+
+The global element of the feature collection is declared in line 1. The value _FeatureCollectionName_ is a placeholder for the actual name of the feature collection. The root element of the collection shall be defined to be of type _FeatureCollectionNameType_, and shall be substitutable for the substitution group head gml:AbstractGML.
+
+NOTE: This _FeatureCollectionName_ element is NOT defined in the gml:AbstractFeature substitutionGroup, so that this feature collection element cannot be included in another feature collection.
+
+Line 4 begins the definition of the XML complex type that defines the feature collection. This complex type shall be an extension of the GML abstract feature type (line 6), and shall contain zero or more featureMember elements. Each of these featureMember elements shall contain one concrete feature element of any feature type that is defined in the gml:AbstractFeature substitutionGroup. This feature collection shall not include any feature property element declarations.
+
+NOTE: This _FeatureCollectionNameType_ does NOT extend gml:AbstractFeatureCollectionType because that type has been deprecated in GML 3.2. This extension of gml:AbstractFeatureType does not use gml:featureMember because a feature collection using this profile must directly include (not reference) each of the features included. In addition, the gml:featureMember element has been deprecated in GML 3.2. The only feature member container supported by this profile, for compliance level SF-0, shall be [prefix:]featureMember. Use of a feature container corresponding to gml:featureMembers, which was also deprecated in GML 3.2, is not allowed by this standard.
+
+No more than one feature collection shall be defined in each Application Schema. When used, that feature collection shall be the root element in a XML document.
+
+==== Defining feature types
+The following XML-Schema fragment shows how to define a feature type in a GML application schema that complies with level SF-0 of this profile:
+
+[%unnumbered]
+----
+1 <xsd:element name="FeatureTypeName"
+2               type="[prefix:]FeatureTypeNameType"
+3               substitutionGroup="gml:AbstractFeature"/>
+4
+5 <xsd:complexType name="FeatureTypeNameType">
+6   <xsd:complexContent>
+7       <xsd:extension base="gml:AbstractFeatureType">
+8           <xsd:sequence>
+9
+10      <!-- ... zero or more element declarations as described in 8.4.4 ... -->
+11
+12          </xsd:sequence>
+13      </xsd:extension>
+14  </xsd:complexContent>
+15 </xsd:complexType>
+----
+
+The global element of the feature type is defined in line 1. The value FeatureTypeName is a placeholder for the actual name of the feature type. The global element shall be defined to be of type FeatureTypeNameType and shall be substitutable for the
+substitution group head gml:AbstractFeature.
+
+Line 5 begins the definition of the XML type that defines the complex type of the feature type. The complex type shall be an extension of the GML abstract feature type (line 7) and shall contain zero or more element declarations that represent the properties of the feature type. The use of the sequence construct in lines 8-12 means that the order in which elements appear in an instance document shall match the order in which they are declared in a compliant application schema document. <<feature-property-encoding>> describes how to code elements of the various supported content types.
+
+[[feature-property-encoding]]
+==== Feature property encoding
+[[feature-property-encoding-basic-data-types]]
+===== Basic data types
+XML-Schema defines a rich set of basic data types that can be used to define XML documents. However, since data can originate from any number of sources (many having a different set of supported basic types), this document limits the set of available basic types for compliance level 0 to a smaller subset. The reasoning is that a smaller common set of supported basic data types is likely to be more interoperable.
+
+In addition to the GML geometric property types defined in Table 6, this profile supports the following list of basic data types:
+
+. Integers (with optional specified value range and number of digits)
+. Measurements, that include a reference to units of measurement
+. Character strings (with optional specified maximum length or fixed length)
+. Date
+. Boolean
+. Binary data
+. URI references to local or remote resources
+. References to other resources
+. Character strings whose values are from a code list
+. Reals (with optional specified number of digits, decimal precision and value range)
+
+The following sub-clauses specify XML templates for defining elements whose content type corresponds to one of the basic types supported by this profile. Unless otherwise specified, all elements and attributes presented in the templates, and only those elements and attributes, shall be included in an application schema that complies with this profile.
+
+[[common-facets]]
+===== Common facets
+<<allowed-element-facets>> summarizes the common facets that may be used when declaring elements that encode properties in application schemas that comply with level SF-0 of this profile.
+
+
+[[allowed-element-facets]]
+.Allowed element facets
+[cols="3",options="header"]
+|===
+|XML schema element facet name |Applicable data types |Encoding pattern
+
+|minInclusive |integer, measurement, date, dateTime, real |`<xsd:minInclusive value="min value"/>`
+|minExclusive |integer, measurement, date, dateTime, real |`<xsd:minExclusive value="min value"/>`
+|maxInclusive |integer, measurement, date, dateTime, real |`<xsd:maxInclusive value="max value"/>`
+|maxExclusive |integer, measurement, date, dateTime, real |`<xsd:maxExclusive value="max value"/>`
+|enumeration |integer, measurement, date, dateTime, real, string, URI, reference |`<xsd:enumeration value="value"/>`
+|===
+
+===== Multiplicity
+The attributes *minOccurs* and *maxOccurs* may be specified to indicate the minimum and maximum number of times that a property element shall appear in an instance document. If *minOccurs* and *maxOccurs* are omitted, then the default values defined in XML-Schema for these facets apply - one (1).
+
+For compliance level SF-0, the attribute *minOccurs* can have the values 0 or 1 and *maxOccurs* can only have the value 1. This restriction is relaxed for compliance levels SF-1 (see <<changes-from-compliance-level-sf-0-multiplicity>>) and SF-2.
+
+[[feature-property-encoding-null-values]]
+===== Null values
+In this profile, the term _null_ is used to indicate the absence of a property value. Whether or not the value of a feature property is interpreted as being null depends on the definition of the XML element into which the property is mapped in a GML application schema and the contents of that element in a GML instance document.
+
+The salient facets of an element's declaration that affect whether a property's value is interpreted as being null or not are the *minOccurs* and *maxOccurs* facets. If minOccurs=0 and the element does not appear in an instance document then the corresponding property value shall be considered to be null. Otherwise, the property value is assigned as specified in <<table-feature-property-encoding-null-values>>. For compliance level SF-0, <<table-feature-property-encoding-null-values>> summarizes how the various combinations of *minOccurs*, *maxOccurs* and an element's content are interpreted to set the value of a feature property.
+
+The use of the attribute *nillable* is prohibited in compliance level SF-0 but is allowed for levels SF-1 (see <<changes-from-compliance-level-sf-0-null-values>>) and SF-2.
+
+Although XML-Schema [W3C XML-1] allows *minOccurs=maxOccurs=0*, this profile prohibits this combination.
+
+
+[[table-feature-property-encoding-null-values]]
+.Interpretation of feature property value
+[cols="4",options="header"]
+|===
+|Value of minOccurs facet on element declaration in GML application schema
+|Value of maxOccurs facet on element
+declaration in GML application schema
+|Content of element in GML instance document
+|Interpretation of feature property value
+
+|0 |0 |EMPTY |Not allowed by this profile.
+|0 |0 |NOT EMPTY |Invalid combination
+|0 |1 |EMPTY |Property value is null
+|0 |1 |NOT EMPTY |Property value is the content of the element
+|1 |0 |EMPTY |Invalid according to XML Schema
+|1 |0 |NOT EMPTY |Invalid according to XML Schema
+|1 |1 |EMPTY |Invalid combination
+|1 |1 |NOT EMPTY |Property value is the content of the element.
+|===
+
+[[declaring-elements-with-integer-content]]
+===== Declaring elements with integer content
+The following XML-Schema fragments show how to declare a property element with integer content:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" [minOccurs="0|1"] [maxOccurs="1"]>
+2   <xsd:simpleType>
+3       <xsd:restriction base="xsd:integer">
+4           <xsd:totalDigits value="nDigits"/>
+5           <!-- ... Optional facets described in sub-clause 8.4.4.2 ...-->
+6       </xsd:restriction>
+7   </xsd:simpleType>
+8 </xsd:element>
+
+SHORT FORM: <xsd:element name="propertyName" type="xsd:integer"
+                            [minOccurs="0|1"] [maxOccurs="1"]/>
+----
+
+The value of the mandatory *name* attribute, _propertyName_, is a placeholder for the name of the element being declared which shall be the name of feature property being encoded.
+
+An element with integer content (or an integer-valued property) shall be derived from the base XML-Schema type *xsd:integer*.
+
+The use of the attributes *minOccurs* and *maxOccurs* is described in <<common-facets>>.
+
+The maximum number of digits in the integer may be specified using the *value* attribute on the *totalDigits* element. The value _nDigits_ in the XML fragment is a placeholder for the value representing the maximum number digits in the integer.
+
+The declaration of an element with integer content may also include one of more of the optional facets described in <<common-facets>>. If no optional facets are specified in the element declaration, then the _short form_ schema fragment may be used instead.
+
+[[declaring-elements-with-content-that-is-a-measurement]]
+===== Declaring elements with content that is a measurement
+The following XML-Schema fragments show how to define property elements with content that is a measurement and includes a unit of measure in a GML application schema that complies with this profile:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" [minOccurs="0|1"] [maxOccurs="1"]>
+2   <xsd:complexType>
+3       <xsd:simpleContent>
+4           <xsd:restriction base="gml:MeasureType">
+5               <!-- ... Optional facets described in sub-clause 8.4.4.2 ... -->
+6           </xsd:restriction>
+7       </xsd:simpleContent>
+8   </xsd:complexType>
+9 </xsd:element>
+
+SHORT FORM: <xsd:element name="propertyName" type="gml:MeasureType"
+                        [minOccurs="0|1"] [maxOccurs="1"]/>
+----
+
+The value of the mandatory *name* attribute, _propertyName_, is a placeholder for the name of the element being declared which shall be the name of feature property being encoded.
+
+The use of the attributes minOccurs and maxOccurs is described in <<common-facets>>.
+
+A measurement property shall be of type *gml:MeasureType*.
+
+The declaration of an element with a measurement may also include one of more of the optional facets described in <<common-facets>>. If no optional facets are specified in the element declaration, then the short form schema fragment may be used instead.
+
+In an instance document, if the unit of measure is not known, then the value of the *uom* attribute may be set to *unknown* to indicate this. It should also be noted that if the value of a property is a ratio, then the unit type is scale with example values such as unity, percent and parts-per-million.
+
+[[declaring-elements-with-string-content]]
+===== Declaring elements with string content
+
+[[basic-string]]
+====== Basic string
+The following XML-Schema fragments show how to declare a property element with character string content:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" [minOccurs="0|1"] [maxOccurs="1"]>
+2   <xsd:simpleType>
+3       <xsd:restriction base="xsd:string">
+4           <xsd:maxLength value="nCharacters"/>
+5           <!-- - or - -->
+6           <xsd:length value="nCharacters"/>
+7           <!--... Optional facets described in sub-clause 8.4.4.2 ... -->
+8       </xsd:restriction>
+9   </xsd:simpleType>
+10 </xsd:element>
+
+SHORT FORM: <xsd:element name="propertyName" type="xsd:string"
+                        [minOccurs="0|1"] [maxOccurs="1"]/>
+----
+
+The value of the mandatory *name* attribute, _propertyName_, is a placeholder for the name of the element being declared which shall be the name of feature property being encoded.
+
+The use of the attributes *minOccurs* and *maxOccurs* is described in <<common-facets>>.
+
+A character string valued property shall be derived, by restriction, from the base XMLSchema type *xsd:string*.
+
+The _nCharacters_ value of the *value* attribute of the *maxLength* element may be used to indicate the maximum number of characters that the string may contain. Similarly, the _nCharacters_ value of the *value* attribute of the *length* element may be used to indicate the fixed number of characters that the string shall contain. Note that _nCharacters_ value may *not* be the same as the length in bytes of the character string. The length of the string in bytes may be longer than the _nCharacters_ value if a multi-byte character set is being
+used.
+
+The declaration of an element with character string content may also include the optional "`Enumeration`" facet described in <<common-facets>>. If no optional facets are specified in the element declaration, then the _short form_ schema fragment may be used instead.
+
+[[internationalized-string]]
+====== Internationalized string
+The following XML fragment defines a complex type that shall be included in a schema that requires the use of internationalized strings.
+
+[%unnumbered]
+----
+1 <xsd:complexType name="LanguageStringType">
+2   <xsd:simpleContent>
+3       <xsd:extension base="string">
+4           <xsd:attribute ref="xml:lang" use="optional"/>
+5           <!-- ... additional optional attributes ... --!>
+5       </xsd:extension>
+6   </xsd:simpleContent>
+7 </xsd:complexType>
+----
+
+The LanguageString type shall include the xml:lang attribute, as shown, but may include additional optional attributes that an application schema may require to further characterize an internationalized string.
+
+Elements with internationalized string content can then be defined using the following template:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" [minOccurs="0|1"] [maxOccurs="1"]>
+2   <xsd:complexType>
+3       <xsd:simpleContent>
+3           <xsd:restriction base="xxx:LanguageStringType">
+4               <xsd:maxLength value="nCharacters"/>
+5               <!-- - or - -->
+6               <xsd:length value="nCharacters"/>
+7               <!--... Optional facets described in sub-clause 8.4.4.2 ... -->
+8           </xsd:restriction>
+9       </xsd:simpleContent>
+9   </xsd:complexType>
+10 </xsd:element>
+
+SHORT FORM: <xsd:element name="propertyName" type="xxx:LanguageStringType"
+                        [minOccurs="0|1"] [maxOccurs="1"]/>
+----
+
+which is similar to the fragment defined in <<declaring-elements-with-content-that-is-a-measurement>> except for the type _xxx:LanguageString_ which is a placeholder for the LanguageStringType (see <<declaring-elements-with-content-that-is-a-measurement>>) in the target namespace of the schema.
+
+Application schemas that use internationalized strings shall include the following namespace declaration:
+
+[%unnumbered]
+----
+xmlns:xml="http://www.w3.org/XML/1998/namespace"
+----
+
+and shall import the following schema:
+
+[%unnumbered]
+----
+<xsd:import namespace="http://www.w3.org/XML/1998/namespace"
+            schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+----
+
+in order to declare the namespace for the *xml:lang* attribute.
+
+[[declaring-elements-with-date-content]]
+===== Declaring elements with date content
+The following XML-Schema fragments show how to encode a property element with date content:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" [minOccurs="0|1"] [maxOccurs="1"]>
+2   <xsd:simpleType>
+3       <xsd:restriction base="xsd:date|xsd:dateTime">
+4           <!-- ... Optional facets described in sub-clause 8.4.4.2 ... -->
+5       </xsd:restriction>
+6   </xsd:simpleType>
+7 </xsd:element>
+
+SHORT FORM: <xsd:element name="propertyName" type="xsd:date | xsd:dateTime"
+                            [minOccurs="0|1"] [maxOccurs="1"]/>
+----
+
+The value of the mandatory *name* attribute, _propertyName_, is a placeholder for the name of the element being declared which shall be the name of feature property being encoded.
+
+The use of the attributes *minOccurs* and *maxOccurs* is described in <<common-facets>>.
+
+An element that contains date content can be of type *xsd:date* or *xsd:dateTime* depending on whether time is important or not. The actual instances of date values shall be encoded according to the XML Schema standard.
+
+The declaration of an element with date content may also include one of more of the optional facets described in <<common-facets>>. If no optional facets are specified in the element declaration, then the _short form_ schema fragment may be used instead.
+
+[[declaring-elements-with-boolean-content]]
+===== Declaring elements with boolean content
+The following XML-Schema fragment shows how to declare an element with Boolean content in a GML application schema that complies with this profile:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2               type="xsd:boolean"
+3               [minOccurs="0|1"] [maxOccurs="1"]/>
+----
+
+The value of the mandatory *name* attribute, propertyName, is a placeholder for the name of the element being declared which shall be the name of feature property being encoded.
+
+The use of the attributes *minOccurs* and *maxOccurs* is described in <<common-facets>>. The value space of boolean content is {true, 1, false, 0}.
+
+[[declaring-elements-with-binary-content]]
+===== Declaring elements with binary content
+The following XML-Schema fragment shows how to declare an element with binary content in a GML application schema that complies with this profile:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" [minOccurs="0|1"] [maxOccurs="1"]>
+2   <xsd:complexType>
+3       <xsd:simpleContent>
+4           <xsd:extension base="xsd:base64Binary|xsd:hexBinary">
+5               <xsd:attribute name="url" type="xsd:anyURI" use="optional"/>
+6               <xsd:attribute name="mimeType" type="xsd:string" use="required"/>
+7               <xsd:attribute name="role" type="xsd:string" use="optional"/>
+8               <xsd:attribute name="length" type="xsd:positiveInteger" use="optional"/>
+8           </xsd:extension>
+9       </xsd:simpleContent>
+10  </xsd:complexType>
+11 </xsd:element>
+----
+
+The value of the mandatory *name* attribute, _propertyName_, is a placeholder for the name of the element being declared which shall be the name of feature property being encoded.
+
+The use of the attributes *minOccurs* and *maxOccurs* is described in <<common-facets>>.
+
+Binary content can either be referenced from an external URI or encoded inline in base64 or hex format. When binary data is referenced from an external URI, the url attribute shall be used to point to the location of the data. The *mimeType* attribute shall also be specified to indicate the type or format of binary data that is being referenced. Finally, the optional *role* attribute can be used to assign a user-defined role to the data. The role attribute allows complex binary formats like HDF/EOS, which contains multiple independent binary components, to be supported.
+
+When binary data is encoded inline, the *mimeType* attribute shall be specified to indicate the type or format of the binary data. The optional *role* attribute can also be specified to assign a user-defined role to the data. Binary data included inline is either encoded in base64 format (indicated by defining the type of the element as *xsd:base64Binary*) or hex (indicated by defining the type of the element as *xsd:hexBinary*). The optional length attribute may be used to specify the length of the content of the element in an
+instance document.
+
+[[declaring-elements-with-geometric-content]]
+===== Declaring elements with geometric content
+====== Encoding properties with geometric content
+The following XML-Schema fragment shows how to declare a property element with
+geometric content:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2               type="gml_geometric_propertyType"
+3               [minOccurs="0|1"] [maxOccurs="1"]>
+----
+
+The value of the mandatory *name* attribute, propertyName, is a placeholder for the name of the element being declared which shall be the name of feature property being encoded.
+
+The use of the attributes *minOccurs* and *maxOccurs* is described in <<common-facets>>.
+
+The value _gml_geometric_propertyType_ for the *type* attribute is a placeholder for one of the geometric property types defined in <<table-supported-gml-geometric-property-types>> below.
+
+[[supported-geometric-property-types]]
+====== Supported geometric property types
+<<table-supported-gml-geometric-property-types>> lists the GML geometry property types can be used in a GML application schema that complies with level SF-0:
+
+
+[[table-supported-gml-geometric-property-types]]
+.Supported GML Geometric Property Types
+[cols="3",options="header"]
+|===
+|GML geometric property type |Defined in GML
+schema document |Restrictions
+
+|gml:PointPropertyType |geometryBasic0d1d.xsd |None
+
+|gml:CurvePropertyType 
+a|geometryBasic0d1d.xsd +
+geometryPrimitives.xsd
+a|Supported property values are gml:LineString or gml:Curve
+with gml:LineStringSegment, gml:Arc, gml:Circle or gml:CircleByCenterPoint segments{blank}footnote:gmlTypeNote[Non-linearly interpolated curves are not included in the OpenGIS(R) Implementation Specification for Geographic information - Simple feature access - Part 1: Common architecture [OGC 06-103r3\] specification. However, this standard allows the use of gml:Arc, gml:Circle and gml:CircleByCenterPoint because of their general utility for the compact expression of circles and arcs which would otherwise be approximated using line strings and/or polygons.].
+
+|gml:SurfacePropertyType 
+|geometryBasic2d.xsd 
+a|Supported property values are gml:Polygon or gml:Surface with gml:PolygonPatch patches. Surface boundaries may be described using gml:LinearRing or using gml:Ring with a single gml:Curve with gml:LineStringSegment, gml:Arc, gml:Circle or gml:CircleByCenterPoint segments footnote:[Non-linearly interpolated curves are not included in the OpenGIS(R) Implementation Specification for Geographic information - Simple feature access - Part 1: Common architecture [OGC 06-103r3\] specification. However, this standard allows the use of gml:Arc, gml:Circle and gml:CircleByCenterPoint because of their general utility for the compact expression of circles and arcs which would otherwise be approximated using line strings and/or polygons.].
+
+|gml:GeometryPropertyType
+|geometryBasic0d1d.xsd 
+a|Supported property values are +
+gml:Point,gml:LineString, +
+gml:Curve, gml:Polygon, +
+gml:Surface, gml:MultiPoint, +
+gml:MultiCurve, +
+gml:MultiSurface
+
+|gml:MultiPointPropertyType |geometryAggregates.xsd |None
+
+|gml:MultiCurvePropertyType |geometryAggregates.xsd |Supported members are same as CurvePropertyType
+
+|gml:MultiSurfacePropertyType |geometryAggregates.xsd |Supported members are same as SurfacePropertyType
+|===
+
+
+Additional requirements for Geometry include:
+
+. in all cases, geometry coordinates shall only be specified using the *gml:pos* element for *gml:Point* and gml:CircleByCenterPoint, or the *gml:posList* element for all other types
+. features may have any number of geometric properties
+. coordinate reference systems may have 1, 2 or 3 dimensions
+
+
+The response feature collection may include the *gml:boundedBy* property with the appropriate *srsName*. In this case, all geometries in the feature collection shall be in the same *srsName* unless otherwise indicated within a particular feature or geometry instance.
+
+For the aggregate geometric property types *gml:MultiPointPropertyType*, *gml:MultiCurvePropertyType*, *gml:MultiSurfacePropertyType* and *gml:MultiGeometryPropertyType*, the GML standard defines two containing elements for individual geometry members. The following table lists which geometry member containers are defined for each aggregate geometric type in this profile:
+
+[[geometry-member-containers]]
+.Geometry member containers
+[cols="2",options="header]
+|===
+|Aggregate geometry property type |Geometry member container element
+
+|gml:MultiPointPropertyType |gml:pointMember
+|gml:MultiCurvePropertyType |gml:curveMember
+|gml:MultiSurfacePropertyType |gml:surfaceMember
+|gml:MultiGeometryPropertyType |gml:geometryMember
+|===
+
+That is, this profile restricts instance documents to using the property containers *gml:pointMember*, *gml:curveMember*, *gml:surfaceMember* and *gml:geometryMember*.
+
+====== CRS support
+
+____
+This sub-clause discusses topics related to CRS handling within GML instance documents that validate against application schemas that comply with compliance level SF-0.
+____
+
+A client application needs to be able to unambiguously determine the CRS of each geometry instance in a GML instance document that validates against a GML application schema that complies with this profile. GML defines the *srsName* attribute for this purpose.
+
+In this profile, the *srsName* attribute can be specified at three different levels in an instance document:
+
+. On the *gml:boundedBy* Envelope of a top level response container that is a feature collection. For example, the WFS response container, *wfs:FeatureCollection* defined in the Web Feature Service Implementation standard [OGC 04-094].
+. On the *gml:boundedBy* Envelope of each feature instance. The "`object`" level element of each feature type is defined using the pattern described in <<coding-pattern-for-feature-types>>.
+. On the geometry elements *gml:Point*, *gml:LineString*, *gml:Curve*, *gml:Polygon*, *gml:Surface*, *gml:Geometry*, *gml:MultiPoint*, *gml:MultiCurve*, *gml:MultiSurface*, *gml:MultiGeometry*.
+
+The following example XML fragment shows the *srsName* attribute used at the feature collection, feature instance and geometry instance levels.
+
+[%unnumbered]
+----
+1. <wfs:FeatureCollection>
+2.      <gml:boundedBy>
+3.          <gml:Envelope srsName="..."> ... </gml:Envelope>
+4.      </gml:boundedBy>
+5.      <!-- ... feature instances go here ... -->
+6.      <wfs:member>
+7.          <myns:MyFeature>
+8.              <gml:boundedBy>
+9.                  <gml:Envelope srsName="..."> ... </gml:Envelope>
+10.             </gml:boundedBy>
+11.             <!-- ... zero or more property values go here ... -->
+12.             <myns:geomProperty>
+13.                 <gml:Polygon srsName="..."> ... </gml:Polygon>
+14.             </myns:geomProperty>
+15.             <!-- ... zero or more property values go here ... -->
+15.         </myns:MyFeature>
+16.     </wfs:member>
+17.     <!-- ... more feature instances go here ... -->
+18. </wfs:FeatureCollection>
+----
+
+Line 3 shows the *srsName* attribute specified at the feature collection level. Line 9 shows the *srsName* attribute specified at the feature instance level. Line 13 show the *srsName* attribute specified at the geometry instance level.
+
+In order to reduce redundancy, instance documents should specify the *srsName* attribute at the highest possible level. In the case were a CRS is not explicitly specified for a geometry instance, the CRS of the geometry instance shall be assumed to take on the value of the *srsName* attribute of the *gml:boundedBy* Envelope of the nearest containing element (i.e. feature instance or feature collection) that contains an Envelope. This implies that if all geometry instances in a document are in the same CRS, then the best practice for a compliant instance document is to not repeatedly specify that same value for the *srsName* attribute for each geometry instance. Instead, the compliant document should specify a *gml:boundedBy* element at the feature collection level and specify a value for the *srsName* attribute on the *gml:Envelope* element. Thus, the *srsName* attribute is specified once in the entire document.
+
+In the case where the bounding box at the feature collection level and the feature type level has no value, then the *srsName* attribute shall be specified for each geometry instance of the corresponding feature type even if the CRS is the same for all geometry instances.
+
+[[declaring-elements-whose-content-is-a-uri]]
+===== Declaring elements whose content is a URI
+The following XML-Schema fragment shows how to declare a property element with
+URI content in a GML application schema that complies with this profile:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2               type="xsd:anyURI"
+3               [minOccurs="0|1"] [maxOccurs="1"]/>
+----
+
+The value of the mandatory *name* attribute, _propertyName_, is a placeholder for the name of the element being declared which shall be the name of feature property being encoded.
+
+The use of the attributes *minOccurs* and *maxOccurs* is described in <<common-facets>>.
+
+[[declaring-elements-that-reference-other-resources]]
+===== Declaring elements that reference other resources
+The following XML-Schema fragment shows how to declare an element whose value is a reference to a local or remote resource:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" type="gml:ReferenceType" minOccurs="0|1">
+2   <xsd:annotation>
+3       <xsd:appinfo source="urn:x-gml:targetElement">...target element...</xsd:appinfo>
+4   </xsd:annotation>
+5 </xsd:element>
+----
+
+The value of the mandatory *name* attribute, propertyName, is a placeholder for the name of the element being declared which should match the name of feature property being encoded.
+
+The use of the attributes *minOccurs* and *maxOccurs* is described in <<common-facets>>.
+
+The value of the mandatory *type* attribute shall be *gml:ReferenceType*.
+
+To explicitly describe that an association exists between two features, an XML Schema annotation shall be used, as shown above, to specify the namespace-qualified elements in each feature that encode the association. For example, consider the following association between two fictitious features called AIRPORT and BUILDING:
+
+
+.Example association between two features
+image::example-association.jpg[]
+
+
+In this example, the BUILDING feature might contain the property declaration:
+
+[%unnumbered]
+----
+<xsd:element name="partOfAirport" type="gml:ReferenceType minOccurs="1">
+    <xsd:annotation>
+        <xsd:appinfo>
+            <gml:targetElement>myns:AIRPORT</gml:targetElement>
+        </xsd:appinfo>
+    </xsd:annotation>
+</xsd:element>
+----
+
+used to indicate in an instance of the BUILDING object to which airport the building belongs.
+
+In instance documents, local objects may be identified using only the following shorthand xpointer expression template: a local resource is identified by setting the value of the *xlink:href* attribute to be the fragment separator '#' and the *gml:id* value of the feature. The absence of a URI before the fragment separator indicates that the local document is
+being referenced. For example:
+
+[%unnumbered]
+----
+xlink:href="#o1013"
+----
+
+Similarly, remote objects may be identified by setting the value of the *xlink:href* attribute to be the URI for the remote document, a fragment separator '#' and the id of the
+object being referenced. For example:
+
+[%unnumbered]
+----
+xlink:href=http://...www.someserver.com.../somedoc.xml#o1013
+----
+
+[[declaring-elements-with-string-content-from-a-code-list]]
+===== Declaring elements with string content from a code list
+The following XML Schema fragment defines the encoding of a property element whose content shall be from a list of values stored in one or more external dictionaries.
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" [minOccurs="0|1"] [maxOccurs="1"]>
+2   <xsd:complexType>
+3       <xsd:simpleContent>
+4           <xsd:restriction base="gml:CodeType">
+5               <xsd:attribute name="codeSpace" type="xsd:anyURI" [use="optional"]
+6                   default="...some uri..." | fixed="... some uri..."/>
+7           </xsd:restriction>
+8       <xsd:simpleContent>
+9   </xsd:complexType>
+10 </xsd:element>
+----
+
+The value of the mandatory *name* attribute, _propertyName_, is a placeholder for the name of the element being declared which shall be the name of feature property being encoded.
+
+The use of the attributes *minOccurs* and *maxOccurs* is described in <<common-facets>>.
+
+A default GML dictionary for the code list can be specified as shown in line 5 using the *default* or *fixed* attribute on the *attribute* declaration pointing to the desired dictionary. If the desired value dictionary is specified in an application schema using the *default* attribute then an instance document may point to an alternate value dictionary at runtime using the *codeSpace* attribute. If, however, the *fixed* attribute is used in an application schema, then an instance document shall use values from the specified dictionary.
+
+In addition to GML dictionaries, dictionaries encoded using other schemas may also be referenced (e.g. SKOS Simple Knowledge Organiztion System).
+
+===== Declaring elements with real content
+The following XML-Schema fragments show how to define property elements with real content in a GML application schema that complies with this profile:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" [minOccurs="0|1"] [maxOccurs="1"]>
+2   <xsd:simpleType>
+3       <xsd:restriction base="xsd:double|xsd:decimal">
+4           <!-- ... Optional facets described in sub-clause 8.4.4.2 ... -->
+5           [<xsd:totalDigits value="N"/>]
+6           [<xsd:fractionDigits value="N" />]
+7       </xsd:restriction>
+8   </xsd:simpleType>
+9 </xsd:element>
+
+SHORT FORM: <xsd:element name="propertyName" type="xsd:double"
+                        [minOccurs="0|1"] [maxOccurs="0|1"]/>
+----
+
+The value of the mandatory *name* attribute, _propertyName_, is a placeholder for the name of the element being declared which shall be the name of feature property being encoded.
+
+The use of the attributes *minOccurs* and *maxOccurs* is described in <<common-facets>>.
+
+A real-valued property (or an element with real content) shall be of type *xsd:double* or type *xsd:decimal*. The type *xsd:decimal* is included in the profile for the encoding of real values and to support the mapping, into GML, of source formats where the precision and scale are precisely known. For example, when encoding numeric values from a table in a relational database, the definition of numeric columns can include both a precision
+and scale.
+
+If the type is *xsd:decimal* then the facets totalDigits and fractionDigits listed in lines 5 and 6 shall be specified. If the type is *xsd:double*, then the facets totalDigits and fractionDigits listed in lines 5 and 6 shall not be specified.
+
+The declaration of an element with real content may also include one of more of the optional facets described in <<common-facets>>. If no optional facets are specified in the element declaration, then the _short form_ schema fragment may be used instead.
+
+In most cases, a real-valued property is used for encoding a measurement of some sort and as such the value has an associated unit of measure. For this reason, this standard strongly recommends that real-valued properties be encoded using the *gml:MeasureType* as described in <<declaring-elements-with-content-that-is-a-measurement>>.
+
+[[comments-and-annotations]]
+=== Comments and annotations
+Application schemas that comply with level SF-0 of this profile may freely use XML comments and annotations, using the *annotation* element, wherever they are legally allowed by XML-Schema and GML.

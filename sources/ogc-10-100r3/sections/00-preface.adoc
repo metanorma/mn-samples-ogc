@@ -1,0 +1,100 @@
+
+.Preface
+This approved OGC Implementation Standard defines a Simple Features profile of the Geography Markup Language version 3.2. This Simple Features Profile has been aligned with the OGC Simple Features standard for SQL version 1.2. Simple Features include: Point, Curve (LineString), Surface (Polygon), Geometry, MultiPoint, MultiCurve, MultiSurface, and MultiGeometry. The detailed abstract model for OGC features and geometry can be found in the OGC Abstract Specification, Topic Volume 1: Features (which is equivalent to ISO 19107).
+
+This Simple Features profile of GML began as a product of OGC's Interoperability Program: a global, collaborative, hands-on engineering and testing program designed to deliver prototype technologies and proven candidate standards into the OGC's
+Specification Development Program. In OGC Interoperability Initiatives, international teams of technology providers work together to solve specific geo-processing interoperability problems posed by Initiative.
+
+The Open Geospatial Consortium (OGC) is an international industry consortium of more than 435 companies, government agencies, and universities participating in a consensus process to develop publicly available geo-processing standards.
+
+
+
+== Document terms and definitions
+This document uses the specification terms defined in sub-clause 5.3 of [OGC 06-021r3], which is based on the ISO/IEC Directives, Part 2: Rules for the structure and drafting of
+International Standards. In particular, the word "`shall`" (not "`must`") is the verb form used to indicate a requirement to be strictly followed to comply with this standard.
+
+
+== Document contributor contact points
+All questions regarding this submission should be directed to the editor or the submitters:
+
+Linda van den Brink +
+Geonovum
+
+
+Clemens Portele +
+Interactive Instruments
+
+
+Panagiotis (Peter) A. Vretanos +
+CubeWerx Inc.
+
+
+Contributors:
+
+[%unnumbered]
+[cols="2",options="header"]
+|===
+|Contact |Company
+
+|Arctur, David |formerly of ESRI
+|Bruce, Craig |CubeWerx Inc.
+|Burggraf, David |Galdos Inc.
+|Cox, Simon |CSIRO
+|van den Brink, Linda |Geonovum NL.
+|Daisey, Paul |U.S. Census Bureau
+|Daly, Martin |Cadcorp Ltd.
+|Danko, David |ESRI
+|Herring, John |Oracle
+|Keens, Stephen |PCI Ltd.
+|Keighan, Edric |CubeWerx Inc.
+|Kyle, Martin |Galdos Inc.
+|May, Brian |formerly of Cubewerx Inc.
+|Milanovic, Aleksander |formerly of Galdos Inc.
+|Lake, Ron |Galdos Inc.
+|Lemieux, Sylvain |PCI Ltd.
+|Pomakis, Keith |CubeWerx Inc.
+|Portele, Clemens |Interactive Instrument GmbH
+|Ramsey, Paul |Refractions Research Inc.
+|Scarponcini, Paul |Bentley Systems Inc.
+|Sonnet, Jerome |IONIC
+|Whiteside, Arliss |BAE Systems E&IS
+|===
+
+
+== Changes to the OpenGIS(R) Abstract Specification
+None.
+
+== Changes to existing Implementation Standards
+None.
+
+== Future work
+This revision is a straightforward update of the previous version to another version of GML.
+
+There are a number of open issues that need to be addressed in a future revision. This work needs to be undertaken in a new SWG to be initiated after adoption of this document. The scope of the SWG will include:
+
+- Harmonisation with the OGC Simple Feature Common Architecture standard (revision in process in another SWG)
+
+- Modularisation of the documents (including identifying dependencies to conformance classes of GML and Simple Feature Common Architecture)
+
+- Adaptations to support new versions of GML
+
+A particular item of discussion is the use of the term "`simple feature profile`" in conjunction with the levels SF-0 and SF-1 as they include restrictions on non-geometric feature properties that are not part of the Simple Feature Common Architecture standard.
+
+
+.Foreword
+This version of the Geography Markup Language (GML) simple features profile supersedes the previous version 1.0 [OGC 06-049r1]. The primary technical change was to update the previous document to use GML 3.2.1 [OGC 07-036].
+
+This document version is processed under the new fast track process of OGC as it is a straightforward update to support the use of GML 3.2 in a GML-SF context. There are known issues to be addressed in the next revision, see section "`Future work`".
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The OGC shall not be held responsible for identifying any or all such patent rights.
+
+Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.
+
+
+== Introduction
+The GML standard declares a large number of XML elements and attributes meant to support a wide variety of capabilities. For example, the GML standard can be used to encode dynamic features, spatial and temporal topology, complex geometric property types and coverages. With such a wide scope, interoperability can only be achieved by defining profiles of GML that deal with a restricted subset of GML capabilities. Such profiles limit the number of GML object types that can appear in compliant schemas and consequently are easier to process.
+
+The generation and parsing of Geographic Markup Language (GML) [OGC 07-036] and XML Schema [W3C XML-1, W3C XML-2] code are required in the implementation of many components that deal with GML encoded content. This profile defines a restricted but useful subset of XML-Schema and GML to lower the "`_implementation bar_`" of time and resources required for an organization to commit for developing software that supports GML. It is hoped that by lowering the effort required to manipulate XML encoded feature data, organizations will be encouraged to invest more time and effort to take greater advantage of GML's rich functionality.
+
+Development of this profile does not reduce the need for distinct communities of users to develop application schemas (data models) for information sharing. However, to the extent that users' application schemas fit within the scope of GML-SF capabilities, this profile facilitates the ability to use WFS for interoperable feature data exchange with
+much less software development investment.

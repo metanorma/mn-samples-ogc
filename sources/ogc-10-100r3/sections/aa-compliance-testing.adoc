@@ -1,0 +1,1080 @@
+
+[[annex-compliance-testing]]
+[appendix,obligation=normative]
+== Compliance testing
+
+=== Introduction (Level SF-0, SF-1, SF-2)
+This annex outlines how a GML application schema can be tested for compliance with this profile.
+
+It is assumed that a method exists for lexically scanning the application schema being tested in order to access all the elements and attributes contained therein.
+
+The following description is only concerned with interpreting the schema definition in order to ascertain if the schema is compliant with this profile.
+
+The best way to test a GML application schema for compliance to this profile is to build an XML-Schema interpreter that checks all the elements and attributes defined in the application schema for compliance.
+
+The following clauses present each of the XML-Schema pattern templates defined in this profile and describe how to test them for compliance. Every effort has been made to ensure that the schema fragments presented in this annex match those in the main body of this profile. If, however, a discrepancy is found then the fragments in the main body of this profile should be considered normative.
+
+
+=== Elements to ignore (Level SF-0, SF-1, SF-2)
+All XML comments may be ignored. All XML-Schema annotation elements and subelements may be ignored except as directed in this profile.
+
+Attention is drawn to the fact that in this annex, as in the profile, the namespace prefix _xsd_ is used for the XML-Schema namespace. This is purely for illustrative purposes and the prefix _xsd_ should be considered a placeholder for the actual prefix defined in any particular schema instance.
+
+=== General compliance rules (Level SF-0, SF-1, SF-2)
+Only the elements and attributes defined or discussed in this profile shall appear in a compliant schema regardless of the implicit elements and attributes that may be defined in XML-Schema or GML.
+
+The order in which elements are declared is not important except where the order matters with regard to XML-Schema or GML.
+
+Only opening tags or elements are described in this annex. It is assumed that the schema is well formed and the corresponding closing tags exist.
+
+The order in which attributes appear in opening elements is not important. The order chosen in this document is purely for the sake of clarity.
+
+=== Root element (Level SF-0, SF-1, SF-2)
+A compliant application schema shall be a valid GML application schema, which means that is shall be a valid XML-Schema document. The following fragment defines the root element of a compliant XML-Schema document:
+
+[%unnumbered]
+----
+1 <xsd:schema
+2   targetNamespace="target_name_space"
+3   xmlns:prefix="target_name_space"
+4   xmlns:xmlns_prefix="http://www.w3.org/2001/XMLSchema"
+5   xmlns:gml="http://www.opengis.net/gml/3.2"
+6   xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+7   elementFormDefault="qualified"
+8   version="99.99.99">
+----
+
+*Compliance rules:*
+
+. the root element shall be *xsd:schema* (line 1)
+.. the attribute *targetNamespace* shall be present (line 2)
+... its value is user defined
+.. the attribute *xmlns:__prefix__* shall be present (line 3)
+... the value of _prefix_ is user defined and represents the target namespace
+... the namespace value shall be same as target namespace(line 2)
+.. the attribute *xmlns:xmls_prefix* shall be present (line 4)
+... the value _xmls_prefix_ is user defined and is the alias for the XML-Schema namespace; this profile uses *xsd* as an example
+... its value shall be 'link:http://www.w3.org/2001/XMLSchema[http://www.w3.org/2001/XMLSchema]'
+.. the attribute *xmlns:gml* shall be present (line 5)
+... its value shall be 'link:http://www.opengis.net/gml/3.2[http://www.opengis.net/gml/3.2]'
+... the namespace alias *gml* is recommended but may be redefined by the user; this profile uses the prefix *gml* as an example
+.. the attribute *xmlns:gmlsf* shall be present (line 6)
+... its value shall be 'link:http://www.opengis.net/gmlsf[http://www.opengis.net/gmlsf]'
+... the namespace alias shall be *gmlsf*
+.. additional *xmlns:__prefix__* attributes may be present declaring prefixes for imported namespaces
+.. the attribute *elementFormDefault* should be present
+... its value shall be 'qualified'
+.. the attribute *version* shall be present
+... its value is user defined
+
+=== Identifying the compliance level (Level SF-0, SF-1, SF-2)
+An application schema shall use an appinfo annotation to declare its compliance level (defined in <<identifying-the-compliance-level>>).
+
+[%unnumbered]
+----
+1 <xsd:annotation>
+2   <xsd:appinfo source="...SOME URI.../gmlsfLevels.xsd">
+3       <gmlsf:ComplianceLevel>0|1|2<gmlsf:ComplianceLevel>
+4   </xsd:appinfo>
+5 </xsd:annotation>
+----
+
+*Compliance rules:*
+
+. the element *xsd:annotation* shall be present (line 1)
+.. the element *xsd:appinfo* shall be present (line 2)
+... the attribute *source* shall be present (line 2)
+... its value shall be some URI that resolves to the contents of
+gmlsfLevels.xsd (line 2)
+... the element *gmlsf:ComplianceLevel* shall be present (line 3)
+.... its value shall be one of 0,1 or 2 (line 3)
+..... the value shall be 0 for application schema that claim compliance with level SF-0
+..... the value shall be 1 for application schemas that claim compliance with level SF-1
+..... the value value be 2 for application schemas that claim compliance with level SF-2
+
+[[importing-the-gml-schema-level-sf-0-sf-1-sf-2]]
+=== Importing the GML schema (Level SF-0, SF-1, SF-2)
+All features in a compliant application schema shall be substitutable for gml:AbstractFeature and their definition shall be derived from gml:AbstractFeatureType.
+
+This implies that a compliant application schema shall import the entire GML schema (i.e. gml.xsd). The following element shall appear in a compliant application schema document:
+
+[%unnumbered]
+----
+1 <xsd:import
+2   namespace="http://www.opengis.net/gml/3.2"
+3   schemaLocation="http://... SOME URI.../gml/3.2.1/gml.xsd"/>
+----
+
+*Compliance rules:*
+
+. an *xsd:import* element shall be present (line 1)
+.. the attribute namespace shall be present (line 2)
+... its value shall he 'link:http://www.opengis.net/gml/3.2[http://www.opengis.net/gml/3.2]
+.. the attribute *schemaLocation* shall be present (line 3)
+... its value shall be a valid URL to the complete GML Schema
+
+=== Importing and including other schemas (Level SF-0, SF-1, SF-2)
+A conformant schema may import other schemas as long as they too are compliant with this profile. The only exception is the GML schema which is describe in <<importing-the-gml-schema-level-sf-0-sf-1-sf-2>>
+
+----
+1 <xsd:import
+2   namespace="target_namespace_of_schema"
+3   schemaLocation="URI_reference_to_schema"/>
+----
+
+*Compliance rules:*
+
+. an *xsd:import* element may be present (line 1)
+.. the attribute *namespace* shall be present (line 2)
+... its value is user defined
+.. The attribute *schemaLocation* shall be present (line 2)
+... its value shall be a valid URI reference to the imported schema
+
+----
+1 <xsd:include
+2   schemaLocation="URI_reference_to_schema"/>
+----
+
+*Compliance rules:*
+
+. one or more *xsd:include* elements may be present (line 1)
+.. For each, the attribute *schemaLocation* shall be present (line 2)
+... its value shall be a valid URI reference to the included schema
+
+=== Feature collections (Level SF-0, SF-1)
+==== Element declaration
+A compliant application schema shall define one or more feature types by defining one or more global elements for those feature types.
+
+The following XML-Schema fragment defines the global element for a feature type:
+
+[%unnumbered]
+----
+1 <element name="FeatureCollectionName"
+2           type="[prefix:]FeatureCollectionNameType"
+3           substitutionGroup="gml:AbstractGML"/>
+----
+
+*Compliance rules:*
+
+. an *xsd:element* element shall be present for each feature collection defined in the application schema (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the feature collection
+.. the attribute type shall be present (line 2)
+... its value shall be the name of a complex type defined elsewhere in the document that derives from *gml:AbstractFeatureType*
+... the value shall follow the following pattern: 'prefix:FeatureCollectionNameType'
+... the prefix shall match the target namespace prefix defined in the root element
+of the schema document
+... the _FeatureCollectionName_ is the same as the value of the name attribute
+... the suffix shall be the literal 'Type'
+.. the attribute *substitutionGroup* shall be present (line 3)
+... its value shall be '*gml:AbstractGML*'
+.. the prefix *gml* is recommended but it may be redefined
+
+
+==== Complex type
+A complex type shall be defined that corresponds to the value of the *type* attribute in the definition of the global element of each feature type.
+
+[%unnumbered]
+----
+1 <xsd:complexType name="FeatureCollectionNameType">
+2   <xsd:complexContent>
+3       <xsd:extension base="gml:AbstractFeatureType">
+4           <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+5               <xsd:element name="featureMember">
+6                   <xsd:complexType>
+7                       <xsd:complexContent>
+8                           <xsd:extension base="gml:AbstractFeatureMemberType">
+9                               <xsd:sequence>
+10                                  <xsd:element ref="gml:AbstractFeature"/>
+11                              </xsd:sequence>
+12                          </xsd:extension>
+13                      </xsd:complexContent>
+10                  </xsd:complexType>
+11              </xsd:element>
+12          </xsd:sequence>
+13      </xsd:extension>
+14  </xsd:complexContent>
+15 </xsd:complexType>
+----
+
+*Compliance rules:*
+
+. a *complexType* element shall be present to define the XML type of each feature type
+.. the attribute *name* shall be present (line 1)
+... the value shall follow the pattern in validation rule A.6.1(b,ii,iii,iv)
+. the element *xsd:complexContent* shall be present (line 2)
+. the element *xsd:extension* shall be present (line 3)
+.. the attribute *base* shall be present
+.. its value shall be 'gml:AbstractFeatureType'
+.. the prefix *gml* is recommended but it may be redefined
+. the element *xsd:sequence* must be present
+.. the attribute *minOccurs* must be present
+... its value must be zero
+.. the attribute *maxOccurs* must be present
+... its value must be 'unbounded'
+. the element *xsd:element* must be present (line 5)
+.. the attribute name must be present (line 5)
+... its value must be *featureMember* (line 5)
+. the element *xsd:complexType* must be present (line 6)
+. the element xsd:complexContent must be present (line 7)
+. the element xsd:extensions must be present (line 8)
+.. the attribute base must be present (line 8)
+... its value must be gml:AbstractFeatureMemberType
+. the element *xsd:sequence* must be present (line 9)
+. the element *xsd:element* must be present (line 10)
+.. the attribute *ref* must be present (line 8)
+... its value must be 'gml:AbstractFeature'
+
+[[feature-types-level-sf-0-sf-1-sf-2]]
+=== Feature types (Level SF-0, SF-1, SF-2)
+[[feature-types-level-sf-0-sf-1-sf-2-element-declaration]]
+==== Element declaration
+A compliant application schema shall define one or more feature types by defining one or more global elements for those feature types.
+
+The following XML-Schema fragment defines the global element for a feature type:
+
+[%unnumbered]
+----
+1 <xsd:element name="FeatureTypeName"
+2               type="prefix:FeatureTypeNameType"
+3               substitutionGroup="gml:AbstractFeature"/>
+----
+
+
+*Compliance rules:*
+
+. an *xsd:element* element shall be present for each feature type defined in the
+application schema (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the feature type
+.. the attribute *type* shall be present (line 2)
+... its value shall be the name of a complex type defined elsewhere in the document that derives from *gml:AbstractFeatureType*
+... the value shall follow the following pattern: 'prefix:FeatureTypeNameType'
+... the _prefix_ shall match the target namespace prefix defined in the root element of the schema document
+... the _FeatureTypeName_ is the same as the value of the name attribute
+... the suffix shall be the literal 'Type'
+.. the attribute *substitutionGroup* shall be present (line 3)
+... its value shall be 'gml:AbstractFeature'
+.. the prefix *gml* is recommended but it may be redefined
+
+
+==== Complex type
+A complex type shall be defined that corresponds to the value of the type attribute in the definition of the global element of each feature type.
+
+[%unnumbered]
+----
+1 <xsd:complexType name="FeatureTypeNameType">
+2   <xsd:complexContent>
+3       <xsd:extension base="gml:AbstractFeatureType">
+4           <xsd:sequence>
+5
+6           <!-- ... one or more element declarations as described in sec. 8.4.4 ... -->
+7
+8           </xsd:sequence>
+9       </xsd:extension>
+11  </xsd:complexContent>
+12 </xsd:complexType>
+----
+
+*Compliance rules:*
+
+. a *complexType* element shall be present to define the XML type of each feature type
+.. the attribute *name* shall be present (line 1)
+... the value shall follow the pattern in validation rule <<feature-types-level-sf-0-sf-1-sf-2-element-declaration>>(b,ii,iii,iv)
+. the element *xsd:complexContent* shall be present (line 2)
+. the element *xsd:extension* shall be present (line 3)
+.. the attribute *base* shall be present
+.. its value shall be 'gml:AbstractFeatureType'
+.. the prefix *gml* is recommended but it may be redefined
+. the element *xsd:sequence* shall be present (line 4)
+. zero or more property definitions shall follow (line 6)
+.. for compliance level SF-0 property definitions are described in <<feature-property-encoding-basic-data-types>> through <<declaring-elements-with-string-content-from-a-code-list>>
+.. for compliance level SF-1 property definitions are described in <<feature-property-encoding-basic-data-types>> through <<declaring-elements-with-string-content-from-a-code-list>> with the provisos in <<changes-from-compliance-level-sf-0>> and <<additions-to-compliance-level-sf-0>>
+.. for compliance level SF-2 any property definitions are allowed following any desired pattern except for spatial properties which must conform to <<declaring-elements-with-binary-content>>
+
+=== Properties
+==== Integer valued properties (Level SF-0, SF-1)
+Each integer-valued property shall be defined using the following XML-Schema fragments:
+
+SHORT FORM
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" type="xsd:integer"
+2              [minOccurs="0|N"] [maxOccurs="1|N|unbounded"][nillable="true|false"]/>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the property
+.. the attribute *type* shall present (line 1)
+... its value shall be the qualified name *integer*
+.. the attribute *minOccurs* may be present (line 2)
+... for application schemas that claim compliance to level SF-0
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall equal 1
+.... for compliance level 1, N shall be >= 1
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 2)
+... if it is present, its value shall be 1, or some value N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1 or the value unbounded
+.. for compliance level 0, the attribute nillable shall not be present (line 2)
+.. for compliance level 1, the attribute *nillable* may be present (line 2)
+... if present, it value shall be true or false
+... if not present, the default value is false
+
+LONG FORM
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2   [minOccurs="0|N"] [maxOccurs="1|N|unbounded"][nillable="true|false"]>
+3   <xsd:simpleType>
+4       <xsd:restriction base="xsd:integer">
+5           [<xsd:totalDigits value="nDigits"/>]
+6          <!-- ... Optional facets describe in sub-clause 8.4.4.2 ... -->
+7       </xsd:restriction>
+8   </xsd:simpleType>
+9 </xsd:element>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... it value is user defined and represents the name of the property
+.. the attribute *minOccurs* may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >= 1
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 2)
+... if it is present, its value shall be 1 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1 or the value unbounded
+... if it is not present, the default value is 1
+.. for compliance level 0, the attribute *nillable* shall not be present (line 2)
+.. for compliance level 1, the attribute *nillable* may be present (line 2)
+... if it is present its value shall be true or false
+... if it is not present, the default value is false
+. the element *xsd:simpleType* shall be present (line 3)
+. the element *xsd:restriction* shall be present (line 4)
+.. the attribute base shall be present (line 4)
+... its value shall be 'xsd:integer'
+. the element *xsd:totalDigits* may be present (line 5)
+.. if *xsd:totalDigits* is present, the attribute value shall be present (line 5)
+... its value is user defined and shall represent the number of digits in the integer
+. one or more optional facets (<<common-facets>>) may be present (line 6)
+.. only the facets defined in <<common-facets>> may be included
+.. for any additional facet, only the attributes defined in <<common-facets>> may be present
+
+==== Real valued properties (Level SF-0, SF-1)
+
+SHORT FORM
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" type="xsd:double"
+2       [minOccurs="0|N"] [maxOccurs="0|N|unbounded"][nillable="true|false"]/>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the property
+.. the attribute *type* shall be present (line 1)
+... its value shall be the qualified name double
+.. the attribute *minOccurs* may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >= 1
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 2)
+... if it is present, its value shall be 1 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1 or _unbounded_
+... if it not present, the default value is 1
+.. for compliance level 0, the attribute *nillable* shall not be present (line 2)
+.. for compliance level 1, the attribute *nillable* may be present (line 2)
+... if present, its value shall be true or false
+... if not present, the default value is false
+
+LONG FORM
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" [minOccurs="0|N"]
+        [maxOccurs="1|N|unbounded"][nillable="true|false">
+2   <xsd :simpleType>
+3       <xsd:restriction base="xsd:double|xsd:decimal">
+4           ... Optional facets described in sub-clause 8.4.4.2 ...
+5           [<xsd:totalDigits value="N"/>]
+6           [<xsd:fractionDigits value="N" />]
+7       </xsd:restiction>
+8   </xsd :simpleType>
+9 </xsd:element>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... it value is user defined and represents the name of the property
+.. the attribute *minOccurs* may be present (line 1)
+... if it is present, its value shall be 0 or some integer N>0
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 1)
+... if it is present, its value shall 1 or some integer N>1 or unbounded
+... if it is not present, the default value is 1
+.. for compliance level 0, the attribute nillable shall not be present (line 1)
+.. for compliance level 1, the attribute nillable may be present (line 1)
+... if it is present, its value shall be true or false
+... if it is not present, the default value is false
+. the element *xsd:simpleType* shall be present (line 3)
+. the element *xsd:restriction* shall be present (line 4)
+.. the attribute base shall be present (line 4)
+... its value shall be '*xsd:decimal*' or '*xsd:double*'
+.... if the value of the type attribute is *xsd:decimal* then the facets _totalDigits_ and fractionDigits shall be specified (lines 5 & 6)
+..... the only allowed attribute on both the totalDigits and fractionDigits facets is *value*
+.... if the value of the type attribute is *xsd:double* then the facts _totalDigits_ and _fractionDigits_ shall not be specified (lines 5 & 6)
+. one or more optional facets (<<common-facets>>) may be present (line 7)
+.. only the facets defined in <<common-facets>> may be included
+.. for any additional facet, only the attributes defined in <<common-facets>> may be present
+
+
+==== Character string valued properties (Level SF-0, SF-1)
+
+SHORT FORM
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" type="xsd:string"
+2       [minOccurs="0|N"] [maxOccurs="1|N|unbounded"] [nillable="true|false"]/>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the property
+.. the attribute type shall be present (line 1)
+... its value shall be the qualified name string
+.. the attribute minOccurs may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1
+... if it is not present, the default value is 1
+.. the attribute maxOccurs may be present (line 2)
+... if it is present, its value shall be 1, or some integer N
+.... for compliance level 0, N shall be >=1 or _unbounded_
+.. for compliance level 0, the attribute *nillable* shall not be present (line 2)
+.. for compliance level 1, the attribute *nillable* may be present (line 2)
+... if it is present, its value shall be true or false
+... if it is not present, the default value if false
+
+LONG FORM
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2       [minOccurs="0|N"] [maxOccurs="1|N|unbounded"] [nillable="true|false"]>
+2   <xsd:simpleType>
+3       <xsd:restriction base="xsd:string">
+4           <xsd:maxLength value="nCharacters"/> -or- <xsd:length value="nCharacters"/>
+5           ... Optional facets described in sub-clause 8.4.4.2 ...
+6       </xsd:restriction>
+7   </xsd:simpleType>
+8 </xsd:element>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... it value is user defined and represents the name of the property
+.. the attribute *minOccurs* may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >= 1
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 2)
+... if it is present its value shall be 1 or some integer N
+.... for compliance level 0 N shall be 1
+.... for compliance level 1 N shall be >=1 or unbounded
+... if it is not present the default value is 1
+.. for compliance level 0, the attribute nillable shall not be present (line 2)
+.. for compliance level 1, the attribute nillable may be present (line 2)
+... if it is present, its value shall be true or false
+... if it is not present, the default value is false
+. the element *xsd:simpleType* shall be present (line 3)
+. the element *xsd:restriction* shall be present (line 4)
+.. the attribute base shall be present (line 4)
+... its value shall be 'xsd:string'
+. the element *xsd:maxLength* OR *xsd:length* shall be present (line 5)
+.. if present, the attribute value shall be present (line 5)
+... its value is user defined and represents the max number of chars that the string can be (*xsd:maxLength*) or the fixed length of the character string (*xsd:length*)
+.. if not present, the max length of the string is undefined
+. one or more optional facets (<<common-facets>>) may be present (line 7)
+.. only the facets defined in <<common-facets>> may be included
+.. for any additional facet, only the attributes defined in <<common-facets>> may be present
+
+==== Date valued properties (Level SF-0, SF-1)
+
+SHORT FORM
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" type="xsd:date | xsd:dateTime"
+2       [minOccurs="0|N"] [maxOccurs="0|N|unbounded"] [nillable="true|false"]>
+----
+
+*Compliance Rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the property
+.. the attribute *type* shall be present (line 1)
+... its value shall be one of the qualified names *date* or *dateTime*
+.. the attribute minOccurs may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0 N shall be 1
+.... for compliance level 1, N shall be >=1
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 2)
+... if it is present, its value shall be 1, or some integer N
+.... for compliance level 0 N shall be 1
+.... for compliance level 1 N shall be >=1 or unbounded
+... if it is not present, the default value is 1
+.. for compliance level 0, the attribute *nillable* shall not be present (line 2)
+.. for compliance level 1, the attribute *nillable* may be present (line 2)
+... if it is present, its value shall be true or false
+... if it is not present, the default value if false
+
+LONG FORM
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2       [minOccurs="0|N"] [maxOccurs="0|N|unbounded"] [nillable="true|false"]>
+3   <xsd:simpleType>
+4       <xsd:restriction base="xsd:date | xsd:dateTime">
+5           ... Optional facets described in sub-clause 8.4.4.2. ...
+6       </xsd:restriction>
+7   </xsd:simpleType>
+8 </xsd:element>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the property
+.. the attribute *minOccurs* may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+... if it is not present, the default value shall be 1
+.. the attribute *maxOccurs* may be present (line 2)
+... if it is present its value shall be 0 or some integer N or unbounded
+... if it is not present the default value shall be 1
+.. for compliance level 0, the attribute *nillable* shall not be present (line 2)
+.. for compliance level 1, the attribute *nillable* may be present (line 2)
+... if it is present, its value shall be true or false
+... if it is not present, the default value is false
+. the element *xsd:simpleType* shall be present (line 3)
+. the element *xsd:restriction* shall be present (line 4)
+.. the attribute base shall be present (line 15)
+... its values shall be *xsd:date* or *xsd:dateTime*
+. one or more optional facets (<<common-facets>>) may be present (line 7)
+.. only the facets defined in <<common-facets>> may be included
+.. for any additional facet, only the attributes defined in <<common-facets>> may be present
+
+==== Boolean valued properties (Level SF-0, SF-1)
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" type="xsd:boolean"
+2           [minOccurs="0|N"] [maxOccurs="0|N|unbounded"][nillable="true|false"]/>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... it value is user defined and represents the name of the property
+.. the attribute *type* shall be present (line 1)
+... it value shall be *xsd:boolean*
+.. the attribute *minOccurs* may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1 or the value _unbounded_
+... if it is not present, the default value is 1
+.. for compliance level 0, the attribute nillable shall not be present (line 2)
+.. for compliance level 1, the attribute *nillable* may be present (line 2)
+... if it is presents, its value shall be true or false
+... if it is not present, the default value is false
+
+
+==== Binary valued properties (Level SF-0, SF-1)
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2       [minOccurs="0|N"] [maxOccurs="0|N|unbounded"] [nillable="true|false"]>
+3   <xsd:complexType>
+4       <xsd:simpleContent>
+5           <xsd:extension base="xsd:base64Binary|xsd:hexBinary">
+6               <xsd:attribute name="url"
+7                       type="xsd:anyURI" use="optional"/>
+8               <xsd:attribute name="mimeType"
+9                       type="xsd:string" use="required"/>
+10              <xsd:attribute name="role"
+11                      type="xsd:string" use="optional"/>
+12              <xsd:attribute name="length"
+13                      type="xsd:positiveInteger" use="optional"
+12          </xsd:extension>
+13      </xsd:simpleContent>
+14  </xsd:complexType>
+15 </xsd:element>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... it value is user defined and represents the name of property
+.. the attribute *minOccurs* may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0 N shall be 1
+.... for compliance level 1, N shall be >= 1
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 1, N shall be >=1 or the value _unbounded_
+... if it is not present, the default value is 1
+.. for compliance level 0, the attribute nillable shall not be present (line 2)
+.. for compliance level 1, the attribute nillable may be present (line 2)
+... if it is present, it value shall be true or false
+... if it is not present, the default value is false
+. the element *xsd:complexType* shall be present (line 3)
+. the element *xsd:simpleContent* shall be present (line 4)
+. the element *xsd:extension* shall be present (line 5)
+.. the attribute *base* shall be present (line 5)
+... its value shall one or *xsd:base64Binary* or *xsd:hexBinary*
+. the element *xsd:attribute* shall be present (line 6)
+.. the attribute *name* shall be present (line 6)
+... its value shall be 'url'
+.. the attribute *type* shall be present (line 7)
+... its value shall be 'xsd:anyURI'
+.. the attribute *use* shall be present (line 7)
+... its value shall be 'optional'
+. the element *xsd:attribute* shall be present (line 8)
+.. the attribute *name* shall be present (line 8)
+... its value shall be 'mimeType'
+.. the attribute *type* shall be present (line 9)
+... its value shall be 'xsd:string'
+.. the attribute *use* shall be present (line 9)
+... its value shall be 'required'
+. the element *xsd:attribute* shall be present (line 10)
+.. the attribute *name* shall be present (line 10)
+... its value shall be 'role'
+.. the attribute *type* shall be present (line 11)
+... its value shall be 'xsd:string'
+.. the attribute use shall be present (line 11)
+... its value shall be 'optional'
+. the element *xsd:attribute* shall be present (line 12)
+.. the attibute *name* shall be present (line 12)
+... its value shall be 'length'
+.. the attribute *type* shall be present (line 13)
+... its value shall be 'positiveInteger'
+.. the attribute *use* shall be present (line 13)
+... its value shall be 'optional'
+
+
+==== Geometry valued properties (Level SF-0, SF-1)
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2       type="gml_geometric_propertyType"
+3       [minOccurs="0|N"] [maxOccurs="0|N|unbounded"] [nillable="true|false"]>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... it value is user defined and represents the name of the property
+.. the attribute *type* shall be present (line 2)
+... it value shall be one of: gml:PointPropertyType, gml:CurvePropertyType, gml:SurfacePropertyType, gml:GeometryPropertyType, gml:MultiPointPropertyType, gml:MultiCurvePropertyType, gml:MultiSurfacePropertyType, gml:MultiGeometryPropertyType
+.. the attribute *minOccurs* may be present (line 3)
+... if it is present, its value shall be 0 or some integer N
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 3)
+... if it is present, its value shall be 0 or some integer N or unbounded
+... if it is not present, the default value is 1
+.. for compliance level 0, the attribute nillable shall not be present (line 3)
+.. for compliance level 1, the attribute nillable may be present (line 3)
+... if it is present, it value shall be true or false
+... if it is not present, the default value is false
+.. In an instance document, the allowed values for each of the geometric property types is defined in <<table-supported-gml-geometric-property-types>>.
+
+
+==== Properties with URI valued content (Level SF-0, SF-1, SF-2)
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" type="xsd:anyURI"
+2       [minOccurs="0|N"] [maxOccurs="0|N|unbounded"] [nillable="true|false"]/>
+----
+
+*Compliance Rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the property
+.. the attribute *type* shall present (line 1)
+... its value shall be the qualified name *anyURI*
+.. the attribute *minOccurs* may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 2)
+... if it is present, its value shall be 1, or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1 or unbounded
+.. for compliance level 0, the attribute *nillable* shall not be present (line 2)
+.. for compliance level 1, the attribute *nillable* may be present (line 2)
+... if it is present, its value shall be true or false
+... if it is not present, the default value is false
+
+
+==== Properties with references to other resources (Level SF-0, SF-1)
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" type="gml:ReferenceType"
+2           [minOccurs="0|1"] [maxOccurs="1|N|unbounded"] [nillable="true|false"]>
+3   <xsd:annotation>
+4       <xsd:appinfo source="urn:x-gml:targetElement">target element</xsd:appinfo>
+5   </xsd:annotation>
+6 </xsd:element>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the property
+.. the attribute *type* shall be present (line 1)
+... its value shall be *gml:ReferenceType*
+.. the attribute *minOccurs* may be present (line 2)
+... if it is present, its value shall be 0 or 1
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 2)
+... if it is present, its value shall be 1 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1 or _unbounded_
+... if it is not present, the default value is 1
+.. for compliance level 0, the attribute *nillable* shall not be present (line 2)
+.. for compliance level 1, the attribute *nillable* may be present (line 2)
+... if present, its value shall be true or false
+... if not present, the default value is false
+. the element *xsd:annotation* shall be present (line 3)
+. the element *xsd:appinfo* shall be present (line 4)
+.. the *source* attribute shall be present (line 4)
+... its value shall be urn:x-gml:targetElement
+.. the content of the *xsd:appinfo* element shall be the fully qualified name of the element being referenced
+
+
+==== Properties with string values from a code list (Level SF-0, SF-1)
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" [minOccurs="0|N"]            [maxOccurs="1|N|unbounded"]
+            [nillable="true|false"]>
+2   <xsd:complexType>
+3       <xsd:simpleContent>
+4           <xsd:restriction base="gml:CodeType">
+5               <xsd:attribute name="codeSpace" type="xsd:anyURI"
+6                           [use="optional"] default|fixed="...SOME URI..."/>
+7           </xsd:restriction>
+8       </xsd:simpleContent>
+9   </xsd:complexType>
+10 </xsd:element>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the property
+.. the attribute *minOccurs* may be present (line 1)
+... if it is present, its value shall be 0 or 1
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 1)
+... if it is present, its value shall be 1 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1 or _unbounded_
+... if it is not present, the default value is 1
+.. for compliance level 0, the attribute nillable shall not be present (line 1)
+.. for compliance level 1, the attribute nillable may be present (line 2)
+... if it is present, its value shall be true or false
+... if it is not present, the default value is false
+. the element *xsd:complexType* shall be present (line 2)
+. the element *xsd:simpleContent* shall be present (line 3)
+. the element *xsd:restriction* shall be present (line 4)
+.. the attribute base shall be present (line 4)
+... its value shall be *gml:CodeType*
+. the element *xsd:attribute* shall be present (line 5)
+.. the attribute *name* shall be present (line 5)
+... its value shall be *codeSpace*
+.. the attribute *type* shall be present (line 5)
+... its value shall be *xsd:anyURI*
+.. the attribute *use* may be present (line 6)
+... its value shall be optional
+... if the use attribute is not present, the default value is *optional*
+.. one of the attributes *default* or *fixed* shall be present (line 6)
+... its value shall be a URI that resolved to a GML simple dictionary profile document
+
+==== Measurements (Level SF-0, SF-1)
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2   [minOccurs="0|N"] [maxOccurs="0|N|unbounded"] [nillable="true|false"]>
+3       <xsd:complexType>
+4           <xsd:simpleContent>
+5               <xsd:restriction base="xsd:double">
+6                   ... Optional facets described in sub-clause 8.4.4.2 ...
+7               </xsd:restiction>
+8           </xsd:simpleType>
+9       </xsd:complexType>
+10 </xsd :element>
+----
+
+*Compliance rules:*
+
+. the element xsd:element shall be present (line 1)
+.. the attribute name shall be present (line 1)
+... its value is user defined and represents the name of the property
+.. the attribute minOccurs may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1 or the value unbounded
+... if it is not present, the default value is 1
+.. the attribute maxOccurs may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1 or the value unbounded
+... if it is not present, the default value is 1
+.. for compliance level 0, the attribute nillable shall not be present (line 2)
+.. for compliance level 1, the attribute nillable may be present (line 2)
+... if it is present, its value shall be true or false
+... if it is not present, the default value is false
+. the element xsd:complexType shall be present (line 3)
+. the element xsd:simpleContent shall be present (line 4)
+. the element xsd:restriction shall be present (line 5)
+.. the attribute base shall be present (line 5)
+... its value shall be 'gml:MeasureType'
+. one or more optional facets (<<common-facets>>) may be present (line 6)
+.. only the facets defined in <<common-facets>> may be included
+.. for any additional facet, only the attributes defined in <<common-facets>> may be present
+
+[[complex-value-properties-level-sf-1]]
+==== Complex-value properties (Level SF-1)
+[[complex-value-properties-level-sf-1-introduction]]
+===== Introduction
+The pattern described here following GML object-property rule, which necessitates the element nesting, described in this clause.
+
+===== User defined property declaration
+The following pattern declares a property of a feature of user-defined type:
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2               type="userDefinedNamePropertyType"
+3               [minOccurs="0|N"] [maxOccurs="0|N|unbounded"] [nillable="true|false">
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... it value is user defined and represents the name of the property
+.. the attribute *type* shall be present (line 2)
+... its value is user defined and shall be of a type defined elsewhere in the
+application schema
+.. the attribute *minOccurs* may be present (line 3)
+... it if is present, its value shall be 0 or some integer N
+.... for compliance level SF-0, N shall be 1
+.... for compliance level SF-1, N shall be >=1 or the value _unbounded_
+... if it is not present, the default value is 1
+.. the attribute maxOccurs may be present (line 3)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level SF-0, N shall be 1
+.... for compliance level SF-1, N shall be >= 1 or the value unbounded
+.. for compliance level 0, the attribute *nillable* shall not be present (line 3)
+.. for compliance level 1, the attribute *nillable* may be present (line 3)
+... if it is present, its value shall be true or false
+... if it is not present, the default value is false
+
+
+===== User-defined complex type declaration
+The following XML Schema fragment describes the pattern for defining a user-defined complex type. Following the GML object-property pattern, the user-defined type references an element that declares the properties of the complex type.
+
+[%unnumbered]
+----
+1 <xsd:complexType name="userDefineNamePropertyType">
+2   <xsd:sequence>
+3       <xsd:element ref="[prefix:]userDefinedName"/>
+4   </xsd:sequence>
+5 </xsd:complexType>
+6
+7 <xsd:element name="userDefinedName">
+8   <xsd:complexType>
+9       <xsd:sequence|xsd:choice>
+10
+11      <!-- ...one or more element declarations as described in clause 8.4.4... -->
+12
+13      </xsd:sequence|xsd:choice>
+14 </xsd:complexType>
+15 </xsd:element>
+----
+
+*Compliance rules:*
+
+. the element *xsd:complexType* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... the value is user defined and represents the name of the user defined type
+... the type name shall have the suffix 'PropertyType'
+. the element *xsd:sequence* shall be present (line 2)
+. the element xsd:element shall be present (line 3)
+.. the attribute ref shall be present
+.. the value shall reference an element declared elsewhere in the application schema
+(line 3) that declares the properties of the complex type
+. the element *xsd:element* shall be present (line 7)
+.. the attribute *name* shall be present
+.. its value shall be the name of the element (line 7) referenced in line 3
+. the element *xsd:complexType* shall be present (line 8)
+. either the element *xsd:sequence* or the element *xsd:choice* shall be present (line 9)
+. one or more element declarations as described in <<feature-property-encoding>> shall follow
+
+==== Internationalized string
+
+TYPE DECLARATION
+
+[%unnumbered]
+----
+1 <xsd:complexType name="xxx:LanguageStringType">
+2   <xsd:simpleContent>
+3       <xsd:extension base="string">
+4           <xsd:attribute ref="xml:lang" use="optional"/>
+5       </xsd:extension>
+6   </xsd:simpleContent>
+7 </xsd:complexType>
+----
+
+*Compliance rules:*
+
+. the complex type *xxx:LanguageStringType* shall be defined in the application
+schema
+.. the element *xsd:complexType* shall be present (line 1)
+... the attribute *name* shall be present (line 1)
+.... its value shall be *xxx:LangaugeString* where xxx is a placeholder for the
+target namespace of the application schema (line 1)
+.. the element *xsd:simpleContent* shall be present (line 2)
+.. the element *xsd:extension* shall be present (line 3)
+... the attribute *base* shall be present (line 3)
+.... its value shall be *xsd:string* (line 3)
+.. the element *xsd:attribute* shall be present (line 4)
+... the attribute *ref* shall be present (line 4)
+.... its value shall be xml:lang (line 4)
+.. the attribute *use* shall be present (line 4)
+... its value shall be *optional*
+
+SHORT FORM
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName" type="xxx:LanguageStringType"
+2       [minOccurs="0|N"] [maxOccurs="1|N|unbounded"] [nillable="true|false"]/>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the property
+.. the attribute type shall be present (line 1)
+... its value shall be *xxx:LanguageStringType* where xxx is the target
+namespace of application schema
+.. the attribute minOccurs may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >=1
+... if it is not present, the default value is 1
+.. the attribute maxOccurs may be present (line 2)
+... if it is present, its value shall be 1, or some integer N
+.... for compliance level 0, N shall be >=1 or _unbounded_
+.. for compliance level 0, the attribute *nillable* shall not be present (line 2)
+.. for compliance level 1, the attribute *nillable* may be present (line 2)
+... if it is present, its value shall be true or false
+... if it is not present, the default value if false
+
+LONG FORM
+
+[%unnumbered]
+----
+1 <xsd:element name="propertyName"
+2       [minOccurs="0|N"] [maxOccurs="1|N|unbounded"][nillable="true|false"]>
+3   <xsd:complexType>
+4       <xsd:simpleContent>
+5           <xsd:restriction base="xxx:LanguageStringType">
+6               <xsd:maxLength value="nCharacters"/>-or-<xsd:length value="nCharacters"/>
+7               ... Optional facets described in sub-clause 8.4.4.2 ...
+8           </xsd:restriction>
+9       </xsd:simpleContent>
+10  </xsd:complexType>
+11 </xsd:element>
+----
+
+*Compliance rules:*
+
+. the element *xsd:element* shall be present (line 1)
+.. the attribute *name* shall be present (line 1)
+... its value is user defined and represents the name of the property
+.. the attribute *minOccurs* may be present (line 2)
+... if it is present, its value shall be 0 or some integer N
+.... for compliance level 0, N shall be 1
+.... for compliance level 1, N shall be >= 1
+... if it is not present, the default value is 1
+.. the attribute *maxOccurs* may be present (line 2)
+... if it is present its value shall be 1 or some integer N
+.... for compliance level 0 N shall be 1
+.... for compliance level 1 N shall be >=1 or _unbounded_
+... if it is not present the default value is 1
+.. for compliance level 0, the attribute nillable shall not be present (line 2)
+.. for compliance level 1, the attribute nillable may be present (line 2)
+... if it is present, its value shall be true or false
+... if it is not present, the default value is false
+. the element *xsd:complexType* shall be present (line 3)
+. the element *xsd:simpleContent* shall be present (line 3)
+. the element *xsd:restriction* shall be present (line 5)
+.. the attribute base shall be present (line 5)
+... its value shall be *xxx:LanguageStringType* where xxx is the target namespace of the application schema
+. the element *xsd:maxLength* OR *xsd:length shall* be present (line 6)
+.. if present, the attribute value shall be present (line 6)
+... its value is user defined and represents the max number of chars that the string can be (*xsd:maxLength*) or the fixed length of the character string (*xsd:length*)
+.. if not present, the max length of the string is undefined
+. one or more optional facets (<<common-facets>>) may be present (line 7)
+.. only the facets defined in <<common-facets>> may be included
+.. for any additional facet, only the attributes defined in <<common-facets>> may be present

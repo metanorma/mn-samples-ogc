@@ -1,0 +1,49 @@
+
+== Conventions
+
+=== Abbreviated terms
+Most of the abbreviated terms listed in sub-clause 5.1 of the Geography Markup Language (GML) Encoding Standard [OGC 07-036] and the OpenGIS(R) Implementation Specification for Geographic information - Simple feature access - Part 1: Common architecture [OGC 06-103r3] apply to this document.
+
+=== Notations used in XML Schema fragments
+The following notations are used in XML Schema fragment presented in this document:
+
+. Brackets ([]) are used to denote constructs that can be optionally specified. In the following example:
+
+[%unnumbered]
+----
+<xsd:element name="MyElement" minOccurs="0" [maxOccurs="1"]>
+----
+
+the brackets around maxOccurs="1" mean that this construct is optional and can be omitted.
+
+. The vertical bar (|) notation is used to separate alternatives. In the following example:
+
+[%unnumbered]
+----
+<xsd:element name="MyElement" minOccurs="0" maxOccurs="0|1|unbounded">
+----
+
+the value of maxOccurs can be one of 0, 1 or unbounded.
+
+. Italics are used in XML Schema fragments to denote values that must be specified by the process or person creating the application schema. In the following example:
+
+[%unnumbered]
+----
+http://...schema repository URL.../schemas/mySchema.xsd
+----
+
+the italic string "_...schema repository URL..._" indicates the actual schema repository URL would be substituted by the person or process creating the application schema.
+
+[[conventions-document-terms-and-definitions]]
+=== Document terms and definitions
+The following terms and definitions are used in this document:
+
+. shall - verb form used to indicate a requirement to be strictly followed to comply to this standard, from which no deviation is permitted
+. should - verb form used to indicate desirable ability or use, without mentioning or excluding other possibilities
+. may - verb form used to indicate an action permissible within the limits of this standard
+. can - verb form used for statements of possibility
+. informative - a part of a document that is provided for explanation, but is not required
+. normative - a part of a standards document that is required
+. annex - an auxiliary part of a document
+. clause - a major part of a document
+. sub-clause - a secondary part of a clause or annex

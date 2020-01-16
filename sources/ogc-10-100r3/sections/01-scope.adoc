@@ -1,0 +1,19 @@
+
+== Scope
+This OpenGIS(R) standard defines a simplified profile of GML 3.2 that supports GML features and a limited set of geometric types. A set of application schema encoding rules is defined that allow features to be encoded using GML application schemas. This version of the standard includes a technical note. There is an associated OGC document that details all of the necessary document changes related to the technical note. Further, this document has change tracking "`on`" so that all changes for the technical note can be more easily viewed.
+
+This OGC(R) document defines:
+
+. Rigid coding patterns for the use of a subset of XML Schema constructs (XML Schema profile)
+
+. Rigid coding patterns for the use of a subset of GML constructs (GML profile).
+
+This document prescribes the encoding of GML application schemas in sufficient detail that client applications do not need to deal with the entire scope of XML-Schema and GML but only need to understand a restricted subset of both standards in order to be able interpret schema documents referenced by data encoded in GML. It is expected that making it easier to interpret GML application schemas will enhance interoperability
+between clients and servers and make the task of implementing client applications less onerous.
+
+This document specifies three compliance levels for this profile. Level 0 compliance is the simplest and easiest to understand, but does not support the entire set of GML
+features. Level 1 compliance is somewhat more complex and difficult to understand, but includes more feature encoding abilities sometimes needed. The "`full`" (level 2) compliance is the most complex, and is intended to include all the feature encoding abilities provided by the OpenGIS(R) Simple Features access - Part 1: Common architecture.
+
+This document is applicable to any client wishing to interpret GML application schema documents in an ad hoc manner in order to interact with data encoded in GML. That is, this document is not meant to address the case where a community of interest has defined a standard GML application schema or set of schemas for exchanging geographic data, but rather the case where a client interacts with a previously unknown server offering data encoded in GML using a previously unknown GML application schema.
+
+This profile does not address the semantic issues associated with interpreting a previously unknown GML application schema. Instead this document tries to simplify the processing required to determine which feature types a service offers, as well as the structure of those feature types (in terms of property names and data types).
