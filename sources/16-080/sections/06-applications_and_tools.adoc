@@ -12,7 +12,7 @@ The Centre de Recerca Ecològica i Aplicacions Forestals (CREAF) in Spain has de
 
 [[fig16]]
 .CREAF MiraMon Client
-image::images/016.png[width=auto,height=auto]
+image::016.png[width=auto,height=auto]
 
 For more details of the MiraMon client see: http://www.creaf.uab.es/MiraMon/
 
@@ -30,7 +30,7 @@ Envitia Horizon supports both the ATOM/XML encoding and Draft GeoJSON Encoding o
 
 [[fig17]]
 .Envitia Horizon Browser Client
-image::images/017.png[width=auto,height=auto]
+image::017.png[width=auto,height=auto]
 
 Envitia Horizon is being used, together with other Envitia and Open Source software in the UK Defence Geographic Services system a major UK Defence infrastructure programme being delivered to UK MOD by Hewlett Packard.
 
@@ -40,7 +40,7 @@ Envitia MapLink Pro is a C++ based developer toolkit, available on Windows, Linu
 
 [[fig18]]
 .Envitia MapLink Pro Android Client
-image::images/018.png[width=auto,height=auto]
+image::018.png[width=auto,height=auto]
 
 ==== ESRI
 
@@ -53,11 +53,11 @@ OWS Context Documents are being used by TerraDue in the platforms being develope
 
 [[fig19]]
 .TerraDue Implementation for ESA
-image::images/019a.png[width=auto,height=auto]
+image::019a.png[width=auto,height=auto]
 
 [[fig20]]
 .TerraDue Implementation for ESA
-image::images/020a.png[width=auto,height=auto]
+image::020a.png[width=auto,height=auto]
 
 Use of OWS Context is also being extended to the Geo-Hazard TEP area (https://geohazards-tep.eo.esa.int/) and Urban TEP (https://urban-tep.eo.esa.int/)
 

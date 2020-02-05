@@ -216,7 +216,7 @@ The OWS Context document standard does not recommend any specific client action 
 
 [[fig15]]
 .Matching AOI to Display.
-image::images/015.png[width=auto,height=auto]
+image::015.png[width=auto,height=auto]
 
 There are of course options in terms of the behaviour. The application could ask the user if they want to zoom to the extent of the context document. Clients could also optionally display the extent of the context document as well as zooming to it. But the overall behavior should be that if the context document has an AOI the user should be able to centre on and zoom to it easily.
 

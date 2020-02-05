@@ -18,7 +18,7 @@ A critical element of a shared situational awareness environment, whether used i
 
 [[fig1]]
 .OWS Context SSA Use Case
-image::images/001.png[width=auto,height=auto]
+image::001.png[width=auto,height=auto]
 
 A COP may take many forms and have many uses, it may represent a 2D map display, a 3D map display, an augmented reality view, or a textual representation of geospatial information.
 
@@ -28,7 +28,7 @@ In this basic COP use case, OWS Contexts are simply exchanged between systems us
 
 [[fig2]]
 .OWS Context SSA Use Case
-image::images/002.png[width=auto,height=auto]
+image::002.png[width=auto,height=auto]
 
 ===== On-Line COP Exchange Via Catalogue
 
@@ -36,7 +36,7 @@ OGC Compliant catalogue services provide a useful way to manage OWS Context Docu
 
 [[fig3]]
 .OWS Context Catalogue Storage Use Case
-image::images/003.png[width=auto,height=auto]
+image::003.png[width=auto,height=auto]
 
 ===== Off-Line COP Exchange
 
@@ -46,7 +46,7 @@ Of course GeoPackage is not the only carrier encoding that could be used in this
 
 [[fig4]]
 .OWS Context Off-line Use Case
-image::images/004.png[width=auto,height=auto]
+image::004.png[width=auto,height=auto]
 
 ==== Exchange of a Catalogue Query and Results
 

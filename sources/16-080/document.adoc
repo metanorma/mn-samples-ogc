@@ -3,30 +3,32 @@
 :language: en
 :status: published
 :committee: technical
-:docnumber: OGC 16-080
+:docnumber: 16-080
 :received-date: 2017-06-29
 :issued-date: 2017-06-29
 :published-date: 2017-01-23
+:copyright-year: 2017
 :external-id: http://www.opengis.net/doc/PER/t12-A063
 :fullname: Roger Brackin
 :role: editor
-:keywords: 
-:submitting-organizations: 
+:keywords:
+:submitting-organizations:
 :docfile: 18-053r2.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
+:imagesdir: images
 :local-cache-only:
 :data-uri-image:
 
 
-include::1-introduction.adoc[]
+include::sections/01-introduction.adoc[]
 
-include::2-common_use_cases.adoc[]
+include::sections/02-common_use_cases.adoc[]
 
-include::3-ows_context-document_structure.adoc[]
+include::sections/03-ows_context-document_structure.adoc[]
 
-include::4-ows_context_for_users.adoc[]
+include::sections/04-ows_context_for_users.adoc[]
 
-include::5-ows_context_for_developers.adoc[]
+include::sections/05-ows_context_for_developers.adoc[]
 
-include::6-applications_and_tools.adoc[]
+include::sections/06-applications_and_tools.adoc[]
