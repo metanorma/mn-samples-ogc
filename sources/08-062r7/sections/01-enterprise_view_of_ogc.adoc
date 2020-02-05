@@ -60,7 +60,7 @@ OGC publishes several different types of documents (<<table1>>). Sections 2 and 
 [[table1]]
 .OGC Document Types
 |===
-h| OGC Document Type | Description
+h| OGC Document Type h| Description
 | OpenGIS Implementation Standard | A document containing an OGC consensus, technology dependent standard for application programming interfaces and related standards based on the Abstract Specification or domain-specific extensions to the Abstract Specification. There are five subtypes: Interface, Encoding, Profile, Application Profile, and Application Schema.
 | Abstract Specification | A document (or set of documents) containing an OGC consensus, technology-independent standard for application programming interfaces and related standards based on object-oriented or other IT accepted concepts. It describes and/or models an application environment for interoperable geoprocessing and geospatial data and services products.
 | Best Practices | A document containing discussion related to the use and/or implementation of an adopted OGC document. Best Practices Documents are an official position of the OGC and thus represent an endorsement of the content of the paper.
