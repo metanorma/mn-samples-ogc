@@ -40,7 +40,7 @@ all: documents.html
 documents:
 	mkdir -p $@
 
-documents/%.xml: documents sources/images sources/%.html
+documents/%.xml: sources/%.html | documents
 	export GLOBIGNORE=sources/$*.adoc; \
 	mv sources/$(addsuffix .*,$*) documents; \
 	unset GLOBIGNORE
@@ -136,7 +136,7 @@ endef
 
 $(foreach FORMAT,$(FORMATS),$(eval $(WATCH_TASKS)))
 
-serve: $(NODE_BIN_DIR)/live-server revealjs-css reveal.js sources/images
+serve: $(NODE_BIN_DIR)/live-server revealjs-css reveal.js
 	export PORT=$${PORT:-8123} ; \
 	port=$${PORT} ; \
 	for html in $(HTML); do \
