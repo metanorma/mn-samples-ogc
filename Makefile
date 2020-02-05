@@ -82,18 +82,6 @@ documents.rxl: $(XML)
 documents.html: documents.rxl
 	bundle exec relaton xml2html documents.rxl
 
-nits: $(NITS)
-
-sources/images: $(PNG)
-
-sources/images/%.png: sources/models/%.wsd
-	plantuml -tpng -o ../images/ $<
-
-sources/xmi: $(XMI)
-
-sources/xmi/%.xmi: sources/models/%.wsd
-	plantuml -xmi:star -o ../xmi/ $<
-
 define FORMAT_TASKS
 OUT_FILES-$(FORMAT) := $($(shell echo $(FORMAT) | tr '[:lower:]' '[:upper:]'))
 
@@ -114,7 +102,7 @@ $(foreach FORMAT,$(FORMATS),$(eval $(FORMAT_TASKS)))
 open: open-html
 
 clean:
-	rm -rf documents documents.html documents.rxl published *_images $(OUT_FILES)
+	rm -rf documents documents.{html,rxl} published *_images $(OUT_FILES)
 
 bundle:
 	if [ "x" == "${METANORMA_DOCKER}x" ]; then bundle; fi
