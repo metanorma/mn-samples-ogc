@@ -1,0 +1,12 @@
+
+== Overview
+
+This document describes the guidelines that the Open GIS Consortium will use for testing software implementations with respect to conformance to its specification entitled Revision 1.0.
+
+The Open GIS Consortium, Inc. (OGC) maintains a brand (in the form of a certification mark) that cannot be used in connection with a software product by any organization unless it has submitted a software product to OGC’s conformance test, successfully completed this test, and received a certificate stating such success. Organizations that have earned the certification mark may use it in ways defined within this document. This set of rules ensures that users who buy products that are branded can be sure that the products carrying the certification mark have been submitted to a test. The primary purpose of the conformance test is to protect the value of the OpenGIS® brand as an element of OGC’s program to promote interoperability between diverse geoprocessing systems.
+
+This document contains the following:
+
+* An outline on the background of Catalog Services;
+* A general description of how to configure the environment for the Catalog Certification Program;
+* A description of the testing procedures of the Catalog Certification Program.

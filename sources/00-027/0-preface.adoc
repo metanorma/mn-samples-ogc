@@ -1,0 +1,49 @@
+
+== Preface
+
+=== Submitting Companies
+
+The following company submitted this document:
+
+* Geodan Holding bv, the Netherlands;
+
+
+=== Submission Contact Points
+
+All questions about the submission should be directed to:
+
+Barend Gehrels +
+Geodan SDT bv, the Netherlands +
+tel: +31 73 692 5151 +
+fax: +31 73 692 5150 +
+E-mail: barend@geodan.nl +
+http://www.geodan.nl
+
+
+=== Editors
+
+The following editors contributed to this document
+
+Laura Diaz, on behalf of Geodan Holding bv +
+University of Valencia, Spain +
+E-mail: laudiaz2@alumni.uv.es +
+http://www.uv.es 
+
+Bart van der Eijnden +
+Geodan SDT bv, the Netherlands +
+tel: +31 73 692 5151 +
+fax: +31 73 692 5150 +
+E-mail: bart@geodan.nl +
+http://www.geodan.nl
+
+Barend Gehrels +
+Geodan SDT bv, the Netherlands +
+tel: +31 73 692 5151 +
+fax: +31 73 692 5150 +
+E-mail: barend@geodan.nl +
+http://www.geodan.nl
+
+
+=== Document Conventions
+
+The Courier New font has been used to indicate code segments.
