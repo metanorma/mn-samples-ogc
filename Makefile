@@ -80,7 +80,7 @@ documents.rxl: $(XML)
 		documents $@
 
 documents.html: documents.rxl
-	bundle exec relaton xml2html documents.rxl
+	$(PREFIX_CMD) relaton xml2html documents.rxl
 
 define FORMAT_TASKS
 OUT_FILES-$(FORMAT) := $($(shell echo $(FORMAT) | tr '[:lower:]' '[:upper:]'))
