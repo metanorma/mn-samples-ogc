@@ -15,7 +15,7 @@ The creation of most geospatial views begins with a discovery process. Typically
 
 [[fig7]]
 .Web Client Searching for Data
-image::images/007.png[width=auto,height=auto]
+image::007.png[width=auto,height=auto]
 
 ==== Adding information from WMS Services.
 
@@ -23,7 +23,7 @@ Each returned dataset may be available as different service types. For example a
 
 [[fig8]]
 .Client Showing Two added Layers
-image::images/008.png[width=auto,height=auto]
+image::008.png[width=auto,height=auto]
 
 ==== Setting Layer Visibility
 
@@ -35,7 +35,7 @@ A common requirement is also to provide the receiving user with some annotation 
 
 [[fig9]]
 .Adding Annotation to the View
-image::images/009.png[width=auto,height=auto]
+image::009.png[width=auto,height=auto]
 
 ==== Saving The Context Document
 
@@ -45,7 +45,7 @@ In the Horizon Client the context document can be saved to an OGC CSW-ebRIM comp
 
 [[fig10]]
 .Selecting Location to Save Context
-image::images/010.png[width=auto,height=auto]
+image::010.png[width=auto,height=auto]
 
 The dialog allows the layers loaded to be output in the Context Document. The layers in the client are listed and the user can pick which layers are included.
 
@@ -53,7 +53,7 @@ In addition the user can select whether an area of interest is set (this can be 
 
 [[fig11]]
 .Selecting Location to Save Context
-image::images/011.png[width=auto,height=auto]
+image::011.png[width=auto,height=auto]
 
 ==== Exchanging the Context Document
 
@@ -67,19 +67,19 @@ Envitia Horizon can then be used to read the OWS Context document. The user uses
 
 [[fig12]]
 .Open Envitia Horizon
-image::images/012.png[width=auto,height=auto]
+image::012.png[width=auto,height=auto]
 
 Th import function allows a document to be picked from the file system.
 
 [[fig13]]
 .Open Envitia Horizon
-image::images/013.png[width=auto,height=auto]
+image::013.png[width=auto,height=auto]
 
 When a file is selected and loaded the geographic display zooms to the relevant area and loads all layers selected as on.
 
 [[fig14]]
 .Context document loaded
-image::images/014.png[width=auto,height=auto]
+image::014.png[width=auto,height=auto]
 
 ==== Creating a Revised Document
 

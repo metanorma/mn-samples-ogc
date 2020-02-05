@@ -13,6 +13,7 @@ metanorma:
       sources/05-020r27.xml: sources/05-020r27/document.adoc
       sources/08-062r7.xml: sources/08-062r7/document.adoc
       sources/10-100r3.xml: sources/10-100r3/document.adoc
+      sources/16-080.xml: sources/16-080/document.adoc
       sources/17-069.xml: repos/ogc-wfs/17-069.xml
       # TODO: commenting out 18-046 due to this bug for now
       # https://github.com/metanorma/metanorma-standoc/issues/200
@@ -23,6 +24,7 @@ metanorma:
       sources/05-020r27.xml: ogc
       sources/08-062r7.xml: ogc
       sources/10-100r3.xml: ogc
+      sources/16-080.xml: ogc
       sources/17-069.xml: ogc
       # sources/18-046.xml: ogc
       sources/18-053r2.xml: ogc
