@@ -1,8 +1,7 @@
 = Geography Markup Language (GML) simple features profile (with Corrigendum)
-:title: Geography Markup Language (GML) simple features profile (with Corrigendum)
 :edition: 2.0
 :docnumber: 10-100r3
-:received-date: 2011-05-24 
+:received-date: 2011-05-24
 :issued-date: 2012-04-05
 :published-date: 2012-04-05
 :external-id: http://www.opengis.net/spec/gmlsf/2.0.1
@@ -17,9 +16,8 @@
 :docsubtype: profile
 :submitting-organizations: CubeWerx Inc.; interactive instruments GmbH; Geonovum; Cadcorp Ltd.; CubeWerx Inc.; ESRI; Galdos Systems Inc.; interactive instruments GmbH; PCI Geomatics
 :status: published
-:toc:
 :imagesdir: images
-:docfile: ogc-10-100r3.adoc
+:docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
@@ -42,14 +40,4 @@ include::sections/ab-gmlsLevels.adoc[]
 include::sections/ac-sql-mm.adoc[]
 include::sections/ad-examples.adoc[]
 include::sections/ae-schematron-rules.adoc[]
-
-
-
-
-
-
-
-
-
-
 
