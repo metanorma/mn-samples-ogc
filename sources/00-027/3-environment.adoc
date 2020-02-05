@@ -1,0 +1,16 @@
+
+== Environment and setup of the Catalog Certification program
+
+=== Setting up the environment
+
+The Catalog Certification Program has been developed with JDK 1.2.2. The code is in a single file called _catalogCertification.java_. The module OGC_CatalogService has been defined in one _idl_ file (ogc_cat.idl), the idl file contains all definitions, i.e. the message definitions and the required interfaces.
+
+To translate the idl file to Java classes, the file ij.bat has been written. This batch file uses idl2java of VisiBroker for Java 3.4. To compile all Java classes of the module OGC_CatalogService and the _catalogCertification.java_ file, the cj.bat file has been provided. These two compilation procedures are only necessary if the version of ORB for Java differs from that in VisiBroker for Java 3.4.
+
+=== Setting up the server
+
+For performing the conformance test, the server should be started and it should write an IOR file. The IOR file is used by the Catalog Certification Program to obtain a reference to the server. For a distributed query two servers should be started.
+
+=== Running the client
+
+The Catalog Certification Program functions like a client. To start the Catalog Certification Program, run the catalogCertification file.
