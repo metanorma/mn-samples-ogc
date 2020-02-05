@@ -33,7 +33,6 @@ jobs:
       - name: Update gems
         run: |
           gem install bundler
-          bundle update --bundler
           bundle install --jobs 4 --retry 3
       - name: Use Metanorma
         run: |
