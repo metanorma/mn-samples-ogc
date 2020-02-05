@@ -10,9 +10,11 @@ metanorma:
     - pdf
   source:
     built_targets:
+      sources/05-020r27.xml: sources/05-020r27/document.adoc
       sources/ogc-tcpnp.xml: repos/ogc-tcpnp/ogc-tcpnp.xml
       sources/17-069.xml: repos/ogc-wfs/17-069.xml
     built_type:
+      sources/05-020r27.xml: ogc
       sources/ogc-tcpnp.xml: ogc
       sources/17-069.xml: ogc
 relaton:

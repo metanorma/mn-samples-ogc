@@ -21,24 +21,15 @@ endif
 
 XML  ?= $(patsubst sources/%,documents/%,$(patsubst %.adoc,%.xml,$(SRC)))
 
-XMLRFC3  := $(patsubst %.xml,%.v3.xml,$(XML))
-HTML := $(patsubst %.xml,%.html,$(XML))
-DOC  := $(patsubst %.xml,%.doc,$(XML))
-PDF  := $(patsubst %.xml,%.pdf,$(XML))
-TXT  := $(patsubst %.xml,%.txt,$(XML))
-NITS := $(patsubst %.adoc,%.nits,$(wildcard sources/draft-*.adoc))
-WSD  := $(wildcard sources/models/*.wsd)
-XMI	 := $(patsubst sources/models/%,sources/xmi/%,$(patsubst %.wsd,%.xmi,$(WSD)))
-PNG	 := $(patsubst sources/models/%,sources/images/%,$(patsubst %.wsd,%.png,$(WSD)))
-
 COMPILE_CMD_LOCAL := bundle exec metanorma FILENAME
 METANORMA_DOCKER_IMAGE ?= metanorma/metanorma
 COMPILE_CMD_DOCKER := docker run -v "$$(pwd)":/metanorma/ $(METANORMA_DOCKER_IMAGE) "metanorma FILENAME"
 
 ifdef METANORMA_DOCKER
-  COMPILE_CMD := $(COMPILE_CMD_DOCKER)
+  PREFIX_CMD := echo "Running via docker..."; docker run -v "$$(pwd)":/metanorma/ $(METANORMA_DOCKER)
+
 else
-  COMPILE_CMD := $(COMPILE_CMD_LOCAL)
+  PREFIX_CMD := echo "Running locally..."; bundle exec
 endif
 
 _OUT_FILES := $(foreach FORMAT,$(FORMATS),$(shell echo $(FORMAT) | tr '[:lower:]' '[:upper:]'))
@@ -63,19 +54,22 @@ sources:
 sources/%.xml: | sources bundle
 	BUILT_TARGET=$(shell yq r metanorma.yml metanorma.source.built_targets[$@]); \
 	if [ "$$BUILT_TARGET" != "null" ]; then \
-	cp "$$BUILT_TARGET" $@; \
+		if [ -f "$$BUILT_TARGET" ] && [ "$${BUILT_TARGET##*.}" == "xml" ]; then \
+			cp "$$BUILT_TARGET" $@; \
+		else \
+			$(PREFIX_CMD) metanorma $$BUILT_TARGET; \
+			cp "$${BUILT_TARGET//adoc/xml}" $@; \
+		fi \
 	fi
 
 # Build derivative output
 sources/%.html sources/%.doc sources/%.pdf:	sources/%.xml
 	BUILT_TYPE=$(shell yq r metanorma.yml metanorma.source.built_type[$<]); \
-	RAW_COMMAND="$(COMPILE_CMD)"; \
 	if [ "$$BUILT_TYPE" != "null" ]; then \
-	COMMAND="$${RAW_COMMAND/FILENAME/-t $$BUILT_TYPE $<}"; \
+		$(PREFIX_CMD) metanorma -t $$BUILT_TYPE $<; \
 	else \
-	COMMAND="$${RAW_COMMAND/FILENAME/$<}"; \
-	fi; \
-	$$COMMAND;
+		$(PREFIX_CMD) metanorma $<; \
+	fi
 
 documents.rxl: $(XML)
 	echo "$(FORMATS)"; \
@@ -87,19 +81,6 @@ documents.rxl: $(XML)
 
 documents.html: documents.rxl
 	bundle exec relaton xml2html documents.rxl
-
-# %.v3.xml %.xml %.html %.doc %.pdf %.txt: sources/images %.adoc | bundle
-# 	FILENAME=$^; \
-# 	${COMPILE_CMD}
-#
-# documents/draft-%.nits:	documents/draft-%.txt
-# 	VERSIONED_NAME=`grep :name: draft-$*.adoc | cut -f 2 -d ' '`; \
-# 	cp $^ $${VERSIONED_NAME}.txt && \
-# 	idnits --verbose $${VERSIONED_NAME}.txt > $@ && \
-# 	cp $@ $${VERSIONED_NAME}.nits && \
-# 	cat $${VERSIONED_NAME}.nits
-
-%.nits:
 
 nits: $(NITS)
 
