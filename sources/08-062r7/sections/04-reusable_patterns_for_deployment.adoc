@@ -9,7 +9,7 @@ OGC web services utilize the popular publish/find/bind pattern shown in <<fig5>>
 
 [[fig5]]
 .Publish/Find/Bind Pattern
-image::images/005.png[width=auto,height=auto]
+image::005.png[width=auto,height=auto]
 
 In <<fig5>>, there are three essential roles:
 
@@ -43,7 +43,7 @@ Portals and application clients represent just the tip of geospatial Decision Su
 
 [[fig6]]
 .GeoDSS Integrated OWS Client
-image::images/006.png[width=auto,height=auto]
+image::006.png[width=auto,height=auto]
 
 === Multi-Tier Architectures
 
@@ -51,7 +51,7 @@ Services and data are packaged as components to define a deployment architecture
 
 [[fig7]]
 .Service tiers in OWS architecture
-image::images/007.png[width=auto,height=auto]
+image::007.png[width=auto,height=auto]
 
 [[spatial_data_infrastructures]]
 === Spatial Data Infrastructures
@@ -78,7 +78,7 @@ The Sensor Web represents a meta-platform that integrates arbitrary sensors and 
 
 [[fig8]]
 .Sensor Web: Aggregation of Sensor Networks
-image::images/008.png[width=auto,height=auto]
+image::008.png[width=auto,height=auto]
 
 The retrieval and processing of sensor data, but also the management of sensor devices (i.e. tasking), is often carried out by means of distributed software entities that interoperate via the Internet. At its stage of completion, billions of sensors will be connected and produce georeferenced observation data. Every single sensor provides a small mosaic stone that helps us to generate a consolidated view of the world, to get a better understanding of the past, present, and future situation of our planet as well as active processes and correlations.
 
@@ -112,7 +112,7 @@ Geoprocessing Workflows integrate data and services in an interoperable way, whe
 
 [[fig9]]
 .Composition and Execution of a Workflow
-image::images/009.png[width=auto,height=auto]
+image::009.png[width=auto,height=auto]
 
 === Data Fusion
 

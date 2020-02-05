@@ -21,10 +21,10 @@ NRCan provided a SNAP graph performing that executed 5 tasks in order to generat
 
 [[fig3]]
 .SNAP Graph performing 5 tasks, using a single Sentinel-1 scene and DEM data for terrain correction
-image::images/003.png["",700,386]
+image::003.png["",700,386]
 
 The output is a GeoTiff file that allows the identification of burn scars. The necessary mosaicking, i.e., the merging of all 128 scenes into a single image was not part of the Hackathon. A sample output file is illustrated below.
 
 [[fig4]]
 .SNAP Graph performing 5 tasks, using a single Sentinel-1 scene and DEM data for terrain correction
-image::images/004.png["",700,386]
+image::004.png["",700,386]

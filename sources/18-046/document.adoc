@@ -4,18 +4,19 @@
 :revdate: 2018-12-20
 :status: published
 :committee: technical
-:docnumber: OGC 18-046
+:docnumber: 18-046
 :received-date: 2018-12-20
 :issued-date: 2018-07-10
 :published-date: 2018-06-12
 :external-id: http://www.opengis.net/doc/PER/eoep-Hack2018
 :fullname: Ingo Simonis
 :role: editor
-:keywords: 
-:submitting-organizations: 
+:keywords:
+:submitting-organizations:
 :docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
+:imagesdir: images
 :local-cache-only:
 :data-uri-image:
 
@@ -29,8 +30,6 @@ include::sections/03-introduction.adoc[]
 include::sections/04-key_findings.adoc[]
 
 include::sections/05-implementation_challenge.adoc[]
-
-//include::6.adoc[]
 
 include::sections/06-solutions.adoc[]
 
