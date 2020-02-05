@@ -1,0 +1,31 @@
+= OGC Reference Model
+:doctype: other
+:language: en
+:revdate: 2011-12-19
+:published-date: 2011-12-19
+:status: published
+:committee: technical
+:docnumber: OGC 08-062r7
+:external-id: http://www.opengis.net/doc/orm/2.1
+:keywords:
+:submitting-organizations:
+:docfile: document.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+
+include::sections/00-introduction.adoc[]
+
+include::sections/01-enterprise_view_of_ogc.adoc[]
+
+include::sections/02-geospatial_information.adoc[]
+
+include::sections/03-geospatial_services.adoc[]
+
+include::sections/04-reusable_patterns_for_deployment.adoc[]
+
+include::sections/05-implementation_of_ogc_standards.adoc[]
+
+include::sections/06-revision_history.adoc[]

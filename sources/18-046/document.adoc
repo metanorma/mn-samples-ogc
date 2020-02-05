@@ -13,29 +13,29 @@
 :role: editor
 :keywords: 
 :submitting-organizations: 
-:docfile: 18-046.adoc
+:docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
 :data-uri-image:
 
 
-include::1-summary.adoc[]
+include::sections/01-summary.adoc[]
 
-include::2-terms_and_definitions.adoc[]
+include::sections/02-terms_and_definitions.adoc[]
 
-include::3-introduction.adoc[]
+include::sections/03-introduction.adoc[]
 
-include::4-key_findings.adoc[]
+include::sections/04-key_findings.adoc[]
 
-include::5-implementation_challenge.adoc[]
+include::sections/05-implementation_challenge.adoc[]
 
 //include::6.adoc[]
 
-include::6-solutions.adoc[]
+include::sections/06-solutions.adoc[]
 
-include::7-appendix-a.adoc[]
+include::sections/07-appendix-a.adoc[]
 
-include::8-appendix-b.adoc[]
+include::sections/08-appendix-b.adoc[]
 
-include::9-appendix-c.adoc[]
+include::sections/09-appendix-c.adoc[]
