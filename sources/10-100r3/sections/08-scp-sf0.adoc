@@ -489,18 +489,18 @@ schema document |Restrictions
 
 |gml:PointPropertyType |geometryBasic0d1d.xsd |None
 
-|gml:CurvePropertyType 
+|gml:CurvePropertyType
 a|geometryBasic0d1d.xsd +
 geometryPrimitives.xsd
 a|Supported property values are gml:LineString or gml:Curve
 with gml:LineStringSegment, gml:Arc, gml:Circle or gml:CircleByCenterPoint segments{blank}footnote:gmlTypeNote[Non-linearly interpolated curves are not included in the OpenGIS(R) Implementation Specification for Geographic information - Simple feature access - Part 1: Common architecture [OGC 06-103r3\] specification. However, this standard allows the use of gml:Arc, gml:Circle and gml:CircleByCenterPoint because of their general utility for the compact expression of circles and arcs which would otherwise be approximated using line strings and/or polygons.].
 
-|gml:SurfacePropertyType 
-|geometryBasic2d.xsd 
+|gml:SurfacePropertyType
+|geometryBasic2d.xsd
 a|Supported property values are gml:Polygon or gml:Surface with gml:PolygonPatch patches. Surface boundaries may be described using gml:LinearRing or using gml:Ring with a single gml:Curve with gml:LineStringSegment, gml:Arc, gml:Circle or gml:CircleByCenterPoint segments footnote:[Non-linearly interpolated curves are not included in the OpenGIS(R) Implementation Specification for Geographic information - Simple feature access - Part 1: Common architecture [OGC 06-103r3\] specification. However, this standard allows the use of gml:Arc, gml:Circle and gml:CircleByCenterPoint because of their general utility for the compact expression of circles and arcs which would otherwise be approximated using line strings and/or polygons.].
 
 |gml:GeometryPropertyType
-|geometryBasic0d1d.xsd 
+|geometryBasic0d1d.xsd
 a|Supported property values are +
 gml:Point,gml:LineString, +
 gml:Curve, gml:Polygon, +
@@ -625,7 +625,7 @@ To explicitly describe that an association exists between two features, an XML S
 
 
 .Example association between two features
-image::example-association.jpg[]
+image::image-01.jpg[]
 
 
 In this example, the BUILDING feature might contain the property declaration:
