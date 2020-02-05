@@ -54,7 +54,7 @@ The http://portal.opengeospatial.org/files/?artifact_id=40537[OGC PDF Georegistr
 
 [[fig1]]
 .Maps, Display, Features and Data (Source: WMS 1.0, OGC document 00-028)
-image::images/001.png[width=auto,height=auto]
+image::001.png[width=auto,height=auto]
 
 === Geographic Features
 
@@ -64,7 +64,7 @@ The OGC approach to feature modeling follows the principles specified in http://
 
 [[fig2]]
 .Modeling Geographic Information (Source: ISO 19109:2005)
-image::images/002.png[width=auto,height=auto]
+image::002.png[width=auto,height=auto]
 
 Any feature may have a number of *properties*. These properties may be operations, attributes or associations. Any feature may also have a number of *attributes*: Spatial, Temporal, Quality, Location, Metadata, Thematic. A feature collection is a feature that represents a collection of features that have common metadata and formal relationships. Collections possess all the characteristics of a feature.
 
@@ -86,7 +86,7 @@ Spatial query operators are a mechanism for characterizing topological relations
 
 [[fig3]]
 .Spatial query operator examples
-image::images/003.png[width=auto,height=auto]
+image::003.png[width=auto,height=auto]
 
 [[geography_markup_language]]
 === Geography Markup Language

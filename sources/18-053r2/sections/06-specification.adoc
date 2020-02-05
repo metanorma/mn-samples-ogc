@@ -31,7 +31,7 @@ Tiles are organized in a tree which incorporates the concept of Hierarchical Lev
 
 [[fig1]]
 .A sample 3D Tiles bounding volume hierarchy
-image::images/001.png["",594,563]
+image::001.png["",594,563]
 
 A tileset may use a 2D spatial tiling scheme similar to raster and vector tiling schemes (like a Web Map Tile Service (WMTS) or XYZ scheme) that serve predefined tiles at several levels of detail (or zoom levels). However since the content of a tileset is often non-uniform or may not easily be organized in only two dimensions, the tree can be any <<_Spatial_data_structures,spatial data structure>> with spatial coherence, including k-d trees, quadtrees, octrees, and grids.
 
@@ -123,12 +123,12 @@ If a tile uses replacement refinement, when refined it renders its children in p
 Parent Tile 
 
 .A parent tile with replacement refinement
-image::images/002.jpg["",376,237]
+image::002.jpg["",376,237]
 
 Refined
 
 .A refined child tile of a tile with replacement refinement
-image::images/003.jpg["",376,237]
+image::003.jpg["",376,237]
 
 
 [[additive]]
@@ -139,12 +139,12 @@ If a tile uses additive refinement, when refined it renders itself and its child
 Parent Tile
 
 .A parent tile with additive refinement
-image::images/004.jpg["",378,238]
+image::004.jpg["",378,238]
 
 Refined
 
 .A refined child tile of a tile with additive refinement
-image::images/005.jpg["",379,239]
+image::005.jpg["",379,239]
 
 
 [[_Bounding_volumes]]
@@ -155,17 +155,17 @@ A bounding volume defines the spatial extent enclosing a tile or a tile's conten
 Bounding box
 
 .A bounding box
-image::images/006.jpg["",266,266]
+image::006.jpg["",266,266]
 
 Bounding sphere
 
 .A bounding sphere
-image::images/007.jpg["",266,266]
+image::007.jpg["",266,266]
 
 Bounding region
 
 .A bounding region
-image::images/008.jpg["",265,265]
+image::008.jpg["",265,265]
 
 
 [[_Region]]
@@ -175,7 +175,7 @@ The boundingVolume.region property is an array of six numbers that define the bo
 
 [[fig]]
 .A bounding region
-image::images/009.jpg["",500,500]
+image::009.jpg["",500,500]
 
 [source,ruby]
 ----
@@ -199,7 +199,7 @@ The boundingVolume.box property is an array of 12 numbers that define an oriente
 
 [[fig10]]
 .A bounding box
-image::images/010.jpg["",500,500]
+image::010.jpg["",500,500]
 
 
 [source,ruby]
@@ -222,7 +222,7 @@ The boundingVolume.sphere property is an array of four numbers that define a bou
 
 [[fig11]]
 .A bounding sphere
-image::images/011.jpg["",500,500]
+image::011.jpg["",500,500]
 
 [source,ruby]
 ----
@@ -395,7 +395,7 @@ For an example of the computed transforms (transformToRoot in the code above) fo
 
 [[fig12]]
 .A tileset with transformed children tiles
-image::images/012.png["",662,447]
+image::012.png["",662,447]
 
 The computed transform for each tile is:
 
@@ -472,7 +472,7 @@ A tile JSON object consists of the following properties.
 
 [[fig13]]
 .Tile JSON properties
-image::images/013.png["",336,417]
+image::013.png["",336,417]
 
 The following example shows one non-leaf tile.
 
@@ -537,7 +537,7 @@ The screenshot below shows the bounding volumes for the root tile for http://ces
 
 [[fig14]]
 .A tile bounding volume in red, and a content bounding volume in blue
-image::images/014.png["",700,437]
+image::014.png["",700,437]
 
 The optional transform property (not shown above) defines a 4x4 affine transformation matrix that transforms the tile's content, boundingVolume, and viewerRequestVolume as described in the <<tile-transform,T>> section.
 
@@ -616,7 +616,7 @@ To create a tree of trees, a tile's content.uri can point to an external tileset
 
 [[fig15]]
 .A tileset JSON file with external tileset JSON files
-image::images/015.png["",700,793]
+image::015.png["",700,793]
 
 When a tile points to an external tileset, the tile:
 
@@ -628,7 +628,7 @@ When a tile points to an external tileset, the tile:
 
 [[fig16]]
 .A tileset with transforms referencing an external tileset with transforms
-image::images/016.png["",392,507]
+image::016.png["",392,507]
 
 [[_Bounding_volume_spatial]]
 ==== Bounding volume spatial coherence
@@ -656,7 +656,7 @@ For example, here is the root tile and its children for Canary Wharf. Note the b
 
 [[fig17]]
 .A root tile and its four children tiles
-image::images/017.png["",700,437]
+image::017.png["",700,437]
 
 3D Tiles also enable other quadtree variations such as http://www.tulrich.com/geekstuff/partitioning.html[loose quadtrees], where child tiles overlap but spatial coherence is still preserved, i.e., a parent tile completely encloses all of its children. This approach can be useful to avoid splitting features, such as 3D models, across tiles.
 
@@ -664,7 +664,7 @@ Below, the green buildings are in the left child and the purple buildings are in
 
 [[fig18]]
 .Two sibling tiles with overlapping bounding volumes
-image::images/018.png["",700,437]
+image::018.png["",700,437]
 
 
 ===== K-d trees
@@ -686,7 +686,7 @@ An octree extends a quadtree by using three orthogonal splitting planes to subdi
 
 [[fig19]]
 .A tileset with an overlapping grid spatial data structure
-image::images/019.png["",700,437]
+image::019.png["",700,437]
 
 3D Tiles takes advantage of empty tiles: those tiles that have a bounding volume, but no content. Since a tile's content property does not need to be defined, empty non-leaf tiles can be used to accelerate non-uniform grids with hierarchical culling. This essentially creates a quadtree or octree without hierarchical levels of detail (HLOD).
 

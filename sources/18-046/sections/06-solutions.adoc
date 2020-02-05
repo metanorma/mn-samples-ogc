@@ -19,7 +19,7 @@ Since 52°North provides a WPS implementation and is involved in different proje
 
 [[fig5]]
 .Sequence of interaction between client and 52°North WPS 2.0 with ADES-specific extension
-image::images/005.png[height=auto,width=auto]
+image::005.png[height=auto,width=auto]
 
 _DeployProcess description_
 
@@ -335,7 +335,7 @@ The concept of the ADES works well with WPS and the 52°North WPS could be easil
 
 The contribution of 52°North was supported by the research project WaCoDis (co-funded by the German Federal Ministry of Transport and Digital Infrastructure, program mFund, contract: 19F2038D) and by the research project RIESGOS (co-funded by the German Ministry of Research and Education, program CLIENT-II, contract: 03G0876).
 
-=== CS 
+=== CS
 
 ==== Motivation to Participate
 
@@ -349,7 +349,7 @@ We didn’t choose the Kubernetes approach as we did on others similar projects 
 
 Here is an example of the output mosaic with some processed tiles on the study area displayed into GeoStorm platform:
 
-image::images/006.png[height=auto,width=auto]
+image::006.png[height=auto,width=auto]
 
 [[application_package]]
 ===== Application package
@@ -875,13 +875,13 @@ The AMC software was deployed on a Virtual Machine hosted on CloudSigma’s Fran
 
 [[fig6]]
 .CloudSigma Dashboard showing VM used during Hackathon for Solenix AMC
-image::images/006a.png[height=auto,width=auto]
+image::006a.png[height=auto,width=auto]
 
 The AMC was then minimally tailored for the Hackathon, with no significant functional changes. The set of endpoints made available by participants providing ADES implementations was configured and a rectangle corresponding to the Canadian Northwestern Territories was determined (based on a Shape file provided by ESA/NRCAN) and drawn over the WebWorldWind 3D globe.
 
 [[fig7]]
 .Solenix AMC for Hackathon, showing WebWorldWind 3D globe with Canada NW Territory AOI and drop-down list of ADES endpoints
-image:images/007.png[height=auto,width=auto]
+image:007.png[height=auto,width=auto]
 
 No other changes were made or required to be able to interoperate with available and working ADES providers, which is a demonstration of the validity of the Testbed-13 EOC results and the Solenix AMC implementation. In fact, in all attempted cases, once network connectivity (firewalls, blocked ports) and CORS (Cross-Site Scripting protection) issues were solved, the AMC managed to interact with the ADES implementations using the WPS functionality coming out of Testbed-13. This further attested to the maturity and interoperability power of WPS.
 
@@ -1010,7 +1010,7 @@ During the two days of the final demo event, it was possible to attempt integrat
 
 [[fig8]]
 .Solenix AMC for Hackathon: Application registration page showing several participant ADES
-image::images/008.png[height=auto,width=auto]
+image::008.png[height=auto,width=auto]
 
 On uploading the AP, the AMC prints-out some general information about the AP and asks for a confirmation. Once this is given, under the hood the AMC contacts the ADES using the WPS Execute operation on a specially prepared process called 'DeployProcess.'
 
@@ -1018,7 +1018,7 @@ After the application is registered, it can be selected for usage. Application e
 
 [[fig9]]
 .Solenix AMC for Hackathon: Execution page built dynamically from 52 North ADES WPS Burn Scar Process Description
-image::images/009.png[height=auto,width=auto]
+image::009.png[height=auto,width=auto]
 
 Besides the 52 North ADES, with which partial integration was successfully implemented before the final event (it was not possible to integrate the complete execution flow), it was possible to fully integrate and demonstrate the complete flow using the University of Timisoara’s ADES implementation during the final event.
 
@@ -1051,7 +1051,7 @@ The key differences between the Marathon-based and the ADES-based implementation
 
 During the Hackathon, the new client component has been tested against the ADES implemented by Thales Alenia Space and 52°North.
 
-====  Implemented Solution
+==== Implemented Solution
 
 The ASB core component in charge of requesting the deployment of the process/application images and their execution is the Tasks Manager. As most of the other ASB core components, it is implemented in the Python scripting language. It uses the WPS client package provided by the open-source library OWSLib (https://github.com/geopython/OWSLib/) to communicate with WPS servers.
 
@@ -1362,7 +1362,7 @@ It is worth mentioning that the triggered application execution successfully com
 
 [[fig10]]
 .Application Execution Statistics. x-axis in minutes computing time, y-axis identifies the 128 Sentinel-1 scenes
-image::images/010.png[height=auto,width=auto]
+image::010.png[height=auto,width=auto]
 
 ===== Implementation
 
@@ -1721,13 +1721,13 @@ The outline of the Thales solution can be seen in <<fig11>>.
 
 [[fig11]]
 .Hackathon outline
-image::images/011.png[height=auto,width=auto]
+image::011.png[height=auto,width=auto]
 
 The final solution was composed of a SOAP API to connect the WPS client with the North52 WPS server and this connects with the queue message service, which sends the execution to the workers (nodes). Also, in order to test the solution launching all the products to process, we used Jmeter to automate the process in case we could not integrate with a real client. The final implemented solution can be seen in <<fig12>>.
 
 [[fig12]]
 .Final TASE implemented solution
-image::images/012.png[height=auto,width=auto]
+image::012.png[height=auto,width=auto]
 
 ==== Proposed Alternatives
 
@@ -1735,13 +1735,13 @@ During the period of the Hackathon we tried several options to make the backend 
 
 [[fig13]]
 .Faas implemented solution of TASE
-image::images/013.png[height=auto,width=auto]
+image::013.png[height=auto,width=auto]
 
 After the trial, the balancing in the FaaS solution was not working properly, so the solution had to be changed and the alternative approach was using JaaS (Jobs as a Service), which is able to run docker images balancing the load between the whole docker swarm cluster. Using this solution, in an automated environment where the tasks were run automatically, in some of the nodes those executions were not properly run, and therefore this solution was not valid to test the performance.This implemented solution can be seen in <<fig14>>.
 
 [[fig14]]
 .Jaas implemented solution of TASE
-image::images/014.png[height=auto,width=auto]
+image::014.png[height=auto,width=auto]
 
 Discarding the previous two solutions, we go on for the solution done in implemented solution section, using a Thales Alenia Space designed solution reusing as WPS server, the server is done by North52.
 

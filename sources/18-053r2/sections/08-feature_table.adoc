@@ -18,7 +18,7 @@ A Feature Table is composed of two parts: a JSON header and an optional binary b
 
 [[fig20]]
 .Feature Table layout
-image::images/020.png["",351,165]
+image::020.png["",351,165]
 
 When a tile format includes a Feature Table, the Feature Table immediately follows the tile's header. The header will also contain featureTableJSONByteLength and featureTableBinaryByteLengthuint32 fields, which can be used to extract each respective part of the Feature Table.
 
@@ -60,7 +60,7 @@ When the JSON header includes a reference to the binary, the provided byteOffset
 
 [[fig21]]
 .Feature Table binary body layout
-image::images/021.png["",552,166]
+image::021.png["",552,166]
 
 Values can be retrieved using the number of features, featuresLength; the desired feature id, featureId; and the data type (component type and number of components) for the feature semantic.
 

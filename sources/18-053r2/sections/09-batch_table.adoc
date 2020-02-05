@@ -21,7 +21,7 @@ A Batch Table is composed of two parts: a JSON header and an optional binary bod
 
 [[fig22]]
 .Batch Table layout
-image::images/022.png["",383,167]
+image::022.png["",383,167]
 
 
 When a tile format includes a Batch Table, the Batch Table immediately follows the tile's Feature Table. +
@@ -99,7 +99,7 @@ When the JSON header includes a reference to the binary section, the provided by
 
 [[fig23]]
 .Batch Table binary body layout
-image::images/023.png["",622,181]
+image::023.png["",622,181]
 
 Values can be retrieved using the number of features, batchLength; the desired batch id, batchId; and the componentType and type defined in the JSON header.
 

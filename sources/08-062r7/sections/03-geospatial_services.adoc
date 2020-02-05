@@ -194,7 +194,7 @@ The http://www.opengeospatial.org/standards/ols[OpenLS Tracking Service Interfac
 
 [[fig4]]
 .OpenLS Information Model
-image::images/004.png[height=auto,width=auto]
+image::004.png[height=auto,width=auto]
 
 
 === Fine-Grained Services

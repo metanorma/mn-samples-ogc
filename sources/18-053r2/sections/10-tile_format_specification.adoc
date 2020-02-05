@@ -35,7 +35,7 @@ A tile is composed of two sections: a header immediately followed by a body. The
 
 [[fig24]]
 .Batched 3D Model layout
-image::images/024.png["",700,386]
+image::024.png["",700,386]
 
 ===== Padding
 
@@ -316,7 +316,7 @@ A tile is composed of a header section immediately followed by a binary body. Th
 
 [[fig25]]
 .Instanced 3D Model layout
-image::images/025.png["",543,305]
+image::025.png["",543,305]
 
 
 ===== Padding
@@ -420,11 +420,11 @@ The z vector would map to a forward vector, but it is omitted because it will al
 
 [[fig26]]
 .A box in the standard basis
-image::images/026.png["",417,370]
+image::026.png["",417,370]
 
 [[fig27]]
 .A box transformed into a rotated basis
-image::images/027.png["",417,325]
+image::027.png["",417,325]
 
 
 [[oct-encoded-normal-vectors]]
@@ -466,7 +466,7 @@ A quantized volume is defined by offset and scale to map quantized positions int
 
 [[fig28]]
 .A quantized volume
-image::images/028.png["",700,619]
+image::028.png["",700,619]
 
 
 offset is stored in the global semantic QUANTIZED_VOLUME_OFFSET, and scale is stored in the global semantic QUANTIZED_VOLUME_SCALE. +
@@ -827,7 +827,7 @@ A tile is composed of a header section immediately followed by a body section. T
 
 [[fig29]]
 .Point Cloud layout
-image::images/029.png["",700,278]
+image::029.png["",700,278]
 
 
 ===== Padding
@@ -939,7 +939,7 @@ A quantized volume is defined by offset and scale to map quantized positions to 
 
 [[fig30]]
 .A quantized volume
-image::images/030.png["",700,619]
+image::030.png["",700,619]
 
 
 offset is stored in the global semantic QUANTIZED_VOLUME_OFFSET, and scale is stored in the global semantic QUANTIZED_VOLUME_SCALE. +
@@ -1445,7 +1445,7 @@ Composite layout (dashes indicate optional fields):
 
 [[fig31]]
 .Composite layout
-image::images/031.png["",700,145]
+image::031.png["",700,145]
 
 
 ===== Padding

@@ -14,8 +14,8 @@ metanorma:
       sources/08-062r7.xml: sources/08-062r7/document.adoc
       sources/10-100r3.xml: sources/10-100r3/document.adoc
       sources/17-069.xml: repos/ogc-wfs/17-069.xml
-      sources/18-046.xml: sources/05-020r27/document.adoc
-      sources/18-053r2.xml: sources/05-020r27/document.adoc
+      sources/18-046.xml: sources/18-046/document.adoc
+      sources/18-053r2.xml: sources/18-053r2/document.adoc
       sources/ogc-tcpnp.xml: repos/ogc-tcpnp/ogc-tcpnp.xml
     built_type:
       sources/05-020r27.xml: ogc

@@ -20,7 +20,7 @@ The challenge was rather straight forward: Take an arbitrary application, store 
 The implemented use case is briefly outlined here and described in full detail in chapter <<Implementation_Challange_UseCase, Implementation Challenge, section UseCase>>. The use case describes a burn scare mapping scenario in Canada, where the extent of wild fires is analyzed based on radar data processing. The use case required to process a collection of Sentinel-1 radar data for the Northwest Territories (NWT) at the beginning and the end of the 2017 summer. Large wildfires occurred in 2013, 2014 and 2015 in this region, and the application should allow spatially-extensive, timely and cost effective wildfire mapping and monitoring to better assess post-fire burns and tracking of impacts of disturbances on forestlands.
 
 .The use case required to process radar data over Canada’s Northwest Territories, a land area of approximately 1,144,000 km2 with a population of less than 50,000 people
-image::images/001.png["",700,386]
+image::001.png["",700,386]
 
 anada’s forests cover an area of 348 million hectares, which is 35% of Canada’s land area and 9% of the world’s forested area. Because vast areas are inaccessible, researchers use satellites such as Sentinel-1 to gain valuable insights into Canada’s forest ecosystem. The Hackathon evaluated the extent of wild fires based on Sentinel-1 data for the summer of 2017 over the Northwest Territories, Canada. In total, 128 Sentinel-1 IW images (832 GB) for the two coverages (beginning and end of summer 2017) of the entire NWT had to be processed.
 
@@ -35,7 +35,7 @@ The SNAP workflow in the Docker container required two types of data: Digital El
 The requested solution is defined in full detail in chapter <<Implementation_Challange, Implementation Challenge>> and only briefly outlined here. The requested solution was based on the Testbed-13 results, which are illustrated in the figure below and briefly described in the following paragraphs. There was no exclusiveness, though. Participants could develop their own solution that deviated from the Testbed-13 base.
 
 .Testbed-13 Architecture
-image::images/002.png["",700,386]
+image::002.png["",700,386]
 
 The application developer in the upper left corner packages the application together with all required libraries into a Docker container (1) and describes it following the Application Package specification (2). The Application Package will then be registered with the Application Deployment and Execution Services, ADES (3). The ADES provides a WPS interface. The ADES registers the new application and makes it available as a new WPS process. On request from an application consumer (4), the ADES provides a description of all parameters required to be provided as part of an execution request. On execution (6), the ADES deploys the application container on a cloud and executes it. Once done, the application consumer is provided with instructions on how to access the results. The discovery process of the new process (5) that allows the discovery of the new process in a catalog service is ignored in the Hackathon.
 
