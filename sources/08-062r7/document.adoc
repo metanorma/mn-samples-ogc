@@ -1,5 +1,6 @@
 = OGC Reference Model
 :doctype: other
+:edition: 2.1
 :language: en
 :revdate: 2011-12-19
 :published-date: 2011-12-19
