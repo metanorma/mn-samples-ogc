@@ -1,5 +1,5 @@
 = Testbed-12 OWS Context User Guide
-:doctype: other
+:doctype: user-guide
 :language: en
 :status: published
 :committee: technical
@@ -13,7 +13,7 @@
 :role: editor
 :keywords:
 :submitting-organizations:
-:docfile: 18-053r2.adoc
+:docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :imagesdir: images
