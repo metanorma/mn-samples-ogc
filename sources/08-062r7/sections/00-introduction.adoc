@@ -1,5 +1,5 @@
 
-[preface]
+[.preface]
 == Introduction
 
 The OGC Reference Model (ORM) describes the OGC Standards Baseline focusing on relationships between the baseline documents. The OGC Standards Baseline (SB) consists of the approved OGC Abstract and Implementation Standards (Interface, Encoding, Profile, and Application Schema – normative documents) and OGC Best Practice documents (informative documents).
