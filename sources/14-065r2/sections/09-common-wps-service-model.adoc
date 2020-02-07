@@ -658,11 +658,16 @@ image::fig-execute-request-uml.png[]
 |schema
 |transmission	|Code that indicates the desired data transmission mode for this output.	|Character string. Valid values are listed in the outputTransmission property of each ProcessOffering.	|Zero or one (conditional) footnote:[This element may be omitted for (1) raw data output, (2) output elements that serve as nesting parents.]
 |id	|Identifier of a particular output, as defined in the process description.	|URI	|One (mandatory)
-|Output	|Nested output, child element.	|OutputDefinitionType structure, <<tab-properties-of-the-outputdefinitiontype>> (this table).	|Zero or more footnote:[See <<fig-abstract-process-model-uml>>] (conditional) footnote:[Include only for nested outputs.]
+
+|Output footnote:[Depending on the process model, a client may provide a basic specification of the desired output format. This information shall ensure a successful decoding of the process outputs. Use and interpretation of this element shall be specified within a WPS service profile.]
+|Nested output, child element.
+|OutputDefinitionType structure, <<tab-properties-of-the-outputdefinitiontype>> (this table).
+|Zero or more footnote:[See <<fig-abstract-process-model-uml>>] (conditional) footnote:[Include only for nested outputs.]
+
 |===
 
 
-// b Depending on the process model, a client may provide a basic specification of the desired output format. This information shall ensure a successful decoding of the process outputs. Use and interpretation of this element shall be specified within a WPS service profile.
+
 
 
 ==== Execute Response
@@ -875,7 +880,7 @@ _Requirements class for GetResult operation exceptions._
 
 
 ==== GetResult Request
-The GetResult request inherits basic properties from the RequestBaseType. It contains an additional element that identifies the JobID of the processing job, of which the result shall be returned. 
+The GetResult request inherits basic properties from the RequestBaseType. It contains an additional element that identifies the JobID of the processing job, of which the result shall be returned.
 
 
 [%unnumbered]
