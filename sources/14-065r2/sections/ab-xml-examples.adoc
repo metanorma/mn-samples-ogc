@@ -1,0 +1,709 @@
+
+[[annex-xml-examples]]
+[appendix, obligation=informative]
+== XML Examples
+
+[[annex-subsec-data-types]]
+=== Data Types
+
+==== Complex Data Description
+
+[%unnumbered]
+[source,xml]
+----
+<wps:ComplexData>
+  <wps:Format mimeType="application/geotiff" encoding="raw"
+default="true"/>
+  <wps:Format mimeType="application/geotiff" encoding="base64"/>
+</wps:ComplexData>
+----
+
+
+==== Literal Data Description
+
+[%unnumbered]
+[source,xml]
+----
+<wps:LiteralData>
+  <wps:Format mimeType="text/plain" default="true"/>
+  <wps:Format mimeType="text/xml"/>
+  <LiteralDataDomain default="true">
+    <ows:AllowedValues>
+      <ows:Range>
+        <ows:MinimumValue>1</ows:MinimumValue>
+        <ows:MaximumValue>1000</ows:MaximumValue>
+      </ows:Range>
+    </ows:AllowedValues>
+    <ows:DataType
+ows:reference="http://www.w3.org/2001/XMLSchema#float">float
+</ows:DataType>
+    <ows:UOM>meters</ows:UOM>
+    <ows:DefaultValue>100</ows:DefaultValue>
+  </LiteralDataDomain>
+  <LiteralDataDomain>
+    <ows:AllowedValues>
+      <ows:Range>
+        <ows:MinimumValue>1</ows:MinimumValue>
+        <ows:MaximumValue>3000</ows:MaximumValue>
+      </ows:Range>
+    </ows:AllowedValues>
+    <ows:DataType
+ows:reference="http://www.w3.org/2001/XMLSchema#float">float
+</ows:DataType>
+    <ows:UOM>feet</ows:UOM>
+  </LiteralDataDomain>
+</wps:LiteralData>
+----
+
+
+==== Literal data values
+
+[%unnumbered]
+[source,xml]
+----
+<LiteralValue
+  dataType=http://www.w3.org/2001/XMLSchema#double
+  uom="meter">
+    42.1
+</LiteralValue>
+ 
+<LiteralValue
+  dataType="http://www.w3.org/2001/XMLSchema#string">
+    ArableLand
+</LiteralValue>
+----
+
+
+==== BoundingBox Data Description
+
+[%unnumbered]
+[source,xml]
+----
+<wps:BoundingBoxData>
+  <wps:Format mimeType="text/plain" default="true"/>
+  <wps:Format mimeType="text/xml"/>
+  <wps:SupportedCRS default="true">EPSG:4326</wps:SupportedCRS>
+  <wps:SupportedCRS>
+    http://www.opengis.net/def/crs/EPSG/0/4258
+  </wps:SupportedCRS>
+</wps:BoundingBoxData>
+----
+
+
+==== BoundingBox Data Values
+
+[%unnumbered]
+[source,xml]
+----
+<ows:BoundingBox crs="EPSG:4326">
+  <ows:LowerCorner>51.9 7.0</ows:LowerCorner>
+  <ows:UpperCorner>53.0 8.0</ows:UpperCorner>
+</ows:BoundingBox>
+ 
+<ows:BoundingBox
+   crs="http://www.opengis.net/def/crs/EPSG/0/4258">
+  <ows:LowerCorner>51.9 7.0</ows:LowerCorner>
+  <ows:UpperCorner>53.0 8.0</ows:UpperCorner>
+</ows:BoundingBox>
+----
+
+[[annex-subsec-process-description]]
+=== Process Description
+This example describes a buffer command that accepts polygon coordinates in GML, and used a buffer distance in meters to produce a buffered polygon feature, which is output in GML.
+
+[%unnumbered]
+[source,xml]
+----
+<wps:Process 
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:ows="http://www.opengis.net/ows/2.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation=
+"http://www.opengis.net/wps/2.0 ../../wps.xsd">
+ 
+  <ows:Title>Planar Buffer operation for GML features</ows:Title>
+  <ows:Abstract>
+  Create a buffer around a GML feature. Accepts any valid GML
+  feature and computes the joint buffer.</ows:Abstract>
+  <ows:Identifier>
+    http://some.host/profileregistry/implementation/Planar-GML-
+Buffer
+  </ows:Identifier>
+  <ows:Metadata
+    xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process-profile/concept"
+    xlink:href="http://some.host/profileregistry/concept/
+buffer"/>
+  <ows:Metadata
+    xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process-profile/concept"
+    xlink:href="http://some.host/profileregistry/concept/
+planarbuffer"/>
+  <ows:Metadata
+    xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process-profile/generic"
+    xlink:href="http://some.host/profileregistry/generic/
+SF-Buffer"/>
+  <ows:Metadata
+    xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process/description/documentation"
+    xlink:href="http://some.host/profileregistry/implementation/
+Planar-GML-Buffer.html"/>
+  <wps:Input>
+    <ows:Title>Geometry to be buffered</ows:Title>
+    <ows:Abstract>Geometry input in GML</ows:Abstract>
+    <ows:Identifier>INPUT_GEOMETRY</ows:Identifier>
+    <ows:Metadata
+      xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process/description/documentation"
+      xlink:href="http://some.host/profileregistry/
+implementation/Planar-GML-Buffer.html#input_geometry"/>
+    <wps:ComplexData>
+      <wps:Format mimeType="text/xml" encoding="UTF-8"
+        schema="http://schemas.opengis.net/gml/3.2.1/feature.xsd"
+        default="true"/>
+    </wps:ComplexData>
+  </wps:Input>
+  <wps:Input>
+    <ows:Title>Distance</ows:Title>
+    <ows:Abstract>
+      Distance to be used to calculate buffer.
+    </ows:Abstract>
+    <ows:Identifier>DISTANCE</ows:Identifier>
+    <ows:Metadata
+      xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process/description/documentation"
+      xlink:href="http://some.host/profileregistry/
+implementation/Planar-GML-Buffer.html#distance"/>
+    <wps:LiteralData>
+      <wps:Format mimeType="text/plain" default="true"/>
+      <wps:Format mimeType="text/xml"/>
+      <LiteralDataDomain default="true">
+        <ows:AllowedValues>
+          <ows:Range>
+            <ows:MinimumValue>-INF</ows:MinimumValue>
+            <ows:MaximumValue>INF</ows:MaximumValue>
+          </ows:Range>
+        </ows:AllowedValues>
+        <ows:DataType
+          ows:reference="http://www.w3.org/2001/
+XMLSchema#double">Double</ows:DataType>
+      </LiteralDataDomain>
+    </wps:LiteralData>
+  </wps:Input>
+  <wps:Output>
+    <ows:Title>Buffered Geometry</ows:Title>
+    <ows:Abstract>
+      GML stream describing the buffered Geometry.</ows:Abstract>
+    <ows:Identifier>BUFFERED_GEOMETRY</ows:Identifier>
+    <ows:Metadata
+      xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process/description/documentation"
+      xlink:href="http://some.host/profileregistry/
+implementation/Planar-GML-Buffer.html#buffered_geometry"/>
+    <wps:ComplexData>
+      <wps:Format mimeType="text/xml" encoding="UTF-8"
+        schema="http://schemas.opengis.net/gml/3.2.1/feature.xsd"
+        default="true"/>
+    </wps:ComplexData>
+  </wps:Output>
+</wps:Process>
+----
+
+[[annex-subsec-generic-process]]
+=== Generic Process
+This example describes a generic profile for a simple features buffer. It returns a geometry that represents all points whose distance from this Geometry is less than or equal to distance. Calculations are in the Spatial Reference System of this Geometry.
+
+[%unnumbered]
+[source,xml]
+----
+<wps:GenericProcess
+  xmlns:ows="http://www.opengis.net/ows/2.0"
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xml="http://www.w3.org/XML/1998/namespace"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../../wps.xsd">
+  <ows:Title>Simple Features Buffer</ows:Title>
+  <ows:Identifier>http://some.host/profileregistry/generic/
+    SF-Buffer</ows:Identifier>
+  <ows:Metadata
+    xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process-profile/concept"
+    xlink:href="http://some.host/profileregistry/
+concept/buffer"/>
+  <ows:Metadata
+    xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process-profile/concept"
+    xlink:href="http://some.host/profileregistry/
+concept/planarbuffer"/>
+ 
+  <ows:Metadata
+    xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process/description/documentation"
+    xlink:href="http://some.host/profileregistry/
+generic/SF-Buffer.html"/>
+  <wps:Input>
+    <ows:Title>Input Geometry</ows:Title>
+    <ows:Identifier>INPUT_GEOMETRY</ows:Identifier>
+    <ows:Metadata
+      xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process/description/documentation"
+      xlink:href="http://some.host/profileregistry/
+generic/SF-Buffer.html#input_geometry"/>
+  </wps:Input>
+  <wps:Input>
+    <ows:Title>Distance</ows:Title>
+    <ows:Identifier>DISTANCE</ows:Identifier>
+    <ows:Metadata
+      xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process/description/documentation"
+      xlink:href="http://some.host/profileregistry/
+generic/SF-Buffer.html#distance"/>
+  </wps:Input>
+  <wps:Output>
+    <ows:Title>Buffered Geometry</ows:Title>
+    <ows:Identifier>BUFFERED_GEOMETRY</ows:Identifier>
+    <ows:Metadata
+      xlink:role="http://www.opengis.net/spec/wps/2.0/def/
+process/description/documentation"
+      xlink:href="http://some.host/profileregistry/
+generic/SF-Buffer.html#buffered_geometry"/>
+  </wps:Output>
+</wps:GenericProcess>
+----
+
+[[annex-subsec-getcapabilities]]
+=== GetCapabilities
+
+==== GetCapabilities Request
+
+[%unnumbered]
+[source,xml]
+----
+<wps:GetCapabilities service="WPS"
+  xmlns:ows="http://www.opengis.net/ows/2.0"
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd">
+</wps:GetCapabilities>
+----
+
+==== GetCapabilities Response
+
+[source,xml]
+----
+<wps:Capabilities service="WPS" version="2.0.0"
+  xmlns:ows="http://www.opengis.net/ows/2.0"
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xml="http://www.w3.org/XML/1998/namespace"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd ">
+  <ows:ServiceIdentification>
+    <ows:Title>MyWebProcessingService</ows:Title>
+    <ows:Abstract>
+      A Web Processing Service offering typical GIS distance
+      transform processes.
+    </ows:Abstract>
+    <ows:Keywords>
+      <ows:Keyword>Geoprocessing</ows:Keyword>
+      <ows:Keyword>Toolbox</ows:Keyword>
+      <ows:Keyword>Distance transform</ows:Keyword>
+    </ows:Keywords>
+    <ows:ServiceType>WPS</ows:ServiceType>
+    <ows:ServiceTypeVersion>2.0.0</ows:ServiceTypeVersion>
+    <ows:Fees>NONE</ows:Fees>
+    <ows:AccessConstraints>NONE</ows:AccessConstraints>
+  </ows:ServiceIdentification>
+  <ows:ServiceProvider>
+    <ows:ProviderName>TU Dresden</ows:ProviderName>
+    <ows:ProviderSite
+xlink:href="http://tu-dresden.de/geo/gis" />
+    <ows:ServiceContact>
+      <ows:IndividualName>Matthias Mueller</ows:IndividualName>
+      <ows:ContactInfo>
+        <ows:Address>
+          <ows:ElectronicMailAddress>
+            matthias_mueller@tu-dresden.de
+          </ows:ElectronicMailAddress>
+        </ows:Address>
+      </ows:ContactInfo>
+    </ows:ServiceContact>
+  </ows:ServiceProvider>
+  <ows:OperationsMetadata>
+    <ows:Operation name="GetCapabilities">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get
+          xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="DescribeProcess">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get
+          xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
+          <ows:Post
+          xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="Execute">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Post
+          xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="GetStatus">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get
+          xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
+          <ows:Post
+          xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="GetResult">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get
+          xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
+          <ows:Post
+          xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="Dismiss">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get
+          xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
+          <ows:Post
+          xlink:href="http://wps1.gis.geo.tu-dresden.de/wps"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+  </ows:OperationsMetadata>
+  <wps:Contents>
+    <wps:ProcessSummary
+jobControlOptions="sync-execute async-execute dismiss">
+      <ows:Title>Euclidean Distance</ows:Title>
+      <ows:Identifier>
+        http://my.site/distance-transform/euclidean-distance
+      </ows:Identifier>
+    </wps:ProcessSummary>
+    <wps:ProcessSummary
+jobControlOptions="async-execute dismiss">
+      processVersion="1.4.0">
+      <ows:Title>Cost Distance</ows:Title>
+      <ows:Identifier>
+        http://my.site/distance-transform/cost-distance
+      </ows:Identifier>
+    </wps:ProcessSummary>
+  </wps:Contents>
+</wps:Capabilities>
+----
+
+[[annex-subsec-describeprocess]]
+=== DescribeProcess
+
+==== DescribeProcess Request
+
+[%unnumbered]
+[source,xml]
+----
+<wps:DescribeProcess service="WPS" version="2.0.0"
+  xmlns:ows="http://www.opengis.net/ows/2.0"
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd">
+  <ows:Identifier>Buffer</ows:Identifier>
+  <ows:Identifier>Viewshed</ows:Identifier>
+</wps:DescribeProcess>
+----
+
+==== DescribeProcess Response
+
+[source,xml]
+----
+<wps:ProcessOfferings xmlns:wps="http://www.opengis.net/wps/2.0.0"
+  xmlns:ows=http://www.opengis.net/ows/2.0
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd">
+  <wps:ProcessOffering
+jobControlOptions="sync-execute async-execute dismiss"
+outputTransmission="value reference">
+    <wps:Process>      
+      <ows:Title>
+        Planar Buffer operation for Simple Features
+      </ows:Title>
+      <ows:Abstract>
+        Create a buffer around Simple Feature geometries. Accepts
+        any valid simple features input in GML or GeoJson and
+        computes their joint buffer geometry.
+      </ows:Abstract>
+      <ows:Identifier>
+        http://my.wps.server/processes/proximity/Planar-Buffer
+      </ows:Identifier>
+      <ows:Metadata
+        xlink:role="http://www.opengis.net/spec/wps/2.0/
+def/process-profile/concept"
+        xlink:href="http://some.host/profileregistry/
+concept/buffer"/>
+      <ows:Metadata
+        xlink:role="http://www.opengis.net/spec/wps/2.0/
+def/process-profile/concept"
+        xlink:href="http://some.host/profileregistry/
+concept/planarbuffer"/>
+      <ows:Metadata
+        xlink:role="http://www.opengis.net/spec/wps/2.0/
+def/process-profile/generic"
+        xlink:href="http://some.host/profileregistry/
+generic/SF-Buffer"/>
+      <ows:Metadata
+        xlink:role="http://www.opengis.net/spec/wps/2.0/
+def/process/description/documentation"
+        xlink:href="http://my.wps.server/processes/
+proximity/Planar-Buffer.html"/>
+      <wps:Input>
+        <ows:Title>Geometry to be buffered</ows:Title>
+        <ows:Abstract>
+          Simple Features geometry input in GML or GeoJson
+        </ows:Abstract>
+        <ows:Identifier>INPUT_GEOMETRY</ows:Identifier>
+        <ows:Metadata
+          xlink:role="http://www.opengis.net/spec/wps/2.0/
+def/process/description/documentation"
+          xlink:href="http://my.wps.server/processes/
+proximity/Planar-Buffer.html#input_geometry"/>
+        <wps:ComplexData>
+          <wps:Format mimeType="text/xml" encoding="UTF-8"
+            schema="http://schemas.opengis.net/gml/
+3.2.1/feature.xsd" default="true"/>
+          <wps:Format mimeType="application/json"
+encoding="UTF-8"/>
+        </wps:ComplexData>
+      </wps:Input>
+      <wps:Input>
+        <ows:Title>Distance</ows:Title>
+        <ows:Abstract>
+           Distance to be used to calculate buffer.
+        </ows:Abstract>
+        <ows:Identifier>DISTANCE</ows:Identifier>
+        <ows:Metadata
+          xlink:role="http://www.opengis.net/spec/wps/2.0/
+def/process/description/documentation"
+          xlink:href="http://my.wps.server/processes/
+proximity/Planar-Buffer.html#distance"/>
+        <wps:LiteralData>
+          <wps:Format mimeType="text/plain" default="true"/>
+          <wps:Format mimeType="text/xml"/>
+          <LiteralDataDomain default="true">
+            <ows:AllowedValues>
+              <ows:Range>
+                <ows:MinimumValue>-INF</ows:MinimumValue>
+                <ows:MaximumValue>INF</ows:MaximumValue>
+              </ows:Range>
+            </ows:AllowedValues>
+            <ows:DataType
+              ows:reference="http://www.w3.org/2001/
+XMLSchema#double">
+              Double
+            </ows:DataType>
+          </LiteralDataDomain>
+        </wps:LiteralData>
+      </wps:Input>
+      <wps:Output>
+        <ows:Title>Buffered Geometry</ows:Title>
+        <ows:Abstract>
+          Output Geometry in GML or GeoJson
+        </ows:Abstract>
+        <ows:Identifier>BUFFERED_GEOMETRY</ows:Identifier>
+        <ows:Metadata
+          xlink:role="http://www.opengis.net/spec/wps/2.0/
+def/process/description/documentation"
+          xlink:href="http://my.wps.server/processes/
+proximity/Planar-Buffer.html#buffered_geometry"/>
+        <wps:ComplexData>
+          <wps:Format mimeType="text/xml" encoding="UTF-8"
+            schema="http://schemas.opengis.net/gml/
+3.2.1/feature.xsd" default="true"/>
+          <wps:Format mimeType="application/json"
+encoding="UTF-8"/>
+        </wps:ComplexData>
+      </wps:Output>
+    </wps:Process>
+  </wps:ProcessOffering>
+</wps:ProcessOfferings>
+----
+
+[[annex-subsec-execute]]
+=== Execute
+
+==== Execute Request (asynchronous, result document)
+
+[%unnumbered]
+[source,xml]
+----
+<wps:Execute
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:ows="http://www.opengis.net/ows/2.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd"
+  service="WPS" version="2.0.0" response="document" mode="async">
+  <ows:Identifier>
+    http://my.wps.server/processes/proximity/Planar-Buffer
+  </ows:Identifier>
+  <wps:Input id="INPUT_GEOMETRY">
+    <wps:Reference xlink:href="http://some.data.server/
+mygmldata.xml"/>
+  </wps:Input>
+  <wps:Input id="DISTANCE">
+    <wps:Data>10</wps:Data>
+  </wps:Input>
+  <!– Uses default output format –>
+  <wps:Output id="BUFFERED_GEOMETRY"
+wps:dataTransmissionMode="reference">
+  </wps:Output>
+</wps:Execute>
+----
+
+==== Execute Response (StatusInfo)
+
+[%unnumbered]
+[source,xml]
+----
+<wps:StatusInfo xmlns:ows="http://www.opengis.net/ows/2.0"
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd">
+  <wps:JobID>FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66</wps:JobID>
+  <wps:Status>Accepted</wps:Status>
+  <wps:NextPoll>2014-12-24T16:00:00Z</wps:NextPoll>
+</wps:StatusInfo>
+----
+
+[[annex-subsec-execute-response-result]]
+==== Execute Response (Result)
+
+[%unnumbered]
+[source,xml]
+----
+<wps:Result
+  xmlns:ows="http://www.opengis.net/ows/2.0"
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd ">
+  <wps:JobID>FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66</wps:JobID>
+  <wps:ExpirationDate>2014-12-24T24:00:00Z</wps:ExpirationDate>
+  <wps:Output id="BUFFERED_GEOMETRY">
+    <wps:Reference
+      xlink:href="http://result.data.server/
+FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66/
+BUFFERED_GEOMETRY.xml"/>
+  </wps:Output>
+</wps:Result>
+----
+
+
+[[annex-subsec-getstatus]]
+=== GetStatus
+
+==== GetStatus Request
+
+[%unnumbered]
+[source,xml]
+----
+<wps:GetStatus service="WPS" version="2.0.0"
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd ">
+  <wps:JobID>FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66</wps:JobID>
+</wps:GetStatus>
+----
+
+==== GetStatus Response
+
+[%unnumbered]
+[source,xml]
+----
+<wps:StatusInfo xmlns:ows="http://www.opengis.net/ows/2.0"
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd">
+  <wps:JobID>FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66</wps:JobID>
+  <wps:Status>Running</wps:Status>
+  <wps:NextPoll>2014-12-24T16:00:00Z</wps:NextPoll>
+</wps:StatusInfo>
+----
+
+[[annex-subsec-getresult]]
+=== GetResult
+
+==== GetResult Request
+
+[%unnumbered]
+[source,xml]
+----
+<wps:GetResult service="WPS" version="2.0.0"
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd ">
+  <wps:JobID>FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66</wps:JobID>
+</wps:GetResult>
+----
+
+==== GetResult Response
+See <<annex-subsec-execute-response-result>>.
+
+[[annex-subsec-dismiss]]
+=== Dismiss
+
+==== Dismiss Request
+
+[%unnumbered]
+[source,xml]
+----
+<wps:Dismiss service="WPS" version="2.0.0"
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd ">
+  <wps:JobID>FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66</wps:JobID>
+</wps:Dismiss>
+----
+
+==== Dismiss Response
+
+[%unnumbered]
+[source,xml]
+----
+<wps:StatusInfo xmlns:ows="http://www.opengis.net/ows/2.0"
+  xmlns:wps="http://www.opengis.net/wps/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/wps/2.0 ../wps.xsd">
+  <wps:JobID>FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66</wps:JobID>
+  <wps:Status>Dismissed</wps:Status>
+</wps:StatusInfo>
+----
+
+[[subsec-profile-inheritance-example]]
+=== Profile inheritance example
+Taking the example of a simple Mosaic process, <<fig-profile-inheritance-example-mosaic-process>> and <<fig-profile-inheritance-example-mosaic-process-extension>> illustrate the inheritance rules for process profiles provided in <<subsec-profile-inheritance>>. In its most simple form, a mosaic process transforms a set if tiles (Coverages or georeferenced imagery) into a single output dataset. Starting from the conceptual level, the process definition is incrementally refined until the specificity of an implementation profile is reached. At the level of a profile implementation, e.g. on a particular WPS instance, the implementer may still extend the contract of the implementation profile (e.g. by allowing more or larger input data).
+
+[[fig-profile-inheritance-example-mosaic-process]]
+.Profile inheritance example for a mosaic process
+image::fig-profile-inheritance-example-mosaic-process.png[]
+
+[[fig-profile-inheritance-example-mosaic-process-extension]]
+.Profile inheritance example for a mosaic process, extension by an implementation
+image::fig-profile-inheritance-example-mosaic-process-extension.png[]
