@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Build document in the Metanorma container
         env:
-          METANORMA_DOCKER: metanorma/mn:latest
+          METANORMA_DOCKER: metanorma/metanorma:latest
         run: |
           make clean all publish
       - uses: actions/upload-artifact@master
