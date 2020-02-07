@@ -1,5 +1,5 @@
 = OGC Earth Observation Exploitation Platform Hackathon 2018 Engineering Report
-:doctype: standard
+:doctype: engineering-report
 :language: en
 :revdate: 2018-12-20
 :status: published

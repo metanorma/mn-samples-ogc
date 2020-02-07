@@ -1,5 +1,5 @@
 = 3D Tiles Specification 1.0
-:doctype: standard
+:doctype: community-standard
 :language: en
 :revdate: 2018-04-07
 :status: published
@@ -13,6 +13,8 @@
 :fullname_2: Sean Lilley
 :fullname_3: Gabby Getz
 :role: editor
+:role_2: editor
+:role_3: editor
 :keywords:
 :submitting-organizations:
 :docfile: document.adoc
