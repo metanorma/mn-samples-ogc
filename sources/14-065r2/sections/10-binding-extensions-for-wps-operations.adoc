@@ -1,0 +1,313 @@
+
+== Binding Extensions for WPS Operations
+
+=== HTTP/POST + XML Binding
+This section specifies the encoding of WPS requests using HTTP/POST and XML. The referred XML schema elements are provided by the associated schema package delivered with this standard and located at http://schemas.opengis.net/wps/2.0/.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml
+
+.^|*Target type* |Software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-capabilities +
+_Requirements class for the GetCapabilities operation POST/XML encoding._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/describe-process +
+_Requirements class for the DescribeProcess operation POST/XML encoding._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/execute +
+_Requirements class for the Execute operation POST/XML encoding._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-status +
+_Requirements class for the GetStatus operation POST/XML encoding._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-result +
+_Requirements class for the GetResult operation POST/XML encoding._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-result +
+_Requirements class for the GetResult operation POST/XML encoding._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/extension-binding +
+_An operation extension for WPS servers that seeks compliance with this requirements class shall define an HTTP/POST+XML binding in compliance with [OGC 06-121r9]._
+|===
+
+
+
+==== GetCapabilities
+This clause specifies the XML encoding for the GetCapabilities operation.
+
+A GetCapabilities example is listed in <<annex-subsec-getcapabilities>>.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-capabilities
+
+.^|*Target type* |Software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-capabilities/request +
+_A GetCapabilities request using POST/XML shall be a valid XML document of the type wps:Capabilities._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-capabilities/response +
+_The response to a successful GetCapabilities request shall be a valid XML document of the type wps:Capabilities._
+|===
+
+
+==== DescribeProcess
+This clause specifies the XML encoding for the DescribeProcess operation.
+
+A DescribeProcess example is listed in <<annex-subsec-describeprocess>>.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/describe-process
+
+.^|*Target type* |Software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/describe-process/request +
+_A DescribeProcess request using POST/XML shall be a valid XML document of the type wps:DescribeProcess._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/describe-process/response +
+_The response to a successful DescribeProcess request shall be a valid XML document of the type wps:ProcessOfferings._
+|===
+
+
+
+==== Execute
+This clause specifies the XML encoding for the Execute operation.
+
+An Execute example is listed in <<annex-subsec-execute>>.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/execute
+
+.^|*Target type* |Software implementation
+
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/execute
+
+.^|*Dependency* |OWS Common 2.0
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/execute/request +
+_An Execute request using POST/XML shall be a valid XML document of the type wps:Execute._
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/execute/response +
+_The response to a successful Execute request shall is one of the following types:_
+
+. _A valid XML document of the type wps:Result_
+. _A valid XML document of the type wps:StatusInfo_
+. _A raw data response_
+|===
+
+
+==== GetStatus
+This clause specifies the XML encoding for the GetStatus operation.
+
+A GetStatus example is listed in <<annex-subsec-getstatus>>.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-status
+
+.^|*Target type* |Software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status
+
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-status/request +
+_A GetStatus request using POST/XML shall be a valid XML document of the type wps:GetStatus._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-status/response +
+_The response to a successful GetStatus request shall be a valid XML document of the type wps:StatusInfo._
+|===
+
+
+
+==== GetResult
+This clause specifies the XML encoding for the GetResult operation.
+
+A GetResult example is listed in <<annex-subsec-getresult>>.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-result
+
+.^|*Target type* |Software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-result/request +
+_A GetResult request using POST/XML shall be a valid XML document of the type wps:GetResult._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/get-result/response +
+_The response to a successful GetResult request shall be a valid XML document of the type wps:Result._
+|===
+
+
+
+=== HTTP/GET + KVP Binding
+This section specifies the encoding of WPS requests using HTTP/GET and KVP. Since different HTTP client and server libraries may restrict the size of the URL this binding should only be used if the resulting HTTP/GET URL is reasonably short. The HTTP/GET + KVP binding is only defined for the operations GetCapabilities, DescribeProcess, GetStatus, and GetResult. footnote:[There is no HTTP/GET + KVP binding for execute requests due to the complex and nested structure of the request.].
+
+Any WPS request in the HTTP/GET + KVP binding consists of a URL with KVP parameters. The response is always an XML document defined for the HTTP/POST + XML binding.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp
+
+.^|*Target type* |Software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml
+
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-capabilities +
+_Requirements class for the GetCapabilities operation GET/KVP encoding._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/describe-process +
+_Requirements class for the DescribeProcess operation GET/KVP encoding._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-status +
+_Requirements class for the GetStatus operation GET/KVP encoding._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-result +
+_Requirements class for the GetResult operation GET/KVP encoding._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/case-sensitivity +
+_Keys shall be case insensitive; values shall be case sensitive unless stated otherwise._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/extension-binding +
+_An operation extension for WPS servers that seeks compliance with this requirements class shall define an HTTP/GET+KVP binding in compliance with [OGC 06-121r9]._
+|===
+
+
+
+==== GetCapabilities
+This clause specifies the KVP encoding for the GetCapabilities operation. A minimalist GetCapabilities request might look like this:
+
+http://hostname:port/path?service=WPS&request=GetCapabilities
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-capabilities
+
+.^|*Target type* |Software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-capabilities/request +
+_The KVP encoding of the GetCapabilities operation request shall be as specified in Table 5 in Subclause 7.2.3 of [OGC 06-121r9]. The fixed value of the service parameter shall be "`WPS`"._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-capabilities/response-xml +
+_The response to a successful GetCapabilities request shall be a valid XML document of the type wps:Capabilities._
+|===
+
+
+==== DescribeProcess
+This clause specifies the KVP encoding for the DescribeProcess operation. Possible DescribeProcess requests might look like these:
+
+http://hostname:port/path?service=WPS&version=2.0.0&request=DescribeProcess&identifier=buffer,viewshed
+
+http://hostname:port/path?service=WPS&version=2.0.0&request=DescribeProcess&identifier=ALL
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/describe-process
+
+.^|*Target type* |Software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/describe-process/request +
+_The KVP encoding of DescribeProcess shall be as defined in <<tab-describeprocess-request-kvp-encoding>>._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/describe-process/response-xml +
+_The response to a successful GetCapabilities request shall be a valid XML document of the type wps:ProcessOfferings._
+|===
+
+[[tab-describeprocess-request-kvp-encoding]]
+.DescribeProcess request KVP encoding
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|service |Identifier of the OGC service. |String, fixed to "`WPS`" |One (mandatory)
+|version	|Request protocol version.	|String, 2.0.0	|One (mandatory)
+|request	|Request name.	|String, fixed to "`DescribeProcess`", case insensitive.	|One (mandatory)
+|lang	|Desired language of the process description.	|IETF RFC 4646 language code of the human-readable text elements in the process description (e.g. "en"). This shall be one of the languages defined in the Capabilities document. If the client specifies more than one language, the server may create a response in any of these languages.	|Zero or one (optional)
+|identifier	|List of one or more process identifiers.	|Comma-separated list of URI escaped character strings. footnote:[The general syntax for URIs and URI escaping are defined in IETF RFC 3986.] These shall be one or more of the process identifiers listed in the ProcessSummary elements in the Capabilities document. The fixed case insensitive value "`ALL`" indicates that the description of all processes shall be returned.	|One (mandatory)
+|===
+
+
+==== GetStatus
+This clause specifies the KVP encoding for the GetStatus operation. A possible GetStatus request might look like this:
+
+http://hostname:port/path?service=WPS&version=2.0.0&request=GetStatus&jobid=FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-status
+.^|*Target type* |Software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-status/request +
+_The KVP encoding of GetStatus shall be as defined in <<tab-getstatus-request-kvp-encoding>>._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-status/response-xml +
+_The response to a successful GetStatus request shall be a valid XML document of the type wps:StatusInfo._
+|===
+
+
+[[tab-getstatus-request-kvp-encoding]]
+.GetStatus request KVP encoding
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|service |Identifier of the OGC service. |String, fixed to "`WPS`" |One (mandatory)
+|version |Request protocol version. |String, 2.0.0 |One (mandatory)
+|request |Request name. |String, fixed to "`GetStatus`", case insensitive. |One (mandatory)
+|jobid |Job identifier. |Character String. This shall be a JobID the client has received during process execution. |One (mandatory)
+|===
+
+
+==== GetResult
+This clause specifies the KVP encoding for the GetResult operation. A possible GetResult request might look like this:
+
+http://hostname:port/path?service=WPS&version=2.0.0&request=GetResult&jobid= FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-result
+
+.^|*Target type* |Software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-result/request +
+_The KVP encoding of GetResult shall be as defined in <<tab-getresult-request-kvp-encoding>>._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-result/response-xml +
+_The response to a successful GetResult request shall be a valid XML document of the type wps:Result._
+|===
+
+[[tab-getresult-request-kvp-encoding]]
+.GetResult request KVP encoding
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|service |Identifier of the OGC service. |String, fixed to "`WPS`" |One (mandatory)
+|version |Request protocol version. |String, 2.0.0 |One (mandatory)
+|request |Request name. |String, fixed to "`GetResult`", case insensitive. |One (mandatory)
+|jobid |Job identifier. |Character String. This shall be a JobID the client has received during process execution. |One (mandatory)
+|===

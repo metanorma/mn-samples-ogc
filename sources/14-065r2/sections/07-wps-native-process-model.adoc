@@ -1,0 +1,786 @@
+
+== WPS Native Process Model
+The WPS native process model is a realization of the abstract process model defined in <<subsec-abstract-process-model>>. The native process model breaks down into the following components:
+
+. A general structure for process interface descriptions (<<subsec-common-description-type>>, <<subsec-process-description>>) that support process discovery and cataloging
+. A set of data types to submit and receive data during process execution (<<subsec-data-description-structure>>, <<subsec-data-types>>)
+. A framework for defining process profiles to improve interoperability between different process implementations (<<subsec-process-profiles>>).
+
+The native process model is encapsulated in a separate conformance class (<<annex-subsec-wps-process-model-encoding-conformance-class>>) and can be used independently from the rest of the WPS specification. It is designed to provide an interoperable description of processing functions, regardless whether they are offered by a web service for remote invocation, or reside in a Desktop GIS for local use. By abstracting from a concrete implementation this process model may be used to create metadata records in process catalogs or help comparing and aligning the processing functions in different systems.
+
+This section describes the information model of requirements. The corresponding XML and plain text encodings are specified in <<sec-wps-native-process-model-encoding>>.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model
+
+.^|*Target type* |Derived encoding and software implementation
+
+.^|*Dependency* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/descriptiontype +
+_Requirements class for the common description type._
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/io-format +
+_Requirements class for IO format._
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes +
+_Requirements class for data types._
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description +
+_Requirements class for process description._
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile +
+_Requirements class for process profile._
+|===
+
+[[subsec-common-description-type]]
+=== Common Description Type
+Descriptive elements of processes, inputs and outputs are derived from the BasicIdentificationType provided by OWS Common (<<fig-descriptiontype-for-processes>>). Other descriptive information shall be recorded in the Metadata element in the form of simple links with an appropriate role identifier.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description-type
+
+.^|*Target type* |Derived encoding and software implementation
+
+.^|*Dependency* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
+
+.^|*Dependency* a|OWS Common 2.0 -- BasicDescriptionType
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description-type/basic-identification +
+_Process descriptions as well as the associated process inputs and outputs shall be derived from the OWS Common BasicIdentificationType._
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description-type/structure +
+_The DescriptionType shall comply with the structure defined in <<fig-descriptiontype-for-processes>> and <<tab-properties-of-the-descriptiontype-structure>>._
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description-type/metadata +
+_For linking documentation material or other metadata with the process itself, its inputs and its outputs, the metadata element from the BasicIdentificationType shall be used._
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description-type/metadata-simple-xlink +
+_The metadata elements within process descriptions shall be simple links with a human-readable title (<<tab-properties-of-the-metadata-structure>>)._
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description-type/metadata-documentation-role +
+The metadata elements for documentation shall use the role identifier "`http://www.opengis.net/spec/wps/2.0/def/process/description/documentation`".
+|===
+
+[[fig-descriptiontype-for-processes]]
+.DescriptionType for processes, process inputs and process outputs UML class diagram
+image::fig-descriptiontype-for-processes.png[]
+
+[[tab-properties-of-the-descriptiontype-structure]]
+.Properties of the DescriptionType structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Title |Title of the process, input, and output. Normally available for display to a human. |ows:Title |One (mandatory)
+|Abstract |Brief narrative description of a process, input, and output. Normally available for display to a human. |ows:Abstract |Zero or one (optional) Include when available and useful.
+|Keywords |Keywords that characterize a process, its inputs, and outputs. |ows:Keywords |Zero or more (optional) Include when available and useful.
+|Identifier |Unambiguous identifier of a process, input, and output. |ows:Identifier Value is a URI or HTTP-URI footnote:[Additional content such as separate code space and version attributes in the Identifier element are not allowed.] |One (mandatory)
+|Metadata |Reference to additional metadata about this item. |ows:Metadata Allowed values are specified in <<tab-properties-of-the-metadata-structure>>. |Zero or more (optional)
+|===
+
+[[tab-properties-of-the-metadata-structure]]
+.Properties of the Metadata structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Title |Title of the documentation. Normally available for display to a human. |Character String |One (mandatory)
+|Link type |Type of the xlink, fixed to simple. |Character String, fixed to "`simple`". |One (mandatory)
+|Role |Role identifier, indicating the role of the linked document. |HTTP-URI |One (mandatory)
+|href |Reference to a documentation site for a process, input, or output. |HTTP-URI |One (mandatory)
+|===
+
+[[subsec-data-description-structure]]
+=== Data Description Structure
+The DataDescription structure contains basic properties for defining data inputs and outputs, including mimetype, encoding and schema. These properties specify supported formats for input and output data of computing processes. Any input or output item may support multiple formats, one of which is the default format. Processes may require that an input or output data set does not exceed a certain data volume.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/io-format
+
+.^|*Target type* |Derived information model, encoding, and software implementation
+
+.^|*Dependency* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/io-format/structure +
+_Format descriptions of process inputs and outputs shall comply with the DataDescription structure defined in <<fig-datadescription-and-supported-formats>> and <<tab-format-properties>>._
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/io-format/default +
+_One of the formats defined in the DataDescription structure shall be the default format, i.e. have the attribute "`default`" set to "`true`"._
+|===
+
+[[fig-datadescription-and-supported-formats]]
+.DataDescription and supported formats UML class diagram
+image::fig-datadescription-and-supported-formats.png[]
+
+
+[[tab-format-properties]]
+.Format properties
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|mimetype |Media type of the data. |Character String |One (mandatory)
+|encoding |Encoding procedure or character set of the data (e.g. raw or base64) |Character String, fixed to "`simple`". |One (mandatory)
+|schema |Identification of the data schema. |HTTP-URI |One (mandatory)
+|maximumMegabytes |The maximum size of the input data, in megabytes. |Integer |Zero or one (optional)
+|default |Indicates that this format is the default format. footnote:format-properties-a[Defaults to FALSE if omitted.] |Boolean |Zero or one (conditional) footnote:format-properties-a[], footnote:[One of the formats included in the DataDescription structure shall have the attribute "`default`" set to "`true`".]
+|===
+
+[[subsec-data-types]]
+=== Data Types
+This specification defines three common data types for process input and output data (<<fig-io-data-types-overview>>):
+
+. ComplexData, such as GML or geo-referenced imagery. This type is kept generic regarding the content and may be extended to provide more detailed domain-specific information.
+
+. LiteralData, defined as a value with an optional unit.
+
+. BoundingBoxData, defined as a minimum bounding rectangle in geographic coordinates.
+
+[[fig-io-data-types-overview]]
+.I/O data types overview
+image::fig-io-data-types-overview.png[]
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/io-format
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data +
+_Requirements class for the complex data._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data +
+_Requirements class for the literal data._
+.^|*Requirement* a|
+http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datat-types/bounding-box-data +
+_Requirements class for the bounding box data._
+|===
+
+
+==== Complex data
+The ComplexData type does not describe the particular structure for value encoding. Instead, the passed values must comply with the given format and the extended information, if provided.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data
+
+.^|*Target type* |Derived encoding and software implementation
+
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
+
+.^|*Dependency* |OWS Common 2.0
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data/description +
+_equirements class for the complex data description._
+
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data/values +
+_Requirements class for the complex data values._
+|===
+
+
+===== ComplexData Description
+The ComplexData structure is a direct realization of the abstract DataDescription element (<<fig-datadescription-and-supported-formats>>). It relies on the encoding attributes defined in <<tab-format-properties>> for a basic description of input and output data. In cases where these attributes do not sufficiently capture the structure and content of the required or produced data, the ComplexData element provides the ability to include any other descriptive elements next to the format specification. This hook may be used by process providers and consumers to communicate essential information and further constraints for input and output data items.
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data/description
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/io-format
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data/description/structure +
+_The description of valid complex data input and output shall comply with the structure defined in <<tab-complexdata-description-properties>>._
+|===
+
+[[tab-complexdata-description-properties]]
+.ComplexData description properties
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Format |Identifies a valid format for an input or output. |Format properties, see <<tab-format-properties>>. |One or more (mandatory)
+|Any |Placeholder for schema extensions to WPS complex data. |Any type. |Zero or more (optional)
+|===
+
+
+===== ComplexData Values
+A Complex data value is directly passed to (or returned by) a process. The generic nature of Complex data does not permit a particular structure for value encoding. Instead, this structure is defined by the ComplexData description and the passed values must comply with the given format and the extended information, if provided.
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data/value
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data/description
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data/value/encoding +
+_Complex data values must comply with the encoding specified in the complex data description._
+|===
+
+
+==== Literal Data
+The LiteralData type encodes atomic data such as scalars, linear units, or well-known names. Domains for LiteralData are a combination of data types (e.g. Double, Integer, String), a given value range, and an associated unit (e.g. meters, degrees Celsius).
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data/description +
+_Requirements class for the literal data description._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data/values +
+_Requirements class for the literal data values._
+|===
+
+[[subsec-literaldata-description]]
+===== LiteralData Description
+The LiteralData description structure inherits essential elements from ows:DomainType allowing it to specify value domains including Units of Measure and Default Values. It restricts ows:DomainType by forbidding:
+
+. "`NoValues`" for a particular domain
+. the ability to specify further metadata on the values (since this information is already present at the level of input and output definitions in the DescriptionType element).
+
+LiteralData data types should use the well-known types from XML Schema by their URI definition footnote:[see http://www.w3.org/TR/xmlschema-2/#built-in-datatypes]. <<tab-recommended-data-type-uris-for-literal-data>> lists the recommended URIs for the most common literal data types.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data/description
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/io-format
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data/description/structure +
+_The description of valid literal data input and output shall comply with the structure defined in <<fig-literaldata-uml-class-diagram>>, <<tab-the-literaldata-structure>>, <<tab-parts-of-the-literaldatadomain-structure>>, <<tab-parts-of-the-possibleliteralvalueschoice-structure>>, and <<tab-recommended-data-type-uris-for-literal-data>>._
+|===
+
+[[fig-literaldata-uml-class-diagram]]
+.LiteralData UML class diagram
+image::fig-literaldata-uml-class-diagram.png[]
+
+[[tab-the-literaldata-structure]]
+.The LiteralData structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Format |Identifies a valid format for an input or output. |Format properties, see <<tab-format-properties>>. |One or more (mandatory)
+|LiteralDataDomain |The valid domain for literal data |LiteralDataDomain type |One or more (mandatory)
+|===
+
+[[tab-parts-of-the-literaldatadomain-structure]]
+.Parts of the LiteralDataDomain structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|PossibleLiteralValues |Identifies a valid format for an input or output. |PossibleLiteralValuesChoice, see <<tab-parts-of-the-possibleliteralvalueschoice-structure>>. |One (mandatory)
+|DataType |Reference to the data type of this set of values |ows:DataType. The use of well-known data type URNs is highly recommended; see <<tab-recommended-data-type-uris-for-literal-data>>. |One (mandatory)
+|UOM |Indicates that this quantity has units and provides the unit of measurement. |ows:ValuesUnit |Zero or one (optional) Include when values have units or reference system.
+|DefaultValue |Default value for this quantity. |ows:DefaultValue |Zero or one (optional) Include if there is a default. footnote:[For outputs, the DefaultValue has no meaning and shall thus be omitted.]
+|default |Indicates that this is the default/native domain. |Boolean, defaults to false. |Zero or one (conditional) footnote:[Defaults to FALSE if omitted.], footnote:[One of the formats included in the LiteralData structure shall have the attribute "`default`" set to "`true`".]
+|===
+
+
+[[tab-parts-of-the-possibleliteralvalueschoice-structure]]
+.Parts of the PossibleLiteralValuesChoice structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|AllowedValues |List of all valid values and/or ranges of values for this quantity. |ows:AllowedValues |Zero or one (conditional) footnote:possibleLiteralfn[One and only one of these three items shall be included.]
+|AnyValue |Specifies that any value is allowed for this quantity. |ows:AnyValue |Zero or one (conditional) footnote:possibleLiteralfn[]
+|ValuesReference |Reference to list of all valid values and/or ranges of values for this quantity. |ows:ValuesReference |Zero or one (conditional) footnote:possibleLiteralfn[]
+|===
+
+[[tab-recommended-data-type-uris-for-literal-data]]
+.Recommended data type URIs for literal data
+[cols="2"]
+|===
+^h|Data Type ^h|URI
+
+|String |http://www.w3.org/2001/XMLSchema#string
+|Integer |http://www.w3.org/2001/XMLSchema#integer
+|Decimal |http://www.w3.org/2001/XMLSchema#decimal
+|Boolean |http://www.w3.org/2001/XMLSchema#boolean
+|Double |http://www.w3.org/2001/XMLSchema#double
+|Float |http://www.w3.org/2001/XMLSchema#float
+|===
+
+
+===== LiteralData Values
+LiteralData values represent values that correspond to a particular domain defined in the LiteralData structure. <<fig-literalvalue-uml-class-diagram>> shows the mapping from the LiteralValue structure to the corresponding elements in the LiteralDataDescriptionType.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data/value
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data/description
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data/value/structure +
+_The description of valid literal data values shall comply with the structure defined in <<fig-literalvalue-uml-class-diagram>> and <<tab-parts-of-the-literalvalue-structure>>._
+|===
+
+[[fig-literalvalue-uml-class-diagram]]
+.LiteralValue UML class diagram
+image::fig-literalvalue-uml-class-diagram.png[]
+
+[[tab-parts-of-the-literalvalue-structure]]
+.Parts of the LiteralValue structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Value |String representation of the actual value. |Character String |One (mandatory)
+|dataType |The data type of the Value. |URI |Zero or one
+(optional) footnote:literalvaluefn[If not specified, the relevant defaults from the LiteralData description (see <<subsec-literaldata-description>>) will be used.]
+|uom |The unit of measurement of the value. |URI |Zero or one
+(optional) footnote:literalvaluefn[]
+|===
+
+
+==== BoundingBox Data
+Bounding box data serves a variety of purposes in spatial data processing. Some simple applications are the definition of extents for a clipping operation or the definition of an analysis region. This specification inherits the bounding box specification from OWS Common.
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data/description +
+_Requirements class for the bounding box data description._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data/values +
+_Requirements class for the bounding box data values._
+|===
+
+
+===== BoundingBox Description
+The domain for bounding box data is described by a listing of supported CRSs.
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data/description
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/io-format
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data/description/structure +
+_The description of valid bounding box data input and output shall comply with the structure defined in <<fig-boundingboxdata-uml-class-diagram>>, <<tab-the-boundingbox-structure>>, and <<tab-the-supportedcrs-type-structure>>._
+|===
+
+[[fig-boundingboxdata-uml-class-diagram]]
+.BoundingBoxData UML class diagram
+image::fig-boundingboxdata-uml-class-diagram.png[]
+
+[[tab-the-boundingbox-structure]]
+.The BoundingBox structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Format |Identifies a valid format for an input or output. |Format properties, see <<tab-format-properties>>. |One or more (mandatory)
+|SupportedCRS |The supported CRS for BoundingBox data. |SupportedCRS type, see <<tab-the-supportedcrs-type-structure>>. |One or more (mandatory)
+|===
+
+[[tab-the-supportedcrs-type-structure]]
+.The SupportedCRS type structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|CRS |Reference to a CRS definition. |URI |One or more (mandatory)
+|default |Indicates that this CRS is the default CRS. |Boolean, defaults to false. |Zero or one (conditional) footnote:[Defaults to FALSE if omitted.], footnote:[One of the formats included in the BoundingBox structure shall have the attribute "`default`" set to "`true`".]
+|===
+
+
+===== BoundingBox Values
+Values for bounding boxes are specified in the BoundingBox data type from OWS Common [OGC 06-121r9]. For consistency with the BoundingBoxData description, the specification of a CRS is mandatory.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data/values
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data/description
+.^|*Dependency* |OWS Common 2.0
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data/values/structure +
+_The description of bounding box data values shall comply with the structure defined in OWS Common [OGC 06-121r9]._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data/values/crs +
+_The CRS component of the Bounding box values structure shall not be empty._
+|===
+
+[[subsec-process-description]]
+=== Process Description
+This section defines information structures that describe a process. It includes elements that link to documentation resources on the behavior and mechanics of a process as well as descriptive elements about its inputs and outputs. The process description model realizes and extends the requirements defined in the abstract process model in <<subsec-abstract-process-model>>.
+
+A process description is an extension of the DescriptionType (<<fig-process-uml-class-diagram>>). It shall be used to express identifier, title, and abstract and to link to associated metadata elements that provide additional or more detailed information about the process. An additional language attribute shall be used to indicate the language of human readable elements in the description of the process and its inputs and outputs.
+
+The description structures for process inputs and outputs inherit common elements from the DescriptionType (<<subsec-common-description-type>>). These elements shall be used to express identifier, title, and abstract and to link to associated metadata elements that provide additional or more detailed information about the process inputs and outputs. The content of human readable elements in the description of inputs and outputs shall adhere to the language indicated in the process description.
+
+Process inputs are arguments to a process. Process inputs have a cardinality in order to (1) pass multiple values with the same identifier to a process, or (2) declare process inputs as optional (cardinality "`0`"). Input elements may be simple (i.e. the input has no sub-inputs attached) or aggregate (i.e. the input has one or more sub-input elements attached). A simple input includes a realization of the DataDescription element. An aggregate input contains one or more sub-inputs.
+
+Outputs are the return values of a process. Outputs have a cardinality of one. Output elements may be simple (i.e. the output has no sub-outputs attached) or aggregate (i.e. the output has one or more sub-output elements attached). A simple output includes a realization of the DataDescription element. An aggregate output contains one or more sub-outputs.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description
+
+.^|*Target type* |Derived encoding and software implementation
+
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description-type
+.^|*Dependency* |_IETF RFC 4646_
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description/model-compliance +
+_The process description shall be in compliance with the WPS process model requirements._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description/structure +
+_A process description shall comply with the structure defined in <<fig-process-uml-class-diagram>> and <<tab-the-process-structure>>._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description/language +
+_The language of the human-readable elements within the process description shall be identified by a language identifier as specified in IETF RFC 4646._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description/io-description-type +
+_The description of process inputs and outputs shall comply with the structure defined in <<fig-process-uml-class-diagram>>, <<tab-parts-of-the-input-structure>>, and <<tab-parts-of-the-output-structure>>._
+|===
+
+[[fig-process-uml-class-diagram]]
+.Process UML class diagram
+image::fig-process-uml-class-diagram.png[]
+
+
+[[tab-the-process-structure]]
+.The Process structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Title 3.4+|Inherited from <<tab-properties-of-the-descriptiontype-structure>>
+|Abstract
+|Identifier
+|Metadata
+|Language |Language identifier for the human readable process description elements. |Character String. This language identifier shall be as specified in IETF RFC 4646. |One (mandatory)
+|Input |Input items (arguments) of a process. |Input structure, see <<tab-parts-of-the-input-structure>>. |Zero or more (optional)
+|Output |Output items (results) of a process |Output structure, see <<tab-parts-of-the-output-structure>>. |One or more (mandatory)
+|===
+
+
+
+[[tab-parts-of-the-input-structure]]
+.Parts of the Input structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Title 3.5+|Inherited from <<tab-properties-of-the-descriptiontype-structure>>
+|Abstract
+|Keywords
+|Identifier
+|Metadata
+
+|minOccurs footnote:imput-structure-fn-a[The minOccurs and maxOccurs parameters have identical semantics to the like-named XML Schema occurrence constraints.] |Minimum number of times that values for this parameter are required |Non-negative integer; defaults to "`1`", '0' means the input is optional. |Zero or on (optional)
+|maxOccurs footnote:imput-structure-fn-a[] |Maximum number of times that this parameter may be present |Non-negative integer, defaults to "`1`". |Zero or one (optional)
+|DataDescription |Data type and domain of this input. |A realization of DataDescription, i.e. ComplexData, LiteralData, BoundingBoxData. |Zero or one (conditional) footnote:imput-structure-fn-b[The input shall either include one realization of DataDescription or an arbitrary number of sub-Inputs.]
+|Input |Nested Input. footnote:imput-structure-fn-c[It is recommended to keep the nesting level as low as possible.] |Input structure, <<tab-parts-of-the-input-structure>> (this table). |Zero or more (conditional) footnote:imput-structure-fn-b[]
+|===
+
+[[tab-parts-of-the-output-structure]]
+.Parts of the Output structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Title	3.5+|Inherited from <<tab-properties-of-the-descriptiontype-structure>>
+|Abstract
+|Keywords
+|Identifier
+|Metadata
+|DataDescription	|Data type and domain of this input.	|A realization of DataDescription, i.e. ComplexData, LiteralData, BoundingBoxData.	|Zero or one (conditional) footnote:output-structure-fn-a[The output shall either include either one realization of DataDescription or an arbitrary number of sub-Outputs.]
+|Output	|Nested Output. footnote:output-structure-fn-b[It is recommended to keep the nesting level as low as possible.]	|Output structure, <<tab-parts-of-the-output-structure>> (this table).	|Zero or more (conditional) footnote:output-structure-fn-a[]
+|===
+
+[[subsec-process-profiles]]
+=== Process Profiles
+Process profiles are blueprints for process implementations and are meant to harmonize process implementations to a certain degree. They serve as a reference for process implementations by providing a description of what the process actually does. While this specification does not attempt to enforce or suggest any particular process profiles, it provides a mechanism to define common processing functionality within the scope of WPS, thus supporting basic process cataloguing and retrieval tasks for distributed processing infrastructures. Depending on the degree of harmonization, the definitions of process profiles may be used to foster a common understanding of widely used processing functions. However, they may also be used to harmonize the technical details of process interfaces and thus document particular interoperability arrangements between process providers and consumers.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/concept +
+_Requirements class for process concepts._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic +
+_Requirements class for generic process profiles._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/implementation +
+_Requirements class for process implementation profiles._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/inheritance +
+_Requirements class for process profile inheritance._
+|===
+
+
+
+==== Process Concept
+A process concept is an object that provides high-level documentation about a general group of processes. It describes the purpose, methodology and properties of a process but not the specific input and output parameters. It is rather a documentation resource that may be referenced by refined process definitions to document their relation to a common principle.
+
+[example]
+The concept "`Buffer`" may be used to describe all Buffer operations. More specific Buffer processes may be defined on raster or vector data models, be performed on a geoid or in CRS units, have further inputs, such as distance or tolerance and may even perform additional computations such as dissolve or line cap styling.
+
+Due to the heterogeneity of process definitions and the variety of documentation requirements, there is no general information model for process concepts. Most of the time, concepts will be documented in HTML or similar multimedia formats. Formally, a concept consists of a unique identifier and a descriptive document.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/concept
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/concept/identifier +
+_Process concepts are documentation resources with identity. They shall have an identifier that may be referenced by more detailed process definitions._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/concept/content +
+_The content of a process concept resource shall eventually lead to the definition of computing processes._
+|===
+
+
+==== Generic Process Profile
+A generic profile is the abstract interface of a process. It provides a detailed description of the process mechanics and declares a signature for process inputs and outputs. The generic profile consists of a unique identifier and a generalized process description. This is similar to a process description as defined in <<subsec-process-description>> but does not provide a definition of supported data exchange formats.
+
+[example]
+====
+A generic profile for a Buffer operation may be derived from the Buffer definition in the ISO standard for simple feature access [ISO 19125-1:2006]. The buffer method on simple features "`Returns a geometric object that represents all points whose distance from this geometric object is less than or equal to distance. Calculations are in the spatial reference system of this geometric object`" (ISO 19125-1:2006, subclause 6.1.2.4). This definition is specific about the conceptual data model details the behavior of the buffer method and the treatment of CRS units. In addition, it defines the name and data type of the distance parameter.
+
+This generic definition of a Simple features buffer process may be inherited by multiple implementations that use arbitrary encodings for input and output data. The important part here is the well-defined behavior of the process at a generic level and the standardization of parameter names. footnote:[NOTE: In terms of names, the Buffer definition in [ISO 19125-1:2006\] only covers the distance parameter since it assumes a Geometry object providing that method. A complete generic profile would also have to define names for input and output geometries.]
+====
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description-type
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description
+.^|*Dependency* |_IETF RFC 4646_
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic/structure +
+_A process description shall comply with the structure defined in <<fig-genericprocess-uml-class-diagram>> and <<tab-the-genericprocess-structure>>._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic/description-language +
+_The language of the human-readable elements within the process description shall be identified by a language identifier as specified in IETF RFC 4646._
+.^|*Requirement* a|	http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic/io-description-type +
+_The description of process inputs and outputs shall comply with the structure defined in <<fig-genericprocess-uml-class-diagram>>, <<tab-parts-of-the-genericinput-structure>>, and <<tab-parts-of-the-genericoutput-structure>>._
+|===
+
+[[fig-genericprocess-uml-class-diagram]]
+.GenericProcess UML class diagram
+image::fig-genericprocess-uml-class-diagram.png[]
+
+[[tab-the-genericprocess-structure]]
+.The GenericProcess structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Title	3.5+|Inherited from <<tab-properties-of-the-descriptiontype-structure>>
+|Abstract
+|Keywords
+|Identifier
+|Metadata
+|Language	|Language identifier for the human readable process description elements.	|Character String. This language identifier shall be as specified in IETF RFC 4646.	|One (mandatory)
+|Input	|Input items (arguments) of a process.	|GenericInput structure, see <<tab-parts-of-the-genericinput-structure>>.	|Zero or more (optional)
+|Output	|Output items (results) of a process	|GenericOutput structure, see <<tab-parts-of-the-genericoutput-structure>>.	|One or more (mandatory)
+|===
+
+
+[[tab-parts-of-the-genericinput-structure]]
+.Parts of the GenericInput structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Title	3.5+|Inherited from <<tab-properties-of-the-descriptiontype-structure>>
+|Abstract
+|Keywords
+|Identifier
+|Metadata
+|minOccurs footnote:genericimput-structure-fn-a[The minOccurs and maxOccurs parameters have identical semantics to the like-named XML Schema occurrence constraints.]	|Minimum number of times that values for this parameter are required	|Non-negative integer; defaults to "`1`", '0' means the input is optional.	|Zero or one (optional)
+|maxOccurs footnote:genericimput-structure-fn-a[]	|Maximum number of times that this parameter may be present	|Non-negative integer, defaults to "`1`".	|Zero or one (optional)
+|Input	|Nested Input. footnote:[It is recommended to keep the nesting level as low as possible.]	|GenericInput structure, <<tab-parts-of-the-genericinput-structure>> (this table).	|Zero or more (optional)
+|===
+
+[[tab-parts-of-the-genericoutput-structure]]
+.Parts of the GenericOutput structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Title	3.5+|Inherited from <<tab-properties-of-the-descriptiontype-structure>>
+|Abstract
+|Keywords
+|Identifier
+|Metadata
+|Output	|Nested Output. footnote:genericstructure-fn-a[It is recommended to keep the nesting level as low as possible.]	|GenericOutput structure, <<tab-parts-of-the-genericoutput-structure>> (this table).	|Zero or more (conditional) footnote:genericstructure-fn-a[]
+|===
+
+
+==== Process Implementation Profile
+Implementation profiles cover all descriptive elements of a process down to the supported data exchange formats. Technically they are process descriptions, but with the scope of a process profile, i.e., a harmonized and well-defined computing process that may be implemented by multiple service providers.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/implementation
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/process-description
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/implementation/structure +
+_A process implementation profile description shall comply with the process description structure defined in http://www.opengis.net/spec/WPS/2.0/req/native-process/model/process-description._
+|===
+
+[[subsec-profile-inheritance]]
+==== Profile Inheritance
+The hierarchical structure allows for inheritance between different types of profiles (see <<fig-inheritance-hierarchy-profiles-uml-diagram>>). The definition and use of generic profiles for commonly used processing functions is generally recommended. However, there might be use cases for a product-specific harmonization of process interfaces. In this case, an implementation profile may be directly derived from a concept or defined in isolation.
+
+If a profile in the hierarchy is derived from another profile at an equal or higher level, it must respect the inheritance rules given in <<tab-inheritance-and-override-rules-for-process-profiles>>. These rules ensure consistency in the use of identifiers, the specification of inputs and outputs as well as compliance to the behavior of the declared parent profiles.
+
+Processes and process profiles may use metadata links to indicate compliance to a particular process profile. Links to particular profiles shall be embedded in the process' metadata elements. The reserved role identifiers for the different profile levels are listed in <<tab-role-identifiers-for-process-profiles>>.
+
+An example which illustrates the inheritance rules for process profiles is given in <<subsec-profile-inheritance-example>>.
+
+
+[%unnumbered]
+[cols="2"]
+|===
+2+^h|Requirements Class
+2+|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/inheritance
+
+.^|*Target type* |Derived encoding and software implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/concept
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/implementation
+.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/inheritance/hierachy +
+_Process profiles may inherit properties from profiles specified at a higher or equal level. The hierarchy is defined in <<fig-inheritance-hierarchy-profiles-uml-diagram>>._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/inheritance/rules +
+_Inheriting process profiles and processes shall obey to the inheritance rules defined in <<tab-inheritance-and-override-rules-for-process-profiles>>._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/inheritance/link +
+_Links to particular profiles are expressed in the DescriptionType's metadata element as specified in <<tab-properties-of-the-metadata-structure>>._
+.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/inheritance/link-target +
+_The links target for profile metadata is the URL of the process profile._
+.^|*Requirement* a|	http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/inheritance/link-role-identifier +
+_The link roles defined in <<tab-role-identifiers-for-process-profiles>> shall be used to express the hierarchical level of the linked profile._
+|===
+
+[[fig-inheritance-hierarchy-profiles-uml-diagram]]
+.Inheritance hierarchy for process profiles UML class diagram
+image::fig-inheritance-hierarchy-profiles-uml-diagram.png[]
+
+[[tab-inheritance-and-override-rules-for-process-profiles]]
+.Inheritance and override rules for process profiles
+[cols="4"]
+|===
+^h|Property ^h|Generic Profile ^h|Implementation Profile ^h|Implementation (instance level)
+
+|Process | | | 
+|Identifier	|D	|O	|O
+|Title	|D	|O	|O
+|Keywords	|D	|E	|E
+|Abstract	|D	|O	|O
+|Metadata	|D	|E/O footnote:inheritance-fn-a[The list of metadata references to superior process profiles shall be extended. Documentation metadata may be overridden, i.e. replaced by other documentation resources.]	|E/O footnote:inheritance-fn-a[]
+4+|{nbsp}
+|Input	| | |E footnote:inheritance-fn-b[Additional optional inputs or supplementary outputs may be added here.]
+|Identifier	|D	|I	|I
+|Title	|D	|I	|I
+|Keywords	|D	|E	|E
+|Abstract	|D	|I	|I
+|Metadata	|D	|E/O footnote:inheritance-fn-a[]	|E/O footnote:inheritance-fn-a[]
+|Multiplicity	|D	|R footnote:inheritance-fn-c[Implementation profiles may restrict the maximum cardinality of a superior generic profile (e.g. for theoretically infinite inputs). They shall not modify the minimum cardinality.]	|E footnote:inheritance-fn-d[Implementations may allow more or larger input datasets than the implementation profile, or support additional data exchange formats.]
+|Data format | |D |E footnote:inheritance-fn-d[]
+4+|{nbsp}
+|Output	 | | |E footnote:inheritance-fn-b[]
+|Identifier	|D	|I	|I
+|Title	|D	|I	|I
+|Keywords	|D	|E	|E
+|Abstract	|D	|I	|I
+|Metadata	|D	|O	|O
+|Data format | |D |E footnote:inheritance-fn-d[]
+|===
+
+[NOTE]
+====
+D:: Declare (Introduction of a new property)
+
+I:: Inherit (A property is inherited from a superior level AND its value remains unchanged.)
+
+O:: Override (A property is inherited from a superior level AND its value is overridden.)
+
+E:: Extend (A property is inherited from a superior level AND its value is extended.)
+
+R:: Restrict (A property is inherited from a superior level AND its value is restricted.)
+====
+
+[[tab-role-identifiers-for-process-profiles]]
+.Role identifiers for process profiles
+[cols="2"]
+|===
+^h|Profile level ^h|URI
+
+|Process concept	|http://www.opengis.net/spec/wps/2.0/def/process-profile/concept
+|Generic process profile	|http://www.opengis.net/spec/wps/2.0/def/process-profile/generic
+|Process Implementation profile	|http://www.opengis.net/spec/wps/2.0/def/process-profile/implementation
+|===

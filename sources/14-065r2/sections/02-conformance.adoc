@@ -1,0 +1,15 @@
+
+== Conformance
+Conformance with this standard shall be checked using all the relevant tests specified in <<annex-abstract-test-suite>> (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site footnote:[www.opengeospatial.org/cite].
+
+.Conformance classes related to WPS 2.0
+[cols="3"]
+|===
+^h|Conformance Class	^h|Description	^h|Clause
+
+|http://www.opengis.net/spec/WPS/2.0/conf/service/profile/**basic-wps**	|Basic WPS service profile	|<<annex-subsec-basic-wps-conformace-class>>
+|http://www.opengis.net/spec/WPS/2.0/conf/service/**synchronous-wps**	|Synchronous WPS	|<<annex-subsec-synchronous-wps-conformance-class>>
+|http://www.opengis.net/spec/WPS/2.0/conf/service/**asynchronous-wps**	|Asynchronous WPS	|<<annex-subsec-asynchronous-wps-conformance-class>>
+|http://www.opengis.net/spec/WPS/2.0/conf/**process-model-encoding**	|WPS process model encoding	|<<annex-subsec-wps-process-model-encoding-conformance-class>>
+|http://www.opengis.net/spec/WPS/2.0/conf/service/**dismiss-extension**	|Dismiss extension	|<<annex-subsec-dismiss-extension-conformance-class>>
+|===
