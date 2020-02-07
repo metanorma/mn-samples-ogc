@@ -21,9 +21,7 @@ endif
 
 XML  ?= $(patsubst sources/%,documents/%,$(patsubst %.adoc,%.xml,$(SRC)))
 
-COMPILE_CMD_LOCAL := bundle exec metanorma FILENAME
 METANORMA_DOCKER_IMAGE ?= metanorma/metanorma
-COMPILE_CMD_DOCKER := docker run -v "$$(pwd)":/metanorma/ $(METANORMA_DOCKER_IMAGE) "metanorma FILENAME"
 
 ifdef METANORMA_DOCKER
   PREFIX_CMD := echo "Running via docker..."; docker run -v "$$(pwd)":/metanorma/ $(METANORMA_DOCKER)
