@@ -74,7 +74,7 @@ sources/%.html sources/%.doc sources/%.pdf:	sources/%.xml
 documents.rxl: $(XML)
 	echo "$(FORMATS)"; \
 	echo "$(XML)"; \
-	bundle exec relaton concatenate \
+	$(PREFIX_CMD) relaton concatenate \
 	  -t "$(shell yq r metanorma.yml relaton.collection.name)" \
 		-g "$(shell yq r metanorma.yml relaton.collection.organization)" \
 		documents $@
