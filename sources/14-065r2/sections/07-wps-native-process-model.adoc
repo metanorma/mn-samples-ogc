@@ -784,3 +784,4 @@ R:: Restrict (A property is inherited from a superior level AND its value is res
 |Generic process profile	|http://www.opengis.net/spec/wps/2.0/def/process-profile/generic
 |Process Implementation profile	|http://www.opengis.net/spec/wps/2.0/def/process-profile/implementation
 |===
+

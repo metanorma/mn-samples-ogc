@@ -1,10 +1,9 @@
 = OGC(R) WPS 2.0.2 Interface Standard Corrigendum 2
-:title: OGC(R) WPS 2.0.2 Interface Standard Corrigendum 2
 :edition: 2.0.2
 :doctype: standard
 :docsubtype: implementation
 :committee: technical
-:workingGroup: 
+:workingGroup:
 :fullname: Matthias Mueller
 :role: editor
 :fullname_2: Benjamin Pross
@@ -19,13 +18,11 @@
 :mn-document-class: ogc
 :status: published
 :language: en
-:docfile: ogc-14-065r2.adoc
+:docfile: document.adoc
 :keywords: TBD, geoprocessing, ogcdoc, OGC document, processes, processing, WPS
 :submitting-organizations: TU Dresden; 52°North; Intergraph Corporation; Image Matters LLC; CRP Henri Tudor; Airbus Defence and Space
 :imagesdir: images
 :stem:
-:no-isobib:
-
 
 include::sections/00-abstract.adoc[]
 include::sections/01-scope.adoc[]

@@ -114,25 +114,26 @@ _The mime type for plain text encoded literal and bounding box values shall be "
 [%unnumbered]
 [subs="macros"]
 ----
- Literal values - BNF schema: 
- literalvalue   = value *1("@datatype=" datatype) *1("@uom=" uom) 
- value          = 1*VCHAR 
- datatype  = URI 
- uom       = URI 
-   
- Literal values - Example: 
- 70@datatype=http://www.w3.org/2001/XMLSchema#integer@uom=meter 
-   
- BoundingBox values - BNF schema footnote:[The dimensions attribute is included for compliance with the BoundingBox structure defined in OWS Common [OGC 06-121r9\]. However, its use should be generally avoided since the number of dimensions is already part of the CRS definition and usually superfluous.]: 
- bbox      = lc_coords "," uc_coords ["," crs] ["," dimensions] 
- lc_coords = number ["," number] 
- uc_coords = number ["," number] 
- number         = 1*DIGIT["." 1*DIGIT] 
- crs       = 1*VCHAR 
- dimensions = 1*DIGIT 
-   
- BoundingBoxData values - Examples: 
- 51.9,7.0,53.0,8.0,EPSG:4326 
-   
- 51.9,7.0,53.0,8.0,http://www.opengis.net/def/crs/EPSG/0/4258 
+Literal values - BNF schema:
+literalvalue   = value *1("@datatype=" datatype) *1("@uom=" uom)
+value          = 1*VCHAR
+datatype  = URI
+uom       = URI
+
+Literal values - Example:
+70@datatype=http://www.w3.org/2001/XMLSchema#integer@uom=meter
+
+BoundingBox values - BNF schema footnote:[The dimensions attribute is included for compliance with the BoundingBox structure defined in OWS Common [OGC 06-121r9\]. However, its use should be generally avoided since the number of dimensions is already part of the CRS definition and usually superfluous.]:
+bbox      = lc_coords "," uc_coords ["," crs] ["," dimensions]
+lc_coords = number ["," number]
+uc_coords = number ["," number]
+number         = 1*DIGIT["." 1*DIGIT]
+crs       = 1*VCHAR
+dimensions = 1*DIGIT
+
+BoundingBoxData values - Examples:
+51.9,7.0,53.0,8.0,EPSG:4326
+
+51.9,7.0,53.0,8.0,http://www.opengis.net/def/crs/EPSG/0/4258
 ----
+
