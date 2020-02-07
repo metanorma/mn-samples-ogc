@@ -1,5 +1,6 @@
 
 .Preface
+
 This approved OGC Implementation Standard defines a Simple Features profile of the Geography Markup Language version 3.2. This Simple Features Profile has been aligned with the OGC Simple Features standard for SQL version 1.2. Simple Features include: Point, Curve (LineString), Surface (Polygon), Geometry, MultiPoint, MultiCurve, MultiSurface, and MultiGeometry. The detailed abstract model for OGC features and geometry can be found in the OGC Abstract Specification, Topic Volume 1: Features (which is equivalent to ISO 19107).
 
 This Simple Features profile of GML began as a product of OGC's Interoperability Program: a global, collaborative, hands-on engineering and testing program designed to deliver prototype technologies and proven candidate standards into the OGC's
@@ -8,22 +9,21 @@ Specification Development Program. In OGC Interoperability Initiatives, internat
 The Open Geospatial Consortium (OGC) is an international industry consortium of more than 435 companies, government agencies, and universities participating in a consensus process to develop publicly available geo-processing standards.
 
 
-
+[.preface]
 == Document terms and definitions
 This document uses the specification terms defined in sub-clause 5.3 of [OGC 06-021r3], which is based on the ISO/IEC Directives, Part 2: Rules for the structure and drafting of
 International Standards. In particular, the word "`shall`" (not "`must`") is the verb form used to indicate a requirement to be strictly followed to comply with this standard.
 
 
+[.preface]
 == Document contributor contact points
 All questions regarding this submission should be directed to the editor or the submitters:
 
 Linda van den Brink +
 Geonovum
 
-
 Clemens Portele +
 Interactive Instruments
-
 
 Panagiotis (Peter) A. Vretanos +
 CubeWerx Inc.
@@ -61,12 +61,15 @@ Contributors:
 |===
 
 
+[.preface]
 == Changes to the OpenGIS(R) Abstract Specification
 None.
 
+[.preface]
 == Changes to existing Implementation Standards
 None.
 
+[.preface]
 == Future work
 This revision is a straightforward update of the previous version to another version of GML.
 
@@ -80,8 +83,8 @@ There are a number of open issues that need to be addressed in a future revision
 
 A particular item of discussion is the use of the term "`simple feature profile`" in conjunction with the levels SF-0 and SF-1 as they include restrictions on non-geometric feature properties that are not part of the Simple Feature Common Architecture standard.
 
-
-.Foreword
+[.preface]
+== Foreword
 This version of the Geography Markup Language (GML) simple features profile supersedes the previous version 1.0 [OGC 06-049r1]. The primary technical change was to update the previous document to use GML 3.2.1 [OGC 07-036].
 
 This document version is processed under the new fast track process of OGC as it is a straightforward update to support the use of GML 3.2 in a GML-SF context. There are known issues to be addressed in the next revision, see section "`Future work`".
@@ -91,6 +94,7 @@ Attention is drawn to the possibility that some of the elements of this document
 Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.
 
 
+[.preface]
 == Introduction
 The GML standard declares a large number of XML elements and attributes meant to support a wide variety of capabilities. For example, the GML standard can be used to encode dynamic features, spatial and temporal topology, complex geometric property types and coverages. With such a wide scope, interoperability can only be achieved by defining profiles of GML that deal with a restricted subset of GML capabilities. Such profiles limit the number of GML object types that can appear in compliant schemas and consequently are easier to process.
 

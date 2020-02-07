@@ -1,16 +1,5 @@
+
 .Preface
-
-== Source of the content for this OGC document
-
-The majority of the content in this OGC document is a direct copy of the content contained at  https://github.com/AnalyticalGraphicsInc/3d-tiles/releases/tag/1.0[https://github.com/AnalyticalGraphicsInc/3d-tiles/releases/tag/1.0] (the 1.0 tag of the 3d-tiles repo). No normative changes have been made to the content. This OGC document does contain content not contained in the 1.0 tag of the 3d-tiles repo.
-
-NOTE: Some elements (such as Vector Data) contained in https://github.com/AnalyticalGraphicsInc/3d-tiles[https://github.com/AnalyticalGraphicsInc/3d-tiles] (the 3d-tiles repo) have been removed from the OGC document because they are currently under development and not a part of this specification. These elements are identified as future work in this OGC document.
-
-== Validity of content
-
-The Submission Team has reviewed and certified that the "snapshot" content in this Community Standard is true and accurate.
-
-== Preface
 
 Bringing techniques from graphics research, the movie industry, and the game industry to 3D geospatial, 3D Tiles defines a spatial data structure and a set of tile formats designed for 3D, and optimized for streaming and rendering.
 
@@ -18,6 +7,20 @@ NOTE: This draft policy does not address the issue of how the OGC migrates from 
 
 If approved, the contents of this document regarding coordinate reference systems will be updated as needed to ensure compatibility.
 
+[.preface]
+== Source of the content for this OGC document
+
+The majority of the content in this OGC document is a direct copy of the content contained at  https://github.com/AnalyticalGraphicsInc/3d-tiles/releases/tag/1.0[https://github.com/AnalyticalGraphicsInc/3d-tiles/releases/tag/1.0] (the 1.0 tag of the 3d-tiles repo). No normative changes have been made to the content. This OGC document does contain content not contained in the 1.0 tag of the 3d-tiles repo.
+
+NOTE: Some elements (such as Vector Data) contained in https://github.com/AnalyticalGraphicsInc/3d-tiles[https://github.com/AnalyticalGraphicsInc/3d-tiles] (the 3d-tiles repo) have been removed from the OGC document because they are currently under development and not a part of this specification. These elements are identified as future work in this OGC document.
+
+[.preface]
+== Validity of content
+
+The Submission Team has reviewed and certified that the "snapshot" content in this Community Standard is true and accurate.
+
+
+[.preface]
 == Future work
 
 The 3D Tiles community anticipates that revisions to this Community Standard will be required to prescribe content appropriate to meet new use cases.  These use cases may arise from either (or both) the external user and developer community or from OGC review and comments. Further, future revisions will be driven by any submitted change requests that document community uses cases and requirements.
