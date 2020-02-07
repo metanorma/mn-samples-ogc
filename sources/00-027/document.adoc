@@ -1,0 +1,35 @@
+= Conformance Test Guidelines for OpenGIS Catalog Services Specification for CORBA
+:doctype: test-suite
+:edition: 1.0
+:language: en
+:date: 2000-05-11
+:status: published
+:committee: technical
+:docnumber: 00-027
+:external-id:
+:keywords:
+:submitting-organizations: Geodan Holding bv, the Netherlands
+:docfile: document.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+:fullname: Laura Diaz
+:fullname_2: Bart van der Eijnden
+:fullname_3: Barend Gehrels
+:role: editor
+:role_2: editor
+:role_3: editor
+
+
+include::sections/00-preface.adoc[]
+
+include::sections/01-overview.adoc[]
+
+include::sections/02-background.adoc[]
+
+include::sections/03-environment.adoc[]
+
+include::sections/04-description_of_the_test_procedures.adoc[]
+
+include::sections/99-appendixA.adoc[]
