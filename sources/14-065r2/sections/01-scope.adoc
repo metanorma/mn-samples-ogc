@@ -11,3 +11,4 @@ The specification uses a core and extensions model to organize its features:
 . A basic data model that supports arbitrary (standard or non-standard) data formats for inputs and outputs,
 . A WPS service model and encoding based on OGC baseline standards, and
 . A Dismiss extension to allow clients to terminate asynchronous processing jobs.
+

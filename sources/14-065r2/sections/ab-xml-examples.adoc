@@ -66,7 +66,7 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float">float
   uom="meter">
     42.1
 </LiteralValue>
- 
+
 <LiteralValue
   dataType="http://www.w3.org/2001/XMLSchema#string">
     ArableLand
@@ -99,7 +99,7 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float">float
   <ows:LowerCorner>51.9 7.0</ows:LowerCorner>
   <ows:UpperCorner>53.0 8.0</ows:UpperCorner>
 </ows:BoundingBox>
- 
+
 <ows:BoundingBox
    crs="http://www.opengis.net/def/crs/EPSG/0/4258">
   <ows:LowerCorner>51.9 7.0</ows:LowerCorner>
@@ -114,14 +114,14 @@ This example describes a buffer command that accepts polygon coordinates in GML,
 [%unnumbered]
 [source,xml]
 ----
-<wps:Process 
+<wps:Process
   xmlns:wps="http://www.opengis.net/wps/2.0"
   xmlns:ows="http://www.opengis.net/ows/2.0"
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation=
 "http://www.opengis.net/wps/2.0 ../../wps.xsd">
- 
+
   <ows:Title>Planar Buffer operation for GML features</ows:Title>
   <ows:Abstract>
   Create a buffer around a GML feature. Accepts any valid GML
@@ -238,7 +238,7 @@ concept/buffer"/>
 process-profile/concept"
     xlink:href="http://some.host/profileregistry/
 concept/planarbuffer"/>
- 
+
   <ows:Metadata
     xlink:role="http://www.opengis.net/spec/wps/2.0/def/
 process/description/documentation"
@@ -441,7 +441,7 @@ jobControlOptions="async-execute dismiss">
   <wps:ProcessOffering
 jobControlOptions="sync-execute async-execute dismiss"
 outputTransmission="value reference">
-    <wps:Process>      
+    <wps:Process>
       <ows:Title>
         Planar Buffer operation for Simple Features
       </ows:Title>
