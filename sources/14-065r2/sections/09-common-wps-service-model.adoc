@@ -3,36 +3,60 @@
 A Web Processing Service consists of processes and service operations. By definition, processes represent the computational functionality of a WPS, while service operations are used to interact with the WPS and in particular to use the service's process offerings.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|	http://www.opengis.net/spec/WPS/2.0/req/service/model/data-transmission +
+[requirement,type="general",label="/req/service/model/data-transmission"]
+======
 _Requirements class for data transmission._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/handling +
+======
+
+[requirement,type="general",label="/req/service/model/handling"]
 _Requirements class for WPS service handling._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/process-offering-properties +
+======
+======
+
+[requirement,type="general",label="/req/service/model/process-offering-properties"]
+======
 _Requirements class for common process offering properties._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info +
+======
+
+[requirement,type="general",label="/req/service/model/status-info"]
+======
 _Requirements class for the status information document._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/result +
+======
+
+[requirement,type="general",label="/req/service/model/result"]
+======
 _Requirements class for the processing result document._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities +
+======
+
+[requirement,type="general",label="/req/service/model/get-capabilities"]
+======
 _Requirements class for the GetCapabilities operation._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process +
+======
+
+[requirement,type="general",label="/req/service/model/describe-process"]
+======
 _Requirements class for the DescribeProcess operation._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute +
+======
+
+[requirement,type="general",label="/req/service/model/execute"]
+======
 _Requirements class for the Execute operation._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status +
+======
+
+[requirement,type="general",label="/req/service/model/get-status"]
+======
 _Requirements class for the GetStatus operation._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result +
+======
+
+[requirement,type="general",label="/req/service/model/get-result"]
+======
 _Requirements class for the GetResult operation._
-|===
+======
+
+====
 
 
 === Overview of WPS Core Operations
@@ -60,17 +84,15 @@ image::fig-common-sequence-wps-uml-diagram.png[]
 Data exchange between WPS clients and servers requires an agreement on the general data exchange patterns and suitable communication protocols. Data may be sent to (received from) a WPS in two distinct ways: (1) by reference (using HTTP/GET or HTTP/POST), and (2) by value. Clients may send input data in either fashion. Output data may be requested in any fashion declared by the data transmission options defined for the process offering. Typically, large data inputs and outputs are delivered by reference.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/data-transmission
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/data-transmission",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/data-transmission/data +
-The data transmission structures for process inputs and outputs shall comply with the structures defined in <<fig-input-output-transmission-uml-class-diagram>>, <<tab-parts-of-the-inline-data-structure>>, <<tab-properties-of-the-dataencodingattributes-structure>>, <<tab-parts-of-the-reference-structure>>, <<tab-parts-of-the-requestbody-structure>>, and <<tab-parts-of-the-bodyreference-structure>>.
-|===
+[requirement,type="general",label="/req/service/model/data-transmission/data"]
+======
+_The data transmission structures for process inputs and outputs shall comply with the structures defined in <<fig-input-output-transmission-uml-class-diagram>>, <<tab-parts-of-the-inline-data-structure>>, <<tab-properties-of-the-dataencodingattributes-structure>>, <<tab-parts-of-the-reference-structure>>, <<tab-parts-of-the-requestbody-structure>>, and <<tab-parts-of-the-bodyreference-structure>>._
+======
+
+====
 
 
 [[fig-input-output-transmission-uml-class-diagram]]
@@ -98,8 +120,8 @@ image::fig-input-output-transmission-uml-class-diagram.png[]
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
 |mimetype |MimeType of the data. |Character String |One (mandatory)
-|encoding	|Well-known encoding or character set of the data.	|URI "`raw`" shall be used for plain binary data "`base64`" shall be used for base64 encoded data Character set identifiers (e.g. "`UTF-8`") shall be used for text or CSV data.	|Zero or one (conditional) footnote:dataencodingattributes-fn-a[This shall be provided if: 1) the process data item supports multiple encodings / schemas, and 2) the data is not of the default encoding / schema, and 3a) the schema / encoding cannot be retrieved from the data itself, or 3b) the encoding / schema information is deeply buried inside the data (i.e. not part of some header) and requires significant parsing effort.]
-|schema	|Identification of the data schema.	|URI	|Zero or one (conditional) footnote:dataencodingattributes-fn-a[]
+|encoding |Well-known encoding or character set of the data. |URI "`raw`" shall be used for plain binary data "`base64`" shall be used for base64 encoded data Character set identifiers (e.g. "`UTF-8`") shall be used for text or CSV data. |Zero or one (conditional) footnote:dataencodingattributes-fn-a[This shall be provided if: 1) the process data item supports multiple encodings / schemas, and 2) the data is not of the default encoding / schema, and 3a) the schema / encoding cannot be retrieved from the data itself, or 3b) the encoding / schema information is deeply buried inside the data (i.e. not part of some header) and requires significant parsing effort.]
+|schema |Identification of the data schema. |URI |Zero or one (conditional) footnote:dataencodingattributes-fn-a[]
 |===
 
 [[tab-parts-of-the-reference-structure]]
@@ -108,11 +130,11 @@ image::fig-input-output-transmission-uml-class-diagram.png[]
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|mimetype	3.3+|See <<tab-properties-of-the-dataencodingattributes-structure>> -- Properties of the DataEncodingAttributes structure.
+|mimetype 3.3+|See <<tab-properties-of-the-dataencodingattributes-structure>> -- Properties of the DataEncodingAttributes structure.
 |encoding
 |schema
-|href	|HTTP URI that points to the remote resource where the data may be retrieved.	|HTTP URI	|One (mandatory)
-|RequestBody	|Request body element that is used for HTTP/POST requests to the above URL. If no request body is present, an HTTP/GET |Request should be used to retrieve the data.	RequestBody structure, see <<tab-parts-of-the-requestbody-structure>>.	|Zero or one (optional)
+|href |HTTP URI that points to the remote resource where the data may be retrieved. |HTTP URI |One (mandatory)
+|RequestBody |Request body element that is used for HTTP/POST requests to the above URL. If no request body is present, an HTTP/GET |Request should be used to retrieve the data. RequestBody structure, see <<tab-parts-of-the-requestbody-structure>>. |Zero or one (optional)
 |===
 
 [[tab-parts-of-the-requestbody-structure]]
@@ -121,8 +143,8 @@ image::fig-input-output-transmission-uml-class-diagram.png[]
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|Body	|The contents of this element to be used as the body of the HTTP request message to be sent to the service identified in ../Reference/@href. For example, it could be an XML encoded WFS request using HTTP/POST.	|Any type	|Zero or one (conditional) footnote:requestbody-fn-a[One and only one of these items shall be included.]
-|BodyReference	|Reference to a remote document to be used as the body of an HTTP/POST request message to the service identified in the href element in the Reference structure (<<tab-parts-of-the-reference-structure>>).	|BodyReference, see <<tab-parts-of-the-bodyreference-structure>>.	|Zero or one (conditional) footnote:requestbody-fn-a[]
+|Body |The contents of this element to be used as the body of the HTTP request message to be sent to the service identified in ../Reference/@href. For example, it could be an XML encoded WFS request using HTTP/POST. |Any type |Zero or one (conditional) footnote:requestbody-fn-a[One and only one of these items shall be included.]
+|BodyReference |Reference to a remote document to be used as the body of an HTTP/POST request message to the service identified in the href element in the Reference structure (<<tab-parts-of-the-reference-structure>>). |BodyReference, see <<tab-parts-of-the-bodyreference-structure>>. |Zero or one (conditional) footnote:requestbody-fn-a[]
 |===
 
 [[tab-parts-of-the-bodyreference-structure]]
@@ -131,7 +153,7 @@ image::fig-input-output-transmission-uml-class-diagram.png[]
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|href |HTTP URI that points to the remote resource where the request body may be retrieved. |HTTP URI	|One (mandatory)
+|href |HTTP URI that points to the remote resource where the request body may be retrieved. |HTTP URI |One (mandatory)
 |===
 
 
@@ -140,24 +162,30 @@ The WPS service model seeks compliance with OWS Common and implements the baseli
 
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/handling
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/handling",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/handling/request-base +
+[requirement,type="general",label="/req/service/model/handling/request-base"]
+======
 _All request types of a WPS, except GetCapabilities, shall use the minimum request parameters, defined in [OGC 06-121r9]._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/handling/service +
+======
+
+[requirement,type="general",label="/req/service/model/handling/service"]
+======
 _For all WPS request types, the service parameter shall have a fixed value of "WPS"._
-.^|*Requirement* a|	http://www.opengis.net/spec/WPS/2.0/req/service/model/handling/version +
+======
+
+[requirement,type="general",label="/req/service/model/handling/version"]
+======
 _For all WPS request types, the request version parameter shall have a fixed value of "2.0.0"._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/handling/request-base-type +
+======
+
+[requirement,type="general",label="/req/service/model/handling/request-base-type"]
+======
 _All request types of a WPS, except GetCapabilities, shall comply with the request type structure defined in <<tab-properties-of-the-requestbasetype>>._
-|===
+======
+
+====
 
 [[tab-properties-of-the-requestbasetype]]
 .Properties of the RequestBaseType
@@ -174,17 +202,15 @@ _All request types of a WPS, except GetCapabilities, shall comply with the reque
 === Process Offering
 A process offering structure contains information about the processes that may be run on a WPS server. Furthermore, the process offerings structure contains properties that describe the available execution modes of a process, the allowed data transmission modes, its version, and the process type (if it deviates from the native process model).
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/process-offering-properties
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/process-offering-properties",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/process-offering-properties/attributes +
+[requirement,type="general",label="/req/service/model/process-offering-properties/attributes"]
+======
 _For all process offerings, the attributes defined in <<tab-parts-of-the-processofferingpropertiesattributes-structure>> shall be specified._
-|===
+======
+
+====
 
 
 [[tab-parts-of-the-processofferingpropertiesattributes-structure]]
@@ -193,17 +219,17 @@ _For all process offerings, the attributes defined in <<tab-parts-of-the-process
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|jobControlOptions	|Job control options supported for this process	|List of supported options for process control (see <<tab-basic-job-control-options>>), extensions may introduce additional control options.	|One or more (mandatory)
-|outputTransmission	|Supported transmission modes for output data (by value / by reference) |List of supported data transmission options (see <<tab-data-transmission-options>>). |One or more (mandatory)
-|processVersion	|Release version of process (not of WPS specification). May be specified to reflect updates or changes in the process offering.	|ows:VersionType |Zero or one (optional) Include when needed to identify process version. footnote:[The processVersion is informative only. Version negotiation for processVersion is not available. Requests to Execute a process do not include a processVersion identifier.]
-|processModel	|Type of the process description	|HTTP-URI. Value is defined by the process description specification. Defaults to "`native`".	|Zero or one (conditional) Include when using a different process model than the native process model. footnote:[This is an extension hook to support processes that have been specified in other OGC Standards, such as SensorML. For those process models, compliance with the WPS abstract process model (<<subsec-abstract-process-model>>) has to be ensured.]
+|jobControlOptions |Job control options supported for this process |List of supported options for process control (see <<tab-basic-job-control-options>>), extensions may introduce additional control options. |One or more (mandatory)
+|outputTransmission |Supported transmission modes for output data (by value / by reference) |List of supported data transmission options (see <<tab-data-transmission-options>>). |One or more (mandatory)
+|processVersion |Release version of process (not of WPS specification). May be specified to reflect updates or changes in the process offering. |ows:VersionType |Zero or one (optional) Include when needed to identify process version. footnote:[The processVersion is informative only. Version negotiation for processVersion is not available. Requests to Execute a process do not include a processVersion identifier.]
+|processModel |Type of the process description |HTTP-URI. Value is defined by the process description specification. Defaults to "`native`". |Zero or one (conditional) Include when using a different process model than the native process model. footnote:[This is an extension hook to support processes that have been specified in other OGC Standards, such as SensorML. For those process models, compliance with the WPS abstract process model (<<subsec-abstract-process-model>>) has to be ensured.]
 |===
 
 [[tab-basic-job-control-options]]
 .Basic job control options
 [cols="2"]
 |===
-^h|Option	^h|Definition
+^h|Option ^h|Definition
 
 |sync-execute |The process offering can/shall be executed synchronously.
 |async-execute |The process offering can/shall be executed asynchronously.
@@ -213,10 +239,10 @@ _For all process offerings, the attributes defined in <<tab-parts-of-the-process
 .Data transmission options
 [cols="2"]
 |===
-^h|Option	^h|Definition
+^h|Option ^h|Definition
 
-|value	|The data is delivered by value.
-|reference	|The data is delivered by reference.
+|value |The data is delivered by value.
+|reference |The data is delivered by reference.
 |===
 
 [[subsec-statusinfo-document]]
@@ -224,21 +250,25 @@ _For all process offerings, the attributes defined in <<tab-parts-of-the-process
 The StatusInfo document is used to provide identification and status information about jobs on a WPS server.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info/document +
+[requirement,type="general",label="/req/service/model/status-info/document"]
+======
 _The StatusInfo document shall comply with the structure defined in <<tab-statusinfo-structure>>._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info/document-status +
+======
+
+[requirement,type="general",label="/req/service/model/status-info/document-status"]
+======
 _The Status element shall contain a well-known identifier for the JobStatus. A basic set has been defined in the WPS conceptual model. WPS operations and WPS extensions may define additional states._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info/document-status-case-insensitive +
+======
+
+[requirement,type="general",label="/req/service/model/status-info/document-status-case-insensitive"]
+======
 _The content of the Status element shall be treated case insensitive._
-|===
+======
+
+====
 
 
 [[tab-statusinfo-structure]]
@@ -247,30 +277,27 @@ _The content of the Status element shall be treated case insensitive._
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|JobID	|Unambiguously identifier of a job within a WPS instance.	|Character String footnote:statusinfo-fn-a[Particularly suitable JobIDs are UUIDs or monotonic identifiers such as unique timestamps. If the privacy of a Processing Job is imperative, the JobID should be non-guessable.]	|One (mandatory)
-|Status	|Well-known identifier describing the status of the job.	|Character String footnote:statusinfo-fn-b[The basic status set is defined in <<tab-basic-status-set-for-jobs>>. Additional states may be defined by certain operations or extensions of this standard.]	|One (mandatory)
-|ExpirationDate	|Date and time by which the job and its results will be no longer accessible. footnote:statusinfo-fn-c[This element will usually become available when the execution has finished (Status = "`finished`").]	|ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC)	|Zero or one (optional) Include if required.
+|JobID |Unambiguously identifier of a job within a WPS instance. |Character String footnote:statusinfo-fn-a[Particularly suitable JobIDs are UUIDs or monotonic identifiers such as unique timestamps. If the privacy of a Processing Job is imperative, the JobID should be non-guessable.] |One (mandatory)
+|Status |Well-known identifier describing the status of the job. |Character String footnote:statusinfo-fn-b[The basic status set is defined in <<tab-basic-status-set-for-jobs>>. Additional states may be defined by certain operations or extensions of this standard.] |One (mandatory)
+|ExpirationDate |Date and time by which the job and its results will be no longer accessible. footnote:statusinfo-fn-c[This element will usually become available when the execution has finished (Status = "`finished`").] |ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC) |Zero or one (optional) Include if required.
 |EstimatedCompletion |Date and time by which the processing job will be finished. |ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC) |Zero or one (optional) Include if available.
-|NextPoll	|Date and time for the next suggested status polling.	|ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC)	|Zero or one (optional) Include if required.
-|PercentCompleted	|Percentage of process that has been completed.	|Integer{0..100} footnote:statusinfo-fn-d[Zero (0) means the execution has just started, and 100 means the job is complete. This value is informative only without any accuracy guarantees.] |Zero or one (optional) Include if available.
+|NextPoll |Date and time for the next suggested status polling. |ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC) |Zero or one (optional) Include if required.
+|PercentCompleted |Percentage of process that has been completed. |Integer{0..100} footnote:statusinfo-fn-d[Zero (0) means the execution has just started, and 100 means the job is complete. This value is informative only without any accuracy guarantees.] |Zero or one (optional) Include if available.
 |===
 
 [[subsec-result-document]]
 === Result Document
 A Result document is a structure that contains the results of a process execution. It is a shared element between the Execute and GetResult operations.
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/result
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/result",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;http://www.opengis.net/spec/WPS/2.0/req/service/model/data-transmission"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/data-transmission
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/result/document +
+[requirement,type="general",label="/req/service/model/result/document"]
+======
 _The Result document shall comply with the structure defined in <<tab-result-structure>>._
-|===
+======
+
+====
 
 
 [[tab-result-structure]]
@@ -279,9 +306,9 @@ _The Result document shall comply with the structure defined in <<tab-result-str
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|JobID	|Unambiguously identifier of a job within a WPS instance.	|Character String footnote:result-structure-fn-a[Particularly suitable JobIDs are UUIDs or monotonic identifiers such as unique timestamps. If the privacy of a Processing Job is imperative, the JobID should be non-guessable. In asynchronous execution, the JobID would be shared among related StatusInfo and Result documents.]	|Zero or one (conditional) footnote:result-structure-fn-b[Include if required, e.g. in a response to an asynchronous execution.]
-|ExpirationDate	|Date and time by which the results will be no longer accessible. footnote:result-structure-fn-c[For results delivered "`by reference`" this element may indicate when the Data Outputs will be deleted by the server.]	|ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC)	|Zero or one (conditional) Include if required, i.e. if the server will delete stored results at some point in time.
-|Output	|Output item returned by a process execution.	|DataOutputType structure, see <<tab-properties-of-the-processsummary>>.	|One or more (mandatory)
+|JobID |Unambiguously identifier of a job within a WPS instance. |Character String footnote:result-structure-fn-a[Particularly suitable JobIDs are UUIDs or monotonic identifiers such as unique timestamps. If the privacy of a Processing Job is imperative, the JobID should be non-guessable. In asynchronous execution, the JobID would be shared among related StatusInfo and Result documents.] |Zero or one (conditional) footnote:result-structure-fn-b[Include if required, e.g. in a response to an asynchronous execution.]
+|ExpirationDate |Date and time by which the results will be no longer accessible. footnote:result-structure-fn-c[For results delivered "`by reference`" this element may indicate when the Data Outputs will be deleted by the server.] |ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC) |Zero or one (conditional) Include if required, i.e. if the server will delete stored results at some point in time.
+|Output |Output item returned by a process execution. |DataOutputType structure, see <<tab-properties-of-the-processsummary>>. |One or more (mandatory)
 |===
 
 
@@ -291,9 +318,9 @@ _The Result document shall comply with the structure defined in <<tab-result-str
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|id	|Unambiguous identifier or name of an output item.	|URI	|One (mandatory)
-|Data	|The data provided by this output item.	 |	|Zero or one (conditional) footnote:dataoutputtype-fn-a[One and only one of these items shall be included.]
-|Output	|Nested output, child element.	|DataOutputType structure, see <<tab-parts-of-the-dataoutputtype-structure>> (this table)	|Zero or one (conditional) footnote:dataoutputtype-fn-a[]
+|id |Unambiguous identifier or name of an output item. |URI |One (mandatory)
+|Data |The data provided by this output item.  | |Zero or one (conditional) footnote:dataoutputtype-fn-a[One and only one of these items shall be included.]
+|Output |Nested output, child element. |DataOutputType structure, see <<tab-parts-of-the-dataoutputtype-structure>> (this table) |Zero or one (conditional) footnote:dataoutputtype-fn-a[]
 |===
 
 [[subsec-getcapabilities-operation]]
@@ -301,22 +328,25 @@ _The Result document shall comply with the structure defined in <<tab-result-str
 Per OGC 06-121r9, a GetCapabilities operation is required for any OGC Web service. For WPS, this operation allows a client to retrieve service metadata, basic process offerings, and the available processes present on a WPS server.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/request +
+[requirement,type="general",label="/req/service/model/get-capabilities/request"]
+======
 _Requirements class for the GetCapabilities request._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/response +
+======
+
+[requirement,type="general",label="/req/service/model/get-capabilities/response"]
+======
 _Requirements class for the GetCapabilities response._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/exception +
+======
+
+[requirement,type="general",label="/req/service/model/get-capabilities/exception"]
+======
 _Requirements class for GetCapabilities operation exceptions._
-|===
+======
+
+====
 
 
 ==== GetCapabilities Request
@@ -327,22 +357,25 @@ The GetCapabilities request is mandatory for any OGC service. <<fig-getcapabilit
 image::fig-getcapabilities-request-uml-class-diagram.png[]
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/request
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/request",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/request/ows +
+[requirement,type="general",label="/req/service/model/get-capabilities/request/ows"]
+======
 _The GetCapabilities operation request shall be implemented as specified in Clause 7 of OWS Common [OGC 06-121r9]._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/request/accept-versions +
+======
+
+[requirement,type="general",label="/req/service/model/get-capabilities/request/accept-versions"]
+======
 _If the AcceptVersions parameter is contained in the request, it shall contain the character string "`2.0.0`"._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/request/properties +
+======
+
+[requirement,type="general",label="/req/service/model/get-capabilities/request/properties"]
+======
 _In addition to the properties inherited from OWS Common GetCapabilities, the WPS GetCapabilities request shall include the properties according to <<tab-additional-properties-in-the-getcapabilities-request>>._
-|===
+======
+
+====
 
 
 [[tab-additional-properties-in-the-getcapabilities-request]]
@@ -351,8 +384,8 @@ _In addition to the properties inherited from OWS Common GetCapabilities, the WP
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|Service	|Service type identifier	|Character string, fixed to "`WPS`"	|One (mandatory)
-|Extension	|Container for elements defined by extension specifications	|Any type. Value is defined by the extension specification.	|Zero or more (optional)
+|Service |Service type identifier |Character string, fixed to "`WPS`" |One (mandatory)
+|Extension |Container for elements defined by extension specifications |Any type. Value is defined by the extension specification. |Zero or more (optional)
 |===
 
 
@@ -365,26 +398,34 @@ The response to a GetCapabilities operation is a document describing the service
 image::fig-capabilities-document-uml-class-diagram.png[]
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/response
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/response",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/response/ows +
+[requirement,type="general",label="/req/service/model/get-capabilities/response/ows"]
+======
 _The capabilities response shall provide service metadata according to [OGC 06-121r9], clause 7.4.2._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/response/version +
+======
+
+[requirement,type="general",label="/req/service/model/get-capabilities/response/version"]
+======
 _The default version of the Capabilities document returned by a service implementing this standard shall be "`2.0.0`"._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/response/properties +
+======
+
+[requirement,type="general",label="/req/service/model/get-capabilities/response/properties"]
+======
 _In addition to the properties inherited from OWS Common OWSServiceMetadata, the WPS Capabilities shall include the properties according to <<tab-additional-properties-in-the-capabilities-document>>._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/response/process-summary +
+======
+
+[requirement,type="general",label="/req/service/model/get-capabilities/response/process-summary"]
+======
 _The contents section of the Capabilities document shall contain a process summary for each of the process offerings._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/response/process-summary-properties +
+======
+[requirement,type="general",label="/req/service/model/get-capabilities/response/process-summary-properties"]
+======
 _The properties of a process summary shall provide the properties defined in <<tab-properties-of-the-processsummary>>._
-|===
+======
+
+====
 
 [[tab-additional-properties-in-the-capabilities-document]]
 .Additional properties in the Capabilities document
@@ -404,12 +445,12 @@ _The properties of a process summary shall provide the properties defined in <<t
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|Title	|Title of a process, normally available for display to a human.	|ows:Title	|One (mandatory)
-|Abstract	|Brief narrative description of a process, normally available for display to a human.	|ows:Abstract	|Zero or more (optional)
-|Keywords	|Keywords that characterize a process,	|ows:Keyword	|Zero or more (optional)
-|Identifier	|Unambiguous identifier or name of a process.	|ows:Identifier footnote:[Additional content such as separate code space and version attributes in the Identifier element are not allowed.]	|One (mandatory)
-|Metadata	|Reference to more metadata about this item.	|ows:Metadata	|Zero or more (optional) Include when available and useful
-|processModel	3.3+|Inherited from <<tab-parts-of-the-processofferingpropertiesattributes-structure>>.
+|Title |Title of a process, normally available for display to a human. |ows:Title |One (mandatory)
+|Abstract |Brief narrative description of a process, normally available for display to a human. |ows:Abstract |Zero or more (optional)
+|Keywords |Keywords that characterize a process, |ows:Keyword |Zero or more (optional)
+|Identifier |Unambiguous identifier or name of a process. |ows:Identifier footnote:[Additional content such as separate code space and version attributes in the Identifier element are not allowed.] |One (mandatory)
+|Metadata |Reference to more metadata about this item. |ows:Metadata |Zero or more (optional) Include when available and useful
+|processModel 3.3+|Inherited from <<tab-parts-of-the-processofferingpropertiesattributes-structure>>.
 |jobControlOptions
 |outputTransmission
 |===
@@ -419,64 +460,60 @@ _The properties of a process summary shall provide the properties defined in <<t
 ==== GetCapabilities Exceptions
 If a WPS server encounters an error while performing a GetCapabilities operation, it shall return an exception report as specified in Clause 7.4 of [OGC 06-121r9].
 
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/exception",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/exception
-
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities/exception/common +
+[requirement,type="general",label="/req/service/model/get-capabilities/exception/common"]
+======
 _If a WPS server encounters an error while performing a GetCapabilities operation, it shall return an exception report message as specified in subclause 7.4 of [OGC 06-121r9]._
-|===
+======
 
+====
 
 [[subsec-describeprocess-operation]]
 === DescribeProcess Operation
 The DescribeProcess operation allows WPS clients to query detailed process descriptions for the process offerings.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/request +
+[requirement,type="general",label="/req/service/model/describe-process/request"]
+======
 _Requirements class for the DescribeProcess request._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/response +
+======
+
+[requirement,type="general",label="/req/service/model/describe-process/response"]
+======
 _Requirements class for the DescribeProcess response._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/exception +
+======
+
+[requirement,type="general",label="/req/service/model/describe-process/exception"]
+======
 _Requirements class for DescribeProcess operation exceptions._
-|===
+======
+
+====
 
 
 ==== DescribeProcess Request
 The DescribeProcess request inherits basic properties from the RequestBaseType. An Identifier element shall contain a list of the process identifiers for which the process descriptions shall be obtained. If the service supports multilingual process descriptions, the desired language of the free-text elements in the process description may be queried with a language parameter.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/request
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/request",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0;IETF RFC 4646;http://www.opengis.net/spec/WPS/2.0/req/service/model/handling"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Dependency* |IETF RFC 4646
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/handling
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/request/structure +
+[requirement,type="general",label="/req/service/model/describe-process/request/structure"]
+======
 _The DescribeProcess request shall comply with the structure defined in <<fig-describeprocess-request-uml-class-diagram>> and <<tab-additional-properties-in-the-describeprocess-request>>._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/request/all-identifiers +
+======
+
+[requirement,type="general",label="/req/service/model/describe-process/request/all-identifiers"]
+======
 _The reserved character string "`ALL`" shall be used to obtain a response that contains descriptions of all process offerings provided by the server._
-|===
+======
+
+====
 
 
 [[fig-describeprocess-request-uml-class-diagram]]
@@ -490,8 +527,8 @@ image::fig-describeprocess-request-uml-class-diagram.png[]
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|Identifier	|One or more process identifiers for which the detailed description shall be obtained.	|ows:Identifier Value shall be one of the process identifiers listed in the ProcessSummary elements in the Capabilities document. The fixed value "`ALL`" indicates that the description of all process offerings shall be returned.	|One or more (mandatory)
-|lang	|Desired language of the process description.	|xml:lang IETF RFC 4646 language code of the human-readable text elements  in the process description (e.g. "en"). This shall be one of the languages defined in the Capabilities document.	|Zero or one (optional)
+|Identifier |One or more process identifiers for which the detailed description shall be obtained. |ows:Identifier Value shall be one of the process identifiers listed in the ProcessSummary elements in the Capabilities document. The fixed value "`ALL`" indicates that the description of all process offerings shall be returned. |One or more (mandatory)
+|lang |Desired language of the process description. |xml:lang IETF RFC 4646 language code of the human-readable text elements  in the process description (e.g. "en"). This shall be one of the languages defined in the Capabilities document. |Zero or one (optional)
 |===
 
 
@@ -499,20 +536,20 @@ image::fig-describeprocess-request-uml-class-diagram.png[]
 The response to a DescribeProcess operation is a ProcessOfferings document. This document contains a ProcessOfferings section for each available process on the server. In contrast to the ProcessSummary in the server's capabilities, the processes are described in their declared description format.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/response
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/response",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;IETF RFC 4646"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |IETF RFC 4646
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/response/structure +
+[requirement,type="general",label="/req/service/model/describe-process/response/structure"]
+======
 _The DescribeProcess response shall comply with the structure defined in <<tab-properties-in-the-processofferings-document>> and <<tab-processoffering-properties>>._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/response/offerings-language +
+======
+
+[requirement,type="general",label="/req/service/model/describe-process/response/offerings-language"]
+======
 _If the client has requested a particular response language, the process descriptions shall be delivered in that language._
-|===
+======
+
+====
 
 [[tab-properties-in-the-processofferings-document]]
 .Properties in the ProcessOfferings document
@@ -530,11 +567,11 @@ _If the client has requested a particular response language, the process descrip
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|processModel	3.3+|Inherited from <<tab-parts-of-the-processofferingpropertiesattributes-structure>>
+|processModel 3.3+|Inherited from <<tab-parts-of-the-processofferingpropertiesattributes-structure>>
 |jobControlOptions
 |outputTransmission
-|Process	|Native Process description.	|Process type, as defined in the native process model.	|Zero or one (conditional) footnote:processoffering-fn-a[One and only one of these items shall be included.]
-|Any	|Any other well-defined process description, identified by the processType.	|Any type. Must conform to requirements associated with the declared processType.	|Zero or one (conditional) footnote:processoffering-fn-a[]
+|Process |Native Process description. |Process type, as defined in the native process model. |Zero or one (conditional) footnote:processoffering-fn-a[One and only one of these items shall be included.]
+|Any |Any other well-defined process description, identified by the processType. |Any type. Must conform to requirements associated with the declared processType. |Zero or one (conditional) footnote:processoffering-fn-a[]
 |===
 
 
@@ -542,29 +579,29 @@ _If the client has requested a particular response language, the process descrip
 If a WPS server encounters an error while performing a DescribeProcess operation, it shall return an exception report as specified in Clause 8 of [OGC 06-121r9]. If the error was encountered due to an invalid process identifier, the server shall respond with the exception code defined in <<tab-additional-exception-codes-for-the-describeprocess-operation>>.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/exception
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/exception",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/exception/common +
+[requirement,type="general",label="/req/service/model/describe-process/exception/common"]
+======
 _If a WPS server encounters an error while performing a DescribeProcess operation, it shall return an exception report message as specified in Clause 8 of [OGC 06-121r9]._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process/exception/specific +
+======
+
+[requirement,type="general",label="/req/service/model/describe-process/exception/specific"]
+======
 _If the error was encountered due to an invalid process identifier, the server shall respond with the exception code defined in <<tab-additional-exception-codes-for-the-describeprocess-operation>>._
-|===
+======
+
+====
 
 
 [[tab-additional-exception-codes-for-the-describeprocess-operation]]
 .Additional exception codes for the DescribeProcess operation
 [cols="4"]
 |===
-^h|exceptionCode value ^h|ExceptionText	^h|locator ^h|HTTP status code
+^h|exceptionCode value ^h|ExceptionText ^h|locator ^h|HTTP status code
 
-|NoSuchProcess	|One of the identifiers passed does not match with any of the processes offered by this server.	|List of violating process identifiers.	|400 (Bad request)
+|NoSuchProcess |One of the identifiers passed does not match with any of the processes offered by this server. |List of violating process identifiers. |400 (Bad request)
 |===
 
 [[subsec-execute-operation]]
@@ -576,43 +613,45 @@ The Execute operation allows WPS clients to run a specified process implemented 
 image::fig-execute-response-document-raw-uml.png[]
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/execute",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/request +
+[requirement,type="general",label="/req/service/model/execute/request"]
+======
 _Requirements class for the Execute request._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/response +
+======
+
+[requirement,type="general",label="/req/service/model/execute/response"]
+======
 _Requirements class for the Execute response._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/exception +
+======
+
+[requirement,type="general",label="/req/service/model/execute/exception"]
+======
 _Requirements class for Execute operation exceptions._
-|===
+======
+
+====
 
 
 ==== Execute Request
 The Execute request is a common structure for synchronous and asynchronous execution. It inherits basic properties from the RequestBaseType and contains additional elements that identify the process that shall be executed, the data inputs and outputs, and the response type of the service.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/request
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/request",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0;http://www.opengis.net/spec/WPS/2.0/req/service/model/handling"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/handling
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/request/structure +
+[requirement,type="general",label="/req/service/model/execute/request/structure"]
+======
 _The Execute request shall comply with the structure defined in <<fig-execute-request-uml>>, <<tab-properties-in-the-execute-request>>, <<tab-properties-of-the-datainputtype>>, and <<tab-properties-of-the-outputdefinitiontype>>._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/request/raw-for-single-output +
+======
+
+[requirement,type="general",label="/req/service/model/execute/request/raw-for-single-output"]
+======
 _Raw data output shall only be requested if the processes execution will deliver one single output value. (For a process that provides more than one output, the desired output has to be specified in the request for raw data delivery.)_
-|===
+======
+
+====
 
 
 [[fig-execute-request-uml]]
@@ -626,11 +665,11 @@ image::fig-execute-request-uml.png[]
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|response	|Desired response format, i.e. a response document or raw data.	|String {raw footnote:[Raw output shall only be requested if the execution would return a single output.] \| document}	|One (mandatory)
-|mode	|Desired execution mode.	|String{sync \| async \| auto footnote:[In the case of auto, the server shall respond quickly to avoid connection timeouts.]} Valid values are to be derived from the jobControlOptions property of each ProcessOffering. "`auto`" delegates the choice of execution mode to the server.	|One (mandatory)
-|Identifier	|Unambiguous identifier of the process that shall be executed.	|ows:Identifier Value shall be one of the process identifiers listed in the ProcessSummary elements in the Capabilities document.	|One (mandatory)
-|Input	|Data inputs provided to this process execution.	|DataInputType structure, see <<tab-properties-of-the-datainputtype>>.	|Zero or more (conditional) footnote:[If a process does not have any inputs, or if, for all required inputs the process description contains default values, this element may be omitted.]
-|Output	|Specification of outputs expected from the process execution, including the desired format and transmission mode for each output.	|OutputDefinitionType structure, see <<tab-properties-of-the-outputdefinitiontype>>.	|Zero or more (conditional) footnote:[If a process shall return all outputs in their default format, this element may be omitted.]
+|response |Desired response format, i.e. a response document or raw data. |String {raw footnote:[Raw output shall only be requested if the execution would return a single output.] \| document} |One (mandatory)
+|mode |Desired execution mode. |String{sync \| async \| auto footnote:[In the case of auto, the server shall respond quickly to avoid connection timeouts.]} Valid values are to be derived from the jobControlOptions property of each ProcessOffering. "`auto`" delegates the choice of execution mode to the server. |One (mandatory)
+|Identifier |Unambiguous identifier of the process that shall be executed. |ows:Identifier Value shall be one of the process identifiers listed in the ProcessSummary elements in the Capabilities document. |One (mandatory)
+|Input |Data inputs provided to this process execution. |DataInputType structure, see <<tab-properties-of-the-datainputtype>>. |Zero or more (conditional) footnote:[If a process does not have any inputs, or if, for all required inputs the process description contains default values, this element may be omitted.]
+|Output |Specification of outputs expected from the process execution, including the desired format and transmission mode for each output. |OutputDefinitionType structure, see <<tab-properties-of-the-outputdefinitiontype>>. |Zero or more (conditional) footnote:[If a process shall return all outputs in their default format, this element may be omitted.]
 |===
 
 
@@ -640,10 +679,10 @@ image::fig-execute-request-uml.png[]
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|id	|Identifier of a particular input, as defined in the process description. |URI |One (mandatory)
-|Data	|The data provided for this input item.	|Data structure, <<tab-parts-of-the-inline-data-structure>>	|Zero or one (conditional) footnote:datainputtype[One and only one of these items shall be included.]
-|Reference	|HTTP resource that provides the input data.	|Reference structure, <<tab-parts-of-the-reference-structure>> |Zero or one (conditional) footnote:datainputtype[]
-|Input	|Nested input, child element. |DataInputType structure, <<tab-properties-of-the-datainputtype>> (this table)	|Zero or more (conditional) footnote:datainputtype[]
+|id |Identifier of a particular input, as defined in the process description. |URI |One (mandatory)
+|Data |The data provided for this input item. |Data structure, <<tab-parts-of-the-inline-data-structure>> |Zero or one (conditional) footnote:datainputtype[One and only one of these items shall be included.]
+|Reference |HTTP resource that provides the input data. |Reference structure, <<tab-parts-of-the-reference-structure>> |Zero or one (conditional) footnote:datainputtype[]
+|Input |Nested input, child element. |DataInputType structure, <<tab-properties-of-the-datainputtype>> (this table) |Zero or more (conditional) footnote:datainputtype[]
 |===
 
 
@@ -653,11 +692,11 @@ image::fig-execute-request-uml.png[]
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|mimetype	3.3+|See <<tab-properties-of-the-dataencodingattributes-structure>> -- Properties of the DataEncodingAttributes structure.
+|mimetype 3.3+|See <<tab-properties-of-the-dataencodingattributes-structure>> -- Properties of the DataEncodingAttributes structure.
 |encoding
 |schema
-|transmission	|Code that indicates the desired data transmission mode for this output.	|Character string. Valid values are listed in the outputTransmission property of each ProcessOffering.	|Zero or one (conditional) footnote:[This element may be omitted for (1) raw data output, (2) output elements that serve as nesting parents.]
-|id	|Identifier of a particular output, as defined in the process description.	|URI	|One (mandatory)
+|transmission |Code that indicates the desired data transmission mode for this output. |Character string. Valid values are listed in the outputTransmission property of each ProcessOffering. |Zero or one (conditional) footnote:[This element may be omitted for (1) raw data output, (2) output elements that serve as nesting parents.]
+|id |Identifier of a particular output, as defined in the process description. |URI |One (mandatory)
 
 |Output footnote:[Depending on the process model, a client may provide a basic specification of the desired output format. This information shall ensure a successful decoding of the process outputs. Use and interpretation of this element shall be specified within a WPS service profile.]
 |Nested output, child element.
@@ -674,27 +713,35 @@ image::fig-execute-request-uml.png[]
 Depending on the desired execution mode and the response type declared in the execute request, the execute response may take one of three different forms: A response document, a StatusInfo document, or raw data.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/response
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/response",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info;http://www.opengis.net/spec/WPS/2.0/req/service/model/result"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/result
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/response/type +
+[requirement,type="general",label="/req/service/model/execute/response/type"]
+======
 _The execute response type shall comply with the properties specified in the execute request according to <<tab-possible-responses-to-an-execute-request>>._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/response/raw-data +
+======
+
+[requirement,type="general",label="/req/service/model/execute/response/raw-data"]
+======
 _A raw data response shall comply with the output format specified in the execute request._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/response/document +
+======
+
+[requirement,type="general",label="/req/service/model/execute/response/document"]
+======
 _The response document shall comply with Requirements Class http://www.opengis.net/spec/WPS/2.0/req/service/model/result._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/response/status-info +
+======
+
+[requirement,type="general",label="/req/service/model/execute/response/status-info"]
+======
 _A StatusInfo response shall comply with Requirements Class http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/response/status-info-status +
+======
+
+[requirement,type="general",label="/req/service/model/execute/response/status-info-status"]
+======
 _The StatusInfo response to a valid execute response shall have the status element set to "`Accepted`"._
-|===
+======
+
+====
 
 [[tab-possible-responses-to-an-execute-request]]
 .Possible responses to an execute request
@@ -703,9 +750,9 @@ _The StatusInfo response to a valid execute response shall have the status eleme
 2+^h| 3+^h|Execution mode
 2+^h| ^h|sync ^h|async ^h|auto
 
-.3+|Response format	|Raw	|Raw data	|StatusInfo document	|Raw data or StatusInfo document (choice is made by server) footnote:possible-responses-fn-a[The client identifies the server's choice by inspection of the response type (<<tab-possible-responses-to-an-execute-request>>).]
-|document	|Response document	|StatusInfo document	.2+|Response document or StatusInfo document (choice is made by server) footnote:possible-responses-fn-a[]
-|n/a	|Response document (default)	|StatusInfo document
+.3+|Response format |Raw |Raw data |StatusInfo document |Raw data or StatusInfo document (choice is made by server) footnote:possible-responses-fn-a[The client identifies the server's choice by inspection of the response type (<<tab-possible-responses-to-an-execute-request>>).]
+|document |Response document |StatusInfo document .2+|Response document or StatusInfo document (choice is made by server) footnote:possible-responses-fn-a[]
+|n/a |Response document (default) |StatusInfo document
 |===
 
 
@@ -715,85 +762,90 @@ When a WPS server encounters an error while performing an Execute operation, it 
 For synchronous execution, an exception is returned instead of a result. For asynchronous execution, it is recommended to return the exception at the earliest possible time. In the case of a syntactically wrong request (e.g. due to the use of wrong identifiers and data formats), the exception report message may be returned instead of a StatusInfo document. If the exception occurs later during execution, the StatusInfo shall be set to "`Failed`" and the GetResult operation shall be used to deliver the exception report.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/exception
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/exception",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/exception/common +
+[requirement,type="general",label="/req/service/model/execute/exception/common"]
+======
 _If a WPS server encounters an error while performing an Execute operation, it shall return an exception report message as specified in Clause 8 of [OGC 06-121r9]._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/exception/specific +
+======
+
+[requirement,type="general",label="/req/service/model/execute/exception/specific"]
+======
 _If the encountered error is related to the properties and elements in the execute request or has occurred during the result computation, the server shall respond with the specific exception codes defined in <<tab-additional-exception-codes-for-the-execute-operation>>._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/execute/exception/accepted-job +
+======
+
+[requirement,type="general",label="/req/service/model/execute/exception/accepted-job"]
+======
 _If the server encounters an error for an asynchronously executed job, that had already been accepted, the server shall behave as follows: 1. The next StatusInfo responses shall have the status element set to "`Failed`", and 2. The GetResult operation report shall return an exception report message as specified in Clause 8 of [OGC 06-121r9]._
-|===
+======
+
+====
 
 [[tab-additional-exception-codes-for-the-execute-operation]]
 .Additional exception codes for the Execute operation
 [cols="4"]
 |===
-^h|exceptionCode value ^h|ExceptionText	^h|locator ^h|HTTP status code
+^h|exceptionCode value ^h|ExceptionText ^h|locator ^h|HTTP status code
 
-|NoSuchProcess	|One of the identifiers passed does not match with any of the processes offered by this server.	|List of violating process identifiers.	|400 (Bad request)
+|NoSuchProcess |One of the identifiers passed does not match with any of the processes offered by this server. |List of violating process identifiers. |400 (Bad request)
 |NoSuchMode |The process does not permit the desired execution mode. |Violating mode value. |400 (Bad request)
-|NoSuchInput |One or more of the input identifiers passed does not match with any of the input identifiers of this process.	|List of violating input identifiers	|400 (Bad request)
-|NoSuchOutput	|One or more of the output identifiers passed does not match with any of the input identifiers of this process.	|List of violating input identifiers	|400 (Bad request)
-|DataNotAccessible	|One of the referenced input data sets was inaccessible.	|List of violating input identifiers	|400 (Bad request)
-|SizeExceeded	|The size of one of the input parameters was too large for this process to handle.	|List of violating input identifiers	|400 (Bad request)
-|TooManyInputs	|Too many input items have been specified.	|List of violating input identifiers	|400 (Bad request)
-|TooManyOutputs	|Too many output items have been specified. footnote:[This shall be used in conjunction with raw data, where the execute request must specify only one output.]	|List of violating input identifiers	|400 (Bad request)
-|ServerBusy	|The server is too busy to accept and queue the request at this time.	|None (omit locator parameter)	|503 (Service Unavailable)
-|StorageNotSupported	|Execute operation request included transmission="reference" for one of the outputs, but storage is not offered by this server.	|None (omit locator parameter)	|400 (Bad request)
-|NoSuchFormat	|One or more of the input or output formats specified in the request did not match with any of the formats defined for that particular input or output.	|List of violating input and / or output identifiers	|400 (Bad request)
-|WrongInputData	|One or more of inputs for which the service was able to retrieve the data but could not read it.	|List of violating input identifiers	|400 (Bad request)
-|InternalServerError	|None (omit exception text)	|None (omit locator parameter)	|500 (Internal Server Error) footnote:[If the cause could not be determined or is not covered by the above exception codes, this exception shall be used.]
+|NoSuchInput |One or more of the input identifiers passed does not match with any of the input identifiers of this process. |List of violating input identifiers |400 (Bad request)
+|NoSuchOutput |One or more of the output identifiers passed does not match with any of the input identifiers of this process. |List of violating input identifiers |400 (Bad request)
+|DataNotAccessible |One of the referenced input data sets was inaccessible. |List of violating input identifiers |400 (Bad request)
+|SizeExceeded |The size of one of the input parameters was too large for this process to handle. |List of violating input identifiers |400 (Bad request)
+|TooManyInputs |Too many input items have been specified. |List of violating input identifiers |400 (Bad request)
+|TooManyOutputs |Too many output items have been specified. footnote:[This shall be used in conjunction with raw data, where the execute request must specify only one output.] |List of violating input identifiers |400 (Bad request)
+|ServerBusy |The server is too busy to accept and queue the request at this time. |None (omit locator parameter) |503 (Service Unavailable)
+|StorageNotSupported |Execute operation request included transmission="reference" for one of the outputs, but storage is not offered by this server. |None (omit locator parameter) |400 (Bad request)
+|NoSuchFormat |One or more of the input or output formats specified in the request did not match with any of the formats defined for that particular input or output. |List of violating input and / or output identifiers |400 (Bad request)
+|WrongInputData |One or more of inputs for which the service was able to retrieve the data but could not read it. |List of violating input identifiers |400 (Bad request)
+|InternalServerError |None (omit exception text) |None (omit locator parameter) |500 (Internal Server Error) footnote:[If the cause could not be determined or is not covered by the above exception codes, this exception shall be used.]
 |===
 
 [[subsec-getstatus-operation]]
 === GetStatus Operation
 The GetStatus operation allows WPS clients to query the status of an asynchronously executed job.
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|	http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/request +
+[requirement,type="general",label="/req/service/model/get-status/request"]
+======
 _Requirements class for the GetStatus request._
-.^|*Requirement* a|	http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/response +
+======
+
+[requirement,type="general",label="/req/service/model/get-status/response"]
+======
 _Requirements class for the GetStatus response._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/exception +
+======
+
+[requirement,type="general",label="/req/service/model/get-status/exception"]
+======
 _Requirements class for GetStatus operation exceptions._
-|===
+======
+
+====
 
 
 ==== GetStatus Request
 The GetStatus request inherits basic properties from the RequestBaseType. It contains an additional element that identifies the JobID of the processing job, of which the status shall be returned.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/request
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/request",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0;http://www.opengis.net/spec/WPS/2.0/req/service/model/handling"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/handling
-.^|*Requirement* a|	http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/request/structure +
+[requirement,type="general",label="/req/service/model/get-status/request/structure"]
+======
 _GetStatus request shall comply with the structure defined in <<fig-getstatus-request-uml>> and <<tab-addition-properties-in-the-getstatus-request>>._
-.^|*Requirement* a|	http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/request/job-id +
+======
+
+[requirement,type="general",label="/req/service/model/get-status/request/job-id"]
+======
 _The JobID used in the request shall be a valid identifier which the client has received with the execute response._
-|===
+======
+
+====
 
 
 [[fig-getstatus-request-uml]]
@@ -814,39 +866,35 @@ image::fig-getstatus-request-uml.png[]
 The response to a GetStatus request is a StatusInfo document as defined in <<subsec-statusinfo-document>>.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/response
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/response",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/response/status-info +
+[requirement,type="general",label="/req/service/model/get-status/response/status-info"]
+======
 _The response to a GetStatus request shall be a StatusInfo document as defined in http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info._
-|===
+======
+
+====
 
 
 
 ==== GetStatus Exceptions
 If a WPS server encounters an error while performing a GetStatus operation, it shall return an exception report as specified in Clause 8 of [OGC 06-121r9]. If the error was encountered due to an invalid process identifier, the server shall respond with the exception code defined in <<tab-additional-exception-codes-for-the-getstatus-operation>>.
 
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/exception",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/exception
-
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/exception/common +
+[requirement,type="general",label="/req/service/model/get-status/exception/common"]
+======
 _If a WPS server encounters an error while performing a GetStatus operation, it shall return an exception report message as specified in Clause 8 of [OGC 06-121r9]._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status/exception/job-id +
+======
+
+[requirement,type="general",label="/req/service/model/get-status/exception/job-id"]
+======
 _If the error was encountered due to an invalid JobID, the server shall respond with the exception code defined in <<tab-additional-exception-codes-for-the-getstatus-operation>>._
-|===
+======
+
+====
 
 [[tab-additional-exception-codes-for-the-getstatus-operation]]
 .Additional exception codes for the GetStatus operation
@@ -861,43 +909,45 @@ _If the error was encountered due to an invalid JobID, the server shall respond 
 === GetResult Operation
 The GetResult operation allows WPS clients to query the result of a finished processing job. It is used in conjunction with asynchronous execution.
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/request +
+[requirement,type="general",label="/req/service/model/get-result/request"]
+======
 _Requirements class for the GetResult request._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/response +
+======
+
+[requirement,type="general",label="/req/service/model/get-result/response"]
+======
 _Requirements class for the GetResult response._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/exception +
+======
+
+[requirement,type="general",label="/req/service/model/get-result/exception"]
+======
 _Requirements class for GetResult operation exceptions._
-|===
+======
+
+====
 
 
 ==== GetResult Request
 The GetResult request inherits basic properties from the RequestBaseType. It contains an additional element that identifies the JobID of the processing job, of which the result shall be returned.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/request
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/request",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0;http://www.opengis.net/spec/WPS/2.0/req/service/model/handling"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/handling
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/request/structure +
+[requirement,type="general",label="/req/service/model/get-result/request/structure"]
+======
 _The GetResult request shall comply with the structure defined in <<fig-getresult-request-uml>> and <<tab-additional-properties-in-the-getresult-request>>._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/request/job-id +
+======
+
+[requirement,type="general",label="/req/service/model/get-result/request/job-id"]
+======
 _The JobID used in the request shall be a valid identifier which the client has received with the execute response._
-|===
+======
+
+====
 
 
 [[fig-getresult-request-uml]]
@@ -919,18 +969,15 @@ image::fig-getresult-request-uml.png[]
 The response to a GetResult request is a Processing Result document as defined in <<subsec-result-document>>.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/response
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/response",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;http://www.opengis.net/spec/WPS/2.0/req/service/model/processing-result"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/processing-result
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/response/result +
+[requirement,type="general",label="/req/service/model/get-result/response/result"]
+======
 _The response to a GetResult request shall be a Result document as defined in http://www.opengis.net/spec/WPS/2.0/req/service/model/processing-result._
-|===
+======
+
+====
 
 
 ==== GetResult Exceptions
@@ -939,24 +986,30 @@ When a WPS server encounters an error while performing a GetResult operation, it
 If a job finishes with status "`failed`", GetResult will provide the corresponding exception report. In this case, the appropriate exception codes defined for the execute operation shall be used.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/exception
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/exception",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/exception/common +
+[requirement,type="general",label="/req/service/model/get-result/exception/common"]
+======
 _If a WPS server encounters an error while performing a GetResult operation, it shall return an exception report message as specified in Clause 8 of [OGC 06-121r9]._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/exception/job-id +
+======
+
+[requirement,type="general",label="/req/service/model/get-result/exception/job-id"]
+======
 _If the error was encountered due to an invalid process identifier, the server shall respond with the exception code defined in <<tab-additional-exception-codes-for-the-getstatus-operation>> (NoSuchJob)._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/exception/execution-exception +
+======
+
+[requirement,type="general",label="/req/service/model/get-result/exception/execution-exception"]
+======
 _If the encountered error has occurred during the result computation, the server shall respond with the appropriate exception codes defined in <<tab-additional-exception-codes-for-the-execute-operation>>._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result/exception/result-not-ready +
+======
+
+[requirement,type="general",label="/req/service/model/get-result/exception/result-not-ready"]
+======
 _If the results have not yet been computed and the job is still in the "`running`" state, the server shall respond with the exception code defined in <<tab-additional-exception-codes-for-the-getresult-operation>>._
-|===
+======
+
+====
 
 [[tab-additional-exception-codes-for-the-getresult-operation]]
 .Additional exception codes for the GetResult operation
@@ -964,7 +1017,7 @@ _If the results have not yet been computed and the job is still in the "`running
 |===
 ^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
 
-|ResultNotReady footnote:[Typically, this exception is thrown if a client violates the asynchronous protocol (<<fig-asynchronous-process-execution-uml>>) and calls GetResult before the job execution has completed.]	|The result for the requested JobID has not yet been generated.	|Violating JobID	|400 (Bad request)
+|ResultNotReady footnote:[Typically, this exception is thrown if a client violates the asynchronous protocol (<<fig-asynchronous-process-execution-uml>>) and calls GetResult before the job execution has completed.] |The result for the requested JobID has not yet been generated. |Violating JobID |400 (Bad request)
 |===
 
 [[subsec-synchronous-wps]]
@@ -972,50 +1025,39 @@ _If the results have not yet been computed and the job is still in the "`running
 The synchronous WPS is a requirements class profile that indicates the general availability of synchronous execution capabilities on a WPS server.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/synchronous-wps
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/synchronous-wps",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities;http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process;http://www.opengis.net/spec/WPS/2.0/req/service/model/execute"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities
-
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process
-
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/execute
-
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/synchronous-wps/sync-execute +
+[requirement,type="general",label="/req/service/model/synchronous-wps/sync-execute"]
+======
 _The Synchronous WPS server shall provide synchronous execution capabilities for one or more process offerings._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/synchronous-wps/operations +
+[requirement,type="general",label="/req/service/model/synchronous-wps/operations"]
+======
 _A Synchronous WPS server shall provide the following operations:_
 
 - _GetCapabilities_
 - _DescribeProcess_
 - _Execute (with mode "`sync`")_
-|===
+======
+
+====
 
 [[subsec-asynchronous-wps]]
 === Asynchronous WPS
 The asynchronous WPS is a requirements class that indicates the general availability of asynchronous execution capabilities on a WPS server.
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/asynchronous-wps
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/asynchronous-wps",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities;http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process;http://www.opengis.net/spec/WPS/2.0/req/service/model/execute;http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status;http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/execute
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/synchronous-wps/sync-execute +
+[requirement,type="general",label="/req/service/model/synchronous-wps/sync-execute"]
+======
 _The Asynchronous WPS server shall provide asynchronous execution capabilities for one or more process offerings._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/asynchronous-wps/operations
+======
+
+[requirement,type="general",label="/req/service/model/asynchronous-wps/operations"]
+======
 _An Asynchronous WPS server shall provide the following operations:_
 
 - _GetCapabilities_
@@ -1023,6 +1065,11 @@ _An Asynchronous WPS server shall provide the following operations:_
 - _Execute (with mode "`async`")_
 - _GetStatus_
 - _GetResult_
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/asynchronous-wps/result-jobid +
+======
+
+[requirement,type="general",label="/req/service/model/asynchronous-wps/result-jobid"]
+======
 _Result documents delivered by asynchronous execution shall contain a JobID._
-|===
+======
+
+====
