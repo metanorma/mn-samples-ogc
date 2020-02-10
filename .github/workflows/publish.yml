@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build document in the Metanorma container
-        uses: docker://metanorma/metanorma:latest
+        container: docker://metanorma/mn
         run: |
           make clean all publish
       - uses: actions/upload-artifact@master
