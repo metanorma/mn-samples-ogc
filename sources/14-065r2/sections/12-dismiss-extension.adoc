@@ -10,50 +10,64 @@ image::fig-dismiss-operation-uml.png[]
 === Dismiss Operation
 The dismiss operation is a job control operation. Its availability is indicated per process using the jobControlOptions in the ProcessSummary and the ProcessOffering structures.
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/request +
+[requirement,type="general",label="/req/service/model/dismiss/request"]
+======
 _Requirements class for the Dismiss request._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/response +
+======
+
+[requirement,type="general",label="/req/service/model/dismiss/response"]
+======
 _Requirements class for the Dismiss response._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/exception +
+======
+
+[requirement,type="general",label="/req/service/model/dismiss/exception"]
+======
 _Requirements class for Dismiss operation exceptions._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/job-control-attribute +
+======
+
+[requirement,type="general",label="/req/service/model/dismiss/job-control-attribute"]
+======
 _All process offerings that support the dismiss operation shall have the String "`dismiss`" listed in their jobControlOptions._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/execute-response-jobid +
+======
+
+[requirement,type="general",label="/req/service/model/dismiss/execute-response-jobid"]
+======
 _All results that can be dismissed after a process has finished shall have the JobID included._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/status-dismissed +
+======
+
+[requirement,type="general",label="/req/service/model/dismiss/status-dismissed"]
+======
 _The case insensitive status code for a dismissed job is "`Dismissed`"._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/status-transient +
+======
+
+[requirement,type="general",label="/req/service/model/dismiss/status-transient"]
+======
 _The status "`Dismissed`" is transient. It shall only be used during a dismiss transaction._
-|===
+======
+
+====
 
 
 ==== Dismiss Request
 The Dismiss request inherits basic properties from the RequestBaseType. It contains an additional element that identifies the JobID of the processing job to be dismissed.
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/request
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/request",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0;http://www.opengis.net/spec/WPS/2.0/req/service/model/handling"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/handling
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/request/strcuture +
+[requirement,type="general",label="/req/service/model/dismiss/request/strcuture"]
+======
 _The Dismiss request shall comply with the structure defined in <<fig-dismiss-request-uml>> and <<tab-addition-properties-in-the-dismiss-request>>._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/request/job-id +
+======
+
+[requirement,type="general",label="/req/service/model/dismiss/request/job-id"]
+======
 _The JobID used in the request shall be a valid identifier which the client has received with the execute response._
-|===
+======
+
+====
 
 [[fig-dismiss-request-uml]]
 .Dismiss request UML class diagram
@@ -72,40 +86,44 @@ image::fig-dismiss-request-uml.png[]
 ==== Dismiss Response
 The response to a Dismiss request is a StatusInfo document as defined in <<subsec-statusinfo-document>>. The status of the job shall be set to "`Dismissed`". Subsequent requests to the service using the dismissed jobID shall result in a NoSuchJob exception.
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/response
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/response",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/response/structure +
+[requirement,type="general",label="/req/service/model/dismiss/response/structure"]
+======
 _The response to a Dimiss request shall be a StatusInfo document as defined in http://www.opengis.net/spec/WPS/2.0/req/service/model/status-info._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/response/status-dismissed +
+======
+
+[requirement,type="general",label="/req/service/model/dismiss/response/status-dismissed"]
+======
 _The value of the Status element in the returned StatusInfo document shall be "`dismissed`"._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/response/release-job-id +
+======
+
+[requirement,type="general",label="/req/service/model/dismiss/response/release-job-id"]
+======
 _With the delivery of a dismiss response, the associated JobID shall be released._
-|===
+======
+
+====
 
 ==== Dismiss Exceptions
 If a WPS server encounters an error while performing a Dismiss operation, it shall return an exception report as specified in Clause 8 of [OGC 06-121r9]. If the error was encountered due to an invalid JobID, the server shall respond with the exception code defined in <<tab-additional-exception-codes-for-the-getstatus-operation>> (NoSuchJob).
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/exception
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/exception",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
-.^|*Dependency* |OWS Common 2.0
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/exception/common +
+[requirement,type="general",label="/req/service/model/dismiss/exception/common"]
+======
 _If a WPS server encounters an error while performing a GetStatus operation, it shall return an exception report message as specified in Clause 8 of [OGC 06-121r9]._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss/exception/job-id +
+======
+
+[requirement,type="general",label="/req/service/model/dismiss/exception/job-id"]
+======
 _If the error was encountered due to an invalid process identifier, the server shall respond with the exception code defined in <<tab-additional-exception-codes-for-the-getstatus-operation>> (NoSuchJob)._
-|===
+======
+
+====
 
 === Binding Extensions for the Dismiss Operation
 
@@ -114,22 +132,25 @@ This clause specifies the XML encoding for the Dismiss operation.
 
 A Dismiss example is listed in <<annex-subsec-dismiss>>.
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/dismiss
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/dismiss",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss;http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml"]
+====
 
-.^|*Target type* |Software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/dismiss/compliance +
+[requirement,type="general",label="/req/service/binding/post-xml/dismiss/compliance"]
+======
 _The POST/XML encoding of Dismiss shall be in compliance with http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/extension-binding._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/dismiss/request +
+======
+
+[requirement,type="general",label="/req/service/binding/post-xml/dismiss/request"]
+======
 _A Dismiss request using POST/XML shall be a valid XML document of the type wps:Dismiss._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml/dismiss/response +
+======
+
+[requirement,type="general",label="/req/service/binding/post-xml/dismiss/response"]
+======
 _The response to a successful Dismiss request shall be a valid XML document of the type wps:StatusInfo._
-|===
+======
+
+====
 
 
 ==== HTTP/GET + KVP Binding
@@ -138,23 +159,25 @@ This clause specifies the KVP encoding for the Dismiss operation. A possible Dis
 http://hostname:port/path?service=WPS&version=2.0.0&request=dismiss&jobid= FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/dismiss
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/dismiss",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss;http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp"]
+====
 
-.^|*Target type* |Software implementation
-
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/dismiss/compliance +
+[requirement,type="general",label="/req/service/binding/get-kvp/dismiss/compliance"]
+======
 _The KVP encoding of Dismiss shall be in compliance with http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/extension-binding._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/dismiss/request +
+======
+
+[requirement,type="general",label="/req/service/binding/get-kvp/dismiss/request"]
+======
 _The KVP encoding of Dismiss shall be as defined in <<tab-dismiss-resquest-kvp-encoding>>._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-status/response-xml +
+======
+
+[requirement,type="general",label="/req/service/binding/get-kvp/get-status/response-xml"]
+======
 _The response to a successful Dismiss request shall be a valid XML document of the type wps:StatusInfo._
-|===
+======
+
+====
 
 
 [[tab-dismiss-resquest-kvp-encoding]]
