@@ -43,13 +43,10 @@ documents/%.xml: sources/%.html | documents
 	mv sources/$(addsuffix .*,$*) documents; \
 	unset GLOBIGNORE
 
-sources:
-	mkdir -p $@
-
 # Build canonical XML output
 # If XML file is provided, copy it over
 # Otherwise, build it using adoc
-sources/%.xml: | sources bundle
+sources/%.xml: | bundle
 	BUILT_TARGET=$(shell yq r metanorma.yml metanorma.source.built_targets[$@]); \
 	if [ "$$BUILT_TARGET" != "null" ]; then \
 		if [ -f "$$BUILT_TARGET" ] && [ "$${BUILT_TARGET##*.}" == "xml" ]; then \

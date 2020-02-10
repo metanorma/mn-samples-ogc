@@ -10,25 +10,23 @@ metanorma:
     - pdf
   source:
     built_targets:
+      sources/05-020r26.xml: repos/ogc-tcpnp/sources/ogc-tcpnp.adoc
       sources/05-020r27.xml: sources/05-020r27/document.adoc
       sources/08-062r7.xml: sources/08-062r7/document.adoc
       sources/10-100r3.xml: sources/10-100r3/document.adoc
       sources/16-080.xml: sources/16-080/document.adoc
-      sources/17-069.xml: repos/ogc-wfs/17-069.xml
-      # TODO: commenting out 18-046 due to this bug for now
-      # https://github.com/metanorma/metanorma-standoc/issues/200
-      # sources/18-046.xml: sources/18-046/document.adoc
+      sources/17-069.xml: repos/ogc-wfs/sources/core/standard/17-069.adoc
+      sources/18-046.xml: sources/18-046/document.adoc
       sources/18-053r2.xml: sources/18-053r2/document.adoc
-      sources/ogc-tcpnp.xml: repos/ogc-tcpnp/ogc-tcpnp.xml
     built_type:
+      sources/05-020r26.xml: ogc
       sources/05-020r27.xml: ogc
       sources/08-062r7.xml: ogc
       sources/10-100r3.xml: ogc
       sources/16-080.xml: ogc
       sources/17-069.xml: ogc
-      # sources/18-046.xml: ogc
+      sources/18-046.xml: ogc
       sources/18-053r2.xml: ogc
-      sources/ogc-tcpnp.xml: ogc
 relaton:
   collection:
     organization: "OGC: The Open Geospatial Consortium"
