@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     container: docker://metanorma/mn
     steps:
+      - uses: actions/checkout@master
       - name: Build document in the Metanorma container
         run: |
           make clean all publish
