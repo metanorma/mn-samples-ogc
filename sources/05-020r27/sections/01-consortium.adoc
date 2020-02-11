@@ -1,6 +1,6 @@
 
-[[what-is-a-confortium]]
-== What is a Confortium?
+[[what-is-a-consortium]]
+== What is a Consortium?
 A broad definition of a consortium is: a combination or group of organizations formed to undertake a common objective that is beyond the resources or capabilities of any single organization. The OGC was formed to provide a collaborative, consensus forum for the discussion and resolution of interoperability issues in the geospatial domain. The work of the consortium is based on volunteerism.
 
 More specifically in the standards area, a consortium has the following characteristics:

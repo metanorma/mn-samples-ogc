@@ -1,4 +1,5 @@
 
+[.preface]
 == Introduction
 While over the last 10 years use of open standards compliant geospatial web services such as WMS, WMTS, WFS, WCS and CSW has grown massively, there has not been an effective open standards mechanism to assemble a collection of information such that it can be exchanged easily among a community. While some GIS vendors support such a capability the solution is typically not portable between vendors. The OGC did develop the Web Map Context standard (05-005) but this only supported WMS and so was relatively limited. The OWS Context Standard (OWC) was developed to allow advanced sharing of geospatial ‘Context’ or 'view' between users across a wide range of application types (browser, desktop applications, apps) and technologies (desktop, mobile, embedded etc). The standard is modular and easily implemented, and supports a wide range of OGC service standards as well as in-line or local content.
 
@@ -37,7 +38,7 @@ Some of the key benefits of OWS Context are:
 An OWS Context Document primarily contains references to information and so is itself relatively small in size. It therefore is easy to exchange and access.
 
 [bibliography]
-=== Normative References
+== Normative References
 
 The following normative references are used in this document.
 

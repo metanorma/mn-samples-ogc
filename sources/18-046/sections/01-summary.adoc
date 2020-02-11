@@ -1,4 +1,5 @@
 
+[.preface]
 == Summary
 
 The _Earth Observation Exploitation Platform Hackathon 2018_ was conducted to evaluate the standards based architecture for deploying and executing arbitrary applications close to the physical location of the data in heterogeneous cloud environments. The Hackathon was very successful in demonstrating both efficiency and sustainability of the architecture developed in Testbed-13. Efficient, because it was possible to setup the full execution workflow of 128 Sentinel-1 images within the 1.5 days of the Hackathon in a multi-vendor environment. Sustainable, because the architectural approach provides sufficient flexibility to cater for possible extensions and exchange of cloud & container middleware.
