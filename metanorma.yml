@@ -16,6 +16,7 @@ metanorma:
       sources/10-100r3.xml: sources/10-100r3/document.adoc
       sources/16-080.xml: sources/16-080/document.adoc
       sources/17-069.xml: repos/ogc-wfs/sources/core/standard/17-069.adoc
+      sources/18-016r1.xml: sources/18-016r1/document.adoc
       sources/18-046.xml: sources/18-046/document.adoc
       sources/18-053r2.xml: sources/18-053r2/document.adoc
     built_type:
@@ -25,6 +26,7 @@ metanorma:
       sources/10-100r3.xml: ogc
       sources/16-080.xml: ogc
       sources/17-069.xml: ogc
+      sources/18-016r1.xml: ogc
       sources/18-046.xml: ogc
       sources/18-053r2.xml: ogc
 relaton:
