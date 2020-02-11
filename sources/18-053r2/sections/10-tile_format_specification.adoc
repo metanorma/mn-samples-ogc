@@ -8,10 +8,10 @@ Each tile's content.uri property points to a tile that is one of the formats lis
 |===
 | Format | Uses
 
-| Batched 3D Model (b3dm) | Heterogeneous 3D models. E.g. textured terrain and surfaces, 3D building exteriors and interiors, massive models.
-| Instanced 3D Model (i3dm) | 3D model instances. E.g. trees, windmills, bolts.
-| Point Cloud (pnts) | Massive number of points.
-| Composite (cmpt) | Concatenate tiles of different formats into one tile.
+| Batched 3D Model (`b3dm`) | Heterogeneous 3D models. E.g. textured terrain and surfaces, 3D building exteriors and interiors, massive models.
+| Instanced 3D Model (`i3dm`) | 3D model instances. E.g. trees, windmills, bolts.
+| Point Cloud (`pnts`) | Massive number of points.
+| Composite (`cmpt`) | Concatenate tiles of different formats into one tile.
 
 |===
 
@@ -95,7 +95,7 @@ These semantics define global properties for all features.
 
 |===
 
- 
+
 ==== Batch Table
 
 The _Batch Table_ contains per-model application-specific metadata, indexable by batchId, that can be used for <<_Declarative_styling_specification,declarative styling>> and application-specific use cases such as populating a UI or issuing a REST API request. In the binary glTF section, each vertex has an numeric batchId attribute in the integer range [0, number of models in the batch - 1]. The batchId indicates the model to which the vertex belongs. This allows models to be batched together and still be identifiable.
@@ -128,26 +128,26 @@ The batchId parameter is specified in a glTF mesh https://github.com/KhronosGrou
 
 [source,ruby]
 ----
-"primitives": [ 
-  { 
-    "attributes":{ 
-      "_BATCHID":0 
-    } 
-  } 
+"primitives": [
+  {
+    "attributes":{
+      "_BATCHID":0
+    }
+  }
 ]
 
-{ 
-  "accessors":[ 
-    { 
-      "bufferView":1, 
-      "byteOffset":0, 
-      "componentType":5125, 
-      "count":4860, 
-      "max":[2], 
-      "min":[0], 
-      "type":"SCALAR" 
-    } 
-  ] 
+{
+  "accessors":[
+    {
+      "bufferView":1,
+      "byteOffset":0,
+      "componentType":5125,
+      "count":4860,
+      "max":[2],
+      "min":[0],
+      "type":"SCALAR"
+    }
+  ]
 }
 ----
 
@@ -202,7 +202,7 @@ A set of Batched 3D Model semantics that contain additional information about fe
 Additional properties are allowed.
 
 * *Type of each property*: <<_Property_2,Property>>
- 
+
 [[batched3dmodelfeaturetable_extensions]]
 [level=7]
 ====== Batched3DModelFeatureTable.extensions
@@ -226,7 +226,7 @@ Application-specific data.
 
 * *Required*: No
 
- 
+
 [[batched3dmodelfeaturetable_batch_length]]
 [level=7]
 ====== Batched3DModelFeatureTable.BATCH_LENGTH
@@ -265,7 +265,7 @@ An object defining the reference to a section of the binary body of the features
 Additional properties are allowed.
 
 [level=7]
-====== BinaryBodyReference.byteOffset 
+====== BinaryBodyReference.byteOffset
 
 The offset into the buffer in bytes.
 
@@ -352,7 +352,7 @@ The body section immediately follows the header section and is composed of three
 
 ==== Feature Table
 
-The Feature Table contains values for i3dm semantics used to create instanced models. 
+The Feature Table contains values for i3dm semantics used to create instanced models.
 More information is available in the <<_Feature_Table,Feature Table specification>>.
 
 [[_Semantics]]
@@ -362,15 +362,15 @@ More information is available in the <<_Feature_Table,Feature Table specificatio
 [[instance-semantics]]
 ====== Instance semantics
 
-These semantics map to an array of feature values that are used to create instances. The length of these arrays must be the same for all semantics and is equal to the number of instances. 
+These semantics map to an array of feature values that are used to create instances. The length of these arrays must be the same for all semantics and is equal to the number of instances.
 
 The value for each instance semantic must be a reference to the Feature Table binary body; they cannot be embedded in the Feature Table JSON header.
 
-If a semantic has a dependency on another semantic, that semantic must be defined. 
+If a semantic has a dependency on another semantic, that semantic must be defined.
 
-If both SCALE and SCALE_NON_UNIFORM are defined for an instance, both scaling operations will be applied. 
+If both SCALE and SCALE_NON_UNIFORM are defined for an instance, both scaling operations will be applied.
 
-If both POSITION and POSITION_QUANTIZED are defined for an instance, the higher precision POSITION will be used. 
+If both POSITION and POSITION_QUANTIZED are defined for an instance, the higher precision POSITION will be used.
 
 If NORMAL_UP, NORMAL_RIGHT, NORMAL_UP_OCT32P, and NORMAL_RIGHT_OCT32P are defined for an instance, the higher precision NORMAL_UP and NORMAL_RIGHT will be used.
 
@@ -413,9 +413,9 @@ Examples using these semantics can be found in the <<examples,examples section>>
 [[instance-orientation]]
 ===== Instance orientation
 
-An instance's orientation is defined by an orthonormal basis created by an up and right vector. The orientation will be transformed by the <<_Tile_transforms,Tile transform>>.
+An instance's orientation is defined by an orthonormal basis created by an up and right vector. The orientation will be transformed by the <<tile-transform,Tile transform>>.
 
-The x vector in the standard basis maps to the right vector in the transformed basis, and the y vector maps to the up vector. 
+The x vector in the standard basis maps to the right vector in the transformed basis, and the y vector maps to the up vector.
 The z vector would map to a forward vector, but it is omitted because it will always be the cross product of right and up.
 
 [[fig26]]
@@ -430,7 +430,7 @@ image::027.png["",417,325]
 [[oct-encoded-normal-vectors]]
 ====== Oct-encoded normal vectors
 
-If NORMAL_UP and NORMAL_RIGHT are not defined for an instance, its orientation may be stored as oct-encoded normals in NORMAL_UP_OCT32P and NORMAL_RIGHT_OCT32P. 
+If NORMAL_UP and NORMAL_RIGHT are not defined for an instance, its orientation may be stored as oct-encoded normals in NORMAL_UP_OCT32P and NORMAL_RIGHT_OCT32P.
 
 These define up and right using the oct-encoding described in http://jcgt.org/published/0003/02/01/[_A Survey of Efficient Representations of Independent Unit Vectors_]. Oct-encoded values are stored in unsigned, unnormalized range ([0, 65535]) and then mapped to a signed normalized range ([-1.0, 1.0]) at runtime.
 
@@ -439,7 +439,7 @@ An implementation for encoding and decoding these unit vectors can be found in C
 [[default-orientation]]
 ====== Default orientation
 
-If NORMAL_UP and NORMAL_RIGHT or NORMAL_UP_OCT32P and NORMAL_RIGHT_OCT32P are not present, the instance will not have a custom orientation. If EAST_NORTH_UP is true, the instance is assumed to be on the WGS84 ellipsoid and its orientation will default to the east/north/up reference frame at its cartographic position. 
+If NORMAL_UP and NORMAL_RIGHT or NORMAL_UP_OCT32P and NORMAL_RIGHT_OCT32P are not present, the instance will not have a custom orientation. If EAST_NORTH_UP is true, the instance is assumed to be on the WGS84 ellipsoid and its orientation will default to the east/north/up reference frame at its cartographic position.
 
 This is suitable for instanced models such as trees whose orientation is always facing up from their position on the ellipsoid's surface.
 
@@ -496,18 +496,18 @@ In this minimal example, we place four instances on the corners of a unit length
 
 [source,java]
 ----
-var featureTableJSON = { 
-  INSTANCES_LENGTH :4, 
-  POSITION :{ 
-    byteOffset :0 
-  } 
-}; 
+var featureTableJSON = {
+  INSTANCES_LENGTH :4,
+  POSITION :{
+    byteOffset :0
+  }
+};
 
-var featureTableBinary = new Buffer(new Float32Array([ 
-  0.0,0.0,0.0, 
-  1.0,0.0,0.0, 
-  0.0,0.0,1.0, 
-  1.0,0.0,1.0 
+var featureTableBinary = new Buffer(new Float32Array([
+  0.0,0.0,0.0,
+  1.0,0.0,0.0,
+  0.0,0.0,1.0,
+  1.0,0.0,1.0
 ]).buffer);
 ----
 
@@ -520,41 +520,41 @@ and they will be placed on the corners of a quantized volume that spans from -25
 
 [source,java]
 ----
-var featureTableJSON = { 
-  INSTANCES_LENGTH : 4, 
-  QUANTIZED_VOLUME_OFFSET : [-250.0,0.0,-250.0], 
-  QUANTIZED_VOLUME_SCALE : [500.0,0.0,500.0], 
-  POSITION_QUANTIZED : { 
-    byteOffset : 0 
-  }, 
-  NORMAL_UP_OCT32P : { 
-    byteOffset : 24 
-  }, 
-  NORMAL_RIGHT_OCT32P : { 
-    byteOffset : 40 
-  } 
-}; 
+var featureTableJSON = {
+  INSTANCES_LENGTH : 4,
+  QUANTIZED_VOLUME_OFFSET : [-250.0,0.0,-250.0],
+  QUANTIZED_VOLUME_SCALE : [500.0,0.0,500.0],
+  POSITION_QUANTIZED : {
+    byteOffset : 0
+  },
+  NORMAL_UP_OCT32P : {
+    byteOffset : 24
+  },
+  NORMAL_RIGHT_OCT32P : {
+    byteOffset : 40
+  }
+};
 
-var positionQuantizedBinary = new Buffer(new Uint16Array([ 
-  0,0,0, 
-  65535,0,0, 
-  0,0,65535, 
-  65535,0,65535 
-]).buffer); 
+var positionQuantizedBinary = new Buffer(new Uint16Array([
+  0,0,0,
+  65535,0,0,
+  0,0,65535,
+  65535,0,65535
+]).buffer);
 
-var normalUpOct32PBinary = new Buffer(new Uint16Array([ 
-  32768,65535, 
-  32768,65535, 
-  32768,65535, 
-  32768,65535 
-]).buffer); 
+var normalUpOct32PBinary = new Buffer(new Uint16Array([
+  32768,65535,
+  32768,65535,
+  32768,65535,
+  32768,65535
+]).buffer);
 
-var normalRightOct32PBinary = new Buffer(new Uint16Array([ 
-  65535,32768, 
-  65535,32768, 
-  65535,32768, 
-  65535,32768 
-]).buffer); 
+var normalRightOct32PBinary = new Buffer(new Uint16Array([
+  65535,32768,
+  65535,32768,
+  65535,32768,
+  65535,32768
+]).buffer);
 
 var featureTableBinary = Buffer.concat([positionQuantizedBinary, normalUpOct32PBinary, normalRightOct32PBinary]);
 ----
@@ -736,7 +736,7 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 
 
 [[instanced3dmodelfeaturetable.instances_l]]
-====== Instanced3DModelFeatureTable.INSTANCES_LENGTH 
+====== Instanced3DModelFeatureTable.INSTANCES_LENGTH
 
 A <<_GlobalPropertyScalar_1,GlobalPropertyScalar>> object defining a numeric property for all features. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
@@ -862,11 +862,11 @@ The body section immediately follows the header section, and is composed of a Fe
 Contains per-tile and per-point values that define where and how to render points. +
 More information is available in the <<_Feature_Table,Feature Table>> specification.
 
- 
+
 [[_Semantics_1]]
 ===== Semantics
 
- 
+
 [[point-semantics]]
 ====== Point semantics
 
@@ -998,18 +998,18 @@ This minimal example has four points on the corners of a unit length square:
 
 [source,java]
 ----
-var featureTableJSON = { 
-  POINTS_LENGTH : 4, 
-  POSITION : { 
-    byteOffset : 0 
-  } 
-}; 
- 
-var featureTableBinary = new Buffer(new Float32Array([ 
-  0.0,0.0,0.0, 
-  1.0,0.0,0.0, 
+var featureTableJSON = {
+  POINTS_LENGTH : 4,
+  POSITION : {
+    byteOffset : 0
+  }
+};
+
+var featureTableBinary = new Buffer(new Float32Array([
+  0.0,0.0,0.0,
+  1.0,0.0,0.0,
   0.0,0.0,1.0,
-  1.0,0.0,1.0 
+  1.0,0.0,1.0
 ]).buffer);
 ----
 
@@ -1021,30 +1021,30 @@ The following example has four points (red, green, blue, and yellow) above the g
 
 [source,java]
 ----
-var featureTableJSON = { 
-  POINTS_LENGTH : 4, 
-  RTC_CENTER : [1215013.8,-4736316.7,4081608.4], 
-  POSITION : { 
-    byteOffset : 0 
-  }, 
-  RGB : { 
-    byteOffset : 48 
-  } 
-}; 
+var featureTableJSON = {
+  POINTS_LENGTH : 4,
+  RTC_CENTER : [1215013.8,-4736316.7,4081608.4],
+  POSITION : {
+    byteOffset : 0
+  },
+  RGB : {
+    byteOffset : 48
+  }
+};
 
-var positionBinary = new Buffer(new Float32Array([ 
-  0.0,0.0,0.0, 
-  1.0,0.0,0.0, 
-  0.0,0.0,1.0, 
-  1.0,0.0,1.0 
-]).buffer); 
+var positionBinary = new Buffer(new Float32Array([
+  0.0,0.0,0.0,
+  1.0,0.0,0.0,
+  0.0,0.0,1.0,
+  1.0,0.0,1.0
+]).buffer);
 
-var colorBinary = new Buffer(new Uint8Array([ 
-  255,0,0, 
-  0,255,0, 
-  0,0,255, 
-  255,255,0, 
-]).buffer); 
+var colorBinary = new Buffer(new Uint8Array([
+  255,0,0,
+  0,255,0,
+  0,0,255,
+  255,255,0,
+]).buffer);
 
 var featureTableBinary =Buffer.concat([positionBinary, colorBinary]);
 ----
@@ -1056,31 +1056,31 @@ In this example, the four points will have normals pointing up [0.0, 1.0, 0.0] i
 
 [source,java]
 ----
-var featureTableJSON = { 
-  POINTS_LENGTH : 4, 
-  QUANTIZED_VOLUME_OFFSET : [-250.0,0.0,-250.0], 
-  QUANTIZED_VOLUME_SCALE : [500.0,0.0,500.0], 
-  POSITION_QUANTIZED : { 
-    byteOffset : 0 
-  }, 
-  NORMAL_OCT16P : { 
-    byteOffset : 24 
-  } 
-}; 
+var featureTableJSON = {
+  POINTS_LENGTH : 4,
+  QUANTIZED_VOLUME_OFFSET : [-250.0,0.0,-250.0],
+  QUANTIZED_VOLUME_SCALE : [500.0,0.0,500.0],
+  POSITION_QUANTIZED : {
+    byteOffset : 0
+  },
+  NORMAL_OCT16P : {
+    byteOffset : 24
+  }
+};
 
-var positionQuantizedBinary = new Buffer(new Uint16Array([ 
-  0,0,0, 
-  65535,0,0, 
-  0,0,65535, 
-  65535,0,65535 
-]).buffer); 
+var positionQuantizedBinary = new Buffer(new Uint16Array([
+  0,0,0,
+  65535,0,0,
+  0,0,65535,
+  65535,0,65535
+]).buffer);
 
-var normalOct16PBinary = new Buffer(new Uint8Array([ 
-  128,255, 
-  128,255, 
-  128,255, 
-  128,255 
-]).buffer); 
+var normalOct16PBinary = new Buffer(new Uint8Array([
+  128,255,
+  128,255,
+  128,255,
+  128,255
+]).buffer);
 
 var featureTableBinary = Buffer.concat([positionQuantizedBinary, normalOct16PBinary]);
 ----
@@ -1092,36 +1092,36 @@ In this example, the first two points have a batchId of 0, and the next two poin
 
 [source,java]
 ----
-var featureTableJSON = { 
-  POINTS_LENGTH : 4, 
-  BATCH_LENGTH : 2, 
-  POSITION : { 
-    byteOffset : 0 
-  }, 
-  BATCH_ID : { 
-    byteOffset : 48, 
-    componentType : "UNSIGNED_BYTE" 
-  } 
-}; 
+var featureTableJSON = {
+  POINTS_LENGTH : 4,
+  BATCH_LENGTH : 2,
+  POSITION : {
+    byteOffset : 0
+  },
+  BATCH_ID : {
+    byteOffset : 48,
+    componentType : "UNSIGNED_BYTE"
+  }
+};
 
-var positionBinary = new Buffer(new Float32Array([ 
-  0.0,0.0,0.0, 
-  1.0,0.0,0.0, 
-  0.0,0.0,1.0, 
-  1.0,0.0,1.0 
-]).buffer); 
+var positionBinary = new Buffer(new Float32Array([
+  0.0,0.0,0.0,
+  1.0,0.0,0.0,
+  0.0,0.0,1.0,
+  1.0,0.0,1.0
+]).buffer);
 
-var batchIdBinary = new Buffer(new Uint8Array([ 
-  0, 
-  0, 
-  1, 
-  1 
-]).buffer); 
+var batchIdBinary = new Buffer(new Uint8Array([
+  0,
+  0,
+  1,
+  1
+]).buffer);
 
-var featureTableBinary = Buffer.concat([positionBinary, batchIdBinary]); 
+var featureTableBinary = Buffer.concat([positionBinary, batchIdBinary]);
 
-var batchTableJSON = { 
-  names : ['object1', 'object2'] 
+var batchTableJSON = {
+  names : ['object1', 'object2']
 };
 ----
 
@@ -1133,22 +1133,22 @@ In this example, each of the 4 points will have metadata stored in the Batch Tab
 
 [source,java]
 ----
-var featureTableJSON = { 
-  POINTS_LENGTH : 4, 
+var featureTableJSON = {
+  POINTS_LENGTH : 4,
   POSITION : {
-    byteOffset : 0 
-  } 
-}; 
+    byteOffset : 0
+  }
+};
 
-var featureTableBinary = new Buffer(new Float32Array([ 
-  0.0,0.0,0.0, 
-  1.0,0.0,0.0, 
-  0.0,0.0,1.0, 
-  1.0,0.0,1.0 
-]).buffer); 
+var featureTableBinary = new Buffer(new Float32Array([
+  0.0,0.0,0.0,
+  1.0,0.0,0.0,
+  0.0,0.0,1.0,
+  1.0,0.0,1.0
+]).buffer);
 
-var batchTableJSON = { 
-  names : ['point1','point2','point3','point4'] 
+var batchTableJSON = {
+  names : ['point1','point2','point3','point4']
 };
 ----
 
@@ -1255,7 +1255,7 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 
 * *Required*: No
 
- 
+
 [[pointcloudfeaturetable.rgba]]
 ====== PointCloudFeatureTable.RGBA
 
@@ -1305,7 +1305,7 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 
 * *Required*: No
 
- 
+
 [[pointcloudfeaturetable.batch_id]]
 ====== PointCloudFeatureTable.BATCH_ID
 
@@ -1317,7 +1317,7 @@ A <<_BinaryBodyReference,BinaryBodyReference>> object defining the reference to 
 
 
 [[pointcloudfeaturetable.points_length]]
-====== PointCloudFeatureTable.POINTS_LENGTH 
+====== PointCloudFeatureTable.POINTS_LENGTH
 
 A <<_GlobalPropertyScalar,GlobalPropertyScalar>> object defining a numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
@@ -1408,8 +1408,8 @@ The offset into the buffer in bytes.
 
 An object defining a global 3-component numeric property values for all features.
 
- 
-[[_GlobalPropertyCartesian4]][[globalpropertycartesian4]]
+
+[[_GlobalPropertyCartesian4]]
 ===== GlobalPropertyCartesian4
 
 An object defining a global 4-component numeric property values for all features.
@@ -1461,7 +1461,7 @@ The 16-byte header section contains the following fields:
 |===
 | Field name | Data type | Description
 
-| magic | 4-byte ANSI string | "cmpt". This can be used to identify the content as a Composite tile.
+| magic | 4-byte ANSI string | `cmpt`. This can be used to identify the content as a Composite tile.
 
 | version | uint32 | The version of the Composite format. It is currently 1.
 | byteLength | uint32 | The length of the entire Composite tile, including this header and each inner tile, in bytes.
@@ -1496,7 +1496,7 @@ Refer to the spec for each tile format for more details.
 
 ==== File extension and MIME type
 
-Composite tiles use the .cmpt extension and application/octet-stream MIME type.
+Composite tiles use the `.cmpt` extension and application/octet-stream MIME type.
 
 An explicit file extension is optional. Valid implementations may ignore it and identify a content's format by the magic field in its header.
 
@@ -1507,7 +1507,7 @@ _This section is non-normative_
 
 * https://github.com/Geopipe/gltf2glb[Python packcmpt tool in gltf2glb toolset] contains code for combining one or more _Batched 3D Model_ or _Instanced 3D Model_ tiles into a single Composite tile file.
 
-* Code for reading the header can be found in 
-https://github.com/AnalyticalGraphicsInc/cesium/blob/master/Source/Scene/Composite3DTileContent.js[Composite3DTileContent.js] 
+* Code for reading the header can be found in
+https://github.com/AnalyticalGraphicsInc/cesium/blob/master/Source/Scene/Composite3DTileContent.js[Composite3DTileContent.js]
 +
 in the Cesium implementation of 3D Tiles.

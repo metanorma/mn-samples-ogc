@@ -86,7 +86,7 @@ All angles are in radians.
 
 3D Tiles uses a right-handed Cartesian coordinate system; that is, the cross product of _x_ and _y_ yields _z_. 3D Tiles defines the _z_ axis as up for local Cartesian coordinate systems. A tileset's global coordinate system will often be in a http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf[WGS 84] earth-centered, earth-fixed (ECEF) reference frame ( http://spatialreference.org/ref/epsg/4979/[EPSG 4979]), but it doesn't have to be, e.g., a power plant may be defined fully in its local coordinate system for use with a modeling tool without a geospatial context.
 
-An additional <<_Tile_transforms,tile transform>> may be applied to transform a tile's local coordinate system to the parent tile's coordinate system.
+An additional <<tile-transform,tile transform>> may be applied to transform a tile's local coordinate system to the parent tile's coordinate system.
 
 The <<_Region,Region>> bounding volume specifies bounds using a geographic coordinate system (latitude, longitude, height), specifically http://spatialreference.org/ref/epsg/4979/[EPSG 4979].
 
@@ -290,7 +290,7 @@ For more on request volumes, see the https://github.com/AnalyticalGraphicsInc/3d
 [[_Transforms]]
 ==== Transforms
 
-[[_Tile_transforms]]
+[[tile-transform]]
 ===== Tile transforms
 
 To support local coordinate systems—e.g., so a building tileset inside a city tileset can be defined in its own coordinate system, and a point cloud tileset inside the building could, again, be defined in its own coordinate system—each tile has an optional transform property.
@@ -365,7 +365,7 @@ More broadly the order of transformations is:
 
 * <<_Instanced_3D_Model,Instanced 3D Model>> Feature Table defines per-instance position, normals, and scales. These are used to create per-instance 4x4 affine transform matrices that are applied to each instance.
 
-. <<_Tile_transforms,Tile transform>>
+. <<tile-transform,Tile transform>>
 
 *Implementation note:* when working with source data that is inherently _z_-up, such as data in WGS 84 coordinates or in a local _z_-up coordinate system, a common workflow is:
 
