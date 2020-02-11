@@ -1,0 +1,33 @@
+= OGC CDB Version 1.1 Release Notes
+:edition: 1.1
+:doctype: release-notes
+:committee: technical
+:workingGroup:
+:fullname: Carl Reed, PhD
+:role: editor
+:docnumber: 18-016r1
+:external-id: http://www.opengis.net/doc/IS/CDB-notes/1.1
+:received-date: 2018-08-02
+:issued-date: 2018-08-27
+:published-date: 2018-12-19
+:copyright-year: 2018
+:mn-document-class: ogc
+:status: published
+:language: en
+:docfile: document.adoc
+:keywords: ogcdoc, OGC document, CDB, Common Data Base, simulation, synthetic environment, version 1.1
+:submitting-organizations: OGC CDB Standards Working Group
+
+
+include::sections/00-front-material.adoc[]
+include::sections/01-volume1.adoc[]
+include::sections/02-volume2.adoc[]
+include::sections/03-volume3.adoc[]
+include::sections/04-volume4.adoc[]
+include::sections/05-volume5.adoc[]
+include::sections/06-volume6.adoc[]
+include::sections/07-volume7.adoc[]
+include::sections/08-volume8.adoc[]
+include::sections/09-volume10.adoc[]
+include::sections/10-volume12.adoc[]
+

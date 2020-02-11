@@ -1,0 +1,11 @@
+
+== Revisions to Volume 10: CDB Implementation Guidance
+
+=== General
+Comments (artifacts) for version 1.0 were removed.
+
+=== Clause 4 Terms and Definitions
+The correct URL to the CDB standard was inserted. Additional abbreviations were added.
+
+=== Clause 5: Platform Recommendations
+Correct grammatical errors.

@@ -1,0 +1,14 @@
+
+== Revisions to Volume 7 OGC CDB Data Model Guidance
+Note: Volume 7 was Annex A in the original CDB Specification v 3.2 submission to the OGC.
+
+Minor changes at various places to make sure the reader knows the difference between CDB 3.2 specification and OGC Version 1.1 standard.
+
+=== 6.5.3 Access of a Model Interior
+This section has minor changes to make wording on the use of OpenFlightgeneric and in line with the changes in CDB Volume 1.
+
+=== Section 6.13.1 Linear Feature Radar Simulation Example
+This section has minor changes to make wording on the use of ShapeFiles generic and consistent with the changes in CDB Volume 1.
+
+=== New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation
+After CDB was submitted to the OGC, the CDB user community added a new Annex A sub-clause to clarify rules for vector priority in the LoD/Tile structure. This CDB user community approved clause is now incorporated in Volume 7 of the OGC CDB standard, version 1.1.

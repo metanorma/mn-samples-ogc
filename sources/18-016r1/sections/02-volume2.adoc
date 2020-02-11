@@ -1,0 +1,8 @@
+
+== Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes
+
+=== Annex Q: Table of Dataset Codes
+Updated to reflect the relationship between the community CDB 3.2 version and the OGC standard.
+
+=== Annex R: Derived Datasets within the CDB
+Some grammatical errors were corrected.

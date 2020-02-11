@@ -1,0 +1,11 @@
+
+== Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP
+
+=== General
+All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.
+
+=== Clause 5.1 Identifiers
+URI base updated to reflect version 1.1.
+
+=== Requirement Class Metadata
+This requirement class was updated to consistent with Requirement 1 (/req/core/openflight/headercrs).

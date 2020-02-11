@@ -1,0 +1,3 @@
+
+== Revisions to Volume 3 Terms and Definitions
+Definitions were added for: depth, elevation, grid, grid point, height, metadata elements, raster, regular grid, and vector data. The definitions for dataset and metadata were slightly revised
