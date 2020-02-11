@@ -1,0 +1,8 @@
+
+== Revisions to Volume 5: Radar Cross-Sections
+
+=== General
+All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.
+
+=== Clause 4 Terms and Definitions
+The correct URL to the CDB standard was inserted.

@@ -1,0 +1,5 @@
+
+== Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance
+
+=== Clause 4 Terms and Definitions
+The correct URL to the CDB standard was inserted.
