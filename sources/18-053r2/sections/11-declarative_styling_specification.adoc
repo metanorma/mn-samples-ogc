@@ -15,15 +15,15 @@ The following example assigns a color based on building height.
 
 [source,ruby]
 ----
-{ 
-  "show" : "${Area} > 0", 
-  "color":{ 
-    "conditions":[ 
-      ["${Height} < 60","color('#13293D')"], 
-      ["${Height} < 120","color('#1B98E0')"], 
-      ["true","color('#E8F1F2', 0.5)"] 
-    ] 
-  } 
+{
+  "show" : "${Area} > 0",
+  "color":{
+    "conditions":[
+      ["${Height} < 60","color('#13293D')"],
+      ["${Height} < 120","color('#1B98E0')"],
+      ["true","color('#E8F1F2', 0.5)"]
+    ]
+  }
 }
 ----
 
@@ -39,9 +39,9 @@ The following style assigns the default show and color properties to each featur
 
 [source,ruby]
 ----
-{ 
-  "show" : "true", 
-  "color" : "color('#ffffff')" 
+{
+  "show" : "true",
+  "color" : "color('#ffffff')"
 }
 ----
 
@@ -49,8 +49,8 @@ Instead of showing all features, show can be an expression dependent on a featur
 
 [source,ruby]
 ----
-{ 
-  "show" : "${ZipCode} === '19341'" 
+{
+  "show" : "${ZipCode} === '19341'"
 }
 ----
 
@@ -58,8 +58,8 @@ show can also be used for more complex queries; for example, here a compound con
 
 [source,ruby]
 ----
-{ 
-  "show" : "(regExp('^Chest').test(${County})) && (${YearBuilt} >= 1970)" 
+{
+  "show" : "(regExp('^Chest').test(${County})) && (${YearBuilt} >= 1970)"
 }
 ----
 
@@ -67,8 +67,8 @@ Colors can also be defined by expressions dependent on a feature's properties. F
 
 [source,ruby]
 ----
-{ 
-  "color" : "(${Temperature} > 90) ? color('red') : color('white')" 
+{
+  "color" : "(${Temperature} > 90) ? color('red') : color('white')"
 }
 ----
 
@@ -77,7 +77,7 @@ The color's alpha component defines the feature's opacity. For example, the foll
 [source,ruby]
 ----
 {
-  "color" : "rgba(${red}, ${green}, ${blue}, (${volume} > 100 ? 0.5 : 1.0))" 
+  "color" : "rgba(${red}, ${green}, ${blue}, (${volume} > 100 ? 0.5 : 1.0))"
 }
 ----
 
@@ -93,12 +93,12 @@ For example, the following expression maps an ID property to colors. Conditions 
 ----
 {
   "color" : {
-    "conditions" : [ 
-      ["${id} === '1'","color('#FF0000')"], 
-      ["${id} === '2'","color('#00FF00')"], 
-      ["true","color('#FFFFFF')"] 
+    "conditions" : [
+      ["${id} === '1'","color('#FF0000')"],
+      ["${id} === '2'","color('#00FF00')"],
+      ["true","color('#FFFFFF')"]
     ]
-  } 
+  }
 }
 ----
 
@@ -107,14 +107,14 @@ The next example shows how to use conditions to create a color ramp using interv
 [source,ruby]
 ----
 "color" : {
-  "conditions" : [ 
-    ["(${Height} >= 1.0) && (${Height} < 10.0)","color('#FF00FF')"], 
-    ["(${Height} >= 10.0) && (${Height} < 30.0)","color('#FF0000')"], 
-    ["(${Height} >= 30.0) && (${Height} < 50.0)","color('#FFFF00')"], 
-    ["(${Height} >= 50.0) && (${Height} < 70.0)","color('#00FF00')"], 
-    ["(${Height} >= 70.0) && (${Height} < 100.0)","color('#00FFFF')"], 
-    ["(${Height} >= 100.0)","color('#0000FF')"] 
-  ] 
+  "conditions" : [
+    ["(${Height} >= 1.0) && (${Height} < 10.0)","color('#FF00FF')"],
+    ["(${Height} >= 10.0) && (${Height} < 30.0)","color('#FF0000')"],
+    ["(${Height} >= 30.0) && (${Height} < 50.0)","color('#FFFF00')"],
+    ["(${Height} >= 50.0) && (${Height} < 70.0)","color('#00FF00')"],
+    ["(${Height} >= 70.0) && (${Height} < 100.0)","color('#00FFFF')"],
+    ["(${Height} >= 100.0)","color('#0000FF')"]
+  ]
 }
 ----
 
@@ -123,14 +123,14 @@ Since conditions are evaluated in order, the above can be written more concisely
 [source,ruby]
 ----
 "color": {
-  "conditions": [ 
-    ["(${Height} >= 100.0)","color('#0000FF')"], 
-    ["(${Height} >= 70.0)","color('#00FFFF')"], 
-    ["(${Height} >= 50.0)","color('#00FF00')"], 
-    ["(${Height} >= 30.0)","color('#FFFF00')"], 
-    ["(${Height} >= 10.0)","color('#FF0000')"], 
-    ["(${Height} >= 1.0)","color('#FF00FF')"] 
-  ] 
+  "conditions": [
+    ["(${Height} >= 100.0)","color('#0000FF')"],
+    ["(${Height} >= 70.0)","color('#00FFFF')"],
+    ["(${Height} >= 50.0)","color('#00FF00')"],
+    ["(${Height} >= 30.0)","color('#FFFF00')"],
+    ["(${Height} >= 10.0)","color('#FF0000')"],
+    ["(${Height} >= 1.0)","color('#FF00FF')"]
+  ]
 }
 ----
 
@@ -144,17 +144,17 @@ Commonly used expressions may be stored in a defines object with a variable name
 ----
 {
   "defines" : {
-    "NewHeight" : "clamp((${Height} - 0.5) / 2.0, 1.0, 255.0)", 
-    "HeightColor" : "rgb(${Height}, ${Height}, ${Height})" 
-  }, 
+    "NewHeight" : "clamp((${Height} - 0.5) / 2.0, 1.0, 255.0)",
+    "HeightColor" : "rgb(${Height}, ${Height}, ${Height})"
+  },
   "color" : {
-    "conditions" : [ 
-      ["(${NewHeight} >= 100.0)","color('#0000FF') * ${HeightColor}"], 
-      ["(${NewHeight} >= 50.0)","color('#00FF00') * ${HeightColor}"], 
-      ["(${NewHeight} >= 1.0)","color('#FF0000') * ${HeightColor}"] 
-    ] 
-  }, 
-  "show" : "${NewHeight} < 200.0" 
+    "conditions" : [
+      ["(${NewHeight} >= 100.0)","color('#0000FF') * ${HeightColor}"],
+      ["(${NewHeight} >= 50.0)","color('#00FF00') * ${HeightColor}"],
+      ["(${NewHeight} >= 1.0)","color('#FF0000') * ${HeightColor}"]
+    ]
+  },
+  "show" : "${NewHeight} < 200.0"
 }
 ----
 
@@ -164,14 +164,14 @@ A define expression may not reference other defines; however, it may reference f
 ----
 {
   "defines" : {
-    "Height" : "${Height}/2.0}", 
-  }, 
+    "Height" : "${Height}/2.0}",
+  },
   "color" : {
-    "conditions" : [ 
-      ["(${Height} >= 100.0)","color('#0000FF')"], 
-      ["(${Height} >= 1.0)","color('#FF0000')"] 
-    ] 
-  } 
+    "conditions" : [
+      ["(${Height} >= 100.0)","color('#0000FF')"],
+      ["(${Height} >= 1.0)","color('#FF0000')"]
+    ]
+  }
 }
 ----
 
@@ -195,9 +195,9 @@ A meta property expression can evaluate to any type. For example:
 ----
 {
   "meta" : {
-    "featureColor" : "rgb(${red}, ${green}, ${blue})", 
-    "featureVolume" : "${height} * ${width} * ${depth}" 
-  } 
+    "featureColor" : "rgb(${red}, ${green}, ${blue})",
+    "featureVolume" : "${height} * ${width} * ${depth}"
+  }
 }
 ----
 
@@ -241,7 +241,7 @@ Logical || and && implement short-circuiting; true || expression does not evalua
 
 Similarly, true ? leftExpression : rightExpression only executes the left expression, and false ? leftExpression : rightExpression only executes the right expression.
 
- 
+
 [[types]]
 ==== Types
 
@@ -359,7 +359,7 @@ The styling language includes 2, 3, and 4 component floating-point vector types:
 
 * vec4(x : Number, yzw : vec3) - initialize with a vec3 and number
 
- 
+
 [[vector-usage]]
 ====== Vector usage
 
@@ -494,11 +494,11 @@ For example:
 [source,ruby]
 ----
 {
-  "Name" : "Building 1" 
+  "Name" : "Building 1"
 }
 
-regExp('a').test('abc') === true 
-regExp('a(.)', 'i').exec('Abc') === 'b' 
+regExp('a').test('abc') === true
+regExp('a(.)', 'i').exec('Abc') === 'b'
 regExp('Building\s(\d)').exec(${Name}) === '1'
 ----
 
@@ -514,10 +514,10 @@ For example, the following expressions all evaluate to true:
 
 [source,ruby]
 ----
-regExp('a') =~ 'abc' 
-'abc' =~ regExp('a') 
+regExp('a') =~ 'abc'
+'abc' =~ regExp('a')
 
-regExp('a') !~ 'bcd' 
+regExp('a') !~ 'bcd'
 'bcd' !~ regExp('a')
 ----
 
@@ -553,7 +553,7 @@ regExp('a') !~ 'bcd'
 
 ** Vector expressions of the same type
 
-** Mix of number expression and vector expression, e.g. 3 * vec3(1.0) and vec2(1.0) 
+** Mix of number expression and vector expression, e.g. 3 * vec3(1.0) and vec2(1.0)
 * 3
 
 * Binary operator / operates on the following expressions:
@@ -591,8 +591,8 @@ For example:
 
 [source,ruby]
 ----
-Boolean(1) === true 
-Number('1') === 1 
+Boolean(1) === true
+Number('1') === 1
 String(1) === '1'
 ----
 
@@ -634,7 +634,7 @@ vec2, vec3, vec4, and RegExp expressions are converted to strings using their to
 
 * RegExp('a') - "/a/"
 
- 
+
 [[constants]]
 ==== Constants
 
@@ -648,7 +648,7 @@ The mathematical constant PI, which represents a circle's circumference divided 
 [source,ruby]
 ----
 {
-  "show" : "cos(${Angle} + Math.PI) < 0" 
+  "show" : "cos(${Angle} + Math.PI) < 0"
 }
 ----
 
@@ -661,7 +661,7 @@ Euler's constant and the base of the natural logarithm, approximately 2.71828.
 [source,ruby]
 ----
 {
-  "color" : "color() * pow(Math.E / 2.0, ${Temperature})" 
+  "color" : "color() * pow(Math.E / 2.0, ${Temperature})"
 }
 ----
 
@@ -695,15 +695,15 @@ For example:
 [source,ruby]
 ----
 {
-  "enabled" : true, 
-  "description" : null, 
-  "order" : 1, 
-  "name" : "Feature name" 
+  "enabled" : true,
+  "description" : null,
+  "order" : 1,
+  "name" : "Feature name"
 }
 
-${enabled} === true 
-${description} === null 
-${order} === 1 
+${enabled} === true
+${description} === null
+${order} === 1
 ${name} === 'Feature name'
 ----
 
@@ -723,7 +723,7 @@ Variables can be used to construct colors or vectors. For example:
 
 [source,ruby]
 ----
-rgba(${red}, ${green}, ${blue}, ${alpha}) 
+rgba(${red}, ${green}, ${blue}, ${alpha})
 vec4(${temperature})
 ----
 
@@ -733,15 +733,15 @@ Dot or bracket notation is used to access feature subproperties. For example:
 ----
 {
   "address" : {
-  "street" : "Example street", 
-  "city" : "Example city" 
-  } 
+  "street" : "Example street",
+  "city" : "Example city"
+  }
 }
 
-${address.street} === `Example street` 
-${address['street']} === `Example street` 
+${address.street} === `Example street`
+${address['street']} === `Example street`
 
-${address.city} === `Example city` 
+${address.city} === `Example city`
 ${address['city']} === `Example city`
 ----
 
@@ -753,10 +753,10 @@ Top-level properties can be accessed with bracket notation by explicitly using t
 [source,ruby]
 ----
 {
-  "address.street" : "Maple Street", 
+  "address.street" : "Maple Street",
   "address" : {
   "street" : "Oak Street"
-} 
+}
 }
 
 ${address.street} === `Oak Street`
@@ -770,7 +770,7 @@ To access a feature named feature, use the variable ${feature}. This is equivale
 [source,ruby]
 ----
 {
-  "feature" : "building" 
+  "feature" : "building"
 }
 
 ${feature} === `building`
@@ -843,7 +843,7 @@ Returns the square root of x when x >= 0. Returns NaN when x < 0.
   "color" : {
     "conditions" : [
       ["${temperature} >= 0.5", "color('#00FFFF')"],
-      ["${temperature} >= 0.0", "color('#FF00FF')"] 
+      ["${temperature} >= 0.0", "color('#FF00FF')"]
     ]
   }
 }
@@ -1045,7 +1045,7 @@ Returns the nearest integer less than or equal to x.
 }
 ----
 
- 
+
 [[ceil]]
 ===== ceil
 
@@ -1366,7 +1366,7 @@ Computes the cross product of x and y. This function only accepts vec3 arguments
 }
 ----
 
- 
+
 [[notes]]
 ==== Notes
 
@@ -1390,38 +1390,38 @@ Implementations may clamp the evaluated pointSize to the system's supported poin
 
 Point Cloud styles may also reference semantics from the <<_Feature_Table,Feature Table>> including position, color, and normal to allow for more flexible styling of the source data.
 
-* ${POSITION} is a vec3 storing the xyz Cartesian coordinates of the point before the RTC_CENTER and tile transform are applied. When the positions are quantized, ${POSITION} refers to the position after the QUANTIZED_VOLUME_SCALE is applied, but before QUANTIZED_VOLUME_OFFSET is applied.
+* `${POSITION}` is a `vec3` storing the xyz Cartesian coordinates of the point before the `RTC_CENTER` and tile transform are applied. When the positions are quantized, `${POSITION}` refers to the position after the `QUANTIZED_VOLUME_SCALE` is applied, but before `QUANTIZED_VOLUME_OFFSET` is applied.
 
-* ${POSITION_ABSOLUTE} is a vec3 storing the xyz Cartesian coordinates of the point after the RTC_CENTER and tile transform are applied. When the positions are quantized, ${POSITION_ABSOLUTE} refers to the position after the QUANTIZED_VOLUME_SCALE, QUANTIZED_VOLUME_OFFSET, and tile transform are applied.
+* `${POSITION_ABSOLUTE}` is a `vec3` storing the xyz Cartesian coordinates of the point after the `RTC_CENTER` and tile transform are applied. When the positions are quantized, `${POSITION_ABSOLUTE}` refers to the position after the `QUANTIZED_VOLUME_SCALE`, `QUANTIZED_VOLUME_OFFSET`, and tile transform are applied.
 
-* ${COLOR} evaluates to a Color storing the rgba color of the point. When the Feature Table's color semantic is RGB or RGB565, ${COLOR}.alpha is 1.0. If no color semantic is defined, ${COLOR} evaluates to the application-specific default color.
+* `${COLOR}` evaluates to a Color storing the `rgba` color of the point. When the Feature Table's color semantic is RGB or RGB565, `${COLOR}.alpha` is `1.0`. If no color semantic is defined, `${COLOR}` evaluates to the application-specific default color.
 
-* ${NORMAL} is a vec3 storing the normal, in Cartesian coordinates, of the point before the tile transform is applied. When normals are oct-encoded, ${NORMAL} refers to the decoded normal. If no normal semantic is defined in the Feature Table, ${NORMAL} evaluates to undefined.
+* `${NORMAL}` is a `vec3` storing the normal, in Cartesian coordinates, of the point before the tile transform is applied. When normals are oct-encoded, `${NORMAL}` refers to the decoded normal. If no normal semantic is defined in the Feature Table, `${NORMAL}` evaluates to undefined.
 
 For example:
 
 [source,ruby]
 ----
 {
-  "color" : "${COLOR} * color('red')'", 
-  "show" : "${POSITION}.x > 0.5", 
-  "pointSize" : "${NORMAL}.x > 0 ? 2 : 1" 
+  "color" : "${COLOR} * color('red')'",
+  "show" : "${POSITION}.x > 0.5",
+  "pointSize" : "${NORMAL}.x > 0 ? 2 : 1"
 }
 ----
 
 *Implementation Note:* Point cloud styling engines may often use a shader (GLSL) implementation, however some features of the expression language are not possible in pure a GLSL implementation. Some of these features include:
 
-* Evaluation of isNan and isFinite (GLSL 2.0+ supports isnan and isinf for these functions respectively)
+* Evaluation of isNan and isFinite (GLSL 2.0+ supports `isnan` and `isinf` for these functions respectively)
 
-* The types null and undefined
+* The types `null` and `undefined`
 
-* Strings, including accessing object properties (color()['r']) and batch table values
+* Strings, including accessing object properties (`color()['r']`) and batch table values
 
 * Regular expressions
 
 * Arrays of lengths other than 2, 3, or 4
 
-* Mismatched type comparisons (e.g. 1.0 === false)
+* Mismatched type comparisons (e.g. `1.0 === false`)
 
 * Array index out of bounds
 
@@ -1429,7 +1429,7 @@ For example:
 [[file-extension-and-mime-type]]
 === File extension and MIME type
 
-Tileset styles use the .json extension and the application/json mime type.
+Tileset styles use the `.json` extension and the application/json mime type.
 
 === Property reference
 
