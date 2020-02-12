@@ -1,0 +1,20 @@
+
+[[annex-revision-history]]
+[appendix,obligation="informative"]
+== Revision history
+
+[%unnumbered]
+[cols="5"]
+|===
+|Date |Release |Author |Paragragh |Description
+
+|10/20/15 | |C. Reed |Many |First major "`scrub`"
+|11/20/15 | |C. Reed |Many |Prepare for first publication
+|2/20/2016 | |D Graham and C Reed |Many |Prepare for OAB Review
+|4/3/2016 | |D Graham | |Prepare for RFC
+|5/18/2016 | |C. Reed |Minor edits |Figures.
+|10/5/2016 |1.0 |C. Reed |Various edits |Preparation for publication as an official OGC BP
+|11/20/2016 |1.0 |C. Reed |Various |Edits for publication
+|1/21/2017 |1.0 |C. Reed | |Ready for publication -- add references
+|1/16/2018 |1.1 |C. Reed |Various |Minor corrections to typos.
+|===
