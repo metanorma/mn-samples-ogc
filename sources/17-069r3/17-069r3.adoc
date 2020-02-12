@@ -1,0 +1,54 @@
+= API - Features - Part 1: Core
+:doctype: other
+:language: en
+:status: approved
+:committee: technical
+:docnumber: 17-069r3
+:received-date: 2019-07-11
+:issued-date: 2019-09-09
+:published-date: 2019-10-14
+:external-id: http://www.opengis.net/doc/IS/ogcapi-features-1/1.0
+:fullname: Clemens Portele
+:fullname_2: Panagiotis (Peter) A. Vretanos
+:fullname_3: Charles Heazel
+:role: editor
+:keywords: 
+:submitting-organizations: 
+:docfile: 15-104r5.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+
+include::0-preface.adoc[]
+
+include::1-scope.adoc[]
+
+include::2-conformance.adoc[]
+
+include::3-references.adoc[]
+
+include::4-terms_and_definitions.adoc[]
+
+include::5-conventions.adoc[]
+
+include::6-overview.adoc[]
+
+include::7-requirements_class_core.adoc[]
+
+include::8-requirements_classes_for_encodings.adoc[]
+
+include::9-requirements_class_openapi30.adoc[]
+
+include::10-media_types.adoc[]
+
+include::11-security_considerations.adoc[]
+
+include::annexA.adoc[]
+
+include::annexB.adoc[]
+
+include::annexC.adoc[]
+
+include::annexD.adoc[]
