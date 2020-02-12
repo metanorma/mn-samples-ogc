@@ -1,0 +1,42 @@
+
+.Preface and Patent Call
+The initial CDB specification was developed under a competitive contract awarded to CAE to meet requirements of the United States Special Operations Command.
+
+The CDB standard is widely implemented by multiple, independent industry contractors for end-user simulation and mission rehearsal customers in many different countries over a period of ten years.
+
+The industry-maintained CDB model and data store structure has been discussed and demonstrated at OGC Technical Committee meetings beginning in September, 2013.
+
+At the suggestion of several attendees at the first CDB ad-hoc meeting in September, 2014, the current version of the existing CDB standard was slightly reformatted for consideration as an OGC Best Practice. The OGC Best Practice is the basis of work for this OGC standard.
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
+
+_Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation._
+
+[abstract]
+== Abstract
+The CDB standard defines a standardized model and structure for a single, "`versionable`", virtual representation of the earth. A CDB structured data store provides for a geospatial content and model definition repository that is plug-and-play interoperable between database authoring workstations. Moreover, a CDB structured data store can be used as a common online (or runtime) repository from which various simulator client-devices can simultaneously retrieve and modify, in real-time, relevant information to perform their respective runtime simulation tasks. In this case, a CDB is plug-and-play interoperable between CDB-compliant simulators. A CDB can be readily used by existing simulation client-devices (legacy Image Generators, Radar simulator, Computer Generated Forces, etc.) through a data publishing process that is performed on-demand in real-time.
+
+The application of CDB to future simulation architectures will significantly reduce runtime-source level and algorithmic correlation errors, while reducing development, update and configuration management timelines. With the addition of the High Level Architecture - -Federation Object Model (HLA/FOM) footnote:[https://en.wikipedia.org/wiki/High-level_architecture] and DIS protocols, the application of the CDB standard provides a Common Environment to which inter-connected simulators share a common view of the simulated environment.
+
+The CDB standard defines an open format for the storage, access and modification of a synthetic environment database. A *synthetic environment* is a _computer simulation_ that represents activities at a high level of realism, from simulation of theaters of war to factories and manufacturing processes. These environments may be created within a single computer or a vast distributed network connected by local and wide area networks and augmented by super-realistic special effects and accurate behavioral models. SE allows visualization of and immersion into the environment being simulated footnote:["Department of Defense Modeling and Simulation (M&S) Glossary", DoD 5000.59-M].
+
+This standard defines the organization and storage structure of a worldwide synthetic representation of the earth as well as the conventions necessary to support all of the subsystems of a full-mission simulator. The standard makes use of several commercial
+and simulation data formats endorsed by leaders of the database tools industry. A series of associated OGC Best Practice documents define rules and guidelines for data representation of real world features.
+
+The CDB synthetic environment is a representation of the natural environment including external features such as man-made structures and systems. A CDB data store can include terrain relief, terrain imagery, three-dimensional (3D) models of natural and manmade cultural features, 3D models of dynamic vehicles, the ocean surface, and the ocean bottom, including features (both natural and man-made) on the ocean floor. In addition, the data store can includes the specific attributes of the synthetic environment data as well as their relationships.
+
+The associated CDB Standard Best Practice documents provide a description of a data schema for Synthetic Environmental information (i.e. it merely describes data) for use in simulation. The CDB Standard provides a rigorous definition of the _semantic_ meaning for each dataset, each attribute and establishes the _structure/organization_ of that data as a schema comprised of a folder hierarchy and files with internal (industry-standard) formats.
+
+A CDB conformant data store contains datasets organized in layers, tiles and levels-ofdetail. Together, these datasets represent the features of a synthetic environment for the purposes of distributed simulation applications. The organization of the synthetic environmental data in a CDB compliant data store is specifically tailored for real-time applications.
+
+[.preface]
+== Submitters
+All questions regarding this submission should be directed to the editor or the submitters:
+
+[%unnumbered]
+|===
+|Name |Affiliation
+
+|Carl Reed |Carl Reed & Associates
+|David Graham |CAE Inc.
+|===
