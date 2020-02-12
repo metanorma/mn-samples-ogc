@@ -1,0 +1,305 @@
+
+== Requirements classes for encodings
+
+=== Overview
+
+This clause specifies four pre-defined requirements classes for encodings to be used by a OGC API Features implementation. These encodings are commonly used encodings for spatial data on the web:
+
+* <<rc_html,HTML>>
+
+* <<rc_geojson,GeoJSON>>
+
+* <<rc_gmlsf0,Geography Markup Language (GML), Simple Features Profile, Level 0>>
+
+* <<rc_gmlsf2,Geography Markup Language (GML), Simple Features Profile, Level 2>>
+
+None of these encodings are mandatory and an implementation of the <<rc_core,Core>> requirements class may also implement none of them but implement another encoding instead.
+
+The <<rc_core,Core>> requirements class includes recommendations to support <<rc_html,HTML>> and <<rc_geojson,GeoJSON>> as encodings, where practical. <<overview_cl6,Clause 6 (Overview)>> includes a discussion about recommended encodings.
+
+=== Requirements Class "HTML"
+
+Geographic information that is only accessible in formats like GeoJSON or GML has two issues:
+
+* The data is not discoverable using the most common mechanism for discovering information, that is the search engines of the Web;
+
+* The data can not be viewed directly in a browser - additional tools are required to view the data.
+
+Therefore, sharing data on the Web should include publication in HTML. To be consistent with the Web, it should be done in a way that enables users and search engines to access all data.
+
+This is discussed in detail in https://www.w3.org/TR/sdw-bp/#indexable-by-search-engines[Best Practice 2: Make your spatial data indexable by search engines [SDWBP]]. This standard therefore <<rc_html,recommends supporting HTML as an encoding>>.
+
+[[rc_html]]
+[%unnumbered]
+|===
+2+h| Requirements Class
+2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/req/html
+| Target type | Web API
+| Dependency | <<rc_core,Conformance Class "Core">>
+| Dependency | <<html5,HTML5>>
+| Dependency | <<schema,Schema.org>>
+|===
+
+[[req_html_definition]]
+[%unnumbered]
+|===
+^.^h| Requirement 35 h| /req/html/definition
+^.^| A | Every `200`-response of an operation of the server SHALL support the media type `text/html`.
+|===
+
+[[req_html_content]]
+[%unnumbered]
+|===
+^.^h| Requirement 36 h| /req/html/content
+^.^| A | Every `200`-response of the server with the media type `text/html` SHALL be a https://www.w3.org/TR/html5/[HTML 5 document] that includes the following information in the HTML body: +
+- all information identified in the schemas of the https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#responseObject[Response Object] in the HTML `<body>`, and +
+- all links in HTML `<a>` elements in the HTML `<body>`.
+|===
+
+[%unnumbered]
+|===
+^.^h| Recommendation 16 h| /rec/html/schema-org
+^.^| A | A `200`-response with the media type `text/html`, SHOULD include <<schema,Schema.org>> annotations.
+|===
+
+=== Requirements Class "GeoJSON"
+
+GeoJSON is a commonly used format that is simple to understand and well supported by tools and software libraries. Since most Web developers are comfortable with using a JSON-based format supporting GeoJSON is recommended, if the feature data can be represented in GeoJSON for the intended use.
+
+[[rc_geojson]]
+[%unnumbered]
+|===
+2+h| Requirements Class
+2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/req/geojson
+| Target type | Web API
+| Dependency | <<rc_core,Conformance Class "Core">>
+| Dependency | <<rfc7946,GeoJSON>>
+|===
+
+[[req_geojson_definition]]
+[%unnumbered]
+|===
+^.^h| Requirement 37 h| /req/geojson/definition
+^.^| A a| `200`-responses of the server SHALL support the following media types: +
+- `application/geo+json` for resources that include feature content, and +
+- `application/json` for all other resources.
+|===
+
+[[req_geojson_content]]
+[%unnumbered]
+|===
+^.^h| Requirement 38 h| /req/geojson/content
+^.^| A a| Every `200`-response with the media type `application/geo+json` SHALL be +
+- a https://tools.ietf.org/html/rfc7946#section-3.3[GeoJSON FeatureCollection Object] for features, and +
+- a https://tools.ietf.org/html/rfc7946#section-3.2[GeoJSON Feature Object] for a single feature.
+^.^| B | The links specified in the requirements `/req/core/fc-links` and `/req/core/f-links` SHALL be added in a extension property (foreign member) with the name `links`.
+^.^| C | The schema of all responses with the media type `application/json` SHALL conform with the JSON Schema specified for the resource in the Core requirements class.
+|===
+
+Templates for the definition of the schemas for the GeoJSON responses in OpenAPI definitions are available at http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureCollectionGeoJSON.yaml[featureCollectionGeoJSON.yaml] and http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureGeoJSON.yaml[featureGeoJSON.yaml]. These are generic schemas that do not include any application schema information about specific feature types or their properties.
+
+.A GeoJSON FeatureCollection Object response
+====
+In the example below, only the first and tenth feature is shown. Coordinates are not shown.
+
+[source,json]
+----
+{
+  "type" : "FeatureCollection",
+  "links" : [ {
+    "href" : "http://data.example.com/collections/buildings/items?f=json",
+    "rel" : "self",
+    "type" : "application/geo+json",
+    "title" : "this document"
+  }, {
+    "href" : "http://data.example.com/collections/buildings/items?f=html",
+    "rel" : "alternate",
+    "type" : "text/html",
+    "title" : "this document as HTML"
+  }, {
+    "href" : "http://data.example.com/collections/buildings/items?f=json&offset=10&limit=10",
+    "rel" : "next",
+    "type" : "application/geo+json",
+    "title" : "next page"
+  } ],
+  "timeStamp" : "2018-04-03T14:52:23Z",
+  "numberMatched" : 123,
+  "numberReturned" : 10,
+  "features" : [ {
+    "type" : "Feature",
+    "id" : "123",
+    "geometry" : {
+      "type" : "Polygon",
+      "coordinates" : [ ... ]
+    },
+    "properties" : {
+      "function" : "residential",
+      "floors" : "2",
+      "lastUpdate" : "2015-08-01T12:34:56Z"
+    }
+  }, { ...
+  }, {
+    "type" : "Feature",
+    "id" : "132",
+    "geometry" : {
+      "type" : "Polygon",
+      "coordinates" : [ ... ]
+    },
+    "properties" : {
+      "function" : "public use",
+      "floors" : "10",
+      "lastUpdate" : "2013-12-03T10:15:37Z"
+    }
+  } ]
+}
+----
+====
+
+.A GeoJSON Feature Object response
+====
+In the example below, coordinates are not shown.
+
+[source,json]
+----
+{
+  "type" : "Feature",
+  "links" : [ {
+    "href" : "http://data.example.com/collections/buildings/items/123?f=json",
+    "rel" : "self",
+    "type" : "application/geo+json",
+    "title" : "this document"
+  }, {
+    "href" : "http://data.example.com/collections/buildings/items/123?f=html",
+    "rel" : "alternate",
+    "type" : "text/html",
+    "title" : "this document as HTML"
+  }, {
+    "href" : "http://data.example.com/collections/buildings",
+    "rel" : "collection",
+    "type" : "application/json",
+    "title" : "the collection document"
+  } ],
+  "id" : "123",
+  "geometry" : {
+    "type" : "Polygon",
+    "coordinates" : [ ... ]
+  },
+  "properties" : {
+    "function" : "residential",
+    "floors" : "2",
+    "lastUpdate" : "2015-08-01T12:34:56Z"
+  }
+}
+----
+====
+
+=== Requirements Class "Geography Markup Language (GML), Simple Features Profile, Level 0"
+
+In addition to HTML and GeoJSON, a significant volume of feature data is available in XML-based formats, notably GML. Therefore, this standard specifies requirements classes for GML. The Simple Features Profile, Level 0, is the simplest profile of GML and is typically supported by tools.
+
+The GML Simple Features Profile is restricted to data with 2D geometries with linear/planar interpolation (points, line strings, polygons). In addition, the Level 0 profile is limited to features that can be stored in a tabular data structure.
+
+[[rc_gmlsf0]]
+[%unnumbered]
+|===
+2+h| Requirements Class
+2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/req/gmlsf0
+| Target type | Web API
+| Dependency | <<rc_core,Conformance Class "Core">>
+| Dependency | <<gmlsf,Geography Markup Language (GML), Simple Features Profile, Level 0>>
+|===
+
+[[req_gmlsf0_definition]]
+[%unnumbered]
+|===
+^.^h| Requirement 39 h| /req/gmlsf0/definition
+^.^| A a| `200`-responses of the server SHALL support the following media types: +
+- `application/gml+xml; version=3.2; profile=http://www.opengis.net/def/profile/ogc/2.0/gml-sf0` for resources that include feature content, +
+- `application/xml` for all other resources.
+|===
+
+[[req_gmlsf0_content]]
+[%unnumbered]
+|===
+^.^h| Requirement 40 h| /req/gmlsf0/content
+^.^| A | <<table3>> specifies the XML document root element that the server SHALL return in a `200`-response for each resource.
+^.^| B | Every representation of a feature SHALL conform to the <<gmlsf,GML Simple Features Profile, Level 0>> and be substitutable for `gml:AbstractFeature`.
+^.^| C | The schema of all responses with a root element in the `core` namespace SHALL validate against the http://schemas.opengis.net/ogcapi/features/part1/1.0/xml/core.xsd[OGC API Features Core XML Schema].
+|===
+
+[%unnumbered]
+|===
+^.^h| Requirement 41 h| /req/gmlsf0/headers
+^.^| A | If a property `timeStamp` is included in the response, its value SHALL be reported using the HTTP header named `Date` (see <<rfc2616,RFC 2616, 4.5>>).
+^.^| B | If a property `numberMatched` is included in the response, its value SHALL be reported using an HTTP header named `OGC-NumberMatched`.
+^.^| C | If a property `numberReturned` is included in the response, its value SHALL be reported using an HTTP header named `OGC-NumberReturned`.
+^.^| D | If links are included in the response, each link SHALL be reported using an HTTP header named `Link` (see <<rfc8288,RFC 8288, Clause 3>>).
+|===
+
+[[table3]]
+.Media types and XML elements for each resource
+|===
+h| Resource h| Path h| XML root element
+| Landing page | `/` | `core:LandingPage`
+| Conformance declaration | `/conformance` | `core:ConformsTo`
+| Feature collections | `/collections` | `core:Collections`
+| Feature collection | `/collections/{collectionId}` | `core:Collections`, with just one entry for the collection `collectionId`
+| Features | `/collections/{collectionId}/items` | `sf:FeatureCollection`
+| Feature | `/collections/{collectionId}/items/{featureId}` | substitutable for `gml:AbstractFeature`
+|===
+
+The namespace prefixes used above and in the OGC API Features Core XML schemas are:
+
+* `core`: `http://www.opengis.net/ogcapi-features-1/1.0`
+
+* `sf`: `http://www.opengis.net/ogcapi-features-1/1.0/sf`
+
+* `gml`: `http://www.opengis.net/gml/3.2`
+
+* `atom`: `http://www.w3.org/2005/Atom`
+
+* `xlink`: `http://www.w3.org/1999/xlink`
+
+The mapping of the content from the responses specified in the <<rc_core,Core requirements class>> to the XML is straightforward. All links have to be encoded as HTTP header `Link`.
+
+See <<examples>> for links to example responses in XML.
+
+=== Requirements Class "Geography Markup Language (GML), Simple Features Profile, Level 2"
+
+The difference between this requirements class and the <<rc_gmlsf0,Level 0>> requirements class is that non-spatial feature properties are not restricted to atomic values (strings, numbers, etc.).
+
+[[rc_gmlsf2]]
+[%unnumbered]
+|===
+2+h| Requirements Class
+2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/req/gmlsf2
+| Target type | Web API
+| Dependency | <<rc_core,Conformance Class "Core">>
+| Dependency | <<gmlsf,Geography Markup Language (GML), Simple Features Profile, Level 2>>
+|===
+
+[[req_gmlsf2_definition]]
+[%unnumbered]
+|===
+^.^h| Requirement 42 h| /req/gmlsf2/definition
+^.^| A a| `200`-responses of the server SHALL support the following media types: +
+- `application/gml+xml; version=3.2; profile=http://www.opengis.net/def/profile/ogc/2.0/gml-sf2` for resources that include feature content, +
+- `application/xml` for all other resources.
+|===
+
+[[req_gmlsf2_content]]
+[%unnumbered]
+|===
+^.^h| Requirement 43 h| req/gmlsf2/content
+^.^| A a| The <<req_gmlsf0_content,requirement `/req/gmlsf0/content`>> applies, too, with the following changes: +
+- All references to media type `application/gml+xml; version=3.2; profile=http://www.opengis.net/def/profile/ogc/2.0/gml-sf0` are replaced by `application/gml+xml; version=3.2; profile=http://www.opengis.net/def/profile/ogc/2.0/gml-sf2`. +
+- All references to "GML Simple Features Profile, Level 0" are replaced by "GML Simple Features Profile, Level 2".
+|===
+
+[%unnumbered]
+|===
+^.^h| Requirement 44 h| /req/gmlsf2/headers
+^.^| A | The <<req_gmlsf0_content,requirement `/req/gmlsf0/content`>> applies.
+|===
+
+
