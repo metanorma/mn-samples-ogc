@@ -102,6 +102,7 @@ In addition to the simple path structures described above, where all features ar
 
 http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml[Schema for the landing page]
 
+[%unnumbered]
 [source,xml]
 ----
 type: object
@@ -118,6 +119,7 @@ properties:
       $ref: http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/link.yaml
 ----
 
+[example]
 .Landing page response document
 ====
 [source,json]
@@ -217,6 +219,7 @@ To support "generic" clients that want to access multiple OGC API Features imple
 
 http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/confClasses.yaml[Schema for the list of conformance classes]
 
+[%unnumbered]
 [source,xml]
 ----
 type: object
@@ -229,6 +232,7 @@ properties:
       type: string
 ----
 
+[example]
 .Conformance declaration response document
 ====
 This example response in JSON is for a server that supports OpenAPI 3.0 for the API definition and HTML and GeoJSON as encodings for features.
@@ -335,6 +339,7 @@ style: form
 
 Note that the name of the parameter does not matter as the actual query parameters are the names of the object properties. For example, assume that the value of `vendorSpecificParameters` is this object:
 
+[%unnumbered]
 [source,json]
 ----
 {
@@ -480,6 +485,7 @@ This recommendation does not apply, if there are a large number of links include
 
 http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml[Schema for the collections resource]
 
+[%unnumbered]
 [source,xml]
 ----
 type: object
@@ -567,6 +573,7 @@ This document does not specify mechanisms how clients may access all collections
 
 http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collection.yaml[Schema for a feature collection]
 
+[%unnumbered]
 [source,xml]
 ----
 type: object
@@ -711,6 +718,7 @@ properties:
 
 NOTE: The `crs` property of the `collection` object is not used by this conformance class, but reserved for future use.
 
+[example]
 .Feature collections response document
 ====
 This feature collections example response in JSON is for a dataset with a single collection "buildings". It includes links to the features resource in all formats that are supported by the service (https://www.iana.org/assignments/link-relations/link-relations.xhtml[link relation type]: "items").
@@ -723,6 +731,7 @@ Finally there are also links to the license information for the building data (u
 
 Reference system information is not provided as the service provides geometries only in the default systems (spatial: WGS 84 longitude/latitude; temporal: Gregorian calendar).
 
+[%unnumbered]
 [source,json]
 ----
 {
@@ -904,6 +913,7 @@ This standard does not specify requirements for the parameter `bbox-crs`. Those 
 
 For WGS 84 longitude/latitude the bounding box is in most cases the sequence of minimum longitude, minimum latitude, maximum longitude and maximum latitude. However, in cases where the box spans the anti-meridian the first value (west-most box edge) is larger than the third value (east-most box edge).
 
+[example]
 .The bounding box of the New Zealand Exclusive Economic Zone
 ====
 The bounding box of the New Zealand Exclusive Economic Zone in WGS 84 (from 160.6°E to 170°W and from 55.95°S to 25.89°S) would be represented in JSON as `[ 160.6, -55.95, -170, -25.89 ]` and in a query as `bbox=160.6,-55.95,-170,-25.89`.
@@ -959,6 +969,7 @@ datetime            = date-time / interval
 
 NOTE: ISO 8601-2 distinguishes open start/end timestamps (double-dot) and unknown start/end timestamps (empty string). For queries, an unknown start/end has the same effect as an open start/end.
 
+[example]
 .A date-time 
 ====
 February 12, 2018, 23:20:52 UTC:
@@ -970,6 +981,7 @@ For features with a temporal property that is a timestamp (like `lastUpdate` in 
 
 For features with a temporal property that is a date or a time interval, a date-time value would match all features where the timestamp is on that day or within the time interval.
 
+[example]
 .Intervals
 ====
 February 12, 2018, 00:00:00 UTC to March 18, 2018, 12:31:12 UTC:
@@ -1009,6 +1021,7 @@ The `schema` property SHOULD be the same as the definition of the feature proper
 
 |=== 
 
+[example]
 .An additional parameter to filter buildings based on their function
 ====
 [source,xml]
@@ -1032,6 +1045,7 @@ example: 'function=public+use'
 ----
 ====
 
+[example]
 .An additional parameter to filter buildings based on their name
 ====
 [source,xml]
@@ -1162,6 +1176,7 @@ Providing `prev` links supports navigating back and forth between pages, but dep
 
 NOTE: The representation of the links and the other properties in the payload depends on the encoding of the feature collection.
 
+[example]
 .Links
 ====
 If the request is to return building features and "10" is the default `limit`, the links in the response could be (in this example represented as link headers and using an additional parameter `offset` to implement `next` links - and the optional `prev` links):
@@ -1258,6 +1273,7 @@ A `400` will be returned in the following situations:
 
 NOTE: The representation of the links in the payload will depend on the encoding of the feature.
 
+[example]
 .Links
 ====
 The links in a feature could be (in this example represented as link headers):
