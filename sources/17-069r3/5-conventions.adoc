@@ -97,6 +97,7 @@ For API definitions that do not conform to the <<rc_oas30,OpenAPI Specification 
 
 All paths in an OpenAPI definition are relative to a base URL of the server.
 
+[example]
 .URL of the OpenAPI definition
 ====
 If the OpenAPI Server Object looks like this:
