@@ -98,6 +98,7 @@ GeoJSON is a commonly used format that is simple to understand and well supporte
 
 Templates for the definition of the schemas for the GeoJSON responses in OpenAPI definitions are available at http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureCollectionGeoJSON.yaml[featureCollectionGeoJSON.yaml] and http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureGeoJSON.yaml[featureGeoJSON.yaml]. These are generic schemas that do not include any application schema information about specific feature types or their properties.
 
+[example]
 .A GeoJSON FeatureCollection Object response
 ====
 In the example below, only the first and tenth feature is shown. Coordinates are not shown.
@@ -155,6 +156,7 @@ In the example below, only the first and tenth feature is shown. Coordinates are
 ----
 ====
 
+[example]
 .A GeoJSON Feature Object response
 ====
 In the example below, coordinates are not shown.
