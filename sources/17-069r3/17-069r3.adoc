@@ -7,6 +7,7 @@
 :received-date: 2019-07-11
 :issued-date: 2019-09-09
 :published-date: 2019-10-14
+:edition: 1.0
 :external-id: http://www.opengis.net/doc/IS/ogcapi-features-1/1.0
 :fullname: Clemens Portele
 :fullname_2: Panagiotis (Peter) A. Vretanos
