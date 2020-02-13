@@ -3,6 +3,7 @@
 [appendix,obligation=normative]
 == Compliance testing
 
+[[annex-subsec-introduction-level-sf0-sf1-sf2]]
 === Introduction (Level SF-0, SF-1, SF-2)
 This annex outlines how a GML application schema can be tested for compliance with this profile.
 
@@ -14,12 +15,13 @@ The best way to test a GML application schema for compliance to this profile is 
 
 The following clauses present each of the XML-Schema pattern templates defined in this profile and describe how to test them for compliance. Every effort has been made to ensure that the schema fragments presented in this annex match those in the main body of this profile. If, however, a discrepancy is found then the fragments in the main body of this profile should be considered normative.
 
-
+[[annex-subsec-elements-to-ignore-level-sf0-sf1-sf2]]
 === Elements to ignore (Level SF-0, SF-1, SF-2)
 All XML comments may be ignored. All XML-Schema annotation elements and subelements may be ignored except as directed in this profile.
 
 Attention is drawn to the fact that in this annex, as in the profile, the namespace prefix _xsd_ is used for the XML-Schema namespace. This is purely for illustrative purposes and the prefix _xsd_ should be considered a placeholder for the actual prefix defined in any particular schema instance.
 
+[[annex-subsec-general-compliance-rules-level-sf0-sf1-sf2]]
 === General compliance rules (Level SF-0, SF-1, SF-2)
 Only the elements and attributes defined or discussed in this profile shall appear in a compliant schema regardless of the implicit elements and attributes that may be defined in XML-Schema or GML.
 
@@ -29,6 +31,7 @@ Only opening tags or elements are described in this annex. It is assumed that th
 
 The order in which attributes appear in opening elements is not important. The order chosen in this document is purely for the sake of clarity.
 
+[[annex-subsec-root-element-level-sf0-sf1-sf2]]
 === Root element (Level SF-0, SF-1, SF-2)
 A compliant application schema shall be a valid GML application schema, which means that is shall be a valid XML-Schema document. The following fragment defines the root element of a compliant XML-Schema document:
 
@@ -67,6 +70,7 @@ A compliant application schema shall be a valid GML application schema, which me
 .. the attribute *version* shall be present
 ... its value is user defined
 
+[[annex-subsec-identifying-the-compliance-level-sf0-sf1-sf2]]
 === Identifying the compliance level (Level SF-0, SF-1, SF-2)
 An application schema shall use an appinfo annotation to declare its compliance level (defined in <<identifying-the-compliance-level>>).
 
@@ -113,6 +117,7 @@ This implies that a compliant application schema shall import the entire GML sch
 .. the attribute *schemaLocation* shall be present (line 3)
 ... its value shall be a valid URL to the complete GML Schema
 
+[[annex-subsec-importing-and-including-other-schemas-level-sf0-sf1-sf2]]
 === Importing and including other schemas (Level SF-0, SF-1, SF-2)
 A conformant schema may import other schemas as long as they too are compliant with this profile. The only exception is the GML schema which is describe in <<importing-the-gml-schema-level-sf-0-sf-1-sf-2>>
 
@@ -141,6 +146,7 @@ A conformant schema may import other schemas as long as they too are compliant w
 .. For each, the attribute *schemaLocation* shall be present (line 2)
 ... its value shall be a valid URI reference to the included schema
 
+[[annex-subsec-feature-collections-level-sf0-sf1]]
 === Feature collections (Level SF-0, SF-1)
 ==== Element declaration
 A compliant application schema shall define one or more feature types by defining one or more global elements for those feature types.
@@ -293,6 +299,8 @@ A complex type shall be defined that corresponds to the value of the type attrib
 .. for compliance level SF-2 any property definitions are allowed following any desired pattern except for spatial properties which must conform to <<declaring-elements-with-binary-content>>
 
 === Properties
+
+[[annex-subsec-integer-valued-properties-level-sf0-sf1]]
 ==== Integer valued properties (Level SF-0, SF-1)
 Each integer-valued property shall be defined using the following XML-Schema fragments:
 
@@ -371,6 +379,7 @@ LONG FORM
 .. only the facets defined in <<common-facets>> may be included
 .. for any additional facet, only the attributes defined in <<common-facets>> may be present
 
+[[annex-subsec-real-valued-properties-level-sf0-sf1]]
 ==== Real valued properties (Level SF-0, SF-1)
 
 SHORT FORM
@@ -445,7 +454,7 @@ LONG FORM
 .. only the facets defined in <<common-facets>> may be included
 .. for any additional facet, only the attributes defined in <<common-facets>> may be present
 
-
+[[annex-subsec-character-string-valued-properties-level-sf0-sf1]]
 ==== Character string valued properties (Level SF-0, SF-1)
 
 SHORT FORM
@@ -522,6 +531,7 @@ LONG FORM
 .. only the facets defined in <<common-facets>> may be included
 .. for any additional facet, only the attributes defined in <<common-facets>> may be present
 
+[[annex-subsec-date-valued-properties-level-sf0-sf1]]
 ==== Date valued properties (Level SF-0, SF-1)
 
 SHORT FORM
@@ -591,6 +601,7 @@ LONG FORM
 .. only the facets defined in <<common-facets>> may be included
 .. for any additional facet, only the attributes defined in <<common-facets>> may be present
 
+[[annex-subsec-boolean-valued-properties-level-sf0-sf1]]
 ==== Boolean valued properties (Level SF-0, SF-1)
 
 [%unnumbered]
@@ -621,7 +632,7 @@ LONG FORM
 ... if it is presents, its value shall be true or false
 ... if it is not present, the default value is false
 
-
+[[annex-subsec-binary-valued-properties-level-sf0-sf1]]
 ==== Binary valued properties (Level SF-0, SF-1)
 
 [%unnumbered]
@@ -697,7 +708,7 @@ LONG FORM
 .. the attribute *use* shall be present (line 13)
 ... its value shall be 'optional'
 
-
+[[annex-subsec-geometry-valued-properties-level-sf0-sf1]]
 ==== Geometry valued properties (Level SF-0, SF-1)
 
 [%unnumbered]
@@ -726,7 +737,7 @@ LONG FORM
 ... if it is not present, the default value is false
 .. In an instance document, the allowed values for each of the geometric property types is defined in <<table-supported-gml-geometric-property-types>>.
 
-
+[[annex-subsec-properties-with-uri-valued-content-level-sf0-sf1-sf2]]
 ==== Properties with URI valued content (Level SF-0, SF-1, SF-2)
 
 [%unnumbered]
@@ -756,7 +767,7 @@ LONG FORM
 ... if it is present, its value shall be true or false
 ... if it is not present, the default value is false
 
-
+[[annex-subsec-properties-with-references-to-other-resources-level-sf0-sf1]]
 ==== Properties with references to other resources (Level SF-0, SF-1)
 
 [%unnumbered]
@@ -794,7 +805,7 @@ LONG FORM
 ... its value shall be urn:x-gml:targetElement
 .. the content of the *xsd:appinfo* element shall be the fully qualified name of the element being referenced
 
-
+[[annex-subsec-properties-with-string-values-from-a-code-list-level-sf0-sf1]]
 ==== Properties with string values from a code list (Level SF-0, SF-1)
 
 [%unnumbered]
@@ -845,6 +856,7 @@ LONG FORM
 .. one of the attributes *default* or *fixed* shall be present (line 6)
 ... its value shall be a URI that resolved to a GML simple dictionary profile document
 
+[[annex-subsec-measurements-level-sf0-sf1]]
 ==== Measurements (Level SF-0, SF-1)
 
 [%unnumbered]
@@ -968,6 +980,7 @@ The following XML Schema fragment describes the pattern for defining a user-defi
 . either the element *xsd:sequence* or the element *xsd:choice* shall be present (line 9)
 . one or more element declarations as described in <<feature-property-encoding>> shall follow
 
+[[annex-subsec-internationalized-string]]
 ==== Internationalized string
 
 TYPE DECLARATION
