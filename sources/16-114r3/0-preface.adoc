@@ -1,0 +1,29 @@
+
+.Preface
+
+This document does not define any new Moving Features elements, rather it provides a method to encode discrete sampling geometries as netCDF files. This Best Practice combines two existing OGC specifications:
+
+* The _Network Common Data Form (netCDF)_ standard <<ogc10-092r3, [OGC 10-092r3]>>, which provides the binary encoding of array-oriented scientific data; and
+* A subset of the _Climate and Forecast (CF)_ conventions <<ogc11-165r2, [OGC 11-165r2]>>, which provides standard names and layout for the arrays to encode in a netCDF file.
+
+This encoding is intended to provide a faster and more compact alternative to the Moving Features CSV encoding using a format readable by existing software.
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
+
+_Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation._
+
+[abstract]
+== Abstract
+
+The netCDF Moving Features encoding extension is a summary of conventions that supports efficient exchange of simple moving features as binary files. This Best Practice is a complement to the _Moving Features Encoding Part I: XML Core_ and an alternative to the _Simple Comma Separated Values (CSV)_ extension. Compared to the CSV encoding, this netCDF encoding offers more compact storage and better performance at the cost of additional restrictions on the kinds of features that can be stored.
+
+== Submitters
+
+All questions regarding this submission should be directed to the editor or the submitters:
+
+[%unnumbered]
+|===
+^.^| Name ^.^| Affiliation
+| Martin Desruisseaux | Geomatys
+
+|===

@@ -1,0 +1,18 @@
+
+[bibliography]
+== References
+
+The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
+
+* [[[ogc14-083r2,OGC 14-083r2]]], OGC: OGC 14-083r2: Moving Features Encoding Part I: XML Core, 2015
+* [[[ogc14-084r2,OGC 14-084r2]]], OGC: OGC 14-084r2: Moving Features Encoding Extension: Simple Comma Separated Values (CSV), 2015
+* [[[ogc10-090r3,OGC 10-090r3]]], OGC: OGC 10-090r3: OGC Network Common Data Form (netCDF): Core Encoding Standard, 2011
+* [[[ogc10-092r3,OGC 10-092r3]]], OGC: OGC 10-092r3: NetCDF Binary Encoding Extension Standard: netCDF Classic and 64-bit Offset Format, 2011
+* [[[ogc11-165r2,OGC 11-165r2]]], OGC: OGC 11-165r2: CF-netCDF3 Data Model Extension standard, 2012
+* [[[netcdf,NetCDF]]], Lawrence Livermore National Laboratory: NetCDF CF Metadata Conventions – http://cfconventions.org/[http://cfconventions.org/]
+* [[[acdd,ACDD]]], ESIP: Attribute Convention for Data Discovery (ACDD) – http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery[http://wiki.esipfed.org/index.php/Attribute\_Convention\_for\_Data\_Discovery]
+* [[[noaa,NOAA]]], NOAA: NCEI netCDF Templates – http://www.nodc.noaa.gov/data/formats/netcdf/[http://www.nodc.noaa.gov/data/formats/netcdf/]
+
+The OGC 11-165r2 CF-netCDF standard is based on Climate and Forecast (CF) conventions version 1.6. The Attribute Convention for Data Discovery (ACDD) adds additional attributes that provide useful metadata for Catalog Service on the Web (CSW). The National Centers for Environmental Information (NCEI) document is used as a guideline when an ambiguity needs to be resolved.
+
+This document references OGC 11-165r2 when possible, but the on-line CF, ACDD, or NCEI documents may be referenced when additional information is considered relevant to moving feature binary encoding.

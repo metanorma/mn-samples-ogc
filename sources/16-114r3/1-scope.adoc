@@ -1,0 +1,14 @@
+
+== Scope
+
+This OGC^®^ Best Practice gives guidelines for encoding in netCDF files the geometries of features that move as rigid bodies. This is an alternative to the encoding defined by the _OGC Moving Features Encoding Extension: Simple Comma Separated Values (CSV)_ standard. netCDF encoding can store moving features with the following characteristics:
+
+* Each moving feature can be described with the Schema for Moving Features (ISO&nbsp;19141:2008);
+* The number of features simultaneously encoded with this format can be massive (many thousands of features);
+* All features can be described using common space-time coordinates;
+* Trajectories are described by a single point (not a line string) at each time step;
+* Foliation order is sequential, i.e., trajectory elements that are parts of one track are ordered by time.
+
+Deforming features such as floodwater and geometric complexes are out of scope.
+
+This OGC document describes relevant attributes from the Climate and Forecast (CF) conventions in sufficient detail that client applications do not need to deal with the entire scope of CF conventions. Applications only need to understand a restricted subset of CF conventions in order to be able to interpret moving features in netCDF files.
