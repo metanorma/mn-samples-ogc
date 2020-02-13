@@ -1,0 +1,403 @@
+
+== Data structure and file format
+
+The binary encoding of arrays and attributes is defined by OGC 10-092r3 – _NetCDF Binary Encoding Extension Standard: netCDF Classic and 64-bit Offset Format_. That netCDF standard defines only a "container" format – it does not define the meaning of attributes stored in the file (the "schema" in XML terminology).
+
+The full content of OGC 10-092r3 standard is needed for Moving Feature Simple Binary; this Best Practice does not propose any addition or subset of OGC 10-092r3.
+
+[%unnumbered]
+|===
+h| Requirement 1
+| http://www.opengis.net/spec/mf_binary/1.0/req/netcdf_valid
+| All Moving Features binary files _shall_ be compliant with the netCDF binary encoding as specified by the OGC 10-092r3 standard.
+|===
+
+Meanings of attributes in a netCDF file are defined by a separated standard, OGC 11-165r2 – _CF-netCDF3 Data Model Extension_. All remaining requirements and recommendations in this Moving Feature Simple Binary document apply to a subset of those CF conventions.
+
+=== NetCDF global attributes
+
+Global attributes apply to the netCDF file as a whole. They specify a succinct description of what is in the dataset, the kind of sampling geometry, the geographic bounding box, the vertical extent, the time period, the coordinate reference systems used and many other metadata (see CF convention). Some global attributes are merely a convenience for information that may otherwise be tedious to compute; those attributes are presented in <<convenience_global_attributes>>.
+
+==== Non-redundant global attributes
+
+This sub-section presents some global attributes that do not duplicate information provided by other attributes.
+
+===== Identification of conventions
+
+To identify that the file uses the CF convention, OGC 11-162r2 §7.3.2.1 requires that the `Conventions` global attribute is set to the `"CF-1.6"` string value. This Best Practice uses also some attribute convention for data discovery, which is notified by the `"ACDD-1.3"` string value.
+
+[%unnumbered]
+|===
+h| Requirement 2 (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/conventions
+| The file _shall_ define the global attribute `Conventions` to a string of comma-separated values containing at least the `"CF-1.6"` element. The list of values should contain also the `"ACDD-1.3"` element. A complete string value containing the two elements is `"CF-1.6, ACDD-1.3"`.
+|===
+
+===== Feature type
+
+The CF conventions allow different kinds of sampling geometry such as point, time series, profile, or trajectory. This binary encoding Best Practice focuses on trajectories. This choice constraint the data layout to a series of data points along a path through space with monotonically increasing times (OGC 11-165r2 §7.5.2.3).
+
+[%unnumbered]
+|===
+h| Requirement 3 (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/featureType
+| The file _shall_ define the global attribute `featureType` to the string value `"trajectory"`.
+
+|===
+
+===== Title
+
+Both CF convention and ACDD recommend the inclusion of a title in the global attributes.
+
+[%unnumbered]
+|===
+h| Recommendation 1 (from CF and ACDD)
+| http://www.opengis.net/spec/mf_binary/1.0/req/title
+| The file should define the global attribute `title` to a succinct description of what is in the dataset.
+
+|===
+
+[[convenience_global_attributes]]
+==== Convenience global attributes for data discovery
+
+This sub-section presents global attributes that duplicate information available in other attributes, but in a more convenient manner. For example, the _geographic bounding box_ attributes (<<geographic_bounding_box>>) duplicate information provided by the _geospatial bounds_ attributes (<<geospatial_bounds>> to <<temporal_bounds>>), but may avoid the need to apply an inverse map projection. The geospatial bounds attributes themselves duplicate attributes associated to coordinate variables. But the attributes described in this sub-section make it easier to discover the data. Indeed, all attributes in this sub-section come from the Attribute Convention for Data Discovery (ACDD). By contrast, most attributes in other sections come from the Climate and Forecast (CF) convention.
+
+[[geographic_bounding_box]]
+===== Geographic bounding box
+
+The geographic bounding box is given in longitude and latitude regardless of the Coordinate Reference System (CRS) used by the trajectories. Since those metadata are used for discovery purpose only, the geodetic datum is unspecified. Coordinate precision may be of only two decimal places of a degree.
+
+[%unnumbered]
+|===
+h| Recommendation 2 (from ACDD)
+| http://www.opengis.net/spec/mf_binary/1.0/req/geographicBoundingBox
+a| The file should define the following global attributes: +
+
+* `geospatial_lat_min` +
+* `geospatial_lat_max` +
+* `geospatial_lon_min` +
+* `geospatial_lon_max` +
+
+Respective values are the southernmost and northernmost latitudes, followed by the easternmost and westernmost longitudes covered by the dataset. Units of measurement should be degrees with positive latitudes in the North hemisphere and longitude values increasing toward east. The "minimal" longitude may be greater than the "maximal" longitude if the bounding box crosses the discontinuity meridian. The Prime Meridian should be Greenwich. Values type should be floating point.
+
+|===
+
+This _geographic_ bounding box is redundant with the _geospatial_ bounds defined below. The geographic bounding box is optional metadata for easier discovery of a dataset without the need to parse Well Known Text, lookup EPSG codes, and reproject envelopes.
+
+[[geospatial_bounds]]
+===== Geospatial (not necessarily geographic) bounds
+
+The horizontal part of the spatial boundary of moving features is specified as geometry in Well Known Text (WKT) format. The Coordinate Reference System is specified in <<spatial_reference_system>>.
+
+This metadata is equivalent to the `mf:STBoundedBy` element defined by Moving Features Core and to the `@stboundedby` element defined by the CSV extension, except that the geometry is not an envelope (but may be an equivalent polygon) and does not contain vertical or temporal components.
+
+[%unnumbered]
+|===
+h| Recommendation 3 (from ACDD)
+| http://www.opengis.net/spec/mf_binary/1.0/req/spatialBounds
+| The file should define the global attribute `geospatial_bounds` to a Well Known Text (WKT) that specifies the horizontal part of a geometry encompassing all moving features in the dataset. The geometry may be a polygon. Meaning and order of values for each point's coordinates depend on the Coordinate Reference System (<<spatial_reference_system>>).
+
+|===
+
+[[vertical_bounds]]
+===== Vertical bounds
+
+If the feature trajectories are three-dimensional, then the vertical part of the spatial boundary of moving features is specified as a range of floating-point values. The Coordinate Reference System is specified in <<spatial_reference_system>>.
+
+This metadata is equivalent to the vertical component of `mf:STBoundedBy` (Moving Features Core) or `@stboundedby` (CSV extension).
+
+[%unnumbered]
+|===
+h| Recommendation 4 (from ACDD)
+| http://www.opengis.net/spec/mf_binary/1.0/req/verticalBounds
+| If the moving features feature trajectories are three-dimensional, then the file should define the global attribute `geospatial_vertical_min` and `geospatial_vertical_max` to the numerically smaller and larger vertical limit, respectively. Values type should be floating point. Meaning of values depends on the Coordinate Reference System (<<spatial_reference_system>>).
+
+|===
+
+[[temporal_bounds]]
+===== Temporal bounds
+
+The times of the first and last data point in the file are specified as a range of dates. Dates are formatted as specified by ISO 8601:2004, preferably the extended date-time format (_YYYY-MM-DD_ T _hh:mm:ss_ optionally followed by the time zone).
+
+[%unnumbered]
+|===
+h| Recommendation 5 (from ACDD)
+| http://www.opengis.net/spec/mf_binary/1.0/req/temporalBounds
+| The file should define the global attribute `time_coverage_start` to the time of the first data point, and `time_coverage_end` to the time of the last data point. Dates are encoded as strings in ISO 8701:2004 format.
+
+|===
+
+[[spatial_reference_system]]
+===== Spatial Reference System
+
+The Coordinate Reference System (CRS) of the geospatial and vertical bounds (<<geospatial_bounds>> and <<vertical_bounds>>) is specified by an authority code, preferably from the EPSG geodetic dataset. For two-dimensional trajectories, only one CRS should be specified. For three-dimensional trajectories, a single three-dimensional CRS or two distinct CRS (one horizontal and one vertical) may be specified depending on the nature of the vertical heights.
+
+While ACDD uses simple strings of the form `"EPSG:4326"`, this document recommends URNs of the form `"urn:ogc:def:crs:EPSG::4326"` instead. However, software should be prepared to read both forms. Note that axis order is the same with both forms, namely (_latitude_, _longitude_) in EPSG:4326 case.
+
+This metadata is equivalent to the `srsName` attribute in Moving Feature core and to the `srid` attribute in CSV extension, except for the possible separation between a horizontal and a vertical CRS.
+
+[%unnumbered]
+|===
+h| Recommendation 6 (from ACDD)
+| http://www.opengis.net/spec/mf_binary/1.0/req/boundsCRS
+a| The file should define the global attribute `geospatial_bounds_crs` and _may_ define the global attribute `geospatial_bounds_vertical_crs` to authority codes (preferable from the EPSG geodetic dataset) determined according the following choices: +
+
+* If the trajectories are three-dimensional *and* horizontal coordinates are geodetic (geographic or geocentric) latitudes and longitudes *and* the vertical coordinates are _heights above the ellipsoid_, then: +
+** `geospatial_bounds_vertical_crs` attribute is not present. +
+** `geospatial_bounds_crs` is the authority code of a single three-dimensional geodetic CRS used by both geospatial_bounds (for the horizontal part) and by `geospatial_vertical_min` and `geospatial_vertical_max` (for the vertical part) attribute values. For example EPSG:4979 is the three-dimensional variant of EPSG:4326. +
+  
+* Otherwise: +
+** `geospatial_bounds_crs` is the authority code of the two-dimensional CRS used by the `geospatial_bounds` attribute value. +
+** `geospatial_bounds_vertical_crs` is the authority code of the CRS used by `geospatial_vertical_min` and `geospatial_vertical_max`, if present.
+
+|===
+
+[[trajectory_lines]]
+=== Trajectory lines (data body)
+
+The CF convention proposes four different ways to organize the feature coordinates and attributes in a netCDF file. This best-practice paper chooses the _Contiguous Ragged Array_ representation, which has the following characteristics:
+
+* Can mix short and large features without waste of space;
+* Number of points of each feature must be known in advance;
+* File can be updated with new features or new points in the last feature (but not new points in previous features); and
+* Foliation order is restricted to "sequential".
+
+The file is organized by first defining netCDF dimensions (not to be confused with spatio-temporal dimensions), then variables. The dimension and variable names shall comply with the restrictions documented in OGC 11-162r2 §7.3.2.1:
+
+[%unnumbered]
+|===
+h| Requirement 4 (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/names
+a| NetCDF dimension names and netCDF variable names _shall_ comply with the following restrictions: +
+
+* Names shall begin with a letter; +
+* Names shall be composed of letters, digits or underscores; and +
+* No variable has the same name than a dimension, except the variable holding feature identifiers (<<feature_ids>>).
+
+|===
+
+==== NetCDF dimensions
+
+The ragged array representation needs three netCDF dimensions, described below.
+
+[[max_length_of_feature_ids]]
+===== Maximal length of feature identifiers
+
+If each feature is identified by a string value, then the netCDF file needs to declare the maximal number of characters allowed in those identifiers. Identifiers shorter than the maximal length will be padded by spaces of null characters (readers must be prepared to handle both).
+
+[%unnumbered]
+|===
+h| Requirement 5 (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/identifierLength
+| If features are identified by string values, then the file _shall_ define a netCDF dimension for identifier characters (the _identifier char dimension_). The name of this dimension can be any name compliant with the requirements in <<trajectory_lines>>. The length of this dimension is the maximum number of characters than can be stored in a feature identifier.
+
+|===
+
+[[feature_instance_dimension]]
+===== Feature instance dimension
+
+The netCDF file shall declare a dimension for information about each feature as a whole (i.e., information that does not depend on the time). The length of this dimension is the maximal number of features that can be stored in the file. It is acceptable to declare a length larger than needed in order to reserve room for future feature additions, provided that values in the count variable (<<count_variable>>) are set to zero for all missing features.
+
+[%unnumbered]
+|===
+h| Requirement 6 (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/instanceDimension
+| The file _shall_ define a netCDF dimension for feature instances (the _instance dimension_). The name of this dimension can be any name compliant with the requirements in <<trajectory_lines>>. The length of this dimension is the maximum number of features that can be stored in the file.
+
+|===
+
+[[sample_dimension]]
+===== Sample dimension
+
+The netCF file shall declare a dimension for the actual data (time, geospatial coordinates and feature attributes). This dimension could have a fixed length, but it is more convenient to declare this dimension length as unlimited if new data need to be appended. Note that a netCDF file can have only one dimension of unlimited length.
+
+[%unnumbered]
+|===
+h| Requirement 7 (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/sampleDimension
+| The file shall define a netCDF dimension for time-dependent data (the _sample dimension_). The name of this dimension can be any name compliant with the requirements in <<trajectory_lines>>. The length of this dimension should be unlimited, unless the total number of points is known in advance.
+
+|===
+
+==== NetCDF variables
+
+In the continuous ragged array representation, the netCDF file shall contain the following variables:
+
+* One variable listing feature identifiers;
+* One variable counting the number of points in each feature;
+* Three or four _auxiliary_ coordinate variables (not to be confused with "simple" coordinate variables): examples: _x_, _y_, (_z_) and _t_; and
+* An arbitrary number of variables for _feature_ attributes (not to be confused with _global_ attributes or _variable_ attributes): examples: _state_, _temperature_.
+
+
+[[feature_ids]]
+===== Feature identifiers
+
+Each trajectory should have identifying text that specifies the moving feature. The text can be a person ID, a vehicle ID, etc. While the identifier is usually a string, integer types are also allowed.
+
+The data stored in this variable are equivalent to the `mfIdRef` attribute value in Moving Feature XML file, or to the values in the `mfidref` column in a Moving Feature CSV file.
+
+[%unnumbered]
+|===
+h| Requirement 8 (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/identifiers
+a| The file _shall_ define a variable holding the identifier of each trajectory. +
+
+* The variable name shall be identical to the name of the _instance dimension_ defined in <<feature_instance_dimension>>. +
+* The variable type should be the character type. Integer types are also valid. +
+* The variable dimension shall be the _instance dimension_ (<<feature_instance_dimension>>) and the _identifier char dimension_ (<<max_length_of_feature_ids>>), in that order. The char dimension shall be omitted if the variable type is not a character type. +
+* The collection of variable attributes shall contain: +
+** A `cf_role` attribute set to the `"trajectory_id"` string value.
+
+|===
+
+[[count_variable]]
+===== Count variable
+
+The netCDF file shall contain a variable holding the number of points in each trajectory. The length of this variable is the maximum number of features that the netCDF file can contain.
+
+[%unnumbered]
+|===
+h| *Requirement 9* (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/count
+a| The file _shall_ define a variable holding the count of the number of points in each trajectory (the _count variable_). +
+
+* The variable name can be any name compliant with the requirements in <<trajectory_lines>>. +
+* The variable type shall be an integer. +
+* The variable dimension shall be the _instance dimension_ defined in <<feature_instance_dimension>>. +
+* The collection of variable attributes shall contain: +
+** A `sample_dimension` attribute set to the name of the _sample dimension_ defined in <<sample_dimension>>.
+
+|===
+
+[[auxiliary_coordinate_variables]]
+===== Auxiliary coordinate variables
+
+Trajectory coordinates are specified in one variable for each spatiotemporal dimension. Those "_auxiliary_ coordinate variables" are not subject to the usual restrictions of netCDF "coordinate variables". In particular:
+
+* The variable name does not match the dimension name;
+* The values do not need to be ordered monotonically;
+* The variable does not have `axis` attribute; and
+* The variable may have missing values.
+
+Ordinate values of the first feature – i.e., the feature at index 0 in the _feature instance dimension_ (<<feature_instance_dimension>>) – are written first. The number of values to write for that first feature is given by the value of the _count variable_ (<<count_variable>>) at index 0. Then the ordinate values of the second feature – i.e., the feature at index 1 in the _feature instance dimension_ – follow. The number of values to write for that second feature is given by the value of the _count variable_ at index 1, and so on.
+
+For example, if a file contains three features identified as "A", "B" and "C" and if their trajectories are described by the following points:
+
+* A: start at (11, 2) then move to (12, 3) and finally (10, 3);
+* B: start at (10, 2) then move to (11, 3); and
+* C: start at (12, 1) then move to (10, 2) and finally (11, 3).
+
+Then the feature instance dimension has a length of 3 and the sample dimension (if not unlimited) has a length of 3 + 2 + 3 = 8. In such cases the variables presented in previous sub-sections have the following values:
+
+NetCDF variables having the _feature instance dimension_ (<<feature_instance_dimension>>):
+
+[%unnumbered]
+|===
+^.^a| _identifier_ +
+(<<feature_ids>>) ^.^a| _count_ +
+(<<count_variable>>)
+^.^| A ^.^| 3
+^.^| B ^.^| 2
+^.^| C ^.^| 3
+
+|===
+
+The auxiliary coordinate variables can be as below:
+
+NetCDF variables having the _sample dimension_ (<<sample_dimension>>):
+
+[%unnumbered]
+|===
+| ^.^h| _time_ ^.^h| _x_ ^.^h| _y_
+| Feature A time 1 ^.^| 8:00 ^.^| 11 ^.^| 2
+| Feature A time 2 ^.^| 8:10 ^.^| 12 ^.^| 3
+| Feature A time 3 ^.^| 8:20 ^.^| 10 ^.^| 3
+| Feature B time 1 ^.^| 8:05 ^.^| 10 ^.^| 2
+| Feature B time 2 ^.^| 8:15 ^.^| 11 ^.^| 3
+| Feature C time 1 ^.^| 7:50 ^.^| 12 ^.^| 1
+| Feature C time 2 ^.^| 8:00 ^.^| 10 ^.^| 2
+| Feature C time 3 ^.^| 8:10 ^.^| 11 ^.^| 3
+
+|===
+
+[%unnumbered]
+|===
+h| Requirement 10 (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/coordinates
+a| The file _shall_ contain three or four auxiliary coordinate variables. +
+
+* The variable name can be any name compliant with the requirements in <<trajectory_lines>>. +
+* The variable type shall be a numerical type (usually floating point). +
+* The variable dimension shall be the _sample dimension_ defined in <<vertical_bounds>>. +
+* The collection of attributes of the time coordinates variable shall contain: +
+** A `standard_name` attribute set to the `"time"` string value. +
+** A `units` attribute set to the "_units_ `since` _YYYY-MM-DD hh:mm:ss_" string value where: +
+*** "_units_" can be "days", "hours", "minutes" or "seconds", +
+*** "_YYYY-MM-DD hh:mm:ss_" is the epoch in UTC. +
+* The collection of attributes of spatial coordinates variables shall contain: +
+** A `standard_name` attribute if and only if a standard name exists in the CF Standard Name Table ( http://cfconventions.org/standard-names.html[http://cfconventions.org/standard-names.html]) for that variable. Examples of standard names are `"longitude"`, `"latitude"` and `"altitude"`. +
+** A `units` attribute. Examples are `"degrees_east"`, `"degrees_north"` and `"km"`. +
+* The collection of attributes of all coordinates variable shall contain: +
+** An `axis` attribute with one of the following names: `"X"`, `"Y"`, `"Z"` or `"T"`.
+
+|===
+
+
+In addition to the attributes listed in above requirement, some non-standards attributes may help parsers to identify the coordinate system. In particular, the `_CoordinateAxisType` attribute may be set to `"Lon"`, `"Lat"`, `"Height"` or `"Time"` values for a geographic CRS, or to the `"GeoX"`, `"GeoY"`, `"GeoZ"` or `"Time"` values for other kind of CRS.
+
+===== Feature attribute variables
+
+If the file contains additional attributes for the moving features, they can be declared in array having the same length than the auxiliary coordinate variables. Elements in those variables are mapped to features and time in the same way than the values in auxiliary coordinate variables (<<auxiliary_coordinate_variables>>).
+
+[%unnumbered]
+|===
+h| Requirement 11 (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/featureAttributes
+| If the file contains additional feature attributes, then those values _shall_ be stored in one distinct variable for each feature attribute. The dimension of those variables is the _sample dimension_. Values at index _i_ are associated to the same feature at the same time than the values of auxiliary coordinate variables at index _i_.
+
+|===
+
+OGC 11-162r2 has additional requirements for the exchange of scientific data.
+
+[%unnumbered]
+|===
+h| Requirement 12 (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/standardName
+| If the variable represents one of the physical quantities for which a standard name exists in the CF Standard Name Table ( http://cfconventions.org/standard-names.html[http://cfconventions.org/standard-names.html]), then the variable _shall_ define a `standard_name` attribute to the string value given in that table. Otherwise the variable _shall_ define a `long_name` attribute to a long descriptive name that may, for example, be used for labeling plots.
+
+|===
+
+[%unnumbered]
+|===
+h| Requirement 13 (from OGC 11-162r2)
+| http://www.opengis.net/spec/mf_binary/1.0/req/units
+| If the variable represents a dimensional quantity, then it _shall_ define a `units` attribute to a string value that can be recognized by UNIDATA's udunits package, with the addition of `"level"`, `"layer"` and `"sigma_level"` string values. That unit shall be consistent with the unit given in the CF Standard Name Table for the `standard_name` attribute value, if the later attribute exists for this variable.
+
+|===
+
+===== Feature attribute variables as character strings
+
+If the values of a feature attribute variable are character strings, then there is a choice:
+
+[class=steps]
+. If only a limited amount of distinct values are used (e.g., values are members of an enumeration), then those values can be encoded as flags as described in http://cfconventions.org/cf-conventions/v1.6.0/cf-conventions.html#flags[CF conventions §3.5] (details below);
+. Otherwise a new dimension need to be defined with a length equal to the maximal number of characters to be stored in the feature attribute variable. This dimension is added as the last dimensions of the feature attribute variable, as defined in http://cfconventions.org/cf-conventions/v1.6.0/cf-conventions.html#_data_types[CF-convention §2.2]. This dimension is shown as the "character dimension" in the figure below.
+
+[%unnumbered]
+[[fig2]]
+image::images/002.png["",510,130]
+
+The second approach may result in a netCDF file as big as or bigger than an equivalent CSV file since all character strings shorter than the maximal length are padded with spaces or zero values. For efficiency reasons, this paper recommends the use of flags.
+
+[%unnumbered]
+|===
+h| *Recommendation 7* (from CF-Convention)
+| http://www.opengis.net/spec/mf_binary/1.0/req/strings
+a| Feature attribute variables of type character strings should be encoded as flags if the amount of distinct values is reasonably small. +
+
+* Variable type should be `byte` or `short`. +
+* The collection of variable attributes should contain: +
+** A `flag_values` attribute of the same type (`byte` or `short`) than the variable. The attribute value is the list of distinct numerical values that can appear in the variable. +
+** A `flag_meanings` attribute of the type string. The attribute value is a space-separated list of tokens (a token is a word or a phrase in which space characters have been replaced by underscore characters). The first token is the string representation of the first numerical value listed in the `flag_values` array, the second token is the string representation of the second numerical value listed in the `flag_values` array, _etc._
+
+|===

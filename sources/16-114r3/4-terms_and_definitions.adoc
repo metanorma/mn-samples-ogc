@@ -1,0 +1,80 @@
+
+== Terms and Definitions
+
+This document uses the terms defined in Sub-clause 5.3 of <<ogc06-121r8, [OGC 06-121r8]>>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word "shall" (not "must") is the verb form used to indicate a requirement to be strictly followed to conform to this standard.
+
+=== Moving feature
+
+Representation, using a local origin and local ordinate *vectors*, of a *geometric object* at a given reference time [ISO 19141:2008].
+
+=== Vector
+
+Quantity having direction as well as magnitude [ISO 19123:2005].
+
+=== Geometric object
+
+Spatial object representing a geometric set [ISO 19107:2003].
+
+=== Geometric primitive
+
+*Geometric object* representing a single, connected, homogeneous element of space [ISO 19107:2003].
+
+=== Period
+
+1-dimensional *geometric primitive* representing extent in time [ISO 19141:2008].
+
+=== Instant
+
+0-dimensional *geometric primitive* representing a position in time [ISO 19141:2008].
+
+=== Point
+
+0-dimensional *geometric primitive* representing a position [ISO 19107:2003].
+
+=== Trajectory
+
+Path of a moving *point* described by a one parameter set of points [ISIO19141:2008].
+
+=== Foliation
+
+*One parameter set of geometries* such that each point in the *prism* of the set is in one and only one *trajectory* and in one and only one *leaf* [ISO 19141:2008].
+
+=== One parameter set of geometries
+
+Function _f_ from an interval _t_ ∈ [_a_, _b_] such that _f_(_t_) is a geometry and for each point _P_∈_f_(_a_) there is a one parameter set of points (called the trajectory of _P_) _P_(_t_) : [_a_, _b_] → _P_(_t_) such that _P_(_t_) ∈_f_(_t_) [ISO 19141:2008].
+
+=== Prism (one parameter set of geometries)
+
+Set of points in the union of the geometries (or the union of the trajectories) of a one parameter set of geometries [ISO 19141:2008].
+
+=== Leaf (one parameter set of geometries)
+
+Geometry at a particular value of the parameter [ISO 19141:2008].
+
+=== Dataset
+
+An identifiable collection of data [ISO 19101].
+
+=== Attribute
+
+NetCDF attributes hold metadata. An attribute contains information about properties of a variable or an entire *dataset* <<ogc10-090r3, [OGC 10-090r3]>>.
+
+=== Global attribute
+
+Global *attributes* apply to a whole *dataset* and may be used to record properties of all the data in a file, such as processing history or conventions used <<ogc10-090r3, [OGC 10-090r3]>>.
+
+=== Variable attribute
+
+Variable *attributes* record the properties of one *variable* <<ogc10-090r3, [OGC 10-090r3]>>.
+
+=== Variable
+
+A netCDF variable has a name, type, *shape*, *attributes*, and values. In face, much of the netCDF specification consists of defining the specific characteristics of variables. Variables hold data values. In the netCDF model, a variable can hold a multidimensional array of values of the same type <<ogc10-090r3, [OGC 10-090r3]>>.
+
+=== Shape
+
+The shape of a *variable* is specified with a list of zero or more *dimensions* <<ogc10-090r3, [OGC 10-090r3]>>.
+
+=== Dimension
+
+NetCDF dimensions are used to specify variable *shapes*, common grids, and coordinate systems <<ogc10-090r3, [OGC 10-090r3]>>.

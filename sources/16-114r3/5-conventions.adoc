@@ -1,0 +1,24 @@
+
+== Conventions
+
+This section provides details and examples for conventions used in the document.
+
+=== Abbreviated terms
+
+The following symbols and abbreviated terms are used in this Best Practice:
+
+*ACDD*:: Attribute Convention for Data Discovery
+*CF conventions*:: Climate and Forecast conventions
+*CRS*:: Coordinate Reference System
+*CSV*:: Comma Separated Values
+*EPSG*:: IOGP's EPSG geodetic dataset
+*IOGP*:: International Association of Oil & Gas producers
+*ISO*:: International Organization for Standardization
+*NCEI*:: NOAA National Centers for Environmental Information
+*NetCDF*:: Network Common Data Form
+*OGC*:: Open Geospatial Consortium
+*WKT*:: Well Known Text
+*1D*:: One Dimensional
+*2D*:: Two Dimensional
+*3D*:: Three Dimensional
+

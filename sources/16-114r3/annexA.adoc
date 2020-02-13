@@ -1,0 +1,47 @@
+
+[appendix,obligation=normative]
+[[annexA]]
+== Conformance test
+
+Moving Features encoded in a netCDF file may be tested with the UCAR library, for example using the Java code below (replace "myFile.nc" and "myAttribute" by character strings applicable to the data to be tested). As of version 4.6.4 of UCAR netCDF library, this test requires the non-standard `_CoordinateAxisType` attribute on the auxiliary coordinate variables (see the note after requirement 10). For that reason, this test is non-normative.
+
+[%unnumbered]
+[source,java]
+----
+import java.util.Formatter;
+import java.io.IOException;
+import ucar.nc2.constants.FeatureType;
+import ucar.nc2.ft.FeatureCollection;
+import ucar.nc2.ft.FeatureDataset;
+import ucar.nc2.ft.FeatureDatasetFactoryManager;
+import ucar.nc2.ft.FeatureDatasetPoint;
+import ucar.nc2.ft.PointFeature;
+import ucar.nc2.ft.PointFeatureIterator;
+import ucar.nc2.ft.TrajectoryFeature;
+import ucar.nc2.ft.TrajectoryFeatureCollection;
+import ucar.unidata.geoloc.EarthLocation;
+ 
+public class TestMovingFeatureNetCDF {
+    public static void main(String[] args) throws IOException {
+        try (FeatureDatasetPoint fp = (FeatureDatasetPoint) FeatureDatasetFactoryManager
+            .open(FeatureType.TRAJECTORY, “myFile.nc”, null, new Formatter(System.out)))
+        {
+            for (FeatureCollection fc : fp.getPointFeatureCollectionList()) {
+                TrajectoryFeatureCollection tfc = (TrajectoryFeatureCollection) fc;
+                while (tfc.hasNext()) {
+                    TrajectoryFeature tf = tfc.next();
+                    PointFeatureIterator it = tf.getPointFeatureIterator(-1);
+                    while (it.hasNext()) {
+                        PointFeature f = it.next();
+                        EarthLocation loc = f. getLocation();
+                        double time = f. getObservationTime();
+                        Object value = f.getDataAll().getScalarObject(“myAttribute”);
+                        System.out.println(loc + " at " + time + " = " + value);
+                    }
+                    it.finish();
+                }
+            }
+        }
+    }
+}
+----
