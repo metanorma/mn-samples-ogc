@@ -1,0 +1,126 @@
+
+[[annexA]]
+[appendix,obligation=normative]
+== XML Schema for IndoorGML SeamlessNavigation Module
+
+This annex provides the normative XML schema document for the SeamlessNavigation Module.
+
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+xmlns="http://www.opengis.net/indoorgml/1.0/seamlessNavi"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:gml="http://www.opengis.net/gml/3.2"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:IndoorCore="http://www.opengis.net/indoorgml/1.0/core"
+xmlns:IndoorNavi="http://www.opengis.net/indoorgml/1.0/navigation"
+targetNamespace="http://www.opengis.net/indoorgml/1.0/seamlessNavi"
+version="1.0"
+elementFormDefault="qualified">
+<xs:import namespace="http://www.opengis.net/gml/3.2"
+schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+<xs:import namespace="http://www.opengis.net/indoorgml/1.0/core"
+schemaLocation="http://schemas.opengis.net/indoorgml/1.0/indoorgmlcore.xsd"/>
+<xs:import namespace="http://www.opengis.net/indoorgml/1.0/navigation"
+schemaLocation="http://schemas.opengis.net/indoorgml/1.0/indoorgmlnavi.xsd"/>
+<!-- ====================================================================== -->
+<xs:element name="AnchorState" type="AnchorStateType" substitutionGroup="IndoorCore:State">
+<xs:annotation>
+<xs:documentation>AnchorState
+</xs:documentation>
+</xs:annotation>
+</xs:element>
+<!-- ====================================================================== -->
+<xs:complexType name="AnchorStateType">
+<xs:complexContent>
+<xs:extension base="IndoorCore:StateType">
+<xs:sequence>
+<xs:element name="transformReferencePoint" type="ExternalPositionType"/>
+<xs:element name="rotationAngle" type="gml:VectorType" minOccurs="0"/>
+<xs:element name="rescailingFactor" type="gml:VectorType" minOccurs="0"/>
+<xs:element name="translationVector" type="gml:VectorType" minOccurs="0"/>
+<xs:element name="duality" type="AnchorSpacePropertyType" minOccurs="0"/>
+<xs:element name="connects" type="AnchorLinkPropertyType" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:complexType name="AnchorStatePropertyType">
+<xs:sequence minOccurs="0">
+<xs:element ref="AnchorState"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:complexType name="AnchorSpacePropertyType">
+<xs:sequence minOccurs="0">
+<xs:element ref="IndoorNavi:AnchorSpace"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:complexType name="ExternalPositionType">
+<xs:sequence>
+<xs:element name="geometry" type="gml:PointPropertyType"/>
+</xs:sequence>
+<xs:attribute name="srsName" type="xs:anyURI" use="required"/>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:element name="AnchorLink" type="AnchorLinkType" substitutionGroup="gml:AbstractFeature">
+<xs:annotation>
+<xs:documentation>AnchorLink
+</xs:documentation>
+</xs:annotation>
+</xs:element>
+<!-- ====================================================================== -->
+<xs:complexType name="AnchorLinkType">
+<xs:complexContent>
+<xs:extension base="gml:AbstractFeatureType">
+<xs:sequence>
+<xs:element name="connectToIndoor" type="AnchorStatePropertyType"/>
+<xs:element name="connectToOutdoor" type="ExternalAnchorStatePropertyType"/>
+<xs:element name="geometry" type="gml:CurvePropertyType"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:complexType name="AnchorLinkPropertyType">
+<xs:sequence minOccurs="0">
+<xs:element ref="AnchorLink"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:element name="ExternalAnchorState" type="ExternalAnchorStateType" substitutionGroup="gml:AbstractFeature">
+<xs:annotation>
+<xs:documentation>ExternalAnchorState
+</xs:documentation>
+</xs:annotation>
+</xs:element>
+<!-- ====================================================================== -->
+<xs:complexType name="ExternalAnchorStateType">
+<xs:complexContent>
+<xs:extension base="gml:AbstractFeatureType">
+<xs:sequence>
+<xs:element name="externalNetworkReference" type="IndoorCore:ExternalReferenceType"/>
+<xs:element name="geometry" type="gml:PointPropertyType"/>
+<xs:element name="connects" type="AnchorLinkPropertyType" maxOccurs="unbounded"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:complexType name="ExternalAnchorStatePropertyType">
+<xs:sequence minOccurs="0">
+<xs:element ref="ExternalAnchorState"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:complexType>
+<!-- ====================================================================== -->
+</xs:schema>
+----

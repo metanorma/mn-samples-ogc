@@ -1,0 +1,21 @@
+
+[[annexC]]
+[appendix,obligation=normative]
+== Revision History
+
+[%unnumbered]
+|===
+h| Date h| Release h| Editor h| Primary clauses modified h| Description
+
+| 2018-11-01 | 0.1 a| Kyong-Sook Kim +
+Teahoon Kim +
+Jiyeong Lee | all | Initial version
+| 2018-12-03 | 0.5 a| Kyong-Sook Kim +
+Teahoon Kim +
+Jiyeong Lee | 5, 6, Annex B | complemented
+| 2019-02-04 | 1.0 a| Kyong-Sook Kim +
+Teahoon Kim +
+Jiyeong Lee +
+Hye-Young Kang | all | final version
+
+|===

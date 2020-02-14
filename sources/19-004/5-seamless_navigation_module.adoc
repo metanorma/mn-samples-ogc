@@ -1,0 +1,234 @@
+
+[[seamless_navigation_module_of_indoorgml_using_anchor_node]]
+== Seamless navigation module of IndoorGML using anchor node
+
+This section describes an IndoorGML SeamlessNavigation module for seamless navigation between indoors and outdoors.
+
+[[fig2]]
+.Structure space model (OGC 14-005r5)
+image::images/002.png["",397,265]
+
+OGC IndoorGML provides a standard data model for indoor space with two spatial models, as shown in <<fig2>>: Euclidean Space represents the shape of a three-dimensional (3D) cell space; Topology Space represents connectivity between cell spaces. Topology represents a duality transformation of the 3D cell space and is an essential component for indoor navigation and routing system. By applying a duality transformation, the 3D cells in primal space are mapped to nodes (0D) in dual space. The topological adjacency relationships between 3D cells are transformed to edges (1D) linking pairs of nodes in dual space. In the current version of IndoorGML, a gate or entrance of building that connects indoor and outdoor spaces is represented by an _AnchorSpace_ instance and can be represented by a State instance in dual space. However, the connectivity between an outdoor network and an indoor cell of the _AnchorSpace_ class cannot be represented by the elements in IndoorGML.
+
+[[fig3]]
+.The concept of SeamlessNavigation module
+image::images/003.png["",411,111]
+
+In this discussion paper, a SeamlessNavigation model as an extension of IndoorGML is designed for making connections with other standards that represent outdoor spaces, as shown in <<fig3>>. Unlike defining a unified integration model, the SeamlessNavigation model defines a new element which has the following attributes to support the seamless traveling between indoor and outdoor spaces:
+
+* Parameters for the conversion of coordinate reference systems
+* External reference to the outdoor transportation network
+
+[[conversion_method_of_the_coordinate_reference_system]]
+=== Conversion method of the coordinate reference system
+
+The conversion of the Coordinate Reference System (CRS) is an important process for seamless navigation between indoor and outdoor coordinate systems. In cases where the global CRS is used for indoor space, the conversion parameters are not necessary. However, many building datasets are represented in their own local CRS. In the case of using the local CRS, four parameters are required for Cartesian coordinate system conversion:
+
+* the origin point of target CRS (or global CRS) $P~o~(x~0~, y~0~, z~0~)$,
+* rescaling factor $R(s~x~, s~y~, s~z~)$,
+* rotation angles $A(α, β, γ)$, along $x,y,z$-axis, and
+* translation vector $T(t~x~, t~y~, t~z~)$
+
+Firstly, the origin $P~o~$ is required to perform the transformation. Next, a scale value $R$, between the local coordinate system and the global coordinate system, is required. Thirdly, the rotation angle of each axis $A$ is required for the rotation movement between the coordinate systems. Lastly, a translation vector $T$is given for parallel movement between coordinate systems. <<fig4>> shows examples of conversion methods.
+
+[[fig4]]
+.Example of transform methods (2-dimensional case)
+image::images/004.png["",360,347]
+
+Unlike scaling and translation, the rotation is affected by the order in which the parameters (rotation angles) are applied. Typically, the Euler angle for 3D rotation described in [1,5] can be used. Euler angles are described as a sequence of rotations about three mutually orthogonal coordinate axes fixed in $R^3^$ Space. This discussion paper uses yaw, pitch, and roll rotation, as shown in <<fig5>>, one of the sequences of Euler angles.
+
+[[fig5]]
+.Example of Yaw-Pitch-Roll rotation
+image::images/005.png["",460,423]
+
+Yaw is a counterclockwise rotation of $α$ about the $z$-axis, as shown in <<fig5>>. The rotation matrix is given by:
+
+[stem%unnumbered]
+++++
+R_z(α) = [[cosα, -sinα, 0],
+[sinα, cosα, 0],
+[0, 0, 1]]
+++++
+
+Note that the upper left entries of $R~z~(α)$ from a 2D rotation applied to the $x$ and $y$ coordinates, whereas the $z$ coordinate remains constant.
+
+Similarly, a pitch is a counterclockwise rotation of $β$ about the $y$-axis, and a roll is a counterclockwise rotation of $γ$ about the $x$-axis, as shown in <<fig5>>. The rotation matrix of pitch and roll are given by: 
+
+[stem%unnumbered]
+++++
+R_y(β) = [[cosβ, 0, sinβ],
+[0, 1, 0],
+[-sinβ, 0, cosβ]]
+++++
+
+[stem%unnumbered]
+++++
+R_x(γ) = [[1, 0, 0],
+[0, cosγ, -sinγ],
+[0, sinγ, cosγ]]
+++++
+
+So, a 3D rotation matrix with $α,β,γ$ is defined as follows:
+
+[stem%unnumbered]
+++++
+R(α,β,γ) = Rz(α)Ry(β)Rx(γ) = [[cosαcosβ, cosαsinβsinγ−sinαcosγ, cosαsinβcosγ+sinαsinγ],
+[sinαcosβ, sinαsinβsinγ+cosαcosγ, sinαsinβcosγ−cosαsinγ],
+[-sinβ, cosβsinγ, cosβcosγ]]
+++++
+
+[[uml_diagram_of_the_seamless_navigation_module]]
+=== UML diagram of the seamless navigation module
+
+IndoorGML has a thick model that represents the wall thickness of a building and a thin model that does not, as shown in <<fig6>>. The SeamlessNavigation module can be defined by considering both models.
+
+[[fig6]]
+.Example of Thin and Thick model (OGC 14-005r5)
+image::images/006.png["",570,612]
+
+However, when expressing an entrance with a thin model, a _State_ is required in the outdoor space according to the definition of transition. However, since _State_ has a duality relation with _CellSpace_, it is necessary to express the outdoor space as _CellSpace_ to create a _State_ in outdoor space. However, this is not semantically equivalent to _CellSpace_ defined in IndoorGML. In conclusion, the entrance should be expressed, as is the _State_, in the door of the thick model.
+
+[[fig7]]
+.IndoorGML SeamlessNavigation module
+image::images/007.png["",333,234]
+
+The proposed SeamlessNavigation module is shown in <<fig7>>. The SeamlessNavigation module consists of three elements: _AnchorState, AnchorLink, and ExternalAnchorState_. The UML diagram depicted in <<fig8>> and <<fig9>> shows the IndoorGML SeamlessNavigation module data model based on the IndoorGML core and navigation module.
+
+[[fig8]]
+.UML diagram for SeamlessNavigation module (simple version)
+image::images/008.png["",576,443]
+
+[[fig9]]
+.UML diagram for SeamlessNavigation module based on IndoorGML modules
+image::images/009.png["",499,824]
+
+[[anchorstate]]
+==== <AnchorState>
+
+_AnchorState_ represents a node that provides the connection between indoor space and outdoor space. It refers to entrance doors. It can be used as a control point for indoor-outdoor integrations. It contains conversion parameters for transforming the local CRS coordinates of indoor geometry. In cases where the global CRS is used for indoor space, the conversion parameters are not necessary. The transformReferencePoint element describes a reference point that is used for the conversion. TransformReferencePoint is a point in the global CRS. TransformReferencePoint is represented geometrically as a _Point_ in Geography Markup Language (GML). TransformReferencePoint must have an attribute crsName to represent the used CRS of the outdoor network. The duality element represents an association with the corresponding _AnchorSpace_ class, which represents a special opening space. _AnchorState_ has a geometry that is derived from _State_ class, and it is one of the endpoints of the curve geometry of _AnchorLink_.
+
+[source,xml]
+----
+<xs:element name="AnchorState" type="AnchorStateType" substitutionGroup="IndoorCore:State"/>
+<!-- ====================================================================== -->
+<xs:complexType name="AnchorStateType">
+<xs:complexContent>
+<xs:extension base="IndoorCore:StateType">
+<xs:sequence>
+<xs:element name="transformReferencePoint" type="ExternalPositionType"/>
+<xs:element name="rotationAngle" type="gml:VectorType" minOccurs="0"/>
+<xs:element name="rescailingFactor" type="gml:VectorType" minOccurs="0"/>
+<xs:element name="translationVector" type="gml:VectorType" minOccurs="0"/>
+<xs:element name="duality" type="AnchorSpacePropertyType" minOccurs="0"/>
+<xs:element name="connects" type="AnchorLinkPropertyType" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:complexType name="AnchorStatePropertyType">
+<xs:sequence minOccurs="0">
+<xs:element ref="AnchorState"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:complexType name="AnchorSpacePropertyType">
+<xs:sequence minOccurs="0">
+<xs:element ref="IndoorNavi:AnchorSpace"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:complexType name="ExternalPositionType">
+<xs:sequence>
+<xs:element name="geometry" type="gml:PointPropertyType"/>
+</xs:sequence>
+<xs:attribute name="srsName" type="xs:anyURI" use="required"/>
+</xs:complexType>
+----
+
+[[fig10]]
+.The process of CRS conversion
+image::images/010.png["",576,451]
+
+All _AnchorState_ elements are used for conversion, except the duality and connects elements: transformReferencePoint $p~o~(x~0~, y~0~, z0)$, rotationAngle $R(s~x~, s~y~, s~z~)$, rescailingFactor $A(α,  β,  γ)$, and translationVector $T(t~x~, t~y~, t~z~)$. The conversion using these parameters depends on the order in which they are applied. This document assumes that the transformation is performed in the order, as shown in <<fig10>>: Rotation Scaling Translation. In the case of rotation, the rotation should be performed after shifting to the origin based on the _AnchorState_ point $p~a~(a~x~,a~y~, a~z~$) for simplification of the problem. Finally, the method to obtain the conversion result, $Convert(x,y,z,p~a~,p~o~,R,S,T)$ using the given parameters is as follows:
+
+[stem%unnumbered]
+++++
+Convert(x,y,z,p_a,p_o,R,S,T) = R_z(α)R_y(β)R_x(γ)S(x−a_x,y−a_y,z−a_z)+p_o +T = [[cos⁡αcos⁡β, cos⁡αsin⁡βsin⁡γ−sin⁡αcos⁡γ, cos⁡αsin⁡βcos⁡γ+sin⁡αsin⁡γ], 
+[sin⁡αcos⁡β, sin⁡αsin⁡βsin⁡γ+cos⁡αcos⁡γ, sin⁡αsin⁡βcos⁡γ−cos⁡αsin⁡γ],
+[−sin⁡β, cos⁡βsin⁡γ, cos⁡βcos⁡γ]] [[s_x∗(x−a_x)],
+[s_y∗(y−a_y)],
+[s_z∗(z−a_z)]] + 
+[[x_0+t_x],
+[y_0+ t_y],
+[z_0+ t_z]]
+++++
+
+[[externalanchorstate]]
+==== <ExternalAnchorState>
+_ExternalAnchorState_ represents a node that represents the position on the outdoor network. It is represented geometrically as a _Point_ in GML and it is one of the endpoints of the curve geometry of _AnchorLink_. It also has references to outdoor networks in other standards; +
+e.g., CityGML, GDF, etc.
+
+[source,xml]
+----
+<xs:element name="ExternalAnchorState" type="ExternalAnchorStateType" substitutionGroup="gml:AbstractFeature"/>
+<!-- ====================================================================== -->
+<xs:complexType name="ExternalAnchorStateType">
+<xs:complexContent>
+<xs:extension base="gml:AbstractFeatureType">
+<xs:sequence>
+<xs:element name="externalNetworkReference" type="IndoorCore:ExternalReferenceType"/>
+<xs:element name="geometry" type="gml:PointPropertyType"/>
+<xs:element name="connects" type="AnchorLinkPropertyType" maxOccurs="unbounded"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:complexType name="ExternalAnchorStatePropertyType">
+<xs:sequence minOccurs="0">
+<xs:element ref="ExternalAnchorState"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:complexType>
+----
+
+<<fig11>> depicts an example of mapping relation between _ExternalAnchorState_ and externalNetworkReference for each case: The shape of externalNetworkReference should be represented as one of those types; (a) a point type, (b) an edge type and (c) a polygon type.
+
+[[fig11]]
+.Example of mapping relation between ExternalAnchorState and externalNetworkReference
+image::images/011.png["",559,234]
+
+In the case of (a) in <<fig11>>, externalNetworkReference is represented as a point that is the closest to the entrance of the building in the outside network. Similarly, in (b) in <<fig11>>, externalNetworkReference represents an edge that is the most adjacent to the opening of the building in the outside network. In this case, the geometry of _ExternalAnchorState_ should be a point on the edge of externalNetworkReference. Lastly, in (c) in <<fig11>>, externalNetworkReference represents a polygon that expresses the area of the building. In this case, the geometry of _ExternalAnchorState_ should be a central point of the polygon of externalNetworkReference.
+
+[[anchorlink]]
+==== <AnchorLink>
+_AnchorLink_ represents an edge between the indoor network and outdoor networks. _AnchorLink_ always connects _AnchorState_ and _ExternalAnchorState_. For the geometrical representation of an _AnchorLink_, a _Curve_ geometric primitive object from the GML is used.
+
+[source,xml]
+----
+<xs:element name="AnchorLink" type="AnchorLinkType" substitutionGroup="gml:AbstractFeature"/>
+<!-- ====================================================================== -->
+<xs:complexType name="AnchorLinkType">
+<xs:complexContent>
+<xs:extension base="gml:AbstractFeatureType">
+<xs:sequence>
+<xs:element name="connectToIndoor" type="AnchorStatePropertyType"/>
+<xs:element name="connectToOutdoor" type="ExternalAnchorStatePropertyType"/>
+<xs:element name="geometry" type="gml:CurvePropertyType"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:extension>
+</xs:complexContent>
+</xs:complexType>
+<!-- ====================================================================== -->
+<xs:complexType name="AnchorLinkPropertyType">
+<xs:sequence minOccurs="0">
+<xs:element ref="AnchorLink"/>
+</xs:sequence>
+<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+</xs:complexType>
+----
