@@ -1,0 +1,8 @@
+
+== Introduction
+
+This OGC document tries to extend the OGC IndoorGML core and navigation modules for supporting seamless navigation from an indoor to an outdoor space, and vice versa. Although there are many approaches to determine the indoor or outdoor location of a user, few services support both indoor and outdoor space due to the absence of a data model that covers/connects them both. The scope of this discussion paper is to design an extension data model of IndoorGML for linking between two anchor parts of indoor and outdoor space. This paper consists of three parts:
+
+* The concept of anchor nodes for the connection between indoor and outdoor space,
+* An extension of IndoorGML schema for seamless navigation, and
+* A use case with other geospatial data model standards: CityGML 2.0, Geographic Data Files 5.0, and the specification for a pedestrian network model from the Government of Japan [2]

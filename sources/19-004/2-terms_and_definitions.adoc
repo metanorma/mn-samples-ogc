@@ -1,0 +1,32 @@
+
+== Terms and Definitions
+
+This document uses the terms defined in Sub-clause 5.3 of [OGC 06-121r8], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word "shall" (not "must") is the verb form used to indicate a requirement to be strictly followed to conform to this Best Practice.
+
+[[indoor_space]]
+=== Indoor space
+
+A space within one or multiple buildings consisting of architectural components.
+
+[[cellular_space]]
+
+=== Cellular Space
+
+A space where location is identified by a cell identifier
+
+[[abbreviated_terms]]
+
+=== Abbreviated terms
+
+The following abbreviated terms are used in this discussion paper:
+
+* AIST National Institute of Advanced Industrial Science and Technology
+* CityGML City Geography Markup Language
+* CRS Coordinate Reference System
+* GDF Geographic Data Files
+* GML Geography Markup Language
+* IndoorGML Indoor Geography Markup Language
+* ISO International Organization for Standardization
+* OGC Open Geospatial Consortium
+* OSM OpenStreetMap
+* UML Unified Modeling Language

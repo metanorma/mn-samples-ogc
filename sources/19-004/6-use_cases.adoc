@@ -1,0 +1,217 @@
+
+[[use_cases]]
+== Use cases
+
+[[use_case_with_citygml]]
+=== Use case with CityGML
+
+For better understanding, this document provides a use case of the SeamlessNavigation module for the Transportation model of CityGML 2.0. This section briefly introduces the CityGML Transportation model and suggests some guidelines for using the sample data to create the SeamlessNavigation module data.
+
+[[citygml_2_0_transportation_model]]
+==== CityGML 2.0 Transportation model
+
+CityGML is an OGC standard data model and exchange format for storing digital 3D models of cities and landscapes. CityGML supports a transportation model that focuses on thematic as well as on geometrical/topological aspects, as shown in <<fig12>>.
+
+[[fig12]]
+.UML diagram of transportation model in CityGML 2.0 (OGC 12-019)
+image::images/012.png["",576,255]
+
+The main class is _TransportationComplex_, which is composed of the parts _TrafficArea_ and _AuxiliaryTrafficArea_. In the 'LOD 0' level of detail, the transportation complexes are modeled by line objects establishing a linear network. On this level, pathfinding algorithms or similar analyses can execute.
+
+Therefore, the geometry of _ExternalAnchorState_ should be created as a point on the lod0Network and must have the source data information of the _TransportationComplex_ using the GML ID or URL information, as shown in <<fig13>>. The geometry of _AnchorLink_ can be derived from two points, which are the geometries of _AnchorState_ and _ExternalAnchorState_.
+
+[[fig13]]
+.The use case of the CityGML Transportation module
+image::images/013.png["",564,603]
+
+[[use_case_site_aist_tokyo_waterfront_annex_building]]
+==== Use case site – AIST Tokyo Waterfront Annex building
+
+The sample data for the use case have been conducted at a real site: AIST Tokyo Waterfront Annex in Japan, as shown in <<fig14>>. This sample data shows the basic structure of SeamlessNavigation module data and how the SeamlessNavigation module and CityGML Transportation model datasets are linked via external references.
+
+For simplicity, the detailed structure inside the AIST building is not represented, and the data are constructed using only 2D geometry. All geometric data in the sample data are derived from the Open Street Map (OSM[3]) data and have the same CRS; EPSG:4326 (WGS 84). The IndoorGML data consists of two spaces: one _CellSpace_ and one _AnchorSpace_. The CityGML data has only one _TransportationComplex_ instance.
+
+[[fig14]]
+.CityGML use case site - AIST Tokyo Waterfront Annex
+image::images/014.png["",576,429]
+
+The detailed contents of sample data for the _AnchorState_ class are as shown in <<fig15>>. This data consists of IndoorGML Core and Navigation modules. _AnchorState_ can have a geometry derived from the _State_ class. This geometry is used to create the geometry of an _AnchorLink_. It can have several elements for conversion. However, in this case, all geometries have the same CRS, so these elements are omitted. _AnchorState_ must have a transformReferencePoint and connects element. The TransformReferencePoint must have CRS information, as shown in the yellow part of <<fig15>>. The connects element is represented by an xlink for the GML ID of the _AnchorLink_ class instance, as shown in the green part of <<fig15>> and <<fig18>>. _AnchorState_ can have a duality association with the _AnchorSpace_ class instance, as shown in the blue part of <<fig15>>.
+
+[[fig15]]
+.Part of sample data for _AnchorState_ (seamlessNaviSample.gml)
+image::images/015.png["",1095,1218]
+
+<<fig16>> shows the _ExternalAnchorState_ sample data. It consists of three properties: externalNetworkReference, geometry, and connects. ExternalNetworkReference is a corresponding object in the _TransportationComplex_ instance, as shown in the blue part of <<fig16>> and <<fig17>>. The geometry of _ExternalAnchorState_ is derived from one of the points on a lod0network, as shown in the yellow part of <<fig16>> and <<fig17>>. connects is represented by xlink for GML id of _AnchorLink_ class instance, as shown in the green part of <<fig16>> and <<fig18>>.
+
+[[fig16]]
+.Part of sample data for _ExternalAnchorState_ (seamlessNaviSample.gml)
+image::images/016.png["",1502,545]
+
+[[fig17]]
+.Part of sample data for _TransportationComplex_ (cityTransSample.gml)
+image::images/017.png["",1502,693]
+
+_AnchorLink_ sample data is shown in <<fig18>>. The association elements (connectToIndoor and connectToOutdoor) are represented by xlinks for GML ID of each class instance. The curve geometry is derived from the geometry of connectToIndoor and connectToOutdoor instances.
+
+[[fig18]]
+.Part of sample data for _AnchorLink_ (seamlessNaviSample.gml)
+image::images/018.png["",1513,467]
+
+[[japan_use_case]]
+=== Use case with a specification for the pedestrian network model from Japan government
+
+This section briefly introduces the "Development Specification for Spatial Network Model for Pedestrians (for short, PNspec) [2]" and suggests guidelines for conversion of the SeamlessNavigation module data using the specific cases.
+
+[[conversion_method_from_pnspec_to_indoorgml]]
+==== Conversion method from PNspec to IndoorGML
+
+PNspec includes both indoor and outdoor network information. To use the SeamlessNavigation module, we need to convert the indoors content of the PNspec into IndoorGML.
+
+This chapter describes how to convert PNspec to IndoorGML. Because both IndoorGML and PNspec have node and link-based network models, they can easily convert between each schema. However, some special cases have different parts. In the case of a staircase, the PNspec places nodes at the beginning and end of the staircase, then links the two nodes. However, in IndoorGML, a staircase is expressed as a single space, so it is expressed as a single _State_. To resolve these conflicts, we need the mapping rules shown in <<fig19>>.
+
+[[fig19]]
+.An example of mapping PNspec to IndoorGML in a stairs case_
+image::images/019.png["",390,283]
+
+Similarly, for gradients, PNspec places nodes at the beginning and end of the sloped space, then links the two nodes. However, in IndoorGML, the space with slope is expressed as a single space, so it is expressed as a single _State_. To resolve these conflicts, we need the mapping rules shown in <<fig20>>.
+
+[[fig20]]
+.An example of mapping PNspec to IndoorGML in changing points of barriers (gradient) case
+image::images/020.png["",482,136]
+
+Finally, in the case of a step, PNspec places nodes before and after a step. In the case of IndoorGML, we can divide space around a step. However, we do not create a state around the step. Depending on the concept of cellular space of IndoorGML, multiple nodes will be mapped to a single _State_, as shown in <<fig21>>.
+
+[[fig21]]
+.An example of mapping PNspec to IndoorGML in changing points of barriers (step) case
+image::images/021.png["",453,129]
+
+In addition, PNspec expresses a node having the same concept as an anchor node of this document as 'the in/out boundary of the facility.' However, in PNspec, an entrance is supposed to be a link. Depending on the characteristics of the _AnchorState_ defined in this discussion paper, the entrance should be represented as a _State_. Therefore, the nodes and links representing the entrance in the PNspec should be represented by classes of IndoorGML Core and SeamlessNavigation module as shown in <<fig22>>.
+
+[[fig22]]
+.An example of mapping PNspec to IndoorGML in entrance of building case
+image::images/022.png["",572,302]
+
+[[use_case_site_tokyo_station]]
+==== Use case site – Tokyo Station
+
+The sample data for the use case have been conducted at a real site: Tokyo station, as shown in <<fig23>>. PNspec sample data is derived from data by the Government of Japan, and is provided through an open license {blank}footnote:[https://www.geospatial.jp/ckan/dataset/0401]. This chapter shows how the SeamlessNavigation module and PNSpec datasets are linked via external references.
+
+[[fig23]]
+.PNSpec use case site – Tokyo station (Node case)
+image::images/023.png["",556,350]
+
+For simplicity, we used a part of Tokyo station data, as shown in <<fig24>>: four nodes and three edges.
+
+[[fig24]]
+.Part of PNSpec sample data
+image::images/024.png["",354,261]
+
+The detailed contents of sample data for the nodes is shown in <<fig25>>. The PNSpec data provided by the GeoJSON format. Nodes can be distinguished by the 'in_out' attribute. In the case of an 'in_out' attribute of value '2', this node represents the entrance of the building. And then, we can choose one node for connecting _ExternalAnchorState_, using the link attribute of the node. <<fig26>> shows the sample data for edges that linked with the entrance of the building node with an ID of '00001B000000000309CC60A662D77FC1'. For making an _ExternalAnchorState_ instance, we have to choose one of the connected nodes with the entrance of the building, and the 'in_out' value is '1'. In this sample data, there are three Nodes connected to the entrance of the building node. However, one of these nodes is located in indoor space: with an 'in_out' value of '2'. Therefore, we have to choose one node from the remaining two nodes.The mapped _ExternalAnchorState_ result is shown in <<fig27>>.
+
+[source,xml]
+----
+{
+"type": "FeatureCollection",
+"name": "node",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6668" } },
+"features": [
+{ "type": "Feature", "properties": { "FID": 1603, "node_id": "00001B000000000309CC60A662D77FC1", "lat": 35.674696, "lon": 139.759514, "floor": "0", "in_out": 2, "link1_id": "00001B000000000309CC5F2662D5FFC1", "link2_id": "00001B000000000309CC60A662D77FC3", "link3_id": "00001B000000000309CC60A662D77FC4", "link4_id": " ", "link5_id": " ", "link6_id": " ", "link7_id": " ", "link8_id": " " }, "geometry": { "type": "Point", "coordinates": [ 139.759513964000121, 35.674695651000036 ] } },
+{ "type": "Feature", "properties": { "FID": 1595, "node_id": "00001B000000000309CC5DA662D47FC2", "lat": 35.674545, "lon": 139.759354, "floor": "0", "in_out": 1, "link1_id": "00001B000000000309CC5D2662D3FFC2", "link2_id": "00001B000000000309CC5F2662D5FFC1", "link3_id": "00001B000000000309CC58A662DBFFC1", "link4_id": " ", "link5_id": " ", "link6_id": " ", "link7_id": " ", "link8_id": " " }, "geometry": { "type": "Point", "coordinates": [ 139.759354253000083, 35.674545111000043 ] } },
+{ "type": "Feature", "properties": { "FID": 1607, "node_id": "00001B000000000309CC60A662D7FFC2", "lat": 35.674714, "lon": 139.759534, "floor": "0", "in_out": 1, "link1_id": "00001B000000000309CC60A662D77FC3", "link2_id": "00001B000000000309CC60A662D97FC2", "link3_id": "00001B000000000309CC62A662D4FFC2", "link4_id": " ", "link5_id": " ", "link6_id": " ", "link7_id": " ", "link8_id": " " }, "geometry": { "type": "Point", "coordinates": [ 139.759534400000121, 35.674714440000059 ] } },
+{ "type": "Feature", "properties": { "FID": 1604, "node_id": "00001B000000000309CC60A662D77FC2", "lat": 35.674695, "lon": 139.759525, "floor": "0", "in_out": 3, "link1_id": "00001B000000000309CC60A662D77FC4", "link2_id": "00001B000000000309CC60A662D7FFC3", "link3_id": " ", "link4_id": " ", "link5_id": " ", "link6_id": " ", "link7_id": " ", "link8_id": " " }, "geometry": { "type": "Point", "coordinates": [ 139.759525074000067, 35.674694875000057 ] } }
+]
+}
+----
+
+[[fig25]]
+.Part of sample data for PNSpec Node (PNSpec_node.json)
+image::images/025.png["",2,2]
+
+[source,xml]
+----
+{
+"type": "FeatureCollection",
+"name": "link",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6668" } },
+"features": [
+{ "type": "Feature", "properties": { "FID": 2197, "link_id": "00001B000000000309CC5F2662D5FFC1", "start_id": "00001B000000000309CC5DA662D47FC2", "end_id": "00001B000000000309CC60A662D77FC1", "distance": "22.100000", "rt_struct": 1, "route_type": 1, "direction": 1, "width": 4, "vtcl_slope": 1, "lev_diff": 1, "tfc_signal": 1, "tfc_s_type": 1, "brail_tile": 2, "elevator": 1, "roof": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ 139.759354253000083, 35.674545111000043 ], [ 139.759513964000121, 35.674695651000036 ] ] } },
+{ "type": "Feature", "properties": { "FID": 2200, "link_id": "00001B000000000309CC60A662D77FC3", "start_id": "00001B000000000309CC60A662D77FC1", "end_id": "00001B000000000309CC60A662D7FFC2", "distance": "2.800000", "rt_struct": 1, "route_type": 1, "direction": 1, "width": 4, "vtcl_slope": 1, "lev_diff": 1, "tfc_signal": 1, "tfc_s_type": 1, "brail_tile": 2, "elevator": 1, "roof": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ 139.759513964000121, 35.674695651000036 ], [ 139.759534400000121, 35.674714440000059 ] ] } },
+{ "type": "Feature", "properties": { "FID": 4294, "link_id": "00001B000000000309CC60A662D77FC4", "start_id": "00001B000000000309CC60A662D77FC2", "end_id": "00001B000000000309CC60A662D77FC1", "distance": "1", "rt_struct": 7, "route_type": 6, "direction": 1, "width": 4, "vtcl_slope": 3, "lev_diff": 2, "tfc_signal": 1, "tfc_s_type": 1, "brail_tile": 1, "elevator": 1, "roof": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ 139.759525074000067, 35.674694875000057 ], [ 139.759513964000121, 35.674695651000036 ] ] } },
+]
+}
+----
+
+[[fig26]]
+.Part of sample data for PNSpec Edge (PNSpec_edge.json)
+image::images/026.png["",2,2]
+
+[[fig27]]
+.Part of sample data for ExternalAnchorState
+image::images/027.png["",1502,547]
+
+[[use_case_with_gdf_5_0]]
+=== Use case with GDF 5.0
+
+This section briefly introduces the Geographic Data Files (GDF) 5.0 format and suggests guidelines for the conversion of SeamlessNavigation module data using the specific cases.
+
+[[gdf_5_0]]
+==== GDF 5.0
+
+GDF is an ISO international standard that specifies the conceptual and logical data models and physical encoding formats for geographic databases for Intelligent Transportation Systems (ITS) applications and services. It has the reference number ISO 14825:2011. 
+
+<<fig28>> shows that the overall conceptual data model of GDF 5.0. Within the GDF 5.0 model, a _Feature_ is a database representation of a real-world geographic object: roads, buildings, etc. Each _Feature_ must belong to exactly one _FeatureClass_ and _FeatureTheme_. A _Feature_ may have zero or more _AttributeValue_ instances that serve to represent characteristics of a _Feature_. A _Relationship_ is used to associate two or more Features together and may have zero or more _AttributeValue_ instances.
+
+[[fig28]]
+.UML diagram of the overall conceptual data model of GDF 5.0 (GDF 5.0, 2011)
+image::images/028.png["",570,475]
+
+In this discussion paper, we focused on how to connect the outdoor network and indoor network using the IndoorGML SeamlessNavigation module. Therefore, we have to make a connection between _ExternalAnchorState_ and a specific feature of GDF 5.0; i.e., the entrance of the building, the element of pedestrian network, etc. Firstly, the entrance of the building element can be expressed in two ways: Using _Relationship_, Using _Feature_.
+
+[[fig29]]
+.UML diagram of the conceptual data model for 'Relationships' with 'BuildingAlongRoadElement'
+image::images/029.png["",576,507]
+
+As shown in <<fig29>>, the entrance of the building can be expressed as a _BuildingAlongRoadElement_, one of the types of _Relationship_. _BuildingAlongRoadElement_ identifies the _RoadElement_ along which the entrance of the _Building_, _SchematicBuilding,_ or _BuildingUnit_ is situated. In the case of using _BuildingAlongRoadElement_, for connecting to _ExternalAnchorState_, we have to make externalReference based on _roadElement_ ID, an element of _BuildingAlongRoadElement_.
+
+As shown in <<fig30>>, the entrance of the building can be expressed as an _EntryPoint_, one of the _Types_ of _GeneralFeature_. _EntryPoint_ can be distinguished through the characteristics of the entrance. A "main" entrance is generally characterized by the following:
+
+* It coincides with the address of the selected Service;
+* It is provided with a reception/lobby for the visitor;
+* It is the entrance which attracts the most attention;
+* It is the entrance to which road signs (if present) point.And at least one of the _EntryPoint_ instances of a service shall be attributed as "Main."
+
+[[fig30]]
+.UML diagram of the conceptual data model for EntryPoint of General Feature
+image::images/030.png["",502,385]
+
+In the case of using _EntryPoint_, for connecting to _ExternalAnchorState_, we have to make an externalReference based on the _EntryPoint_ ID.
+
+The geometry of all _Features_ in GDF 5.0 shall be expressed by _Node_, _Edge,_ and _Face_. <<fig31>> shows a UML diagram of the conceptual data model for _PlanarTopoSimpleFeature_, one of the types of graph topology.
+
+[[fig31]]
+.UML diagram of the conceptual data model for 'PlanarTopoSimpleFeature'
+image::images/031.png["",762,564]
+
+[[use_case_site_aist_tokyo_waterfront_annex_building_2]]
+==== Use case site – AIST Tokyo Waterfront Annex building
+
+The sample data for the use case have been conducted at a real site: AIST Tokyo Waterfront Annex in Japan, as shown in <<fig32>>. The GDF 5.0 sample data created was based on the XML schema that is provided in Chapter 13 of GDF 5.0. For simplicity, we elide _DLS_ (_Dataset_, _Layer_, _Section_) information in sample data. The detailed contents of the GDF sample data are shown in <<fig33>>. This data consists of four _Point Features_ and one _Relationship_.
+
+[[fig32]]
+.GDF 5.0 Use case site - AIST Tokyo Waterfront Annex
+image::images/032.png["",576,383]
+
+_Point Feature_ instances must have point_feat_ID, feature_code, and coord properties: point_feat_ID means identifier of _Point Feature_, feature_code means the four-digit code of the _Feature__Class_ to which the _Feature_ in issue belongs, and coord means a position of _Feature_.
+
+_Relationship_ must have rel_ID and rel_code: rel_ID means identifier of _Relationship_ and rel_code means (pre-defined or user-defined) relationship type code. And _Relationship_ can have num_feat and rel_feature: num_feat means the number of features that belong to _Relationship_ and rel_feature means the feature information belong to Relationship.
+
+The mapped _ExternalAnchorState_ result is shown in <<fig34>>.
+
+[[fig33]]
+.GDF 5.0 sample data (GDF_5_0_sample.xml)
+image::images/033c.png["",635,1515]
+
+[[fig34]]
+.Part of sample data for 'ExternalAnchorState'
+image::images/034.png["",1553,572]
+

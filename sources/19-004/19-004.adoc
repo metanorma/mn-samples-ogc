@@ -1,0 +1,43 @@
+= Anchor Node Extension in IndoorGML - Seamless Navigation between Indoor and Outdoor Space
+:doctype: discussion-paper
+:language: en
+:status: approved
+:committee: technical
+:docnumber: 19-004
+:received-date: 2019-02-05
+:issued-date: 2019-02-28
+:published-date: 2019-12-11
+:external-id: http://www.opengis.net/doc/dp/indoorgml-anchornode
+:fullname: Kyoung-Sook Kim
+:fullname_2: Jiyeong Lee
+:role: editor
+:keywords: ogcdoc, OGC document, OGC, IndoorGML, Indoor space, Outdoor space, Seamless navigation, CityGML
+:submitting-organizations: National Institute of Advanced Industrial Science and Technology; The University of Seoul; All for Land Inc
+:docfile: 19-004.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+
+include::0-preface.adoc[]
+
+include::1-introduction.adoc[]
+
+include::2-terms_and_definitions.adoc[]
+
+include::3-references.adoc[]
+
+include::4-connection_between_indoor_and_outdoor.adoc[]
+
+include::5-seamless_navigation_module.adoc[]
+
+include::6-use_cases.adoc[]
+
+include::annexA.adoc[]
+
+include::annexB.adoc[]
+
+include::annexC.adoc[]
+
+include::annexD.adoc[]
