@@ -1,0 +1,21 @@
+
+== Scope
+
+This OGC Abstract Specification defines the DGGS core data model and the core set of requirements to which every two dimensional OGC DGGS encoding must adhere. An OGC DGGS is a model of the entire Earth, using a hierarchical tessellation of equal-area cells that is analogous to a coordinate reference system. This OGC Abstract Specification does not prescribe any specific surface model of the Earth, polyhedron or class of polyhedra, but is intended to allow for a range of options that produce DGGS with compatible and interoperable functional characteristics.
+
+This Abstract Specification defines:
+
+[class=steps]
+. A concise definition of the term Discrete Global Grid System as an earth centered spatial reference system comprised of spatial units of equal area;
+. The essential characteristics of a conformant DGGS; and,
+. The core functional algorithms required to support the operation of a conformant DGGS.
+
+Extensions to the DGGS core Abstract Specification will add further functionality to the core requirements. In particular, DGGS extensions to the core will be required to support additional functional capabilities and interoperability using OGC Web Service (OWS) architectures, such as OGC Web Coverage Service (WCS) and Web Coverage Processing Service (WCPS) interfaces. This Abstract Specification anticipates:
+
+[class=steps]
+. The creation of a registration system for DGGS analogous to the registration for Coordinate Reference Systems (CRS);
+. The elaboration of extensions to the core Abstract Specification to define additional functional algorithms and/or schemas that will support interoperability protocols through multi-DGGS processing operations;
+. Potential additions and follow-on additions to other specifications; and
+. The elaboration of the core requirements to specify higher dimensional DGGS as either a subsequent version of this Abstract Specification, or as an extension to the core Abstract Specification.
+
+Every endeavor is made to use terms and data models from ISO19111, ISO19112 and ISO19115. However, DGGS are just sufficiently different to preclude use of many existing terms. Patterns are inherited from ISO data models but with redefined classes and their associations. Some of the fundamental differences are highlighted by the need to introduce DGGS coordinate reference system, geodetic identifier, and ellipsoidal polygons in order to distinguish them from their ISO equivalents of geodetic coordinate reference system, geographic identifier, and geodesic polygons.

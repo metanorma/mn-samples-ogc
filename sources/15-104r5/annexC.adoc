@@ -1,0 +1,65 @@
+
+[appendix]
+== Revision history
+
+[%unnumbered]
+|===
+h| Date h| Release h| Author h| Paragraph modified h| Description
+| 2015-08-10 | 0.1.0 a| Matthew Purss, +
+Robert Gibb, +
+Faramarz Samavati, +
+Perry Peterson, +
+J Andrew Rogers, +
+Jin Ben | All | Initial draft created
+| 2015-09-30 | 0.2.0 a| Matthew Purss, +
+Robert Gibb, +
+Faramarz Samavati, +
+Perry Peterson, +
+J Andrew Rogers, +
+Jin Ben | All | Draft Candidate Standard approved by SWG for release to public for 30-day Public Comment Period.
+| 2015-11-20 | 0.3.0 | Matthew Purss a| Clauses: +
+i; +
+1 - par 3; +
+4.1, 4.6, 4.7, 4.11, 4.15, 4.19, 4.20; +
+6.1, 6.2, 6.3, 6.4 - par 1&2, 6.6 - par 3-5, figure 1; +
+7.2.1, 7.2.4, 7.3.1, 7.3.1.1, 7.3.1.2, 7.3.2, Req 12, Req 13; +
+Annex C | Minor editorial changes following comments from Chris Little during OAB review.
+| 2015-11-30 | 0.3.1 | Robert Gibb, Matthew Purss, Faramarz Smarvati, Perry Peterson | | Minor editorial changes following comments from John Herring during OAB review
+| 2015-12-2 | 0.4.0 a| Roger Lott, +
+Robert Gibb a| Clause 4 (All) +
+Clause 5.3 (new) +
+Clause 6.4 +
+Clause 7 (many) | Change Term Definitions to ISO compliance and flow-on changes to the rest of the document, introduce Equal Area Precision requirement and associated change to Equal Area requirement and conformance tests, replace Initial Discretization with Initial Tessellation throughout, replace hierarchy requirement and conformance test with tessellation sequence.
+| 2015-12-23 | 0.5.0 | Robert Gibb a| Submitters +
+Clause 2 +
+Clause 4 +
+New 5.7 +
+Update all figures, removing old figs 4,5,6 & 7 +
+Clause 6 a| Acknowledge Roger Lott's contribution +
+Remove unreferenced ISO standards +
+Differentiate DGGS from ISO definitions where needed +
+Clarify need for DGGS and ISO term differentiation +
+Insert ISO classes wherever possible & use ISO patterns where appropriate +
+Update usage to new DGGS terms, move 6.3.1 to 6.2.6 reflecting updated fig 3
+| 2016-03-23 | 0.5.1 | Robert Gibb a| New section between Submitters and Scope: Introduction a| As a consequence of this section being section 1, all subsequent sections are renumbered. +
+Adding an introduction is the first step to address concerns raised by public comments that indicated that readers weren't fully appreciating what the DGGS standard was.
+| 2016-08-26 | 0.6.0 a| Matthew Purss, +
+Robert Gibb, +
+Perry Peterson, +
+Faramarz Samavati, +
+Roger Lott, +
+Ben JinClinton Dow | All | Changes to the document to address formal Requests For Comment (RFCs) received during the Public Comment Period.
+| 2016-08-30 | 0.7.0 a| Matthew Purss, +
+Robert Gibb, +
+Roger Lott, +
+Clinton Dow, +
+Perry Peterson, +
+Faramarz Samavati, +
+Ben Jin | All | Revised standard submitted to TC for vote on adoption.
+| 2017-01-30 | 0.8.0 a| Matthew Purss, +
+Robert Gibb | All | Recasting the document to be an Abstract Specification instead of an Implementation Standard. This follows the decision of the PC not to approve the TC recommendation for adoption of this standard as an "Implementation Standard" – requesting that the DGGS SWG resubmit the document as an "Abstract Specification" instead.
+| 2017-04-10 | 1.0.0 a| Robert Gibb, +
+Matt Purss | All | Responding to comments received during the Public Comment period 2017-03-05 to 2017-04-05.
+| 2017-06-13 | 1.0.0 | Robert Gibb | | Responding to Chris Little's editorial review
+
+|===
