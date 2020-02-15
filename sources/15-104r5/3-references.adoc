@@ -1,0 +1,43 @@
+
+[bibliography]
+== References
+
+The OGC DGGS Core Abstract Specification consists of this document.
+
+The complete Abstract Specification is identified by OGC URI http://www.opengis.net/spec/dggs/1.0.
+
+The document has OGC URI http://www.opengis.net/doc/AS/dggs/1.0
+
+The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
+
+* [[[iso19101, ISO 19101-1:2014]]], ISO: ISO 19101-1:2014, _Geographic information – Reference model – Part 1: Fundamentals_, 2014
+
+* [[[iso19103, ISO 19103:2015]]], ISO: ISO 19103:2015, _Geographic information – Conceptual schema language,_ 2015
+
+* [[[iso19107, ISO 19107:2003]]], ISO: ISO 19107:2003, _Geographic information – Spatial schema,_ 2003
+
+* [[[iso19111, ISO 19111:2007]]], ISO: ISO 19111:2007, _Geographic information – Spatial referencing by coordinates,_ 2007
+
+* [[[iso19112, ISO 19112:2003]]], ISO: ISO 19112:2003, _Geographic information – Spatial referencing by geographic identifiers_, 2003
+
+* [[[iso19115, ISO 19115-1:2014]]], ISO: ISO 19115-1:2014, _Geographic information – Metadata – Part 1: Fundamentals_, 2014
+
+* [[[iso19123, ISO 19123:2005]]], ISO: ISO 19123:2005, _Geographic information – Schema for coverage geometry and functions_, 2005
+
+* [[[iso19125, ISO 19125-1:2004]]], ISO: ISO 19125-1:2004, _Geographic information – Simple feature access – Part 1: Common architecture_, 2004
+
+* [[[iso19136, ISO 19136:2007]]], ISO: ISO 19136:2007, _Geographic information – Geography Markup Language_, 2007
+
+* [[[iso19143, ISO 19143:2010]]], ISO: ISO 19143:2010, _Geographic information – Filter encoding_, 2010
+
+* [[[iso19156, ISO 19156:2011(E)]]], ISO: ISO 19156:2011(E), _Geographic information – Observations and Measurements_, 2011
+
+* [[[iso19501, ISO/IEC 19501:2005]]], ISO: ISO/IEC 19501:2005, _Information technology – Open Distributed Processing – Unified Modelling Language (UML),_Version 1.4.2, 2005
+
+* [[[ogc06103, OGC 06-103r4]]], OGC: OGC 06-103r4, _Implementation Standard for Geographic information – Simple feature access – Part 1: Common Architecture_. Version 1.2.1 _(identical in normative content to ISO 19125-1:2004)_, 2011
+
+* [[[ogc07036, OGC 07-036]]], OGC: OGC 07-036, _OpenGIS Geography Markup Language (GML) Encoding Standard_. _(identical in normative content to ISO 19136:2007)_, 2007
+
+* [[[ogc08015, OGC 08-015r2]]], OGC: OGC 08-015r2, _Abstract Specification {blank}footnote:f2[The OGC Abstract Specifications are available from http://www.opengeospatial.org/docs/as] – Topic 2: Spatial referencing by coordinates._ Version 4.0.0. _(identical in normative content to ISO 19111:2007)_, 2010
+
+* [[[ogc10004, OGC 10-004r3]]], OGC: OGC 10-004r3, _Abstract Specification {blank}footnote:f2[] – Topic 20: Observations and Measurements_. Version 2.0 _(identical in normative content to ISO 19156:2011(E))_, 2013

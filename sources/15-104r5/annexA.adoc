@@ -1,0 +1,256 @@
+
+[appendix,obligation=normative]
+== Conformance Class Abstract Test Suite
+
+This Annex specifies an Abstract Test Suite which shall be passed in completeness by any specification claiming conformance with this Abstract Specification.
+
+Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[http://www.opengis.net/spec/DGGS/1.0/].
+
+=== Conformance class: Core 
+
+[%unnumbered]
+|===
+2+^.^h| A.1.1 Core Data Model
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/model[http://www.opengis.net/spec/DGGS/1.0/conf/core/model]
+| Title | Core Data Model
+| Abbreviation | core/model
+| Type | Basic
+| Requirement | *Requirement 1:* http://www.opengis.net/spec/DGGS/1.0/req/core/model[http://www.opengis.net/spec/DGGS/1.0/req/core/model]
+| Reference Clause | *6.1*
+| Test Purpose | To verify that a DGGS specification conforms to the DGGS Core Data Model
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+
+[%unnumbered]
+|===
+2+^.^h| A.1.2 Reference Frame – Global Domain – Surface Area Equivalence
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/domain/area[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/domain/area]
+| Title | Reference Frame - Global Domain – Surface Area Equivalence
+| Abbreviation | reference_frame/domain/area
+| Type | Basic
+| Requirement | *Requirement 2:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/domain/area[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/domain/area]
+| Reference Clause | *6.2.1*
+| Test Purpose | To verify Domain completeness, with an initial discrete global grid whose area is defined as equal to the surface area of the DGGS Reference Frame's Earth model.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+[%unnumbered]
+|===
+2+^.^h| A.1.3 Reference Frame – Global Domain – Cell Boundary Overlap
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/domain/overlap[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/domain/overlap]
+| Title | Reference Frame - Global Domain – Cell Boundary Overlap
+| Abbreviation | reference_frame/domain/overlap
+| Type | Basic
+| Requirement | *Requirement 3:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/domain/overlap[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/domain/overlap]
+| Reference Clause | *6.2.1*
+| Test Purpose | To verify Location uniqueness, withan initial discrete global grid defined without any overlapping DGGS Cells.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+[%unnumbered]
+|===
+2+^.^h| A.1.4 Reference Frame – Tessellation Sequence
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/tessellation_sequence[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/tessellation_sequence]
+| Title | Reference Frame – Tessellation Sequence
+| Abbreviation | reference_frame/tessellation_sequence
+| Type | Basic
+| Requirement | *Requirement 4:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/tessellation_sequence[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/tessellation_sequence]
+| Reference Clause | *6.2.2*
+| Test Purpose | To verify a DGGS Reference Frame's definition comprises a sequence of discrete global grid tessellations with progressively finer resolution that can support data at multiple levels of spatial resolution.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+[%unnumbered]
+|===
+2+^.^h| A.1.5 Reference Frame — Global Area Preservation
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/global_area_preservation[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/global_area_preservation]
+| Title | Reference Frame–– Global Area Preservation
+| Abbreviation | reference_frame/global_area_preservation
+| Type | Basic
+| Requirement | *Requirement 5:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/global_area_preservation[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/global_area_preservation]
+| Reference Clause | *6.2.3*
+| Test Purpose | To verify for DGGS cells in each successive level of grid refinement, that Domain completeness and Position uniqueness are preserved, with total area of those DGGS cells the same as the initial global grid and no overlapping DGGS cells.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+[%unnumbered]
+|===
+2+^.^h| A.1.6 Reference Frame — Cell Shape
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/shape[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/shape]
+| Title | Reference Frame–– Cell Shape
+| Abbreviation | reference_frame/cell/shape
+| Type | Basic
+| Requirement | *Requirement 6:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/shape[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/shape]
+| Reference Clause | *5.2.4.1*
+| Test Purpose | To verify that all of the cells of a DGGS specification have shapes that are simple polygons on the surface model of the Earth; where, the boundary of the DGGS Cell is non-self-intersecting.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+
+[%unnumbered]
+|===
+2+^.^h| A.1.7 Reference Frame — Equal Area Precision
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/equal_area[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/equal_area_precision]
+| Title | Reference Frame — Equal Area Precision
+| Abbreviation | reference_frame/cell/equal_area_precision
+| Type | Basic
+| Requirement | *Requirement 8:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/equal_area[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/equal_area_precision]
+| Reference Clause | *6.2.4.2*
+| Test Purpose | To verify that a DGGS specification defines a DGGS equal area precision that includes uncertainty in the surface model of the Earth and the tessellation method.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+[%unnumbered]
+|===
+2+^.^h| A.1.8 Reference Frame — Equal Area Cells
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/equal_area[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/equal_area]
+| Title | Reference Frame — Equal Area Cells
+| Abbreviation | reference_frame/cell/equal_area
+| Type | Basic
+| Requirement | *Requirement 8:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/equal_area[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/equal_area]
+| Reference Clause | *6.2.4.2*
+| Test Purpose | To verify that the cells at a given level of cell refinement, and of each cell geometry in a DGGS specification have equal area.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+[%unnumbered]
+|===
+2+^.^h| A.1.9 Reference Frame – Initial Tessellation
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/initial_tessellation[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/initial_tessellation]
+| Title | Reference Frame — Initial Tessellation
+| Abbreviation | reference_frame/cell/initial_tessellation
+| Type | Basic
+| Requirement | *Requirement 9:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/initial_tessellation[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/initial_tessellation]
+| Reference Clause | *6.2.5.1*
+| Test Purpose | To verify that a DGGS specification has an initial tessellation comprising equal area cells produced by mapping a base unit polyhedron to a surface model of the Earth.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+
+[%unnumbered]
+|===
+2+^.^h| A.1.10 Reference Frame – Cell Refinement
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/refinement[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/refinement]
+| Title | Reference Frame – Cell Refinement
+| Abbreviation | reference_frame/cell/refinement
+| Type | Basic
+| Requirement | *Requirement 10:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/refinement[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/refinement]
+| Reference Clause | *6.2.5.2*
+| Test Purpose | To verify that a DGGS specification has a method to refine each cell into finer resolution child cells.
+| Test Method | Inspect documentation of the DGGS specification.
+2+^.^h| A.1.11 Reference Frame – Cell Addressing
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/indexing[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/indexing]
+| Title | Reference Frame – Cell Addressing
+| Abbreviation | reference_frame/cell/indexing
+| Type | Basic
+| Requirement | *Requirement 11:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/indexing[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/indexing]
+| Reference Clause | *6.2.5.3*
+| Test Purpose | To verify that a DGGS specification has a method to assign a unique spatial reference (or index) to each DGGS cell.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+[%unnumbered]
+|===
+2+^.^h| A.1.12 Reference Frame – Spatial Reference
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/spatial_reference[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/spatial_reference]
+| Title | Reference Frame – Spatial Reference
+| Abbreviation | reference_frame/spatial_reference
+| Type | Basic
+| Requirement | *Requirement 12:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/spatial_reference[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/spatial_reference]
+| Reference Clause | *6.2.6*
+| Test Purpose | To verify that the cells defined by a DGGS Reference Frame have a unique index assigned to them.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+[%unnumbered]
+|===
+2+^.^h| A.1.13 Reference Frame – Spatial Reference – Cells Referenced at their Centroid
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/spatial_reference/cell_center[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/spatial_reference/cell_centroid]
+| Title | Reference Frame – Spatial Reference – Cells Reference at their Centroid
+| Abbreviation | reference_frame/spatial_reference/cell_centroid
+| Type | Basic
+| Requirement | *Requirement 13:* http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/spatial_reference/cell_center[http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/spatial_reference/cell_centroid]
+| Reference Clause | *6.2.6.1*
+| Test Purpose | To verify that the cells defined by a DGGS Reference Frame are referenced at the centroid of each cell. This test requires the verification that the DGGS specification has a method that enables a given set of DGGS Cell(s) to be returned by a given spatial query based on their centroid locations.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+[%unnumbered]
+|===
+2+^.^h| A.1.14 Functional Algorithms – Quantization Operations
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/quantization[http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/quantization]
+| Title | Functional Algorithms – Quantization Operations
+| Abbreviation | methods/quantization
+| Type | Basic
+| Requirement | *Requirement 14:* http://www.opengis.net/spec/DGGS/1.0/req/core/methods/quantization[http://www.opengis.net/spec/DGGS/1.0/req/core/methods/quantization]
+| Reference Clause | *6.3.1*
+| Test Purpose | To verify that a DGGS specification has a method(s) to assign and retrieve cell data.
+| Test Method | Inspect documentation of the DGGS specification.
+2+^.^h| A.1.15 Functional Algorithms – Algebraic Processes – Cell Navigation
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/algebraic_processes/cell_navigation[http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/algebraic_processes/cell_navigation]
+| Title | Functional Algorithms – Algebraic Processes – Cell Navigation
+| Abbreviation | methods/algebraic_processes/cell_navigation
+| Type | Basic
+| Requirement | *Requirement 15:* http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic_processes/cell_navigation[http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic_processes/cell_navigation]
+| Reference Clause | *6.3.2*
+| Test Purpose | To verify that a DGGS specification has a method (or methods) to perform cell hierarchy navigation operations across its entire domain.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+[%unnumbered]
+|===
+2+^.^h| A.1.16 Functional Algorithms – Algebraic Processes – Spatial Analysis
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/algebraic_processes/spatial_analysis[http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/algebraic_processes/spatial_analysis]
+| Title | Functional Algorithms – Algebraic Processes – Spatial Analysis
+| Abbreviation | methods/algebraic_processes/spatial_analysis
+| Type | Basic
+| Requirement | *Requirement 16:* http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic_processes/spatial_analysis[http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic_processes/spatial_analysis]
+| Reference Clause | *6.3.2*
+| Test Purpose | To verify that a DGGS specification defines a method (or methods) to perform simple spatial analysis operations following the DE-9IM framework [ISO 19125-1:2004] across its entire domain.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+
+[%unnumbered]
+|===
+2+^.^h| A.1.17 Functional Algorithms – Interoperability Query Operations
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/interoperability/query[http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/interoperability/query]
+| Title | Functional Algorithms – Interoperability Query Operations
+| Abbreviation | methods/interoperability/query
+| Type | Basic
+| Requirement | *Requirement 17:* http://www.opengis.net/spec/DGGS/1.0/req/core/methods/interoperability/query[http://www.opengis.net/spec/DGGS/1.0/req/core/methods/interoperability/query]
+| Reference Clause | *6.3.3.1*
+| Test Purpose | To verify that a DGGS specification defines a method (or methods) to support the translation of external data queries into a form that can be applied to data stored in the DGGS.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+
+[%unnumbered]
+|===
+2+^.^h| A.1.18 Functional Algorithms – Interoperability Broadcast Operations
+2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/interoperability/broadcast[http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/interoperability/broadcast]
+| Title | Functional Algorithms – Interoperability Broadcast Operations
+| Abbreviation | methods/interoperability/broadcast
+| Type | Basic
+| Requirement | *Requirement 18:* http://www.opengis.net/spec/DGGS/1.0/req/core/methods/interoperability/broadcast[http://www.opengis.net/spec/DGGS/1.0/req/core/methods/interoperability/broadcast]
+| Reference Clause | *6.3.3.2*
+| Test Purpose | To verify that a DGGS specification defines a method (or methods) to support broadcasting data query results for external use.
+| Test Method | Inspect documentation of the DGGS specification.
+
+|===
+

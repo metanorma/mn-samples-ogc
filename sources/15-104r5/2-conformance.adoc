@@ -1,0 +1,8 @@
+
+== Conformance
+
+This Abstract Specification defines a single requirements class, core, of http://www.opengis.net/spec/dggs/1.0/req/core[http://www.opengis.net/spec/dggs/1.0/req/core] with a single pertaining conformance class, core, with URI http://www.opengis.net/spec/dggs/1.0/conf/core[http://www.opengis.net/spec/dggs/1.0/conf/core].
+
+Conformance with this Abstract Specification shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures [OGC 08-134r10] and the OGC Compliance Testing web site {blank}footnote:[www.opengeospatial.org/compliance_cite].
+
+All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.
