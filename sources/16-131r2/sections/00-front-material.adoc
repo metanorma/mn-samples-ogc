@@ -1,0 +1,32 @@
+
+[abstract]
+== Abstract
+This white paper is a survey of Big Geospatial Data with these main themes:
+
+* Geospatial data is increasing in volume and variety;
+* New Big Data computing techniques are being applied to geospatial data;
+* Geospatial Big Data techniques benefit many applications; and
+* Open standards are needed for interoperability, efficiency, innovation and cost effectiveness.
+ 
+The main purpose of this White Paper is to identify activities to be undertaken in OGC Programs that advance the Big Data capabilities as applied to geospatial information.
+
+This white paper was developed based on two Location Powers events:
+
+* Location Powers: Big Data, Orlando, September 20th, 2016; and
+* Location Powers: Big Linked Data, Delft, March 22nd, 2017.
+
+For information on Location Powers: http://www.locationpowers.net/pastevents/
+
+[.preface]
+== Submitters
+
+[%unnumbered]
+|===
+|Name |Affiliation
+
+|George Percivall, editor |OGC
+|Carl Reed |Carl Reed and Associates
+|Ingo Simonis |OGC
+|Josh Lieberman |Tumbling Walls
+|Steven Ramage |Group on Earth Observations
+|===
