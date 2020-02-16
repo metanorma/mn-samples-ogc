@@ -1,0 +1,20 @@
+
+== The Big Data Trend and Geospatial Information
+Every second day the human race generates as much data as was generated from the dawn of humanity through the year 2003 footnote:[http://www.pbs.org/show/human-face-big-data/]. Big Data is both a challenge and an opportunity. Big Data is "`extensive datasets -- primarily in the characteristics of volume, variety, velocity, and/or variability -- that require a scalable technology for efficient storage, manipulation, management, and analysis.`" footnote:[ISO/IEC CD2 20546 Information Technology -- Big Data -- Overview and Vocabulary]
+
+Geospatial data has been Big Data for decades. New tools and technologies are now available to deal with Big Geo Data analytics and visualization. Geospatial information is advancing in all the dimensions of Big Data.
+
+* Volume: The European Space Agency's Copernicus Missions archive is an ~8 PB archive and growing footnote:[Cristiano Lopes, ESA, Location Powers Big Linked Geodata, March 2017]. DigitalGlobe currently archives 70 PB of satellite imagery footnote:[Dan Getman, DigitalGlobe, Location Powers Big Data, September 2016]. ECMWF currently has 180PB of weather data with plans to be archiving 1 PB/day.
+* Variety: NASA distributed more than 3,500 distinct data products in 2015. footnote:[https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160008918.pdf] Geospatial attributes are being connected to data with an increasing diversity of structures and vocabularies.
+* Velocity: For urban monitoring in Tokyo, the locations of one million people collected every minute adds up to 1.4 billion records per day footnote:[Akinori Asahara, Hitachi, Location Powers Big Data, September 2016]
+* Veracity: Advances in Big Data processing based on machine learning and deep learning provide great predictive power. Understanding the algorithms and quantifying result uncertainties remains the subject of intense research.
+This white paper addresses Big Geo Data in the following sections.
+
+<<sec-value-of-big-geo-data>>. *Value of Big Geo Data*:: Applications of geospatial using Big Data techniques are described to show the value of these new capabilities.
+
+<<sec-use-cases-for-big-geo-data>>. *Use Cases for Big Geo Data*:: Use cases are presented to demonstrate commonality across applications domains. This commonality allows best practices be defined through common standards and workflows. This helps manage the complexity in applying big data technology based on investments in
+
+<<sec-ogc-big-geo-data-opportunities>>. *OGC Big Geo Data Opportunities*:: Several high priority focus areas for advancing big geo data implementations based on open standards are presented as opportunities for OGC activities.
+
+<<sec-ogc-activities-on-big-geo-data>>. *OGC Activities on Big Geo Data*:: Existing and potential new activities are listed for consideration to be undertaken in OGC Programs and in coordination with external alliances.
+

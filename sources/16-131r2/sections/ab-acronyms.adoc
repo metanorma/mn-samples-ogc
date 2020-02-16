@@ -1,0 +1,126 @@
+
+== Acronyms
+
+ABI:: Activity-Based Intelligence
+
+ASF:: Apache Software Foundation
+
+BEDI:: Big Earth Data Initiative
+
+BiDS:: Big Data from Space
+
+DGGS:: Discrete Global Grid System
+
+DWG:: Domain Working Group
+
+ESA:: European Space Agency
+
+ESIP:: Earth System Information Partners
+
+ETL:: Extract, Transform, Load
+
+EU:: European Union
+
+EUSC:: European Union Satellite Centre
+
+FOSS:: Free and Open Source Software
+
+GEO:: Group on Earth Observations
+
+GIBS:: Global Imagery Browse Services (NASA)
+
+GPS:: Global Positioning System
+
+HDF:: Hierarchical Data Format
+
+HTTP:: Hypertext Transfer Protocol
+
+IaaS:: Infrastructure as a Service
+
+IEC:: International Electrotechnical Commission
+
+IoT:: Internet of Things
+
+ISO:: International Standards Organization
+
+JSON LD:: JavaScript Object Notation for Linked Data
+
+LCMAP:: Land Change Monitoring Assessment and Projection (USGS)
+
+LEO:: Linked Earth Observation
+
+LOD:: Linked Open Data
+
+MDA:: Multi-Dimensional Arrays
+
+NASA:: National Aeronautics and Space Administration
+
+NBD-PWG:: NIST Big Data - Public Working Group
+
+NetCDF:: Network Common Data Form
+
+NEXRAD:: Next Generation Weather Radar
+
+NIST:: National Institute of Standards and Technology
+
+NOAA:: National Oceanic and Atmospheric Administration
+
+NSF:: National Science Foundation
+
+OAB:: OGC Architecture Board
+
+OBP:: Object-Based production (OBP),
+
+OGC:: Open Geospatial Consortium
+
+OPeNDAP:: Open-source Project for a Network Data Access Protocol
+
+ORNL:: Oak Ridge National Laboratory
+
+OSGeo:: Open Source Geospatial Foundation
+
+OWL:: Web Ontology Language (W3C)
+
+PB:: Peta-Byte
+
+PLDN:: Platform implementatie Linked Open Data
+
+RDBMS:: Relational Database Management System
+
+RDF:: Resource Description Framework
+
+RDSMS:: Relational Data Stream Management System
+
+RSA:: Raster Storage Archive
+
+SOS:: Sensor Observation Service
+
+SPARQL:: SPARQL Protocol and RDF Query Language
+
+SQL:: Structured Query Language
+
+SSN:: Semantic Sensor Network
+
+SWE:: Sensor Web Enablement
+
+TB:: Terra-Byte
+
+TEP:: Thematic Exploitation Platforms (ESA)
+
+THREDDS:: Thematic Real-time Environmental Distributed Data Services
+
+URI:: Uniform Resource Identifier
+
+USGS:: US Geological Survey
+
+W3C:: World Wide Web Consortium
+
+WAMI:: Wide Area Motion Imagery
+
+WCPS:: Web Coverage Processing Service
+
+WCS:: Web Coverage Service
+
+WMS:: Web Map Service
+
+WPS:: Web Processing Service

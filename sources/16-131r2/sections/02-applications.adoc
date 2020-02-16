@@ -1,0 +1,78 @@
+
+[[sec-value-of-big-geo-data]]
+== The Value of Big Geo Data Applications
+
+=== Earth Observations
+Observations of the Earth support global efforts to understand our shared physical environment. The environmental monitoring and modeling community generates Big Data to better understand Earth systems. High volumes (petabytes), at increasing velocity (distributed worldwide using high performance computing facilities) and variety (of data formats and resolutions) need to be handled and smoothly integrated to deal meet modern challenges such as global food security, effects and mitigation of climate change, or global logistics and infrastructures.
+
+In a keynote presentation to the Location Powers: Big Geo Data workshop, Jibo Sanyal (ORNL) illustrated the value of Earth Observations as Big Earth data for estimating population (<<fig-population-distribution-and-dynamics-modeling>>). High-resolution population distribution data are critical for successfully addressing important issues ranging from socio-environmental research to public health to homeland security. Sanyal's keynote addressed how such data are of paramount importance for responding to policy topics, such as the UN 2030 Agenda and the sustainable development goals.
+
+[[fig-population-distribution-and-dynamics-modeling]]
+.Population Distribution and Dynamics Modeling (Figure Source: J. Sanyal, ORNL)
+image::fig-population-distribution-and-dynamics-modeling.png[]
+
+
+Satellite-based Earth Observations were an early driver to the Big Data explosion. Current emphasis on Big Data can be seen in the recent link:http://congrexprojects.com/2016-events/16m05/introduction[Big Data from Space 2106] conference in Europe and in the link:https://www.whitehouse.gov/blog/2014/07/18/harnessing-observations-and-data-about-our-earth[Big Earth Data Initiative (BEDI)] in the United States. Ground-based Earth Observations, such as in-stream flow monitoring and air particulates monitoring, have traditionally been lower volume outputs than space based sensors but this situation is changing. link:https://data-alliance.noaa.gov/[NOAA's Big Data Project] is engaged with several cloud providers with one of the most innovative being the hosting of data from ground based link:http://aws.amazon.com/noaa-big-data/nexrad/[NEXRAD high-resolution Doppler radar]. Non-traditional ground based sensors coming from IoT and Smart City applications will also drive new applications of ground based Earth Observations.
+
+
+
+=== Resource Management: Precision Agriculture
+Due to growing world population and changing climatic norms, the sustainment of crop quality as well as quantity from existing agricultural land is an important challenge today in reducing global food insecurity. The goal of precision agriculture research is to define a link:https://en.wikipedia.org/wiki/Decision_support_system[decision support system] (DSS) for whole farm management with the goal of optimizing returns on inputs while preserving resources footnote:[McBratney, A., Whelan, B., Ancev, T., 2005. Future Directions of Precision Agriculture. Precision Agriculture, 6, 7-23]. Precision can only improve decision-making and farm management if agriculture farmers have access to the necessary small scale, detailed information to make informed choices. The creation of field or even plant-level information can support farmers to improve their crop production and attract long-term investment. The more comprehensive and up-to-date picture that farmers have about their crops (e.g., through remote sensing and GPS technologies), the better decisions they can make as to where and when to apply seed, how much to fertilize, when to irrigate and so forth. Longer-term records of agricultural processes from precision farming data allow farmers to use their cropland more efficiently, increase crop size and quality, and respond more effectively to climatic challenges such as drought. Precision farming has the potential to make a worthwhile difference in farmers' income, crop yields, and resilience while mitigating negative environmental impacts farming. footnote:[http://www.linkedeodata.eu/Precision_Farming]
+
+Activities such as GEO GLAM provide regular Earth observations to feed into crop monitoring for early warning and production systems. link:http://www.cropmonitor.org/[www.cropmonitor.org] The Group on Earth Observations (GEO) Global Agricultural Monitoring (GLAM) flagship follows the GEO data sharing and data management principles. Realizing this potential depends greatly on the cost and difficulty for the farmer of collecting and working with big geospatial standards.
+
+The LEO Horizon2020 (H2020) Project developed software tools that support the whole lifecycle of reuse of EO data and related linked geospatial data. To demonstrate the benefits of linked open EO data and its combination with linked geospatial data to the European economy, a precision farming application was developed (<<fig-example-application-precision-farming>>).
+
+
+[[fig-example-application-precision-farming]]
+.Example Application: Precision Farming (Figure Source: Manolis Koubarakis)
+image::fig-example-application-precision-farming.png[]
+
+
+Another example of Big Data for Agriculture includes satellite image processing to calculate the available area of arable land. Fritz et al. have shown that land suitable for cultivating biofuel crops has been vastly overestimated. They have reduced the estimate by almost 80 percent and expressed a growing concern about how production of biofuels will impact food security. Based on Big Data analytics, Fritz's et al. study showed that previous studies had overestimated the amount of arable land and had underestimated the amount of land already being cultivated footnote:[http://pubs.acs.org/doi/abs/10.1021/es103338e].
+
+Other initiatives are currently exploring the reusability of Big Data concepts, technologies, and architectures across domains to leverage synergy effects. The OGC participates in the research and development project DATABIO, co-funded by the European Commission. DATABIO focuses on the data intensive target sector Data-Driven Bioeconomy. More specifically, DATABIO explores the potential of Big Data integration and analytics in the domains agriculture, forestry, and fishery/aquaculture including taking into account interoperability and sustainability aspects in the heterogeneous European bioeconomy landscape. 
+
+DATABIO proposes to deploy a state of the art big data platform on top of existing partners' infrastructure and solutions, the Big DATABIO Platform. DATABIO features continuous cooperation of experts from end user and technology provider companies, from bioeconomy and technology research institutes, standardization organizations such as OGC, and of other partners, mainly of the public administration sector. A series of pilots allows associated partners and other stakeholders to get actively involved in the project.
+
+
+=== Mobile Location Services
+Location-enabled mobile devices are a major source of Big Data. Location data coming from the mobile devices and their associated networks enables many Big Data applications. link:http://www.datanami.com/2015/05/21/5-ways-big-geospatial-data-is-driving-analytics-in-the-real-world/[The Ways Big Geospatial Data Is Driving Analytics In the Real World] begins with this observation:
+
+"`Amid the flood of data we collect and contend with on a daily basis, geospatial data occupies a unique place. Thanks to the networks of GPS satellites and cell towers and the emerging Internet of Things, we're able to track and correlate the location of people and objects in very precise ways that were not possible until recently`".
+
+Recent studies of mobile devices identified the predictability of human mobility. A study reported in link:http://science.sciencemag.org/content/327/5968/1018.abstract[Science] found that "`by measuring entropy of individual's trajectory, we find 93% potential predictability in user mobility`" as determined based on a study of ~10 million anonymous mobile phone users. Cardiff University Researchers have shown the effectiveness of detecting real-world events using Twitter based on location detection and disambiguation footnote:[http://dl.acm.org/citation.cfm?doid=3068849.2996183]. The power of location data was highlighted by Sir Martin Sorrell, CEO WPP, during his speech at link:http://www.siliconvalleywatcher.com/mt/archives/2011/02/wpps_sir_martin_1.php[Mobile World Congress] in his comment that "`Location targeting is holy grail for marketers.`"
+
+Location based contextual awareness is relevant to location based marketing, first responders, urban planners and many other applications. Creating useful local context requires Big Data analytics platforms. Big data processing and high velocity streaming of location-based data creates the richest contextual awareness. Data from many sources including IoT devices, sensor webs, social media and crowd-sourcing are combined with semantically rich urban and indoor spatial data. The resulting context information is delivered to and shared by mobile devices in connected and disconnected operations. Open standards play a key role in establishing context platforms and marketplaces. Successful approaches will consolidate data from ubiquitous sensing technologies on to enabled context-aware analysis of environmental and social dynamics. For example Pitney Bowes is applying big data developments of automating marketing based on location (<<fig-marketing-automation-based-on-location-in-big-data>>).
+
+
+[[fig-marketing-automation-based-on-location-in-big-data]]
+.Marketing Automation based on Location in Big Data (Figure source: Jon Spinney, Location Intelligence, Pitney Bowes)
+image::fig-marketing-automation-based-on-location-in-big-data.png[]
+
+
+=== Transportation and Moving Objects
+Management and optimization of transportation systems benefits from the Big Data platforms to monitor, visualize and perform predictive analytics of objects moving in space and time. Traffic congestion is reduced as trip demand data collected using transportation surveys is integrated with real time or projected traffic data. Combined, optimal schedules and routes can be calculated. Thanks to the availability of real time reports from location enable devices, these schedules and routes can even be optimized at runtime. Automobiles will continue to increase as generators of location based big data. Intel has predicted that autonomous vehicles will generate 4 TB of observation and measurement data per day (<<fig-the-coming-flood-of-data-in-autonomous-vehicles>>).
+
+[[fig-the-coming-flood-of-data-in-autonomous-vehicles]]
+.The coming flood of data in autonomous vehicles footnote:[http://www.networkworld.com/article/3147892/internet/one-autonomous-car-will-use-4000-gb-of-dataday.html]
+image::fig-the-coming-flood-of-data-in-autonomous-vehicles.png[]
+
+
+The more real-time information is made available, the better the optimization algorithms work defining requirements on Big Data handling and processing for, standards can leverage these capabilities. OGC Moving Features standard footnote:[http://www.opengeospatial.org/standards/movingfeatures] allows seamless integration of mobile objects and predictions based on mobile objects across systems.
+
+[[fig-collaboration-of-big-data-platforms-to-predict]]
+.Collaboration of Big Data platforms to predict spatio-temporal features (Figure source: Akinori Asahara, Hitachi)
+image::fig-collaboration-of-big-data-platforms-to-predict.png[]
+
+
+=== Smart Cities
+Imagine knowing practically every detail about a city: The state of the infrastructure, inhabitants, and the environment are all known to you, at high resolutions in time and in space. You are able to fuse physical data streams with socio-economic data. Transport data tells you where people are going. Sales and transaction data tells you what they are going to see or do or buy. Social media tells you how groups feel about events. And of course high-quality weather data is already built into your system. Suppose that practically every movement and action within the city's systems and infrastructure created location enabled data that could be used to enhance livability, provision of services, and more. Think of the data streams that would exist or could be created; the rates at which those data streams would flow; the technology and skills that would be necessary to acquire, store, and analyze such massive data. Think also of the theories and models that social scientists could generate and test, the problems that system operators and policy-makers could solve if they had access to those models and applications; and of the speed at which those problems could be addressed. Therein is the potential of big data in Smart Cities. footnote:[The entire paragraph is an edited version from: Ann Keller, S., Koonin, S. E. and Shipp, S. (2012), Big data and city living -- what can it do for us? Significance, 9: 4--7. doi:10.1111/j.1740-9713.2012.00583.x]
+
+A Smart City provides effective integration of physical, digital and human systems in the built environment to deliver a sustainable, prosperous and inclusive future for its citizens footnote:[Smart city definition from BSI PAS 180]. International Standards organizations are working to advance open standards to meet the needs of the widespread deployment of information technology to cities. Of particular note is the recently initiated ISO/IEC JTC 1/WG 11 for Smart Cities. The OGC's contributions to the JTC 1/WG 11 are based on the link:http://www.opengeospatial.org/pressroom/pressreleases/2181[OGC Smart Cities Spatial Information Framework] white paper.
+
+[[fig-big-data-in-smart-cities]]
+.Big Data in Smart Cities (Figure source: ESPRESSO Project)
+image::fig-big-data-in-smart-cities.png[]
+
+OGC explores Smart City aspects as part of its Smart Cities Domain Working Group, and as project coordinator of the ESPRESSO project, a development project co-funded by the European Commission. In an effort to leverage the promise of a system approach, ESPRESSO focuses on development of a conceptual Smart City Information Framework based on open standards. This framework will consist of a Smart City platform (the "`Smart City enterprise application`") and a number of data provision and processing services to integrate relevant data, workflows, and processes. The project will build this framework by identifying relevant open standards, technologies, and information models that are currently in use or in development in various sectors. The project will analyse potential gaps and overlaps among standards developed by the various standardisation organizations and will provide guidelines on how to effectively address those shortcomings.

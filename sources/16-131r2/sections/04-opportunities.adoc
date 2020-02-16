@@ -1,0 +1,173 @@
+
+[[sec-ogc-big-geo-data-opportunities]]
+== OGC Big Geo Data Opportunities
+
+=== Objectives for open implementations of Big Geo Data.
+OGC standards enable the development of open geospatial processing frameworks. The broader IT community has recognized the need for open standards in Big Data. For example, "`Use of standards and related issues in predictive analytics`" a presentation by Paco Nathan, O'Reilly Media at the KDD conference, 2016-08-16 identified a Lesson from the success of Apache Spark is "`lack of interchange for analytics represents a serious technical debt and potential liability.`"
+
+The implementations listed in the remainder of this section are based on the discussions of the two Location Powers events as well as in the OGC Big Data Domain Working Group (DWG).
+
+=== Cloud computing for EO data
+link:http://www.opengeospatial.org/projects/initiatives/testbed13[OGC Testbed 13] has a focus on "`Cloud Computing Environment for Earth Observation Data`". Testbed-13 addresses key elements in cloud computing research, such as loosely-coupled PB-sized archives for rapid geospatial information product creation at any scale based on open standards. The topics of interoperability and portability are significant considerations in relation to the use of cloud services. Testbed-13 will help clarifying the specific interoperability and portability concerns that arise in the large cloud eco-system with its variety of cloud services offered. From the interoperability perspective, in particular two aspects are of primary interest.
+
+. Cloud API interoperability is a major issue at the moment, with all cloud providers offering a dedicated API to interact with their specific cloud. The APIs provide multiple interfaces to cover all types of interactions, such as e.g. for the functional administration of cloud services, authentication and authorization, billing, or invoicing. Ideally, these APIs would be standardized, so interaction with different clouds would have minimal impact on the customer's components. Changing cloud services across providers would be a smooth experience.
+. Application portability is the ability to easily transfer an application or application components from one cloud service to a comparable cloud service and run the application in the target cloud service. The ease of moving the application or application components is the key here. The application may require recompiling or relinking for the target cloud service, but it should not be necessary to make significant changes to the application code.
+
+Testbed-13 is developing a cloud-computing environment for Earth observation data (Big Data) that is integrated with OGC web services. The environment as shown in <<fig-ogc-testbed-13-cloud>> will support hosting of data processing tools including all necessary deployment and management steps.
+
+[[fig-ogc-testbed-13-cloud]]
+.OGC Testbed 13 Cloud Environment Overview
+image::fig-ogc-testbed-13-cloud.png[]
+
+
+OGC Testbed-13 supports the development of the European Space Agency's (ESA) Thematic Exploitation Platforms (TEP) by exercising envisioned workflows for data integration, processing, and analytics based on algorithms developed by users. Algorithms are initially developed by users in their local environments and afterwards tested on the TEP. The goal is to put an already developed application into an Application Package, upload this package to the TEP, and deploy it on infrastructure that is provided as a service (IaaS) for testing and execution. The entire workflow should support federated user management (Identity provider and security token service) and makes use of already available catalog services and catalog interfaces as part of the cloud platforms.
+
+During the Location Powers: Big Geo Data workshop, Dan Getman presented several approaches for processing satellite imagery that are being used by DigitalGlobe. <<fig-digitalglobe-analysis>> shows how the DigitalGlobe approach of pre-computing and storing image chips in an object store. This defers processing that supports analysis ready paradigm. With this approach the data is smaller and more targeted, enabling "`map and reduce`" analysis. This treats imagery as a service rather than determining which imagery strips to order and calling a sales rep, etc.
+
+[[fig-digitalglobe-analysis]]
+.DigitalGlobe Analysis Paradigm: Tile based (Figure Source: Dan Getman)
+image::fig-digitalglobe-analysis.png[]
+
+
+An example of the application of Big Data computing techniques to Earth Observation data is the link:https://github.com/SciSpark/SciSpark[SciSpark project by JPL] that marries Apache Spark with climate science. SciSpark is a scalable system for interactive atmospheric analysis. SciSpark performs scientific data ingestion, visual interaction and metrics generation using the Spark engine.
+
+A commercial project leading in this area is the hosting of link:http://www.businesswire.com/news/home/20150506006318/en/Exelis-ENVI-Analytics-DigitalGlobe%E2%80%99s-Geospatial-Big-Data[Exelis ENVI Analytics on DigitalGlobe's Geospatial Big Data Platform]. This approach allows the 15-year catalog of high-resolution satellite imagery from DigitalGlobe to be processed using ENVI's analytic tools in a cloud-based environment. This will allow users to extract incredibly valuable information and insight about our changing planet -- at scale.
+
+Planning for OGC Testbed 14 is underway including potential cloud processing topics footnote:[http://www.opengeospatial.org/projects/initiatives/testbed14].
+
+=== Analysis Ready Data and Datacubes
+A main theme emerging from the Location Powers Big Geo Data workshop was "`Analysis Ready Data (ARD).`" Several additional themes that support ARD were also discussed such as "`Download as Last Resort Mentality,`" "`Analytics as a service,`" and "`Datacubes.`"
+
+As presented by Glenn Guempel at the Location Powers Big Geo Data workshop, the USGS Land Change Monitoring Assessment and Projection (LCMAP) information system aims to provide interactive access to the Analysis Ready Data (<<fig-usgs-analisys-ready-data-structure>>). To achieve that perspective, USGS, identified three approaches:
+
+. Store data in unzipped, optimal formats ready for direct processing by standard services or custom processes;
+. Provide basic visualization, analysis and extraction functions through services on an open platform; and
+. Provide the potential processing capacity for building unforeseen custom workflows and processes against Big Data.
+
+
+[[fig-usgs-analisys-ready-data-structure]]
+.USGS Analysis Ready Data structure (Figure Source: G. Guempel)
+image::fig-usgs-analisys-ready-data-structure.png[]
+
+
+
+The "`Datacubes`" term is used in several similar but differing developments.
+
+* The link:http://www.datacube.org.au/[Australian Geoscience Data Cube] is an collaborative approach for storing, organizing and analyzing the vast quantities of satellite imagery and other Earth Observations. The Data Cube is a series of structures and tools that calibrate and standardize datasets, enabling the application of time series and the rapid development of quantitative information products.
+* At the Location Powers: Big Data Workshop, Peter Baumann presented the link:http://www.earthserver.eu/[Earthserver project] as an example of a data cube approach. EarthServer makes Agile Analytics on Big Earth Data Cubes of sensor, image, simulation, and statistics data a commodity for non-experts and experts. EarthServer provides an array databases as an interface for analysis ready data. EarthServer datacube services are operating with greater than 500 TB of data. Intercontinental datacube fusion has been demonstrated live between ECMWF and NCI Australia, both running the European datacube tool, rasdaman.
+* The link:https://www.ceosdatacube.org/[CEOS Open Data Cube] (ODC) is a common analytical framework based on analysis ready data from current CEOS satellite systems. The ODC is a technological solution that removes the burden of data preparation, yields rapid results, and utilizes an international global community of contributors.
+* The link:https://www.w3.org/TR/qb4st/[QB4ST] activity addresses a related but slightly different topic of building an RDF Data Cube extensions for spatio-temporal dimensions, components, and profiles
+
+Progress toward coordination of Datacube developments could be based on discussion of common requirements. The Earthserver Project provides this list of requirements for consideration footnote:[http://earthserver.eu/tech/datacube-manifesto].
+
+. Datacubes shall support gridded data of at least one through four spatial, temporal, or other dimensions.
+. Datacubes shall treat all axes alike, irrespective of an axis having a spatial, temporal, or other semantics.
+. Datacubes shall allow efficient trimming and slicing along any number of axes from a datacube in a single request.
+. Datacubes shall convey similar extraction performance along any datacube axis.
+. Datacubes shall allow adaptive partitioning, invisible to the user when performing access and analysis.
+. Datacubes shall support a language allowing clients to submit simple as well as composite extraction, processing, filtering, and fusion tasks in an ad-hoc fashion.
+
+
+=== Data Representation for Big Geo Data: Features, Coverages, DGGS
+Recall this comment from <<subsec-prepare-and-structure>> by the National Academies "`A good representation of data is priceless: a single data representation, or sometimes multiple ones, allows one to carry out a large number of data processing and analysis tasks.`" For Big Geo Data this means placing the existing data representation methods for geospatial information into a big data context. Priceless previous geospatial analytics are based on Features, Coverages and Coordinate Reference Systems (CRS). These data representation methods along with the newer DGGS-based analytics are proposed to be a basis of OGC big data activities.
+
+==== Simple Features applied to Big Data
+
+OGC Simple Features has been used as a fundamental geospatial data representation for two decades. Simple Features - also published as an ISO standard - provides geometries and feature model that is used in many OGC Compliant and other implementations.
+
+Recently, Raj Singh of IBM commented that an impactful activity for OGC would be to bring Simple Features to the Big Data world's "`DataFrame`" object types. Spark, Python Pandas, and R all have DataFrame objects as their primary data structure footnote:[https://databricks.com/blog/2015/02/17/introducing-dataframes-in-spark-for-large-scale-data-science.html]. An excellent OGC big data activity would be to define how DataFrame object types support a spatial data type.
+
+==== Coverages applied to Big Data
+
+Geospatial Coverages have been a radical and effective method to bring the big data of remote sensing in accord with the GIS-oriented data concepts. The Coverages standard - which began in OGC and subsequently was also published as an ISO standard - defines a conceptual schema that maps from a spatiotemporal domain to feature attribute values where feature attribute types are common to all geographic positions within the domain.
+
+Chris Lynnes, NASA, commented there is an opportunity for OGC to lend unique value to the Big Data problem by addressing the challenges of handling the spatial alignment / co-location problem that occurs both between datasets, and within datasets where we are looking at them over time. The Datacubes discussion began this theme. Here the role of Coverages data representation is highlighted.
+
+Coverages and the associated standards for Web Coverage Service (WCS) and Coverage Implementation Schema (CIS) were initially applied to the 2D imagery case. More recently the standards and implementations of WCS, CIS and the EO profile of WCS have been extended to 3D and 4D. Also the organization of coverage collections has been extended to handle the high number of layers in applications such as Meteorology. These new advances point the way to achieve the vision of big geo data based on coverages. These advances provide consumers the ability to singularly request data in 3D/4D domains and receive N-Dimensional range/feature data about geography, time, altitude, & ensembles, etc.
+
+
+[[fig-achieving-big-geo-vision]]
+.Achieving the Big Geo vision with 4D Coverages (Figure Source: P. Baumann)
+image::fig-achieving-big-geo-vision.png[]
+
+
+==== Computing with Discrete Grids
+
+Rose Winterton, Pitney Bowes, presentation during the Location Powers Big Geo Data Workshop identified a key analytical capability of "`Reduce the complexity of billions of transactional records by assigning data to geographic bins and aggregating results.`" By binning data into discrete grids, analytics can efficiently answer questions like:
+
+* Is the average 4G network coverage in this area better than a competitor?
+* Is the accumulated exposure at risk of hurricane damage too high?
+* Is this data point inside or outside of a geofence?
+
+To support grid-based analysis OGC has recently approved the OGC Discrete Global Grid System (DGGS) Core Standard [15-104r5] as a new OGC Abstract Specification Topic. This document specifies the core standard and extension mechanisms for Discrete Global Grid Systems (DGGS). A DGGS is a spatial reference system that uses a hierarchical tessellation of cells to partition and address the globe. DGGS are characterized by the properties of their cell structure, geo-encoding, quantization strategy and associated mathematical functions. The OGC DGGS standard supports the specification of standardized DGGS infrastructures that enable the integrated analysis of very large, multi-source, multi-resolution, multi-dimensional, distributed geospatial data. Interoperability between OGC DGGS implementations is anticipated through extension interface encodings of OGC Web Services.
+
+Publication of the DGGS Abstract Specification can provide a structure to big data analysis activities using various grids. Results of a coordinated open development would be consensus agreement on specific grids as well as improved data quality and analysis based on increased understanding of the grid-based analysis.
+
+[[fig-examples-dggs-mapping]]
+.Examples of DGGS mapping faces of Platonic solids to surface of the Earth. a) Rectilinear cells on rHealPIX projected hexahedron (rHealPIX DGGS see ref [41]); b) Hexagonal cells on ISEA projected icosahedron (ISEA3H DGGS -- courtesy of PYXIS Inc.); c) Triangular cells on a Quaternary Triangular Mesh of an octahedron (QTM -- courtesy of Geffrey Dutton). (Source: OGC Abstract Specification Topic 21: Discrete Global Grid Systems,OGC Document 15-045r5)
+image::fig-examples-dggs-mapping.png[]
+
+
+=== Big Linked Geodata
+How can we make sense of big data? Developments in the Semantic Web make it possible to link data based on geographic information in a way that provides more insight. link:http://www.locationpowers.net/pastevents/1703delft/[The Location Powers: Big Linked Geodata] workshop investigated scaling effective exploitation of linked geodata by using big data approaches. Here, two approaches need to be differentiated. First, links between Big Data entities, and second, links between metadata for Big Data. Both enable more holistic views, but approach it from a different angle.
+
+Josh Lieberman at Location Powers: Big Linked Data characterized Linked Open Data as both one of the best thing that happened to semantics and also one of the worst things:
+
+* Best - because it solves the island problem;
+* Worst - because of missing link semantics;
+* HOW things are related is important to make sense of Big Data!
+
+Several presentations at the Location Powers: Big Linked Geodata workshop shows the opportunity for coordinated open developments.
+
+* Linda van den Brink presented "`5 years of linking spatial data in the Netherlands.`" Over the last five years, a group led by Geonovum developed a wealth of knowledge and practice on Linked Data for both spatial and non-spatial data.
+* Manoulis Koubarakis presented "`Scaling linked geodata to cross-border and cross-sector public services.`" Including a Life Cycle of Linked Open EO Data (<<fig-life-cycle-linked-open-eo-data>>).
+* Gabriel Kepeklian presented "`From Linked Datasets to Linked Data Streams`" about the Datalift project that developed a platform to publish and interlink datasets on the web of data. In Datalift, the input data are raw data coming from multiple heterogeneous formats (databases, CSV, XML, RDF, RDFa, GML, Shapefile, ...). The output data produced are « Linked Data », they are also named semantic and interconnected data. Progress is made now on WAVES as Big Data Platform for Real-time Semantic Stream Management (<<fig-creating-linked-data-real-time>>).
+* Oracle has demonstrated scalability of its platform to RDF trillion triple store.
+* Wouter Beeks presented on "`How to Query Cadastral Big Data Using GeoSPARQL?`" including the pointers to the link:https://link.springer.com/chapter/10.1007/978-3-319-11964-9_14[LOD Laundromat] tools to improve performance and perhaps change approach.
+* INSPIRE is developing link:http://inspire-eu-rdf.github.io/inspire-rdf-guidelines/[RDF encoding guidelines].
+* Chuck Heazel presented link:http://docs.opengeospatial.org/per/16-047r1.html[OGC Testbed 13 results] on the integration of the General Feature Model and Linked Data principles. The results suggest how Bayesian techniques can be used with link objects to represent and manage uncertainty in a General Feature Model-based data store.
+* Open implementations of Linked Geo Data can build on the work of the link:https://www.w3.org/TR/sdw-bp/[W3C/OGC Spatial Data on the Web] builds on many lessons learned.
+
+The Location Powers: Big Linked Data workshop triggered link:http://reinvantveer.github.io/2017/03/30/big-linked-geodata.html[Rein van 't Veer to blog]: Is it time to drop the Linked Data fixation on SPARQL and move on to more stable options? Rein's blog highlighted advances being made with databases like link:http://www.elastic.co/[ElasticSearch] and link:https://www.mongodb.com/[MongoDB] as well as embracing link:http://json-ld.org/[JSON-LD] as a native RDF serialization. JSON document stores with a huge user base offer a scalable, performant, cheap and highly available.
+
+[[fig-life-cycle-linked-open-eo-data]]
+.Life Cycle of Linked Open EO Data (Figure Source: M. Koubarakis)
+image::fig-life-cycle-linked-open-eo-data.png[]
+
+
+[[fig-creating-linked-data-real-time]]
+.Creating linked data in real time (Figure Source: G. Kepeklian) 
+image::fig-creating-linked-data-real-time.png[]
+
+
+
+=== Using Big Data Open Source
+The Apache Software Foundation and Location Tech is developing open source projects applicable to the Big Geo Data.
+
+* Apache:
+** General: Spark, Hadoop, Marmotta, NiFi, Kafka, Accumulo, Storm, Lucene, Jena, Mahout, Cassandra
+** Geospatial: Spatial Information System (SIS), Magellan
+* LocationTech:
+** GeoWave, GeoTrellis, GeoMesa, GeoJinni 
+
+Multiple members of OGC and other organizations are using those open source projects to on big data applications.
+
+* link:https://apachebigdata2016.sched.com/event/6M1I[Adam Mollenkopf (Esri)] presented "`Applying Geospatial Analytics Using Apache Spark Running on Apache Mesos`" during the Geospatial track of Apache Big Data conference.
+* The link:http://www.mdpi.com/2072-4292/8/7/564/pdf[Mission Exploitation Platform PROBA-V] as presented as BiDS'14 and BiDS'16 has developed scalable processing and data analytics platform based on a Hadoop Cluster.
+* Rob Emanuele (Azavea) during the Location Powers: Big Geo Data workshop presented "`link:http://www.locationpowers.net/pastevents/1609orlando/index.php#agendaModal5[Enabling access to big geospatial data with LocationTech and Apache projects]`" (<<fig-example-apache-projects>>).
+* Rose Winterton (Pitney Bowes) during the Location Powers: Big Geo Data workshop presented "`link:http://www.locationpowers.net/pastevents/1609orlando/index.php#agendaModal1[Transforming Insurance, Financial Services and Telecommunications with Big Data technology]`". Showing an architecture for the Pitney Bowes Big Data Spatial Components <<fig-pitney-bowes-big-data>>.
+* The UK Met Office is working on cloud based link:https://github.com/met-office-lab/jade[suite of technology] to work with huge data sets in a way that's user friendly but powerful. The Informatics Lab developed a prototype using an link:https://en.wikipedia.org/wiki/Infrastructure_as_Code[Infrastructure as Code] approach based on link:https://www.docker.com/[Docker], link:http://jupyter.org/[Jupyter], link:http://dask.pydata.org/en/latest/[Dask] and more.
+
+[[fig-pitney-bowes-big-data]]
+.Pitney Bowes Big Data Spatial Components (Figure Source: Rose Winterton)
+image::fig-pitney-bowes-big-data.png[]
+
+[[fig-example-apache-projects]]
+.Example Geospatially Enabled Apache Projects (Figure Source: Rob Emanuele)
+image::fig-example-apache-projects.png[]
+
+Many of the popular open source projects for big data focus on the pleasing parallel or embarrassing parallel data problems. Some analyses of geospatial data are not well suited to these parallelization methods. Geospatial data with multiple dimensions for space and time along with dimensionality of attribute values, e.g., vector domains in coverages, require different approaches to parallelization. Professor Fox presented <<fig-distinctive-software-hardware-data-analytics>> at the Location Powers: Big Geo Data workshop. The figure is described in a research paper footnote:[http://grids.ucs.indiana.edu/ptliupages/publications/nistHPC-ABDS.pdf].
+
+[[fig-distinctive-software-hardware-data-analytics]]
+.Distinctive Software/Hardware Architectures for Data Analytics (Figure Source: G. Fox)
+image::fig-distinctive-software-hardware-data-analytics.png[]
