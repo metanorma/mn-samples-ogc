@@ -291,7 +291,7 @@ An object defining a global numeric property values for all features.
 [[_Property_2]]
 ====== Property
 
-A user-defined property which specifies per-feature application-specific metadata in a tile. Values either can be defined directly in the JSON as an array, or can refer to sections in the binary body with a <<_BinaryBodyReference_1],BinaryBodyReference>> object.
+A user-defined property which specifies per-feature application-specific metadata in a tile. Values either can be defined directly in the JSON as an array, or can refer to sections in the binary body with a <<_BinaryBodyReference_1,BinaryBodyReference>> object.
 
 
 [[_Instanced_3D_Model]]
@@ -323,7 +323,7 @@ image::025.png["",543,305]
 
 A tile's byteLength must be aligned to an 8-byte boundary. The contained <<_Feature_Table,Feature Table>> and <<_Batch_Table,Batch Table>> must conform to their respective padding requirement.
 
-The <<_glTF,binary glTF>> (if present) must start and end on an 8-byte boundary so that glTF's byte-alignment guarantees are met. This can be done by padding the Feature Table or Batch Table if they are present.
+The <<_Binary_glTF,binary glTF>> (if present) must start and end on an 8-byte boundary so that glTF's byte-alignment guarantees are met. This can be done by padding the Feature Table or Batch Table if they are present.
 
 Otherwise, if the glTF field is a UTF-8 string, it must be padded with trailing Space characters (0x20) to satisfy alignment requirements of the tile, which must be removed at runtime before requesting the glTF asset.
 
@@ -343,7 +343,7 @@ The 32-byte header contains the following fields:
 | featureTableBinaryByteLength | uint32 | The length of the Feature Table binary section in bytes.
 | batchTableJSONByteLength | uint32 | The length of the Batch Table JSON section in bytes. Zero indicates that there is no Batch Table.
 | batchTableBinaryByteLength | uint32 | The length of the Batch Table binary section in bytes. If batchTableJSONByteLength is zero, this will also be zero.
-| gltfFormat | uint32 | Indicates the format of the glTF field of the body. 0 indicates it is a uri, 1 indicates it is embedded binary glTF. See the <<gltf,glTF>> section below.
+| gltfFormat | uint32 | Indicates the format of the glTF field of the body. 0 indicates it is a uri, 1 indicates it is embedded binary glTF. See the <<model-gltf,glTF>> section below.
 
 |===
 
@@ -563,6 +563,7 @@ var featureTableBinary = Buffer.concat([positionQuantizedBinary, normalUpOct32PB
 
 Contains metadata organized by batchId that can be used for declarative styling. See the <<_Batch_Table,Batch Table>> reference for more information.
 
+[[model-gltf]]
 ==== glTF
 
 Instanced 3D Model embeds glTF 2.0 containing model geometry and texture information.
@@ -605,7 +606,7 @@ A set of Instanced 3D Model semantics that contains values defining the position
 
 | *extensions* | object | Dictionary object with extension-specific objects. | No
 | *extras* | any | Application-specific data. | No
-| *POSITION* | object | A <<_BinaryBodyReference_1],BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *POSITION* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
 | *POSITION_QUANTIZED* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
 | *NORMAL_UP* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
 | *NORMAL_RIGHT* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No

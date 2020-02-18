@@ -1,5 +1,6 @@
 = 3D Tiles Specification 1.0
 :doctype: community-standard
+:copyright-year: 2016-2019
 :language: en
 :revdate: 2018-04-07
 :status: published
@@ -9,6 +10,8 @@
 :issued-date: 2018-12-14
 :published-date: 2019-01-31
 :external-id: http://www.opengis.net/docs/CS/3DTiles/1.0
+:referenceURLID: http://docs.opengeospatial.org/is/18-053r2/18-053r2.html
+:edition: 1.0
 :fullname: Patrick Cozzi
 :fullname_2: Sean Lilley
 :fullname_3: Gabby Getz
