@@ -120,7 +120,7 @@ A refinement type is required for the root tile of a tileset; it is optional for
 
 If a tile uses replacement refinement, when refined it renders its children in place of itself.
 
-Parent Tile 
+Parent Tile
 
 .A parent tile with replacement refinement
 image::002.jpg["",376,237]
@@ -179,15 +179,15 @@ image::009.jpg["",500,500]
 
 [source,ruby]
 ----
-"boundingVolume": { 
-  "region": [ 
-     -1.3197004795898053, 
-     0.6988582109, 
-     -1.3196595204101946, 
-     0.6988897891, 
-     0, 
-     20 
-  ] 
+"boundingVolume": {
+  "region": [
+     -1.3197004795898053,
+     0.6988582109,
+     -1.3196595204101946,
+     0.6988897891,
+     0,
+     20
+  ]
 }
 ----
 
@@ -204,13 +204,13 @@ image::010.jpg["",500,500]
 
 [source,ruby]
 ----
-"boundingVolume": { 
-  "box": [ 
-     0,0,10, 
-     100,0,0, 
-     0,100,0, 
-     0,0,10 
-  ] 
+"boundingVolume": {
+  "box": [
+     0,0,10,
+     100,0,0,
+     0,100,0,
+     0,0,10
+  ]
 }
 ----
 
@@ -226,13 +226,13 @@ image::011.jpg["",500,500]
 
 [source,ruby]
 ----
-"boundingVolume": { 
-  "sphere": [ 
-     0, 
+"boundingVolume": {
+  "sphere": [
      0,
-     10, 
-     141.4214 
-  ] 
+     0,
+     10,
+     141.4214
+  ]
 }
 ----
 
@@ -244,44 +244,44 @@ The following example has a building in a b3dm tile and a point cloud inside the
 
 [source,ruby]
 ----
-{ 
-  "children":[{ 
-    "transform":[ 
-      4.843178171884396,1.2424271388626869,0,0, 
-      -0.7993325488216595,3.1159251367235608,3.8278032889280675,0, 
-      0.9511533376784163,-3.7077466670407433,3.2168186118075526,0, 
-      1215001.7612985559,-4736269.697480114,4081650.708604793,1 
-    ], 
-    "boundingVolume":{ 
-      "box":[ 
-        0,0,6.701, 
-        3.738,0,0, 
-        0,3.72,0, 
-        0,0,13.402 
-      ] 
-    }, 
-    "geometricError":32, 
-    "content":{ 
-      "uri":"building.b3dm" 
-    } 
-  },{ 
-    "transform":[ 
-      0.968635634376879,0.24848542777253732,0,0, 
-      -0.15986650990768783,0.6231850279035362,0.7655606573007809,0, 
-      0.19023066741520941,-0.7415493329385225,0.6433637229384295,0, 
-      1215002.0371330238,-4736270.772726648,4081651.6414821907,1 
-    ], 
-    "viewerRequestVolume":{ 
-      "sphere":[0,0,0,15] 
-    }, 
-    "boundingVolume":{ 
-      "sphere":[0,0,0,1.25] 
-    }, 
-    "geometricError":0, 
-    "content":{ 
-      "uri":"points.pnts" 
-    } 
-  }] 
+{
+  "children":[{
+    "transform":[
+      4.843178171884396,1.2424271388626869,0,0,
+      -0.7993325488216595,3.1159251367235608,3.8278032889280675,0,
+      0.9511533376784163,-3.7077466670407433,3.2168186118075526,0,
+      1215001.7612985559,-4736269.697480114,4081650.708604793,1
+    ],
+    "boundingVolume":{
+      "box":[
+        0,0,6.701,
+        3.738,0,0,
+        0,3.72,0,
+        0,0,13.402
+      ]
+    },
+    "geometricError":32,
+    "content":{
+      "uri":"building.b3dm"
+    }
+  },{
+    "transform":[
+      0.968635634376879,0.24848542777253732,0,0,
+      -0.15986650990768783,0.6231850279035362,0.7655606573007809,0,
+      0.19023066741520941,-0.7415493329385225,0.6433637229384295,0,
+      1215002.0371330238,-4736270.772726648,4081651.6414821907,1
+    ],
+    "viewerRequestVolume":{
+      "sphere":[0,0,0,15]
+    },
+    "boundingVolume":{
+      "sphere":[0,0,0,1.25]
+    },
+    "geometricError":0,
+    "content":{
+      "uri":"points.pnts"
+    }
+  }]
 }
 ----
 
@@ -317,11 +317,11 @@ When transform is not defined, it defaults to the identity matrix:
 
 [source,ruby]
 ----
-[ 
-1.0,0.0,0.0,0.0, 
-0.0,1.0,0.0,0.0, 
-0.0,0.0,1.0,0.0, 
-0.0,0.0,0.0,1.0 
+[
+1.0,0.0,0.0,0.0,
+0.0,1.0,0.0,0.0,
+0.0,0.0,1.0,0.0,
+0.0,0.0,0.0,1.0
 ]
 ----
 
@@ -344,11 +344,11 @@ Next, for consistency with the _z_-up coordinate system of 3D Tiles, glTFs must 
 
 [source,ruby]
 ----
-[ 
-1.0,0.0,0.0,0.0, 
-0.0,0.0,-1.0,0.0, 
-0.0,1.0,0.0,0.0, 
-0.0,0.0,0.0,1.0 
+[
+1.0,0.0,0.0,0.0,
+0.0,0.0,-1.0,0.0,
+0.0,1.0,0.0,0.0,
+0.0,0.0,0.0,1.0
 ]
 ----
 
@@ -379,12 +379,12 @@ Example glTF root node:
 
 [source,ruby]
 ----
-"nodes": [ 
-  { 
-    "matrix":[1,0,0,0,0,0,-1,0,0,1,0,0,0,0,0,1], 
-    "mesh":0, 
-    "name":"rootNode" 
-  } 
+"nodes": [
+  {
+    "matrix":[1,0,0,0,0,0,-1,0,0,1,0,0,0,0,0,1],
+    "mesh":0,
+    "name":"rootNode"
+  }
 ]
 ----
 
@@ -439,29 +439,29 @@ The following JavaScript code shows how to compute this using Cesium's https://g
 
 [source,java]
 ----
-function computeTransforms(tileset) { 
-    var t = tileset.root; 
-    var transformToRoot =defined(t.transform) ?Matrix4.fromArray(t.transform) : Matrix4.IDENTITY; 
+function computeTransforms(tileset) {
+    var t = tileset.root;
+    var transformToRoot =defined(t.transform) ?Matrix4.fromArray(t.transform) : Matrix4.IDENTITY;
 
-    computeTransform(t, transformToRoot); 
-} 
+    computeTransform(t, transformToRoot);
+}
 
-function computeTransform(tile, transformToRoot) { 
-    // Apply 4x4 transformToRoot to this tile's positions and bounding volumes 
+function computeTransform(tile, transformToRoot) {
+    // Apply 4x4 transformToRoot to this tile's positions and bounding volumes
 
-    var inverseTransform =Matrix4.inverse(transformToRoot,*new*Matrix4()); 
-    var normalTransform =Matrix4.getRotation(inverseTransform,*new*Matrix3()); 
-    normalTransform =Matrix3.transpose(normalTransform, normalTransform); 
-    // Apply 3x3 normalTransform to this tile's normals_ 
+    var inverseTransform =Matrix4.inverse(transformToRoot,*new*Matrix4());
+    var normalTransform =Matrix4.getRotation(inverseTransform,*new*Matrix3());
+    normalTransform =Matrix3.transpose(normalTransform, normalTransform);
+    // Apply 3x3 normalTransform to this tile's normals_
 
-    var children =tile.children; 
+    var children =tile.children;
     var length =children.length;
-    for (var i =0; i < length; ++i) { 
-        var child = children[i]; 
-        var childToRoot =defined(child.transform) ?Matrix4.fromArray(child.transform) : Matrix4.clone(Matrix4.IDENTITY); 
-        childToRoot =Matrix4.multiplyTransformation(transformToRoot, childToRoot, childToRoot); 
-        computeTransform(child, childToRoot); 
-    } 
+    for (var i =0; i < length; ++i) {
+        var child = children[i];
+        var childToRoot =defined(child.transform) ?Matrix4.fromArray(child.transform) : Matrix4.clone(Matrix4.IDENTITY);
+        childToRoot =Matrix4.multiplyTransformation(transformToRoot, childToRoot, childToRoot);
+        computeTransform(child, childToRoot);
+    }
 }
 ----
 
@@ -478,33 +478,33 @@ The following example shows one non-leaf tile.
 
 [source,ruby]
 ----
-{ 
-  "boundingVolume":{ 
-    "region":[ 
-      -1.2419052957251926, 
-      0.7395016240301894, 
-      -1.2415404171917719, 
-      0.7396563300150859, 
-      0, 
-      20.4 
-    ] 
-  }, 
-  "geometricError":43.88464075650763, 
-  "refine":"ADD", 
-  "content":{ 
-    "boundingVolume":{ 
-      "region":[ 
-        -1.2418882438584018, 
-        0.7395016240301894, 
-        -1.2415422846940714, 
-        0.7396461198389616, 
-        0, 
-        19.4 
-      ] 
-    }, 
-    "uri":"2/0/0.b3dm" 
-  }, 
-  "children":[*...*] 
+{
+  "boundingVolume":{
+    "region":[
+      -1.2419052957251926,
+      0.7395016240301894,
+      -1.2415404171917719,
+      0.7396563300150859,
+      0,
+      20.4
+    ]
+  },
+  "geometricError":43.88464075650763,
+  "refine":"ADD",
+  "content":{
+    "boundingVolume":{
+      "region":[
+        -1.2418882438584018,
+        0.7395016240301894,
+        -1.2415422846940714,
+        0.7396461198389616,
+        0,
+        19.4
+      ]
+    },
+    "uri":"2/0/0.b3dm"
+  },
+  "children":[*...*]
 }
 ----
 
@@ -531,7 +531,7 @@ The content property is an object that contains metadata about the tile's render
 
 A file extension is not required for content.uri. A content's tile format (see <<_Tile_format_specifications,Tile format specifications>>) can be identified by the magic field in its header, or else as an external tileset if the content is JSON.
 
-The content.boundingVolume property defines an optional bounding volume similar to the top-level boundingVolume property. But unlike the top-level boundingVolume property, content.boundingVolume is a tightly fit bounding volume enclosing just the tile's content. boundingVolume provides spatial coherence and content.boundingVolume enables tight view frustum culling, excluding from rendering any content not in the volume of what is potentially in view. When it is not defined, the tile's bounding volume is still used for culling (see <<grids,Grids>>).
+The content.boundingVolume property defines an optional bounding volume similar to the top-level boundingVolume property. But unlike the top-level boundingVolume property, content.boundingVolume is a tightly fit bounding volume enclosing just the tile's content. boundingVolume provides spatial coherence and content.boundingVolume enables tight view frustum culling, excluding from rendering any content not in the volume of what is potentially in view. When it is not defined, the tile's bounding volume is still used for culling (see <<grids_BinaryBodyReference_1,Grids>>).
 
 The screenshot below shows the bounding volumes for the root tile for http://cesiumjs.org/CanaryWharf/[Canary Wharf]. boundingVolume, shown in red, encloses the entire area of the tileset; content.boundingVolume shown in blue, encloses just the four features (models) in the root tile.
 
@@ -552,46 +552,46 @@ Here is a subset of the tileset JSON used for http://cesiumjs.org/CanaryWharf/[C
 
 [source,ruby]
 ----
-{ 
-  "asset":{ 
-    "version":"1.0", 
-    "tilesetVersion":"e575c6f1-a45b-420a-b172-6449fa6e0a59", 
-  }, 
-  "properties":{ 
-    "Height":{ 
-      "minimum":1, 
-      "maximum":241.6 
-    } 
-  }, 
-  "geometricError":494.50961650991815, 
-  "root":{ 
-     "boundingVolume":{ 
-      "region":[ 
-        -0.0005682966577418737, 
-        0.8987233516605286, 
-        0.00011646582098558159, 
-        0.8990603398325034, 
-        0, 
-        241.6 
-      ] 
-    }, 
-    "geometricError":268.37878244706053, 
-    "refine":"ADD", 
-    "content":{ 
-      "uri":"0/0/0.b3dm", 
-      "boundingVolume":{ 
-        "region":[ 
-          -0.0004001690908972599, 
-          0.8988700116775743, 
-          0.00010096729722787196, 
-          0.8989625664878067, 
-          0, 
-          241.6 
-        ] 
-      } 
-    }, 
-    "children":[*..*] 
-  } 
+{
+  "asset":{
+    "version":"1.0",
+    "tilesetVersion":"e575c6f1-a45b-420a-b172-6449fa6e0a59",
+  },
+  "properties":{
+    "Height":{
+      "minimum":1,
+      "maximum":241.6
+    }
+  },
+  "geometricError":494.50961650991815,
+  "root":{
+     "boundingVolume":{
+      "region":[
+        -0.0005682966577418737,
+        0.8987233516605286,
+        0.00011646582098558159,
+        0.8990603398325034,
+        0,
+        241.6
+      ]
+    },
+    "geometricError":268.37878244706053,
+    "refine":"ADD",
+    "content":{
+      "uri":"0/0/0.b3dm",
+      "boundingVolume":{
+        "region":[
+          -0.0004001690908972599,
+          0.8988700116775743,
+          0.00010096729722787196,
+          0.8989625664878067,
+          0,
+          241.6
+        ]
+      }
+    },
+    "children":[*..*]
+  }
 }
 ----
 
@@ -680,6 +680,7 @@ Note that a k-d tree does not have uniform subdivision like typical 2D geospatia
 An octree extends a quadtree by using three orthogonal splitting planes to subdivide a tile into eight children. Like quadtrees, 3D Tiles allows variations to octrees such as non-uniform subdivision, tight bounding volumes, and overlapping children.
 
 
+[[grids_BinaryBodyReference_1]]
 ===== Grids
 
 3D Tiles enables uniform, non-uniform, and overlapping grids by supporting an arbitrary number of child tiles. For example, here is a top-down view of a non-uniform overlapping grid of Cambridge:
@@ -702,35 +703,35 @@ Extensions allow the base specification to be extended with new features. The op
 
 [source,ruby]
 ----
-{ 
-  "transform":[ 
-    4.843178171884396,1.2424271388626869,0,0, 
-    -0.7993325488216595,3.1159251367235608,3.8278032889280675,0, 
+{
+  "transform":[
+    4.843178171884396,1.2424271388626869,0,0,
+    -0.7993325488216595,3.1159251367235608,3.8278032889280675,0,
     0.9511533376784163,-3.7077466670407433,3.2168186118075526,0,
-    1215001.7612985559,-4736269.697480114,4081650.708604793,1 
-  ], 
-  "boundingVolume":{ 
-    "box":[ 
-      0,0,6.701, 
-      3.738,0,0, 
-      0,3.72,0, 
-      0,0,13.402 
-    ] 
-  }, 
-  "geometricError":32, 
-  "content":{ 
-    "uri":"building.b3dm" 
-  }, 
-  "extensions":{ 
-    "VENDOR_collision_volume":{ 
-      "box":[ 
-        0,0,6.8, 
-        3.8,0,0, 
-        0,3.8,0, 
-        0,0,13.5 
-      ] 
-    } 
-  } 
+    1215001.7612985559,-4736269.697480114,4081650.708604793,1
+  ],
+  "boundingVolume":{
+    "box":[
+      0,0,6.701,
+      3.738,0,0,
+      0,3.72,0,
+      0,0,13.402
+    ]
+  },
+  "geometricError":32,
+  "content":{
+    "uri":"building.b3dm"
+  },
+  "extensions":{
+    "VENDOR_collision_volume":{
+      "box":[
+        0,0,6.8,
+        3.8,0,0,
+        0,3.8,0,
+        0,0,13.5
+      ]
+    }
+  }
 }
 ----
 
@@ -738,10 +739,10 @@ All extensions used in a tileset or any descendant external tilesets must be lis
 
 [source,ruby]
 ----
-{ 
-  "extensionsUsed":[ 
-    "VENDOR_collision_volume" 
-  ] 
+{
+  "extensionsUsed":[
+    "VENDOR_collision_volume"
+  ]
 }
 ----
 
@@ -754,28 +755,28 @@ The extras property allows application specific metadata to be added to any 3D T
 
 [source,ruby]
 ----
-{ 
-  "transform":[ 
-    4.843178171884396,1.2424271388626869,0,0, 
-    -0.7993325488216595,3.1159251367235608,3.8278032889280675,0, 
-    0.9511533376784163,-3.7077466670407433,3.2168186118075526,0, 
-    1215001.7612985559,-4736269.697480114,4081650.708604793,1 
-  ], 
-  "boundingVolume":{ 
-    "box":[ 
-      0,0,6.701, 
-      3.738,0,0, 
-      0,3.72,0, 
-      0,0,13.402 
-    ] 
-  }, 
-  "geometricError":32, 
-  "content":{ 
-    "uri":"building.b3dm" 
-  }, 
-  "extras":{ 
-    "name":"Empire State Building" 
-  } 
+{
+  "transform":[
+    4.843178171884396,1.2424271388626869,0,0,
+    -0.7993325488216595,3.1159251367235608,3.8278032889280675,0,
+    0.9511533376784163,-3.7077466670407433,3.2168186118075526,0,
+    1215001.7612985559,-4736269.697480114,4081650.708604793,1
+  ],
+  "boundingVolume":{
+    "box":[
+      0,0,6.701,
+      3.738,0,0,
+      0,3.72,0,
+      0,0,13.402
+    ]
+  },
+  "geometricError":32,
+  "content":{
+    "uri":"building.b3dm"
+  },
+  "extras":{
+    "name":"Empire State Building"
+  }
 }
 ----
 

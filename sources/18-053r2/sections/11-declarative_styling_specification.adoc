@@ -202,7 +202,7 @@ A meta property expression can evaluate to any type. For example:
 ----
 
 
-[[_Expressions]][[expressions]]
+[[_Expressions]]
 === Expressions
 
 The language for expressions is a small subset of JavaScript ( http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf[EMCAScript 5]), plus native vector and regular expression types and access to tileset feature properties in the form of readonly variables.
@@ -1376,7 +1376,7 @@ Comments are not supported.
 [[point-cloud]]
 === Point Cloud
 
-A <<composite,Point Cloud>> is a collection of points that may be styled like other features. In addition to evaluating a point's color and show properties, a Point Cloud style may evaluate pointSize, or the size of each point in pixels. The default pointSize is 1.0.
+A Point Cloud is a collection of points that may be styled like other features. In addition to evaluating a point's color and show properties, a Point Cloud style may evaluate pointSize, or the size of each point in pixels. The default pointSize is 1.0.
 
 [source,ruby]
 ----
@@ -1542,10 +1542,10 @@ An <<_expression,expression>> evaluated as the result of a condition being true.
 [[_expression]]
 ==== expression
 
-A valid 3D Tiles style expression. See <<expressions,Expressions>>
+A valid 3D Tiles style expression. See <<_Expressions,Expressions>>
 
 
-[[_meta]][[meta]]
+[[_meta]]
 ==== meta
 
 A series of property names and the <<_expression,expression>> to evaluate for the value of that property.
