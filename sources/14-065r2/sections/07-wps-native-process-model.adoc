@@ -732,7 +732,7 @@ image::fig-inheritance-hierarchy-profiles-uml-diagram.png[]
 |===
 ^h|Property ^h|Generic Profile ^h|Implementation Profile ^h|Implementation (instance level)
 
-|Process | | | 
+|Process | | |
 |Identifier	|D	|O	|O
 |Title	|D	|O	|O
 |Keywords	|D	|E	|E
