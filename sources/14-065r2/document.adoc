@@ -23,7 +23,7 @@
 :submitting-organizations: TU Dresden; 52°North; Intergraph Corporation; Image Matters LLC; CRP Henri Tudor; Airbus Defence and Space
 :imagesdir: images
 :stem:
-:no-isobib:
+
 
 include::sections/00-abstract.adoc[]
 include::sections/01-scope.adoc[]
@@ -31,7 +31,6 @@ include::sections/02-conformance.adoc[]
 include::sections/03-references.adoc[]
 include::sections/04-terms-def.adoc[]
 include::sections/05-conventions.adoc[]
-////
 include::sections/06-wps-conceptual-model.adoc[]
 include::sections/07-wps-native-process-model.adoc[]
 include::sections/08-wps-native-process-model-encoding.adoc[]
@@ -39,9 +38,7 @@ include::sections/09-common-wps-service-model.adoc[]
 include::sections/10-binding-extensions-for-wps-operations.adoc[]
 include::sections/11-service-profiles.adoc[]
 include::sections/12-dismiss-extension.adoc[]
-////
 include::sections/aa-abstract-test-suite.adoc[]
-////
 include::sections/ab-xml-examples.adoc[]
-////
+
 
