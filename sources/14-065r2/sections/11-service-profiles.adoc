@@ -19,9 +19,9 @@ _The Basic WPS server shall implement the common WPS service model as defined in
 
 [requirement,type="general",label="/req/service/profile/basic-wps/binding"]
 ======
-_The Basic WPS server shall support one or more of the following bindings for each operation:_ 
+_The Basic WPS server shall support one or more of the following bindings for each operation:_
 
-. http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml 
+. http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml
 . http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp
 ======
 

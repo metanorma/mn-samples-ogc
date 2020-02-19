@@ -11,7 +11,7 @@ A *process* p is a function that for each input returns a corresponding output
 [%unnumbered]
 [stem]
 ++++
-mu: X -> Y 
+mu: X -> Y
 ++++
 
 where stem:[X] denotes the domain of arguments x and stem:[Y] denotes the co-domain of values y. Within this specification, process arguments are referred to as process inputs and result values are referred to as process outputs. Processes that have no process inputs represent value generators that deliver constant or random process outputs.
