@@ -3,7 +3,7 @@
 
 === Overview
 
-3D Tiles styles provide concise declarative styling of tileset features. A style defines expressions to evaluate the display of a feature, for example color (RGB and translucency) and show properties, often based on the feature's properties stored in the tile's <<_Batch_Table,Batch Table>>.
+3D Tiles styles provide concise declarative styling of tileset features. A style defines expressions to evaluate the display of a feature, for example `color` (RGB and translucency) and show properties, often based on the feature's properties stored in the tile's <<_Batch_Table,Batch Table>>.
 
 A style may be applied to a tile that doesn't contain features, in which case the tile is treated as an implicit single feature without properties.
 
@@ -13,6 +13,7 @@ Styles are defined with JSON and expressions written in a small subset of JavaSc
 
 The following example assigns a color based on building height.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -33,10 +34,11 @@ The following example assigns a color based on building height.
 [[styling-features]]
 ==== Styling features
 
-Visual properties available for styling features are the show property, the assigned expression of which will evaluate to a boolean that determines if the feature is visible, and the color property, the assigned expression of which will evaluate to a Color object (RGB and translucency) which determines the displayed color of a feature.
+Visual properties available for styling features are the `show` property, the assigned expression of which will evaluate to a boolean that determines if the feature is visible, and the `color` property, the assigned expression of which will evaluate to a `Color` object (RGB and translucency) which determines the displayed color of a feature.
 
 The following style assigns the default show and color properties to each feature:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -47,6 +49,7 @@ The following style assigns the default show and color properties to each featur
 
 Instead of showing all features, show can be an expression dependent on a feature's properties, for example, the following expression will show only features in the 19341 zip code:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -54,8 +57,9 @@ Instead of showing all features, show can be an expression dependent on a featur
 }
 ----
 
-show can also be used for more complex queries; for example, here a compound condition and regular expression are used to show only features whose county starts with 'Chest' and whose year built is greater than or equal to 1970:
+show can also be used for more complex queries; for example, here a compound condition and regular expression are used to show only features whose county starts with `'Chest'` and whose year built is greater than or equal to 1970:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -65,6 +69,7 @@ show can also be used for more complex queries; for example, here a compound con
 
 Colors can also be defined by expressions dependent on a feature's properties. For example, the following expression colors features with a temperature above 90 as red and the others as white:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -74,6 +79,7 @@ Colors can also be defined by expressions dependent on a feature's properties. F
 
 The color's alpha component defines the feature's opacity. For example, the following sets the feature's RGB color components from the feature's properties and makes features with volume greater than 100 transparent:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -85,10 +91,11 @@ The color's alpha component defines the feature's opacity. For example, the foll
 [[conditions]]
 ==== Conditions
 
-In addition to a string containing an expression, color and show can be an array defining a series of conditions (similar to if...else statements). Conditions can, for example, be used to make color maps and color ramps with any type of inclusive/exclusive intervals.
+In addition to a string containing an expression, color and show can be an array defining a series of conditions (similar to `if...else` statements). Conditions can, for example, be used to make color maps and color ramps with any type of inclusive/exclusive intervals.
 
-For example, the following expression maps an ID property to colors. Conditions are evaluated in order, so if ${id} is not '1' or '2', the "true" condition returns white. If no conditions are met, the color of the feature will be undefined:
+For example, the following expression maps an ID property to colors. Conditions are evaluated in order, so `if ${id}` is not `'1'` or `'2'`, the `"true"` condition returns white. If no conditions are met, the color of the feature will be `undefined`:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -104,6 +111,7 @@ For example, the following expression maps an ID property to colors. Conditions 
 
 The next example shows how to use conditions to create a color ramp using intervals with an inclusive lower bound and exclusive upper bound:
 
+[%unnumbered]
 [source,ruby]
 ----
 "color" : {
@@ -120,6 +128,7 @@ The next example shows how to use conditions to create a color ramp using interv
 
 Since conditions are evaluated in order, the above can be written more concisely as the following:
 
+[%unnumbered]
 [source,ruby]
 ----
 "color": {
@@ -138,8 +147,9 @@ Since conditions are evaluated in order, the above can be written more concisely
 [[defining-variables]]
 ==== Defining variables
 
-Commonly used expressions may be stored in a defines object with a variable name as a key. If a variable references the name of a defined expression, it is replaced with the result of the referenced evaluated expression:
+Commonly used expressions may be stored in a `defines` object with a variable name as a key. If a variable references the name of a defined expression, it is replaced with the result of the referenced evaluated expression:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -160,6 +170,7 @@ Commonly used expressions may be stored in a defines object with a variable name
 
 A define expression may not reference other defines; however, it may reference feature properties with the same name. In the style below a feature of height 150 gets the color red:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -178,8 +189,9 @@ A define expression may not reference other defines; however, it may reference f
 [[meta-property]]
 ==== Meta property
 
-Non-visual properties of a feature can be defined using the meta property. For example, the following sets a description meta property to a string containing the feature name:
+Non-visual properties of a feature can be defined using the `meta` property. For example, the following sets a `description` meta property to a string containing the feature name:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -191,6 +203,7 @@ Non-visual properties of a feature can be defined using the meta property. For e
 
 A meta property expression can evaluate to any type. For example:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -202,7 +215,7 @@ A meta property expression can evaluate to any type. For example:
 ----
 
 
-[[_Expressions]]
+[[expressions]]
 === Expressions
 
 The language for expressions is a small subset of JavaScript ( http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf[EMCAScript 5]), plus native vector and regular expression types and access to tileset feature properties in the form of readonly variables.
@@ -213,11 +226,11 @@ The language for expressions is a small subset of JavaScript ( http://www.ecma-i
 [[semantics]]
 ==== Semantics
 
-Dot notation is used to access properties by name, e.g., building.name.
+Dot notation is used to access properties by name, e.g., `building.name`.
 
-Bracket notation ([]) is also used to access properties, e.g., building['name'], or arrays, e.g., temperatures[1].
+Bracket notation ( [ ] ) is also used to access properties, e.g., `building['name']`, or arrays, e.g., `temperatures[1]`.
 
-Functions are called with parenthesis ( ( ) ) and comma-separated arguments, e.g., (isNaN(0.0), color('cyan', 0.5)).
+Functions are called with parenthesis ( ( ) ) and comma-separated arguments, e.g., `(isNaN(0.0), color('cyan', 0.5))`.
 
 
 [[operators]]
@@ -237,9 +250,9 @@ The following operators are supported with the same semantics and precedence as 
 
 ( and ) are also supported for grouping expressions for clarity and precedence.
 
-Logical || and && implement short-circuiting; true || expression does not evaluate the right expression, and false && expression does not evaluate the right expression.
+Logical || and && implement short-circuiting; `true || expression` does not evaluate the right expression, and `false && expression` does not evaluate the right expression.
 
-Similarly, true ? leftExpression : rightExpression only executes the left expression, and false ? leftExpression : rightExpression only executes the right expression.
+Similarly, `true ? leftExpression : rightExpression` only executes the left expression, and `false ? leftExpression : rightExpression` only executes the right expression.
 
 
 [[types]]
@@ -247,217 +260,217 @@ Similarly, true ? leftExpression : rightExpression only executes the left expres
 
 The following types are supported:
 
-* Boolean
+* `Boolean`
 
-* Null
+* `Null`
 
-* Undefined
+* `Undefined`
 
-* Number
+* `Number`
 
-* String
+* `String`
 
-* Array
+* `Array`
 
-* vec2
+* `vec2`
 
-* vec3
+* `vec3`
 
-* vec4
+* `vec4`
 
-* RegExp
+* `RegExp`
 
-All of the types except vec2, vec3, vec4, and RegExp have the same syntax and runtime behavior as JavaScript. vec2, vec3, and vec4 are derived from GLSL vectors and behave similarly to JavaScript Object (see the <<_Vector,Vector section>>). Colors derive from https://www.w3.org/TR/css3-color/[CSS3 Colors] and are implemented as vec4. RegExp is derived from JavaScript and described in the <<_RegExp,RegExp section>>.
+All of the types except `vec2`, `vec3`, `vec4`, and `RegExp` have the same syntax and runtime behavior as JavaScript. `vec2`, `vec3`, and `vec4` are derived from GLSL vectors and behave similarly to JavaScript `Object` (see the <<_Vector,Vector section>>). Colors derive from https://www.w3.org/TR/css3-color/[CSS3 Colors] and are implemented as `vec4`. `RegExp` is derived from JavaScript and described in the <<_RegExp,RegExp section>>.
 
 Example expressions for different types include the following:
 
-* true, false
+* `true, false`
 
-* null
+* `null`
 
-* undefined
+* `undefined`
 
-* 1.0, NaN, Infinity
+* `1.0, NaN, Infinity`
 
-* 'Cesium', "Cesium"
+* `'Cesium', "Cesium"`
 
-* [0, 1, 2]
+* `[0, 1, 2]`
 
-* vec2(1.0, 2.0)
+* `vec2(1.0, 2.0)`
 
-* vec3(1.0, 2.0, 3.0)
+* `vec3(1.0, 2.0, 3.0)`
 
-* vec4(1.0, 2.0, 3.0, 4.0)
+* `vec4(1.0, 2.0, 3.0, 4.0)`
 
-* color('#00FFFF')
+* `color('#00FFFF')`
 
-* regExp('^Chest'))
+* `regExp('^Chest'))`
 
 
 [[number]]
 ===== Number
 
-As in JavaScript, numbers can be NaN or Infinity. The following test functions are supported:
+As in JavaScript, numbers can be `NaN` or `Infinity`. The following test functions are supported:
 
-* isNaN(testValue : Number) : Boolean
+* `isNaN(testValue : Number) : Boolean`
 
-* isFinite(testValue : Number) : Boolean
+* `isFinite(testValue : Number) : Boolean`
 
 
 [[_Vector]]
 ===== Vector
 
-The styling language includes 2, 3, and 4 component floating-point vector types: vec2, vec3, and vec4. Vector constructors share the same rules as GLSL:
+The styling language includes 2, 3, and 4 component floating-point vector types: `vec2`, `vec3`, and `vec4`. Vector constructors share the same rules as GLSL:
 
 
 [[vec2]]
 ====== vec2
 
-* vec2(xy : Number) - initialize each component with the number
+* `vec2(xy : Number)` - initialize each component with the number
 
-* vec2(x : Number, y : Number) - initialize with two numbers
+* `vec2(x : Number, y : Number)` - initialize with two numbers
 
-* vec2(xy : vec2) - initialize with another vec2
+* `vec2(xy : vec2)` - initialize with another `vec2`
 
-* vec2(xyz : vec3) - drops the third component of a vec3
+* `vec2(xyz : vec3)` - drops the third component of a `vec3`
 
-* vec2(xyzw : vec4) - drops the third and fourth component of a vec4
+* `vec2(xyzw : vec4)` - drops the third and fourth component of a `vec4`
 
 
 [[vec3]]
 ====== vec3
 
-* vec3(xyz : Number) - initialize each component with the number
+* `vec3(xyz : Number)` - initialize each component with the number
 
-* vec3(x : Number, y : Number, z : Number) - initialize with three numbers
+* `vec3(x : Number, y : Number, z : Number)` - initialize with three numbers
 
-* vec3(xyz : vec3) - initialize with another vec3
+* `vec3(xyz : vec3)` - initialize with another `vec3`
 
-* vec3(xyzw : vec4) - drops the fourth component of a vec4
+* `vec3(xyzw : vec4)` - drops the fourth component of a `vec4`
 
-* vec3(xy : vec2, z : Number) - initialize with a vec2 and number
+* `vec3(xy : vec2, z : Number)` - initialize with a `vec2` and number
 
-* vec3(x : Number, yz : vec2) - initialize with a vec2 and number
+* `vec3(x : Number, yz : vec2)` - initialize with a `vec2` and number
 
 
 [[vec4]]
 ====== vec4
 
-* vec4(xyzw : Number) - initialize each component with the number
+* `vec4(xyzw : Number)` - initialize each component with the number
 
-* vec4(x : Number, y : Number, z : Number, w : Number) - initialize with four numbers
+* `vec4(x : Number, y : Number, z : Number, w : Number)` - initialize with four numbers
 
-* vec4(xyzw : vec4) - initialize with another vec4
+* `vec4(xyzw : vec4)` - initialize with another `vec4`
 
-* vec4(xy : vec2, z : Number, w : Number) - initialize with a vec2 and two numbers
+* `vec4(xy : vec2, z : Number, w : Number)` - initialize with a `vec2` and two numbers
 
-* vec4(x : Number, yz : vec2, w : Number) - initialize with a vec2 and two numbers
+* `vec4(x : Number, yz : vec2, w : Number)` - initialize with a `vec2` and two numbers
 
-* vec4(x : Number, y : Number, zw : vec2) - initialize with a vec2 and two numbers
+* `vec4(x : Number, y : Number, zw : vec2)` - initialize with a `vec2` and two numbers
 
-* vec4(xyz : vec3, w : Number) - initialize with a vec3 and number
+* `vec4(xyz : vec3, w : Number)` - initialize with a `vec3` and number
 
-* vec4(x : Number, yzw : vec3) - initialize with a vec3 and number
+* `vec4(x : Number, yzw : vec3)` - initialize with a `vec3` and number
 
 
 [[vector-usage]]
 ====== Vector usage
 
-vec2 components may be accessed with
+`vec2` components may be accessed with
 
-* .x, .y
+* `.x, .y`
 
-* .r, .g
+* `.r, .g`
 
-* [0], [1]
+* `[0], [1]`
 
-vec3 components may be accessed with
+`vec3` components may be accessed with
 
-* .x, .y, .z
+* `.x, .y, .z`
 
-* .r, .g, .b
+* `.r, .g, .b`
 
-* [0], [1], [2]
+* `[0], [1], [2]`
 
-vec4 components may be accessed with
+`vec4` components may be accessed with
 
-* .x, .y, .z, .w
+* `.x, .y, .z, .w`
 
-* .r, .g, .b, .a
+* `.r, .g, .b, .a`
 
-* [0], [1], [2], [3]
+* `[0], [1], [2], [3]`
 
-Unlike GLSL, the styling language does not support swizzling. For example, vec3(1.0).xy is not supported.
+Unlike GLSL, the styling language does not support swizzling. For example, `vec3(1.0).xy` is not supported.
 
-Vectors support the following unary operators: -, +.
+Vectors support the following unary operators: `-`, `+`.
 
-Vectors support the following binary operators by performing component-wise operations: ===, !==, +, -, *, /, and %. For example vec4(1.0) === vec4(1.0) is true since the _x_, _y_, _z_, and _w_ components are equal. Operators are essentially overloaded for vec2, vec3, and vec4.
+Vectors support the following binary operators by performing component-wise operations: `===`, `!==`, `+`, `-`, `*`, `/`, and `%`. For example `vec4(1.0) === vec4(1.0)` is true since the _x_, _y_, _z_, and _w_ components are equal. Operators are essentially overloaded for `vec2`, `vec3`, and `vec4`.
 
-vec2, vec3, and vec4 have a toString function for explicit (and implicit) conversion to strings in the format '(x, y)', '(x, y, z)', and '(x, y, z, w)'.
+`vec2`, `vec3`, and `vec4` have a `toString` function for explicit (and implicit) conversion to strings in the format `'(x, y)'`, `'(x, y, z)'`, and `'(x, y, z, w)'`.
 
-* toString() : String
+* `toString() : String`
 
-vec2, vec3, and vec4 do not expose any other functions or a prototype object.
+`vec2`, `vec3`, and `vec4` do not expose any other functions or a `prototype` object.
 
 
 [[color]]
 ===== Color
 
-Colors are implemented as vec4 and are created with one of the following functions:
+Colors are implemented as `vec4` and are created with one of the following functions:
 
-* color()
+* `color()`
 
-* color(keyword : String, [alpha : Number])
+* `color(keyword : String, [alpha : Number])`
 
-* color(6-digit-hex : String, [alpha : Number])
+* `color(6-digit-hex : String, [alpha : Number])`
 
-* color(3-digit-hex : String, [alpha : Number])
+* `color(3-digit-hex : String, [alpha : Number])`
 
-* rgb(red : Number, green : Number, blue : Number)
+* `rgb(red : Number, green : Number, blue : Number)`
 
-* rgba(red : Number, green : Number, blue : Number, alpha : Number)
+* `rgba(red : Number, green : Number, blue : Number, alpha : Number)`
 
-* hsl(hue : Number, saturation : Number, lightness : Number)
+* `hsl(hue : Number, saturation : Number, lightness : Number)`
 
-* hsla(hue : Number, saturation : Number, lightness : Number, alpha : Number)
+* `hsla(hue : Number, saturation : Number, lightness : Number, alpha : Number)`
 
-Calling color() with no arguments is the same as calling color('#FFFFFF').
+Calling `color()` with no arguments is the same as calling `color('#FFFFFF')`.
 
-Colors defined by a case-insensitive keyword (e.g., 'cyan') or hex rgb are passed as strings to the color function. For example:
+Colors defined by a case-insensitive keyword (e.g., `'cyan'`) or hex rgb are passed as strings to the `color` function. For example:
 
-* color('cyan')
+* `color('cyan')`
 
-* color('#00FFFF')
+* `color('#00FFFF')`
 
-* color('#0FF')
+* `color('#0FF')`
 
-These color functions have an optional second argument that is an alpha component to define opacity, where 0.0 is fully transparent and 1.0 is fully opaque. For example:
+These `color` functions have an optional second argument that is an alpha component to define opacity, where `0.0` is fully transparent and `1.0` is fully opaque. For example:
 
-* color('cyan', 0.5)
+* `color('cyan', 0.5)`
 
-Colors defined with decimal RGB or HSL are created with rgb and hsl functions, respectively, just as in CSS (but with percentage ranges from 0.0 to 1.0 for 0% to 100%, respectively). For example:
+Colors defined with decimal RGB or HSL are created with `rgb` and `hsl` functions, respectively, just as in CSS (but with percentage ranges from `0.0` to `1.0` for `0%` to `100%`, respectively). For example:
 
-* rgb(100, 255, 190)
+* `rgb(100, 255, 190)`
 
-* hsl(1.0, 0.6, 0.7)
+* `hsl(1.0, 0.6, 0.7)`
 
-The range for rgb components is 0 to 255, inclusive. For hsl, the range for hue, saturation, and lightness is 0.0 to 1.0, inclusive.
+The range for rgb components is `0` to `255`, inclusive. For `hsl`, the range for hue, saturation, and lightness is `0.0` to `1.0`, inclusive.
 
-Colors defined with rgba or hsla have a fourth argument that is an alpha component to define opacity, where 0.0 is fully transparent and 1.0 is fully opaque. For example:
+Colors defined with `rgba` or `hsla` have a fourth argument that is an alpha component to define opacity, where `0.0` is fully transparent and `1.0` is fully opaque. For example:
 
-* rgba(100, 255, 190, 0.25)
+* `rgba(100, 255, 190, 0.25)`
 
-* hsla(1.0, 0.6, 0.7, 0.75)
+* `hsla(1.0, 0.6, 0.7, 0.75)`
 
-Colors are equivalent to the vec4 type and share the same functions, operators, and component accessors. Color components are stored in the range 0.0 to 1.0.
+Colors are equivalent to the `vec4` type and share the same functions, operators, and component accessors. Color components are stored in the range `0.0` to `1.0`.
 
 For example:
 
-* color('red').x, color('red').r, and color('red')[0] all evaluate to 1.0.
+* `color('red').x, color('red').r, and color('red')[0]` all evaluate to `1.0`.
 
-* color('red').toString() evaluates to (1.0, 0.0, 0.0, 1.0)
+* `color('red').toString()` evaluates to `(1.0, 0.0, 0.0, 1.0)`
 
-* color('red') * vec4(0.5) is equivalent to vec4(0.5, 0.0, 0.0, 0.5)
+* `color('red') * vec4(0.5)` is equivalent to `vec4(0.5, 0.0, 0.0, 0.5)`
 
 
 [[_RegExp]]
@@ -465,32 +478,33 @@ For example:
 
 Regular expressions are created with the following functions, which behave like the JavaScript https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp[RegExp] constructor:
 
-* regExp()
+* `regExp()`
 
-* regExp(pattern : String, [flags : String])
+* `regExp(pattern : String, [flags : String])`
 
-Calling regExp() with no arguments is the same as calling regExp('(?:)').
+Calling `regExp()` with no arguments is the same as calling `regExp('(?:)')`.
 
-If specified, flags can have any combination of the following values:
+If specified, `flags` can have any combination of the following values:
 
-* g - global match
+* `g` - global match
 
-* i - ignore case
+* `i` - ignore case
 
-* m - multiline
+* `m` - multiline
 
-* u - unicode
+* `u` - unicode
 
-* y- sticky
+* `y` - sticky
 
 Regular expressions support these functions:
 
-* test(string : String) : Boolean - Tests the specified string for a match.
+* `test(string : String) : Boolean` - Tests the specified string for a match.
 
-* exec(string : String) : String - Executes a search for a match in the specified string. If the search succeeds, it returns the first instance of a captured String. If the search fails, it returns null.
+* `exec(string : String) : String` - Executes a search for a match in the specified string. If the search succeeds, it returns the first instance of a captured `String`. If the search fails, it returns `null`.
 
 For example:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -502,16 +516,17 @@ regExp('a(.)', 'i').exec('Abc') === 'b'
 regExp('Building\s(\d)').exec(${Name}) === '1'
 ----
 
-Regular expressions have a toString function for explicit (and implicit) conversion to strings in the format 'pattern':
+Regular expressions have a `toString` function for explicit (and implicit) conversion to strings in the format `'pattern'`:
 
-* toString() : String
+* `toString() : String`
 
-Regular expressions do not expose any other functions or a prototype object.
+Regular expressions do not expose any other functions or a `prototype` object.
 
-The operators =~ and !~ are overloaded for regular expressions. The =~ operator matches the behavior of the test function, and tests the specified string for a match. It returns true if one is found, and false if not found. The !~ operator is the inverse of the =~ operator. It returns true if no matches are found, and false if a match is found. Both operators are commutative.
+The operators `=~` and `!~` are overloaded for regular expressions. The `=~` operator matches the behavior of the test function, and tests the specified string for a match. It returns `true` if one is found, and `false` if not found. The `!~` operator is the inverse of the `=~` operator. It returns `true` if no matches are found, and `false` if a match is found. Both operators are commutative.
 
 For example, the following expressions all evaluate to true:
 
+[%unnumbered]
 [source,ruby]
 ----
 regExp('a') =~ 'abc'
@@ -525,70 +540,70 @@ regExp('a') !~ 'bcd'
 [[operator-rules]]
 ==== Operator rules
 
-* Unary operators + and - operate only on number and vector expressions.
+* Unary operators `+` and `-` operate only on number and vector expressions.
 
-* Unary operator ! operates only on boolean expressions.
+* Unary operator `!` operates only on boolean expressions.
 
-* Binary operators <, <=, >, and >= operate only on number expressions.
+* Binary operators `<`, `<=`, `>`, and `>=` operate only on number expressions.
 
-* Binary operators || and && operate only on boolean expressions.
+* Binary operators `||` and `&&` operate only on boolean expressions.
 
-* Binary operator + operates on the following expressions:
-
-** Number expressions
-
-** Vector expressions of the same type
-
-** If at least one expressions is a string, the other expression is converted to a string following <<_String_conversions,String Conversions>>, and the operation returns a concatenated string, e.g. "name" + 10 evaluates to "name10"
-
-* Binary operator - operates on the following expressions:
+* Binary operator `+` operates on the following expressions:
 
 ** Number expressions
 
 ** Vector expressions of the same type
 
-* Binary operator * operates on the following expressions:
+** If at least one expressions is a string, the other expression is converted to a string following <<_String_conversions,String Conversions>>, and the operation returns a concatenated string, e.g. `"name" + 10` evaluates to `"name10"`
+
+* Binary operator `-` operates on the following expressions:
 
 ** Number expressions
 
 ** Vector expressions of the same type
 
-** Mix of number expression and vector expression, e.g. 3 * vec3(1.0) and vec2(1.0)
-* 3
-
-* Binary operator / operates on the following expressions:
+* Binary operator `*` operates on the following expressions:
 
 ** Number expressions
 
 ** Vector expressions of the same type
 
-** Vector expression followed by number expression, e.g.vec3(1.0) / 3
+** Mix of number expression and vector expression, e.g. `3 * vec3(1.0)` and `vec2(1.0) * 3`
 
-* Binary operator % operates on the following expressions:
+* Binary operator `/` operates on the following expressions:
 
 ** Number expressions
 
 ** Vector expressions of the same type
 
-* Binary equality operators === and !== operate on any expressions. The operation returns false if the expression types do not match.
+** Vector expression followed by number expression, e.g. `vec3(1.0) / 3`
 
-* Binary regExp operators =~ and !~ require one argument to be a string expression and the other to be a RegExp expression.
+* Binary operator `%` operates on the following expressions:
 
-* Ternary operator ? : conditional argument must be a boolean expression.
+** Number expressions
+
+** Vector expressions of the same type
+
+* Binary equality operators `===` and `!==` operate on any expressions. The operation returns `false` if the expression types do not match.
+
+* Binary `regExp` operators `=~` and `!~` require one argument to be a string expression and the other to be a `RegExp` expression.
+
+* Ternary operator `? :` conditional argument must be a boolean expression.
 
 [[type-conversions]]
 ==== Type conversions
 
-Explicit conversions between primitive types are handled with Boolean, Number, and String functions.
+Explicit conversions between primitive types are handled with `Boolean`, `Number`, and `String` functions.
 
-* Boolean(value : Any) : Boolean
+* `Boolean(value : Any) : Boolean`
 
-* Number(value : Any) : Number
+* `Number(value : Any) : Number`
 
-* String(value : Any) : String
+* `String(value : Any) : String`
 
 For example:
 
+[%unnumbered]
 [source,ruby]
 ----
 Boolean(1) === true
@@ -596,43 +611,43 @@ Number('1') === 1
 String(1) === '1'
 ----
 
-Boolean and Number follow JavaScript conventions. String follows <<_String_conversions,String Conversions>>.
+`Boolean` and `Number` follow JavaScript conventions. `String` follows <<_String_conversions,String Conversions>>.
 
 These are essentially casts, not constructor functions.
 
-The styling language does not allow for implicit type conversions, unless stated above. Expressions like vec3(1.0) === vec4(1.0) and "5" < 6 are not valid.
+The styling language does not allow for implicit type conversions, unless stated above. Expressions like `vec3(1.0) === vec4(1.0)` and `"5" < 6` are not valid.
 
 
 [[_String_conversions]]
 ==== String conversions
 
-vec2, vec3, vec4, and RegExp expressions are converted to strings using their toString methods. All other types follow JavaScript conventions.
+`vec2`, `vec3`, `vec4`, and `RegExp` expressions are converted to strings using their `toString` methods. All other types follow JavaScript conventions.
 
-* true - "true"
+* `true - "true"`
 
-* false - "false"
+* `false - "false"`
 
-* null - "null"
+* `null - "null"`
 
-* undefined - "undefined"
+* `undefined - "undefined"`
 
-* 5.0 - "5"
+* `5.0 - "5"`
 
-* NaN - "NaN"
+* `NaN - "NaN"`
 
-* Infinity - "Infinity"
+* `Infinity - "Infinity"`
 
-* "name" - "name"
+* `"name" - "name"`
 
-* [0, 1, 2] - "[0, 1, 2]"
+* `[0, 1, 2] - "[0, 1, 2]"`
 
-* vec2(1, 2) - "(1, 2)"
+* `vec2(1, 2) - "(1, 2)"`
 
-* vec3(1, 2, 3) - "(1, 2, 3)"
+* `vec3(1, 2, 3) - "(1, 2, 3)"`
 
-* vec4(1, 2, 3, 4) - "(1, 2, 3, 4)"
+* `vec4(1, 2, 3, 4) - "(1, 2, 3, 4)"`
 
-* RegExp('a') - "/a/"
+* `RegExp('a') - "/a/"`
 
 
 [[constants]]
@@ -643,8 +658,9 @@ The following constants are supported by the styling language:
 [[pi]]
 ===== PI
 
-The mathematical constant PI, which represents a circle's circumference divided by its diameter, approximately 3.14159.
+The mathematical constant PI, which represents a circle's circumference divided by its diameter, approximately `3.14159`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -656,8 +672,9 @@ The mathematical constant PI, which represents a circle's circumference divided 
 [[e]]
 ===== E
 
-Euler's constant and the base of the natural logarithm, approximately 2.71828.
+Euler's constant and the base of the natural logarithm, approximately `2.71828`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -668,30 +685,31 @@ Euler's constant and the base of the natural logarithm, approximately 2.71828.
 [[variables]]
 ==== Variables
 
-Variables are used to retrieve the property values of individual features in a tileset. Variables are identified using the ES 6 ( http://www.ecma-international.org/ecma-262/6.0/[ECMAScript 2015]) template literal syntax, i.e., ${feature.identifier} or ${feature['identifier']}, where the identifier is the case-sensitive property name. feature is implicit and can be omitted in most cases.
+Variables are used to retrieve the property values of individual features in a tileset. Variables are identified using the ES 6 ( http://www.ecma-international.org/ecma-262/6.0/[ECMAScript 2015]) template literal syntax, i.e., `${feature.identifier}` or `${feature['identifier']}`, where the identifier is the case-sensitive property name. feature is implicit and can be omitted in most cases.
 
 Variables can be used anywhere a valid expression is accepted, except inside other variable identifiers. For example, the following is not allowed:
 
-${foo[${bar}]}
+`${foo[${bar}]}`
 
-If a feature does not have a property with the specified name, the variable evaluates to undefined. Note that the property may also be null if null was explicitly stored for a property.
+If a feature does not have a property with the specified name, the variable evaluates to undefined. Note that the property may also be `null` if `null` was explicitly stored for a property.
 
 Variables may be any of the supported native JavaScript types:
 
-* Boolean
+* `Boolean`
 
-* Null
+* `Null`
 
-* Undefined
+* `Undefined`
 
-* Number
+* `Number`
 
-* String
+* `String`
 
-* Array
+* `Array`
 
 For example:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -711,16 +729,17 @@ Additionally, variables originating from vector properties stored in the <<_Bina
 
 [%unnumbered]
 |===
-| componentType | variable type
+| `componentType` | variable type
 
-| "VEC2" | vec2
-| "VEC3" | vec3
-| "VEC4" | vec4
+| `"VEC2"` | `vec2`
+| `"VEC3"` | `vec3`
+| `"VEC4"` | `vec4`
 
 |===
 
 Variables can be used to construct colors or vectors. For example:
 
+[%unnumbered]
 [source,ruby]
 ----
 rgba(${red}, ${green}, ${blue}, ${alpha})
@@ -729,6 +748,7 @@ vec4(${temperature})
 
 Dot or bracket notation is used to access feature subproperties. For example:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -748,8 +768,9 @@ ${address['city']} === `Example city`
 
 Bracket notation supports only string literals.
 
-Top-level properties can be accessed with bracket notation by explicitly using the feature keyword. For example:
+Top-level properties can be accessed with bracket notation by explicitly using the `feature` keyword. For example:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -765,12 +786,13 @@ ${feature['address'].street} === `Oak Street`
 ${feature['address.street']} === `Maple Street`
 ----
 
-To access a feature named feature, use the variable ${feature}. This is equivalent to accessing ${feature.feature}
+To access a feature named `feature`, use the variable `${feature}`. This is equivalent to accessing `${feature.feature}`
 
+[%unnumbered]
 [source,ruby]
 ----
 {
-  "feature" : "building"
+  "feature" : "building" 
 }
 
 ${feature} === `building`
@@ -779,6 +801,7 @@ ${feature.feature} === `building`
 
 Variables can also be substituted inside strings defined with backticks, for example:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -791,6 +814,7 @@ Variables can also be substituted inside strings defined with backticks, for exa
 
 Bracket notation is used to access feature subproperties or arrays. For example:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -813,13 +837,14 @@ The following built-in functions are supported by the styling language. Many of 
 [[abs]]
 ===== abs
 
-abs(x : Number) : Number +
-abs(x : vec2) : vec2 +
-abs(x : vec3) : vec3 +
-abs(x : vec4) : vec4
+`abs(x : Number) : Number` +
+`abs(x : vec2) : vec2` +
+`abs(x : vec3) : vec3` +
+`abs(x : vec4) : vec4`
 
-Returns the absolute value of x.
+Returns the absolute value of `x`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -830,13 +855,14 @@ Returns the absolute value of x.
 [[sqrt]]
 ===== sqrt
 
-sqrt(x : Number) : Number +
-sqrt(x : vec2) : vec2 +
-sqrt(x : vec3) : vec3 +
-sqrt(x : vec4) : vec4
+`sqrt(x : Number) : Number` +
+`sqrt(x : vec2) : vec2` +
+`sqrt(x : vec3) : vec3` +
+`sqrt(x : vec4) : vec4`
 
-Returns the square root of x when x >= 0. Returns NaN when x < 0.
+Returns the square root of `x` when `x >= 0`. Returns `NaN` when `x < 0`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -852,13 +878,14 @@ Returns the square root of x when x >= 0. Returns NaN when x < 0.
 [[cos]]
 ===== cos
 
-cos(angle : Number) : Number +
-cos(angle : vec2) : vec2 +
-cos(angle : vec3) : vec3 +
-cos(angle : vec4) : vec4
+`cos(angle : Number) : Number` +
+`cos(angle : vec2) : vec2` +
+`cos(angle : vec3) : vec3` +
+`cos(angle : vec4) : vec4`
 
-Returns the cosine of angle in radians.
+Returns the cosine of `angle` in radians.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -870,13 +897,14 @@ Returns the cosine of angle in radians.
 [[sin]]
 ===== sin
 
-sin(angle : Number) : Number +
-sin(angle : vec2) : vec2 +
-sin(angle : vec3) : vec3 +
-sin(angle : vec4) : vec4
+`sin(angle : Number) : Number` +
+`sin(angle : vec2) : vec2` +
+`sin(angle : vec3) : vec3` +
+`sin(angle : vec4) : vec4`
 
-Returns the sine of angle in radians.
+Returns the sine of `angle` in radians.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -888,13 +916,14 @@ Returns the sine of angle in radians.
 [[tan]]
 ===== tan
 
-tan(angle : Number) : Number +
-tan(angle : vec2) : vec2 +
-tan(angle : vec3) : vec3 +
-tan(angle : vec4) : vec4
+`tan(angle : Number) : Number` +
+`tan(angle : vec2) : vec2` +
+`tan(angle : vec3) : vec3` +
+`tan(angle : vec4) : vec4`
 
-Returns the tangent of angle in radians.
+Returns the tangent of `angle` in radians.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -906,13 +935,14 @@ Returns the tangent of angle in radians.
 [[acos]]
 ===== acos
 
-acos(angle : Number) : Number +
-acos(angle : vec2) : vec2 +
-acos(angle : vec3) : vec3 +
-acos(angle : vec4) : vec4
+`acos(angle : Number) : Number` +
+`acos(angle : vec2) : vec2` +
+`acos(angle : vec3) : vec3` +
+`acos(angle : vec4) : vec4`
 
-Returns the arccosine of angle in radians.
+Returns the arccosine of `angle` in radians.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -924,13 +954,14 @@ Returns the arccosine of angle in radians.
 [[asin]]
 ===== asin
 
-asin(angle : Number) : Number +
-asin(angle : vec2) : vec2 +
-asin(angle : vec3) : vec3 +
-asin(angle : vec4) : vec4
+`asin(angle : Number) : Number` +
+`asin(angle : vec2) : vec2` +
+`asin(angle : vec3) : vec3` +
+`asin(angle : vec4) : vec4`
 
-Returns the arcsine of angle in radians.
+Returns the arcsine of `angle` in radians.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -942,13 +973,14 @@ Returns the arcsine of angle in radians.
 [[atan]]
 ===== atan
 
-atan(angle : Number) : Number +
-atan(angle : vec2) : vec2 +
-atan(angle : vec3) : vec3 +
-atan(angle : vec4) : vec4
+`atan(angle : Number) : Number` +
+`atan(angle : vec2) : vec2` +
+`atan(angle : vec3) : vec3` +
+`atan(angle : vec4) : vec4`
 
-Returns the arctangent of angle in radians.
+Returns the arctangent of `angle` in radians.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -960,13 +992,14 @@ Returns the arctangent of angle in radians.
 [[atan2]]
 ===== atan2
 
-atan2(y : Number, x : Number) : Number +
-atan2(y : vec2, x : vec2) : vec2 +
-atan2(y : vec3, x : vec3) : vec3 +
-atan2(y : vec4, x : vec4) : vec4
+`atan2(y : Number, x : Number) : Number` +
+`atan2(y : vec2, x : vec2) : vec2` +
+`atan2(y : vec3, x : vec3) : vec3` +
+`atan2(y : vec4, x : vec4) : vec4`
 
-Returns the arctangent of the quotient of y and x.
+Returns the arctangent of the quotient of `y` and `x`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -978,13 +1011,14 @@ Returns the arctangent of the quotient of y and x.
 [[radians]]
 ===== radians
 
-radians(angle : Number) : Number +
-radians(angle : vec2) : vec2 +
-radians(angle : vec3) : vec3 +
-radians(angle : vec4) : vec4
+`radians(angle : Number) : Number` +
+`radians(angle : vec2) : vec2` +
+`radians(angle : vec3) : vec3` +
+`radians(angle : vec4) : vec4`
 
-Converts angle from degrees to radians.
+Converts `angle` from degrees to radians.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -995,13 +1029,14 @@ Converts angle from degrees to radians.
 [[degrees]]
 ===== degrees
 
-degrees(angle : Number) : Number +
-degrees(angle : vec2) : vec2 +
-degrees(angle : vec3) : vec3 +
-degrees(angle : vec4) : vec4
+`degrees(angle : Number) : Number` +
+`degrees(angle : vec2) : vec2` +
+`degrees(angle : vec3) : vec3` +
+`degrees(angle : vec4) : vec4`
 
-Converts angle from radians to degrees.
+Converts `angle` from radians to degrees.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1013,13 +1048,14 @@ Converts angle from radians to degrees.
 [[sign]]
 ===== sign
 
-sign(x : Number) : Number +
-sign(x : vec2) : vec2 +
-sign(x : vec3) : vec3 +
-sign(x : vec4) : vec4
+`sign(x : Number) : Number` +
+`sign(x : vec2) : vec2` +
+`sign(x : vec3) : vec3` +
+`sign(x : vec4) : vec4`
 
-Returns 1.0 when x is positive, 0.0 when x is zero, and -1.0 when x is negative.
+Returns `1.0` when `x` is positive, `0.0` when `x` is zero, and `-1.0` when `x` is negative.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1031,13 +1067,14 @@ Returns 1.0 when x is positive, 0.0 when x is zero, and -1.0 when x is negative.
 [[floor]]
 ===== floor
 
-floor(x : Number) : Number +
-floor(x : vec2) : vec2 +
-floor(x : vec3) : vec3 +
-floor(x : vec4) : vec4
+`floor(x : Number) : Number` +
+`floor(x : vec2) : vec2` +
+`floor(x : vec3) : vec3` +
+`floor(x : vec4) : vec4`
 
-Returns the nearest integer less than or equal to x.
+Returns the nearest integer less than or equal to `x`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1049,13 +1086,14 @@ Returns the nearest integer less than or equal to x.
 [[ceil]]
 ===== ceil
 
-ceil(x : Number) : Number +
-ceil(x : vec2) : vec2 +
-ceil(x : vec3) : vec3 +
-ceil(x : vec4) : vec4
+`ceil(x : Number) : Number` +
+`ceil(x : vec2) : vec2` +
+`ceil(x : vec3) : vec3` +
+`ceil(x : vec4) : vec4`
 
-Returns the nearest integer greater than or equal to x.
+Returns the nearest integer greater than or equal to `x`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1067,13 +1105,14 @@ Returns the nearest integer greater than or equal to x.
 [[round]]
 ===== round
 
-round(x : Number) : Number +
-round(x : vec2) : vec2 +
-round(x : vec3) : vec3 +
-round(x : vec4) : vec4
+`round(x : Number) : Number` +
+`round(x : vec2) : vec2` +
+`round(x : vec3) : vec3` +
+`round(x : vec4) : vec4`
 
-Returns the nearest integer to x. A number with a fraction of 0.5 will round in an implementation-defined direction.
+Returns the nearest integer to `x`. A number with a fraction of `0.5` will round in an implementation-defined direction.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1085,13 +1124,14 @@ Returns the nearest integer to x. A number with a fraction of 0.5 will round in 
 [[exp]]
 ===== exp
 
-exp(x : Number) : Number +
-exp(x : vec2) : vec2 +
-exp(x : vec3) : vec3 +
-exp(x : vec4) : vec4
+`exp(x : Number) : Number` +
+`exp(x : vec2) : vec2` +
+`exp(x : vec3) : vec3` +
+`exp(x : vec4) : vec4`
 
-Returns e to the power of x, where e is Euler's constant, approximately 2.71828.
+Returns `e` to the power of `x`, where `e` is Euler's constant, approximately `2.71828`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1103,13 +1143,14 @@ Returns e to the power of x, where e is Euler's constant, approximately 2.71828.
 [[log]]
 ===== log
 
-log(x : Number) : Number +
-log(x : vec2) : vec2 +
-log(x : vec3) : vec3 +
-log(x : vec4) : vec4
+`log(x : Number) : Number` +
+`log(x : vec2) : vec2` +
+`log(x : vec3) : vec3` +
+`log(x : vec4) : vec4`
 
-Returns the natural logarithm (base e) of x.
+Returns the natural logarithm (base `e`) of `x`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1121,13 +1162,14 @@ Returns the natural logarithm (base e) of x.
 [[exp2]]
 ===== exp2
 
-exp2(x : Number) : Number +
-exp2(x : vec2) : vec2 +
-exp2(x : vec3) : vec3 +
-exp2(x : vec4) : vec4
+`exp2(x : Number) : Number` +
+`exp2(x : vec2) : vec2` +
+`exp2(x : vec3) : vec3` +
+`exp2(x : vec4) : vec4`
 
-Returns 2 to the power of x.
+Returns `2` to the power of `x`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1139,13 +1181,14 @@ Returns 2 to the power of x.
 [[log2]]
 ===== log2
 
-log2(x : Number) : Number +
-log2(x : vec2) : vec2 +
-log2(x : vec3) : vec3 +
-log2(x : vec4) : vec4
+`log2(x : Number) : Number` +
+`log2(x : vec2) : vec2` +
+`log2(x : vec3) : vec3` +
+`log2(x : vec4) : vec4`
 
-Returns the base 2 logarithm of x.
+Returns the base `2` logarithm of `x`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1157,13 +1200,14 @@ Returns the base 2 logarithm of x.
 [[fract]]
 ===== fract
 
-fract(x : Number) : Number +
-fract(x : vec2) : vec2 +
-fract(x : vec3) : vec3 +
-fract(x : vec4) : vec4
+`fract(x : Number) : Number` +
+`fract(x : vec2) : vec2` +
+`fract(x : vec3) : vec3` +
+`fract(x : vec4) : vec4`
 
-Returns the fractional part of x. Equivalent to x - floor(x).
+Returns the fractional part of `x`. Equivalent to `x - floor(x)`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1175,13 +1219,14 @@ Returns the fractional part of x. Equivalent to x - floor(x).
 [[pow]]
 ===== pow
 
-pow(base : Number, exponent : Number) : Number +
-pow(base : vec2, exponent : vec2) : vec2 +
-pow(base : vec3, exponent : vec3) : vec3 +
-pow(base : vec4, exponent : vec4) : vec4
+`pow(base : Number, exponent : Number) : Number` +
+`pow(base : vec2, exponent : vec2) : vec2` +
+`pow(base : vec3, exponent : vec3) : vec3` +
+`pow(base : vec4, exponent : vec4) : vec4`
 
-Returns base raised to the power of exponent.
+Returns `base` raised to the power of `exponent`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1193,18 +1238,19 @@ Returns base raised to the power of exponent.
 [[min]]
 ===== min
 
-min(x : Number, y : Number) : Number +
-min(x : vec2, y : vec2) : vec2 +
-min(x : vec3, y : vec3) : vec3 +
-min(x : vec4, y : vec4) : vec4
+`min(x : Number, y : Number) : Number` +
+`min(x : vec2, y : vec2) : vec2` +
+`min(x : vec3, y : vec3) : vec3` +
+`min(x : vec4, y : vec4) : vec4`
 
-min(x : Number, y : Number) : Number +
-min(x : vec2, y : Number) : vec2 +
-min(x : vec3, y : Number) : vec3 +
-min(x : vec4, y : Number) : vec4
+`min(x : Number, y : Number) : Number` +
+`min(x : vec2, y : Number) : vec2` +
+`min(x : vec3, y : Number) : vec3` +
+`min(x : vec4, y : Number) : vec4`
 
-Returns the smaller of x and y.
+Returns the smaller of `x` and `y`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1216,18 +1262,19 @@ Returns the smaller of x and y.
 [[max]]
 ===== max
 
-max(x : Number, y : Number) : Number +
-max(x : vec2, y : vec2) : vec2 +
-max(x : vec3, y : vec3) : vec3 +
-max(x : vec4, y : vec4) : vec4
+`max(x : Number, y : Number) : Number` +
+`max(x : vec2, y : vec2) : vec2` +
+`max(x : vec3, y : vec3) : vec3` +
+`max(x : vec4, y : vec4) : vec4`
 
-max(x : Number, y : Number) : Number +
-max(x : vec2, y : Number) : vec2 +
-max(x : vec3, y : Number) : vec3 +
-max(x : vec4, y : Number) : vec4
+`max(x : Number, y : Number) : Number` +
+`max(x : vec2, y : Number) : vec2` +
+`max(x : vec3, y : Number) : vec3` +
+`max(x : vec4, y : Number) : vec4`
 
-Returns the larger of x and y.
+Returns the larger of `x` and `y`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1239,18 +1286,19 @@ Returns the larger of x and y.
 [[clamp]]
 ===== clamp
 
-clamp(x : Number, min : Number, max : Number) : Number +
-clamp(x : vec2, min : vec2, max : vec2) : vec2 +
-clamp(x : vec3, min : vec3, max : vec3) : vec3 +
-clamp(x : vec4, min : vec4, max : vec4) : vec4
+`clamp(x : Number, min : Number, max : Number) : Number` +
+`clamp(x : vec2, min : vec2, max : vec2) : vec2` +
+`clamp(x : vec3, min : vec3, max : vec3) : vec3` +
+`clamp(x : vec4, min : vec4, max : vec4) : vec4`
 
-clamp(x : Number, min : Number, max : Number) : Number +
-clamp(x : vec2, min : Number, max : Number) : vec2 +
-clamp(x : vec3, min : Number, max : Number) : vec3 +
-clamp(x : vec4, min : Number, max : Number) : vec4
+`clamp(x : Number, min : Number, max : Number) : Number` +
+`clamp(x : vec2, min : Number, max : Number) : vec2` +
+`clamp(x : vec3, min : Number, max : Number) : vec3` +
+`clamp(x : vec4, min : Number, max : Number) : vec4`
 
-Constrains x to lie between min and max.
+Constrains `x` to lie between `min` and `max`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1262,18 +1310,19 @@ Constrains x to lie between min and max.
 [[mix]]
 ===== mix
 
-mix(x : Number, y : Number, a : Number) : Number +
-mix(x : vec2, y : vec2, a : vec2) : vec2 +
-mix(x : vec3, y : vec3, a : vec3) : vec3 +
-mix(x : vec4, y : vec4, a : vec4) : vec4
+`mix(x : Number, y : Number, a : Number) : Number` +
+`mix(x : vec2, y : vec2, a : vec2) : vec2` +
+`mix(x : vec3, y : vec3, a : vec3) : vec3` +
+`mix(x : vec4, y : vec4, a : vec4) : vec4`
 
-mix(x : Number, y : Number, a : Number) : Number +
-mix(x : vec2, y : vec2, a : Number) : vec2 +
-mix(x : vec3, y : vec3, a : Number) : vec3 +
-mix(x : vec4, y : vec4, a : Number) : vec4
+`mix(x : Number, y : Number, a : Number) : Number` +
+`mix(x : vec2, y : vec2, a : Number) : vec2` +
+`mix(x : vec3, y : vec3, a : Number) : vec3` +
+`mix(x : vec4, y : vec4, a : Number) : vec4`
 
-Computes the linear interpolation of x and y.
+Computes the linear interpolation of `x` and `y`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1284,13 +1333,14 @@ Computes the linear interpolation of x and y.
 [[length]]
 ===== length
 
-length(x : Number) : Number +
-length(x : vec2) : vec2 +
-length(x : vec3) : vec3 +
-length(x : vec4) : vec4
+`length(x : Number) : Number` +
+`length(x : vec2) : vec2` +
+`length(x : vec3) : vec3` +
+`length(x : vec4) : vec4`
 
-Computes the length of vector x, i.e., the square root of the sum of the squared components. If x is a number, length returns x.
+Computes the length of vector `x`, i.e., the square root of the sum of the squared components. If `x` is a number, `length` returns `x`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1302,13 +1352,14 @@ Computes the length of vector x, i.e., the square root of the sum of the squared
 [[distance]]
 ===== distance
 
-distance(x : Number, y : Number) : Number +
-distance(x : vec2, y : vec2) : vec2 +
-distance(x : vec3, y : vec3) : vec3 +
-distance(x : vec4, y : vec4) : vec4
+`distance(x : Number, y : Number) : Number` +
+`distance(x : vec2, y : vec2) : vec2` +
+`distance(x : vec3, y : vec3) : vec3` +
+`distance(x : vec4, y : vec4) : vec4`
 
-Computes the distance between two points x and y, i.e., length(x - y).
+Computes the distance between two points `x` and `y`, i.e., `length(x - y)`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1320,13 +1371,14 @@ Computes the distance between two points x and y, i.e., length(x - y).
 [[normalize]]
 ===== normalize
 
-normalize(x : Number) : Number +
-normalize(x : vec2) : vec2 +
-normalize(x : vec3) : vec3 +
-normalize(x : vec4) : vec4
+`normalize(x : Number) : Number` +
+`normalize(x : vec2) : vec2` +
+`normalize(x : vec3) : vec3` +
+`normalize(x : vec4) : vec4`
 
-Returns a vector with length 1.0 that is parallel to x. When x is a number, normalize returns 1.0.
+Returns a vector with length `1.0` that is parallel to `x`. When `x` is a number, `normalize` returns `1.0`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1338,13 +1390,14 @@ Returns a vector with length 1.0 that is parallel to x. When x is a number, norm
 [[dot]]
 ===== dot
 
-dot(x : Number, y : Number) : Number +
-dot(x : vec2, y : vec2) : vec2 +
-dot(x : vec3, y : vec3) : vec3 +
-dot(x : vec4, y : vec4) : vec4
+`dot(x : Number, y : Number) : Number` +
+`dot(x : vec2, y : vec2) : vec2` +
+`dot(x : vec3, y : vec3) : vec3` +
+`dot(x : vec4, y : vec4) : vec4`
 
-Computes the dot product of x and y.
+Computes the dot product of `x` and `y`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1355,10 +1408,11 @@ Computes the dot product of x and y.
 [[cross]]
 ===== cross
 
-cross(x : vec3, y : vec3) : vec3
+`cross(x : vec3, y : vec3) : vec3`
 
-Computes the cross product of x and y. This function only accepts vec3 arguments.
+Computes the cross product of `x` and `y`. This function only accepts `vec3` arguments.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1376,8 +1430,9 @@ Comments are not supported.
 [[point-cloud]]
 === Point Cloud
 
-A Point Cloud is a collection of points that may be styled like other features. In addition to evaluating a point's color and show properties, a Point Cloud style may evaluate pointSize, or the size of each point in pixels. The default pointSize is 1.0.
+A <<_Point_Cloud,Point Cloud>> is a collection of points that may be styled like other features. In addition to evaluating a point's `color` and `show` properties, a Point Cloud style may evaluate `pointSize`, or the size of each point in pixels. The default `pointSize` is `1.0`.
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1386,7 +1441,7 @@ A Point Cloud is a collection of points that may be styled like other features. 
 }
 ----
 
-Implementations may clamp the evaluated pointSize to the system's supported point size range. For example, WebGL renderers may query ALIASED_POINT_SIZE_RANGE to get the system limits when rendering with POINTS. A pointSize of 1.0 must be supported.
+Implementations may clamp the evaluated `pointSize` to the system's supported point size range. For example, WebGL renderers may query `ALIASED_POINT_SIZE_RANGE` to get the system limits when rendering with `POINTS`. A `pointSize` of `1.0` must be supported.
 
 Point Cloud styles may also reference semantics from the <<_Feature_Table,Feature Table>> including position, color, and normal to allow for more flexible styling of the source data.
 
@@ -1394,12 +1449,13 @@ Point Cloud styles may also reference semantics from the <<_Feature_Table,Featur
 
 * `${POSITION_ABSOLUTE}` is a `vec3` storing the xyz Cartesian coordinates of the point after the `RTC_CENTER` and tile transform are applied. When the positions are quantized, `${POSITION_ABSOLUTE}` refers to the position after the `QUANTIZED_VOLUME_SCALE`, `QUANTIZED_VOLUME_OFFSET`, and tile transform are applied.
 
-* `${COLOR}` evaluates to a Color storing the `rgba` color of the point. When the Feature Table's color semantic is RGB or RGB565, `${COLOR}.alpha` is `1.0`. If no color semantic is defined, `${COLOR}` evaluates to the application-specific default color.
+* `${COLOR}` evaluates to a `Color` storing the rgba color of the point. When the Feature Table's color semantic is `RGB` or `RGB565`, `${COLOR}.alpha` is `1.0`. If no color semantic is defined, `${COLOR}` evaluates to the application-specific default color.
 
-* `${NORMAL}` is a `vec3` storing the normal, in Cartesian coordinates, of the point before the tile transform is applied. When normals are oct-encoded, `${NORMAL}` refers to the decoded normal. If no normal semantic is defined in the Feature Table, `${NORMAL}` evaluates to undefined.
+* `${NORMAL}` is a `vec3` storing the normal, in Cartesian coordinates, of the point before the tile transform is applied. When normals are oct-encoded, `${NORMAL}` refers to the decoded normal. If no normal semantic is defined in the Feature Table, `${NORMAL}` evaluates to `undefined`.
 
 For example:
 
+[%unnumbered]
 [source,ruby]
 ----
 {
@@ -1411,7 +1467,7 @@ For example:
 
 *Implementation Note:* Point cloud styling engines may often use a shader (GLSL) implementation, however some features of the expression language are not possible in pure a GLSL implementation. Some of these features include:
 
-* Evaluation of isNan and isFinite (GLSL 2.0+ supports `isnan` and `isinf` for these functions respectively)
+* Evaluation of `isNan` and `isFinite` (GLSL 2.0+ supports `isnan` and `isinf` for these functions respectively)
 
 * The types `null` and `undefined`
 
@@ -1429,7 +1485,7 @@ For example:
 [[file-extension-and-mime-type]]
 === File extension and MIME type
 
-Tileset styles use the `.json` extension and the application/json mime type.
+Tileset styles use the `.json` extension and the `application/json` mime type.
 
 === Property reference
 
@@ -1444,10 +1500,10 @@ A 3D Tiles style.
 |===
 | | Type | Description | Required
 
-| *defines* | object | A dictionary object of <<_expression,expression>> strings mapped to a variable name key that may be referenced throughout the style. If an expression references a defined variable, it is replaced with the evaluated result of the corresponding expression. | No
-| *show* | boolean, string, object | A <<_boolean_expression,boolean expression>> or <<_condition,conditions>> property which determines if a feature should be shown. | No, default: true
-| *color* | string, object | A <<_color_expression,color expression>> or <<_condition,conditions>> property which determines the color blended with the feature's intrinsic color. | No, default: color('#FFFFFF')
-| *meta* | object | A <<_meta,meta>> object which determines the values of non-visual properties of the feature. | No
+| *defines* | `object` | A dictionary object of <<_expression,expression>> strings mapped to a variable name key that may be referenced throughout the style. If an expression references a defined variable, it is replaced with the evaluated result of the corresponding expression. | No
+| *show* | `boolean, string, object` | A <<_boolean_expression,boolean expression>> or <<_condition,conditions>> property which determines if a feature should be shown. | No, default: `true`
+| *color* | `string, object` | A <<_color_expression,color expression>> or <<_condition,conditions>> property which determines the color blended with the feature's intrinsic color. | No, default: `color('#FFFFFF')`
+| *meta* | `object` | A <<_meta,meta>> object which determines the values of non-visual properties of the feature. | No
 
 |===
 
@@ -1456,13 +1512,13 @@ Additional properties are not allowed.
 [[style.defines]]
 ===== style.defines
 
-A dictionary object of <<_Expressions,expression>> strings mapped to a variable name key that may be referenced throughout the style. If an expression references a defined variable, it is replaced with the evaluated result of the corresponding expression.
+A dictionary object of <<_expression,expression>> strings mapped to a variable name key that may be referenced throughout the style. If an expression references a defined variable, it is replaced with the evaluated result of the corresponding expression.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
-* *Type of each property*: string
+* *Type of each property*: `string`
 
 
 [[style.show]]
@@ -1470,9 +1526,9 @@ A dictionary object of <<_Expressions,expression>> strings mapped to a variable 
 
 A <<_boolean_expression,boolean expression>> or <<_condition,conditions>> property which determines if a feature should be shown.
 
-* *Type*: boolean, string, object
+* *Type*: `boolean, string, object`
 
-* *Required*: No, default: true
+* *Required*: No, default: `true`
 
 
 [[style.color]]
@@ -1480,9 +1536,9 @@ A <<_boolean_expression,boolean expression>> or <<_condition,conditions>> proper
 
 A <<_color_expression,color expression>> or <<_condition,conditions>> property which determines the color blended with the feature's intrinsic color.
 
-* *Type*: string, object
+* *Type*: `string, object`
 
-* *Required*: No, default: color('#FFFFFF')
+* *Required*: No, default: `color('#FFFFFF')`
 
 
 [[style.meta]]
@@ -1490,22 +1546,22 @@ A <<_color_expression,color expression>> or <<_condition,conditions>> property w
 
 A <<_meta,meta>> object which determines the values of non-visual properties of the feature.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
-* *Type of each property*: string
+* *Type of each property*: `string`
 
 
 [[_boolean_expression]]
 ==== boolean expression
 
-A boolean or string with a 3D Tiles style expression that evaluates to a boolean. See <<_Expressions,Expressions>>.
+A boolean or string with a 3D Tiles style expression that evaluates to a boolean. See <<expressions,Expressions>>.
 
 [[_color_expression]]
 ==== color expression
 
-3D Tiles style <<_expression,expression>> that evaluates to a Color. See <<_Expressions,Expressions>>.
+3D Tiles style <<_expression,expression>> that evaluates to a Color. See <<expressions,Expressions>>.
 
 [[conditions-1]]
 ==== conditions
@@ -1517,7 +1573,7 @@ A series of conditions evaluated in order, like a series of if...else statements
 [%unnumbered]
 |===
 | | Type | Description | Required
-| *conditions* | array[] | A series of boolean conditions evaluated in order. For the first one that evaluates to true, its value, the 'result' (which is also an expression), is evaluated and returned. Result expressions must all be the same type. If no condition evaluates to true, the result is undefined. When conditions is undefined, null, or an empty object, the result is undefined. | No
+| *conditions* | `array[]` | A series of boolean conditions evaluated in order. For the first one that evaluates to true, its value, the 'result' (which is also an expression), is evaluated and returned. Result expressions must all be the same type. If no condition evaluates to true, the result is `undefined`. When conditions is `undefined`, `null`, or an empty object, the result is `undefined`. | No
 
 |===
 
@@ -1527,9 +1583,9 @@ Additional properties are not allowed.
 [[conditions_conditions]]
 ===== conditions.conditions
 
-A series of boolean conditions evaluated in order. For the first one that evaluates to true, its value, the 'result' (which is also an expression), is evaluated and returned. Result expressions must all be the same type. If no condition evaluates to true, the result is undefined. When conditions is undefined, null, or an empty object, the result is undefined.
+A series of boolean conditions evaluated in order. For the first one that evaluates to true, its value, the 'result' (which is also an expression), is evaluated and returned. Result expressions must all be the same type. If no condition evaluates to true, the result is `undefined`. When conditions is `undefined`, `null`, or an empty object, the result is `undefined`.
 
-* *Type*: array[]
+* *Type*: `array[]`
 
 * *Required*: No
 
@@ -1542,7 +1598,7 @@ An <<_expression,expression>> evaluated as the result of a condition being true.
 [[_expression]]
 ==== expression
 
-A valid 3D Tiles style expression. See <<_Expressions,Expressions>>
+A valid 3D Tiles style expression. See <<expressions,Expressions>>
 
 
 [[_meta]]
@@ -1558,7 +1614,7 @@ Additional properties are allowed.
 [[number-expression]]
 ==== number expression
 
-3D Tiles style expression that evaluates to a number. See <<_Expressions,Expression>>s.
+3D Tiles style expression that evaluates to a number. See <<expressions,Expressions>>.
 
 
 [[point-cloud-style]]
@@ -1572,11 +1628,11 @@ A 3D Tiles style with additional properties for Point Clouds.
 |===
 | | Type | Description | Required
 
-| *defines* | object | A dictionary object of <<_expression,expression>> strings mapped to a variable name key that may be referenced throughout the style. If an expression references a defined variable, it is replaced with the evaluated result of the corresponding expression. | No
-| *show* | boolean, string, object | A <<_boolean_expression,boolean expression>> or <<_condition,conditions>> property which determines if a feature should be shown. | No, default: true
-| *color* | string, object | A <<_color_expression,color expression>> or <<_condition,conditions>> property which determines the color blended with the feature's intrinsic color. | No, default: color('#FFFFFF')
-| *meta* | object | A <<_meta,meta>> object which determines the values of non-visual properties of the feature. | No
-| *pointSize* | number, string, object | A <<number-expression,number expression>> or <<_condition,conditions>>property which determines the size of the points in pixels. | No, default: 1
+| *defines* | `object` | A dictionary object of <<_expression,expression>> strings mapped to a variable name key that may be referenced throughout the style. If an expression references a defined variable, it is replaced with the evaluated result of the corresponding expression. | No
+| *show* | `boolean, string, object` | A <<_boolean_expression,boolean expression>> or <<_condition,conditions>> property which determines if a feature should be shown. | No, default: `true`
+| *color* | `string, object` | A <<_color_expression,color expression>> or <<_condition,conditions>> property which determines the color blended with the feature's intrinsic color. | No, default: `color('#FFFFFF')`
+| *meta* | `object` | A <<_meta,meta>> object which determines the values of non-visual properties of the feature. | No
+| *pointSize* | `number, string, object` | A <<number-expression,number expression>> or <<_condition,conditions>> property which determines the size of the points in pixels. | No, default: `1`
 
 |===
 
@@ -1587,11 +1643,11 @@ Additional properties are not allowed.
 
 A dictionary object of <<_expression,expression>> strings mapped to a variable name key that may be referenced throughout the style. If an expression references a defined variable, it is replaced with the evaluated result of the corresponding expression.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
-* *Type of each property*: string
+* *Type of each property*: `string`
 
 
 [[pointcloudstyle.show]]
@@ -1599,18 +1655,18 @@ A dictionary object of <<_expression,expression>> strings mapped to a variable n
 
 A <<_boolean_expression,boolean expression>> or <<_condition,conditions>> property which determines if a feature should be shown.
 
-* *Type*: boolean, string, object
+* *Type*: `boolean, string, object`
 
-* *Required*: No, default: true
+* *Required*: No, default: `true`
 
 [[pointcloudstyle.color]]
 ===== PointCloudStyle.color
 
 A <<_color_expression,color expression>> or <<_condition,conditions>> property which determines the color blended with the feature's intrinsic color.
 
-* *Type*: string, object
+* *Type*: `string, object`
 
-* *Required*: No, default: color('#FFFFFF')
+* *Required*: No, default: `color('#FFFFFF')`
 
 
 [[pointcloudstyle.meta]]
@@ -1618,11 +1674,11 @@ A <<_color_expression,color expression>> or <<_condition,conditions>> property w
 
 A <<_meta,meta>> object which determines the values of non-visual properties of the feature.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
-* *Type of each property*: string
+* *Type of each property*: `string`
 
 
 [[pointcloudstyle.pointsize]]
@@ -1630,8 +1686,6 @@ A <<_meta,meta>> object which determines the values of non-visual properties of 
 
 A <<number-expression,number expression>> or <<_condition,conditions>> property which determines the size of the points in pixels.
 
-* *Type*: number, string, object
+* *Type*: `number, string, object`
 
-* *Required*: No, default: 1
-
-
+* *Required*: No, default: `1`

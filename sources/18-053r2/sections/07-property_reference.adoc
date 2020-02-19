@@ -13,14 +13,14 @@ A 3D Tiles tileset.
 |===
 | | Type | Description | Required
 
-| *asset* | object | Metadata about the entire tileset. | Yes
-| *properties* | any | A dictionary object of metadata about per-feature properties. | No
-| *geometricError* | number | The error, in meters, introduced if this tileset is not rendered. At runtime, the geometric error is used to compute screen space error (SSE), i.e., the error measured in pixels. | Yes
-| *root* | object | A tile in a 3D Tiles tileset. | Yes
-| *extensionsUsed* | string[1-*] | Names of 3D Tiles extensions used somewhere in this tileset. | No
-| *extensionsRequired* | string[1-*] | Names of 3D Tiles extensions required to properly load this tileset. | No
-| *extensions* | object | Dictionary object with extension-specific objects. | No
-| *extras* | any | Application-specific data. | No
+| *asset* | `object` | Metadata about the entire tileset. | Yes
+| *properties* | `any` | A dictionary object of metadata about per-feature properties. | No
+| *geometricError* | `number` | The error, in meters, introduced if this tileset is not rendered. At runtime, the geometric error is used to compute screen space error (SSE), i.e., the error measured in pixels. | Yes
+| *root* | `object` | A tile in a 3D Tiles tileset. | Yes
+| *extensionsUsed* | `string[1-*]` | Names of 3D Tiles extensions used somewhere in this tileset. | No
+| *extensionsRequired* | `string[1-*]` | Names of 3D Tiles extensions required to properly load this tileset. | No
+| *extensions* | `object` | Dictionary object with extension-specific objects. | No
+| *extras* | `any` | Application-specific data. | No
 
 |===
 
@@ -31,7 +31,7 @@ Additional properties are not allowed.
 
 Metadata about the entire tileset.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: Yes
 
@@ -41,11 +41,11 @@ Metadata about the entire tileset.
 
 A dictionary object of metadata about per-feature properties.
 
-* *Type*: any
+* *Type*: `any`
 
 * *Required*: No
 
-* *Type of each property*: object
+* *Type of each property*: `object`
 
 
 [[tileset.geometricerror]]
@@ -53,11 +53,11 @@ A dictionary object of metadata about per-feature properties.
 
 The error, in meters, introduced if this tileset is not rendered. At runtime, the geometric error is used to compute screen space error (SSE), i.e., the error measured in pixels.
 
-* *Type*: number
+* *Type*: `number`
 
 * *Required*: Yes
 
-* *Minimum*: >= 0
+* *Minimum*: `>= 0`
 
 
 [[tileset.root]]
@@ -65,7 +65,7 @@ The error, in meters, introduced if this tileset is not rendered. At runtime, th
 
 A tile in a 3D Tiles tileset.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: Yes
 
@@ -75,7 +75,7 @@ A tile in a 3D Tiles tileset.
 
 Names of 3D Tiles extensions used somewhere in this tileset.
 
-* *Type*: string[1-*]
+* *Type*: `string[1-*]`
 
 * Each element in the array must be unique.
 
@@ -87,7 +87,7 @@ Names of 3D Tiles extensions used somewhere in this tileset.
 
 Names of 3D Tiles extensions required to properly load this tileset.
 
-* *Type*: string[1-*]
+* *Type*: `string[1-*]`
 
 * Each element in the array must be unique.
 
@@ -99,7 +99,7 @@ Names of 3D Tiles extensions required to properly load this tileset.
 
 Dictionary object with extension-specific objects.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -111,7 +111,7 @@ Dictionary object with extension-specific objects.
 
 Application-specific data.
 
-* *Type*: any
+* *Type*: `any`
 
 * *Required*: No
 
@@ -127,10 +127,10 @@ Metadata about the entire tileset.
 |===
 | | Type | Description | Required
 
-| *version* | string | The 3D Tiles version. The version defines the JSON schema for the tileset JSON and the base set of tile formats. | Yes
-| *tilesetVersion* | string | Application-specific version of this tileset, e.g., for when an existing tileset is updated. | No
-| *extensions* | object | Dictionary object with extension-specific objects. | No
-| *extras* | any | Application-specific data. | No
+| *version* | `string` | The 3D Tiles version. The version defines the JSON schema for the tileset JSON and the base set of tile formats. | Yes
+| *tilesetVersion* | `string` | Application-specific version of this tileset, e.g., for when an existing tileset is updated. | No
+| *extensions* | `object` | Dictionary object with extension-specific objects. | No
+| *extras* | `any` | Application-specific data. | No
 
 |===
 
@@ -141,7 +141,7 @@ Additional properties are not allowed.
 
 The 3D Tiles version. The version defines the JSON schema for the tileset JSON and the base set of tile formats.
 
-* *Type*: string
+* *Type*: `string`
 
 * *Required*: Yes
 
@@ -150,7 +150,7 @@ The 3D Tiles version. The version defines the JSON schema for the tileset JSON a
 
 Application-specific version of this tileset, e.g., for when an existing tileset is updated.
 
-* *Type*: string
+* *Type*: `string`
 
 * *Required*: No
 
@@ -160,7 +160,7 @@ Application-specific version of this tileset, e.g., for when an existing tileset
 
 Dictionary object with extension-specific objects.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -172,7 +172,7 @@ Dictionary object with extension-specific objects.
 
 Application-specific data.
 
-* *Type*: any
+* *Type*: `any`
 
 * *Required*: No
 
@@ -180,7 +180,7 @@ Application-specific data.
 [[bounding-volume]]
 === Bounding Volume
 
-A bounding volume that encloses a tile or its content. Exactly one box, region, or sphere property is required.
+A bounding volume that encloses a tile or its content. Exactly one `box`, `region`, or `sphere` property is required.
 
 *Properties*
 
@@ -188,11 +188,11 @@ A bounding volume that encloses a tile or its content. Exactly one box, region, 
 |===
 | | Type | Description | Required
 
-| *box* | number[12] | An array of 12 numbers that define an oriented bounding box. The first three elements define the x, y, and z values for the center of the box. The next three elements (with indices 3, 4, and 5) define the x axis direction and half-length. The next three elements (indices 6, 7, and 8) define the y axis direction and half-length. The last three elements (indices 9, 10, and 11) define the z axis direction and half-length. | No
-| *region* | number[6] | An array of six numbers that define a bounding geographic region in EPSG:4979 coordinates with the order [west, south, east, north, minimum height, maximum height]. Longitudes and latitudes are in radians, and heights are in meters above (or below) the WGS84 ellipsoid. | No
-| *sphere* | number[4] | An array of four numbers that define a bounding sphere. The first three elements define the x, y, and z values for the center of the sphere. The last element (with index 3) defines the radius in meters. | No
-| *extensions* | object | Dictionary object with extension-specific objects. | No
-| *extras* | any | Application-specific data. | No
+| *box* | `number[12]` | An array of 12 numbers that define an oriented bounding box. The first three elements define the x, y, and z values for the center of the box. The next three elements (with indices 3, 4, and 5) define the x axis direction and half-length. The next three elements (indices 6, 7, and 8) define the y axis direction and half-length. The last three elements (indices 9, 10, and 11) define the z axis direction and half-length. | No
+| *region* | `number[6]` | An array of six numbers that define a bounding geographic region in EPSG:4979 coordinates with the order [west, south, east, north, minimum height, maximum height]. Longitudes and latitudes are in radians, and heights are in meters above (or below) the WGS84 ellipsoid. | No
+| *sphere* | `number[4]` | An array of four numbers that define a bounding sphere. The first three elements define the x, y, and z values for the center of the sphere. The last element (with index 3) defines the radius in meters. | No
+| *extensions* | `object` | Dictionary object with extension-specific objects. | No
+| *extras* | `any` | Application-specific data. | No
 
 |===
 
@@ -203,7 +203,7 @@ Additional properties are not allowed.
 
 An array of 12 numbers that define an oriented bounding box. The first three elements define the x, y, and z values for the center of the box. The next three elements (with indices 3, 4, and 5) define the x axis direction and half-length. The next three elements (indices 6, 7, and 8) define the y axis direction and half-length. The last three elements (indices 9, 10, and 11) define the z axis direction and half-length.
 
-* *Type*: number[12]
+* *Type*: `number[12]`
 
 * *Required*: No
 
@@ -213,7 +213,7 @@ An array of 12 numbers that define an oriented bounding box. The first three ele
 
 An array of six numbers that define a bounding geographic region in EPSG:4979 coordinates with the order [west, south, east, north, minimum height, maximum height]. Longitudes and latitudes are in radians, and heights are in meters above (or below) the WGS84 ellipsoid.
 
-* *Type*: number[6]
+* *Type*: `number[6]`
 
 * *Required*: No
 
@@ -223,7 +223,7 @@ An array of six numbers that define a bounding geographic region in EPSG:4979 co
 
 An array of four numbers that define a bounding sphere. The first three elements define the x, y, and z values for the center of the sphere. The last element (with index 3) defines the radius in meters.
 
-* *Type*: number[4]
+* *Type*: `number[4]`
 
 * *Required*: No
 
@@ -233,7 +233,7 @@ An array of four numbers that define a bounding sphere. The first three elements
 
 Dictionary object with extension-specific objects.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -245,7 +245,7 @@ Dictionary object with extension-specific objects.
 
 Application-specific data.
 
-* *Type*: any
+* *Type*: `any`
 
 * *Required*: No
 
@@ -257,7 +257,7 @@ Dictionary object with extension-specific objects.
 
 Additional properties are allowed.
 
-* *Type of each property*: object
+* *Type of each property*: `object`
 
 
 [[extras-1]]
@@ -276,10 +276,10 @@ A dictionary object of metadata about per-feature properties.
 [%unnumbered]
 |===
 | | Type | Description | Required
-| *maximum* | number | The maximum value of this property of all the features in the tileset. | Yes
-| *minimum* | number | The minimum value of this property of all the features in the tileset. | Yes
-| *extensions* | object | Dictionary object with extension-specific objects. | No
-| *extras* | any | Application-specific data. | No
+| *maximum* | `number` | The maximum value of this property of all the features in the tileset. | Yes
+| *minimum* | `number` | The minimum value of this property of all the features in the tileset. | Yes
+| *extensions* | `object` | Dictionary object with extension-specific objects. | No
+| *extras* | `any` | Application-specific data. | No
 
 |===
 
@@ -290,7 +290,7 @@ Additional properties are not allowed.
 
 The maximum value of this property of all the features in the tileset.
 
-* *Type*: number
+* *Type*: `number`
 
 * *Required*: Yes
 
@@ -300,7 +300,7 @@ The maximum value of this property of all the features in the tileset.
 
 The minimum value of this property of all the features in the tileset.
 
-* *Type*: number
+* *Type*: `number`
 
 * *Required*: Yes
 
@@ -309,7 +309,7 @@ The minimum value of this property of all the features in the tileset.
 
 Dictionary object with extension-specific objects.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -321,7 +321,7 @@ Dictionary object with extension-specific objects.
 
 Application-specific data.
 
-* *Type*: any
+* *Type*: `any`
 
 * *Required*: No
 
@@ -336,15 +336,15 @@ A tile in a 3D Tiles tileset.
 |===
 | | Type | Description | Required
 
-| *boundingVolume* | object | A bounding volume that encloses a tile or its content. Exactly one box, region, or sphere property is required. | Yes
-| *viewerRequestVolume* | object | A bounding volume that encloses a tile or its content. Exactly one box, region, or sphere property is required. | No
-| *geometricError* | number | The error, in meters, introduced if this tile is rendered and its children are not. At runtime, the geometric error is used to compute screen space error (SSE), i.e., the error measured in pixels. | Yes
-| *refine* | string | Specifies if additive or replacement refinement is used when traversing the tileset for rendering. This property is required for the root tile of a tileset; it is optional for all other tiles. The default is to inherit from the parent tile. | No
-| *transform* | number[16] | A floating-point 4x4 affine transformation matrix, stored in column-major order, that transforms the tile's content--i.e., its features as well as content.boundingVolume, boundingVolume, and viewerRequestVolume--from the tile's local coordinate system to the parent tile's coordinate system, or, in the case of a root tile, from the tile's local coordinate system to the tileset's coordinate system. transform does not apply to geometricError, nor does it apply any volume property when the volume is a region, defined in EPSG:4979 coordinates. | No, default: [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]
-| *content* | object | Metadata about the tile's content and a link to the content. | No
-| *children* | array[] | An array of objects that define child tiles. Each child tile content is fully enclosed by its parent tile's bounding volume and, generally, has a geometricError less than its parent tile's geometricError. For leaf tiles, the length of this array is zero, and children may not be defined. | No
-| *extensions* | object | Dictionary object with extension-specific objects. | No
-| *extras* | any | Application-specific data. | No
+| *boundingVolume* | `object` | A bounding volume that encloses a tile or its content. Exactly one `box`, `region`, or `sphere` property is required. | Yes
+| *viewerRequestVolume* | `object` | A bounding volume that encloses a tile or its content. Exactly one `box`, `region`, or `sphere` property is required. | No
+| *geometricError* | `number` | The error, in meters, introduced if this tile is rendered and its children are not. At runtime, the geometric error is used to compute screen space error (SSE), i.e., the error measured in pixels. | Yes
+| *refine* | `string` | Specifies if additive or replacement refinement is used when traversing the tileset for rendering. This property is required for the root tile of a tileset; it is optional for all other tiles. The default is to inherit from the parent tile. | No
+| *transform* | `number[16]` | A floating-point 4x4 affine transformation matrix, stored in column-major order, that transforms the tile's content--i.e., its features as well as content.boundingVolume, boundingVolume, and viewerRequestVolume--from the tile's local coordinate system to the parent tile's coordinate system, or, in the case of a root tile, from the tile's local coordinate system to the tileset's coordinate system. transform does not apply to geometricError, nor does it apply any volume property when the volume is a region, defined in EPSG:4979 coordinates. | No, default: `[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]`
+| *content* | `object` | Metadata about the tile's content and a link to the content. | No
+| *children* | `array[]` | An array of objects that define child tiles. Each child tile content is fully enclosed by its parent tile's bounding volume and, generally, has a geometricError less than its parent tile's geometricError. For leaf tiles, the length of this array is zero, and children may not be defined. | No
+| *extensions* | `object` | Dictionary object with extension-specific objects. | No
+| *extras* | `any` | Application-specific data. | No
 
 |===
 
@@ -353,9 +353,9 @@ Additional properties are not allowed.
 [[tile.boundingvolume]]
 ==== Tile.boundingVolume
 
-A bounding volume that encloses a tile or its content. Exactly one box, region, or sphere property is required.
+A bounding volume that encloses a tile or its content. Exactly one `box`, `region`, or `sphere` property is required.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: Yes
 
@@ -363,9 +363,9 @@ A bounding volume that encloses a tile or its content. Exactly one box, region, 
 [[tile.viewerrequestvolume]]
 ==== Tile.viewerRequestVolume
 
-A bounding volume that encloses a tile or its content. Exactly one box, region, or sphere property is required.
+A bounding volume that encloses a tile or its content. Exactly one `box`, `region`, or `sphere` property is required.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -375,11 +375,11 @@ A bounding volume that encloses a tile or its content. Exactly one box, region, 
 
 The error, in meters, introduced if this tile is rendered and its children are not. At runtime, the geometric error is used to compute screen space error (SSE), i.e., the error measured in pixels.
 
-* *Type*: number
+* *Type*: `number`
 
 * *Required*: Yes
 
-* *Minimum*: >= 0
+* *Minimum*: `>= 0`
 
 
 [[tile.refine]]
@@ -387,15 +387,15 @@ The error, in meters, introduced if this tile is rendered and its children are n
 
 Specifies if additive or replacement refinement is used when traversing the tileset for rendering. This property is required for the root tile of a tileset; it is optional for all other tiles. The default is to inherit from the parent tile.
 
-* *Type*: string
+* *Type*: `string`
 
 * *Required*: No
 
 * *Allowed values*:
 
-** "ADD"
+** `"ADD"`
 
-** "REPLACE"
+** `"REPLACE"`
 
  
 [[tile.transform]]
@@ -403,16 +403,16 @@ Specifies if additive or replacement refinement is used when traversing the tile
 
 A floating-point 4x4 affine transformation matrix, stored in column-major order, that transforms the tile's content--i.e., its features as well as content.boundingVolume, boundingVolume, and viewerRequestVolume--from the tile's local coordinate system to the parent tile's coordinate system, or, in the case of a root tile, from the tile's local coordinate system to the tileset's coordinate system. transform does not apply to geometricError, nor does it apply any volume property when the volume is a region, defined in EPSG:4979 coordinates.
 
-* *Type*: number[16]
+* *Type*: `number[16]`
 
-* *Required*: No, default: [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]
+* *Required*: No, default: `[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]`
 
 [[tile.content]]
 ==== Tile.content
 
 Metadata about the tile's content and a link to the content.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -421,7 +421,7 @@ Metadata about the tile's content and a link to the content.
 
 An array of objects that define child tiles. Each child tile content is fully enclosed by its parent tile's bounding volume and, generally, has a geometricError less than its parent tile's geometricError. For leaf tiles, the length of this array is zero, and children may not be defined.
 
-* *Type*: array[]
+* *Type*: `array[]`
 
 ** Each element in the array must be unique.
 
@@ -432,7 +432,7 @@ An array of objects that define child tiles. Each child tile content is fully en
 
 Dictionary object with extension-specific objects.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -444,7 +444,7 @@ Dictionary object with extension-specific objects.
 
 Application-specific data.
 
-* *Type*: any
+* *Type*: `any`
 
 * *Required*: No
 
@@ -460,10 +460,10 @@ Metadata about the tile's content and a link to the content.
 |===
 | | Type | Description | Required
 
-| *boundingVolume* | object | A bounding volume that encloses a tile or its content. Exactly one box, region, or sphere property is required. | No
-| *uri* | string | A uri that points to the tile's content. When the uri is relative, it is relative to the referring tileset JSON file. | Yes
-| *extensions* | object | Dictionary object with extension-specific objects. | No
-| *extras* | any | Application-specific data. | No
+| *boundingVolume* | `object` | A bounding volume that encloses a tile or its content. Exactly one `box`, `region`, or `sphere` property is required. | No
+| *uri* | `string` | A uri that points to the tile's content. When the uri is relative, it is relative to the referring tileset JSON file. | Yes
+| *extensions* | `object` | Dictionary object with extension-specific objects. | No
+| *extras* | `any` | Application-specific data. | No
 
 |===
 
@@ -472,9 +472,9 @@ Additional properties are not allowed.
 [[tilecontent.boundingvolume]]
 ==== TileContent.boundingVolume
 
-A bounding volume that encloses a tile or its content. Exactly one box, region, or sphere property is required.
+A bounding volume that encloses a tile or its content. Exactly one `box`, `region`, or `sphere` property is required.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -483,7 +483,7 @@ A bounding volume that encloses a tile or its content. Exactly one box, region, 
 
 A uri that points to the tile's content. When the uri is relative, it is relative to the referring tileset JSON file.
 
-* *Type*: string
+* *Type*: `string`
 
 * *Required*: Yes
 
@@ -492,7 +492,7 @@ A uri that points to the tile's content. When the uri is relative, it is relativ
 
 Dictionary object with extension-specific objects.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -503,7 +503,7 @@ Dictionary object with extension-specific objects.
 
 Application-specific data.
 
-* *Type*: any
+* *Type*: `any`
 
 * *Required*: No
 

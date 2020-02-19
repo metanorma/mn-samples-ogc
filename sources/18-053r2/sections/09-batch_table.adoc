@@ -25,16 +25,16 @@ image::022.png["",383,167]
 
 
 When a tile format includes a Batch Table, the Batch Table immediately follows the tile's Feature Table. +
-The header will also contain batchTableJSONByteLength and batchTableBinaryByteLengthuint32 fields, which can be used to extract each respective part of the Batch Table.
+The header will also contain `batchTableJSONByteLength` and `batchTableBinaryByteLengthuint32` fields, which can be used to extract each respective part of the Batch Table.
 
 
 ==== Padding
 
-The JSON header must end on an 8-byte boundary within the containing tile binary. The JSON header must be padded with trailing Space characters (0x20) to satisfy this requirement.
+The JSON header must end on an `8`-byte boundary within the containing tile binary. The JSON header must be padded with trailing Space characters (`0x20`) to satisfy this requirement.
 
-The binary body must start and end on an 8-byte boundary within the containing tile binary. The binary body must be padded with additional bytes, of any value, to satisfy this requirement.
+The binary body must start and end on an `8`-byte boundary within the containing tile binary. The binary body must be padded with additional bytes, of any value, to satisfy this requirement.
 
-Binary properties must start at a byte offset that is a multiple of the size in bytes of the property's componentType. For example, a property with the component type FLOAT has 4 bytes per element, and therefore must start at an offset that is a multiple of 4. Preceding binary properties must be padded with additional bytes, of any value, to satisfy this requirement.
+Binary properties must start at a byte offset that is a multiple of the size in bytes of the property's `componentType`. For example, a property with the component type `FLOAT` has 4 bytes per element, and therefore must start at an offset that is a multiple of `4`. Preceding binary properties must be padded with additional bytes, of any value, to satisfy this requirement.
 
 
 ==== JSON header
@@ -42,66 +42,69 @@ Binary properties must start at a byte offset that is a multiple of the size in 
 Batch Table values can be represented in the JSON header in two different ways:
 
 [class=steps]
-. An array of values, e.g., "name": ['name1', 'name2', 'name3'] or "height" : [10.0, 20.0, 15.0].
+. An array of values, e.g., `"name": ['name1', 'name2', 'name3']` or `"height" : [10.0, 20.0, 15.0]`.
 
 * Array elements can be any valid JSON data type, including objects and arrays. Elements may be null.
 
-* The length of each array is equal to batchLength, which is specified in each tile format. This is the number of features in the tile. For example, batchLength may be the number of models in a b3dm tile, the number of instances in a i3dm tile, or the number of points (or number of objects) in a pnts tile.
+* The length of each array is equal to `batchLength`, which is specified in each tile format. This is the number of features in the tile. For example, `batchLength` may be the number of models in a `b3dm` tile, the number of instances in a `i3dm` tile, or the number of points (or number of objects) in a pnts tile.
 
-. A reference to data in the binary body, denoted by an object with byteOffset, componentType, and type properties, e.g., "height" : { "byteOffset" : 24, "componentType" : "FLOAT", "type" : "SCALAR"}.
+. A reference to data in the binary body, denoted by an object with `byteOffset`, `componentType`, and `type` properties, e.g., `"height" : { "byteOffset" : 24, "componentType" : "FLOAT", "type" : "SCALAR"}`.
 
-* byteOffset specifies a zero-based offset relative to the start of the binary body. The value of byteOffset must be a multiple of the size in bytes of the property's componentType, e.g., a property with the component type FLOAT must have a byteOffset value that is a multiple of 4.
+* `byteOffset` specifies a zero-based offset relative to the start of the binary body. The value of `byteOffset` must be a multiple of the size in bytes of the property's `componentType`, e.g., a property with the component type `FLOAT` must have a `byteOffset` value that is a multiple of `4`.
 
-* componentType is the datatype of components in the attribute. Allowed values are "BYTE", "UNSIGNED_BYTE", "SHORT", "UNSIGNED_SHORT", "INT", "UNSIGNED_INT", "FLOAT", and "DOUBLE".
+* `componentType` is the datatype of components in the attribute. Allowed values are `"BYTE"`, `"UNSIGNED_BYTE"`, `"SHORT"`, `"UNSIGNED_SHORT"`, `"INT"`, `"UNSIGNED_INT"`, `"FLOAT"`, and `"DOUBLE"`.
 
-* type specifies if the property is a scalar or vector. Allowed values are "SCALAR", "VEC2", "VEC3", and "VEC4".
+* `type` specifies if the property is a scalar or vector. Allowed values are `"SCALAR"`, `"VEC2"`, `"VEC3"`, and `"VEC4"`.
 
-The Batch Table JSON is a UTF-8 string containing JSON.
+The Batch Table JSON is a `UTF-8` string containing JSON.
 
-*Implementation Note:* In JavaScript, the Batch Table JSON can be extracted from an ArrayBuffer using the TextDecoder JavaScript API and transformed to a JavaScript object with JSON.parse.
+*Implementation Note:* In JavaScript, the Batch Table JSON can be extracted from an `ArrayBuffer` using the `TextDecoder` JavaScript API and transformed to a JavaScript object with `JSON.parse`.
 
-A batchId is used to access elements in each array and extract the corresponding properties. For example, the following Batch Table has properties for a batch of two features:
+A `batchId` is used to access elements in each array and extract the corresponding properties. For example, the following Batch Table has properties for a batch of two features:
 
+[%unnumbered]
 [source,html]
 ----
-{ 
-  "id" : ["unique id", "another unique id"], 
-  "displayName" : ["Building name", "Another building name"], 
-  "yearBuilt" : [1999, 2015], 
-  "address" : [{"street" : "Main Street", "houseNumber" : "1"},{"street" : "Main Street", "houseNumber" : "2"}] 
+{
+  "id" : ["unique id", "another unique id"],
+  "displayName" : ["Building name", "Another building name"],
+  "yearBuilt" : [1999, 2015],
+  "address" : [{"street" : "Main Street", "houseNumber" : "1"},{"street" : "Main Street", "houseNumber" : "2"}]
 }
 ----
 
-The properties for the feature with batchId = 0 are
+The properties for the feature with `batchId = 0` are
 
-[source,ruby]
+[%unnumbered]
+[source,javascript]
 ----
-id[0] = 'unique id'; 
-displayName[0] = 'Building name'; 
-yearBuilt[0] = 1999; 
+id[0] = 'unique id';
+displayName[0] = 'Building name';
+yearBuilt[0] = 1999;
 address[0] = {street : 'Main Street', houseNumber : '1'};
 ----
 
-The properties for batchId = 1 are
+The properties for `batchId = 1` are
 
-[source,ruby]
+[%unnumbered]
+[source,javascript]
 ----
-id[1] = 'another unique id'; 
-displayName[1] = 'Another building name'; 
-yearBuilt[1] = 2015; 
+id[1] = 'another unique id';
+displayName[1] = 'Another building name';
+yearBuilt[1] = 2015;
 address[1] = {street : 'Main Street', houseNumber : '2'};
 ----
 
 [[_Binary_body]]
 ==== Binary body
 
-When the JSON header includes a reference to the binary section, the provided byteOffset is used to index into the data, as shown in the following figure:
+When the JSON header includes a reference to the binary section, the provided `byteOffset` is used to index into the data, as shown in the following figure:
 
 [[fig23]]
 .Batch Table binary body layout
 image::023.png["",622,181]
 
-Values can be retrieved using the number of features, batchLength; the desired batch id, batchId; and the componentType and type defined in the JSON header.
+Values can be retrieved using the number of features, `batchLength`; the desired batch id, `batchId`; and the `componentType` and `type` defined in the JSON header.
 
 The following tables can be used to compute the byte size of a property.
 
@@ -109,21 +112,21 @@ The following tables can be used to compute the byte size of a property.
 |===
 | componentType | Size in bytes
 
-| "BYTE" | 1
-| "UNSIGNED_BYTE" | 1
-| "SHORT" | 2
-| "UNSIGNED_SHORT" | 2
-| "INT" | 4
-| "UNSIGNED_INT" | 4
-| "FLOAT" | 4
-| "DOUBLE" | 8
+| `"BYTE"` | 1
+| `"UNSIGNED_BYTE"` | 1
+| `"SHORT`" | 2
+| `"UNSIGNED_SHORT"` | 2
+| `"INT"` | 4
+| `"UNSIGNED_INT"` | 4
+| `"FLOAT"` | 4
+| `"DOUBLE"` | 8
 
 | type | Number of components
 
-| "SCALAR" | 1
-| "VEC2" | 2
-| "VEC3" | 3
-| "VEC4" | 4
+| `"SCALAR"` | 1
+| `"VEC2"` | 2
+| `"VEC3"` | 3
+| `"VEC4"` | 4
 
 |===
 
@@ -133,53 +136,56 @@ The following tables can be used to compute the byte size of a property.
 
 _This section is non-normative_
 
-The following examples access the "height" and "geographic" values respectively given the following Batch Table JSON with batchLength of 10:
+The following examples access the `"height"` and `"geographic"` values respectively given the following Batch Table JSON with `batchLength` of 10:
 
+[%unnumbered]
 [source,json]
 ---- 
-{ 
-  "height" : { 
-    "byteOffset" : 0, 
-    "componentType" : "FLOAT", 
-    "type" : "SCALAR" 
-  }, 
-  "geographic" : { 
-    "byteOffset" : 40, 
-    "componentType" : "DOUBLE", 
-    "type" : "VEC3" 
-  } 
+{
+  "height" : {
+    "byteOffset" : 0,
+    "componentType" : "FLOAT",
+    "type" : "SCALAR"
+  },
+  "geographic" : {
+    "byteOffset" : 40,
+    "componentType" : "DOUBLE",
+    "type" : "VEC3"
+  }
 }
 ----
 
-To get the "height" values:
+To get the `"height"` values:
 
+[%unnumbered]
 [source,java]
 ----
-var height = batchTableJSON.height; 
-var byteOffset = height.byteOffset; 
-var componentType = height.componentType; 
-var type = height.type; 
+var height = batchTableJSON.height;
+var byteOffset = height.byteOffset;
+var componentType = height.componentType;
+var type = height.type;
 
-var heightArrayByteLength = batchLength * sizeInBytes(componentType) * numberOfComponents(type); // 10 * 4 * 1 
-var heightArray = new Float32Array(batchTableBinary.buffer, byteOffset, heightArrayByteLength); 
+var heightArrayByteLength = batchLength * sizeInBytes(componentType) * numberOfComponents(type); // 10 * 4 * 1
+var heightArray = new Float32Array(batchTableBinary.buffer, byteOffset, heightArrayByteLength);
 var heightOfFeature = heightArray[batchId];
 ----
 
-To get the "geographic" values:
+To get the `"geographic"` values:
 
+[%unnumbered]
 [source,java]
 ----
-var geographic = batchTableJSON.geographic; 
-var byteOffset = geographic.byteOffset; 
-var componentType = geographic.componentType; 
-var type = geographic.type; 
-var componentSizeInBytes = sizeInBytes(componentType) 
-var numberOfComponents = numberOfComponents(type); 
+var geographic = batchTableJSON.geographic;
+var byteOffset = geographic.byteOffset;
+var componentType = geographic.componentType;
+var type = geographic.type;
+var componentSizeInBytes = sizeInBytes(componentType)
+var numberOfComponents = numberOfComponents(type);
 
-var geographicArrayByteLength = batchLength * componentSizeInBytes * numberOfComponents // 10 * 8 * 3 
+var geographicArrayByteLength = batchLength * componentSizeInBytes * numberOfComponents // 10 * 8 * 3
 var geographicArray = new Float64Array(batchTableBinary.buffer, byteOffset, geographicArrayByteLength);
 
-// Using subarray creates a view into the array, and not a new array._ 
+// Using subarray creates a view into the array, and not a new array._
 var geographicOfFeature = positionArray.subarray(batchId * numberOfComponents, batchId * numberOfComponents + numberOfComponents);
 ----
 
@@ -199,9 +205,9 @@ A set of properties defining application-specific metadata for features in a til
 |===
 | | Type | Description | Required
 
-| *extensions* | object | Dictionary object with extension-specific objects. | No
+| *extensions* | `object` | Dictionary object with extension-specific objects. | No
 
-| *extras* | any | Application-specific data. | No
+| *extras* | `any` | Application-specific data. | No
 
 |===
 
@@ -215,7 +221,7 @@ Additional properties are allowed.
 
 Dictionary object with extension-specific objects.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -227,12 +233,12 @@ Dictionary object with extension-specific objects.
 
 Application-specific data.
 
-* *Type*: any
+* *Type*: `any`
 
 * *Required*: No
 
 
-[[binarybodyreference]]
+[[binarybodyreference_9]]
 ==== BinaryBodyReference
 
 An object defining the reference to a section of the binary body of the batch table where the property values are stored if not defined directly in the JSON.
@@ -243,9 +249,9 @@ An object defining the reference to a section of the binary body of the batch ta
 |===
 | | Type | Description | Required
 
-| *byteOffset* | number | The offset into the buffer in bytes. | Yes
-| *componentType* | string | The datatype of components in the property. | Yes
-| *type* | string | Specifies if the property is a scalar or vector. | Yes
+| *byteOffset* | `number` | The offset into the buffer in bytes. | Yes
+| *componentType* | `string` | The datatype of components in the property. | Yes
+| *type* | `string` | Specifies if the property is a scalar or vector. | Yes
 
 |===
 
@@ -255,38 +261,38 @@ Additional properties are allowed.
 
 The offset into the buffer in bytes.
 
-* *Type*: number
+* *Type*: `number`
 
 * *Required*: Yes
 
-* *Minimum*: >= 0
+* *Minimum*: `>= 0`
 
 [[binarybodyreference.componenttype]]
 ===== BinaryBodyReference.componentType
 
 The datatype of components in the property.
 
-* *Type*: string
+* *Type*: `string`
 
 * *Required*: Yes
 
 * *Allowed values*:
 
-** "BYTE"
+** `"BYTE"`
 
-** "UNSIGNED_BYTE"
+** `"UNSIGNED_BYTE"`
 
-** "SHORT"
+** `"SHORT"`
 
-** "UNSIGNED_SHORT"
+** `"UNSIGNED_SHORT"`
 
-** "INT"
+** `"INT"`
 
-** "UNSIGNED_INT"
+** `"UNSIGNED_INT"`
 
-** "FLOAT"
+** `"FLOAT"`
 
-** "DOUBLE"
+** `"DOUBLE"`
 
 
 [[binarybodyreference.type]]
@@ -294,23 +300,23 @@ The datatype of components in the property.
 
 Specifies if the property is a scalar or vector.
 
-* *Type*: string
+* *Type*: `string`
 
 * *Required*: Yes
 
 * *Allowed values*:
 
-** "SCALAR"
+** `"SCALAR"`
 
-** "VEC2"
+** `"VEC2"`
 
-** "VEC3"
+** `"VEC3"`
 
-** "VEC4"
+** `"VEC4"`
 
 
 [[_Property_3]]
 ==== Property
 
-A user-defined property which specifies per-feature application-specific metadata in a tile. Values either can be defined directly in the JSON as an array, or can refer to sections in the binary body with a <<binarybodyreference,BinaryBodyReference>> object.
+A user-defined property which specifies per-feature application-specific metadata in a tile. Values either can be defined directly in the JSON as an array, or can refer to sections in the binary body with a <<binarybodyreference_10_2,BinaryBodyReference>> object.
 
