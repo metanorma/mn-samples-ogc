@@ -10,6 +10,7 @@ Recipients of this document are requested to submit, with their comments, notifi
 
 This OGC discussion paper provides an extension module of OGC Indoor Geography Markup Language (IndoorGML) for the seamless navigation between indoor and outdoor spaces. The OGC IndoorGML standard has an issue on the data model that affects the connection of indoor and outdoor spaces via an "Anchor Node," which is a conceptual part for connecting indoor and outdoor spaces. This discussion paper aims to show use cases of how IndoorGML can connect with other geospatial standards that represent outdoor spaces (and road networks), such as OGC City Geography Markup Language (CityGML) and version 5.0 of the Geographic Data Files (GDF) format.
 
+[.preface]
 == Submitters
 
 All questions regarding this submission should be directed to the editor or the submitters:
