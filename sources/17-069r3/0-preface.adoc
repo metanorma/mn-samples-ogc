@@ -68,6 +68,7 @@ In the first approach, clients are implemented with knowledge about this standar
 
 The other approach targets developers that are not familiar with the OGC API standards, but want to interact with spatial data provided by an API that happens to implement OGC API Features. In this case the developer will study and use the API definition - typically an OpenAPI document - to understand the API and implement the code to interact with the API. This assumes familiarity with the API definition language and the related tooling, but it should not be necessary to study the OGC API standards.
 
+[.preface]
 == Submitters
 
 All questions regarding this submission should be directed to the editors or the submitters:
