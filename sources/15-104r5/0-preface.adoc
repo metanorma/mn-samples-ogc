@@ -14,6 +14,7 @@ _Recipients of this document are requested to submit, with their comments, notif
 
 This document specifies the core Abstract Specification and extension mechanisms for Discrete Global Grid Systems (DGGS). _A DGGS is a spatial reference system that uses a hierarchical tessellation of cells to partition and address the globe. DGGS are characterized by the properties of their cell structure, geo-encoding, quantization strategy and associated mathematical functions._ The OGC DGGS Abstract Specification supports the specification of standardized DGGS infrastructures that enable the integrated analysis of very large, multi-source, multi-resolution, multi-dimensional, distributed geospatial data. Interoperability between OGC DGGS implementations is anticipated through implementation standards, and extension interface encodings of OGC Web Services.
 
+[.preface]
 == Submitters
 
 All questions regarding this submission should be directed to the editor or the submitters:
@@ -33,7 +34,7 @@ h| Name h| Affiliation
 
 Roger Lott's significant contribution is acknowledged for his eleventh-hour assistance in working through the relationship between DGGS concepts and ISO concepts and for ensuring the document structure complies with both OGC and ISO requirements.
 
-
+[.preface]
 == Introduction
 
 A Discrete Global Grid System (DGGS) is designed as a framework for information as distinct from conventional coordinate reference systems originally designed for navigation. For a grid based global spatial information framework to operate effectively as an analytical system it should be constructed using cells that represent the surface of the Earth uniformly. This ensures that, at multiple resolutions, each cell has an equal probability of contributing to an analysis. A DGGS is a spatial reference system that uses a hierarchy of equal area tessellations to partition the surface of the Earth into grid cells or their analogous lattice points. In this way information recorded about phenomena at a location can be easily referenced to the explicit area of the associated cell, integrated with other cell values, and provides statistically valid summaries based on any chosen selection of cells. With equal area partitioning, spatial analysis can be replicated consistently anywhere on the Earth independent of resolution or scale.
