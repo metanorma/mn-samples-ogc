@@ -17,6 +17,7 @@ _Recipients of this document are requested to submit, with their comments, notif
 
 The netCDF Moving Features encoding extension is a summary of conventions that supports efficient exchange of simple moving features as binary files. This Best Practice is a complement to the _Moving Features Encoding Part I: XML Core_ and an alternative to the _Simple Comma Separated Values (CSV)_ extension. Compared to the CSV encoding, this netCDF encoding offers more compact storage and better performance at the cost of additional restrictions on the kinds of features that can be stored.
 
+[.preface]
 == Submitters
 
 All questions regarding this submission should be directed to the editor or the submitters:
