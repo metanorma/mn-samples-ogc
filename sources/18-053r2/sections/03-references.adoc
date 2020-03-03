@@ -1,6 +1,8 @@
 
-[bibliography]
 == References
+
+[bibliography]
+=== Normative
 
 * [[[EPSG,EPSG]]], EPSG: 4979, 2007. http://spatialreference.org/ref/epsg/wgs-84-3/[http://spatialreference.org/ref/epsg/wgs-84-3/]
 
