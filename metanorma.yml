@@ -10,6 +10,7 @@ metanorma:
     - pdf
   source:
     built_targets:
+      sources/00-027.xml: sources/00-027/document.adoc
       sources/05-020r26.xml: repos/ogc-tcpnp/sources/ogc-tcpnp.adoc
       sources/05-020r27.xml: sources/05-020r27/document.adoc
       sources/08-062r7.xml: sources/08-062r7/document.adoc
@@ -20,6 +21,7 @@ metanorma:
       sources/18-046.xml: sources/18-046/document.adoc
       sources/18-053r2.xml: sources/18-053r2/document.adoc
     built_type:
+      sources/00-027.xml: ogc
       sources/05-020r26.xml: ogc
       sources/05-020r27.xml: ogc
       sources/08-062r7.xml: ogc
