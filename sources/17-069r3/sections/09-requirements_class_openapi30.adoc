@@ -1,6 +1,7 @@
 
 == Requirements class "OpenAPI 3.0"
 
+[[two_approaches_oas]]
 === Basic requirements
 
 Servers conforming to this requirements class define their API by an https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasDocument[OpenAPI Document].
@@ -31,7 +32,6 @@ The requirements <<req_core_root_success,/req/core/root-success>> and <<req_core
 ^.^| A | The JSON representation SHALL conform to the <<openapi,OpenAPI Specification, version 3.0>>.
 |===
 
-[[two_approaches_oas]]
 OpenAPI definitions can be created using different approaches. A typical example is the representation of the feature collections. One approach is to use a path parameter `collectionId`, i.e., the API definition has only a single path entry for all feature collections. Another approach is to explicitly define each feature collection in a separate path and without a path parameter, which allows to specify filter parameters or explicit feature schemas per feature collection. Both approaches are valid.
 
 [[req_oas30_oas_impl]]

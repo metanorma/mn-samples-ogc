@@ -21,34 +21,34 @@
 :data-uri-image:
 
 
-include::0-preface.adoc[]
+include::sections/00-preface.adoc[]
 
-include::1-scope.adoc[]
+include::sections/01-scope.adoc[]
 
-include::2-conformance.adoc[]
+include::sections/02-conformance.adoc[]
 
-include::3-references.adoc[]
+include::sections/03-references.adoc[]
 
-include::4-terms_and_definitions.adoc[]
+include::sections/04-terms_and_definitions.adoc[]
 
-include::5-conventions.adoc[]
+include::sections/05-conventions.adoc[]
 
-include::6-overview.adoc[]
+include::sections/06-overview.adoc[]
 
-include::7-requirements_class_core.adoc[]
+include::sections/07-requirements_class_core.adoc[]
 
-include::8-requirements_classes_for_encodings.adoc[]
+include::sections/08-requirements_classes_for_encodings.adoc[]
 
-include::9-requirements_class_openapi30.adoc[]
+include::sections/09-requirements_class_openapi30.adoc[]
 
-include::10-media_types.adoc[]
+include::sections/10-media_types.adoc[]
 
-include::11-security_considerations.adoc[]
+include::sections/11-security_considerations.adoc[]
 
-include::annexA.adoc[]
+include::sections/90-annexA.adoc[]
 
-include::annexB.adoc[]
+include::sections/91-annexB.adoc[]
 
-include::annexC.adoc[]
+include::sections/92-annexC.adoc[]
 
-include::annexD.adoc[]
+// include::90-annexD.adoc[]

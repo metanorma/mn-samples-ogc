@@ -3,7 +3,7 @@
 == Requirements Class "Core"
 
 [[overview]]
-=== Overview 
+=== Overview
 
 [[core]]
 [%unnumbered]
@@ -82,23 +82,23 @@ In addition to the simple path structures described above, where all features ar
 
 [[req_core_root_op]]
 [%unnumbered]
-|=== 
+|===
 ^.^h| Requirement 1 h| /req/core/root-op
 ^.^| A | The server SHALL support the HTTP GET operation at the path `/`.
-|=== 
+|===
 
 ==== Response
 
 [[req_core_root_success]]
 [%unnumbered]
-|=== 
+|===
 ^.^h| Requirement 2 h| /req/core/root-success
 ^.^| A | A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
 ^.^| B a| The content of that response SHALL be based upon the OpenAPI 3.0 schema http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml[landingPage.yaml] and include at least links to the following resources: +
 - the API definition (relation type 'service-desc' or 'service-doc') +
 - `/conformance` (relation type 'conformance') +
-- `/collections` (relation type 'data') 
-|=== 
+- `/collections` (relation type 'data')
+|===
 
 http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml[Schema for the landing page]
 
@@ -124,7 +124,7 @@ properties:
 ====
 [source,json]
 ----
-{ 
+{
   "title": "Buildings in Bonn",
   "description": "Access to data about buildings in the city of Bonn via a Web API that conforms to the OGC API Features specification.",
   "links": [
@@ -155,16 +155,16 @@ Every API is expected to provide a definition that describes the capabilities of
 
 [[req_core_api_definition_op]]
 [%unnumbered]
-|=== 
+|===
 ^.^h| Requirement 3 h| /req/core/api-definition-op
 ^.^| A | The URIs of all API definitions referenced from the landing page SHALL support the HTTP GET method.
-|=== 
+|===
 
 [%unnumbered]
-|=== 
+|===
 ^.^h| Permission 1 h| /per/core/api-definition-uri
 ^.^| A | The API definition is metadata about the API and strictly not part of the API itself, but it MAY be hosted as a sub-resource to the base path of the API, for example, at path `/api`. There is no need to include the path of the API definition in the API definition itself.
-|=== 
+|===
 
 Note that multiple API definition formats can be supported.
 
@@ -172,16 +172,16 @@ Note that multiple API definition formats can be supported.
 
 [[req_core_api_definition_success]]
 [%unnumbered]
-|=== 
+|===
 ^.^h| Requirement 4 h| /req/core/api-definition-success
 ^.^| A | A GET request to the URI of an API definition linked from the landing page (link relations `service-desc` or `service-doc`) with an `Accept` header with the value of the link property `type` SHALL return a document consistent with the requested media type.
-|=== 
+|===
 
 [%unnumbered]
-|=== 
+|===
 ^.^h| Recommendation 1 h| /rec/core/api-definition-oas
 ^.^| A | If the API definition document uses the OpenAPI Specification 3.0, the document SHOULD conform to the <<rc_oas30,OpenAPI Specification 3.0 requirements class>>.
-|=== 
+|===
 
 If the server hosts the API definition under the base path of the API (for example, at path `/api`, see above), there is no need to include the path of the API definition in the API definition itself.
 
@@ -202,20 +202,20 @@ To support "generic" clients that want to access multiple OGC API Features imple
 
 [[req_core_conformance_op]]
 [%unnumbered]
-|=== 
+|===
 ^.^h| Requirement 5 h| /req/core/conformance-op
 ^.^| A | The server SHALL support the HTTP GET operation at the path `/conformance`.
-|=== 
+|===
 
 ==== Response
 
 [[req_core_conformance_success]]
 [%unnumbered]
-|=== 
+|===
 ^.^h| Requirement 6 h| /req/core/conformance-success
 ^.^| A | A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
 ^.^| B | The content of that response SHALL be based upon the OpenAPI 3.0 schema http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/confClasses.yaml[confClasses.yaml] and list all OGC API conformance classes that the server conforms to.
-|=== 
+|===
 
 http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/confClasses.yaml[Schema for the list of conformance classes]
 
@@ -260,7 +260,7 @@ See <<http_status_codes,HTTP status codes>> for general guidance.
 
 [[req_core_http]]
 [%unnumbered]
-|=== 
+|===
 ^.^h| Requirement 7 h| /req/core/http
 ^.^| A | The server SHALL conform to <<rfc2616,HTTP 1.1>>.
 ^.^| B | If the server supports HTTPS, the server SHALL also conform to <<rfc2818,HTTP over TLS>>.
@@ -269,7 +269,7 @@ See <<http_status_codes,HTTP status codes>> for general guidance.
 This includes the correct use of status codes, headers, etc.
 
 [%unnumbered]
-|=== 
+|===
 ^.^h| Recommendation 2 h| /rec/core/head
 ^.^| A | The server SHOULD support the HTTP 1.1 method HEAD for all resources that support the method GET.
 |===
@@ -919,7 +919,7 @@ For WGS 84 longitude/latitude the bounding box is in most cases the sequence of 
 The bounding box of the New Zealand Exclusive Economic Zone in WGS 84 (from 160.6°E to 170°W and from 55.95°S to 25.89°S) would be represented in JSON as `[ 160.6, -55.95, -170, -25.89 ]` and in a query as `bbox=160.6,-55.95,-170,-25.89`.
 ====
 
-Note that according to the requirement to <<query_param_invalid,return an error for an invalid parameter value>>, the server will return an error, if a latitude value of `160.0` is used.
+Note that according to the requirement to <<req_core_query_param_invalid,return an error for an invalid parameter value>>, the server will return an error, if a latitude value of `160.0` is used.
 
 If the vertical axis is included, the third and the sixth number are the bottom and the top of the 3-dimensional bounding box.
 
@@ -970,7 +970,7 @@ datetime            = date-time / interval
 NOTE: ISO 8601-2 distinguishes open start/end timestamps (double-dot) and unknown start/end timestamps (empty string). For queries, an unknown start/end has the same effect as an open start/end.
 
 [example]
-.A date-time 
+.A date-time
 ====
 February 12, 2018, 23:20:52 UTC:
 
@@ -1019,7 +1019,7 @@ explode: false
 
 The `schema` property SHOULD be the same as the definition of the feature property in the response schema.
 
-|=== 
+|===
 
 [example]
 .An additional parameter to filter buildings based on their function
@@ -1106,25 +1106,25 @@ So (using the default/maximum values of 10/10000 from the OpenAPI fragment in re
 ^.^| A a| A `200`-response SHALL include the following links: +
 - a link to this response document (relation: `self`), +
 - a link to the response document in every other media type supported by the service (relation: `alternate`).
-|=== 
+|===
 
 [%unnumbered]
 |===
 ^.^h| Recommendation 13 h| /rec/core/fc-next-1
 ^.^| A | A `200`-response SHOULD include a link to the next "page" (relation: `next`), if more features have been selected than returned in the response.
-|=== 
+|===
 
 [%unnumbered]
 |===
 ^.^h| Recommendation 14 h| /rec/core/fc-next-2
 ^.^| A | Dereferencing a `next` link SHOULD return additional features from the set of selected features that have not yet been returned.
-|=== 
+|===
 
 [%unnumbered]
 |===
 ^.^h| Recommendation 15 h| /rec/core/fc-next-3
 ^.^| A | The number of features in a response to a `next` link SHOULD follow the same rules as for the response to the original query and again include a `next` link, if there are more features in the selection that have not yet been returned.
-|=== 
+|===
 
 This document does not mandate any specific implementation approach for the `next` links.
 
@@ -1140,7 +1140,7 @@ NOTE: Additional conformance classes for safe paging or an index parameter may b
 |===
 ^.^h| Permission 7 h| /per/core/fc-prev
 ^.^| A | A response to a `next` link MAY include a `prev` link to the resource that included the `next` link.
-|=== 
+|===
 
 Providing `prev` links supports navigating back and forth between pages, but depending on the implementation approach it may be too complex to implement.
 
@@ -1149,14 +1149,14 @@ Providing `prev` links supports navigating back and forth between pages, but dep
 |===
 ^.^h| Requirement 28 h| /req/core/fc-rel-type
 ^.^| A | All links SHALL include the `rel` and `type` link parameters.
-|=== 
+|===
 
 [[req_core_fc_timestamp]]
 [%unnumbered]
 |===
 ^.^h| Requirement 29 h| /req/core/fc-timeStamp
 ^.^| A | If a property `timeStamp` is included in the response, the value SHALL be set to the time stamp when the response was generated.
-|=== 
+|===
 
 [[req_core_fc_numbermatched]]
 [%unnumbered]
@@ -1164,7 +1164,7 @@ Providing `prev` links supports navigating back and forth between pages, but dep
 ^.^h| Requirement 30 h| /req/core/fc-numberMatched
 ^.^| A | If a property `numberMatched` is included in the response, the value SHALL be identical to the number of features in the feature collections that match the selection parameters like `bbox`, `datetime` or additional filter parameters.
 ^.^| B | A server MAY omit this information in a response, if the information about the number of matching features is not known or difficult to compute.
-|=== 
+|===
 
 [[req_core_fc_numberreturned]]
 [%unnumbered]
@@ -1172,7 +1172,7 @@ Providing `prev` links supports navigating back and forth between pages, but dep
 ^.^h| Requirement 31 h| /req/core/fc-numberReturned
 ^.^| A | If a property `numberReturned` is included in the response, the value SHALL be identical to the number of features in the response.
 ^.^| B | A server MAY omit this information in a response, if the information about the number of features in the response is not known or difficult to compute.
-|=== 
+|===
 
 NOTE: The representation of the links and the other properties in the payload depends on the encoding of the feature collection.
 
@@ -1243,13 +1243,13 @@ A `400` will be returned in the following situations:
 ^.^h| Requirement 32 h| /req/core/f-op
 ^.^| A | For every feature in a feature collection (path `/collections/{collectionId}`), the server SHALL support the HTTP GET operation at the path `/collections/{collectionId}/items/{featureId}`.
 ^.^| B | The parameter `collectionId` is each `id` property in the feature collections response (JSONPath: `$.collections[*].id`). `featureId` is a local identifier of the feature.
-|=== 
+|===
 
 [%unnumbered]
 |===
 ^.^h| Permission 8 h| /per/core/f-id
 ^.^| A | The Core requirements class only requires that the feature URI is unique. Implementations MAY apply stricter rules and, for example, use unique `id` values per dataset or collection.
-|=== 
+|===
 
 ==== Response
 
@@ -1258,7 +1258,7 @@ A `400` will be returned in the following situations:
 |===
 ^.^h| Requirement 33 h| /req/core/f-success
 ^.^| A | A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
-|=== 
+|===
 
 [[req_core_f_links]]
 [%unnumbered]
@@ -1269,7 +1269,7 @@ A `400` will be returned in the following situations:
 - a link to the response document in every other media type supported by the service (relation: `alternate`), and +
 - a link to the feature collection that contains this feature (relation: `collection`).
 ^.^| B | All links SHALL include the `rel` and `type` link parameters.
-|=== 
+|===
 
 NOTE: The representation of the links in the payload will depend on the encoding of the feature.
 

@@ -28,9 +28,9 @@ This standard does not mandate any encoding or format for representing features 
 
 None of these encodings is mandatory and an implementation of the Core requirements class may implement none of them but implement another encoding instead.
 
-<<rec_html,Support for HTML is recommended>> as HTML is the core language of the World Wide Web. A server that supports HTML will support browsing the data with a web browser and will enable search engines to crawl and index the dataset.
+<<html5,Support for HTML is recommended>> as HTML is the core language of the World Wide Web. A server that supports HTML will support browsing the data with a web browser and will enable search engines to crawl and index the dataset.
 
-GeoJSON is a commonly used format that is simple to understand and well supported by tools and software libraries. Since most Web developers are comfortable with using a JSON-based format, this version of OGC API Features <<rec_geojson,recommends supporting GeoJSON for encoding feature data>>, if the feature data can be represented in GeoJSON for the intended use.
+GeoJSON is a commonly used format that is simple to understand and well supported by tools and software libraries. Since most Web developers are comfortable with using a JSON-based format, this version of OGC API Features <<rfc7946,recommends supporting GeoJSON for encoding feature data>>, if the feature data can be represented in GeoJSON for the intended use.
 
 Some examples for cases that are out-of-scope of GeoJSON are:
 
