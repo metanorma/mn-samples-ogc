@@ -14,31 +14,30 @@
 :role: editor
 :keywords: ogcdoc, OGC document, Discrete Global Grid System, DGGS, Digital Earth, DGGScore, Spatial Reference System, Global Data Structure, Geographic Information Systems, DE-9IM, standard, specification
 :submitting-organizations: Geoscience Australia; Landcare Research New Zealand; University of Calgary; PYXIS; SpaceCurve; Zhengzhou Institute of Surveying & Mapping; ESRI
-:docfile: 15-104r5.adoc
+:docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
 :data-uri-image:
 
+include::sections/00-preface.adoc[]
 
-include::0-preface.adoc[]
+include::sections/01-scope.adoc[]
 
-include::1-scope.adoc[]
+include::sections/02-conformance.adoc[]
 
-include::2-conformance.adoc[]
+include::sections/03-references.adoc[]
 
-include::3-references.adoc[]
+include::sections/04-terms_and_definitions.adoc[]
 
-include::4-terms_and_definitions.adoc[]
+include::sections/05-conventions.adoc[]
 
-include::5-conventions.adoc[]
+include::sections/06-dggs_core_data_model.adoc[]
 
-include::6-dggs_core_data_model.adoc[]
+include::sections/90-annexA.adoc[]
 
-include::annexA.adoc[]
+include::sections/91-annexB.adoc[]
 
-include::annexB.adoc[]
+include::sections/92-annexC.adoc[]
 
-include::annexC.adoc[]
-
-include::annexD.adoc[]
+include::sections/93-annexD.adoc[]

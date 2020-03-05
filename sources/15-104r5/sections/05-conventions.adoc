@@ -12,7 +12,7 @@ All requirements and conformance tests that appear in this document are denoted 
 
 === UML notation
 
-All the diagrams that appear in this specification are presented using the Unified Modeling Language (UML) static structure diagram, as described in Sub-clause 5.2 of OGC Web Service Common <<ogc06121>>.
+All the diagrams that appear in this specification are presented using the Unified Modeling Language (UML) static structure diagram, as described in Sub-clause 5.2 of OGC Web Service Common [OGC 06-121].
 
 === Abbreviated terms
 
