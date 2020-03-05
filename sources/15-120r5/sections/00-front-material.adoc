@@ -1,5 +1,6 @@
 
-.Preface and Patent Call
+[.preface]
+== Preface and Patent Call
 The initial CDB specification was developed under a competitive contract awarded to CAE to meet requirements of the United States Special Operations Command.
 
 The CDB standard is widely implemented by multiple, independent industry contractors for end-user simulation and mission rehearsal customers in many different countries over a period of ten years.
@@ -27,7 +28,16 @@ The CDB synthetic environment is a representation of the natural environment inc
 
 The associated CDB Standard Best Practice documents provide a description of a data schema for Synthetic Environmental information (i.e. it merely describes data) for use in simulation. The CDB Standard provides a rigorous definition of the _semantic_ meaning for each dataset, each attribute and establishes the _structure/organization_ of that data as a schema comprised of a folder hierarchy and files with internal (industry-standard) formats.
 
-A CDB conformant data store contains datasets organized in layers, tiles and levels-ofdetail. Together, these datasets represent the features of a synthetic environment for the purposes of distributed simulation applications. The organization of the synthetic environmental data in a CDB compliant data store is specifically tailored for real-time applications.
+A CDB conformant data store contains datasets organized in layers, tiles and levels-of-detail. Together, these datasets represent the features of a synthetic environment for the purposes of distributed simulation applications. The organization of the synthetic environmental data in a CDB compliant data store is specifically tailored for real-time applications.
+
+// The following clause has been assigned a new heading to
+// ensure no text is lost from the original document.
+// For text using the new OGC textual model, all preface
+// clauses must have a heading.
+[.preface]
+== Relationship with other OGC standards
+
+The OGC CDB standard is based on and derived from an industry developed and maintained specification, which has been approved and published as OGC Document 15- 003: OGC Common Data Base Volume 1 Main Body. An extensive listing of contributors to the legacy industry-led CDB specification is at Chapter 11, pp 475-476 in that OGC Best Practices Document (https://portal.opengeospatial.org/files/?artifact_id=61935).
 
 [.preface]
 == Submitters
@@ -40,3 +50,4 @@ All questions regarding this submission should be directed to the editor or the 
 |Carl Reed |Carl Reed & Associates
 |David Graham |CAE Inc.
 |===
+
