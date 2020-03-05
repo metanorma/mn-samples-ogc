@@ -21,22 +21,22 @@
 :data-uri-image:
 
 
-include::0-preface.adoc[]
+include::sections/00-preface.adoc[]
 
-include::1-scope.adoc[]
+include::sections/01-scope.adoc[]
 
-include::2-conformance.adoc[]
+include::sections/02-conformance.adoc[]
 
-include::3-references.adoc[]
+include::sections/03-references.adoc[]
 
-include::4-terms_and_definitions.adoc[]
+include::sections/04-terms_and_definitions.adoc[]
 
-include::5-conventions.adoc[]
+include::sections/05-conventions.adoc[]
 
-include::6-data_model.adoc[]
+include::sections/06-data_model.adoc[]
 
-include::7-data_structure_and_file_format.adoc[]
+include::sections/07-data_structure_and_file_format.adoc[]
 
-include::annexA.adoc[]
+include::sections/90-annexA.adoc[]
 
-include::annexB.adoc[]
+include::sections/91-annexB.adoc[]
