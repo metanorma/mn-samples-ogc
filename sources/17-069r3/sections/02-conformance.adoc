@@ -23,7 +23,7 @@ The _Core_ does not mandate a specific encoding or format for representing featu
 
 None of these encodings are mandatory and an implementation of the Core may also decide to implement none of them, but to implement another encoding instead.
 
-That said, the _Core_ requirements class includes recommendations to support, where practical, <<rec_html,HTML>> and <<rec_geojson,GeoJSON>> as encodings. <<overview_cl6,Clause 6 (Overview)>> includes a discussion about the recommended encodings.
+That said, the _Core_ requirements class includes recommendations to support, where practical, <<html5,HTML>> and <<rfc7946,GeoJSON>> as encodings. <<overview_cl6,Clause 6 (Overview)>> includes a discussion about the recommended encodings.
 
 The _Core_ does not mandate any encoding or format for the formal definition of the API either. One option is the OpenAPI 3.0 specification and a requirements class has been specified for OpenAPI 3.0, which depends on the _Core_:
 
