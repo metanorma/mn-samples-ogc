@@ -4,9 +4,9 @@ SHELL := /bin/bash
 IGNORE := $(shell mkdir -p $(HOME)/.cache/xml2rfc)
 
 SRC := $(lastword $(shell yq r metanorma.yml metanorma.source.files))
-ifeq ($(SRC),null)
+ifeq ($(SRC),)
 BUILT := $(shell yq r metanorma.yml metanorma.source.built_targets | cut -d ':' -f 1 | tr -s '\n' ' ')
-ifeq ($(BUILT),null)
+ifeq ($(BUILT),)
 SRC := $(filter-out README.adoc, $(wildcard sources/*.adoc))
 else
 XML := $(patsubst sources/%,documents/%,$(BUILT))
