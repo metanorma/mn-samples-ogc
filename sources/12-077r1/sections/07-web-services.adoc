@@ -1,0 +1,18 @@
+
+== Web services
+To retrieve data in forms stated above, a consumer needs global access to WAMI data. This is a problem of communication, performance and scale. If we break the general problem of WAMI data dissemination down into smaller problems, each standing by itself, we can address them separately and simply. This approach produces functional, modular, small, and independent solutions.
+
+Data is remote, often times in limited compute environments. It is hard for a client to be next to the data. This solution should make it so that it is not necessary for a data consumer to be next to the data. Therefore, each independent solution is a web service, implementing a well-designed grammar meant for today's defense networks and the Internet. WAMI web services define the grammar. The format is controlled by various format standardization bodies. Customers dictate which format is required by them. Service implementations cater to customer needs.
+
+_Clients and servers_ implementing WAMI services communicate in a pre-defined language using stateless, secure HTTP. RESTful web services are used to provide data on-demand, only as much as requested, and in a format of choice.
+
+
+=== Web services grammar and data formats
+When talking about web services, it is critical to decouple the protocol or _grammar_ in which a client and server communicate from the _format_ of the delivered content.
+
+* The _grammar_ comprises of the syntax and semantics that a client and server expect when communicating.
+* The content _format_ comprises of the expected layout of a server's response.
+
+_OGC 12-032r2describesa grammar_. HTTP requires that content be delivered in IETF-friendly formats. WAMI specifications in OGC 12-032r2 do not impose content format types. The IETF has clearly defined rules for extensible content formats. All formats (including future formats) can be supported by the grammar.
+
+A grammar does not control formats. The grammar facilitates extensible format support.

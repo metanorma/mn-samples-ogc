@@ -1,0 +1,28 @@
+
+== Executive summary
+Management of Wide Area Motion Imagery (WAMI) is a growing Big Data problem. Current workflows have been hard pressed to "`simply keep up`". WAMI sensors come in different designs; from single CCDs collecting big pictures, to a matrix of cameras collecting a larger aggregate view. Gigapixel sensors collect color, luminance or IR data at more than 8-bits per band, several times a second. Storing WAMI data raw and uncompressed is ideal, but becomes unsustainable in the long term. Despite compression, moving the data from a forward source to data centers is still a challenge, even with high bandwidths.
+
+Since 2007, PIXIA Corp has implemented an end to end solution that is sensor and data agnostic, delivering WAMI quickly and efficiently, no matter where it was located; on the aircraft, in a ground station, in a local data center or in archives. It required developing unique technologies, one of which was a set of web services. Using a RESTful HTTP grammar, the services provided a scalable, high-performance interface for WAMI in a global enterprise. The web services grammar was modeled on existing standards. Clients could get data from all WAMI sensors that until now required proprietary interfaces. The services were well received by the WAMI community. In 2011, PIXIA submitted the specifications to the Open Geospatial Consortium (OGC) for consideration for standardization.
+
+This solution is currently deployed supporting fielded WAMI sensors in a global enterprise.
+
+[%unnumbered]
+[cols="2"]
+|===
+h|Name h|About
+2+^h|Core services
+
+|*Collection Service (CS)* |An implicitly federated service informs a client of all WAMI data being served with links to content deliver services. It presents a hierarchical view of WAMI data with incremental dissemination capability.
+|*Image Service (IS)* |Delivers derived WAMI content from bounded areas of interest (AOI) across time over multiple collects as a flipbook of one or more maps and metadata.
+|*Video Service (VS)* |It is similar to IS. It delivers WAMI content as video.
+|*Raw Service (RS)* |Delivers original raw WAMI data as it was acquired, unblemished.
+
+2+^h|Alert services
+|*GeoRSS* |Implements a pull-based alert service. Uses the GeoRSS schema over RSS.
+|*XMPP* |Implements a push-based alert service. Uses the GeoRSS schema over XMPP.
+
+2+^h|Derived services
+|*Video Control and Streaming Service (VCSS)* |It is similar to VS. It provides Digital Video Recorder (DVR) controls over HTTP delivering video windows over different AOIs via HTTP, TCP, or UDP. Consumers can play forward, backward, pause across all data, and go-to-live. They can pan around; zoom in and out.
+|*Query Service (QS)* |This service provides a search capability atop multiple CS. Use of existing negotiated NoSQL industry standard interfaces is recommended.
+|*Virtual File System (VFS)* |Provides a POSIX file system view atop WAMI frames as a set of folders and files using HTTP 1.1 WebDAV. Circumvents vendor lock-in and supports file-based apps to function, giving them migration option and opportunity.
+|===

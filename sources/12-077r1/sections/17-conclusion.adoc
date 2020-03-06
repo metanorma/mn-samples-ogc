@@ -1,0 +1,3 @@
+
+== Conclusion
+WAMI is a big data problem. OGC 12-032r2 is critical to effectively utilizing WAMI data in the www.For further questions, please contact the authors, preferably through the OGC. We welcome feedback and support to help make a commercially successful implementation of a global best practice.
