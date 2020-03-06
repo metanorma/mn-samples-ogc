@@ -1,0 +1,7 @@
+
+== Consumer
+A consumer of this data can be a human analyst or an automatic data processing algorithm. At some point, either humans or algorithms need WAMI imagery in some form.
+
+To start, a consumer wants to know what's available. A consumer can ask, "`What do you have?`" or, "`Give me a list of available data matching this search criteria`", typically geospatial or temporal based.  Once a consumer knows what is available, they may focus on a certain Area of Interest (AOI) on the ground, and across a window in time. Consumers may want images from several AOIs blended into one output that is comprised of data from various sensors, flights, geographic regions and time. Consumers have the option of specifying panning and zooming when requesting the blended output. By combining the two concepts, a service would have the ability to smoothly zoom-in, out, and pan around while flipping through time. They may want this data as maps in a known reference system. The consumer may want specific portions of the raw data, unmodified, and in a format of choice based on the same search criteria as the ones used for derived data. The consumer may want metadata about the raw data, in order to locate and interpret the raw data.
+
+From a consumer's perspective, if they have access rights to the data, there should be no difference in the client experience whether the data is on the ground or being captured live, directly from the capture platform, raw or derived.

@@ -1,0 +1,23 @@
+
+== Image Service
+As an image and metadata flipbook service, the Image Service or IS delivers a view into WAMI collections. It delivers derived content as maps and metadata from the original camera-space data or from data that is already available in a derived content space. See examples in <<annex-examples>>.
+
+=== Summary of all requests
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Request h|Meaning h|Parameters h|Optionality
+
+|*GetCapabilities* |Allows the client to retrieve metadata about the capabilities of the IS server implementation |`Service, Request, Sections, AcceptVersions, AcceptFormats, AcceptLanguages, UpdateSequence` |Mandatory
+
+|*GetHelp* |Allows the client to retrieve help on topics provided by the server |`Service, Request, Version, Topic, Format` |Optional
+
+|*GetMap* |Retrieves an area of interest from one or more frames from one or more collections of WAMI data as one or more images or interleaved images & metadata, in standard formats. See Appendix A for a summary. |`Service, Request, Version, Format, AcceptLanguages, Disposition, CID, CRS, BBox, Width, Height, Styles, Transparent, Bgcolor, Time, Metadata, Options` |Mandatory
+
+|*GetMapInfo* |The request is similar to GetMap except it retrieves metadata only. |`Service, Request, Version, Format, AcceptLanguages, CID, CRS, BBox, Width, Height, Time, Metadata, Options` |Optional
+
+|*GetPathMap* |Retrieves areas of interest (AOIs) from one or more collections of WAMI data as one or more images or images + metadata, in supported standard formats. The data for collection, time periods and bounding AOIs is supplied as a path footnote:[A path is defined as a one or more tracks, each track has a set of key frames and a track evaluation method. The AOI (area of interest) is referenced using a known coordinate reference system. A track may go over one or more spatiotemporally overlapping collections.]. |`Service, Request, Version, Format, AcceptLanguages , Disposition, CRS , Width, Height, Styles, Transparent, Bgcolor , Metadata, Options, Path` |Optional
+
+|*GetPathMapInfo* |The request is similar to the GetPathMap request except that instead of images + metadata it retrieves metadata only. |`Service, Request, Version, Format, AcceptLanguages, CRS, Width, Height,  Metadata, Options, Path` |Optional
+|===

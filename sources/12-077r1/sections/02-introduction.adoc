@@ -1,0 +1,11 @@
+
+== Introduction
+The reason for developing this specification was a WAMI community requirement to deliver high performance web services and disseminate WAMI products. While existing web services can be combined or modified to deliver some of the functionality of the services described in this document, by design, they cannot deliver the desired performance.
+
+The services are consumer centric. The services deliver only as much as was requested and no more. The services deliver little to a lot of data based on the requests. The services deliver incremental data. Multiple modalities in the quantity of data delivered permits optimal server development/deployment capabilities across networks of various latency and bandwidth behaviors.
+
+Clients can choose from a menu of capabilities and develop a UX to best suite consumer needs. Servers are judged on their ability to deliver raw performance and their ability to scale across an implicitly federated global enterprise. The services are modeled for implementation on inexpensive commodity compute and storage infrastructure permitting cloud vendors to run these at the platform layer.
+
+PIXIA Corp has submitted document number OGC 12-032r2 for consideration as a standard for dissemination of Wide Area Motion Imagery (WAMI) data and metadata. OGC 12-032r2is titled _OGC WAMI Services - Dissemination Services for Wide Area Motion Imagery_. Every attempt was made to make the specification compliant with OGC standards. Web services based on this document have been deployed and are in use by the community. The document is currently under review as a best practice document.
+
+Specifications are generally dry documents. This document serves as a primer for OGC 12-032r2. It introduces WAMI and the WAMI services specifications as submitted in OGC 12-032r2. It is intended for audiences that wish to review, understand, comment on, or implement using OGC 12-032r2. Portions of this document may apply to different audiences. Feel free to skip over parts that are not relevant to you.

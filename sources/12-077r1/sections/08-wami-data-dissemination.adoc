@@ -1,0 +1,32 @@
+
+== WAMI data dissemination
+Someone somewhere will require WAMI image data and associated metadata, whether it is for human or machine processing, to derive data and metadata, and draw conclusions. There are two forms in which WAMI data and metadata may be disseminated:
+
+. In the original raw form as acquired, in camera space
+. In a derived form, e.g. planar or ortho-rectified raster tiles in a defined spatial reference system.
+
+Both forms require WAMI data to be delivered as follows:
+
+. Deliver portions of original camera data and metadata for AOIs
+.. Data and metadata blobs distributed in custom or known formats
+.. Standard data descriptors describe custom data layout
+
+. Deliver AOIs as a sequence of one or more images plus optional metadata
+.. Images are in various globally standard formats, e.g. JPEG, PNG, GIF, etc. and geo-formats like GMLJP2, GeoJP2, GeoTIFF NITF, etc.
+.. List of image formats is extensible
+
+. Deliver AOIs as a video clip of one or more images plus optional metadata tracks
+.. Videos are in various globally standard and popular formats, e.g. MXF, AVI, WMV, QuickTime(R), Flash(R), MPEG1, MPEG2, MPEG4, OGG, WEBM, etc.
+.. Video stream supports standards from groups such as SMPTE, and MISB for the US DoD.
+.. List of video formats is extensible.
+
+There are multiple ways of delivering WAMI metadata. They include delivering metadata for:
+
+. One or more AOIs on a per frame basis (metadata about individual frames)
+. One or more AOIs on a per request basis (overall metadata about a request)
+. A mission or collection (overall mission information)
+. A set of missions or collections (information about WAMI data provisioned by the service)
+
+Metadata can be delivered in standard forms like XML, JSON, netCDF, HTML or even plain text. For XML, the schema regulates content (E.g. GML, KML, SensorML, etc.). A lot of metadata can be delivered incrementally and hierarchically through a well-designed schema and compressed on-demand.
+
+The grammar defines the language of communication. The format is kept independent of the grammar. However, best practices warrant that interchange standardization be required with delivered content. Non-standard formats, while discouraged, are acceptable if and only if service implementations provide the format of that data explicitly, in an industry accepted (standard) and published form.

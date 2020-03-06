@@ -1,0 +1,351 @@
+
+[[annex-requests-summerized]]
+[appendix,obligation=informative]
+== Requests summarized
+
+=== GetCapabilities
+All services shall implement the GetCapabilities request. It tells the client what a service delivers.
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Parameter name h|KVP Example h|Optionality/ multiplicity h|Definition, format and use
+
+|Service |`Service=CS` |Mandatory, one |Abbreviated service identifier text. Shall be implemented by both client and server.
+
+|Request |`Request=GetCapabilities` |Mandatory, one |Operation name text. Shall be implemented by both client and server.
+
+|AcceptVersions |`AcceptVersions=1.0.0,1.0.2,1.0.2` |Optional, zero or one |Prioritized sequence of one or more specification versions that the client accepts, with preferred versions listed first. When omitted, return the latest supported version. Should be implemented by clients. Shall be implemented by servers.
+
+|Sections |`Sections=Contents` |Optional, zero or one |Comma-separated un-ordered list of zero or more names of sections of service metadata document to be returned in service metadata document. May be implemented by client and server. If not implemented, expect/provide default response.
+
+|UpdateSequence |`UpdateSequence= XXX (where XXX is a character string previously provided by the server)` |Optional, zero or one |Service metadata document version, value is "`increased`" whenever any change is made in complete service metadata document. May be implemented by client and server. If not implemented, expect/provide default response.
+
+|AcceptFormats |`AcceptFormats= application/xml, text/xml, application/json` |Optional, zero or one |Prioritized sequence of zero or more response formats desired by client, with preferred formats listed first. When omitted or not supported by server, return response using MIME type application/xml. May be implemented by client and server. If not implemented, expect/provide default response.
+
+|AcceptLanguages |`AcceptLanguages=en-US` |Optional, zero or one |List of languages desired by the client for all human readable text in the response, in order of preference. For every element, the first matching language available from the server shall be present in the response. When not supported by server, return human readable text in a language of the server's choice. Shall be implemented by multi-lingual servers and clients.
+|===
+
+
+=== GetHelp
+This request is optional.
+
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Parameter name h|KVP Example h|Optionality/ multiplicity h|Definition, format and use
+
+|Service |`Service=CS` |Mandatory, one |Abbreviated service identifier text. Shall be implemented by both client and server.
+
+|Request |`Request=GetHelp` |Mandatory, one |Operation name text. Shall be implemented by both client and server.
+
+|Version |`Version=1.0.2` |Mandatory, one |Version number of service. Shall be implemented by both client and server
+
+|Format |`Format=application/xml` |Optional, zero or one |MIME type of the format in which the server shall provide the response. A list of supported MIME types shall be made available in the Capabilities response under the Operation XML element. The default format shall also be specified in the corresponding Capabilities response.
+
+|Exceptions |`Exceptions=XML` |Optional, zero or one |Sets the format of the exception.
+
+|Topic |`Topic=Specifications` |Optional, zero or one |Name of a help topic. A list of supported help topics shall be made available in the Capabilities response. This parameter shall specify a topic that the client chooses to request help on. The server shall support sending a valid response to all values it lists as allowed values to this parameter. The default format shall also be specified in the corresponding Capabilities response.
+
+|AcceptLanguages |`AcceptLanguages=en-US` |Optional, zero or one |List of languages desired by the client for all human readable text in the response, in order of preference. For every element, the first matching language available from the server shall be present in the response. When not supported by server, return human readable text in a language of the server's choice. Shall be implemented by multi-lingual servers and clients.
+|===
+
+
+=== CS:GetCollectionCount
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Parameter name h|KVP Example h|Optionality/ multiplicity h|Definition, format and use
+
+|Service |`Service=CS` |Mandatory, one |The value for this parameter shall be CS.
+
+|Request |`Request=GetCollectionCount` |Mandatory, one |The value for this parameter shall be *GetCollectionCount*.
+
+|Version |`Version=1.0.2` |Mandatory, one |Version number of service. Shall be implemented by both client and server
+
+|Format |`Format=application/xml` |Optional, zero or one |Please refer to *[WAMI OVERVIEW]*
+
+|AcceptLanguages |`AcceptLanguages=en-US` |Optional, zero or one |Please refer to *[WAMI OVERVIEW]*
+
+|NID |`NID=Unique1234` |Optional, zero or one |Client sets one Node ID. The service returns collection count information starting from this node. If not set or empty, implies root node. Shall be implemented by both client and server.
+
+|Depth |`Depth=All` |Optional, zero or one a|Specifies how deep the collection counter shall go down the tree. It has two possible values: 1 or All. If not set or empty, implies Depth=All. The parameter shall be implemented by both client and server.
+
+- *1*: Client receives number of child nodes under root or specified node.
+- *All*: Client receives all the node counts below specified node.
+
+|Bbox |`Bbox=minx,miny,maxx,maxy` |Optional, zero or one |Bbox specifies a bounding box in the reference system set by CRS. The request filters selected nodes in the tree through this bounding box. The parameter shall be implemented by both client and server. This parameter is optional. The default value is "`unbounded`" to include all collections. If Bbox is set, CRS shall be set. Setting Bbox without CRS, or setting CRS without Bbox indicates error.
+
+|CRS |`CRS=epsg:4326` |Optional, zero or one |See Bbox.
+
+|Time |`Time=T1/T2,T3/T4,T5` |Optional, zero or one |Specifies one or more time values or time ranges. The request filters selected nodes in the tree through the time values and ranges. The parameter shall be implemented by both client and server. This parameter is optional. The default value is all time. Time is set in ISO 8601:2004 format (not as frame numbers).
+|===
+
+
+=== CS:GetCollections
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Parameter name h|KVP Example h|Optionality/ multiplicity h|Definition, format and use
+
+|Service |`Service=CS` |Mandatory, one |The value for this parameter shall be CS.
+
+|Request |`Request=GetCollections` |Mandatory, one |The value for this parameter shall be *GetCollections*.
+
+|Version |`Version=1.0.2` |Mandatory, one |Version number of service. Shall be implemented by both client and server
+
+|Format |`Format=application/xml` |Optional, zero or one |Please refer to *[WAMI OVERVIEW]*
+
+|AcceptLanguages |`AcceptLanguages=en-US` |Optional, zero or one |Please refer to *[WAMI OVERVIEW]*
+
+|NID |`NID="unique-1234"` |Optional, zero or one |Specifies the node identifier to retrieve. It shall be a value string that is unique to the tree. If this parameter is not specified or left empty, it means the root node. Shall be implemented by both client and server.
+
+|Depth |`Depth=1` |Optional, zero or one a|This parameter shall have only three possible values: *0*, *1* and All. The default value shall be *Depth=0*. Shall be implemented by both client and server.
+
+- *0*: only send information about this node.
+- *1*: send information about this node and its immediate children.
+- *All*: send information about this node and all nodes under it.
+
+|Metadata |`Metadata=All` |Optional, zero or one |A comma-separated ordered list of zero or more names of sections of metadata to be returned. If not set or empty, it means do not send metadata with node information. If set to *All*, it means send all metadata with node information.  At least the value of *All* shall be implemented. A complete list shall be provided as part of the Capabilities response to the *GetCollections* request. Shall be implemented by both client and server.
+
+|Bbox |`Bbox=minx,miny,maxx,maxy` |Optional, zero or one |Same as *GetCollectionCount*
+
+|CRS |`CRS=epsg:4326` |Optional, zero or one |Same as *GetCollectionCount*
+
+|Time |`Time=T1/T2,T3/T4,T5` |Optional, zero or one |Same as *GetCollectionCount*
+|===
+
+
+=== IS:GetMap
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Parameter name h|KVP Example h|Optionality/ multiplicity h|Definition, format and use
+
+|Service |`Service=IS` |Mandatory, one |The value shall be IS
+
+|Request |`Request=GetMap` |Mandatory, one |The value shall be *GetMap*
+
+|Version |`Version=1.0.2` |Mandatory, one |Version number of service. Shall be implemented by both client and server.
+
+|Accept Languages |`AcceptLanguages=en-US` |Optional, zero or one |Please refer to *[WAMI OVERVIEW]*
+
+|Exceptions |`Exceptions=XML` |Optional, zero or one |Sets the format of the exception.
+
+|Format |`Format=image/jpeg` |Mandatory, one |Image output encoding. Note that if multiple images are selected, or if metadata is requested, then the Disposition parameter must also be specified (to avoid accidental unexpected result contents). In doing so, the response Content-Type shall be one of multipart/related or multipart/x-mixed-replace; depending on the value of Disposition.
+
+|Disposition |`Disposition=ordered` |Optional, zero or one |This field is required if Metadata is requested or if multiple images are requested (via specifying a Time Range). Valid values are "`ordered`", "`unordered`", "`replace`". Servers that support multipart responses MUST implement "`ordered`".  The "`unordered`" and "`replace`" values are optional both for client and server.
+
+|CID |`CID=UniqID-1234` |Mandatory, one |A comma-separated ordered list of collection identifiers. Each identifier is unique to a collection. A multi-valued CID parameter implies compositing of collections.  Shall be implemented by both client and server.
+
+|CRS |`CRS=EPSG:4326` |Mandatory, one |The coordinate reference system of the requested map. Shall be implemented by both client and server.
+
+|BBox |`BBOX=10.0,10.0,10.1,10.1` |Mandatory, one |The bounding box of the map in the specified CRS. General model: Bbox=minx,miny,maxx,maxy. Shall be implemented by both client and server.
+
+|Time |`Time=F234/F345/FS1` |Mandatory, one or more |ISO 8601 time-range (in UTC time) or absolute frame-number range and optional step value.  Shall be implemented by both client and server. For implementation purposes, if the first character is '`F`', then it is a frame or frame-range based request. Otherwise it must comply with ISO 8601 time or time-range. For the frame-range the format is '`F`' \d+ ( '`/F`' \d+ ( '`/FS`' \d+ )? )?
+
+|Width |`Width=512` |Mandatory, one |Width in pixels of the output map pictures. Shall be implemented by both client and server.
+
+|Height |`Height=512` |Mandatory, one |Height in pixels of the output map pictures. Shall be implemented by both client and server.
+
+|Styles |`Styles=` |Mandatory, one |Comma-separated list of one rendering style per requested collection. An empty list implies default styles. Shall be implemented by both client and server.
+
+|Transparent |`Transparent=TRUE` |Optional, zero or one |Background transparency of the maps (Default: Transparent=FALSE). Shall be implemented by both client and server.
+
+|Bgcolor |`Bgcolor=0x000000` |Optional, zero or one |Hexadecimal red-green-blue color value for the background color. (Default: Bgcolor=0x000000). Shall be implemented by both client and server.
+
+|Metadata |`Metadata=Basic,Sensor,Platform` |Optional, zero or one |A comma-separated ordered list of zero or more names of sections of metadata to be returned. If not set or empty, it means do not send metadata with image data. Shall be optionally implemented by both client and server.  When specified, the Disposition parameter needs to be set to allow multipart documents.
+
+|Options.CUSTOM |`Options.jpeg_quality= 75&Options.jpeg_yuv=422` |Optional, zero or more |Vendor specific options for this request. Extends the request with one or more vendor defined parameter names. The format of all parameter names will be of the form Options.CUSTOM_NAME = CUSTOM_VALUE.  Where each option has its own uniquely specified CUSTOM_NAME (e.g. it is not allowed to specify an Options.CUSTOM_NAME twice, it should instead leverage value encoding such as with a CSV).  Shall be optionally implemented by both client and server.
+|===
+
+=== IS:GetMapInfo
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Parameter name h|KVP Example h|Optionality/ multiplicity h|Definition, format and use
+
+
+|Service |`Service=IS` |Mandatory, one |The value shall be IS
+
+|Request |`Request=GetMapInfo` |Mandatory, one |The value shall be *GetMapInfo*
+
+|Version |`Version=1.0.2` |Mandatory, one  |Version number of service. Shall be implemented by both client and server.
+
+|Accept Languages |`AcceptLanguages=en-US` |Optional, zero or one |Please refer to *[WAMI OVERVIEW]*
+
+|Exceptions |`Exceptions=XML` |Optional, zero or one |Sets the format of the exception.
+
+|Format |`Format=application/xml` |Optional, zero or one |Output format of the metadata. Shall be implemented by both client and server. Shall at least support *application/xml*. Default value is *application/xml*.
+
+|CID |`CID=UniqID-1234` |Mandatory, one |A comma-separated ordered list of collection identifiers. Each identifier is unique to a collection. Shall be implemented by both client and server.
+
+|CRS |`CRS=EPSG:4326` |Optional, zero or one |The coordinate reference system of the requested map. Shall be implemented by both client and server. If not specified, the default value is the native CRS of the frame.
+
+|BBox |`BBOX=10.0,10.0,10.1,10.1` |Optional, zero or one |The bounding box of the map in the specified CRS. General model: `Bbox=minx,miny,maxx,maxy`. Shall be implemented by both client and server. If not specified, the default value covers the entire frame.
+
+|Time |`Time= F234/F345/FS1` |Mandatory, one |Time period is specified either in ISO 8601 time format, or absolute frame numbers. Shall be implemented by both client and server.
+
+|Metadata a|`Metadata=Basic,Sensor,Platform` +
+`Metadata=All` |Optional, zero or one |A comma-separated ordered list of zero or more names of sections of metadata to be returned. At least the value of *All* shall be implemented. If not set or empty, it means *Metadata=All*. Shall be implemented by both client and server.
+
+|Options.OPTION_NAME |`Options.jpeg_yuv=420` |Optional, zero or one |Vendor specific options for this request. Extends the request. (Default: Options=). Shall be optionally implemented by both client and server.
+|===
+
+
+=== IS:GetPathMap
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Parameter name h|KVP Example h|Optionality/ multiplicity h|Definition, format and use
+
+|Service |`Service=IS` |Mandatory, one |The value shall be IS
+
+|Request |`Request=GetPathMap` |Mandatory, one |The value shall be *GetPathMap*
+
+|Version |`Version=1.0.2` |Mandatory, one  |Version number of service. Shall be implemented by both client and server.
+
+|Accept Languages |`AcceptLanguages=en-US` |Optional, zero or one |Please refer to *[WAMI OVERVIEW]*
+
+|Exceptions |`Exceptions=XML` |Optional, zero or one |Sets the format of the exception.
+
+|Format |`Format=image/jpeg` |Mandatory, one |Output format of the maps. Shall be implemented by both client and server.
+
+|CRS |`CRS=EPSG:4326` |Mandatory, one |The coordinate reference system of the requested maps. Shall be implemented by both client and server.
+
+|Width |`Width=1024` |Mandatory, one |Width in pixels of the output map pictures. Shall be implemented by both client and server.
+
+|Height |`Height=1024` |Mandatory, one |Height in pixels of the output map pictures. Shall be implemented by both client and server.
+
+|Styles |`Styles=` |Mandatory, one |Comma separated list of one rendering style per requested collection. Shall be implemented by both client and server.
+
+|Transparent |`Transparent=TRUE` |Optional, zero or one |Background transparency of the maps (Default: Transparent=FALSE). Shall be implemented by both client and server.
+
+|Bgcolor |`Bgcolor= 0x000000` |Optional, zero or one |Hexadecimal red-green-blue color value for the background color. (Default: Bgcolor=0x000000). Shall be implemented by both client and server.
+
+|Metadata |`Metadata=All` |Optional, zero or one |A comma-separated ordered list of zero or more names of sections of metadata to be returned. If not set or empty, it means do not send metadata with image data. Shall be optionally implemented by both client and server.
+
+|Options.OPTION_NAME |`Options.jpeg_quality= 75&Options.jpeg_yuv=420` |Optional, zero or one |Vendor specific options for this request. Extends the request. (Default: Options=). Shall be optionally implemented by both client and server.
+
+|Path |`Path=URL EncodedXML` |Mandatory, one |Specifies the tracks to be rendered by the service. Shall be implemented by both client and server.
+|===
+
+
+=== IS:GetPathMapInfo
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Parameter name h|KVP Example h|Optionality/ multiplicity h|Definition, format and use
+
+|Service |`Service=IS` |Mandatory, one |The value shall be IS
+
+|Request |`Request=GetPathMapInfo` |Mandatory, one |The value shall be GetPathMap
+
+|Version |`Version=1.0.2` |Mandatory, one  |Version number of service. Shall be implemented by both client and server.
+
+|Accept Languages |`AcceptLanguages=en-US` |Optional, zero or one |Please refer to *[WAMI OVERVIEW]*
+
+|Exceptions |`Exceptions=XML` |Optional, zero or one |Sets the format of the exception.
+
+|Format |`Format=applicaton/xml` |Mandatory, one |Output format of the maps. Shall be implemented by both client and server.
+
+|CRS |`CRS=EPSG:4326` |Mandatory, one |The coordinate reference system of the requested maps. Shall be implemented by both client and server.
+
+|Metadata |`Metadata=All` |Optional, zero or one |A comma-separated ordered list of zero or more names of sections of metadata to be returned. If not set or empty, it means do not send metadata with image data. Shall be optionally implemented by both client and server.
+
+|Options.OPTION_NAME |`Options.jpeg_quality= 75&Options.jpeg_yuv=420` |Optional, zero or one |Vendor specific options for this request. Extends the request. (Default: Options=). Shall be optionally implemented by both client and server.
+
+|Path |`Path=URL EncodedXML` |Mandatory, one |Specifies the tracks to be rendered by the service. Shall be implemented by both client and server.
+|===
+
+
+=== VS:GetMapVideo
+This request analogous to GetMap. Recommend reading the section on DUP in OGC 12-032r2.
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Parameter name h|KVP Example h|Optionality/ multiplicity h|Definition, format and use
+
+|Service |`Service=VS` |Mandatory, one |The value shall be VS
+
+|Request |`Request=GetMapVideo` |Mandatory, one |The value shall be *GetMapVideo*
+
+|Version |`Version=1.0.2` |Mandatory, one  |Version number of service. Shall be implemented by both client and server.
+
+|Accept Languages |`AcceptLanguages=en-US` |Optional, zero or one |Please refer to *[WAMI OVERVIEW]*
+
+|Exceptions |`Exceptions=XML` |Optional, zero or one |Sets the format of the exception.
+
+|Format |`Format=video/mpeg2` |Mandatory, one |Output format of the video stream as a valid MIME type. Shall be implemented by both client and server.
+
+|CID |`CID=UniqID-1234` |Mandatory, one |A comma-separated ordered list of collection identifiers. Each identifier is unique to a collection. Shall be implemented by both client and server.
+
+|CRS |`CRS=EPSG:4326` |Mandatory, one |The coordinate reference system of the requested map. Shall be implemented by both client and server.
+
+|BBox |`BBOX=10.0,10.0,10.1,10.1` |Mandatory, one |The bounding box of the map in the specified CRS. General model: `Bbox=minx,miny, maxx,maxy`. Shall be implemented by both client and server.
+
+|Time |`Time=F234/F345/FS1` |Mandatory, one |Range of time specified either as UTC time, UTC time range or absolute frame number or absolute frame number range. Shall be implemented by both client and server.
+
+|Dup |`Dup=1` |Optional, zero or one |Duplicate frames. It specifies the number of times each frame within the time range shall be duplicated. Shall be implemented by both client and server.
+
+|Width |`Width=1280` |Mandatory, one |Width in pixels of the output map pictures. Shall be implemented by both client and server.
+
+|Height |`Height=720` |Mandatory, one |Height in pixels of the output map pictures. Shall be implemented by both client and server.
+
+|Styles |`Styles=` |Mandatory, one |Comma-separated list of one rendering style per requested collection. An empty list implies default styles. Shall be implemented by both client and server.
+
+|Transparent |`Transparent=TRUE` |Optional, zero or one |Background transparency of the maps (Default: Transparent=FALSE). Shall be implemented by both client and server.
+
+|Bgcolor |`Bgcolor=0x000000` |Optional, zero or one |Hexadecimal red-green-blue color value for the background color. (Default: Bgcolor=0x000000). Shall be implemented by both client and server.
+
+|Metadata |`Metadata=Basic,Sensor,Platform` |Optional, zero or one |A comma-separated ordered list of zero or more names of sections of metadata to be returned. If not set or empty, it means do not send metadata with image data. Shall be optionally implemented by both client and server.
+
+|Options |`Options.mpeg2.codec= h264&Options.mpeg2.stream= transport&Options.mpeg2.kbps= 3000&Options.mpeg2.fps=29.97` |Optional, zero or one |Vendor specific options for this request. Extends the request. (Default: Options=). Shall be optionally implemented by both client and server.
+|===
+
+
+=== VS:GetPathMapVideo
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Parameter name h|KVP Example h|Optionality/ multiplicity h|Definition, format and use
+
+|Service |`Service=VS` |Mandatory, one |The value shall be VS
+
+|Request |`Request=GetPathMapVideo` |Mandatory, one |The value shall be *GetPathMapVideo*
+
+|Version |`Version=1.0.2` |Mandatory, one  |Version number of service. Shall be implemented by both client and server.
+
+|Accept Languages |`AcceptLanguages=en-US` |Optional, zero or one |Please refer to *[WAMI OVERVIEW]*
+
+|Exceptions |`Exceptions=XML` |Optional, zero or one |Sets the format of the exception.
+
+|Format |`Format= video/mpeg` |Mandatory, one |Output format of the video stream. Shall be implemented by both client and server.
+
+|CRS |`CRS=EPSG:4326` |Mandatory, one |The coordinate reference system of the requested maps. Shall be implemented by both client and server.
+
+|Width |`Width=1280` |Mandatory, one |Width in pixels of the output video stream. Shall be implemented by both client and server.
+
+|Height |`Height=720` |Mandatory, one |Height in pixels of the output video stream. Shall be implemented by both client and server.
+
+|Styles |`Styles=` |Mandatory, one |Comma separated list of one rendering style per requested collection. Shall be implemented by both client and server.
+
+|Transparent |`Transparent= TRUE` |Optional, zero or one |Background transparency of the maps (Default: Transparent=FALSE). Shall be implemented by both client and server.
+
+|Bgcolor |`Bgcolor= 0x000000` |Optional, zero or one |Hexadecimal red-green-blue color value for the background color. (Default: Bgcolor=0x000000). Shall be implemented by both client and server.
+
+|Metadata |`Metadata=MISP61` |Optional, zero or one |A comma-separated ordered list of zero or more names of sections of metadata to be returned. If not set or empty, it means do not send metadata with image data. Shall be optionally implemented by both client and server.
+
+|Options |`Options.mpeg2.codec= h264&Options.mpeg2.stream= transport&Options.mpeg2.kbps= 3000&Options.mpeg2.fps=29.97` |Optional, zero or one Vendor specific options for this request. Extends the request. (Default: Options=). Shall be optionally implemented by both client and server.
+
+|Path |`Path=URL Encoded XML` |Mandatory, one |Specifies the tracks to be rendered by the service. Shall be implemented by both client and server.
+|===

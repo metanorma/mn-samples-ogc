@@ -1,0 +1,89 @@
+
+== Time
+Time value or range is set by the TIME parameter as absolute frame numbers or as ISO time. Frame based access is efficient, TIME based access is flexible. Both forms of time are explicit and do not leave room for ambiguity. The tables below have been captured from the original document to summarize the syntax. A client can ask for image data or metadata:
+
+. At a single instant in time
+. Within a window in time, with controlled increments
+. Within multiple windows in time, with controlled increments for each time window
+
+
+=== Time value KVP syntax
+
+[%unnumbered]
+[cols="3"]
+|===
+h|KVP Syntax h|Meaning h|Interpretation
+
+|*value* |A single time value of as frame number or instant of time of acquisition |Get one map at this time value
+
+|stem:[bb "value"_1,bb "value"_2, bb "value"_3] ... |A list of explicit multiple values |Get multiple maps, each at the specified time value
+
+|*min/max/resolution* |An interval defined by its lower and upper bounds and its resolution. Lower and upper bounds are time values. |Get multiple maps, starting from min, up to and including _max_, in steps of _resolution_.
+
+a|stem:[bb "min"_1 // bb "max"_1 // bb "res"_1,] +
+stem:[bb "min"_2 // bb "max"_2 // bb "res"_2] ... |A list of multiple intervals. |Repeat the above process for multiple time intervals.
+
+|*recurring_interval/ value/resolution* |An interval defined by a recurring time interval designator, interval start time value and its resolution. |Get a total of _recurring_interval_ maps, starting from the time value, and increment time value by resolution for each consecutive map.
+
+a|stem:[bb "int"_1 // bb "value"_1 // bb "res"_1,] +
+stem:[bb "int"_2 // bb "value"_2 // bb "res"_2] ... |A list of multiple intervals. |Repeat the above process for multiple time intervals.
+
+|*recurring_interval/ min/max* |An interval defined by a recurring time interval designator, and by its lower and upper bounds (time values). |Get a total of _recurring_interval_ maps, starting from time value min, up to and including time value max, dispersed evenly from min to max.
+
+a|stem:[bb "int"_1 // bb "min"_1 // bb "max"_1,] +
+stem:[bb "int"_2 // bb "min"_2 // bb "max"_2]... |A list of multiple intervals. |Repeat the above process for multiple time intervals.
+|===
+
+
+=== Frame basedTIME
+
+[%unnumbered]
+[cols="2"]
+|===
+h|Syntax h|Interpretation
+
+|*F[FRAME]* |Get one map from frame number FRAME.
+|*F[START]/F[END]/FS[STEP]* |Get multiple maps from frame number START, up to and including frame number END, incrementing the frame number from START in steps of STEP. To go backward, set END < START. STEP stem:[!=] 0.
+|*R[N]/F[START]/FS[STEP]* |Get N frames starting from START, increasing each subsequent frame by STEP. STEP is an integer. STEP < 0, go backward. STEP > 0, go forward. STEP stem:[!=] 0.
+|*R[N]/F[START]/F[END]* |Get a total of N frames, starting from frame START and ending at frame END. To go backwards, set END < START. N > 0.
+|===
+
+
+Frame based time is efficient. It directly maps to required data. ISO time of acquisition (TOA) requires mapping the time to an absolute frame. Client's ISO time map 1:1 with a frame's TOA. If it does not, any ambiguity is resolved as specified in the "`*Temporal mismatch*`" section below.
+
+[%unnumbered]
+[cols="2"]
+|===
+h|Example KVP Requests h|Meaning
+
+|*Time=F100* |One map of frame number 11 from a collection
+|*Time=F100/F2629* |From frame 100 to 2629; expect 2530 maps
+|*Time=F100/F2629/FS2* |From frame 100 to 2629; in increments of 2; expect 1265 maps
+|*Time=F200/F100/FS2* |From frame 200 to 100 (backward); in increments of 2; expect 51 maps
+|*Time=R10/F200/FS2* |From 200; in increments of 2; expect 10 maps from 200, 202 ... 216, and 218.
+|*Time=R10/F200* |Expect 10 maps, from frame 200 up to and including 209.
+|*Time=R10/F200/FS-2* |From 200; in decrements of 2; expect 10 maps from 200, 198, 196 ... 184, and 182.
+|*Time=F1,F11,F21,F31,F41* |Expect 5 maps from frames 1, 11, 21, 31 and 41 in that order.
+|*Time=F1/F11,F21/F31,F34/F44* |Expect 33 maps from 1 to 11, followed by 21 to 31, followed by 34 to 44.
+|*Time=F1/F11/FS2,F21/F31/FS3,F34/F44/FS2* |Frames 1 to 11 in steps of 2; frames 21 to 31 in steps of 3; frames 34 to 44 in steps of 2; expect 16 maps.
+|===
+
+
+=== ISO time based TIME
+TIME parameter value is also based on ISO 8601. It is best illustrated by way of examples.
+
+[%unnumbered]
+[cols="2"]
+|===
+h|Example KVP Requests h|Meaning
+
+|*Time=2008-08-20T15:04:26.772Z* |Retrieve one map with the specified time of acquisition (TOA)
+|*Time=2008-08-20T15:04:26.772Z/2008-08-20T15:29:35.9733Z* |Retrieve all maps between the specified interval(s).
+|*Time=2008-08-20T15:04:26.772Z/2009-08-20T15:29:35.9733Z/P3D* |Retrieve all maps between specified interval(s), with each map from the 2008 date to the 2009 date at a 3 day intervals.
+|*Time=2008-08-20T15:04:26.772Z/2009-08-20T15:29:35.9733Z/P1M15D* |Retrieve all maps between specified interval(s), with each map from the 2008 date tothe 2009 date at a 1 month and 15 day interval.
+|*Time=2008-08-20T15:04:26.772Z/2009-08-20T15:29:35.9733Z/P1M, 2010-08-20T15:04:26.7702Z/2011-08-20T15:29:35.9733Z/P1D* |Retrieve all maps within two separate intervals (playlist), the first range is at a month's interval per frame and the second range is at a day's interval per frame.
+|*Time=2008-08-20T15:04:26.772Z/2008-08-20T15:29:35.9733Z/PT1.5S* |Retrieve all maps between the specified ranges, with every map from the 2008 date until the 2009 date at a 1.5 second intervals.
+|*Time=R100/2008-08-20T15:04:26.772Z* |Retrieve 100 consecutive maps starting from the 2008 date and time, moving forward in time, at an interval that is the same as the capture rate of each consecutive frame in that collection.
+|*Time=R100/2008-08-20T15:04:26.772Z/PT1.5S* |Retrieve 100 consecutive maps starting from the 2008 date and time, moving forward in time, with each subsequent map at increments of 1.5 seconds.
+|*Time=R60/2008-08-20T15:04:01Z/2008-08-20T15:04:90Z* |Retrieve 60 consecutive maps starting from the 2008 date,from 15:04:01 until 15:04:90 UTC, moving forward in time. Based on the request for 60 consecutive maps, the period computes to about PT1.509S.
+|===

@@ -1,0 +1,20 @@
+
+== Video Service
+The Video Service is notionally identical to the IS. Instead of a flipbook of images, it delivers a video clip of those images. If the content format supports the addition of metadata, it is included. See <<annex-subsec-vs>> in <<annex-examples>>.
+
+
+=== Summary of all requests
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Request h|Meaning h|Parameters h|Optionality
+
+|*GetCapabilities* |Allows the client to retrieve metadata about the capabilities of the IS server implementation |`Service, Request, Sections, AcceptVersions, AcceptFormats,  AcceptLanguages, UpdateSequence` |Mandatory
+
+|*GetHelp* |Allows the client to retrieve help on topics provided by the server |`Service, Request, Version, Topic, Format` |Optional
+
+|*GetMapVideo* |Retrieves an area of interest from a sequence of frames from one or more collections of WAMI data as one video stream or video file in a supported standard format. See <<annex-requests-summerized>> for a summary. |`Service, Request, Version, Format, CID, CRS, BBox, Width, Height, Styles, Transparent, Bgcolor, Time, Dup, Metadata, Options` |Mandatory
+
+|*GetPathMapVideo* |Retrieves an area of interest from a sequence of frames from one or more collections of WAMI data as one video stream or video file in a supported standard format. The information about the collection, time periods and bounding AOIs is supplied as a *path*.  |`Service, Request, Version, Format, CRS, Width, Height, Styles, Transparent, Bgcolor, Dup, Metadata, Method, Options, Path` |Optional
+|===

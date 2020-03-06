@@ -1,0 +1,33 @@
+
+== What is WAMI?
+Wide Area Motion Imagery (WAMI), in its various forms, is also referred to as Wide Area Airborne Surveillance (WAAS), Wide Area Persistent Surveillance (WAPS), Persistent Wide Area Surveillance (PWAS), Wide Area Surveillance (WAS), and Large Volume Streaming Data (LVSD). There are a host of other terms that may also be in use in the community.
+
+[[fig-example-wami-sensor]]
+.Example WAMI sensor
+image::fig-example-wami-sensor.png[]
+
+[[fig-six-camera-pov]]
+.Six-camera POV
+image::fig-six-camera-pov.png[]
+
+
+[[fig-six-camera-ground-coverage]]
+.Six-camera ground coverage
+image::fig-six-camera-ground-coverage.png[]
+
+[[fig-one-ortho-rectified-wami-frame-with-one-aoi-zoomed-in-at-100]]
+.One ortho-rectified WAMI frame with one AOI zoomed in at 100%
+image::fig-one-ortho-rectified-wami-frame-with-one-aoi-zoomed-in-at-100.png[]
+
+
+Simply put, WAMI captures a _video_ of an area the size of a town or city, day and night. It is a system that uses one or more _cameras_ mounted on the some form of a gimbal on an aircraft or blimp to capture a very large area on the ground, from about once every second up to several times per second. _Persistent surveillance_ captures the same general area on the ground over a length of time.
+
+[[fig-wami-image-size-comparison]]
+.WAMI image size comparison
+image::fig-wami-image-size-comparison.png[]
+
+For example, a WAMI sensor may have six high resolution cameras that may take pictures about twice a second. Set to look down and face outwards from each other at a slight angle, a picture from each camera overlaps pictures from adjacent cameras. The system is mounted inside or outside an airborne platform. The platform also has GPS / IMU capability. The system records pictures, and position data.
+
+Using this information, for each instant in time, a software tool can combine separate images into one large image. It can perform image processing operations using digital elevation models (DEMs) to generate fairly accurate maps many times a second. Each map may have geo-spatial data, a sub-second time of acquisition, and additional metadata complimenting the captured data. WAMI can be used for pattern analysis such as tracking, forensics, and fused with sensors to create a common operating picture.
+
+Different sensors may implement radically different technologies. Sensors may change from being a mosaic of CCDs, a single large CCD, or a mosaic of multiple cameras. The end result is a big picture of a vast region on the ground taken frequently. An example is shown in <<fig-example-wami-sensor>> to <<fig-one-ortho-rectified-wami-frame-with-one-aoi-zoomed-in-at-100>>.

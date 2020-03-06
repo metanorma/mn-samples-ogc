@@ -1,0 +1,12 @@
+
+== Operational use
+The introduction of WAMI to operational users provided a monumental gain in Intelligence, Surveillance, and Reconnaissance (ISR) collection and exploitation. Considerable Geospatial Intelligence (GEOINT) was available from a single platform.  Full Motion Video (FMV) platforms provided a small field view on a specific target or area of interest. WAMI provides persistent coverage over large areas which previously required multiple FMV platforms. Operational commanders can send a single platform over an area of interest. Both forward operators and exploitation centers in the rear can use this data to meet their objectives.
+
+[[fig-fmv-vs-wami-coverage]]
+.FMV vs. WAMI coverage
+image::fig-fmv-vs-wami-coverage.png[]
+
+
+To meet their objectives, exploitation centers employ different Electronic Light Table (ELT) software.  These ELT packages can use the proposed standard to stream and exploit WAMI data.  This is a positive shift in implementing services to meet changing ISR needs without impacting their architecture.  The exploitation workflow is beginning to employ more automatic methods to consume imagery which in-turn generate more data, such as tracks, events, moving target indicators (MTI), and video clips.
+
+Current initiatives will applyinnovative methods to analyze exploding amounts of big data. New analytics tools will generate what is known as activity based intelligence (ABI) from WAMI. The value of WAMI increases when merged with sources such as Light Detection and Ranging (LiDAR), Hyperspectral Imagery (HSI), National Technical Means (NTM) imagery, aerial maps, Synthetic Aperture Radar (SAR), FMV, traffic cameras, and metadata feeds such as ABI metadata, ground moving target indicators(GMTI) tracks, and signal intelligence (SIGINT).

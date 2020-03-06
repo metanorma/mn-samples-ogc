@@ -1,0 +1,15 @@
+
+[.preface]
+== Revision history
+
+[%unnumbered]
+[cols="5"]
+|===
+h|Date h|Release h|Authors h|Paragraph modified h|Description
+
+|04/02/2012 |Draft |R Thakkar |All |Original draft document
+|04/12/2012 |Draft |J Zinter, M Maraist, R Thakkar |Edits, info, examples |Release candidate
+|04/20/2012 |Draft |R Thakkar |Exec. summary, examples |Release candidate
+|05/02/2012 |Draft |R Thakkar |Edits, appendix A & B, RS |Release candidate
+|08/30/2012 |1.0 |R Thakkar |Edits for best practice doc |For release to OGC
+|===

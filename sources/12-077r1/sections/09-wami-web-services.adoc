@@ -1,0 +1,93 @@
+
+== WAMI web services
+This section answers the question of "`What types of web services should serve WAMI data?`" To identify these services, the first step is to set ground rules to maintain design focus.
+
+. AWAMI service should perform no more than one task and do it well.
+. AWAMI service specification should be simple, extensible and easy to develop to.
+. AWAMI service grammar should be based on current generation models and specifications.
+. An existing specification should not be jerry-rigged to fit WAMI needs.
+. For WAMI, X, Y, Z and T are one. (Z -> zoom-level)
+
+Using these principles, we have based the WAMI services model on RESTful HTTP following the OGC paradigm for its grammar. We used OWS, WMS, WCS, KML, GML, SensorML, AWS, HTTP 1.1 WebDAV, and a few other specifications as a reference point and defined simple WAMI services.
+WAMI services were divided into three types:
+
+. *Core services* manage and access WAMI data directly. They may consult each other as well
+. *Alert services* focus on providing the status of WAMI data and services availability
+. *Derived services* enrich other services to provide an enhanced perspective of the data
+
+=== Core services
+
+[%unnumbered]
+[cols="3"]
+|===
+h|WAMI Service h|About h|Requests
+
+|*Collection Service (CS)* |Informs a client as to what data is being served by this service. It provides metadata incrementally to avoid client information overload. CS can be implicitly federated. CS presents metadata about the data hierarchically with a list of available content delivery services (IS, VS…) as part of that metadata; in a format of choice. |GetCapabilities, GetHelp, GetCollectionCount, GetCollections
+
+|*Image Service (IS)* |Given the input of one or more areas of interest as bounding boxes, one or more time windows, a coordinate reference system and other data; IS delivers maps as images and metadata in a format of choice. CS also delivers metadata that turns an IS into a tile service and an AOI flip-book service. The response can be an image, image + metadata, frame metadata, multiple images, multiple images + metadata, metadata for frames. |GetCapabilities, GetHelp, GetMap, GetMapInfo, GetPathMap, GetPathMapInfo
+
+|*Video Service (VS)* |This service is similar to IS. Instead of delivering content as a flipbook of separate images and metadata, it delivers popular / standard video streams. |GetCapabilities, GetHelp, GetMapVideo, GetPathMapVideo
+
+|*Raw Service (RS)* |This service provides a simple spatiotemporal interface to deliver the original content, unmodified. |In development
+|===
+
+==== Which service to use and when?
+For any level of overall metadata, use CS. If pixels have to be manipulated (for example, planar or ortho-rectified to serve a map), use IS, or VS. For raw camera space data, unblemished, use RS. IS and RS can serve the same dataset. As web services, they can operate on the same dataset to get different results - IS provides a derived result like raster tiles and AOI images, RS provides the original raw data.
+
+=== Alert Services
+Alert services answer the question, "`For a given datasets I am interested in, how do I know that something changed?`" where, "`something changed`" can be: A new dataset appeared, a sensor started collecting and live data is available on-board, missions were archived due to age or lack of use, etc. They can be of two forms: _push_ and _pull_. We recommend using RSS for pulled alerts and XMPP for pushed alerts. GeoRSS GML fulfills WAMI needs. GeoRSS Simple is adequate for basic WAMI needs. The GML schema can be pulled using GeoRSS services or pushed via XMPP-based service.
+
+[%unnumbered]
+[cols="2"]
+|===
+h|WAMI Service h|About
+
+|*RSS* |A client pulls content from an RSS feed. GeoRSS is recommended. GeoRSS GML delivers all WAMI needs. GeoRSS Simple is adequate for critical WAMI data.
+|*XMPP* |XMPP services push data to subscribing clients. GML is the recommended schema.
+|===
+
+=== Derived services
+Derived WAMI services utilize CS, IS, RS or VS to perform their task.
+
+==== Query Service
+A Query Service (QS) lives on top of collection services. It is analogous to putting a search engine on top of XML metadata. Existing search engine interfaces are becoming de facto standards. Google, Amazon, and Oracle are examples. Any of these could act as QS grammar. Research is recommended.
+
+
+==== Live WAMI
+By virtue of having a CS and an IS, a "`flipbook`" based live playback service can be implemented. A client app would get overall metadata about a mission that is being collected. For example, as part of the CS response, a service informs the client that the mission end point is unbounded (_live_), along with the most recent frame's number and time stamp. Using an IS, should a client try to get an image past __ "`now`" __, an exception reports information about un-captured frames. The most recent frame's metadata indicates that it is so. Such coordinated metadata reporting permits a client to develop a frame-based DVR footnote:[DVR - Digital Video Recorder, for example, TiVO(R).] with pan/zoom control. This model merges the notion of _live_ and _archive_ in one. The next step is to create a "`streaming video channel`" updating based on control commands.
+
+PIXIA Corp is developing a Video Control and Streaming Service (VCSS) specification. VCSS employs HTTP to control what is displayed in channels of video streams. A client sends commands such as pan, zoom, and play real-time, faster, slower, jump to live, change settings, etc. A server updates AOIs in time and space. The related video stream reflects it. The feed is a "`postage stamp view`" over a large area. Video could be UHD, HD or less, based on connection capabilities. The video may be 30 Hz, but the pictures in the video may update at a client controlled rate or at the acquisition rate, depending on whether you are playing from the __ "`archive`" __ or __ "`live`" __. VCSS does not control a sensor or its platform.
+
+[[fig-example-vcss-pipeline]]
+.Example VCSS pipeline
+image::fig-example-vcss-pipeline.png[]
+
+
+==== Virtual File System
+While SOA caters to today's internet model, file access is still common. Tools require image and video files, and XML. Vendors may not have time to implement HTTP services. They may have to support legacy client tools that are many years old, and have been adapted to suite immediate WAMI needs. If a file-based WAMI service was available, it could assist in a phased migration to web services.
+
+===== _Avoid vendor lockdown_
+WAMI sensors and vendors can store and manage data the way they seem fit. If WAMI data is ingested into a system by one vendor how can a customer switch to another vendor? If a vendor presents WAMI data over HTTP as files, migration is as trivial as initiating a copy from one vendor to another.
+
+[[fig-virtual-file-system-using-http11-webdav]]
+.Virtual file system using HTTP 1.1 WebDAV
+image::fig-virtual-file-system-using-http11-webdav.png[]
+
+===== _HTTP 1.1 WebDAV_
+After extensive research, we found that HTTP 1.1 WebDAV (RFC 2518) with read-only capability is sufficient. Implementing HEAD, OPTIONS, PROPFIND and GET is adequate. Presenting WAMI data as a sequence of files in a customer supported format is critical for:
+
+. Avoiding vendor lockdown
+. Vendor to vendor migration
+. Providing a transitional solution for file-based tools
+
+A vendor can also virtualize a WebDAV implementation by presenting WAMI data in multiple layouts via a Virtual File System (VFS). The folder structure in <<fig-virtual-file-system-using-http11-webdav>> is just an example. A folder layout may be vendor specific. It is prudent to have XMLs (or JSONs) at each folder's level with relevant. VFS folders, files and XMLs don't really exist. A VFS makes you believe they do and presents a file system experience over secure HTTP. WebDAV clients ship free with Windows, Linux and Mac.
+
+[%unnumbered]
+[cols="2"]
+|===
+h|WAMI Service h|About
+
+|*Query Service (QS)* |QS filters one or more CS. It's a search engine over a set of CS. See NoSQL HTTP APIs by Google, Amazon, Oracle, etc.
+|*Video Control and Streaming Service (VCSS)* |VCSS provides DVR-like controls over HTTP with the video stream itself coming over a "`channel`" which could be streams of UDP or TCP.
+|*Virtual File System (VFS)* |VFS makes a client believe that WAMI data is a set of folders and files in a known format. It presents raw or processed WAMI in its original form as image files, and XML files, and derived ortho-rectified frames as image files of known types. The files don't actually exist.
+|===

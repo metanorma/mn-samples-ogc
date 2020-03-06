@@ -1,0 +1,38 @@
+
+== Collection Service
+The Collection Service or CS allows a client to discover what collections of WAMI data are being served by a service implementation. See examples in <<annex-examples>>.
+
+=== Definition of a WAMI data _Collection_
+A *collection* of WAMI data is a *set* of WAMI data such that each *element* or *frame* of this set of WAMI data is temporally sequential from the previous element. An *element* or *frame* of WAMI data can be a single image or a group of images that constitute a single logical picture of an instant in time. Data storage and retrieval model is specification independent.
+
+
+=== CS data model
+
+[[fig-collection-tree-served-by-a-collection-service]]
+.Collection tree served by a collection service
+image::fig-collection-tree-served-by-a-collection-service.png[]
+
+[[fig-a-leaf-node-is-a-wami-collection]]
+.A leaf node is a WAMI collection
+image::fig-a-leaf-node-is-a-wami-collection.png[]
+
+
+CS draws its structure heavily from the industry as well as multiple OGC specifications of presenting the organization of a set of maps, metadata, raster data, vector data, and video. Hierarchical data is generally presented in the form of an inverted tree structure. In computer science a tree is a widely-used data structure that emulates a hierarchical tree structure with a set of linked nodes. For the purpose of this specification, a *Collection Tree* is a data structure that is an _ordered directed tree_, more specifically arborescence: a connected acyclic graph where each node has zero or more _children_ nodes and at most one parent node. Furthermore, the children of each node have a specific order.
+
+A node is a structure which may contain a value, a condition or represent a separate data structure. A _childnode_ is hierarchically below a node and a node that has a child is the _parentnode_ of that child. Nodes without children are _leaf nodes_ or _terminal nodes_. Nodes with children are also known as _inner nodes_. The first node of the tree has zero parent nodes and is the _root node_. A connection between nodes is called an _edge_ or a _link_. The path from the root node to any node is unique and may be traversed through the links. Each collection (as defined above), is unique from all other collections.
+
+In the figure, you can also see a possible organizational structure that may get used practically.
+
+
+=== Summary of all requests
+
+[%unnumbered]
+[cols="4"]
+|===
+h|Request h|Meaning h|Parameters h|Optionality
+
+|*GetCapabilities* |Allows the client to retrieve metadata about the capabilities of the CS service implementation |`Service, Request, Sections, AcceptVersions, AcceptFormats,  AcceptLanguages, UpdateSequence,` |Mandatory
+|*GetHelp* |Allows the client to retrieve help on topics provided by the server |`Service, Request, Version, Topic, Format` |Optional
+|*GetCollectionCount* |Retrieves the number of collections being served by the server |`Service, Request, Version, Format, AcceptLanguages, NID, Depth, CRS, Bbox, Time` |Optional
+|*GetCollections* |Retrieves the set of collections being served by the server. Result is as a tree.Incremental node by node traversal is available from any tree node. Complete or partial collection metadata can be retrieved. |`Service, Request, Version, Format, NID, Metadata, Depth, CRS, Bbox, Time` |Mandatory
+|===
