@@ -1,3 +1,4 @@
 
-== OGC 12-032r2describes CS, IS and VS
+== OGC 12-032r2 describes CS, IS and VS
+
 OGC 12-032r2 presents Collection, Image and Video Services. All other services have not been presented in that document. Further work is warranted and community participation is requested using an OGC SWG on WAMI. PIXIA has offered to start it.
