@@ -46,6 +46,8 @@ jobs:
       - name: Install yq
         run: |
           which yq
+          /usr/bin/yq
+          /usr/bin/yq -V
           dpkg --list
           sudo snap install yq
           yq r metanorma.yml metanorma.source.files
