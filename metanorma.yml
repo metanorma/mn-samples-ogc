@@ -20,17 +20,6 @@ metanorma:
       sources/18-016r1.xml: sources/18-016r1/document.adoc
       sources/18-046.xml: sources/18-046/document.adoc
       sources/18-053r2.xml: sources/18-053r2/document.adoc
-    built_type:
-      sources/00-027.xml: ogc
-      sources/05-020r26.xml: ogc
-      sources/05-020r27.xml: ogc
-      sources/08-062r7.xml: ogc
-      sources/10-100r3.xml: ogc
-      sources/16-080.xml: ogc
-      sources/17-069.xml: ogc
-      sources/18-016r1.xml: ogc
-      sources/18-046.xml: ogc
-      sources/18-053r2.xml: ogc
 relaton:
   collection:
     organization: "OGC: The Open Geospatial Consortium"
