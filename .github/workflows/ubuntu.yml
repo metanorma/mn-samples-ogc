@@ -45,6 +45,8 @@ jobs:
           sudo chown -R $USER:$(id -gn $USER) $HOME/.config
       - name: Install yq
         run: |
+          which yq
+          dpkg --list
           sudo snap install yq
           yq r metanorma.yml metanorma.source.files
       - name: Metanorma compile
