@@ -14,7 +14,7 @@ endif
 endif
 
 FORMATS := $(shell yq r metanorma.yml metanorma.formats | tr -d '[:space:]' | tr -s '-' ' ')
-ifeq ($(FORMATS),null)
+ifeq ($(FORMATS),)
 FORMAT_MARKER := mn-output-
 FORMATS := $(shell grep "$(FORMAT_MARKER)" $(SRC) | cut -f 2 -d ' ' | tr ',' '\n' | sort | uniq | tr '\n' ' ')
 endif
@@ -59,12 +59,7 @@ sources/%.xml: | bundle
 
 # Build derivative output
 sources/%.html sources/%.doc sources/%.pdf:	sources/%.xml
-	BUILT_TYPE=$(shell yq r metanorma.yml metanorma.source.built_type[$<]); \
-	if [ "$$BUILT_TYPE" != "null" ]; then \
-		$(PREFIX_CMD) metanorma -t $$BUILT_TYPE $<; \
-	else \
-		$(PREFIX_CMD) metanorma $<; \
-	fi
+	$(PREFIX_CMD) metanorma $<; \
 
 documents.rxl: $(XML)
 	echo "$(FORMATS)"; \
