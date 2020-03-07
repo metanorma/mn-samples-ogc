@@ -46,10 +46,11 @@ jobs:
       - name: Install yq
         run: |
           sudo snap install yq
+          yq r metanorma.yml metanorma.source.files
       - name: Metanorma compile
         env:
           JAVA_OPTS: "java.awt.headless=true"
         run: |
           source $HOME/.nvm/nvm.sh
           nvm use mn-node
-          make clean all publish
+          make clean all publish -j4
