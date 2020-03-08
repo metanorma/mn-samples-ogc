@@ -43,14 +43,10 @@ jobs:
         run: |
           curl -L https://raw.githubusercontent.com/metanorma/metanorma-linux-setup/master/ubuntu.sh | sudo bash
           sudo chown -R $USER:$(id -gn $USER) $HOME/.config
-      - name: Install yq
-        run: |
-          which yq
-          /usr/bin/yq
-          /usr/bin/yq -V
-          dpkg --list
-          sudo snap install yq
-          yq r metanorma.yml metanorma.source.files
+      # - name: Install yq
+      #   run: |
+      #     sudo snap install yq
+      #     yq r metanorma.yml metanorma.source.files
       - name: Metanorma compile
         env:
           JAVA_OPTS: "java.awt.headless=true"
