@@ -53,4 +53,4 @@ jobs:
         run: |
           source $HOME/.nvm/nvm.sh
           nvm use mn-node
-          make clean all publish -j4
+          make clean all publish
