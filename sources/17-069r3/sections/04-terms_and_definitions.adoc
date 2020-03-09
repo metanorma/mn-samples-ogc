@@ -5,15 +5,22 @@ This document uses the terms defined in Sub-clause 5.3 of [OGC 06-121r9], which 
 
 === dataset
 
-collection of data, published or curated by a single agent, and available for access or download in one or more formats <<dcat,[DCAT]>>
+collection of data, published or curated by a single agent, and available for access or download in one or more formats 
+
+[.source]
+<<dcat>>
 
 NOTE: The use of 'collection' in the definition from <<dcat,[DCAT]>> is broader than the use of the term collection in this specification. See the definition of <<term-feature_collection,'feature collection'>>.
 
 === distribution
 
-represents an accessible form of a *dataset* <<dcat,[DCAT]>>
+represents an accessible form of a *dataset* 
 
-EXAMPLE: a downloadable file, an RSS feed or an API.
+[.source]
+<<dcat>>
+
+[example]
+a downloadable file, an RSS feed or an API.
 
 === feature
 
@@ -30,7 +37,10 @@ NOTE: In this specification, 'collection' is used as a synonym for 'feature coll
 
 === Web API
 
-API using an architectural style that is founded on the technologies of the Web <<dwbp,[DWBP]>>
+API using an architectural style that is founded on the technologies of the Web 
+
+[.source]
+<<dwbp,DWBP>>
 
 NOTE: https://www.w3.org/TR/dwbp/#APIHttpVerbs[Best Practice 24: Use Web Standards as the foundation of APIs] in the <<dwbp,W3C Data on the Web Best Practices>> provides more detail.
 
