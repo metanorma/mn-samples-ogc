@@ -1,5 +1,7 @@
 = API - Features - Part 1: Core
-:doctype: other
+:doctype: standard
+:docsubtype: implementation
+:edition: 1.0
 :language: en
 :status: approved
 :committee: technical
@@ -14,7 +16,7 @@
 :role: editor
 :keywords: ogcdoc, OGC document, OGC API, ISO, ISO/TC 211, geographic information, Geospatial API, Web Feature Service, WFS, feature, features, property, geographic information, spatial data, spatial things, dataset, distribution, API, OpenAPI, GeoJSON, GML, HTML, schema.org
 :submitting-organizations: CubeWerx Inc.; Heazeltech LLC; Hexagon; interactive instruments GmbH; Ordnance Survey; Planet Labs; US Army Geospatial Center (AGC)
-:docfile: 17-069r3.adoc
+:docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
@@ -51,4 +53,3 @@ include::sections/91-annexB.adoc[]
 
 include::sections/92-annexC.adoc[]
 
-// include::90-annexD.adoc[]
