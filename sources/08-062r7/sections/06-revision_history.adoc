@@ -28,8 +28,8 @@ Approved by OAB for release.
 
 
 
-[quote, Jerome K Jerome, 1886]
+[quote, "Jerome K Jerome, 1886"]
 We are so bound together that no man can labor for himself alone. Each blow he strikes in his own behalf helps to mold the Universe.
 
-[quote, William James, 1890]
+[quote, "William James, 1890"]
 Wisdom is knowing what to leave out
