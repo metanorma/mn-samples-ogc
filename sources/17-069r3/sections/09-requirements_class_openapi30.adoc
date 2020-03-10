@@ -67,6 +67,7 @@ Clients have to be prepared to receive responses not documented in the OpenAPI d
 [example]
 .An exception response object definition
 ====
+[%unnumbered]
 [source,xml]
 ----
 description: An error occurred.
