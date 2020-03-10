@@ -122,6 +122,7 @@ properties:
 [example]
 .Landing page response document
 ====
+[%unnumbered]
 [source,json]
 ----
 {
@@ -237,6 +238,7 @@ properties:
 ====
 This example response in JSON is for a server that supports OpenAPI 3.0 for the API definition and HTML and GeoJSON as encodings for features.
 
+[%unnumbered]
 [source,json]
 ----
 {
@@ -327,6 +329,7 @@ If a server wants to support vendor specific parameters, these have to be explic
 If OpenAPI is used to represent the API definition, a capability exists to allow additional parameters without explicitly declaring them. That is, parameters that have not been explicitly specified in the API definition for the operation will be ignored.
 
 .OpenAPI schema for additional "free-form" query parameters
+[%unnumbered]
 [source,xml]
 ----
 in: query
@@ -829,6 +832,7 @@ If the parameter `collectionId` does not exist on the server, the status code of
 |===
 ^.^h| Requirement 20 h| /req/core/fc-limit-definition
 ^.^| A a| The operation SHALL support a parameter `limit` with the following characteristics (using an OpenAPI Specification 3.0 fragment): +
+[%unnumbered]
 [source,xml]
 ----
 name: limit
@@ -873,6 +877,7 @@ A template for the definition of the parameter in YAML according to OpenAPI 3.0 
 |===
 ^.^h| Requirement 22 h| /req/core/fc-bbox-definition
 ^.^| A a| The operation SHALL support a parameter `bbox` with the following characteristics (using an OpenAPI Specification 3.0 fragment): +
+[%unnumbered]
 [source,xml]
 ----
 name: bbox
@@ -933,6 +938,7 @@ A template for the definition of the parameter in YAML according to OpenAPI 3.0 
 |===
 ^.^h| Requirement 24 h| /req/core/fc-time-definition
 ^.^| A a| The operation SHALL support a parameter `datetime` with the following characteristics (using an OpenAPI Specification 3.0 fragment): +
+[%unnumbered]
 [source,xml]
 ----
 name: datetime
@@ -953,6 +959,7 @@ explode: false
 ^.^| B | If a feature has multiple temporal properties, it is the decision of the server whether only a single temporal property is used to determine the extent or all relevant temporal properties.
 ^.^| C | The `datetime` parameter SHALL match all features in the collection that are not associated with a temporal geometry, too.
 ^.^| D a| Temporal geometries are either a date-time value or a time interval. The parameter value SHALL conform to the following syntax (using https://tools.ietf.org/html/rfc2234[ABNF]): +
+[%unnumbered]
 [source,xml]
 ----
 interval-closed     = date-time "/" date-time
@@ -1009,6 +1016,7 @@ A template for the definition of the parameter in YAML according to OpenAPI 3.0 
 |===
 ^.^h| Recommendation 12 h| /rec/core/fc-filters
 ^.^| A a| If features in the feature collection include a feature property that has a simple value (for example, a string or integer) that is expected to be useful for applications using the service to filter the features of the collection based on this property, a parameter with the name of the feature property and with the following characteristics (using an OpenAPI Specification 3.0 fragment) SHOULD be supported: +
+[%unnumbered]
 [source,xml]
 ----
 in: query
@@ -1024,6 +1032,7 @@ The `schema` property SHOULD be the same as the definition of the feature proper
 [example]
 .An additional parameter to filter buildings based on their function
 ====
+[%unnumbered]
 [source,xml]
 ----
 name: function
@@ -1048,6 +1057,7 @@ example: 'function=public+use'
 [example]
 .An additional parameter to filter buildings based on their name
 ====
+[%unnumbered]
 [source,xml]
 ----
 name: name
