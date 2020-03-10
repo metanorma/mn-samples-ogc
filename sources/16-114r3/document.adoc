@@ -1,0 +1,42 @@
+= Moving Features Encoding Extension: netCDF
+:doctype: best-practice
+:language: en
+:status: approved
+:committee: technical
+:docnumber: 16-114r3
+:received-date: 2016-11-08
+:issued-date: 2018-03-13
+:published-date: 2018-12-18
+:edition: 1.0
+:external-id: http://www.opengis.net/doc/BP/moving-features-ext-netCDF/1.0
+:referenceURLID: http://docs.opengeospatial.org/bp/16-114r3/16-114r3.html
+:fullname: Martin Desruisseaux
+:role: editor
+:keywords: ogcdoc, OGC document, Best Practice, moving features, netCDF, CF convention, trajectory
+:submitting-organizations: Central Research Laboratory, Hitachi Ltd.; Geomatys
+:docfile: 16-114r3.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+
+include::sections/00-preface.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-conformance.adoc[]
+
+include::sections/03-references.adoc[]
+
+include::sections/04-terms_and_definitions.adoc[]
+
+include::sections/05-conventions.adoc[]
+
+include::sections/06-data_model.adoc[]
+
+include::sections/07-data_structure_and_file_format.adoc[]
+
+include::sections/90-annexA.adoc[]
+
+include::sections/91-annexB.adoc[]

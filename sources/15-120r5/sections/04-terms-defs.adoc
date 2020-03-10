@@ -1,0 +1,16 @@
+
+== Terms and Definitions
+A complete glossary of Terms and Definitions used in this standard are contained in OGC CDB Volume 3. The following description of a synthetic environment is provided as context for this Primer.
+
+The synthetic environment is a representation of the natural environment at a specific geographical location including the external features of the man-made structures and systems. Therefore, the synthetic environment includes the terrain, the terrain features (both natural and manmade), three-dimensional (3D) models of vehicles, the ocean surface, and the ocean bottom, including features (both natural and man-made) on the ocean floor. In addition, the synthetic environment includes the specific attributes of the synthetic environment data as well as their relationships. The CDB Standard is more than just a means of creating visual (aka out-the-window) scenery. Unlike other simulation industry standards that only deal with data representational types of polygons, colors, and textures, CDB deals with all the data types needed in high-end virtual and constructive simulation applications.
+
+=== Abbreviations
+*CGF*:: Computer Generated Forced
+*DB*:: Database
+*DIS*:: Distributed Interactive Simulation [IEEE std 1278]
+*DBGF*:: Database Generation Facility [IEEE std 1516]
+*IG*:: Image Generator
+*LOS*:: Line of Sight
+*NVG*:: Night Vision Googles
+*OTW*:: Out the Window
+*RTP*:: Runtime Publisher

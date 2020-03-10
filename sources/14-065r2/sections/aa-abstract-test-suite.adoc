@@ -9,30 +9,56 @@ Tests and requirement identifiers below are relative to *http://www.opengis.net/
 === Basic WPS (Conformance Class)
 The OGC URI identifier of this conformance class is: *http://www.opengis.net/spec/WPS/2.0/conf/service/profile/basic-wps*
 
+[requeriment,type="verification"]
+====
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id:	|conf/service/profile/basic-wps
-|Test purpose:	|Verify that the server implements the Basic WPS conformance class.
-|Test method:	a|Verify that the server implements the Synchronous WPS and/or the Asynchronous WPS conformance class. Verify that the requests and responses to a supported operation are syntactically correct. Verify that the service supports the Synchronous WPS Conformance class, the Asynchronous WPS Conformance class or both. Verify that all process offerings implement the native process model. Verify the following list of conformance tests:
+[requirement,type="general",label="Test id"]
+======
+conf/service/profile/basic-wps
+======
+
+[recommendation,type="general",label="Test purpose"]
+======
+Verify that the server implements the Basic WPS conformance class.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Verify that the server implements the Synchronous WPS and/or the Asynchronous WPS conformance class. Verify that the requests and responses to a supported operation are syntactically correct. Verify that the service supports the Synchronous WPS Conformance class, the Asynchronous WPS Conformance class or both. Verify that all process offerings implement the native process model. Verify the following list of conformance tests:
 
 - <<annex-subsec-process-xml-encoding>>, <<annex-subsec-process-data-types-xml-encoding>>
 - <<annex-subsec-synchronous-wps-conformance-class>> and/or <<annex-subsec-asynchronous-wps-conformance-class>>
-|===
+======
+
+====
+
 
 [[annex-subsec-synchronous-wps-conformance-class]]
 === Synchronous WPS (Conformance Class)
 The OGC URI identifier of this conformance class is: *http://www.opengis.net/spec/WPS/2.0/conf/service/synchronous-wps*
 
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id:	|conf/service/synchronous-wps
-|Requirement:	|req/service/model/synchronous-wps/sync-execute
-|Test purpose:	|Verify that the server correctly advertises synchronous execution capabilities. Verify that the server correctly implements all operations that are mandatory for synchronous execution.
-|Test method:	a|Verify that the GetCapabilities, DescribeProcess and Execute operations appear in the ows:OperationsMetadata element.
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/service/synchronous-wps
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/service/model/synchronous-wps/sync-execute
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server correctly advertises synchronous execution capabilities. Verify that the server correctly implements all operations that are mandatory for synchronous execution.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Verify that the GetCapabilities, DescribeProcess and Execute operations appear in the ows:OperationsMetadata element.
 
 Verify that the server offers at least one wps:ProcessSummary element whose "`jobControlOptions`" attribute contains "`sync-execute`".
 
@@ -42,19 +68,36 @@ Verify that the service supports at least one binding (e.g. HTTP GET/POST) for e
 - <<annex-subsec-getcapabilities-post-xml-encoding-request-response>> and/or <<annex-subsec-getcapabilities-get-kvp-encoding-request-response>>
 - <<annex-subsec-describeprocess-post-xml-encoding-request-response>> and/or <<annex-describeprocess-get-kvp-encoding-request-response>>
 - <<annex-subsec-synchronous-excute-post-xml-encoding-request-response>>, <<annex-subsec-auto-execute-post-xml-encoding-request-response>>.
-|===
+======
+
+====
 
 [[annex-subsec-asynchronous-wps-conformance-class]]
 === Asynchronous WPS (Conformance Class)
 The OGC URI identifier of this conformance class is: *http://www.opengis.net/spec/WPS/2.0/conf/service/asynchronous-wps*
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id:	|conf/service/asynchronous-wps
-|Requirement:	|req/service/model/asynchronous-wps
-|Test purpose:	|Verify that the server correctly advertises asynchronous execution capabilities. Verify that the server correctly implements all operations that are mandatory for asynchronous execution.
-|Test method:	a|Verify that the GetCapabilities, DescribeProcess, Execute, GetStatus and GetResult operations appear in the ows:OperationsMetadata element.
+
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/service/asynchronous-wps
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/service/model/asynchronous-wps
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server correctly advertises asynchronous execution capabilities. Verify that the server correctly implements all operations that are mandatory for asynchronous execution.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Verify that the GetCapabilities, DescribeProcess, Execute, GetStatus and GetResult operations appear in the ows:OperationsMetadata element.
 
 Verify that the server offers at least one wps:ProcessSummary element whose "`jobControlOptions`" attribute contains "`async-execute`".
 
@@ -66,7 +109,9 @@ Verify that the service supports at least one binding (e.g. HTTP GET/POST) for e
 - <<annex-subsec-asynchronous-execute-post-xml-encoding-request-response>>, <<annex-subsec-auto-execute-post-xml-encoding-request-response>>
 - <<annex-subsec-getstatus-post-xml-encoding-request-response>> and/or <<annex-subsec-getstatus-get-kvp-encoding-request-response>>
 - <<annex-subsec-getresult-post-xml-encoding-request-response>> and / or <<annex-subsec-getresult-get-kvp-encoding-request-response>>
-|===
+======
+
+====
 
 [[annex-subsec-wps-process-model-encoding-conformance-class]]
 === WPS Process Model Encoding (Conformance Class)
@@ -76,38 +121,86 @@ The OGC URI identifier of this conformance class is:
 [[annex-subsec-process-xml-encoding]]
 ==== Process XML Encoding
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id:	|conf/process-model-encoding/xml-encoding/process
-|Requirement:	|req/native-process/xml-encoding/process
-|Test purpose:	|Verify that a given process description is in compliance with the Process XML encoding.
-|Test method:	|Verify that the tested document fulfils all requirements listed in req/native-process/xml-encoding/process.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/process-model-encoding/xml-encoding/process
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/native-process/xml-encoding/process
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that a given process description is in compliance with the Process XML encoding.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Verify that the tested document fulfils all requirements listed in req/native-process/xml-encoding/process.
+======
+
+====
 
 
 ==== Generic Process XML Encoding
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |conf/process-model-encoding/xml-encoding/generic-process
-|Requirement: |req/native-process/xml-encoding/generic-process
-|Test purpose: |Verify that a given generic process description is in compliance with the generic process XML encoding.
-|Test method: |Verify that the tested document fulfils all requirements listed in req/native-process/xml-encoding/generic-process.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/process-model-encoding/xml-encoding/generic-process
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/native-process/xml-encoding/generic-process
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that a given generic process description is in compliance with the generic process XML encoding.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Verify that the tested document fulfils all requirements listed in req/native-process/xml-encoding/generic-process.
+======
+
+====
 
 [[annex-subsec-process-data-types-xml-encoding]]
 ==== Process data types XML Encoding
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id:	|conf/process-model-encoding/xml-encoding/datatypes
-|Requirement:	|req/native-process/xml-encoding/datatypes
-|Test purpose:	|Verify that any XML data type description and values that are used in conjunction with the native process model are encoded in compliance with the process model XML encoding.
-|Test method:	|For *ComplexData* descriptions: Test passes if the tested XML fragment validates against _wps:ComplexData_. For LiteralData descriptions: Test passes if the tested XML fragment validates against wps:LiteralData. For *BoundingBoxData* descriptions: Test passes if the tested XML fragment validates against _wps:BoundingBoxData_. For *ComplexData values*: No general test available; the correctness of complex data values must be tested against a particular data type specification given by mime type, encoding and schema. For *LiteralData values*: Test passes if the tested XML fragment validates against wps:LiteralValue. For *BoundingBoxData values*: Test passes if the tested XML fragment validates against _ows:BoundingBox_.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/process-model-encoding/xml-encoding/datatypes
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/native-process/xml-encoding/datatypes
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that any XML data type description and values that are used in conjunction with the native process model are encoded in compliance with the process model XML encoding.
+======
+
+[requirement,type="general",label="Test method"]
+======
+For *ComplexData* descriptions: Test passes if the tested XML fragment validates against _wps:ComplexData_. For LiteralData descriptions: Test passes if the tested XML fragment validates against wps:LiteralData. For *BoundingBoxData* descriptions: Test passes if the tested XML fragment validates against _wps:BoundingBoxData_. For *ComplexData values*: No general test available; the correctness of complex data values must be tested against a particular data type specification given by mime type, encoding and schema. For *LiteralData values*: Test passes if the tested XML fragment validates against wps:LiteralValue. For *BoundingBoxData values*: Test passes if the tested XML fragment validates against _ows:BoundingBox_.
+======
+
+====
 
 
 
@@ -116,254 +209,557 @@ The OGC URI identifier of this conformance class is:
 [[annex-subsec-request-service-name]]
 ==== Request service name
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id:	|*conf/common-wps/handling/service*
-|Requirement:	|*req/service/model/handling/service*
-|Test purpose:	|Verify that the correctly handles the service name parameter.
-|Test method:	a|For each request type, send valid requests to server under test. Modulate service parameter:
+[requeriment,type="verification"]
+====
 
-- Parameter value equal to what is required. Verify that request succeeds. 
+[requirement,type="general",label="Test id"]
+======
+*conf/common-wps/handling/service*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/service/model/handling/service*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the correctly handles the service name parameter.
+======
+
+[requirement,type="general",label="Test method"]
+======
+For each request type, send valid requests to server under test. Modulate service parameter:
+
+- Parameter value equal to what is required. Verify that request succeeds.
 - Parameter value not equal to what is required. Verify that request fails. Overall test passes if all individual tests pass.
-|===
+======
+
+====
 
 [[annex-subsec-request-version-number]]
 ==== Request version number
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id:	|*conf/common-wps/handling/version*
-|Requirement:	|*req/service/model/handling/version*
-|Test purpose:	|Verify that the correctly handles the service version parameter.
-|Test method:	a|For each request type, send valid requests to server under test. Modulate the version parameter: 
+[requeriment,type="verification"]
+====
 
-- Parameter value equal to what is required. Verify that request succeeds. 
+[requirement,type="general",label="Test id"]
+======
+*conf/common-wps/handling/version*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/service/model/handling/version*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the correctly handles the service version parameter.
+======
+
+[requirement,type="general",label="Test method"]
+======
+For each request type, send valid requests to server under test. Modulate the version parameter:
+
+- Parameter value equal to what is required. Verify that request succeeds.
 - Parameter value not equal to what is required. Verify that request fails. Overall test passes if all individual tests pass.
-|===
+======
+
+====
 
 [[annex-subsec-input-data-transmission-by-value]]
 ==== Input data transmission by value
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |*conf/common-wps/data-transmission/input-by-value*
-|Requirement: |*req/conceptual-model/data-transmission/input-by-value*
-|Test purpose: |Verify that the server correctly handles input data transmission by value.
-|Test method: |Send Execute requests to the server under test with valid inputs passed by value. Test passed if the execution finishes successfully.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+*conf/common-wps/data-transmission/input-by-value*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/conceptual-model/data-transmission/input-by-value*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server correctly handles input data transmission by value.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send Execute requests to the server under test with valid inputs passed by value. Test passed if the execution finishes successfully.
+======
+
+====
 
 [[annex-subsec-input-data-transmission-by-reference]]
 ==== Input data transmission by reference
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |*conf/common-wps/input-by-reference*
-|Requirement: |*req/conceptual-model/data-transmission/input-by-reference*
-|Test purpose: |Verify that the server correctly handles input data transmission by reference.
-|Test method: |Send Execute requests to the server under test with valid inputs passed by reference. Test passed if the execution finishes successfully.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+*conf/common-wps/input-by-reference*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/conceptual-model/data-transmission/input-by-reference*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server correctly handles input data transmission by reference.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send Execute requests to the server under test with valid inputs passed by reference. Test passed if the execution finishes successfully.
+======
+
+====
 
 [[annex-subsec-output-data-transmission-by-value]]
 ==== Output data transmission by value
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |*conf/common-wps/data-transmission/output-by-value*
-|Requirement: |*req/conceptual-model/data-transmission/output-by-value*
-|Test purpose: |Verify that the server correctly handles output data transmission by value.
-|Test method: |Check the available process offerings for outputs that can be retrieved by value. If there is an output that can be retrieved by value, send an Execute request to the server requesting the output by value. Test passes if a valid Execute response is returned containing the requested output. Skip this test if no output can be retrieved by value.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+*conf/common-wps/data-transmission/output-by-value*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/conceptual-model/data-transmission/output-by-value*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server correctly handles output data transmission by value.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Check the available process offerings for outputs that can be retrieved by value. If there is an output that can be retrieved by value, send an Execute request to the server requesting the output by value. Test passes if a valid Execute response is returned containing the requested output. Skip this test if no output can be retrieved by value.
+======
+
+====
 
 [[annex-output-data-transmission-by-reference]]
 ==== Output data transmission by reference
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |*conf/common-wps/data-transmission/output-by-reference*
-|Requirement: |*req/conceptual-model/data-transmission/output-by-reference*
-|Test purpose: |Verify that the server correctly handles output data transmission by reference.
-|Test method: |Check the available process offerings for outputs that can be retrieved by reference. If there is an output that can be retrieved by reference, send an Execute request to the server requesting the output by reference. Test passes if a valid Execute response is returned containing a reference to the requested output. Skip this test if no output can be retrieved by reference.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+*conf/common-wps/data-transmission/output-by-reference*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/conceptual-model/data-transmission/output-by-reference*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server correctly handles output data transmission by reference.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Check the available process offerings for outputs that can be retrieved by reference. If there is an output that can be retrieved by reference, send an Execute request to the server requesting the output by reference. Test passes if a valid Execute response is returned containing a reference to the requested output. Skip this test if no output can be retrieved by reference.
+======
+
+====
 
 [[annex-subsec-unique-process-identifier]]
 ==== Unique process identifier
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id:	|*conf/common-wps/identifier*
-|Requirement:	|*req/conceptual-model/process/identifier*
-|Test purpose:	|Verify that each process the server offers has a unique identifier.
-|Test method:	|Get all available processes from the server under test. Test passes if all processes have a unique identifier.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+*conf/common-wps/identifier*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/conceptual-model/process/identifier*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that each process the server offers has a unique identifier.
+======
+[requirement,type="general",label="Test method"]
+======
+Get all available processes from the server under test. Test passes if all processes have a unique identifier.
+======
+
+====
 
 [[annex-subsec-unique-job-identifier]]
 ==== Unique job identifier
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |*conf/common-wps/job/identifier*
-|Requirement: |*req/conceptual-model/job/identifier*
-|Test purpose: |Verify that the server creates a unique jobID for each job.
-|Test method: |Send more than one asynchronous Execute requests to the server under test. Test passes if the retrieved JobIDs differ from each other.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+*conf/common-wps/job/identifier*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/conceptual-model/job/identifier*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server creates a unique jobID for each job.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send more than one asynchronous Execute requests to the server under test. Test passes if the retrieved JobIDs differ from each other.
+======
+
+====
 
 [[annex-subsec-getcapabilities-post-xml-encoding-request-response]]
 ==== GetCapabilities POST/XML encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |*conf/service/binding/post-xml/get-capabilities/request-response*
-|Requirement: |*req/service/binding/post-xml/get-capabilities/request req/service/binding/post-xml/get-capabilities/response*
-|Test purpose: |Verify that the server can handle GetCapabilities requests via POST/XML.
-|Test method: |Send a valid GetCapabilities request to the server under test. Test passes if a valid document of the type _wps:Capabilities_ is returned.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+*conf/service/binding/post-xml/get-capabilities/request-response*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/service/binding/post-xml/get-capabilities/request req/service/binding/post-xml/get-capabilities/response*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle GetCapabilities requests via POST/XML.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send a valid GetCapabilities request to the server under test. Test passes if a valid document of the type _wps:Capabilities_ is returned.
+======
+
+====
 
 [[annex-subsec-describeprocess-post-xml-encoding-request-response]]
 ==== DescribeProcess POST/XML encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |conf/service/binding/post-xml/describe-process/*request-response*
-|Requirement: |*req/service/binding/post-xml/describe-process/request req/service/binding/post-xml/describe-process/response*
-|Test purpose: |Verify that the server can handle DescribeProcess requests via POST/XML.
-|Test method: |Send a valid DescribeProcess request to the server under test. Test passes if a valid document of the type _wps:ProcessOfferings_ is returned.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/service/binding/post-xml/describe-process/*request-response*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/service/binding/post-xml/describe-process/request req/service/binding/post-xml/describe-process/response*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle DescribeProcess requests via POST/XML.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send a valid DescribeProcess request to the server under test. Test passes if a valid document of the type _wps:ProcessOfferings_ is returned.
+======
+
+====
 
 [[annex-subsec-synchronous-excute-post-xml-encoding-request-response]]
 ==== Synchronous Execute POST/XML encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |conf/service/binding/post-xml/execute-sync/request-response
-|Requirement: |req/service/binding/post-xml/execute/request req/service/binding/post-xml/execute/response  
-|Test purpose: |Verify that the server can handle synchronous Execute requests via POST/XML.
-|Test method: a|Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`sync`". Modulate the "`response`" parameter: 
+[requeriment,type="verification"]
+====
 
-- Parameter value equal "`document`". Verify that a valid Execute _wps:Result_ is returned.   
+[requirement,type="general",label="Test id"]
+======
+conf/service/binding/post-xml/execute-sync/request-response
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/service/binding/post-xml/execute/request req/service/binding/post-xml/execute/response
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle synchronous Execute requests via POST/XML.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`sync`". Modulate the "`response`" parameter:
+
+- Parameter value equal "`document`". Verify that a valid Execute _wps:Result_ is returned.
 - Parameter equal to "`raw`". Verify that is returned. Overall test passes if all individual tests pass.
-|===
+======
+
+====
 
 [[annex-subsec-asynchronous-execute-post-xml-encoding-request-response]]
 ==== Asynchronous Execute POST/XML encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |conf/service/binding/post-xml/execute-async/request-response
-|Requirement: |req/service/binding/post-xml/execute/request req/service/binding/post-xml/execute/response  
-|Test purpose: |Verify that the server can handle asynchronous Execute requests via POST/XML.
-|Test method: |Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Test passes if a valid Execute _wps:StatusInfo_ document is returned.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/service/binding/post-xml/execute-async/request-response
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/service/binding/post-xml/execute/request req/service/binding/post-xml/execute/response
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle asynchronous Execute requests via POST/XML.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Test passes if a valid Execute _wps:StatusInfo_ document is returned.
+======
+
+====
 
 [[annex-subsec-auto-execute-post-xml-encoding-request-response]]
 ==== Auto Execute POST/XML encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id:	|*conf/service/binding/post-xml/execute-auto/request-response*
-|Requirement:	|*req/service/binding/post-xml/execute/request req/service/binding/post-xml/execute/response*
-|Test purpose:	|Verify that the server can handle the execution mode "`auto`" requested via POST/XML.
-|Test method:	a|Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`auto`". Modulate the "`response`" parameter. 
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+*conf/service/binding/post-xml/execute-auto/request-response*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/service/binding/post-xml/execute/request req/service/binding/post-xml/execute/response*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle the execution mode "`auto`" requested via POST/XML.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`auto`". Modulate the "`response`" parameter.
 
 . If the process offering supports document output set "`response`" parameter value equal "`document`". Check the execute response according to the following cases:
 
 .. If the process offering supports "`sync-execute`" and not "`async-execute`": Verify that a valid Execute wps:Result document is returned.
 .. If the process offering supports "`async-execute`" and not "`sync-execute`": Verify that a valid Execute wps:StatusInfo document is returned.
-.. If the process offering supports "`sync-execute`" and "`async-execute`": Verify that a valid Execute wps:Result document or a valid wps:StatusInfo document is returned.   
+.. If the process offering supports "`sync-execute`" and "`async-execute`": Verify that a valid Execute wps:Result document or a valid wps:StatusInfo document is returned.
 
 . If the process offering supports raw output set "`response`" parameter equal to "`raw`". Check the execute response according to the following cases:
 
 .. If the process offering supports "`sync-execute`" and not "`async-execute`": Verify that valid that raw data is returned.
 .. If the process offering supports "`async-execute`" and not "`sync-execute`": Verify that a valid Execute wps:StatusInfo document is returned.
 .. If the process offering supports "`sync-execute`" and "`async-execute`": Verify that raw data or a valid wps:StatusInfo document is returned. Overall test passes if all individual tests pass.
-|===
+======
+
+====
 
 [[annex-subsec-getstatus-post-xml-encoding-request-response]]
 ==== GetStatus POST/XML encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |*conf/service/binding/post-xml/get-status/request-response*
-|Requirement: |*req/service/binding/post-xml/get-status/request req/service/binding/post-xml/get-status/response*  
-|Test purpose: |Verify that the server can handle GetStatus requests via POST/XML.
-|Test method: |Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Verify that a valid _wps:StatusInfo_ document is returned. Extract the _wps:JobID_. Send a valid XML GetStatus request to the server under test using the extracted JobID. Test passes if a valid _wps:StatusInfo_ document is returned.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+*conf/service/binding/post-xml/get-status/request-response*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/service/binding/post-xml/get-status/request req/service/binding/post-xml/get-status/response*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle GetStatus requests via POST/XML.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Verify that a valid _wps:StatusInfo_ document is returned. Extract the _wps:JobID_. Send a valid XML GetStatus request to the server under test using the extracted JobID. Test passes if a valid _wps:StatusInfo_ document is returned.
+======
+
+====
 
 [[annex-subsec-getresult-post-xml-encoding-request-response]]
 ==== GetResult POST/XML encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |conf/service/binding/get-kvp/describe-process/request-response
-|Requirement: |req/service/binding/get-kvp/describe-process/request req/service/binding/get-kvp/describe-process/response  
-|Test purpose: |Verify that the server can handle DescribeProcess requests via GET/KVP.
-|Test method: |Send a valid KVP DescribeProcess request to the server under test, modulating upper and lower case of the parameter names. Test passes if a valid document of the type _wps:ProcessOfferings_ is returned.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/service/binding/get-kvp/describe-process/request-response
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/service/binding/get-kvp/describe-process/request req/service/binding/get-kvp/describe-process/response
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle DescribeProcess requests via GET/KVP.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send a valid KVP DescribeProcess request to the server under test, modulating upper and lower case of the parameter names. Test passes if a valid document of the type _wps:ProcessOfferings_ is returned.
+======
+
+====
 
 [[annex-subsec-getcapabilities-get-kvp-encoding-request-response]]
 ==== GetCapabilities GET/KVP encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |conf/service/binding/get-kvp/get-capabilities/request-response
-|Requirement: |req/service/binding/get-kvp/get-capabilities/request req/service/binding/get-kvp/get-capabilities/response  
-|Test purpose: |Verify that the server can handle GetCapabilities requests via GET/KVP.
-|Test method: |Send a valid KVP GetCapabilities request to the server under test, modulating upper and lower case of the parameter names. Test passes if a valid document of the type _wps:Capabilities_ is returned.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/service/binding/get-kvp/get-capabilities/request-response
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/service/binding/get-kvp/get-capabilities/request req/service/binding/get-kvp/get-capabilities/response
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle GetCapabilities requests via GET/KVP.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send a valid KVP GetCapabilities request to the server under test, modulating upper and lower case of the parameter names. Test passes if a valid document of the type _wps:Capabilities_ is returned.
+======
+
+====
 
 [[annex-describeprocess-get-kvp-encoding-request-response]]
 ==== DescribeProcess GET/KVP encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |conf/service/binding/get-kvp/describe-process/request-response
-|Requirement: |req/service/binding/get-kvp/describe-process/request req/service/binding/get-kvp/describe-process/response  
-|Test purpose: |Verify that the server can handle DescribeProcess requests via GET/KVP.
-|Test method: |Send a valid KVP DescribeProcess request to the server under test, modulating upper and lower case of the parameter names. Test passes if a valid document of the type _wps:ProcessOfferings_ is returned.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/service/binding/get-kvp/describe-process/request-response
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/service/binding/get-kvp/describe-process/request req/service/binding/get-kvp/describe-process/response
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle DescribeProcess requests via GET/KVP.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send a valid KVP DescribeProcess request to the server under test, modulating upper and lower case of the parameter names. Test passes if a valid document of the type _wps:ProcessOfferings_ is returned.
+======
+
+====
 
 [[annex-subsec-getstatus-get-kvp-encoding-request-response]]
 ==== GetStatus GET/KVP encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |*conf/service/binding/get-kvp/get-status/request-response*
-|Requirement: |*req/service/binding/get-kvp/get-status/request req/service/binding/get-kvp/get-status/response*
-|Test purpose: |Verify that the server can handle GetStatus requests via GET/KVP.
-|Test method: |Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Verify that a valid _wps:StatusInfo_ document is returned. Extract the _wps:JobID_. Send a valid KVP GetStatus request to the server under test, using the extracted JobID and modulating upper and lower case of the parameter names. Test passes if a valid document of the type _wps:StatusInfo_ is returned.
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+*conf/service/binding/get-kvp/get-status/request-response*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/service/binding/get-kvp/get-status/request req/service/binding/get-kvp/get-status/response*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle GetStatus requests via GET/KVP.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Verify that a valid _wps:StatusInfo_ document is returned. Extract the _wps:JobID_. Send a valid KVP GetStatus request to the server under test, using the extracted JobID and modulating upper and lower case of the parameter names. Test passes if a valid document of the type _wps:StatusInfo_ is returned.
+======
+
+====
 
 [[annex-subsec-getresult-get-kvp-encoding-request-response]]
 ==== GetResult GET/KVP encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id:	|*conf/service/binding/get-kvp/get-result/request-response*
-|Requirement:	|*req/service/binding/get-kvp/get-result/request req/service/binding/get-kvp/get-result/response*  
-|Test purpose:	|Verify that the server can handle GetResult requests via GET/KVP.
-|Test method:	a|Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Modulate the "`response`" parameter. Verify that a valid _wps:StatusInfo_ document is returned. Extract the _wps:JobID_. Check the status of the job. If the job succeeded, send a valid KVP GetResult request to the server under test using the extracted JobID and modulating upper and lower case of the parameter names. Depending on the value of the "`response`" parameter of the above Execute request:
+[requeriment,type="verification"]
+====
 
-- Parameter value equal "`document`". Verify that a valid Execute _wps:Result_ document is returned.   
+[requirement,type="general",label="Test id"]
+======
+*conf/service/binding/get-kvp/get-result/request-response*
+======
+
+[requirement,type="general",label="Requirement"]
+======
+*req/service/binding/get-kvp/get-result/request req/service/binding/get-kvp/get-result/response*
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle GetResult requests via GET/KVP.
+======
+
+[requirement,type="general",label="Test method"]	
+======
+Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Modulate the "`response`" parameter. Verify that a valid _wps:StatusInfo_ document is returned. Extract the _wps:JobID_. Check the status of the job. If the job succeeded, send a valid KVP GetResult request to the server under test using the extracted JobID and modulating upper and lower case of the parameter names. Depending on the value of the "`response`" parameter of the above Execute request:
+
+- Parameter value equal "`document`". Verify that a valid Execute _wps:Result_ document is returned.
 - Parameter equal to "`raw`". Verify that raw is returned. Overall test passes if all individual tests pass.
-|===
+======
+
+====
 
 
 [[annex-subsec-dismiss-extension-conformance-class]]
@@ -372,22 +768,54 @@ The OGC URI identifier of this conformance class is: *http://www.opengis.net/spe
 
 ==== Dismiss POST/XML encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |conf/service/binding/post-xml/dismiss/request-response
-|Requirement: |req/service/binding/post-xml/dismiss/request req/service/binding/post-xml/dismiss/response  
-|Test purpose: |Verify that the server can handle Dismiss requests via POST/XML.
-|Test method: |Precondition: The process offering used for testing must have "`dismiss`" listed among its job control options. Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Verify that a valid _wps:StatusInfo_ document is returned. Extract the _wps:JobID_. Send a valid XML Dismiss request to the server under test using the extracted JobID. Test passes if a valid _wps:StatusInfo_ document is returned containing a _wps:Status_ element with value "`Dismissed`" (case insensitive).
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/service/binding/post-xml/dismiss/request-response
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/service/binding/post-xml/dismiss/request req/service/binding/post-xml/dismiss/response
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle Dismiss requests via POST/XML.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Precondition: The process offering used for testing must have "`dismiss`" listed among its job control options. Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Verify that a valid _wps:StatusInfo_ document is returned. Extract the _wps:JobID_. Send a valid XML Dismiss request to the server under test using the extracted JobID. Test passes if a valid _wps:StatusInfo_ document is returned containing a _wps:Status_ element with value "`Dismissed`" (case insensitive).
+======
+
+====
 
 ==== Dismiss GET/KVP encoding request/response
 
-[%unnumbered]
-[cols="2"]
-|===
-|Test id: |conf/service/binding/get-kvp/dismiss/request-response
-|Requirement: |req/service/binding/get-kvp/dismiss/request req/service/binding/get-kvp/dismiss/response  
-|Test purpose: |Verify that the server can handle Dismiss requests via GET/KVP.
-|Test method: |Precondition: The process offering used for testing must have "`dismiss`" listed among its job control options. Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Verify that a valid _wps:StatusInfo_ document is returned. Extract the _wps:JobID_. Send a valid KVP Dismiss request to the server under test using the extracted JobID and modulating upper and lower case of the parameter names. Test passes if a valid document of the type _wps:StatusInfo_ document is returned containing a _wps:Status_ element with value "`Dismissed`" (case insensitive).
-|===
+[requeriment,type="verification"]
+====
+
+[requirement,type="general",label="Test id"]
+======
+conf/service/binding/get-kvp/dismiss/request-response
+======
+
+[requirement,type="general",label="Requirement"]
+======
+req/service/binding/get-kvp/dismiss/request req/service/binding/get-kvp/dismiss/response
+======
+
+[requirement,type="general",label="Test purpose"]
+======
+Verify that the server can handle Dismiss requests via GET/KVP.
+======
+
+[requirement,type="general",label="Test method"]
+======
+Precondition: The process offering used for testing must have "`dismiss`" listed among its job control options. Send a valid XML Execute request to the server under test, setting the "`mode`" attribute to "`async`". Verify that a valid _wps:StatusInfo_ document is returned. Extract the _wps:JobID_. Send a valid KVP Dismiss request to the server under test using the extracted JobID and modulating upper and lower case of the parameter names. Test passes if a valid document of the type _wps:StatusInfo_ document is returned containing a _wps:Status_ element with value "`Dismissed`" (case insensitive).
+======
+
+====

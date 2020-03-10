@@ -2,7 +2,7 @@
 [[_Tile_format_specifications]]
 == Tile format specifications
 
-Each tile's content.uri property points to a tile that is one of the formats listed in the table below.
+Each tile's `content.uri` property points to a tile that is one of the formats listed in the table below.
 
 [%unnumbered]
 |===
@@ -39,9 +39,9 @@ image::024.png["",700,386]
 
 ===== Padding
 
-A tile's byteLength must be aligned to an 8-byte boundary. The contained <<_Feature_Table,Feature Table>> and <<_Batch_Table,Batch Table>> must conform to their respective padding requirement.
+A tile's `byteLength` must be aligned to an `8`-byte boundary. The contained <<_Feature_Table,Feature Table>> and <<_Batch_Table,Batch Table>> must conform to their respective padding requirement.
 
-The <<_Binary_glTF,binary glTF>> must start and end on an 8-byte boundary so that glTF's byte-alignment guarantees are met. This can be done by padding the Feature Table or Batch Table if they are present.
+The <<_Binary_glTF,binary glTF>> must start and end on an `8`-byte boundary so that glTF's byte-alignment guarantees are met. This can be done by padding the Feature Table or Batch Table if they are present.
 
 
 [[header]]
@@ -53,24 +53,24 @@ The 28-byte header contains the following fields:
 |===
 | Field name | Data type | Description
 
-| magic | 4-byte ANSI string | "b3dm". This can be used to identify the content as a Batched 3D Model tile.
-| version | uint32 | The version of the Batched 3D Model format. It is currently 1.
-| byteLength | uint32 | The length of the entire tile, including the header, in bytes.
-| featureTableJSONByteLength | uint32 | The length of the Feature Table JSON section in bytes.
-| featureTableBinaryByteLength | uint32 | The length of the Feature Table binary section in bytes.
-| batchTableJSONByteLength | uint32 | The length of the Batch Table JSON section in bytes. Zero indicates there is no Batch Table.
-| batchTableBinaryByteLength | uint32 | The length of the Batch Table binary section in bytes. If batchTableJSONByteLength is zero, this will also be zero.
+| `magic` | 4-byte ANSI string | `"b3dm"`. This can be used to identify the content as a Batched 3D Model tile.
+| `version` | `uint32` | The version of the Batched 3D Model format. It is currently `1`.
+| `byteLength` | `uint32` | The length of the entire tile, including the header, in bytes.
+| `featureTableJSONByteLength` | `uint32` | The length of the Feature Table JSON section in bytes.
+| `featureTableBinaryByteLength` | `uint32` | The length of the Feature Table binary section in bytes.
+| `batchTableJSONByteLength` | `uint32` | The length of the Batch Table JSON section in bytes. Zero indicates there is no Batch Table.
+| `batchTableBinaryByteLength` | `uint32` | The length of the Batch Table binary section in bytes. If `batchTableJSONByteLength` is zero, this will also be zero.
 
 |===
 
-The body section immediately follows the header section, and is composed of three fields: Feature Table, Batch Table, and Binary glTF.
+The body section immediately follows the header section, and is composed of three fields: `Feature Table`, `Batch Table`, and `Binary glTF`.
 
 
 ==== Feature Table
 
-Contains values for b3dm semantics.
+Contains values for `b3dm` semantics.
 
-More information is available in the <<_Feature_Table,Feature Table>> specification.
+More information is available in the <<_Feature_Table,Feature Table specification>>.
 
 [[_Semantics_2]]
 ===== Semantics
@@ -89,16 +89,16 @@ These semantics define global properties for all features.
 |===
 | Semantic | Data Type | Description | Required
 
-| BATCH_LENGTH | uint32 | The number of distinguishable models, also called features, in the batch. If the Binary glTF does not have a batchId attribute, this field _must_ be 0. | Yes.
+| `BATCH_LENGTH` | `uint32` | The number of distinguishable models, also called features, in the batch. If the Binary glTF does not have a `batchId` attribute, this field _must_ be 0. | Yes.
 
-| RTC_CENTER | float32[3] | A 3-component array of numbers defining the center position when positions are defined relative-to-center, (see <<coordinate-reference-system-crs,Coordinate system>>). | No.
+| `RTC_CENTER` | `float32[3]` | A 3-component array of numbers defining the center position when positions are defined relative-to-center, (see <<coordinate-reference-system-crs,Coordinate system>>). | No.
 
 |===
 
 
 ==== Batch Table
 
-The _Batch Table_ contains per-model application-specific metadata, indexable by batchId, that can be used for <<_Declarative_styling_specification,declarative styling>> and application-specific use cases such as populating a UI or issuing a REST API request. In the binary glTF section, each vertex has an numeric batchId attribute in the integer range [0, number of models in the batch - 1]. The batchId indicates the model to which the vertex belongs. This allows models to be batched together and still be identifiable.
+The _Batch Table_ contains per-model application-specific metadata, indexable by `batchId`, that can be used for <<_Declarative_styling_specification,declarative styling>> and application-specific use cases such as populating a UI or issuing a REST API request. In the binary glTF section, each vertex has an numeric `batchId` attribute in the integer range `[0, number of models in the batch - 1]`. The `batchId` indicates the model to which the vertex belongs. This allows models to be batched together and still be identifiable.
 
 See the <<_Batch_Table,Batch Table>> reference for more information.
 
@@ -110,23 +110,24 @@ Batched 3D Model embeds https://github.com/KhronosGroup/glTF/tree/master/specifi
 
 The https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#binary-gltf-layout[binary glTF] immediately follows the Feature Table and Batch Table. It may embed all of its geometry, texture, and animations, or it may refer to external sources for some or all of these data.
 
-As described above, each vertex has a batchId attribute indicating the model to which it belongs. For example, vertices for a batch with three models may look like this:
+As described above, each vertex has a `batchId` attribute indicating the model to which it belongs. For example, vertices for a batch with three models may look like this:
 
-batchId: [0, 0, 0, ..., 1, 1, 1, ..., 2, 2, 2, ...] +
-position: [xyz, xyz, xyz, ..., xyz, xyz, xyz, ..., xyz, xyz, xyz, ...] +
-normal: [xyz, xyz, xyz, ..., xyz, xyz, xyz, ..., xyz, xyz, xyz, ...]
+`batchId: [0, 0, 0, ..., 1, 1, 1, ..., 2, 2, 2, ...]` +
+`position: [xyz, xyz, xyz, ..., xyz, xyz, xyz, ..., xyz, xyz, xyz, ...]` +
+`normal: [xyz, xyz, xyz, ..., xyz, xyz, xyz, ..., xyz, xyz, xyz, ...]`
 
-Vertices do not need to be ordered by batchId, so the following is also OK:
+Vertices do not need to be ordered by `batchId`, so the following is also OK:
 
-batchId: [0, 1, 2, ..., 2, 1, 0, ..., 1, 2, 0, ...] +
-position: [xyz, xyz, xyz, ..., xyz, xyz, xyz, ..., xyz, xyz, xyz, ...] +
-normal: [xyz, xyz, xyz, ..., xyz, xyz, xyz, ..., xyz, xyz, xyz, ...]
+`batchId: [0, 1, 2, ..., 2, 1, 0, ..., 1, 2, 0, ...]` +
+`position: [xyz, xyz, xyz, ..., xyz, xyz, xyz, ..., xyz, xyz, xyz, ...]` +
+`normal: [xyz, xyz, xyz, ..., xyz, xyz, xyz, ..., xyz, xyz, xyz, ...]`
 
-Note that a vertex can't belong to more than one model; in that case, the vertex needs to be duplicated so the batchIds can be assigned.
+Note that a vertex can't belong to more than one model; in that case, the vertex needs to be duplicated so the `batchIds` can be assigned.
 
-The batchId parameter is specified in a glTF mesh https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#reference-primitive[primitive] by providing the _BATCHID attribute semantic, along with the index of the batchId https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#accessors[accessor]. For example,
+The `batchId` parameter is specified in a glTF mesh https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#reference-primitive[primitive] by providing the `_BATCHID` attribute semantic, along with the index of the `batchId` https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#accessors[accessor].For example,
 
-[source,ruby]
+[%unnumbered]
+[source,javascript]
 ----
 "primitives": [
   {
@@ -151,9 +152,9 @@ The batchId parameter is specified in a glTF mesh https://github.com/KhronosGrou
 }
 ----
 
-The accessor.type must be a value of "SCALAR". All other properties must conform to the glTF schema, but have no additional requirements.
+The `accessor.type` must be a value of `"SCALAR"`. All other properties must conform to the glTF schema, but have no additional requirements.
 
-When a Batch Table is present or the BATCH_LENGTH property is greater than 0, the _BATCHID attribute is required; otherwise, it is not.
+When a Batch Table is present or the `BATCH_LENGTH` property is greater than `0`, the `_BATCHID` attribute is required; otherwise, it is not.
 
 
 [[coordinate-system]]
@@ -161,14 +162,14 @@ When a Batch Table is present or the BATCH_LENGTH property is greater than 0, th
 
 By default embedded glTFs use a right handed coordinate system where the _y_-axis is up. For consistency with the _z_-up coordinate system of 3D Tiles, glTFs must be transformed at runtime. See glTF transforms for more details.
 
-Vertex positions may be defined relative-to-center for high-precision rendering, see http://help.agi.com/AGIComponents/html/BlogPrecisionsPrecisions.htm[Precisions, Precisions]. If defined, RTC_CENTER specifies the center position that all vertex positions are relative to after the coordinate system transform and glTF node hierarchy transforms have been applied.
+Vertex positions may be defined relative-to-center for high-precision rendering, see http://help.agi.com/AGIComponents/html/BlogPrecisionsPrecisions.htm[Precisions, Precisions]. If defined, `RTC_CENTER` specifies the center position that all vertex positions are relative to after the coordinate system transform and glTF node hierarchy transforms have been applied.
 
 
 ==== File extension and MIME type
 
-Batched 3D Model tiles use the .b3dm extension and application/octet-stream MIME type.
+Batched 3D Model tiles use the `.b3dm` extension and `application/octet-stream` MIME type.
 
-An explicit file extension is optional. Valid implementations may ignore it and identify a content's format by the magic field in its header.
+An explicit file extension is optional. Valid implementations may ignore it and identify a content's format by the `magic` field in its header.
 
 
 ==== Implementation example
@@ -192,10 +193,10 @@ A set of Batched 3D Model semantics that contain additional information about fe
 |===
 | | Type | Description | Required
 
-| *extensions* | object | Dictionary object with extension-specific objects. | No
-| *extras* | any | Application-specific data. | No
-| *BATCH_LENGTH* | object, number[1], number | A <<globalpropertyscalar,GlobalPropertyScalar>> object defining a numeric property for all features. See the corresponding property semantic in <<_Semantics_2,Semantics>>. | Yes
-| *RTC_CENTER* | object, number[3] | A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all features. See the corresponding property semantic in <<_Semantics_2,Semantics>>. | No
+| *extensions* | `object` | Dictionary object with extension-specific objects. | No
+| *extras* | `any` | Application-specific data. | No
+| *BATCH_LENGTH* | `object, number[1], number` | A <<globalpropertyscalar,GlobalPropertyScalar>> object defining a numeric property for all features. See the corresponding property semantic in <<_Semantics_2,Semantics>>. | Yes
+| *RTC_CENTER* | `object, number[3]` | A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all features. See the corresponding property semantic in <<_Semantics_2,Semantics>>. | No
 
 |===
 
@@ -209,7 +210,7 @@ Additional properties are allowed.
 
 Dictionary object with extension-specific objects.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -222,7 +223,7 @@ Dictionary object with extension-specific objects.
 
 Application-specific data.
 
-* *Type*: any
+* *Type*: `any`
 
 * *Required*: No
 
@@ -233,7 +234,7 @@ Application-specific data.
 
 A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a numeric property for all features. See the corresponding property semantic in <<_Semantics_2,Semantics>>.
 
-* *Type*: object, number[1], number
+* *Type*: `object, number[1], number`
 
 * *Required*: Yes
 
@@ -244,11 +245,11 @@ A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a numeri
 
 A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all features. See the corresponding property semantic in <<_Semantics_2,Semantics>>.
 
-* *Type*: object, number[3]
+* *Type*: `object, number[3]`
 
 * *Required*: No
 
-
+[[binarybodyreference_10_1]]
 ====== BinaryBodyReference
 
 An object defining the reference to a section of the binary body of the features table where the property values are stored if not defined directly in the JSON.
@@ -258,7 +259,7 @@ An object defining the reference to a section of the binary body of the features
 [%unnumbered]
 |===
 | | Type | Description | Required
-| *byteOffset* | number | The offset into the buffer in bytes. | Yes
+| *byteOffset* | `number` | The offset into the buffer in bytes. | Yes
 
 |===
 
@@ -269,11 +270,11 @@ Additional properties are allowed.
 
 The offset into the buffer in bytes.
 
-* *Type*: number
+* *Type*: `number`
 
 * *Required*: Yes
 
-* *Minimum*: >= 0
+* *Minimum*: `>= 0`
 
 
 [[globalpropertycartesian3]]
@@ -291,7 +292,7 @@ An object defining a global numeric property values for all features.
 [[_Property_2]]
 ====== Property
 
-A user-defined property which specifies per-feature application-specific metadata in a tile. Values either can be defined directly in the JSON as an array, or can refer to sections in the binary body with a <<_BinaryBodyReference_1],BinaryBodyReference>> object.
+A user-defined property which specifies per-feature application-specific metadata in a tile. Values either can be defined directly in the JSON as an array, or can refer to sections in the binary body with a <<binarybodyreference_10_1,BinaryBodyReference>> object.
 
 
 [[_Instanced_3D_Model]]
@@ -321,11 +322,11 @@ image::025.png["",543,305]
 
 ===== Padding
 
-A tile's byteLength must be aligned to an 8-byte boundary. The contained <<_Feature_Table,Feature Table>> and <<_Batch_Table,Batch Table>> must conform to their respective padding requirement.
+A tile's `byteLength` must be aligned to an `8`-byte boundary. The contained <<_Feature_Table,Feature Table>> and <<_Batch_Table,Batch Table>> must conform to their respective padding requirement.
 
-The <<_glTF,binary glTF>> (if present) must start and end on an 8-byte boundary so that glTF's byte-alignment guarantees are met. This can be done by padding the Feature Table or Batch Table if they are present.
+The <<_Binary_glTF,binary glTF>> (if present) must start and end on an `8`-byte boundary so that glTF's byte-alignment guarantees are met. This can be done by padding the Feature Table or Batch Table if they are present.
 
-Otherwise, if the glTF field is a UTF-8 string, it must be padded with trailing Space characters (0x20) to satisfy alignment requirements of the tile, which must be removed at runtime before requesting the glTF asset.
+Otherwise, if the glTF field is a `UTF-8` string, it must be padded with trailing Space characters (`0x20`) to satisfy alignment requirements of the tile, which must be removed at runtime before requesting the glTF asset.
 
 
 ==== Header
@@ -336,23 +337,23 @@ The 32-byte header contains the following fields:
 |===
 | Field name | Data type | Description
 
-| magic | 4-byte ANSI string | "i3dm". This can be used to identify the content as an Instanced 3D Model tile.
-| version | uint32 | The version of the Instanced 3D Model format. It is currently 1.
-| byteLength | uint32 | The length of the entire tile, including the header, in bytes.
-| featureTableJSONByteLength | uint32 | The length of the Feature Table JSON section in bytes.
-| featureTableBinaryByteLength | uint32 | The length of the Feature Table binary section in bytes.
-| batchTableJSONByteLength | uint32 | The length of the Batch Table JSON section in bytes. Zero indicates that there is no Batch Table.
-| batchTableBinaryByteLength | uint32 | The length of the Batch Table binary section in bytes. If batchTableJSONByteLength is zero, this will also be zero.
-| gltfFormat | uint32 | Indicates the format of the glTF field of the body. 0 indicates it is a uri, 1 indicates it is embedded binary glTF. See the <<gltf,glTF>> section below.
+| `magic` | 4-byte ANSI string | `"i3dm"`. This can be used to identify the content as an Instanced 3D Model tile.
+| `version` | `uint32` | The version of the Instanced 3D Model format. It is currently `1`.
+| `byteLength` | `uint32` | The length of the entire tile, including the header, in bytes.
+| `featureTableJSONByteLength` | `uint32` | The length of the Feature Table JSON section in bytes.
+| `featureTableBinaryByteLength` | `uint32` | The length of the Feature Table binary section in bytes.
+| `batchTableJSONByteLength` | `uint32` | The length of the Batch Table JSON section in bytes. Zero indicates that there is no Batch Table.
+| `batchTableBinaryByteLength` | `uint32` | The length of the Batch Table binary section in bytes. If `batchTableJSONByteLength` is zero, this will also be zero.
+| `gltfFormat` | `uint32` | Indicates the format of the glTF field of the body. `0` indicates it is a uri, `1` indicates it is embedded binary glTF. See the <<gltf,glTF>> section below.
 
 |===
 
-The body section immediately follows the header section and is composed of three fields: Feature Table, Batch Table, and glTF.
+The body section immediately follows the header section and is composed of three fields: `Feature Table`, `Batch Table`, and `glTF`.
 
 
 ==== Feature Table
 
-The Feature Table contains values for i3dm semantics used to create instanced models.
+The Feature Table contains values for `i3dm` semantics used to create instanced models.
 More information is available in the <<_Feature_Table,Feature Table specification>>.
 
 [[_Semantics]]
@@ -366,27 +367,24 @@ These semantics map to an array of feature values that are used to create instan
 
 The value for each instance semantic must be a reference to the Feature Table binary body; they cannot be embedded in the Feature Table JSON header.
 
-If a semantic has a dependency on another semantic, that semantic must be defined.
-
-If both SCALE and SCALE_NON_UNIFORM are defined for an instance, both scaling operations will be applied.
-
-If both POSITION and POSITION_QUANTIZED are defined for an instance, the higher precision POSITION will be used.
-
-If NORMAL_UP, NORMAL_RIGHT, NORMAL_UP_OCT32P, and NORMAL_RIGHT_OCT32P are defined for an instance, the higher precision NORMAL_UP and NORMAL_RIGHT will be used.
+If a semantic has a dependency on another semantic, that semantic must be defined. +
+If both `SCALE` and `SCALE_NON_UNIFORM` are defined for an instance, both scaling operations will be applied. +
+If both `POSITION` and `POSITION_QUANTIZED` are defined for an instance, the higher precision `POSITION` will be used. +
+If `NORMAL_UP`, `NORMAL_RIGHT`, `NORMAL_UP_OCT32P`, and `NORMAL_RIGHT_OCT32P` are defined for an instance, the higher precision `NORMAL_UP` and `NORMAL_RIGHT` will be used.
 
 [%unnumbered]
 |===
 | Semantic | Data Type | Description | Required
 
-| POSITION | float32[3] | A 3-component array of numbers containing x, y, and z Cartesian coordinates for the position of the instance. | Yes, unless POSITION_QUANTIZED is defined.
-| POSITION_QUANTIZED | uint16[3] | A 3-component array of numbers containing x, y, and z in quantized Cartesian coordinates for the position of the instance. | Yes, unless POSITION is defined.
-| NORMAL_UP | float32[3] | A unit vector defining the up direction for the orientation of the instance. | No, unless NORMAL_RIGHT is defined.
-| NORMAL_RIGHT | float32[3] | A unit vector defining the right direction for the orientation of the instance. Must be orthogonal to up. | No, unless NORMAL_UP is defined.
-| NORMAL_UP_OCT32P | uint16[2] | An oct-encoded unit vector with 32-bits of precision defining the up direction for the orientation of the instance. | No, unless NORMAL_RIGHT_OCT32P is defined.
-| NORMAL_RIGHT_OCT32P | uint16[2] | An oct-encoded unit vector with 32-bits of precision defining the right direction for the orientation of the instance. Must be orthogonal to up. | No, unless NORMAL_UP_OCT32P is defined.
-| SCALE | float32 | A number defining a scale to apply to all axes of the instance. | No.
-| SCALE_NON_UNIFORM | float32[3] | A 3-component array of numbers defining the scale to apply to the x, y, and z axes of the instance. | No.
-| BATCH_ID | uint8, uint16 (default), or uint32 | The batchId of the instance that can be used to retrieve metadata from the Batch Table. | No.
+| `POSITION` | `float32[3]` | A 3-component array of numbers containing `x`, `y`, and `z` Cartesian coordinates for the position of the instance. | Yes, unless `POSITION_QUANTIZED` is defined.
+| `POSITION_QUANTIZED` | `uint16[3]` | A 3-component array of numbers containing `x`, `y`, and `z` in quantized Cartesian coordinates for the position of the instance. | Yes, unless `POSITION` is defined.
+| `NORMAL_UP` | `float32[3]` | A unit vector defining the `up` direction for the orientation of the instance. | No, unless `NORMAL_RIGHT` is defined.
+| `NORMAL_RIGHT` | `float32[3]` | A unit vector defining the `right` direction for the orientation of the instance. Must be orthogonal to up. | No, unless `NORMAL_UP` is defined.
+| `NORMAL_UP_OCT32P` | `uint16[2]` | An oct-encoded unit vector with 32-bits of precision defining the `up` direction for the orientation of the instance. | No, unless `NORMAL_RIGHT_OCT32P` is defined.
+| `NORMAL_RIGHT_OCT32P` | `uint16[2]` | An oct-encoded unit vector with 32-bits of precision defining the `right` direction for the orientation of the instance. Must be orthogonal to up. | No, unless `NORMAL_UP_OCT32P` is defined.
+| `SCALE` | `float32` | A number defining a scale to apply to all axes of the instance. | No.
+| `SCALE_NON_UNIFORM` | `float32[3]` | A 3-component array of numbers defining the scale to apply to the `x`, `y`, and `z` axes of the instance. | No.
+| `BATCH_ID` | `uint8, uint16` (default), or `uint32` | The `batchId` of the instance that can be used to retrieve metadata from the `Batch Table`. | No.
 
 |===
 
@@ -399,11 +397,11 @@ These semantics define global properties for all instances.
 |===
 | Semantic | Data Type | Description | Required
 
-| INSTANCES_LENGTH | uint32 | The number of instances to generate. The length of each array value for an instance semantic should be equal to this. | Yes.
-| RTC_CENTER | float32[3] | A 3-component array of numbers defining the center position when instance positions are defined relative-to-center. | No.
-| QUANTIZED_VOLUME_OFFSET | float32[3] | A 3-component array of numbers defining the offset for the quantized volume. | No, unless POSITION_QUANTIZED is defined.
-| QUANTIZED_VOLUME_SCALE | float32[3] | A 3-component array of numbers defining the scale for the quantized volume. | No, unless POSITION_QUANTIZED is defined.
-| EAST_NORTH_UP | boolean | When true and per-instance orientation is not defined, each instance will default to the east/north/up reference frame's orientation on the WGS84 ellipsoid. | No.
+| `INSTANCES_LENGTH` | `uint32` | The number of instances to generate. The length of each array value for an instance semantic should be equal to this. | Yes.
+| `RTC_CENTER` | `float32[3]` | A 3-component array of numbers defining the center position when instance positions are defined relative-to-center. | No.
+| `QUANTIZED_VOLUME_OFFSET` | `float32[3]` | A 3-component array of numbers defining the offset for the quantized volume. | No, unless `POSITION_QUANTIZED` is defined.
+| `QUANTIZED_VOLUME_SCALE` | `float32[3]` | A 3-component array of numbers defining the scale for the quantized volume. | No, unless `POSITION_QUANTIZED` is defined.
+| `EAST_NORTH_UP` | `boolean` | When true and per-instance orientation is not defined, each instance will default to the `east/north/up` reference frame's orientation on the `WGS84` ellipsoid. | No.
 
 |===
 
@@ -413,10 +411,10 @@ Examples using these semantics can be found in the <<examples,examples section>>
 [[instance-orientation]]
 ===== Instance orientation
 
-An instance's orientation is defined by an orthonormal basis created by an up and right vector. The orientation will be transformed by the <<tile-transform,Tile transform>>.
+An instance's orientation is defined by an orthonormal basis created by an `up` and `right` vector. The orientation will be transformed by the <<tile-transform,Tile transform>>.
 
-The x vector in the standard basis maps to the right vector in the transformed basis, and the y vector maps to the up vector.
-The z vector would map to a forward vector, but it is omitted because it will always be the cross product of right and up.
+The `x` vector in the standard basis maps to the `right` vector in the transformed basis, and the `y` vector maps to the `up` vector. +
+The `z` vector would map to a `forward` vector, but it is omitted because it will always be the cross product of `right` and `up`.
 
 [[fig26]]
 .A box in the standard basis
@@ -430,57 +428,55 @@ image::027.png["",417,325]
 [[oct-encoded-normal-vectors]]
 ====== Oct-encoded normal vectors
 
-If NORMAL_UP and NORMAL_RIGHT are not defined for an instance, its orientation may be stored as oct-encoded normals in NORMAL_UP_OCT32P and NORMAL_RIGHT_OCT32P.
-
-These define up and right using the oct-encoding described in http://jcgt.org/published/0003/02/01/[_A Survey of Efficient Representations of Independent Unit Vectors_]. Oct-encoded values are stored in unsigned, unnormalized range ([0, 65535]) and then mapped to a signed normalized range ([-1.0, 1.0]) at runtime.
+If `NORMAL_UP` and `NORMAL_RIGHT` are not defined for an instance, its orientation may be stored as oct-encoded normals in `NORMAL_UP_OCT32P` and `NORMAL_RIGHT_OCT32P`. +
+These define `up` and `right` using the oct-encoding described in http://jcgt.org/published/0003/02/01/[_A Survey of Efficient Representations of Independent Unit Vectors_]. Oct-encoded values are stored in unsigned, unnormalized range (`[0, 65535]`) and then mapped to a signed normalized range (`[-1.0, 1.0]`) at runtime.
 
 An implementation for encoding and decoding these unit vectors can be found in Cesium's https://github.com/AnalyticalGraphicsInc/cesium/blob/master/Source/Core/AttributeCompression.js[AttributeCompression] module.
 
 [[default-orientation]]
 ====== Default orientation
 
-If NORMAL_UP and NORMAL_RIGHT or NORMAL_UP_OCT32P and NORMAL_RIGHT_OCT32P are not present, the instance will not have a custom orientation. If EAST_NORTH_UP is true, the instance is assumed to be on the WGS84 ellipsoid and its orientation will default to the east/north/up reference frame at its cartographic position.
-
+If `NORMAL_UP` and `NORMAL_RIGHT` or `NORMAL_UP_OCT32P` and `NORMAL_RIGHT_OCT32P` are not present, the instance will not have a custom orientation. If `EAST_NORTH_UP` is `true`, the instance is assumed to be on the `WGS84` ellipsoid and its orientation will default to the `east/north/up` reference frame at its cartographic position. +
 This is suitable for instanced models such as trees whose orientation is always facing up from their position on the ellipsoid's surface.
 
 
 [[instance-position]]
 ===== Instance position
 
-POSITION defines the location for an instance before any tile transforms are applied.
+`POSITION` defines the location for an instance before any tile transforms are applied.
 
 
 [[rtc_center]]
 ====== RTC_CENTER
 
-Positions may be defined relative-to-center for high-precision rendering, see http://help.agi.com/AGIComponents/html/BlogPrecisionsPrecisions.htm[Precisions, Precisions]. If defined, RTC_CENTER specifies the center position and all instance positions are treated as relative to this value.
+Positions may be defined relative-to-center for high-precision rendering, see http://help.agi.com/AGIComponents/html/BlogPrecisionsPrecisions.htm[Precisions, Precisions]. If defined, `RTC_CENTER` specifies the center position and all instance positions are treated as relative to this value.
 
 
 [[quantized-positions]]
 ====== Quantized positions
 
-If POSITION is not defined for an instance, its position may be stored in POSITION_QUANTIZED, which defines the instance position relative to the quantized volume. +
-If neither POSITION or POSITION_QUANTIZED are defined, the instance will not be created.
+If `POSITION` is not defined for an instance, its position may be stored in `POSITION_QUANTIZED`, which defines the instance position relative to the quantized volume. +
+If neither `POSITION` or `POSITION_QUANTIZED` are defined, the instance will not be created.
 
-A quantized volume is defined by offset and scale to map quantized positions into local space, as shown in the following figure:
+A quantized volume is defined by `offset` and `scale` to map quantized positions into local space, as shown in the following figure:
 
 [[fig28]]
 .A quantized volume
 image::028.png["",700,619]
 
 
-offset is stored in the global semantic QUANTIZED_VOLUME_OFFSET, and scale is stored in the global semantic QUANTIZED_VOLUME_SCALE. +
-If those global semantics are not defined, POSITION_QUANTIZED cannot be used.
+`offset` is stored in the global semantic `QUANTIZED_VOLUME_OFFSET`, and `scale` is stored in the global semantic `QUANTIZED_VOLUME_SCALE`. +
+If those global semantics are not defined, `POSITION_QUANTIZED` cannot be used.
 
 Quantized positions can be mapped to local space using the following formula:
 
-POSITION = POSITION_QUANTIZED * QUANTIZED_VOLUME_SCALE / 65535.0 + QUANTIZED_VOLUME_OFFSET
+`POSITION = POSITION_QUANTIZED * QUANTIZED_VOLUME_SCALE / 65535.0 + QUANTIZED_VOLUME_OFFSET`
 
 [[instance-scaling]]
 ===== Instance scaling
 
-Scaling can be applied to instances using the SCALE and SCALE_NON_UNIFORM semantics. +
-SCALE applies a uniform scale along all axes, and SCALE_NON_UNIFORM applies scaling to the x, y, and z axes independently.
+Scaling can be applied to instances using the `SCALE` and `SCALE_NON_UNIFORM` semantics. +
+`SCALE` applies a uniform scale along all axes, and `SCALE_NON_UNIFORM` applies scaling to the `x`, `y`, and `z` axes independently.
 
 
 [[examples]]
@@ -494,6 +490,7 @@ These examples show how to generate JSON and binary buffers for the Feature Tabl
 
 In this minimal example, we place four instances on the corners of a unit length square with the default orientation:
 
+[%unnumbered]
 [source,java]
 ----
 var featureTableJSON = {
@@ -515,9 +512,10 @@ var featureTableBinary = new Buffer(new Float32Array([
 [[quantized-positions-and-oct-encoded-norm]]
 ====== Quantized positions and oct-encoded normals
 
-In this example, the four instances will be placed with an orientation up of [0.0, 1.0, 0.0] and right of [1.0, 0.0, 0.0] in oct-encoded format +
-and they will be placed on the corners of a quantized volume that spans from -250.0 to 250.0 units in the x and z directions:
+In this example, the four instances will be placed with an orientation `up` of `[0.0, 1.0, 0.0]` and `right` of `[1.0, 0.0, 0.0]` in oct-encoded format +
+and they will be placed on the corners of a quantized volume that spans from `-250.0` to `250.0` units in the `x` and `z` directions:
 
+[%unnumbered]
 [source,java]
 ----
 var featureTableJSON = {
@@ -561,21 +559,22 @@ var featureTableBinary = Buffer.concat([positionQuantizedBinary, normalUpOct32PB
 
 ==== Batch Table
 
-Contains metadata organized by batchId that can be used for declarative styling. See the <<_Batch_Table,Batch Table>> reference for more information.
+Contains metadata organized by `batchId` that can be used for declarative styling. See the <<_Batch_Table,Batch Table>> reference for more information.
 
+[[gltf]]
 ==== glTF
 
 Instanced 3D Model embeds glTF 2.0 containing model geometry and texture information.
 
 The glTF asset to be instanced is stored after the Feature Table and Batch Table. It may embed all of its geometry, texture, and animations, or it may refer to external sources for some or all of these data.
 
-header.gltfFormat determines the format of the glTF field
+`header.gltfFormat` determines the format of the glTF field
 
-* When the value of header.gltfFormat is 0, the glTF field is a UTF-8 string, which contains a uri of the glTF or binary glTF model content.
+* When the value of `header.gltfFormat` is `0`, the glTF field is a UTF-8 string, which contains a uri of the glTF or binary glTF model content.
 
-* When the value of header.gltfFormat is 1, the glTF field is a binary blob containing https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#binary-gltf-layout[binary glTF].
+* When the value of `header.gltfFormat` is `1`, the glTF field is a binary blob containing https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#binary-gltf-layout[binary glTF].
 
-In either case, header.gltfByteLength contains the length of the glTF field in bytes.
+In either case, `header.gltfByteLength` contains the length of the glTF field in bytes.
 
 
 ===== Coordinate system
@@ -585,9 +584,9 @@ By default glTFs use a right handed coordinate system where the _y_-axis is up. 
 
 ==== File extension and MIME type
 
-Instanced 3D models tiles use the .i3dm extension and application/octet-stream MIME type.
+Instanced 3D models tiles use the `.i3dm` extension and `application/octet-stream` MIME type.
 
-An explicit file extension is optional. Valid implementations may ignore it and identify a content's format by the magic field in its header.
+An explicit file extension is optional. Valid implementations may ignore it and identify a content's format by the `magic` field in its header.
 
 
 ==== Property reference
@@ -603,20 +602,20 @@ A set of Instanced 3D Model semantics that contains values defining the position
 |===
 | | Type | Description | Required
 
-| *extensions* | object | Dictionary object with extension-specific objects. | No
-| *extras* | any | Application-specific data. | No
-| *POSITION* | object | A <<_BinaryBodyReference_1],BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
-| *POSITION_QUANTIZED* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
-| *NORMAL_UP* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
-| *NORMAL_RIGHT* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
-| *NORMAL_UP_OCT32P* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
-| *NORMAL_RIGHT_OCT32P* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
-| *SCALE* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
-| *SCALE_NON_UNIFORM* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
-| *BATCH_ID* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
-| *INSTANCES_LENGTH* | object, number[1], number | A <<_GlobalPropertyScalar_1,GlobalPropertyScalar>> object defining a numeric property for all features. See the corresponding property semantic in <<_Semantics,Semantics>>. | Yes
-| *QUANTIZED_VOLUME_OFFSET* | object, number[3] | A <<_GlobalPropertyCartesian3_1,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all features. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
-| *QUANTIZED_VOLUME_SCALE* | object, number[3] | A <<_GlobalPropertyCartesian3_1,GlobalPropertyCartesian3>>object defining a 3-component numeric property for all features. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *extensions* | `object` | Dictionary object with extension-specific objects. | No
+| *extras* | `any` | Application-specific data. | No
+| *POSITION* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *POSITION_QUANTIZED* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *NORMAL_UP* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *NORMAL_RIGHT* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *NORMAL_UP_OCT32P* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *NORMAL_RIGHT_OCT32P* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *SCALE* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *SCALE_NON_UNIFORM* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *BATCH_ID* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *INSTANCES_LENGTH* | `object, number[1], number` | A <<_GlobalPropertyScalar_1,GlobalPropertyScalar>> object defining a numeric property for all features. See the corresponding property semantic in <<_Semantics,Semantics>>. | Yes
+| *QUANTIZED_VOLUME_OFFSET* | `object, number[3]` | A <<_GlobalPropertyCartesian3_1,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all features. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
+| *QUANTIZED_VOLUME_SCALE* | `object, number[3]` | A <<_GlobalPropertyCartesian3_1,GlobalPropertyCartesian3>>object defining a 3-component numeric property for all features. See the corresponding property semantic in <<_Semantics,Semantics>>. | No
 
 |===
 
@@ -629,7 +628,7 @@ Additional properties are allowed.
 
 Dictionary object with extension-specific objects.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -641,7 +640,7 @@ Dictionary object with extension-specific objects.
 
 Application-specific data.
 
-* *Type*: any
+* *Type*: `any`
 
 * *Required*: No
 
@@ -649,9 +648,9 @@ Application-specific data.
 [[instanced3dmodelfeaturetable.position]]
 ====== Instanced3DModelFeatureTable.POSITION
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
+A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -659,9 +658,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[instanced3dmodelfeaturetable.position_qu]]
 ====== Instanced3DModelFeatureTable.POSITION_QUANTIZED
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
+A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -669,18 +668,18 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[instanced3dmodelfeaturetable.normal_up]]
 ====== Instanced3DModelFeatureTable.NORMAL_UP
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
+A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
 
 ====== Instanced3DModelFeatureTable.NORMAL_RIGHT
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
+A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -688,9 +687,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[instanced3dmodelfeaturetable.normal_up_o]]
 ====== Instanced3DModelFeatureTable.NORMAL_UP_OCT32P
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
+A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -698,9 +697,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[instanced3dmodelfeaturetable.normal_righ]]
 ====== Instanced3DModelFeatureTable.NORMAL_RIGHT_OCT32P
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
+A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -708,9 +707,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[instanced3dmodelfeaturetable.scale]]
 ====== Instanced3DModelFeatureTable.SCALE
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
+A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -718,9 +717,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[instanced3dmodelfeaturetable.scale_non_u]]
 ====== Instanced3DModelFeatureTable.SCALE_NON_UNIFORM
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
+A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -728,9 +727,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[instanced3dmodelfeaturetable.batch_id]]
 ====== Instanced3DModelFeatureTable.BATCH_ID
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
+A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -740,7 +739,7 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 
 A <<_GlobalPropertyScalar_1,GlobalPropertyScalar>> object defining a numeric property for all features. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object, number[1], number
+* *Type*: `object, number[1], number`
 
 * *Required*: Yes
 
@@ -749,7 +748,7 @@ A <<_GlobalPropertyScalar_1,GlobalPropertyScalar>> object defining a numeric pro
 
 A <<_GlobalPropertyCartesian3_1,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all features. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object, number[3]
+* *Type*: `object, number[3]`
 
 * *Required*: No
 
@@ -759,12 +758,12 @@ A <<_GlobalPropertyCartesian3_1,GlobalPropertyCartesian3>> object defining a 3-c
 
 A <<_GlobalPropertyCartesian3_1,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all features. See the corresponding property semantic in <<_Semantics,Semantics>>.
 
-* *Type*: object, number[3]
+* *Type*: `object, number[3]`
 
 * *Required*: No
 
 
-[[_BinaryBodyReference_1]]
+[[binarybodyreference_10_2]]
 ===== BinaryBodyReference
 
 An object defining the reference to a section of the binary body of the features table where the property values are stored if not defined directly in the JSON.
@@ -774,7 +773,7 @@ An object defining the reference to a section of the binary body of the features
 [%unnumbered]
 |===
 | | Type | Description | Required
-| *byteOffset* | number | The offset into the buffer in bytes. | Yes
+| *byteOffset* | `number` | The offset into the buffer in bytes. | Yes
 
 |===
 
@@ -784,11 +783,11 @@ Additional properties are allowed.
 
 The offset into the buffer in bytes.
 
-* *Type*: number
+* *Type*: `number`
 
 * *Required*: Yes
 
-* *Minimum*: >= 0
+* *Minimum*: `>= 0`
 
 
 [[_GlobalPropertyCartesian3_1]]
@@ -806,7 +805,7 @@ An object defining a global numeric property values for all features.
 [[_Property_1]]
 ===== Property
 
-A user-defined property which specifies per-feature application-specific metadata in a tile. Values either can be defined directly in the JSON as an array, or can refer to sections in the binary body with a <<_BinaryBodyReference_1,BinaryBodyReference>> object.
+A user-defined property which specifies per-feature application-specific metadata in a tile. Values either can be defined directly in the JSON as an array, or can refer to sections in the binary body with a <<binarybodyreference_10_1,BinaryBodyReference>> object.
 
 
 [[_Point_Cloud]]
@@ -832,7 +831,7 @@ image::029.png["",700,278]
 
 ===== Padding
 
-A tile's byteLength must be aligned to an 8-byte boundary. The contained <<_Feature_Table,Feature Table>> and <<_Batch_Table,Batch Table>> must conform to their respective padding requirement.
+A tile's `byteLength` must be aligned to an `8`-byte boundary. The contained <<_Feature_Table,Feature Table>> and <<_Batch_Table,Batch Table>> must conform to their respective padding requirement.
 
 
 ==== Header
@@ -843,18 +842,18 @@ The 28-byte header contains the following fields:
 |===
 | Field name | Data type | Description
 
-| magic | 4-byte ANSI string | "pnts". This can be used to identify the content as a Point Cloud tile.
+| `magic` | 4-byte ANSI string | `"pnts"`. This can be used to identify the content as a Point Cloud tile.
 
-| version | uint32 | The version of the Point Cloud format. It is currently 1.
-| byteLength | uint32 | The length of the entire tile, including the header, in bytes.
-| featureTableJSONByteLength | uint32 | The length of the Feature Table JSON section in bytes.
-| featureTableBinaryByteLength | uint32 | The length of the Feature Table binary section in bytes.
-| batchTableJSONByteLength | uint32 | The length of the Batch Table JSON section in bytes. Zero indicates that there is no Batch Table.
-| batchTableBinaryByteLength | uint32 | The length of the Batch Table binary section in bytes. If batchTableJSONByteLength is zero, this will also be zero.
+| `version` | `uint32` | The version of the Point Cloud format. It is currently `1`.
+| `byteLength` | `uint32` | The length of the entire tile, including the header, in bytes.
+| `featureTableJSONByteLength` | `uint32` | The length of the Feature Table JSON section in bytes.
+| `featureTableBinaryByteLength` | `uint32` | The length of the Feature Table binary section in bytes.
+| `batchTableJSONByteLength` | `uint32` | The length of the Batch Table JSON section in bytes. Zero indicates that there is no Batch Table.
+| `batchTableBinaryByteLength` | `uint32` | The length of the Batch Table binary section in bytes. If `batchTableJSONByteLength` is zero, this will also be zero.
 
 |===
 
-The body section immediately follows the header section, and is composed of a Feature Table and Batch Table.
+The body section immediately follows the header section, and is composed of a `Feature Table` and `Batch Table`.
 
 
 ==== Feature Table
@@ -874,22 +873,22 @@ These semantics map to an array of feature values that define each point. The le
 The value for each point semantic must be a reference to the Feature Table binary body; they cannot be embedded in the Feature Table JSON header.
 
 If a semantic has a dependency on another semantic, that semantic must be defined. +
-If both POSITION and POSITION_QUANTIZED are defined for a point, the higher precision POSITION will be used. +
-If both NORMAL and NORMAL_OCT16P are defined for a point, the higher precision NORMAL will be used.
+If both `POSITION` and `POSITION_QUANTIZED` are defined for a point, the higher precision `POSITION` will be used. +
+If both `NORMAL` and `NORMAL_OCT16P` are defined for a point, the higher precision `NORMAL` will be used.
 
 [%unnumbered]
 |===
 | Semantic | Data Type | Description | Required
 
-| POSITION | float32[3] | A 3-component array of numbers containing x, y, and z Cartesian coordinates for the position of the point. | Yes, unless POSITION_QUANTIZED is defined.
+| `POSITION` | `float32[3]` | A 3-component array of numbers containing `x`, `y`, and `z` Cartesian coordinates for the position of the point. | Yes, unless `POSITION_QUANTIZED` is defined.
 
-| POSITION_QUANTIZED | uint16[3] | A 3-component array of numbers containing x, y, and z in quantized Cartesian coordinates for the position of the point. | Yes, unless POSITION is defined.
-| RGBA | uint8[4] | A 4-component array of values containing the RGBA color of the point. | No.
-| RGB | uint8[3] | A 3-component array of values containing the RGB color of the point. | No.
-| RGB565 | uint16 | A lossy compressed color format that packs the RGB color into 16 bits, providing 5 bits for red, 6 bits for green, and 5 bits for blue. | No.
-| NORMAL | float32[3] | A unit vector defining the normal of the point. | No.
-| NORMAL_OCT16P | uint8[2] | An oct-encoded unit vector with 16 bits of precision defining the normal of the point. | No.
-| BATCH_ID | uint8, uint16 (default), or uint32 | The batchId of the point that can be used to retrieve metadata from the Batch Table. | No.
+| `POSITION_QUANTIZED` | `uint16[3]` | A 3-component array of numbers containing `x`, `y`, and `z` in quantized Cartesian coordinates for the position of the point. | Yes, unless `POSITION` is defined.
+| `RGBA` | `uint8[4]` | A 4-component array of values containing the `RGBA` color of the point. | No.
+| `RGB` | `uint8[3]` | A 3-component array of values containing the `RGB` color of the point. | No.
+| `RGB565` | `uint16` | A lossy compressed color format that packs the `RGB` color into 16 bits, providing 5 bits for red, 6 bits for green, and 5 bits for blue. | No.
+| `NORMAL` | `float32[3]` | A unit vector defining the normal of the point. | No.
+| `NORMAL_OCT16P` | `uint8[2]` | An oct-encoded unit vector with 16 bits of precision defining the normal of the point. | No.
+| `BATCH_ID` | `uint8, uint16` (default), or `uint32` | The `batchId` of the point that can be used to retrieve metadata from the `Batch Table`. | No.
 
 |===
 
@@ -902,13 +901,13 @@ These semantics define global properties for all points.
 |===
 | Semantic | Data Type | Description | Required
 
-| POINTS_LENGTH | uint32 | The number of points to render. The length of each array value for a point semantic should be equal to this. | Yes.
+| `POINTS_LENGTH` | `uint32` | The number of points to render. The length of each array value for a point semantic should be equal to this. | Yes.
 
-| RTC_CENTER | float32[3] | A 3-component array of numbers defining the center position when point positions are defined relative-to-center. | No.
-| QUANTIZED_VOLUME_OFFSET | float32[3] | A 3-component array of numbers defining the offset for the quantized volume. | No, unless POSITION_QUANTIZED is defined.
-| QUANTIZED_VOLUME_SCALE | float32[3] | A 3-component array of numbers defining the scale for the quantized volume. | No, unless POSITION_QUANTIZED is defined.
-| CONSTANT_RGBA | uint8[4] | A 4-component array of values defining a constant RGBA color for all points in the tile. | No.
-| BATCH_LENGTH | uint32 | The number of unique BATCH_ID values. | No, unless BATCH_ID is defined.
+| `RTC_CENTER` | `float32[3]` | A 3-component array of numbers defining the center position when point positions are defined relative-to-center. | No.
+| `QUANTIZED_VOLUME_OFFSET` | `float32[3]` | A 3-component array of numbers defining the offset for the quantized volume. | No, unless `POSITION_QUANTIZED` is defined.
+| `QUANTIZED_VOLUME_SCALE` | `float32[3]` | A 3-component array of numbers defining the scale for the quantized volume. | No, unless `POSITION_QUANTIZED` is defined.
+| `CONSTANT_RGBA` | `uint8[4]` | A 4-component array of values defining a constant `RGBA` color for all points in the tile. | No.
+| `BATCH_LENGTH` | `uint32` | The number of unique `BATCH_ID` values. | No, unless `BATCH_ID` is defined.
 
 |===
 
@@ -918,7 +917,7 @@ Examples using these semantics can be found in the <<_Examples,examples section>
 [[point-positions]]
 ===== Point positions
 
-POSITION defines the position for a point before any tileset transforms are applied.
+`POSITION` defines the position for a point before any tileset transforms are applied.
 
 ====== Coordinate reference system (CRS)
 
@@ -927,33 +926,33 @@ POSITION defines the position for a point before any tileset transforms are appl
 
 ====== RTC_CENTER
 
-Positions may be defined relative-to-center for high-precision rendering, see http://help.agi.com/AGIComponents/html/BlogPrecisionsPrecisions.htm[Precisions, Precisions]. If defined, RTC_CENTER specifies the center position and all point positions are treated as relative to this value.
+Positions may be defined relative-to-center for high-precision rendering, see http://help.agi.com/AGIComponents/html/BlogPrecisionsPrecisions.htm[Precisions, Precisions]. If defined, `RTC_CENTER` specifies the center position and all point positions are treated as relative to this value.
 
 
 ====== Quantized positions
 
-If POSITION is not defined, positions may be stored in POSITION_QUANTIZED, which defines point positions relative to the quantized volume. +
-If neither POSITION nor POSITION_QUANTIZED is defined, the tile does not need to be rendered.
+If `POSITION` is not defined, positions may be stored in `POSITION_QUANTIZED`, which defines point positions relative to the quantized volume. +
+If neither `POSITION` nor `POSITION_QUANTIZED` is defined, the tile does not need to be rendered.
 
-A quantized volume is defined by offset and scale to map quantized positions to a position in local space. The following figure shows a quantized volume based on offset and scale:
+A quantized volume is defined by `offset` and `scale` to map quantized positions to a position in local space. The following figure shows a quantized volume based on `offset` and `scale`:
 
 [[fig30]]
 .A quantized volume
 image::030.png["",700,619]
 
 
-offset is stored in the global semantic QUANTIZED_VOLUME_OFFSET, and scale is stored in the global semantic QUANTIZED_VOLUME_SCALE. +
-If those global semantics are not defined, POSITION_QUANTIZED cannot be used.
+`offset` is stored in the global semantic `QUANTIZED_VOLUME_OFFSET`, and `scale` is stored in the global semantic `QUANTIZED_VOLUME_SCALE`. +
+If those global semantics are not defined, `POSITION_QUANTIZED` cannot be used.
 
 Quantized positions can be mapped to local space using the following formula:
 
-POSITION = POSITION_QUANTIZED * QUANTIZED_VOLUME_SCALE / 65535.0 + QUANTIZED_VOLUME_OFFSET
+`POSITION = POSITION_QUANTIZED * QUANTIZED_VOLUME_SCALE / 65535.0 + QUANTIZED_VOLUME_OFFSET`
 
 
 [[point-colors]]
 ===== Point colors
 
-If more than one color semantic is defined, the precedence order is RGBA, RGB, RGB565, then CONSTANT_RGBA. For example, if a tile's Feature Table contains both RGBA and CONSTANT_RGBA properties, the runtime would render with per-point colors using RGBA.
+If more than one color semantic is defined, the precedence order is `RGBA`, `RGB`, `RGB565`, then `CONSTANT_RGBA`. For example, if a tile's Feature Table contains both `RGBA` and `CONSTANT_RGBA` properties, the runtime would render with per-point colors using `RGBA`.
 
 If no color semantics are defined, the runtime is free to color points using an application-specific default color.
 
@@ -969,7 +968,7 @@ The normals will be transformed using the inverse transpose of the tileset trans
 
 ====== Oct-encoded normal vectors
 
-Oct-encoding is described in http://jcgt.org/published/0003/02/01/[_A Survey of Efficient Representations of Independent Unit Vectors_]. Oct-encoded values are stored in unsigned, unnormalized range ([0, 255]) and then mapped to a signed normalized range ([-1.0, 1.0]) at runtime.
+Oct-encoding is described in http://jcgt.org/published/0003/02/01/[_A Survey of Efficient Representations of Independent Unit Vectors_]. Oct-encoded values are stored in unsigned, unnormalized range (`[0, 255]`) and then mapped to a signed normalized range (`[-1.0, 1.0]`) at runtime.
 
 An implementation for encoding and decoding these unit vectors can be found in Cesium's https://github.com/AnalyticalGraphicsInc/cesium/blob/master/Source/Core/AttributeCompression.js[AttributeCompression] module.
 
@@ -977,11 +976,11 @@ An implementation for encoding and decoding these unit vectors can be found in C
 [[batched-points]]
 ===== Batched points
 
-Points that make up distinct features of the Point Cloud may be batched together using the BATCH_ID semantic. For example, the points that make up a door in a house would all be assigned the same BATCH_ID, whereas points that make up a window would be assigned a different BATCH_ID. +
+Points that make up distinct features of the Point Cloud may be batched together using the `BATCH_ID` semantic. For example, the points that make up a door in a house would all be assigned the same `BATCH_ID`, whereas points that make up a window would be assigned a different `BATCH_ID`. +
 This is useful for per-object picking and storing application-specific metadata for declarative styling and application-specific use cases such as populating a UI or issuing a REST API request on a per-object instead of per-point basis.
 
-The BATCH_ID semantic may have a componentType of UNSIGNED_BYTE, UNSIGNED_SHORT, or UNSIGNED_INT. When componentType is not present, UNSIGNED_SHORT is used. +
-The global semantic BATCH_LENGTH defines the number of unique batchId values, similar to the batchLength field in the <<_Batched_3D_Model,Batched 3D Model>> header.
+The `BATCH_ID` semantic may have a `componentType` of `UNSIGNED_BYTE`, `UNSIGNED_SHORT`, or `UNSIGNED_INT`. When `componentType` is not present, `UNSIGNED_SHORT` is used. +
+The global semantic `BATCH_LENGTH` defines the number of unique `batchId` values, similar to the `batchLength` field in the <<_Batched_3D_Model,Batched 3D Model>> header.
 
 
 [[_Examples]]
@@ -996,6 +995,7 @@ These examples show how to generate JSON and binary buffers for the Feature Tabl
 
 This minimal example has four points on the corners of a unit length square:
 
+[%unnumbered]
 [source,java]
 ----
 var featureTableJSON = {
@@ -1019,6 +1019,7 @@ var featureTableBinary = new Buffer(new Float32Array([
 
 The following example has four points (red, green, blue, and yellow) above the globe. Their positions are defined relative to center:
 
+[%unnumbered]
 [source,java]
 ----
 var featureTableJSON = {
@@ -1052,8 +1053,9 @@ var featureTableBinary =Buffer.concat([positionBinary, colorBinary]);
 
 ====== Quantized positions and oct-encoded normals
 
-In this example, the four points will have normals pointing up [0.0, 1.0, 0.0] in oct-encoded format, and they will be placed on the corners of a quantized volume that spans from -250.0 to 250.0 units in the x and z directions:
+In this example, the four points will have normals pointing up `[0.0, 1.0, 0.0]` in oct-encoded format, and they will be placed on the corners of a quantized volume that spans from `-250.0` to `250.0` units in the `x` and `z` directions:
 
+[%unnumbered]
 [source,java]
 ----
 var featureTableJSON = {
@@ -1088,8 +1090,9 @@ var featureTableBinary = Buffer.concat([positionQuantizedBinary, normalOct16PBin
 [[batched-points-1]]
 ====== Batched points
 
-In this example, the first two points have a batchId of 0, and the next two points have a batchId of 1. Note that the Batch Table only has two names:
+In this example, the first two points have a `batchId` of `0`, and the next two points have a `batchId` of `1`. Note that the Batch Table only has two names:
 
+[%unnumbered]
 [source,java]
 ----
 var featureTableJSON = {
@@ -1131,6 +1134,7 @@ var batchTableJSON = {
 
 In this example, each of the 4 points will have metadata stored in the Batch Table JSON and binary.
 
+[%unnumbered]
 [source,java]
 ----
 var featureTableJSON = {
@@ -1155,20 +1159,20 @@ var batchTableJSON = {
 
 ==== Batch Table
 
-The _Batch Table_ contains application-specific metadata, indexable by batchId, that can be used for declarative styling and application-specific use cases such as populating a UI or issuing a REST API request.
+The _Batch Table_ contains application-specific metadata, indexable by `batchId`, that can be used for declarative styling and application-specific use cases such as populating a UI or issuing a REST API request.
 
-* If the BATCH_ID semantic is defined, the Batch Table stores metadata for each batchId, and the length of the Batch Table arrays will equal BATCH_LENGTH.
+* If the `BATCH_ID` semantic is defined, the Batch Table stores metadata for each `batchId`, and the length of the Batch Table arrays will equal `BATCH_LENGTH`.
 
-* If the BATCH_ID semantic is not defined, then the Batch Table stores per-point metadata, and the length of the Batch Table arrays will equal POINTS_LENGTH.
+* If the `BATCH_ID` semantic is not defined, then the Batch Table stores per-point metadata, and the length of the Batch Table arrays will equal `POINTS_LENGTH`.
 
 See the link: ../../../../../ggetz/Documents/_Batch_Table[Batch Table] reference for more information.
 
 
 ==== File extension and MIME type
 
-Point cloud tiles use the .pnts extension and application/octet-stream MIME type.
+Point cloud tiles use the `.pnts` extension and `application/octet-stream` MIME type.
 
-An explicit file extension is optional. Valid implementations may ignore it and identify a content's format by the magic field in its header.
+An explicit file extension is optional. Valid implementations may ignore it and identify a content's format by the `magic` field in its header.
 
 
 ==== Implementation example
@@ -1191,22 +1195,22 @@ A set of Point Cloud semantics that contains values defining the position and ap
 |===
 | | Type | Description | Required
 
-| *extensions* | object | Dictionary object with extension-specific objects. | No
-| *extras* | any | Application-specific data. | No
-| *POSITION* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *POSITION_QUANTIZED* | object | A <<_BinaryBodyReference,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *RGBA* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *RGB* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *RGB565* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *NORMAL* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *NORMAL_OCT16P* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *BATCH_ID* | object | A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *POINTS_LENGTH* | object, number[1], number | A <<globalpropertyscalar,GlobalPropertyScalar>> object defining a numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | Yes
-| *RTC_CENTER* | object, number[3] | A <<_GlobalPropertyCartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *QUANTIZED_VOLUME_OFFSET* | object, number[3] | A <<_GlobalPropertyCartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *QUANTIZED_VOLUME_SCALE* | object, number[3] | A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *CONSTANT_RGBA* | object, number[4] | A <<_GlobalPropertyCartesian4,GlobalPropertyCartesian4>> object defining a 4-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
-| *BATCH_LENGTH* | object, number[1], number | A <<globalpropertyscalar,GlobalPropertyScalar>> object defining a numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *extensions* | `object` | Dictionary object with extension-specific objects. | No
+| *extras* | `any` | Application-specific data. | No
+| *POSITION* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *POSITION_QUANTIZED* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *RGBA* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *RGB* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *RGB565* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *NORMAL* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *NORMAL_OCT16P* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *BATCH_ID* | `object` | A <<binarybodyreference_10_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *POINTS_LENGTH* | `object, number[1], number` | A <<globalpropertyscalar,GlobalPropertyScalar>> object defining a numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | Yes
+| *RTC_CENTER* | `object, number[3]` | A <<_GlobalPropertyCartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *QUANTIZED_VOLUME_OFFSET* | `object, number[3]` | A <<_GlobalPropertyCartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *QUANTIZED_VOLUME_SCALE* | `object, number[3]` | A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *CONSTANT_RGBA* | `object, number[4]` | A <<globalpropertycartesian4,GlobalPropertyCartesian4>> object defining a 4-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
+| *BATCH_LENGTH* | `object, number[1], number` | A <<globalpropertyscalar,GlobalPropertyScalar>> object defining a numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>. | No
 
 |===
 
@@ -1219,7 +1223,7 @@ Additional properties are allowed.
 
 Dictionary object with extension-specific objects.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -1231,7 +1235,7 @@ Dictionary object with extension-specific objects.
 
 Application-specific data.
 
-* *Type*: any
+* *Type*: `any`
 
 * *Required*: No
 
@@ -1239,9 +1243,9 @@ Application-specific data.
 [[pointcloudfeaturetable.position]]
 ====== PointCloudFeatureTable.POSITION
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
+A <<binarybodyreference_10_3,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -1249,9 +1253,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[pointcloudfeaturetable.position_quantize]]
 ====== PointCloudFeatureTable.POSITION_QUANTIZED
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
+A <<binarybodyreference_10_3,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -1259,9 +1263,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[pointcloudfeaturetable.rgba]]
 ====== PointCloudFeatureTable.RGBA
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
+A <<binarybodyreference_10_3,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -1269,9 +1273,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[pointcloudfeaturetable.rgb]]
 ====== PointCloudFeatureTable.RGB
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
+A <<binarybodyreference_10_3,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -1279,9 +1283,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[pointcloudfeaturetable.rgb565]]
 ====== PointCloudFeatureTable.RGB565
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
+A <<binarybodyreference_10_3,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -1289,9 +1293,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[pointcloudfeaturetable.normal]]
 ====== PointCloudFeatureTable.NORMAL
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
+A <<binarybodyreference_10_3,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -1299,9 +1303,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[pointcloudfeaturetable.normal_oct16p]]
 ====== PointCloudFeatureTable.NORMAL_OCT16P
 
-A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
+A <<binarybodyreference_10_3,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -1309,9 +1313,9 @@ A <<_BinaryBodyReference_1,BinaryBodyReference>> object defining the reference t
 [[pointcloudfeaturetable.batch_id]]
 ====== PointCloudFeatureTable.BATCH_ID
 
-A <<_BinaryBodyReference,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
+A <<binarybodyreference_10_3,BinaryBodyReference>> object defining the reference to a section of the binary body where the property values are stored. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object
+* *Type*: `object`
 
 * *Required*: No
 
@@ -1321,7 +1325,7 @@ A <<_BinaryBodyReference,BinaryBodyReference>> object defining the reference to 
 
 A <<_GlobalPropertyScalar,GlobalPropertyScalar>> object defining a numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object, number[1], number
+* *Type*: `object, number[1], number`
 
 * *Required*: Yes
 
@@ -1331,7 +1335,7 @@ A <<_GlobalPropertyScalar,GlobalPropertyScalar>> object defining a numeric prope
 
 A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object, number[3]
+* *Type*: `object, number[3]`
 
 * *Required*: No
 
@@ -1340,7 +1344,7 @@ A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a 3-comp
 
 A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object, number[3]
+* *Type*: `object, number[3]`
 
 * *Required*: No
 
@@ -1350,7 +1354,7 @@ A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a 3-comp
 
 A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a 3-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object, number[3]
+* *Type*: `object, number[3]`
 
 * *Required*: No
 
@@ -1358,9 +1362,9 @@ A <<globalpropertycartesian3,GlobalPropertyCartesian3>> object defining a 3-comp
 [[pointcloudfeaturetable.constant_rgba]]
 ====== PointCloudFeatureTable.CONSTANT_RGBA
 
-A <<_GlobalPropertyCartesian4,GlobalPropertyCartesian4>> object defining a 4-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
+A <<globalpropertycartesian4,GlobalPropertyCartesian4>> object defining a 4-component numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object, number[4]
+* *Type*: `object, number[4]`
 
 * *Required*: No
 
@@ -1370,12 +1374,12 @@ A <<_GlobalPropertyCartesian4,GlobalPropertyCartesian4>> object defining a 4-com
 
 A <<_GlobalPropertyScalar,GlobalPropertyScalar>> object defining a numeric property for all points. See the corresponding property semantic in <<_Semantics_1,Semantics>>.
 
-* *Type*: object, number[1], number
+* *Type*: `object, number[1], number`
 
 * *Required*: No
 
 
-[[_BinaryBodyReference]]
+[[binarybodyreference_10_3]]
 ===== BinaryBodyReference
 
 An object defining the reference to a section of the binary body of the features table where the property values are stored if not defined directly in the JSON.
@@ -1385,7 +1389,7 @@ An object defining the reference to a section of the binary body of the features
 [%unnumbered]
 |===
 | | Type | Description | Required
-| *byteOffset* | number | The offset into the buffer in bytes. | Yes
+| *byteOffset* | `number` | The offset into the buffer in bytes. | Yes
 
 |===
 
@@ -1396,11 +1400,11 @@ Additional properties are allowed.
 
 The offset into the buffer in bytes.
 
-* *Type*: number
+* *Type*: `number`
 
 * *Required*: Yes
 
-* *Minimum*: >= 0
+* *Minimum*: `>= 0`
 
 
 [[_GlobalPropertyCartesian3]]
@@ -1409,7 +1413,7 @@ The offset into the buffer in bytes.
 An object defining a global 3-component numeric property values for all features.
 
 
-[[_GlobalPropertyCartesian4]]
+[[globalpropertycartesian4]]
 ===== GlobalPropertyCartesian4
 
 An object defining a global 4-component numeric property values for all features.
@@ -1424,7 +1428,7 @@ An object defining a global numeric property values for all features.
 [[_Property]]
 ===== Property
 
-A user-defined property which specifies per-feature application-specific metadata in a tile. Values either can be defined directly in the JSON as an array, or can refer to sections in the binary body with a <<_BinaryBodyReference,BinaryBodyReference>> object.
+A user-defined property which specifies per-feature application-specific metadata in a tile. Values either can be defined directly in the JSON as an array, or can refer to sections in the binary body with a <<binarybodyreference_10_3,BinaryBodyReference>> object.
 
 [[_Composite]]
 === Composite
@@ -1450,7 +1454,7 @@ image::031.png["",700,145]
 
 ===== Padding
 
-A tile's byteLength must be aligned to an 8-byte boundary. All tiles contained in a composite tile must also be aligned to an 8-byte boundary.
+A tile's `byteLength` must be aligned to an `8`-byte boundary. All tiles contained in a composite tile must also be aligned to an `8`-byte boundary.
 
 
 ==== Header
@@ -1461,11 +1465,11 @@ The 16-byte header section contains the following fields:
 |===
 | Field name | Data type | Description
 
-| magic | 4-byte ANSI string | `cmpt`. This can be used to identify the content as a Composite tile.
+| `magic` | 4-byte ANSI string | `"cmpt"`. This can be used to identify the content as a Composite tile.
 
-| version | uint32 | The version of the Composite format. It is currently 1.
-| byteLength | uint32 | The length of the entire Composite tile, including this header and each inner tile, in bytes.
-| tilesLength | uint32 | The number of tiles in the Composite.
+| `version` | `uint32` | The version of the Composite format. It is currently `1`.
+| `byteLength` | `uint32` | The length of the entire Composite tile, including this header and each inner tile, in bytes.
+| `tilesLength` | `uint32` | The number of tiles in the Composite.
 
 |===
 
@@ -1475,9 +1479,9 @@ The 16-byte header section contains the following fields:
 
 Inner tile fields are stored tightly packed immediately following the header section. The following information describes general characteristics of all tile formats that a Composite tile reader might exploit to find the boundaries of the inner tiles:
 
-* Each tile starts with a 4-byte ANSI string, magic, that can be used to determine the tile format for further parsing. See <<_Tile_format_specifications,tile format specifications>> for a list of possible formats. Composite tiles can contain Composite tiles.
+* Each tile starts with a 4-byte ANSI string, `magic`, that can be used to determine the tile format for further parsing. See <<_Tile_format_specifications,tile format specifications>> for a list of possible formats. Composite tiles can contain Composite tiles.
 
-* Each tile's header contains a uint32byteLength, which defines the length of the inner tile, including its header, in bytes. This can be used to traverse the inner tiles.
+* Each tile's header contains a `uint32 byteLength`, which defines the length of the inner tile, including its header, in bytes. This can be used to traverse the inner tiles.
 
 * For any tile format's version 1, the first 12 bytes of all tiles is the following fields:
 
@@ -1485,9 +1489,9 @@ Inner tile fields are stored tightly packed immediately following the header sec
 |===
 | Field name | Data type | Description
 
-| magic | 4-byte ANSI string | Indicates the tile format
-| version | uint32 | 1
-| byteLength | uint32 | Length, in bytes, of the entire tile.
+| `magic` | 4-byte ANSI string | Indicates the tile format
+| `version` | `uint32` | `1`
+| `byteLength` | `uint32` | Length, in bytes, of the entire tile.
 
 |===
 
@@ -1496,9 +1500,9 @@ Refer to the spec for each tile format for more details.
 
 ==== File extension and MIME type
 
-Composite tiles use the `.cmpt` extension and application/octet-stream MIME type.
+Composite tiles use the `.cmpt` extension and `application/octet-stream` MIME type.
 
-An explicit file extension is optional. Valid implementations may ignore it and identify a content's format by the magic field in its header.
+An explicit file extension is optional. Valid implementations may ignore it and identify a content's format by the `magic` field in its header.
 
 
 ==== Implementation examples
@@ -1507,7 +1511,4 @@ _This section is non-normative_
 
 * https://github.com/Geopipe/gltf2glb[Python packcmpt tool in gltf2glb toolset] contains code for combining one or more _Batched 3D Model_ or _Instanced 3D Model_ tiles into a single Composite tile file.
 
-* Code for reading the header can be found in
-https://github.com/AnalyticalGraphicsInc/cesium/blob/master/Source/Scene/Composite3DTileContent.js[Composite3DTileContent.js]
-+
-in the Cesium implementation of 3D Tiles.
+* Code for reading the header can be found in https://github.com/AnalyticalGraphicsInc/cesium/blob/master/Source/Scene/Composite3DTileContent.js[Composite3DTileContent.js] in the Cesium implementation of 3D Tiles.

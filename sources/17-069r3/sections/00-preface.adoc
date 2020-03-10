@@ -1,0 +1,87 @@
+
+.Preface
+
+*OGC Declaration*
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium Inc. shall not be held responsible for identifying any or all such patent rights.
+
+Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.
+
+*ISO Declaration*
+
+ISO (the International Organization for Standardization) is a worldwide federation of national standards bodies (ISO member bodies). The work of preparing International Standards is normally carried out through ISO technical committees. Each member body interested in a subject for which a technical committee has been established has the right to be represented on that committee. International organizations, governmental and non-governmental, in liaison with ISO, also take part in the work. ISO collaborates closely with the International Electrotechnical Commission (IEC) on all matters of electrotechnical standardization.
+
+International Standards are drafted in accordance with the rules given in the ISO/IEC Directives, Part 2.
+
+The main task of technical committees is to prepare International Standards. Draft International Standards adopted by the technical committees are circulated to the member bodies for voting. Publication as an International Standard requires approval by at least 75 % of the member bodies casting a vote.
+
+Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. ISO shall not be held responsible for identifying any or all such patent rights.
+
+[abstract]
+== Abstract
+
+OGC API standards define modular API building blocks to spatially enable Web APIs in a consistent way. The <<openapi,OpenAPI specification>> is used to define the API building blocks.
+
+The OGC API family of standards is organized by resource type. This standard specifies the fundamental API building blocks for interacting with features. The spatial data community uses the term 'feature' for things in the real world that are of interest.
+
+For those not familiar with the term 'feature,' the explanations on https://www.w3.org/TR/sdw-bp/#spatial-things-features-and-geometry[Spatial Things, Features and Geometry] in the <<spatial_data_wbp,W3C/OGC Spatial Data on the Web Best Practice document>> provide more detail.
+
+OGC API Features provides API building blocks to create, modify and query features on the Web. OGC API Features is comprised of multiple parts, each of them is a separate standard. This part, the "Core," specifies the core capabilities and is restricted to fetching features where geometries are represented in the coordinate reference system WGS 84 with axis order longitude/latitude. Additional capabilities that address more advanced needs will be specified in additional parts. Examples include support for creating and modifying features, more complex data models, richer queries, additional coordinate reference systems, multiple datasets and collection hierarchies.
+
+By default, every API implementing this standard will provide access to a single dataset. Rather than sharing the data as a complete dataset, the OGC API Features standards offer direct, fine-grained access to the data at the feature (object) level.
+
+The API building blocks specified in this standard are consistent with the architecture of the Web. In particular, the API design is guided by the IETF HTTP/HTTPS RFCs, <<spatial_data_wbp,W3C Data on the Web Best Practices>>, the <<spatial_data_wbp,W3C/OGC Spatial Data on the Web Best Practices>> and the emerging OGC Web API Guidelines. A particular example is the use of the concepts of datasets and dataset distributions as defined in <<dcat,DCAT>> and used in <<schema,schema.org>>.
+
+This standard specifies discovery and query operations that are implemented using the HTTP GET method. Support for additional methods (in particular POST, PUT, DELETE, PATCH) will be specified in additional parts.
+
+Discovery operations enable clients to interrogate the API to determine its capabilities and retrieve information about this distribution of the dataset, including the API definition and metadata about the feature collections provided by the API.
+
+Query operations enable clients to retrieve features from the underlying data store based upon simple selection criteria, defined by the client.
+
+A subset of the OGC API family of standards is expected to be published by ISO. For example, this document is in the process to be published by ISO as ISO 19168-1. To reflect that only a subset of the OGC API standards will be published by ISO and to avoid using organization names in the titles of ISO standards, standards from the "OGC API" series are published by ISO as "Geospatial API." That is, the title of this document in OGC is "OGC API - Features - Part 1:Core" and the title in ISO is "Geographic Information - Geospatial API for Features - Part 1: Core."
+
+For simplicity, this document consistently uses:
+
+* "OGC API" to refer to the family of standards for geospatial Web APIs that in ISO is published as "Geospatial API;"
+
+* "OGC API - Features" to refer to the multipart standard for features that in ISO is published as ISO 19168 / "Geographic Information - Geospatial API for Features;" and
+
+* "OGC API - Features - Part 1: Core" to refer to this document that in ISO is published as ISO 19168-1 / "Geographic Information - Geospatial API for Features - Part 1: Core."
+
+This standard defines the resources listed in <<table_overview>>. For an overview of the resources, see section <<overview>>.
+
+[[table_overview]]
+.Overview of resources, applicable HTTP methods and links to the document sections
+|===
+h| Resource h| Path h| HTTP method h| Document reference
+| Landing page | `/` | GET | <<api_landing_page>>
+| Conformance declaration | `/conformance` | GET | <<declaration_of_conformance_classes>>
+| Feature collections | `/collections` | GET | <<feature_collections>>
+| Feature collection | `/collections/{collectionId}` | GET | <<feature_collection>>
+| Features | `/collections/{collectionId}/items` | GET | <<features>>
+| Feature | `/collections/{collectionId}/items/{featureId}` | GET | <<feature>>
+|===
+
+Implementations of OGC API Features are intended to support two different approaches how clients can use the API.
+
+In the first approach, clients are implemented with knowledge about this standard and its resource types. The clients navigate the resources based on this knowledge and based on the responses provided by the API. The API definition may be used to determine details, e.g., on filter parameters, but this may not be necessary depending on the needs of the client. These are clients that are in general able to use multiple APIs as long as they implement OGC API Features.
+
+The other approach targets developers that are not familiar with the OGC API standards, but want to interact with spatial data provided by an API that happens to implement OGC API Features. In this case the developer will study and use the API definition - typically an OpenAPI document - to understand the API and implement the code to interact with the API. This assumes familiarity with the API definition language and the related tooling, but it should not be necessary to study the OGC API standards.
+
+[.preface]
+== Submitters
+
+All questions regarding this submission should be directed to the editors or the submitters:
+
+[%unnumbered]
+|===
+h|Name h| Affiliation
+| Clemens Portele _(editor)_ | interactive instruments GmbH
+| Panagiotis (Peter) A. Vretanos _(editor)_ | CubeWerx Inc.
+| Charles Heazel _(editor)_ | Heazeltech LLC
+| Michael Gordon | Ordnance Survey
+| Jeff Harrison | US Army Geospatial Center (AGC)
+| Chris Holmes | Planet Labs
+| Frédéric Houbie | Hexagon
+|===
+

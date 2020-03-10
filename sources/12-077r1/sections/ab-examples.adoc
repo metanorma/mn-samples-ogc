@@ -1,0 +1,329 @@
+
+[[annex-examples]]
+[appendix,obligation=informative]
+== Examples
+
+=== GetCapabilities
+An example of a *GetCapabilities* HTTP GET request and XML response from an actual server is as below. DNS names were changed.
+
+`http://example.com/wami/CS?service=CS&request=GetCapabilities&version=1.0.0&AcceptFormats=text/xml`
+
+[%unnumbered]
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:Capabilities version="1.0.0" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns1="http://www.opengis.net/ows/2.0" xmlns:ns3="http://www.pixia.com/wami">
+<ns1:ServiceIdentification>
+<ns1:Title>Collection Service</ns1:Title>
+<ns1:ServiceType>CS</ns1:ServiceType>
+<ns1:ServiceTypeVersion>1.0.0</ns1:ServiceTypeVersion>
+</ns1:ServiceIdentification>
+<ns1:ServiceProvider>
+<ns1:ProviderName>Pixia Corp</ns1:ProviderName>
+<ns1:ServiceContact/>
+</ns1:ServiceProvider>
+<ns1:OperationsMetadata>
+<ns1:Operation name="GetCollectionCount">
+<ns1:DCP>
+<ns1:HTTP>
+<ns1:Get ns2:type="simple" ns2:href="http://example.com/wami/CS"/>
+</ns1:HTTP>
+</ns1:DCP>
+<ns1:Parameter name="Service">
+<ns1:AllowedValues>
+<ns1:Value>CS</ns1:Value>
+</ns1:AllowedValues>
+</ns1:Parameter>
+<ns1:Parameter name="Request">
+<ns1:AllowedValues>
+<ns1:Value>GetCollectionCount</ns1:Value>
+</ns1:AllowedValues>
+</ns1:Parameter>
+<ns1:Parameter name="Version">
+<ns1:AllowedValues>
+<ns1:Value>1.0.0</ns1:Value>
+</ns1:AllowedValues>
+</ns1:Parameter>
+<ns1:Parameter name="Format">
+<ns1:AllowedValues>
+<ns1:Value>application/xml</ns1:Value>
+<ns1:Value>application/json</ns1:Value>
+</ns1:AllowedValues>
+<ns1:DefaultValue>application/xml</ns1:DefaultValue>
+</ns1:Parameter>
+<ns1:Parameter name="AcceptLanguages">
+<ns1:AllowedValues>
+<ns1:Value>en-US</ns1:Value>
+<ns1:Value>en</ns1:Value>
+</ns1:AllowedValues>
+<ns1:DefaultValue>en-US</ns1:DefaultValue>
+</ns1:Parameter>
+<ns1:Parameter name="NID">
+<ns1:AnyValue/>
+</ns1:Parameter>
+<ns1:Parameter name="Depth">
+<ns1:AllowedValues>
+<ns1:Value>1</ns1:Value>
+<ns1:Value>All</ns1:Value>
+</ns1:AllowedValues>
+<ns1:DefaultValue>All</ns1:DefaultValue>
+</ns1:Parameter>
+<ns1:Parameter name="Bbox">
+<ns1:AnyValue/>
+<ns1:Meaning>Bounding box to filter collections wholly outside the box.</Meaning>
+</ns1:Parameter>
+<ns1:Parameter name="CRS">
+<ns1:AllowedValues>
+<ns1:Value>EPSG:4326</Value>
+<ns1:Value>EPSG:4269</Value>
+<ns1:Value>EPSG:32645</Value>
+</ns1:AllowedValues>
+<ns1:Meaning>Coordinate reference system for BBox</Meaning>
+</ns1:Parameter>
+<ns1:Parameter name="Time">
+<ns1:AnyValue/>
+<ns1:Meaning>ISO 8601 time interval</Meaning>
+</ns1:Parameter>
+</ns1:Operation>
+<ns1:Operation name="GetCollections">
+<ns1:DCP>
+<ns1:HTTP>
+<ns1:Get ns2:type="simple" ns2:href="http://example.com/wami/CS"/>
+</ns1:HTTP>
+</ns1:DCP>
+<ns1:Parameter name="Service">
+<ns1:AllowedValues>
+<ns1:Value>CS</ns1:Value>
+</ns1:AllowedValues>
+</ns1:Parameter>
+<ns1:Parameter name="Request">
+<ns1:AllowedValues>
+<ns1:Value>GetCollections</ns1:Value>
+</ns1:AllowedValues>
+</ns1:Parameter>
+<ns1:Parameter name="Version">
+<ns1:AllowedValues>
+<ns1:Value>1.0.0</ns1:Value>
+</ns1:AllowedValues>
+</ns1:Parameter>
+<ns1:Parameter name="Format">
+<ns1:AllowedValues>
+<ns1:Value>application/xml</ns1:Value>
+<ns1:Value>application/json</ns1:Value>
+<ns1:Value>json</ns1:Value>
+</ns1:AllowedValues>
+<ns1:DefaultValue>application/xml</ns1:DefaultValue>
+</ns1:Parameter>
+<ns1:Parameter name="AcceptLanguages">
+<ns1:AllowedValues>
+<ns1:Value>en-US</ns1:Value>
+<ns1:Value>en</ns1:Value>
+</ns1:AllowedValues>
+<ns1:DefaultValue>en-US</ns1:DefaultValue>
+</ns1:Parameter>
+<ns1:Parameter name="NID">
+<ns1:AnyValue/>
+</ns1:Parameter>
+<ns1:Parameter name="Metadata">
+<ns1:AllowedValues>
+<ns1:Value>All</ns1:Value>
+<ns1:Value>None</ns1:Value>
+<ns1:Value>Collection</ns1:Value>
+<ns1:Value>GeoBox</ns1:Value>
+<ns1:Value>File</ns1:Value>
+</ns1:AllowedValues>
+<ns1:DefaultValue>None</ns1:DefaultValue>
+</ns1:Parameter>
+<ns1:Parameter name="Depth">
+<ns1:AllowedValues>
+<ns1:Value>0</ns1:Value>
+<ns1:Value>1</ns1:Value>
+<ns1:Value>All</ns1:Value>
+</ns1:AllowedValues>
+<ns1:DefaultValue>0</ns1:DefaultValue>
+</ns1:Parameter>
+<ns1:Parameter name="Bbox">
+<ns1:AnyValue/>
+<ns1:Meaning>Bounding box to filter collections wholly outside the box.</Meaning>
+</ns1:Parameter>
+<ns1:Parameter name="CRS">
+<ns1:AllowedValues>
+<ns1:Value>EPSG:4326</Value>
+<ns1:Value>EPSG:4269</Value>
+<ns1:Value>EPSG:32645</Value>
+</ns1:AllowedValues>
+<ns1:Meaning>Coordinate reference system for BBox</Meaning>
+</ns1:Parameter>
+<ns1:Parameter name="Time">
+<ns1:AnyValue/>
+<ns1:Meaning>ISO 8601 time interval</Meaning>
+</ns1:Parameter>
+</ns1:Operation>
+</ns1:OperationsMetadata>
+<ns3:Language>en-US</ns3:Language>
+<ns3:Language>en</ns3:Language>
+</ns3:Capabilities>
+----
+
+
+=== CS
+
+. It is good to know in advance if a service is serving up a lot of data. This request gives you the number of nodes, edges, and collections being served. Request and response as below.
++
+--
+`http://example.com/CS?service=CS&request=GetCollectionCount&version=1.0.2&format=text/xml`
+
+[%unnumbered]
+[source,xml]
+----
+<wami:CS_CollectionCount xmlns:wami="http://www.pixia.com/wami" xmlns:ns2="http://www.opengis.net/ows/2.0" xmlns:ns3="http://www.w3.org/1999/xlink" root="true" depth="0" NID="Pixia.Root" childNodes="3" totalNodes="7" collections="2" edgeDepth="4" lang="en" version="1.0.0"/>
+----
+--
+
+. If there is a lot of data being served, you can get just the top level list of nodes as follows:
++
+--
+`http://example.com/CS?service=CS&request=GetCollections&version=1.0.2&format=text/xml&Depth=1`
+
+[%unnumbered]
+[source,xml]
+----
+<wami:CS_Collections xmlns:wami="http://www.pixia.com/wami/v101" xmlns:ns2="http://www.opengis.net/ows/2.0" xmlns:ns3="http://www.w3.org/1999/xlink" updateSequence="1333460158002" lang="en" version="1.0.2">
+  <wami:Node id="Pixia.Root" name="Master Node" NID="Pixia.Root" updateSequence="1333460158002">
+    <wami:Node id="71cf67b97c6a4045ae9ce27b7ca7f475" name="dir1" parentNID="Pixia.Root" NID="71cf67b97c6a4045ae9ce27b7ca7f475" updateSequence="1333460155579"/>
+    <wami:Node id="06c5f1c2e641428ebeed061213b69a00" name="ch2009-07-18-v25" parentNID="Pixia.Root" NID="06c5f1c2e641428ebeed061213b69a00" CID="ece48e24ad2b41eab709984e272cbbc2" updateSequence="1333399468333">
+      <wami:Service name="IS">
+        <wami:Request get="true" ns3:type="simple" ns3:href="http://example.com/wami-soa-server/wami/IS"/>
+      </wami:Service>
+      <wami:Service name="VS">
+        <wami:Request get="true" ns3:type="simple" ns3:href="http://example.com/wami-soa-server/wami/VS"/>
+      </wami:Service>
+    </wami:Node>
+    <wami:Node id="94484e794b59494c9226cc03c6ee9ff7" name="dir3" parentNID="Pixia.Root" NID="94484e794b59494c9226cc03c6ee9ff7" updateSequence="1333460158002"/>
+  </wami:Node>
+</wami:CS_Collections>
+----
+--
+
+. Starting from a specific node (identified by *NID*) in the tree, get information about its child-nodes.
++
+--
+`http://example.com/CS?service=CS&request=GetCollections&version=1.0.2&format=xml&Depth=1&nid=71cf67b97c6a4045ae9ce27b7ca7f475`
+
+[%unnumbered]
+[source,xml]
+----
+<wami:CS_Collections xmlns:wami="http://www.pixia.com/wami/v101" xmlns:ns2="http://www.opengis.net/ows/2.0" xmlns:ns3="http://www.w3.org/1999/xlink" updateSequence="1333460155579" lang="en" version="1.0.2">
+  <wami:Parent NID="Pixia.Root">
+    <wami:Service name="CS"/>
+  </wami:Parent>
+  <wami:Node id="71cf67b97c6a4045ae9ce27b7ca7f475" name="dir1" parentNID="Pixia.Root" NID="71cf67b97c6a4045ae9ce27b7ca7f475" updateSequence="1333460155579">
+    <wami:Node id="c7c2755546e041928c2b324e3949207c" name="dir2" parentNID="71cf67b97c6a4045ae9ce27b7ca7f475" NID="c7c2755546e041928c2b324e3949207c" updateSequence="1333460155579"/>
+  </wami:Node>
+</wami:CS_Collections>
+----
+--
+
+. Get metadata about a specific WAMI collection, which is a leaf-node in the tree.
++
+--
+`http://example.com/CS?service=CS&request=GetCollections&version=1.0.2&format=xml&Depth=1&ece48e24ad2b41eab709984e272cbbc2&metadata=All`
+
+[%unnumbered]
+[source,xml]
+----
+<wami:CS_Collections xmlns:wami="http://www.pixia.com/wami/v101" xmlns:ns2="http://www.opengis.net/ows/2.0" xmlns:ns3="http://www.w3.org/1999/xlink" updateSequence="1333460158002" lang="en" version="1.0.2">
+  <wami:Node id="Pixia.Root" name="Master Node" NID="Pixia.Root" updateSequence="1333460158002">
+    <wami:Node id="71cf67b97c6a4045ae9ce27b7ca7f475" name="dir1" parentNID="Pixia.Root" NID="71cf67b97c6a4045ae9ce27b7ca7f475" updateSequence="1333460155579"/>
+    <wami:Node id="06c5f1c2e641428ebeed061213b69a00" name="ch2009-07-18-v25" parentNID="Pixia.Root" NID="06c5f1c2e641428ebeed061213b69a00" CID="ece48e24ad2b41eab709984e272cbbc2" updateSequence="1333399468333">
+      <wami:Service name="IS">
+        <wami:Request get="true" ns3:type="simple" ns3:href="http://example.com/wami-soa-server/wami/IS"/>
+      </wami:Service>
+      <wami:Service name="VS">
+        <wami:Request get="true" ns3:type="simple" ns3:href="http://example.com/wami-soa-server/wami/VS"/>
+      </wami:Service>
+      <wami:Metadata>
+        <wami:Collection startFrame="0" endFrame="3959" frameCount="3960" startTime="2009-07-18T18:45:25.27425Z" endTime="2009-07-18T19:22:32.62225Z" timeSpan="2227.348" frameInterval="0.562461" frameJitter="0.280668039" live="false"/>
+        <wami:GeoBox nativeCRS="EPSG:32611">
+          <wami:BoundingBox crs="EPSG:32611" minx="434544.0" miny="3940726.999682188" maxx="442542.00031781197" maxy="3948725.0" resx="0.6000000238418579" resy="0.6000000238418579"/>
+          <wami:BoundingBox crs="EPSG:4326" minx="-117.72334408548379" miny="35.60863513139489" maxx="-117.63439433102808" maxy="35.68024593060201" resx="6.6728998091306546E-6" resy="5.372152978778811E-6"/>
+        </wami:GeoBox>
+        <wami:File fileName="/virtual/tmp/ch2009-07-18-v25.nmv" modifyTime="2011-05-05T21:26:15.000Z" pixelWidth="13330" pixelHeight="13330" bands="1" bitsPerBand="8" bandDataType="u"/>
+      </wami:Metadata>
+    </wami:Node>
+    <wami:Node id="94484e794b59494c9226cc03c6ee9ff7" name="dir3" parentNID="Pixia.Root" NID="94484e794b59494c9226cc03c6ee9ff7" updateSequence="1333460158002"/>
+  </wami:Node>
+</wami:CS_Collections>
+----
+--
+
+=== IS
+All the OPTIONS in the requests below are specific to the server implementation. They were communicated to the client through a prior GetCapabilities request. All the images below are courtesy of PV Labs, Inc.
+
+. This request resulted in the following zoomed-out image.
++
+--
+`http://example.com/path/wami/IS?CID=XXXXXX&Request=GetMap&Service=IS&Version=1.0.0&CRS=EPSG:4326&Options.jpeg_quality=70&Format=image/jpeg&Exceptions=IMAGE&BBox=-78.94398740364547,43.862939714093955,-78.92885536723168,43.869013314093955&Width=1356&Height=730&Time=F1`
+
+[%unnumbered]
+image::fig-is-1.png[]
+--
+
+. The client zoomed into the bridge at the center of the image.
++
+--
+`http://example.com/path/wami/IS?CID=XXXXXX&Request=GetMap&Service=IS&Version=1.0.0&CRS=EPSG:4326&Options.jpeg_quality=70&Format=image/jpeg&Exceptions=IMAGE&BBox=-78.93736713771443,43.86579815409395,-78.9354756331627,43.86651263409395&Width=1356&Height=687&Time=F1`
+
+[%unnumbered]
+image::fig-is-2.png[]
+--
+
+. This request results in a single MIME multi-part response comprising of four images of the selected area of interest from frames 1, 2, 3 and 4. The Chrome browser quickly flips through these JPEG images. The four images are as shown below.
++
+--
+`http://example.com/path/wami/IS?CID=XXXXXX&Request=GetMap&Service=IS&Version=1.0.0&CRS=EPSG:4326&Options.jpeg_quality=70&Format=image/jpeg&Exceptions=IMAGE&BBox=-78.93831288999029,43.86544091409395,-78.93452988088684,43.86686987409395&Width=678&Height=343&Time=F1/F4&Disposition=replace`
+
+[%unnumbered]
+image::fig-is-3.png[]
+
+`http://example.com/path/wami/IS?CID=XXXXXX&Request=GetMap&Service=IS&Version=1.0.0&CRS=EPSG:4326&Options.jpeg_quality=70&Format=image/jpeg&Exceptions=IMAGE&BBox=-78.94398740364547,43.862939714093955,-78.92885536723168,43.869013314093955&Width=1356&Height=730&Time=F1`
+--
+
+. This request gets a client a single image of an AOI set using a bounding box at frame 101 from a collection in JPEG format (assuming the server supports JPEG).
++
+--
+`http://example.com/CS?CID=ece48e24ad2b41eab709984e272cbbc2&Request=GetMap&Service=IS&Version=1.0.0&CRS=EPSG:4326&Options.jpeg.quality=50&Format=image/jpeg&Exceptions=IMAGE&BBox=-78.94355126506584,43.85916706820535,-78.93842759427986,43.86007044647508&Width=1674&Height=400&Time=F101`
+--
+
+. The same request delivers the same image in some other format such as GeoTIFF, in a compressed unsigned 16-bit format. Optional advanced features need to be provided by the server.
++
+--
+`http://example.com/CS?CID=ece48e24ad2b41eab709984e272cbbc2&Request=GetMap&Service=IS&Version=1.0.0&CRS=EPSG:4326&Options.tif.band.datatype=u16&Options.tif.compress=gzip &Options.tif.type=geotiff&Format=image/tif&Exceptions=IMAGE&BBox=-78.94355126506584,43.85916706820535,-78.93842759427986,43.86007044647508&Width=1674&Height=400&Time=F101`
+--
+
+. Instead of asking for one frame at a time, a smart client in a high latency high bandwidth environment could ask for say 10 frames at a time, interlaced with metadata.
++
+--
+`http://example.com/CS?CID=ece48e24ad2b41eab709984e272cbbc2&Request=GetMap&Service=IS&Version=1.0.0&CRS=EPSG:4326&Options.jpeg.quality=50&Format=image/jpeg&Exceptions=IMAGE&BBox=-78.94355126506584,43.85916706820535,-78.93842759427986,43.86007044647508&Width=1674&Height=400&Time=F101/F110/FS1&disposition=replace&metadata=All`
+--
+
+
+This will respond with a MIME multi-part message, starting with an XML manifest document providing a list of what follows, followed by a JPEG image for frame 101, followed by metadata for frame 101, followed by a JPEG image for frame 102, followed by metadata for frame 102, until frame 110. Just the XML manifest would look like:
+
+[%unnumbered]
+[source,xml]
+----
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ns3:IS_Map xmlns:ns2="http://www.w3.org/1999/xlink" xmlns:ns1="http://www.opengis.net/ows/2.0" xmlns:ns3="http://www.pixia.com/wami">
+  <ns3:Reference imageReference="image0" metadataReference="metadata0"/>
+  <ns3:Reference imageReference="image1" metadataReference="metadata1"/>
+  <ns3:Reference imageReference="image2" metadataReference="metadata2"/>
+  ...
+</ns3:IS_Map>
+----
+
+[[annex-subsec-vs]]
+=== VS
+As soon as this request is received by the server, it starts to stream an MPEG2 transport stream that embeds MISB compliant KLV metadata. All the OPTIONS in this request are specific to the server. They were communicated to the client through a prior GetCapabilities request.
+
+`http://example.com/VS?CID=XXXXXXX&Version=1.0.0&CRS=EPSG%3A4326&Request=GetMapVideo&Service=VS&Exceptions=XML&Time=F0%2FF4112&BBox=-78.94355126506584%2C43.85916706820535%2C-78.93842759427986%2C43.86007044647508&Height=400&Width=1674&FORMAT=video/mpeg2&options.mpeg2.codec=mpeg2&options.mpeg2.stream=transport&options.mpeg2.kbps=3000&options.mpeg2.fps=30&Dup=0&options.mpeg2.gop=15&options.mpeg2.direction=forward&METADATA=All`

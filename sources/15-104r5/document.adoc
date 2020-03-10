@@ -1,0 +1,43 @@
+= Topic 21: Discrete Global Grid Systems Abstract Specification
+:doctype: abstract-specification-topic
+:language: en
+:status: approved
+:committee: technical
+:edition: 1.0
+:docnumber: 15-104r5
+:received-date: 2015-09-30
+:issued-date: 2017-06-13
+:published-date: 2017-08-01
+:external-id: http://www.opengis.net/doc/AS/dggs/1.0
+:referenceURLID: http://docs.opengeospatial.org/as/15-104r5/15-104r5.html
+:fullname: Matthew Purss
+:role: editor
+:keywords: ogcdoc, OGC document, Discrete Global Grid System, DGGS, Digital Earth, DGGScore, Spatial Reference System, Global Data Structure, Geographic Information Systems, DE-9IM, standard, specification
+:submitting-organizations: Geoscience Australia; Landcare Research New Zealand; University of Calgary; PYXIS; SpaceCurve; Zhengzhou Institute of Surveying & Mapping; ESRI
+:docfile: document.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+include::sections/00-preface.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-conformance.adoc[]
+
+include::sections/03-references.adoc[]
+
+include::sections/04-terms_and_definitions.adoc[]
+
+include::sections/05-conventions.adoc[]
+
+include::sections/06-dggs_core_data_model.adoc[]
+
+include::sections/90-annexA.adoc[]
+
+include::sections/91-annexB.adoc[]
+
+include::sections/92-annexC.adoc[]
+
+include::sections/93-annexD.adoc[]

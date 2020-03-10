@@ -1,0 +1,97 @@
+
+[appendix]
+== Bibliography
+
+[1] Mahdavi-Amiri, A., Samavati, F. F., Peterson, P., 2015, "Categorization and conversions for indexing methods of discrete global grid systems", _ISPRS International Journal of Geo-Information_, 4(1), pp 320–336. http://dx.doi.org/10.3390/ijgi4010320[DOI:10.3390/ijgi4010320]
+
+[2] Mahdavi-Amiri, A., Alderson, T., & Samavati, F., 2015, "A Survey of Digital Earth Representation and Visualization", _Computers & Graphics_, Elsevier Ltd., pp. 95-117. uri: http://hdl.handle.net/1880/50407[http://hdl.handle.net/1880/50407]
+
+[3] Dictionary of Computing, Forth Edition, Oxford University Press, 1996
+
+[4] Goodchild, M. F., 1992, "Geographical information science", _International Journal of Geographical Information Systems_, 6(1): pp 31–45. http://dx.doi.org/10.1080/02693799208901893[DOI:10.1080/02693799208901893]
+
+[5] Clementini, E., Di Felice, P., van Oosterom, P., 1993. "A small set of formal topological relationships suitable for end-user interaction". _In Abel, David; Ooi, Beng Chin. Advances in Spatial Databases: Third International Symposium, SSD '93 Singapore, June 23–25, 1993 Proceedings. Lecture Notes in Computer Science. 692/1993. Springer_. pp 277–295. http://dx.doi.org/10.1007/3-540-56869-7_16[DOI:10.1007/3-540-56869-7_16].
+
+[6] Clementini, E., Sharma, J., Egenhofer, M. J., 1994, "Modelling topological spatial relations: Strategies for query processing". _Computers & Graphics_ 18 (6), pp 815–822. http://dx.doi.org/10.1016/0097-8493(94)90007-8[DOI:10.1016/0097-8493(94)90007-8].
+
+[7] Clementini, E., and Di Felice P. A., 1996, "A Model for Representing Topological Relationships between Complex Geometric Features in Spatial Databases." _Information Sciences,_ 90(1), pp 121-136. http://dx.doi.org/10.1016/0020-0255(95)00289-8[DOI:10.1016/0020-0255(95)00289-8]
+
+[8] Egenhofer, M.J.; Herring, J.R., 1990, "A Mathematical Framework for the Definition of Topological Relationships". _Fourth International Symposium on Spatial Data Handling Zürich, Switzerland_, pp 803-813. http://www.spatial.maine.edu/~max/MJEJRH-SDH1990.pdf[http://www.spatial.maine.edu/~max/MJEJRH-SDH1990.pdf]
+
+[9] Goodchild, M. F., 2000, "Discrete global grids for digital earth", _International Conference on Discrete Global Grids._ Santa Barbara. http://www.ncgia.ucsb.edu/globalgrids/papers/goodchild.pdf[http://www.ncgia.ucsb.edu/globalgrids/papers/goodchild.pdf]
+
+[10] Peterson, P. R., 2017, "Discrete Global Grid Systems." _In The International Encyclopedia of Geography_, edited by Douglas Richardson. Malden, Oxford: John Wiley and Sons, Ltd. DOI: 10.1002/9781118786352.wbieg1050
+
+[11] Sahr, K., White, D., Kimerling, A. J., 2003, "Geodesic discrete global grid systems", _Cartography and Geographic Information Science_, 30 (2), pp 121–134. http://dx.doi.org/10.1559/152304003100011090[DOI:10.1559/152304003100011090]
+
+[12] Postel, J., 1981, "RFC 791: Internet protocol", _Darpa Internet Protocol Specification (September 1981)_. - https://tools.ietf.org/html/rfc791[https://tools.ietf.org/html/rfc791]
+
+[13] Vincenty, T., 1975, "Direct and Inverse Solutions of Geodesics on the Ellipsoid with Application of Nested Equations", Survey Review, 23(176), pp88-93.
+
+[14] Pacioli, L., 1509, "De Davina Proportione" (Illustrated by Leonardo Da Vinci), Venice.
+
+[15] da Vinci, L, 1514, "Manuscript E, 24v-25r (1513-14)". Pen and ink on paper, 150 x 99 mm. Bibliothèque de l'Institut de France, Paris.
+
+[16] da Vinci, L, 1478-1518, "Codex Atlanticus". Pen and ink on paper, 61 x 44 cm. (collated by Pompeo Leoni). Biblioteca Ambrosiana, Milan, Italy.
+
+[17] "Life Presents R. Buckminster Fuller's Dymaxion World". _Life_, 1 March 1943, pp 41-45
+
+[18] Fuller, R. B., 1946, Cartography. U.S. Patent 2,393,676. https://www.google.com/patents/US2393676[https://www.google.com/patents/US2393676]
+
+[19] Fuller, R. B. and Sadao, S., 1954, "Dymaxion Airocean World: The Raleigh Edition of Fuller Projection". _Student Publications of the School of Design_, North Carolina State College, Raleigh, North Carolina, USA. ( http://www.genekeyes.com/FULLER/BF-5-1954.html[http://www.genekeyes.com/FULLER/BF-5-1954.html])
+
+[20] E. H. Vestine, W. L. Sibley, J. W. Kern, and J. L. Carlstedt, "Integral and Spherical-Harmonic Analyses of the Geomagnetic Field for 1955.0, Part 2," Journal of Geomagnetism and Geoelectricity, vol. 15, No. 2, Aug. 1963, pp. 73-89.
+
+[21] Sadourny, R.; Arakawa, A.; Mintz, Y. (1968). "Integration of the nondivergent barotropic vorticity equation with an icosahedral-hexagonal grid for the sphere". Monthly Weather Review 96 (6): 351–356.
+
+[22] Dutton, G., 1989, "Modelling location uncertainty via hierarchical tessellation". In: Accuracy of Spatial Databases, Goodchild, M. and Gopal, S. (eds.), London: Taylor & Francis, pp 125-140.
+
+[23] Dutton, G., 1999, "A hierarchical coordinate system for geoprocessing and cartography". Lecture Notes in Earth Science 79. Berlin: Springer-Verlag. XIX + 231 pp. 97 figs. 12 plates, 16 tabs. ISSN 0930-0317, ISBN 3-540-64980-8.
+
+[24] Dutton, G., 1984, "Part 4: Mathematical, Algorithmic and Data Structure Issues: Geodesic Modelling Of Planetary Relief", _Cartographica: The International Journal for Geographic Information and Geovisualization_, 21(2-3), pp 188-207. http://dx.doi.org/10.3138/R613-191U-7255-082N[DOI:10.3138/R613-191U-7255-082N]
+
+[25] Dutton, G., 1996, "Encoding and handling geospatial data with hierarchical triangular meshes", _In Proceeding of 7th International symposium on spatial data handling_, 43, Netherlands: Talor & Francis. http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.461.5603[DOI:10.1.1.461.5603]
+
+[26] Dutton, G., 1999, "Scale, Sinuosity, and Point Selection in Digital Line Generalization", _Cartography and Geographic Information Science_, 26(1), pp 33-54. DOI:10.1559/152304099782424929.
+
+[27] Tobler, W., & Chen, Z.-t., 1986, "A Quadtree for Global Information Storage", _Geographical Analysis_, 18(4), pp 360-371. http://dx.doi.org/10.1111/j.1538-4632.1986.tb00108.x[DOI:10.1111/j.1538-4632.1986.tb00108.x]
+
+[28] White, D., Kimerling, J., & Overton, W. S., 1992, "Cartographic and geometric components of a global sampling design for environmental monitoring", _Cartography and Geographic Information Systems_, 19(1), pp 5-22. http://dx.doi.org/10.1559/152304092783786636[DOI:10.1559/152304092783786636]
+
+[29] Kimerling, A. J., Sahr, K., White, D., & Song, L., 1999, "Comparing Geometrical Properties of Global Grids", _Cartography and Geographic Information Systems vol. 26, no. 4_, pp 271-88. http://dx.doi.org/10.1559/152304099782294186[DOI:10.1559/152304099782294186]
+
+[30] Dutton, G., 1994, "Geographical grid models for environmental monitoring and analysis across the globe (panel session)". In: Proceedings of GIS/US'94 Conference, Phoenix, Arizona.
+
+[31] Snyder, J. P., 1992, "An equal-area map projection for polyhedral globes". _Cartographica_, 29(1), pp 10-21.
+
+[32] Song, L., 1997, "Small circle subdivision method for development of global sampling grid", _Unpublished Masters Thesis_, Oregon State University, 176pp.
+
+[33] Song, L., Kimerling, A. J., and Sahr, K., 2002, "Developing an Equal Area Global Grid by Small Circle Subdivision". _In M. Goodchild and A. J. Kimerling (Eds.), Discrete Global Grids. Santa Barbara, CA, USA: National Center for Geographic Information & Analysis._ ( http://www.geo.upm.es/postgrado/CarlosLopez/materiales/cursos/www.ncgia.ucsb.edu/globalgrids-book/song-kimmerling-sahr/[http://www.geo.upm.es/postgrado/CarlosLopez/materiales/cursos/www.ncgia.ucsb.edu/globalgrids-book/song-kimmerling-sahr/])
+
+[34] Lukatela, H., 1987, "Hipparchus geopositioning model: An overview", In: _Proceedings of Auto Carto 8 Symposium, Baltimore, Maryland_. pp 87-96.
+
+[35] Fekete, G., Treinish, L., 1990, "Sphere quadtree: A new data structure to support the visualization of spherically distributed data"._SPIE: Extracting Meaning from complex data: Processing, display, interaction._ 1259, pp 242-253.
+
+[36] Bjorke, J. T., Grytten, J. K., Haeger, M., Nilsen, S., 2003, "A Global Grid Model Based on 'Constant Area' Quadrilaterals", _ScanGIS_, 3, pp 238-250. DOI: 10.1.1.105.2253
+
+[37] Amante, C. and Eakins, B. W., 2009, "ETOPO1 1 Arc-Minute Global Relief Model: Procedures, Data Sources and Analysis", _NOAA Technical Memorandum NESDIS NGDC-24_, 19 pp.
+
+[38] Rees, T., 2002, " 'C-Squares' – a new metadata element for improved spatial querying and representation of spatial dataset coverage in metadata records", _in EOGEO 2002 Proceedings, Ispra, Italy._
+
+[39] Loveland, T. R., Merchant, J. W., Ohlen, D., O., Brown, J. F., 1991, "Development of a land-cover characteristics database for the counterminous". _U.S. Photogrammetric Engineering and Remote Sensing_, 57(11), pp 1453-1463
+
+[40] Snyder J. P., 1993, "Flattening the Earth: Two Thousand Years of Map Projections", pp5-8. ISBN 0-226-76747-7)
+
+[41] Gibb, R.G., 2016, "The rHealPIX Discrete Global Grid System" Proceedings of the 9^th^ Symposium of the International Society for Digital Earth (ISDE), Halifax, Nova Scotia, Canada. _IOP Conf. Series: Earth and Environmental Science_, 34, 012012. DOI: 10.1088/1755-1315/34/1/012012
+
+[42] Ma, T., Zhou, C., Xie, Y., Qin, B., Ou, Y., 2009, "A discrete square global grid system based on the parallels plane projection". _International Journal of Geographical Information Science._ 23(10), pp 1297-1313. DOI: 10.1080/13658810802344150
+
+[43] Fisher, I., 1943, "A World Map on a Regular Icosahedron by Gnomonic Projection", _Geographical Review_, 33(4), pp 605-619, DOI: 10.2307/209914
+
+[44] Fuller, R. B., 1982, "Synergetics", New York.
+
+[45] Clarke, K. C., 2000, "Criteria and Measures for the Comparison of Global Geocoding Systems", _International Conference on Discrete Global Grids. Santa Barbara: University of California, Santa Barbara_. http://ncgia.ucsb.edu/globalgrids-book/comparison/[http://ncgia.ucsb.edu/globalgrids-book/comparison/]
+
+[46] Fitzpatrick, R., 2008. Euclid's Elements of Geometry.&nbsp;_Richard Fitzpatrick_. ISBN 978-0-6151-7984-1
+
+[47] Schmidt, R., Grimm, C., Wyvill, B., 2006, Interactive decal compositing with discrete exponential maps, _ACM Transactions on Graphics,_ 25 (3), pp 605–613.

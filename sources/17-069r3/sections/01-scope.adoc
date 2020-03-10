@@ -1,0 +1,8 @@
+
+== Scope
+
+This document specifies the behavior of Web APIs that provide access to features in a dataset in a manner independent of the underlying data store. This standard defines discovery and query operations.
+
+Discovery operations enable clients to interrogate the API to determine its capabilities and retrieve information about this distribution of the dataset, including the API definition and metadata about the feature collections provided by the API.
+
+Query operations enable clients to retrieve features from the underlying data store based upon simple selection criteria, defined by the client.

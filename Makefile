@@ -4,8 +4,24 @@ SHELL := /bin/bash
 IGNORE := $(shell mkdir -p $(HOME)/.cache/xml2rfc)
 
 SRC := $(lastword $(shell yq r metanorma.yml metanorma.source.files))
+
+ifeq ($(SRC),null)
+SRC := 
+endif
+ifeq ($(SRC),ll)
+SRC := 
+endif
+
 ifeq ($(SRC),)
 BUILT := $(shell yq r metanorma.yml metanorma.source.built_targets | cut -d ':' -f 1 | tr -s '\n' ' ')
+
+ifeq ($(BUILT),null)
+SRC := 
+endif
+ifeq ($(BUILT),ll)
+SRC := 
+endif
+
 ifeq ($(BUILT),)
 SRC := $(filter-out README.adoc, $(wildcard sources/*.adoc))
 else
@@ -14,9 +30,9 @@ endif
 endif
 
 FORMATS := $(shell yq r metanorma.yml metanorma.formats | tr -d '[:space:]' | tr -s '-' ' ')
-ifeq ($(FORMATS),null)
+ifeq ($(FORMATS),)
 FORMAT_MARKER := mn-output-
-FORMATS := $(shell grep "$(FORMAT_MARKER)" $(SRC) | cut -f 2 -d ' ' | tr ',' '\n' | sort | uniq | tr '\n' ' ')
+FORMATS := $(shell grep "$(FORMAT_MARKER)" $(SRC) | cut -f 2 -d " " | tr "," "\\n" | sort | uniq | tr "\\n" " ")
 endif
 
 XML  ?= $(patsubst sources/%,documents/%,$(patsubst %.adoc,%.xml,$(SRC)))
@@ -59,12 +75,7 @@ sources/%.xml: | bundle
 
 # Build derivative output
 sources/%.html sources/%.doc sources/%.pdf:	sources/%.xml
-	BUILT_TYPE=$(shell yq r metanorma.yml metanorma.source.built_type[$<]); \
-	if [ "$$BUILT_TYPE" != "null" ]; then \
-		$(PREFIX_CMD) metanorma -t $$BUILT_TYPE $<; \
-	else \
-		$(PREFIX_CMD) metanorma $<; \
-	fi
+	$(PREFIX_CMD) metanorma $<; \
 
 documents.rxl: $(XML)
 	echo "$(FORMATS)"; \

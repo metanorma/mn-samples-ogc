@@ -6,49 +6,69 @@ The WPS service model defines basic properties of any WPS server. A WPS server i
 .Artifacts of the WPS service model
 image::fig-artifacts-of-the-wps.png[]
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model",obligation="requirement",subject="Derived information model, encoding, and software implementation"]
+====
 
-.^|*Target type* |Derived information model, encoding, and software implementation
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/discovery +
+[requirement,type="general",label="/req/conceptual-model/discovery"]
+======
 Requirements class for service discovery.
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/capabilities + 
+======
+
+[requirement,type="general",label="/req/conceptual-model/capabilities"]
+======
 Requirements class for service capabilities.
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-model +
+======
+
+[recommendation,type="general",label="/req/conceptual-model/process-model"]
+======
 Requirements class for supported process models.
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-control +
+======
+
+[requirement,type="general",label="/req/conceptual-model/job-control"]
+======
 Requirements class for job control.
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution"]
+======
 Requirements class for process execution.
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/data-transmission +
+======
+
+[requirement,type="general",label="/req/conceptual-model/data-transmission"]
+======
 Requirements class for data transmission between service and client.
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-monitoring +
+======
+
+[requirement,type="general",label="/req/conceptual-model/job-monitoring"]
+======
 Requirements class for job monitoring.
-|===
+======
+
+====
 
 
 === Service Discovery
 Any WPS server shall be self-contained, i.e. provide an initial endpoint that can be used by a WPS client to determine the server's capabilities.
 
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/discovery",obligation="requirement",subject="Derived information model, encoding, and software implementation"]
+====
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/discovery
-
-.^|*Target type* |Derived information model, encoding, and software implementation
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/discovery/endpoint  +
+[requirement,type="general",label="/req/conceptual-model/discovery/endpoint"]
+======
 All WPS servers shall have an initial end-point (HTTP URI).
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/discovery/capabilities + 
-The service shall provide a systematic discovery mechanism for all service capabilities.
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/discovery/mechanism +
-The discovery mechanism for the service capabilities shall be predictable from the initial endpoint.
-|===
+======
 
+[requirement,type="general",label="/req/conceptual-model/discovery/capabilities"]
+======
+The service shall provide a systematic discovery mechanism for all service capabilities.
+======
+
+[requirement,type="general",label="/req/conceptual-model/discovery/mechanism"]
+======
+The discovery mechanism for the service capabilities shall be predictable from the initial endpoint.
+======
+
+====
 
 === Service Capabilities
 The basic capabilities of any WPS server fall into two categories: The first category comprises capabilities for process discovery and retrieval of process descriptions. The second category comprises capabilities to manage and monitor processing jobs.
@@ -57,23 +77,32 @@ Since the processes provided by a WPS server may have different degrees of compl
 
 Further service capabilities, i.e. for secure communication and user authentication may be provided with the service but are neither covered nor restricted by this specification as long as they do not alter or change the semantics of other job control capabilities.
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/capabilities
 
-.^|*Target type* |Derived information model, encoding, and software implementation
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/capabilities/process-offering  +
-_The service shall provide a process offering capabilities. This capability informs service clients about the available processes._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/capabilities/process-model-identification + 
-_All process offerings shall provide an identifier for their process model used._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/capabilities/job-control +
-_The service shall provide job control and monitoring capabilities. These capabilities enable service clients to manage processing jobs via the service interface._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/capabilities/job-control-per-process-offering +
-_The service shall indicate the allowed job control capabilities per process._
-|===
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/capabilities",obligation="requirement",subject="Derived information model, encoding, and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process"]
+====
+
+[requirement,type="general",label="/req/conceptual-model/capabilities/process-offering"]
+======
+The service shall provide a process offering capabilities. This capability informs service clients about the available processes.
+======
+
+[requirement,type="general",label="/req/conceptual-model/capabilities/process-model-identification"]
+======
+All process offerings shall provide an identifier for their process model used.
+======
+
+[requirement,type="general",label="/req/conceptual-model/capabilities/job-control"]
+======
+The service shall provide job control and monitoring capabilities. These capabilities enable service clients to manage processing jobs via the service interface.
+======
+
+[requirement,type="general",label="/req/conceptual-model/capabilities/job-control-per-process-offering"]
+======
+The service shall indicate the allowed job control capabilities per process.
+======
+
+====
 
 [[subsec-abstract-process-model]]
 === Abstract Process Model
@@ -85,65 +114,91 @@ The abstract process model provides many degrees of freedom for process descript
 .Abstract process model UML class diagram
 image::fig-abstract-process-model-uml.png[]
 
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process",obligation="requirement",subject="Derived information model, encoding, and software implementation"]
+====
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process
-
-.^|*Target type* |Derived information model, encoding, and software implementation
-
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/identifier +
+[requirement,type="general",label="/req/conceptual-model/process/identifier"]
+======
 _A process shall provide a unique identifier to distinguish the process from other processes._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/identifier-string +
+[requirement,type="general",label="/req/conceptual-model/process/identifier-string"]
+======
 _The unique identifier of a process shall be a character string or preferably a resolvable URI._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/input +
+[requirement,type="general",label="/req/conceptual-model/process/input"]
+======
 _A process may have an arbitrary number of inputs (zero or more)._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/input-identifier +
+[requirement,type="general",label="/req/conceptual-model/process/input-identifier"]
+======
 _Each input of a process shall have a unique identifier to distinguish the input from all other inputs._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/input-identifier-string +
+[requirement,type="general",label="/req/conceptual-model/process/input-identifier-string"]
+======
 _The unique identifier of an input shall be a character string._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/input-value-cardinality +
+[requirement,type="general",label="/req/conceptual-model/process/input-value-cardinality"]
+======
 _Each process input shall have a defined cardinality for values._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/nested-input +
-_Process inputs may be nested according to <<fig-abstract-process-model-uml>>._
-
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/nested-input-identifier +
-_The identifier of a nested input shall be unique within its nesting node._
-
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/output +
-_A process shall have one or more outputs._
-
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/output-identifier +
-_Each output of a process shall have a unique identifier to distinguish the output from all other outputs of the process._
-
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/output-identifier-string +
-_The unique identifier of an output shall be a character string._
-
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/output-value-cardinality +
-_Each process output shall have a value cardinality of one._
-
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/nested-output +
+[requirement,type="general",label="/req/conceptual-model/process/nested-input"]
+======
 _Process outputs may be nested according to <<fig-abstract-process-model-uml>>._
+======
 
+[requirement,type="general",label="/req/conceptual-model/process/nested-input-identifier"]
+======
+_The identifier of a nested input shall be unique within its nesting node._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/nested-output-identifier +
+[requirement,type="general",label="/req/conceptual-model/process/output"]
+======
+_A process shall have one or more outputs._
+======
+
+[requirement,type="general",label="/req/conceptual-model/process/output-identifier"]
+======
+_Each output of a process shall have a unique identifier to distinguish the output from all other outputs of the process._
+======
+
+[requirement,type="general",label="/req/conceptual-model/process/output-identifier-string"]
+======
+_The unique identifier of an output shall be a character string._
+======
+
+[requirement,type="general",label="/req/conceptual-model/process/output-value-cardinality"]
+======
+_Each process output shall have a value cardinality of one._
+======
+
+[requirement,type="general",label="/req/conceptual-model/process/nested-output"]
+======
+_Process outputs may be nested according to <<fig-abstract-process-model-uml>>._
+======
+
+[requirement,type="general",label="/req/conceptual-model/process/nested-output-identifier"]
+======
 _The identifier of a nested output shall be unique within its nesting node._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/io-format  +
+[requirement,type="general",label="/req/conceptual-model/process/io-format"]
+======
 _All inputs and outputs that do not serve as nesting parents shall have a defined data format._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process/io-format-properties +
+[requirement,type="general",label="/req/conceptual-model/process/io-format-properties"]
+======
 _If inputs and outputs require encoding attributes, these shall be limited to the properties defined in <<tab-data-encoding-properties>>._
+======
 
-|===
+====
+
 
 [[tab-data-encoding-properties]]
 .Data encoding properties
@@ -161,28 +216,31 @@ _If inputs and outputs require encoding attributes, these shall be limited to th
 The execution capability, that permits WPS clients to instantiate and run processing jobs, is the most prominent job control capability. Furthermore, the ability to dismiss or delete a job is useful for long-running processes in order to release server resources.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-control
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-control",obligation="requirement",subject="Derived information model, encoding, and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/capabilities"]
+====
 
-.^|*Target type* |Derived information model, encoding, and software implementation
-
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/capabilities
-
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job/identifier +
+[requirement,type="general",label="/req/conceptual-model/job/identifier"]
+======
 _The service shall assign a unique identifier to each job._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job/identifier-unavailable-exception +
+[requirement,type="general",label="/req/conceptual-model/job/identifier-unavailable-exception"]
+======
 _The Service shall return an exception, if the client has attempted to use an invalid job identifier._
+======
 
-.^|*Requirement* a|	http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-control/execution +
+[requirement,type="general",label="/req/conceptual-model/job-control/execution"]
+======
 _The service shall provide the ability to execute a process, i.e. to create a new job for a given process execution capability. This capability enables service clients to execute the process defined in capabilities._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-control/dismiss +
+[requirement,type="general",label="/req/conceptual-model/job-control/dismiss"]
+======
 _The service may provide the capability to dismiss a submitted job. This capability enables service clients to indicate that they are no longer interested in the job or its results and permit the server to free the associated resources as soon as possible._
-|===
+======
+
+====
+
 
 
 === Process Execution
@@ -201,43 +259,80 @@ In the asynchronous case, the client sends an execute request to the WPS server 
 image::fig-asynchronous-process-execution-uml.png[]
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution",obligation="requirement",subject="Derived information model, encoding, and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-control"]
+====
 
-.^|*Target type* |Derived information model, encoding, and software implementation
-.^|*Dependency* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-control
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/select-process +
+[requirement,type="general",label="/req/conceptual-model/process-execution/select-process"]
+======
 _The service shall permit a client to determine the process to be executed._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/process-unavailable-exception +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/process-unavailable-exception"]
+======
 _The service shall return an exception if the client has attempted to execute an unavailable process._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/result +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/result"]
+======
 _On successful execution, the service shall deliver a result to the client. This result will contain the output data or a reference to the data._
-.^|*Requirement* a|	http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/result-expiry +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/result-expiry"]
+======
 _The execute result may have an expiration date. After that time the output data will be inaccessible for the client._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/failed-exception +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/failed-exception"]
+======
 _On failed execution, the service shall deliver an exception to the client._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/input-data +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/input-data"]
+======
 _The service shall permit a client to specify the input data to be used for a process execution._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/input-data-exception +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/input-data-exception"]
+======
 _The service shall return an exception if the client has specified invalid input data for process execution._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/output-data-format +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/output-data-format"]
+======
 _The service shall permit a client to define the desired data exchange format for the results of the process execution, based on the advertised formats for the process offering._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/output-data-format-exception +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/output-data-format-exception"]
+======
 _The service shall return an exception if the client has defined an unsupported data exchange format for the results._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/mode +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/mode"]
+======
 _The service shall provide execution capabilities in synchronous, asynchronous or both modes._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/mode-per-process-offering +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/mode-per-process-offering"]
+======
 _The service shall indicate the allowed execution modes per process offering._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/mode-select +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/mode-select"]
+======
 _In the case of multiple supported execution modes, the WPS server shall permit the client to specify the desired execution mode._
-.^|*Requirement* a|	http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/mode-auto +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/mode-auto"]
+======
 _If the client does not specify the desired execution mode, the service shall automatically pick footnote:[The duration of the execution may also depend on data size, network bandwidth, and available computing resources on the server side. In general, the client is not aware of these parameters, and may choose to defer the decision to the server.] an appropriate footnote:[Synchronous execution is generally preferred for very quick computations while asynchronous execution shall be chosen for long-running jobs. Foremost, the service shall respond quickly to the client to avoid connection timeouts.] mode out of the supported modes._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution/mode-unavailable-exception +
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution/mode-unavailable-exception"]
+======
 _The service shall return an exception if the client has specified an unsupported execution mode._
-|===
+======
+
+====
 
 === Data Transmission by Value and by Reference
 Data exchange between WPS clients and servers requires an agreement on the general data exchange patterns and suitable communication protocols. This specification defines two general data transmission modes for data exchange between WPS client and server.
@@ -251,29 +346,45 @@ image::fig-execute-call-and-response.png[]
 This specification makes no assumptions about the encoding of the transmitted data. Due to the variety of data formats and supplementary encoding procedures, the receiver may not be able to automatically detect the data format. The set of encoding attributes that may be used by the receiver to decode inline or directly referenced data is defined by the data format description (see <<tab-data-encoding-properties>>).
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/data-transmission
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/data-transmission",obligation="requirement",subject="Derived information model, encoding, and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution"]
+====
 
-.^|*Target type* |Derived information model, encoding, and software implementation
-.^|*Dependency* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/data-transmission/input-by-value +
+[requirement,type="general",label="/req/conceptual-model/data-transmission/input-by-value"]
+======
 _The service shall accept input data by value._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/data-transmission/input-by-reference +
+======
+
+[requirement,type="general",label="/req/conceptual-model/data-transmission/input-by-reference"]
+======
 _The service shall accept input data by reference._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/data-transmission/input-by-reference-unavailable-exception +
+======
+
+[requirement,type="general",label="/req/conceptual-model/data-transmission/input-by-reference-unavailable-exception"]
+======
 _The service shall return an exception, if the given input data reference is inaccessible._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/data-transmission/output-mode +
+======
+
+[requirement,type="general",label="/req/conceptual-model/data-transmission/output-mode"]
+======
 _The service shall support output data delivery by value, and / or by reference._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/data-transmission/output-mode-per-process-offering +
+======
+
+[requirement,type="general",label="/req/conceptual-model/data-transmission/output-mode-per-process-offering"]
+======
 _The supported output modes shall be specified per process offering._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/data-transmission/output-mode-select +
+======
+
+[requirement,type="general",label="/req/conceptual-model/data-transmission/output-mode-select"]
+======
 _In the case of multiple available data transmission modes (by value AND by reference), the Service shall allow a client to specify the desired data-transmission mode for each output._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/data-transmission/output-mode-unavailable-exception +
+======
+
+[requirement,type="general",label="/req/conceptual-model/data-transmission/output-mode-unavailable-exception"]
+======
 _The service shall return an exception if the client has specified an unsupported transmission mode._
-|===
+======
+
+====
 
 
 === Job Monitoring
@@ -290,37 +401,40 @@ If a client finds an expiry date in the status information, it shall respect it 
 This section also defines a basic status set to communicate the status of a server-side job to the client. Extensions of this specification may introduce additional states for fine-grained monitoring or domain-specific purposes.
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-monitoring
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-monitoring",obligation="requirement",subject="Derived information model, encoding, and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-control;http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution"]
+====
 
-.^|*Target type* |Derived information model, encoding, and software implementation
-
-.^|*Dependency* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-control
-
-.^|*Dependency* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process-execution
-
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-monitoring/status +
+[requirement,type="general",label="/req/conceptual-model/job-monitoring/status"]
+======
 _The Service shall provide access to machine-readable status information for asynchronously running jobs._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-monitoring/status-set +
+[requirement,type="general",label="/req/conceptual-model/job-monitoring/status-set"]
+======
 _In general, the service shall use the terms of the basic status set (<<tab-basic-status-set-for-jobs>>) describe the current status of a processing job._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-monitoring/progress +
+[requirement,type="general",label="/req/conceptual-model/job-monitoring/progress"]
+======
 _The Service may report the progress of a running job in percent._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-monitoring/estimated-completion +
+[requirement,type="general",label="/req/conceptual-model/job-monitoring/estimated-completion"]
+======
 _The Service may provide an estimate when the process results will be available._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-monitoring/next-poll +
+[requirement,type="general",label="/req/conceptual-model/job-monitoring/next-poll"]
+======
 _The Service may suggest a polling time for the next status check._
+======
 
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/job-monitoring/job-expiry +
+[requirement,type="general",label="/req/conceptual-model/job-monitoring/job-expiry"]
+======
 _The server may report an expiration time for a job. After this time, a job identifier will become invalid and existing results are removed from the server._
+======
 
-|===
+====
 
 [[tab-basic-status-set-for-jobs]]
 .Basic status set for jobs

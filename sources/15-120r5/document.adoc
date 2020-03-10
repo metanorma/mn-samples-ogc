@@ -1,0 +1,34 @@
+= Volume 0: Primer for the OGC CDB Standard: Model and Physical Data Store Structure
+:edition: 1.1
+:doctype: best-practice
+:docsubtype: general
+:committee: technical
+:workingGroup:
+:fullname: Carl Reed
+:role: editor
+:docnumber: 15-120r5
+:external-id: http://www.opengis.net/doc/BP/cdb-core-primer/1.1
+:received-date: 2018-03-20
+:issued-date: 2018-08-27
+:published-date: 2018-12-19
+:copyright-year: 2018
+:mn-document-class: ogc
+:status: published
+:language: en
+:docfile: document.adoc
+:keywords: ogcdoc, OGC document, CDB, Common Data Base, simulation, synthetic environment, virtual, primer, data store
+:submitting-organizations: CAE Inc.;Carl Reed, OGC Individual Member;Envitia, Ltd;Glen Johnson, OGC Individual Member;KaDSci, LLC;Laval University;Open Site Plan;University of Calgary;UK Met Office
+:imagesdir: images
+
+include::sections/00-front-material.adoc[]
+include::sections/01-whats-cdb.adoc[]
+include::sections/02-conformance.adoc[]
+include::sections/03-norm-refs.adoc[]
+include::sections/04-terms-defs.adoc[]
+include::sections/05-using-ogc-standards.adoc[]
+include::sections/06-background-informative-material.adoc[]
+include::sections/aa-revision-history.adoc[]
+include::sections/ab-references.adoc[]
+
+
+

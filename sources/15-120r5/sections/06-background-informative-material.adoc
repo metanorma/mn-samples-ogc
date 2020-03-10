@@ -1,0 +1,289 @@
+
+== Background and informative material
+
+=== Intended Audience
+The primary audience for the CDB standard includes distributed simulation system developers and synthetic environment database tool developers whose applications are intended to read and/or write synthetic environment database files. To this end, this document discusses concepts incorporated in the standard and contains a detailed description of the physical layout of the files as represented on disk.
+
+=== Problem Definition
+Complex mission simulators include a wide range of subsystems designed to simulate onboard equipment and to provide a rich gaming environment complete with weather, computer generated forces, ordnance, air traffic, networked players, etc. Each of these subsystems traditionally utilizes a proprietary runtime database (and format) for its synthetic representation of the gaming area. These application-specific formats have been generated off-line at a database generation facility using a variety of tools and processes. This traditional approach to simulation has several inherent disadvantages, including length of time needed for synthetic environment production for multiple simulation applications, loss of correlation due to compilation differences, complexity in configuration management, and an inefficient update process. The abundance of distinct database formats creates several challenges for configuration management, resulting in mismatched correlations, and in the increased timeline needed to generate these databases. The CDB Standard specifies an approach that establishes conventions for all simulator client subsystems (aka simulator client-devices). Further, the CDB Best Practices provide detailed guidance on how to use a set of industry-standard formats.
+
+The confluence of digital multispectral high-resolution satellite imagery, real time sensor feeds, and highly capable visual systems has created dramatic new Mission Planning and Mission Rehearsal capabilities. As a result, recent environment databases built to take advantage of these new capabilities require orders of magnitude more storage than equivalent databases just a few years ago.
+
+The CDB standard addresses these requirements through a common database model. CDB is intended as a standard for use in producing a highly performant, unified synthetic representation of the world. A data store built to the CDB Standard is referred to as a CDB structured data store or CDB conformant data store. A CDB structured data store is a single-copy data repository from which various simulator client-devices are able to simultaneously retrieve, in real-time, relevant information to perform their respective runtime simulation tasks.
+
+The CDB standard enhances unity and correlation between various simulator level clientdevices (e.g., Visual, Radar), while improving maintainability. As a result, one of the main benefits of the CDB standard is the elimination of several types of correlation errors attributable to alternate, sometimes conflicting data representations required by each the simulator client-devices. The CDB standard achieves this by allowing all simulator clients-devices to share, in runtime, a single repository of the synthetic environment information. In addition, a CDB structured data store can also be used as a master repository for the authoring tools. As a result CDB content can be interchanged between data store workstations. Finally, in the case where one or more of the client-devices are not compliant to the CDB standard, it is possible to revert to the conventional compilation paradigm, (i.e., compile the CDB into one or more client-device loadable (usually proprietary) representations).
+
+The actual storage formats of geospatial and model data in a CDB data store is based on the native formats, such as TIFF, used by industry-standard toolsets. This eliminates the time-consuming off-line database compilation process for each of the clients. The CDB standard redefines a new balance between offline and online compilation processes because modern computer platforms can now accomplish most of the compilation process in real-time footnote:[The CDB standard does require however, that most of its dataset be generated in a level-of-detail hierarchy.].
+
+The CDB standard addresses the issues that have characterized the simulation industry for past decades (see <<fig-dod-synthetic-generation>>: _CDB Approach to Synthetic Environment Generation_), as follows.
+
+. _Size of Synthetic Environment Storage_: The CDB standard specifies how to consolidate the synthetic environment into a single data repository that provides a static representation of the earth. This includes all the relevant information so that all the simulator client-devices can perform their respective simulation tasks in order to meet the training and mission rehearsal requirements. This approach avoids any data content duplication. Storage intensive datasets can be optionally compressed using modern third-party algorithms. The CDB standard provides a fine-grained versioning scheme that avoids the replication of the entire DB when effecting small-area updates.
+
+. _Scalability of Synthetic Environment Database_: A CDB structured data store can be built to a size or a density that far exceeds the capabilities of some or all of its client-devices. The data structure defined by the CDB standard makes it possible to implement runtime filtering schemes to adjust the loaded content density to the specific capabilities of the client-devices. As a result, a CDB structured data store can be scaled to take advantage of future simulator technological improvements.
+
+. _Environment Data Store (DB) Correlation_: Since CDB structured content is unique (without data duplication), runtime source level correlation errors among clients are eliminated, thereby ensuring inter-subsystem coherence and simulator interoperability. In addition, it is possible to improve correlation by adjusting the runtime publishing process associated with each client-device.
+
+. _Database Availability Timeline_: The CDB data store generation process allows for small incremental updates, thereby shortening generation and build process times. Furthermore, the translation step into a CDB structured data store is rather straightforward since the industry-standard formats and encodings are used.
+
+. _Configuration Management_: Configuration management effort is reduced, because a single CDB structured data store corresponds to the synthetic environment of all the client-devices in the simulator. Furthermore, while a CDB data store instance is conceptually a single, yet layered entity, the standard specifies how incremental updates are performed resulting in efficient storage and handling of CDB data store versions.
+
+[[fig-dod-synthetic-generation]]
+.CDB Approach to Synthetic Environment Generation
+image::fig-dod-synthetic-generation.png[]
+
+
+=== Use of a CDB conformant data store as an Off-line Data store Repository
+CDB can be used as a structured offline repository. This capability is described in Section 6.2 Volume 10 Implementation Guidance.
+
+=== Use of a CDB conformant data store as a Combined Off-line and Run-time Data store Repository
+A data store conforming to this CDB standard can be both used an offline repository for data store authoring tools or as an on-line (or runtime) repository for simulators. This approach is described in Volume 10 Implementation Guidance, section 6.4.
+
+=== Client-Device Independence
+The CDB standard is client-device independent. The standard is based on a requirement that all client-devices likely encountered on a tactical mission simulator need to be supported. The standard is completely independent of any vendor-specific devices.
+
+=== Runtime Publisher
+The runtime publishers provide the necessary level of abstraction. The level of abstraction provided by the publishers is purely a function of the selected implementation of the client-device and its associated publishers. A client-device can "`understand`" and be completely "`aware`" of a CDB compliant data store as defined by the CDB standard. In this case, such a device would not require a runtime publisher, because it is already CDB data store native.
+
+The runtime publishers bridge the gap between the information content requested by the attached client-device and the information content and structure available to them in a CDB conformant data store. As a result, the runtime publishers must each be theoretically "`aware`" of the following CDB concepts:
+
+. Tile: Ability to understand the concept of earth surface areas hierarchically subdivided in accordance to the CDB standard;
+. Level of detail: Ability to understand the concept of resolution or level-of-detail, for terrain, cultural vector data, raster imagery, and model geometry;
+. Terrain surface representation: Ability to understand concepts pertinent to earth surface geometry and related attributes or properties;
+. Cultural vector data (point, linear, areal): Ability to understand the concept of point, linear and areal cultural data and related attribution, fixed or conformed to earth surface;
+. Grid-organized data and meshes: Ability to understand the concept of grid-organized single-value datasets (e.g., elevation grid) and multi-value datasets (e.g., color triplets);
+. Imagery: Ability to understand the concept of color raster imagery mapped onto terrain surfaces or models;
+. Model geometry (incl. light points): Ability to understand the concept of general surface geometry;
+. Model positioning capability: Ability to differentiate between statically and dynamically positioned models;
+. Descriptive attribution: Ability to understand the attribution concepts pertinent to the client-device.
+
+
+=== Synthetic Environment Scalability & Adaptability
+The concept of scalability when applied to synthetic environments not only applies to the geographic extent of the data store but more importantly it also reflects the ability to scale the environment in resolution and fidelity. These concepts are fully supported by the CDB Standard and are explained below.
+
+. Geographic extent: Correspond to the range of geographic extent of the earth surface that can be modeled.
+. Resolution: Correspond to the range of information density (for instance, the number of elevation values per km2) of the modeled datasets.
+. Fidelity: Correspond to the amount and type of synthetic environment data that can be modeled to support higher-fidelity simulator client-devices footnote:[The CDB standard supports this concept through two mechanisms: _Data defaulting:_ The CDB standard is tolerant to missing data, because all attributes, layers and datasets have Specification default behaviors. As more of the data is provided, the fidelity of the environmental database increases. _Additive layering:_ The CDB standard offers a layered environment database organization. The layer organization is "`fidelity-ordered`", (i.e., basic layers appear first in the hierarchy while the layers needed for a higher-fidelity simulation appear later in the hierarchy).]. Consider for instance a simulator capable of supporting a single-surface earth skin representation versus one capable of representing tunnels, bathymetric data, location-dependent tide heights, location-dependent wave heights, etc. Clearly, the amount of information required by the higher-fidelity simulator is greater.
+. Precision: Correspond to the range of numerical precision (i.e., number of bit allocated to represent a quantity) of the modeled datasets.
+
+Modelers face difficult challenges if they want a synthetic environment that is both scalable and adaptive. The solution to this difficult issue extends beyond the "`mechanics`" of achieving backward/forward compatibility. The solution also requires a complete "`dissociation`" of the data store from any constraints imposed by client-devices. Current practice today is for modelers to repeatedly adjust the content, resolution and density of synthetic environment databases to closely match the capabilities and performance of the targeted client-devices. When content is added to the database, previously modeled content is usually removed or simplified. Under such constraints it is difficult for a modeler to build a synthetic environment database capable of meeting anything but its immediate requirements.
+
+<<fig-typical-evolution-of-a-database>>: _Typical Evolution of a Database_ shows the evolution of a modeled region for use in a mission rehearsal. The initial version of the region may have only a few highresolution/high-fidelity areas. However, over a given time period modelers will be asked to model additional target areas. As a result, the size, complexity, resolution and fidelity of the synthetic environment database gradually increase. Without built-in provisions for scalability, significant rework of the database is required each time a target area is added.
+
+[[fig-typical-evolution-of-a-database]]
+.Typical Evolution of a Database
+image::fig-typical-evolution-of-a-database.png[]
+
+////
+
+////
+
+The CDB standard allows the "`dissociation`" of the synthetic environment database's extent, resolution, fidelity, precision, structure and format from client-devices. This concept is not limited to aspects of formatting, numerical representation, internal structure, file structure, file systems, etc. More importantly the concept also covers aspects relating to synthetic environment database fidelity and resolution. Historically, the fidelity and resolution of synthetic environment databases has been intimately linked to the capabilities of the targeted simulator client-devices. More often than not, the source data was manipulated and adapted to constraints imposed by the client-devices. As a result, the content, resolution and density of synthetic environment databases were repeatedly adjusted to closely match the capabilities and performance of the targeted client-devices. The amount of time devoted to repeatedly adding/editing/removing content, and then repeatedly re-publishing would largely exceed the effort of creating and building the original synthetic environment database. The CDB standard offers the means to break this inter-dependence.
+
+When assembling a CDB conformant data store, the synthetic environment database modeler is permitted (within their time-cost budget) to include content that significantly exceeds the capabilities of their simulator(s). The job of "`adjusting`" content to clientdevices is relegated to the runtime publishers; the modeler is freed from this laborintensive, repetitive task.
+
+In a typical CDB data store implementation, it is anticipated that client-devices will independently control their respective runtime publishers so that the runtime published synthetic environment corresponds to their inherent capabilities (resolution, fidelity, etc.).
+
+Nonetheless, the runtime publishing paradigm offers interesting new possibilities. For instance, it would be possible to individually adjust the fidelity and resolution of the synthetic environment for each client-device; this adjustment could be done at any time. As a result, it is possible to control and adjust the overall simulator fidelity and correlation to a level that was previously unachievable.
+
+The CDB standard does not enforce a particular computer hardware infrastructure. The selected infrastructure allocated to the handling of a CDB data store is largely determined by the overall simulation requirements. Any leeway the simulator architect may have at their disposal when trading-off various simulator performance parameters against each other, are as follows:
+
+. Geographic extent
+. SE/Simulator Resolution
+. SE/Simulator Fidelity
+. SE/Simulator Precision
+. Desired level of client-devices correlation
+. Client-level SE load management
+. Simulated aircraft speed
+. CDB sharing
+
+An experienced simulation engineer can typically undertake this analysis. However, the process requires a good understanding of the content available in the targeted CDB structured databases and of the content each client-device needs in order to meet the stated level of performance and fidelity.
+
+Alternately, it is possible to implement a simulator with client-devices (or attached publishers) that are capable of automatically adjusting resolution and fidelity in order to overcome performance limitations attributable to the CDB storage infrastructure and/or runtime publishers.
+
+<<fig-typical-standard-on-high-end-simulator>>: _Typical Implementation of the CDB standard on High-end Simulator_ provides a system block diagram of a typical implementation of the CDB standard on a high-end tactical flight simulator. The runtime CDB system serves the combined needs of a mission functions computer, an OTW/NVG IG, a Forward Looking Infrared (FLIR) IG, Radar and a Computer Generated Forces (CGF) subsystem equipped with its own terrain server. The runtime CDB data store system is scaled to reflect the collective capabilities of the attached client-devices; as a result, the storage system is configured to supply the necessary bandwidth. Similarly, the IO bandwidth of the CDB data store servers and processing performance of the runtime publishers are scaled to satisfy the demands of their respective client-devices.
+
+[[fig-typical-standard-on-high-end-simulator]]
+.Typical Implementation of CDB Standard on High-end Simulator
+image::fig-typical-standard-on-high-end-simulator.png[]
+
+<<fig-typical-standard-on-desktop-computer>>: _Typical Implementation of CDB Standard on Desktop_ Computer shows a modest application of the CDB standard. This approach consists of a single desktop computer equipped with both stealth viewer and radar simulation application software. Each application is front-ended by a runtime publisher that in turn interfaces to the CDB data store via a standard file system. Given the more modest platform resources, some trade-offs in either resolution or fidelity might be required. This can be implemented in the runtime publisher or in the client-device application software.
+
+[[fig-typical-standard-on-desktop-computer]]
+.Typical Implementation of CDB Standard on Desktop Computer
+image::fig-typical-standard-on-desktop-computer.png[]
+
+=== Simulator Wide Unique Data Representation
+A CDB data store is a single repository for the entire simulator's synthetic environment data store (aka DB). The internal structure ensures that all datasets are uniquely represented yet available (through a publishing process) to each of the simulator clientdevices at runtime. This paradigm eliminates the extensive duplication of datasets that are shared by two or more client-devices.
+
+The CDB standard is technically a normalized data storage model in the sense that it best meets the logical data design objectives of correctness, consistency, simplicity, nonredundancy and stability. Ignoring any tailoring or tuning for particular application requirements or performance, a normalized design provides the following advantages.
+
+. Minimize amount of space required to store data: Normalization precludes storing data items in multiple places.
+. Minimize risk of data inconsistencies within the data store: Since datasets are stored in only one place, there is no risk of datasets becoming inconsistent (uncorrelated).
+. Minimize possible update and delete anomalies: A normalized CDB data store eliminates the concerns related to update or delete operations.
+. Maximize the stability of the data structure: The process of normalization helps in associating attributes with entities based on the inherent properties of the data rather than on particular application requirements. Thus, new application requirements are less likely to force changes to the CDB model/data store design.
+
+=== Key Benefits of the CDB Standard
+The following outline the key benefits of using the CDB standard.
+
+==== Improved Synthetic environment Data Store footnote:[Please note that in earlier versions of the CDB standard that the acronym "`DB`" was used. As DB cases confusion regarding whether CDB defines a database or not, the OGC CDB standard uses the term "`data store`". However, for the sake of backwards compatibility, the use of DB remains in this document.] (DB) Generation Timeline
+Important reductions in both the DB generation and DB update timeline are expected from an implementation of the CDB standard because of the following.
+
+. There is no need to compile distinct synthetic environment runtime data stores for each of the simulator client-devices.
+. All of the datasets common to two or more client-devices need not be duplicated. All associated client-specific structures are also eliminated.
+. Tiles and layers are technically independent from each other; as a result, there is no need to reprocess neighboring tiles and coincident layers. However, one exception to this relates to the level-of-detail generation.
+. The tile structure permits users to "`pipeline`" or overlap the DB creation/update process, see Figure 5: Pipelined DB Update Process, with DB transfer process footnote:[Assuming the DB toolset (used by the modelers at the DB Generation Facility) allow its users to manipulate Environmental DB content on a small-area basis.].
++
+--
+[[fig-pipelined-db-update-process]]
+.Pipelined DB Update Process
+image::fig-pipelined-db-update-process.png[]
+--
+. The tile structure lends itself naturally to the concurrent or "`parallel`" production of the CDB data store.
+. The internal versioning mechanism lends itself well to CDB structured data store updates because only the affected tiles or layers need be retransmitted to the simulator. This represents a significant timesaving, especially in cases where small updates are constantly applied to a comparatively large CDB structured data store.
+. The conversion of the synthetic environment from its tool-native representation into a form directly entered by each of the simulator clientdevices is broken down into several publications accomplished in realtime on behalf of each of client-device. This approach permits the CDB standard representation of the synthetic environment to be "`dissociated`" from the resolution, fidelity, precision, structure and format imposed by each client-devices.
+
+==== Interoperable Simulation-Ready Synthetic environment Data Store
+A CDB compliant data store is a fully interoperable, simulator-ready synthetic environment DB, (i.e., it can be used "`as-is`" on any CDB-compliant simulator). Because the data store is free of any simulator dependencies, there is no need to undertake a timeconsuming and expensive rework of the runtime data store(s) in order to adapt it (them) to the format, structure, content, and precision constraints imposed by the simulator.
+
+==== Improved Client-device Robustness/Determinism
+The CDB standard tile organization provides the means to implement deterministic loading and/or paging of the data store because each tile corresponds to the same amount of data (i.e., a "`quanta`" of information called a LOD-tile), regardless of its position on earth and regardless of its assigned LOD. This is a key characteristic of the CDB standard and is necessary to ensure deterministic operation of client-devices, even when the data resolution varies considerably from region to region or when the data is modeled at an extremely high-resolution. It is quite straightforward for a client-device to determine the amount of memory it must locally allocate when loading (or paging-in) a geographical area of interest. If the geographical area of interest exceeds the clientdevice's capabilities, it can easily revert to a coarser LOD, hence gracefully degrading, as opposed to aborting (due to an internal failure in allocating sufficient memory) or "`skipping`" over the offending area.
+
+The tile organization lends itself to robust, deterministic management of memory within client-devices because memory can be allocated/de-allocated in fixed sized quantities. As a result, client-devices need not concern themselves with complex and nondeterministic memory de-fragmentation schemes that do not lend themselves to real-time applications.
+
+==== Runtime-Adjustable Synthetic Environment DB Correlation and Fidelity
+The CDB standard plays a critical role in improving the internal correlation of a synthetic environment because it eliminates the replication of runtime data stores for each of the client-devices. The prior art in simulation mandated replicated copies of the synthetic environment data store. Each copy was constrained by the content, formats, and structures specific to each client-device. As a result, the potential for correlation errors abounded. The CDB standard resolves this issue by defining a single, usable in real-time, open, synthetic environment data store representation.
+
+The "`runtime publishing`" paradigm now permits the simulator vendor the means to not only control client-device load but to globally re-examine and control the level of correlation within a simulator (or across simulators). While the CDB standard does not provide explicit jurisdiction over the implementation of this mechanism in the clientdevices and/or publishers, it is nonetheless possible to improve parametric correlation, at runtime, via control of the client-devices/publishers.
+
+This topic is discussed in more detail in the OGC CDB Best Practice, Volume 1 Section 1.6.6 , Synthetic Environment Database Correlation.
+
+==== Increased Synthetic Environment Data Store Longevity
+The longevity of synthetic environment databases for use in simulation has traditionally been a source of considerable aggravation within the user-community.
+
+Traditionally a considerable level of effort (both human and machine) was required to adapt source-level data to a form that is directly usable by each of the simulator clientdevices, also known as the runtime-level vendor-specific database format; this is referred to as the "`compilation`" process. More often than not, the source data is manipulated and adapted to constraints imposed by one or more simulator client-devices. In most cases, the content, resolution and density of synthetic environment databases are repeatedly adjusted to closely match the capabilities and performance of the targeted client-devices. While it is true that the native tool format database remains independent of the targeted client-devices, it is clear that content of the source-level database roughly corresponds to the capabilities of the then-current client-devices. As a result, source-level databases become quickly outdated and do require a complete rebuild to take advantage of new simulator capabilities.
+
+The CDB standard avoids these pitfalls because the model does not need to be adapted to the constraints imposed by simulator client-devices; that role is relegated to the runtime publishers. Hence, the synthetic environment a CDB data store can be built, right from the start, to a level of fidelity commensurate with the anticipated useful life of the targeted simulator(s).
+
+==== Reduced Synthetic Environment Data Store Storage Infrastructure Cost
+For equivalent synthetic environment content, the CDB standard offers a significant storage space savings and significant reductions in the required interconnect infrastructure to supply the synthetic environment data to the simulator(s). 
+
+The reduction in equipment and labor can be attributed to the following features.
+
+. Simulator-wide unique data representation: eliminate duplication of datasets across client-devices.
+. Compression of storage-intensive datasets: provides effective compression of key datasets.
+. Fine-grain versioning: A CDB structured data store is internally versioned. It is possible to revert to prior representations of the SE without restoring stored back-ups of the data store. Because the underlying mechanism is fine-grained, only in affected geographic areas or datasets of the data store need to be versioned.
+
+=== CDB Model Overview
+The following sections provide a general description and focus of the CDB standard.
+
+==== CDB Standard Data Representation and Organization
+The CDB standard provides the means of describing all feature sets relevant to simulation (such as terrain and 3D objects). These feature sets are logical re-groupings of datasets that are used directly by the simulator client-devices.
+
+The standard currently supports the following representations.
+
+. Terrain: A representation of the terrain shape/elevation, raster imagery, surface attribution and other surface characteristics relevant to distributed simulations.
+. Point feature: A representation of a single location in space or on the earth's surface. A Point feature consists of a single <latitude, longitude> coordinate with or without an elevation. When a point feature does not have an elevation, it is deemed to be on the surface of the earth. The information includes point-feature type identification, location, orientation, connectivity, attribution and other characteristics relevant to simulation.
+. Linear feature (aka LineString): A representation of predominantly man-made multisegmented line-oriented features conformed relative to the terrain (such as runways, roads, transmission lines, fences). The information includes linear feature type identification, location, orientation, lineal geometry, connectivity, attribution and other surface characteristics relevant to simulation.
+. Areal feature (aka Polygon or area): A representation of closed area features conformed relative to the terrain such as forested areas and fields. The information includes areal feature type identification, location, orientation, 2D geometry, connectivity, attribution and other surface characteristics relevant to simulation.
+. 3D cultural model (aka Built Environment): Is a model that is statically positioned on the terrain or bathymetry skin. Cultural models are often a 3D representation of a man-made or a natural object positioned and conformed relative to the terrain. The information includes its geometry, articulations, raster imagery (texture, normal map, light map, etc.), lighting systems, and other characteristics relevant to simulation.
+. Moving model: A model that is not fixed at one location in the synthetic environment data store. The simulation host can update the position and orientation of a moving model at every simulation iteration cycle. A moving model is a 3D representation of man-made objects free to move within the data store. The information includes feature type identification, (vehicle class, type, model, etc.), geometry, articulations, raster imagery (texture, normal map, light map, etc.), lighting systems, connectivity to special effects, attribution and other characteristics relevant to simulation
+. Materials: A symbolic representation of the surface materials for all of the elements contained within the data store. Client-devices are required to simulate the synthetic environment over different portions of the electromagnetic spectrum: IR (e.g., FLIR, NVG), microwaves (e.g., Radar), audio (e.g., Sonar), etc. The fidelity of the sensor synthetic environment simulation model that runs in each of the client-devices is highly dependent on the richness and completeness of properties that characterize the synthetic environment data store in the electromagnetic spectrum of interest footnote:[One of the primary objectives of this standard is to provide and integrate all of the data required by all sensor devices, not just IGs producing the Out-The-Window (OTW) scenes. In addition, the mandate of this standard is to accomplish this objective in a device-independent fashion. The CDB standard provides a means for client-devices to retain their internal Sensor Synthetic Environment Model (SEM), and yet do so without introducing device dependencies within the CDB synthetic environment. To accomplish this objective, client-device vendors must provide the appropriate SEM properties for the prescribed CDB Base Materials (see Appendix L), since none of the (vendor/device-specific) material properties are stored within the CDB].
+. Navigational data: A representation of ARINC-424 footnote:[ARINC 424 or ARINC 424 Navigation System Data Base Standard is an international standard file format for aircraft navigation data maintained by Airlines Electronic Engineering Committee and published by Aeronautical Radio, Inc. The ARINC 424 specifications are not a database, but a "standard for the preparation and transmission of data for assembly of airborne navigation system data bases"] and DAFIF footnote:[Digital Aeronautical Flight Information File is a comprehensive database of up-to-date aeronautical data, including information on airports, airways, airspaces, navigation data and other facts relevant to flying in the entire world, managed by the National Geospatial-Intelligence Agency (NGA)] data in the form of NAVAIDs, Airport/Heliport, Runway/Helipad, Waypoints, Routes, Holding Patterns, Airways, Airspace, etc.
+
+In order to represent the above feature sets, the CDB standard logically organizes its data in mutually exclusive datasets. Furthermore, the CDB standard is platform and clientdevice independent. As a result, the internal data representation is free of client-device specifics and more closely aligned to DB structures/formats supported by prominent industry standard tools.
+
+==== CDB Standard Logical Structure
+The CDB standard is a structure for simulation and as such its storage structure is optimized for simulator client-devices runtime performance. Therefore, the internal storage structure is designed with these specific considerations in mind.
+
+. Promotes efficient real-time data access by the simulator client-devices without degrading their performance.
+. Allows simultaneous accesses by all of the various simulator client-devices.
+. Promotes efficient data store updates and deployment in order to reduce the deployment of a CDB structured data store onto one or more simulators.
+
+To address these objectives, the storage structure geographically divides the world into tiles (bounded by latitudes and longitudes), each containing a specific set of features (such as terrain altimetry, vectors), models, which in turn are represented by the datasets (see <<fig-cdb-standard-tile-layer-structure>>: _CDB Standard Tile/Layer Structure_). The datasets define the basic storage unit used in a CDB structured data store. The geographic granularity is at the tile level while the information granularity is at the dataset level. As a result, the storage structure permits flexible and efficient updates due to the different levels of granularity with which the information can be stored or retrieved. At the data store generation facility, it is possible to effect small updates, either at the tile level; the feature set level or the dataset level. Similarly, the storage structure fully supports real-time retrieval of content at the tile level and the dataset level. Finally, the incremental versioning mechanism allows users to efficiently deploy updates to a data store; only the files whose content differs from a prior version need be generated and transferred from the data store generation facility to the simulation facility.
+
+Another benefit of the CDB standard storage structure is its ability to support concurrent generation and deployment.
+
+[[fig-cdb-standard-tile-layer-structure]]
+.CDB Standard Tile/Layer Structure
+image::fig-cdb-standard-tile-layer-structure.png[]
+
+
+==== Tile/Layer/Level-of-Detail Structure
+The CDB standard offers a structure that is well suited for the efficient access of its contents. To this end, it relies on three important means to organize the synthetic environment data:
+
+- Tiles
+- Layers
+- Level-of-Detail (LOD)
+
+===== Tiles
+The CDB standard defines a top-level tile structure designed to organize the data for efficient access in real-time. The tile structure provides an effective means for simulator client-devices to access the datasets of a geographical area at a selected LOD. Since the spatial dimension of tiles varies inversely with LOD (i.e., resolution), client-devices can readily predict the amount of data contained within the tile; as a result, the management of memory within client-devices is simplified and much more deterministic.
+
+The CDB standard Conceptual Model is logically organized as a strip of geo-unit aligned tiles along each earth slice. Each earth slice is divided into a decreasing number of tiles to account for the fact that the length of an earth slice decreases with increasing latitude.
+
+===== Layers
+The CDB model is also logically organized as distinct layers of information. The layers
+are theoretically independent from each other, (i.e., changes in one layer do not impose
+changes in other layers).
+
+Layers are additive in fidelity, (i.e., the achievable level of the simulation fidelity increases with the number of layers).
+
+Secondly, unavailable layers are automatically defaulted. A database modeler need not fully populate a CDB structured data store. There is no mandatory "`coverage completeness requirement`" imposed by the CDB standard. This feature permits the generation of a CDB conformant data store even when database modelers are confronted with limited data availability. The usefulness/faithfulness of the synthetic environment increases with the number of available layers.
+
+The layering mechanism improves the efficiency of the client-devices since they need only access (and be aware) of the datasets that are relevant to them, at their prescribed level of fidelity. For instance, a simulator CGF client-device will not likely have a reason to use ground raster imagery. However, it is quite likely interested in accessing ground surface properties when determining traffic-ability.
+
+===== Levels of Detail (LOD)
+Level of detail (LoD) is a concept available in various disciplines from computer graphics and cartography to electrical circuit design. For GIS practitioners, the discipline where level of detail is most relevant and well known is 3D city modelling. In the CDB, LOD is a mechanism for allowing increasing levels of fidelity without impacting system performance. In CDB data stores, LODs are also an integral part of the physical database structure. The LOD requirement for simulation systems is similar with regard to requirements for increased fidelity in 3d City Models and standards such as CityGML.
+
+The availability of LOD representations is critical to real-time performance, especially when dealing with grid-organized data. Most simulation client-devices can readily take advantage of a LOD structure because, in many cases, less detail/information is necessary at increasing distances from the simulated object. As a result, many client-devices can reduce (by 100-fold or more) the required bandwidth to access synthetic environment data in real-time.
+
+Additionally, the availability of LODs can be readily exploited by simulator clientdevices to improve algorithmic efficiency. Devices such as Image Generators (IGs) can readily take advantage of an LOD structure because image perspective naturally reduces image detail with distance as a result of the perspective computation inherent to the IG. As a result, much less geometric detail and texture detail need be processed or considered at far range.
+
+The spatial sampling of each successive LOD in a CDB data store follows power of two progressions. This is a prerequisite for the efficient and deterministic management of memory by all client-devices of a typical simulator.
+
+The terrain LOD can be controlled to the tile level. Since the CDB standard specifies a variable LOD hierarchy spanning up to 34 levels, it is possible to control the allocation of LODs by area. The variable LOD hierarchy provides for efficient use of storage because the LOD hierarchy needs to be deepened only in the areas where higher resolution is desired. <<fig-variable-allcation-of-lod>>: _Variable Allocation of LOD_, illustrates an earth strip made up of a series of tiles; some portions of the strip have been modeled with 3, 4, or 5 LODs according to the application requirements.
+
+[[fig-variable-allcation-of-lod]]
+.Variable Allocation of LOD
+image::fig-variable-allcation-of-lod.png[]
+
+==== CDB Structure, Organization on Media and Conventions
+This CDB standard along with the CDB Best Practices describes the data content, representation, as well as the logical organization of the data stored in the data store:
+
+. The Data store structure comprises all of the data structures used to access data store content (such as file paths, Level-of-Detail (LOD), lists) to speed up access, information layering, versioning and configuration management; and
+. Naming Conventions: Used to describe a naming hierarchy for cultural models, moving models, lights and model components.
+
+
+===== Other Applications of the CDB Standard
+While the CDB standard was initially targeted primarily for use in Special Operations simulator applications, it is entirely suited to a broad range of other applications that make use of the same datasets; these include (and are not limited to):
+
+. Ground warfare simulation
+. Anti-submarine warfare
+. Visualization
+. Modeling and Simulation
+. Urban Planning
+. Natural Resource Management
+. Emergency Management
+
+The implementation of the CDB standard on legacy simulator client-devices usually mandates the use of the runtime publishers. These costs are largely offset by the consolidation (and substantial reduction) of storage and associated infrastructure. In the future, it is anticipated that the runtime publishing computer infrastructure will be largely "`absorbed`" by higher performance client-devices that will natively process the data store without an intermediate conversion into a legacy internal format.
+
+In applications that are less demanding than flight simulation, the CDB standard can be implemented without resorting to high-performance computer platforms. For instance, the simulator repository mass storage system (shown in Figure 8: _Typical CDB Implementation on a Suite of Simulators_) can be a single disk storage device. In demanding applications, the simulator repository can be implemented as a large-scale Storage Area Network (SAN). Similarly, the Update Manager IUM), the CDB server and each of the client-device runtime publishers can be implemented as software tasks within a single computer platform, or can even be migrated to software tasks running internally within the client-devices. <<fig-typical-standard-on-desktop-computer>>, _Typical Implementation of CDB Standard on Desktop Computer_, illustrates a desktop trainer consisting of a stealth viewer footnote:[A 'stealth viewer' is analogous to a camera viewpoint that is not ‘attached’ to any physical entity in a simulation] and radar simulations, implemented as software applications running on a single computer platform; both applications pull their synthetic environment data from a disk-resident CDB.
+
+[[subsec-use-of-cdb-in-applications-requireing-dynamic-synthetic-environments]]
+==== Use of CDB in Applications Requiring Dynamic Synthetic Environments
+A CDB-compliant simulator already incorporates most of the architectural features required to support the handling of Dynamic Synthetic Environments (aka DSE). <<fig-versioning-paradigm-applied-to-dynamic-se>>, _Versioning Paradigm Applied to Dynamic SE_, illustrates how CDB-compliant simulator architecture can be extended to permit the runtime _modification_ of the CDB. This can be accomplished by leveraging simulator architectures that natively adhere to the CDB data schema and to the CDB versioning capabilities.
+
+This capability requires that the simulator be equipped with a Dynamic Synthetic Environment Generator whose interfaces conform to the CDB standard; all other elements of the simulator architecture are identical to those of a CDB-compliant simulator.
+
+Two applications of this principle could be envisaged.
+
+
+. *_DB update from DIS_*: This is the so-called "`Dynamic Terrain/Synthetic Environment`", where a group of confederates interoperate over a DIS network by receiving update commands that trigger runtime modification of the CDB.
+. *_DB creation/update from live data feed_*: Terrain areas could be created or modified on-the-fly, based on live data (such as terrain imagery or LIDAR data transmitted by a UAV) and provided instantly to the confederates.
+
+[[fig-versioning-paradigm-applied-to-dynamic-se]]
+.Versioning Paradigm Applied to Dynamic SE
+image::fig-versioning-paradigm-applied-to-dynamic-se.png[]
+
+
+==== Synthetic Environment Data Store Correlation
+Please read section 1.6.6 of the OGC CDB 3.2 Best Practice for additional details on correlation https://portal.opengeospatial.org/files/?artifact_id=61935.

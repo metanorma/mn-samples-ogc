@@ -1,0 +1,13 @@
+
+== Generated data
+Consumers may need data in its unmodified format and as a derived product e.g. ortho-rectified image. Both can be utilized for a variety of spatiotemporal analyses.
+
+Examples of a WAMI image size are 60, 96, 144, 150, 1100, 1600, 1800, or 2200 megapixels or more. The pixels may be 8-bit or 16-bit, may contain color, black and white, VNIR, MWIR or other EM-frequency ranges. An example WAMI image may contain 60 MB to 12 GB or more of uncompressed data. At 1600 megapixels or 1.6 gigapixels per frame, one WAMI image would be 772 times larger than full HD.
+
+=== Data volumes
+Data volumes quickly become an issue. To illustrate this, let us focus on WAMI as derived ortho-rectified image maps. One150-megapixel color WAMI image frame at 8-bits per band uncompressed is about 450 MB. At 10:1 compression, it is 45 MB/frame. At 2 frames per second, 86,000 frames cover 12 hours at 3.7 TB per day per sensor. At night, the same sensor would have one IR band instead of 3-bands and could be at 16-bits/band, resulting in about 2.5 TB of data for the night time. 1.6 Gigapixel sensor scan create over 100 TB a day. Moving so much data electronically is impractical. It is acquired at a one location and needs processing at another location. Clients may need data on board a platform, from local ground-stations, and archives in data centers. Maintaining multiple copies is cost prohibitive.
+
+=== Proprietary formats
+To understand consumption of this data, let us relate it to aerial and satellite imagery as it is captured today. GIS consumers of satellite and aerial imagery get the data as maps. Generally, raw camera data is either rasterized with rational polynomial coefficients (RPCs), or ortho-rectified into a known coordinate reference system and presented as a map mosaic.
+
+WAMI sensors have been fielded by the US Government and commercially. Sensors pack different technologies. They deliver different effective megapixel ratings at various frame rates from 1 to 10 fps that may be non-constant. The format in which camera data is delivered is almost always proprietary. Map generator tools are also proprietary. Consequently sensors require special integration. Some sensors directly produce an ortho-rectified image per frame in a standardized file format such as GMLJP2, time of acquisition (TOA) and additional metadata. Regardless of the captured format, data transmission is a problem. Vendors have used everything from FTP to custom TCP sockets to JPIP with varied success.

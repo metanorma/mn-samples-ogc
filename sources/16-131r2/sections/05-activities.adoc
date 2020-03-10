@@ -1,0 +1,84 @@
+
+[[sec-ogc-activities-on-big-geo-data]]
+== OGC activities on Big Geo Data
+
+=== OGC Program Activities on Big Geo Data
+
+OGC Technology Strategy
+
+* The OGC Technology Strategy provides coordination of technology across the OGC Programs. The OGC Technology is managed by the CTO in support of the OGC Board of Directors.
+* As part of the strategy a link:https://github.com/opengeospatial/OGC-Technology-Trends/blob/master/README.md[Geospatial Technology Trends] tracking activity is maintained with review and input by the OGC Architecture Board (OAB). Emerging geospatial technologies opportunities for OGC activity are listed as a "`Ripe Trends.`"
+* link:https://github.com/opengeospatial/OGC-Technology-Trends/blob/master/RipeTrends/BigData.adoc[Big Geo Data] is currently listed as a Ripe Trend. Each of the OGC Programs is addressing Big Geo Data.
+
+OGC Standards Program
+
+* The link:http://www.opengeospatial.org/projects/groups/bigdatadwg[OGC Big Data Domain Working Group] (DWG) serves as a focal point in the OGC Standards program for discussion of Big Data topics.
+* The OGC Technical Committee Chair regularly conducts "`Future Directions`" sessions as part of the TC meetings. Big Data topics are routinely discussed in the Future Directions sessions.
+* Multiple OGC Standards development are related to Big Data including: WPS, WCPS, WCS, DGGS, SensorThings, Moving Features, more.
+
+OGC Innovation Program (IP)
+
+* The OGC IP conducts studies, testbeds, pilots and other projects to advance geospatial technology innovation. Engineering Reports from OGC IP are provided to the OGC Standards Program for consideration of new and refined standards.
+* link:http://www.opengeospatial.org/testbed13[OGC Testbed 13] currently under way includes the Earth Observation Clouds (EOC) thread that focuses on cloud computing for Earth Observation data.
+* link:http://www.opengeospatial.org/projects/initiatives/testbed14[OGC Testbed 14] is currently being planned and is anticipated to include a variety of Big Data Topics.
+ 
+
+OGC Communication and Outreach Program
+
+* The link:http://www.locationpowers.net/pastevents/[Location Powers] events led by COP have been key to identifying the topics in this white paper.
+
+
+
+=== External coordination: Standards
+ISO/IEC JTC 1/WG 9 Big Data
+
+* WG 9 serves as the focus of and proponent for JTC 1's Big Data standardization program; Develop foundational standards for Big Data; and Engage with the community outside of JTC 1 to grow the awareness of and encourage engagement in JTC 1 Big Data standardization efforts within JTC 1, forming liaisons as is needed.
+
+* Current projects under development:
+** ISO/IEC 20546 Information technology -- Big data -- Overview and vocabulary
+** ISO/IEC 20547 Information technology -- Big data reference architecture
+** Part 1: Framework and application process
+** Part 2: Use cases and derived requirements
+** Part 3: Reference architecture
+** Part 4: Security and privacy fabric (transferred to JTC 1/SC 27)
+** Part 5: Standards roadmap
+* OGC has formed an alliance relationship with JTC 1/WG 9. JTC 1 identifies this as a C-liaison
+
+US NIST Big Data Public Working Group (NBD-PWG)
+
+* The focus of NBD-PWG is to form a community of interest from industry, academia, and government, with the goal of developing a consensus definitions, taxonomies, reference architectures, and technology roadmaps. The aim is to create vendor-neutral, technology and infrastructure agnostic deliverables to enable Big Data stakeholders to pick-and-choose best analytics tools for their processing and visualization requirements on the most suitable computing platforms and clusters while allowing value-added from Big Data service providers and flow of data between the stakeholders in a cohesive and secure manner.
+* NBD-PWG documents have been provided to JTC 1/WG 9
+* OGC members and staff participate in NBD-PWG activities.
+
+
+=== External coordination: R&D
+Apache Software Foundation (ASF)
+
+* ASF oversees more than 350 leading Open Source projects, including Apache HTTP Server. ASF provides an established framework for intellectual property and financial contributions. ASF has 38 projects in the link:https://projects.apache.org/projects.html?category[category of Big Data].
+* OGC organized a geospatial track at the Apache Big Data Conference 2016. Discussion in that session led creation of a geospatial@apache.org mailing list.
+* OGC may organize geospatial sessions at future ASF events.
+
+LocationTech
+
+* LocationTech is the Eclipse Foundation's industry working group focusing on location aware technologies. LocationTech has several projects that support Big Data including GeoJinni (formerly SpatialHadoop), GeoTrellis, GeoMesa, GeoWave
+* OGC is a Participating Member of Location Tech
+* LocationTech participated in the Location Powers: Big Data workshop.
+
+Open Source Geospatial Foundation (OSGeo)
+
+* OSGeo is a not-for-profit organization whose mission is to foster global adoption of open geospatial technology by being an inclusive software foundation devoted to an open philosophy and participatory community driven development. OSGeo organizes the annual FOSS4G conference.
+* The FOSS4G conference 2017 has multiple papers regarding Big Data and OSGeo projects. OGC Members and Staff will be attending FOSS4G.
+
+NSF-funded activities
+
+* The US National Science Foundation funds several activities that are advancing geospatial Big Data in the geospatial.
+* The CyberGIS Center at the University of Illinois at Urbana-Champaign, advances cyberinfrastructure, geographic information science and technologies, and various geospatial knowledge domains. OGC Staff have served on the external review board for CyberGIS
+* Big Data Hubs including aim to stimulate an agile and sustainable national Big Data (including Big Geo Data) innovation ecosystem.
+
+European Commission Horizon 2020
+
+* The H2020 link:http://www.opengeospatial.org/projects/initiatives/databio[DATABIO] project explores the potential of Big Data integration and analytics in the domains agriculture, forestry, and fishery/aquaculture; taking into account interoperability and sustainability aspects in the heterogeneous European bioeconomy landscape. OGC Innovation Program is a member of the DATABIO Project.
+
+BiDS Conference Series
+
+* The Big Data from Space (BiDS) conferences of 2014 and 2016 were relevant to the topics addressed in this paper. Participation in link:http://www.bigdatafromspace2017.org/[BiDS 2017] would again be relevant.

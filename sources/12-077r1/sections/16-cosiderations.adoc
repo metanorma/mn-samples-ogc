@@ -1,0 +1,45 @@
+
+== Considerations
+In case of ambiguity, a consistent outcome is required. A few use cases have been described below.
+
+=== High latency networks
+For high latency networks, it is better to get as much data with as few requests. When using an IS flipbook, performance degrades if each frame is a separate request. If a client buffers 10 frames at a time, using a single request, the client can request those frames using TIME (TIME=F1/F10/FS1). For low speed networks, request a video stream.
+
+=== Temporal mismatch
+When asking for data at a particular instant in time using an ISO time string, the requested time may not match actual time. If requested time does not match captured time, pick the lowest, highest or closest matching time, and stay consistent in the choice.
+
+
+[[fig-consistently-resolve-temporal-ambiguity]]
+.Consistently resolve temporal ambiguity
+image::fig-consistently-resolve-temporal-ambiguity.png[]
+
+
+=== Spatiotemporal overlap
+In WMS, when overlapping multiple layers, the issue of sub-pixel overlap is common. Servers choose to round off to pixel boundaries and avoid compositing complexity. Servers round off to the lowest, highest or closest pixel. In either case, the error is consistent.
+
+This choice avoids rendering artifacts and increases performance for the price of sub-pixel accuracy when overlapping maps. A similar choice has to be made when thinking of all dimensions simultaneously - X, Y, zoom and T. The choice is open to the server implementation so long as it is consistent.
+
+[[fig-consistently-resolve-spatiotemporal-ambiguity]]
+.Consistently resolve spatiotemporal ambiguity
+image::fig-consistently-resolve-spatiotemporal-ambiguity.png[]
+
+[[fig-spatial-overlap-can-change-over-time]]
+.Spatial overlap can change over time
+image::fig-spatial-overlap-can-change-over-time.png[]
+
+
+=== Rendering maps along a pre-defined path
+The requests *GetPathMap* and *GetPathMapVideo* draw heavily from the animation industry. A client describes a *path*. A *path* has one or more *tracks*. A *track* defines a curve with *entries*. Each *entry* is a *key-frame*. The key-frame specifies a bounding box and time within a set of collections. The rendering system on the server side first interpolates all points in-between the key frames to generate all points for all frames within the "`clip`".
+
+[[fig-key-frame-animation-using-getpathmap-and-getpathmapvideo]]
+.Key-frame animation using GetPathMap and GetPathMapVideo
+image::fig-key-frame-animation-using-getpathmap-and-getpathmapvideo.png[]
+
+This is analogous to _in-betweening_ in _key-frame animation_. Once points for all frames are generated (which is very fast), each point for each frame is merely a *GetMap* request. As each frame gets rendered it is returned to the consumer as part of a flipbook or video codestream. One request results in many frames, helping cater to networks with high latency.
+
+=== Tile server
+The metadata returned by a CS implementation can describe the ideal layout of a WAMI collection in terms of tiles of original map and R-sets, informing the client on an optimal way to request data. Each collection's CS metadata would provide image dimensions, number of R-sets, scale factor of each R-set, tile row and column count, tile dimensions, etc. The client could then make IS: GetMap requests on tile boundaries. Tile playback synchronization would be a client-side issue to tackle.
+
+[[fig-tile-based-dissemination]]
+.Tile based dissemination
+image::fig-tile-based-dissemination.png[]

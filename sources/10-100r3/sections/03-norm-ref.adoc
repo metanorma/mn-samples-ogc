@@ -16,7 +16,8 @@ The following normative documents contain provisions that, through reference in 
 * [[[w3c,W3C]]], Namespaces in XML, http://www.w3.org/TR/1999/REC-xml-names-19990114
 
 
-=== Recommended Reading
+*Recommended Reading*
+
 As this is a profile of the Geography Markup Language [OGC 07-036], the reader is expected to have some familiarity with GML. The GML standard is a large document covering many topics. The purpose of this section is to direct the reader to specific clauses in the GML standard that should be reviewed in order to better understand the content of this document. The following table lists the clauses and specific sub-clauses from the GML standard [OGC 07-036] that should be reviewed:
 
 

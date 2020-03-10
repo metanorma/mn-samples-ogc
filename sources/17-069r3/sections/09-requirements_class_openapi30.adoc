@@ -1,0 +1,110 @@
+
+== Requirements class "OpenAPI 3.0"
+
+[[two_approaches_oas]]
+=== Basic requirements
+
+Servers conforming to this requirements class define their API by an https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasDocument[OpenAPI Document].
+
+[[rc_oas30]]
+[%unnumbered]
+|===
+2+h| Requirements Class
+2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/req/oas30
+| Target type | Web API
+| Dependency | <<rc_core,Conformance Class "Core">>
+| Dependency | <<openapi,OpenAPI Specification 3.0.2>>
+|===
+
+[[req_oas30_oas_definition_1]]
+[%unnumbered]
+|===
+^.^h| Requirement 45 h| /req/oas30/oas-definition-1
+^.^| A | An OpenAPI definition in JSON using the media type `application/vnd.oai.openapi+json;version=3.0` and a HTML version of the API definition using the media type `text/html` SHALL be available.
+|===
+
+The requirements <<req_core_root_success,/req/core/root-success>> and <<req_core_api_definition_success,/req/core/api-definition-success>> in _Core_ require that the API definition documents are referenced from the landing page.
+
+[[req_oas30_oas_definition_2]]
+[%unnumbered]
+|===
+^.^h| Requirement 46 h| /req/oas30/oas-definition-2
+^.^| A | The JSON representation SHALL conform to the <<openapi,OpenAPI Specification, version 3.0>>.
+|===
+
+OpenAPI definitions can be created using different approaches. A typical example is the representation of the feature collections. One approach is to use a path parameter `collectionId`, i.e., the API definition has only a single path entry for all feature collections. Another approach is to explicitly define each feature collection in a separate path and without a path parameter, which allows to specify filter parameters or explicit feature schemas per feature collection. Both approaches are valid.
+
+[[req_oas30_oas_impl]]
+[%unnumbered]
+|===
+^.^h| Requirement 47 h| /req/oas30/oas-impl
+^.^| A | The server SHALL implement all capabilities specified in the OpenAPI definition.
+|===
+
+=== Complete definition
+
+[[req_oas30_completeness]]
+[%unnumbered]
+|===
+^.^h| Requirement 48 h| /req/oas30/completeness
+^.^| A | The OpenAPI definition SHALL specify for each operation all https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#httpCodes[HTTP Status Codes] and https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responseObject[Response Objects] that the server uses in responses.
+^.^| B | This includes the successful execution of an operation as well as all error situations that originate from the server.
+|===
+
+Note that servers that, for example, are access-controlled (see <<security,Security>>), support web cache validation, CORS or that use HTTP redirection will make use of additional HTTP status codes beyond regular codes such as `200` for successful GET requests and `400`, `404` or `500` for error situations. See <<http_status_codes,HTTP status codes>>.
+
+Clients have to be prepared to receive responses not documented in the OpenAPI definition. For example, additional errors may occur in the transport layer outside of the server.
+
+=== Exceptions
+
+[[req_oas30_exceptions_codes]]
+[%unnumbered]
+|===
+^.^h| Requirement 49 h| /req/oas30/exceptions-codes
+^.^| A | For error situations that originate from the server, the API definition SHALL cover all applicable HTTP Status Codes.
+|===
+
+[example]
+.An exception response object definition
+====
+[source,xml]
+----
+description: An error occurred.
+content:
+  application/json:
+    schema:
+      $ref: http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/exception.yaml
+  text/html:
+    schema:
+      type: string
+----
+====
+
+[[security]]
+=== Security
+
+[[req_oas30_security]]
+[%unnumbered]
+|===
+^.^h| Requirement 50 h| /req/oas30/security
+^.^| A | For cases, where the operations of the server are access-controlled, the security scheme(s) SHALL be documented in the OpenAPI definition.
+|===
+
+The OpenAPI specification currently supports the following https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#security-scheme-object[security schemes]:
+
+* HTTP authentication,
+
+* an API key (either as a header or as a query parameter),
+
+* OAuth2’s common flows (implicit, password, application and access code) as defined in RFC6749, and
+
+* OpenID Connect Discovery.
+
+=== Features
+
+[%unnumbered]
+|===
+^.^h| Recommendation 17 h| /rec/oas30/f-key-properties
+^.^| A a| The schema for the Response Objects of the HTTP GET operation for features SHOULD include key feature properties of the features in that feature collection. +
+This is particularly helpful if filter parameters are defined for the collection (see recommendation `/rec/core/fc-filters`).
+|===

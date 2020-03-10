@@ -1,0 +1,470 @@
+
+== Terms and Definitions
+
+=== base unit polyhedron
+
+polyhedron, with a circumsphere radius of one (1), used to construct the _DGGS reference frame_ of a DGGS specification
+
+NOTE: Vertex coordinates are specified as a _sequence_ of spherical coordinates
+
+[ (_θ~1~_, _φ~1~_), (_θ~2~_, _φ~2~_), (_θ~3~_, _φ~3~_), (_θ~4~_, _φ~4~_),..., (_θ~n-1~_, _φ~n~_) ].
+
+NOTE: Edges are specified as a _sequence_ of vertex pairs
+
+[ (_Vertex~1~_, _Vertex~2~_), (_Vertex~2~_, _Vertex~3~_), (_Vertex~3~_, _Vertex~4~_)..., (_Vertex~n-1~_, _Vertex~n~_), or,
+
+( (_θ~1~_, _φ~1~_), (_θ~2~_, _φ~2~_) ), ( (_θ~2~_, _φ~2~_), (_θ~3~_, _φ~3~_) ), ( (_θ~3~_, _φ~3~_), (_θ~4~_, _φ~4~_) )..., ( (_θ~n-1~_, _φ~n-1~_), (_θ~n~_, _φ~n~_) ) ]
+
+=== boundary
+
+_set_ that represents the limit of an entity
+
+NOTE: _Boundary_ is most commonly used in the context of geometry, where the _set_ is a collection of points or a collection of _objects_ that represent those points. In other arenas, the term is used metaphorically to describe the transition between an entity and the rest of its domain of discourse.
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.4>>
+
+=== centroid
+
+center of mass of a geometric object of uniform density
+
+NOTE: The _centroid_ of a _DGGS Cell_ is calculated as the geodesic center of the surface area of that _DGGS Cell_.
+
+=== cell refinement
+
+full specification for generating child cells from their parent cell(s) including the method of subdividing parent cells into child cells using a specified _refinement ratio_
+
+NOTE: Iterative application of cell refinements results in a hierarchy of cell levels.
+
+NOTE: _Cell refinement_ methods may result in child cells that all have unique parents or child cells that may share parents.
+
+=== class
+
+description of a _set_ of _objects_ that share the same attributes, operations, methods, relationships, and semantics <<iso19103>>
+
+NOTE: A _class_ may use a _set_ of interfaces to specify collections of operations it provides to its environment. The term was first used in this way in the general theory of object oriented programming, and later adopted for use in this same sense in UML.
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.7>>
+
+=== connected
+
+property of a _geometric object_ implying that any two _direct positions_ on the _object_ can be placed on a _curve_ that remains totally within the _object_
+
+NOTE: A _topological object_ is _connected_ if and only if all its _geometric realizations_ are _connected_. This is not included as a definition because it follows from a theorem of topology.
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.15>>
+
+=== curve
+
+1-dimensional _geometric primitive_, representing the continuous image of a line
+
+NOTE: The _boundary_ of a _curve_ is the _set_ of _points_ at either end of the _curve_. If the curve is a cycle, the two ends are identical, and the curve (if topologically closed) is considered to not have a boundary. The first _point_ is called the _start point_, and the last is the _end point_. Connectivity of the curve is guaranteed by the "continuous image of a line" clause. A topological theorem states that a continuous image of a _connected set_ is _connected_.
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.23>>
+
+=== coordinate
+
+one of a _sequence_ of n numbers designating the position of a point in n-dimensional space
+
+NOTE: In a _coordinate reference system_, the coordinate numbers are qualified by units.
+
+[.source]
+<<iso19111, ISO 19111:2007, definition 4.8>>
+
+NOTE: In the context of a _DGGS specification_, _coordinates_ are used to reference the vertices and centroid of a _DGGS Cell_. _Coordinates_ may also be used as part of an indexing schema for referencing _DGGS Cells_ within a _DGGS reference frame_.
+
+=== coordinate reference system
+
+coordinate system that is related to an _object_ by a datum
+
+NOTE: For geodetic and vertical datums, the _object_ will be the Earth.
+
+[.source]
+<<iso19111, ISO 19111:2007, definition 4.8>>
+
+=== data cell
+
+_quantization_ operation role where each _DGGS Cell_ is assigned data sampled/mapped from a _feature_ using the _DGGS Cell's_ geometry to govern the sampling operation
+
+=== data tile
+
+_quantization_ operation role where _feature __values_ are aggregated and clipped to the _boundary_ of a _DGGS Cell_ and stored as a tile with no resampling or mapping of the individual _feature__ values_ to individual _DGGS Cells_
+
+NOTE: the _DGGS Cell_ Index is used in the naming convention for data tiles
+
+=== data type
+
+specification of a _value_ domain with operations allowed on values in this domain
+
+[.source]
+<<iso19103, ISO 19103:2015, definition 4.14>>
+
+Example: Integer, Real, Boolean, String, Date (conversion of a date into a series of codes).
+
+NOTE: Data types include primitive predefined types and user-definable types. All instances of a data type lack identity.
+
+[.source]
+<<iso19156, ISO 19156:2011(E), definition 4.3>>
+
+=== datum
+
+parameter or set of parameters that define the positions of the origin, the scale, and the orientation of a _coordinate system_
+
+[.source]
+<<iso19111, ISO 19111:2007, definition 4.14>>
+
+=== DGGS cell
+
+fundamental atomic object of a _DGGS Reference Frame_ at each _cell refinement_ level
+
+NOTE: A _DGGS cell_ can be considered a container for storing and retrieving data within a _DGGS_ implementation. A _DGGS cell_ may be considered either as a parent cell or as a child cell of at least one parent. In different _DGGS_ implementations this container may be explicit (i.e. tightly coupled to the data stored on disc) or virtual (i.e. loosely coupled to the data stored on disc through a lookup table or database).
+
+=== DGGS coordinate reference system
+
+_coordinate reference system_ tied to the earth by a _set_ of _datums_ that cover the _DGGS domain_
+
+NOTE: A DGGS coordinate reference system in two-dimensions is analogous to an ISO19111 geodetic coordinate reference system tied to one horizontal datum. DGGS coordinate reference systems however may in future be extended to include other dimensions (vertical, time) each with an appropriate datum. DGGS coordinate reference systems of higher dimensionality are therefore considered to be analogous to ISO19111 single coordinate reference systems and not ISO19111compound coordinate reference systems.
+
+=== DGGS domain
+
+spatio-temporal domain defined by a DGGS specification
+
+NOTE: By definition, the _surface_ domain of a DGGS is the _surface_ of the entire globe. It may be extended to include other dimensions (vertical, time).
+
+=== DGGS extent
+
+extent of data assigned to a DGGS
+
+NOTE: The DGGS extent may be local, regional or global and is independent of the DGGS domain.
+
+=== DGGS reference frame
+
+fixed structural elements of a DGGS specification that define the hierarchical spatial framework within which the DGGS's functional algorithms _operate_
+
+NOTE: The _DGGS reference frame_ includes a _DGGS coordinate reference system_ and a _sequence_ of equal area _discrete global grids_ defined on that _DGGS coordinate reference system_ that govern the properties of the associated _DGGS Cells_.
+
+=== dimensionally extended nine-intersection model
+
+topological model framework used to test whether a spatial topological relationship exists between two spatial objects
+
+NOTE: DE-9IM is a mathematical approach that defines the pair-wise spatial relationship between geometries of different types and dimensions based on intersections of their interior, boundary, and exterior. It was developed by Clementini _et. al_. [5-7], extending the Nine Intersection Model of Egenhofer and Herring [8].
+
+NOTE: DE-9IM used here is its extended form defined in OGC [OGC 06-103r4] _identical in normative content to ISO/TC 211 [ISO 19125-1:2004]._
+
+=== direct position
+
+position described by a single _set_ of _coordinates_ within a _coordinate reference system_
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.26>>
+
+=== discrete global grid
+
+single _Tessellation_ of a chosen surface model of the Earth
+
+NOTE: A discrete global grid must represent the entire surface model of the Earth.
+
+NOTE: A single discrete global grid may be either an _initial discrete global grid_ or a refinement of the _initial discrete global grid_.
+
+NOTE: A _discrete global grid system_ is constructed from a _sequence_ of _discrete global grids_, each with successively smaller _DGGS Cells_.
+
+=== discrete global grid system
+
+_spatial reference system_ that uses a hierarchical _sequence_ of equal area _discrete global grids_ to model, partition and address the globe.
+
+NOTE: DGGSs are characterized by the properties of their cell structure, geo-encoding, quantization strategy and associated mathematical functions.
+
+=== Earth grid system
+
+one or more spatial or spatio-temporal grids constructed on the surface model of the Earth
+
+=== edge type
+
+topological descriptor used to define the path between _DGGS Cell_ vertices along the surface model of the Earth used to define the _DGGS Reference Frame_
+
+NOTE: choices for edge type include, _inter alia_, geodesic – shortest path, small circles– intersection of a plane oriented perpendicular to an ellipsoid's axis of rotation and the ellipsoid, small ellipse–intersection of a defined plane and the ellipsoid and arcs that project to a straight line under equal-area projection. The list of allowed edge types is not fixed in the standard, but rather managed as a governed codelist.
+
+=== ellipsoidal polygon
+
+polygon constituting the boundary of a _DGGS cell_ on the surface model of the Earth.
+
+NOTE: DGGS are not bound to any one surface model of the Earth (e.g. spherical and ellipsoidal models of the Earth are both valid surface models to construct a _DGGS Reference Frame_).
+
+NOTE: Different DGGS configurations will constrain each arc that forms part of its edge to one of the allowed _edge types_.
+
+=== end point
+
+last point of a _curve_
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.36>>
+
+=== feature
+
+abstraction of real-world phenomena
+
+[.source]
+<<iso19101, ISO 19101-1:2014, definition 4.1.11>>
+
+NOTE: A _feature_ may occur as a type or an instance. In this International Standard, _feature_ instance is meant unless otherwise specified.
+
+[.source]
+<<iso19156, ISO 19156:2011(E), definition 4.6>>
+
+=== feature type
+
+_class_ of _features_ having common characteristics
+
+[.source]
+<<iso19156, ISO 19156:2011(E), definition 4.7>>
+
+=== geo-encoding
+
+process of assigning a _geodetic identifier_ to a _DGGS cell_
+
+NOTE: Each cell of a _DGGS_ is given a unique self-descriptive geodetic identifier or encoded cell address which represents a spatial reference that implicitly identifies its location and hierarchical relationship with other _DGGS cells_. Geometric transformation and indexing of cells can be implemented directly by address code operations alone.
+
+=== geodetic identifier
+
+_spatial reference_ in the form of a label or code that identifies a _DGGS cell_ in a _DGGS reference frame_
+
+NOTE: By analogy to [SOURCE: ISO 19112:2003, definition 4.3] a geographic identifier is a _spatial reference_ in the form of a label that identifies a location, whereas in a _DGGS_ each _cell_ is deemed to be a location in a _DGGS Reference Frame_.
+
+=== geometric object
+
+_spatial object_ representinga _geometric set_
+
+NOTE: A _geometric object_ consists of a _geometric primitive_, a collection of _geometric primitives_, or a geometric complex treated as a single entity. A _geometric object_ may be the spatial representation of an _object_ such as a _feature_ or a significant part of a _feature_.
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.47>>
+
+=== geometric primitive
+
+_geometric object_ representing a single, _connected,_ homogeneous element of space
+
+NOTE: _Geometric primitives_ are non-decomposed _objects_ that present information about geometric configuration. They include _points_, _curves_, _surfaces_, and _solids_
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.48>>
+
+=== geometric set
+
+_set_ of _direct positions_
+
+NOTE: This _set_ in most cases is infinite.
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.50>>
+
+=== graphic cell
+
+_cell_ containing _quantized_ information produced by a rendering process for delivery to a display system
+
+NOTE: _graphic cell_ is a term used to describe a _quantization_ role. Examples include cells delivered by a WMS.
+
+=== graphic tile
+
+_cell_ containing _graphic cells_ aggregated into a tile and cached for delivery to a display system.
+
+NOTE: _graphic tile_ is a term used to describe a DGGS _quantization_ role. A WMS service whose tiles correspond to DGGS _cells_ is an example of a _graphic tile_.
+
+NOTE: the _DGGS Cell_ Index associated with the aggregated _graphic cell_ is used in the naming convention for graphics tiles.
+
+=== grid
+
+network composed of two or more _sets_ of _curves_ in which the members of each _set_ intersect the members of the other _sets_ in an algorithmic way
+
+[.source]
+<<iso19123>>
+
+NOTE: The _curves_ partition a space into _grid_ cells.
+
+[.source]
+<<iso19136, ISO 19136:2007, definition 4.1.38>>
+
+=== hierarchy
+
+organization and ranking of successive levels of _cell refinement_ of a _DGGS reference frame_
+
+=== initial discrete global grid
+
+_discrete global grid tessellation_ created by circumscribing a defined path along the chosen surface model of the Earth between the vertices of the scaled _base unit polyhedron_
+
+=== object
+
+entity with a well-defined _boundary_ and identity that encapsulates state and behavior
+
+NOTE: This term was first used in this way in the general theory of object oriented programming, and later adopted for use in this same sense in UML. An object is an instance of a _class_. Attributes and relationships represent state. Operations, methods, and state machines represent behavior.
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.59>>
+
+=== observation
+
+act of measuring or otherwise determining the _value_ of a _property_
+
+[.source]
+<<iso19156, ISO 19156:2011(E), definition 4.11>>
+
+=== point
+
+0-dimensional _geometric primitive_, representing a position
+
+NOTE: The _boundary_ of a point is the empty _set_.
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.61>>
+
+=== property
+
+attribute of an object referenced by a name
+
+[.source]
+<<iso19143, ISO 19143:2010, definition 4.21>>
+
+Example: Abby's car has the color red, where "color red" is a property of the car.
+
+[.source]
+<<iso19156, ISO 19156:2011(E), definition 4.15>>
+
+=== property type
+
+characteristic of a _feature type_
+
+Example: Cars (a feature type) all have a characteristic color, where "color" is a property type.
+
+NOTE: The _value_ for an instance of an observable property type can be estimated through an act of observation.
+
+NOTE: In chemistry-related applications, the term "determinand" or "analyte" is often used.
+
+NOTE: Adapted from ISO 19109:2005.
+
+[.source]
+<<iso19156, ISO 19156:2011(E), definition 4.16>>
+
+=== quantization
+
+process of digital assignment of data values that have been sampled from other data sources to the cells of a DGGS specification
+
+=== refined discrete global grid
+
+_discrete global grid tessellation_ created by applying a _refinement ratio_ to the _DGGS Cells_ of an existing _discrete global grid tessellation_ (either the _initial discrete global grid_ or another _refined discrete global grid_)
+
+=== refinement ratio
+
+ratio of the number of child cells to parent cells
+
+NOTE: A positive integer ratio n refinement of DGGS parent cells yield n times as many child cells as parent cells.
+
+NOTE: For a two dimensional DGGS (as defined by this Abstract Specification) this is the surface area ratio.
+
+NOTE: In DGGS literature [2] the term aperture has been used instead of refinement ratio. We prefer refinement ratio because it is clearer in meaning to audiences outside the early DGGS community.
+
+=== sequence
+
+finite, ordered collection of related items (_objects_ or _values_) that may be repeated
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.64>>
+
+=== set
+
+unordered collection of related items (_objects_ or _values_) with no repetition
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.65>>
+
+=== simple polygon
+
+polygon with a non-self-intersecting boundary
+
+NOTE: In the context of a two dimensional DGGS (as defined by this Abstract Specification) a _simple polygon_ is not a planar polygon but a curved polygon on the surface model of the Earth.
+
+=== solid
+
+3-dimensional _geometric primitive_, representing the continuous image of a region of Euclidean 3 space
+
+NOTE: A _solid_ is realizable locally as a three parameter _set_ of _direct positions_. The _boundary_ of a _solid_ is the set of oriented, closed _surfaces_ that comprise the limits of the _solid_.
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.68>>
+
+=== spatial object
+
+_object_ used for representing a spatial characteristic of a _feature_
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.69>>
+
+=== spatial reference
+
+description of position in the real world
+
+NOTE: This may take the form of a label, code or set of coordinates related to a position.
+
+[.source]
+<<iso19112, ISO 19112:2003, definition 4.5>>
+
+=== spatial reference system
+
+system for identifying position in the real world
+
+[.source]
+<<iso19112, ISO 19112:2003, definition 4.6>>
+
+=== start point
+
+first _point_ of a _curve_
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.72>>
+
+=== surface
+
+2-dimensional _geometric primitive_, locally representing a continuous image of a region of a plane
+
+NOTE: The _boundary_ of a _surface_ is the set of oriented, closed _curves_ that delineate the limits of the _surface_. _Surfaces_ that are isomorphic to a sphere, or to an n-torus (a topological sphere with n- "handles") have no boundary. Such surfaces are called cycles.
+
+[.source]
+<<iso19107, ISO 19107:2003, definition 4.75>>
+
+=== tag
+
+_quantization_ operation role where individual _DGGS Cell_ Index values are referenced to individual data objects that represent a _feature_.
+
+NOTE: The _DGGS Cell_ operates in this context as a _Minimum Bounding Container_ (similar to a Minimum Bounding Rectangle) where the _boundary_ of the _DGGS Cell_ wholly encloses a _set_ of _features_ assigned to that _cell_.
+
+NOTE: The refinement level of a _DGGS Cell_ index used to tag a _feature_ (or _set_ of _features_) provides an indication of the level of precision and/or the spatial extents of that _feature_.
+
+=== tessellation
+
+partitioning of a space into a set of conterminous subspaces having the same dimension as the space being partitioned
+
+[.source]
+<<iso19123, ISO 19123:2005, definition 4.1.39>>
+
+NOTE: In the context of a DGGS specification, an initial "Polyhedral" tessellation is the process of creating an initial partitioning of the ellipsoid into DGGS cells, and subsequent _discrete global grid tessellations_ apply cell refinement methods resulting in child _DGGS cells_.
+
+NOTE: The "Polyhedral" tessellation operation scales and maps the _base unit polyhedron_ to the chosen surface model of the Earth in such a way that all _DGGS cells_ of the _Initial Discrete Global Grid_ have an equal surface area.
+
+NOTE: The "Discrete Global Grid" tessellation refines a _discrete global grid_ (either the _Initial Discrete Global Grid_ or another _Refined Discrete Global Grid_) by applying a _refinement ratio_ to the _DGGS__Cells_ of the given _discrete global grid_ in such a way that all of the _DGGS Cells_ of the new _discrete global grid_ have an equal surface area and the combined surface area of all _DGGS Cells_ is equal to the surface area of the surface model of the Earth used to define the _DGGS Reference Frame_.
+
+=== value
+
+element of a type domain
+
+[.source]
+<<iso19501>>
+
+NOTE: A value considers a possible state of an object within a _class_ or type (domain).
+
+NOTE: A data value is an instance of a _datatype_, a value without identity.
+
+NOTE: A value can use one of a variety of scales including nominal, ordinal, ratio and interval, spatial and temporal. Primitive datatypes can be combined to form aggregate datatypes with aggregate values, including vectors, tensors and images.
+
+[.source]
+<<iso19156, ISO 19156:2011(E), definition 4.18>>

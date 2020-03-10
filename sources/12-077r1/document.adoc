@@ -1,0 +1,40 @@
+= A Primer for Dissemination Services for Wide Area Motion Imagery
+:edition: 1.0
+:doctype: other
+:committee: technical
+:workingGroup:
+:fullname: Rahul Thakkar
+:role: editor
+:docnumber: 12-077r1
+:external-id: http://www.opengis.net/doc/bp/wami-primer/1.0
+:issued-date: 2012-11-23
+:published-date: 2012-11-28
+:copyright-year: 2012
+:mn-document-class: ogc
+:status: published
+:language: en
+:docfile: document.adoc
+:imagesdir: images
+:stem:
+
+
+include::sections/00-preface.adoc[]
+include::sections/01-executive-summary.adoc[]
+include::sections/02-introduction.adoc[]
+include::sections/03-whats-wami.adoc[]
+include::sections/04-generated-data.adoc[]
+include::sections/05-consumer.adoc[]
+include::sections/06-operational-use.adoc[]
+include::sections/07-web-services.adoc[]
+include::sections/08-wami-data-dissemination.adoc[]
+include::sections/09-wami-web-services.adoc[]
+include::sections/10-cs-is-vs.adoc[]
+include::sections/11-common-model.adoc[]
+include::sections/12-time.adoc[]
+include::sections/13-collection-service.adoc[]
+include::sections/14-image-service.adoc[]
+include::sections/15-video-service.adoc[]
+include::sections/16-cosiderations.adoc[]
+include::sections/17-conclusion.adoc[]
+include::sections/aa-requests-summarized.adoc[]
+include::sections/ab-examples.adoc[]

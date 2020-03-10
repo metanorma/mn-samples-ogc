@@ -9,26 +9,25 @@ The basic WPS is an aggregate requirements class that implements the WPS concept
 . The native WPS process model
 
 
-[%unnumbered]
-[cols="2"]
-|===
-2+^h|Requirements Class
-2+|http://www.opengis.net/spec/WPS/2.0/req/service/profile/basic-wps
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/profile/basic-wps",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/service/model;http://www.opengis.net/spec/WPS/2.0/req/native-process/model;http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml;http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp"]
+====
 
-.^|*Target type* |Derived encoding and software implementation
-
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/model
-
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/native-process/model
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml
-.^|*Dependency* |http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/profile/basic-wps/common-service-model +
+[requirement,type="general",label="/req/service/profile/basic-wps/common-service-model"]
+======
 _The Basic WPS server shall implement the common WPS service model as defined in Requirements class http://www.opengis.net/spec/WPS/2.0/req/service/model._
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/profile/basic-wps/binding +
-_The Basic WPS server shall support one or more of the following bindings for each operation:_ 
+======
 
-. http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml 
+[requirement,type="general",label="/req/service/profile/basic-wps/binding"]
+======
+_The Basic WPS server shall support one or more of the following bindings for each operation:_
+
+. http://www.opengis.net/spec/WPS/2.0/req/service/binding/post-xml
 . http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp
-.^|*Requirement* a|http://www.opengis.net/spec/WPS/2.0/req/service/profile/basic-wps/process-model +
+======
+
+[requirement,type="general",label="/req/service/profile/basic-wps/process-model"]
+======
 _http://www.opengis.net/spec/WPS/2.0/req/service/profile/basic-wps/process-model_
-|===
+======
+
+====

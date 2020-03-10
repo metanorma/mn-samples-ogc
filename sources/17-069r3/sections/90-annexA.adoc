@@ -1,0 +1,645 @@
+
+[appendix,obligation=normative]
+== Abstract Test Suite
+
+=== Introduction
+
+OGC API Features is not a Web Service in the traditional sense. Rather, it defines the behavior and content of a set of Resources exposed through a Web Application Programing Interface (Web API). Therefore, an API may expose resources in addition to those defined by the standard. A test engine must be able to traverse the API, identify and validate test points, and ignore resource paths which are not to be tested.
+
+=== Conformance Class Core
+
+[%unnumbered]
+|===
+2+h| Conformance Class
+2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core
+| Target type | Web API
+|===
+
+=== General Tests
+
+==== HTTP
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 1 h| /ats/core/http
+^.^| Test Purpose | Validate that the resource paths advertised through the API conform with HTTP 1.1 and, where approprate, TLS.
+^.^| Requirement | <<req_core_http,/req/core/http>>
+^.^| Test Method a| 1. All compliance tests shall be configured to use the HTTP 1.1 protocol exclusively. +
+2. For APIs which support HTTPS, all compliance tests shall be configured to use <<rfc2818,HTTP over TLS>> (RFC 2818) with their HTTP 1.1 protocol.
+|===
+
+==== CRS 84
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 2 h| /ats/core/crs84
+^.^| Test Purpose | Validate that all spatial geometries provided through the API are in the CRS84 spatial reference system unless otherwise requested by the client.
+^.^| Requirement | <<req_core_crs84,/req/core/crs84>>
+^.^| Test Method a| 1. Do not specify a coordinate reference system in any request. All spatial data should be in the CRS84 reference system. +
+2. Validate retrieved spatial data using the CRS84 reference system.
+|===
+
+==== Landing Page {root}/
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 3 h| /ats/core/root-op
+^.^| Test Purpose | Validate that a landing page can be retrieved from the expected location.
+^.^| Requirement | <<req_core_root_op,/req/core/root-op>>
+^.^| Test Method a| 1. Issue an HTTP GET request to the URL {root}/ +
+2. Validate that a document was returned with a status code 200 +
+3. Validate the contents of the returned document using test <<ats_core_root_success,/ats/core/root-success>>.
+|===
+
+[[ats_core_root_success]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 4 h| /ats/core/root-success
+^.^| Test Purpose | Validate that the landing page complies with the require structure and contents.
+^.^| Requirement | <<req_core_root_success,/req/core/root-success>>
+^.^| Test Method a| Validate the landing page for all supported media types using the resources and tests identified in <<table4,Schema and Tests for Landing Pages>> +
+For formats that require manual inspection, perform the following: +
+. Validate that the landing page includes a "service-desc" and/or "service-doc" link to an API Definition +
+. Validate that the landing page includes a "conformance" link to the conformance class declaration +
+. Validate that the landing page includes a "data" link to the Feature contents.
+|===
+
+The landing page may be retrieved in a number of different formats. The following table identifies the applicable schema document for each format and the test to be used to validate the landing page against that schema. All supported formats should be exercised.
+
+[[table4]]
+.Schema and Tests for Landing Pages
+|===
+h| Format h| Schema Document h| Test ID
+| HTML | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml[landingPage.yaml] | <<ats_html_content,/ats/html/content>>
+| GeoJSON | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml[landingPage.yaml] | <<ats_geojson_content,/ats/geojson/content>>
+| GMLSF0 | http://schemas.opengis.net/ogcapi/features/part1/1.0/xml/core.xsd[core.xsd], element `core:LandingPage` | <<ats_gmlsf0_content,/ats/gmlsf0/content>>
+| GMLSF2 | http://schemas.opengis.net/ogcapi/features/part1/1.0/xml/core.xsd[core.xsd], element `core:LandingPage` | <<ats_gmlsf2_content,/ats/gmlsf2/content>>
+|===
+
+==== API Definition Path {root}/api (link)
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 5 h| /ats/core/api-definition-op
+^.^| Test Purpose | Validate that the API Definition document can be retrieved from the expected location.
+^.^| Requirement | <<req_core_api_definition_op,/req/core/api-definition-op>>
+^.^| Test Purpose | Validate that the API Definition document can be retrieved from the expected location.
+^.^| Test Method a| 1. Construct a path for each API Definition link on the landing page +
+2. Issue a HTTP GET request on each path +
+3. Validate that a document was returned with a status code 200 +
+4. Validate the contents of the returned document using test <<ats_core_api_definition_success,/ats/core/api-definition-success>>.
+|===
+
+[[ats_core_api_definition_success]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 6 h| /ats/core/api-definition-success
+^.^| Test Purpose | Validate that the API Definition complies with the required structure and contents.
+^.^| Requirement | <<req_core_api_definition_success,/req/core/api-definition-success>>
+^.^| Test Method | Validate the API Definition document against an appropriate schema document.
+|===
+
+==== Conformance Path {root}/conformance
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 7 h| /ats/core/conformance-op
+^.^| Test Purpose | Validate that a Conformance Declaration can be retrieved from the expected location.
+^.^| Requirement | <<req_core_conformance_op,/req/core/conformance-op>>
+^.^| Test Method a| 1. Construct a path for each "conformance" link on the landing page as well as for the {root}/conformance path. +
+2. Issue an HTTP GET request on each path +
+3. Validate that a document was returned with a status code 200 +
+4. Validate the contents of the returned document using test  <<ats_core_conformance_success,/ats/core/conformance-success>>.
+|===
+
+[[ats_core_conformance_success]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 8 h| /ats/core/conformance-success
+^.^| Test Purpose | Validate that the Conformance Declaration response complies with the required structure and contents.
+^.^| Requirement | <<req_core_conformance_success,/req/core/conformance-success>>
+^.^| Test Method a| 1. Validate the response document against OpenAPI 3.0 schema http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/confClasses.yaml[confClasses.yaml] +
+2. Validate that the document includes the conformance class "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core" +
+3. Validate that the document list all OGC API conformance classes that the API implements.
+|===
+
+==== Feature Collections {root}/collections
+
+[[ats_core_fc_md_op]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 9 h| /ats/core/fc-md-op
+^.^| Test Purpose | Validate that information about the Collections can be retrieved from the expected location.
+^.^| Requirement | <<req_core_fc_md_op,/req/core/fc-md-op>>
+^.^| Test Method a| 1. Issue an HTTP GET request to the URL {root}/collections +
+2. Validate that a document was returned with a status code 200 +
+3. Validate the contents of the returned document using test <<ats_core_fc_md_success,/ats/core/fc-md-success>>.
+|===
+
+// TODO: (/ats/core/fc-md-links) is missing clause reference (ats_core_fc_md_links)
+// TODO: (/ats/core/fc-md-items) is missing clause reference (ats_core_fc_md_items)
+[[ats_core_fc_md_success]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 10 h| /ats/core/fc-md-success
+^.^| Test Purpose | Validate that the Collections content complies with the required structure and contents.
+^.^| Requirement | <<req_core_fc_md_success,/req/core/fc-md-success>>, <<req_core_crs84,/req/core/crs84>>
+^.^| Test Method a| 1. Validate that all response documents comply with /ats/core/fc-md-links +
+2. Validate that all response documents comply with /ats/core/fc-md-items +
+3. In case the response includes a "crs" property, validate that the first value is either "http://www.opengis.net/def/crs/OGC/1.3/CRS84" or "http://www.opengis.net/def/crs/OGC/0/CRS84h" +
+4. Validate the collections content for all supported media types using the resources and tests identified in <<collections_metadata_schema,Schema and Tests for Collections content>>
+|===
+
+The Collections content may be retrieved in a number of different formats. The following table identifies the applicable schema document for each format and the test to be used to validate the against that schema. All supported formats should be exercised.
+
+[[collections_metadata_schema]]
+.Schema and Tests for Collections content
+|===
+h| Format h| Schema Document h| Test ID
+| HTML | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml[collections.yaml] | <<ats_html_content,/ats/html/content>>
+| GeoJSON | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml[collections.yaml] | <<ats_geojson_content,/ats/geojson/content>>
+| GMLSF0 | http://schemas.opengis.net/ogcapi/features/part1/1.0/xml/core.xsd[core.xsd], element `core:Collections` | <<ats_gmlsf0_content,/ats/gmlsf0/content>>
+| GMLSF2 | http://schemas.opengis.net/ogcapi/features/part1/1.0/xml/core.xsd[core.xsd], element `core:Collections` | <<ats_gmlsf2_content,/ats/gmlsf2/content>>
+|===
+
+==== Feature Collection {root}/collections/{collectionId}
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 11 h| /ats/core/sfc-md-op
+^.^| Test Purpose | Validate that the Collection content can be retrieved from the expected location.
+^.^| Requirement | <<req_core_sfc_md_op,/req/core/sfc-md-op>>
+^.^| Test Method | For every Feature Collection described in the Collections content, issue an HTTP GET request to the URL `/collections/{collectionId}` where `{collectionId}` is the `id` property for the collection. . Validate that a Collection was returned with a status code 200 . Validate the contents of the returned document using test <<ats_core_sfc_md_success,/ats/core/sfc-md-success>>.
+|===
+
+[[ats_core_sfc_md_success]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 12 h| /ats/core/sfc-md-success
+^.^| Test Purpose | Validate that the Collection content complies with the required structure and contents.
+^.^| Requirement | <<req_core_sfc_md_success,/req/core/sfc-md-success>>
+^.^| Test Method | Verify that the content of the response is consistent with the content for this Feature Collection in the `/collections` response. That is, the values for `id`, `title`, `description` and `extent` are identical.
+|===
+
+==== Features {root}/collections/{collectionId}/items
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 13 h| /ats/core/fc-op
+^.^| Test Purpose | Validate that features can be identified and extracted from a Collection using query parameters.
+^.^| Requirement | <<req_core_fc_op,/req/core/fc-op>>
+^.^| Test Method a| 1. For every feature collection identified in Collections, issue an HTTP GET request to the URL `/collections/{collectionId}/items` where `{collectionId}` is the `id` property for a Collection described in the Collections content. +
+2. Validate that a document was returned with a status code 200. +
+3. Validate the contents of the returned document using test <<ats_core_fc_response,/ats/core/fc-response>>. +
+
+Repeat these tests using the following parameter tests: +
+
+*Bounding Box:* +
+- Parameter <<ats_core_fc_bbox_definition,/ats/core/fc-bbox-definition>> +
+- Response <<ats_core_fc_bbox_response,/ats/core/fc-bbox-response>> +
+
+*Limit:* +
+- Parameter <<ats_core_fc_limit_definition,/ats/core/fc-limit-definition>> +
+- Response <<ats_core_fc_limit_response,/ats/core/fc-limit-response>> +
+
+*DateTime:* +
+- Parameter <<ats_core_fc_time_definition,/ats/core/fc-time-definition>> +
+- Response <<ats_core_fc_time_response,/ats/core/fc-time-response>> +
+
+*Error conditions:* +
+- Query Invalid <<ats_core_query_param_invalid,/ats/core/query-param-invalid>> +
+- Query Unknown <<ats_core_query_param_unknown,/ats/core/query-param-unknown>> +
+
+Execute requests with combinations of the "bbox" and "datetime" query parameters and verify that only features are returned that match both selection criteria.
+|===
+
+[[ats_core_fc_bbox_definition]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 14 h| /ats/core/fc-bbox-definition
+^.^| Test Purpose | Validate that the bounding box query parameters are constructed correctly.
+^.^| Requirement | <<req_core_fc_bbox_definition,/req/core/fc-bbox-definition>>
+^.^| Test Method a| Verify that the `bbox` query parameter complies with the following definition (using an OpenAPI Specification 3.0 fragment): +
+[source,xml]
+----
+name: bbox
+in: query
+required: false
+schema:
+  type: array
+  minItems: 4
+  maxItems: 6
+  items:
+    type: number
+style: form
+explode: false
+----
+Use a bounding box with four numbers in all requests: +
+- Lower left corner, WGS 84 longitude +
+- Lower left corner, WGS 84 latitude +
+- Upper right corner, WGS 84 longitude +
+- Upper right corner, WGS 84 latitude
+|===
+
+[[ats_core_fc_bbox_response]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 15 h| /ats/core/fc-bbox-response
+^.^| Test Purpose | Validate that the bounding box query parameters are processed corrrectly.
+^.^| Requirement | <<req_core_fc_bbox_response,/req/core/fc-bbox-response>>
+^.^| Test Method a| 1. Verify that only features that have a spatial geometry that intersects the bounding box are returned as part of the result set. +
+2. Verify that the `bbox` parameter matched all features in the collection that were not associated with a spatial geometry (this is only applicable for datasets that include features without a spatial geometry). +
+3. Verify that the coordinate reference system of the geometries is WGS 84 longitude/latitude ("http://www.opengis.net/def/crs/OGC/1.3/CRS84" or "http://www.opengis.net/def/crs/OGC/0/CRS84h") since no parameter `bbox-crs` was specified in the request.
+|===
+
+[[ats_core_fc_limit_definition]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 16 h| /ats/core/fc-limit-definition
+^.^| Test Purpose | Validate that the bounding box query parameters are constructed corrrectly.
+^.^| Requirement | <<req_core_fc_limit_definition,/req/core/fc-limit-definition>>
+^.^| Test Method a| Verify that the `limit` query parameter complies with the following definition (using an OpenAPI Specification 3.0 fragment): +
+[source,xml]
+----
+name: limit
+in: query
+required: false
+schema:
+  type: integer
+style: form
+explode: false
+----
+Note that the API can define values for "minimum", "maximum" and "default".
+|===
+
+[[ats_core_fc_limit_response]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 17 h| /ats/core/fc-limit-response
+^.^| Test Purpose | Validate that the limit query parameters are processed correctly.
+^.^| Requirement | <<req_core_fc_limit_response,/req/core/fc-limit-response>>
+^.^| Test Method a| 1. Count the Features which are on the first level of the collection. Any nested objects contained within the explicitly requested items are not be counted. +
+2. Verify that this count is not greater than the value specified by the `limit` parameter. +
+3. If the API definition specifies a maximum value for `limit` parameter, verify that the count does not exceed this maximum value.
+|===
+
+[[ats_core_fc_time_definition]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 18 h| /ats/core/fc-time-definition
+^.^| Test Purpose | Validate that the `dateTime` query parameters are constructed correctly.
+^.^| Requirement | <<req_core_fc_time_definition,/req/core/fc-time-definition>>
+^.^| Test Method a| Verify that the `datetime` query parameter complies with the following definition (using an OpenAPI Specification 3.0 fragment): +
+[source,xml]
+----
+name: datetime
+in: query
+required: false
+schema:
+  type: string
+style: form
+explode: false
+----
+|===
+
+[[ats_core_fc_time_response]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 19 h| /ats/core/fc-time-response
+^.^| Test Purpose | Validate that the dataTime query parameters are processed correctly.
+^.^| Requirement | <<req_core_fc_time_response,/req/core/fc-time-response>>
+^.^| Test Method a| 1. Verify that only features that have a temporal geometry that intersects the temporal information in the `datetime` parameter were included in the result set +
+2. Verify that all features in the collection that are not associated with a temporal geometry are included in the result set +
+3. Validate that the dateime parameter complies with the syntax described in <<req_core_fc_time_response,/req/core/fc-time-response>>.
+|===
+
+[[ats_core_query_param_invalid]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 20 h| /ats/core/query-param-invalid
+^.^| Test Purpose | Validate that the API correctly deals with invalid query parameters.
+^.^| Requirement | <<req_core_query_param_invalid,/req/core/query-param-invalid>>
+^.^| Test Method a| 1. Enter an HTTP request with an invalid query parameter. +
+2. Verify that the API returns the status code `400`.
+|===
+
+[[ats_core_query_param_unknown]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 21 h| /ats/core/query-param-unknown
+^.^| Test Purpose | Validate that the API correctly deals with unknown query parameters.
+^.^| Requirement | <<req_core_query_param_unknown,/req/core/query-param-unknown>>
+^.^| Test Method a| 1. Enter an HTTP request with an query parameter that is not specified in the API definition. +
+2. Verify that the API returns the status code `400`.
+|===
+
+[[ats_core_fc_response]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 22 h| /ats/core/fc-response
+^.^| Test Purpose | Validate that the Feature Collections complies with the require structure and contents.
+^.^| Requirement | <<req_core_fc_response,/req/core/fc-response>>
+^.^| Test Method a| 1. Validate that the `type` property is present and has a value of `FeatureCollection` +
+2. Validate the `features` property is present and that it is populated with an array of `feature` items. +
+3. Validate that only Features which match the selection criteria are included in the Feature Collection. +
+4. If the `links` property is present, validate that all entries comply with <<ats_core_fc_links,/ats/core/fc-links>> +
+5. If the `timeStamp` property is present, validate that it complies with <<ats_core_fc_timestamp,/ats/core/fc-timeStamp>> +
+6. If the `numberMatched` property is present, validate that it complies with <<ats_core_fc_numbermatched,/ats/core/fc-numberMatched>> +
+7. If the `numberReturned` property is present, validate that it complies with <<ats_core_fc_numberreturned,/ats/core/fc-numberReturned>> +
+8. Validate the collections content for all supported media types using the resources and tests identified in <<table4,Schema and Tests for Feature Collections>>
+|===
+
+The collections metadata may be retrieved in a number of different formats. The following table identifies the applicable schema document for each format and the test to be used to validate the against that schema. All supported formats should be exercised.
+
+[[table6]]
+.Schema and Tests for Feature Collections
+|===
+h| Format h| Schema Document h| Test ID
+| HTML | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureCollectionGeoJSON.yaml[featureCollectionGeoJSON.yaml] | <<ats_html_content,/ats/html/content>>
+| GeoJSON | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureCollectionGeoJSON.yaml[featureCollectionGeoJSON.yaml] | <<ats_geojson_content,/ats/geojson/content>>
+| GMLSF0 | http://schemas.opengis.net/ogcapi/features/part1/1.0/xml/core-sf.xsd[core-sf.xsd], element `sf:FeatureCollection` | <<ats_gmlsf0_content,/ats/gmlsf0/content>>
+| GMLSF2 | http://schemas.opengis.net/ogcapi/features/part1/1.0/xml/core-sf.xsd[core-sf.xsd], element `sf:FeatureCollection` | <<ats_gmlsf2_content,/ats/gmlsf2/content>>
+|===
+
+*Supporting Tests:*
+
+[[ats_core_fc_links]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 23 h| /ats/core/fc-links
+^.^| Test Purpose | Validate that the required links are included in the Collections document.
+^.^| Requirement | <<req_core_fc_links,/req/core/fc-links>>, <<req_core_fc_rel_type,/req/core/fc-rel-type>>
+^.^| Test Method a| Verify that the response document includes: +
+1. a link to this response document (relation: `self`), +
+2. a link to the response document in every other media type supported by the server (relation: `alternate`). +
+Verify that all links include the `rel` and `type` link parameters.
+|===
+
+[[ats_core_fc_timestamp]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 24 h| /ats/core/fc-timeStamp
+^.^| Test Purpose | Validate the timeStamp parameter returned with a Features response
+^.^| Requirement | <<req_core_fc_timestamp,/req/core/fc-timeStamp>>, <<req_core_fc_rel_type,/req/core/fc-rel-type>>
+^.^| Test Method | Validate that the `timeStamp` value is set to the time when the response was generated.
+|===
+
+[[ats_core_fc_numbermatched]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 25 h| /ats/core/fc-numberMatched
+^.^| Test Purpose | Validate the numberMatched parameter returned with a Features response
+^.^| Requirement | <<req_core_fc_numbermatched,/req/core/fc-numberMatched>>
+^.^| Test Method | Validate that the value of the `numberMatched` parameter is identical to the number of features in the feature collections that match the selection parameters like `bbox`, `datetime` or additional filter parameters.
+|===
+
+[[ats_core_fc_numberreturned]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 26 h| /ats/core/fc-numberReturned
+^.^| Test Purpose | Validate the numberReturned parameter returned with a Features response
+^.^| Requirement | <<req_core_fc_numberreturned,/req/core/fc-numberReturned>>
+^.^| Test Method | Validate that the `numberReturned` value is identical to the number of features in the response.
+|===
+
+==== Feature
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 27 h| /ats/core/f-op
+^.^| Test Purpose | Validate that a feature can be retrieved from the expected location.
+^.^| Requirement | <<req_core_f_op,/req/core/f-op>>
+^.^| Test Method a| 1. For a sufficiently large subset of all features in a feature collection (path `/collections/{collectionId}`), issue an HTTP GET request to the URL `/collections/{collectionId}/items/{featureId}` where `{collectionId}` is the `id` property for the collection and `{featureId}` is the `id` property of the feature. +
+2. Validate that a feature was returned with a status code 200 +
+3. Validate the contents of the returned feature using test <<ats_core_f_success,/ats/core/f-success>>.
+|===
+
+[[ats_core_f_success]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 28 h| /ats/core/f-success
+^.^| Test Purpose | Validate that the Feature complies with the required structure and contents.
+^.^| Requirement | <<req_core_f_success,/req/core/f-success>>
+^.^| Test Method a| 1. Validate that the Feature includes all required link properties using <<ats_core_f_links,/ats/core/f-links>> +
+2. Validate the Feature for all supported media types using the resources and tests identified in <<table7,Schema and Tests for Features>>
+|===
+
+The Features may be retrieved in a number of different formats. The following table identifies the applicable schema document for each format and the test to be used to validate the against that schema. All supported formats should be exercised.
+
+[[table7]]
+.Schema and Tests for Features
+|===
+h| Format h| Schema Document h| Test ID
+| HTML | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureGeoJSON.yaml[featureGeoJSON.yaml] | <<ats_html_content,/ats/html/content>>
+| GeoJSON | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureGeoJSON.yaml[featureGeoJSON.yaml] | <<ats_geojson_content,/ats/geojson/content>>
+| GMLSF0 | http://schemas.opengis.net/gml/3.2.1/gml.xsd[gml.xsd], element substituable for `gml:AbstractFeature` | <<ats_gmlsf0_content,/ats/gmlsf0/content>>
+| GMLSF2 | http://schemas.opengis.net/gml/3.2.1/gml.xsd[gml.xsd], element substituable for `gml:AbstractFeature` | <<ats_gmlsf2_content,/ats/gmlsf2/content>>
+|===
+
+Note that in the case of GMLSF0/GMLSF2 it is not sufficient to validate against http://schemas.opengis.net/gml/3.2.1/gml.xsd[gml.xsd] as the feature will be defined in a GML application schema. Determine the XML Schema Document for the namespace of the feature to validate the XML document.
+
+*Supporting Tests:*
+
+[[ats_core_f_links]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 29 h| /ats/core/f-links
+^.^| Test Purpose | Validate that the required links are included in a Feature.
+^.^| Requirement | <<req_core_f_links,/req/core/f-links>>
+^.^| Test Method a| 1. Verify that the returned Feature includes: +
+2. a link to this response document (relation: `self`), +
+3. a link to the response document in every other media type supported by the server (relation: `alternate`). +
+4. a link to the feature collection that contains this feature (relation: `collection`). +
+Verify that all links include the `rel` and `type` link parameters.
+|===
+
+=== Conformance Class GeoJSON
+
+[%unnumbered]
+|===
+2+h| Conformance Class
+2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson
+| Target type | Web API
+|===
+
+==== GeoJSON Definition
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 30 h| /ats/geojson/definition
+^.^| Test Purpose | Verify support for JSON and GeoJSON
+^.^| Requirement | <<req_geojson_definition,/req/geojson/definition>>
+^.^| Test Method |
+2+a| 1) A resource is requested with response media type of `application/geo+json` +
+2) All 200-responses SHALL support the following media types: +
+- `application/geo+json` for resources that include feature content, and +
+- `application/json` for all other resources.
+|===
+
+==== GeoJSON Content
+
+[[ats_geojson_content]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 31 h| /ats/geojson/content
+^.^| Test Purpose | Verify the content of a GeoJSON document given an input document and schema.
+^.^| Requirement | <<req_geojson_content,/req/geojson/content>>
+^.^| Test Method a| 1. Validate that the document is a GeoJSON document. +
+2. Validate the document against the schema using an JSON Schema validator.
+|===
+
+=== Conformance Class GML Simple Features Level 0
+
+[%unnumbered]
+|===
+2+h| Conformance Class
+2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/gmlsf0
+| Target type | Web API
+|===
+
+==== GML Simple Features 0 Definition
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 32 h| /ats/gmlsf0/definition
+^.^| Test Purpose | Verify support for GML Simple Features level 0
+^.^| Requirement | <<req_gmlsf0_definition,/req/gmlsf0/definition>>
+^.^| Test Method a| Verify that every `200`-response of an operation of the API where XML was requested is of media type `application/gml+xml;profile=http://www.opengis.net/def/profile/ogc/2.0/gml-sf0` (resources: Features and Feature) or `application/xml` (all other resources)
+|===
+
+==== GML Simple Features 0 Content
+
+[[ats_gmlsf0_content]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 33 h| /ats/gmlsf0/content
+^.^| Test Purpose | Verify the content of an GML Simple Features 0 document given an input document and schema.
+^.^| Requirement | <<req_gmlsf0_content,/req/gmlsf0/content>>
+^.^| Test Method a| 1. For the resources "Features" and "Feature", validate that the document is a GML Simple Features level 0 document. +
+2. Verify that the document has the expected root element. +
+3. Validate the document against the schema using an XML schema validator.
+|===
+
+=== Conformance Class GML Simple Features Level 2
+
+[%unnumbered]
+|===
+2+h| Conformance Class
+2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/gmlsf2
+| Target type | Web API
+|===
+
+==== GML Simple Features 2 Definition
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 34 h| /ats/gmlsf2/definition
+^.^| Test Purpose | Verify support for GML Simple Features level 2
+^.^| Requirement | <<req_gmlsf2_definition,/req/gmlsf2/definition>>
+^.^| Test Method | Verify that every `200`-response of an operation of the API where XML was requested is of media type `application/gml+xml;profile=http://www.opengis.net/def/profile/ogc/2.0/gml-sf2` (resources: Features and Feature) or `application/xml` (all other resources)
+|===
+
+==== GML Simple Features 2 Content
+
+[[ats_gmlsf2_content]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 35 h| /ats/gmlsf2/content
+^.^| Test Purpose | Verify the content of an GML Simple Features level 2 document given an input document and schema.
+^.^| Requirement | <<req_gmlsf2_content,/req/gmlsf2/content>>
+^.^| Test Method a| 1. For the resources "Features" and "Feature", validate that the document is a GML Simple Features level 2 document. +
+2. Verify that the document has the expected root element. +
+3. Validate the document against the schema using an XML schema validator.
+|===
+
+=== Conformance Class HTML
+
+[%unnumbered]
+|===
+2+h| Conformance Class
+2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/html
+| Target type | Web API
+|===
+
+==== HTML Definition
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 36 h| /ats/html/definition
+^.^| Test Purpose | Verify support for HTML
+^.^| Requirement | <<req_html_definition,/req/html/definition>>
+^.^| Test Method | Verify that every `200`-response of every operation of the API where HTML was requested is of media type `text/html`
+|===
+
+==== HTML Content
+
+[[ats_html_content]]
+[%unnumbered]
+|===
+^.^h| Abstract Test 37 h| /ats/html/content
+^.^| Test Purpose | Verify the content of an HTML document given an input document and schema.
+^.^| Requirement | <<req_html_content,/req/html/content>>
+^.^| Test Method a| 1. Validate that the document is an https://www.w3.org/TR/html5/[HTML 5 document] +
+2. Manually inspect the document against the schema.
+|===
+
+=== Conformance Class OpenAPI 3.0
+
+[%unnumbered]
+|===
+2+h| Conformance Class
+2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas3
+| Target type | Web API
+|===
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 38 h| /ats/oas30/completeness
+^.^| Test Purpose | Verify the completeness of an OpenAPI document.
+^.^| Requirement | <<req_oas30_completeness,/req/oas30/completeness>>
+^.^| Test Method | Verify that for each operation, the OpenAPI document describes all https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#httpCodes[HTTP Status Codes] and https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#responseObject[Response Objects] that the API uses in responses.
+|===
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 39 h| /ats/oas30/exceptions-codes
+^.^| Test Purpose | Verify that the OpenAPI document fully describes potential exception codes.
+^.^| Requirement | <<req_oas30_exceptions_codes,/req/oas30/exceptions-codes>>
+^.^| Test Method | Verify that for each operation, the OpenAPI document describes all https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#httpCodes[HTTP Status Codes] that may be generated.
+|===
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 40 h| /ats/oas30/oas-definition-1
+^.^| Test Purpose | Verify that JSON and HTML versions of the OpenAPI document are available.
+^.^| Requirement | <<req_oas30_oas_definition_1,/req/oas30/oas-definition-1>>
+^.^| Test Method a| 1. Verify that an OpenAPI definition in JSON is available using the media type `application/vnd.oai.openapi+json;version=3.0` and link relation `service-desc` +
+2. Verify that an HTML version of the API definition is available using the media type `text/html` and link relation `service-doc`.
+|===
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 41 h| /ats/oas30/oas-definition-2
+^.^| Test Purpose | Verify that the OpenAPI document is valid JSON.
+^.^| Requirement | <<req_oas30_oas_definition_2,/req/oas30/oas-definition-2>>
+^.^| Test Method | Verify that the JSON representation conforms to the <<openapi,OpenAPI Specification, version 3.0>>.
+|===
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 42 h| /ats/oas30/oas-impl
+^.^| Test Purpose | Verify that all capabilities specified in the OpenAPI definition are implemented by the API.
+^.^| Requirement | <<req_oas30_oas_impl,/req/oas30/oas-impl>>
+^.^| Test Method a| 1. Construct a path from each URL template including all server URL options and all enumerated path parameters. +
+2. For each path defined in the OpenAPI document, validate that the path performs in accordance with the API definition and the API-Features standard.
+|===
+
+[%unnumbered]
+|===
+^.^h| Abstract Test 43 h| /ats/oas30/security
+^.^| Test Purpose | Verify that any authentication protocols implemented by the API are documented in the OpenAPI document.
+^.^| Requirement | <<req_oas30_security,/req/oas30/security>>
+^.^| Test Method a| 1. Identify all authentication protocols supported by the API. +
+2. Validate that each authentication protocol is described inthe OpenAPI document by a Security Schema Object and its' use specified by a Security Requirement Object.
+|===
+

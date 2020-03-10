@@ -1,0 +1,54 @@
+= API - Features - Part 1: Core
+:doctype: other
+:language: en
+:status: approved
+:committee: technical
+:docnumber: 17-069r3
+:received-date: 2019-07-11
+:issued-date: 2019-09-09
+:published-date: 2019-10-14
+:external-id: http://www.opengis.net/doc/IS/ogcapi-features-1/1.0
+:fullname: Clemens Portele
+:fullname_2: Panagiotis (Peter) A. Vretanos
+:fullname_3: Charles Heazel
+:role: editor
+:keywords: ogcdoc, OGC document, OGC API, ISO, ISO/TC 211, geographic information, Geospatial API, Web Feature Service, WFS, feature, features, property, geographic information, spatial data, spatial things, dataset, distribution, API, OpenAPI, GeoJSON, GML, HTML, schema.org
+:submitting-organizations: CubeWerx Inc.; Heazeltech LLC; Hexagon; interactive instruments GmbH; Ordnance Survey; Planet Labs; US Army Geospatial Center (AGC)
+:docfile: 17-069r3.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+
+include::sections/00-preface.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-conformance.adoc[]
+
+include::sections/03-references.adoc[]
+
+include::sections/04-terms_and_definitions.adoc[]
+
+include::sections/05-conventions.adoc[]
+
+include::sections/06-overview.adoc[]
+
+include::sections/07-requirements_class_core.adoc[]
+
+include::sections/08-requirements_classes_for_encodings.adoc[]
+
+include::sections/09-requirements_class_openapi30.adoc[]
+
+include::sections/10-media_types.adoc[]
+
+include::sections/11-security_considerations.adoc[]
+
+include::sections/90-annexA.adoc[]
+
+include::sections/91-annexB.adoc[]
+
+include::sections/92-annexC.adoc[]
+
+// include::90-annexD.adoc[]

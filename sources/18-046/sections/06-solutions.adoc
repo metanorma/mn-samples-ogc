@@ -23,6 +23,7 @@ image::005.png[height=auto,width=auto]
 
 _DeployProcess description_
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?><wps:ProcessOfferings xmlns:wps="http://www.opengis.net/wps/2.0" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd">
@@ -56,6 +57,7 @@ _DeployProcess description_
 
 _UndeployProcess description_
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?><wps:ProcessOfferings xmlns:wps="http://www.opengis.net/wps/2.0" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd">
@@ -98,6 +100,7 @@ Based on the process descriptions, execute requests could be send to the ADES.
 
 _DeployProcess execute request_
 
+[%unnumbered]
 [source,xml]
 ----
 <wps200:Execute xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:georss="http://www.georss.org/georss" xmlns:gml311="http://www.opengis.net/gml" xmlns:owc10="http://www.opengis.net/owc/1.0" xmlns:ows200="http://www.opengis.net/ows/2.0" xmlns:wps200="http://www.opengis.net/wps/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" mode="sync" response="document" service="WPS" version="2.0.0" xsi:schemaLocation="http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd">
@@ -180,6 +183,7 @@ _DeployProcess execute request_
 
 _UndeployProcess execute request_
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
@@ -203,6 +207,7 @@ Based on the Application Package, that is send along as execute-input, a new pro
 
 _DeployProcess execute response_
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
@@ -228,6 +233,7 @@ The complete process description looks like the following:
 
 _Description of the newly deployed process_
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?><wps:ProcessOfferings xmlns:wps="http://www.opengis.net/wps/2.0" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd">
@@ -285,6 +291,7 @@ The process itself is a mockup, but sending an example execute request is possib
 
 _Example execute request for the newly deployed process_
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
@@ -313,6 +320,7 @@ A single example output TIFF is returned by reference.
 
 _Example execute response for the newly deployed process_
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
@@ -356,6 +364,7 @@ image::006.png[height=auto,width=auto]
 
 To meet our needs to deploy easily on HPC’s like architecture using Torque distributing computing system, our implementation slightly differs from the OGC testbed architecture. Instead of providing a link to a Docker image including a processing command, we deploy an unique image including major image processing softwares like GDAL, OrfeoToolBox and SNAP. That image can then be used for various processes. We therefore require to define in our Application Package the processing command to execute. The "wps:Command" tag provides that command. To transfer execution parameters, some placeholders are dynamically replaced at execution time. That solution seems simpler than using environment variables.
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
@@ -456,6 +465,7 @@ In that implementation, we assume that that the SNAP graph is already deployed o
 
 Here is the WPS service _DeployProcess_ post content including the path to the application package:
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -483,6 +493,7 @@ In our implementation, no server restart is required and the deployed WPS servic
 
 Here is the WPS service UndeployProcess post content:
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -540,6 +551,7 @@ Those processes are also discoverable via openEO using the /processes endpoint o
 
 The GetCapabilities result for the service (wpseoproc) implemented:
 
+[%unnumbered]
 [source,xml]
 ----
         <wps:ProcessOfferings>
@@ -597,6 +609,7 @@ The DeployProcess operation allows to deploy a process defined as an Application
 
 * *StatusInfo:* Status of the deployment operation. If successful contains a <ows:Identifier..> tag with the job id.
 
+[%unnumbered]
 [source,xml]
 ----
 <ows:Identifier xmlns:ows="http://www.opengis.net/ows/2.0">11d621e87b7de5bda4ddcdb3a8bdbceb1ab90f96674fcd655ff519e9fbb5106e</ows:Identifier>
@@ -604,6 +617,7 @@ The DeployProcess operation allows to deploy a process defined as an Application
 
 *DescribeProcess result:*
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
@@ -699,6 +713,7 @@ The ProcessParameters are organized in the following sections and contain a defi
 
 This is a sample for the ProcessParameters: *ProcessParameters:*
 
+[%unnumbered]
 [source,xml]
 ----
 {
@@ -725,6 +740,7 @@ If the request is validated and executed successfully the response includes an i
 
 e.g Response (WPS 2.0)
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
@@ -744,6 +760,7 @@ In the case where a process is executed in parallel on a larger set of files, th
 
 *DescribeProcess result:*
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
@@ -891,6 +908,7 @@ One of the AP examples mentioned above was modified as required for the Hackatho
 
 _Application Package XML_
 
+[%unnumbered]
 [source,xml]
 ----
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml" xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:owc="http://www.opengis.net/owc/1.0" xmlns:os="http://a9.com/-/spec/opensearch/1.1/" xml:lang="en">
@@ -1069,6 +1087,7 @@ Because the application packages have a fixed format, the chosen lightweight sol
 
 _Application Package XML/Jinja2 Template_
 
+[%unnumbered]
 [source,xml]
 ----
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -1211,6 +1230,7 @@ The following JSON document is an example data structure that contains the neces
 
 _Example Application Properties_
 
+[%unnumbered]
 [source,xml]
 ----
 {
@@ -1385,6 +1405,7 @@ As part of the Hackathon we agreed together with the other participants (particu
 
 The application package assumed the introduction of an mapping section inside the owc:offering node, as depicted below.
 
+[%unnumbered]
 [source,xml]
 ----
 <entry>
@@ -1525,6 +1546,7 @@ Adding the DeployProcess operation proved difficult, as I was not able to dynami
 
 To test basic integration with Docker, I added a DockerProcessFiles process. A sample execute call is provided below:
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?><wps:Execute version="1.0.0" service="WPS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.opengis.net/wps/1.0.0" xmlns:wfs="http://www.opengis.net/wfs" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:wcs="http://www.opengis.net/wcs/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/wps/1.0.0 http://schemas.opengis.net/wps/1.0.0/wpsAll.xsd">
@@ -1590,6 +1612,7 @@ The following experiments have been conducted.
 
 *1. Local execution*
 
+[%unnumbered]
 [source,ruby]
 ----
 $ /usr/local/snap/bin/gpt -e "S1_flow.xml" "-Pinputdata2=/data/MTDA/CGS_S1/CGS_S1_SLC_L1/IW/DV/2018/04/07/S1A_IW_SLC__1SDV_20180407T055900_20180407T055927_021357_024C25_82F4/S1A_IW_SLC__1SDV_20180407T055900_20180407T055927_021357_024C25_82F4.zip" "-Poutputdata=product"
@@ -1597,6 +1620,7 @@ $ /usr/local/snap/bin/gpt -e "S1_flow.xml" "-Pinputdata2=/data/MTDA/CGS_S1/CGS_S
 
 *2. Docker app run*
 
+[%unnumbered]
 [source,ruby]
 ----
 docker run  --mount type=bind,source=/home/driesj/alldata/CGS_S1,target=/data,readonly --mount type=bind,source=/tmp,target=/out ogc/eoephackatong:latest /opt/snap/bin/gpt -e "/S1_Cal_Deb_ML_Spk_TC_cmd.xml" "-Pinputdata=/data/CGS_S1_SLC_L1/IW/DV/2018/02/17/S1B_IW_SLC__1SDV_20180217T060533_20180217T060600_009659_0116BD_A58F/S1B_IW_SLC__1SDV_20180217T060533_20180217T060600_009659_0116BD_A58F.zip" "-Poutputdata=/out/S1result"
@@ -1614,6 +1638,7 @@ docker run  --mount type=bind,source=/home/driesj/alldata/CGS_S1,target=/data,re
 
 This query returns a number of S1 SLC products, available in the platform:
 
+[%unnumbered]
 [source,xml]
 ----
 http://www.vito-eodata.be/openSearch_all/findProducts?collection=urn:eop:VITO:CGS_S1_SLC_L1&dateOfAssociation=(2018-01-01)
@@ -1621,6 +1646,7 @@ http://www.vito-eodata.be/openSearch_all/findProducts?collection=urn:eop:VITO:CG
 
 These are the details for the first product in the list:
 
+[%unnumbered]
 [source,xml]
 ----
 https://www.vito-eodata.be/openSearch_all/findProducts?collection=urn:eop:VITO:CGS_S1_SLC_L1&uid=urn:eop:VITO:CGS_S1_SLC_L1:S1B_IW_SLC__1SDV_20171231T060534_20171231T060601_008959_00FFCD_F1D9&mdDetail=full
@@ -1628,6 +1654,7 @@ https://www.vito-eodata.be/openSearch_all/findProducts?collection=urn:eop:VITO:C
 
 Unfortunately, the OpenSearch result does not yet return the file location on the platform, which is:
 
+[%unnumbered]
 [source,ruby]
 ----
 /data/MTDA/CGS_S1/CGS_S1_SLC_L1/IW/DV/2017/12/31/S1B_IW_SLC__1SDV_20171231T060534_20171231T060601_008959_00FFCD_F1D9/S1B_IW_SLC__1SDV_20171231T060534_20171231T060601_008959_00FFCD_F1D9.zip
@@ -1635,6 +1662,7 @@ Unfortunately, the OpenSearch result does not yet return the file location on th
 
 Luckily, there is a fixed pattern:
 
+[%unnumbered]
 [source,xml]
 ----
 /data/MTDA/CGS_S1/CGS_S1_SLC_L1/IW/DV/{year}/{month}/{day}/{product_id}/{product_id}.zip
@@ -1646,6 +1674,7 @@ So we can translate the result of an OpenSearch query into a list of files to pr
 
 The following query returns a number of products that are to be used in the Hackathon. Only problem seems to be to have a decent bounding polygon that is not too long.
 
+[%unnumbered]
 [source,ruby]
 ----
 beginPosition:[2017-06-17T00:00:00Z TO 2017-06-28T00:00:00Z] geometry:MULTIPOLYGON ( ( (-124.5616980590070000 69.7597329383173985, -120.8884747912599948 69.6227946704093057, -120.6641845703124858 68.0046997070312500, -112.5052261352539062 65.4994659423828125, -101.9999999999999858 64.2405604248810391, -101.9999999999999858 59.9999999999999929, -123.8654327392577983 60.0004577636718750, -124.5959930419921875 60.9513816833496023, -126.8194122314453125 60.7560386657714844, -129.2740631103515625 62.1518974304199148, -130.1314849853515625 63.8682479858398366, -132.6178741455078125 64.8146667480468750, -132.3343505859375000 65.9790191650390625, -136.4512023925781250 67.6393966674804688, -136.4307284766541102 68.8755994928747981, -134.3083673030710088 68.4917448882628861, -134.8237124547030135 68.8966088831299999, -130.6645470088639627 70.1698270626655045, -129.5095813211379721 70.0601366636771843, -132.5646735357719876 69.1877721075583025, -129.0187433979369871 69.6915834897223050, -127.7071199605330065 70.1875195944390953, -128.1326847613649988 70.5379774698684940, -126.0062665758830036 69.3847449052028935, -124.5616980590070000 69.7597329383173985) ), ( (-109.9983668621582211 77.9759995442161653, -110.8591498996379983 77.4023791996747974, -113.4681886292650006 77.6945919972263823, -109.9983668621582211 77.9759995442161653) ), ( (-109.9997816018178725 74.8822736447125550, -113.5332400552899941 74.4418064633312042, -114.5448389104920039 74.6774789020902006, -111.2039409509199999 75.2391718029844014, -117.6377255677609810 75.3148700312898001, -115.2479251951070012 75.7145220021956931, -117.2705855820070013 75.6768381378722950, -115.0933121976689790 75.9141480049089949, -116.9215272085669994 75.9540951481941846, -114.9193462053499957 76.5584615036720066, -109.9991405123388404 75.5487163795551737, -109.9997816018178725 74.8822736447125550) ), ( (-119.6310074024499812 74.0050620988056806, -115.5659439123839860 73.5355747734022884, -118.5053305985285164 72.5527911859559680, -114.6742138861499996 73.3828481898944034, -114.0481792908909995 73.0843834539102062, -114.6889136530499940 72.6100967431794970, -110.0003451507280232 72.5171386154111985, -109.9998550415038920 69.9996109008789062, -116.7560806274414062 70.0005035400390625, -116.4440612792968750 69.5389175415039062, -117.4235819004919819 70.0333776124058005, -111.4053370170420010 70.2529903079055060, -117.6759862481169847 70.7030885373091991, -118.4600936720009940 71.0423339487693966, -115.2384654435920055 71.5296347004300799, -118.2823495867020114 71.4532951159156937, -117.7320417690929872 71.6111558249129985, -119.0458562469499952 71.7222252601340813, -118.6497684410870761 72.5044984105474697, -122.8378231256180015 71.1042228269755014, -125.9959464892440053 71.9849549325246869, -123.8614612339069936 73.7625852114308032, -124.8762465749349815 74.3488695598643972, -119.6310074024499812 74.0050620988056806) ), ( (-119.8137628055140169 77.0844884604478011, -115.7360034420759973 77.3173424823808944, -119.8561035042509957 75.8373730846247867, -123.0635936882130039 76.1754883731667007, -119.8137628055140169 77.0844884604478011) ), ( (-118.5139306387499971 75.5284167223964999, -119.3458409045809816 75.6584810669376964, -117.6433493457100070 76.1109042978966954, -118.5139306387499971 75.5284167223964999) ), ( (-135.1827105776989981 69.4641202526612034, -133.8366374803470080 69.5144298659631943, -136.1770482693100064 69.2024494710097002, -135.1827105776989981 69.4641202526612034) ) ) orbitdirection:DESCENDING platformname:Sentinel-1 polarisationmode:HH HV producttype:SLC'

@@ -1,0 +1,32 @@
+= Big Geospatial Data -- an OGC White Paper
+:doctype: white-paper
+:committee: technical
+:workingGroup:
+:fullname: George Percivall
+:role: editor
+:docnumber: 16-131r2
+:external-id: http://www.opengis.net/doc/WP/bigdata
+:received-date: 2017-06-15
+:issued-date: 2017-06-29
+:published-date: 2017-09-25
+:copyright-year: 2017
+:mn-document-class: ogc
+:status: published
+:language: en
+:docfile: document.adoc
+:keywords: ogcdoc, OGC documents, Big Data, geospatial, location, open, standards, interoperability, cloud computing
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:imagesdir: images
+:local-cache-only:
+:data-uri-image:
+
+
+include::sections/00-front-material.adoc[]
+include::sections/01-big-data-trend.adoc[]
+include::sections/02-applications.adoc[]
+include::sections/03-use-cases.adoc[]
+include::sections/04-opportunities.adoc[]
+include::sections/05-activities.adoc[]
+include::sections/aa-location-powers.adoc[]
+include::sections/ab-acronyms.adoc[]
+

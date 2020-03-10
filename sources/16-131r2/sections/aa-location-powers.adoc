@@ -1,0 +1,38 @@
+
+[appendix,obligation=informative]
+== Location Powers Emergent Themes
+Location Powers is a place to share what we understand about Location and what more we want to know. The Location Powers Summits are provided by the OGC, whose members have been making the world's location standards for over 20 years. As well as being a place of learning for everyone about the power of understanding location, the summits are also designed to help inform the future direction and work within the consortium to continue developing relevant and useful standards.
+
+link:http://www.locationpowers.net/pastevents/1609orlando/index.php[Location Powers: Big Data in September 2016] Emergent Themes:
+
+* We live in a download mentality. How do we move to answering questions? Analytics on the fly
+* Focus shifting from understanding what happened last week to being able to predict what will happen next week
+* Geo Big Data could take better advantage of developments in Big Data Proper, which is only tangentially interested in Geo Big Data
+* Challenges
+** Moving from the disorganized attic model to a standard
+** Standardizing rest interface
+** Sharing algorithms among users
+* Multiple Applications: Telecommunications, property casualty insurance, financial services, Energy Monitoring and prediction, Population Dynamics, Settlement Mapping
+* Input to OGC Testbed 13
+
+link:http://www.locationpowers.net/pastevents/1703delft/index.php[Location Powers Big Linked Geodata, March 2017] Emergent Themes:
+
+* Overarching questions
+** How can we use location linked data to make sense of Big Data?
+** What are the challenges when scaling linked data to Big Data spatial analytics?
+** Is Linked Data a way to achieve Analysis Ready geospatial Data?
+* Emergent themes about Linked Geodata
+** Semantics: Which relationships and classes need to be standardized for location?
+** The ETL challenge of keeping the data up to date on a daily basis (or faster)
+** How to model uncertainty > ties in with statistics
+* Emergent Themes about Big Linked Geodata
+** Big linked data is challenging
+*** but there are still issues (performance)
+*** commercial vs. open source
+** Big data strategies
+*** Using linked metadata to make Big Data more manageable... ... and use other data crunching techniques, tools and (REST?) APIs to then deal with it
+*** Bring the user to the data
+** Also consider the "`variety`" V
+*** different solutions and formats for different user groups
+*** standards and governance
+*** think "`supply chains`"

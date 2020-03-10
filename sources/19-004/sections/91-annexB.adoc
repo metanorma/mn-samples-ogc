@@ -1,0 +1,161 @@
+
+[[annexB]]
+[appendix,obligation=normative]
+== SeamlessNavigation Module Example Document
+
+The following are examples of the SeamlessNavigation module documents generated as described in <<japan_use_case>> 
+
+._cityTransSample.gml_
+[source,xml]
+----
+<CityModel xmlns="http://www.opengis.net/citygml/2.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:tran="http://www.opengis.net/citygml/transportation/2.0"
+xsi:schemaLocation="http://www.opengis.net/citygml/2.0 http://schemas.opengis.net/citygml/profiles/base/2.0/CityGML.xsd">
+<cityObjectMember>
+<tran:TransportationComplex gml:id="TC1">
+<tran:lod0Network>
+<gml:CompositeCurve srsName="EPSG:4326">
+<gml:curveMember>
+<gml:LineString>
+<gml:pos>35.618696 139.777972</gml:pos>
+<gml:pos>35.618624 139.778240</gml:pos>
+<gml:pos>35.618101 139.778643</gml:pos>
+<gml:pos>35.617625 139.779061</gml:pos>
+<gml:pos>35.617475 139.778820</gml:pos>
+<gml:pos>35.617320 139.778951</gml:pos>
+</gml:LineString>
+</gml:curveMember>
+</gml:CompositeCurve>
+</tran:lod0Network>
+</tran:TransportationComplex>
+</cityObjectMember>
+</CityModel>
+----
+
+._seamlessNaviSample.gml_
+[source,xml]
+----
+<gml:FeatureCollection
+xmlns:gml="http://www.opengis.net/gml/3.2"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns="http://www.opengis.net/indoorgml/1.0/seamlessNavi"
+xmlns:core="http://www.opengis.net/indoorgml/1.0/core"
+xmlns:navi="http://www.opengis.net/indoorgml/1.0/navigation"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation= "http://www.opengis.net/indoorgml/1.0/core http://schemas.opengis.net/indoorgml/1.0/indoorgmlcore.xsd
+http://www.opengis.net/indoorgml/1.0/navigation http://schemas.opengis.net/indoorgml/1.0/indoorgmlnavi.xsd
+http://www.opengis.net/indoorgml/1.0/seamlessNavi seamlessnavi.xsd">
+<gml:featureMembers>
+<core:IndoorFeatures gml:id="IFs">
+<core:primalSpaceFeatures>
+<core:PrimalSpaceFeatures gml:id="PSs">
+<core:cellSpaceMember>
+<core:CellSpace gml:id="CS1">
+<gml:name>Main Hall</gml:name>
+<core:cellSpaceGeometry>
+<core:Geometry2D>
+<gml:Polygon srsName="EPSG:4326">
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList> 35.6181996 139.7784147 35.6186619 139.778033 35.61851 139.7777545 35.6183772 139.7778641 35.6183119 139.7777444 35.618092 139.777926 35.6181573 139.7780457 35.6180476 139.7781362 35.6180561 139.7781516 35.6180339 139.77817 35.6181648 139.77841 35.618187 139.7783916 35.6181996 139.7784147 </gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</core:Geometry2D>
+</core:cellSpaceGeometry>
+</core:CellSpace>
+</core:cellSpaceMember>
+<core:cellSpaceMember>
+<navi:AnchorSpace gml:id="AS1">
+<gml:name>Entrance</gml:name>
+<core:cellSpaceGeometry>
+<core:Geometry2D>
+<gml:Polygon srsName="EPSG:4326">
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+35.6185243 139.7781466 35.61857293778 139.77810644557 35.61857882026 139.77811733809 35.61852967618 139.77815783109 35.6185243 139.7781466
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</core:Geometry2D>
+</core:cellSpaceGeometry>
+<navi:class> 1000 </navi:class>
+<navi:function> 1000 </navi:function>
+<navi:usage> 1000 </navi:usage>
+</navi:AnchorSpace>
+</core:cellSpaceMember>
+</core:PrimalSpaceFeatures>
+</core:primalSpaceFeatures>
+<core:multiLayeredGraph>
+<core:MultiLayeredGraph gml:id="MLG1">
+<core:spaceLayers>
+<core:spaceLayerMember>
+<core:SpaceLayer gml:id="SL1">
+<core:nodes>
+<core:stateMember>
+<core:State gml:id="S1">
+<core:duality xlink:href="#CS1"/>
+<core:geometry>
+<gml:Point>
+<gml:pos> 35.61833152465 139.77806794632 </gml:pos>
+</gml:Point>
+</core:geometry>
+</core:State>
+</core:stateMember>
+<core:stateMember>
+<AnchorState gml:id="A1">
+<core:geometry>
+<gml:Point srsName="EPSG:4326">
+<gml:pos> 35.61855174466 139.77813125399 </gml:pos>
+</gml:Point>
+</core:geometry>
+<transformReferencePoint srsName="EPSG:4326">
+<geometry>
+<gml:Point srsName="EPSG:4326">
+<gml:pos> 35.61855174466 139.77813125399 </gml:pos>
+</gml:Point>
+</geometry>
+</transformReferencePoint>
+<duality xlink:href="#AS1"/>
+<connects xlink:href="#AL1"/>
+
+</AnchorState>
+</core:stateMember>
+</core:nodes>
+</core:SpaceLayer>
+</core:spaceLayerMember>
+</core:spaceLayers>
+</core:MultiLayeredGraph>
+</core:multiLayeredGraph>
+</core:IndoorFeatures>
+<ExternalAnchorState gml:id="EA1">
+<externalNetworkReference>
+<core:informationSystem>cityTransSample.gml</core:informationSystem>
+<core:externalObject>
+<core:name>GMLID_T1</core:name>
+</core:externalObject>
+</externalNetworkReference>
+<geometry>
+<gml:Point>
+<gml:pos>35.618624 139.778240</gml:pos>
+</gml:Point>
+</geometry>
+<connects xlink:href="#AL1"/>
+</ExternalAnchorState>
+<AnchorLink gml:id="AL1">
+<connectToIndoor xlink:href="#A1"/>
+<connectToOutdoor xlink:href="#EA1"/>
+<geometry>
+<gml:LineString srsName="EPSG:4326">
+<gml:posList> 35.61855174466 139.77813125399 35.618624 139.778240 </gml:posList>
+</gml:LineString>
+</geometry>
+</AnchorLink>
+</gml:featureMembers>
+</gml:FeatureCollection>
+----

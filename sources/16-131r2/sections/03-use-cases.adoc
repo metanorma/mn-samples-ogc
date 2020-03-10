@@ -1,0 +1,215 @@
+
+[[sec-use-cases-for-big-geo-data]]
+== Use cases for Big Geo Data
+
+=== Use Case commonality across applications
+The benefits of Big Data described in <<sec-value-of-big-geo-data>> vary across the domain of application and in the types of benefits. Fortunately, from a technology development perspective there is high commonality of use cases and associated requirements across the application domains. This section provides a set of Big Geo Data Use Cases that can be used to help manage the complexity of Big Geo Data development. The Use Cases are organized into four groups as shown in <<fig-big-geo-data-use-cases>>. Three of the four use case groups are inspired by and similar to the roles of a big data application provider as defined in a reference architecture under development by ISO/IEC JTC 1/WG 9 -- Information technology -- Big Data footnote:[https://www.iso.org/committee/45020.html]. The Models and Simulation category shown in <<fig-big-geo-data-use-cases>> is not in the WG9 architecture, but is included in the geospatial use cases as geospatial models and simulations meet the definition of big data.
+
+[[fig-big-geo-data-use-cases]]
+.Big Geo Data Use Cases
+image::fig-big-geo-data-use-cases.png[]
+
+
+<<tab-use-cases-supporting-application-domains>> shows how the use cases support the application domains described in <<sec-value-of-big-geo-data>>.
+
+[[tab-use-cases-supporting-application-domains]]
+.Use Cases supporting Application Domains
+[cols="5"]
+|===
+| h|Collection and Ingest h|Prepare & Structure h|Analytics & Visualization h|Models & Prediction
+
+h|Earth Observations |Observations from sensors to processing centers |Met/Ocean 4D queries on array databases |Processing of observations in data clusters and exascale processing |Integrated Environmental processing modeling and predictions
+
+h|Resource Management: Precision Agriculture |Observations from remote, in-situ, and on-vehicle sensors |Processing, normalization, cross-scale integration of raw observations |Identification of trends, correlations, scale of resource evolution |Prediction on resource quantities in the future, generation of treatment prescriptions
+
+h|Mobile Location Services |Mobile devices location tracking |Linked data structuring |Sentiment analysis from social media |Prediction of future state
+
+h|Transportation |Real-time Tracking of moving features |Detect and monitor real-time event detection |Pattern recognition in moving features |Predicting future states for decision making
+
+h|Smart Cities |Observations of urban environment. Social media from citizens |Queries on quality of life in cities |Prediction of urban needs |Prediction for urban planning using spatial models
+|===
+
+
+=== Collection & Ingest
+Collection and ingest of much Big Data requires the abilities of high velocity data streaming. Geoffrey Fox, Indiana University, provided an excellent overview of high velocity streaming to the Location Powers, Big Geo Data workshop. Professor Fox's presentation was based in part of two previous workshops on link:http://streamingsystems.org/[streaming systems]. Additionally Fox described use cases coming from the US National Institute of Standards and Technology (NIST) Public Data Working Group, e.g., <<fig-use-case-on-real-time-streaming-analytics>>
+
+[[fig-use-case-on-real-time-streaming-analytics]]
+.Use Case on Real Time streaming analytics (Figure Source: NIST Big Data Working Group)
+image::fig-use-case-on-real-time-streaming-analytics.png[]
+
+
+Use Cases in the High Velocity category include the following.
+
+*IoT Message Streaming*
+
+* Description: Data from IoT devices is made available using high velocity transaction messaging. The objective is rapid and diverse distribution of IoT data with limited semantics sufficient for more downstream processing.
+* OGC Standards: OGC Sensor Observation Service (SOS) and SensorThings API
+* References:
+** OGC link:http://www.opengeospatial.org/standards/sensorthings[SensorThings API] Standard; and
+** link:http://www.opengeospatial.org/standards/sos[OGC Sensor Observation Service].
+
+*Social Media Message Processing*
+
+* Description: Processing of social media messages with relatively basic processing to make it suitable for downstream processing. Social media is a key source of Big Data for understanding local sentiment and decisions. Examples including geotagging messages and basic cluster identification based on message content from: Twitter, Instagram, Flickr, etc.
+* Standards: W3C Activity Streams 2; OGC SOS, GeoSPARQL, WPS
+* Reference: link:https://portal.opengeospatial.org/files/?artifact_id=64353[OGC Testbed-11 Incorporating Social Media in Emergency Response Engineering Report], OGC Document 15-057
+
+*ETL Stream processing*
+
+* Description: Extract, Transform, Load (ETL) processing of messages based on structuring the messages with RDF to support inference, e.g., identify events of interest. For example, process sensor messages into filed-named tuples using a semantic ontology relevant to the observations.
+* Standards: RDF, OWL, SPARQL, SWE, SSN
+* References:
+** link:http://www.computer.org/csdl/mags/co/2015/03/mco2015030042-abs.html[Integrating Big Data: A Semantic Extract- Transform-Load Framework]
+** link:https://www.w3.org/community/rsp/files/2015/06/RSP_Workshop_2015_submission_7_slides.pdf[Scalability in RDF Stream Processing Systems]
+
+*Wide Area Motion Imagery*
+
+* Description: Motion Imagery is a video stream where each image in the stream is spatio-temporally related to the next image. Motion Imagery contains metadata to provide context, e.g. sensor information, position, time, image quality, etc. Wide Area Motion Imagery (WAMI) footnote:[http://www.opengeospatial.org/pressroom/pressreleases/1759] has a large footprint, typically tens of square kilometers per image with an image capture rate of 2 to 24Hz
+* Standards: WAMI, WebSockets (RFC 6455) and/or UDP for streaming WAMI data, in addition to HTTP(S)
+* Reference: link:https://portal.opengeospatial.org/files/?artifact_id=50486[OGC Best Practice - WAMI Services: Dissemination Services for Wide Area Motion Imagery]
+ 
+[[subsec-prepare-and-structure]]
+=== Prepare and Structure
+Data preparation and structuring involves processes that convert raw data into organized information. These processes and resulting structured data stores enhance the value of the data for search, analytics, and visualization. Unstructured data does not have a pre-defined data model or is not organized in a pre-defined way. Data structuring is performed mainly to support analytics (See <<subsec-analysis-and-visualization>>).
+
+The activities of preparing and structuring data lead to Data Representation. An excellent survey of data representation for Big Data is provided in "`link:https://www.nap.edu/catalog/18374/frontiers-in-massive-data-analysis[Frontiers in Massive Data Analysis]`" by the US National Academies. They emphasize the goals of data representation as:
+
+"`Although a picture may be worth a thousand words, a good representation of data is priceless: a single data representation, or sometimes multiple ones, allows one to carry out a large number of data processing and analysis tasks in a manner that is both algorithmically efficient and statistically meaningful.`"
+
+Tasks performed by this activity could include data validation (e.g., checksums/hashes, format checks), cleansing (e.g., eliminating bad records/fields), outlier removal, standardization, reformatting, or encapsulating. This activity is also where source data will frequently be persisted to archive storage and provenance data will be verified or attached/associated. Verification or attachment may include optimization of data through manipulations (e.g., de-duplication) and indexing to optimize the analytics process. This activity may also aggregate data from different Data Providers, leveraging metadata keys to create an expanded and enhanced data set.
+
+Geography is often described as the "`glue that binds conceptually linked data`". The links between link:http://w3c.github.io/sdw/bp/[spatial things] - and between other resources and spatial things - describe how the world around us is structured and interrelated and form an important facet of the Web of Data footnote:[Source: https://www.w3.org/TR/sdw-bp/].
+
+Key to data structuring big data are new data types. During the Location Powers Big Geo Data workshop Keith W. Hare (JCC Consulting) provided a comparison of traditional data types vs. "`Big Data`" data types. Data structuring using these new data types enables new use cases.
+
+Use Cases in the Geospatial Databases category include the following.
+
+*Relational Databases/SQL*
+
+* Description: Relational databases have been a dominant data structure and technology for many years. SQL (Structured Query Language) is a language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS).
+
+* Standards: SQL
+
+* References: (SQL for large databases)
+
+ 
+*Array databases*
+
+* Description: Geospatial Coverages when structured as arrays are not well suited to traditional RDBMSs. Query optimization for array data is difficult, and the relational model is based on sets, not ordered data. Several efforts to incorporate array data into the relational model have appeared in the research literature, but without lasting effect. footnote:[3 Scaling the Infrastructure for Data Management." National Research Council. 2013. Frontiers in Massive Data Analysis. Washington, DC: The National Academies Press. doi: 10.17226/18374].
+
+* Standards: ISO/IEC JTC 1/SC 32 is creating a new part to the SQL standards for arrays: WD 9075-15 Multi-dimensional arrays (SQL/MDA). OGC WCS provides access to arrays with the OGC WCPS standard as an input to SQL/MDA development.
+* References: EarthServer is an example implementation of an array database.
+
+
+*No-SQL/Non-Relational databases*
+
+* Description: Non-relational model database paradigms are sometimes referred to as NoSQL (Not Only or No Structured Query Language [SQL]) systems). Since NoSQL is in such common usage it will continue to refer to the new data models beyond the relational model. However, the term refers to databases that do not follow a relational model. Examples of non-relational database models include the column, sparse table, key-value, key-document, and graphical models footnote:[The text for this use case derives from a NIST Big Data Working Group draft document.].
+* Standards: NoSQL data management systems, which are intended to provide support for non-tabular structured data, as well as unstructured and semi-structured data, have not yet settled on a common access language.
+
+*Moving Features*
+
+* Description: Mobile devices are providing increasing Big Data sets of features moving in space and time. Several use cases based on spatial-temporal analysis motivate the access methods for databases storing moving feature data. For example, these operations retrieve positions, trajectories, and velocities of a moving feature such as a car, a person, a vessel, an aircraft, and a hurricane.
+* Standards: OGC Moving Features Access Standard.
+* References:
+
+*Linked Data*
+
+* The term 'link:https://www.w3.org/TR/sdw-bp/#dfn-linked-data[Linked Data]' refers to an approach to publishing data that puts linking at the heart of the notion of data, and uses the linking technologies provided by the Web to enable the weaving of a global distributed database. By identifying real world entities - be they Web resources, physical objects such as the Eiffel Tower, or even more abstract things such as relations or concepts - with URLs data can be published and linked in the same way Web pages can.
+* Standards: HTTP, URIs, RDF, SPARQL, JSON LD
+* References: https://www.w3.org/TR/sdw-bp/#linked-data
+
+[[fig-six-star-model-for-linked-data]]
+.Six Star Model for Linked Data (Figure Source: L. van den Brink footnote:[https://www.linkedin.com/pulse/why-apis-missing-link-linked-open-data-dimitri-van-hees])
+image::fig-six-star-model-for-linked-data.png[]
+
+[[subsec-analysis-and-visualization]]
+=== Analytics & Visualization
+"`Big data analytics is the process of examining large and varied data sets -- i.e., big data -- to uncover hidden patterns, unknown correlations, market trends, customer preferences and other useful information that can help organizations make more-informed business decisions. footnote:[http://searchbusinessanalytics.techtarget.com/definition/big-data-analytics]`" The requirements specify the data processing algorithms to produce new insights that will address the technical goal.
+
+The ESIP Federation defines Earth Science Data Analytics as "`Process of examining, preparing, reducing, and analyzing large amounts of spatial (multi-dimensional), temporal, or spectral data encompassing a variety of data types to uncover patterns, correlations and other information, to better understand our Earth`". ESIP goes on to say that analytics encompasses:
+
+* Data Preparation -- Preparing heterogeneous data so that they can be jointly analyzed;
+* Data Reduction -- Correcting, ordering and simplifying data in support of analytic objectives; and
+* Data Analysis -- Applying techniques/methods to derive results.
+
+In this white paper, Data Preparation and Data Reduction were discussed in the previous section on Data Structuring. Data Analysis is the synthesis of knowledge from information.
+
+Many of the topics addressed in this set of use cases are considered in Data Science. There are many definitions and activities labeled as Data Science. A good perspective on this topic is "`link:http://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf[50 Years of Data Science]`" by David Donoho. "`link:https://www.microsoft.com/en-us/research/publication/fourth-paradigm-data-intensive-scientific-discovery/[The Fourth Paradigm]`" by Tony Hey, et.al, provides an excellent perspective on this topic by considering data-intensive scientific discovery.
+
+Use Cases in the Analytics and Visualization category include the following.
+
+*Entity-oriented Spatial-temporal analytics*
+
+* Description: Fusing structured and unstructured data for geospatial analysis in support of activity-based intelligence (ABI), object-based production (OBP), and human geography (HG) analysis. Spatiotemporal analytics on high velocity streaming data-in-motion and high volume batch data-at-rest. Geospatial examples include GeoWave, GeoTrellis, GeoMesa, GeoJinni; JTS Topology Suite; Esri geometry-api-java
+* Standards: OGC Simple Features
+* References:
+** link:http://ceur-ws.org/Vol-1366/paper17.pdf[Large-scale Analysis of Event Data], Hagedon, Sattler, Gertz
+** link:https://apachebigdata2016.sched.org/event/6M1I/applying-geospatial-analytics-using-apache-spark-running-on-apache-mesos-adam-mollenkopf-esri[Applying Geospatial Analytics Using Apache Spark Running on Apache Mesos] -- Apache Big Data conference presentation
+** link:http://ndupress.ndu.edu/Media/News/NewsArticleView/tabid/7849/Article/581866/jfq-77-activity-based-intelligence-revolutionizing-military-intelligence-analys.aspx[Activity-Based Intelligence: Revolutionizing Military Intelligence Analysis]
+
+*Grid-oriented Spatial-temporal Analytics*
+
+* Description: Data is organized in tile structures with attributes associated with each tile regarding the physical and human geography of the geographic space of the tile. Analysis of moving entities across the tile structure.
+* Standards: OGC Discrete Global Grid System (DGGS) Abstract Model
+
+*Feature Fusion*
+
+* Description: Feature fusion is a type of data fusion where the data elements being associated are features. Data Fusion is the act or process of combining or associating data or information regarding one or more entities considered in an explicit or implicit knowledge framework to improve one's capability (or provide a new capability) for detection, identification, or characterization of that entity. A primary example of Feature Fusion is Conflation
+* Standards:
+* References:
+** link:http://portal.opengeospatial.org/files/?artifact_id=41573[OGC Fusion Standards Study, Phase 2 Engineering Report]
+
+*Remote-sensed data processing*
+
+* Description: Processing of remote sensed data has traditionally used purpose built algorithms depending on the specific sensor. In particular for lower level processing to Level 1 (link:http://science.nasa.gov/earth-science/earth-science-data/data-processing-levels-for-eosdis-data-products/[Data Processing Levels]). Level 2 and 3 processing has recently become the subject of generic compute platforms for hosting remote sensed processing algorithms on distributed clusters.
+* Standards: NetCDF, HDF; WCS, WPS
+* References:
+** link:http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6249771[Cloud Computing Enabled Web Processing Service for Earth Observation Data Processing]; Z. Chen, N. Chen, C. Yang, L. Di -- IEEE JSTARS
+** link:http://congrexprojects.com/custom/16M05/bids/ALL/D2_1000_04_Pinto.pdf[Exploitation Platforms Open Architecture], S. Pinto at BiDS'16 Conference
+
+*Machine Learning*
+
+* Description: Machine learning is a general class of algorithms that learn from and make predictions on data. Recent progress in machine learning has been driven both by the development of new learning algorithms and theory and by the ongoing explosion in the availability of online data and low-cost computation. Machine learning can be classified into three broad categories: Supervised learning, Unsupervised learning, Reinforcement learning. Example Implementations: Apache Mahout, Spark/MLlib
+* Use cases:
+* Standards:
+* References:
+** "`link:https://cacm.acm.org/magazines/2017/6/217744-technical-perspective-what-led-computer-vision-to-deep-learning/abstract[What Led Computer Vision to Deep Learning?]`" Jitendra Malik 
+** "`link:http://www.hindawi.com/journals/js/2015/834217/[Architecture and Implementation of a Scalable Sensor Data Storage and Analysis System Using Cloud Computing and Big Data Technologies]`", Galip Aydin, Ibrahim Riza Hallac, and Betul Karakus
+
+*Data Visualization and Exploration*
+
+* Description: The visualization activity prepares elements of the processed data and the output of the analytic activity for presentation. The objective of this activity is to format and present data in such a way as to optimally communicate meaning and knowledge. The visualization preparation may involve producing a text-based report or rendering the analytic results as some form of graphic. The visualization activity frequently interacts the analytics activity to provide interactive visualization of the data.
+
+
+=== Modeling and Prediction
+The US National Strategic Computing Initiative noted the need to address both Data Analytic Computing along with Modeling and Simulation:
+
+Historically, there has been a separation between data analytic computing and modeling and simulation. Data analytics focuses on inferring new information from what is already known to enable action on that information. Modeling and simulation focuses on insights into the interaction of the parts of a system, and the system as a whole, to advance understanding in science and engineering and inform policy and economic decision-making. While these systems have traditionally relied on different hardware and software stacks, many of the current challenges facing the two disciplines are similar. A coherent platform for modeling, simulation, and data analytics would benefit both disciplines while maximizing returns on R&D investments footnote:[National Strategic Computing Initiative Strategic Plan, July 2016. Box 3.].
+
+Use Cases in the Modeling and Predication category include the following.
+
+*Modeling and simulation*
+
+* Description: Modeling and simulation applications support applications in which inter-connected simulators share a common view of the simulated environment.
+* Standards: OGC CDB
+* Reference: "`Cloud Terrain Generation and Visualization Using Open Geospatial Standards`", Chambers and Freeman, 2014. From proceedings of the Interservice/Industry Training, Simulation, and Education Conference.
+
+*Integrated environmental models*
+
+* Description: Integrated environmental modeling provides a science-based structure to develop and organize relevant knowledge and information and apply it to explain, explore, and predict the behavior of environmental systems in response to human and natural sources of stress.
+* Standards: OpenMI
+* References: link:http://www.sciencedirect.com/science/article/pii/S1364815212000898[Environmental model access and interoperability: The GEO Model Web initiative]
+
+*Urban 3D modeling*
+
+* Description: A 3D city model is a representation of an urban environment with a three-dimensional geometry of common urban objects and structures, with buildings as the most prominent feature. 3D city models have become valuable for purposes beyond visualization, and are utilized in a large number of domains and applications.
+* Standards: CityGML
+* References: link:http://www.mdpi.com/2220-9964/4/4/2842/htm[Applications of 3D City Models: State of the Art Review]
+
+
+=== Use Cases applied to Agriculture
+This section shows how the Big Data use cases support the agriculture application presented in <<sec-value-of-big-geo-data>>. <<fig-big-data-use-cases-agriculture>> is an adaptation of an earlier version the use cases shown in <<fig-big-geo-data-use-cases>>. <<fig-big-data-use-cases-agriculture>> shows Big Data uses in an agriculture research and development trials. The use cases are organized in the categories as shown in <<fig-big-geo-data-use-cases>>. The names of the use cases reflect the specifics of agriculture. (<<fig-big-data-use-cases-agriculture>> was presented by Kris Matson, Bayer to the OGC Agriculture DWG, Sept 22nd 2017, Orlando, FL, USA).
+
+[[fig-big-data-use-cases-agriculture]]
+.Big Data Use Cases in Agriculture R&D Trials (Figure Source: K. Matson)
+image::fig-big-data-use-cases-agriculture.png[]

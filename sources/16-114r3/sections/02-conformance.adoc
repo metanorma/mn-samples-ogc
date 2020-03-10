@@ -1,0 +1,4 @@
+
+== Conformance
+
+Conformance with this specification shall be checked using all the relevant tests specified in <<annexA, Annex A (normative)>>.
