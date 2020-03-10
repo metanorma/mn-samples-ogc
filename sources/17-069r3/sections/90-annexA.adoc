@@ -220,6 +220,7 @@ Execute requests with combinations of the "bbox" and "datetime" query parameters
 ^.^| Test Purpose | Validate that the bounding box query parameters are constructed correctly.
 ^.^| Requirement | <<req_core_fc_bbox_definition,/req/core/fc-bbox-definition>>
 ^.^| Test Method a| Verify that the `bbox` query parameter complies with the following definition (using an OpenAPI Specification 3.0 fragment): +
+[%unnumbered]
 [source,xml]
 ----
 name: bbox
@@ -259,6 +260,7 @@ Use a bounding box with four numbers in all requests: +
 ^.^| Test Purpose | Validate that the bounding box query parameters are constructed corrrectly.
 ^.^| Requirement | <<req_core_fc_limit_definition,/req/core/fc-limit-definition>>
 ^.^| Test Method a| Verify that the `limit` query parameter complies with the following definition (using an OpenAPI Specification 3.0 fragment): +
+[%unnumbered]
 [source,xml]
 ----
 name: limit
@@ -290,6 +292,7 @@ Note that the API can define values for "minimum", "maximum" and "default".
 ^.^| Test Purpose | Validate that the `dateTime` query parameters are constructed correctly.
 ^.^| Requirement | <<req_core_fc_time_definition,/req/core/fc-time-definition>>
 ^.^| Test Method a| Verify that the `datetime` query parameter complies with the following definition (using an OpenAPI Specification 3.0 fragment): +
+[%unnumbered]
 [source,xml]
 ----
 name: datetime
