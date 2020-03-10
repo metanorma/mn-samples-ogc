@@ -103,6 +103,7 @@ Templates for the definition of the schemas for the GeoJSON responses in OpenAPI
 ====
 In the example below, only the first and tenth feature is shown. Coordinates are not shown.
 
+[%unnumbered]
 [source,json]
 ----
 {
@@ -161,6 +162,7 @@ In the example below, only the first and tenth feature is shown. Coordinates are
 ====
 In the example below, coordinates are not shown.
 
+[%unnumbered]
 [source,json]
 ----
 {
@@ -303,5 +305,3 @@ The difference between this requirements class and the <<rc_gmlsf0,Level 0>> req
 ^.^h| Requirement 44 h| /req/gmlsf2/headers
 ^.^| A | The <<req_gmlsf0_content,requirement `/req/gmlsf0/content`>> applies.
 |===
-
-
