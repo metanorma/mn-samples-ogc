@@ -97,18 +97,20 @@ For API definitions that do not conform to the <<rc_oas30,OpenAPI Specification 
 
 All paths in an OpenAPI definition are relative to a base URL of the server.
 
+[%unnumbered]
 [example]
 .URL of the OpenAPI definition
 ====
 If the OpenAPI Server Object looks like this:
 
+[%unnumbered]
 [listing]
 ....
-servers: +
-  - url: https://dev.example.org/ +
-    description: Development server +
-  - url: https://data.example.org/ +
-    description: Production server 
+servers:
+  - url: https://dev.example.org/
+    description: Development server
+  - url: https://data.example.org/
+    description: Production server
 ....
 
 The path "/mypath" in the OpenAPI definition of a Web API would be the URL https://data.example.org/mypath for the production server.
