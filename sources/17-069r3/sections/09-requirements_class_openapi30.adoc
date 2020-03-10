@@ -64,6 +64,7 @@ Clients have to be prepared to receive responses not documented in the OpenAPI d
 ^.^| A | For error situations that originate from the server, the API definition SHALL cover all applicable HTTP Status Codes.
 |===
 
+[%unnumbered]
 [example]
 .An exception response object definition
 ====
