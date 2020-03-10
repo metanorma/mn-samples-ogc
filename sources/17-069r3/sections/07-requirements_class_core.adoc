@@ -119,6 +119,7 @@ properties:
       $ref: http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/link.yaml
 ----
 
+[%unnumbered]
 [example]
 .Landing page response document
 ====
@@ -233,6 +234,7 @@ properties:
       type: string
 ----
 
+[%unnumbered]
 [example]
 .Conformance declaration response document
 ====
@@ -721,6 +723,7 @@ properties:
 
 NOTE: The `crs` property of the `collection` object is not used by this conformance class, but reserved for future use.
 
+[%unnumbered]
 [example]
 .Feature collections response document
 ====
@@ -918,6 +921,7 @@ This standard does not specify requirements for the parameter `bbox-crs`. Those 
 
 For WGS 84 longitude/latitude the bounding box is in most cases the sequence of minimum longitude, minimum latitude, maximum longitude and maximum latitude. However, in cases where the box spans the anti-meridian the first value (west-most box edge) is larger than the third value (east-most box edge).
 
+[%unnumbered]
 [example]
 .The bounding box of the New Zealand Exclusive Economic Zone
 ====
@@ -976,6 +980,7 @@ datetime            = date-time / interval
 
 NOTE: ISO 8601-2 distinguishes open start/end timestamps (double-dot) and unknown start/end timestamps (empty string). For queries, an unknown start/end has the same effect as an open start/end.
 
+[%unnumbered]
 [example]
 .A date-time
 ====
@@ -988,6 +993,7 @@ For features with a temporal property that is a timestamp (like `lastUpdate` in 
 
 For features with a temporal property that is a date or a time interval, a date-time value would match all features where the timestamp is on that day or within the time interval.
 
+[%unnumbered]
 [example]
 .Intervals
 ====
@@ -1029,6 +1035,7 @@ The `schema` property SHOULD be the same as the definition of the feature proper
 
 |===
 
+[%unnumbered]
 [example]
 .An additional parameter to filter buildings based on their function
 ====
@@ -1054,6 +1061,7 @@ example: 'function=public+use'
 ----
 ====
 
+[%unnumbered]
 [example]
 .An additional parameter to filter buildings based on their name
 ====
@@ -1186,44 +1194,49 @@ Providing `prev` links supports navigating back and forth between pages, but dep
 
 NOTE: The representation of the links and the other properties in the payload depends on the encoding of the feature collection.
 
+[%unnumbered]
 [example]
 .Links
 ====
 If the request is to return building features and "10" is the default `limit`, the links in the response could be (in this example represented as link headers and using an additional parameter `offset` to implement `next` links - and the optional `prev` links):
 
+[%unnumbered]
 [listing]
 ....
-Link: <http://data.example.org/collections/buildings/items.json>; rel="self"; type="application/geo+json" +
-Link: <http://data.example.org/collections/buildings/items.html>; rel="alternate"; type="text/html" +
+Link: <http://data.example.org/collections/buildings/items.json>; rel="self"; type="application/geo+json"
+Link: <http://data.example.org/collections/buildings/items.html>; rel="alternate"; type="text/html"
 Link: <http://data.example.org/collections/buildings/items.json?offset=10>; rel="next"; type="application/geo+json"
 ....
 
 Following the `next` link could return:
 
+[%unnumbered]
 [listing]
 ....
-Link: <http://data.example.org/collections/buildings/items.json?offset=10>; rel="self"; type="application/geo+json" +
-Link: <http://data.example.org/collections/buildings/items.html?offset=10>; rel="alternate"; type="text/html" +
-Link: <http://data.example.org/collections/buildings/items.json?offset=0>; rel="prev"; type="application/geo+json" +
+Link: <http://data.example.org/collections/buildings/items.json?offset=10>; rel="self"; type="application/geo+json"
+Link: <http://data.example.org/collections/buildings/items.html?offset=10>; rel="alternate"; type="text/html"
+Link: <http://data.example.org/collections/buildings/items.json?offset=0>; rel="prev"; type="application/geo+json"
 Link: <http://data.example.org/collections/buildings/items.json?offset=20>; rel="next"; type="application/geo+json"
 ....
 
 If an explicit `limit` of "50" is used, the links in the response could be:
 
+[%unnumbered]
 [listing]
 ....
-Link: <http://data.example.org/collections/buildings/items.json?limit=50>; rel="self"; type="application/geo+json" +
-Link: <http://data.example.org/collections/buildings/items.html?limit=50>; rel="alternate"; type="text/html" +
+Link: <http://data.example.org/collections/buildings/items.json?limit=50>; rel="self"; type="application/geo+json"
+Link: <http://data.example.org/collections/buildings/items.html?limit=50>; rel="alternate"; type="text/html"
 Link: <http://data.example.org/collections/buildings/items.json?limit=50&offset=50>; rel="next"; type="application/geo+json"
 ....
 
 Following the `next` link could return:
 
+[%unnumbered]
 [listing]
 ....
-Link: <http://data.example.org/collections/buildings/items.json?limit=50&offset=50>; rel="self"; type="application/geo+json" +
-Link: <http://data.example.org/collections/buildings/items.html?limit=50&offset=50>; rel="alternate"; type="text/html" +
-Link: <http://data.example.org/collections/buildings/items.json?limit=50&offset=0>; rel="prev"; type="application/geo+json" +
+Link: <http://data.example.org/collections/buildings/items.json?limit=50&offset=50>; rel="self"; type="application/geo+json"
+Link: <http://data.example.org/collections/buildings/items.html?limit=50&offset=50>; rel="alternate"; type="text/html"
+Link: <http://data.example.org/collections/buildings/items.json?limit=50&offset=0>; rel="prev"; type="application/geo+json"
 Link: <http://data.example.org/collections/buildings/items.json?limit=50&offset=100>; rel="next"; type="application/geo+json"
 ....
 ====
@@ -1283,16 +1296,18 @@ A `400` will be returned in the following situations:
 
 NOTE: The representation of the links in the payload will depend on the encoding of the feature.
 
+[%unnumbered]
 [example]
 .Links
 ====
 The links in a feature could be (in this example represented as link headers):
 
+[%unnumbered]
 [listing]
 ....
-Link: <http://data.example.org/collections/buildings/items/123.json>; rel="self"; type="application/geo+json" +
-Link: <http://data.example.org/collections/buildings/items/123.html>; rel="alternate"; type="text/html" +
-Link: <http://data.example.org/collections/buildings.json>; rel="collection"; type="application/json" +
+Link: <http://data.example.org/collections/buildings/items/123.json>; rel="self"; type="application/geo+json"
+Link: <http://data.example.org/collections/buildings/items/123.html>; rel="alternate"; type="text/html"
+Link: <http://data.example.org/collections/buildings.json>; rel="collection"; type="application/json"
 Link: <http://data.example.org/collections/buildings.html>; rel="collection"; type="text/html"
 ....
 ====
