@@ -345,7 +345,7 @@ h|Parameter name h|KVP Example h|Optionality/ multiplicity h|Definition, format 
 
 |Metadata |`Metadata=MISP61` |Optional, zero or one |A comma-separated ordered list of zero or more names of sections of metadata to be returned. If not set or empty, it means do not send metadata with image data. Shall be optionally implemented by both client and server.
 
-|Options |`Options.mpeg2.codec= h264&Options.mpeg2.stream= transport&Options.mpeg2.kbps= 3000&Options.mpeg2.fps=29.97` |Optional, zero or one Vendor specific options for this request. Extends the request. (Default: Options=). Shall be optionally implemented by both client and server.
+|Options |`Options.mpeg2.codec= h264&Options.mpeg2.stream= transport&Options.mpeg2.kbps= 3000&Options.mpeg2.fps=29.97` |Optional, zero or one |Vendor specific options for this request. Extends the request. (Default: Options=). Shall be optionally implemented by both client and server.
 
 |Path |`Path=URL Encoded XML` |Mandatory, one |Specifies the tracks to be rendered by the service. Shall be implemented by both client and server.
 |===
