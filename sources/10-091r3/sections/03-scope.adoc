@@ -1,0 +1,4 @@
+
+== Scope
+
+Scope of this document is to provide a primer on the use of the CF-netCDF suite of standards.

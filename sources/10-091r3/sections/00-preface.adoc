@@ -1,0 +1,36 @@
+
+.Preface
+
+The intended target audience is developers that wish to implement CF-netCDF encoding for servers and/or clients. This document provides an overview of the many possible components of the CF-netCDF suite and how those components fit together into a coherent whole. This document also provides useful hints and best practices beyond the pure standards texts. In the era of modular standards, such primer documents are especially important so that potential users can get a sense of the overall landscape.
+
+As such, the content of this document is informative and not normative.
+
+[abstract]
+== Abstract
+
+This OGC primer provides an overview of the OGC CF-netCDF standards suite by describing the CF-netCDF core and extensions. The CF-netCDF standard defines how to encode digital geospatial information representing space/time-varying phenomena
+
+[.preface]
+== Terms and definitions
+
+This document uses the specification terms defined in Subclause 5.3 of <<ogc06-121r3>>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.
+
+[.preface]
+== Document Contributor Contact Points
+
+[%unnumbered]
+|===
+h| Name h| Organization
+| Ben Domenico | UCAR Unidata
+|===
+
+[.preface]
+== Changes to the OpenGIS® Abstract Specification
+
+The OpenGIS^®^ Abstract Specification does not require any changes to accommodate the technical contents of this document.
+
+[.preface]
+== Future Work
+
+This document needs to be updated whenever a new extension is added to CF-netCDF. It may need an update if and when significant functionality changes are made to existing CFnetCDF components.
+

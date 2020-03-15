@@ -1,0 +1,35 @@
+
+[[package_overview]]
+== CF-netCDF Package Overview
+
+=== Core and extensions
+
+Based on the CF-netCDF model defined in this document and the NetCDF Classic core data model specification, many extension packages are conceivable which:
+
+* add specific functionality to the NetCDF classic data model and encoding, or
+* constrain aspects of the core NetCDF classic model and encoding.
+
+The list presented below contains existing, planned, and possible CF-netCDF extensions. It makes use of a grouping which appears reasonable at the time of this writing; however, this structuring is by no means normative and shall not be used to draw any conclusions on the functionality a particular specification provides.
+
+For illustration purposes, some possible extensions are listed in <<possible_extensions>>.
+
+NetCDF Classic Core and each extension specify, as normative requirements, which prerequisite specifications they require. Frequently, options are possible in some specific group of extensions; for example, every netCDF implementation must support at least one encoding extension.
+
+[[fig1]]
+.CF-netCDF specification hierarchy graphical overview
+image::images/001.png["",height=auto,width=auto]
+
+This constitutes a dependency graph as shown in <<fig1>>, where the dark green boxes represent the initial targets for standardization and light green are the next targets.
+
+=== Application Profiles
+
+An Application Profile (AP) trims or constrains CF-netCDF functionality for some particular purpose. To this end, two mechanisms are available:
+
+* The AP can make a choice among the extensions it declares mandatory (note that the core has to be included in any case). +
+Note that there are cross dependencies among some extensions which have to be respected. For example, the core requires at least one encoding extension, and the CF Conventions extension requires a Data Sampling Type. +
+As an example, a Satellite Imagery AP might require a Swath Data Type whereas Forecast Model Output AP requires the Gridded Data Type.
+
+* Additional restrictions can be imposed on core and extensions. +
+In the above example, certain high resolution Model Output APs might required the 64-bit offset binary encoding.
+
+Consequently, a conformance test for an AP will in turn inspect the NetCDF Classic Core,any extension listed, and finally the specific requirements of the AP in question.
