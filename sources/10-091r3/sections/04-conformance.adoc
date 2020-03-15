@@ -1,0 +1,4 @@
+
+== Conformance
+
+This Primer document does not contain any normative statements, hence no compliance is defined. In case there are any deviations between the standards mentioned and this document the standards texts shall prevail.

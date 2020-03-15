@@ -1,0 +1,10 @@
+
+== Conventions
+
+=== UML notation
+
+All the diagrams that appear in this specification are presented using the Unified Modeling Language (UML) static structure diagram, as described in Subclause 5.2 of OGC Web Services Common <<ogc06-121r3>>.
+
+=== Namespace prefix conventions
+
+None defined here.

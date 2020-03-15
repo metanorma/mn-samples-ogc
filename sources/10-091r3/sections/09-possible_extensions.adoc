@@ -1,0 +1,192 @@
+
+[[possible_extensions]]
+== Possible extensions
+
+In this section, several CF-netCDF extensions are listed which have been discussed by the CF-netCDF Working Group in the course of developing the CF-netCDF specification. Some of them are already available as adopted or proposed specifications by other groups (NASA and NOAA in particular), but nearly all of them are available as part of the netCDF packages which have been implemented and used widely for decades. The CF conventions are in fact a separate entity, but they too evolved as part of the netCDF community of practice and were initially implemented for use with netCDF. By no means is this list prescriptive or comprehensive; some extensions listed here may never be written, and others not listed at this time may be added and developed later.
+
+Following the presentation in <<package_overview>>, extensions are grouped into abstract classes:
+
+* Data model extensions: they extend or refine data structures;
+* Conventions extensions: they constrain the core NetCDF Classic capabilities;
+* Format encoding extensions: they describe encodings applicable for the transfer of CF-netCDF objects.
+* Binary, XML, and text encodings specify the structure of the encoded information.
+* APIs specify the way in which application programs invoke the processes that create or read CF-netCDF encoded objects.
+
+These abstract classes will not be standardized and implemented as such, but concrete extensions within the classes will be implemented and standardized.
+
+=== Data model extensions
+
+==== Purpose
+
+This category of extensions focuses on adding information content to the netCDF dataset model.
+
+==== Identification
+
+The netCDF core specification and each CF-netCDF extension is identified by a unique HTTP URI which, by convention, is specified in the first formal requirement of an extension specification.
+
+This primer document is identified by OGC URI http://www.opengis.net/doc/primer/cfnetcdf/1.0.
+
+Currently, the CF-netCDF suite of (proposed) standards includes:
+
+_The NetCDF Core Specification._ OGC Document 10-091r3. This specification is identified by OGC URI http://www.opengis.net/spec/netcdf/1.0. The document has OGC URI
+http://www.opengis.net/doc/IS/netcdf/1.0.
+
+The _NetCDF Classic and 64-bit Binary Encoding Extension._ The specification is identified by OGC URI http://www.opengis.net/spec/netcdf-binary/1.0. The document has OGC URL http://www.opengis.net/doc/IS/netcdf-binary/1.0.
+
+==== List of extensions
+
+===== Enhanced netCDF data model
+
+The netCDF classic data model has been extended by an enhanced model that includes “groups,” an expanded list of primitive data types, and a provision for user defined data types.
+
+http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html#Data-Model
+
+====== Other data model extensions
+
+Other extensions to the core data model may be added later.
+
+=== Conventions extensions
+
+==== Purpose
+
+This category of extensions describes conventions that may constrain the general netCDF data model. Many netCDF conventions have been defined for use in a diverse set of disciplines. Among them are:
+
+* CF Conventions _(Recommended, if applicable)_
+* COARDS Conventions _(1995 standard that CF Conventions extends and generalizes)_
+* GDT Conventions _(1999 standard that CF Conventions extends and generalizes)_
+* CDC Conventions _(for gridded data, compatible with but more restrictive than COARDS)_
+* NCAR-RAF Conventions for Aircraft Data
+* AMBER Trajectory Conventions for molecular dynamics simulations
+* ARGO netCDF conventions for data centers
+* National Oceanographic Data Center NetCDF Conventions
+* NUWG Conventions _(1992-1995 effort to create some observational data conventions)_
+
+==== List of extensions
+
+While it is important to be aware of the fact that many netCDF conventions exist, the initial focus of the CF-netCDF SWG is on the conventions for Climate and Forecast (CF) metadata.
+
+===== CF conventions
+
+The conventions for climate and forecast (CF) metadata are designed to promote the processing and sharing of files created with the NetCDF API. The conventions define metadata that provide a definitive description of what the data in each variable represents, and the spatial and temporal properties of the data. This enables users of data from different sources to decide which quantities are comparable, and facilitates building applications with powerful extraction, regridding, and display capabilities.
+
+CF Conventions +
+http://www.cfconventions.org
+
+Proposed NASA CF Standard: +
+http://www.esdswg.org/spg/rfc/esds-rfc-021
+
+===== Other conventions extensions
+
+Other conventions extensions may be added later.
+
+=== Binary encoding extensions
+
+==== Purpose
+
+This category of extension describes the structure of the encoded datasets.
+
+==== List of extensions
+
+NetCDF encoding formats are defined in format encoding extensions. Some of these encodings are binary and are to be specified in extensions to the netCDF core. 
+
+Unidata netCDF encoding documentation +
+http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html#Classic-File-Parts
+
+===== NetCDF classic and 64-bit offset binary encoding formats
+
+In particular, the first extension is to be the NetCDF Classic and 64-bit Offset File Formats which have been previously adopted as a NASA Standard:
+
+NASA Standard: NetCDF Classic and 64-bit Offset File Formats +
+http://www.esdswg.org/spg/rfc/esds-rfc-011/ESDS-RFC-011v1.00.pdf
+
+
+===== HDF 5 binary encoding format
+
+The HDF 5 encoding format is used in conjunction with the netCDF enhanced data model. It is no doubt appropriate to have the general HDF 5 encoding format defined by another standards group and only define the constraints on its use in conjunction with the netCDF data model defined here.
+
+HDF 5 Encoding for netCDF Enhanced Data Model +
+http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html#NetCDF_002d4-File-Parts
+
+===== Other binary encodings
+
+Other binary encoding extensions may be added later.
+
+=== XML encoding extensions
+
+==== Purpose
+
+XML encoding extensions can serve several purposes. The entire contents of a netCDF dataset can be encoded in dialects of XML. But XML dialects can also be used to augment the metadata associated with a binary encoded netCDF dataset. It can also be used to define virtual datasets that consist of aggregations of data that exist in multiple netCDF binary files.
+
+==== List of extensions
+
+This open-ended list is likely to encompass at least ncML and ncML-GML. It remains to be seen whether and how CSML fits with netCDF encoding.
+
+==== NcML
+
+NcML Documentation +
+http://www.unidata.ucar.edu/software/netcdf/ncml/
+
+NcML is an XML representation of netCDF metadata, (approximately) the header information one gets from a netCDF file with the "ncdump -h" command. NcML is similar to the netCDF CDL (network Common data form Description Language), except, of course, it uses XML syntax. The simplest use of NcML is to describe the metadata and structural content of a netCDF file. A more advanced use is to modify existing NetCDF files, as well as to create "virtual" NetCDF datasets, for example through aggregation.
+
+===== NcML-GML
+
+NcML-GML is:
+
+* an Abstract and Content Model reconciliation schema for ES and GIS info realms
+* a Mediation Markup Language between ncML (netCDF Markup Language) and GML
+* an extension of ncML core schema, based on GML grammar
+
+At the moment, to support some legacy software packages, ncML-GML is not a standard GML profile. This will be fixed in a future release.
+
+NcML-GML Documentation +
+http://zeus.pin.unifi.it/joomla/index.php?option=com_content&task=view&id=50&Itemid=78
+
+=== Text encoding
+
+==== Purpose
+
+It is often useful to represent the contents of a netCDF file or just the header metadata information in a simple, east for humans to read, text form.
+
+==== List of extensions
+
+===== CDL (network Common data form Description Language)
+
+CDL (network Common data form Description Language) is a tiny language that makes it possible to represent either the metadata or the entire contents of a netCDF dataset in an intuitive, easily understandable textual form.
+
+CDL syntax is described at: +
+http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html#CDL-Syntax
+
+=== Application Programming Interfaces (APIs)
+
+==== Purpose
+
+The powerful but relatively simple netCDF APIs are often cited at a primary reason for the wide adoption and usage of netCDF. For that reason, they are seen as a facilitator of interoperability of data systems within the community. Because of that, there have been suggestions that establishing the most commonly used APIs as a standard would greatly benefit interoperability in a wider community. Hence, they are included here as future possibilities, but are not the initial focus of the CF-netCDF SWG.
+
+==== List of extensions
+
+===== C language
+
+The netCDF C Interface Guide: +
+http://www.unidata.ucar.edu/software/netcdf/docs/netcdf-c.html#Top
+
+===== Fortran
+
+The netCDF Fortran 77 Interface Guide: +
+http://www.unidata.ucar.edu/software/netcdf/docs/netcdf-f77.html#Top
+
+The netCDF Fortran 90 Interface Guide: +
+http://www.unidata.ucar.edu/software/netcdf/docs/netcdf-f90.html#Top
+
+===== C++
+
+The netCDF C++ Interface Guide: +
+http://www.unidata.ucar.edu/software/netcdf/docs/netcdf-cxx.html#Top
+
+===== Java
+
+The netCDF Java Library: +
+http://www.unidata.ucar.edu/software/netcdf-java/
+
+===== Other APIs
+
+Other Applications Programming Interface extensions may be added later

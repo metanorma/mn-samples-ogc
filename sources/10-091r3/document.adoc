@@ -1,0 +1,46 @@
+= CF-netCDF Core and Extensions Primer
+:doctype: other
+:language: en
+:status: published
+:committee: technical
+:docnumber: OGC 10-091r3
+:received-date: 2011-04-05
+:issued-date: 2011-04-05
+:published-date: 2011-04-05
+:copyright-year: 2011
+:edition: 1.0
+:external-id: http://www.opengis.net/doc/IS/netcdf/Primer/1.0
+:fullname: Ben Domenico
+:role: editor
+:keywords: ogcdoc, netcdf, cf-netcdf
+:submitting-organizations: IMAA-CNR Italy; METEO-FRANCE; Natural Environment Research Council (NERC); Northrop Grumman Corporation; University Corporation for Atmospheric Research (UCAR); US National Oceanic and Atmospheric Administration (NOAA)
+:docfile: document.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+
+include::sections/00-preface.adoc[]
+
+include::sections/01-foreword.adoc[]
+
+include::sections/02-introduction.adoc[]
+
+include::sections/03-scope.adoc[]
+
+include::sections/04-conformance.adoc[]
+
+include::sections/05-terms_and_definitions.adoc[]
+
+include::sections/06-references.adoc[]
+
+include::sections/07-conventions.adoc[]
+
+include::sections/08-package_overview.adoc[]
+
+include::sections/09-possible_extensions.adoc[]
+
+include::sections/10-references.adoc[]
+
+include::sections/annexA.adoc[]

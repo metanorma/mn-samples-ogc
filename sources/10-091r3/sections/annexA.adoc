@@ -1,0 +1,13 @@
+
+[appendix,obligation=informative]
+== Revision history
+
+[%unnumbered]
+|===
+^.^h| Date ^.^h| Release ^.^h| Author ^.^h| Paragraph modified ^.^h| Description
+| 2010-08-27 | 1.0.0 | Ben Domenico | All | Created
+| 2010-10-20 | 1.0.1 | Bruce Wright and Ben Domenico | 7.3.2, 7.3.2.1, 7.3.2.2 | Edited for clarity
+| 2011-01-05 | 1.0.1 | Ben Domenico | All | Changed r2 to r3 in document numbers
+| 2011-01-22 | 1.0.1 | Carl Reed | Various | Prepare for publication
+| 2011-02-16 | 1.0.1 | Ben Domenico | Various | Prepare for publication
+|===

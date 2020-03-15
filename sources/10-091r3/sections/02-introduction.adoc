@@ -1,0 +1,12 @@
+
+== Introduction
+
+The CF-netCDF standard defines how to encode digital geospatial information representing space/time-varying phenomena.
+
+CF-netCDF consists of a set of normative specifications, collectively referred to as “the CFnetCDF suite”. These specifications encompass:
+
+* netCDF Core <<ogc10-090r3>>
+* netCDF Classic Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format <<ogc10-092r3>>
+* As noted in this later in this document, additional Extensions to the Core that may be specified in the future. In particular, submission of a CF-netCDF Conventions Extension Standard <<ogc10-093>> is planned for the near future.
+
+This document provides an overview on the CF-netCDF encoding suite by describing CF-netCDF core and extensions. As such, the content of this document is informative and not normative.
