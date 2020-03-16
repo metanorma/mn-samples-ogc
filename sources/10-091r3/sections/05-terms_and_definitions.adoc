@@ -1,4 +1,4 @@
 
 == Terms and definitions
 
-None defined here.
+This document uses the specification terms defined in Subclause 5.3 of <<ogc06-121r3>>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.
