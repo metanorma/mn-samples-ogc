@@ -10,8 +10,6 @@
 
 * [[[ogc06-121r3, OGC 06-121r3]]], OGC 06-121r3, _OGC Web Services Common Specification_
 
-* [[[ogc10-093, OGC 10-093]]], OGC 10-093
-
 * [[[nasa1, NASA ESDS-RFC-011v2.00 R. Rew]]], E. Hartnett, D. Heimbigner, E. Davis, J. Caron: _NetCDF Classic and 64-bit Offset File Formats_ +
 http://www.esdswg.org/spg/rfc/esds-rfc-011/ESDS-RFC-011v2.00.pdf
 
