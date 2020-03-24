@@ -14,6 +14,7 @@ metanorma:
       sources/05-020r26.xml: repos/ogc-tcpnp/sources/ogc-tcpnp.adoc
       sources/05-020r27.xml: sources/05-020r27/document.adoc
       sources/08-062r7.xml: sources/08-062r7/document.adoc
+      sources/10-091r3.xml: sources/10-091r3/document.adoc
       sources/10-100r3.xml: sources/10-100r3/document.adoc
       sources/16-080.xml: sources/16-080/document.adoc
       sources/17-069.xml: repos/ogc-wfs/sources/core/standard/17-069.adoc

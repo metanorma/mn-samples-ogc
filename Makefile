@@ -6,20 +6,20 @@ IGNORE := $(shell mkdir -p $(HOME)/.cache/xml2rfc)
 SRC := $(lastword $(shell yq r metanorma.yml metanorma.source.files))
 
 ifeq ($(SRC),null)
-SRC := 
+SRC :=
 endif
 ifeq ($(SRC),ll)
-SRC := 
+SRC :=
 endif
 
 ifeq ($(SRC),)
 BUILT := $(shell yq r metanorma.yml metanorma.source.built_targets | cut -d ':' -f 1 | tr -s '\n' ' ')
 
 ifeq ($(BUILT),null)
-SRC := 
+SRC :=
 endif
 ifeq ($(BUILT),ll)
-SRC := 
+SRC :=
 endif
 
 ifeq ($(BUILT),)
@@ -36,6 +36,7 @@ FORMATS := $(shell grep "$(FORMAT_MARKER)" $(SRC) | cut -f 2 -d " " | tr "," "\\
 endif
 
 XML  ?= $(patsubst sources/%,documents/%,$(patsubst %.adoc,%.xml,$(SRC)))
+HTML := $(patsubst %.xml,%.html,$(XML))
 
 METANORMA_DOCKER_IMAGE ?= metanorma/metanorma
 
@@ -50,43 +51,45 @@ _OUT_FILES := $(foreach FORMAT,$(FORMATS),$(shell echo $(FORMAT) | tr '[:lower:]
 OUT_FILES  := $(foreach F,$(_OUT_FILES),$($F))
 
 all: documents.html
+	echo "src $(SRC)"
+	echo "xml $(XML)"
 
 documents:
 	mkdir -p $@
 
-documents/%.xml: sources/%.html | documents
-	export GLOBIGNORE=sources/$*.adoc; \
-	mv sources/$(addsuffix .*,$*) documents; \
-	unset GLOBIGNORE
+documents/%.html: documents/%.xml | documents
+	${PREFIX_CMD} metanorma $<
+
+documents/%.xml: sources/%.xml | documents
+	mv $< $@
 
 # Build canonical XML output
 # If XML file is provided, copy it over
-# Otherwise, build it using adoc
+# Otherwise, build the xml using adoc
 sources/%.xml: | bundle
-	BUILT_TARGET=$(shell yq r metanorma.yml metanorma.source.built_targets[$@]); \
-	if [ "$$BUILT_TARGET" != "null" ]; then \
+	BUILT_TARGET="$(shell yq r metanorma.yml metanorma.source.built_targets[$@])"; \
+	if [ "$$BUILT_TARGET" = "" ] || [ "$$BUILT_TARGET" = "null" ]; then \
+		BUILT_TARGET=$@; \
+		$(PREFIX_CMD) metanorma -x xml "$${BUILT_TARGET//xml/adoc}"; \
+	else \
 		if [ -f "$$BUILT_TARGET" ] && [ "$${BUILT_TARGET##*.}" == "xml" ]; then \
 			cp "$$BUILT_TARGET" $@; \
 		else \
-			$(PREFIX_CMD) metanorma $$BUILT_TARGET; \
+			$(PREFIX_CMD) metanorma -x xml $$BUILT_TARGET; \
 			cp "$${BUILT_TARGET//adoc/xml}" $@; \
 		fi \
 	fi
 
-# Build derivative output
-sources/%.html sources/%.doc sources/%.pdf:	sources/%.xml
-	$(PREFIX_CMD) metanorma $<; \
-
-documents.rxl: $(XML)
-	echo "$(FORMATS)"; \
-	echo "$(XML)"; \
-	$(PREFIX_CMD) relaton concatenate \
+documents.rxl: $(XML) $(HTML)
+	${PREFIX_CMD} relaton concatenate \
 	  -t "$(shell yq r metanorma.yml relaton.collection.name)" \
 		-g "$(shell yq r metanorma.yml relaton.collection.organization)" \
 		documents $@
 
 documents.html: documents.rxl
 	$(PREFIX_CMD) relaton xml2html documents.rxl
+
+%.adoc:
 
 define FORMAT_TASKS
 OUT_FILES-$(FORMAT) := $($(shell echo $(FORMAT) | tr '[:lower:]' '[:upper:]'))
