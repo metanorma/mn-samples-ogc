@@ -3,7 +3,7 @@
 :language: en
 :status: published
 :committee: technical
-:docnumber: OGC 10-091r3
+:docnumber: 10-091r3
 :received-date: 2011-04-05
 :issued-date: 2011-04-05
 :published-date: 2011-04-05
