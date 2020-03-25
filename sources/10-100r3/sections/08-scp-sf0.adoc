@@ -191,11 +191,11 @@ The following sub-clauses specify XML templates for defining elements whose cont
 |===
 |XML schema element facet name |Applicable data types |Encoding pattern
 
-|minInclusive |integer, measurement, date, dateTime, real |`<xsd:minInclusive value="min value"/>`
-|minExclusive |integer, measurement, date, dateTime, real |`<xsd:minExclusive value="min value"/>`
-|maxInclusive |integer, measurement, date, dateTime, real |`<xsd:maxInclusive value="max value"/>`
-|maxExclusive |integer, measurement, date, dateTime, real |`<xsd:maxExclusive value="max value"/>`
-|enumeration |integer, measurement, date, dateTime, real, string, URI, reference |`<xsd:enumeration value="value"/>`
+|minInclusive |integer, measurement, date, dateTime, real | `< xsd:minInclusive value="min value" />`
+|minExclusive |integer, measurement, date, dateTime, real | `< xsd:minExclusive value="min value" />`
+|maxInclusive |integer, measurement, date, dateTime, real | `< xsd:maxInclusive value="max value" />`
+|maxExclusive |integer, measurement, date, dateTime, real | `< xsd:maxExclusive value="max value" />`
+|enumeration |integer, measurement, date, dateTime, real, string, URI, reference | `< xsd:enumeration value="value" />`
 |===
 
 ===== Multiplicity
