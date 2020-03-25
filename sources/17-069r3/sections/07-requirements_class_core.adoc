@@ -6,16 +6,13 @@
 === Overview
 
 [[core]]
-[%unnumbered]
-|===
-2+h| Requirements Class
-2+| http://www.opengis.net/spec/ogcapi-features-1/1.0/req/core
-| Target type | Web API
-| Dependency | <<rfc2616,RFC 2616 (HTTP/1.1)>>
-| Dependency | <<rfc2818,RFC 2818 (HTTP over TLS)>>
-| Dependency | <<rfc3339,RFC 3339 (Date and Time on the Internet: Timestamps)>>
-| Dependency | <<rfc8288,RFC 8288 (Web Linking)>>
-|===
+[requirement,type="class",label="http://www.opengis.net/spec/ogcapi-features-1/1.0/req/core",obligation="requirement",subject="Web API"]
+====
+inherit:[<<rfc2616,RFC 2616 (HTTP/1.1)>>]
+inherit:[<<rfc2818,RFC 2818 (HTTP over TLS)>>]
+inherit:[<<rfc3339,RFC 3339 (Date and Time on the Internet: Timestamps)>>]
+inherit:[<<rfc8288,RFC 8288 (Web Linking)>>]
+====
 
 A server that implements this conformance class provides access to the features in a https://www.w3.org/TR/vocab-dcat/#class-dataset[dataset]. In other words, the API is a https://www.w3.org/TR/vocab-dcat/#class-distribution[distribution] of that dataset. A file download, for example, would be another distribution.
 
@@ -81,24 +78,32 @@ In addition to the simple path structures described above, where all features ar
 ==== Operation
 
 [[req_core_root_op]]
-[%unnumbered]
-|===
-^.^h| Requirement 1 h| /req/core/root-op
-^.^| A | The server SHALL support the HTTP GET operation at the path `/`.
-|===
+[.requirement,label="/req/core/root-op"]
+====
+[.requirement]
+======
+The server SHALL support the HTTP GET operation at the path  `/`.
+======
+====
 
 ==== Response
 
 [[req_core_root_success]]
-[%unnumbered]
-|===
-^.^h| Requirement 2 h| /req/core/root-success
-^.^| A | A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
-^.^| B a| The content of that response SHALL be based upon the OpenAPI 3.0 schema http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml[landingPage.yaml] and include at least links to the following resources: +
-- the API definition (relation type 'service-desc' or 'service-doc') +
-- `/conformance` (relation type 'conformance') +
+[.requirement,label="/req/core/root-success"]
+====
+[.requirement]
+======
+A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
+======
+[.requirement]
+======
+The content of that response SHALL be based upon the OpenAPI 3.0 schema http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml[landingPage.yaml] and include at least links to the following resources:
+
+- the API definition (relation type 'service-desc' or 'service-doc')
+- `/conformance` (relation type 'conformance')
 - `/collections` (relation type 'data')
-|===
+======
+====
 
 http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml[Schema for the landing page]
 
@@ -156,34 +161,42 @@ See <<http_status_codes,HTTP status codes>> for general guidance.
 Every API is expected to provide a definition that describes the capabilities of the server and which can be used by developers to understand the API, by software clients to connect to the server, or by development tools to support the implementation of servers and clients.
 
 [[req_core_api_definition_op]]
-[%unnumbered]
-|===
-^.^h| Requirement 3 h| /req/core/api-definition-op
-^.^| A | The URIs of all API definitions referenced from the landing page SHALL support the HTTP GET method.
-|===
+[.requirement,label="/req/core/api-definition-op"]
+====
+[.requirement]
+======
+The URIs of all API definitions referenced from the landing page SHALL support the HTTP GET method.
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Permission 1 h| /per/core/api-definition-uri
-^.^| A | The API definition is metadata about the API and strictly not part of the API itself, but it MAY be hosted as a sub-resource to the base path of the API, for example, at path `/api`. There is no need to include the path of the API definition in the API definition itself.
-|===
+[.permission,label="/per/core/api-definition-uri"]
+====
+[.permission]
+======
+The API definition is metadata about the API and strictly not part of the API itself, but it MAY be hosted as a sub-resource to the base path of the API, for example, at path `/api`. There is no need to include the path of the API definition in the API definition itself.
+======
+====
 
 Note that multiple API definition formats can be supported.
 
 ==== Response
 
 [[req_core_api_definition_success]]
-[%unnumbered]
-|===
-^.^h| Requirement 4 h| /req/core/api-definition-success
-^.^| A | A GET request to the URI of an API definition linked from the landing page (link relations `service-desc` or `service-doc`) with an `Accept` header with the value of the link property `type` SHALL return a document consistent with the requested media type.
-|===
+[.requirement,label="/req/core/api-definition-success"]
+====
+[.requirement]
+======
+A GET request to the URI of an API definition linked from the landing page (link relations `service-desc` or `service-doc`) with an `Accept` header with the value of the link property `type` SHALL return a document consistent with the requested media type.
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Recommendation 1 h| /rec/core/api-definition-oas
-^.^| A | If the API definition document uses the OpenAPI Specification 3.0, the document SHOULD conform to the <<rc_oas30,OpenAPI Specification 3.0 requirements class>>.
-|===
+[.recommendation,label="/rec/core/api-definition-oas"]
+====
+[.recommendation]
+======
+If the API definition document uses the OpenAPI Specification 3.0, the document SHOULD conform to the <<rc_oas30,OpenAPI Specification 3.0 requirements class>>.
+======
+====
 
 If the server hosts the API definition under the base path of the API (for example, at path `/api`, see above), there is no need to include the path of the API definition in the API definition itself.
 
@@ -199,25 +212,31 @@ See <<http_status_codes,HTTP status codes>> for general guidance.
 === Declaration of conformance classes
 
 ==== Operation
-
 To support "generic" clients that want to access multiple OGC API Features implementations - and not "just" a specific API / server, the server has to declare the conformance classes it implements and conforms to.
 
 [[req_core_conformance_op]]
-[%unnumbered]
-|===
-^.^h| Requirement 5 h| /req/core/conformance-op
-^.^| A | The server SHALL support the HTTP GET operation at the path `/conformance`.
-|===
+[.requirement,label="/req/core/conformance-op"]
+====
+[.requirement]
+======
+The server SHALL support the HTTP GET operation at the path `/conformance`.
+======
+====
 
 ==== Response
 
 [[req_core_conformance_success]]
-[%unnumbered]
-|===
-^.^h| Requirement 6 h| /req/core/conformance-success
-^.^| A | A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
-^.^| B | The content of that response SHALL be based upon the OpenAPI 3.0 schema http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/confClasses.yaml[confClasses.yaml] and list all OGC API conformance classes that the server conforms to.
-|===
+[.requirement,label="/req/core/conformance-success"]
+====
+[.requirement]
+======
+A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
+======
+[.requirement]
+======
+The content of that response SHALL be based upon the OpenAPI 3.0 schema http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/confClasses.yaml[confClasses.yaml] and list all OGC API conformance classes that the server conforms to.
+======
+====
 
 http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/confClasses.yaml[Schema for the list of conformance classes]
 
@@ -263,20 +282,27 @@ See <<http_status_codes,HTTP status codes>> for general guidance.
 === HTTP 1.1
 
 [[req_core_http]]
-[%unnumbered]
-|===
-^.^h| Requirement 7 h| /req/core/http
-^.^| A | The server SHALL conform to <<rfc2616,HTTP 1.1>>.
-^.^| B | If the server supports HTTPS, the server SHALL also conform to <<rfc2818,HTTP over TLS>>.
-|===
+[.requirement,label="/req/core/http"]
+====
+[.requirement]
+======
+The server SHALL conform to <<rfc2616,HTTP 1.1>>.
+======
+[.requirement]
+======
+If the server supports HTTPS, the server SHALL also conform to <<rfc2818,HTTP over TLS>>.
+======
+====
 
 This includes the correct use of status codes, headers, etc.
 
-[%unnumbered]
-|===
-^.^h| Recommendation 2 h| /rec/core/head
-^.^| A | The server SHOULD support the HTTP 1.1 method HEAD for all resources that support the method GET.
-|===
+[.recommendation,label="/rec/core/head"]
+====
+[.recommendation]
+======
+The server SHOULD support the HTTP 1.1 method HEAD for all resources that support the method GET.
+======
+====
 
 Supporting the method HEAD in addition to GET can be useful for clients and is simple to implement.
 
@@ -307,24 +333,26 @@ h| Status code h| Description
 
 More specific guidance is provided for each resource, where applicable.
 
-[%unnumbered]
-|===
-^.^h| Permission 2 h| /per/core/additional-status-codes
-^.^| A | Servers MAY support other capabilities of the HTTP protocol and, therefore, MAY return other status codes than those listed in <<table2>>.
-
-|===
+[.permission,label="/per/core/additional-status-codes"]
+====
+[.permission]
+======
+Servers MAY support other capabilities of the HTTP protocol and, therefore, MAY return other status codes than those listed in <<table2>>.
+======
+====
 
 The API Description Document describes the HTTP status codes generated by that API. This should not be an exhaustive list of all possible status codes. It is not reasonable to expect an API designer to control the use of HTTP status codes which are not generated by their software. Therefore, it is recommended that the API Description Document limit itself to describing HTTP status codes relevant to the proper operation of the API application logic. Client implementations should be prepared to receive HTTP status codes in addition to those described in the API Description Document.
 
 === Unknown or invalid query parameters
 
 [[req_core_query_param_unknown]]
-[%unnumbered]
-|===
-^.^h| Requirement 8 h| /req/core/query-param-unknown
-^.^| A | The server SHALL respond with a response with the status code `400`, if the request URI includes a query parameter that is not specified in the API definition.
-
-|===
+[.requirement,label="/req/core/query-param-unknown"]
+====
+[.requirement]
+======
+The server SHALL respond with a response with the status code `400`, if the request URI includes a query parameter that is not specified in the API definition.
+======
+====
 
 If a server wants to support vendor specific parameters, these have to be explicitly declared in the API definition.
 
@@ -356,11 +384,13 @@ Note that the name of the parameter does not matter as the actual query paramete
 In the request URI this would be expressed as `&my_first_parameter=some%20value&my_other_parameter=42`.
 
 [[req_core_query_param_invalid]]
-[%unnumbered]
-|===
-^.^h| Requirement 9 h| /req/core/query-param-invalid
-^.^| A | The server SHALL respond with a response with the status code `400`, if the request URI includes a query parameter that has an invalid value.
-|===
+[.requirement,label="/req/core/query-param-invalid"]
+====
+[.requirement]
+======
+The server SHALL respond with a response with the status code `400`, if the request URI includes a query parameter that has an invalid value.
+======
+====
 
 This is a general rule that applies to all parameters, whether they are specified in this document or in additional parts. A value is invalid if it violates the API definition or any other constraint for that parameter stated in a requirement.
 
@@ -369,22 +399,26 @@ This is a general rule that applies to all parameters, whether they are specifie
 
 Entity tags are a mechanism for web cache validation and for supporting conditional requests to reduce network traffic. Entity tags are specified by <<rfc2616,HTTP/1.1 (RFC 2616)>>.
 
-[%unnumbered]
-|===
-^.^h| Recommendation 3 h| /rec/core/etag
-^.^| A | The service SHOULD support entity tags and the associated headers as specified by HTTP/1.1.
-|===
+[.recommendation,label="/rec/core/etag"]
+====
+[.recommendation]
+======
+The service SHOULD support entity tags and the associated headers as specified by HTTP/1.1.
+======
+====
 
 [[cross_origin]]
 === Support for cross-origin requests
 
 Access to data from a HTML page is by default prohibited for security reasons, if the data is located on another host than the webpage ("same-origin policy"). A typical example is a web-application accessing feature data from multiple distributed datasets.
 
-[%unnumbered]
-|===
-^.^h| Recommendation 4 h| /rec/core/cross-origin
-^.^| A | If the server is intended to be accessed from the browser, cross-origin requests SHOULD be supported. Note that support can also be added in a proxy layer on top of the server.
-|===
+[.recommendation,label="/rec/core/cross-origin"]
+====
+[.recommendation]
+======
+If the server is intended to be accessed from the browser, cross-origin requests SHOULD be supported. Note that support can also be added in a proxy layer on top of the server.
+======
+====
 
 Two common mechanisms to support cross-origin requests are:
 
@@ -397,17 +431,21 @@ Two common mechanisms to support cross-origin requests are:
 
 While OGC API Features does not specify any mandatory encoding, support for the following encodings is recommended. See <<overview,Clause 6 (Overview)>> for a discussion.
 
-[%unnumbered]
-|===
-^.^h| Recommendation 5 h| /rec/core/html
-^.^| A | To support browsing the dataset and its features with a web browser and to enable search engines to crawl and index the dataset, implementations SHOULD consider to support an HTML encoding.
-|===
+[.recommendation,label="/rec/core/html"]
+====
+[.recommendation]
+======
+To support browsing the dataset and its features with a web browser and to enable search engines to crawl and index the dataset, implementations SHOULD consider to support an HTML encoding.
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Recommendation 6 h| /rec/core/geojson
-^.^| A | If the feature data can be represented for the intended use in GeoJSON, implementations SHOULD consider to support GeoJSON as an encoding for features and feature collections.
-|===
+[.recommendation,label="/rec/core/geojson"]
+====
+[.recommendation]
+======
+If the feature data can be represented for the intended use in GeoJSON, implementations SHOULD consider to support GeoJSON as an encoding for features and feature collections.
+======
+====
 
 <<http_1_1,Requirement `/req/core/http`>> implies that the encoding of a server response is determined using content negotiation as specified by the HTTP RFC.
 
@@ -430,11 +468,13 @@ Two common approaches are:
 
 If the server supports representing resources in multiple languages, the usual HTTP content negotiation mechanisms apply. The client states its language preferences in the `Accept-Language` header of a request and the server responds with responses that have linguistic text in the language that best matches the requested languages and the capabilities of the server.
 
-[%unnumbered]
-|===
-^.^h| Recommendation 7 h| /rec/core/string-i18n
-^.^| A | For encodings that support string internationalization, the server SHOULD include information about the language for each string value that includes linguistic text.
-|===
+[.recommendation,label="/rec/core/string-i18n"]
+====
+[.recommendation]
+======
+For encodings that support string internationalization, the server SHOULD include information about the language for each string value that includes linguistic text.
+======
+====
 
 For example, if JSON-LD is used as an encoding, the built-in capabilities to https://www.w3.org/TR/json-ld/#string-internationalization[annotate a string with its language] should be used.
 
@@ -447,11 +487,13 @@ As discussed in Chapter 9 of the <<spatial_data_wbp,W3C/OGC Spatial Data on the 
 For the reasons discussed in the Best Practices, OGC API Features uses WGS 84 longitude and latitude as the default coordinate reference system.
 
 [[req_core_crs84]]
-[%unnumbered]
-|===
-^.^h| Requirement 10 h| /req/core/crs84
-^.^| A | Unless the client explicitly requests a different coordinate reference system, all spatial geometries SHALL be in the coordinate reference system http://www.opengis.net/def/crs/OGC/1.3/CRS84 (WGS 84 longitude/latitude) for geometries without height information and http://www.opengis.net/def/crs/OGC/0/CRS84h (WGS 84 longitude/latitude plus ellipsoidal height) for geometries with height information.
-|===
+[.requirement,label="/req/core/crs84"]
+====
+[.requirement]
+======
+Unless the client explicitly requests a different coordinate reference system, all spatial geometries SHALL be in the coordinate reference system http://www.opengis.net/def/crs/OGC/1.3/CRS84 (WGS 84 longitude/latitude) for geometries without height information and http://www.opengis.net/def/crs/OGC/0/CRS84h (WGS 84 longitude/latitude plus ellipsoidal height) for geometries with height information.
+======
+====
 
 Implementations compliant with the Core are not required to support publishing feature geometries in coordinate reference systems other than http://www.opengis.net/def/crs/OGC/1.3/CRS84 (for coordinates without height) or http://www.opengis.net/def/crs/OGC/0/CRS84h (for coordinates with height); i.e., the (optional) third coordinate number is always the height.
 
@@ -459,12 +501,15 @@ The Core also does not specify a capability to request feature geometries in a d
 
 === Link headers
 
-[%unnumbered]
-|===
-^.^h| Recommendation 8 h| /rec/core/link-header
-^.^| A a| Links included in payload of responses SHOULD also be included as `Link` headers in the HTTP response according to <<rfc8288,RFC 8288, Clause 3.>> +
+[.recommendation,label="/rec/core/link-header"]
+====
+[.recommendation]
+======
+Links included in payload of responses SHOULD also be included as `Link` headers in the HTTP response according to <<rfc8288,RFC 8288, Clause 3.>>
+
 This recommendation does not apply, if there are a large number of links included in a response or a link is not known when the HTTP headers of the response are created.
-|===
+======
+====
 
 [[feature_collections]]
 === Feature collections
@@ -472,21 +517,28 @@ This recommendation does not apply, if there are a large number of links include
 ==== Operation
 
 [[req_core_fc_md_op]]
-[%unnumbered]
-|===
-^.^h| Requirement 11 h| /req/core/fc-md-op
-^.^| A | The server SHALL support the HTTP GET operation at the path `/collections`.
-|===
+[.requirement,label="/req/core/fc-md-op"]
+====
+[.requirement]
+======
+The server SHALL support the HTTP GET operation at the path `/collections`.
+======
+====
 
 ==== Response
 
 [[req_core_fc_md_success]]
-[%unnumbered]
-|===
-^.^h| Requirement 12 h| /req/core/fc-md-success
-^.^| A | A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
-^.^| B | The content of that response SHALL be based upon the OpenAPI 3.0 schema http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml[collections.yaml].
-|===
+[.requirement,label="/req/core/fc-md-success"]
+====
+[.requirement]
+======
+A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
+======
+[.requirement]
+======
+The content of that response SHALL be based upon the OpenAPI 3.0 schema http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml[collections.yaml].
+======
+====
 
 http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml[Schema for the collections resource]
 
@@ -508,73 +560,128 @@ properties:
       $ref: http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collection.yaml
 ----
 
-[%unnumbered]
-|===
-^.^h| Requirement 13 h| /req/core/fc-md-links
-^.^| A a| A `200`-response SHALL include the following links in the `links` property of the response: +
-- a link to this response document (relation: `self`), +
+
+[.requirement,label="/req/core/fc-md-links"]
+====
+[.requirement]
+======
+A `200`-response SHALL include the following links in the `links` property of the response:
+
+- a link to this response document (relation: `self`),
 - a link to the response document in every other media type supported by the server (relation: `alternate`).
-^.^| B | All links SHALL include the `rel` and `type` link parameters.
-|===
+======
+[.requirement]
+======
+All links SHALL include the `rel` and `type` link parameters.
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Recommendation 9 h| /rec/core/fc-md-descriptions
-^.^| A | If external schemas or descriptions for the dataset exist that provide information about the structure or semantics of the data, a `200`-response SHOULD include links to each of those resources in the `links` property of the response (relation: `describedBy`).
-^.^| B | The `type` link parameter SHOULD be provided for each link. This applies to resources that describe to the whole dataset.
-^.^| C | For resources that describe the contents of a feature collection, the links SHOULD be set in the `links` property of the appropriate object in the `collections` resource.
-^.^| D | Examples for descriptions are: XML Schema, Schematron, JSON Schema, RDF Schema, OWL, SHACL, a feature catalogue, etc.
-|===
+[.recommendation,label="/rec/core/fc-md-descriptions"]
+====
+[.recommendation]
+======
+If external schemas or descriptions for the dataset exist that provide information about the structure or semantics of the data, a `200`-response SHOULD include links to each of those resources in the `links` property of the response (relation: `describedBy`).
+======
+[.recommendation]
+======
+The `type` link parameter SHOULD be provided for each link. This applies to resources that describe to the whole dataset.
+======
+[.recommendation]
+======
+For resources that describe the contents of a feature collection, the links SHOULD be set in the `links` property of the appropriate object in the `collections` resource.
+======
+[.recommendation]
+======
+Examples for descriptions are: XML Schema, Schematron, JSON Schema, RDF Schema, OWL, SHACL, a feature catalogue, etc.
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Recommendation 10 h| /rec/core/fc-md-license
-^.^| A | For each feature collection in this distribution of the dataset, the `links` property of the collection SHOULD include an item for each supported encoding with a link to the collection resource (relation: `license`).
-^.^| B | Alternatively, if all data shared via the API is available under the same license, the link MAY instead be added to the top-level `links` property of the response.
-^.^| C | Multiple links to the license in different content types MAY be provided. At least a link to content type `text/html` or `text/plain` SHOULD be provided.
-|===
+[.recommendation,label="/rec/core/fc-md-license"]
+====
+[.recommendation]
+======
+For each feature collection in this distribution of the dataset, the `links` property of the collection SHOULD include an item for each supported encoding with a link to the collection resource (relation: `license`).
+======
+[.recommendation]
+======
+Alternatively, if all data shared via the API is available under the same license, the link MAY instead be added to the top-level `links` property of the response.
+======
+[.recommendation]
+======
+Multiple links to the license in different content types MAY be provided. At least a link to content type `text/html` or `text/plain` SHOULD be provided.
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Requirement 14 h| /req/core/fc-md-items
-^.^| A | For each feature collection provided by the server, an item SHALL be provided in the property `collections`.
-|===
 
-[%unnumbered]
-|===
-^.^h| Permission 3 h| /per/core/fc-md-items
-^.^| A | To support servers with many collections, servers MAY limit the number of items in the property `collections`.
-|===
+[.requirement,label="/req/core/fc-md-items"]
+====
+[.requirement]
+======
+For each feature collection provided by the server, an item SHALL be provided in the property `collections`.
+======
+====
+
+
+[.permission,label="/per/core/fc-md-items"]
+====
+[.permission]
+======
+To support servers with many collections, servers MAY limit the number of items in the property `collections`.
+======
+====
 
 This document does not specify mechanisms how clients may access all collections from servers with many collections. Such mechanisms may be specified in additional parts of OGC API Features. Options include support for paging and/or filtering.
 
-[%unnumbered]
-|===
-^.^h| Requirement 15 h| /req/core/fc-md-items-links
-^.^| A | For each feature collection included in the response, the `links` property of the collection SHALL include an item for each supported encoding with a link to the features resource (relation: `items`).
-^.^| B | All links SHALL include the `rel` and `type` properties.
-|===
 
-[%unnumbered]
-|===
-^.^h| Requirement 16 h| /req/core/fc-md-extent
-^.^| A | For each feature collection, the `extent` property, if provided, SHALL provide bounding boxes that include all spatial geometries and time intervals that include all temporal geometries in this collection. The temporal extent may use `null` values to indicate an open time interval.
-^.^| B | If a feature has multiple properties with spatial or temporal information, it is the decision of the server whether only a single spatial or temporal geometry property is used to determine the extent or all relevant geometries.
-|===
+[.requirement,label="/req/core/fc-md-items-links"]
+====
+[.requirement]
+======
+For each feature collection included in the response, the `links` property of the collection SHALL include an item for each supported encoding with a link to the features resource (relation: `items`).
+======
+[.requirement]
+======
+All links SHALL include the `rel` and `type` properties.
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Recommendation 11 h| /rec/core/fc-md-extent-single
-^.^| A | While the spatial and temporal extents support multiple bounding boxes (`bbox` array) and time intervals (`interval` array) for advanced use cases, implementations SHOULD provide only a single bounding box or time interval unless the use of multiple values is important for the use of the dataset and agents using the API are known to be support multiple bounding boxes or time intervals.
-|===
 
-[%unnumbered]
-|===
-^.^h| Permission 4 h| /per/core/fc-md-extent-extensions
-^.^| A | The Core only specifies requirements for spatial and temporal extents. However, the `extent` object MAY be extended with additional members to represent other extents, for example, thermal or pressure ranges.
-^.^| B | The Core only supports spatial extents in WGS 84 longitude/latitude and temporal extents in the Gregorian calendar (these are the only enum values in http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/extent.yaml[extent.yaml]).
-^.^| C | Extension to the Core MAY add additional reference systems to the `extent` object.
-|===
+[.requirement,label="/req/core/fc-md-extent"]
+====
+[.requirement]
+======
+For each feature collection, the `extent` property, if provided, SHALL provide bounding boxes that include all spatial geometries and time intervals that include all temporal geometries in this collection. The temporal extent may use `null` values to indicate an open time interval.
+======
+[.requirement]
+======
+If a feature has multiple properties with spatial or temporal information, it is the decision of the server whether only a single spatial or temporal geometry property is used to determine the extent or all relevant geometries.
+======
+====
+
+[.recommendation,label="/rec/core/fc-md-extent-single"]
+====
+[.recommendation]
+======
+While the spatial and temporal extents support multiple bounding boxes (`bbox` array) and time intervals (`interval` array) for advanced use cases, implementations SHOULD provide only a single bounding box or time interval unless the use of multiple values is important for the use of the dataset and agents using the API are known to be support multiple bounding boxes or time intervals.
+======
+====
+
+
+[.permission,label="/per/core/fc-md-extent-extensions"]
+====
+[.permission]
+======
+The Core only specifies requirements for spatial and temporal extents. However, the `extent` object MAY be extended with additional members to represent other extents, for example, thermal or pressure ranges.
+======
+[.permission]
+======
+The Core only supports spatial extents in WGS 84 longitude/latitude and temporal extents in the Gregorian calendar (these are the only enum values in http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/extent.yaml[extent.yaml]).
+======
+[.permission]
+======
+Extension to the Core MAY add additional reference systems to the `extent` object.
+======
+====
 
 http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collection.yaml[Schema for a feature collection]
 
@@ -792,22 +899,32 @@ See <<http_status_codes,HTTP status codes>> for general guidance.
 ==== Operation
 
 [[req_core_sfc_md_op]]
-[%unnumbered]
-|===
-^.^h| Requirement 17 h| /req/core/sfc-md-op
-^.^| A | The server SHALL support the HTTP GET operation at the path `/collections/{collectionId}`.
-^.^| B | The parameter `collectionId` is each `id` property in the feature collections response (JSONPath: `$.collections[*].id`).
-|===
+[.requirement,label="/req/core/sfc-md-op"]
+====
+[.requirement]
+======
+The server SHALL support the HTTP GET operation at the path `/collections/{collectionId}`.
+======
+[.requirement]
+======
+The parameter `collectionId` is each `id` property in the feature collections response (JSONPath: `$.collections[*].id`).
+======
+====
 
 ==== Response
 
 [[req_core_sfc_md_success]]
-[%unnumbered]
-|===
-^.^h| Requirement 18 h| /req/core/sfc-md-success
-^.^| A | A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
-^.^| B | The content of that response SHALL be consistent with the content for this feature collection in the `/collections` response. That is, the values for `id`, `title`, `description` and `extent` SHALL be identical.
-|===
+[.requirement,label="/req/core/sfc-md-success"]
+====
+[.requirement]
+======
+A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
+======
+[.requirement]
+======
+The content of that response SHALL be consistent with the content for this feature collection in the `/collections` response. That is, the values for `id`, `title`, `description` and `extent` SHALL be identical.
+======
+====
 
 ==== Error situations
 
@@ -821,20 +938,27 @@ If the parameter `collectionId` does not exist on the server, the status code of
 ==== Operation
 
 [[req_core_fc_op]]
-[%unnumbered]
-|===
-^.^h| Requirement 19 h| /req/core/fc-op
-^.^| A | For every feature collection identified in the feature collections response (path `/collections`), the server SHALL support the HTTP GET operation at the path `/collections/{collectionId}/items`.
-^.^| B | The parameter `collectionId` is each `id` property in the feature collections response (JSONPath: `$.collections[*].id`).
-|===
+[.requirement,label="/req/core/fc-op"]
+====
+[.requirement]
+======
+For every feature collection identified in the feature collections response (path `/collections`), the server SHALL support the HTTP GET operation at the path `/collections/{collectionId}/items`.
+======
+[.requirement]
+======
+The parameter `collectionId` is each `id` property in the feature collections response (JSONPath: `$.collections[*].id`).
+======
+====
 
 ==== Parameter limit
 
 [[req_core_fc_limit_definition]]
-[%unnumbered]
-|===
-^.^h| Requirement 20 h| /req/core/fc-limit-definition
-^.^| A a| The operation SHALL support a parameter `limit` with the following characteristics (using an OpenAPI Specification 3.0 fragment): +
+[.requirement,label="/req/core/fc-limit-definition"]
+====
+[.requirement]
+======
+The operation SHALL support a parameter `limit` with the following characteristics (using an OpenAPI Specification 3.0 fragment): 
+
 [%unnumbered]
 [source,xml]
 ----
@@ -849,37 +973,51 @@ schema:
 style: form
 explode: false
 ----
-|===
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Permission 5 h| /per/core/fc-limit-default-minimum-maximum
-^.^| A | The values for `minimum`, `maximum` and `default` in requirement `/req/core/fc-limit-definition` are only examples and MAY be changed.
-|===
+
+[.permission,label="/per/core/fc-limit-default-minimum-maximum"]
+====
+[.permission]
+======
+The values for `minimum`, `maximum` and `default` in requirement `/req/core/fc-limit-definition` are only examples and MAY be changed.
+======
+====
 
 [[req_core_fc_limit_response]]
-[%unnumbered]
-|===
-^.^h| Requirement 21 h| /req/core/fc-limit-response-1
-^.^| A | The response SHALL not contain more features than specified by the optional `limit` parameter. If the API definition specifies a maximum value for `limit` parameter, the response SHALL not contain more features than this maximum value.
-^.^| B | Only items are counted that are on the first level of the collection. Any nested objects contained within the explicitly requested items SHALL not be counted.
-|===
+[.requirement,label="/req/core/fc-limit-response-1"]
+====
+[.requirement]
+======
+The response SHALL not contain more features than specified by the optional `limit` parameter. If the API definition specifies a maximum value for `limit` parameter, the response SHALL not contain more features than this maximum value.
+======
+[.requirement]
+======
+Only items are counted that are on the first level of the collection. Any nested objects contained within the explicitly requested items SHALL not be counted.
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Permission 6 h| /per/core/fc-limit-response-2
-^.^| A | The server MAY return less features than requested (but not more).
-|===
+
+[.permission,label="/per/core/fc-limit-response-2"]
+====
+[.permission]
+======
+The server MAY return less features than requested (but not more).
+======
+====
 
 A template for the definition of the parameter in YAML according to OpenAPI 3.0 is available at http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/limit.yaml[limit.yaml].
 
 ==== Parameter bbox
 
 [[req_core_fc_bbox_definition]]
-[%unnumbered]
-|===
-^.^h| Requirement 22 h| /req/core/fc-bbox-definition
-^.^| A a| The operation SHALL support a parameter `bbox` with the following characteristics (using an OpenAPI Specification 3.0 fragment): +
+[.requirement,label="/req/core/fc-bbox-definition"]
+====
+[.requirement]
+======
+The operation SHALL support a parameter `bbox` with the following characteristics (using an OpenAPI Specification 3.0 fragment):
+
 [%unnumbered]
 [source,xml]
 ----
@@ -895,25 +1033,44 @@ schema:
 style: form
 explode: false
 ----
-|===
+======
+====
 
 [[req_core_fc_bbox_response]]
-[%unnumbered]
-|===
-^.^h| Requirement 23 h| /req/core/fc-bbox-response
-^.^| A | Only features that have a spatial geometry that intersects the bounding box SHALL be part of the result set, if the `bbox` parameter is provided.
-^.^| B | If a feature has multiple spatial geometry properties, it is the decision of the server whether only a single spatial geometry property is used to determine the extent or all relevant geometries.
-^.^| C | The `bbox` parameter SHALL match all features in the collection that are not associated with a spatial geometry, too.
-^.^| D a| The bounding box is provided as four or six numbers, depending on whether the coordinate reference system includes a vertical axis (height or depth): +
-- Lower left corner, coordinate axis 1 +
-- Lower left corner, coordinate axis 2 +
-- Minimum value, coordinate axis 3 (optional) +
-- Upper right corner, coordinate axis 1 +
-- Upper right corner, coordinate axis 2 +
+[.requirement,label="/req/core/fc-bbox-response"]
+====
+[.requirement]
+======
+Only features that have a spatial geometry that intersects the bounding box SHALL be part of the result set, if the `bbox` parameter is provided.
+======
+[.requirement]
+======
+If a feature has multiple spatial geometry properties, it is the decision of the server whether only a single spatial geometry property is used to determine the extent or all relevant geometries.
+======
+[.requirement]
+======
+The `bbox` parameter SHALL match all features in the collection that are not associated with a spatial geometry, too.
+======
+[.requirement]
+======
+The bounding box is provided as four or six numbers, depending on whether the coordinate reference system includes a vertical axis (height or depth):
+
+- Lower left corner, coordinate axis 1
+- Lower left corner, coordinate axis 2
+- Minimum value, coordinate axis 3 (optional)
+- Upper right corner, coordinate axis 1
+- Upper right corner, coordinate axis 2
 - Maximum value, coordinate axis 3 (optional)
-^.^| E | The bounding box SHALL consist of four numbers and the coordinate reference system of the values SHALL be interpreted as WGS 84 longitude/latitude (http://www.opengis.net/def/crs/OGC/1.3/CRS84) unless a different coordinate reference system is specified in a parameter `bbox-crs`.
-^.^| F | The coordinate values SHALL be within the extent specified for the coordinate reference system.
-|===
+======
+[.requirement]
+======
+The bounding box SHALL consist of four numbers and the coordinate reference system of the values SHALL be interpreted as WGS 84 longitude/latitude (http://www.opengis.net/def/crs/OGC/1.3/CRS84) unless a different coordinate reference system is specified in a parameter `bbox-crs`.
+======
+[.requirement]
+======
+The coordinate values SHALL be within the extent specified for the coordinate reference system.
+======
+====
 
 "Intersects" means that the rectangular area specified in the parameter `bbox` includes a coordinate that is part of the (spatial) geometry of the feature. This includes the boundaries of the geometries (e.g., for curves the start and end position and for surfaces the outer and inner rings).
 
@@ -938,10 +1095,12 @@ A template for the definition of the parameter in YAML according to OpenAPI 3.0 
 ==== Parameter datetime
 
 [[req_core_fc_time_definition]]
-[%unnumbered]
-|===
-^.^h| Requirement 24 h| /req/core/fc-time-definition
-^.^| A a| The operation SHALL support a parameter `datetime` with the following characteristics (using an OpenAPI Specification 3.0 fragment): +
+[.requirement,label="/req/core/fc-time-definition"]
+====
+[.requirement]
+======
+The operation SHALL support a parameter `datetime` with the following characteristics (using an OpenAPI Specification 3.0 fragment):
+
 [%unnumbered]
 [source,xml]
 ----
@@ -953,16 +1112,28 @@ schema:
 style: form
 explode: false
 ----
-|===
+======
+====
 
 [[req_core_fc_time_response]]
-[%unnumbered]
-|===
-^.^h| Requirement 25 h| /req/core/fc-time-response
-^.^| A | Only features that have a temporal geometry that intersects the temporal information in the `datetime` parameter SHALL be part of the result set, if the parameter is provided.
-^.^| B | If a feature has multiple temporal properties, it is the decision of the server whether only a single temporal property is used to determine the extent or all relevant temporal properties.
-^.^| C | The `datetime` parameter SHALL match all features in the collection that are not associated with a temporal geometry, too.
-^.^| D a| Temporal geometries are either a date-time value or a time interval. The parameter value SHALL conform to the following syntax (using https://tools.ietf.org/html/rfc2234[ABNF]): +
+[.requirement,label="/req/core/fc-time-response"]
+====
+[.requirement]
+======
+Only features that have a temporal geometry that intersects the temporal information in the `datetime` parameter SHALL be part of the result set, if the parameter is provided.
+======
+[.requirement]
+======
+If a feature has multiple temporal properties, it is the decision of the server whether only a single temporal property is used to determine the extent or all relevant temporal properties.
+======
+[.requirement]
+======
+The `datetime` parameter SHALL match all features in the collection that are not associated with a temporal geometry, too.
+======
+[.requirement]
+======
+Temporal geometries are either a date-time value or a time interval. The parameter value SHALL conform to the following syntax (using https://tools.ietf.org/html/rfc2234[ABNF]):
+
 [%unnumbered]
 [source,xml]
 ----
@@ -972,9 +1143,16 @@ interval-open-end   = date-time "/" [".."]
 interval            = interval-closed / interval-open-start / interval-open-end
 datetime            = date-time / interval
 ----
-^.^| E | The syntax of `date-time` is specified by https://tools.ietf.org/html/rfc3339#section-5.6[RFC 3339, 5.6].
-^.^| F | Open ranges in time intervals at the start or end are supported using a double-dot (`..`) or an empty string for the start/end.
-|===
+======
+[.requirement]
+======
+The syntax of `date-time` is specified by https://tools.ietf.org/html/rfc3339#section-5.6[RFC 3339, 5.6].
+======
+[.requirement]
+======
+Open ranges in time intervals at the start or end are supported using a double-dot (`..`) or an empty string for the start/end.
+======
+====
 
 "Intersects" means that the time (instant or interval) specified in the parameter `datetime` includes a timestamp that is part of the temporal geometry of the feature (again, a time instant or interval). For time intervals this includes the start and end time.
 
@@ -1018,10 +1196,12 @@ A template for the definition of the parameter in YAML according to OpenAPI 3.0 
 
 ==== Parameters for filtering on feature properties
 
-[%unnumbered]
-|===
-^.^h| Recommendation 12 h| /rec/core/fc-filters
-^.^| A a| If features in the feature collection include a feature property that has a simple value (for example, a string or integer) that is expected to be useful for applications using the service to filter the features of the collection based on this property, a parameter with the name of the feature property and with the following characteristics (using an OpenAPI Specification 3.0 fragment) SHOULD be supported: +
+[.recommendation,label="/rec/core/fc-filters"]
+====
+[.recommendation]
+======
+If features in the feature collection include a feature property that has a simple value (for example, a string or integer) that is expected to be useful for applications using the service to filter the features of the collection based on this property, a parameter with the name of the feature property and with the following characteristics (using an OpenAPI Specification 3.0 fragment) SHOULD be supported:
+
 [%unnumbered]
 [source,xml]
 ----
@@ -1032,8 +1212,8 @@ explode: false
 ----
 
 The `schema` property SHOULD be the same as the definition of the feature property in the response schema.
-
-|===
+======
+====
 
 [%unnumbered]
 [example]
@@ -1092,12 +1272,17 @@ Any combination of `bbox`, `datetime` and parameters for filtering on feature pr
 ==== Response
 
 [[req_core_fc_response]]
-[%unnumbered]
-|===
-^.^h| Requirement 26 h| /req/core/fc-response
-^.^| A | A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
-^.^| B | The response SHALL only include features selected by the request.
-|===
+[.requirement,label="/req/core/fc-response"]
+====
+[.requirement]
+======
+A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
+======
+[.requirement]
+======
+The response SHALL only include features selected by the request.
+======
+====
 
 The number of features returned depends on the server and the parameter `limit`.
 
@@ -1118,31 +1303,40 @@ So (using the default/maximum values of 10/10000 from the OpenAPI fragment in re
 * If you follow the next link from the previous response, you might get up to 10000 additional features and if there are more, a `next` link.
 
 [[req_core_fc_links]]
-[%unnumbered]
-|===
-^.^h| Requirement 27 h| /req/core/fc-links
-^.^| A a| A `200`-response SHALL include the following links: +
-- a link to this response document (relation: `self`), +
+[.requirement,label="/req/core/fc-links"]
+====
+[.requirement]
+======
+A `200`-response SHALL include the following links:
+
+- a link to this response document (relation: `self`),
 - a link to the response document in every other media type supported by the service (relation: `alternate`).
-|===
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Recommendation 13 h| /rec/core/fc-next-1
-^.^| A | A `200`-response SHOULD include a link to the next "page" (relation: `next`), if more features have been selected than returned in the response.
-|===
+[.recommendation,label="/rec/core/fc-next-1"]
+====
+[.recommendation]
+======
+A `200`-response SHOULD include a link to the next "page" (relation: `next`), if more features have been selected than returned in the response.
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Recommendation 14 h| /rec/core/fc-next-2
-^.^| A | Dereferencing a `next` link SHOULD return additional features from the set of selected features that have not yet been returned.
-|===
+[.recommendation,label="/rec/core/fc-next-2"]
+====
+[.recommendation]
+======
+Dereferencing a `next` link SHOULD return additional features from the set of selected features that have not yet been returned.
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Recommendation 15 h| /rec/core/fc-next-3
-^.^| A | The number of features in a response to a `next` link SHOULD follow the same rules as for the response to the original query and again include a `next` link, if there are more features in the selection that have not yet been returned.
-|===
+[.recommendation,label="/rec/core/fc-next-3"]
+====
+[.recommendation]
+======
+The number of features in a response to a `next` link SHOULD follow the same rules as for the response to the original query and again include a `next` link, if there are more features in the selection that have not yet been returned.
+======
+====
 
 This document does not mandate any specific implementation approach for the `next` links.
 
@@ -1154,43 +1348,60 @@ Clients should not assume that paging is safe against changes to dataset while a
 
 NOTE: Additional conformance classes for safe paging or an index parameter may be added in extensions to this specification.
 
-[%unnumbered]
-|===
-^.^h| Permission 7 h| /per/core/fc-prev
-^.^| A | A response to a `next` link MAY include a `prev` link to the resource that included the `next` link.
-|===
+
+[.permission,label="/per/core/fc-prev"]
+====
+[.permission]
+======
+A response to a `next` link MAY include a `prev` link to the resource that included the `next` link.
+======
+====
 
 Providing `prev` links supports navigating back and forth between pages, but depending on the implementation approach it may be too complex to implement.
 
 [[req_core_fc_rel_type]]
-[%unnumbered]
-|===
-^.^h| Requirement 28 h| /req/core/fc-rel-type
-^.^| A | All links SHALL include the `rel` and `type` link parameters.
-|===
+[.requirement,label="/req/core/fc-rel-type"]
+====
+[.requirement]
+======
+All links SHALL include the `rel` and `type` link parameters.
+======
+====
 
 [[req_core_fc_timestamp]]
-[%unnumbered]
-|===
-^.^h| Requirement 29 h| /req/core/fc-timeStamp
-^.^| A | If a property `timeStamp` is included in the response, the value SHALL be set to the time stamp when the response was generated.
-|===
+[.requirement,label="/req/core/fc-timeStamp"]
+====
+[.requirement]
+======
+If a property `timeStamp` is included in the response, the value SHALL be set to the time stamp when the response was generated.
+======
+====
 
 [[req_core_fc_numbermatched]]
-[%unnumbered]
-|===
-^.^h| Requirement 30 h| /req/core/fc-numberMatched
-^.^| A | If a property `numberMatched` is included in the response, the value SHALL be identical to the number of features in the feature collections that match the selection parameters like `bbox`, `datetime` or additional filter parameters.
-^.^| B | A server MAY omit this information in a response, if the information about the number of matching features is not known or difficult to compute.
-|===
+[.requirement,label="/req/core/fc-numberMatched"]
+====
+[.requirement]
+======
+If a property `numberMatched` is included in the response, the value SHALL be identical to the number of features in the feature collections that match the selection parameters like `bbox`, `datetime` or additional filter parameters.
+======
+[.requirement]
+======
+A server MAY omit this information in a response, if the information about the number of matching features is not known or difficult to compute.
+======
+====
 
 [[req_core_fc_numberreturned]]
-[%unnumbered]
-|===
-^.^h| Requirement 31 h| /req/core/fc-numberReturned
-^.^| A | If a property `numberReturned` is included in the response, the value SHALL be identical to the number of features in the response.
-^.^| B | A server MAY omit this information in a response, if the information about the number of features in the response is not known or difficult to compute.
-|===
+[.requirement,label="/req/core/fc-numberReturned"]
+====
+[.requirement]
+======
+If a property `numberReturned` is included in the response, the value SHALL be identical to the number of features in the response.
+======
+[.requirement]
+======
+A server MAY omit this information in a response, if the information about the number of features in the response is not known or difficult to compute.
+======
+====
 
 NOTE: The representation of the links and the other properties in the payload depends on the encoding of the feature collection.
 
@@ -1261,38 +1472,55 @@ A `400` will be returned in the following situations:
 ==== Operation
 
 [[req_core_f_op]]
-[%unnumbered]
-|===
-^.^h| Requirement 32 h| /req/core/f-op
-^.^| A | For every feature in a feature collection (path `/collections/{collectionId}`), the server SHALL support the HTTP GET operation at the path `/collections/{collectionId}/items/{featureId}`.
-^.^| B | The parameter `collectionId` is each `id` property in the feature collections response (JSONPath: `$.collections[*].id`). `featureId` is a local identifier of the feature.
-|===
+[.requirement,label="/req/core/f-op"]
+====
+[.requirement]
+======
+For every feature in a feature collection (path `/collections/{collectionId}`), the server SHALL support the HTTP GET operation at the path `/collections/{collectionId}/items/{featureId}`.
+======
+[.requirement]
+======
+The parameter `collectionId` is each `id` property in the feature collections response (JSONPath: `$.collections[*].id`). `featureId` is a local identifier of the feature.
+======
+====
 
-[%unnumbered]
-|===
-^.^h| Permission 8 h| /per/core/f-id
-^.^| A | The Core requirements class only requires that the feature URI is unique. Implementations MAY apply stricter rules and, for example, use unique `id` values per dataset or collection.
-|===
+
+[.permission,label="/per/core/f-id"]
+====
+[.permission]
+======
+The Core requirements class only requires that the feature URI is unique. Implementations MAY apply stricter rules and, for example, use unique `id` values per dataset or collection.
+======
+====
 
 ==== Response
 
 [[req_core_f_success]]
-[%unnumbered]
-|===
-^.^h| Requirement 33 h| /req/core/f-success
-^.^| A | A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
-|===
+
+[.requirement,label="/req/core/f-success"]
+====
+[.requirement]
+======
+A successful execution of the operation SHALL be reported as a response with a HTTP status code `200`.
+======
+====
 
 [[req_core_f_links]]
-[%unnumbered]
-|===
-^.^h| Requirement 34 h| /req/core/f-links
-^.^| A a| A `200`-response SHALL include the following links in the response: +
-- a link to the response document (relation: `self`), +
-- a link to the response document in every other media type supported by the service (relation: `alternate`), and +
+[.requirement,label="/req/core/f-links"]
+====
+[.requirement]
+======
+A `200`-response SHALL include the following links in the response:
+
+- a link to the response document (relation: `self`),
+- a link to the response document in every other media type supported by the service (relation: `alternate`), and
 - a link to the feature collection that contains this feature (relation: `collection`).
-^.^| B | All links SHALL include the `rel` and `type` link parameters.
-|===
+======
+[.requirement]
+======
+All links SHALL include the `rel` and `type` link parameters.
+======
+====
 
 NOTE: The representation of the links in the payload will depend on the encoding of the feature.
 
