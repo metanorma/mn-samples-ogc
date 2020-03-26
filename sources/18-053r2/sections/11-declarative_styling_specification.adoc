@@ -1192,7 +1192,7 @@ Returns the base `2` logarithm of `x`.
 [source,ruby]
 ----
 {
-  "show" : "log2(${Density}) > 1.0" +
+  "show" : "log2(${Density}) > 1.0"
 }
 ----
 
@@ -1211,7 +1211,7 @@ Returns the fractional part of `x`. Equivalent to `x - floor(x)`.
 [source,ruby]
 ----
 {
-  "color" : "color() * fract(${Density})" +
+  "color" : "color() * fract(${Density})"
 }
 ----
 
@@ -1436,7 +1436,7 @@ A <<_Point_Cloud,Point Cloud>> is a collection of points that may be styled like
 [source,ruby]
 ----
 {
-  "color" : "color('red')", +
+  "color" : "color('red')",
   "pointSize" : "${Temperature} * 0.5"
 }
 ----
