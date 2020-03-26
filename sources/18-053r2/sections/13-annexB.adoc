@@ -1,7 +1,7 @@
 
 [[annexB]]
 [appendix,obligation=informative]
-== Contributor Acknowledgements (Non-normative)
+== Contributor Acknowledgements
 
 [[Section3]]
 
