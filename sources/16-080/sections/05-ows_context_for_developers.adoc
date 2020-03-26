@@ -33,6 +33,7 @@ OWS Context documents use the standard extensions of .xml (for an ATOM/XML encod
 For an ATOM/XML document XML tag at the top level (i.e directly under the root element which will be ‘feed’) contains an atom link property:
 
 [source,xml]
+[%unnumbered]
 ----
 <atom:link
   rel="profile"
@@ -49,7 +50,8 @@ If the document is in a catalogue, it is also likely that the application can te
 
 As with ATOM/XML, the document needs to be parsed and the element identifying a GeoJSON document as an OWS Context document is the 'profile' property on the overall FeatureCollection within the document, as shown below.
 
-[source,ruby]
+[source,javascript]
+[%unnumbered]
 ----
 {
   "type": "FeatureCollection",
@@ -84,6 +86,7 @@ So an application can depend on these tags being present when scanning context d
 Wherever possible in the ATOM/XML encoding of OWS Context the atom element is used so that the document could be interpreted by an atom reader for wider interoperability.
 
 [source,xml]
+[%unnumbered]
 ----
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en" >
 <link rel="profile"
@@ -102,6 +105,7 @@ This is the minimum needed in an OWS Context document. It has no area of interes
 The equivilent GeoJSON encoding of this content is as follows:
 
 [source,xml]
+[%unnumbered]
 ----
 "properties" : {
     "lang"    : "en",
@@ -120,6 +124,7 @@ The document has a number of other ‘metadata’ tags at the top level (abstrac
 ===== ATOM/XML Encoding
 
 [source,xml]
+[%unnumbered]
 ----
 <link rel="via" type="application/xml"
 href="http://www.acme.com/collections/algal.xml" title="Algal XML metadata"/>
@@ -146,6 +151,7 @@ Each of these has a direct GeoJSON equivilent. See the specification for details
 The GeoJSON Encoding of these elements is as properties under the 'FeatureCollection' element in GeoJSON.
 
 [source,xml]
+[%unnumbered]
 ----
     "subtitle"         (an abstract for the document)
     "authors"          (author(s) of the document)
@@ -165,6 +171,7 @@ A context document optionally contains an area of interest metadata item which i
 In ATOM/XML this typically looks as follows:
 
 [source,xml]
+[%unnumbered]
 ----
 <georss:where>
     <gml:Polygon>
@@ -186,6 +193,7 @@ IMPORTANT: In GeoJSON there is an issue, as a geometric primitive cannot be a Fe
 An example of the equivilent GeoJSON Encoding for the above is shown below.
 
 [source,xml]
+[%unnumbered]
 ----
 {
 "type": "FeatureCollection",
@@ -245,6 +253,7 @@ Resources are the key element of an OWC document. They each reference a set of g
 Within the ATOM/XML encoding resources are mapped to ATOM 'Entry' elements:
 
 [source,xml]
+[%unnumbered]
 ----
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 ...
@@ -320,6 +329,7 @@ The ATOM/XML items which map to the above are:
 The content element is optional within context but is mandatory in ATOM. It is meant to be populated with displayable content encoded in HTML.
 
 [source,html]
+[%unnumbered]
 ----
 <html>
   <body>
@@ -370,6 +380,7 @@ This property is intended to allow resources to be provided in a context documen
 In the ATOM/XML Encoding this property is encoded as follows:
 
 [source,xml]
+[%unnumbered]
 ----
 <category scheme="http://www.opengis.net/spec/owc/active"term="false"/>
 ----
@@ -377,6 +388,7 @@ In the ATOM/XML Encoding this property is encoded as follows:
 In GeoJSON it is encoded as follows:
 
 [source,xml]
+[%unnumbered]
 ----
 "properties" : { "active": false }
 ----
@@ -433,7 +445,8 @@ Similarly for services such as WCS, a typical client behaviour might be to displ
 
 An offering begins with a simple tag, and then the URI of the offering type, see below:
 
-[source,ruby]
+[source,xml]
+[%unnumbered]
 ----
 <owc:offering code="http://www.opengis.net/spec/owc-atom/1.0/req/wms">
 …
@@ -442,7 +455,8 @@ An offering begins with a simple tag, and then the URI of the offering type, see
 
 The equivilent GeoJSON offieting code would be:
 
-[source,ruby]
+[source,javascript]
+[%unnumbered]
 ----
 "properties" : {
   "offerings" : [{
@@ -453,14 +467,16 @@ The equivilent GeoJSON offieting code would be:
 
 The offering type for those types supported in the standard begin with:
 
-[source,ruby]
+[source,xml]
+[%unnumbered]
 ----
 http://www.opengis.net/spec/owc-atom/1.0/req/
 ----
 
 Of for GeoJSON
 
-[source,ruby]
+[source,xml]
+[%unnumbered]
 ----
 http://www.opengis.net/spec/owc-geojson/1.0/req/
 ----
@@ -477,12 +493,14 @@ IN the OWS Context 1.0 speification, each offering is defined in a requirement c
 
 The model used for specifying the offering also lends itself to clear delineation of the source of offerings where OWC is extended, for example an offering defined for the ACME company (remember road runner!) would be:
 
-[source,ruby]
+[source,xml]
+[%unnumbered]
 ----
 http://www.acme.com/spec/owc-atom/spec/owc-atom/1.0/req/xxx
 ----
 
-[source,ruby]
+[source,xml]
+[%unnumbered]
 ----
 http://www.acme.com/spec/owc-atom/spec/owc-geojson/1.0/req/xxx
 ----
@@ -508,6 +526,7 @@ An offering is designed to allow specialist clients (either OGC or others readin
 For a web service offering the offering includes two web service URIs (defined in ‘Operation’ tags. The first is an OGC Get Capabilities URI and the second is a GetData URI. Here’s an example of the Get Capabilities operation:
 
 [source,xml]
+[%unnumbered]
 ----
 <owc:offering code="http://www.opengis.net/spec/owc-atom/1.0/req/wms">
   <owc:operation method="GET" code="GetCapabilities"
@@ -530,6 +549,7 @@ Most service offerings have two operations, a ‘GetCapabilities’ operation an
 Here’s an example of a complete WMS Offering (http GET is used on both operations):
 
 [source,xml]
+[%unnumbered]
 ----
 <owc:offering code="http://www.opengis.net/spec/owc-atom/1.0/req/wms">
   <owc:operation code="GetCapabilities" method="GET"
@@ -547,6 +567,7 @@ age/jpeg&amp;STYLES=opti_fals&amp;TIME=2011-03"/>
 When a POST method is used the body of the request is delivered in a ‘request’ tag, which specifies a type, for example ‘application/xml’. There is one other key element of an operation, and that is the ability to capture the result of the request in the operation. A typical example is a catalogue request offering, where the result as well as the request can be included. Here is a POST request fragment, with the post body (in the owc:request tag) and the result captured (in the owc:result tag).
 
 [source,xml]
+[%unnumbered]
 ----
 <owc:operation method="POST" code="GetRecords"
 href="http://www.someserver.com/wrs.cgi?">
@@ -639,6 +660,7 @@ The use of this is when using an OWS Context document to deliver for example a s
 Content Offerings allow content to be embedded in an OWS Context document. These may be for example annotations or other information which is relatively small but is needed to qualify the bulk of the information in the context document. It might for example give an indication of where an oil spill is or where a polygon is needed to show the oil coverage and a point to show where the vessel is resting. An offering with content in it will use the ‘owc:content’ tag in the offering. In the example below the owc:content element is defining content inline.
 
 [source,xml]
+[%unnumbered]
 ----
 <owc:offering
 code="http://www.opengis.net/spec/owc-atom/1.0/req/gml">
@@ -673,6 +695,7 @@ xsi:schemaLocation="http://www.envitia.com/clk clk.xsd">
 A content element can also reference content via a URL or a relative or absolute file path.
 
 [source,xml]
+[%unnumbered]
 ----
 <owc:offering
 code="http://www.opengis.net/spec/owc-atom/1.0/req/geotiff">
@@ -701,6 +724,7 @@ Alas at present there is no way, without reading all the content, to identify if
 In Atom it is technically possible to add further 'rel=profile' elements to indicate this but it is not mandated by the standard. For example the following is valid:
 
 [source,xml]
+[%unnumbered]
 ----
 <atom:link
   rel="profile"
@@ -721,14 +745,16 @@ The most common type of extension to an OWS Context Document is to add offerings
 
 The model used for specifying the offering also lends itself to clear delineation of the source of offerings where OWC is extended, for example an offering defined for the ACME company (remember road runner!) would be:
 
-[source,ruby]
+[source,xml]
+[%unnumbered]
 ----
 http://www.acme.com/spec/owc-atom/1.0/req/xxx
 ----
 
 and in GeoJSON
 
-[source,ruby]
+[source,xml]
+[%unnumbered]
 ----
 http://www.acme.com/spec/owc-geojson/1.0/req/xxx
 ----
@@ -794,6 +820,7 @@ h| Layer Name h| Offering Type h| Access Method
 The Atom/XML example is as follows:
 
 [source,xml]
+[%unnumbered]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss"
@@ -1032,7 +1059,8 @@ https://docs.opengeospatial.org/guides/examples/Envitia_TB12_OWC.xml[Envitia TB1
 
 And the equivilent GeoJSON example is as follows:
 
-[source,ruby]
+[source,javascript]
+[%unnumbered]
 ----
 {
     "type": "FeatureCollection",
