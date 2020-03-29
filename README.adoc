@@ -31,7 +31,8 @@ we need here.
 `source/`::
 (automatically generated) extracted Metanorma XML documents from `repos/`.
 This is where the Metanorma XML documents will be processed into output
-formats.
+formats. +
+_Note: `17-069r3/` includes plenty of samples of Metanorma requirements._
 
 `documents/`::
 (automatically generated) generated Metanorma output from XML files
