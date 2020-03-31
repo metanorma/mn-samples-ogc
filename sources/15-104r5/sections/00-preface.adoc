@@ -5,10 +5,6 @@ This document specifies the core of an OGC Discrete Global Grid System Abstract 
 
 The intention of this Abstract Specification is to provide the geomatics and decision-making community with a formal document with which DGGS can be recognized, designed, built and used. This Abstract Specification defines the framework components that make up a compliant DGGS and the variability within those components. The value of a DGGS as a spatial reference system is also discussed, as is the opportunity to interoperate between other DGGS and to utilize other OGC/ISO standards within the implementation of DGGS. As with any spatial reference, and especially an approach that is early in adoption, intellectual property rights pertaining to various methods of creating and using DGGS should be expected. For example, there exist multiple patents for indexing DGGS, and the implementers of this Abstract Specification should make themselves aware of these patents.
 
-Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
-
-_Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the Abstract Specification set forth in this document, and to provide supporting documentation._
-
 [abstract]
 == Abstract
 
