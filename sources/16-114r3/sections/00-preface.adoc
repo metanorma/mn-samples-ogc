@@ -25,3 +25,15 @@ All questions regarding this submission should be directed to the editor or the 
 | Martin Desruisseaux | Geomatys
 
 |===
+
+
+
+////
+This section was located in "Normative references" section but it was moved here due to OGC grammar violation
+////
+[.preface]
+== Reference notes
+
+The OGC 11-165r2 CF-netCDF standard is based on Climate and Forecast (CF) conventions version 1.6. The Attribute Convention for Data Discovery (ACDD) adds additional attributes that provide useful metadata for Catalog Service on the Web (CSW). The National Centers for Environmental Information (NCEI) document is used as a guideline when an ambiguity needs to be resolved.
+
+This document references OGC 11-165r2 when possible, but the on-line CF, ACDD, or NCEI documents may be referenced when additional information is considered relevant to moving feature binary encoding.
