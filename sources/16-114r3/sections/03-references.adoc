@@ -12,7 +12,3 @@ The following normative documents contain provisions that, through reference in 
 * [[[netcdf,NetCDF]]], Lawrence Livermore National Laboratory: NetCDF CF Metadata Conventions – http://cfconventions.org/[http://cfconventions.org/]
 * [[[acdd,ACDD]]], ESIP: Attribute Convention for Data Discovery (ACDD) – http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery[http://wiki.esipfed.org/index.php/Attribute\_Convention\_for\_Data\_Discovery]
 * [[[noaa,NOAA]]], NOAA: NCEI netCDF Templates – http://www.nodc.noaa.gov/data/formats/netcdf/[http://www.nodc.noaa.gov/data/formats/netcdf/]
-
-The OGC 11-165r2 CF-netCDF standard is based on Climate and Forecast (CF) conventions version 1.6. The Attribute Convention for Data Discovery (ACDD) adds additional attributes that provide useful metadata for Catalog Service on the Web (CSW). The National Centers for Environmental Information (NCEI) document is used as a guideline when an ambiguity needs to be resolved.
-
-This document references OGC 11-165r2 when possible, but the on-line CF, ACDD, or NCEI documents may be referenced when additional information is considered relevant to moving feature binary encoding.
