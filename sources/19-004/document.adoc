@@ -13,7 +13,7 @@
 :role: editor
 :keywords: ogcdoc, OGC document, OGC, IndoorGML, Indoor space, Outdoor space, Seamless navigation, CityGML
 :submitting-organizations: National Institute of Advanced Industrial Science and Technology; The University of Seoul; All for Land Inc
-:docfile: 19-004.adoc
+:docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
