@@ -1,7 +1,7 @@
 ---
 metanorma:
   deploy:
-    email: "travis-ci@metanorma.org"
+    email: "ci@metanorma.org"
   formats:
     - xml
     - rxl
@@ -16,11 +16,20 @@ metanorma:
       sources/08-062r7.xml: sources/08-062r7/document.adoc
       sources/10-091r3.xml: sources/10-091r3/document.adoc
       sources/10-100r3.xml: sources/10-100r3/document.adoc
+      sources/12-077r1.xml: sources/12-077r1/document.adoc
+      sources/14-065r2.xml: sources/14-065r2/document.adoc
+      sources/15-104r5.xml: sources/15-104r5/document.adoc
+      sources/15-120r5.xml: sources/15-120r5/document.adoc
       sources/16-080.xml: sources/16-080/document.adoc
+      sources/16-114r3.xml: sources/16-114r3/document.adoc
+      sources/16-131r2.xml: sources/16-131r2/document.adoc
       sources/17-069.xml: repos/ogc-wfs/sources/core/standard/17-069.adoc
+      sources/17-069r3.xml: sources/17-069r3/document.adoc
       sources/18-016r1.xml: sources/18-016r1/document.adoc
       sources/18-046.xml: sources/18-046/document.adoc
       sources/18-053r2.xml: sources/18-053r2/document.adoc
+      sources/19-004.xml: sources/19-004/document.adoc
+
 relaton:
   collection:
     organization: "OGC: The Open Geospatial Consortium"
