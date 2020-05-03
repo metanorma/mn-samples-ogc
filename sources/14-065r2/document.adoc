@@ -22,7 +22,8 @@
 :keywords: TBD, geoprocessing, ogcdoc, OGC document, processes, processing, WPS
 :submitting-organizations: TU Dresden; 52°North; Intergraph Corporation; Image Matters LLC; CRP Henri Tudor; Airbus Defence and Space
 :imagesdir: images
-:stem:
+:local-cache-only:
+:data-uri-image:
 
 
 include::sections/00-abstract.adoc[]

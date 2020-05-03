@@ -17,7 +17,8 @@
 :docfile: document.adoc
 :keywords: ogcdoc, OGC document, CDB, Common Data Base, simulation, synthetic environment, version 1.1
 :submitting-organizations: OGC CDB Standards Working Group
-
+:local-cache-only:
+:data-uri-image:
 
 include::sections/00-front-material.adoc[]
 include::sections/01-volume1.adoc[]
