@@ -3,9 +3,12 @@
 [appendix,obligation=normative]
 == Bibliography
 
-[class=steps]
-. Arfken, George B., Hans J. Weber., and Harris, Frank E. "Mathematical methods for physicists." Elsevier Academic Press (2013): 139-143.
-. Director-General for Policy Planning, Ministry of Land, Infrastructure, Transport, and Tourism(MLIT). "Development Specification for Spatial Network Model for Pedestrians." Ministry of Land, Infrastructure, Transport, and Tourism(MLIT) (2018) http://www.mlit.go.jp/common/001244373.pdf[www.mlit.go.jp/common/001244373.pdf].
-. OpenStreetMap http://www.openstreetmap.org/[http://www.openstreetmap.org].
-. Park, Junho, Dasol Ahn, and Jiyeong Lee. "Development of Data Fusion Method Based on Topological Relationships Using IndoorGML Core Module." Journal of Sensors 2018 (2018).
-. Watt, Alan, and Mark Watt. "Advanced Animation and Rendering Techniques." ACM Press (1992): 356-359.
+* [[[PhysicMath,Mathematical methods for physicists]]], Arfken, George B., Hans J. Weber., and Harris, Frank E. "Mathematical methods for physicists." Elsevier Academic Press (2013): 139-143.
+
+* [[[MLITSpec,MLIT Development Specification for Spatial Network Model for Pedestrians]]], Director-General for Policy Planning, Ministry of Land, Infrastructure, Transport, and Tourism (MLIT). "Development Specification for Spatial Network Model for Pedestrians." Ministry of Land, Infrastructure, Transport, and Tourism (MLIT) (2018) http://www.mlit.go.jp/common/001244373.pdf[www.mlit.go.jp/common/001244373.pdf].
+
+* [[[OpenStreetMap,OpenStreetMap]]], OpenStreetMap. http://www.openstreetmap.org/
+
+* [[[DataFusion,Development of Data Fusion Method Based on Topological Relationships Using IndoorGML Core Module]]], Park, Junho, Dasol Ahn, and Jiyeong Lee. "Development of Data Fusion Method Based on Topological Relationships Using IndoorGML Core Module." Journal of Sensors 2018 (2018).
+
+* [[[AdvancedAnimation,Advanced Animation and Rendering Techniques]]], Watt, Alan, and Mark Watt. "Advanced Animation and Rendering Techniques." ACM Press (1992): 356-359.
