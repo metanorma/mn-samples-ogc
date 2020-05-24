@@ -276,6 +276,7 @@ A dictionary object of metadata about per-feature properties.
 [%unnumbered]
 |===
 | | Type | Description | Required
+
 | *maximum* | `number` | The maximum value of this property of all the features in the tileset. | Yes
 | *minimum* | `number` | The minimum value of this property of all the features in the tileset. | Yes
 | *extensions* | `object` | Dictionary object with extension-specific objects. | No
