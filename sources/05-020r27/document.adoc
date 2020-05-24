@@ -23,33 +23,6 @@
 
 
 include::sections/00-abstract.adoc[]
-include::sections/01-consortium.adoc[]
-include::sections/02-purpose.adoc[]
-include::sections/03-structure.adoc[]= Technical Committee Policies and Procedures
-:title: Technical Committee Policies and Procedures
-:edition: 27.0
-:docnumber: 05-020r27
-:received-date: 2019-03-28
-:issued-date: 2019-05-29
-:published-date: 2019-06-03
-:external-id: http://www.opengis.net/doc/pol/tcpnp/27.0
-:committee: Technical Committee
-:editor: Scott Simmons
-:copyright-year: 2019
-:language: en
-:script: Latn
-:doctype: policy
-:status: published
-:toc:
-:imagesdir: images
-:docfile: document.adoc
-:mn-document-class: ogc
-:mn-output-extensions: xml,html,doc,pdf,rxl
-:local-cache-only:
-:data-uri-image:
-
-
-include::sections/00-abstract.adoc[]
 
 include::sections/01-consortium.adoc[]
 
@@ -80,20 +53,3 @@ include::sections/aa-terms.adoc[]
 include::sections/ab-consensus.adoc[]
 
 include::sections/ac-standards.adoc[]
-
-include::sections/04-meetings.adoc[]
-include::sections/05-voting.adoc[]
-include::sections/06-subgroups.adoc[]
-include::sections/07-document-types.adoc[]
-include::sections/08-adoption.adoc[]
-include::sections/09-rights.adoc[]
-include::sections/10-roles.adoc[]
-include::sections/11-temp.adoc[]
-include::sections/12-adoption.adoc[]
-include::sections/aa-terms.adoc[]
-include::sections/ab-consensus.adoc[]
-include::sections/ac-standards.adoc[]
-
-
-
-
