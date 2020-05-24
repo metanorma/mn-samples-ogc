@@ -104,6 +104,7 @@ The landing page may be retrieved in a number of different formats. The followin
 .Schema and Tests for Landing Pages
 |===
 h| Format h| Schema Document h| Test ID
+
 | HTML | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml[landingPage.yaml] | <<ats_html_content,/ats/html/content>>
 | GeoJSON | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/landingPage.yaml[landingPage.yaml] | <<ats_geojson_content,/ats/geojson/content>>
 | GMLSF0 | http://schemas.opengis.net/ogcapi/features/part1/1.0/xml/core.xsd[core.xsd], element `core:LandingPage` | <<ats_gmlsf0_content,/ats/gmlsf0/content>>
@@ -241,6 +242,7 @@ The Collections content may be retrieved in a number of different formats. The f
 .Schema and Tests for Collections content
 |===
 h| Format h| Schema Document h| Test ID
+
 | HTML | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml[collections.yaml] | <<ats_html_content,/ats/html/content>>
 | GeoJSON | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/collections.yaml[collections.yaml] | <<ats_geojson_content,/ats/geojson/content>>
 | GMLSF0 | http://schemas.opengis.net/ogcapi/features/part1/1.0/xml/core.xsd[core.xsd], element `core:Collections` | <<ats_gmlsf0_content,/ats/gmlsf0/content>>
@@ -549,6 +551,7 @@ The collections metadata may be retrieved in a number of different formats. The 
 .Schema and Tests for Feature Collections
 |===
 h| Format h| Schema Document h| Test ID
+
 | HTML | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureCollectionGeoJSON.yaml[featureCollectionGeoJSON.yaml] | <<ats_html_content,/ats/html/content>>
 | GeoJSON | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureCollectionGeoJSON.yaml[featureCollectionGeoJSON.yaml] | <<ats_geojson_content,/ats/geojson/content>>
 | GMLSF0 | http://schemas.opengis.net/ogcapi/features/part1/1.0/xml/core-sf.xsd[core-sf.xsd], element `sf:FeatureCollection` | <<ats_gmlsf0_content,/ats/gmlsf0/content>>
@@ -674,6 +677,7 @@ The Features may be retrieved in a number of different formats. The following ta
 .Schema and Tests for Features
 |===
 h| Format h| Schema Document h| Test ID
+
 | HTML | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureGeoJSON.yaml[featureGeoJSON.yaml] | <<ats_html_content,/ats/html/content>>
 | GeoJSON | http://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/schemas/featureGeoJSON.yaml[featureGeoJSON.yaml] | <<ats_geojson_content,/ats/geojson/content>>
 | GMLSF0 | http://schemas.opengis.net/gml/3.2.1/gml.xsd[gml.xsd], element substituable for `gml:AbstractFeature` | <<ats_gmlsf0_content,/ats/gmlsf0/content>>
