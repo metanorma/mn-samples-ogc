@@ -319,6 +319,7 @@ The *Status Codes* listed in <<table2>> are of particular relevance to implement
 .Typical HTTP status codes
 |===
 h| Status code h| Description
+
 | `200` | A successful request.
 | `304` | An <<web_caching,entity tag was provided in the request>> and the resource has not been changed since the previous request.
 | `400` | The server cannot or will not process the request due to an apparent client error. For example, a query parameter had an incorrect value.
