@@ -11,6 +11,7 @@ The following table identifies all corrections that have been applied to this ca
 [%unnumbered]
 |===
 h| Section h| Description
+
 | <<main_body,Main Body>> | Travel cost compensation clarification added
 | <<cloud_infrastructure,Cloud Infrastructure>> | Details on OpenStack added
 | <<technical_architecture_intro,Technical Architecture, Section Introduction, last paragraph>> | Additional role added. Now, participants can provide applications together with application packages, clients instances, or server instances.
@@ -77,6 +78,7 @@ The following table details the major Testbed milestones and events:
 .Master schedule
 |===
 h| Milestone h| Date h| Event
+
 | _M01_ | 13 February 2018 | CFP Release
 | _M02_ | 19 February 2018 | Clarification Webinar (17:00 CET, <<annex_clarifications,login instructions>>)
 | _M03_ | *06 March 2018* | CFP Proposal Submission Deadline (11:59pm U.S. Eastern time)
