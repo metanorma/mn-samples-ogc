@@ -279,6 +279,7 @@ If links are included in the response, each link SHALL be reported using an HTTP
 .Media types and XML elements for each resource
 |===
 h| Resource h| Path h| XML root element
+
 | Landing page | `/` | `core:LandingPage`
 | Conformance declaration | `/conformance` | `core:ConformsTo`
 | Feature collections | `/collections` | `core:Collections`
