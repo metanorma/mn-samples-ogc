@@ -11,6 +11,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.1 Core Data Model
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/model[http://www.opengis.net/spec/DGGS/1.0/conf/core/model]
 | Title | Core Data Model
 | Abbreviation | core/model
@@ -26,6 +27,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.2 Reference Frame – Global Domain – Surface Area Equivalence
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/domain/area[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/domain/area]
 | Title | Reference Frame - Global Domain – Surface Area Equivalence
 | Abbreviation | reference_frame/domain/area
@@ -40,6 +42,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.3 Reference Frame – Global Domain – Cell Boundary Overlap
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/domain/overlap[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/domain/overlap]
 | Title | Reference Frame - Global Domain – Cell Boundary Overlap
 | Abbreviation | reference_frame/domain/overlap
@@ -54,6 +57,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.4 Reference Frame – Tessellation Sequence
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/tessellation_sequence[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/tessellation_sequence]
 | Title | Reference Frame – Tessellation Sequence
 | Abbreviation | reference_frame/tessellation_sequence
@@ -68,6 +72,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.5 Reference Frame — Global Area Preservation
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/global_area_preservation[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/global_area_preservation]
 | Title | Reference Frame–– Global Area Preservation
 | Abbreviation | reference_frame/global_area_preservation
@@ -82,6 +87,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.6 Reference Frame — Cell Shape
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/shape[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/shape]
 | Title | Reference Frame–– Cell Shape
 | Abbreviation | reference_frame/cell/shape
@@ -97,6 +103,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.7 Reference Frame — Equal Area Precision
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/equal_area[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/equal_area_precision]
 | Title | Reference Frame — Equal Area Precision
 | Abbreviation | reference_frame/cell/equal_area_precision
@@ -111,6 +118,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.8 Reference Frame — Equal Area Cells
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/equal_area[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/equal_area]
 | Title | Reference Frame — Equal Area Cells
 | Abbreviation | reference_frame/cell/equal_area
@@ -125,6 +133,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.9 Reference Frame – Initial Tessellation
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/initial_tessellation[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/initial_tessellation]
 | Title | Reference Frame — Initial Tessellation
 | Abbreviation | reference_frame/cell/initial_tessellation
@@ -140,6 +149,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.10 Reference Frame – Cell Refinement
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/refinement[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/refinement]
 | Title | Reference Frame – Cell Refinement
 | Abbreviation | reference_frame/cell/refinement
@@ -148,7 +158,12 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 | Reference Clause | *6.2.5.2*
 | Test Purpose | To verify that a DGGS specification has a method to refine each cell into finer resolution child cells.
 | Test Method | Inspect documentation of the DGGS specification.
+|===
+
+[%unnumbered]
+|===
 2+^.^h| A.1.11 Reference Frame – Cell Addressing
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/indexing[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/indexing]
 | Title | Reference Frame – Cell Addressing
 | Abbreviation | reference_frame/cell/indexing
@@ -163,6 +178,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.12 Reference Frame – Spatial Reference
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/spatial_reference[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/spatial_reference]
 | Title | Reference Frame – Spatial Reference
 | Abbreviation | reference_frame/spatial_reference
@@ -177,6 +193,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.13 Reference Frame – Spatial Reference – Cells Referenced at their Centroid
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/spatial_reference/cell_center[http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/spatial_reference/cell_centroid]
 | Title | Reference Frame – Spatial Reference – Cells Reference at their Centroid
 | Abbreviation | reference_frame/spatial_reference/cell_centroid
@@ -191,6 +208,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.14 Functional Algorithms – Quantization Operations
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/quantization[http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/quantization]
 | Title | Functional Algorithms – Quantization Operations
 | Abbreviation | methods/quantization
@@ -199,7 +217,12 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 | Reference Clause | *6.3.1*
 | Test Purpose | To verify that a DGGS specification has a method(s) to assign and retrieve cell data.
 | Test Method | Inspect documentation of the DGGS specification.
+|===
+
+[%unnumbered]
+|===
 2+^.^h| A.1.15 Functional Algorithms – Algebraic Processes – Cell Navigation
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/algebraic_processes/cell_navigation[http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/algebraic_processes/cell_navigation]
 | Title | Functional Algorithms – Algebraic Processes – Cell Navigation
 | Abbreviation | methods/algebraic_processes/cell_navigation
@@ -214,6 +237,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.16 Functional Algorithms – Algebraic Processes – Spatial Analysis
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/algebraic_processes/spatial_analysis[http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/algebraic_processes/spatial_analysis]
 | Title | Functional Algorithms – Algebraic Processes – Spatial Analysis
 | Abbreviation | methods/algebraic_processes/spatial_analysis
@@ -229,6 +253,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.17 Functional Algorithms – Interoperability Query Operations
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/interoperability/query[http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/interoperability/query]
 | Title | Functional Algorithms – Interoperability Query Operations
 | Abbreviation | methods/interoperability/query
@@ -243,6 +268,7 @@ Tests identifiers below are relative to http://www.opengis.net/spec/DGGS/1.0/[ht
 [%unnumbered]
 |===
 2+^.^h| A.1.18 Functional Algorithms – Interoperability Broadcast Operations
+
 2+.<| http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/interoperability/broadcast[http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/interoperability/broadcast]
 | Title | Functional Algorithms – Interoperability Broadcast Operations
 | Abbreviation | methods/interoperability/broadcast
