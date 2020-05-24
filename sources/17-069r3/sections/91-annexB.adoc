@@ -5,6 +5,7 @@
 [%unnumbered]
 |===
 h| Date h| Release h| Editor h| Primary clauses modified h| Description
+
 | 2017-10-09 | 3.0.0-SNAPSHOT | C. Portele | all | initial version
 | 2017-10-11 | 3.0.0-SNAPSHOT | C. Portele | all | changes discussed in SWG/PT call on 2017-10-09
 | 2017-12-13 | 3.0.0-SNAPSHOT | C. Portele | all | address issues https://github.com/opengeospatial/ogcapi-features/issues/2[#2], https://github.com/opengeospatial/ogcapi-features/issues/5[#5], https://github.com/opengeospatial/ogcapi-features/issues/6[#6], https://github.com/opengeospatial/ogcapi-features/issues/7[#7], https://github.com/opengeospatial/ogcapi-features/issues/8[#8], https://github.com/opengeospatial/ogcapi-features/issues/14[#14], https://github.com/opengeospatial/ogcapi-features/issues/15[#15], https://github.com/opengeospatial/ogcapi-features/issues/19[#19]
