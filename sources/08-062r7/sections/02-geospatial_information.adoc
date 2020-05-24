@@ -151,6 +151,7 @@ Designers of GML application schemas may extend or restrict the types defined in
 [%unnumbered]
 |===
 h| GML Application Schema h| Document Type
+
 | CityGML | Standard
 | GML Application Schema - Coverages (1.0) | Standard
 | Moving Object Snapshot (adoption pending) | Standard
