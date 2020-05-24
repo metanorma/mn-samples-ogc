@@ -5,6 +5,7 @@
 [%unnumbered]
 |===
 ^.^h| Date ^.^h| Version Doc. ^.^h| Editor ^.^h| Description
+
 | 1996-05-09 | 0. | Kurt Buehler | OpenGIS Guide
 | 2002-08-30 | 0.1 +
 02-077 | Kurt Buehler | Initial version of ORM. Doc OGC +
