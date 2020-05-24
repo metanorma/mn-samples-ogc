@@ -23,14 +23,19 @@
 :data-uri-image:
 
 include::sections/00-front-material.adoc[]
+
 include::sections/01-whats-cdb.adoc[]
+
 include::sections/02-conformance.adoc[]
+
 include::sections/03-norm-refs.adoc[]
+
 include::sections/04-terms-defs.adoc[]
+
 include::sections/05-using-ogc-standards.adoc[]
+
 include::sections/06-background-informative-material.adoc[]
+
 include::sections/aa-revision-history.adoc[]
+
 include::sections/ab-references.adoc[]
-
-
-
