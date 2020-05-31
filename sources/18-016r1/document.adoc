@@ -21,14 +21,23 @@
 :data-uri-image:
 
 include::sections/00-front-material.adoc[]
-include::sections/01-volume1.adoc[]
-include::sections/02-volume2.adoc[]
-include::sections/03-volume3.adoc[]
-include::sections/04-volume4.adoc[]
-include::sections/05-volume5.adoc[]
-include::sections/06-volume6.adoc[]
-include::sections/07-volume7.adoc[]
-include::sections/08-volume8.adoc[]
-include::sections/09-volume10.adoc[]
-include::sections/10-volume12.adoc[]
 
+include::sections/01-volume1.adoc[]
+
+include::sections/02-volume2.adoc[]
+
+include::sections/03-volume3.adoc[]
+
+include::sections/04-volume4.adoc[]
+
+include::sections/05-volume5.adoc[]
+
+include::sections/06-volume6.adoc[]
+
+include::sections/07-volume7.adoc[]
+
+include::sections/08-volume8.adoc[]
+
+include::sections/09-volume10.adoc[]
+
+include::sections/10-volume12.adoc[]

@@ -48,6 +48,7 @@ Many votes usually occur in the Opening or Closing TC Plenary. The following is 
 [cols="2",options="header"]
 |===
 |Vote Type |Who can Vote
+
 |Approval of a White Paper, Discussion Paper, or Engineering Report |Any member
 |Election of TC reps to the PC |Any member
 |Approval of a DWG Charter |Any member

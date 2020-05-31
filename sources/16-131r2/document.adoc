@@ -22,11 +22,17 @@
 
 
 include::sections/00-front-material.adoc[]
-include::sections/01-big-data-trend.adoc[]
-include::sections/02-applications.adoc[]
-include::sections/03-use-cases.adoc[]
-include::sections/04-opportunities.adoc[]
-include::sections/05-activities.adoc[]
-include::sections/aa-location-powers.adoc[]
-include::sections/ab-acronyms.adoc[]
 
+include::sections/01-big-data-trend.adoc[]
+
+include::sections/02-applications.adoc[]
+
+include::sections/03-use-cases.adoc[]
+
+include::sections/04-opportunities.adoc[]
+
+include::sections/05-activities.adoc[]
+
+include::sections/aa-location-powers.adoc[]
+
+include::sections/ab-acronyms.adoc[]

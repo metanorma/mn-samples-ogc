@@ -43,6 +43,7 @@ All questions regarding this document should be directed to the editor or the co
 [%unnumbered]
 |===
 h| Name h| Organization
+
 | Ingo Simonis (editor) | OGC
 | Benjamin Pross | 52°North
 | Matthes Rieke | 52°North

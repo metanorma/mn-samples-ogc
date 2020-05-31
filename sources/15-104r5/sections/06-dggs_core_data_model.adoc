@@ -6,6 +6,7 @@ This Clause specifies the underlying data model and core requirement class for a
 [%unnumbered]
 |===
 2+h| Requirements Class - Core
+
 2+| http://www.opengis.net/spec/DGGS/1.0/req/core[http://www.opengis.net/spec/DGGS/1.0/req/core]
 | Target type | Conceptual Specification
 
@@ -32,6 +33,7 @@ image::images/007.png["",716,438]
 [%unnumbered]
 |===
 h| Requirement 1
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/model[http://www.opengis.net/spec/DGGS/1.0/req/core/model]
 | _A DGGS specification SHALL include a DGGS Reference Frame and the associated Functional Algorithms as defined by the DGGS Core Conceptual Data Model._
 
@@ -55,6 +57,7 @@ For an Earth grid system to be considered a DGGS specification it must be define
 [%unnumbered]
 |===
 h| Requirement 2
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/domain/area[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/domain/area]
 | _Domain completeness – the DGGS Domain of the initial discrete global grid SHALL cover the entire globe._
 
@@ -64,6 +67,7 @@ h| Requirement 2
 [%unnumbered]
 |===
 h| Requirement 3
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/domain/overlap[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/domain/overlap]
 | _Position uniqueness – the initial discrete global grid SHALL be defined without any overlapping DGGS Cells._
 
@@ -77,6 +81,7 @@ Unlike a single resolution spatial grid, a DGGS must define multiple discrete gl
 [%unnumbered]
 |===
 h| Requirement 4
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/tessellation_sequence[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/tessellation\_sequence]
 | _A DGGS specification SHALL comprise a sequence of discrete global grid tessellations representing multiple spatial resolutions_
 
@@ -88,7 +93,8 @@ Preservation of total surface area throughout the range of hierarchical tessella
 
 [%unnumbered]
 |===
-h| Requirement 5 
+h| Requirement 5
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/area_preservation[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/area\_preservation]
 | _For each successive level of grid refinement, a DGGS specification SHALL preserve Domain completeness and position uniqueness._
 
@@ -116,6 +122,7 @@ The cell shapes derived from the five (5) Platonic solids and (13) Archimedean s
 [%unnumbered]
 |===
 h| Requirement 6
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/shape[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/shape]
 | _For each successive level of grid refinement, a DGGS specification SHALL define DGGS Cells that are simple polygons._
 
@@ -141,7 +148,8 @@ DGGS may validly comprise more than one cell geometry. This most typically arise
 
 [%unnumbered]
 |===
-h| Requirement 7 
+h| Requirement 7
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/equal_area_precison%20[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/equal\_area\_precison]
 | _For each successive level of grid refinement, a DGGS specification SHALL specify a DGGS equal area precision that represents the maximum allowed ratio of cell area uncertainty to cell area_
 
@@ -150,6 +158,7 @@ h| Requirement 7
 [%unnumbered]
 |===
 h| Requirement 8
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/equal_area[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/equal\_area]
 | _For each successive level of grid refinement, and for each cell geometry, a DGGS specification SHALL define DGGS Cells that are equal area (or iteratively and predictably converge on equal area) within the specified level of precision_
 
@@ -165,7 +174,8 @@ The entire globe must be partitioned to a finite/discrete set of regions. Most m
 
 [%unnumbered]
 |===
-h| Requirement 9 
+h| Requirement 9
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/initial_tessellation[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/initial\_tessellation]
 | _A DGGS specification SHALL include an initial tessellation that is defined by equal area cells produced by mapping a base unit polyhedron to the surface model of the Earth._
 
@@ -177,7 +187,8 @@ To support multiple spatial resolutions, a series of increasingly finer resoluti
 
 [%unnumbered]
 |===
-h| Requirement 10 
+h| Requirement 10
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/refinement[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/refinement]
 | _A DGGS specification SHALL have a method to refine parent cells into finer resolution child cells._
 
@@ -190,6 +201,7 @@ Cell addresses, or indices, for DGGSs are derived from four general indexing met
 [%unnumbered]
 |===
 h| Requirement 11
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/addressing[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/addressing]
 | _A DGGS specification SHALL_ use _a spatial referencing method to assign a unique spatial reference (or index) to each DGGS cell across the entire DGGS Domain._
 
@@ -201,7 +213,8 @@ Spatial referencing (or geo-encoding) is achieved by addressing an identifier �
 
 [%unnumbered]
 |===
-h| Requirement 12 
+h| Requirement 12
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/spatial_reference[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/spatial\_reference]
 | _A DGGS specification SHALL define a unique index to address each cell across all defined spatial resolutions_
 
@@ -217,7 +230,8 @@ The centroid location is calculated as the geodesic center of surface area of a 
 
 [%unnumbered]
 |===
-h| Requirement 13 
+h| Requirement 13
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/spatial_reference/cell_center[http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/spatial\_reference/cell\_centroid]
 | _A DGGS specification SHALL define the location of a DGGS Cell reference to be the centroid of each cell._
 
@@ -262,6 +276,7 @@ image::images/009.png["",716,674]
 [%unnumbered]
 |===
 h| Requirement 14
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/methods/quantization[http://www.opengis.net/spec/DGGS/1.0/req/core/methods/quantization]
 | _A DGGS specification SHALL define quantization methods for assigning data to DGGS cells and retrieval methods for reading data from DGGS cells._
 
@@ -285,6 +300,7 @@ image::images/010.png["",682,545]
 [%unnumbered]
 |===
 h| Requirement 15
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic_processes/cell_navigation[http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic\_processes/cell\_navigation]
 | _A DGGS specification SHALL define functions/methods to perform both hierarchy and neighbourhood navigation operations across its entire domain._
 
@@ -293,6 +309,7 @@ h| Requirement 15
 [%unnumbered]
 |===
 h| Requirement 16
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic_processes/spatial_analysis[http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic\_processes/spatial\_analysis]
 | _A DGGS specification SHALL define functions/methods to perform simple spatial analysis operations across its entire domain._ _[ISO 19125-1:2004__]_ _SHALL be used as a basis for specifying the spatial relationship operands that support these functions._
 
@@ -321,6 +338,7 @@ image::images/011.png["",706,608]
 [%unnumbered]
 |===
 h| Requirement 17
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/methods/interoperability/query[http://www.opengis.net/spec/DGGS/1.0/req/core/methods/interoperability/query]
 | _A DGGS specification SHALL define a method, or functional algorithm, to read, interpret and execute an external data query._
 
@@ -336,6 +354,7 @@ Standard documents to this standard.].
 [%unnumbered]
 |===
 h| Requirement 18
+
 | http://www.opengis.net/spec/DGGS/1.0/req/core/methods/interoperability/broadcast[http://www.opengis.net/spec/DGGS/1.0/req/core/methods/interoperability/broadcast]
 | _A DGGS specification SHALL define a method, or functional algorithm, to translate data query/process results from internal DGGS data structures to standard data formats and to transmit/broadcast the reformatted result set via standard data transfer protocols._
 

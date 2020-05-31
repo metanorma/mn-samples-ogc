@@ -6,6 +6,7 @@
 [%unnumbered]
 |===
 ^.^h| Date ^.^h| Release ^.^h| Author ^.^h| Paragraph modified ^.^h| Description
+
 | 2016-06-16 ^.^| r1 ^.^| Martin Desruisseaux ^.^| All ^.^| First draft
 | 2016-09-19 ^.^| r2 ^.^| Martin Desruisseaux ^.^| §7.2.2, annex A ^.^| Clarification
 | 2016-12-12 ^.^| r2 ^.^| Dorian Ginane ^.^| §i, Annex A ^.^| Discussion Paper

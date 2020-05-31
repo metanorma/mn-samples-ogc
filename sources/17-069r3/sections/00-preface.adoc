@@ -54,6 +54,7 @@ This standard defines the resources listed in <<table_overview>>. For an overvie
 .Overview of resources, applicable HTTP methods and links to the document sections
 |===
 h| Resource h| Path h| HTTP method h| Document reference
+
 | Landing page | `/` | GET | <<api_landing_page>>
 | Conformance declaration | `/conformance` | GET | <<declaration_of_conformance_classes>>
 | Feature collections | `/collections` | GET | <<feature_collections>>
@@ -76,6 +77,7 @@ All questions regarding this submission should be directed to the editors or the
 [%unnumbered]
 |===
 h|Name h| Affiliation
+
 | Clemens Portele _(editor)_ | interactive instruments GmbH
 | Panagiotis (Peter) A. Vretanos _(editor)_ | CubeWerx Inc.
 | Charles Heazel _(editor)_ | Heazeltech LLC

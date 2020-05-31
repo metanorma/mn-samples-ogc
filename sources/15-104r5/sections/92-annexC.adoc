@@ -5,6 +5,7 @@
 [%unnumbered]
 |===
 h| Date h| Release h| Author h| Paragraph modified h| Description
+
 | 2015-08-10 | 0.1.0 a| Matthew Purss, +
 Robert Gibb, +
 Faramarz Samavati, +

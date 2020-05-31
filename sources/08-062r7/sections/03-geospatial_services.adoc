@@ -55,6 +55,7 @@ The OGC has defined http://www.opengeospatial.org/standards/wms[profiles of WMS]
 [%unnumbered]
 |===
 h| WMS Profiles h| Document Type
+
 | Styled Layer Descriptor Profile of WMS | Standard
 | Web Map Service - Application Profile for EO Products | Best Practice
 | DGIWG WMS 1.3 Profile and systems requirements for interoperability for use within a military environment | Best Practice
@@ -122,6 +123,7 @@ OGC has defined several profiles of CSW with some common elements required. All 
 [%unnumbered]
 |===
 h| CSW Profile h| Document Type
+
 | Catalogue Services Specification 2.0.2 - ISO Metadata Application Profile | Standard
 | CSW-ebRIM Registry Service - Part 1: ebRIM profile of CSW | Standard
 | CSW-ebRIM Registry Service – Part 2: Basic extension package | Standard

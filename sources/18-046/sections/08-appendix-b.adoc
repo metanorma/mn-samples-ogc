@@ -7,6 +7,7 @@
 .Revision History
 |===
 h| Date h| Editor h| Release h| Primary h| Descriptions
+
 | May 08, 2018 | I. Simonis | 0.1 | all | initial version
 | May 18, 2018 | I. Simonis | 0.2 | all | all contributions added
 | May 22, 2018 | I. Simonis | 0.3 | all | first full draft
