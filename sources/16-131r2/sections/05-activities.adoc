@@ -55,7 +55,7 @@ US NIST Big Data Public Working Group (NBD-PWG)
 Apache Software Foundation (ASF)
 
 * ASF oversees more than 350 leading Open Source projects, including Apache HTTP Server. ASF provides an established framework for intellectual property and financial contributions. ASF has 38 projects in the link:https://projects.apache.org/projects.html?category[category of Big Data].
-* OGC organized a geospatial track at the Apache Big Data Conference 2016. Discussion in that session led creation of a geospatial@apache.org mailing list.
+* OGC organized a geospatial track at the Apache Big Data Conference 2016. Discussion in that session led creation of a mailto:geospatial@apache.org[] mailing list.
 * OGC may organize geospatial sessions at future ASF events.
 
 LocationTech
