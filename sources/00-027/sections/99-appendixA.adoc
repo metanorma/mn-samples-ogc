@@ -5,6 +5,7 @@
 
 The XML file required for a good operation of the Catalog Certification Program is:
 
+[%unnumbered]
 [source,xml]
 ----
 <?xml version="1.0"?>

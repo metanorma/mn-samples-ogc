@@ -89,6 +89,7 @@ To test this parameter, the `QueryScope` is `local`, the `ResultType` equals `re
 
 Again, the `QueryScope` is set to `local`, the `ResultType` is `results`, the `MessageFormat` equals `NV` and the `language` is `OGC_Common`. The `SortOrder` has two possible values: ascending or descending. The sort order should always be used in conjunction with a `SortField`, like in the following example:
 
+[%unnumbered]
 [source=ruby]
 ----
 sortField[0] = OGC_CatalogService.CG_SortField ("title", OGC_CatalogService.CG_SortOrder.ascending)
@@ -119,6 +120,7 @@ The `MessageFormat` is fixed as `NV`, the `ResultType` as `results`. The two opt
 
 The `QueryScope` is local, the `MessageFormat` equals `NV` and the `ResultType` `results`. The `queryExpression` used is given by:
 
+[%unnumbered]
 [source]
 ----
 queryExpression=OGC_CatalogService.CG_QueryExpression("intersects(GeographicBoundingBox,envelope(40.71,-24.17,71.26,27.63))","", OGC_CatalogService.CG_QueryLanguage.OGC_Common)
