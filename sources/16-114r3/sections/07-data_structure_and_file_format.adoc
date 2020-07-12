@@ -27,6 +27,7 @@ This sub-section presents some global attributes that do not duplicate informati
 To identify that the file uses the CF convention, OGC 11-162r2 §7.3.2.1 requires that the `Conventions` global attribute is set to the `"CF-1.6"` string value. This Best Practice uses also some attribute convention for data discovery, which is notified by the `"ACDD-1.3"` string value.
 
 [%unnumbered]
+[width=100%]
 |===
 h| Requirement 2 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/conventions
@@ -38,6 +39,7 @@ h| Requirement 2 (from OGC 11-162r2)
 The CF conventions allow different kinds of sampling geometry such as point, time series, profile, or trajectory. This binary encoding Best Practice focuses on trajectories. This choice constraint the data layout to a series of data points along a path through space with monotonically increasing times (OGC 11-165r2 §7.5.2.3).
 
 [%unnumbered]
+[width=100%]
 |===
 h| Requirement 3 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/featureType
@@ -50,6 +52,7 @@ h| Requirement 3 (from OGC 11-162r2)
 Both CF convention and ACDD recommend the inclusion of a title in the global attributes.
 
 [%unnumbered]
+[width=100%]
 |===
 h| Recommendation 1 (from CF and ACDD)
 | http://www.opengis.net/spec/mf_binary/1.0/req/title
@@ -68,6 +71,7 @@ This sub-section presents global attributes that duplicate information available
 The geographic bounding box is given in longitude and latitude regardless of the Coordinate Reference System (CRS) used by the trajectories. Since those metadata are used for discovery purpose only, the geodetic datum is unspecified. Coordinate precision may be of only two decimal places of a degree.
 
 [%unnumbered]
+[width=100%]
 |===
 h| Recommendation 2 (from ACDD)
 | http://www.opengis.net/spec/mf_binary/1.0/req/geographicBoundingBox
@@ -92,6 +96,7 @@ The horizontal part of the spatial boundary of moving features is specified as g
 This metadata is equivalent to the `mf:STBoundedBy` element defined by Moving Features Core and to the `@stboundedby` element defined by the CSV extension, except that the geometry is not an envelope (but may be an equivalent polygon) and does not contain vertical or temporal components.
 
 [%unnumbered]
+[width=100%]
 |===
 h| Recommendation 3 (from ACDD)
 | http://www.opengis.net/spec/mf_binary/1.0/req/spatialBounds
@@ -107,6 +112,7 @@ If the feature trajectories are three-dimensional, then the vertical part of the
 This metadata is equivalent to the vertical component of `mf:STBoundedBy` (Moving Features Core) or `@stboundedby` (CSV extension).
 
 [%unnumbered]
+[width=100%]
 |===
 h| Recommendation 4 (from ACDD)
 | http://www.opengis.net/spec/mf_binary/1.0/req/verticalBounds
@@ -120,6 +126,7 @@ h| Recommendation 4 (from ACDD)
 The times of the first and last data point in the file are specified as a range of dates. Dates are formatted as specified by ISO 8601:2004, preferably the extended date-time format (_YYYY-MM-DD_ T _hh:mm:ss_ optionally followed by the time zone).
 
 [%unnumbered]
+[width=100%]
 |===
 h| Recommendation 5 (from ACDD)
 | http://www.opengis.net/spec/mf_binary/1.0/req/temporalBounds
@@ -137,6 +144,7 @@ While ACDD uses simple strings of the form `"EPSG:4326"`, this document recommen
 This metadata is equivalent to the `srsName` attribute in Moving Feature core and to the `srid` attribute in CSV extension, except for the possible separation between a horizontal and a vertical CRS.
 
 [%unnumbered]
+[width=100%]
 |===
 h| Recommendation 6 (from ACDD)
 | http://www.opengis.net/spec/mf_binary/1.0/req/boundsCRS
@@ -165,6 +173,7 @@ The CF convention proposes four different ways to organize the feature coordinat
 The file is organized by first defining netCDF dimensions (not to be confused with spatio-temporal dimensions), then variables. The dimension and variable names shall comply with the restrictions documented in OGC 11-162r2 §7.3.2.1:
 
 [%unnumbered]
+[width=100%]
 |===
 h| Requirement 4 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/names
@@ -186,6 +195,7 @@ The ragged array representation needs three netCDF dimensions, described below.
 If each feature is identified by a string value, then the netCDF file needs to declare the maximal number of characters allowed in those identifiers. Identifiers shorter than the maximal length will be padded by spaces of null characters (readers must be prepared to handle both).
 
 [%unnumbered]
+[width=100%]
 |===
 h| Requirement 5 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/identifierLength
@@ -199,6 +209,7 @@ h| Requirement 5 (from OGC 11-162r2)
 The netCDF file shall declare a dimension for information about each feature as a whole (i.e., information that does not depend on the time). The length of this dimension is the maximal number of features that can be stored in the file. It is acceptable to declare a length larger than needed in order to reserve room for future feature additions, provided that values in the count variable (<<count_variable>>) are set to zero for all missing features.
 
 [%unnumbered]
+[width=100%]
 |===
 h| Requirement 6 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/instanceDimension
@@ -212,6 +223,7 @@ h| Requirement 6 (from OGC 11-162r2)
 The netCF file shall declare a dimension for the actual data (time, geospatial coordinates and feature attributes). This dimension could have a fixed length, but it is more convenient to declare this dimension length as unlimited if new data need to be appended. Note that a netCDF file can have only one dimension of unlimited length.
 
 [%unnumbered]
+[width=100%]
 |===
 h| Requirement 7 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/sampleDimension
@@ -237,6 +249,7 @@ Each trajectory should have identifying text that specifies the moving feature. 
 The data stored in this variable are equivalent to the `mfIdRef` attribute value in Moving Feature XML file, or to the values in the `mfidref` column in a Moving Feature CSV file.
 
 [%unnumbered]
+[width=100%]
 |===
 h| Requirement 8 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/identifiers
@@ -256,6 +269,7 @@ a| The file _shall_ define a variable holding the identifier of each trajectory.
 The netCDF file shall contain a variable holding the number of points in each trajectory. The length of this variable is the maximum number of features that the netCDF file can contain.
 
 [%unnumbered]
+[width=100%]
 |===
 h| *Requirement 9* (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/count
@@ -307,6 +321,7 @@ The auxiliary coordinate variables can be as below:
 NetCDF variables having the _sample dimension_ (<<sample_dimension>>):
 
 [%unnumbered]
+[width=75%]
 |===
 | ^.^h| _time_ ^.^h| _x_ ^.^h| _y_
 | Feature A time 1 ^.^| 8:00 ^.^| 11 ^.^| 2
@@ -321,6 +336,7 @@ NetCDF variables having the _sample dimension_ (<<sample_dimension>>):
 |===
 
 [%unnumbered]
+[width=100%]
 |===
 h| Requirement 10 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/coordinates
@@ -350,6 +366,7 @@ In addition to the attributes listed in above requirement, some non-standards at
 If the file contains additional attributes for the moving features, they can be declared in array having the same length than the auxiliary coordinate variables. Elements in those variables are mapped to features and time in the same way than the values in auxiliary coordinate variables (<<auxiliary_coordinate_variables>>).
 
 [%unnumbered]
+[width=100%]
 |===
 h| Requirement 11 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/featureAttributes
@@ -360,6 +377,7 @@ h| Requirement 11 (from OGC 11-162r2)
 OGC 11-162r2 has additional requirements for the exchange of scientific data.
 
 [%unnumbered]
+[width=100%]
 |===
 h| Requirement 12 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/standardName
@@ -368,6 +386,7 @@ h| Requirement 12 (from OGC 11-162r2)
 |===
 
 [%unnumbered]
+[width=100%]
 |===
 h| Requirement 13 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/units
@@ -390,6 +409,7 @@ image::images/002.png["",510,130]
 The second approach may result in a netCDF file as big as or bigger than an equivalent CSV file since all character strings shorter than the maximal length are padded with spaces or zero values. For efficiency reasons, this paper recommends the use of flags.
 
 [%unnumbered]
+[width=100%]
 |===
 h| *Recommendation 7* (from CF-Convention)
 | http://www.opengis.net/spec/mf_binary/1.0/req/strings

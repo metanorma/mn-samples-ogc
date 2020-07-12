@@ -202,6 +202,7 @@ A set of properties defining application-specific metadata for features in a til
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
@@ -246,6 +247,7 @@ An object defining the reference to a section of the binary body of the batch ta
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
