@@ -38,7 +38,7 @@ Some of the key benefits of OWS Context are:
 An OWS Context Document primarily contains references to information and so is itself relatively small in size. It therefore is easy to exchange and access.
 
 [bibliography]
-== Normative References
+== Normative references
 
 The following normative references are used in this document.
 
