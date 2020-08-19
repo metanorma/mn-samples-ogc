@@ -190,6 +190,7 @@ A set of Batched 3D Model semantics that contain additional information about fe
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
@@ -257,6 +258,7 @@ An object defining the reference to a section of the binary body of the features
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 | *byteOffset* | `number` | The offset into the buffer in bytes. | Yes
@@ -599,6 +601,7 @@ A set of Instanced 3D Model semantics that contains values defining the position
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
@@ -771,6 +774,7 @@ An object defining the reference to a section of the binary body of the features
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 | *byteOffset* | `number` | The offset into the buffer in bytes. | Yes
@@ -1192,6 +1196,7 @@ A set of Point Cloud semantics that contains values defining the position and ap
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
@@ -1387,6 +1392,7 @@ An object defining the reference to a section of the binary body of the features
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 | *byteOffset* | `number` | The offset into the buffer in bytes. | Yes

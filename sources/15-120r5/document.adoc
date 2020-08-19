@@ -21,6 +21,7 @@
 :imagesdir: images
 :local-cache-only:
 :data-uri-image:
+:break-up-urls-in-tables:
 
 include::sections/00-front-material.adoc[]
 

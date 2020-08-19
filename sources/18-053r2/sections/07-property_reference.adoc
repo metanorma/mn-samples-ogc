@@ -10,6 +10,7 @@ A 3D Tiles tileset.
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
@@ -124,6 +125,7 @@ Metadata about the entire tileset.
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
@@ -185,6 +187,7 @@ A bounding volume that encloses a tile or its content. Exactly one `box`, `regio
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
@@ -274,6 +277,7 @@ A dictionary object of metadata about per-feature properties.
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
@@ -334,6 +338,7 @@ A tile in a 3D Tiles tileset.
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
@@ -458,6 +463,7 @@ Metadata about the tile's content and a link to the content.
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 

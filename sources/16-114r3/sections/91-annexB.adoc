@@ -4,6 +4,7 @@
 == Revision history
 
 [%unnumbered]
+[width=100%]
 |===
 ^.^h| Date ^.^h| Release ^.^h| Author ^.^h| Paragraph modified ^.^h| Description
 

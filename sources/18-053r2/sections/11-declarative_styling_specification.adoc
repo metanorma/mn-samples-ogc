@@ -1497,6 +1497,7 @@ A 3D Tiles style.
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
@@ -1571,6 +1572,7 @@ A series of conditions evaluated in order, like a series of if...else statements
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 | *conditions* | `array[]` | A series of boolean conditions evaluated in order. For the first one that evaluates to true, its value, the 'result' (which is also an expression), is evaluated and returned. Result expressions must all be the same type. If no condition evaluates to true, the result is `undefined`. When conditions is `undefined`, `null`, or an empty object, the result is `undefined`. | No
@@ -1625,6 +1627,7 @@ A 3D Tiles style with additional properties for Point Clouds.
 *Properties*
 
 [%unnumbered]
+[width=100%]
 |===
 | | Type | Description | Required
 
