@@ -62,19 +62,19 @@ _Requirements class for the GetResult operation._
 === Overview of WPS Core Operations
 The WPS interface specified in this section supports retrieval and execution of processes for geospatial computation. For that purpose, the WPS service model specifies the following operations that may be invoked by a WPS client and performed by a WPS server footnote:[NOTE: Future extensions of this specification may introduce additional operations.]:
 
-GetCapabilities -- This operation allows a client to request information about the server's capabilities and processes offered (see <<subsec-getcapabilities-operation>>).
+GetCapabilities -- This operation allows a client to request information about the server's capabilities and processes offered.
 
-DescribeProcess -- This operation allows a client to request detailed metadata on selected processes offered by a server (see <<subsec-describeprocess-operation>>).
+DescribeProcess -- This operation allows a client to request detailed metadata on selected processes offered by a server.
 
-Execute -- This operation allows a client to execute a process comprised of a process identifier, the desired data inputs and the desired output formats (see <<subsec-execute-operation>>).
+Execute -- This operation allows a client to execute a process comprised of a process identifier, the desired data inputs and the desired output formats.
 
-GetStatus -- This operation allows a client to query status information of a processing job (conditional, see <<subsec-getstatus-operation>>).
+GetStatus -- This operation allows a client to query status information of a processing job (conditional).
 
-GetResult -- This operation allows a client to query the results of a processing job (conditional, see <<subsec-getresult-operation>>).
+GetResult -- This operation allows a client to query the results of a processing job (conditional).
 
 During a sequence of WPS requests, a client should first issue a GetCapabilities request to the server to obtain an up-to date listing of available processes. Then, it may issue a DescribeProcess request to find out more details about particular processes offered, including the supported data formats. To run a process with the desired input data, a client will issue an Execute request footnote:[NOTE: A WPS server can change its offering at any time, in particular between a GetCapabilities, a subsequent DescribeProcess, and a subsequent Execute request. Any quality of service (QoS) guarantees are within the responsibilities of the service provider and not covered by this standard.] (<<fig-common-sequence-wps-uml-diagram>>).
 
-The operations GetStatus and GetResult are used in conjunction with asynchronous execution. If a WPS server offers synchronous process execution only, these operations may not be implemented. Detailed guidance is provided by the corresponding profiles (<<subsec-synchronous-wps>> and <<subsec-asynchronous-wps>>) and conformance classes.
+The operations GetStatus and GetResult are used in conjunction with asynchronous execution. If a WPS server offers synchronous process execution only, these operations may not be implemented. Detailed guidance is provided by the corresponding profiles and conformance classes.
 
 [[fig-common-sequence-wps-uml-diagram]]
 .Common sequence of WPS operations UML sequence diagram

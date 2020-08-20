@@ -104,4 +104,3 @@ The service shall indicate the allowed job control capabilities per process.
 
 ====
 
-
