@@ -1,12 +1,5 @@
 
 == WPS Native Process Model
-The WPS native process model is a realization of the abstract process model defined in <<subsec-abstract-process-model>>. The native process model breaks down into the following components:
-
-. A general structure for process interface descriptions (<<subsec-common-description-type>>, <<subsec-process-description>>) that support process discovery and cataloging
-. A set of data types to submit and receive data during process execution (<<subsec-data-description-structure>>, <<subsec-data-types>>)
-. A framework for defining process profiles to improve interoperability between different process implementations (<<subsec-process-profiles>>).
-
-The native process model is encapsulated in a separate conformance class (<<annex-subsec-wps-process-model-encoding-conformance-class>>) and can be used independently from the rest of the WPS specification. It is designed to provide an interoperable description of processing functions, regardless whether they are offered by a web service for remote invocation, or reside in a Desktop GIS for local use. By abstracting from a concrete implementation this process model may be used to create metadata records in process catalogs or help comparing and aligning the processing functions in different systems.
 
 This section describes the information model of requirements. The corresponding XML and plain text encodings are specified in <<sec-wps-native-process-model-encoding>>.
 

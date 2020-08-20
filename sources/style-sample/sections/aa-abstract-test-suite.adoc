@@ -24,10 +24,7 @@ Verify that the server implements the Basic WPS conformance class.
 
 [requirement,type="general",label="Test method"]
 ======
-Verify that the server implements the Synchronous WPS and/or the Asynchronous WPS conformance class. Verify that the requests and responses to a supported operation are syntactically correct. Verify that the service supports the Synchronous WPS Conformance class, the Asynchronous WPS Conformance class or both. Verify that all process offerings implement the native process model. Verify the following list of conformance tests:
-
-- <<annex-subsec-process-xml-encoding>>, <<annex-subsec-process-data-types-xml-encoding>>
-- <<annex-subsec-synchronous-wps-conformance-class>> and/or <<annex-subsec-asynchronous-wps-conformance-class>>
+Verify that the server implements the Synchronous WPS and/or the Asynchronous WPS conformance class. Verify that the requests and responses to a supported operation are syntactically correct. Verify that the service supports the Synchronous WPS Conformance class, the Asynchronous WPS Conformance class or both. Verify that all process offerings implement the native process model. 
 ======
 
 ====

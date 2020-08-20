@@ -49,8 +49,6 @@ _The mime type for XML encoded literal and bounding box data values shall be "`t
 ==== Process Description
 This clause specifies the XML encoding for the Process description.
 
-A Process example is listed in <<annex-subsec-process-description>>.
-
 [requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/native-process/xml-encoding/process",obligation="requirement",subject="Derived software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description;OWS Common 2.0"]
 ====
 
@@ -69,9 +67,6 @@ _The content of the XML encoded Process description shall comply with the conten
 
 ==== Generic Process
 This clause specifies the XML encoding for the GenericProcess.
-
-A GenericProcess example is listed in <<annex-subsec-generic-process>>.
-
 
 [requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/native-process/xml-encoding/profile/generic-process",obligation="requirement",subject="Derived software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/native-process/profile/generic;OWS Common 2.0"]
 ====
