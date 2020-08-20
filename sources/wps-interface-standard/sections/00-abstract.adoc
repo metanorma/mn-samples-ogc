@@ -1,0 +1,45 @@
+
+.Preface
+This standard is a continuation of WPS 1.0, a standard for web-based processing of geospatial data. It incorporates a range of change requests that have been submitted since the release of WPS 1.0 and further follows the OGC standard for modular specifications [OGC 08-131r3].
+
+In contrast to the prior version, WPS 2.0 provides a core conceptual model that may be used to specify a WPS in different architectures such as REST or SOAP.
+
+The WPS process model has been encapsulated into separate requirements and conformance classes, so it may be used independently from WPS servers in process catalogs and metadata records. The expressive power of process descriptions has been enhanced by permitting structured (or nested) inputs and outputs. The concept of process profiles has been clarified and extended to support process descriptions at different levels of abstraction.
+
+Conversely, the process model itself has been largely decoupled from the WPS protocol, allowing the use of other domain-specific descriptions of processes, e.g. those defined in SensorML, and to execute them on a WPS server.
+
+This specification also provides a Basic WPS conformance class that comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.
+
+Future work will target the definition of process interfaces for common processes based on the process model conformance class. Such profiles will encourage the development of well-defined, reliable, interoperable and exchangeable process implementations.
+
+If OGC baseline and related specifications should further progress towards REST-oriented interfaces, the development of a REST-oriented WPS interface standard should be considered.
+
+
+[abstract]
+== Abstract
+In many cases geospatial or location data, including data from sensors, must be processed before the information can be used effectively. The OGC Web Processing Service (WPS) Interface Standard provides a standard interface that simplifies the task of making simple or complex computational processing services accessible via web services. Such services include well-known processes found in GIS software as well as specialized processes for spatio-temporal modeling and simulation. While the OGC WPS standard was designed with spatial processing in mind, it can also be used to readily insert non-spatial processing tasks into a web services environment.
+
+
+[.preface]
+== Submitters
+
+[%unnumbered]
+|===
+|Name |Representing |OGC member
+
+|Matthias Müller |TU Dresden |Yes
+|Benjamin Pross |52°North |Yes
+|Stan Tillman |Intergraph Corporation |Yes
+|Jeff Yutzler |Image Matters LLC |Yes
+|Luís de Sousa |CRP Henri Tudor |Yes
+|Arnaud Cauchy |Airbus Defence & Space |Yes
+|===
+
+
+
+// Additional preliminary elements
+
+[.preface]
+== Introduction
+
+The WPS standard provides a robust, interoperable, and versatile protocol for process execution on web services. It supports both immediate processing for computational tasks that take little time and asynchronous processing for more complex and time consuming tasks. Moreover, the WPS standard defines a general process model that is designed to provide an interoperable description of processing functions. It is intended to support process cataloguing and discovery in a distributed environment.

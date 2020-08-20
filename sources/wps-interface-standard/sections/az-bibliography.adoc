@@ -1,0 +1,8 @@
+
+[appendix]
+== Bibliography
+
+[bibliography]
+* [[[dcat,DCAT]]], W3C: *Data Catalog Vocabulary,* W3C Recommendation 16 January 2014, https://www.w3.org/TR/vocab-dcat/
+
+* [[[iso19101, ISO 19101]]], ISO: *ISO 19101-1:2014 -- Geographic information -- Reference model -- Part 1: Fundamentals* https://www.iso.org/standard/59164.html

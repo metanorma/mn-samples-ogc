@@ -1,0 +1,107 @@
+
+== WPS Conceptual Model
+The WPS service model defines basic properties of any WPS server. A WPS server is a web service that provides access to pre-defined processes and provides job control operations to instantiate, control and monitor processing jobs (<<fig-artifacts-of-the-wps>>).
+
+[[fig-artifacts-of-the-wps]]
+.Artifacts of the WPS service model
+image::fig-artifacts-of-the-wps.png[]
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model",obligation="requirement",subject="Derived information model, encoding, and software implementation"]
+====
+
+[requirement,type="general",label="/req/conceptual-model/discovery"]
+======
+Requirements class for service discovery.
+======
+
+[requirement,type="general",label="/req/conceptual-model/capabilities"]
+======
+Requirements class for service capabilities.
+======
+
+[recommendation,type="general",label="/req/conceptual-model/process-model"]
+======
+Requirements class for supported process models.
+======
+
+[requirement,type="general",label="/req/conceptual-model/job-control"]
+======
+Requirements class for job control.
+======
+
+[requirement,type="general",label="/req/conceptual-model/process-execution"]
+======
+Requirements class for process execution.
+======
+
+[requirement,type="general",label="/req/conceptual-model/data-transmission"]
+======
+Requirements class for data transmission between service and client.
+======
+
+[requirement,type="general",label="/req/conceptual-model/job-monitoring"]
+======
+Requirements class for job monitoring.
+======
+
+====
+
+
+=== Service Discovery
+Any WPS server shall be self-contained, i.e. provide an initial endpoint that can be used by a WPS client to determine the server's capabilities.
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/discovery",obligation="requirement",subject="Derived information model, encoding, and software implementation"]
+====
+
+[requirement,type="general",label="/req/conceptual-model/discovery/endpoint"]
+======
+All WPS servers shall have an initial end-point (HTTP URI).
+======
+
+[requirement,type="general",label="/req/conceptual-model/discovery/capabilities"]
+======
+The service shall provide a systematic discovery mechanism for all service capabilities.
+======
+
+[requirement,type="general",label="/req/conceptual-model/discovery/mechanism"]
+======
+The discovery mechanism for the service capabilities shall be predictable from the initial endpoint.
+======
+
+====
+
+=== Service Capabilities
+The basic capabilities of any WPS server fall into two categories: The first category comprises capabilities for process discovery and retrieval of process descriptions. The second category comprises capabilities to manage and monitor processing jobs.
+
+Since the processes provided by a WPS server may have different degrees of complexity, the server shall indicate the allowed job control capabilities mode per process offering.
+
+Further service capabilities, i.e. for secure communication and user authentication may be provided with the service but are neither covered nor restricted by this specification as long as they do not alter or change the semantics of other job control capabilities.
+
+
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/capabilities",obligation="requirement",subject="Derived information model, encoding, and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process"]
+====
+
+[requirement,type="general",label="/req/conceptual-model/capabilities/process-offering"]
+======
+The service shall provide a process offering capabilities. This capability informs service clients about the available processes.
+======
+
+[requirement,type="general",label="/req/conceptual-model/capabilities/process-model-identification"]
+======
+All process offerings shall provide an identifier for their process model used.
+======
+
+[requirement,type="general",label="/req/conceptual-model/capabilities/job-control"]
+======
+The service shall provide job control and monitoring capabilities. These capabilities enable service clients to manage processing jobs via the service interface.
+======
+
+[requirement,type="general",label="/req/conceptual-model/capabilities/job-control-per-process-offering"]
+======
+The service shall indicate the allowed job control capabilities per process.
+======
+
+====
+
+

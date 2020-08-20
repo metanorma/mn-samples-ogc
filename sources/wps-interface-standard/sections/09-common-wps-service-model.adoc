@@ -1,0 +1,159 @@
+
+== Common WPS Service Model
+A Web Processing Service consists of processes and service operations. By definition, processes represent the computational functionality of a WPS, while service operations are used to interact with the WPS and in particular to use the service's process offerings.
+
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model;OWS Common 2.0"]
+====
+
+[requirement,type="general",label="/req/service/model/data-transmission"]
+======
+_Requirements class for data transmission._
+======
+
+[requirement,type="general",label="/req/service/model/handling"]
+======
+_Requirements class for WPS service handling._
+======
+
+[requirement,type="general",label="/req/service/model/process-offering-properties"]
+======
+_Requirements class for common process offering properties._
+======
+
+[requirement,type="general",label="/req/service/model/status-info"]
+======
+_Requirements class for the status information document._
+======
+
+[requirement,type="general",label="/req/service/model/result"]
+======
+_Requirements class for the processing result document._
+======
+
+[requirement,type="general",label="/req/service/model/get-capabilities"]
+======
+_Requirements class for the GetCapabilities operation._
+======
+
+[requirement,type="general",label="/req/service/model/describe-process"]
+======
+_Requirements class for the DescribeProcess operation._
+======
+
+[requirement,type="general",label="/req/service/model/execute"]
+======
+_Requirements class for the Execute operation._
+======
+
+[requirement,type="general",label="/req/service/model/get-status"]
+======
+_Requirements class for the GetStatus operation._
+======
+
+[requirement,type="general",label="/req/service/model/get-result"]
+======
+_Requirements class for the GetResult operation._
+======
+
+====
+
+
+=== Overview of WPS Core Operations
+The WPS interface specified in this section supports retrieval and execution of processes for geospatial computation. For that purpose, the WPS service model specifies the following operations that may be invoked by a WPS client and performed by a WPS server footnote:[NOTE: Future extensions of this specification may introduce additional operations.]:
+
+GetCapabilities -- This operation allows a client to request information about the server's capabilities and processes offered (see <<subsec-getcapabilities-operation>>).
+
+DescribeProcess -- This operation allows a client to request detailed metadata on selected processes offered by a server (see <<subsec-describeprocess-operation>>).
+
+Execute -- This operation allows a client to execute a process comprised of a process identifier, the desired data inputs and the desired output formats (see <<subsec-execute-operation>>).
+
+GetStatus -- This operation allows a client to query status information of a processing job (conditional, see <<subsec-getstatus-operation>>).
+
+GetResult -- This operation allows a client to query the results of a processing job (conditional, see <<subsec-getresult-operation>>).
+
+During a sequence of WPS requests, a client should first issue a GetCapabilities request to the server to obtain an up-to date listing of available processes. Then, it may issue a DescribeProcess request to find out more details about particular processes offered, including the supported data formats. To run a process with the desired input data, a client will issue an Execute request footnote:[NOTE: A WPS server can change its offering at any time, in particular between a GetCapabilities, a subsequent DescribeProcess, and a subsequent Execute request. Any quality of service (QoS) guarantees are within the responsibilities of the service provider and not covered by this standard.] (<<fig-common-sequence-wps-uml-diagram>>).
+
+The operations GetStatus and GetResult are used in conjunction with asynchronous execution. If a WPS server offers synchronous process execution only, these operations may not be implemented. Detailed guidance is provided by the corresponding profiles (<<subsec-synchronous-wps>> and <<subsec-asynchronous-wps>>) and conformance classes.
+
+[[fig-common-sequence-wps-uml-diagram]]
+.Common sequence of WPS operations UML sequence diagram
+image::fig-common-sequence-wps-uml-diagram.png[]
+
+=== Data Transmission
+Data exchange between WPS clients and servers requires an agreement on the general data exchange patterns and suitable communication protocols. Data may be sent to (received from) a WPS in two distinct ways: (1) by reference (using HTTP/GET or HTTP/POST), and (2) by value. Clients may send input data in either fashion. Output data may be requested in any fashion declared by the data transmission options defined for the process offering. Typically, large data inputs and outputs are delivered by reference.
+
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/model/data-transmission",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model"]
+====
+
+[requirement,type="general",label="/req/service/model/data-transmission/data"]
+======
+_The data transmission structures for process inputs and outputs shall comply with the structures defined in <<fig-input-output-transmission-uml-class-diagram>>, <<tab-parts-of-the-inline-data-structure>>, <<tab-properties-of-the-dataencodingattributes-structure>>, <<tab-parts-of-the-reference-structure>>, <<tab-parts-of-the-requestbody-structure>>, and <<tab-parts-of-the-bodyreference-structure>>._
+======
+
+====
+
+
+[[fig-input-output-transmission-uml-class-diagram]]
+.Input and output data transmission structures UML class diagram
+image::fig-input-output-transmission-uml-class-diagram.png[]
+
+
+[[tab-parts-of-the-inline-data-structure]]
+.Parts of the inline Data structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|mimetype 3.3+|See <<tab-properties-of-the-dataencodingattributes-structure>> -- Properties of the DataEncodingAttributes structure.
+|encoding
+|schema
+|(any) footnote:[The data is embedded here as part of the Data element, in the mimeType, encoding, and schema indicated by the first three parameters if they exist, or by the relevant defaults.] |The actual input or output data. |Any type and value |One (mandatory)
+|===
+
+
+[[tab-properties-of-the-dataencodingattributes-structure]]
+.Properties of the DataEncodingAttributes structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|mimetype |MimeType of the data. |Character String |One (mandatory)
+|encoding |Well-known encoding or character set of the data. |URI "`raw`" shall be used for plain binary data "`base64`" shall be used for base64 encoded data Character set identifiers (e.g. "`UTF-8`") shall be used for text or CSV data. |Zero or one (conditional) footnote:dataencodingattributes-fn-a[This shall be provided if: 1) the process data item supports multiple encodings / schemas, and 2) the data is not of the default encoding / schema, and 3a) the schema / encoding cannot be retrieved from the data itself, or 3b) the encoding / schema information is deeply buried inside the data (i.e. not part of some header) and requires significant parsing effort.]
+|schema |Identification of the data schema. |URI |Zero or one (conditional) footnote:dataencodingattributes-fn-a[]
+|===
+
+[[tab-parts-of-the-reference-structure]]
+.Parts of the Reference structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|mimetype 3.3+|See <<tab-properties-of-the-dataencodingattributes-structure>> -- Properties of the DataEncodingAttributes structure.
+|encoding
+|schema
+|href |HTTP URI that points to the remote resource where the data may be retrieved. |HTTP URI |One (mandatory)
+|RequestBody |Request body element that is used for HTTP/POST requests to the above URL. If no request body is present, an HTTP/GET |Request should be used to retrieve the data. RequestBody structure, see <<tab-parts-of-the-requestbody-structure>>. |Zero or one (optional)
+|===
+
+[[tab-parts-of-the-requestbody-structure]]
+.Parts of the RequestBody structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Body |The contents of this element to be used as the body of the HTTP request message to be sent to the service identified in ../Reference/@href. For example, it could be an XML encoded WFS request using HTTP/POST. |Any type |Zero or one (conditional) footnote:requestbody-fn-a[One and only one of these items shall be included.]
+|BodyReference |Reference to a remote document to be used as the body of an HTTP/POST request message to the service identified in the href element in the Reference structure (<<tab-parts-of-the-reference-structure>>). |BodyReference, see <<tab-parts-of-the-bodyreference-structure>>. |Zero or one (conditional) footnote:requestbody-fn-a[]
+|===
+
+[[tab-parts-of-the-bodyreference-structure]]
+.Parts of the BodyReference structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|href |HTTP URI that points to the remote resource where the request body may be retrieved. |HTTP URI |One (mandatory)
+|===
+
+
