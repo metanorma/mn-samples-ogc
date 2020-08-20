@@ -1,0 +1,136 @@
+
+[[sec-wps-native-process-model-encoding]]
+== WPS Native Process Model Encoding
+
+=== XML Schema Implementation
+This section specifies the XML encoding of the elements of the WPS native process model. The referred XML schema elements are provided by the associated schema package delivered with this standard and located at http://schemas.opengis.net/wps/2.0/.
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/native-process/xml-encoding",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/native-process/model;OWS Common 2.0"]
+====
+
+[requirement,type="general",label="/req/native-process/xml-encoding/datatypes"]
+======
+_Requirements class for data type XML encoding._
+======
+
+[requirement,type="general",label="/req/native-process/xml-encoding/process"]
+======
+_Requirements class for process description XML encoding._
+======
+
+[requirement,type="general",label="/req/native-process/xml-encoding/generic-process"]
+======
+_Requirements class for generic profile XML encoding._
+======
+
+====
+
+
+==== Data Types
+The XML encoding of data types defines encoding rules for ComplexData, LiteralData, BoundingBoxData as well as their values.
+
+Examples for data type encodings are listed in <<annex-subsec-data-types>>.
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/native-process/xml-encoding/datatypes",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data;http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data;http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data;OWS Common 2.0"]
+====
+
+[requirement,type="general",label="/req/native-process/xml-encoding/datatypes/schema"]
+======
+_The XML encoding of ComplexData, LiteralData, BoundingBoxData and their values shall comply with the XML schema provided by dataTypes.xsd._
+======
+[requirement,type="general",label="/req/native-process/xml-encoding/datatypes/mimetype"]
+======
+_The mime type for XML encoded literal and bounding box data values shall be "`text/xml`"._
+======
+
+====
+
+
+==== Process Description
+This clause specifies the XML encoding for the Process description.
+
+A Process example is listed in <<annex-subsec-process-description>>.
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/native-process/xml-encoding/process",obligation="requirement",subject="Derived software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description;OWS Common 2.0"]
+====
+
+[requirement,type="general",label="/req/native-process/xml-encoding/process/schema"]
+======
+_An XML encoded Process description shall be a valid XML document of the type wps:Process._
+======
+
+[requirement,type="general",label="/req/native-process/xml-encoding/process/content"]
+======
+_The content of the XML encoded Process description shall comply with the content of the information elements defined by the requirements class http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description._
+======
+
+====
+
+
+==== Generic Process
+This clause specifies the XML encoding for the GenericProcess.
+
+A GenericProcess example is listed in <<annex-subsec-generic-process>>.
+
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/native-process/xml-encoding/profile/generic-process",obligation="requirement",subject="Derived software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/native-process/profile/generic;OWS Common 2.0"]
+====
+
+[requirement,type="general",label="/req/native-process/xml-encoding/profile/generic/schema"]
+======
+_An XML encoded description of a Generic Process shall be a valid XML document of the type wps:GenericProcess._
+======
+
+[requirement,type="general",label="/req/native-process/xml-encoding/profile/generic/content"]
+======
+_The content of the XML encoded description of a Generic Process shall comply with the content of the information elements defined by the requirements class http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic._
+======
+
+====
+
+
+=== Plain Text Encoding for LiteralData and BoundingBoxData Values
+This clause specifies the plain text encoding of data types for literal and bounding box data values.
+
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/native-process/plain-text-encoding/datatypes",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data;http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data;http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data;OWS Common 2.0"]
+====
+
+[requirement,type="general",label="/req/native-process/plain-text-encoding/datatypes/schema"]
+======
+_The plain text encoding of literal and bounding box values comply with the BNF schema below._
+======
+
+[requirement,type="general",label="/req/native-process/plain-text-encoding/datatypes/mimetype"]
+======
+_The mime type for plain text encoded literal and bounding box values shall be "`text/plain`"._
+======
+
+====
+
+[%unnumbered]
+[subs="macros"]
+----
+Literal values - BNF schema:
+literalvalue   = value *1("@datatype=" datatype) *1("@uom=" uom)
+value          = 1*VCHAR
+datatype  = URI
+uom       = URI
+
+Literal values - Example:
+70@datatype=http://www.w3.org/2001/XMLSchema#integer@uom=meter
+
+BoundingBox values - BNF schema footnote:[The dimensions attribute is included for compliance with the BoundingBox structure defined in OWS Common [OGC 06-121r9\]. However, its use should be generally avoided since the number of dimensions is already part of the CRS definition and usually superfluous.]:
+bbox      = lc_coords "," uc_coords ["," crs] ["," dimensions]
+lc_coords = number ["," number]
+uc_coords = number ["," number]
+number         = 1*DIGIT["." 1*DIGIT]
+crs       = 1*VCHAR
+dimensions = 1*DIGIT
+
+BoundingBoxData values - Examples:
+51.9,7.0,53.0,8.0,EPSG:4326
+
+51.9,7.0,53.0,8.0,http://www.opengis.net/def/crs/EPSG/0/4258
+----
+

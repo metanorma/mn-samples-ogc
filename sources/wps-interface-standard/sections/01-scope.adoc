@@ -1,0 +1,14 @@
+
+== Scope
+This document specifies the interface to a general purpose Web Processing Service (WPS). A WPS is a web service that enables the execution of computing processes and the retrieval of metadata describing their purpose and functionality. Typically, these processes combine raster, vector, and/or coverage data with well-defined algorithms to produce new raster, vector, and/or coverage information.
+
+The WPS protocol supports both synchronous and asynchronous execution of processes. Synchronous execution may be used in simple and quick computation scenarios, where the data processing takes little to almost no time. Asynchronous processing is particularly well suited for complex computation scenarios which may take significant time.
+
+The specification uses a core and extensions model to organize its features:
+
+. A core conceptual model, defining basic requirements for a web based processing service,
+. A process model to support the description and discovery of processes on the web,
+. A basic data model that supports arbitrary (standard or non-standard) data formats for inputs and outputs,
+. A WPS service model and encoding based on OGC baseline standards, and
+. A Dismiss extension to allow clients to terminate asynchronous processing jobs.
+

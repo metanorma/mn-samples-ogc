@@ -1,0 +1,58 @@
+
+== Conventions
+This section provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.
+
+=== Abbreviated terms
+
+GRS:: Coordinate Reference System
+
+GML:: Geography Markup Language
+
+HTTP:: Hypertext Transfer Protocol
+
+ISO:: International Organization for Standardization
+
+KVP:: Keyword Value Pair
+
+MIME:: Multipurpose Internet Mail Extensions
+
+OGC:: Open Geospatial Consortium
+
+UML:: Unified Modeling Language
+
+URI:: Universal Resource Identifier
+
+URL:: Uniform Resource Locator
+
+WPS:: Web Processing Service
+
+XML:: Extensible Markup Language
+
+
+=== Use of the Term "`Process`"
+The term process is one of the most used terms both in the information and geosciences domain. If not stated otherwise, this specification uses the term process as an umbrella term for any algorithm, calculation or model that either generates new data or transforms some input data into output data as defined in <<subsec-process>>.
+
+
+=== UML Notation
+Unified Modeling Language (UML) static structure diagrams appearing in this specification are used as described in section 5.2 of OGC06-121r9. Further, the following conventions hold:
+
+- UML elements having a package name of "`OWS Common`" are those defined in the UML model of OWS Common [OGC 06-121r9].
+- UML data type Any is used here as an equivalence to XML's xsd:any.
+- UML elements not qualified with a package name are those defined in this standard.
+
+The UML model data dictionary is specified herein in a series of tables. The contents of the columns in these tables are described in section 5.5 of [OGC 06-121r9]. The contents of these data dictionary tables are normative, including any table footnotes.
+
+=== Namespace Conventions
+The following namespaces are used in this document. The prefix abbreviations used constitute conventions used here, but are not normative. The namespaces to which the prefixes refer are normative, however.
+
+[%unnumbered]
+[cols="3"]
+|===
+^h|Prefix	^h|Namespace URI	^h|Description
+
+|ows	|http://www.opengis.net/ows/2.0	|OWS Common 2.0 XML Schema
+|xlink	|http://www.w3.org/1999/xlink	|Definitions for XLINK
+|xml	|http://www.w3.org/XML/1998/namespace	|XML (required for xml:lang)
+|xs	|http://www.w3.org/2001/XMLSchema	|XML Schema
+|===
+

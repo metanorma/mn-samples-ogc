@@ -1,0 +1,53 @@
+= OGC(R) WPS 2.0.2 Interface Standard Corrigendum 2
+:edition: 2.0.2
+:doctype: standard
+:docsubtype: implementation
+:committee: technical
+:workingGroup:
+:fullname: Matthias Mueller
+:role: editor
+:fullname_2: Benjamin Pross
+:role_2: editor
+:docnumber: 14-065r2
+:external-id: http://www.opengis.net/doc/IS/wps/2.0.2
+:received-date: 2014-11-25
+:issued-date: 2015-01-27
+:published-date: 2015-03-05
+:confirmed-date: 2018-02-16
+:copyright-year: 2015
+:mn-document-class: ogc
+:status: published
+:language: en
+:docfile: document.adoc
+:keywords: TBD, geoprocessing, ogcdoc, OGC document, processes, processing, WPS
+:submitting-organizations: TU Dresden; 52°North; Intergraph Corporation; Image Matters LLC; CRP Henri Tudor; Airbus Defence and Space
+:imagesdir: images
+:local-cache-only:
+:data-uri-image:
+
+
+include::sections/00-abstract.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-conformance.adoc[]
+
+include::sections/03-references.adoc[]
+
+include::sections/04-terms-def.adoc[]
+
+include::sections/05-conventions.adoc[]
+
+include::sections/06-wps-conceptual-model.adoc[]
+
+include::sections/07-wps-native-process-model.adoc[]
+
+include::sections/08-wps-native-process-model-encoding.adoc[]
+
+include::sections/09-common-wps-service-model.adoc[]
+
+include::sections/aa-abstract-test-suite.adoc[]
+
+include::sections/ab-xml-examples.adoc[]
+
+include::sections/az-bibliography.adoc[]

@@ -1,0 +1,111 @@
+
+[[annex-xml-examples]]
+[appendix, obligation=informative]
+== XML Examples
+
+[[annex-subsec-data-types]]
+=== Data Types
+
+==== Complex Data Description
+
+[%unnumbered]
+[source,xml]
+----
+<wps:ComplexData>
+  <wps:Format mimeType="application/geotiff" encoding="raw"
+default="true"/>
+  <wps:Format mimeType="application/geotiff" encoding="base64"/>
+</wps:ComplexData>
+----
+
+
+==== Literal Data Description
+
+[%unnumbered]
+[source,xml]
+----
+<wps:LiteralData>
+  <wps:Format mimeType="text/plain" default="true"/>
+  <wps:Format mimeType="text/xml"/>
+  <LiteralDataDomain default="true">
+    <ows:AllowedValues>
+      <ows:Range>
+        <ows:MinimumValue>1</ows:MinimumValue>
+        <ows:MaximumValue>1000</ows:MaximumValue>
+      </ows:Range>
+    </ows:AllowedValues>
+    <ows:DataType
+ows:reference="http://www.w3.org/2001/XMLSchema#float">float
+</ows:DataType>
+    <ows:UOM>meters</ows:UOM>
+    <ows:DefaultValue>100</ows:DefaultValue>
+  </LiteralDataDomain>
+  <LiteralDataDomain>
+    <ows:AllowedValues>
+      <ows:Range>
+        <ows:MinimumValue>1</ows:MinimumValue>
+        <ows:MaximumValue>3000</ows:MaximumValue>
+      </ows:Range>
+    </ows:AllowedValues>
+    <ows:DataType
+ows:reference="http://www.w3.org/2001/XMLSchema#float">float
+</ows:DataType>
+    <ows:UOM>feet</ows:UOM>
+  </LiteralDataDomain>
+</wps:LiteralData>
+----
+
+
+==== Literal data values
+
+[%unnumbered]
+[source,xml]
+----
+<LiteralValue
+  dataType=http://www.w3.org/2001/XMLSchema#double
+  uom="meter">
+    42.1
+</LiteralValue>
+
+<LiteralValue
+  dataType="http://www.w3.org/2001/XMLSchema#string">
+    ArableLand
+</LiteralValue>
+----
+
+
+==== BoundingBox Data Description
+
+[%unnumbered]
+[source,xml]
+----
+<wps:BoundingBoxData>
+  <wps:Format mimeType="text/plain" default="true"/>
+  <wps:Format mimeType="text/xml"/>
+  <wps:SupportedCRS default="true">EPSG:4326</wps:SupportedCRS>
+  <wps:SupportedCRS>
+    http://www.opengis.net/def/crs/EPSG/0/4258
+  </wps:SupportedCRS>
+</wps:BoundingBoxData>
+----
+
+
+==== BoundingBox Data Values
+
+[%unnumbered]
+[source,xml]
+----
+<ows:BoundingBox crs="EPSG:4326">
+  <ows:LowerCorner>51.9 7.0</ows:LowerCorner>
+  <ows:UpperCorner>53.0 8.0</ows:UpperCorner>
+</ows:BoundingBox>
+
+<ows:BoundingBox
+   crs="http://www.opengis.net/def/crs/EPSG/0/4258">
+  <ows:LowerCorner>51.9 7.0</ows:LowerCorner>
+  <ows:UpperCorner>53.0 8.0</ows:UpperCorner>
+</ows:BoundingBox>
+----
+
+
+

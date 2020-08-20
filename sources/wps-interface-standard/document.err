@@ -1,0 +1,77 @@
+sources/wps-interface-standard/document.err errors
+
+
+== Bibliography
+
+(): Could not retrieve OGC 08-131r3: no access to online site
+
+
+== AsciiDoc Input
+
+(ID _bibliography): Section not marked up as [bibliography]!
+
+
+== Style Warning
+
+(XML Line 000120): Table should have title
+(XML Line 000283): Hanging paragraph in clause
+(XML Line 000355): Table should have title
+(XML Line 000394): Hanging paragraph in clause
+(XML Line 000459): Hanging paragraph in clause
+(XML Line 000678): Hanging paragraph in clause
+(XML Line 000678): Hanging paragraph in clause
+(XML Line 000774): Hanging paragraph in clause
+(XML Line 001002): Hanging paragraph in clause
+(XML Line 001021): Hanging paragraph in clause
+(XML Line 001023): Hanging paragraph in clause
+
+
+== Syntax
+
+(XML Line 000238:294): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000335:64): IDREF "annex-subsec-synchronous-wps-conformance-class" without matching ID
+(XML Line 000345:65): IDREF "annex-subsec-asynchronous-wps-conformance-class" without matching ID
+(XML Line 000355:75): IDREF "annex-subsec-wps-process-model-encoding-conformance-class" without matching ID
+(XML Line 000365:66): IDREF "annex-subsec-dismiss-extension-conformance-class" without matching ID
+(XML Line 000378:290): IDREF "term-feature_collection" without matching ID
+(XML Line 000392:279): IDREF "spatial_data_wbp" without matching ID
+(XML Line 000567:281): IDREF "subsec-abstract-process-model" without matching ID
+(XML Line 000570:195): IDREF "subsec-process-description" without matching ID
+(XML Line 000573:206): IDREF "subsec-data-types" without matching ID
+(XML Line 000576:200): IDREF "subsec-process-profiles" without matching ID
+(XML Line 000579:195): IDREF "annex-subsec-wps-process-model-encoding-conformance-class" without matching ID
+(XML Line 000621:118): element "xref" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000621:187): element "xref" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000633:163): element "xref" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000730:172): element "xref" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000730:215): element "xref" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000820:127): IDREF "annex-subsec-process-description" without matching ID
+(XML Line 000830:237): element "link" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000834:130): IDREF "annex-subsec-generic-process" without matching ID
+(XML Line 000844:254): element "link" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000869:50): element "fn" not allowed here; expected the element end-tag, text or element "annotation", "callout" or "note"
+(XML Line 000944:227): IDREF "subsec-getcapabilities-operation" without matching ID
+(XML Line 000945:221): IDREF "subsec-describeprocess-operation" without matching ID
+(XML Line 000946:245): IDREF "subsec-execute-operation" without matching ID
+(XML Line 000947:199): IDREF "subsec-getstatus-operation" without matching ID
+(XML Line 000948:192): IDREF "subsec-getresult-operation" without matching ID
+(XML Line 000950:339): IDREF "subsec-synchronous-wps" without matching ID
+(XML Line 000950:384): IDREF "subsec-asynchronous-wps" without matching ID
+(XML Line 000963:177): element "xref" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000963:234): element "xref" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000963:307): element "xref" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000963:362): element "xref" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000963:419): element "xref" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 000963:482): element "xref" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 001112:269): element "link" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 001113:311): element "link" not allowed here; expected the element end-tag, text or element "br", "em", "smallcap", "stem", "strike", "strong", "sub", "sup", "tt" or "underline"
+(XML Line 001114:124): element "requirement" not allowed here; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
+(XML Line 001118:75): element "recommendation" not allowed here; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
+(XML Line 001122:72): element "requirement" not allowed here; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
+(XML Line 001125:160): IDREF "annex-subsec-process-data-types-xml-encoding" without matching ID
+(XML Line 001125:97): IDREF "annex-subsec-process-xml-encoding" without matching ID
+(XML Line 001128:110): IDREF "annex-subsec-synchronous-wps-conformance-class" without matching ID
+(XML Line 001128:182): IDREF "annex-subsec-asynchronous-wps-conformance-class" without matching ID
+(XML Line 001130:44): element "example" incomplete; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
+(XML Line 001199:95): value of attribute "obligation" is invalid; must be equal to "informative" or "normative"
+(XML Line 001208:1472): element "ext" not allowed here; expected the element end-tag or element "abstract", "accesslocation", "classification", "copyright", "extent", "keyword", "license", "medium", "place", "price", "relation", "series", "status" or "validity"

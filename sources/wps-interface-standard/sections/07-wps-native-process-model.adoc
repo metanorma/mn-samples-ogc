@@ -1,0 +1,145 @@
+
+== WPS Native Process Model
+The WPS native process model is a realization of the abstract process model defined in <<subsec-abstract-process-model>>. The native process model breaks down into the following components:
+
+. A general structure for process interface descriptions (<<subsec-common-description-type>>, <<subsec-process-description>>) that support process discovery and cataloging
+. A set of data types to submit and receive data during process execution (<<subsec-data-description-structure>>, <<subsec-data-types>>)
+. A framework for defining process profiles to improve interoperability between different process implementations (<<subsec-process-profiles>>).
+
+The native process model is encapsulated in a separate conformance class (<<annex-subsec-wps-process-model-encoding-conformance-class>>) and can be used independently from the rest of the WPS specification. It is designed to provide an interoperable description of processing functions, regardless whether they are offered by a web service for remote invocation, or reside in a Desktop GIS for local use. By abstracting from a concrete implementation this process model may be used to create metadata records in process catalogs or help comparing and aligning the processing functions in different systems.
+
+This section describes the information model of requirements. The corresponding XML and plain text encodings are specified in <<sec-wps-native-process-model-encoding>>.
+
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/native-process/model",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process"]
+====
+
+[requirement,type="general",label="/req/native-process/model/descriptiontype"]
+======
+_Requirements class for the common description type._
+======
+
+[requirement,type="general",label="/req/native-process/model/io-format"]
+======
+_Requirements class for IO format._
+======
+
+[requirement,type="general",label="/req/native-process/model/datatypes"]
+======
+_Requirements class for data types._
+======
+
+[requirement,type="general",label="/req/native-process/model/description"]
+======
+_Requirements class for process description._
+======
+
+[requirement,type="general",label="/req/native-process/model/profile"]
+======
+_Requirements class for process profile._
+======
+
+====
+
+[[subsec-common-description-type]]
+=== Common Description Type
+Descriptive elements of processes, inputs and outputs are derived from the BasicIdentificationType provided by OWS Common (<<fig-descriptiontype-for-processes>>). Other descriptive information shall be recorded in the Metadata element in the form of simple links with an appropriate role identifier.
+
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description-type",obligation="requirement",subject="Derived encoding and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process;OWS Common 2.0 -- BasicDescriptionType"]
+====
+
+[requirement,type="general",label="/req/native-process/model/description-type/basic-identification"]
+======
+_Process descriptions as well as the associated process inputs and outputs shall be derived from the OWS Common BasicIdentificationType._
+======
+
+[requirement,type="general",label="/req/native-process/model/description-type/structure"]
+======
+_The DescriptionType shall comply with the structure defined in <<fig-descriptiontype-for-processes>> and <<tab-properties-of-the-descriptiontype-structure>>._
+======
+
+[requirement,type="general",label="/req/native-process/model/description-type/metadata"]
+======
+_For linking documentation material or other metadata with the process itself, its inputs and its outputs, the metadata element from the BasicIdentificationType shall be used._
+======
+
+[requirement,type="general",label="/req/native-process/model/description-type/metadata-simple-xlink"]
+======
+_The metadata elements within process descriptions shall be simple links with a human-readable title (<<tab-properties-of-the-metadata-structure>>)._
+======
+
+[requirement,type="general",label="/req/native-process/model/description-type/metadata-documentation-role"]
+======
+_The metadata elements for documentation shall use the role identifier "`http://www.opengis.net/spec/wps/2.0/def/process/description/documentation`"._
+======
+
+====
+
+[[fig-descriptiontype-for-processes]]
+.DescriptionType for processes, process inputs and process outputs UML class diagram
+image::fig-descriptiontype-for-processes.png[]
+
+[[tab-properties-of-the-descriptiontype-structure]]
+.Properties of the DescriptionType structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Title |Title of the process, input, and output. Normally available for display to a human. |ows:Title |One (mandatory)
+|Abstract |Brief narrative description of a process, input, and output. Normally available for display to a human. |ows:Abstract |Zero or one (optional) Include when available and useful.
+|Keywords |Keywords that characterize a process, its inputs, and outputs. |ows:Keywords |Zero or more (optional) Include when available and useful.
+|Identifier |Unambiguous identifier of a process, input, and output. |ows:Identifier Value is a URI or HTTP-URI footnote:[Additional content such as separate code space and version attributes in the Identifier element are not allowed.] |One (mandatory)
+|Metadata |Reference to additional metadata about this item. |ows:Metadata Allowed values are specified in <<tab-properties-of-the-metadata-structure>>. |Zero or more (optional)
+|===
+
+[[tab-properties-of-the-metadata-structure]]
+.Properties of the Metadata structure
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|Title |Title of the documentation. Normally available for display to a human. |Character String |One (mandatory)
+|Link type |Type of the xlink, fixed to simple. |Character String, fixed to "`simple`". |One (mandatory)
+|Role |Role identifier, indicating the role of the linked document. |HTTP-URI |One (mandatory)
+|href |Reference to a documentation site for a process, input, or output. |HTTP-URI |One (mandatory)
+|===
+
+[[subsec-data-description-structure]]
+=== Data Description Structure
+The DataDescription structure contains basic properties for defining data inputs and outputs, including mimetype, encoding and schema. These properties specify supported formats for input and output data of computing processes. Any input or output item may support multiple formats, one of which is the default format. Processes may require that an input or output data set does not exceed a certain data volume.
+
+
+[requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/io-format",obligation="requirement",subject="Derived information model, encoding, and software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process"]
+====
+
+[requirement,type="general",label="/req/native-process/model/io-format/structure"]
+======
+_Format descriptions of process inputs and outputs shall comply with the DataDescription structure defined in <<fig-datadescription-and-supported-formats>> and <<tab-format-properties>>._
+======
+
+[requirement,type="general",label="/req/native-process/model/io-format/default"]
+======
+_One of the formats defined in the DataDescription structure shall be the default format, i.e. have the attribute "`default`" set to "`true`"._
+======
+
+====
+
+[[fig-datadescription-and-supported-formats]]
+.DataDescription and supported formats UML class diagram
+image::fig-datadescription-and-supported-formats.png[]
+
+
+[[tab-format-properties]]
+.Format properties
+[cols="4"]
+|===
+^h|Names ^h|Definition ^h|Data type and values ^h|Multiplicity and use
+
+|mimetype |Media type of the data. |Character String |One (mandatory)
+|encoding |Encoding procedure or character set of the data (e.g. raw or base64) |Character String, fixed to "`simple`". |One (mandatory)
+|schema |Identification of the data schema. |HTTP-URI |One (mandatory)
+|maximumMegabytes |The maximum size of the input data, in megabytes. |Integer |Zero or one (optional)
+|default |Indicates that this format is the default format. footnote:format-properties-a[Defaults to FALSE if omitted.] |Boolean |Zero or one (conditional) footnote:format-properties-a[], footnote:[One of the formats included in the DataDescription structure shall have the attribute "`default`" set to "`true`".]
+|===
+
