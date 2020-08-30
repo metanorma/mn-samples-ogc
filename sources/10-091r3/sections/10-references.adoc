@@ -57,3 +57,26 @@ http://www.unidata.ucar.edu/software/netcdf/docs/netcdf-cxx.html#Top
 
 * [[[netcdf_java,1]]] The netCDF Java Library +
 http://www.unidata.ucar.edu/software/netcdf-java/
+
+
+[%bibitem]
+=== NetCDF Classic and 64-bit Offset File Formats
+id:: esds-rfc
+docid::
+docid.type:: NASA
+docid.id:: ESDS-RFC-011v2.00
+contributor::
+contributor.role:: author
+contributor.person.name.completename:: Rew R.
+contributor::
+contributor.role:: author
+contributor.person.name.completename:: Heimbigner D.
+contributor::
+contributor.role:: author
+contributor.person.name.completename:: Davis E.
+contributor::
+contributor.role:: author
+contributor.person.name.completename:: Caron J.
+link::
+type::: src
+content::: http://www.esdswg.org/spg/rfc/esds-rfc-011/ESDS-RFC-011v2.00.pdf
