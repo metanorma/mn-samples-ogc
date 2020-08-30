@@ -3,9 +3,7 @@
 [bibliography]
 == References
 
-The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
-
-* [[[gdf5,GDF 5.0]]], https://www.iso.org/standard/54610.html[ISO: ISO 14825:2011 ISO Intelligent transport Systems - Geographic Data Files (GDF) - GDF 5.0 (2011)]
+* [[[gdf5,1]]], https://www.iso.org/standard/54610.html[ISO: ISO 14825:2011 ISO Intelligent transport Systems - Geographic Data Files (GDF) - GDF 5.0 (2011)]
 
 * [[[ogc14-005r5, OGC 14-005r5]]], http://docs.opengeospatial.org/is/14-005r5/14-005r5.html[OGC: OGC 14-005r5, OGC Indoor Geography Markup Language (IndoorGML) - with Corrigendum 1.0.3 (2018)]
 

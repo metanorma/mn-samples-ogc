@@ -9,6 +9,6 @@ The following normative documents contain provisions that, through reference in 
 * [[[ogc10-090r3,OGC 10-090r3]]], OGC: OGC 10-090r3: OGC Network Common Data Form (netCDF): Core Encoding Standard, 2011
 * [[[ogc10-092r3,OGC 10-092r3]]], OGC: OGC 10-092r3: NetCDF Binary Encoding Extension Standard: netCDF Classic and 64-bit Offset Format, 2011
 * [[[ogc11-165r2,OGC 11-165r2]]], OGC: OGC 11-165r2: CF-netCDF3 Data Model Extension standard, 2012
-* [[[netcdf,NetCDF]]], Lawrence Livermore National Laboratory: NetCDF CF Metadata Conventions – http://cfconventions.org/[http://cfconventions.org/]
-* [[[acdd,ACDD]]], ESIP: Attribute Convention for Data Discovery (ACDD) – http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery[http://wiki.esipfed.org/index.php/Attribute\_Convention\_for\_Data\_Discovery]
-* [[[noaa,NOAA]]], NOAA: NCEI netCDF Templates – http://www.nodc.noaa.gov/data/formats/netcdf/[http://www.nodc.noaa.gov/data/formats/netcdf/]
+* [[[netcdf,1]]], Lawrence Livermore National Laboratory: NetCDF CF Metadata Conventions – http://cfconventions.org/[http://cfconventions.org/]
+* [[[acdd,1]]], ESIP: Attribute Convention for Data Discovery (ACDD) – http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery[http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery]
+* [[[noaa,1]]], NOAA: NCEI netCDF Templates – http://www.nodc.noaa.gov/data/formats/netcdf/[http://www.nodc.noaa.gov/data/formats/netcdf/]

@@ -10,53 +10,50 @@
 
 * [[[ogc06-121r3, OGC 06-121r3]]], OGC 06-121r3, _OGC Web Services Common Specification_
 
-* [[[nasa1, NASA ESDS-RFC-011v2.00 R. Rew]]], E. Hartnett, D. Heimbigner, E. Davis, J. Caron: _NetCDF Classic and 64-bit Offset File Formats_ +
-http://www.esdswg.org/spg/rfc/esds-rfc-011/ESDS-RFC-011v2.00.pdf
-
-* [[[netcdf_refdoc, Unidata UCAR]]], NetCDF Reference Document, 2009 +
+* [[[netcdf_refdoc,1]]] Unidata UCAR, NetCDF Reference Document, 2009 +
 http://www.unidata.ucar.edu/software/netcdf/docs/
 
-* [[[netcfd_userguide, Unidata UCAR]]], NetCDF User Guide +
+* [[[netcfd_userguide,1]]] Unidata UCAR, NetCDF User Guide +
 http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html
 
-* [[[netcdf_refimpl, Unidata UCAR]]], NetCDF Reference Implementations +
+* [[[netcdf_refimpl,1]]] Unidata UCAR, NetCDF Reference Implementations +
 ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf.tar.gz
 
-* [[[cf_conv, CF Conventions]]] +
+* [[[cf_conv,1]]] CF Conventions, +
 http://www.cfconventions.org
 
-* [[[cf_stand, Proposed NASA CF Standard]]] +
+* [[[cf_stand,1]]] Proposed NASA CF Standard +
 http://www.esdswg.org/spg/rfc/esds-rfc-021
 
-* [[[netcdf_classic, NASA Standard: NetCDF Classic and 64-bit Offset File Formats]]] +
+* [[[netcdf_classic,1]]] NASA Standard: NetCDF Classic and 64-bit Offset File Formats +
 http://www.esdswg.org/spg/rfc/esds-rfc-011/ESDS-RFC-011v1.00.pdf
 
-* [[[netcdf_enc, Unidata netCDF encoding documentation]]] +
+* [[[netcdf_enc,1]]] Unidata netCDF encoding documentation +
 http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html#Classic-File-Parts
 
-* [[[hdf5, HDF 5 Encoding for netCDF Enhanced Data Model]]] +
+* [[[hdf5,1]]] HDF 5 Encoding for netCDF Enhanced Data Model +
 http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html#NetCDF_002d4-File-Parts
 
-* [[[ncml_doc, NcML Documentation]]] +
+* [[[ncml_doc,1]]] NcML Documentation, +
 http://www.unidata.ucar.edu/software/netcdf/ncml/
 
-* [[[ncml-gml_doc, NcML-GML Documentation]]] +
+* [[[ncml-gml_doc,1]]] NcML-GML Documentation +
 http://zeus.pin.unifi.it/joomla/index.php?option=com_content&task=view&id=50&Itemid=78
 
-* [[[cdl, CDL Syntax Description]]] +
+* [[[cdl,1]]] CDL Syntax Description +
 http://www.unidata.ucar.edu/software/netcdf/docs/netcdf.html#CDL-Syntax
 
-* [[[netcdf_c, The netCDF C Interface Guide]]] +
+* [[[netcdf_c,1]]] The netCDF C Interface Guide +
 http://www.unidata.ucar.edu/software/netcdf/docs/netcdf-c.html#Top
 
-* [[[netcdf_fortran77, The netCDF Fortran 77 Interface Guide]]] +
+* [[[netcdf_fortran77,1]]] The netCDF Fortran 77 Interface Guide +
 http://www.unidata.ucar.edu/software/netcdf/docs/netcdf-f77.html#Top
 
-* [[[netcdf_fortran90, The netCDF Fortran 90 Interface Guide]]] +
+* [[[netcdf_fortran90,1]]] The netCDF Fortran 90 Interface Guide +
 http://www.unidata.ucar.edu/software/netcdf/docs/netcdf-f90.html#Top
 
-* [[[netcdf_cpp, The netCDF C++ Interface Guide]]] +
+* [[[netcdf_cpp,1]]] The netCDF C++ Interface Guide +
 http://www.unidata.ucar.edu/software/netcdf/docs/netcdf-cxx.html#Top
 
-* [[[netcdf_java, The netCDF Java Library]]] +
+* [[[netcdf_java,1]]] The netCDF Java Library +
 http://www.unidata.ucar.edu/software/netcdf-java/
