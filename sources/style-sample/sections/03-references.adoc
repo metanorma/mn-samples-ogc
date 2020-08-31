@@ -13,5 +13,5 @@ The following normative documents contain provisions that, through reference in 
 
 * [[[iso-8601-2004,ISO 8601:2004]]], ISO 8601:2004, Data elements and interchange formats -- Information interchange -- Representation of dates and times
 
-* [[[xml-schema-part2,XML Schema Part 2]]], XML Schema Part 2: Datatypes Second Edition, W3C Recommendation 28 October 2004.
+* [[[xml-schema-part2,W3C xmlschema-2]]], XML Schema Part 2: Datatypes Second Edition, W3C Recommendation 28 October 2004.
 
