@@ -4,11 +4,11 @@
 
 * [[[openapi,1]]], Open API Initiative: *OpenAPI Specification 3.0.2*, 2018 https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md
 
-* [[[gmlsf,1]]], van den Brink, L., Portele, C., Vretanos, P.: OGC 10-100r3, *Geography Markup Language (GML) Simple Features Profile*, 2012 http://portal.opengeospatial.org/files/?artifact_id=42729
+* [[[gmlsf,OGC 10-100r3]]], van den Brink, L., Portele, C., Vretanos, P.: OGC 10-100r3, *Geography Markup Language (GML) Simple Features Profile*, 2012 http://portal.opengeospatial.org/files/?artifact_id=42729
 
 * [[[rfc7946,RFC 7946]]], Butler, H., Daly, M., Doyle, A., Gillies, S., Hagen, S., Schaub, T.: IETF RFC 7946, *The GeoJSON Format*, 2016 https://tools.ietf.org/rfc/rfc7946.txt
 
-* [[[html5,1]]], W3C: *HTML5*, W3C Recommendation, 2019 http://www.w3.org/TR/html5/
+* [[[html5,W3C html5]]], W3C: *HTML5*, W3C Recommendation, 2019 http://www.w3.org/TR/html5/
 
 * [[[schema,1]]], *Schema.org:* http://schema.org/docs/schemas.html
 

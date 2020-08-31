@@ -3,8 +3,8 @@
 [bibliography]
 == References
 
-* [[[gdf5,1]]], https://www.iso.org/standard/54610.html[ISO: ISO 14825:2011 ISO Intelligent transport Systems - Geographic Data Files (GDF) - GDF 5.0 (2011)]
+* [[[gdf5,ISO 14825:2011]]], _ISO: ISO 14825:2011 ISO Intelligent transport Systems - Geographic Data Files (GDF) - GDF 5.0 (2011)_
 
-* [[[ogc14-005r5, OGC 14-005r5]]], http://docs.opengeospatial.org/is/14-005r5/14-005r5.html[OGC: OGC 14-005r5, OGC Indoor Geography Markup Language (IndoorGML) - with Corrigendum 1.0.3 (2018)]
+* [[[ogc14-005r5, OGC 14-005r5]]], _OGC: OGC 14-005r5, OGC Indoor Geography Markup Language (IndoorGML) - with Corrigendum 1.0.3 (2018)_
 
-* [[[ogc12-019, OGC 12-019]]], https://portal.opengeospatial.org/files/?artifact_id=47842[OGC: OGC 12-019, OGC City Geography Markup Language (CityGML) Encoding Standards 2.0 (2012)]
+* [[[ogc12-019, OGC 12-019]]], _OGC: OGC 12-019, OGC City Geography Markup Language (CityGML) Encoding Standards 2.0 (2012)_
