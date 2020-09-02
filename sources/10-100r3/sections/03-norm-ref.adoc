@@ -13,4 +13,4 @@ The following normative documents contain provisions that, through reference in 
 
 * [[[w3cxml-2,W3C xmlschema-2]]], XML Schema Part 2: Datatypes, http://www.w3.org/TR/xmlschema-2
 
-* [[[w3c,W3C REC-xml-names-19990114]]], Namespaces in XML, http://www.w3.org/TR/1999/REC-xml-names-19990114
+* [[[w3c,W3C REC-xml-names]]], Namespaces in XML, http://www.w3.org/TR/1999/REC-xml-names-19990114
