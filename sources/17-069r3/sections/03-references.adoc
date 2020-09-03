@@ -6,15 +6,15 @@
 
 * [[[gmlsf,OGC 10-100r3]]], van den Brink, L., Portele, C., Vretanos, P.: OGC 10-100r3, *Geography Markup Language (GML) Simple Features Profile*, 2012 http://portal.opengeospatial.org/files/?artifact_id=42729
 
-* [[[rfc7946,RFC 7946]]], Butler, H., Daly, M., Doyle, A., Gillies, S., Hagen, S., Schaub, T.: IETF RFC 7946, *The GeoJSON Format*, 2016 https://tools.ietf.org/rfc/rfc7946.txt
+* [[[rfc7946,IETF RFC 7946]]], Butler, H., Daly, M., Doyle, A., Gillies, S., Hagen, S., Schaub, T.: IETF RFC 7946, *The GeoJSON Format*, 2016 https://tools.ietf.org/rfc/rfc7946.txt
 
 * [[[html5,W3C html5]]], W3C: *HTML5*, W3C Recommendation, 2019 http://www.w3.org/TR/html5/
 
 * [[[schema,1]]], *Schema.org:* http://schema.org/docs/schemas.html
 
-* [[[rfc2616,RFC 2616]]], Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Masinter, L., Leach, P., Berners-Lee, T.: IETF RFC 2616, *HTTP/1.1*, 1999 http://tools.ietf.org/rfc/rfc2616.txt
+* [[[rfc2616,IETF RFC 2616]]], Fielding, R., Gettys, J., Mogul, J., Frystyk, H., Masinter, L., Leach, P., Berners-Lee, T.: IETF RFC 2616, *HTTP/1.1*, 1999 http://tools.ietf.org/rfc/rfc2616.txt
 
-* [[[rfc2818,RFC 2818]]], Rescorla, E.: IETF RFC 2818, *HTTP Over TLS*, 2000 http://tools.ietf.org/rfc/rfc2818.txt
+* [[[rfc2818,IETF RFC 2818]]], Rescorla, E.: IETF RFC 2818, *HTTP Over TLS*, 2000 http://tools.ietf.org/rfc/rfc2818.txt
 
 [%bibitem]
 === Date and Time on the Internet: Timestamps
