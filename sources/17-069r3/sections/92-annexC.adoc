@@ -5,7 +5,7 @@
 [bibliography]
 * [[[yaml,1]]], Ben-Kiki, O., Evans, C., Ingy döt Net: *YAML Ain’t Markup Language,* https://yaml.org/
 
-* [[[rfc3986,RFC 3986]]], Berners-Lee, T., Fielding, R., Masinter, L.: *IETF RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax,* http://tools.ietf.org/rfc/rfc3986.txt
+* [[[rfc3986,IETF RFC 3986]]], Berners-Lee, T., Fielding, R., Masinter, L.: *IETF RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax,* http://tools.ietf.org/rfc/rfc3986.txt
 
 * [[[link_relations,1]]], IANA: *Link Relation Types,* https://www.iana.org/assignments/link-relations/link-relations.xml
 
