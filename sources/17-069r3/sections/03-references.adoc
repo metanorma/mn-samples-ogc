@@ -16,6 +16,12 @@
 
 * [[[rfc2818,IETF RFC 2818]]], Rescorla, E.: IETF RFC 2818, *HTTP Over TLS*, 2000 http://tools.ietf.org/rfc/rfc2818.txt
 
+
+////
+The references below are typeset in AsciiBib for illustration purposes. 
+As they are from IETF, they can also be auto-fetched by using the above syntax.
+////
+
 [%bibitem]
 === Date and Time on the Internet: Timestamps
 id:: rfc3339
