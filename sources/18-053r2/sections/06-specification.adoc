@@ -84,7 +84,7 @@ All angles are in radians.
 [[coordinate-reference-system-crs]]
 === Coordinate reference system (CRS)
 
-3D Tiles uses a right-handed Cartesian coordinate system; that is, the cross product of _x_ and _y_ yields _z_. 3D Tiles defines the _z_ axis as up for local Cartesian coordinate systems. A tileset's global coordinate system will often be in a http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf[WGS 84] earth-centered, earth-fixed (ECEF) reference frame (http://spatialreference.org/ref/epsg/4979/[EPSG 4979]), but it doesn't have to be, e.g., a power plant may be defined fully in its local coordinate system for use with a modeling tool without a geospatial context.
+3D Tiles uses a right-handed Cartesian coordinate system; that is, the cross product of stem:[x] and stem:[y] yields stem:[z]. 3D Tiles defines the stem:[z] axis as up for local Cartesian coordinate systems. A tileset's global coordinate system will often be in a http://earth-info.nga.mil/GandG/publications/tr8350.2/wgs84fin.pdf[WGS 84] earth-centered, earth-fixed (ECEF) reference frame (http://spatialreference.org/ref/epsg/4979/[EPSG 4979]), but it doesn't have to be, e.g., a power plant may be defined fully in its local coordinate system for use with a modeling tool without a geospatial context.
 
 An additional <<tile-transform,tile transform>> may be applied to transform a tile's local coordinate system to the parent tile's coordinate system.
 
@@ -196,7 +196,7 @@ image::009.jpg["",500,500]
 [[box]]
 ===== Box
 
-The `boundingVolume.box` property is an array of 12 numbers that define an oriented bounding box in a right-handed 3-axis (x, y, z) Cartesian coordinate system where the _z_-axis is up. The first three elements define the x, y, and z values for the center of the box. The next three elements (with indices 3, 4, and 5) define the _x_-axis direction and half-length. The next three elements (indices 6, 7, and 8) define the _y_-axis direction and half-length. The last three elements (indices 9, 10, and 11) define the _z_-axis direction and half-length.
+The `boundingVolume.box` property is an array of 12 numbers that define an oriented bounding box in a right-handed 3-axis stem:[(x, y, z)] Cartesian coordinate system where the stem:[z]-axis is up. The first three elements define the stem:[x], stem:[y], and stem:[z] values for the center of the box. The next three elements (with indices 3, 4, and 5) define the stem:[x]-axis direction and half-length. The next three elements (indices 6, 7, and 8) define the stem:[y]-axis direction and half-length. The last three elements (indices 9, 10, and 11) define the stem:[z]-axis direction and half-length.
 
 [[fig10]]
 .A bounding box
@@ -219,7 +219,7 @@ image::010.jpg["",500,500]
 [[sphere]]
 ===== Sphere
 
-The `boundingVolume.sphere` property is an array of four numbers that define a bounding sphere. The first three elements define the x, y, and z values for the center of the sphere in a right-handed 3-axis (x, y, z) Cartesian coordinate system where the _z_-axis is up. The last element (with index 3) defines the radius in meters.
+The `boundingVolume.sphere` property is an array of four numbers that define a bounding sphere. The first three elements define the stem:[x], stem:[y], and stem:[z] values for the center of the sphere in a right-handed 3-axis stem:[(x, y, z)] Cartesian coordinate system where the stem:[z]-axis is up. The last element (with index 3) defines the radius in meters.
 
 [[fig11]]
 .A bounding sphere
@@ -334,7 +334,7 @@ The transformation from each tile's local coordinate system to the tileset's glo
 [[_glTF_transforms]]
 ===== glTF transforms
 
-<<_Batched_3D_Model,Batched 3D Model>> and <<_Instanced_3D_Model,Instanced 3D Model>> tiles embed glTF, which defines its own node hierarchy and uses a _y_-up coordinate system. Any transforms specific to a tile format and the `tile.transform` property are applied after these transforms are resolved.
+<<_Batched_3D_Model,Batched 3D Model>> and <<_Instanced_3D_Model,Instanced 3D Model>> tiles embed glTF, which defines its own node hierarchy and uses a stem:[y]-up coordinate system. Any transforms specific to a tile format and the `tile.transform` property are applied after these transforms are resolved.
 
 [[_glTF_node_hierarchy]]
 ====== glTF node hierarchy
@@ -344,7 +344,7 @@ First, glTF node hierarchy transforms are applied according to the https://githu
 [[_y-up_to_z-up]]
 ====== y-up to z-up
 
-Next, for consistency with the _z_-up coordinate system of 3D Tiles, glTFs must be transformed from _y_-up to _z_-up at runtime. This is done by rotating the model about the _x_-axis by π/2 radians. Equivalently, apply the following matrix transform (shown here as row-major):
+Next, for consistency with the stem:[z]-up coordinate system of 3D Tiles, glTFs must be transformed from stem:[y]-up to stem:[z]-up at runtime. This is done by rotating the model about the stem:[x]-axis by stem:[pi//2] radians. Equivalently, apply the following matrix transform (shown here as row-major):
 
 [%unnumbered]
 [source,javascript]
@@ -372,13 +372,13 @@ More broadly the order of transformations is:
 
 . <<tile-transform,Tile transform>>
 
-*Implementation note:* when working with source data that is inherently _z_-up, such as data in WGS 84 coordinates or in a local _z_-up coordinate system, a common workflow is:
+*Implementation note:* when working with source data that is inherently stem:[z]-up, such as data in WGS 84 coordinates or in a local stem:[z]-up coordinate system, a common workflow is:
 
-* Mesh data, including positions and normals, are not modified - they remain _z_-up.
+* Mesh data, including positions and normals, are not modified - they remain stem:[z]-up.
 
-* The root node matrix specifies a column-major _z_-up to _y_-up transform. This transforms the source data into a _y_-up coordinate system as required by glTF.
+* The root node matrix specifies a column-major stem:[z]-up to stem:[y]-up transform. This transforms the source data into a stem:[y]-up coordinate system as required by glTF.
 
-* At runtime the glTF is transformed back from _y_-up to _z_-up with the matrix above. Effectively the transforms cancel out.
+* At runtime the glTF is transformed back from stem:[y]-up to stem:[z]-up with the matrix above. Effectively the transforms cancel out.
 
 Example glTF root node:
 
@@ -678,7 +678,7 @@ image::018.png["",700,437]
 
 ===== K-d trees
 
-A k-d tree is created when each tile has two children separated by a _splitting plane_ parallel to the _x_, _y_, or _z_ axis (or latitude, longitude, height). The split axis is often round-robin rotated as levels increase down the tree, and the splitting plane may be selected using the median split, surface area heuristics, or other approaches.
+A k-d tree is created when each tile has two children separated by a _splitting plane_ parallel to the stem:[x], stem:[y], or stem:[z] axis (or latitude, longitude, height). The split axis is often round-robin rotated as levels increase down the tree, and the splitting plane may be selected using the median split, surface area heuristics, or other approaches.
 
 Note that a k-d tree does not have uniform subdivision like typical 2D geospatial tiling schemes and, therefore, can create a more balanced tree for sparse and non-uniformly distributed datasets.
 

@@ -404,7 +404,7 @@ Unlike GLSL, the styling language does not support swizzling. For example, `vec3
 
 Vectors support the following unary operators: `-`, `+`.
 
-Vectors support the following binary operators by performing component-wise operations: `===`, `!==`, `+`, `-`, `*`, `/`, and `%`. For example `vec4(1.0) === vec4(1.0)` is true since the _x_, _y_, _z_, and _w_ components are equal. Operators are essentially overloaded for `vec2`, `vec3`, and `vec4`.
+Vectors support the following binary operators by performing component-wise operations: `===`, `!==`, `+`, `-`, `*`, `/`, and `%`. For example `vec4(1.0) === vec4(1.0)` is true since the stem:[x], stem:[y], stem:[z], and stem:[w] components are equal. Operators are essentially overloaded for `vec2`, `vec3`, and `vec4`.
 
 `vec2`, `vec3`, and `vec4` have a `toString` function for explicit (and implicit) conversion to strings in the format `'(x, y)'`, `'(x, y, z)'`, and `'(x, y, z, w)'`.
 
