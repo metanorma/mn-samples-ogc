@@ -5,7 +5,7 @@
 
 This annex provides the normative XML schema document for the SeamlessNavigation Module.
 
-[source,xml]
+[source%unnumbered,xml]
 ----
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema
