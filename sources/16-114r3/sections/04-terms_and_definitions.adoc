@@ -68,7 +68,7 @@ Path of a moving *point* described by a one parameter set of points.
 
 === One parameter set of geometries
 
-Function _f_ from an interval _t_ ∈ [_a_, _b_] such that _f_(_t_) is a geometry and for each point _P_∈_f_(_a_) there is a one parameter set of points (called the trajectory of _P_) _P_(_t_) : [_a_, _b_] → _P_(_t_) such that _P_(_t_) ∈_f_(_t_).
+Function stem:[f] from an interval stem:[t in [a, b]] such that stem:[f(t)] is a geometry and for each point stem:[P in f(a)] there is a one parameter set of points (called the trajectory of stem:[P]) stem:[P(t) : [a, b\] -> P(t)] such that stem:[P(t) in f(t)].
 
 [.source]
 <<iso19141>>
