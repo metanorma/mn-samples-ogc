@@ -160,7 +160,7 @@ When a Batch Table is present or the `BATCH_LENGTH` property is greater than `0`
 [[coordinate-system]]
 ===== Coordinate system
 
-By default embedded glTFs use a right handed coordinate system where the _y_-axis is up. For consistency with the _z_-up coordinate system of 3D Tiles, glTFs must be transformed at runtime. See glTF transforms for more details.
+By default embedded glTFs use a right handed coordinate system where the stem:[y]-axis is up. For consistency with the stem:[z]-up coordinate system of 3D Tiles, glTFs must be transformed at runtime. See glTF transforms for more details.
 
 Vertex positions may be defined relative-to-center for high-precision rendering, see http://help.agi.com/AGIComponents/html/BlogPrecisionsPrecisions.htm[Precisions, Precisions]. If defined, `RTC_CENTER` specifies the center position that all vertex positions are relative to after the coordinate system transform and glTF node hierarchy transforms have been applied.
 
@@ -581,7 +581,7 @@ In either case, `header.gltfByteLength` contains the length of the glTF field in
 
 ===== Coordinate system
 
-By default glTFs use a right handed coordinate system where the _y_-axis is up. For consistency with the _z_-up coordinate system of 3D Tiles, glTFs must be transformed at runtime. See <<_glTF_transforms,glTF transforms>> for more details.
+By default glTFs use a right handed coordinate system where the stem:[y]-axis is up. For consistency with the stem:[z]-up coordinate system of 3D Tiles, glTFs must be transformed at runtime. See <<_glTF_transforms,glTF transforms>> for more details.
 
 
 ==== File extension and MIME type
@@ -925,7 +925,7 @@ Examples using these semantics can be found in the <<_Examples,examples section>
 
 ====== Coordinate reference system (CRS)
 
-3D Tiles local coordinate systems use a right-handed 3-axis (x, y, z) Cartesian coordinate system; that is, the cross product of _x_ and _y_ yields _z_. 3D Tiles defines the _z_ axis as up for local Cartesian coordinate systems (also see <<coordinate-reference-system-crs,coordinate reference system>>).
+3D Tiles local coordinate systems use a right-handed 3-axis stem:[(x, y, z)] Cartesian coordinate system; that is, the cross product of stem:[x] and stem:[y] yields stem:[z]. 3D Tiles defines the stem:[z] axis as up for local Cartesian coordinate systems (also see <<coordinate-reference-system-crs,coordinate reference system>>).
 
 
 ====== RTC_CENTER
