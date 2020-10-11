@@ -24,57 +24,57 @@ In this discussion paper, a SeamlessNavigation model as an extension of IndoorGM
 
 The conversion of the Coordinate Reference System (CRS) is an important process for seamless navigation between indoor and outdoor coordinate systems. In cases where the global CRS is used for indoor space, the conversion parameters are not necessary. However, many building datasets are represented in their own local CRS. In the case of using the local CRS, four parameters are required for Cartesian coordinate system conversion:
 
-* the origin point of target CRS (or global CRS) $P~o~(x~0~, y~0~, z~0~)$,
-* rescaling factor $R(s~x~, s~y~, s~z~)$,
-* rotation angles $A(α, β, γ)$, along $x,y,z$-axis, and
-* translation vector $T(t~x~, t~y~, t~z~)$
+* the origin point of target CRS (or global CRS) stem:[P_o (x_0, y_0, z_0)],
+* rescaling factor stem:[R(s_x, s_y, s_z)],
+* rotation angles stem:[A(alpha, beta, gamma)], along stem:[x,y,z]-axis, and
+* translation vector stem:[T(t_x_, t_y_, t_z_)]
 
-Firstly, the origin $P~o~$ is required to perform the transformation. Next, a scale value $R$, between the local coordinate system and the global coordinate system, is required. Thirdly, the rotation angle of each axis $A$ is required for the rotation movement between the coordinate systems. Lastly, a translation vector $T$is given for parallel movement between coordinate systems. <<fig4>> shows examples of conversion methods.
+Firstly, the origin stem:[P_o] is required to perform the transformation. Next, a scale value stem:[R], between the local coordinate system and the global coordinate system, is required. Thirdly, the rotation angle of each axis stem:[A] is required for the rotation movement between the coordinate systems. Lastly, a translation vector stem:[T] is given for parallel movement between coordinate systems. <<fig4>> shows examples of conversion methods.
 
 [[fig4]]
 .Example of transform methods (2-dimensional case)
 image::images/004.png["",360,347]
 
-Unlike scaling and translation, the rotation is affected by the order in which the parameters (rotation angles) are applied. Typically, the Euler angle for 3D rotation described in [1,5] can be used. Euler angles are described as a sequence of rotations about three mutually orthogonal coordinate axes fixed in $R^3^$ Space. This discussion paper uses yaw, pitch, and roll rotation, as shown in <<fig5>>, one of the sequences of Euler angles.
+Unlike scaling and translation, the rotation is affected by the order in which the parameters (rotation angles) are applied. Typically, the Euler angle for 3D rotation described in [1,5] can be used. Euler angles are described as a sequence of rotations about three mutually orthogonal coordinate axes fixed in stem:[R^3] Space. This discussion paper uses yaw, pitch, and roll rotation, as shown in <<fig5>>, one of the sequences of Euler angles.
 
 [[fig5]]
 .Example of Yaw-Pitch-Roll rotation
 image::images/005.png["",460,423]
 
-Yaw is a counterclockwise rotation of $α$ about the $z$-axis, as shown in <<fig5>>. The rotation matrix is given by:
+Yaw is a counterclockwise rotation of stem:[alpha] about the stem:[z]-axis, as shown in <<fig5>>. The rotation matrix is given by:
 
 [stem%unnumbered]
 ++++
-R_z(α) = [[cosα, -sinα, 0],
-[sinα, cosα, 0],
+R_z(alpha) = [[cos alpha, - sin alpha, 0],
+[sin alpha, cos alpha, 0],
 [0, 0, 1]]
 ++++
 
-Note that the upper left entries of $R~z~(α)$ from a 2D rotation applied to the $x$ and $y$ coordinates, whereas the $z$ coordinate remains constant.
+Note that the upper left entries of stem:[R_z (alpha)] from a 2D rotation applied to the stem:[x] and stem:[y] coordinates, whereas the stem:[z] coordinate remains constant.
 
-Similarly, a pitch is a counterclockwise rotation of $β$ about the $y$-axis, and a roll is a counterclockwise rotation of $γ$ about the $x$-axis, as shown in <<fig5>>. The rotation matrix of pitch and roll are given by: 
+Similarly, a pitch is a counterclockwise rotation of stem:[beta] about the stem:[y]-axis, and a roll is a counterclockwise rotation of stem:[gamma] about the stem:[x]-axis, as shown in <<fig5>>. The rotation matrix of pitch and roll are given by: 
 
 [stem%unnumbered]
 ++++
-R_y(β) = [[cosβ, 0, sinβ],
+R_y(beta) = [[cos beta, 0, sin beta],
 [0, 1, 0],
-[-sinβ, 0, cosβ]]
+[-sin beta, 0, cos beta]]
 ++++
 
 [stem%unnumbered]
 ++++
-R_x(γ) = [[1, 0, 0],
-[0, cosγ, -sinγ],
-[0, sinγ, cosγ]]
+R_x (gamma) = [[1, 0, 0],
+[0, cos gamma, -sin gamma],
+[0, sin gamma, cos gamma]]
 ++++
 
-So, a 3D rotation matrix with $α,β,γ$ is defined as follows:
+So, a 3D rotation matrix with stem:[alpha,beta,gamma] is defined as follows:
 
 [stem%unnumbered]
 ++++
-R(α,β,γ) = Rz(α)Ry(β)Rx(γ) = [[cosαcosβ, cosαsinβsinγ−sinαcosγ, cosαsinβcosγ+sinαsinγ],
-[sinαcosβ, sinαsinβsinγ+cosαcosγ, sinαsinβcosγ−cosαsinγ],
-[-sinβ, cosβsinγ, cosβcosγ]]
+R(alpha,beta,gamma) = R_z (alpha) R_y (beta) R_x (gamma) = [[cos alpha cos beta, cos alpha sin beta sin gamma - sin alpha cos gamma, cos alpha sin beta cos gamma + sin alpha sin gamma],
+[sin alpha cos beta, sin alpha sin beta sin gamma + cos alpha cos gamma, sin alpha sin beta cos gamma - cos alpha sin gamma],
+[-sin beta, cos beta sin gamma, cos beta cos gamma]]
 ++++
 
 [[uml_diagram_of_the_seamless_navigation_module]]
@@ -152,18 +152,18 @@ _AnchorState_ represents a node that provides the connection between indoor spac
 .The process of CRS conversion
 image::images/010.png["",576,451]
 
-All _AnchorState_ elements are used for conversion, except the duality and connects elements: transformReferencePoint $p~o~(x~0~, y~0~, z0)$, rotationAngle $R(s~x~, s~y~, s~z~)$, rescailingFactor $A(α,  β,  γ)$, and translationVector $T(t~x~, t~y~, t~z~)$. The conversion using these parameters depends on the order in which they are applied. This document assumes that the transformation is performed in the order, as shown in <<fig10>>: Rotation Scaling Translation. In the case of rotation, the rotation should be performed after shifting to the origin based on the _AnchorState_ point $p~a~(a~x~,a~y~, a~z~$) for simplification of the problem. Finally, the method to obtain the conversion result, $Convert(x,y,z,p~a~,p~o~,R,S,T)$ using the given parameters is as follows:
+All _AnchorState_ elements are used for conversion, except the duality and connects elements: transformReferencePoint stem:[p_o (x_0, y_0, z_0)], rotationAngle stem:[R(s_x, s_y, s_z)], rescailingFactor stem:[A(alpha,  beta, gamma)], and translationVector stem:[T(t_x, t_y, t_z)]. The conversion using these parameters depends on the order in which they are applied. This document assumes that the transformation is performed in the order, as shown in <<fig10>>: Rotation Scaling Translation. In the case of rotation, the rotation should be performed after shifting to the origin based on the _AnchorState_ point stem:[p_a(a_x,a_y, a_z)] for simplification of the problem. Finally, the method to obtain the conversion result, stem:["Convert"(x,y,z,p_a,p_o,R,S,T)] using the given parameters is as follows:
 
 [stem%unnumbered]
 ++++
-Convert(x,y,z,p_a,p_o,R,S,T) = R_z(α)R_y(β)R_x(γ)S(x−a_x,y−a_y,z−a_z)+p_o +T = [[cos⁡αcos⁡β, cos⁡αsin⁡βsin⁡γ−sin⁡αcos⁡γ, cos⁡αsin⁡βcos⁡γ+sin⁡αsin⁡γ], 
-[sin⁡αcos⁡β, sin⁡αsin⁡βsin⁡γ+cos⁡αcos⁡γ, sin⁡αsin⁡βcos⁡γ−cos⁡αsin⁡γ],
-[−sin⁡β, cos⁡βsin⁡γ, cos⁡βcos⁡γ]] [[s_x∗(x−a_x)],
-[s_y∗(y−a_y)],
-[s_z∗(z−a_z)]] + 
-[[x_0+t_x],
-[y_0+ t_y],
-[z_0+ t_z]]
+"Convert"(x,y,z,p_a,p_o,R,S,T) = R_z(alpha) R_y(beta) R_x(gamma) S(x - a_x, y - a_y, z - a_z) + p_o + T = [[cos⁡ alpha cos beta, cos⁡ alpha sin⁡ beta sin⁡ gamma - sin⁡ alpha cos gamma, cos⁡ alpha sin⁡ beta cos⁡ gamma + sin⁡ alpha sin⁡ gamma], 
+[sin⁡ alpha cos⁡ beta, sin⁡ alpha sin⁡ beta sin⁡ gamma + cos⁡ alpha cos⁡ gamma, sin⁡ alpha sin⁡ beta cos⁡ gamma - cos⁡ alpha sin⁡ gamma],
+[-sin⁡ beta, cos⁡ beta sin⁡ gamma, cos⁡ beta cos⁡ gamma]] [[s_x ∗ (x - a_x)],
+[s_y ∗ (y - a_y)],
+[s_z ∗ (z - a_z)]] + 
+[[x_0 + t_x],
+[y_0 + t_y],
+[z_0 + t_z]]
 ++++
 
 [[externalanchorstate]]
