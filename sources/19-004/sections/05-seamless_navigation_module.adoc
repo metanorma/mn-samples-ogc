@@ -27,7 +27,7 @@ The conversion of the Coordinate Reference System (CRS) is an important process 
 * the origin point of target CRS (or global CRS) stem:[P_o (x_0, y_0, z_0)],
 * rescaling factor stem:[R(s_x, s_y, s_z)],
 * rotation angles stem:[A(alpha, beta, gamma)], along stem:[x,y,z]-axis, and
-* translation vector stem:[T(t_x_, t_y_, t_z_)]
+* translation vector stem:[T(t_x, t_y, t_z)]
 
 Firstly, the origin stem:[P_o] is required to perform the transformation. Next, a scale value stem:[R], between the local coordinate system and the global coordinate system, is required. Thirdly, the rotation angle of each axis stem:[A] is required for the rotation movement between the coordinate systems. Lastly, a translation vector stem:[T] is given for parallel movement between coordinate systems. <<fig4>> shows examples of conversion methods.
 
