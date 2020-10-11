@@ -108,7 +108,9 @@ image::images/024.png["",354,261]
 
 The detailed contents of sample data for the nodes is shown in <<fig25>>. The PNSpec data provided by the GeoJSON format. Nodes can be distinguished by the 'in_out' attribute. In the case of an 'in_out' attribute of value '2', this node represents the entrance of the building. And then, we can choose one node for connecting _ExternalAnchorState_, using the link attribute of the node. <<fig26>> shows the sample data for edges that linked with the entrance of the building node with an ID of '00001B000000000309CC60A662D77FC1'. For making an _ExternalAnchorState_ instance, we have to choose one of the connected nodes with the entrance of the building, and the 'in_out' value is '1'. In this sample data, there are three Nodes connected to the entrance of the building node. However, one of these nodes is located in indoor space: with an 'in_out' value of '2'. Therefore, we have to choose one node from the remaining two nodes.The mapped _ExternalAnchorState_ result is shown in <<fig27>>.
 
+[[fig25]]
 [source,xml]
+.Part of sample data for PNSpec Node (PNSpec_node.json)
 ----
 {
 "type": "FeatureCollection",
@@ -123,11 +125,9 @@ The detailed contents of sample data for the nodes is shown in <<fig25>>. The PN
 }
 ----
 
-[[fig25]]
-.Part of sample data for PNSpec Node (PNSpec_node.json)
-image::images/025.png["",2,2]
-
+[[fig26]]
 [source,xml]
+.Part of sample data for PNSpec Edge (PNSpec_edge.json)
 ----
 {
 "type": "FeatureCollection",
@@ -141,9 +141,6 @@ image::images/025.png["",2,2]
 }
 ----
 
-[[fig26]]
-.Part of sample data for PNSpec Edge (PNSpec_edge.json)
-image::images/026.png["",2,2]
 
 [[fig27]]
 .Part of sample data for ExternalAnchorState
