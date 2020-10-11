@@ -6,14 +6,12 @@
 polyhedron, with a circumsphere radius of one (1), used to construct the _DGGS reference frame_ of a DGGS specification
 
 NOTE: Vertex coordinates are specified as a _sequence_ of spherical coordinates
+stem:[[(theta_1, phi_1), (theta_2, phi_2), (theta_3, phi_3), (theta_4, phi_4)... , (theta_{n-1}, phi_n)\]].
 
-[ (_θ~1~_, _φ~1~_), (_θ~2~_, _φ~2~_), (_θ~3~_, _φ~3~_), (_θ~4~_, _φ~4~_),..., (_θ~n-1~_, _φ~n~_) ].
 
 NOTE: Edges are specified as a _sequence_ of vertex pairs
-
-[ (_Vertex~1~_, _Vertex~2~_), (_Vertex~2~_, _Vertex~3~_), (_Vertex~3~_, _Vertex~4~_)..., (_Vertex~n-1~_, _Vertex~n~_), or,
-
-( (_θ~1~_, _φ~1~_), (_θ~2~_, _φ~2~_) ), ( (_θ~2~_, _φ~2~_), (_θ~3~_, _φ~3~_) ), ( (_θ~3~_, _φ~3~_), (_θ~4~_, _φ~4~_) )..., ( (_θ~n-1~_, _φ~n-1~_), (_θ~n~_, _φ~n~_) ) ]
+stem:[[ ("Vertex"_1, "Vertex"_2), ("Vertex"_2, "Vertex"_3), ("Vertex"_3, "Vertex"_4),..., ("Vertex"_{n-1}, "Vertex"_n)], or,
+stem:[((vartheta_1, varphi_1)], stem:[(vartheta_2, varphi_2))], stem:[((vartheta_2, varphi_2)], stem:[(vartheta_3, varphi_3) )], stem:[( (vartheta_3, varphi_3)], stem:[(vartheta_4, varphi_4) )] ..., stem:[( (vartheta_{n-1}, varphi_{n-1})], stem:[(vartheta_n, varphi_n))]] 
 
 === boundary
 
