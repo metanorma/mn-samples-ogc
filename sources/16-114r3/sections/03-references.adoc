@@ -7,6 +7,10 @@
 * [[[ogc10-090r3,OGC 10-090r3]]], OGC: OGC 10-090r3: OGC Network Common Data Form (netCDF): Core Encoding Standard, 2011
 * [[[ogc10-092r3,OGC 10-092r3]]], OGC: OGC 10-092r3: NetCDF Binary Encoding Extension Standard: netCDF Classic and 64-bit Offset Format, 2011
 * [[[ogc11-165r2,OGC 11-165r2]]], OGC: OGC 11-165r2: CF-netCDF3 Data Model Extension standard, 2012
+* [[[iso19101, ISO 19101-1:2014]]], ISO: ISO 19101-1:2014, _Geographic information – Reference model – Part 1: Fundamentals_, 2014
+* [[[iso19141,ISO 19141:2008]]], ISO: ISO 19141:2008, _Geographic information -- Schema for moving features_
+* [[[iso19107,ISO 19107:2003]]], ISO: ISO 19107:2003, _Geographic information -- Spatial schema_
+* [[[iso19123,ISO 19123:2005]]], ISO: ISO 19123:2005, _Geographic information -- Schema for coverage geometry and functions_
 * [[[netcdf,1]]], Lawrence Livermore National Laboratory: NetCDF CF Metadata Conventions – http://cfconventions.org/[http://cfconventions.org/]
 * [[[acdd,1]]], ESIP: Attribute Convention for Data Discovery (ACDD) – http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery[http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery]
 * [[[noaa,1]]], NOAA: NCEI netCDF Templates – http://www.nodc.noaa.gov/data/formats/netcdf/[http://www.nodc.noaa.gov/data/formats/netcdf/]
