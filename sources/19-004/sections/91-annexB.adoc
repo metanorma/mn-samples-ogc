@@ -6,7 +6,7 @@
 The following are examples of the SeamlessNavigation module documents generated as described in <<japan_use_case>> 
 
 ._cityTransSample.gml_
-[source,xml]
+[source%unnumbered,xml]
 ----
 <CityModel xmlns="http://www.opengis.net/citygml/2.0"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -36,7 +36,7 @@ xsi:schemaLocation="http://www.opengis.net/citygml/2.0 http://schemas.opengis.ne
 ----
 
 ._seamlessNaviSample.gml_
-[source,xml]
+[source%unnumbered,xml]
 ----
 <gml:FeatureCollection
 xmlns:gml="http://www.opengis.net/gml/3.2"

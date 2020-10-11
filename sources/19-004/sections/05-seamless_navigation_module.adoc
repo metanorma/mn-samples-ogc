@@ -107,7 +107,7 @@ image::images/009.png["",499,824]
 
 _AnchorState_ represents a node that provides the connection between indoor space and outdoor space. It refers to entrance doors. It can be used as a control point for indoor-outdoor integrations. It contains conversion parameters for transforming the local CRS coordinates of indoor geometry. In cases where the global CRS is used for indoor space, the conversion parameters are not necessary. The transformReferencePoint element describes a reference point that is used for the conversion. TransformReferencePoint is a point in the global CRS. TransformReferencePoint is represented geometrically as a _Point_ in Geography Markup Language (GML). TransformReferencePoint must have an attribute crsName to represent the used CRS of the outdoor network. The duality element represents an association with the corresponding _AnchorSpace_ class, which represents a special opening space. _AnchorState_ has a geometry that is derived from _State_ class, and it is one of the endpoints of the curve geometry of _AnchorLink_.
 
-[source,xml]
+[source%unnumbered,xml]
 ----
 <xs:element name="AnchorState" type="AnchorStateType" substitutionGroup="IndoorCore:State"/>
 <!-- ====================================================================== -->
@@ -171,7 +171,7 @@ Convert(x,y,z,p_a,p_o,R,S,T) = R_z(α)R_y(β)R_x(γ)S(x−a_x,y−a_y,z−a_z)+p
 _ExternalAnchorState_ represents a node that represents the position on the outdoor network. It is represented geometrically as a _Point_ in GML and it is one of the endpoints of the curve geometry of _AnchorLink_. It also has references to outdoor networks in other standards; +
 e.g., CityGML, GDF, etc.
 
-[source,xml]
+[source%unnumbered,xml]
 ----
 <xs:element name="ExternalAnchorState" type="ExternalAnchorStateType" substitutionGroup="gml:AbstractFeature"/>
 <!-- ====================================================================== -->
@@ -208,7 +208,7 @@ In the case of (a) in <<fig11>>, externalNetworkReference is represented as a po
 ==== <AnchorLink>
 _AnchorLink_ represents an edge between the indoor network and outdoor networks. _AnchorLink_ always connects _AnchorState_ and _ExternalAnchorState_. For the geometrical representation of an _AnchorLink_, a _Curve_ geometric primitive object from the GML is used.
 
-[source,xml]
+[source%unnumbered,xml]
 ----
 <xs:element name="AnchorLink" type="AnchorLinkType" substitutionGroup="gml:AbstractFeature"/>
 <!-- ====================================================================== -->
