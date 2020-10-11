@@ -237,7 +237,7 @@ In the continuous ragged array representation, the netCDF file shall contain the
 
 * One variable listing feature identifiers;
 * One variable counting the number of points in each feature;
-* Three or four _auxiliary_ coordinate variables (not to be confused with "simple" coordinate variables): examples: _x_, _y_, (_z_) and _t_; and
+* Three or four _auxiliary_ coordinate variables (not to be confused with "simple" coordinate variables): examples: stem:[x], stem:[y], (stem:[z]) and stem:[t]; and
 * An arbitrary number of variables for _feature_ attributes (not to be confused with _global_ attributes or _variable_ attributes): examples: _state_, _temperature_.
 
 
@@ -323,7 +323,7 @@ NetCDF variables having the _sample dimension_ (<<sample_dimension>>):
 [%unnumbered]
 [width=75%]
 |===
-| ^.^h| _time_ ^.^h| _x_ ^.^h| _y_
+| ^.^h| _time_ ^.^h| stem:[x] ^.^h| stem:[y]
 | Feature A time 1 ^.^| 8:00 ^.^| 11 ^.^| 2
 | Feature A time 2 ^.^| 8:10 ^.^| 12 ^.^| 3
 | Feature A time 3 ^.^| 8:20 ^.^| 10 ^.^| 3
@@ -370,7 +370,7 @@ If the file contains additional attributes for the moving features, they can be 
 |===
 h| Requirement 11 (from OGC 11-162r2)
 | http://www.opengis.net/spec/mf_binary/1.0/req/featureAttributes
-| If the file contains additional feature attributes, then those values _shall_ be stored in one distinct variable for each feature attribute. The dimension of those variables is the _sample dimension_. Values at index _i_ are associated to the same feature at the same time than the values of auxiliary coordinate variables at index _i_.
+| If the file contains additional feature attributes, then those values _shall_ be stored in one distinct variable for each feature attribute. The dimension of those variables is the _sample dimension_. Values at index stem:[i] are associated to the same feature at the same time than the values of auxiliary coordinate variables at index stem:[i].
 
 |===
 
