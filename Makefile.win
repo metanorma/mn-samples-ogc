@@ -113,6 +113,25 @@ documents.html: documents.rxl
 
 %.adoc:
 
+define FORMAT_TASKS
+OUT_FILES-$(FORMAT) := $($(shell echo $(FORMAT) | tr '[:lower:]' '[:upper:]'))
+
+open-$(FORMAT):
+	"$$(OUT_FILES-$(FORMAT))"
+
+clean-$(FORMAT):
+	del /q $$(OUT_FILES-$(FORMAT))
+
+$(FORMAT): clean-$(FORMAT) $$(OUT_FILES-$(FORMAT))
+
+.PHONY: clean-$(FORMAT)
+
+endef
+
+$(foreach FORMAT,$(FORMATS),$(eval $(FORMAT_TASKS)))
+
+open: open-html
+
 clean:
 	rm -rf $(OUT_FILES)
 	del /q documents published
@@ -127,7 +146,48 @@ endif
 endif
 	$(call print_vars)
 
-.PHONY: bundle all clean
+.PHONY: bundle all open clean
+
+#
+# Watch-related jobs
+#
+
+.PHONY: watch serve watch-serve
+
+NODE_BINS          := onchange live-serve run-p
+NODE_BIN_DIR       := node_modules/.bin
+NODE_PACKAGE_PATHS := $(foreach PACKAGE_NAME,$(NODE_BINS),$(NODE_BIN_DIR)/$(PACKAGE_NAME))
+
+$(NODE_PACKAGE_PATHS): package.json
+	npm i
+
+watch: $(NODE_BIN_DIR)/onchange
+	make all
+	$< $(ALL_SRC) -- make all
+
+define WATCH_TASKS
+watch-$(FORMAT): $(NODE_BIN_DIR)/onchange
+	make $(FORMAT)
+	$$< $$(SRC_$(FORMAT)) -- make $(FORMAT)
+
+.PHONY: watch-$(FORMAT)
+endef
+
+$(foreach FORMAT,$(FORMATS),$(eval $(WATCH_TASKS)))
+
+ifndef PORT
+override PORT = 8123
+endif
+
+serve: $(NODE_BIN_DIR)/live-server revealjs-css reveal.js
+	set port=$(PORT) & \
+	for /r %%html in $(HTML) do ( \
+		$< --entry-file=%%html --port=%port% --ignore="*.html,*.xml,Makefile,Gemfile.*,package.*.json" --wait=1000 & \
+		set /A port=%port%+1 \
+	)
+
+watch-serve: $(NODE_BIN_DIR)/run-p
+	$< watch serve
 
 #
 # Deploy jobs
