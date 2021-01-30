@@ -1,4 +1,5 @@
 
+[.preface]
 == Introduction
 
 The CF-netCDF standard defines how to encode digital geospatial information representing space/time-varying phenomena.
