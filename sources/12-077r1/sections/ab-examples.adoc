@@ -298,7 +298,7 @@ image::fig-is-3.png[]
 . The same request delivers the same image in some other format such as GeoTIFF, in a compressed unsigned 16-bit format. Optional advanced features need to be provided by the server.
 +
 --
-`http://example.com/CS?CID=ece48e24ad2b41eab709984e272cbbc2&Request=GetMap&Service=IS&Version=1.0.0&CRS=EPSG:4326&Options.tif.band.datatype=u16&Options.tif.compress=gzip &Options.tif.type=geotiff&Format=image/tif&Exceptions=IMAGE&BBox=-78.94355126506584,43.85916706820535,-78.93842759427986,43.86007044647508&Width=1674&Height=400&Time=F101`
+`http://example.com/CS?CID=ece48e24ad2b41eab709984e272cbbc2&Request=GetMap&Service=IS&Version=1.0.0&CRS=EPSG:4326&Options.tif.band.datatype=u16&Options.tif.compress=gzip&Options.tif.type=geotiff&Format=image/tif&Exceptions=IMAGE&BBox=-78.94355126506584,43.85916706820535,-78.93842759427986,43.86007044647508&Width=1674&Height=400&Time=F101`
 --
 
 . Instead of asking for one frame at a time, a smart client in a high latency high bandwidth environment could ask for say 10 frames at a time, interlaced with metadata.
