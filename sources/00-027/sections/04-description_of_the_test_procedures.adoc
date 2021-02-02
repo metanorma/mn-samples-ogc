@@ -123,7 +123,9 @@ The `QueryScope` is local, the `MessageFormat` equals `NV` and the `ResultType` 
 [%unnumbered]
 [source]
 ----
-queryExpression=OGC_CatalogService.CG_QueryExpression("intersects(GeographicBoundingBox,envelope(40.71,-24.17,71.26,27.63))","", OGC_CatalogService.CG_QueryLanguage.OGC_Common)
+queryExpression=OGC_CatalogService.CG_QueryExpression
+("intersects(GeographicBoundingBox,envelope(40.71,-24.17,71.26,27.63))","",
+OGC_CatalogService.CG_QueryLanguage.OGC_Common)
 ----
 
 The correct number of hits for this query, with respect to the standard metadata datbase, is 2. If an exception occurs, this capability will be considered not tested. If the status of the response is invalid or if the returned number of NV pairs doesn't match the expected number of hits, this capability is considered not supported.
