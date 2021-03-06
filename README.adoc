@@ -46,7 +46,7 @@ with the Relaton index (`index.html`).
 
 == Usage
 
-This repository uses `make` to run these processes.
+This repository uses `metanorma` to run these processes.
 
 === Pre-requisites
 
@@ -55,38 +55,26 @@ This repository uses `make` to run these processes.
   
 * Have `puppeteer` NPM package installed globally.
   
-=== Building deliverables
+== Running via Docker or locally
 
-To build the site, run:
+If you have installed the build tools locally, and wish to run the
+locally-installed compilation tools, there is nothing further to set.
 
-[source,sh]
-----
-make publish
-----
-
-The resulting HTML site will be built in `published/`.
-
-
-
-To build the documents, just run:
+If you don't want to deal with local dependencies, use the docker:
 
 [source,sh]
 ----
-make
+docker run -v "$(pwd)":/metanorma -w /metanorma -it metanorma/mn metanorma site generate . -o published -c metanorma.yml
 ----
 
-This runs the `documents.html` target.
 
+== Building The Document
 
+[source,sh]
+----
+metanorma site generate . -o published -c metanorma.yml
+----
 
-
-Other specific `make` targets are:
-
-`documents.html`::
-creates `documents.html` from `documents.rxl`.
-
-`documents.rxl`::
-creates `documents.rxl` from Metanorma output located in `documents/`.
 
 
 === Updating document repos
