@@ -11,4 +11,4 @@ The following informative references are applicable for this Primer.
 
 * [[[ieee-std-1516,IEEE Std 1516]]] HLA [IEEE Std 1516]: 1516-2010 - IEEE Standard for Modeling and Simulation (M&S) High Level Architecture (HLA) - Framework and Rules
 
-* [[[ieee-std-1278,IEEE Std 1278]]] DIS [IEEE Std 1278]: 1278.1-2012 - IEEE Standard for Distributed Interactive Simulation--Application Protocols
+* [[[ieee-std-1278,IEEE Std 1278]]] DIS [IEEE Std 1278]: 1278.1-2012 - IEEE Standard for Distributed Interactive Simulation-&#x200c;-Application Protocols

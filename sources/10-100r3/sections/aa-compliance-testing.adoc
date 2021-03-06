@@ -121,6 +121,7 @@ This implies that a compliant application schema shall import the entire GML sch
 === Importing and including other schemas (Level SF-0, SF-1, SF-2)
 A conformant schema may import other schemas as long as they too are compliant with this profile. The only exception is the GML schema which is describe in <<importing-the-gml-schema-level-sf-0-sf-1-sf-2>>
 
+[%unnumbered]
 ----
 1 <xsd:import
 2   namespace="target_namespace_of_schema"
@@ -135,6 +136,7 @@ A conformant schema may import other schemas as long as they too are compliant w
 .. The attribute *schemaLocation* shall be present (line 2)
 ... its value shall be a valid URI reference to the imported schema
 
+[%unnumbered]
 ----
 1 <xsd:include
 2   schemaLocation="URI_reference_to_schema"/>
