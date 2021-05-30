@@ -11,6 +11,6 @@
 * [[[iso19141,ISO 19141:2008]]], ISO: ISO 19141:2008, _Geographic information -- Schema for moving features_
 * [[[iso19107,ISO 19107:2003]]], ISO: ISO 19107:2003, _Geographic information -- Spatial schema_
 * [[[iso19123,ISO 19123:2005]]], ISO: ISO 19123:2005, _Geographic information -- Schema for coverage geometry and functions_
-* [[[netcdf,1]]], Lawrence Livermore National Laboratory: NetCDF CF Metadata Conventions – http://cfconventions.org/[http://cfconventions.org/]
-* [[[acdd,1]]], ESIP: Attribute Convention for Data Discovery (ACDD) – http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery[http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery]
-* [[[noaa,1]]], NOAA: NCEI netCDF Templates – http://www.nodc.noaa.gov/data/formats/netcdf/[http://www.nodc.noaa.gov/data/formats/netcdf/]
+* [[[netcdf,LLNL NetCDF CF Metadata Conventions]]], _Lawrence Livermore National Laboratory: NetCDF CF Metadata Conventions_. http://cfconventions.org/
+* [[[acdd,ESIP ACDD]]], _ESIP: Attribute Convention for Data Discovery (ACDD)_. http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery
+* [[[noaa,NOAA NCEI netCDF Templates]]], _NOAA: NCEI netCDF Templates_. http://www.nodc.noaa.gov/data/formats/netcdf/
