@@ -4,7 +4,7 @@
 [bibliography]
 === Normative
 
-* [[[EPSG,1]]], EPSG: 4979, 2007. http://spatialreference.org/ref/epsg/wgs-84-3/[http://spatialreference.org/ref/epsg/wgs-84-3/]
+* [[[EPSG,EPSG WGS-84-3]]], EPSG: 4979, 2007. http://spatialreference.org/ref/epsg/wgs-84-3/[http://spatialreference.org/ref/epsg/wgs-84-3/]
 
 * [[[IETF_RFC2397,IETF RFC 2397]]], IETF RFC2397: The "data" URL scheme, 1998. https://tools.ietf.org/html/rfc2397[https://tools.ietf.org/html/rfc2397]
 
@@ -12,7 +12,7 @@
 
 * [[[IETF_RFC3986,IETF RFC 3986]]], IETF RFC3986: IANA Registration for Enumservice 'XMPP', 2007. https://tools.ietf.org/html/rfc4979[https://tools.ietf.org/html/rfc4979]
 
-* [[[Khronos_Group,1]]], Khronos Group: glTF 2.0 - Runtime 3D Asset Delivery, 2017. https://github.com/KhronosGroup/glTF/blob/master/README.md[https://github.com/KhronosGroup/glTF/blob/master/README.md]
+* [[[Khronos_Group,Khronos Group glTF 2.0 - Runtime 3D Asset Delivery]]], Khronos Group: glTF 2.0 - Runtime 3D Asset Delivery, 2017. https://github.com/KhronosGroup/glTF/blob/master/README.md[https://github.com/KhronosGroup/glTF/blob/master/README.md]
 
 * [[[OGC,OGC 12-063r5]]], OGC: [OGC 12-063r5] Geographic information - Well-known text representation of coordinate reference systems, 2015. http://docs.opengeospatial.org/is/12-063r5/12-063r5.html[http://docs.opengeospatial.org/is/12-063r5/12-063r5.html]
 
