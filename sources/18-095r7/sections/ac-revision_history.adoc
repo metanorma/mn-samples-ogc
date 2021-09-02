@@ -1,0 +1,12 @@
+
+[appendix]
+== Revision history
+
+[cols="5",options="header,unnumbered"]
+|===
+| Date | Release | Author | Paragraph modified | Description
+
+| 2019-09-14 | v0.5 G. | Percivall, (Editor) with Submitters | First public version | Published for Public Request for Comments
+| 2019-10-24 | V0.6 | G. Percivall, (Editor) with Submitters | 1, 6 , 7, 11.5, Annex C | Edits based on comments received from public review
+|===
+

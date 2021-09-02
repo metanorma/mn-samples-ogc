@@ -1,0 +1,53 @@
+= Geospatial Coverages Data Cube Community Practice
+:doctype: community-practice
+:edition: 1.0
+:language: en
+:received-date: 2020-01-31
+:issued-date: 2020-08-28
+:published-date: 2020-10-14
+:date: 2000-05-11
+:editor: George Percivall
+:status: published
+:committee: technical
+:docnumber: 18-095r7
+:external-id: http://www.opengis.net/doc/CS/dataCubeCP
+:keywords: Data Cubes, Coverages, Spatial Analytics, Geospatial
+:docfile: document.adoc
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:local-cache-only:
+:data-uri-image:
+
+
+include::sections/00-front_material.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-conformance.adoc[]
+
+include::sections/03-references.adoc[]
+
+include::sections/04-terms_and_definitions.adoc[]
+
+include::sections/05-conventions.adoc[]
+
+include::sections/06-geospatial_data_cubes.adoc[]
+
+include::sections/07-geospatial_coverages.adoc[]
+
+include::sections/08-tuning_and_metadata.adoc[]
+
+include::sections/09-queries_and_access.adoc[]
+
+include::sections/10-apis_and_encodings.adoc[]
+
+include::sections/11-further_developments.adoc[]
+
+include::sections/aa-conformance_class.adoc[]
+
+include::sections/ab-implementation_examples.adoc[]
+
+include::sections/ac-revision_history.adoc[]
+
+include::sections/az-bibliography.adoc[]
+

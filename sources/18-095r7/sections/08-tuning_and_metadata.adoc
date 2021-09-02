@@ -1,0 +1,83 @@
+
+== Data Preparation: Tuning and Metadata
+
+Data preparation and structuring involves processes that convert less structured data into
+organized information. These processes and resulting structured information enable more
+effective search, analytics, and visualization. Data structuring is performed mainly to
+support analytics (See <<cls_9>>).
+
+Objectives of Data Preparation are summarized in in "`Frontiers in Massive Data Analysis`" by the US National Academies as:
+
+[quote]
+____
+Although a picture may be worth a thousand words, a good representation of
+data is priceless: a single data representation, or sometimes multiple ones,
+allows one to carry out a large number of data processing and analysis tasks
+in a manner that is both algorithmically efficient and statistically
+meaningful.
+____
+
+
+[[req_2]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req02
+
+A Geospatial Coverage Data Cube Service shall host geospatial data cubes and support services on the data when requested.
+====
+
+
+Data store optimization is performed when ingesting data into a Data Cube Service. This
+preparation may include gridding, tiling, compression, tuning, etc. These operations are
+done in advance of user query and access. This allows administrators to specify any
+(regular or irregular) spatio-temporal tiling structure, compression, and more settings as
+tuning parameters; on query level users are not bothered with such internal details, but it
+may have a substantial impact on performance.
+
+[[req_3]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req03
+
+When ingesting data, a Geospatial Coverage Data Cube shall provide methods for data storage and access optimizations consistent with the Geospatial Coverage Data Cube Information Model.
+====
+
+For an example of data store ingest optimization, see the rasdaman storage layout language <<Baumann_2010>>
+
+
+[[req_4]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req04
+
+A Geospatial Coverage Data Cube shall provide metadata for the user that defines the provenance of all source data, data preparation methods applied and data structure of the cube. If applicable, the metadata shall be defined in accordance with ISO 19115.
+====
+
+
+Metadata are crucial to describe the data that are offered by a data cube. A user needs
+information to understand the data, for example, data provider, geospatial and temporal
+resolution, parameter and its unit. The same applies for data requests. Besides the actual
+data array, a user is also interested in the accompanied axes information for each data
+value, as this facilitates further data processing and visualization. [<<Wagemann_2017>>].
+
+Metadata can be defined in two categories: General and Quality [CARD4L].
+
+* *General Metadata* - Dataset and pixel descriptive information that establish the
+lineage of the product and provide confidence to the user that it is authoritative,
+by detailing the steps taken to produce the data in its current state. This includes
+satellite, instrument, acquisition date and time, spatial boundaries, pixel locations,
+mode, processing details, spectral or frequency response, and grid projection.
+
+* *Quality Metadata* - Dataset and pixel descriptive information such as quality flags
+which allow users to make informed decisions about the suitability of the products
+for a particular use. For example, clouds, cloud shadows, missing data, saturation,
+and accuracy assessments.

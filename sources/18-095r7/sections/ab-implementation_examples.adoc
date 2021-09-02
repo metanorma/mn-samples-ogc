@@ -1,0 +1,297 @@
+
+[[annex_b]]
+[appendix]
+== Data cube implementation examples
+
+=== Introduction
+
+This Annex includes non-normative examples of data cube implementations that adhere
+to most of the items in the body of this document. The implementations are listed in an
+order that balances historical development and listing data cubes that meet the body of
+the text higher in the order.
+
+
+=== OpenDataCube (Previously the Australian Geoscience Data Cube)
+
+The Open Data Cube provides an integrated gridded data analysis environment for
+decades of analysis ready earth observation satellite and related data from multiple
+satellite and other acquisition systems [<<CEOS_2018>>].
+
+The Open Data Cube is a system designed to:
+
+* Catalogue large amounts of Earth Observation data;
+* Provide a Python based API for high performance querying and data access;
+* Give scientists and other users easy ability to perform Exploratory Data Analysis;
+* Allow scalable continent scale processing of the stored data; and
+* Track the provenance of all the contained data to allow for quality control and
+updates.
+
+The Open Data Cube provides these APIs and community developed extensions:
+
+* Loading Data from a Cube
+* Searching and Indexing Datasets
+* Model
+* Bit Masking
+* Analytics and Execution Engines
+* Array IO on Amazon S3
+* WMS and WCS
+* WPS
+* QGIS integration
+* A UI for visualising its contents
+* A UI for executing queries
+* For *Exploratory Data Analysis* see Datacube Class for more details
+* For *Writing Large Scale Workflows* see GridWorkflow Class for more details
+
+
+=== EarthServer-2 project
+
+The EU FP7 EarthServer and EU H2020-funded EarthServer-2 [<<EarthServer_2017>>]
+projects have set up WCSs for different scientific domains: ocean science, earth
+observation, climate science and planetary science. The architectural setup follows the
+web services concept and bases on rasdaman (http://rasdaman.org/), an intelligent arraybased
+server technology, in combination with the OGC standard protocol WCS. Four
+WCSs are exploring the possibilities and challenges of providing access to data sizes
+beyond 1 PB of 3D to 4D Earth Science Data [<<Wagemann_2017>>] .
+
+* Marine Science Data Service (http://earthserver.pml.ac.uk/) is developed by the
+Plymouth Marine Laboratory (PML) and makes available multiple hundred
+terabytes of ocean color data, produced by ESA’s climate change initiative (CCI).
+The service will further offer Sentinel-3 data once the data products are
+disseminated.
+* Climate Science Data Service was developed by ECMWF to demonstrate the
+ability to provide access to multiple petabytes of ERA-Interim reanalysis data
+(Dee et al. 2011) stored in ECMWF’s archive. This was achieved by serving data
+from the Meteorological and Archival System (MARS archive) via a web service
+in a standardized way. The service was discontinued after the end of the project.
+* Earth Observation (EO) Data Service (http://eodataservice.org/) is jointly
+developed by MEEO s.r.l. and the National Computing Infrastructure (NCI)
+Australia. The service will offer EO data from the Sentinel family, primarily data
+from Sentinel-2 satellites. NCI will eventually offer a WCS for multiple hundreds
+of terabytes of Landsat data.
+* .Planetary Science Data Service (http://planetserver.eu/) is developed by the
+Jacobs University Bremen and will provide access to tens of TB of data
+(topographic, multi- and hyperspectral) of the solar system bodies Mars, Mercury
+and Moon.
+
+Since 2012, the intercontinental EarthServer initiative (http://www.earthserver.eu) is
+establishing agile data cube analytics on 3D x/y/t image timeseries and 4D x/y/z/t
+weather data, based on the rasdaman Array Database System (http://www.rasdaman.org).
+The largest installation, EO Data Service (www.eodataservice.org), recently has passed
+the 1 Petabyte [<<Strobl_2017>>].
+
+Data cube assets of 2.5 PB have been federated intercontinentally, and single queries
+have been parallelized across more than 1,000 cloud nodes. As such, the EarthServer
+initiative is one of the large-scale proofs of practicality for WCS and, specifically,
+WCPS.
+
+One success or activity, establishing a private/public datacube partnership, is the German
+funded project BigDataCube [<<Misev_2018>>]. Aside from routinely using the rasdaman
+federation capabilities it puts particular emphasis on versatile access control, down to the
+level of single pixels.
+
+
+=== rasdaman
+
+Following its invention of data cube services [<<Baumann_1992>>], the rasdaman team since
+then has architected the rasdaman scalable datacube engine for cross-domain management
+and server-side processing of massive n-D arrays. The rasdaman declarative datacube
+analytics language allows any query, any time, on any size, ready for extraction, filtering,
+processing, analytics, distributed datacube fusion, and Artificial Intelligence.
+Through the OGC WMS, WCS, and WCPS standards rasdaman supports regular and irregular
+spatio-temporal grids. The open-source rasdaman engine is OGC WCS reference
+implementation, and the rasdaman query language has been standardized in the ISO SQL
+array extension. As the currently only tool rasdaman supports transparent federation on
+planetary scale. Individual nodes retain autonomy, with security configurable down to
+single pixel level.
+
+The rasdaman architecture is a full-stack implementation in fast C++, with every component
+optimized for arrays. A series of highly effective techniques boosts array query
+execution, including: adaptive partitioning, just-in-time compilation into machine code,
+heterogeneous CPU/GPU hardware support, intelligent query optimizations, parallelization
+and distribution (without single point of failure), and federated processing. Queries
+have been split across more than 1,000 Amazon cloud nodes.
+
+Storage utilizes transparent tiling into sub-arrays maintained in some database (like PostgreSQL)
+or directly in the file system (about 2x faster), always using rasdaman’s
+optimized storage methods. Any tiling can be configured by the admin, as one of the
+many tuning parameters in an easy-to-use, OGC based ETL tool. Additionally, rasdaman
+can tap into any pre-existing archive by just registering files rather than copying them.
+
+With Athena Research’s FeMME extension, rasdaman allows integrated data and metadata
+search, thereby establishing a seamless integration of catalogs with datacubes. Users
+always remain in the comfort zone of their well-known tools – rasdaman supports a large
+and growing number of visual and API clients, including OpenLayers, Leaflet, QGIS,
+ArcGIS, NASA WebWorldWind, Cesium, C++, Java, python, and R.
+
+User-friendly, flexible, fast, scalable, and standards-conformant datacube services become
+a commodity with rasdaman: providers enjoy simple deployment and maintenance,
+users enjoy the massively simplified access, visualization, and analysis capabilities not
+requiring any programming skills. A series of innovation awards, most recently the
+NATO Defence Innovation Award 2018, acknowledges the rasdaman innovation.
+
+
+[[figure_7]]
+.Left: Rasdaman architecture [<<Misev_2018>>]; right: Kaleidoscope of rasdaman-based datacube portals
+image::images/fig7.png[]
+
+
+=== EOX Sentinel-2 cloudless
+
+Sentinel-2 cloudless (https://s2maps.eu) is a yearly series of global sunny homogeneous
+10m satellite maps. It combines trillions of pixels collected during differing weather
+conditions over a whole year and merges them into a mosaic, almost free from
+atmospheric impacts. The mosaics are provided via Web Map Tile Service (WMTS) as
+well as Web Map Service (WMS) under a Creative Commons license (2016 CC-BY;
+newer CC-BY-NC-SA). A WCS interface is provided.
+
+Sentinel-2 cloudless is the global visualization product of the EOxCloudless product
+family (https://cloudless.eox.at) that provides off-the-shelf or custom tailored mosaics as
+Data Cubes. In its simplest form the mosaics are provided as numerous GeoTIFFs in a
+pyramid structure following the WMTS tilematrixset definition (see this blog post for
+details https://eox.at/2018/01/visualizing-geotiff-tiles-with-openlayers/). Off-the-shelf mosaics
+contain 4 bands (8- or 16-bits) but custom mosaics may include any number of bands as
+well as potentially a metadata band allowing tracing back to individual input satellite
+images on a per-pixel basis. These GeoTIFFs can be loaded in a simple HTTP server or a
+more complex server software like the Open Data Cube. The Open Source library
+geotiff.js (https://geotiffjs.github.io) for example allows exploration and analysis of GeoTIFFs
+directly in the browser like for example shown in the COG-Explorer
+(https://geotiffjs.github.io/cog-explorer) demonstration.
+
+[%unnumbered]
+image::images/fig8.png[]
+
+
+=== Advanced geospatial Data Management platform (ADAM)
+
+The Advanced geospatial Data Management platform (ADAM) is a platform that
+implements the Digital Earth concept: ADAM allows accessing to large variety of multiyear
+global geospatial collections allowing data discovery, visualization, combination,
+processing and download. ADAM allows exploiting data from global to local scale.
+
+The core of ADAM is a Data Access System (DAS), a software module that manages a
+large variety of geospatial information featuring different data formats, geographic /
+geometric and time resolution The DAS exposes OGC standardized Open Search and
+Web Coverage Service (WCS 2.x) interfaces that allow discovering available collections
+and subset them in any dimension with a single query. Thus, ADAM provides an
+effective subsetting functionality that accesses the data only when requested and serves to
+the client only the data amount that is really needed.
+
+ADAM is a very modular platform: various DAS are deployed on different data sources
+(e.g. different DIAS, AWS, MEEO Data Facility, etc.), allowing accessing and subsetting
+the available collections without downloading / duplicating the data.
+
+ADAM, referred also as a virtual datacube technology, enables seamless access to all
+available data collections through a single interface; cutting the access barriers to a large
+variety of data (no need to know the exact for-mat of any of the available products) it
+saves data preparation time and facilitates the simultaneous use of data coming from
+different sources.
+
+ADAM exposes three user interfaces to satisfy the needs (and match with the skills) of a
+large variety of users:
+
+* A web based graphic user interface (Explorer) and a mobile application (ADAM
+Mobile);
+* A web-based notebook (Jupyter Notebook); and
+* OGC standardized REST interfaces: OpenSearch for data discovery, WCS 2.x for
+data access).
+
+
+=== Euro Data Cube
+
+The Euro Data Cube (EDC, https://eurodatacube.com) is the cube service for global Earth
+Observation (EO) data exploitation. The objective of EDC is to provide users with
+functionality to query and exploit large volumes of EO data and information resources,
+with a scheme that promotes open data sharing and reselling. The EDC ensures the
+storage and online availability of data in the form of multi-dimensional arrays suitable for
+retrieving, analyzing, and correlating EO information resources, based on innovative
+interfaces and interoperability standards.
+
+<<figure_9>> shows a high-level architecture of the EDC offerings highlighting the data and
+information flow from the EO and Non-EO data offerings on the left over the data cube
+building blocks and service interfaces to the user on the right.
+
+
+[[figure_9]]
+.Euro Data Cube
+image::images/fig9.png[]
+
+The top arrow shows EDC's Client Data Processing Engine (CDPE), supporting clientside processing of Cloud-optimized GeoTiffs (COGs) directly in the web browser.
+
+The on-the-fly data cube access service as well as the asynchronous mass processing
+service are powered by Sentinel Hub (http://www.sentinel-hub.com).
+
+
+Sentinel Hub is a satellite imagery processing service, which is capable of on-the-fly
+gridding, re-projection, mosaicking, compositing and other actions required for efficient
+fetching of data for end-users, either for integration in web-applications, where pictures
+are mostly served, or in machine learning and similar analysis processes, where pixel
+values and statistics are essential. The service works with original satellite data files and
+does not require replication or pre-processing. It uses cloud infrastructure like CreoDIAS,
+Mundi Web Services, ONDA, or AWS and innovative methods to efficiently process and
+distribute data in a matter of seconds. It provides catalog service, data processing and
+rendering service, custom scripting engine including open-source custom scripts library
+on top of Sentinel-1 GRD, Sentinel-2 (L1C and L2A), Sentinel-3 (OLCI & SLSTR),
+Sentinel-5P, Landsat-5, -7, -8, Envisat MERIS, and MODIS data as well as Planet and
+SPOT data on demand.
+
+Versatile pre-generated data cubes are provided by the Open Source Python package
+xcube. It is based on xarray just like the CEOS Open Data Cube, Pangeo, and other
+leading data cube initiatives.
+
+The EDC provides the integrated power of Sentinel Hub and xcube via one API in an
+enhanced end-to-end service. The services are provided via an API following the
+OpenAPI approach (process, statistics) as well as OGC standards to the extent feasible
+(mainly WMS, WMTS, WCS, WPS).
+
+The EDC aims to contribute to adoption and further evolution of open interfaces
+particularly of OGC standards, mainly the Web Coverage Service (WCS) but also the
+forthcoming OGC API Coverages. The EDC further intends to be interoperable with the
+CEOS supported "Open Data Cube" Open Source initiative by contributing to the OGC
+web services interoperability layer.
+
+The Euro Data Cube is a joint service offering by Sinergise, Brockmann Consult, EOX,
+Gisat, Planet, and Sentinel Hub VAS. ESA has awarded a contract to European industry
+leaders to build the EDC facility service, ensuring its openness through a standardization
+path with OGC and will act initially as "anchor tenant" being also a main customer of the
+service.
+
+
+=== PCI Geomatics Tools for OpenDataCube implementation and data preparation
+
+PCI Geomatics provides tools for preparing EO data for use in the OpenDataCube, and
+loading these data into an OpenDataCube. PCI has also prototyped analytics for
+OpenDataCube that leverage (for example) the Continuous Change Detection algorithm,
+and Object Based Image Analysis.
+
+Specifically, the following tools exist:
+
+* GXL (GeoImaging Accelerator), a software framework for processing large
+volumes of EO image data very quickly via parallelized code and load balancing
+across multiple computers. Usable in cloud computing environments and local
+clusters. Includes workflows for:
+** Image orthocorrection
+** DSM extraction
+** Analysis Ready Data processing; image geometry (fine alignment) and
+image radiometric correction and calibration.
+** Object Based Image Analysis
+** Pan sharpening using MRA Fusion (preserves radiometric character of the
+lower resolution inputs)
+** Spectral pre-classification, including cloud and shadow detection and
+masking
+** Data quality assessment and attribution
+** Custom workflows including the addition of user-generated algorithms
+** OpenDataCube data indexing and loading (loading data TO a cube).
+** Image quality and history meta-data handling to support CARD4L
+certification
+* Algorithm library, including all of the above noted functions, and several hundred
+more; accessible via Python
+* Tools are generic; can include sensors other than Landsat and Sentinel-2.
+Supported sensors (to date) include Radarsat-2, Spot, Sentinel 1 and RapidEye.
+* Data cube visualizations and analytics that build on example algorithms such
+Water Observations from Space and Continuous Change Detection.
+Enhancements to these algorithms include Object Based Image Analysis to
+improve speed and interpretability.
+* Demonstration data cubes have been set up for Forestry Canada and Environment
+and Climate Change Canada. A data cube is in operational use by Natural
+Resources Canada (Emergency Geomatics Services) using RADAR and optical
+EO data.

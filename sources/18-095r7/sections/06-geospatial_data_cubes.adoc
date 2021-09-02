@@ -1,0 +1,33 @@
+
+== Objectives for Geospatial Data Cubes
+
+This document codifies a set of community practices regarding geospatial coverage data
+cubes in order to promote coordinated development, proliferation, and federation of data
+cubes for the purpose of rendering geospatial data more readily available for analysis and
+decision support.
+
+Key themes in this document are:
+
+* Multidimensional spatial-temporal data cube structure with interoperable services;
+* Geospatial Analytics: A digital infrastructure to manage geospatial data and
+provide access and analytics services on the data; and
+* Federation of Data Cubes: Coordination of accessibility and interoperability at
+multiple, distributed data cubes provided by different organizations using open
+consensus standards. Users should be able to access any data cube in the
+federation without knowing the location.
+
+Data Cube related technologies are demonstrating to be an efficient technical mean to
+achieve the needed bridge from large amounts of observational (e.g., remote sensing) and
+other geospatial data to the wider geospatial domain. Data Cubes technology can support
+analytics through:
+
+* Providing harmonized, aggregated access to large amounts of geospatial data by
+offering a logical view of single, multi-dimensional objects;
+* Drilling through long time series of different satellite series more efficiently; and
+* Efficiently merging different information sources (remote-sensing and in-situ,
+authoritative, and non-authoritative).
+
+Historically, geospatial data cubes were introduced some time ago [<<Baumann_1992>>].
+Recent activity by organizations listed in Annex C provide the support for this Geospatial
+Coverage Data Cube Community Practice.
+

@@ -1,0 +1,67 @@
+
+
+[abstract]
+== Abstract
+
+Data cubes for geospatial information provide the means to integrate observations and
+other types of geospatial data for use in multiple applications through simplified access
+and efficient analytics. Using the Geospatial Coverages data structure, this Community
+Practice defines requirements for a geospatial coverages data cube infrastructure and
+guidelines for enhancements and extensions to the basic core.
+
+
+[.preface]
+== Preface
+
+This Community Practice documents aspects of operational systems that are agreed by
+the OGC members to be requirements for Geospatial Coverage Data Cubes. This
+document draws from the operational systems as listed in the references section including
+EarthServer, ESA, Open Data Cube, rasdaman, EOX, ADAM, and PCI Geomatics
+platforms.
+
+With this paper and other activities, OGC is contributing to the advancement of
+Geospatial Data Cubes. A recent US National Geospatial Advisory Committee (NGAC)
+Task Team made this recommendation:
+
+[quote,NGAC 2018]
+____
+The NGAC Task Team recommends that OGC be encouraged to continue work on
+the standards that support the agile and reliable and consistent use of a data cube
+approach. This would help address this section's question about the efficient
+synergy between public and private sector use to meet customer/client
+requirements.
+____
+
+Attention is drawn to the possibility that some of the elements of this document may be
+the subject of patent rights. The Open Geospatial Consortium shall not be held
+responsible for identifying any or all such patent rights.
+
+Recipients of this document are requested to submit, with their comments, notification of
+any relevant patent claims or other intellectual property rights of which they may be
+aware that might be infringed by any implementation of the standard set forth in this
+document, and to provide supporting documentation.
+
+
+[.preface]
+== Submitters
+
+All questions regarding this submission should be directed to the editor or the submitters:
+
+[cols="2",options="header,unnumbered"]
+|===
+| Name                      | Affiliation
+| George Percivall, editor  | OGC
+| David Gavin               | Digital Earth Australia
+| Peter Baumann             | Jacobs University and rasdaman
+| Peter Strobl              | EC-JRC
+| Syed R. Rizvi             | ama-inc.com
+| Andrew Cherry             | ama-inc.com
+| Simone Mantovani          | MEEO
+| Grega Milcinski           | Sinergise
+| Stephan Meissl            | EOX
+| Arnold Hougham            | PCI Geomatics
+|===
+
+
+
+

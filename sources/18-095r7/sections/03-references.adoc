@@ -1,0 +1,40 @@
+
+[bibliography]
+== References
+
+The following normative documents contain provisions that, through reference in this
+text, constitute provisions of this document. For dated references, subsequent
+amendments to, or revisions of, any of these publications do not apply. For undated
+references, the latest edition of the normative document referred to applies.
+
+
+* [[[OGC_2006,OGC 07-011]]], OGC: The OGC Abstract Specification Topic 6: Schema for coverage
+geometry and functions, OGC Document 07-011, 2006. (Also available as ISO 19123)
+http://portal.opengeospatial.org/files/?artifact_id=19820
+
+* [[[OGC_2011,OGC 08-094r1]]], OGC: OGC SWE Common Data Model Encoding Standard, OGC
+Document 08-094r1, version 2.0, 2011 http://portal.opengeospatial.org/files/?artifact_id=41157
+
+* [[[OGC_2017,OGC 09-146r6]]], OGC: OGC Coverage Implementation Schema (CIS) - Implementation
+Standard, Version 1.1, OGC Document 09-146r6, 2017. (Also published as ISO 19123-2)
+http://docs.opengeospatial.org/is/09-146r6/09-146r6.html
+
+* [[[WCS_2012,OGC 17-089r1]]], OGC: OGC Web Coverage Service (WCS) 2.1 Interface Standard - Core,
+version 2.1, OGC Document 17-089r1, 2018. http://www.opengeospatial.org/standards/wcs
+
+* [[[WCS-P_2014,OGC 08-059r4]]], OGC: OGC WCS Interface Standard - Processing Extension (WCS-P),
+version 2.0, OGC Document 08-059r4, 2014. https://portal.opengeospatial.org/files/08-059r4
+
+* [[[WCPS_2009,OGC 08-068r2]]], OGC: OGC Web Coverage Processing Service (WCPS) Language
+Interface Standard, version 1.0, OGC Document 08-068r2, 2009.
+
+* [[[WMS_2006,OGC 06-042]]], OGC: OGC Web Map Service (WMS) Implementation Specification,
+Version 1.3, OGC Document 06-042, 2006. (Also published as ISO 19128)
+
+* [[[WMTS_2010,OGC 07-057r7]]], OGC: OGC Web Map Tile Service (WMTS) Implementation Standard,
+version 1.0, OGC Document 07-057r7, 2010.
+
+The versions listed here were current at the time the document was written. Future
+implementations may use future versions.
+
+Additional citations are in the Bibliography Annex.

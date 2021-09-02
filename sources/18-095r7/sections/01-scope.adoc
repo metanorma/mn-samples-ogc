@@ -1,0 +1,13 @@
+
+== Scope
+
+This document describes community practices for Geospatial Coverage Data Cubes as
+implemented by multiple communities and running as operational systems. An objective
+of this document is to promote coordination and common terminology leading to the
+possibility to federate data cube services.
+
+This Community Practice represents a specific approach to making geospatial data
+available using open standards. Other approaches for geospatial data cubes, e.g.,
+different data structures and access methods, will be investigated in OGC based on this
+Community Practice and other perspectives including promising research and innovative
+implementations.
