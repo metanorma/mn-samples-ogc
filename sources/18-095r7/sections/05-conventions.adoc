@@ -1,0 +1,39 @@
+
+== Conventions
+
+This section provides details and examples for any conventions used in the document.
+Examples of conventions are symbols, abbreviations, use of XML schema, or special
+notes regarding how to read the document.
+
+
+=== Identifiers
+
+The normative provisions in this specification are denoted by the Uniform Resource
+Indicator (URI)
+
+`http://www.opengis.net/bp/datacubes/ReqXX`
+
+All requirements and conformance tests that appear in this document are denoted by
+partial URIs which are relative to this base.
+
+
+=== Acronyms
+
+API:: Application Programming Interface
+CEOS:: Committee on Earth Observation Satellites
+CIS:: Coverage Implementation Schema
+CRS:: Coordinate Reference System
+DGGS:: Discrete Global Grid Systems
+DIAS:: Data and Information Access Services
+ECMWF:: European Centre for Medium-Range Weather Forecasts
+ISO:: International Organization for Standardization
+NGAC:: National Geospatial Advisory Committee
+OGC:: Open Geospatial Consortium,
+OWS:: OGC Web Service
+SQL/MDA:: Structured Query Language/Multi-Dimensional Arrays
+SWE:: Sensor Web Enablement
+WCPS:: Web Coverage Processing Service
+WCS:: Web Coverage Service
+WMS:: Web Map Service
+WMTS:: Web Map Tile Service
+WPS:: Web Processing Service

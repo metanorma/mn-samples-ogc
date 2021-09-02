@@ -1,0 +1,117 @@
+
+[[cls_9]]
+== Analytics: Queries and Access
+
+The significant value of data cubes services is the ability to perform analytics that meet
+user needs. Key to the value is that the user need not have detailed knowledge of the
+source data structure and observation artifacts. This section defines Geospatial Coverage
+Data Cube analytics in terms of data access methods and queries.
+
+
+[[req_5]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req05
+
+A Geospatial Coverage Data Cube Service shall support analytics on all domain axes alike, irrespective of the nature of the dimension, e.g. spatial or temporal.
+====
+
+
+In the past, most standards as well as implementations had dedicated methods for spatial
+extraction and different ones for temporal extraction. Data cubes, on the contrary, offer
+the single concept of spatial-temporal axis described by ornamenting metadata. After
+such a unifying step, trimming and slicing (see <<figure_2>>) can follow the same syntax
+along all axes. Note that this is not withstanding different units of measure - Latitude
+might be measured in degrees like 42°30’, time in days like 2017-06-06, height in flight
+levels like FL100.
+
+
+[[req_6]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req06
+
+A Geospatial Coverage Data Cube Service shall allow efficient trimming and slicing along any number of axes from a data cube in a single request by the user.
+====
+
+
+[[req_7]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req07
+
+A Geospatial Coverage Data Cube Service shall not allow requests that require excessive resources, responding to the user with an estimate of the resource requirements and/or recommendations on how to reduce resources.
+====
+
+
+Operations on a data cube can be trim or slice operations or other analytics. Users from most Earth Science communities are interested in performing both request types efficiently and fast [<<Wagemann_2017>>].
+
+* Trimming: a cut-out of the same dimensionality (e.g., a regional subset of a larger
+multiband image).
+*  Slice: a subset of reduced dimensionality (e.g., a single band from a multiband
+image, or a time series of feature values at a single location).
+*  Trimming and slicing can be combined in a single request.
+
+
+[[figure_2]]
+.Data cube trimming (left) and slicing (right) [<<Baumann_2018>>]
+image::images/fig2.png[]
+
+
+[[req_8]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req08
+
+A Geospatial Coverage Data Cube Service shall allow tuning of performance to anticipated user query patterns.
+====
+
+Traditional storage, for example, has been optimized for horizontal access, penalizing
+temporal and vertical extraction.
+
+Data cubes should support dimension neutrality: meaning that the complexity of a
+specific processing request (e.g., a query) does not depend on the dimensions involved in
+the request. Data cubes should expose the dataset in a way that assure dimension
+neutrality [<<Stefano_2017>>].
+
+This document makes no quantitative performance requirements. The emphasis is on
+functionality. Optimization as a capability shall be supported.
+
+
+[[req_9]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req09
+
+A Geospatial Coverage Data Cube Service shall provide server-side analytic processing on the data including composite extraction, processing, filtering, and fusion tasks in an ad-hoc fashion.
+====
+
+
+Different Earth Science disciplines require processing operations of different kinds. The
+climate science community, for example, is interested in generating anomalies and
+averages of data over a certain period of time. For the vegetation community, the query
+language defined in Web Coverage Processing Service (WCPS) is very useful to do band
+calculation, for example, to calculate on-demand the Normalized Difference Vegetation
+Index (NDVI) of a satellite image [<<Wagemann_2017>>]. WCPS is also useful for spatiotemporal
+statistics, etc.
+
+Data cubes may need to do regridding and reprojection on the fly based on the datasets
+and the user requirements. Gridding to a common projection and tiling system comes
+with loss of original product information. As a single grid may not be suitable for the
+community’s purposes, a datacube service may need to perform a regridding and
+reprojection on the fly.

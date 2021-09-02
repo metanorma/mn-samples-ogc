@@ -1,0 +1,84 @@
+
+== Information model: Geospatial Coverages
+
+To support analytics, a data cube shall use an information model that minimizes artifacts
+of how the data was created or acquired and support analytics on the information model
+that are of value to analysts. The Geographic Coverage concept provides such an
+information model. A Geographic Coverage associates positions within a bounded space
+(its domain) to attribute values (its range). <<OGC_2006>>.
+
+To be clear, this Community Practice defines three related concepts:
+
+* Data Cube
+** Multi-dimensional ("n-D") array of values. Even though it is called a 'cube', it
+can be 1-dimensional, 2-dimensional, 3-dimensional, or higher-dimensional.
+* Geospatial Coverage Data Cube
+** A Data Cube established on basis of a Coverage with a specific grid system
+for geospatial data with at least one dimension of spatial or temporal
+definition.
+* Geospatial Data Coverage Cube Service
+** Online service that provides access and analytics on Geospatial Data Cubes.
+
+Although the name "`data cube`" suggests a 3-dimensional model, the geospatial data cube
+model is not restricted to that. The spectrum of dimensions includes 1-D sensor data, 2-D
+imagery, 3-D x/y/t image time-series and x/y/z subsurface voxel data, and 4-D x/y/z/t
+climate and ocean data cubes.
+
+For the temporal dimension, a temporal coordinate system is required. A temporal
+coordinate system measures time system based on an interval scale on which distance is
+measured as a multiple of a single unit of time. Ordinal temporal reference systems and
+calendars need not be supported.
+
+[[req_1]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req01
+
+A Geospatial Data Cube shall use the Geographic Coverage model as defined in OGC Coverage Implementation Schema (CIS).
+====
+
+The Coverage Implementation Schema (CIS) specification [<<OGC_2017>>] establishes a
+concrete, interoperable, conformance-testable Coverage. CIS is based on the abstract
+concepts of OGC Abstract Topic 6 [<<OGC_2006>>]. CIS is interoperable in the sense that
+coverages can be conformance tested, regardless of their data format encoding, down to
+the level of single "`pixels`" or "`voxels.`" CIS provides for grids such as shown in <<figure_1>>
+including combinations of regular and irregular axis; and showing grids over time as a
+vertical axis.
+
+[[figure_1]]
+.Example Grids consistent with CIS
+image::images/fig1.png[]
+
+As defined in CIS, the domain set of a Coverage determines the exact locations of a
+coverage overall and its set of direct positions. The domain set is defined through an
+ordered list of axes whose lower and upper bounds establish the extent along each axis.
+The axis sequence and their meaning is defined by the CRS. This domain set CRS is
+called the coverage’s Native CRS. CIS supports all CRSs including Euclidean and
+spherical, and geographic. CRSs maybe defined by identifier and listing in a registry,
+e.g., EPSG, or by custom definition of the CRS.
+
+Additionally, some redundant information is present in the domain set for efficiency
+reasons: the number of dimensions, axis labels, and UoM (Unit of Measure) labels
+simplify parsing the coverage as the parser does not have to retrieve the CRS definition,
+such as from the OGC CRS resolver at http://www.opengis.net/def/crs and
+http://www.opengis.net/def/crs-compound.
+
+As defined in CIS, the RangeType component adds a structure description and technical
+metadata required for an appropriate (however, application independent) understanding
+of a coverage. For this structure description, the SWE Common DataRecord [<<OGC_2011>>]
+is used. Optionally, interpolation directives can be added.
+
+The CIS standard does not require uniform time. CIS Clause 8.2 on Irregular
+independent grid axes states that time axis may be irregular, e.g., supporting arbitrary
+image acquisition time.
+
+Coverages can be encoded in any suitable format (such as GML, JSON, GeoTIFF,
+NetCDF, HDF) and can be partitioned, e.g., for a time-interleaved representation.
+Coverages are independent from service definitions and, therefore, can be accessed
+through a variety of OGC services types, such as the Web Coverage Service (WCS)
+standards suite (see [<<Baumann_2018>>] for an introduction). The coverage structure
+can serve a wide range of coverage application domains, thereby contributing to
+harmonization and interoperability between and across these domains.

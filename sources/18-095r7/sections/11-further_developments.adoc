@@ -1,0 +1,150 @@
+
+
+== Further developments
+
+This section identifies topics that may affect the future development of Geospatial
+Coverage Data Cube services.
+
+
+=== Federation of Data Cubes
+
+Geospatial Coverage Data Cubes can be an important step toward establishing a common
+analytical framework to link very large, multi-resolution and multi-domain datasets
+together for analysis. The Geospatial Coverage Data Cube defined in this paper provides
+the basis for a network of data cubes operating on large geoscientific and geospatial
+datasets to address global as well as national challenges [Lewis 2017].
+
+[[figure_4]]
+.Data Cube Federation envisioned by CEOS [<<CEOS_2016>>]
+image::images/fig4.png[]
+
+Data cubes are being established at Global, Regional, and National level, as in particular
+Regional and National data owners are constrained to publish their data on infrastructures
+on their territory. At the thematic level, it can be expected that different operators will
+appear and will want to operate their own instance of a data cube. Also, in this distributed
+scenario, applications shall be able to combine data layers held in different data cube
+instances, even if based on different technologies.
+
+Federation of datacubes introduces location transparency of data sets hosted by geographically
+disparate data providers, as well as their processing. This offers several distinct advantages
+for users.
+
+* Enhanced offering: Users can access the sum of all individual offerings of the
+participating data providers.
+* Location transparency: When accessing a dataset, users can send the request to
+any federation member – users do not need to know the location of a particular
+data set. In other words, the federation offers a common, flat information space.
+* Remote fusion: When combining two or more data sets in a request (such as a
+WCPS query) the federation partners determine an efficient way of solving this
+request and execute the request accordingly, without any extra client intervention.
+In other words, users get returned only the result requested, without any need for own source data download, reformatting, and processing.
+
+
+Such federations have been implemented on rasdaman datacubes, demonstrated in EarthServer-2 [<<EarthServer_2017>>] on Petascale through intercontinental transparent
+federation connecting ECMWF/UK and NCI/Australia. Further, the German Sentinel
+hub, CODE-DE, is federated with an ESA DIAS and continuously being extended with
+further federation partners, including commercial offerings.
+
+
+[[figure_5]]
+.Data Cube Federation implemented with rasdaman [<<EarthServer_2017>>]: query path from EGU Vienna to ECMWF, subquery forked to NCI (center); query path from EGU Vienna to NCI, subquery forked to ECMWF (right); fusion query result (identical for both queries), displayed in NASA WebWorldWind (left)
+image::images/fig5.png[]
+
+
+=== DGGS for Data Cubes
+
+"`Datacubes: A Discrete Global Grid Systems Perspective`" [<<Purss_2019>>] discusses options
+and how it is possible to implement a data cube based on discrete global grid systems,
+while using the same topologies as conventional data cubes. These provide a flexible
+spatial data infrastructure that leverages the same topological advantages as conventional
+geospatial data cubes, while reducing barriers to data interoperability of both raster and
+vector data and providing additional functionality. Also, they potentially provide a very
+efficient approach to connecting to big data sources in order to extract datasets on
+demand prior to proceeding to multi-level intelligent big data processing, mining,
+machine learning, and visualizations.
+
+The OGC DGGS Abstract Specification Topic 21 [<<DGGS_2017>>] defines a DGGS as a
+spatial reference system that uses a hierarchical tessellation of cells to partition and
+address the globe. DGGS are characterized by the properties of their cell structure, geoencoding,
+quantization strategy, and associated mathematical functions. The OGC
+DGGS Abstract Specification supports the specification of standardized DGGS
+infrastructures that enable the integrated analysis of very large, multi-source, multiresolution,
+multi-dimensional, distributed geospatial data.
+
+Data cubes can benefit from an underlying DGGS compliant data tiling and integration
+scheme as defined by the OGC DGGS specification. A data cube based on a DGGS
+enforces a more comprehensive set of spatial boundaries to the problem of global spatial
+data representation and integration. Further developments of DGGS aim to enable data
+cubes to be federated at a truly global scale, without the spatial limitations and constraints
+imposed by heterogenous data cubes.
+
+
+=== Numerical Weather Prediction (NWP) coverages
+
+Coverages as defined in CIS1.1 can describe the atmosphere (or ocean) as a
+multidimensional 4D cube that contains parameters, e.g., temperature, wind, humidity
+(salinity), etc. Coverages are defined by (axis) dimensions that can contain one of more
+of these meteorological/ oceanographic parameters. A typical Numerical Weather
+Prediction (NWP) forecast simulation may be expressed as a set of 2D coverages, often,
+but not always based on rectified grids. A typical model run contains thousands of 2D
+files. This situation is managed by identifying, where possible, "`4D Coverages`" from
+many 2D files, as shown in <<figure_6>>. [Met/Ocean 2018]
+
+
+[[figure_6]]
+.Visualization of a stack of 2D coverages as a 4D coverage data cube.
+image::images/fig6.png[]
+
+
+=== OGC APIs for geospatial resources
+
+OGC is defining web-friendly APIs that can be used to access geospatial and location
+information in any domain. This major evolution in the OGC Standards Baseline is
+underway is currently underway with the development of several standards:
+
+* OGC API-Features
+* OGC API-Coverages
+* OGC API-Maps
+* OGC API-Tiles
+* OGC API-Processes
+* OGC API-Common
+
+The OGC API standards define modular API building blocks to spatially enable Web
+APIs and be web-friendly for non-geospatial experts. The APIs are designed to allow
+developers to reuse and extend the APIs for any domain. The first consensus adoption of
+the OGC API-Features Core was published on 2019-10-14.
+
+The OGC APIs are being developed using OpenAPI, GitHub, and Hackathons. OpenAPI
+is a standard, programming-language-agnostic interface description for Web APIs which
+allows both humans and computers to discover and understand the capabilities of a
+service. OGC uses GitHub as a collaborative platform for specification development and
+for OpenAPI artifacts. Hackathons are conducted to implement and test draft API
+specifications. Along with the Specifications, OGC members are developing Reference
+Implementations, Compliance Testing, e-Learning, and Outreach materials.
+
+Once the OGC APIs specifications have been further developed, their relevance to the
+Geospatial Data Cubes can be better evaluated.
+
+The SpatioTemporal Asset Catalog (STAC) specification is being developed in
+coordination with the OGC APIs. The STAC specification aims to standardize the way
+geospatial assets are exposed online and queried. A 'spatiotemporal asset' is any file that
+represents information about the earth captured in a certain space and time. The initial
+focus is primarily remotely-sensed optical imagery (from satellites, but also planes,
+drones, balloons, etc.), but the core is designed to be extensible to SAR, full motion
+video, point clouds, hyperspectral, LiDAR and derived data like NDVI, Digital Elevation
+Models, mosaics, etc.
+
+
+[[scls_11-5]]
+=== Array Analytics
+
+Several approaches to APIs for analytics are discussed in <<scls_10-2>>. OGC held a
+Coverage and Processing Analytics Sprint in January 2020 to investigate the further
+development of technologies for analytic interoperability on data cubes, such as:
+
+* Jupyter notebooks and Python scripting language
+* Array Databases, e.g., ISO IS 9075-15 SQL/MDA (Multi-Dimensional Arrays)
+* xarray, GeoXarray, ZARR
+* application of R scripting language for statistics to data cubes, e.g. [<<Appel_2019>>]
+* OGC Web Coverage Processing Service (WCPS) Language Interface Standard [<<WCPS_2009>>]
+* OGC API - Coverages

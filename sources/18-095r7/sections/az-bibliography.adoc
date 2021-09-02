@@ -1,0 +1,76 @@
+
+[bibliography]
+== Bibliography
+
+* [[[Appel_2019,Appel 2019]]], M Appel and E Pebesma, "`On-Demand Processing of Data Cubes from Satellite Image Collections with the gdalcubes Library`", Data 4 (3), 92, 2019.
+
+* [[[Baumann_1992,Baumann 1992]]], P. Baumann: Language Support for Raster Image Manipulation in Databases. Proc. Int. Workshop on Graphics Modeling, Visualization in Science & Technology, Darmstadt/Germany, April 13 - 14, 1992, Springer 1993, pp. 236 – 245
+
+* [[[Baumann_2010,Baumann 2010]]], P. Baumann, S. Feyzabadi, C. Jucovschi: Putting Pixels in Place: A
+Storage Layout Language for Scientific Data. Proc. IEEE ICDM Workshop on
+Spatial and Spatiotemporal Data Mining (SSTDM'10), December 14, 2010,
+Sydney, Australia
+
+* [[[Baumann_2017,Baumann 2017]]], Baumann, P., The Datacube Manifesto, EarthServer Project, 2017.
+Retrieved from http://www.earthserver.eu/tech/datacube-manifesto
+
+* [[[Baumann_2018,Baumann 2018]]], P. Baumann, D. Misev, V. Merticariu, B. Pham Huu: Datacubes: Towards Space/Time Analysis-Ready Data.. In: J. Doellner, M. Jobst, P. Schmitz (eds.): Service Oriented Mapping - Changing Paradigm in Map Production and Geoinformation Management, Springer Lecture Notes in Geoinformation and Cartography, 2018
+
+* [[[CEOS_2016,CEOS 2016]]], CEOS and the Australian Geoscience DataCube - Towards Integrated
+Earth Environmental Information Systems, Presentation by Dr. Alex Held,
+CSIRO and CEOS Chair Representative, DIAS Symposium, Tokyo, August 2016
+
+* [[[CEOS_2018,CEOS 2018]]], Open Data Cube Manual, CEOS. Accessed June 27, 2018.
+http://datacube-core.readthedocs.io/en/latest/
+
+* [[[DGGS_2017,DGGS 2017]]], OGC Discrete Global Grid Systems (DGGS) Abstract Specification
+Topic 21, OGC Document 15-104r5, Publication Date: 2017-08-01
+
+* [[[EarthServer_2017,EarthServer 2017]]], P. Baumann, A.P. Rossi, B. Bell, O. Clements, B. Evans, H.
+Hoenig, P. Hogan, G. Kakaletris, P. Koltsida, S. Mantovani, R. Marco Figuera, V.
+Merticariu, D. Misev, B. Pham Huu, S. Siemen, J. Wagemann: Fostering Cross-
+Disciplinary Earth Science Through Datacube Analytics. In. P.P. Mathieu, C.
+Aubrecht (eds.): Earth Observation Open Science and Innovation - Changing the
+World One Pixel at a Time, International Space Science Institute (ISSI), 2017, pp.
+91 – 119
+
+* [[[ESA_2018,ESA 2018]]], Invitation to Tender: "`Data Cube Facility Service 2018–2020`"
+https://eo4society.esa.int/2018/09/06/data-cube-facility-service-2018-2020/
+
+* [[[Misev_2018,Misev et al 2018]]] D. Misev, P. Baumann, V. Merticariu, D. Bellos, S. Wiehle:
+BigDataCube: Making Big Data a Commodity. Proc. 69th International
+Astronautical Congress (IAC), Bremen, Germany, 1-5 October 2018
+
+* [[[NGAC_2018,NGAC 2018]]], The Feasibility and Utility of Implementing Temporal Data Cubes to
+support Projection or "`Forecast`" models and land change trends. A Report of the
+National Geospatial Advisory Committee (NGAC) Landsat Advisory Group,
+April 2018
+
+* [[[Purss_2019,Purss 2019]]], Purss, Matt, et.al., Datacubes: A Discrete Global Grid Systems
+Perspective, Cartographica, Volume 54 Issue 1, Spring 2019, pp. 63-71. DOI:
+10.3138/cart.54.1.2018-0017
+
+* [[[RDA_2018,RDA 2018]]], RDA: Array Database Assessment Working Group Report.
+https://www.rd-alliance.org/groups/array-database-working-group.html
+
+* [[[Stefano_2017,Stefano 2017]]], Nativi, Stefano Nativi, et.al., A view-based model of data-cube to
+support big earth data systems interoperability, Big Earth Data, 1:1-2, 75-99,
+Published online: 04 Dec 2017. DOI: 10.1080/20964471.2017.1404232
+
+* [[[Strobl_2017,Strobl 2017]]], Strobl, Peter, et.al., The Six Faces of the Data Cube, Proc. of the 2017
+conference on Big Data from Space (BiDS’17) Toulouse, France 28–30
+November 2017 doi: 10.2760/383579
+
+* [[[Tan_2017,Tan 2017]]], Tan, Zhenyu, et.al. An Array Database Approach for Earth Observation
+Data Management and Processing, ISPRS Int. J. Geo-Inf. 2017, 6, 220; Published:
+19 July 2017. doi:10.3390/ijgi6070220
+
+* [[[Vinhas_2016,Vinhas 2016]]], Vinhas, Lubia, et.al, Web Services for Big Earth Observation Data,
+Proceedings XVII GEOINFO, November 27-30, 2016, Campos do Jorda ̃o, Brazil
+
+* [[[Wagemann_2017,Wagemann 2017]]], Wagemann, Julia, et.al., Geospatial web services pave new ways
+for server- based on-demand access and processing of Big Earth Data,
+International Journal of Digital Earth, 11:1, 7-25, Published online: 17 Jul 2017.
+DOI: 10.1080/17538947.2017.1351583
+
+

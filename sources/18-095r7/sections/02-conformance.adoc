@@ -1,0 +1,16 @@
+
+== Conformance
+
+This Community Practice defines requirements for a core Geospatial Coverages Data
+Cube and guidelines for enhancing the core. Requirements are placed in the following
+Conformance Classes:
+
+* Core
+* Analytics Extension
+* Visualization Extension
+
+Conformance with this Community Practice shall be checked using all the relevant tests
+specified in Annex A (normative) of this document. The framework, concepts, and
+methodology for testing, and the criteria to be achieved to claim conformance are
+specified in the OGC Compliance Testing Policies and Procedures and the OGC
+Compliance Testing web site footnote:[www.opengeospatial.org/cite].

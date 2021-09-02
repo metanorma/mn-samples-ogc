@@ -1,0 +1,121 @@
+
+
+== Interoperability: APIs and Encodings
+
+Interoperability and scalable fusion of spatial information across different data cubes is
+crucial and highly dependent on the use of robust international standards governing the
+access and transfer protocols for communication between client and server as well as
+among different servers [<<Strobl_2017>>].
+
+For interoperability and federation, data cubes need to provide access and analytics using
+well-known and open interfaces. To serve the largest communities possible, Application
+Programming Interfaces (APIs) defined by open consensus standards are needed. The
+OGC Web Service standards have been implemented by most of the examples listed in
+<<annex_b>>. A Geospatial Coverage Data Cube Service may provide more than one
+interface.
+
+
+=== Core Access Interoperability
+
+[[req_10]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req10
+
+A Geospatial Coverage Data Cube service interface for data access shall be compliant with OGC Web Coverage Service (WCS).
+====
+
+
+The primary access method to a geospatial data cube is using the interface defined in the
+OGC Web Coverage Service, Version 2.1 [<<WCS_2012>>].
+
+Compliance of the data cube to the WCS standard shall be certified using the OGC
+Compliance Test suite. http://www.opengeospatial.org/compliance/getCertified
+
+Data cubes may choose to define a WCS profile for their community, e.g., WCS EO
+Profile.
+
+Data and other information returned from a data cube to a client may be encoded in a
+variety of forms. There are many formats suitable for use in Geospatial Data Cubes.
+Preferences for a specific format tend is related to the community to be served. Analysis
+Ready Data (ARD) data choices are based on the analysis needs agreed by their targeted
+user community. The Data Cube will need to support formats typically used by the ARD
+community.
+
+
+[[req_11]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req13
+
+A Geospatial Coverage Data Cube shall support encodings that are defined in open consensus standards and that are used by the community targeted.
+====
+
+To support the variety of data formats, the WCS standard includes extensions mapping
+the information model to the format, e.g., GeoTIFF, netCDF, JPEG2000, GMLJP2, JPIP,
+and GRIB2.
+
+
+[[scls_10-2]]
+=== Interoperability for Analysis
+
+[[req_12]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req12
+
+A Geospatial Coverage Data Cube service interface for data analytics shall support OGC WCS Processing Extension (WCS-P) and/or OGC Web Processing Service (WPS).
+====
+
+When a geospatial data cube provides user-specified analytics on the data it holds, the
+data cube may use the WCS-P extension [WCS-P 2014] which extends the WCS using on
+the WCPS Language Interface Standard [<<WCPS_2009>>].
+
+To support analytics, a data cube may accept requests for analysis via WCPS as it that
+expresses the analytics or by sending code to the server. Shipping procedural code to a
+data cube may be undesirable when considering user friendliness, parallelizability, and
+security. Therefore, some high-level language must be supported where users describe
+what they want to get, not the detailed algorithm [<<Baumann_2017>>].
+
+ISO IS 9075-15:2018 SQL/MDA (Multi-Dimensional Arrays) adds datacube modeling
+and querying to the SQL language in a domain-independent manner.
+
+A Web Processing Service (WPS) may be used to run an analysis tool in the Geospatial
+Coverage Data Cube Service, and return the results to the user. The WPS processing on
+the data cube can bring the required information to a user, without having to download
+entire datasets. For example, WPS can be used to enable on-the-fly time series analysis
+and derived products. Exposing this functionality through intuitive workflows and
+reusable, standard interfaces will mean that these services can be consumed and enjoyed
+by a greater audience.
+
+Analytics using server-side processing supported by Jupyter notebooks may also be used
+to perform data cube analytics. Further developments are described in <<scls_11-5>>.
+
+
+=== Interoperability for Visualization
+
+[[req_13]]
+[requirement]
+====
+[%metadata]
+model:: ogc
+type:: general
+label:: https://opengeospatial.org/bp/datacubes/Req13
+
+A Geospatial Coverage Data Cube service interface for maps shall be compliant with OGC Map Service (WMS) or OGC Web Map Tile Service (WMTS)
+====
+
+When a geospatial coverage data cube provides access to maps of the data it holds, the
+data cube shall use the using the interfaces defined in the OGC Web Map Service [<<WMS_2006>>] or the OGC Web Map Tile Service [<<WMTS_2010>>].
+
+Data cubes may choose to define a WMS profile for their community, e.g., WMS EO
+Profile, WMS profile for Time-Dependent or Elevation-Dependent Data.
