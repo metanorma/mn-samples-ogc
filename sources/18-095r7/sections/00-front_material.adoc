@@ -1,17 +1,5 @@
 
-
-[abstract]
-== Abstract
-
-Data cubes for geospatial information provide the means to integrate observations and
-other types of geospatial data for use in multiple applications through simplified access
-and efficient analytics. Using the Geospatial Coverages data structure, this Community
-Practice defines requirements for a geospatial coverages data cube infrastructure and
-guidelines for enhancements and extensions to the basic core.
-
-
-[.preface]
-== Preface
+.Preface
 
 This Community Practice documents aspects of operational systems that are agreed by
 the OGC members to be requirements for Geospatial Coverage Data Cubes. This
@@ -40,6 +28,15 @@ Recipients of this document are requested to submit, with their comments, notifi
 any relevant patent claims or other intellectual property rights of which they may be
 aware that might be infringed by any implementation of the standard set forth in this
 document, and to provide supporting documentation.
+
+[abstract]
+== Abstract
+
+Data cubes for geospatial information provide the means to integrate observations and
+other types of geospatial data for use in multiple applications through simplified access
+and efficient analytics. Using the Geospatial Coverages data structure, this Community
+Practice defines requirements for a geospatial coverages data cube infrastructure and
+guidelines for enhancements and extensions to the basic core.
 
 
 [.preface]
