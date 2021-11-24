@@ -40,7 +40,10 @@ An OWS Context Document primarily contains references to information and so is i
 [bibliography]
 == Normative references
 
+[NOTE,type=boilerplate]
+====
 The following normative references are used in this document.
+====
 
 * [[[OGC12-080r2,OGC 12-080r2]]], OGC OWS Context Conceptual Model, 2013-09-01, https://portal.opengeospatial.org/files/?artifact_id=55182
 
