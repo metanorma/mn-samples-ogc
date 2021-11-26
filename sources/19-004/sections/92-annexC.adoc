@@ -1,6 +1,6 @@
 
 [[annexC]]
-[appendix,obligation=normative]
+[appendix,obligation=informative]
 == Revision History
 
 [%unnumbered]
