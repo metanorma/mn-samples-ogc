@@ -9,7 +9,7 @@ notes regarding how to read the document.
 === Identifiers
 
 The normative provisions in this specification are denoted by the Uniform Resource
-Indicator (URI)
+Indicator (URI):
 
 `http://www.opengis.net/bp/datacubes/ReqXX`
 

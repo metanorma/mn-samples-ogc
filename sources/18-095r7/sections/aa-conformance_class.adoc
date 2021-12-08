@@ -9,27 +9,27 @@ Implementations claiming Core Conformance shall be conformant with the requireme
 
 Compliance of the data cube to OGC Web Service Standards shall be certified using the OGC Compliance Test suite. http://www.opengeospatial.org/compliance/getCertified
 
-<<req_1>>
+* <<req_1>>
 
-<<req_2>>
+* <<req_2>>
 
-<<req_3>>
+* <<req_3>>
 
-<<req_4>>
+* <<req_4>>
 
-<<req_5>>
+* <<req_5>>
 
-<<req_6>>
+* <<req_6>>
 
-<<req_7>>
+* <<req_7>>
 
-<<req_8>>
+* <<req_8>>
 
-<<req_9>>
+* <<req_9>>
 
-<<req_10>>
+* <<req_10>>
 
-<<req_11>>
+* <<req_11>>
 
 
 === Conformance class: Analytics Extension
@@ -40,7 +40,7 @@ the requirements listed in the Core Conformance and in this clause.
 Compliance of the data cube to OGC Web Service Standards shall be certified using the
 OGC Compliance Test suite. http://www.opengeospatial.org/compliance/getCertified
 
-<<req_12>>
+* <<req_12>>
 
 
 === Conformance class: Visualization Extension
@@ -51,4 +51,4 @@ with the requirements listed in the Core Conformance and in this clause.
 Compliance of the data cube to OGC Web Service Standards shall be certified using the
 OGC Compliance Test suite. http://www.opengeospatial.org/compliance/getCertified
 
-<<req_13>>
+* <<req_13>>

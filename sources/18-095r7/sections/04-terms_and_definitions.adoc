@@ -21,7 +21,7 @@ be coordinates or enumerations, e.g., categories.
 
 === Geospatial Coverage Data Cube
 
-A term:[Data Cube] established on basis of a Coverage with a specific grid system for
+A {{Data Cube}} established on basis of a Coverage with a specific grid system for
 geospatial data with at least one dimension of spatial or temporal definition.
 
 NOTE: This definition is particular to the concept defined in this Community Practice.
@@ -29,7 +29,8 @@ NOTE: This definition is particular to the concept defined in this Community Pra
 
 === Geospatial Coverage Data Cube Service
 
-Online service that provides access and analytics on term:[Geospatial Coverage Data Cube,Geospatial Coverage Data Cubes].
+Online service that provides access and analytics on
+{{Geospatial Coverage Data Cube,Geospatial Coverage Data Cubes}}.
 
 
 === Coverage

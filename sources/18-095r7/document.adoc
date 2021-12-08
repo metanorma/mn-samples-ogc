@@ -12,7 +12,6 @@
 :docnumber: 18-095r7
 :external-id: http://www.opengis.net/doc/CS/dataCubeCP
 :keywords: Data Cubes, Coverages, Spatial Analytics, Geospatial
-:docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:
