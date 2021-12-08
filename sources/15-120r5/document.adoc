@@ -15,7 +15,6 @@
 :mn-document-class: ogc
 :status: published
 :language: en
-:docfile: document.adoc
 :keywords: ogcdoc, OGC document, CDB, Common Data Base, simulation, synthetic environment, virtual, primer, data store
 :submitting-organizations: CAE Inc.;Carl Reed, OGC Individual Member;Envitia, Ltd;Glen Johnson, OGC Individual Member;KaDSci, LLC;Laval University;Open Site Plan;University of Calgary;UK Met Office
 :imagesdir: images

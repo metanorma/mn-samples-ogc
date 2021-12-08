@@ -14,7 +14,6 @@
 :role: editor
 :keywords: ogcdoc, OGC document, Best Practice, moving features, netCDF, CF convention, trajectory
 :submitting-organizations: Central Research Laboratory, Hitachi Ltd.; Geomatys
-:docfile: 16-114r3.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:

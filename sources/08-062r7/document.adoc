@@ -12,7 +12,6 @@
 :external-id: http://www.opengis.net/doc/orm/2.1
 :keywords:
 :submitting-organizations:
-:docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :imagesdir: images

@@ -9,7 +9,6 @@
 :external-id:
 :keywords:
 :submitting-organizations: Geodan Holding bv, the Netherlands
-:docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:

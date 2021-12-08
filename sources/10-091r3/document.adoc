@@ -14,7 +14,6 @@
 :role: editor
 :keywords: ogcdoc, netcdf, cf-netcdf
 :submitting-organizations: IMAA-CNR Italy; METEO-FRANCE; Natural Environment Research Council (NERC); Northrop Grumman Corporation; University Corporation for Atmospheric Research (UCAR); US National Oceanic and Atmospheric Administration (NOAA)
-:docfile: document.adoc
 :mn-document-class: ogc
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :local-cache-only:

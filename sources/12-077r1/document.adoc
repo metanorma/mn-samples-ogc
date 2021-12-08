@@ -13,7 +13,6 @@
 :mn-document-class: ogc
 :status: published
 :language: en
-:docfile: document.adoc
 :imagesdir: images
 :local-cache-only:
 :data-uri-image:

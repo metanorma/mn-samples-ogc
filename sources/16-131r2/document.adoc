@@ -13,7 +13,6 @@
 :mn-document-class: ogc
 :status: published
 :language: en
-:docfile: document.adoc
 :keywords: ogcdoc, OGC documents, Big Data, geospatial, location, open, standards, interoperability, cloud computing
 :mn-output-extensions: xml,html,doc,pdf,rxl
 :imagesdir: images
