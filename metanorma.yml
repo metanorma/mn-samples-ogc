@@ -20,8 +20,10 @@ metanorma:
       - sources/18-016r1/document.adoc
       - sources/18-046/document.adoc
       - sources/18-053r2/document.adoc
+      - sources/18-095r7/document.adoc
       - sources/19-004/document.adoc
+      - sources/style-sample/document.adoc
 
   collection:
     organization: "OGC: The Open Geospatial Consortium"
-    name: "OGC Publications in Metanorma"
+    name: "OGC deliverable samples in Metanorma"
