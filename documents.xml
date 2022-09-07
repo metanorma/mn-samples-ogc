@@ -1,0 +1,1684 @@
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>OGC deliverable samples in Metanorma</title><contributor><role type='author'/><organization><name>OGC: The Open Geospatial Consortium</name></organization></contributor><relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Conformance Test Guidelines for OpenGIS Catalog Services Specification for CORBA</title>
+  <uri type="xml">documents/00-027/document.xml</uri>
+  <uri type="pdf">documents/00-027/document.pdf</uri>
+  <uri type="doc">documents/00-027/document.doc</uri>
+  <uri type="html">documents/00-027/document.html</uri>
+  <uri type="rxl">documents/00-027/document.rxl</uri>
+  <docidentifier type="ogc-internal">00-027</docidentifier>
+  <docnumber>00-027</docnumber>
+  <date type="2000-05-11"/>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Geodan Holding bv, the Netherlands</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Laura Diaz</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Bart van der Eijnden</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Barend Gehrels</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>test-suite</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Technical Committee Policies and Procedures</title>
+  <uri type="xml">documents/05-020r27/document.xml</uri>
+  <uri type="pdf">documents/05-020r27/document.pdf</uri>
+  <uri type="doc">documents/05-020r27/document.doc</uri>
+  <uri type="html">documents/05-020r27/document.html</uri>
+  <uri type="rxl">documents/05-020r27/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/pol/tcpnp/27.0</docidentifier>
+  <docidentifier type="ogc-internal">05-020r27</docidentifier>
+  <docnumber>05-020r27</docnumber>
+  <date type="published">
+    <on>2019-06-03</on>
+  </date>
+  <date type="issued">
+    <on>2019-05-29</on>
+  </date>
+  <date type="received">
+    <on>2019-03-28</on>
+  </date>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Scott Simmons</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>27.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;The &lt;link&gt; provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. "International standards"<fn reference="1"><p>As defined in ISO/IEC Directives, Part 2</p></fn> are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:&lt;/p&gt;<p>A document, established by consensus and approved by the OGC Membership, that provides, for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree of order in a given context.</p><p>To guide an open standards development and approval process, a member approved Policies and Procedures is required.</p><p>This document describes the OGC Technical Committee (TC) policies and procedures (P&amp;amp;P). The TC has been granted authority to operate by the OGC Bylaws. The TC is composed of individuals representing organizations that are duly recognized members in good standing of the OGC. The Technical Committee Chair (TCC - see <xref target="role-of-the-technical-committee-chair"/>) facilitates the TC process.</p><p>The TC P&amp;amp;P:</p><ul><li><p>Documents all TC voting processes and procedures;</p></li><li><p>Documents the formation, scope and processes required for TC subgroup and committee activities;</p></li><li><p>Documents the processes and procedures for submitting, reviewing, and approving a new standard using the Request for Comment procedures; and</p></li><li><p>Documents the process for revisions to adopted OGC® standards.</p></li></ul><p>As the needs and purpose of the TC change, these policies and procedures changes are approved by an electronic vote of the Voting Members of OGC TC or by recommendation of the OGC Planning Committee (PC). These policies and procedures may be augmented or clarified by Policy Directives issued and approved by the TC or the PC. Such directives are databased and hyperlinked to/from the appropriate portion of this document.</p><p>The OGC Technical Committee provides an open, collaborative forum for professional discussion related to the consensus development and/or evaluation, approval, and revision of OGC international standards. The primary use of approved OGC standards is to provide the ability to build and deploy interoperable geospatial solutions in the larger Information Technology (IT) domain.</p>&lt;p&gt;The OGC &lt;link&gt; govern personal and public interactions in any TC activity.&lt;/p&gt;&lt;/&gt;&lt;/&gt;</abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2019</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>policy</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">OGC Reference Model</title>
+  <uri type="xml">documents/08-062r7/document.xml</uri>
+  <uri type="pdf">documents/08-062r7/document.pdf</uri>
+  <uri type="doc">documents/08-062r7/document.doc</uri>
+  <uri type="html">documents/08-062r7/document.html</uri>
+  <uri type="rxl">documents/08-062r7/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/orm/2.1</docidentifier>
+  <docidentifier type="ogc-internal">08-062r7</docidentifier>
+  <docnumber>08-062r7</docnumber>
+  <date type="published">
+    <on>2011-12-19</on>
+  </date>
+  <date type="issued">
+    <on>2011-12-19</on>
+  </date>
+  <date type="received">
+    <on>2011-12-19</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>2.1</edition>
+  <version>
+    <revision-date>2011-12-19</revision-date>
+  </version>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>reference-model</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">CF-netCDF Core and Extensions Primer</title>
+  <uri type="xml">documents/10-091r3/document.xml</uri>
+  <uri type="pdf">documents/10-091r3/document.pdf</uri>
+  <uri type="doc">documents/10-091r3/document.doc</uri>
+  <uri type="html">documents/10-091r3/document.html</uri>
+  <uri type="rxl">documents/10-091r3/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/netcdf/Primer/1.0</docidentifier>
+  <docidentifier type="ogc-internal">10-091r3</docidentifier>
+  <docnumber>10-091r3</docnumber>
+  <date type="published">
+    <on>2011-04-05</on>
+  </date>
+  <date type="issued">
+    <on>2011-04-05</on>
+  </date>
+  <date type="received">
+    <on>2011-04-05</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>IMAA-CNR Italy</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>METEO-FRANCE</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Natural Environment Research Council (NERC)</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Northrop Grumman Corporation</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>University Corporation for Atmospheric Research (UCAR)</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>US National Oceanic and Atmospheric Administration (NOAA)</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Ben Domenico</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>
+    <p>This OGC primer provides an overview of the OGC CF-netCDF standards suite by describing the CF-netCDF core and extensions. The CF-netCDF standard defines how to encode digital geospatial information representing space/time-varying phenomena</p>
+  </abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2011</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>ogcdoc</keyword>
+  <keyword>netcdf</keyword>
+  <keyword>cf-netcdf</keyword>
+  <ext>
+    <doctype>other</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
+  <uri type="xml">documents/10-100r3/document.xml</uri>
+  <uri type="pdf">documents/10-100r3/document.pdf</uri>
+  <uri type="doc">documents/10-100r3/document.doc</uri>
+  <uri type="html">documents/10-100r3/document.html</uri>
+  <uri type="rxl">documents/10-100r3/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/spec/gmlsf/2.0.1</docidentifier>
+  <docidentifier type="ogc-internal">10-100r3</docidentifier>
+  <docnumber>10-100r3</docnumber>
+  <date type="published">
+    <on>2012-04-05</on>
+  </date>
+  <date type="issued">
+    <on>2012-04-05</on>
+  </date>
+  <date type="received">
+    <on>2011-05-24</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>CubeWerx Inc.</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>interactive instruments GmbH</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Geonovum</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Cadcorp Ltd.</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>CubeWerx Inc.</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>ESRI</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Galdos Systems Inc.</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>interactive instruments GmbH</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>PCI Geomatics</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Linda van den Brink</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Clemens Portele</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Panagiotis (Peter) A. Vretanos</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>2.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>standard</doctype>
+    <subdoctype>profile</subdoctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">A Primer for Dissemination Services for Wide Area Motion Imagery</title>
+  <uri type="xml">documents/12-077r1/document.xml</uri>
+  <uri type="pdf">documents/12-077r1/document.pdf</uri>
+  <uri type="doc">documents/12-077r1/document.doc</uri>
+  <uri type="html">documents/12-077r1/document.html</uri>
+  <uri type="rxl">documents/12-077r1/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/bp/wami-primer/1.0</docidentifier>
+  <docidentifier type="ogc-internal">12-077r1</docidentifier>
+  <docnumber>12-077r1</docnumber>
+  <date type="published">
+    <on>2012-11-28</on>
+  </date>
+  <date type="issued">
+    <on>2012-11-23</on>
+  </date>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Rahul Thakkar</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2012</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>other</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">OGC® WPS 2.0.2 Interface Standard Corrigendum 2</title>
+  <uri type="xml">documents/14-065r2/document.xml</uri>
+  <uri type="pdf">documents/14-065r2/document.pdf</uri>
+  <uri type="doc">documents/14-065r2/document.doc</uri>
+  <uri type="html">documents/14-065r2/document.html</uri>
+  <uri type="rxl">documents/14-065r2/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wps/2.0.2</docidentifier>
+  <docidentifier type="ogc-internal">14-065r2</docidentifier>
+  <docnumber>14-065r2</docnumber>
+  <date type="published">
+    <on>2015-03-05</on>
+  </date>
+  <date type="confirmed">
+    <on>2018-02-16</on>
+  </date>
+  <date type="issued">
+    <on>2015-01-27</on>
+  </date>
+  <date type="received">
+    <on>2014-11-25</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>TU Dresden</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>52°North</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Intergraph Corporation</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Image Matters LLC</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>CRP Henri Tudor</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Airbus Defence and Space</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Matthias Mueller</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Benjamin Pross</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>2.0.2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>
+    <p>In many cases geospatial or location data, including data from sensors, must be processed before the information can be used effectively. The OGC Web Processing Service (WPS) Interface Standard provides a standard interface that simplifies the task of making simple or complex computational processing services accessible via web services. Such services include well-known processes found in GIS software as well as specialized processes for spatio-temporal modeling and simulation. While the OGC WPS standard was designed with spatial processing in mind, it can also be used to readily insert non-spatial processing tasks into a web services environment.</p>
+    <p>The WPS standard provides a robust, interoperable, and versatile protocol for process execution on web services. It supports both immediate processing for computational tasks that take little time and asynchronous processing for more complex and time consuming tasks. Moreover, the WPS standard defines a general process model that is designed to provide an interoperable description of processing functions. It is intended to support process cataloguing and discovery in a distributed environment.</p>
+  </abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2015</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>TBD</keyword>
+  <keyword>geoprocessing</keyword>
+  <keyword>ogcdoc</keyword>
+  <keyword>OGC document</keyword>
+  <keyword>processes</keyword>
+  <keyword>processing</keyword>
+  <keyword>WPS</keyword>
+  <ext>
+    <doctype>standard</doctype>
+    <subdoctype>implementation</subdoctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Topic 21: Discrete Global Grid Systems Abstract Specification</title>
+  <uri type="xml">documents/15-104r5/document.xml</uri>
+  <uri type="pdf">documents/15-104r5/document.pdf</uri>
+  <uri type="doc">documents/15-104r5/document.doc</uri>
+  <uri type="html">documents/15-104r5/document.html</uri>
+  <uri type="rxl">documents/15-104r5/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/AS/dggs/1.0</docidentifier>
+  <docidentifier type="ogc-external">http://docs.opengeospatial.org/as/15-104r5/15-104r5.html</docidentifier>
+  <docidentifier type="ogc-internal">15-104r5</docidentifier>
+  <docnumber>15-104r5</docnumber>
+  <date type="published">
+    <on>2017-08-01</on>
+  </date>
+  <date type="issued">
+    <on>2017-06-13</on>
+  </date>
+  <date type="received">
+    <on>2015-09-30</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Geoscience Australia</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Landcare Research New Zealand</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>University of Calgary</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>PYXIS</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>SpaceCurve</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Zhengzhou Institute of Surveying &amp; Mapping</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>ESRI</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Matthew Purss</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>
+    <p>This document specifies the core Abstract Specification and extension mechanisms for Discrete Global Grid Systems (DGGS). <em>A DGGS is a spatial reference system that uses a hierarchical tessellation of cells to partition and address the globe. DGGS are characterized by the properties of their cell structure, geo-encoding, quantization strategy and associated mathematical functions.</em> The OGC DGGS Abstract Specification supports the specification of standardized DGGS infrastructures that enable the integrated analysis of very large, multi-source, multi-resolution, multi-dimensional, distributed geospatial data. Interoperability between OGC DGGS implementations is anticipated through implementation standards, and extension interface encodings of OGC Web Services.</p>
+  </abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>ogcdoc</keyword>
+  <keyword>OGC document</keyword>
+  <keyword>Discrete Global Grid System</keyword>
+  <keyword>DGGS</keyword>
+  <keyword>Digital Earth</keyword>
+  <keyword>DGGScore</keyword>
+  <keyword>Spatial Reference System</keyword>
+  <keyword>Global Data Structure</keyword>
+  <keyword>Geographic Information Systems</keyword>
+  <keyword>DE-9IM</keyword>
+  <keyword>standard</keyword>
+  <keyword>specification</keyword>
+  <ext>
+    <doctype>abstract-specification-topic</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Volume 0: Primer for the OGC CDB Standard: Model and Physical Data Store Structure</title>
+  <uri type="xml">documents/15-120r5/document.xml</uri>
+  <uri type="pdf">documents/15-120r5/document.pdf</uri>
+  <uri type="doc">documents/15-120r5/document.doc</uri>
+  <uri type="html">documents/15-120r5/document.html</uri>
+  <uri type="rxl">documents/15-120r5/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/BP/cdb-core-primer/1.1</docidentifier>
+  <docidentifier type="ogc-internal">15-120r5</docidentifier>
+  <docnumber>15-120r5</docnumber>
+  <date type="published">
+    <on>2018-12-19</on>
+  </date>
+  <date type="issued">
+    <on>2018-08-27</on>
+  </date>
+  <date type="received">
+    <on>2018-03-20</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>CAE Inc.</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Carl Reed, OGC Individual Member</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Envitia, Ltd</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Glen Johnson, OGC Individual Member</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>KaDSci, LLC</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Laval University</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Open Site Plan</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>University of Calgary</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>UK Met Office</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Carl Reed</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>
+    <p>The CDB standard defines a standardized model and structure for a single, "versionable", virtual representation of the earth. A CDB structured data store provides for a geospatial content and model definition repository that is plug-and-play interoperable between database authoring workstations. Moreover, a CDB structured data store can be used as a common online (or runtime) repository from which various simulator client-devices can simultaneously retrieve and modify, in real-time, relevant information to perform their respective runtime simulation tasks. In this case, a CDB is plug-and-play interoperable between CDB-compliant simulators. A CDB can be readily used by existing simulation client-devices (legacy Image Generators, Radar simulator, Computer Generated Forces, etc.) through a data publishing process that is performed on-demand in real-time.</p>
+    <p>The application of CDB to future simulation architectures will significantly reduce runtime-source level and algorithmic correlation errors, while reducing development, update and configuration management timelines. With the addition of the High Level Architecture - -Federation Object Model (HLA/FOM)&lt;fn&gt;&lt;p&gt;&lt;link&gt;&lt;/p&gt;&lt;/fn&gt; and DIS protocols, the application of the CDB standard provides a Common Environment to which inter-connected simulators share a common view of the simulated environment.&lt;/p&gt;&lt;p&gt;The CDB standard defines an open format for the storage, access and modification of a synthetic environment database. A <strong>synthetic environment</strong> is a &lt;em&gt;computer simulation&lt;/em&gt; that represents activities at a high level of realism, from simulation of theaters of war to factories and manufacturing processes. These environments may be created within a single computer or a vast distributed network connected by local and wide area networks and augmented by super-realistic special effects and accurate behavioral models. SE allows visualization of and immersion into the environment being simulated&lt;fn reference="2"&gt;&lt;p&gt;"Department of Defense Modeling and Simulation (M&amp;amp;S) Glossary", DoD 5000.59-M</p>
+  </abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>ogcdoc</keyword>
+  <keyword>OGC document</keyword>
+  <keyword>CDB</keyword>
+  <keyword>Common Data Base</keyword>
+  <keyword>simulation</keyword>
+  <keyword>synthetic environment</keyword>
+  <keyword>virtual</keyword>
+  <keyword>primer</keyword>
+  <keyword>data store</keyword>
+  <ext>
+    <doctype>best-practice</doctype>
+    <subdoctype>general</subdoctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Testbed-12 OWS Context User Guide</title>
+  <uri type="xml">documents/16-080/document.xml</uri>
+  <uri type="pdf">documents/16-080/document.pdf</uri>
+  <uri type="doc">documents/16-080/document.doc</uri>
+  <uri type="html">documents/16-080/document.html</uri>
+  <uri type="rxl">documents/16-080/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/PER/t12-A063</docidentifier>
+  <docidentifier type="ogc-internal">16-080</docidentifier>
+  <docnumber>16-080</docnumber>
+  <date type="published">
+    <on>2017-01-23</on>
+  </date>
+  <date type="issued">
+    <on>2017-06-29</on>
+  </date>
+  <date type="received">
+    <on>2017-06-29</on>
+  </date>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Roger Brackin</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>user-guide</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Moving Features Encoding Extension: netCDF</title>
+  <uri type="xml">documents/16-114r3/document.xml</uri>
+  <uri type="pdf">documents/16-114r3/document.pdf</uri>
+  <uri type="doc">documents/16-114r3/document.doc</uri>
+  <uri type="html">documents/16-114r3/document.html</uri>
+  <uri type="rxl">documents/16-114r3/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/BP/moving-features-ext-netCDF/1.0</docidentifier>
+  <docidentifier type="ogc-external">http://docs.opengeospatial.org/bp/16-114r3/16-114r3.html</docidentifier>
+  <docidentifier type="ogc-internal">16-114r3</docidentifier>
+  <docnumber>16-114r3</docnumber>
+  <date type="published">
+    <on>2018-12-18</on>
+  </date>
+  <date type="issued">
+    <on>2018-03-13</on>
+  </date>
+  <date type="received">
+    <on>2016-11-08</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Central Research Laboratory, Hitachi Ltd.</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Geomatys</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Martin Desruisseaux</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;The netCDF Moving Features encoding extension is a summary of conventions that supports efficient exchange of simple moving features as binary files. This Best Practice is a complement to the <em>Moving Features Encoding Part I: XML Core</em> and an alternative to the &lt;em&gt;Simple Comma Separated Values (CSV)&lt;/em&gt;</abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>ogcdoc</keyword>
+  <keyword>OGC document</keyword>
+  <keyword>Best Practice</keyword>
+  <keyword>moving features</keyword>
+  <keyword>netCDF</keyword>
+  <keyword>CF convention</keyword>
+  <keyword>trajectory</keyword>
+  <ext>
+    <doctype>best-practice</doctype>
+    <subdoctype>general</subdoctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Big Geospatial Data — an OGC White Paper</title>
+  <uri type="xml">documents/16-131r2/document.xml</uri>
+  <uri type="pdf">documents/16-131r2/document.pdf</uri>
+  <uri type="doc">documents/16-131r2/document.doc</uri>
+  <uri type="html">documents/16-131r2/document.html</uri>
+  <uri type="rxl">documents/16-131r2/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/WP/bigdata</docidentifier>
+  <docidentifier type="ogc-internal">16-131r2</docidentifier>
+  <docnumber>16-131r2</docnumber>
+  <date type="published">
+    <on>2017-09-25</on>
+  </date>
+  <date type="issued">
+    <on>2017-06-29</on>
+  </date>
+  <date type="received">
+    <on>2017-06-15</on>
+  </date>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>George Percivall</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract><p>This white paper is a survey of Big Geospatial Data with these main themes:</p><ul><li><p>Geospatial data is increasing in volume and variety;</p></li><li><p>New Big Data computing techniques are being applied to geospatial data;</p></li><li><p>Geospatial Big Data techniques benefit many applications; and</p></li><li><p>Open standards are needed for interoperability, efficiency, innovation and cost effectiveness.</p></li></ul><p>The main purpose of this White Paper is to identify activities to be undertaken in OGC Programs that advance the Big Data capabilities as applied to geospatial information.</p><p>This white paper was developed based on two Location Powers events:</p><ul><li><p>Location Powers: Big Data, Orlando, September 20th, 2016; and</p></li><li><p>Location Powers: Big Linked Data, Delft, March 22nd, 2017.</p></li></ul>&lt;p&gt;For information on Location Powers: &lt;link&gt;&lt;/p&gt;&lt;/&gt;</abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>ogcdoc</keyword>
+  <keyword>OGC documents</keyword>
+  <keyword>Big Data</keyword>
+  <keyword>geospatial</keyword>
+  <keyword>location</keyword>
+  <keyword>open</keyword>
+  <keyword>standards</keyword>
+  <keyword>interoperability</keyword>
+  <keyword>cloud computing</keyword>
+  <ext>
+    <doctype>white-paper</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">API - Features - Part 1: Core</title>
+  <uri type="xml">documents/17-069r3/document.xml</uri>
+  <uri type="pdf">documents/17-069r3/document.pdf</uri>
+  <uri type="doc">documents/17-069r3/document.doc</uri>
+  <uri type="html">documents/17-069r3/document.html</uri>
+  <uri type="rxl">documents/17-069r3/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/ogcapi-features-1/1.0</docidentifier>
+  <docidentifier type="ogc-internal">17-069r3</docidentifier>
+  <docnumber>17-069r3</docnumber>
+  <date type="published">
+    <on>2019-10-14</on>
+  </date>
+  <date type="issued">
+    <on>2019-09-09</on>
+  </date>
+  <date type="received">
+    <on>2019-07-11</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>CubeWerx Inc.</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Heazeltech LLC</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Hexagon</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>interactive instruments GmbH</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Ordnance Survey</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Planet Labs</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>US Army Geospatial Center (AGC)</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Clemens Portele</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Panagiotis (Peter) A. Vretanos</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Charles Heazel</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract><p>OGC API standards define modular API building blocks to spatially enable Web APIs in a consistent way. The <eref type="inline" bibitemid="openapi" citeas="OpenAPI Specification, version 3.0">OpenAPI specification</eref> is used to define the API building blocks.</p><p>The OGC API family of standards is organized by resource type. This standard specifies the fundamental API building blocks for interacting with features. The spatial data community uses the term 'feature' for things in the real world that are of interest.</p>&lt;p&gt;For those not familiar with the term 'feature,' the explanations on &lt;link&gt; in the <eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C sdw-bp">W3C/OGC Spatial Data on the Web Best Practice document</eref> provide more detail.&lt;/p&gt;<p>OGC API Features provides API building blocks to create, modify and query features on the Web. OGC API Features is comprised of multiple parts, each of them is a separate standard. This part, the "Core," specifies the core capabilities and is restricted to fetching features where geometries are represented in the coordinate reference system WGS 84 with axis order longitude/latitude. Additional capabilities that address more advanced needs will be specified in additional parts. Examples include support for creating and modifying features, more complex data models, richer queries, additional coordinate reference systems, multiple datasets and collection hierarchies.</p><p>By default, every API implementing this standard will provide access to a single dataset. Rather than sharing the data as a complete dataset, the OGC API Features standards offer direct, fine-grained access to the data at the feature (object) level.</p>&lt;p&gt;The API building blocks specified in this standard are consistent with the architecture of the Web. In particular, the API design is guided by the IETF HTTP/HTTPS RFCs, <eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C sdw-bp">W3C Data on the Web Best Practices</eref>, the &lt;eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C sdw-bp"&gt;W3C/OGC Spatial Data on the Web Best Practices&lt;/eref&gt; and the emerging OGC Web API Guidelines. A particular example is the use of the concepts of datasets and dataset distributions as defined in &lt;eref type="inline" bibitemid="dcat" citeas="W3C vocab-dcat"&gt;DCAT&lt;/eref&gt;</abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>ogcdoc</keyword>
+  <keyword>OGC document</keyword>
+  <keyword>OGC API</keyword>
+  <keyword>ISO</keyword>
+  <keyword>ISO/TC 211</keyword>
+  <keyword>geographic information</keyword>
+  <keyword>Geospatial API</keyword>
+  <keyword>Web Feature Service</keyword>
+  <keyword>WFS</keyword>
+  <keyword>feature</keyword>
+  <keyword>features</keyword>
+  <keyword>property</keyword>
+  <keyword>geographic information</keyword>
+  <keyword>spatial data</keyword>
+  <keyword>spatial things</keyword>
+  <keyword>dataset</keyword>
+  <keyword>distribution</keyword>
+  <keyword>API</keyword>
+  <keyword>OpenAPI</keyword>
+  <keyword>GeoJSON</keyword>
+  <keyword>GML</keyword>
+  <keyword>HTML</keyword>
+  <keyword>schema.org</keyword>
+  <ext>
+    <doctype>standard</doctype>
+    <subdoctype>implementation</subdoctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">OGC CDB Version 1.1 Release Notes</title>
+  <uri type="xml">documents/18-016r1/document.xml</uri>
+  <uri type="pdf">documents/18-016r1/document.pdf</uri>
+  <uri type="doc">documents/18-016r1/document.doc</uri>
+  <uri type="html">documents/18-016r1/document.html</uri>
+  <uri type="rxl">documents/18-016r1/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/CDB-notes/1.1</docidentifier>
+  <docidentifier type="ogc-internal">18-016r1</docidentifier>
+  <docnumber>18-016r1</docnumber>
+  <date type="published">
+    <on>2018-12-19</on>
+  </date>
+  <date type="issued">
+    <on>2018-08-27</on>
+  </date>
+  <date type="received">
+    <on>2018-08-02</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>OGC CDB Standards Working Group</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Carl Reed, PhD</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>
+    <p>This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</p>
+  </abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>ogcdoc</keyword>
+  <keyword>OGC document</keyword>
+  <keyword>CDB</keyword>
+  <keyword>Common Data Base</keyword>
+  <keyword>simulation</keyword>
+  <keyword>synthetic environment</keyword>
+  <keyword>version 1.1</keyword>
+  <ext>
+    <doctype>release-notes</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">OGC Earth Observation Exploitation Platform Hackathon 2018 Engineering Report</title>
+  <uri type="xml">documents/18-046/document.xml</uri>
+  <uri type="pdf">documents/18-046/document.pdf</uri>
+  <uri type="doc">documents/18-046/document.doc</uri>
+  <uri type="html">documents/18-046/document.html</uri>
+  <uri type="rxl">documents/18-046/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/PER/eoep-Hack2018</docidentifier>
+  <docidentifier type="ogc-internal">18-046</docidentifier>
+  <docnumber>18-046</docnumber>
+  <date type="published">
+    <on>2018-06-12</on>
+  </date>
+  <date type="issued">
+    <on>2018-07-10</on>
+  </date>
+  <date type="received">
+    <on>2018-12-20</on>
+  </date>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Ingo Simonis</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <version>
+    <revision-date>2018-12-20</revision-date>
+  </version>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>engineering-report</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">3D Tiles Specification 1.0</title>
+  <uri type="xml">documents/18-053r2/document.xml</uri>
+  <uri type="pdf">documents/18-053r2/document.pdf</uri>
+  <uri type="doc">documents/18-053r2/document.doc</uri>
+  <uri type="html">documents/18-053r2/document.html</uri>
+  <uri type="rxl">documents/18-053r2/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/docs/CS/3DTiles/1.0</docidentifier>
+  <docidentifier type="ogc-external">http://docs.opengeospatial.org/is/18-053r2/18-053r2.html</docidentifier>
+  <docidentifier type="ogc-internal">18-053r2</docidentifier>
+  <docnumber>18-053r2</docnumber>
+  <date type="published">
+    <on>2019-01-31</on>
+  </date>
+  <date type="issued">
+    <on>2018-12-14</on>
+  </date>
+  <date type="received">
+    <on>2018-06-04</on>
+  </date>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Patrick Cozzi</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Sean Lilley</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Gabby Getz</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <version>
+    <revision-date>2018-04-07</revision-date>
+  </version>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2016</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>community-standard</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Geospatial Coverages Data Cube Community Practice</title>
+  <uri type="xml">documents/18-095r7/document.xml</uri>
+  <uri type="pdf">documents/18-095r7/document.pdf</uri>
+  <uri type="doc">documents/18-095r7/document.doc</uri>
+  <uri type="html">documents/18-095r7/document.html</uri>
+  <uri type="rxl">documents/18-095r7/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/CS/dataCubeCP</docidentifier>
+  <docidentifier type="ogc-internal">18-095r7</docidentifier>
+  <docnumber>18-095r7</docnumber>
+  <date type="published">
+    <on>2020-10-14</on>
+  </date>
+  <date type="issued">
+    <on>2020-08-28</on>
+  </date>
+  <date type="received">
+    <on>2020-01-31</on>
+  </date>
+  <date type="2000-05-11"/>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>George Percivall</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>
+    <p>guidelines for enhancements and extensions to the basic core.</p>
+  </abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>Data Cubes</keyword>
+  <keyword>Coverages</keyword>
+  <keyword>Spatial Analytics</keyword>
+  <keyword>Geospatial</keyword>
+  <ext>
+    <doctype>community-practice</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Anchor Node Extension in IndoorGML - Seamless Navigation between Indoor and Outdoor Space</title>
+  <uri type="xml">documents/19-004/document.xml</uri>
+  <uri type="pdf">documents/19-004/document.pdf</uri>
+  <uri type="doc">documents/19-004/document.doc</uri>
+  <uri type="html">documents/19-004/document.html</uri>
+  <uri type="rxl">documents/19-004/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/dp/indoorgml-anchornode</docidentifier>
+  <docidentifier type="ogc-internal">19-004</docidentifier>
+  <docnumber>19-004</docnumber>
+  <date type="published">
+    <on>2019-12-11</on>
+  </date>
+  <date type="issued">
+    <on>2019-02-28</on>
+  </date>
+  <date type="received">
+    <on>2019-02-05</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>National Institute of Advanced Industrial Science and Technology</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>The University of Seoul</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>All for Land Inc</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Kyoung-Sook Kim</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Jiyeong Lee</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>
+    <p>This OGC discussion paper provides an extension module of OGC Indoor Geography Markup Language (IndoorGML) for the seamless navigation between indoor and outdoor spaces. The OGC IndoorGML standard has an issue on the data model that affects the connection of indoor and outdoor spaces via an "Anchor Node," which is a conceptual part for connecting indoor and outdoor spaces. This discussion paper aims to show use cases of how IndoorGML can connect with other geospatial standards that represent outdoor spaces (and road networks), such as OGC City Geography Markup Language (CityGML) and version 5.0 of the Geographic Data Files (GDF) format.</p>
+  </abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>ogcdoc</keyword>
+  <keyword>OGC document</keyword>
+  <keyword>OGC</keyword>
+  <keyword>IndoorGML</keyword>
+  <keyword>Indoor space</keyword>
+  <keyword>Outdoor space</keyword>
+  <keyword>Seamless navigation</keyword>
+  <keyword>CityGML</keyword>
+  <ext>
+    <doctype>discussion-paper</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Technical Committee Policies and Procedures</title>
+  <uri>http://docs.opengeospatial.org/pol/05-020r26/05-020r26.html</uri>
+  <uri type="xml">documents/repos/ogc-tcpnp/ogc-tcpnp.xml</uri>
+  <uri type="pdf">https://riboseinc.github.io/ogc-tcpnp/ogc-tcpnp.pdf</uri>
+  <uri type="doc">documents/repos/ogc-tcpnp/ogc-tcpnp.doc</uri>
+  <uri type="html">documents/repos/ogc-tcpnp/ogc-tcpnp.html</uri>
+  <uri type="rxl">documents/repos/ogc-tcpnp/ogc-tcpnp.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/pol/tcpnp/26.0</docidentifier>
+  <docidentifier type="ogc-internal">05-020r26</docidentifier>
+  <docnumber>05-020r26</docnumber>
+  <date type="published">
+    <on>2018-07-24</on>
+  </date>
+  <date type="issued">
+    <on>2018-06-05</on>
+  </date>
+  <date type="received">
+    <on>2018-02-14</on>
+  </date>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Scott Simmons</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>26.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>&lt;p&gt;The <eref type="inline" bibitemid="OGC" citeas="OGC"/> provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. "International standards" (as defined in &lt;eref type="inline" bibitemid="ISODIR2" citeas="ISO/IEC Directives, Part 2"&gt;&lt;/eref&gt;</abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>policy</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">OGC Web Feature Service 3.0: Part 1 - Core</title>
+  <uri type="xml">documents/repos/ogc-wfs/core/standard/17-069.xml</uri>
+  <uri type="pdf">documents/repos/ogc-wfs/core/standard/17-069.pdf</uri>
+  <uri type="doc">documents/repos/ogc-wfs/core/standard/17-069.doc</uri>
+  <uri type="html">documents/repos/ogc-wfs/core/standard/17-069.html</uri>
+  <uri type="rxl">documents/repos/ogc-wfs/core/standard/17-069.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wfs-1/3.0</docidentifier>
+  <docidentifier type="ogc-internal">17-069</docidentifier>
+  <docnumber>17-069</docnumber>
+  <date type="published">
+    <on>1000-01-01</on>
+  </date>
+  <date type="issued">
+    <on>1000-01-01</on>
+  </date>
+  <date type="received">
+    <on>1000-01-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>CubeWerx Inc.</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Hexagon</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>interactive instruments GmbH</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Planet Labs</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Clemens Portele</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Panagiotis (Peter) A. Vretanos</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <version>
+    <revision-date>2018-04-07</revision-date>
+    <draft>3.0.0-draft.1</draft>
+  </version>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract><p>A Web Feature Service (WFS) offers the capability to create, modify and query spatial data on the Web. The WFS standard is a multi-part document. This part specifies the core capabilities that every WFS has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Examples include support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems.</p><p>By default, every WFS instance provides access to a single dataset. Rather than sharing the data as a complete dataset, WFS offers direct, fine-grained access to the data at the feature (object) level.</p><p>Consistent with the architecture of the Web, this version of the WFS standard uses a resource architecture and specifies a RESTful service interface consistent with the IETF HTTP/HTTPS RFCs.</p><p>This standard specifies discovery and query operations that are implemented using the HTTP GET method. Support for additional methods (in particular POST, PUT, DELETE, PATCH) will be specified in additional parts.</p><p>Discovery operations allow the server to be interrogated to determine its capabilities and retrieve information (metadata) about this distribution of the dataset. This includes the API definition of the server as well as metadata about the feature collections provided by the server.</p><p>Query operations allow features or values of feature properties to be retrieved from the underlying data store based upon selection criteria, defined by the client, on feature properties.</p>&lt;p&gt;This standard defines the resources listed in <xref target="tldnr"/>. For an overview of the resources, see section &lt;xref target="core-overview"&gt;7.1 Overview&lt;/xref&gt;&lt;table&gt;&lt;colgroup&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;/colgroup&gt;<name>Overview of resources, applicable HTTP methods and links to the document sections</name><thead><tr><th valign="middle" align="left">Resource</th><th valign="middle" align="left">Path</th><th valign="middle" align="left">HTTP method</th><th valign="middle" align="left">Document reference</th></tr></thead><tbody><tr><td valign="middle" align="left">Landing page</td><td valign="middle" align="left"><tt>/</tt></td><td valign="middle" align="left">GET</td><td valign="middle" align="left"><xref target="_api_landing_page">7.2 API landing page</xref></td></tr><tr><td valign="middle" align="left">API definition</td><td valign="middle" align="left"><tt>/api</tt></td><td valign="middle" align="left">GET</td><td valign="middle" align="left"><xref target="_api_definition_2">7.3 API definition</xref></td></tr><tr><td valign="middle" align="left">Conformance classes</td><td valign="middle" align="left"><tt>/conformance</tt></td><td valign="middle" align="left">GET</td><td valign="middle" align="left"><xref target="_declaration_of_conformance_classes">7.4 Declaration of conformance classes</xref></td></tr><tr><td valign="middle" align="left">Feature collections metadata</td><td valign="middle" align="left"><tt>/collections</tt></td><td valign="middle" align="left">GET</td><td valign="middle" align="left"><xref target="_feature_collections_metadata">7.11 Feature collections metadata</xref></td></tr><tr><td valign="middle" align="left">Feature collection metadata</td><td valign="middle" align="left"><tt>/collections/{name}</tt></td><td valign="middle" align="left">GET</td><td valign="middle" align="left"><xref target="_feature_collection_metadata">7.12 Feature collection metadata</xref></td></tr><tr><td valign="middle" align="left">Feature collection</td><td valign="middle" align="left"><tt>/collections/{name}/items</tt></td><td valign="middle" align="left">GET</td><td valign="middle" align="left"><xref target="_feature_collections">7.13 Feature collections</xref></td></tr><tr><td valign="middle" align="left">Feature</td><td valign="middle" align="left"><tt>/collections/{name}/items/{fid}</tt></td><td valign="middle" align="left">GET</td><td valign="middle" align="left"><xref target="_feature_2">7.14 Feature</xref></td></tr></tbody>&lt;/table&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;</abstract>
+  <status>
+    <stage>candidate</stage>
+  </status>
+  <copyright>
+    <from>2022</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>ogcdoc</keyword>
+  <keyword>OGC document</keyword>
+  <keyword>web feature service</keyword>
+  <keyword>wfs</keyword>
+  <keyword>feature</keyword>
+  <keyword>property</keyword>
+  <keyword>geographic information</keyword>
+  <keyword>spatial data</keyword>
+  <keyword>spatial things</keyword>
+  <keyword>dataset</keyword>
+  <keyword>distribution</keyword>
+  <keyword>API</keyword>
+  <keyword>openapi</keyword>
+  <keyword>geojson</keyword>
+  <keyword>gml</keyword>
+  <keyword>html</keyword>
+  <ext>
+    <doctype>standard</doctype>
+    <subdoctype>implementation</subdoctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">OGC® WPS 2.0.2 Interface Standard Corrigendum 2</title>
+  <uri type="xml">documents/style-sample/document.xml</uri>
+  <uri type="pdf">documents/style-sample/document.pdf</uri>
+  <uri type="doc">documents/style-sample/document.doc</uri>
+  <uri type="html">documents/style-sample/document.html</uri>
+  <uri type="rxl">documents/style-sample/document.rxl</uri>
+  <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wps/2.0.2</docidentifier>
+  <docidentifier type="ogc-internal">14-065r2</docidentifier>
+  <docnumber>14-065r2</docnumber>
+  <date type="published">
+    <on>2015-03-05</on>
+  </date>
+  <date type="confirmed">
+    <on>2018-02-16</on>
+  </date>
+  <date type="issued">
+    <on>2015-01-27</on>
+  </date>
+  <date type="received">
+    <on>2014-11-25</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>TU Dresden</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>52°North</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Intergraph Corporation</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Image Matters LLC</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>CRP Henri Tudor</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>Airbus Defence and Space</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Matthias Mueller</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="editor"/>
+    <person>
+      <name>
+        <completename>Benjamin Pross</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>2.0.2</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract>
+    <p>In many cases geospatial or location data, including data from sensors, must be processed before the information can be used effectively. The OGC Web Processing Service (WPS) Interface Standard provides a standard interface that simplifies the task of making simple or complex computational processing services accessible via web services. Such services include well-known processes found in GIS software as well as specialized processes for spatio-temporal modeling and simulation. While the OGC WPS standard was designed with spatial processing in mind, it can also be used to readily insert non-spatial processing tasks into a web services environment.</p>
+  </abstract>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2015</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <keyword>TBD</keyword>
+  <keyword>geoprocessing</keyword>
+  <keyword>ogcdoc</keyword>
+  <keyword>OGC document</keyword>
+  <keyword>processes</keyword>
+  <keyword>processing</keyword>
+  <keyword>WPS</keyword>
+  <ext>
+    <doctype>standard</doctype>
+    <subdoctype>implementation</subdoctype>
+  </ext>
+</bibdata></relation>
+</relaton-collection>

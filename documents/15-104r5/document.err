@@ -1,0 +1,348 @@
+/__w/mn-samples-ogc/mn-samples-ogc/site/documents/15-104r5/document.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000038): Table should have title
+	<table id="_d3679521-6eb0-6c41-6b68-be7c02395662" unnumbered="true"><tbody><tr><th valign="middle" align="left">Name</th>
+	<th valign="middle" align="left">Affiliation</th>
+	</tr><tr><td valign="middle" align="left">Matthew Purss</td>
+	<td valign="middle" align="left">Geoscience Australia</td>
+	</tr><tr><td valign="middle" align="left">Robert Gibb</td>
+(XML Line 001059): Hanging paragraph in clause
+	<clause id="_conventions" obligation="normative">
+	<title>Conventions</title>
+	<p id="_1588572f-7622-a1a3-1b8d-1b8afec98bcb">This section provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+	
+	<clause id="_identifiers" obligation="normative">
+(XML Line 001100): Hanging paragraph in clause
+	<clause id="_dggs_core_data_model_normative" obligation="normative">
+	<title>DGGS Core Data Model (normative)</title>
+	<p id="_974e3d16-68d9-caed-68d0-4f8d205d4083">This Clause specifies the underlying data model and core requirement class for a DGGS specification.</p>
+	
+	<table id="_1795d271-936f-1aca-fd7b-b90e14a1345c" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="left">Requirements Class — Core</th>
+(XML Line 001104): Table should have title
+	<table id="_1795d271-936f-1aca-fd7b-b90e14a1345c" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="left">Requirements Class — Core</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core"/></td>
+	</tr><tr><td valign="middle" align="left">Target type</td>
+	<td valign="middle" align="left">Conceptual Specification</td>
+(XML Line 001135): Table should have title
+	<table id="_3fa969ce-4e15-9c05-f417-99e024544bcc" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 1</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/model"/></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL include a DGGS Reference Frame and the associated Functional Algorithms as defined by the DGGS Core Conceptual Data Model.</em></td>
+	</tr></tbody>
+(XML Line 001143): Hanging paragraph in clause
+	<clause id="_dggs_reference_frame_elements" obligation="normative">
+	<title>DGGS Reference Frame Elements</title>
+	<p id="_1f9a6b77-45a9-d705-4509-2000ed320118">The reference frame of a DGGS consists of the fixed structural elements that define the spatial framework on which the DGGS functional algorithms operate. The following sub-clauses define the core requirements for an Earth grid system to be considered a DGGS.</p>
+	
+	<figure id="fig8">
+(XML Line 001157): Table should have title
+	<table id="_18b67761-0052-e8d1-f950-3deee214f64f" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 2</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/domain/area">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/domain/area</link></td>
+	</tr><tr><td valign="middle" align="left"><em>Domain completeness – the DGGS Domain of the initial discrete global grid SHALL cover the entire globe.</em></td>
+	</tr></tbody>
+(XML Line 001164): Table should have title
+	<table id="_359c1f2f-9c90-aa73-c31f-9c193f59cd5e" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 3</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/domain/overlap">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/domain/overlap</link></td>
+	</tr><tr><td valign="middle" align="left"><em>Position uniqueness – the initial discrete global grid SHALL be defined without any overlapping DGGS Cells.</em></td>
+	</tr></tbody>
+(XML Line 001176): Table should have title
+	<table id="_d1cd964c-2271-b7d5-8e9e-7df62174200b" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 4</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/tessellation_sequence">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/tessellation\_sequence</link></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL comprise a sequence of discrete global grid tessellations representing multiple spatial resolutions</em></td>
+	</tr></tbody>
+(XML Line 001188): Table should have title
+	<table id="_7463fc02-ad71-604f-0620-f4d4f60092e9" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 5</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/area_preservation">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/area\_preservation</link></td>
+	</tr><tr><td valign="middle" align="left"><em>For each successive level of grid refinement, a DGGS specification SHALL preserve Domain completeness and position uniqueness.</em></td>
+	</tr></tbody>
+(XML Line 001196): Hanging paragraph in clause
+	<clause id="_cell_structure" obligation="normative">
+	<title>Cell Structure</title>
+	<p id="_ac30da51-262f-d5ad-8dba-83bb4e8acc4b">Cell structure is an important aspect of any DGGS. Each cell can be considered to be an ellipsoidal polygon on the surface model of the Earth, for which several different cell shapes can be used. Each cell shape has its own advantages and disadvantages [2] (e.g. hexagonal cells are optimized for high fidelity sampling [2, 10], while triangular cells enable fast access and visualization) and it is usually desired for each grid refinement of a DGGS to have a majority of cells with the same shape [10, 11]. Triangular, quadrilateral and hexagonal cells are common choices used in DGGS. These shapes provide regular tiling of the plane [10], which can be mapped to a curved surface such as the surface model of the Earth.</p>
+	
+	<p id="_090b5a7a-c289-3526-d560-4f69db556632">The cell structures in each successive level of cell refinement are constrained by the properties of the initial tessellation, but do not necessarily have the same geometry as the initial tessellation.</p>
+(XML Line 001218): Table should have title
+	<table id="_92dc2174-fc3d-a0e9-8239-176f5181e8f4" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 6</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/shape">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/shape</link></td>
+	</tr><tr><td valign="middle" align="left"><em>For each successive level of grid refinement, a DGGS specification SHALL define DGGS Cells that are simple polygons.</em></td>
+	</tr></tbody>
+(XML Line 001246): Table should have title
+	<table id="_9993fb38-45a5-bf6c-9983-df416d0b9fe4" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 7</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/equal_area_precison%20">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/equal\_area\_precison</link></td>
+	</tr><tr><td valign="middle" align="left"><em>For each successive level of grid refinement, a DGGS specification SHALL specify a DGGS equal area precision that represents the maximum allowed ratio of cell area uncertainty to cell area</em></td>
+	</tr></tbody>
+(XML Line 001253): Table should have title
+	<table id="_5fed6d6c-ea46-38f2-c66d-b9e66c8bb280" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 8</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/equal_area">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/equal\_area</link></td>
+	</tr><tr><td valign="middle" align="left"><em>For each successive level of grid refinement, and for each cell geometry, a DGGS specification SHALL define DGGS Cells that are equal area (or iteratively and predictably converge on equal area) within the specified level of precision</em></td>
+	</tr></tbody>
+(XML Line 001262): Hanging paragraph in clause
+	<clause id="_tessellations" obligation="normative">
+	<title>Tessellations</title>
+	<p id="_ff0724c2-0d34-409f-0d81-e1449292afbe">A multiresolution hierarchical tessellation of cells is created by constructing a sequence of discrete global grids, each with successively finer DGGS Cell resolutions. First an initial discrete global grid is constructed as described in sub-clause 6.2.5.1. The cells of this initial tessellation are then iteratively refined by application of cell refinement method(s) [2] to create finer resolution child cells. The initial tessellation, the cell shape, the refinement methods and indexing methods may all vary for different DGGS.</p>
+	
+	<clause id="_initial_tessellation" obligation="normative">
+(XML Line 001270): Table should have title
+	<table id="_ca1f0d11-2bf2-30a9-2914-1323a24c2f3d" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 9</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/initial_tessellation">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/initial\_tessellation</link></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL include an initial tessellation that is defined by equal area cells produced by mapping a base unit polyhedron to the surface model of the Earth.</em></td>
+	</tr></tbody>
+(XML Line 001283): Table should have title
+	<table id="_714dd46b-1f8f-5768-2114-f9da570b12d1" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 10</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/refinement">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/refinement</link></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL have a method to refine parent cells into finer resolution child cells.</em></td>
+	</tr></tbody>
+(XML Line 001295): Table should have title
+	<table id="_d8158b11-fd55-3d57-4775-ecb63fe3b5f8" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 11</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/cell/addressing">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/cell/addressing</link></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL</em> use <em>a spatial referencing method to assign a unique spatial reference (or index) to each DGGS cell across the entire DGGS Domain.</em></td>
+	</tr></tbody>
+(XML Line 001304): Hanging paragraph in clause
+	<clause id="_spatial_referencing" obligation="normative">
+	<title>Spatial Referencing</title>
+	<p id="_4764e0e0-1356-74ee-d25f-724841db46a4">Spatial referencing (or geo-encoding) is achieved by addressing an identifier – an index or geographic identifier – to each DGGS cell. The cell address must be unique across the entire domain of hierarchical tessellations of the DGGS.</p>
+	
+	<table id="_298d63e6-a9f7-386c-3ff9-70eafc61cd0f" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 12</th>
+(XML Line 001308): Table should have title
+	<table id="_298d63e6-a9f7-386c-3ff9-70eafc61cd0f" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 12</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/spatial_reference">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/spatial\_reference</link></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL define a unique index to address each cell across all defined spatial resolutions</em></td>
+	</tr></tbody>
+(XML Line 001323): Table should have title
+	<table id="_65d6818c-4bea-476a-d88f-2f0ce990c368" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 13</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/reference_frame/spatial_reference/cell_center">http://www.opengis.net/spec/DGGS/1.0/req/core/reference\_frame/spatial\_reference/cell\_centroid</link></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL define the location of a DGGS Cell reference to be the centroid of each cell.</em></td>
+	</tr></tbody>
+(XML Line 001333): Hanging paragraph in clause
+	<clause id="_dggs_functional_algorithms" obligation="normative">
+	<title>DGGS Functional Algorithms</title>
+	<p id="_a5c826c9-3666-3b5e-5f6c-0eae09b9d9af">The ability to locate and perform algebraic operations on data assigned to a DGGS is critical for a DGGS specification. Additionally, it should support connectivity and hierarchical operations on cells. As a minimum, a DGGS specification must include definitions for:</p>
+	
+	<ol id="_fafc7cb9-0276-34c0-7532-d0a8cf7e9d69" type="arabic"><li><p id="_c012ed84-e20a-d16a-81d4-0cd7a1b96c79">Quantization Operations – Assigning and retrieving data to and from cells;</p>
+(XML Line 001391): Table should have title
+	<table id="_8f91ab84-40e9-c254-4b9e-07bc16e060f6" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 14</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/methods/quantization"/></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL define quantization methods for assigning data to DGGS cells and retrieval methods for reading data from DGGS cells.</em></td>
+	</tr></tbody>
+(XML Line 001417): Table should have title
+	<table id="_75860b89-cb74-242a-cc30-ce87e9422520" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 15</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic_processes/cell_navigation">http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic\_processes/cell\_navigation</link></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL define functions/methods to perform both hierarchy and neighbourhood navigation operations across its entire domain.</em></td>
+	</tr></tbody>
+(XML Line 001424): Table should have title
+	<table id="_f8e703a1-7b78-e204-6ada-04b1bbacc8bf" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 16</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic_processes/spatial_analysis">http://www.opengis.net/spec/DGGS/1.0/req/core/methods/algebraic\_processes/spatial\_analysis</link></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL define functions/methods to perform simple spatial analysis operations across its entire domain.</em> <em>[ISO 19125-1:2004_</em>]_ <em>SHALL be used as a basis for specifying the spatial relationship operands that support these functions.</em></td>
+	</tr></tbody>
+(XML Line 001432): Hanging paragraph in clause
+	<clause id="_interoperability" obligation="normative">
+	<title>Interoperability</title>
+	<p id="_d12237a3-3f0c-69c5-65e1-5c68ecc9eb2f">While the quantization and algebraic functional algorithms enable a DGGS implementation to successfully operate internally; in order to facilitate connectivity with other spatial data infrastructures additional interoperability operations/methods are required. As a minimum, these interoperability operations must include functions to:</p>
+	
+	<ol id="_3bc573f0-fd79-9e8a-71d4-3aa999f1c93d" type="arabic"><li><p id="_5b386de9-106d-1894-7e38-77ebef61bfcd">Interpret and translate external data queries and/or process commands sent to the DGGS implementation; and,</p>
+(XML Line 001454): Table should have title
+	<table id="_f4ebfc17-2dcf-b985-f5f6-f30dbc2f7f14" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 17</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/methods/interoperability/query"/></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL define a method, or functional algorithm, to read, interpret and execute an external data query.</em></td>
+	</tr></tbody>
+(XML Line 001469): Table should have title
+	<table id="_94d8aca0-8afb-c97a-978a-d3da33ec6d61" unnumbered="true"><thead><tr><th valign="middle" align="left">Requirement 18</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/req/core/methods/interoperability/broadcast"/></td>
+	</tr><tr><td valign="middle" align="left"><em>A DGGS specification SHALL define a method, or functional algorithm, to translate data query/process results from internal DGGS data structures to standard data formats and to transmit/broadcast the reformatted result set via standard data transfer protocols.</em></td>
+	</tr></tbody>
+(XML Line 001480): Hanging paragraph in clause
+	<annex id="_conformance_class_abstract_test_suite" obligation="normative">
+	<title>Conformance Class Abstract Test Suite</title>
+	<p id="_a3b52369-2706-c78e-1483-685de789a738">This Annex specifies an Abstract Test Suite which shall be passed in completeness by any specification claiming conformance with this Abstract Specification.</p>
+	
+	<p id="_e0525253-7266-3e4a-50b8-698fb7eb0153">Tests identifiers below are relative to <link target="http://www.opengis.net/spec/DGGS/1.0/"/>.</p>
+(XML Line 001488): Table should have title
+	<table id="_5e0e46db-c5ca-7abf-798d-a2c2b16691e4" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.1 Core Data Model</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/model"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Core Data Model</td>
+(XML Line 001508): Table should have title
+	<table id="_da1db4de-4ff0-310f-cb8d-de54a46675fd" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.2 Reference Frame – Global Domain – Surface Area Equivalence</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/domain/area"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame — Global Domain – Surface Area Equivalence</td>
+(XML Line 001528): Table should have title
+	<table id="_9426d606-3361-3c0a-164f-87d3f3f32fa9" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.3 Reference Frame – Global Domain – Cell Boundary Overlap</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/domain/overlap"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame — Global Domain – Cell Boundary Overlap</td>
+(XML Line 001548): Table should have title
+	<table id="_dc5355e5-23c3-379f-3f85-5968b1e4dc96" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.4 Reference Frame – Tessellation Sequence</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/tessellation_sequence"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame – Tessellation Sequence</td>
+(XML Line 001568): Table should have title
+	<table id="_627cd9ff-9b5c-f5e7-feb0-fcaff45d5d65" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.5 Reference Frame — Global Area Preservation</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/global_area_preservation"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame–– Global Area Preservation</td>
+(XML Line 001588): Table should have title
+	<table id="_103cd6d0-0a80-febe-9545-7d8c53a369f5" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.6 Reference Frame — Cell Shape</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/shape"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame–– Cell Shape</td>
+(XML Line 001608): Table should have title
+	<table id="_b8b34fd7-fd15-7bab-3a56-95db452e0067" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.7 Reference Frame — Equal Area Precision</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/equal_area">http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/equal_area_precision</link></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame — Equal Area Precision</td>
+(XML Line 001628): Table should have title
+	<table id="_b3b10141-0d93-2a54-a66f-4fa93a8c2a6a" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.8 Reference Frame — Equal Area Cells</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/equal_area"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame — Equal Area Cells</td>
+(XML Line 001648): Table should have title
+	<table id="_ee34f5f7-5518-340d-b0ae-df504d997c7c" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.9 Reference Frame – Initial Tessellation</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/initial_tessellation"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame — Initial Tessellation</td>
+(XML Line 001668): Table should have title
+	<table id="_f5fec676-a21c-7991-95aa-88e5d14a83bc" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.10 Reference Frame – Cell Refinement</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/refinement"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame – Cell Refinement</td>
+(XML Line 001688): Table should have title
+	<table id="_43acf2d4-a7ca-f583-ea89-a829685786ba" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.11 Reference Frame – Cell Addressing</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/cell/indexing"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame – Cell Addressing</td>
+(XML Line 001708): Table should have title
+	<table id="_f6d6d112-3af1-b05a-151d-8f9dd1ab7809" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.12 Reference Frame – Spatial Reference</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/spatial_reference"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame – Spatial Reference</td>
+(XML Line 001728): Table should have title
+	<table id="_7dca5c1c-1080-b853-009f-5e9a9d770e64" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.13 Reference Frame – Spatial Reference – Cells Referenced at their Centroid</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/spatial_reference/cell_center">http://www.opengis.net/spec/DGGS/1.0/conf/core/reference_frame/spatial_reference/cell_centroid</link></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Reference Frame – Spatial Reference – Cells Reference at their Centroid</td>
+(XML Line 001748): Table should have title
+	<table id="_c85d199e-0c57-9ce3-2051-d6b585d65637" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.14 Functional Algorithms – Quantization Operations</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/quantization"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Functional Algorithms – Quantization Operations</td>
+(XML Line 001768): Table should have title
+	<table id="_1be45ade-90bf-f6b6-057e-7b747a7451fd" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.15 Functional Algorithms – Algebraic Processes – Cell Navigation</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/algebraic_processes/cell_navigation"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Functional Algorithms – Algebraic Processes – Cell Navigation</td>
+(XML Line 001788): Table should have title
+	<table id="_179541e3-985c-3ede-c15c-3ff283a55f95" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.16 Functional Algorithms – Algebraic Processes – Spatial Analysis</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/algebraic_processes/spatial_analysis"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Functional Algorithms – Algebraic Processes – Spatial Analysis</td>
+(XML Line 001808): Table should have title
+	<table id="_d362c544-f0e2-22b1-6c12-f429df415817" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.17 Functional Algorithms – Interoperability Query Operations</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/interoperability/query"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Functional Algorithms – Interoperability Query Operations</td>
+(XML Line 001828): Table should have title
+	<table id="_3f71417d-f0c2-3ee3-743a-ff43b38379cf" unnumbered="true"><thead><tr><th colspan="2" valign="middle" align="center">A.1.18 Functional Algorithms – Interoperability Broadcast Operations</th>
+	</tr></thead>
+	<tbody><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/DGGS/1.0/conf/core/methods/interoperability/broadcast"/></td>
+	</tr><tr><td valign="middle" align="left">Title</td>
+	<td valign="middle" align="left">Functional Algorithms – Interoperability Broadcast Operations</td>
+(XML Line 001913): Table should have title
+	<table id="_de4d28cf-0702-c5e4-7f0c-741aae841502" unnumbered="true"><thead><tr><th valign="middle" align="left">Date</th>
+	<th valign="middle" align="left">Release</th>
+	<th valign="middle" align="left">Author</th>
+	<th valign="middle" align="left">Paragraph modified</th>
+	<th valign="middle" align="left">Description</th>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000144:64): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000201:65): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000210:102): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 002087:206): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002150:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002153:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002156:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002159:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002162:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002165:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002168:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002171:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002174:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002177:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002180:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002183:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002186:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002189:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002192:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002195:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002198:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002201:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002204:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002207:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002210:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002213:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002216:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002219:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002222:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002225:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002228:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002231:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002234:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002237:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002240:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002243:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002246:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002249:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002252:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002255:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002258:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002261:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002264:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002267:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002270:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002273:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002276:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002279:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002282:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002285:35): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 002288:35): element "docidentifier" not allowed yet; missing required element "title"

@@ -1,0 +1,24 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">Topic 21: Discrete Global Grid Systems Abstract Specification</title>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/AS/dggs/1.0</docidentifier><docidentifier type="ogc-external">http://docs.opengeospatial.org/as/15-104r5/15-104r5.html</docidentifier><docidentifier type="ogc-internal">15-104r5</docidentifier><docnumber>15-104r5</docnumber><date type="published"><on>2017-08-01</on></date><date type="issued"><on>2017-06-13</on></date><date type="received"><on>2015-09-30</on></date><contributor><role type="author"/><organization>
+<name>Geoscience Australia</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Landcare Research New Zealand</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>University of Calgary</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>PYXIS</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>SpaceCurve</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Zhengzhou Institute of Surveying &amp; Mapping</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>ESRI</name>
+</organization></contributor><contributor><role type="editor"/><person>
+<name><completename>Matthew Purss</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>This document specifies the core Abstract Specification and extension mechanisms for Discrete Global Grid Systems (DGGS). <em>A DGGS is a spatial reference system that uses a hierarchical tessellation of cells to partition and address the globe. DGGS are characterized by the properties of their cell structure, geo-encoding, quantization strategy and associated mathematical functions.</em> The OGC DGGS Abstract Specification supports the specification of standardized DGGS infrastructures that enable the integrated analysis of very large, multi-source, multi-resolution, multi-dimensional, distributed geospatial data. Interoperability between OGC DGGS implementations is anticipated through implementation standards, and extension interface encodings of OGC Web Services.</p>
+</abstract><status><stage>approved</stage></status><copyright><from>2022</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Discrete Global Grid System</keyword><keyword>DGGS</keyword><keyword>Digital Earth</keyword><keyword>DGGScore</keyword><keyword>Spatial Reference System</keyword><keyword>Global Data Structure</keyword><keyword>Geographic Information Systems</keyword><keyword>DE-9IM</keyword><keyword>standard</keyword><keyword>specification</keyword><ext><doctype>abstract-specification-topic</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

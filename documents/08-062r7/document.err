@@ -1,0 +1,64 @@
+/__w/mn-samples-ogc/mn-samples-ogc/site/documents/08-062r7/document.err errors
+
+
+== Style
+
+(): Abstract is missing!
+(): Keywords are missing!
+(): Preface is missing!
+(): Submitting Organizations is missing!
+(): Submitters is missing!
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000296): Table should have title
+	<table id="_39714dd1-ed33-1784-78be-c808082f7f68" unnumbered="true"><tbody><tr><th valign="middle" align="left">GML Profile</th>
+	<th valign="middle" align="left">Document Type</th>
+	</tr><tr><td valign="middle" align="left">GML Simple Features profile</td>
+	<td valign="middle" align="left">Standard</td>
+	</tr><tr><td valign="middle" align="left">GML Common CRSs profile</td>
+(XML Line 000316): Table should have title
+	<table id="_490d3ffc-79fb-2825-32a3-e965609eeeea" unnumbered="true"><thead><tr><th valign="middle" align="left">GML Application Schema</th>
+	<th valign="middle" align="left">Document Type</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left">CityGML</td>
+	<td valign="middle" align="left">Standard</td>
+(XML Line 000501): Table should have title
+	<table id="_709ffec3-6b91-58f6-0553-c8145c79d11e" unnumbered="true"><thead><tr><th valign="middle" align="left">WMS Profiles</th>
+	<th valign="middle" align="left">Document Type</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left">Styled Layer Descriptor Profile of WMS</td>
+	<td valign="middle" align="left">Standard</td>
+(XML Line 000582): Table should have title
+	<table id="_74f3539b-9a5c-fe31-24ad-660abad305c0" unnumbered="true"><thead><tr><th valign="middle" align="left">CSW Profile</th>
+	<th valign="middle" align="left">Document Type</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left">Catalogue Services Specification 2.0.2 — ISO Metadata Application Profile</td>
+	<td valign="middle" align="left">Standard</td>
+(XML Line 000691): Hanging paragraph in clause
+	<clause id="_reusable_patterns_for_deployment" obligation="normative">
+	<title>Reusable Patterns for Deployment</title>
+	<p id="_5267b5bc-d417-cf47-548d-3b1b397194b9">Previous sections defined the information and services standards that serve as building blocks for deployments. To support reusable deployments several patterns are defined that use the OGC standards in ways that accomplish many typical tasks.</p>
+	
+	<clause id="_publish_find_and_bind_pattern" obligation="normative">
+(XML Line 000853): Hanging paragraph in clause
+	<clause id="_implementations_of_ogc_standards" obligation="normative">
+	<title>Implementations of OGC Standards</title>
+	<p id="_0e251f6c-0e6a-b2a5-148d-7137d84c05f1">OGC standards have been implemented through several activities as described below.</p>
+	
+	<clause id="ogc_compliance_test_program" obligation="normative">
+(XML Line 000911): Table should have title
+	<table id="_dab172a5-62c0-3464-ae8a-62c4d75f0634" unnumbered="true"><thead><tr><th valign="middle" align="center">Date</th>
+	<th valign="middle" align="center">Version Doc.</th>
+	<th valign="middle" align="center">Editor</th>
+	<th valign="middle" align="center">Description</th>
+	</tr></thead>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000121:62): element "clause" not allowed here; expected element "abstract" or "foreword"
+(XML Line 000166:102): element "clause" not allowed here; expected element "abstract" or "foreword"
+(XML Line 000166:269): element "preface" incomplete; missing required element "foreword"
+(XML Line 001074:16): element "ogc-standard" incomplete; missing required element "bibliography"

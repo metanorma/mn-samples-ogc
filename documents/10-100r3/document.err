@@ -1,0 +1,38 @@
+/__w/mn-samples-ogc/mn-samples-ogc/site/documents/10-100r3/document.err errors
+
+
+== Style
+
+(): Abstract is missing!
+(): Keywords are missing!
+(): Submitters is missing!
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000064): Table should have title
+	<table id="_b8b472f7-be51-d932-fdb4-65b27138f167" unnumbered="true"><thead><tr><th valign="middle" align="left">Contact</th>
+	<th valign="middle" align="left">Company</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left">Arctur, David</td>
+	<td valign="middle" align="left">formerly of ESRI</td>
+(XML Line 000372): Hanging paragraph in clause
+	<clause id="_conventions" obligation="normative">
+	<title>Conventions</title>
+	<definitions id="_abbreviated_terms" type="abbreviated_terms" obligation="normative">
+	<title>Abbreviated terms</title>
+	<p id="_607d0272-ed85-2681-1828-7ad534673420">Most of the abbreviated terms listed in sub-clause 5.1 of the Geography Markup Language (GML) Encoding Standard [OGC 07-036] and the OpenGIS® Implementation Specification for Geographic information — Simple feature access — Part 1: Common architecture [OGC 06-103r3] apply to this document.</p>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000161:82): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000165:85): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000229:95): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000232:94): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000235:61): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000250:58): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000259:62): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000267:69): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000302:102): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000444:15): element "definitions" incomplete; missing required element "dl"

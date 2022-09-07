@@ -1,0 +1,13 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">3D Tiles Specification 1.0</title>
+<docidentifier type="ogc-external">http://www.opengis.net/docs/CS/3DTiles/1.0</docidentifier><docidentifier type="ogc-external">http://docs.opengeospatial.org/is/18-053r2/18-053r2.html</docidentifier><docidentifier type="ogc-internal">18-053r2</docidentifier><docnumber>18-053r2</docnumber><date type="published"><on>2019-01-31</on></date><date type="issued"><on>2018-12-14</on></date><date type="received"><on>2018-06-04</on></date><contributor><role type="editor"/><person>
+<name><completename>Patrick Cozzi</completename></name>
+</person></contributor><contributor><role type="editor"/><person>
+<name><completename>Sean Lilley</completename></name>
+</person></contributor><contributor><role type="editor"/><person>
+<name><completename>Gabby Getz</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><edition>1.0</edition><version><revision-date>2018-04-07</revision-date></version><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2016-2019</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><ext><doctype>community-standard</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

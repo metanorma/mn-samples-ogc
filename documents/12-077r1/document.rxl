@@ -1,0 +1,9 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">A Primer for Dissemination Services for Wide Area Motion Imagery</title>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/bp/wami-primer/1.0</docidentifier><docidentifier type="ogc-internal">12-077r1</docidentifier><docnumber>12-077r1</docnumber><date type="published"><on>2012-11-28</on></date><date type="issued"><on>2012-11-23</on></date><contributor><role type="editor"/><person>
+<name><completename>Rahul Thakkar</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2012</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><ext><doctype>other</doctype><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata>

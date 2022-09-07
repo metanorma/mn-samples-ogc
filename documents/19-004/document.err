@@ -1,0 +1,93 @@
+/__w/mn-samples-ogc/mn-samples-ogc/site/documents/19-004/document.err errors
+
+
+== AsciiDoc Input
+
+(ID annexD): Section not marked up as [bibliography]!
+	#<Asciidoctor::Section@5086060 {level: 1, title: "D. Bibliography", blocks: 1}>
+(Section: Bibliography): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="PhysicMath"/>], Arfken, George B., Hans J. Weber., and Harris, Frank E. "Mathematical methods for physicists." Elsevier Academic Press (2013): 139-143.
+	#<Asciidoctor::List@5086080 {context: :ulist, style: nil, items: 5}>
+(Section: Bibliography): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="MLITSpec"/>], Director-General for Policy Planning, Ministry of Land, Infrastructure, Transport, and Tourism (MLIT). "Development Specification for Spatial Network Model for Pedestrians." Ministry of Land, Infrastructure, Transport, and Tourism (MLIT) (2018) <link target="http://www.mlit.go.jp/common/001244373.pdf">www.mlit.go.jp/common/001244373.pdf</link>.
+	#<Asciidoctor::List@5086080 {context: :ulist, style: nil, items: 5}>
+(Section: Bibliography): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="OpenStreetMap"/>], OpenStreetMap. <link target="http://www.openstreetmap.org/"/>
+	#<Asciidoctor::List@5086080 {context: :ulist, style: nil, items: 5}>
+(Section: Bibliography): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="DataFusion"/>], Park, Junho, Dasol Ahn, and Jiyeong Lee. "Development of Data Fusion Method Based on Topological Relationships Using IndoorGML Core Module." Journal of Sensors 2018 (2018).
+	#<Asciidoctor::List@5086080 {context: :ulist, style: nil, items: 5}>
+(Section: Bibliography): no anchor on reference, markup may be malformed: see
+https://www.metanorma.com/author/topics/document-format/bibliography/ ,
+https://www.metanorma.com/author/iso/topics/markup/#bibliographies
+: [<bookmark id="AdvancedAnimation"/>], Watt, Alan, and Mark Watt. "Advanced Animation and Rendering Techniques." ACM Press (1992): 356-359.
+	#<Asciidoctor::List@5086080 {context: :ulist, style: nil, items: 5}>
+
+
+== Style
+
+(): Preface is missing!
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000026): Table should have title
+	<table id="_a0a84bed-e335-47fe-72c3-06bbb4ee1b40" unnumbered="true"><tbody><tr><th valign="middle" align="left">Name</th>
+	<th valign="middle" align="left">Affiliation</th>
+	</tr><tr><td valign="middle" align="left">Kyong-Sook Kim</td>
+	<td valign="middle" align="left">National Institute of Advanced Industrial Science and Technology</td>
+	</tr><tr><td valign="middle" align="left">Teahoon Kim</td>
+(XML Line 000154): Hanging paragraph in clause
+	<clause id="seamless_navigation_module_of_indoorgml_using_anchor_node" obligation="normative">
+	<title>Seamless navigation module of IndoorGML using anchor node</title>
+	<p id="_6f8d91f7-b84b-6e66-f896-e13df778da29">This section describes an IndoorGML SeamlessNavigation module for seamless navigation between indoors and outdoors.</p>
+	
+	<figure id="fig2">
+(XML Line 000219): Hanging paragraph in clause
+	<clause id="uml_diagram_of_the_seamless_navigation_module" obligation="normative">
+	<title>UML diagram of the seamless navigation module</title>
+	<p id="_0dcef6ec-112d-168d-1ce0-e2428527f6e4">IndoorGML has a thick model that represents the wall thickness of a building and a thin model that does not, as shown in <xref target="fig6"/>. The SeamlessNavigation module can be defined by considering both models.</p>
+	
+	<figure id="fig6">
+(XML Line 000364): Hanging paragraph in clause
+	<clause id="use_case_with_citygml" obligation="normative">
+	<title>Use case with CityGML</title>
+	<p id="_ac74bc35-8685-d79c-dcd6-7d209a1df8c8">For better understanding, this document provides a use case of the SeamlessNavigation module for the Transportation model of CityGML 2.0. This section briefly introduces the CityGML Transportation model and suggests some guidelines for using the sample data to create the SeamlessNavigation module data.</p>
+	
+	<clause id="citygml_2_0_transportation_model" obligation="normative">
+(XML Line 000419): Hanging paragraph in clause
+	<clause id="japan_use_case" obligation="normative">
+	<title>Use case with a specification for the pedestrian network model from Japan government</title>
+	<p id="_1ccf6630-c94a-aa6a-8f41-ffd1a9bb13c3">This section briefly introduces the “Development Specification for Spatial Network Model for Pedestrians (for short, PNspec) [2]” and suggests guidelines for conversion of the SeamlessNavigation module data using the specific cases.</p>
+	
+	<clause id="conversion_method_from_pnspec_to_indoorgml" obligation="normative">
+(XML Line 000504): Hanging paragraph in clause
+	<clause id="use_case_with_gdf_5_0" obligation="normative">
+	<title>Use case with GDF 5.0</title>
+	<p id="_0b02298c-6721-5f87-cbb4-341f29d1cc18">This section briefly introduces the Geographic Data Files (GDF) 5.0 format and suggests guidelines for the conversion of SeamlessNavigation module data using the specific cases.</p>
+	
+	<clause id="gdf_5_0" obligation="normative">
+(XML Line 000859): Table should have title
+	<table id="_faaa337c-5c9f-9085-f4d1-111b57dbf96a" unnumbered="true"><thead><tr><th valign="middle" align="left">Date</th>
+	<th valign="middle" align="left">Release</th>
+	<th valign="middle" align="left">Editor</th>
+	<th valign="middle" align="left">Primary clauses modified</th>
+	<th valign="middle" align="left">Description</th>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000133:104): element "clause" not allowed here; expected element "foreword"
+(XML Line 000133:290): element "submitters" not allowed yet; missing required element "foreword"
+(XML Line 000185:85): element "definitions" not allowed here; expected the element end-tag or element "term"
+(XML Line 000210:15): element "definitions" incomplete; missing required element "dl"
+(XML Line 000941:95): value of attribute "obligation" is invalid; must be equal to "informative" or "normative"
+(XML Line 000996:224): element "docidentifier" not allowed yet; missing required element "title"

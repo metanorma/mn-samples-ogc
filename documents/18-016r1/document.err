@@ -1,0 +1,29 @@
+/__w/mn-samples-ogc/mn-samples-ogc/site/documents/18-016r1/document.err errors
+
+
+== Style
+
+(): Preface is missing!
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000018): Table should have title
+	<table id="_6c84f1d9-1180-88e6-f288-dd71feef683b" unnumbered="true"><thead><tr><th valign="middle" align="left">Name</th>
+	<th valign="middle" align="left">Affiliation</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left">Carl Reed</td>
+	<td valign="middle" align="left">Carl Reed &amp; Associates (Editor)</td>
+(XML Line 000293): Hanging paragraph in clause
+	<clause id="_revisions_to_volume_7_ogc_cdb_data_model_guidance" obligation="normative">
+	<title>Revisions to Volume 7 OGC CDB Data Model Guidance</title>
+	<p id="_d22bdd5c-f877-a3f5-6315-03859d3cf10d">Note: Volume 7 was Annex A in the original CDB Specification v 3.2 submission to the OGC.</p>
+	
+	<p id="_bb1ce327-be0f-fcd4-2682-c17784d733e6">Minor changes at various places to make sure the reader knows the difference between CDB 3.2 specification and OGC Version 1.1 standard.</p>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000130:104): element "clause" not allowed here; expected element "foreword"
+(XML Line 000130:290): element "submitters" not allowed yet; missing required element "foreword"
+(XML Line 000464:16): element "ogc-standard" incomplete; missing required element "bibliography"

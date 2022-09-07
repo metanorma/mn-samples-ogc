@@ -1,0 +1,154 @@
+/__w/mn-samples-ogc/mn-samples-ogc/site/documents/style-sample/document.err errors
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000046): Table should have title
+	<table id="_140d27f6-ada0-8241-e5e9-5bef187fccbe" unnumbered="true"><thead><tr><th valign="middle" align="left">Name</th>
+	<th valign="middle" align="left">Representing</th>
+	<th valign="middle" align="left">OGC member</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left">Matthias Müller</td>
+(XML Line 000271): Hanging paragraph in clause
+	<clause id="_conventions" obligation="normative">
+	<title>Conventions</title>
+	<p id="_1588572f-7622-a1a3-1b8d-1b8afec98bcb">This section provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+	
+	<definitions id="_abbreviated_terms" type="abbreviated_terms" obligation="normative">
+(XML Line 000339): Table should have title
+	<table id="_4a2e32db-6e72-74a9-1c74-94a1a8786f67" unnumbered="true"><thead><tr><th valign="middle" align="center">Prefix</th>
+	<th valign="middle" align="center">Namespace URI</th>
+	<th valign="middle" align="center">Description</th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left">ows</td>
+(XML Line 000360): Hanging paragraph in clause
+	<clause id="_wps_conceptual_model" obligation="normative">
+	<title>WPS Conceptual Model</title>
+	<p id="_bedf3a95-b8fd-f798-ef61-cb956a02a41a">The WPS service model defines basic properties of any WPS server. A WPS server is a web service that provides access to pre-defined processes and provides job control operations to instantiate, control and monitor processing jobs (<xref target="fig-artifacts-of-the-wps"/>).</p>
+	
+	<figure id="fig-artifacts-of-the-wps">
+(XML Line 000431): Hanging paragraph in clause
+	<clause id="_wps_native_process_model" obligation="normative">
+	<title>WPS Native Process Model</title>
+	<p id="_2041a0a4-d859-53dc-70a1-778ce661b813">This section describes the information model of requirements. The corresponding XML and plain text encodings are specified in <xref target="sec-wps-native-process-model-encoding"/>.</p>
+	
+	<requirement id="_49eb2a2f-2ce2-2d8e-6825-f06dbbf2ac17" model="ogc" obligation="requirement" type="class"><subject>Derived encoding and software implementation</subject>
+(XML Line 000588): Hanging paragraph in clause
+	<clause id="_xml_schema_implementation" obligation="normative">
+	<title>XML Schema Implementation</title>
+	<p id="_a3ed4c2c-0a24-05dd-388e-876ee40761c2">This section specifies the XML encoding of the elements of the WPS native process model. The referred XML schema elements are provided by the associated schema package delivered with this standard and located at <link target="http://schemas.opengis.net/wps/2.0/"/>.</p>
+	
+	<requirement id="_e22d157b-ace1-885c-60cb-0424bfdc1364" model="ogc" obligation="requirement" type="class"><subject>Derived encoding and software implementation</subject>
+(XML Line 000683): Hanging paragraph in clause
+	<clause id="_common_wps_service_model" obligation="normative">
+	<title>Common WPS Service Model</title>
+	<p id="_29dd3053-7f5d-8974-5b0a-1f05c318d27a">A Web Processing Service consists of processes and service operations. By definition, processes represent the computational functionality of a WPS, while service operations are used to interact with the WPS and in particular to use the service’s process offerings.</p>
+	
+	<requirement id="_aaf7a208-5f65-ba31-9868-06dcadd87682" model="ogc" obligation="requirement" type="class"><subject>Software implementation</subject>
+(XML Line 000858): Hanging paragraph in clause
+	<annex id="annex-abstract-test-suite" obligation="normative">
+	<title>Abstract Test Suite</title>
+	<p id="_bd9587f1-9437-e4b6-24f4-d178b057d6a1">Tests and requirement identifiers below are relative to <strong><link target="http://www.opengis.net/spec/WPS/2.0"/></strong></p>
+	
+	<clause id="annex-subsec-basic-wps-conformace-class" obligation="normative">
+
+
+== Requirements
+
+(XML Line 000368): Requirement class _a9b54462-af56-6e14-a6d0-a32e697554b3 has no corresponding Conformance class
+	<requirement id="_a9b54462-af56-6e14-a6d0-a32e697554b3" model="ogc" obligation="requirement" type="class"><subject>Derived information model, encoding, and software implementation</subject>
+	<requirement id="_c9f96e88-35b7-0381-ee67-339543c3fcfd" model="ogc" type="general"> <description><p id="_5c4c3daa-1598-7d08-9e2b-0a412a670e36">Requirements class for service discovery.</p></description>
+	</requirement>
+	
+	<requirement id="_8fa92236-3a5d-f848-5c56-2ab38f2fe323" model="ogc" type="general"> <description><p id="_90ce52f7-2c34-4504-9b77-30b80087e092">Requirements class for service capabilities.</p></description>
+(XML Line 000395): Requirement class _321f9e46-0b50-45ab-f6f1-0d653d634bee has no corresponding Conformance class
+	<requirement id="_321f9e46-0b50-45ab-f6f1-0d653d634bee" model="ogc" obligation="requirement" type="class"><subject>Derived information model, encoding, and software implementation</subject>
+	<requirement id="_7bacec0a-34df-3735-2707-c9f710a91480" model="ogc" type="general"> <description><p id="_ed4cde2a-4f38-7f95-11d6-f87d2e8c00cc">All WPS servers shall have an initial end-point (HTTP URI).</p></description>
+	</requirement>
+	
+	<requirement id="_34a21685-e4b7-4e6b-9e6b-6000d7709863" model="ogc" type="general"> <description><p id="_d351a5ec-2841-410c-4ee2-bb85b795da08">The service shall provide a systematic discovery mechanism for all service capabilities.</p></description>
+(XML Line 000415): Requirement class _e453b4e2-54f8-cb50-415c-7bf51fc3b6d4 has no corresponding Conformance class
+	<requirement id="_e453b4e2-54f8-cb50-415c-7bf51fc3b6d4" model="ogc" obligation="requirement" type="class"><subject>Derived information model, encoding, and software implementation</subject>
+	<inherit>http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process</inherit><requirement id="_18d2708d-b34e-b847-d926-45befb2769f4" model="ogc" type="general"> <description><p id="_df9ca826-4fa1-2f39-27ed-2973a71779cd">The service shall provide a process offering capabilities. This capability informs service clients about the available processes.</p></description>
+	</requirement>
+	
+	<requirement id="_8a34076e-c843-6e23-9585-c5eef6d23da4" model="ogc" type="general"> <description><p id="_f39c78a6-5f72-68f9-2178-90eb5178d7da">All process offerings shall provide an identifier for their process model used.</p></description>
+(XML Line 000435): Requirement class _49eb2a2f-2ce2-2d8e-6825-f06dbbf2ac17 has no corresponding Conformance class
+	<requirement id="_49eb2a2f-2ce2-2d8e-6825-f06dbbf2ac17" model="ogc" obligation="requirement" type="class"><subject>Derived encoding and software implementation</subject>
+	<inherit>http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process</inherit><requirement id="_bd91221f-7ab1-1056-f768-da093fe2c3c9" model="ogc" type="general"> <description><p id="_59f2f4a8-330d-a4e4-5927-7048431ac073"><em>Requirements class for the common description type.</em></p></description>
+	</requirement>
+	
+	<requirement id="_36f5075e-2e8f-59e2-62d1-d2a4834ceca8" model="ogc" type="general"> <description><p id="_8807a11b-ec12-2737-0134-04ac01af5ef4"><em>Requirements class for IO format.</em></p></description>
+(XML Line 000456): Requirement class _94eae8b9-0106-ccb5-07f5-4ee1459a6a2e has no corresponding Conformance class
+	<requirement id="_94eae8b9-0106-ccb5-07f5-4ee1459a6a2e" model="ogc" obligation="requirement" type="class"><subject>Derived encoding and software implementation</subject>
+	<inherit>http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process</inherit><inherit>OWS Common 2.0 — BasicDescriptionType</inherit><requirement id="_196a7189-162d-6f95-4a7a-6d9a7faef1cf" model="ogc" type="general"> <description><p id="_97acf8b9-ad37-d314-2184-3cafba2804af"><em>Process descriptions as well as the associated process inputs and outputs shall be derived from the OWS Common BasicIdentificationType.</em></p></description>
+	</requirement>
+	
+	<requirement id="_8dffb7d2-b552-a5a4-26fe-ac1b04a37c8f" model="ogc" type="general"> <description><p id="_995974d7-426e-e7d5-0ae8-2662f05d3017"><em>The DescriptionType shall comply with the structure defined in <xref target="fig-descriptiontype-for-processes"/> and <xref target="tab-properties-of-the-descriptiontype-structure"/>.</em></p></description>
+(XML Line 000539): Requirement class _0c563ee1-73ee-7102-aa45-f75f5eb58e7b has no corresponding Conformance class
+	<requirement id="_0c563ee1-73ee-7102-aa45-f75f5eb58e7b" model="ogc" obligation="requirement" type="class"><subject>Derived information model, encoding, and software implementation</subject>
+	<inherit>http://www.opengis.net/spec/WPS/2.0/req/conceptual-model/process</inherit><requirement id="_e5d62692-4523-ad88-7c0c-add0530120a0" model="ogc" type="general"> <description><p id="_b301311e-f68e-87c2-1533-6e4a159a7853"><em>Format descriptions of process inputs and outputs shall comply with the DataDescription structure defined in <xref target="fig-datadescription-and-supported-formats"/> and <xref target="tab-format-properties"/>.</em></p></description>
+	</requirement>
+	
+	<requirement id="_9b49c4f8-6ac7-5a25-f19f-a93f204deb6a" model="ogc" type="general"> <description><p id="_0dc0e98e-c980-9867-8c86-15c65f1d64f3"><em>One of the formats defined in the DataDescription structure shall be the default format, i.e. have the attribute “default” set to “true”.</em></p></description>
+(XML Line 000592): Requirement class _e22d157b-ace1-885c-60cb-0424bfdc1364 has no corresponding Conformance class
+	<requirement id="_e22d157b-ace1-885c-60cb-0424bfdc1364" model="ogc" obligation="requirement" type="class"><subject>Derived encoding and software implementation</subject>
+	<inherit>http://www.opengis.net/spec/WPS/2.0/req/native-process/model</inherit><inherit>OWS Common 2.0</inherit><requirement id="_64e6f67a-efb5-e946-bbe2-b9872ada95c4" model="ogc" type="general"> <description><p id="_92278ffb-ce6f-ec97-f081-b956b8acf523"><em>Requirements class for data type XML encoding.</em></p></description>
+	</requirement>
+	
+	<requirement id="_1bbfe0a4-40ba-1713-90ce-70511081ef20" model="ogc" type="general"> <description><p id="_0c677929-d91a-9362-4dc5-b57fa82c1f39"><em>Requirements class for process description XML encoding.</em></p></description>
+(XML Line 000609): Requirement class _f5f5d70b-72b3-8aee-5070-1d081e7091b4 has no corresponding Conformance class
+	<requirement id="_f5f5d70b-72b3-8aee-5070-1d081e7091b4" model="ogc" obligation="requirement" type="class"><subject>Derived encoding and software implementation</subject>
+	<inherit>http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data</inherit><inherit>http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data</inherit><inherit>http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data</inherit><inherit>OWS Common 2.0</inherit><requirement id="_8fd97e35-ed60-48e5-7707-42ab70f0b40a" model="ogc" type="general"> <description><p id="_106fe59d-5662-6489-a47d-47053d8f508b"><em>The XML encoding of ComplexData, LiteralData, BoundingBoxData and their values shall comply with the XML schema provided by dataTypes.xsd.</em></p></description>
+	</requirement>
+	
+	<requirement id="_15cce9c2-ace2-780f-12be-e42b112b7d40" model="ogc" type="general"> <description><p id="_97aa69dd-eede-fd98-c406-8a33b920d62e"><em>The mime type for XML encoded literal and bounding box data values shall be “text/xml”.</em></p></description>
+(XML Line 000622): Requirement class _908bba8d-ed21-ca3d-d1dd-389de755cf76 has no corresponding Conformance class
+	<requirement id="_908bba8d-ed21-ca3d-d1dd-389de755cf76" model="ogc" obligation="requirement" type="class"><subject>Derived software implementation</subject>
+	<inherit>http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description</inherit><inherit>OWS Common 2.0</inherit><requirement id="_80ce9571-5904-8a15-b6d8-4bf634c6c4ee" model="ogc" type="general"> <description><p id="_127a648a-a798-74c4-e4ef-da8ffe5ebb45"><em>An XML encoded Process description shall be a valid XML document of the type wps:Process.</em></p></description>
+	</requirement>
+	
+	<requirement id="_b5885c91-6dbf-20c5-d393-366c4eff29d8" model="ogc" type="general"> <description><p id="_69382488-717d-bb73-fb14-1842d88f889c"><em>The content of the XML encoded Process description shall comply with the content of the information elements defined by the requirements class <link target="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description"/>.</em></p></description>
+(XML Line 000635): Requirement class _9c5a0fcf-f40b-46ed-9dbb-74ff3631ef07 has no corresponding Conformance class
+	<requirement id="_9c5a0fcf-f40b-46ed-9dbb-74ff3631ef07" model="ogc" obligation="requirement" type="class"><subject>Derived software implementation</subject>
+	<inherit>http://www.opengis.net/spec/WPS/2.0/req/native-process/profile/generic</inherit><inherit>OWS Common 2.0</inherit><requirement id="_0bf58f3e-0c6c-4255-5b37-083ad74df380" model="ogc" type="general"> <description><p id="_039a3b7c-620c-7283-acc6-700547b9706b"><em>An XML encoded description of a Generic Process shall be a valid XML document of the type wps:GenericProcess.</em></p></description>
+	</requirement>
+	
+	<requirement id="_c824ffef-e589-03c1-a9b0-93473103d2cb" model="ogc" type="general"> <description><p id="_b7c18813-e29c-bf86-3996-b9309bedf25e"><em>The content of the XML encoded description of a Generic Process shall comply with the content of the information elements defined by the requirements class <link target="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic"/>.</em></p></description>
+(XML Line 000649): Requirement class _722d8690-8912-3409-04f9-42fde5c14a18 has no corresponding Conformance class
+	<requirement id="_722d8690-8912-3409-04f9-42fde5c14a18" model="ogc" obligation="requirement" type="class"><subject>Derived encoding and software implementation</subject>
+	<inherit>http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/complex-data</inherit><inherit>http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/literal-data</inherit><inherit>http://www.opengis.net/spec/WPS/2.0/req/native-process/model/datatypes/bounding-box-data</inherit><inherit>OWS Common 2.0</inherit><requirement id="_ea379940-d7dc-72a1-128f-cb6053d44314" model="ogc" type="general"> <description><p id="_36ce398d-8a72-4954-99cc-550be2b29779"><em>The plain text encoding of literal and bounding box values comply with the BNF schema below.</em></p></description>
+	</requirement>
+	
+	<requirement id="_5a177178-e7fe-1998-6037-548e7df0fcb1" model="ogc" type="general"> <description><p id="_ccc70636-73de-e0c9-533b-6eb95ea5b88f"><em>The mime type for plain text encoded literal and bounding box values shall be “text/plain”.</em></p></description>
+(XML Line 000687): Requirement class _aaf7a208-5f65-ba31-9868-06dcadd87682 has no corresponding Conformance class
+	<requirement id="_aaf7a208-5f65-ba31-9868-06dcadd87682" model="ogc" obligation="requirement" type="class"><subject>Software implementation</subject>
+	<inherit>http://www.opengis.net/spec/WPS/2.0/req/conceptual-model</inherit><inherit>OWS Common 2.0</inherit><requirement id="_0a16514f-95f3-8aba-ca66-6dd11d852251" model="ogc" type="general"> <description><p id="_d0d1b1e5-0f45-ef8e-29e5-45f63c7416ec"><em>Requirements class for data transmission.</em></p></description>
+	</requirement>
+	
+	<requirement id="_f7839d48-41c3-f4bc-5140-998545b596de" model="ogc" type="general"> <description><p id="_347ddb2f-8731-5b59-a681-ecb38a6d6261"><em>Requirements class for WPS service handling.</em></p></description>
+(XML Line 000748): Requirement class _d6bad898-a219-0214-94d9-10700f11c8d3 has no corresponding Conformance class
+	<requirement id="_d6bad898-a219-0214-94d9-10700f11c8d3" model="ogc" obligation="requirement" type="class"><subject>Derived encoding and software implementation</subject>
+	<inherit>http://www.opengis.net/spec/WPS/2.0/req/conceptual-model</inherit><requirement id="_dd9fb846-ca07-45d9-6b2c-bcd1fce0d00b" model="ogc" type="general"> <description><p id="_4475c283-f7fe-8c08-dcca-a00e5cee9f1b"><em>The data transmission structures for process inputs and outputs shall comply with the structures defined in <xref target="fig-input-output-transmission-uml-class-diagram"/>, <xref target="tab-parts-of-the-inline-data-structure"/>, <xref target="tab-properties-of-the-dataencodingattributes-structure"/>, <xref target="tab-parts-of-the-reference-structure"/>, <xref target="tab-parts-of-the-requestbody-structure"/>, and <xref target="tab-parts-of-the-bodyreference-structure"/>.</em></p></description>
+	</requirement>
+	</requirement>
+(XML Line 000866): Requirement _4dadbb1d-2b9d-f2b1-dd5a-8c3380ae722e has no corresponding Conformance test
+	<requirement id="_4dadbb1d-2b9d-f2b1-dd5a-8c3380ae722e" model="ogc" type="general"> <description><p id="_40c21f5f-b203-8b7b-6833-d665b27048bb">conf/service/profile/basic-wps</p></description>
+	</requirement>
+(XML Line 000869): Requirement _5dc723d4-a22d-8598-60b0-3a7482100b7f has no corresponding Conformance test
+	<recommendation id="_5dc723d4-a22d-8598-60b0-3a7482100b7f" model="ogc" type="general"> <description><p id="_6a4c1a9f-f49d-aa14-442f-1715f4ac032f">Verify that the server implements the Basic WPS conformance class.</p></description>
+	</recommendation>
+(XML Line 000872): Requirement _cbfb7722-3328-3a66-0728-88f5a11d1e72 has no corresponding Conformance test
+	<requirement id="_cbfb7722-3328-3a66-0728-88f5a11d1e72" model="ogc" type="general"> <description><p id="_ffe07575-e94e-b736-f44f-a60c1d2d9c7a">Verify that the server implements the Synchronous WPS and/or the Asynchronous WPS conformance class. Verify that the requests and responses to a supported operation are syntactically correct. Verify that the service supports the Synchronous WPS Conformance class, the Asynchronous WPS Conformance class or both. Verify that all process offerings implement the native process model.</p></description>
+	</requirement>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000162:64): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000165:102): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000715:50): element "fn" not allowed here; expected the element end-tag, text or element "annotation", "callout" or "note"
+(XML Line 000920:136): element "requirement" not allowed here; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
+(XML Line 000923:87): element "recommendation" not allowed here; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
+(XML Line 000926:84): element "requirement" not allowed here; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"
+(XML Line 000928:11): element "example" incomplete; expected element "dl", "figure", "formula", "name", "ol", "p", "quote", "sourcecode" or "ul"

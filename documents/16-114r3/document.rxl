@@ -1,0 +1,14 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">Moving Features Encoding Extension: netCDF</title>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/BP/moving-features-ext-netCDF/1.0</docidentifier><docidentifier type="ogc-external">http://docs.opengeospatial.org/bp/16-114r3/16-114r3.html</docidentifier><docidentifier type="ogc-internal">16-114r3</docidentifier><docnumber>16-114r3</docnumber><date type="published"><on>2018-12-18</on></date><date type="issued"><on>2018-03-13</on></date><date type="received"><on>2016-11-08</on></date><contributor><role type="author"/><organization>
+<name>Central Research Laboratory, Hitachi Ltd.</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Geomatys</name>
+</organization></contributor><contributor><role type="editor"/><person>
+<name><completename>Martin Desruisseaux</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>The netCDF Moving Features encoding extension is a summary of conventions that supports efficient exchange of simple moving features as binary files. This Best Practice is a complement to the <em>Moving Features Encoding Part I: XML Core</em> and an alternative to the <em>Simple Comma Separated Values (CSV)</em> extension. Compared to the CSV encoding, this netCDF encoding offers more compact storage and better performance at the cost of additional restrictions on the kinds of features that can be stored.</p>
+</abstract><status><stage>approved</stage></status><copyright><from>2022</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Best Practice</keyword><keyword>moving features</keyword><keyword>netCDF</keyword><keyword>CF convention</keyword><keyword>trajectory</keyword><ext><doctype>best-practice</doctype><subdoctype>general</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

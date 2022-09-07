@@ -1,0 +1,516 @@
+/__w/mn-samples-ogc/mn-samples-ogc/site/documents/repos/ogc-wfs/core/standard/17-069.err errors
+
+
+== Document Attributes
+
+(): 'Interface' is not a permitted subtype of Standard: reverting to 'implementation'
+(): candidate is not a recognised status
+(): Version required for standard
+
+
+== Anchors
+
+(XML Line 000336): Crossreference target _feature_collection is undefined
+	<xref target="_feature_collection">‘feature collection’</xref>
+(XML Line 000427): Crossreference target rc2616 is undefined
+	<xref target="rc2616">HTTP</xref>
+(XML Line 000456): Crossreference target rc_oas is undefined
+	<xref target="rc_oas">OpenAPI specification 3.0</xref>
+(XML Line 001091): Crossreference target encodings is undefined
+	<xref target="encodings">encodings</xref>
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000096): Table should have title
+	<table id="_1702c261-253f-ff10-6207-86cf69124957" unnumbered="true"><thead><tr><th valign="middle" align="left"><strong>Name</strong></th>
+	<th valign="middle" align="left"><strong>Affiliation</strong></th>
+	</tr></thead>
+	<tbody><tr><td valign="middle" align="left">Chris Holmes</td>
+	<td valign="middle" align="left">Planet Labs</td>
+(XML Line 000651): Table should have title
+	<table id="rc_core" width="90%"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td colspan="2" valign="middle" align="left"><strong>Requirements Class</strong></td>
+	</tr><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/wfs-1/3.0/req/core"/></td>
+	</tr><tr><td valign="middle" align="left">Target type</td>
+	<td valign="middle" align="left">Web service</td>
+	</tr><tr><td valign="middle" align="left">Dependency</td>
+(XML Line 000752): Table should have title
+	<table id="_e760278e-be3c-710f-ed78-6c9b0b744e0b" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 1</strong></td>
+	<td valign="middle" align="left"><p id="_c3b614ba-32f4-e817-db04-796309a1b08f">/req/core/root-op<br/></p>
+	
+	<p id="_bd864a61-c2a6-06ce-4e14-78fd3f698a0d">The server SHALL support the HTTP GET operation at the path <tt>/</tt>.</p>
+	</td>
+(XML Line 000763): Table should have title
+	<table id="_abcc49a0-341e-abbc-20c8-1df1d98850a9" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 2</strong></td>
+	<td valign="middle" align="left"><p id="_6b72fba3-53d9-7c06-da4b-aa7a69ae4e20">/req/core/root-success<br/></p>
+	
+	<p id="_0c2af75b-f11f-a2dd-acb3-98cb077456ca">A successful execution of the operation SHALL be reported as a response with a
+	HTTP status code <tt>200</tt>.</p>
+(XML Line 000831): Table should have title
+	<table id="_7c72d85f-a164-6dc3-ca5b-0ec6e428f324" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 3</strong></td>
+	<td valign="middle" align="left"><p id="_497f64bb-508b-d572-d1b8-65d640a0277f">/req/core/api-definition-op<br/></p>
+	
+	<p id="_e4ebbf63-ca50-a3f7-169f-065ba87f93c4">The server SHALL support the HTTP GET operation at the path <tt>/api</tt>.</p>
+	</td>
+(XML Line 000842): Table should have title
+	<table id="_2a777342-e2ee-fba7-8458-0780bea123d0" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 4</strong></td>
+	<td valign="middle" align="left"><p id="_d395d436-d01b-ef32-4e62-b351580407bc">/req/core/api-definition-success<br/></p>
+	
+	<p id="_a5cc67f7-e53b-bdbc-d320-1c73e10bce3b">A successful execution of the operation SHALL be reported as a
+	response with a HTTP status code <tt>200</tt>.</p>
+(XML Line 000853): Table should have title
+	<table id="_f6ac7cac-3e59-1cb3-745a-ec9d3e06fbfa" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 1</td>
+	<td valign="middle" align="left"><p id="_99075cc6-8260-bc5a-42c4-14e71d1b2805">/rec/core/api-definition-oas<br/></p>
+	
+	<p id="_e4612955-39d4-a406-2058-8168e02cae42">If the API definition document uses the OpenAPI Specification 3.0,
+	the document SHOULD conform to the
+(XML Line 000891): Table should have title
+	<table id="_498a596f-8ac0-0be7-cac4-95564a5022b0" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 5</strong></td>
+	<td valign="middle" align="left"><p id="_55fa07bf-8c27-25b3-d141-bf8aea8ed7bd">/req/core/conformance-op<br/></p>
+	
+	<p id="_7e529ece-2208-57c7-2bcd-60561f00a494">The server SHALL support the HTTP GET operation at the path <tt>/conformance</tt>.</p>
+	</td>
+(XML Line 000902): Table should have title
+	<table id="_b31f1dc2-e5dc-20ee-9f2f-db1e0c9b444a" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 6</strong></td>
+	<td valign="middle" align="left"><p id="_d12cbcca-a3cc-f036-981d-0831d1e4a8fc">/req/core/conformance-success<br/></p>
+	
+	<p id="_2b457c21-a363-2999-ceb1-7fd5eb32ca8f">A successful execution of the operation SHALL be reported as a response with a
+	HTTP status code <tt>200</tt>.</p>
+(XML Line 000949): Hanging paragraph in clause
+	<clause id="_http_1_1" obligation="normative">
+	<title>HTTP 1.1</title>
+	<table id="_c1d90f93-e71d-cc05-5ec9-98fbcd82b062" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 7</strong></td>
+	<td valign="middle" align="left"><p id="_b08e5a6a-6e1a-ca20-6718-7cec2ca910d7">/req/core/http<br/></p>
+	
+(XML Line 000951): Table should have title
+	<table id="_c1d90f93-e71d-cc05-5ec9-98fbcd82b062" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 7</strong></td>
+	<td valign="middle" align="left"><p id="_b08e5a6a-6e1a-ca20-6718-7cec2ca910d7">/req/core/http<br/></p>
+	
+	<p id="_41215f8c-54dc-223d-507c-3abd37a704b8">The server SHALL conform to <eref type="inline" bibitemid="rfc2616" citeas="IETF RFC 2616">HTTP 1.1</eref>.</p>
+	
+(XML Line 001007): Table should have title
+	<table id="_a404b739-694b-15fb-80b4-7d424b61b749" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Permission 1</td>
+	<td valign="middle" align="left"><p id="_c1a14482-287c-3c15-361b-8f0205237056">/per/core/additional-status-codes<br/></p>
+	
+	<p id="_e98657f0-b633-267c-71f5-a3c8798d2eee">Servers MAY support other capabilities of the HTTP protocol and, therefore,
+	MAY return other status codes than those listed in <xref target="status_codes"/>, too.</p>
+(XML Line 001023): Table should have title
+	<table id="rec_etag" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 2</td>
+	<td valign="middle" align="left"><p id="_f28a4ab0-e231-f7b5-de76-b95ae2a30e86">/rec/core/etag<br/></p>
+	
+	<p id="_ef8bdb9a-f52e-1248-6947-403d192efaf5">The service SHOULD support entity tags and the associated headers as
+	specified by HTTP/1.1.</p>
+(XML Line 001044): Table should have title
+	<table id="_def4e673-fe96-a585-cc39-69b095ecaca4" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 3</td>
+	<td valign="middle" align="left"><p id="_075ea1e1-40c6-8b0e-f59b-842a105ee292">/rec/core/cross-origin<br/></p>
+	
+	<p id="_5333b81f-61e5-a1db-7b53-6dc7b0c034a7">If the server is intended to be accessed from the browser, cross-origin
+	requests SHOULD be supported. Note that support can also be added in a
+(XML Line 001068): Table should have title
+	<table id="rec_html" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 4</td>
+	<td valign="middle" align="left"><p id="_996ba0af-8068-4e99-0a32-61ab581992b2">/rec/core/html<br/></p>
+	
+	<p id="_0fa26894-9160-b26f-95b2-38e9dec3a37f">To support browsing a WFS with a web browser and to enable search engines to crawl
+	and index a dataset, implementations SHOULD consider to support an HTML encoding.</p>
+(XML Line 001077): Table should have title
+	<table id="rec_geojson" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 5</td>
+	<td valign="middle" align="left"><p id="_e9fce9e1-5247-7056-81bb-8211d1672967">/rec/core/geojson<br/></p>
+	
+	<p id="_791f1daa-b591-5693-e88b-f4ae8ec66014">If the feature data can be represented for the intended use in GeoJSON,
+	implementations SHOULD consider to support GeoJSON as an
+(XML Line 001127): Table should have title
+	<table id="_471c98ba-1fed-bfe7-38f3-48062a5ae8af" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 8</strong></td>
+	<td valign="middle" align="left"><p id="_0a051614-994e-2ed0-4519-5f2e05b4e786">/req/core/crs84<br/></p>
+	
+	<p id="_9265017c-bdea-d8e4-de7a-302bba4643cb">Unless the client explicitly requests a different coordinate reference system,
+	all spatial geometries SHALL be in the coordinate reference system
+(XML Line 001148): Table should have title
+	<table id="_43abdb15-fb63-6511-e9d8-26f524c2a0d8" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 6</td>
+	<td valign="middle" align="left"><p id="_508b5abc-c773-a767-9938-fd7c15b83b78">/rec/core/link-header<br/></p>
+	
+	<p id="_49f5085a-cd96-a9ce-9124-5bf517ca1062">Links included in payload of responses SHOULD also be included
+	as <tt>Link</tt> headers in the HTTP response according to <eref type="inline" bibitemid="rfc5988" citeas="IETF RFC 5988">RFC 5988, Clause 5</eref>.</p>
+(XML Line 001166): Table should have title
+	<table id="_3bd2d680-9a4b-7aa1-34f0-c6f5a37c8536" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 9</strong></td>
+	<td valign="middle" align="left"><p id="_abc9edfe-7c92-d9ae-e32b-ecad9e52dce6">/req/core/fc-md-op<br/></p>
+	
+	<p id="_0580d530-9446-ed74-cfd6-15257c2f03ad">The server SHALL support the HTTP GET operation at the path <tt>/collections</tt>.</p>
+	</td>
+(XML Line 001177): Table should have title
+	<table id="_b5640fdc-1064-712a-9881-72dd263a87ce" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 10</strong></td>
+	<td valign="middle" align="left"><p id="_83d165ae-ae37-12a0-ced0-72bd33e88675">/req/core/fc-md-success<br/></p>
+	
+	<p id="_5358645b-e86f-390b-c556-3aea09ba2755">A successful execution of the operation SHALL be reported as a response with a
+	HTTP status code <tt>200</tt>.</p>
+(XML Line 001205): Table should have title
+	<table id="_68fcace0-1211-ad2b-5be7-a5a40415040d" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 11</strong></td>
+	<td valign="middle" align="left"><p id="_397a6f64-0457-9b74-96f1-66e5d3a9bfb1">/req/core/fc-md-links<br/></p>
+	
+	<p id="_44db3374-bd93-5c81-9cd4-96f834d63c2c">A <tt>200</tt>-response SHALL include the following links in the <tt>links</tt> property
+	of the response:</p>
+(XML Line 001223): Table should have title
+	<table id="fc_md_descriptions" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 7</td>
+	<td valign="middle" align="left"><p id="_325f0411-8078-57af-fb83-510c3505da0b">/rec/core/fc-md-descriptions<br/></p>
+	
+	<p id="_be1a9be1-8c0e-5602-016d-15e4b3fff722">If external schemas or descriptions for the dataset exist that provide
+	information about the structure or semantics of the data, a <tt>200</tt>-response
+(XML Line 001251): Table should have title
+	<table id="_84469d61-44f5-b497-fe75-c4869775b93f" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 12</strong></td>
+	<td valign="middle" align="left"><p id="_2d77f032-d550-719f-47e4-aec2462061a2">/req/core/fc-md-items<br/></p>
+	
+	<p id="_1beafc9a-d60b-533a-2147-65ae84347428">For each feature collection in this distribution of the dataset, an item SHALL
+	be provided in the property <tt>collections</tt>.</p>
+(XML Line 001260): Table should have title
+	<table id="_3753eb7d-f366-db96-bb22-e00f9a4c088f" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 13</strong></td>
+	<td valign="middle" align="left"><p id="_0d97ec58-d10a-0bd3-fc66-6187efdf6f91">/req/core/fc-md-items-links<br/></p>
+	
+	<p id="_1382cf14-09d5-0bd8-b406-9113f225e952">For each feature collection in this distribution of the dataset,
+	the <tt>links</tt> property of the collection SHALL include
+(XML Line 001278): Table should have title
+	<table id="_3d87af66-fbf5-fc90-0301-19ef479048ae" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 14</strong></td>
+	<td valign="middle" align="left"><p id="_c8f7fd26-16f9-5fbf-fedb-dd055f4c103e">/req/core/fc-md-extent<br/></p>
+	
+	<p id="_4ccc374c-de12-bbf1-a73a-b7619f761a8e">For each feature collection, the <tt>extent</tt> property, if provided, SHALL be a bounding box that includes all spatial and temporal geometries in this collection.</p>
+	
+(XML Line 001379): Table should have title
+	<table id="_bd71ff09-8fd9-02a2-50af-e694d4757796" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 15</strong></td>
+	<td valign="middle" align="left"><p id="_d0d7848a-6d07-80ea-ef16-d1a4683f302a">/req/core/sfc-md-op<br/></p>
+	
+	<p id="_7583b34d-361a-e728-e2d3-0f7487c01e35">The server SHALL support the HTTP GET operation at the path <tt>/collections/{name}</tt>.</p>
+	
+(XML Line 001393): Table should have title
+	<table id="_08519a7c-13a2-3f4d-120e-6cf7a3e8c2a4" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 16</strong></td>
+	<td valign="middle" align="left"><p id="_29bcc70e-8f87-6270-b60b-54d33c759a30">/req/core/sfc-md-success<br/></p>
+	
+	<p id="_562d448f-b7c3-a524-fdb7-dc1860f42606">A successful execution of the operation SHALL be reported as a response with a
+	HTTP status code <tt>200</tt>.</p>
+(XML Line 001419): Table should have title
+	<table id="_95dcfb34-c9f2-ef07-c8c2-b815de278a9c" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 17</strong></td>
+	<td valign="middle" align="left"><p id="_a04cd35d-aa15-3c47-3613-e69964fbd657">/req/core/fc-op<br/>
+	<br/></p>
+	
+	<p id="_402b1d20-03f9-1e31-98f6-32b0b197c793">For every feature collection identified in the metadata about the feature collection (path <tt>/</tt>),
+(XML Line 001435): Table should have title
+	<table id="_88e4584b-7397-45ce-ed6f-156575aad9f1" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 18</strong></td>
+	<td valign="middle" align="left"><p id="_4da5b975-be4c-4026-e27d-804a1e286ecb">/req/core/fc-limit-definition<br/></p>
+	
+	<p id="_f26352b5-0272-8977-cc59-43cbdef3a9a0">Each feature collection operation SHALL support a parameter <tt>limit</tt>
+	with the following characteristics (using an OpenAPI Specification 3.0 fragment):</p>
+(XML Line 001456): Table should have title
+	<table id="_85e7b379-64be-788d-0da8-ef92447cc4b8" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Permission 2</td>
+	<td valign="middle" align="left"><p id="_cdcecfde-1a27-ec3a-5a48-ce67a228478b">/per/core/fc-limit-default-maximum<br/></p>
+	
+	<p id="_ad6ef466-2a03-bd90-4014-e8a310f13630">The values for <tt>maximum</tt> and <tt>default</tt> in requirement <tt>/req/core/fc-limit-definition</tt>
+	are only examples and MAY be changed.</p>
+(XML Line 001465): Table should have title
+	<table id="_597ca550-8a2a-da9d-0267-b885a39f809a" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 19</strong></td>
+	<td valign="middle" align="left"><p id="_1b40e4c4-e0fc-f331-6a80-d83cf31f149b">/req/core/fc-limit-response-1<br/></p>
+	
+	<p id="_304d6d02-f5e2-ad19-667f-da34c7a7592c">The response SHALL not contain more features than specified by the
+	optional <tt>limit</tt> parameter. If the API definition specifies a maximum
+(XML Line 001480): Table should have title
+	<table id="_30f09541-6d47-2992-68bb-a50e6761b1ea" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Permission 3</td>
+	<td valign="middle" align="left"><p id="_347bfac6-e2e2-a0bc-9304-7f851ea645ea">/per/core/fc-limit-response-2<br/></p>
+	
+	<p id="_59d1ff64-d1f0-dba7-9d73-d534f5933de8">The server MAY return less features than requested (but not more).</p>
+	</td>
+(XML Line 001495): Table should have title
+	<table id="_bea0f667-bbe6-9410-82b3-33eb756321b0" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 20</strong></td>
+	<td valign="middle" align="left"><p id="_3c6f7950-f5eb-155d-b51a-ea0706b387c8">/req/core/fc-bbox-definition<br/></p>
+	
+	<p id="_24e96630-0fed-3b10-fc6c-0a08ea117d5f">Each feature collection operation SHALL support a parameter <tt>bbox</tt>
+	with the following characteristics (using an OpenAPI Specification 3.0 fragment):</p>
+(XML Line 001517): Table should have title
+	<table id="_21f0350e-5bb4-c670-698f-b9ee1607c779" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 21</strong></td>
+	<td valign="middle" align="left"><p id="_058e5837-fc0a-5833-3b93-2a833e4ee1d7">/req/core/fc-bbox-response<br/></p>
+	
+	<p id="_facccf4d-0879-ac29-3390-728a95c2d031">Only features that have a spatial geometry that intersects the bounding box SHALL be
+	part of the result set, if the <tt>bbox</tt> parameter is provided.</p>
+(XML Line 001574): Table should have title
+	<table id="_43a43096-ea8b-7646-0060-7da510b97c58" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 22</strong></td>
+	<td valign="middle" align="left"><p id="_2ba6161c-6a0d-7998-f432-b78b0c329884">/req/core/fc-time-definition<br/></p>
+	
+	<p id="_af519001-21b8-c197-8c67-89ac2e18dced">Each feature collection operation SHALL support a parameter <tt>time</tt>
+	with the following characteristics (using an OpenAPI Specification 3.0 fragment):</p>
+(XML Line 001592): Table should have title
+	<table id="_93b9b305-8982-a27a-24f5-919b24ad5144" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 23</strong></td>
+	<td valign="middle" align="left"><p id="_4a863408-3397-2f99-d909-ec246178dec3">/req/core/fc-time-response<br/></p>
+	
+	<p id="_b48fb7d1-cdda-0b14-9e75-4c77ad0fdb58">Only features that have a temporal geometry that intersects the timestamp or
+	time period SHALL be part of the result set, if the <tt>time</tt> parameter is provided.</p>
+(XML Line 001657): Table should have title
+	<table id="_37ab48b4-e978-2471-5a35-0454cce16db8" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 8</td>
+	<td valign="middle" align="left"><p id="_1c5a63c4-5450-8bef-6f72-c56eccc7c75c">/rec/core/fc-filters<br/></p>
+	
+	<p id="_03999918-e488-6c3f-27a8-0b5e94a35a3b">If features in the feature collection include a feature property that has a
+	simple value (for example, a string or integer) that is expected to be useful
+(XML Line 001727): Table should have title
+	<table id="_b67395e5-157d-6918-3b02-fcaa6952f287" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 24</strong></td>
+	<td valign="middle" align="left"><p id="_4071ebe5-cf46-8c22-e00b-d0c3c6dd7be0">/req/core/fc-response<br/></p>
+	
+	<p id="_214f44b6-88a1-1f23-b372-7c94f2c4fc96">A successful execution of the operation SHALL be reported as a response with a
+	HTTP status code <tt>200</tt>.</p>
+(XML Line 001763): Table should have title
+	<table id="_bbdb987f-a917-0985-02d9-fcb97a73d4bd" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 25</strong></td>
+	<td valign="middle" align="left"><p id="_56254ab6-a8dc-cb99-3b7b-4e4929014016">/req/core/fc-links<br/></p>
+	
+	<p id="_967f39ca-43c9-2144-68c3-8c82a898c1bc">A <tt>200</tt>-response SHALL include the following links:</p>
+	
+(XML Line 001778): Table should have title
+	<table id="_ab6481f1-5a3d-691c-fa6d-bcfc1438ae39" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 9</td>
+	<td valign="middle" align="left"><p id="_fcd79e67-87db-1145-a2c2-0308b0e204a4">/rec/core/fc-next-1<br/></p>
+	
+	<p id="_92188fd6-e440-a733-03bb-230b324f4e53">A <tt>200</tt>-response SHOULD include a link to the next “page” (relation: <tt>next</tt>),
+	if more features have been selected than returned in the response.</p>
+(XML Line 001787): Table should have title
+	<table id="_809c2ee1-3dc5-410f-fb98-476f43a4a823" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 10</td>
+	<td valign="middle" align="left"><p id="_c795624c-d515-51e8-95a5-4be72cfd4adf">/rec/core/fc-next-2<br/></p>
+	
+	<p id="_851c3ebd-d15e-562c-e7b2-e8b672fdf943">Dereferencing a <tt>next</tt> link SHOULD return additional features from the
+	set of selected features that have not yet been returned.</p>
+(XML Line 001796): Table should have title
+	<table id="_f657e637-7335-e56b-2ba8-02d03e6e2781" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 11</td>
+	<td valign="middle" align="left"><p id="_45531ef9-907f-a5b3-b14c-a8260c6132ac">/rec/core/fc-next-3<br/></p>
+	
+	<p id="_f7327eed-3798-7fff-86a4-86c40d9c41d0">The number of features in a response to a <tt>next</tt> link SHOULD follow the
+	same rules as for the response to the original query and again include
+(XML Line 001818): Table should have title
+	<table id="_0ee07831-73a7-bf1c-17a5-96685546a463" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Permission 4</td>
+	<td valign="middle" align="left"><p id="_de9eb457-ee8d-0a6b-d691-6a762f1b1edd">/per/core/fc-prev<br/></p>
+	
+	<p id="_62d87ec3-2d93-85cd-f0bc-6304ca12b120">A response to a <tt>next</tt> link MAY include a <tt>prev</tt> link to the resource that
+	included the <tt>next</tt> link.</p>
+(XML Line 001830): Table should have title
+	<table id="_b337ce0c-dc0f-3f84-74ef-29f6c562da4e" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 26</strong></td>
+	<td valign="middle" align="left"><p id="_1930dcf9-2361-0f6c-1e9c-3a35d134d690">/req/core/fc-rel-type<br/></p>
+	
+	<p id="_fecd593e-8f1e-79f2-bc93-c8d3bf0b5a98">All links SHALL include the <tt>rel</tt> and <tt>type</tt> link parameters.</p>
+	</td>
+(XML Line 001838): Table should have title
+	<table id="_11074171-4f0c-1a7a-f6c9-c78566d875a5" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 27</strong></td>
+	<td valign="middle" align="left"><p id="_1724daf6-c2ed-9e48-b311-d72aff921cc7">/req/core/fc-timeStamp<br/></p>
+	
+	<p id="_a07cbe98-14fc-ba8a-48bb-d5fcee1a78b4">If a property <tt>timeStamp</tt> is included in the response, the value SHALL
+	be set to the time stamp when the response was generated.</p>
+(XML Line 001847): Table should have title
+	<table id="_cf6d7c08-2014-e864-5088-81f1bc4cd5f1" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 28</strong></td>
+	<td valign="middle" align="left"><p id="_9336b900-eebe-a07b-63f1-f82809c1a073">/req/core/fc-numberMatched<br/></p>
+	
+	<p id="_f2889752-1f3b-291c-778f-7e65d04ecd98">If a property <tt>numberMatched</tt> is included in the response, the value SHALL
+	be identical to the number of features in the feature collections that match
+(XML Line 001860): Table should have title
+	<table id="_32b84922-1e06-53a4-628e-eaac4aed9236" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 29</strong></td>
+	<td valign="middle" align="left"><p id="_e51e00ec-8755-a92b-20a3-d66e303ad507">/req/core/fc-numberReturned<br/></p>
+	
+	<p id="_bd641cb9-1ca5-eeb2-e9fc-0c93175bcd0f">If a property <tt>numberReturned</tt> is included in the response, the value SHALL
+	be identical to the number of features in the response.</p>
+(XML Line 001943): Table should have title
+	<table id="_d2371b49-0bd9-83d9-710c-7abb26948a25" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 30</strong></td>
+	<td valign="middle" align="left"><p id="_04b86773-74ac-354b-b599-a4affab2b4ab">/req/core/f-op<br/></p>
+	
+	<p id="_7167b921-be10-5587-2037-f243e2c0ca43">For every feature in a feature collection (path <tt>/collections/{name}/items</tt>),
+	the service SHALL support the HTTP GET operation at the path
+(XML Line 001957): Table should have title
+	<table id="_537c4cdb-8a9a-9df6-f5fc-49bff7050d00" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Permission 5</td>
+	<td valign="middle" align="left"><p id="_409b9ed6-0e0e-caad-ec0a-a973ec08e217">/per/core/f-id<br/></p>
+	
+	<p id="_1ef4882a-8e16-8418-efeb-4e111f4d44df">The Core requirements class only requires that the feature URI is unique.
+	Implementations MAY apply stricter rules and, for example, use unique <tt>id</tt>
+(XML Line 001974): Table should have title
+	<table id="_205de597-89e8-759e-181b-2b65dfbe9c02" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 31</strong></td>
+	<td valign="middle" align="left"><p id="_379e4430-b5d1-634e-679d-2a774c8718e5">/req/core/f-success<br/></p>
+	
+	<p id="_95f91760-9966-a9d5-4474-ca22c4ba2eca">A successful execution of the operation SHALL be reported as a response with a
+	HTTP status code <tt>200</tt>.</p>
+(XML Line 001983): Table should have title
+	<table id="_c2d761f8-85ac-d9d8-f6dd-d4a888a95ecb" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 32</strong></td>
+	<td valign="middle" align="left"><p id="_0743b518-6051-e78c-1947-5413e8089e4e">/req/core/f-links<br/></p>
+	
+	<p id="_16fcb038-a256-160e-cea8-027381b51849">A <tt>200</tt>-response SHALL include the following links in the response:</p>
+	
+(XML Line 002075): Table should have title
+	<table id="rc_html" width="90%"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td colspan="2" valign="middle" align="left"><strong>Requirements Class</strong></td>
+	</tr><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/wfs-1/3.0/req/html"/></td>
+	</tr><tr><td valign="middle" align="left">Target type</td>
+	<td valign="middle" align="left">Web service</td>
+	</tr><tr><td valign="middle" align="left">Dependency</td>
+(XML Line 002088): Table should have title
+	<table id="_4e9a765d-43a2-13d0-25cd-4d0c4de71012" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 33</strong></td>
+	<td valign="middle" align="left"><p id="_3a59e85c-07cf-79bc-3965-3e73fbf5a1eb">/req/html/definition<br/></p>
+	
+	<p id="_a098bda8-5318-da75-0594-35b52ed04e95">Every <tt>200</tt>-response of an operation of the server
+	SHALL support the media type <tt>text/html</tt>.</p>
+(XML Line 002097): Table should have title
+	<table id="_34218c70-b44c-ab90-a3ab-f5c11b6c4424" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 34</strong></td>
+	<td valign="middle" align="left"><p id="_d5b6ad37-10c8-7003-c568-210f01cbe83e">/req/html/content<br/></p>
+	
+	<p id="_28629cd6-24c4-480b-749d-1abbd78209a9">Every <tt>200</tt>-response of the server with the media type “text/html” SHALL be a
+	<link target="https://www.w3.org/TR/html5/">HTML 5 document</link> that includes the following
+(XML Line 002115): Table should have title
+	<table id="_58b40317-d8bf-5a1a-9cd4-ab7767cc13b1" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 12</td>
+	<td valign="middle" align="left"><p id="_f3aa00d8-a150-1921-5e73-0900d8043f7b">/rec/html/schema-org<br/></p>
+	
+	<p id="_a7c5bd33-6a1e-1c87-dcd9-ecfc7cdc21a4">A <tt>200</tt>-response with the media type <tt>text/html</tt>, SHOULD include
+	<eref type="inline" bibitemid="schema.org" citeas="schema.org">Schema.org</eref> annotations.</p>
+(XML Line 002132): Table should have title
+	<table id="rc_geojson" width="90%"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td colspan="2" valign="middle" align="left"><strong>Requirements Class</strong></td>
+	</tr><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/wfs-1/3.0/req/geojson"/></td>
+	</tr><tr><td valign="middle" align="left">Target type</td>
+	<td valign="middle" align="left">Web service</td>
+	</tr><tr><td valign="middle" align="left">Dependency</td>
+(XML Line 002143): Table should have title
+	<table id="_af9a47de-9cd7-033f-7b00-4110b395dac0" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 35</strong></td>
+	<td valign="middle" align="left"><p id="_7fec7bb3-a4de-20e0-a591-c4ae89fdcff8">/req/geojson/definition<br/></p>
+	
+	<p id="_0604eb1a-d6d7-d442-9ce2-53bf720d3f17"><tt>200</tt>-responses of the server SHALL support the following media types:</p>
+	
+(XML Line 002157): Table should have title
+	<table id="_d1fd64e6-0052-d709-ea5e-3d09a12b7677" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 36</strong></td>
+	<td valign="middle" align="left"><p id="_b3773121-433d-5e4a-0305-ce494f79bb72">/req/geojson/content<br/></p>
+	
+	<p id="_f3f8ac9e-fb80-b52a-5d99-cf8877462d36">Every <tt>200</tt>-response with the media type <tt>application/geo+json</tt> SHALL be</p>
+	
+(XML Line 002288): Table should have title
+	<table id="rc_gmlsf0" width="90%"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td colspan="2" valign="middle" align="left"><strong>Requirements Class</strong></td>
+	</tr><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/wfs-1/3.0/req/gmlsf0"/></td>
+	</tr><tr><td valign="middle" align="left">Target type</td>
+	<td valign="middle" align="left">Web service</td>
+	</tr><tr><td valign="middle" align="left">Dependency</td>
+(XML Line 002299): Table should have title
+	<table id="_b0a12969-aa1f-efc0-3c44-78f788488306" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 37</strong></td>
+	<td valign="middle" align="left"><p id="_1cd54865-df44-2b08-90f2-2b3812824710">/req/gmlsf0/definition<br/></p>
+	
+	<p id="_9a49af04-34c2-9f92-e43e-a07e7684e1b8"><tt>200</tt>-responses of the server SHALL support the following media types:</p>
+	
+(XML Line 002313): Table should have title
+	<table id="req_gmlsf0_content" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 38</strong></td>
+	<td valign="middle" align="left"><p id="_626a88b0-d568-5b36-d56b-c9719c11b119">/req/gmlsf0/content<br/></p>
+	
+	<p id="_aafa69f6-0bc2-9c92-2553-b746bf146b48"><xref target="gml_content"/> specifies the XML document root element
+	that the server SHALL return in a <tt>200</tt>-response for each resource.</p>
+(XML Line 002391): Table should have title
+	<table id="rc_gmlsf2" width="90%"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td colspan="2" valign="middle" align="left"><strong>Requirements Class</strong></td>
+	</tr><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/wfs-1/3.0/req/gmlsf2"/></td>
+	</tr><tr><td valign="middle" align="left">Target type</td>
+	<td valign="middle" align="left">Web service</td>
+	</tr><tr><td valign="middle" align="left">Dependency</td>
+(XML Line 002402): Table should have title
+	<table id="_28ffe200-a58e-09ae-a9d8-fe00fad2bc43" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 39</strong></td>
+	<td valign="middle" align="left"><p id="_42b65e73-6062-d6e1-ab10-5738161ddb59">/req/gmlsf2/definition<br/></p>
+	
+	<p id="_c7c54d13-f123-7dde-f018-85003282d9a0"><tt>200</tt>-responses of the server SHALL support the following media types:</p>
+	
+(XML Line 002416): Table should have title
+	<table id="_98c11bda-22b4-2100-b470-2a522e061690" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 40</strong></td>
+	<td valign="middle" align="left"><p id="_b75c2447-4934-fc06-7c6b-567fedb70fba">/req/gmlsf2/content<br/></p>
+	
+	<p id="_e70479b5-dc5c-28b1-26f6-8f6fc94646ed">The <xref target="req_gmlsf0_content">requirement <tt>/req/gmlsf0/content</tt></xref> applies, too,
+	with the following changes:</p>
+(XML Line 002440): Table should have title
+	<table id="rc_oas30" width="90%"><colgroup><col width="20%"/><col width="80%"/></colgroup><tbody><tr><td colspan="2" valign="middle" align="left"><strong>Requirements Class</strong></td>
+	</tr><tr><td colspan="2" valign="middle" align="left"><link target="http://www.opengis.net/spec/wfs-1/3.0/req/oas30"/></td>
+	</tr><tr><td valign="middle" align="left">Target type</td>
+	<td valign="middle" align="left">Web service</td>
+	</tr><tr><td valign="middle" align="left">Dependency</td>
+(XML Line 002451): Table should have title
+	<table id="_95792152-f607-a7d4-04c0-71f5a0284843" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 41</strong></td>
+	<td valign="middle" align="left"><p id="_6ef70770-7856-c12b-9776-f89b63988792">/req/oas30/oas-definition-1<br/></p>
+	
+	<p id="_fdff552b-8e0f-4738-a04f-be45bffc7f50">The service SHALL provide an OpenAPI definition in JSON and HTML at the path
+	<tt>/api</tt> using the media type <tt>application/openapi+json;version=3.0</tt>.</p>
+(XML Line 002464): Table should have title
+	<table id="_899f6c45-25eb-8f47-0712-c74c9440745c" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 42</strong></td>
+	<td valign="middle" align="left"><p id="_dfac936f-bc93-cb30-b0a2-588546c01e1f">/req/oas30/oas-definition-2<br/></p>
+	
+	<p id="_c6921366-d57a-cbe7-970d-5928cca53eee">The JSON representation SHALL conform to the
+	<eref type="inline" bibitemid="OpenAPI" citeas="OpenAPI">OpenAPI Specification, version 3.0</eref>.</p>
+(XML Line 002480): Table should have title
+	<table id="_d8c9d66b-4f32-5593-5aec-31c0f9c09886" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 43</strong></td>
+	<td valign="middle" align="left">/req/oas30/oas-impl<br/>
+	
+	The server SHALL implement all capabilities specified in the OpenAPI
+	definition.</td>
+(XML Line 002495): Table should have title
+	<table id="_497061cd-6ef6-b1a2-5e87-63f06e1c08ef" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 44</strong></td>
+	<td valign="middle" align="left"><p id="_9d88e9e3-4feb-f77c-0569-01cc61158715">/req/oas30/completeness<br/></p>
+	
+	<p id="_47d6329d-e48b-7a47-6ff9-5834082cc13b">The OpenAPI definition SHALL specify for each operation all
+	<link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#httpCodes">HTTP Status Codes</link>
+(XML Line 002523): Table should have title
+	<table id="_e8f47383-0e48-ed66-2235-65855723d003" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 45</strong></td>
+	<td valign="middle" align="left"><p id="_23ae7c83-1dfc-80c1-5c41-47731f665d7c">/req/oas30/exceptions-codes<br/></p>
+	
+	<p id="_c482fe08-6a57-d492-4b0e-2adfc51aac96">For error situations that originate from the server, the API definition
+	SHALL cover all applicable HTTP Status Codes.</p>
+(XML Line 002551): Table should have title
+	<table id="_5f849f33-1adc-3cb0-6057-fa29e80b6795" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left"><strong>Requirement 46</strong></td>
+	<td valign="middle" align="left"><p id="_7a9b5e06-aa86-14ae-5d37-0e23520bbec4">/req/oas30/security<br/></p>
+	
+	<p id="_fd230f0f-2ce4-675d-9b52-f0e87f742c50">For cases, where the operations of the server are access-controlled,
+	the security scheme(s) SHALL be documented in the OpenAPI definition.</p>
+(XML Line 002578): Table should have title
+	<table id="_19d3aa7d-33eb-2f3d-a04e-eaef47c2cbe7" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr><td valign="middle" align="left">Recommendation 13</td>
+	<td valign="middle" align="left"><p id="_d82c274a-edad-6b1f-f194-00038a4946a5">/rec/oas30/f-key-properties<br/></p>
+	
+	<p id="_84b215cb-2850-6a50-d2b8-851d51ad76ed">The schema for the Response Objects of the HTTP GET operation for
+	features SHOULD include key feature properties
+(XML Line 002625): Hanging paragraph in clause
+	<annex id="annex-a" obligation="informative">
+	<title>Abstract Test Suite</title>
+	<admonition id="_ab5bb3ad-37a5-c9e4-c5c5-8b4c101d332a" type="caution"><p id="_df4a3a7f-a82a-804a-a321-85e119c84fd7"><link target="https://github.com/opengeospatial/WFS_FES/issues/112">ISSUE 112</link><br/>
+	The Abstract Test Suite is work-in-progress. Currently, only a draft for the
+	Core conformance class is available. The other five conformance classes (HTML,
+(XML Line 002647): Hanging paragraph in clause
+	<clause id="_conventions_2" obligation="informative">
+	<title>Conventions</title>
+	<p id="_d6d8319e-9fdb-f531-8579-4c30d3ef0d9d">The following conventions apply to this Abstract Test Suite:</p>
+	
+	<clause id="_path_templates" obligation="informative">
+(XML Line 002739): Table should have title
+	<table id="_147ee3b1-38f4-333a-abe4-13360683ce22" width="100%"><tbody><tr><td valign="middle" align="left"><strong>Requirement 1:</strong> API Landing Page Operation<br/>
+	  The server SHALL support the HTTP GET operation at the path /.<br/>
+	  Tests: A.4.2.1</td>
+	</tr><tr><td valign="middle" align="left"><strong>Requirement 2:</strong> API Landing Page Response<br/>
+	A successful execution of the operation SHALL be reported as a response with a HTTP status code 200. The content of that response SHALL be based upon the OpenAPI 3.0 schema root.yaml and include at least links to the following resources:<br/>
+(XML Line 002867): Hanging paragraph in clause
+	<clause id="_abstract_test" obligation="informative">
+	<title>Abstract Test</title>
+	<p id="_b1b47953-8f1e-a6e1-d2df-47b9022ac351">The Test Approach used in the WFS 3.0 Abstract Test Suite includes four steps:</p>
+	
+	<ol id="_b191e51d-df74-b2f6-b58e-d871168210bc" type="arabic"><li><p id="_fb6dc6e4-4970-5a97-0487-4feb0d85201d">Identify the test points</p>
+(XML Line 003012): Hanging paragraph in clause
+	<clause id="_openapi_document_retrieval" obligation="informative">
+	<title>OpenAPI Document Retrieval</title>
+	<p id="_00295915-1333-dfcc-b956-131824008dd3">Note: The URI for the API definition is provided through the landing page.  However, that does not mean that the API definition resides on the same server as the landing page.  Test clients should be prepared for a WFS 3.0 implementation which is distributed across multiple servers.</p>
+	
+	<clause id="_a_test_purpose_5" obligation="informative">
+(XML Line 003081): Hanging paragraph in clause
+	<clause id="identifytestpoints" obligation="informative">
+	<title>Identify the Test Points</title>
+	<p id="_12a535f8-c9d4-db84-9ee4-65bd10c9f9c1">Identification of the test points is a pre-condition to performing a compliance test.  This process starts with <xref target="identifytestpoints1"/>.</p>
+	
+	<clause id="identifytestpoints1" obligation="informative">
+(XML Line 005314): Table should have title
+	<table id="_d11668fb-5579-baf3-2b1f-05bb2778fc62"><colgroup><col width="12%"/><col width="18%"/><col width="12%"/><col width="12%"/><col width="46%"/></colgroup><thead><tr><th valign="middle" align="left">Date</th>
+	<th valign="middle" align="left">Release</th>
+	<th valign="middle" align="left">Editor</th>
+	<th valign="middle" align="left">Primary clauses modified</th>
+	<th valign="middle" align="left">Description</th>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000261:104): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 001484:68): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 001544:68): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 001623:68): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 001710:68): element "sourcecode" not allowed here; expected the element end-tag or element "dl", "figure", "ol", "p" or "ul"
+(XML Line 005473:175): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 005544:240): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 005563:155): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 005564:140): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 005565:148): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 005603:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 005607:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 005611:18): element "docidentifier" not allowed yet; missing required element "title"
+(XML Line 005615:18): element "docidentifier" not allowed yet; missing required element "title"

@@ -1,0 +1,32 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">Big Geospatial Data — an OGC White Paper</title>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/WP/bigdata</docidentifier><docidentifier type="ogc-internal">16-131r2</docidentifier><docnumber>16-131r2</docnumber><date type="published"><on>2017-09-25</on></date><date type="issued"><on>2017-06-29</on></date><date type="received"><on>2017-06-15</on></date><contributor><role type="editor"/><person>
+<name><completename>George Percivall</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><language>en</language><script>Latn</script><abstract><p>This white paper is a survey of Big Geospatial Data with these main themes:</p>
+
+<ul><li><p>Geospatial data is increasing in volume and variety;</p>
+</li>
+<li><p>New Big Data computing techniques are being applied to geospatial data;</p>
+</li>
+<li><p>Geospatial Big Data techniques benefit many applications; and</p>
+</li>
+<li><p>Open standards are needed for interoperability, efficiency, innovation and cost effectiveness.</p>
+</li>
+</ul>
+
+<p>The main purpose of this White Paper is to identify activities to be undertaken in OGC Programs that advance the Big Data capabilities as applied to geospatial information.</p>
+
+<p>This white paper was developed based on two Location Powers events:</p>
+
+<ul><li><p>Location Powers: Big Data, Orlando, September 20th, 2016; and</p>
+</li>
+<li><p>Location Powers: Big Linked Data, Delft, March 22nd, 2017.</p>
+</li>
+</ul>
+
+<p>For information on Location Powers: <link target="http://www.locationpowers.net/pastevents/"/></p>
+</abstract><status><stage>approved</stage></status><copyright><from>2017</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC documents</keyword><keyword>Big Data</keyword><keyword>geospatial</keyword><keyword>location</keyword><keyword>open</keyword><keyword>standards</keyword><keyword>interoperability</keyword><keyword>cloud computing</keyword><ext><doctype>white-paper</doctype><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata>

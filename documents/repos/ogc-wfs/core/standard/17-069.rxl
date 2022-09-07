@@ -1,0 +1,70 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">OGC Web Feature Service 3.0: Part 1 - Core</title>
+<uri type="xml">https://riboseinc.github.io/ogc-wfs/ogc-wfs.xml</uri><uri type="pdf">https://riboseinc.github.io/ogc-wfs/ogc-wfs.pdf</uri><uri type="doc">https://riboseinc.github.io/ogc-wfs/ogc-wfs.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wfs-1/3.0</docidentifier><docidentifier type="ogc-internal">17-069</docidentifier><docnumber>17-069</docnumber><date type="published"><on>1000-01-01</on></date><date type="issued"><on>1000-01-01</on></date><date type="received"><on>1000-01-01</on></date><contributor><role type="author"/><organization>
+<name>CubeWerx Inc.</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Hexagon</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>interactive instruments GmbH</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Planet Labs</name>
+</organization></contributor><contributor><role type="editor"/><person>
+<name><completename>Clemens Portele</completename></name>
+</person></contributor><contributor><role type="editor"/><person>
+<name><completename>Panagiotis (Peter) A. Vretanos</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><version><revision-date>2018-04-07</revision-date><draft>3.0.0-draft.1</draft></version><language>en</language><script>Latn</script><abstract><p>A Web Feature Service (WFS) offers the capability to create, modify and query spatial data on the Web. The WFS standard is a multi-part document. This part specifies the core capabilities that every WFS has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Examples include support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems.</p>
+
+<p>By default, every WFS instance provides access to a single dataset. Rather than sharing the data as a complete dataset, WFS offers direct, fine-grained access to the data at the feature (object) level.</p>
+
+<p>Consistent with the architecture of the Web, this version of the WFS standard uses a resource architecture and specifies a RESTful service interface consistent with the IETF HTTP/HTTPS RFCs.</p>
+
+<p>This standard specifies discovery and query operations that are implemented using the HTTP GET method. Support for additional methods (in particular POST, PUT, DELETE, PATCH) will be specified in additional parts.</p>
+
+<p>Discovery operations allow the server to be interrogated to determine its capabilities and retrieve information (metadata) about this distribution of the dataset. This includes the API definition of the server as well as metadata about the feature collections provided by the server.</p>
+
+<p>Query operations allow features or values of feature properties to be retrieved from the underlying data store based upon selection criteria, defined by the client, on feature properties.</p>
+
+<p>This standard defines the resources listed in <xref target="tldnr"/>. For an overview of the resources, see section <xref target="core-overview">7.1 Overview</xref>.</p>
+
+<table><colgroup><col width="32%"/><col width="25%"/><col width="10%"/><col width="33%"/></colgroup>
+<name>Overview of resources, applicable HTTP methods and links to the document sections</name>
+<thead><tr><th valign="middle" align="left">Resource</th>
+<th valign="middle" align="left">Path</th>
+<th valign="middle" align="left">HTTP method</th>
+<th valign="middle" align="left">Document reference</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left">Landing page</td>
+<td valign="middle" align="left"><tt>/</tt></td>
+<td valign="middle" align="left">GET</td>
+<td valign="middle" align="left"><xref target="_api_landing_page">7.2 API landing page</xref></td>
+</tr><tr><td valign="middle" align="left">API definition</td>
+<td valign="middle" align="left"><tt>/api</tt></td>
+<td valign="middle" align="left">GET</td>
+<td valign="middle" align="left"><xref target="_api_definition_2">7.3 API definition</xref></td>
+</tr><tr><td valign="middle" align="left">Conformance classes</td>
+<td valign="middle" align="left"><tt>/conformance</tt></td>
+<td valign="middle" align="left">GET</td>
+<td valign="middle" align="left"><xref target="_declaration_of_conformance_classes">7.4 Declaration of conformance classes</xref></td>
+</tr><tr><td valign="middle" align="left">Feature collections metadata</td>
+<td valign="middle" align="left"><tt>/collections</tt></td>
+<td valign="middle" align="left">GET</td>
+<td valign="middle" align="left"><xref target="_feature_collections_metadata">7.11 Feature collections metadata</xref></td>
+</tr><tr><td valign="middle" align="left">Feature collection metadata</td>
+<td valign="middle" align="left"><tt>/collections/{name}</tt></td>
+<td valign="middle" align="left">GET</td>
+<td valign="middle" align="left"><xref target="_feature_collection_metadata">7.12 Feature collection metadata</xref></td>
+</tr><tr><td valign="middle" align="left">Feature collection</td>
+<td valign="middle" align="left"><tt>/collections/{name}/items</tt></td>
+<td valign="middle" align="left">GET</td>
+<td valign="middle" align="left"><xref target="_feature_collections">7.13 Feature collections</xref></td>
+</tr><tr><td valign="middle" align="left">Feature</td>
+<td valign="middle" align="left"><tt>/collections/{name}/items/{fid}</tt></td>
+<td valign="middle" align="left">GET</td>
+<td valign="middle" align="left"><xref target="_feature_2">7.14 Feature</xref></td>
+</tr></tbody>
+</table>
+</abstract><status><stage>candidate</stage></status><copyright><from>2022</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>web feature service</keyword><keyword>wfs</keyword><keyword>feature</keyword><keyword>property</keyword><keyword>geographic information</keyword><keyword>spatial data</keyword><keyword>spatial things</keyword><keyword>dataset</keyword><keyword>distribution</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>geojson</keyword><keyword>gml</keyword><keyword>html</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

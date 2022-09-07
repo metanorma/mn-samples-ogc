@@ -1,0 +1,9 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">Testbed-12 OWS Context User Guide</title>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/PER/t12-A063</docidentifier><docidentifier type="ogc-internal">16-080</docidentifier><docnumber>16-080</docnumber><date type="published"><on>2017-01-23</on></date><date type="issued"><on>2017-06-29</on></date><date type="received"><on>2017-06-29</on></date><contributor><role type="editor"/><person>
+<name><completename>Roger Brackin</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2017</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><ext><doctype>user-guide</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

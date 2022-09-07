@@ -1,0 +1,43 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">Volume 0: Primer for the OGC CDB Standard: Model and Physical Data Store Structure</title>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/BP/cdb-core-primer/1.1</docidentifier><docidentifier type="ogc-internal">15-120r5</docidentifier><docnumber>15-120r5</docnumber><date type="published"><on>2018-12-19</on></date><date type="issued"><on>2018-08-27</on></date><date type="received"><on>2018-03-20</on></date><contributor><role type="author"/><organization>
+<name>CAE Inc.</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Carl Reed, OGC Individual Member</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Envitia, Ltd</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Glen Johnson, OGC Individual Member</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>KaDSci, LLC</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Laval University</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>Open Site Plan</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>University of Calgary</name>
+</organization></contributor><contributor><role type="author"/><organization>
+<name>UK Met Office</name>
+</organization></contributor><contributor><role type="editor"/><person>
+<name><completename>Carl Reed</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+</organization></contributor><edition>1.1</edition><language>en</language><script>Latn</script><abstract><p>The CDB standard defines a standardized model and structure for a single, "versionable", virtual representation of the earth. A CDB structured data store provides for a geospatial content and model definition repository that is plug-and-play interoperable between database authoring workstations. Moreover, a CDB structured data store can be used as a common online (or runtime) repository from which various simulator client-devices can simultaneously retrieve and modify, in real-time, relevant information to perform their respective runtime simulation tasks. In this case, a CDB is plug-and-play interoperable between CDB-compliant simulators. A CDB can be readily used by existing simulation client-devices (legacy Image Generators, Radar simulator, Computer Generated Forces, etc.) through a data publishing process that is performed on-demand in real-time.</p>
+
+<p>The application of CDB to future simulation architectures will significantly reduce runtime-source level and algorithmic correlation errors, while reducing development, update and configuration management timelines. With the addition of the High Level Architecture - -Federation Object Model (HLA/FOM)<fn reference="1"><p><link target="https://en.wikipedia.org/wiki/High-level_architecture"/></p>
+</fn> and DIS protocols, the application of the CDB standard provides a Common Environment to which inter-connected simulators share a common view of the simulated environment.</p>
+
+<p>The CDB standard defines an open format for the storage, access and modification of a synthetic environment database. A <strong>synthetic environment</strong> is a <em>computer simulation</em> that represents activities at a high level of realism, from simulation of theaters of war to factories and manufacturing processes. These environments may be created within a single computer or a vast distributed network connected by local and wide area networks and augmented by super-realistic special effects and accurate behavioral models. SE allows visualization of and immersion into the environment being simulated<fn reference="2"><p>"Department of Defense Modeling and Simulation (M&amp;S) Glossary", DoD 5000.59-M</p>
+</fn>.</p>
+
+<p>This standard defines the organization and storage structure of a worldwide synthetic representation of the earth as well as the conventions necessary to support all of the subsystems of a full-mission simulator. The standard makes use of several commercial
+and simulation data formats endorsed by leaders of the database tools industry. A series of associated OGC Best Practice documents define rules and guidelines for data representation of real world features.</p>
+
+<p>The CDB synthetic environment is a representation of the natural environment including external features such as man-made structures and systems. A CDB data store can include terrain relief, terrain imagery, three-dimensional (3D) models of natural and manmade cultural features, 3D models of dynamic vehicles, the ocean surface, and the ocean bottom, including features (both natural and man-made) on the ocean floor. In addition, the data store can includes the specific attributes of the synthetic environment data as well as their relationships.</p>
+
+<p>The associated CDB Standard Best Practice documents provide a description of a data schema for Synthetic Environmental information (i.e. it merely describes data) for use in simulation. The CDB Standard provides a rigorous definition of the <em>semantic</em> meaning for each dataset, each attribute and establishes the <em>structure/organization</em> of that data as a schema comprised of a folder hierarchy and files with internal (industry-standard) formats.</p>
+
+<p>A CDB conformant data store contains datasets organized in layers, tiles and levels-of-detail. Together, these datasets represent the features of a synthetic environment for the purposes of distributed simulation applications. The organization of the synthetic environmental data in a CDB compliant data store is specifically tailored for real-time applications.</p>
+</abstract><status><stage>approved</stage></status><copyright><from>2018</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>CDB</keyword><keyword>Common Data Base</keyword><keyword>simulation</keyword><keyword>synthetic environment</keyword><keyword>virtual</keyword><keyword>primer</keyword><keyword>data store</keyword><ext><doctype>best-practice</doctype><subdoctype>general</subdoctype><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata>
