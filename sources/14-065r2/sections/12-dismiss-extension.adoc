@@ -156,7 +156,7 @@ _The response to a successful Dismiss request shall be a valid XML document of t
 ==== HTTP/GET + KVP Binding
 This clause specifies the KVP encoding for the Dismiss operation. A possible Dismiss request might look like this:
 
-http://hostname:port/path?service=WPS&version=2.0.0&request=dismiss&jobid= FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66
+\http://hostname:port/path?service=WPS&version=2.0.0&request=dismiss&jobid= FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66
 
 
 [requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/dismiss",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/service/model/dismiss;http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp"]

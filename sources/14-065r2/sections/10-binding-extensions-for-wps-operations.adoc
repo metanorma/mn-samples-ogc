@@ -211,7 +211,7 @@ _An operation extension for WPS servers that seeks compliance with this requirem
 ==== GetCapabilities
 This clause specifies the KVP encoding for the GetCapabilities operation. A minimalist GetCapabilities request might look like this:
 
-http://hostname:port/path?service=WPS&request=GetCapabilities
+\http://hostname:port/path?service=WPS&request=GetCapabilities
 
 [requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-capabilities",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-capabilities;OWS Common 2.0"]
 ====
@@ -232,9 +232,9 @@ _The response to a successful GetCapabilities request shall be a valid XML docum
 ==== DescribeProcess
 This clause specifies the KVP encoding for the DescribeProcess operation. Possible DescribeProcess requests might look like these:
 
-http://hostname:port/path?service=WPS&version=2.0.0&request=DescribeProcess&identifier=buffer,viewshed
+\http://hostname:port/path?service=WPS&version=2.0.0&request=DescribeProcess&identifier=buffer,viewshed
 
-http://hostname:port/path?service=WPS&version=2.0.0&request=DescribeProcess&identifier=ALL
+\http://hostname:port/path?service=WPS&version=2.0.0&request=DescribeProcess&identifier=ALL
 
 
 [requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/describe-process",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/service/model/describe-process;OWS Common 2.0"]
@@ -269,7 +269,7 @@ _The response to a successful GetCapabilities request shall be a valid XML docum
 ==== GetStatus
 This clause specifies the KVP encoding for the GetStatus operation. A possible GetStatus request might look like this:
 
-http://hostname:port/path?service=WPS&version=2.0.0&request=GetStatus&jobid=FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66
+\http://hostname:port/path?service=WPS&version=2.0.0&request=GetStatus&jobid=FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66
 
 
 [requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-status",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-status;OWS Common 2.0"]
@@ -304,7 +304,7 @@ _The response to a successful GetStatus request shall be a valid XML document of
 ==== GetResult
 This clause specifies the KVP encoding for the GetResult operation. A possible GetResult request might look like this:
 
-http://hostname:port/path?service=WPS&version=2.0.0&request=GetResult&jobid= FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66
+\http://hostname:port/path?service=WPS&version=2.0.0&request=GetResult&jobid= FB6DD4B0-A2BB-11E3-A5E2-0800200C9A66
 
 
 [requirement,type="class",label="http://www.opengis.net/spec/WPS/2.0/req/service/binding/get-kvp/get-result",obligation="requirement",subject="Software implementation",inherit="http://www.opengis.net/spec/WPS/2.0/req/service/model/get-result;OWS Common 2.0"]
