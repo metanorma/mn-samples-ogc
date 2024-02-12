@@ -4,7 +4,7 @@
 <name><completename>George Percivall</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><language>en</language><script>Latn</script><abstract><p>This white paper is a survey of Big Geospatial Data with these main themes:</p>
+<abbreviation>OGC</abbreviation></organization></contributor><language>en</language><script>Latn</script><abstract><p>This white paper is a survey of Big Geospatial Data with these main themes:</p>
 
 <ul><li><p>Geospatial data is increasing in volume and variety;</p>
 </li>
@@ -29,4 +29,4 @@
 <p>For information on Location Powers: <link target="http://www.locationpowers.net/pastevents/"/></p>
 </abstract><status><stage>approved</stage></status><copyright><from>2017</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC documents</keyword><keyword>Big Data</keyword><keyword>geospatial</keyword><keyword>location</keyword><keyword>open</keyword><keyword>standards</keyword><keyword>interoperability</keyword><keyword>cloud computing</keyword><ext><doctype>white-paper</doctype><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC documents</keyword><keyword>Big Data</keyword><keyword>geospatial</keyword><keyword>location</keyword><keyword>open</keyword><keyword>standards</keyword><keyword>interoperability</keyword><keyword>cloud computing</keyword><ext><doctype>white-paper</doctype><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata>

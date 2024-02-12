@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.2.2">
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.1" schema-version="v1.3.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">Technical Committee Policies and Procedures</title>
 <uri>http://docs.opengeospatial.org/pol/05-020r26/05-020r26.html</uri><uri type="xml">https://riboseinc.github.io/ogc-tcpnp/ogc-tcpnp.xml</uri><uri type="pdf">https://riboseinc.github.io/ogc-tcpnp/ogc-tcpnp.pdf</uri><uri type="doc">https://riboseinc.github.io/ogc-tcpnp/ogc-tcpnp.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/pol/tcpnp/26.0</docidentifier><docidentifier type="ogc-internal">05-020r26</docidentifier><docnumber>05-020r26</docnumber><date type="published"><on>2018-07-24</on></date><date type="issued"><on>2018-06-05</on></date><date type="received"><on>2018-02-14</on></date><contributor><role type="editor"/><person>
 <name><completename>Scott Simmons</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><edition>26.0</edition><language>en</language><script>Latn</script><abstract><p>The <eref type="inline" bibitemid="OGC" citeas="OGC"/> provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. "International standards" (as defined in <eref type="inline" bibitemid="ISODIR2" citeas="ISO/IEC Directives, Part 2"/>) are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:</p>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>26.0</edition><language>en</language><script>Latn</script><abstract><p>The <eref type="inline" bibitemid="OGC" citeas="OGC"/> provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. "International standards" (as defined in <eref type="inline" bibitemid="ISODIR2" citeas="ISO/IEC Directives, Part 2"/>) are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:</p>
 
 <p>A document, established by consensus and approved by the OGC Membership, that provides, for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree of order in a given context.</p>
 
@@ -33,119 +33,46 @@
 <p>The OGC Principles of Conduct (<eref type="inline" bibitemid="OGCPOC" citeas="OGC Principles of Conduct"/>) govern personal and public interactions in any TC activity.</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2018</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><ext><doctype>policy</doctype><editorialgroup><committee>Technical Committee</committee></editorialgroup></ext></bibdata>
-<boilerplate>
-  <copyright-statement>
-    <clause>
-      <title>Copyright notice</title>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>policy</doctype><editorialgroup><committee>Technical Committee</committee></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
 
-      <p align="center" id="_2c86eb38-dcd2-046f-0847-479d9183f7b8">Copyright
-        © 2018 Open Geospatial Consortium<br/>
-        To obtain additional rights of use, visit
-        <link target="http://www.ogc.org/legal/">http://www.ogc.org/legal/</link></p>
-    </clause>
-    <clause>
-      <title>Note</title>
-      <p align="left" id="_11e88dba-9912-1a89-a82d-7291bf232191">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+<clause id="_copyright_notice" obligation="normative">
+<title>Copyright notice</title>
+<p id="_f89cdf56-3e64-0a54-e756-26a53e0385c5" align="center">Copyright © 2018 Open Geospatial Consortium<br/>
+To obtain additional rights of use, visit
+<link target="https://www.ogc.org/legal"/></p>
+</clause>
 
-      <p align="left" id="_15067213-c07b-cba0-7e18-395ab2e00ab3">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
-    </clause>
-  </copyright-statement>
-  <license-statement>
-    <clause>
-      <title>License Agreement</title>
+<clause id="_note" obligation="normative">
+<title>Note</title>
+<p id="_11e88dba-9912-1a89-a82d-7291bf232191" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
-      <p id="_e8566381-218f-c22d-320d-4d0371bfd58f">Permission is hereby granted by the Open Geospatial
-        Consortium, (“Licensor”), free of charge and subject to the terms set
-        forth below, to any person obtaining a copy of this Intellectual Property and
-        any associated documentation, to deal in the Intellectual Property without
-        restriction (except as set forth below), including without limitation the
-        rights to implement, use, copy, modify, merge, publish, distribute, and/or
-        sublicense copies of the Intellectual Property, and to permit persons to whom
-        the Intellectual Property is furnished to do so, provided that all copyright notices
-        on the intellectual property are retained intact and that each person to whom
-        the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
+<p id="_15067213-c07b-cba0-7e18-395ab2e00ab3" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</clause>
+</copyright-statement>
 
-      <p id="_52ebb386-d365-27d0-d76d-a59ac165fc4d">If you modify the Intellectual Property, all copies of
-        the modified Intellectual Property must include, in addition to the above
-        copyright notice, a notice that the Intellectual Property includes
-        modifications that have not been approved or adopted by LICENSOR.</p>
+<license-statement>
 
-      <p id="_178f14b4-0718-a5b8-09cd-84f8f4b756ed">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
-        CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
-        THE INTELLECTUAL PROPERTY IS PROVIDED “AS
-        IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-        LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
-        AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS
-        INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE
-        INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE
-        INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE
-        INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER’S OWN RISK. IN NO
-        EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY
-        RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT,
-        SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
-        FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN
-        AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT
-        OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
-        PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
+<clause id="_license_agreement" obligation="normative">
+<title>License Agreement</title>
+<p id="_f5fe34fd-12e2-2bb7-8cd6-9d4cffa96538">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license"/></p>
+</clause>
+</license-statement>
 
-      <p id="_2ad7fe27-9ae4-52c5-9dd9-faa4004247fb">This license is effective until terminated. You may
-        terminate it at any time by destroying the Intellectual Property together with
-        all copies in any form. The license will also terminate if you fail to comply
-        with any term or condition of this Agreement. Except as provided in the
-        following sentence, no such termination of this license shall require the
-        termination of any third party end-user sublicense to the Intellectual Property
-        which is in force as of the date of notice of such termination. In addition,
-        should the Intellectual Property, or the operation of the Intellectual
-        Property, infringe, or in LICENSOR’s sole opinion be
-        likely to infringe, any patent, copyright, trademark or other right of a third
-        party, you agree that LICENSOR, in its sole discretion, may terminate this
-        license without any compensation or liability to you, your licensees or any
-        other party. You agree upon termination of any kind to destroy or cause to be
-        destroyed the Intellectual Property together with all copies in any form,
-        whether held by you or by any third party.</p>
+<legal-statement>
 
-      <p id="_3254c815-179c-5f54-9a01-b8e964837171">Except as contained in this notice, the name of
-        LICENSOR or of any other holder of a copyright in all or part of the Intellectual
-        Property shall not be used in advertising or otherwise to promote the sale, use
-        or other dealings in this Intellectual Property without prior written
-        authorization of LICENSOR or such copyright holder. LICENSOR is and shall at
-        all times be the sole entity that may authorize you or any third party to use
-        certification marks, trademarks or other special designations to indicate
-        compliance with any LICENSOR standards or specifications.
-        This Agreement is
-        governed by the laws of the Commonwealth of Massachusetts. The application to
-        this Agreement of the United Nations Convention on Contracts for the
-        International Sale of Goods is hereby expressly excluded. In the event any
-        provision of this Agreement shall be deemed unenforceable, void or invalid, such
-        provision shall be modified so as to make it valid and enforceable, and as so
-        modified the entire Agreement shall remain in full force and effect. No
-        decision, action or inaction by LICENSOR shall be construed to be a waiver of
-        any rights or remedies available to it.</p>
+<clause id="_notice" obligation="normative">
+<title>Notice</title>
+<p id="_b0214091-b71b-fad9-c4b7-f96b42618a69">This document is not an OGC Standard. This document is an OGC Policy and is therefore not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard.</p>
 
-      <p id="_4fa1ef5b-3dd5-7a05-3c68-bca93a0f14bb">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
-    </clause>
-  </license-statement>
+<p id="_095d43ba-2398-56b6-b2ca-30376f3edabc">Further, an OGC Policy should not be referenced as required or mandatory technology in procurements.</p>
+</clause>
+</legal-statement>
 
-  <legal-statement>
-    
-    <clause>
-      <title>Notice</title>
-      <p id="_b0214091-b71b-fad9-c4b7-f96b42618a69">This document is not an OGC Standard. This document is an OGC Policy and is therefore not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard.</p>
-      <p id="_095d43ba-2398-56b6-b2ca-30376f3edabc">Further, an OGC Policy should not be referenced as required or mandatory technology in procurements.</p>
-    </clause>
-    
+<feedback-statement>
 
-  </legal-statement>
-
-
-
-
-  <feedback-statement>
-    
-  </feedback-statement>
-</boilerplate>
-<preface><abstract id="_abstract"><title>Abstract</title><p id="_7ab0ca9b-e6db-81b8-0b72-08ed68989eaf">The <eref type="inline" bibitemid="OGC" citeas="OGC"/> provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. “International standards” (as defined in <eref type="inline" bibitemid="ISODIR2" citeas="ISO/IEC Directives, Part 2"/>) are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:</p>
+</feedback-statement>
+</boilerplate><preface><abstract id="_abstract"><title>Abstract</title><p id="_7ab0ca9b-e6db-81b8-0b72-08ed68989eaf">The <eref type="inline" bibitemid="OGC" citeas="OGC"/> provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. “International standards” (as defined in <eref type="inline" bibitemid="ISODIR2" citeas="ISO/IEC Directives, Part 2"/>) are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:</p>
 
 <p id="_2aadbdf4-76f8-f9cc-a0aa-43b2246c949e">A document, established by consensus and approved by the OGC Membership, that provides, for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree of order in a given context.</p>
 
@@ -170,7 +97,10 @@
 <p id="_a8729af2-891d-1017-579a-6a649e7c125d">The OGC Technical Committee provides an open, collaborative forum for professional discussion related to the consensus development and/or evaluation, approval, and revision of OGC international standards. The primary use of approved OGC standards is to provide the ability to build and deploy interoperable geospatial solutions in the larger Information Technology (IT) domain.</p>
 
 <p id="_83cba721-88b4-9624-3f12-01dc134bea0b">The OGC Principles of Conduct (<eref type="inline" bibitemid="OGCPOC" citeas="OGC Principles of Conduct"/>) govern personal and public interactions in any TC activity.</p>
-</abstract><clause type="security" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45" obligation="informative"><title>Security considerations</title><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause></preface><sections>
+</abstract><clause type="security" id="_1bfba592-0713-41de-d69c-a83eb10efc35" obligation="informative">
+  <title>Security considerations</title>
+  <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause>
+</preface><sections>
 <clause id="what-is-a-consortium" obligation="normative">
 <title>What is a Consortium?</title>
 <p id="_3c4a1f7b-f1ea-75c4-749e-b56112ebf51c">A broad definition of a consortium is: a combination or group of organizations formed to undertake a common objective that is beyond the resources or capabilities of any single organization. The OGC was formed to provide a collaborative, consensus forum for the discussion and resolution of interoperability issues in the geospatial domain. The work of the consortium is based on volunteerism.</p>
@@ -295,7 +225,7 @@
 
 <clause id="subcommittee-sc-of-the-tc" obligation="normative">
 <title>Subcommittee (SC) of the TC</title>
-<p id="_a170ebac-77d2-7a5d-1566-5c2821a89060">A standing group (organizationally, a subgroup of the TC) of individuals composed of members of the TC and Invited Guests, with a mission to provide recommendations to the TC in some general area. A Subcommittee (see <eref type="inline" bibitemid="OGCSC" citeas="OGC Subcommittee"/>) does not generate a standard nor does it work on a standard.</p>
+<p id="_a170ebac-77d2-7a5d-1566-5c2821a89060">A standing group (organizationally, a subgroup of the TC) of individuals composed of members of the TC and Invited Guests, with a mission to provide recommendations to the TC in some general area. A Subcommittee (see <eref type="inline" bibitemid="OGCSC" citeas="OGC Subcommittee"/>) does not generate a standard nor does it work on a standard.</p>
 
 <p id="_76762164-065d-b6ae-0848-8974b7c26a21">SCs have Voting TC Member-only voting. As with all OGC groups, each Voting TC Member has only one vote per SC. SCs are long-standing entities with general portfolios or mission. OGC staff can chair TC SCs. Any OGC member can attend a SC meeting and participate.</p>
 
@@ -596,10 +526,10 @@
 
 <clause id="eligibility" obligation="normative">
 <title>Eligibility</title>
-<p id="_36e809a2-a62a-3f1a-b04a-d066d44865a8">All Voting TC Members in good standing at any time during the electronic vote can participate in electronic voting, whether or not they have participated in any preceding TC meeting or electronic vote. All such Members are referred to as “Eligible Voters.” Each Eligible Voter shall have one vote.</p>
+<p id="_c568e408-84b1-9075-62b6-8fb5d0270fc6">All Voting TC Members in good standing at any time during the electronic vote can participate in electronic voting, whether or not they have participated in any preceding TC meeting or electronic vote. All such Members are referred to as “Eligible Voters.” Each Eligible Voter shall have one vote.<note id="_4c3bdf2e-5619-e67d-223a-2833cc8f614d"><p id="_bb8ea02b-eb93-8aea-76d2-2b7be5410621">All Voting TC Members are the total of Strategic, Principal, Technical, and Technical Aggregate Members.</p>
+</note></p>
 
-<note id="_4078a8b4-cdec-fa9f-6fa3-06f10b316ef6"><p id="_61fdbedc-9ef2-c2b2-fe12-f5ff17d6ebde">All Voting TC Members are the total of Strategic, Principal, Technical, and Technical Aggregate Members.</p>
-</note>
+
 </clause>
 
 <clause id="number-of-eligible-voters" obligation="normative">
@@ -621,10 +551,10 @@
 
 <clause id="approval" obligation="normative">
 <title>Approval</title>
-<p id="_cc584003-8aa6-9c63-fa40-12b18cfe20a5">In addition to Sufficiency thresholds, for documents that are official OGC positions, such as a standard, creation of a new WG, an OGC Best Practice, or an OGC policy, a motion passes (is approved) if the number of YES votes is twice or more the number of NO votes. All other documents pass with a simple majority</p>
+<p id="_0c97841b-845b-c4ef-3b0a-6a1664fd3041">In addition to Sufficiency thresholds, for documents that are official OGC positions, such as a standard, creation of a new WG, an OGC Best Practice, or an OGC policy, a motion passes (is approved) if the number of YES votes is twice or more the number of NO votes. All other documents pass with a simple majority<note id="_1783db8e-efa9-5fce-17c4-761f2714964c"><p id="_2373187c-8da9-936e-905c-ef6b07186bcd">All approved OGC Technical Committee document or policy recommendations are then presented as a recommendation to the OGC Planning Committee (PC). The PC shall review the recommendation and either approve the recommendation as is, ask the TC for clarification, or in very few instances not approve the recommendation and ask the TC to provide clarifications or more require more work on the document.</p>
+</note></p>
 
-<note id="_c076510c-bd08-51ee-a349-1bc35c96c30c"><p id="_7967af06-2e83-1f5a-dbe5-5fc1de31ebaa">All approved OGC Technical Committee document or policy recommendations are then presented as a recommendation to the OGC Planning Committee (PC). The PC shall review the recommendation and either approve the recommendation as is, ask the TC for clarification, or in very few instances not approve the recommendation and ask the TC to provide clarifications or more require more work on the document.</p>
-</note>
+
 </clause>
 
 <clause id="comments" obligation="normative">
@@ -788,10 +718,10 @@
 
 <clause id="inactive-subgroups" obligation="normative">
 <title>Inactive Subgroups</title>
-<p id="_fe020442-8c91-4047-688d-563d0ab96a41">The TCC will provide a list to the TC at least once a year of those subgroups that have not met in the previous 12 months. The TC will then vote to determine if these groups should be continued, disbanded or possibly combined with more active groups.</p>
+<p id="_b5d8ee9c-142f-da50-8526-0b29edcead18">The TCC will provide a list to the TC at least once a year of those subgroups that have not met in the previous 12 months. The TC will then vote to determine if these groups should be continued, disbanded or possibly combined with more active groups.<note id="_40e37490-4bb5-ecea-f66c-b5cea7b81835"><p id="_1d2f8d8b-aedd-89e7-ad87-713d286083c1">In the past, some groups have not met for a considerable time and are no longer active. The existence of these groups can be misleading to those trying to understand what OGC is currently doing. This proposal suggests a mechanism for reviewing subgroups and taking some action when appropriate. This will help ensure the groups in OGC are aligned with the actual work being done within the TC.</p>
+</note></p>
 
-<note id="_52caf0f8-cd47-b0fd-9341-49419cfa23bb"><p id="_9d2fcd9b-7546-b103-9e16-1150b893a8fb">In the past, some groups have not met for a considerable time and are no longer active. The existence of these groups can be misleading to those trying to understand what OGC is currently doing. This proposal suggests a mechanism for reviewing subgroups and taking some action when appropriate. This will help ensure the groups in OGC are aligned with the actual work being done within the TC.</p>
-</note>
+
 </clause>
 
 <clause id="subgroup-meetings" obligation="normative">
@@ -877,10 +807,10 @@
 
 <clause id="voting-in-a-dwg" obligation="normative">
 <title>Voting in a DWG</title>
-<p id="_1ca7bda2-566a-b290-3bdf-3a15f1b55ba9">Voting in DWGs is by simple majority of OGC Members present at the DWG meeting, not just Voting TC Members, with the caveat that no OGC Member organization may cast more than one vote in a WG vote.</p>
+<p id="_26787fd7-5d3f-7d35-ba23-a24a6d382eef">Voting in DWGs is by simple majority of OGC Members present at the DWG meeting, not just Voting TC Members, with the caveat that no OGC Member organization may cast more than one vote in a WG vote.<note id="_de1ae9ba-5f59-54a3-0744-9e8c1def84f1"><p id="_aa6f8b04-53e6-05f4-405c-bed1948b168c">It was felt that WGs should be able to use all of the expertise at hand in arriving at recommendations. All TC member organizations could be represented (and <em>vote</em>) at WG meetings in order to allow the expression of all members’ opinions. OGC Voting TC Members are protected from control by non-voting members by virtue of the fact that WGs may only form recommendations to the TC and not final TC votes. WG minutes are also available to <em>all</em> members of the TC, so that other TC members may understand and accept or reject WG recommendations.</p>
+</note></p>
 
-<note id="_e71ad548-c563-8567-e215-ac315ea59da8"><p id="_1dfbb16c-0fc2-601b-597c-17eb789fd8d6">It was felt that WGs should be able to use all of the expertise at hand in arriving at recommendations. All TC member organizations could be represented (and <em>vote</em>) at WG meetings in order to allow the expression of all members’ opinions. OGC Voting TC Members are protected from control by non-voting members by virtue of the fact that WGs may only form recommendations to the TC and not final TC votes. WG minutes are also available to <em>all</em> members of the TC, so that other TC members may understand and accept or reject WG recommendations.</p>
-</note>
+
 </clause>
 </clause>
 
@@ -1072,7 +1002,7 @@
 
 <clause id="the-ogc-reference-model" obligation="normative">
 <title>The OGC Reference Model</title>
-<p id="_14dacb04-2392-bef7-1d67-1b9f8b303e69">The TC will periodically be asked to review and vote on the OGC Reference Model (ORM) Document. The ORM describes a framework for the ongoing work of the OGC and our standards and implementing interoperable solutions and applications for geospatial services, data, and applications. The ORM can be found at <eref type="inline" bibitemid="OGCORM" citeas="OGC Reference Model"/>.</p>
+<p id="_14dacb04-2392-bef7-1d67-1b9f8b303e69">The TC will periodically be asked to review and vote on the OGC Reference Model (ORM) Document. The ORM describes a framework for the ongoing work of the OGC and our standards and implementing interoperable solutions and applications for geospatial services, data, and applications. The ORM can be found at <eref type="inline" bibitemid="OGCORM" citeas="OGC Reference Model"/>.</p>
 
 <p id="_dced7181-52ac-2ea4-4a77-93bd09f186c6">Any version of the ORM, once approved by the TC and the PC, is released as a public document.</p>
 </clause>
@@ -1138,7 +1068,7 @@
 <title>Documents and Distribution</title>
 <p id="_4de9e885-d64d-aaf4-ff88-cda551f2fffd">The numbered document (see <xref target="document-numbers"/>) as distributed to members is to be considered the official document of the TC. Electronic mail shall be used for day-to-day discussion of OGC documents. The preferred mechanism for document sharing is the OGC Members-only Portal. OGC Communication shall be used for announcing the availability of new official documents. The actual documents will not be distributed by email unless a member requests receiving a document by email. All official documents will be posted to the Portal. Other electronic forms of documents can be made available at the written request of members.</p>
 
-<p id="_bdb8fcd1-fb8c-d5ca-a72a-cf846e46f77e">The Members section of the OGC Portal (<eref type="inline" bibitemid="OGCPortal" citeas="OGC Portal"/>) shall provide the default method of disseminating documents in electronic form. The TCC or his designee shall determine the electronic distribution format of these documents.<note id="_75d8722d-f5a1-90f4-1ed0-0536d9d13a88"><p id="_5ecdb0cc-3837-5977-5415-f28f533f1c05">Typically, official documents are provided to the public in Word <tt>.doc</tt> format or Adobe PDF format. However, various presentations, draft documents, and so forth can also be distributed in PowerPoint format, HTML, and other formats as provided by the Members. The TCC reserves the right to reject a document that is in a non-industry standard distribution format.</p>
+<p id="_bdb8fcd1-fb8c-d5ca-a72a-cf846e46f77e">The Members section of the OGC Portal (<eref type="inline" bibitemid="OGCPortal" citeas="OGC Portal"/>) shall provide the default method of disseminating documents in electronic form. The TCC or his designee shall determine the electronic distribution format of these documents.<note id="_75d8722d-f5a1-90f4-1ed0-0536d9d13a88"><p id="_5ecdb0cc-3837-5977-5415-f28f533f1c05">Typically, official documents are provided to the public in Word <tt>.doc</tt> format or Adobe PDF format. However, various presentations, draft documents, and so forth can also be distributed in PowerPoint format, HTML, and other formats as provided by the Members. The TCC reserves the right to reject a document that is in a non-industry standard distribution format.</p>
 </note></p>
 
 
@@ -1149,7 +1079,7 @@
 
 <clause id="document-numbers" obligation="normative">
 <title>Document Numbers</title>
-<p id="_e204a657-d3c9-9a33-88ae-c89c915336b6">All member submitted documents shall be assigned a document number. Members can obtain pending document numbers using the members only Portal, OGC Pending Documents page located at <eref type="inline" bibitemid="OGCPortalHome" citeas="OGC Portal Home"/>.</p>
+<p id="_e204a657-d3c9-9a33-88ae-c89c915336b6">All member submitted documents shall be assigned a document number. Members can obtain pending document numbers using the members only Portal, OGC Pending Documents page located at <eref type="inline" bibitemid="OGCPortalHome" citeas="OGC Portal Home"/>.</p>
 
 <p id="_1e832b57-e112-df21-3d79-c1b9cc24a7f5">Instructions for obtaining a Pending Document number and posting the document can be found at <eref type="inline" bibitemid="OGCPortalInstructions" citeas="OGC Portal Instructions"/>.</p>
 </clause>
@@ -1180,7 +1110,7 @@
 
 <clause id="other-document-concerns" obligation="normative">
 <title>Other Document Concerns</title>
-<p id="_2447f7ce-b7c7-044c-2862-c0f8330cdd22">All documents with official OGC Document Numbers that are to be considered and discussed at a TC face to face meeting shall be made available electronically to all members at least three (3) weeks before the next TC meeting. However, this clause does not apply to informational documents for which there will not be any motions or actions. Numbered documents shall be posted to “Pending Documents” (<eref type="inline" bibitemid="OGCPortalHome" citeas="OGC Portal Home"/>).</p>
+<p id="_2447f7ce-b7c7-044c-2862-c0f8330cdd22">All documents with official OGC Document Numbers that are to be considered and discussed at a TC face to face meeting shall be made available electronically to all members at least three (3) weeks before the next TC meeting. However, this clause does not apply to informational documents for which there will not be any motions or actions. Numbered documents shall be posted to “Pending Documents” (<eref type="inline" bibitemid="OGCPortalHome" citeas="OGC Portal Home"/>).</p>
 
 <p id="_79403bd3-ae03-78a5-f11c-b647d808a699">The TC will enforce this policy under the conditions described for the <xref target="three-week-rule"/>.</p>
 
@@ -1300,10 +1230,10 @@
 
 <p id="_1ae064cf-c842-0878-58cc-787757c84536">The policy of the OGC is that proposed standards resulting from an RFC evaluation may be recommended to the PC for acceptance conditional on certain changes to the standard, which the TC deems necessary, within a specified time frame.</p>
 
-<p id="_0f1a12a3-9b70-155e-d385-61097763895a">Acceptance of the TC recommendation for adoption is always with the caveat that the PC may verify that the standard’s sponsor organization(s) is/are in a position to develop (or have developed for the sponsor organization) or commercialize an implementation of the standard. Further, for candidate standards developed external to the OGC and submitted into the OGC process, the PC may verify that the submitting organization has provided a duly executed submission of technology form. In addition, the TC recommends acceptance contingent on the PC’s finding that the sponsoring organization(s) makes the technology available as per the OGC Intellectual Property Policies and Procedures.</p>
+<p id="_0113afd9-5a7b-837d-c3eb-29e7970914b3">Acceptance of the TC recommendation for adoption is always with the caveat that the PC may verify that the standard’s sponsor organization(s) is/are in a position to develop (or have developed for the sponsor organization) or commercialize an implementation of the standard. Further, for candidate standards developed external to the OGC and submitted into the OGC process, the PC may verify that the submitting organization has provided a duly executed submission of technology form. In addition, the TC recommends acceptance contingent on the PC’s finding that the sponsoring organization(s) makes the technology available as per the OGC Intellectual Property Policies and Procedures.<note id="_17913833-f6c6-eb66-bea6-8f42901561ca"><p id="_97431128-33d8-220b-0645-8001426d05f3">It was felt that it is not within the TC’s purview to determine the ability or intent of an OGC member and technology sponsor to commercialize a technology. However, it was felt that the TC’s work would be fruitless without such ability and intent. Therefore, recommendations to the PC shall implicitly or explicitly include such caveats.</p>
+</note></p>
 
-<note id="_cecaa9d4-7ddc-8f30-33db-85eb8912d7bc"><p id="_fb267c68-db60-817c-16e9-8055f82e59c1">It was felt that it is not within the TC’s purview to determine the ability or intent of an OGC member and technology sponsor to commercialize a technology. However, it was felt that the TC’s work would be fruitless without such ability and intent. Therefore, recommendations to the PC shall implicitly or explicitly include such caveats.</p>
-</note>
+
 </clause>
 
 <clause id="the-two-track-standards-process-characteristics" obligation="normative">
@@ -1541,7 +1471,7 @@
 </li>
 </ul>
 
-<p id="_9fc70939-bee9-972b-8da6-7d3b51d4c416">Documents being submitted as Full Standards shall follow the document formatting and content provided in <eref type="inline" bibitemid="OGC10176" citeas="OGC 10-176"/>, in common use by the OGC at the time of submission, of standards submitted under the RFC process. There is a detailed guidance document (see <eref type="inline" bibitemid="OGC10176" citeas="OGC 10-176"/>) for using the template.</p>
+<p id="_9fc70939-bee9-972b-8da6-7d3b51d4c416">Documents being submitted as Full Standards shall follow the document formatting and content provided in <eref type="inline" bibitemid="OGC10176" citeas="OGC 10-176"/>, in common use by the OGC at the time of submission, of standards submitted under the RFC process. There is a detailed guidance document (see <eref type="inline" bibitemid="OGC10176" citeas="OGC 10-176"/>) for using the template.</p>
 
 <p id="_91befc18-df33-69f1-2700-ba87e004f782">Documents being submitted as Community standards do not need to follow the OGC document template for an OGC standard. However, the submission team for a Community standard is strongly encouraged to provide the candidate standard to the OGC using the document template.</p>
 
@@ -1578,11 +1508,11 @@
 
 <clause id="review-of-ogc-identifiers-http-uris-etc-by-the-ogc-naming-authority-all" obligation="normative">
 <title>Review of OGC Identifiers (http URIs, etc) by the OGC Naming Authority (All)</title>
-<p id="_0ce84bb6-5dda-fc3b-94aa-8063ad850e5d">Concurrent with the OAB review of the candidate standard, the SWG shall provide a list of all new OGC identifiers specified in the candidate standard to be issued for persistent public OGC resources. This list shall be submitted to the OGC Naming Authority for review. This submission may be done by email. The specific policy is specified in “Policy Directives for Writing and Publishing OGC Standards: TC Decisions” (<eref type="inline" bibitemid="OGC06135" citeas="OGC 06-135"/>).</p>
+<p id="_0ce84bb6-5dda-fc3b-94aa-8063ad850e5d">Concurrent with the OAB review of the candidate standard, the SWG shall provide a list of all new OGC identifiers specified in the candidate standard to be issued for persistent public OGC resources. This list shall be submitted to the OGC Naming Authority for review. This submission may be done by email. The specific policy is specified in “Policy Directives for Writing and Publishing OGC Standards: TC Decisions” (<eref type="inline" bibitemid="OGC06135" citeas="OGC 06-135r1"/>).</p>
 
 <p id="_88195a9a-b034-09d7-a709-f1ea401e0455">The candidate standard document/repository will also be provided to the OGC-NA to ensure that document tags and formatting are consistent with the OGC standard template and suitable for ingestion into the OGC Knowledge Management database.</p>
 
-<p id="_f899df26-4a1d-1936-2c3c-d879a80a1158">In order to facilitate the review and to be in compliance with the OGC HTTP URI policy (<eref type="inline" bibitemid="OGC06135" citeas="OGC 06-135"><localityStack><locality type="clause"><referenceFrom>21</referenceFrom></locality></localityStack></eref>), the editor shall submit the candidate standard’s list of doc (as specified in the latest versions of <eref type="inline" bibitemid="OGC09046" citeas="OGC 09-046"/>, <eref type="inline" bibitemid="OGC09047" citeas="OGC 09-047"/>, and <eref type="inline" bibitemid="OGC09048" citeas="OGC 09-048"/>), spec and XML Namespace URIs for OGC-NA review formatted into an Excel spreadsheet or as a Persistent Uniform Resource Locators (PURL) (<eref type="inline" bibitemid="PURL" citeas="PURL"/>) configuration document, which is valid according to the <tt>batchPurls.rng</tt> schema.</p>
+<p id="_f899df26-4a1d-1936-2c3c-d879a80a1158">In order to facilitate the review and to be in compliance with the OGC HTTP URI policy (<eref type="inline" bibitemid="OGC06135" citeas="OGC 06-135r1"><localityStack><locality type="clause"><referenceFrom>21</referenceFrom></locality></localityStack></eref>), the editor shall submit the candidate standard’s list of doc (as specified in the latest versions of <eref type="inline" bibitemid="OGC09046" citeas="OGC 09-046r5"/>, <eref type="inline" bibitemid="OGC09047" citeas="OGC 09-047r3"/>, and <eref type="inline" bibitemid="OGC09048" citeas="OGC 09-048r5"/>), spec and XML Namespace URIs for OGC-NA review formatted into an Excel spreadsheet or as a Persistent Uniform Resource Locators (PURL) (<eref type="inline" bibitemid="PURL" citeas="PURL"/>) configuration document, which is valid according to the <tt>batchPurls.rng</tt> schema.</p>
 </clause>
 
 <clause id="release-for-public-comment-period-all" obligation="normative">
@@ -1707,7 +1637,7 @@
 <title>Authoritative SDO Standard as an OGC Abstract Specification Topic Volume</title>
 <p id="_8793a295-7cd0-aff2-229c-8b9bd7c186b1">For this case, the Authoritative SDO Standard in question must be at a published or FDIS (Final Draft International Standard, in the case of ISO) status.</p>
 
-<ul id="_2b4678c6-f1d7-d714-4c62-92df271b14c7"><li><p id="_90afa55a-1280-9b84-f465-911331ac742a">The Authoritative SDO Standard is presented and discussed in an OGC Working Group.</p>
+<ul id="_4fef0af7-64e3-ef28-d89f-1abda5444768"><li><p id="_90afa55a-1280-9b84-f465-911331ac742a">The Authoritative SDO Standard is presented and discussed in an OGC Working Group.</p>
 </li>
 <li><p id="_5a71d84d-9bef-bc3c-124f-81b18c533c1a">The WG Members determine that the Authoritative SDO Standard should be a new OGC AS Topic Volume or should be a revision to an existing OGC AS Topic Volume.</p>
 </li>
@@ -1721,10 +1651,10 @@
 </li>
 <li><p id="_35596b09-5f19-8f5e-a737-612dd2b0429c">The adoption e-vote is initiated and conducted as per the E-vote policy as defined in <xref target="tc-electronic-voting"/>.</p>
 </li>
-</ul>
+<note id="_f4aa3da7-5cde-a4b0-9ebc-e66f64b89c81"><p id="_276e0c58-6c47-67aa-0719-1b42e43820bf">for this case, the TCC will need to ensure that a copy of the Authoritative SDO standard is freely available to the OGC Members for review. The document shall then be posted to pending documents and the availability of the document announced to the Membership.</p>
+</note></ul>
 
-<note id="_18553f59-551a-e0df-2658-13f375bb0d56"><p id="_4ee8380e-ee64-62cf-e853-7f4adadf783f">for this case, the TCC will need to ensure that a copy of the Authoritative SDO standard is freely available to the OGC Members for review. The document shall then be posted to pending documents and the availability of the document announced to the Membership.</p>
-</note>
+
 </clause>
 
 <clause id="joint-ogc-authoritative-sdo-standard-as-an-ogc-abstract-specification-topic-volume" obligation="normative">
@@ -1890,7 +1820,7 @@
 <title>Proprietary Rights, Copyrights, and Disclosure</title>
 <clause id="proprietary-rights" obligation="normative">
 <title>Proprietary Rights</title>
-<note id="_b5245fc4-1c68-5a94-66c5-87ce743bf485"><p id="_70224afa-5182-d94f-a4fa-469b168daa39">Please read the OGC IPR Policy documents located at <eref type="inline" bibitemid="OGCLegal" citeas="OGC Legal Documents"/> for the complete text and description of the OGC IPR policy. If at any time there is confusion or conflict between what is stated in the TC P&amp;P and the OGC IPR Policy, the OGC IPR Policy takes precedent.</p>
+<note id="_b5245fc4-1c68-5a94-66c5-87ce743bf485"><p id="_70224afa-5182-d94f-a4fa-469b168daa39">Please read the OGC IPR Policy documents located at <eref type="inline" bibitemid="OGCLegal" citeas="OGC Legal Documents"/> for the complete text and description of the OGC IPR policy. If at any time there is confusion or conflict between what is stated in the TC P&amp;P and the OGC IPR Policy, the OGC IPR Policy takes precedent.</p>
 </note>
 
 <p id="_c9834faa-5045-3401-5abe-fffe5acbfc0b">During any meeting of the OGC Technical Committee or any subgroup of the TC, no participant shall disclose proprietary information.<note id="_b0fc7cdc-9f69-161c-e895-ad4bb48ef6d4"><p id="_f0ce393f-e49b-04a4-b881-e548ba3dbc89">This section clearly places the onus of protection of proprietary rights on the owner of those rights. No discussion of proprietary technology can take place during a TC or TC subgroup meeting, protecting the participants in the meeting from accidental exposure to proprietary information (and consequent future legal problems with that participant’s own intellectual property rights). If a TC member wishes to present information of a proprietary nature to members of the TC, he or she may arrange a meeting of the interested parties totally separate from the TC process and meeting.</p>
@@ -2192,7 +2122,7 @@
 <td valign="middle" align="left">OGC staff</td>
 </tr><tr><td valign="middle" align="left">Done. Congratulations!!</td>
 <td valign="middle" align="left"/></tr></tbody>
-<note id="_a4631ee6-822c-0cd8-b5ff-024db0375b8c"><p id="_f44adf5e-94ab-98f1-9123-2bc517633501">For external standards brought into the OGC, such as KML, the external community is still able to develop, test, and document new functionality and changes to the standard. This is per <eref type="inline" bibitemid="OGC08125" citeas="OGC 08-125"/>. Once the external community is ready, these changes shall be documented and submitted into the OGC using the OGC Change Request Process.</p>
+<note id="_a4631ee6-822c-0cd8-b5ff-024db0375b8c"><p id="_f44adf5e-94ab-98f1-9123-2bc517633501">For external standards brought into the OGC, such as KML, the external community is still able to develop, test, and document new functionality and changes to the standard. This is per <eref type="inline" bibitemid="OGC08125" citeas="OGC 08-125r1"/>. Once the external community is ready, these changes shall be documented and submitted into the OGC using the OGC Change Request Process.</p>
 </note></table>
 
 
@@ -2214,8 +2144,8 @@
 
 
 
- <termnote id="_2ea9b92e-015a-7853-c392-050a821b7cce"><p id="_c6c86904-f7c5-e41b-cee1-36c2fffd94fe">Also see <eref type="inline" bibitemid="ISO191011" citeas="ISO 19101-1"/>, <eref type="inline" bibitemid="ISO191012" citeas="ISO 19101-2"/>.</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19106" type="inline" citeas="ISO 19106"/></termsource></term>
+ <termnote id="_2ea9b92e-015a-7853-c392-050a821b7cce"><p id="_c6c86904-f7c5-e41b-cee1-36c2fffd94fe">Also see <eref type="inline" bibitemid="ISO191011" citeas="ISO 19101-1"/>, <eref type="inline" bibitemid="ISO191012" citeas="ISO 19101-2"/>.</p>
+</termnote><termsource status="identical" type="authoritative"><origin bibitemid="ISO19106" type="inline" citeas="ISO&amp;#xa0;19106"/></termsource></term>
 
 <term id="term-Application-Schema"><preferred><expression>
 <name>Application Schema</name>
@@ -2224,7 +2154,7 @@
 <definition><verbal-definition><p id="_f960e6b0-0d70-de88-34c6-f46a646089f0">An application schema utilizes an Implementation standard and adds application specific entities, e.g., feature types. An example of an application schema is IndoorGML or CityGML.</p></verbal-definition></definition>
 
 
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19109" type="inline" citeas="ISO 19109"/></termsource></term>
+ <termsource status="identical" type="authoritative"><origin bibitemid="ISO19109" type="inline" citeas="ISO&amp;#xa0;19109"/></termsource></term>
 
 <term id="term-Abstract-Specification"><preferred><expression>
 <name>Abstract Specification</name>
@@ -2423,7 +2353,7 @@
 <definition><verbal-definition><p id="_a8a3e6f5-18f0-4699-e6ad-4212458f5cc8">A profile is a strict subset of a standard applicable to multiple Application Schemas. An example of a profile is the GML Simple Feature Profile.</p></verbal-definition></definition>
 
 
- <termsource status="identical" type="authoritative"><origin bibitemid="ISO19109" type="inline" citeas="ISO 19109"/></termsource></term>
+ <termsource status="identical" type="authoritative"><origin bibitemid="ISO19109" type="inline" citeas="ISO&amp;#xa0;19109"/></termsource></term>
 
 <term id="term-Planning-Committee"><preferred><expression>
 <name>Planning Committee</name>
@@ -2557,14 +2487,66 @@
 
 
  <termnote id="_24481ee3-a08d-9b6a-b8d9-57923426d7be"><p id="_2e1f7198-1ea6-dcaa-4c4f-716f31947e13">A voluntary consensus standards body is defined by the following attributes:</p>
-</termnote><termsource status="identical" type="authoritative"><origin bibitemid="OMBA119" type="inline" citeas="OMB Circular A-119"/></termsource></term>
+</termnote><termsource status="identical" type="authoritative"><origin bibitemid="OMBA119" type="inline" citeas="OMB&amp;#xa0;Circular&amp;#xa0;A-119"/></termsource></term>
 </terms>
 </annex><bibliography><references id="_bibliography" normative="false" obligation="informative">
-<title>Bibliography</title><bibitem id="ISOOGCTOR">
+<title>Bibliography</title><bibitem id="OGC06135" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title type="title-main" format="text/plain" language="en" script="Latn">Specification best practices</title>
+  
+<title type="main" format="text/plain" language="en" script="Latn">Specification best practices</title>
+  <uri type="src"/>  <uri type="obp">https://portal.ogc.org/files/?artifact_id=17566</uri>  <docidentifier type="OGC" primary="true">06-135r1</docidentifier>  <date type="published">    <on>2007-01-29</on>  </date>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename>Carl Reed</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
+<name>Open Geospatial Consortium</name>
+    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">This document describes a variety of Best Practices and Specification development guidance that the Members have discussed and approved over the years. These Best Practices have not been captured in other formal OGC documents other than meeting notes.</abstract>  </bibitem><bibitem id="OGC09048" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title type="title-intro" format="text/plain" language="en" script="Latn">OGC Name Type Specification</title>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">definitions</title>
+  
+<title type="title-part" format="text/plain" language="en" script="Latn">part 1 – basic name</title>
+  
+<title type="main" format="text/plain" language="en" script="Latn">OGC Name Type Specification — definitions — part 1 – basic name</title>
+  <uri type="src">http://www.opengis.net/doc/POL-NTS/DEF-1/1.2</uri>  <uri type="obp">https://docs.ogc.org/pol/09-048r5.html</uri>  <docidentifier type="OGC" primary="true">09-048r5</docidentifier>  <date type="published">    <on>2019-10-31</on>  </date>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename>Simon Cox</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename>Gobe Hobona</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
+<name>Open Geospatial Consortium</name>
+    </organization>  </contributor>  <edition>5</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">This document specifies a rule for constructing OGC names that may be used for identifying definitions.</abstract>  </bibitem><bibitem id="OGC09046" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title type="title-main" format="text/plain" language="en" script="Latn">OGC Naming Authority – Policies and Procedures </title>
+  
+<title type="main" format="text/plain" language="en" script="Latn">OGC Naming Authority – Policies and Procedures </title>
+  <uri type="src">http://www.opengis.net/doc/POL/OGC-NA/1.2</uri>  <uri type="obp">https://docs.ogc.org/pol/09-046r5.html</uri>  <docidentifier type="OGC" primary="true">09-046r5</docidentifier>  <date type="published">    <on>2019-10-31</on>  </date>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename>Simon Cox</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename>Gobe Hobona</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
+<name>Open Geospatial Consortium</name>
+    </organization>  </contributor>  <edition>5</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">This document describes the procedures used by the OGC Naming Authority for the assignment and registration of OGC names.</abstract>  </bibitem><bibitem id="OGC09047" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title type="title-intro" format="text/plain" language="en" script="Latn">OGC-NA Name type specification</title>
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">documents</title>
+  
+<title type="main" format="text/plain" language="en" script="Latn">OGC-NA Name type specification — documents</title>
+  <uri type="src">http://www.opengis.net/doc/POL-NTS/DOC/1.2</uri>  <uri type="obp">https://portal.ogc.org/files/?artifact_id=41774</uri>  <docidentifier type="OGC" primary="true">09-047r3</docidentifier>  <date type="published">    <on>2011-03-01</on>  </date>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename>Simon Cox</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
+<name>Open Geospatial Consortium</name>
+    </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">This document specifies a rule for constructing OGC names that may be used for identifying documents and elements within a document.</abstract>  </bibitem><bibitem id="OGC08125" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title type="title-main" format="text/plain" language="en" script="Latn">OGC® KML Standard Development Best Practices</title>
+  
+<title type="main" format="text/plain" language="en" script="Latn">OGC® KML Standard Development Best Practices</title>
+  <uri type="src"/>  <uri type="obp">https://portal.ogc.org/files/?artifact_id=30203</uri>  <docidentifier type="OGC" primary="true">08-125r1</docidentifier>  <date type="published">    <on>2009-02-04</on>  </date>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename>Tim Wilson</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="author"/>    <person>      
+<name>        <completename>David Burggraf</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
+<name>Open Geospatial Consortium</name>
+    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">This OGC® Best Practices Document provides guidelines for developing the OGC KML standard in a manner that best serves and supports the KML application developer and user communities. It applies to the extension of KML by application developers and the subsequent enhancement of the KML standard by the OGC.</abstract>  </bibitem><bibitem id="ISOOGCTOR">
   <formattedref format="application/x-isodoc+xml"><em>ISO-OGC Terms of Reference</em>, <link target="https://portal.opengeospatial.org/files/?artifact_id=69074"/></formattedref>
   <docidentifier type="ISO">ISO-OGC Terms of Reference</docidentifier>
   
-</bibitem><bibitem id="ISO191011" type="standard">  <fetched>2022-09-07</fetched>  
+</bibitem><bibitem id="ISO191011" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
@@ -2572,12 +2554,12 @@
 <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Fundamentals</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model — Part 1: Fundamentals</title>
-  <uri type="src">https://www.iso.org/standard/59164.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:59164:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19101-1</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.93:ed-1</docidentifier>  <docnumber>19101</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
+  <uri type="src">https://www.iso.org/standard/59164.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19101-1</docidentifier>  <docidentifier type="iso-reference">ISO 19101-1(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.93:ed-1</docidentifier>  <docnumber>19101</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>International Organization for Standardization</name>
       <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>90</stage>    <substage>93</substage>  </status>  <copyright>    <from>2014</from>    <owner>      <organization>        
 <name>ISO</name>
       </organization>    </owner>  </copyright>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO 19101:2002</formattedref>      <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>    </bibitem>
-  </relation>  <relation type="instance">    <bibitem type="standard">      <fetched>2022-09-07</fetched>      
+  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
@@ -2585,13 +2567,13 @@
 <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Fundamentals</title>
       
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model — Part 1: Fundamentals</title>
-      <uri type="src">https://www.iso.org/standard/59164.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:59164:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.93:ed-1</docidentifier>      <docnumber>19101</docnumber>      <date type="published">        <on>2014-11</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+      <uri type="src">https://www.iso.org/standard/59164.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>      <docidentifier type="iso-reference">ISO 19101-1:2014(E)</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.93:ed-1</docidentifier>      <docnumber>19101</docnumber>      <date type="published">        <on>2014-11</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
 <name>International Organization for Standardization</name>
           <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">ISO 19101-1:2014 defines the reference model for standardization in the field of geographic information. This reference model describes the notion of interoperability and sets forth the fundamentals by which this standardization takes place. Although structured in the context of information technology and information technology standards, ISO 19101-1:2014 is independent of any application development method or technology implementation approach.</abstract>      <status>        <stage>90</stage>        <substage>93</substage>      </status>      <copyright>        <from>2014</from>        <owner>          <organization>            
 <name>ISO</name>
           </organization>        </owner>      </copyright>      <relation type="obsoletes">        <bibitem type="standard">          <formattedref format="text/plain">ISO 19101:2002</formattedref>          <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>        </bibitem>
       </relation>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="ISO191012" type="standard">  <fetched>2022-09-07</fetched>  
+  </relation>  <place>Geneva</place></bibitem><bibitem id="ISO191012" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
@@ -2599,12 +2581,12 @@
 <title type="title-part" format="text/plain" language="en" script="Latn">Part 2: Imagery</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model — Part 2: Imagery</title>
-  <uri type="src">https://www.iso.org/standard/69325.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:69325:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/06/93/69325.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19101-2</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19101:-2:stage-60.60:ed-1</docidentifier>  <docnumber>19101</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
+  <uri type="src">https://www.iso.org/standard/69325.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:69325:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/06/93/69325.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19101-2</docidentifier>  <docidentifier type="iso-reference">ISO 19101-2(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19101:-2:stage-90.93:ed-1</docidentifier>  <docnumber>19101</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>International Organization for Standardization</name>
-      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>60</stage>    <substage>60</substage>  </status>  <copyright>    <from>2018</from>    <owner>      <organization>        
+      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>90</stage>    <substage>93</substage>  </status>  <copyright>    <from>2018</from>    <owner>      <organization>        
 <name>ISO</name>
       </organization>    </owner>  </copyright>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO/TS 19101-2:2008</formattedref>      <docidentifier type="ISO" primary="true">ISO/TS 19101-2:2008</docidentifier>    </bibitem>
-  </relation>  <relation type="instance">    <bibitem type="standard">      <fetched>2022-09-07</fetched>      
+  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
@@ -2612,69 +2594,59 @@
 <title type="title-part" format="text/plain" language="en" script="Latn">Part 2: Imagery</title>
       
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model — Part 2: Imagery</title>
-      <uri type="src">https://www.iso.org/standard/69325.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:69325:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/06/93/69325.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19101-2:2018</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19101:-2:stage-60.60:ed-1</docidentifier>      <docnumber>19101</docnumber>      <date type="published">        <on>2018-05</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+      <uri type="src">https://www.iso.org/standard/69325.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:69325:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/06/93/69325.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19101-2:2018</docidentifier>      <docidentifier type="iso-reference">ISO 19101-2:2018(E)</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19101:-2:stage-90.93:ed-1</docidentifier>      <docnumber>19101</docnumber>      <date type="published">        <on>2018-05</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
 <name>International Organization for Standardization</name>
-          <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">This document defines a reference model for standardization in the field of geographic imagery processing. This reference model identifies the scope of the standardization activity being undertaken and the context in which it takes place. The reference model includes gridded data with an emphasis on imagery. Although structured in the context of information technology and information technology standards, this document is independent of any application development method or technology implementation approach.</abstract>      <status>        <stage>60</stage>        <substage>60</substage>      </status>      <copyright>        <from>2018</from>        <owner>          <organization>            
+          <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">This document defines a reference model for standardization in the field of geographic imagery processing. This reference model identifies the scope of the standardization activity being undertaken and the context in which it takes place. The reference model includes gridded data with an emphasis on imagery. Although structured in the context of information technology and information technology standards, this document is independent of any application development method or technology implementation approach.</abstract>      <status>        <stage>90</stage>        <substage>93</substage>      </status>      <copyright>        <from>2018</from>        <owner>          <organization>            
 <name>ISO</name>
           </organization>        </owner>      </copyright>      <relation type="obsoletes">        <bibitem type="standard">          <formattedref format="text/plain">ISO/TS 19101-2:2008</formattedref>          <docidentifier type="ISO" primary="true">ISO/TS 19101-2:2008</docidentifier>        </bibitem>
       </relation>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="ISO19106" type="standard">  <fetched>2022-09-07</fetched>  
+  </relation>  <place>Geneva</place></bibitem><bibitem id="ISO19106" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Profiles</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Profiles</title>
-  <uri type="src">https://www.iso.org/standard/26011.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:26011:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26011.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19106</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19106:stage-90.93:ed-1</docidentifier>  <docnumber>19106</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
+  <uri type="src">https://www.iso.org/standard/26011.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26011:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26011.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19106</docidentifier>  <docidentifier type="iso-reference">ISO 19106(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19106:stage-90.93:ed-1</docidentifier>  <docnumber>19106</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>International Organization for Standardization</name>
       <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>90</stage>    <substage>93</substage>  </status>  <copyright>    <from>2004</from>    <owner>      <organization>        
 <name>ISO</name>
-      </organization>    </owner>  </copyright>  <relation type="instance">    <bibitem type="standard">      <fetched>2022-09-07</fetched>      
+      </organization>    </owner>  </copyright>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Profiles</title>
       
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Profiles</title>
-      <uri type="src">https://www.iso.org/standard/26011.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:26011:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26011.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19106:2004</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19106:stage-90.93:ed-1</docidentifier>      <docnumber>19106</docnumber>      <date type="published">        <on>2004-07</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+      <uri type="src">https://www.iso.org/standard/26011.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26011:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26011.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19106:2004</docidentifier>      <docidentifier type="iso-reference">ISO 19106:2004(E)</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19106:stage-90.93:ed-1</docidentifier>      <docnumber>19106</docnumber>      <date type="published">        <on>2004-07</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
 <name>International Organization for Standardization</name>
           <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">ISO 19106:2004 is intended to define the concept of a profile of the ISO geographic information standards developed by ISO/TC 211 and to provide guidance for the creation of such profiles. Only those components of specifications that meet the definition of a profile contained herein can be established and managed through the mechanisms described in this International Standard. These profiles can be standardized internationally using the ISO standardization process. This document also provides guidance for establishing, managing, and standardizing at the national level (or in some other forum).</abstract>      <status>        <stage>90</stage>        <substage>93</substage>      </status>      <copyright>        <from>2004</from>        <owner>          <organization>            
 <name>ISO</name>
           </organization>        </owner>      </copyright>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="ISO19109" type="standard">  <fetched>2022-09-07</fetched>  
+  </relation>  <place>Geneva</place></bibitem><bibitem id="ISO19109" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Rules for application schema</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Rules for application schema</title>
-  <uri type="src">https://www.iso.org/standard/59193.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:59193:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59193.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19109</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19109:stage-90.92:ed-2</docidentifier>  <docnumber>19109</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
+  <uri type="src">https://www.iso.org/standard/59193.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59193:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59193.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19109</docidentifier>  <docidentifier type="iso-reference">ISO 19109(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19109:stage-90.92:ed-2</docidentifier>  <docnumber>19109</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>International Organization for Standardization</name>
       <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>2</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>90</stage>    <substage>92</substage>  </status>  <copyright>    <from>2015</from>    <owner>      <organization>        
 <name>ISO</name>
       </organization>    </owner>  </copyright>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO 19109:2005</formattedref>      <docidentifier type="ISO" primary="true">ISO 19109:2005</docidentifier>    </bibitem>
-  </relation>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO/AWI 19109</formattedref>      <docidentifier type="ISO" primary="true">ISO/AWI 19109</docidentifier>    </bibitem>
-  </relation>  <relation type="instance">    <bibitem type="standard">      <fetched>2022-09-07</fetched>      
+  </relation>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO/CD 19109</formattedref>      <docidentifier type="ISO" primary="true">ISO/CD 19109</docidentifier>    </bibitem>
+  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Rules for application schema</title>
       
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Rules for application schema</title>
-      <uri type="src">https://www.iso.org/standard/59193.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/#!iso:std:59193:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59193.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19109:2015</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19109:stage-90.92:ed-2</docidentifier>      <docnumber>19109</docnumber>      <date type="published">        <on>2015-12</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+      <uri type="src">https://www.iso.org/standard/59193.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59193:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59193.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19109:2015</docidentifier>      <docidentifier type="iso-reference">ISO 19109:2015(E)</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19109:stage-90.92:ed-2</docidentifier>      <docnumber>19109</docnumber>      <date type="published">        <on>2015-12</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
 <name>International Organization for Standardization</name>
           <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>2</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">ISO 19109:2015 defines rules for creating and documenting application schemas, including principles for the definition of features. The scope of this International Standard includes the following: —      conceptual modelling of features and their properties from a universe of discourse; —      definition of application schemas; —      use of the conceptual schema language for application schemas; —      transition from the concepts in the conceptual model to the data types in the application schema; —      integration of standardized schemas from other ISO geographic information standards with the application schema. The following are outside the scope: —      choice of one particular conceptual schema language for application schemas; —      definition of any particular application schema; —      representation of feature types and their properties in a feature catalogue; —      representation of metadata; —      rules for mapping one application schema to another; —      implementation of the application schema in a computer environment; —      computer system and application software design; —      programming.</abstract>      <status>        <stage>90</stage>        <substage>92</substage>      </status>      <copyright>        <from>2015</from>        <owner>          <organization>            
 <name>ISO</name>
           </organization>        </owner>      </copyright>      <relation type="obsoletes">        <bibitem type="standard">          <formattedref format="text/plain">ISO 19109:2005</formattedref>          <docidentifier type="ISO" primary="true">ISO 19109:2005</docidentifier>        </bibitem>
-      </relation>      <relation type="obsoletes">        <bibitem type="standard">          <formattedref format="text/plain">ISO/AWI 19109</formattedref>          <docidentifier type="ISO" primary="true">ISO/AWI 19109</docidentifier>        </bibitem>
+      </relation>      <relation type="obsoletes">        <bibitem type="standard">          <formattedref format="text/plain">ISO/CD 19109</formattedref>          <docidentifier type="ISO" primary="true">ISO/CD 19109</docidentifier>        </bibitem>
       </relation>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="OGC06135">
-  <formattedref format="application/x-isodoc+xml"><em>OGC 06-135r11: Policy Directives for Writing and Publishing OGC Standards: TC Decisions</em>, <link target="http://portal.opengeospatial.org/files/?artifact_id=40077"/></formattedref>
-  <docidentifier type="OGC">OGC 06-135</docidentifier>
-  <docnumber>06-135</docnumber>
-</bibitem><bibitem id="OGC08125">
-  <formattedref format="application/x-isodoc+xml">
-    <em>OGC 08-125: KML – Standard Development Best Practices</em>
-  </formattedref>
-  <docidentifier type="OGC">OGC 08-125</docidentifier>
-  <docnumber>08-125</docnumber>
-</bibitem><bibitem id="OGC10176">
+  </relation>  <place>Geneva</place></bibitem><bibitem id="OGC10176">
   <formattedref format="application/x-isodoc+xml"><em>OGC 10-176r8, OGC Standards document template</em>, <link target="https://portal.opengeospatial.org/files/?artifact_id=56777/"/></formattedref>
   <docidentifier type="OGC">OGC 10-176</docidentifier>
   <docnumber>10-176</docnumber>
@@ -2726,10 +2698,6 @@
   <formattedref format="application/x-isodoc+xml"><em>OGC Legal Documents</em>, <link target="http://www.opengeospatial.org/legal"/></formattedref>
   <docidentifier type="OGC">OGC Legal Documents</docidentifier>
   
-</bibitem><bibitem id="OGC09046">
-  <formattedref format="application/x-isodoc+xml"><em>OGC Naming Authority (OGC-NA) Policies &amp; Procedures</em>, <link target="http://portal.opengeospatial.org/files/?artifact_id=37800"/></formattedref>
-  <docidentifier type="OGC">OGC 09-046</docidentifier>
-  <docnumber>09-046</docnumber>
 </bibitem><bibitem id="OGCDIR">
   <formattedref format="application/x-isodoc+xml"><em>OGC Policy Directives</em>, <link target="https://portal.opengeospatial.org/public_ogc/directives/directives.php"/></formattedref>
   <docidentifier type="OGC">OGC Policy Directives</docidentifier>
@@ -2766,15 +2734,7 @@
   <formattedref format="application/x-isodoc+xml"><em>OGC Subcommittee page</em>, <link target="http://www.opengeospatial.org/projects/groups/sc/"/></formattedref>
   <docidentifier type="OGC">OGC Subcommittee</docidentifier>
   
-</bibitem><bibitem id="OGC09047">
-  <formattedref format="application/x-isodoc+xml"><em>OGC-NA Name type specification — documents</em>, <link target="http://portal.opengeospatial.org/files/?artifact_id=41774"/></formattedref>
-  <docidentifier type="OGC">OGC 09-047</docidentifier>
-  <docnumber>09-047</docnumber>
-</bibitem><bibitem id="OGC09048">
-  <formattedref format="application/x-isodoc+xml"><em>OGC-NA definitions: Part 1 — basic name</em>, <link target="http://portal.opengeospatial.org/files/?artifact_id=37802"/></formattedref>
-  <docidentifier type="OGC">OGC 09-048</docidentifier>
-  <docnumber>09-048</docnumber>
-</bibitem><bibitem id="ISODIR2" type="standard">  <docidentifier>ISO/IEC Directives, Part 2</docidentifier>
+</bibitem><bibitem id="ISODIR2" type="standard" schema-version="v1.2.8">  <docidentifier>ISO/IEC Directives, Part 2</docidentifier>
 <title><em>ISO/IEC Directives, Part 2, Principles and rules for the structure and drafting of ISO and IEC documents</em></title>
 </bibitem><bibitem id="PURL">
   <formattedref format="application/x-isodoc+xml"><em>Persistent Uniform Resource Locators (PURL)</em>, <link target="http://purl.oclc.org/docs/index.html"/></formattedref>
@@ -2793,10 +2753,10 @@
   <docidentifier>OMB Circular A-119</docidentifier>
   <docnumber>119</docnumber>
 </bibitem>
- 
- 
- 
- 
+
+
+
+
 
 
 

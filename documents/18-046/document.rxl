@@ -4,6 +4,6 @@
 <name><completename>Ingo Simonis</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><version><revision-date>2018-12-20</revision-date></version><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2022</from><owner><organization>
+<abbreviation>OGC</abbreviation></organization></contributor><version><revision-date>2018-12-20</revision-date></version><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2024</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><ext><doctype>engineering-report</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>engineering-report</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

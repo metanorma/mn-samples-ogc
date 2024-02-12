@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.2.2">
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.1" schema-version="v1.3.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
 <docidentifier type="ogc-external">http://www.opengis.net/spec/gmlsf/2.0.1</docidentifier><docidentifier type="ogc-internal">10-100r3</docidentifier><docnumber>10-100r3</docnumber><date type="published"><on>2012-04-05</on></date><date type="issued"><on>2012-04-05</on></date><date type="received"><on>2011-05-24</on></date><contributor><role type="author"/><organization>
@@ -28,129 +28,49 @@
 <name><completename>Panagiotis (Peter) A. Vretanos</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><edition>2.0</edition><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2012</from><owner><organization>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>2.0</edition><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2012</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><ext><doctype>standard</doctype><subdoctype>profile</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
-<boilerplate>
-  <copyright-statement>
-    <clause>
-      <title>Copyright notice</title>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>standard</doctype><subdoctype>profile</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
 
-      <p align="center" id="_ee734113-40c4-d03f-165b-a7c397d4f5ed">Copyright
-        © 2012 Open Geospatial Consortium<br/>
-        To obtain additional rights of use, visit
-        <link target="http://www.ogc.org/legal/">http://www.ogc.org/legal/</link></p>
-    </clause>
-    <clause>
-      <title>Note</title>
-      <p align="left" id="_11e88dba-9912-1a89-a82d-7291bf232191">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+<clause id="_copyright_notice" obligation="normative">
+<title>Copyright notice</title>
+<p id="_54e90a5a-f5e7-241f-e78e-f53f2e293077" align="center">Copyright © 2012 Open Geospatial Consortium<br/>
+To obtain additional rights of use, visit
+<link target="https://www.ogc.org/legal"/></p>
+</clause>
 
-      <p align="left" id="_15067213-c07b-cba0-7e18-395ab2e00ab3">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
-    </clause>
-  </copyright-statement>
-  <license-statement>
-    <clause>
-      <title>License Agreement</title>
+<clause id="_note" obligation="normative">
+<title>Note</title>
+<p id="_11e88dba-9912-1a89-a82d-7291bf232191" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
-      <p id="_e8566381-218f-c22d-320d-4d0371bfd58f">Permission is hereby granted by the Open Geospatial
-        Consortium, (“Licensor”), free of charge and subject to the terms set
-        forth below, to any person obtaining a copy of this Intellectual Property and
-        any associated documentation, to deal in the Intellectual Property without
-        restriction (except as set forth below), including without limitation the
-        rights to implement, use, copy, modify, merge, publish, distribute, and/or
-        sublicense copies of the Intellectual Property, and to permit persons to whom
-        the Intellectual Property is furnished to do so, provided that all copyright notices
-        on the intellectual property are retained intact and that each person to whom
-        the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
+<p id="_15067213-c07b-cba0-7e18-395ab2e00ab3" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</clause>
+</copyright-statement>
 
-      <p id="_52ebb386-d365-27d0-d76d-a59ac165fc4d">If you modify the Intellectual Property, all copies of
-        the modified Intellectual Property must include, in addition to the above
-        copyright notice, a notice that the Intellectual Property includes
-        modifications that have not been approved or adopted by LICENSOR.</p>
+<license-statement>
 
-      <p id="_178f14b4-0718-a5b8-09cd-84f8f4b756ed">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
-        CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
-        THE INTELLECTUAL PROPERTY IS PROVIDED “AS
-        IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-        LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
-        AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS
-        INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE
-        INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE
-        INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE
-        INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER’S OWN RISK. IN NO
-        EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY
-        RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT,
-        SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
-        FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN
-        AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT
-        OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
-        PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
+<clause id="_license_agreement" obligation="normative">
+<title>License Agreement</title>
+<p id="_f5fe34fd-12e2-2bb7-8cd6-9d4cffa96538">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license"/></p>
+</clause>
+</license-statement>
 
-      <p id="_2ad7fe27-9ae4-52c5-9dd9-faa4004247fb">This license is effective until terminated. You may
-        terminate it at any time by destroying the Intellectual Property together with
-        all copies in any form. The license will also terminate if you fail to comply
-        with any term or condition of this Agreement. Except as provided in the
-        following sentence, no such termination of this license shall require the
-        termination of any third party end-user sublicense to the Intellectual Property
-        which is in force as of the date of notice of such termination. In addition,
-        should the Intellectual Property, or the operation of the Intellectual
-        Property, infringe, or in LICENSOR’s sole opinion be
-        likely to infringe, any patent, copyright, trademark or other right of a third
-        party, you agree that LICENSOR, in its sole discretion, may terminate this
-        license without any compensation or liability to you, your licensees or any
-        other party. You agree upon termination of any kind to destroy or cause to be
-        destroyed the Intellectual Property together with all copies in any form,
-        whether held by you or by any third party.</p>
+<legal-statement>
 
-      <p id="_3254c815-179c-5f54-9a01-b8e964837171">Except as contained in this notice, the name of
-        LICENSOR or of any other holder of a copyright in all or part of the Intellectual
-        Property shall not be used in advertising or otherwise to promote the sale, use
-        or other dealings in this Intellectual Property without prior written
-        authorization of LICENSOR or such copyright holder. LICENSOR is and shall at
-        all times be the sole entity that may authorize you or any third party to use
-        certification marks, trademarks or other special designations to indicate
-        compliance with any LICENSOR standards or specifications.
-        This Agreement is
-        governed by the laws of the Commonwealth of Massachusetts. The application to
-        this Agreement of the United Nations Convention on Contracts for the
-        International Sale of Goods is hereby expressly excluded. In the event any
-        provision of this Agreement shall be deemed unenforceable, void or invalid, such
-        provision shall be modified so as to make it valid and enforceable, and as so
-        modified the entire Agreement shall remain in full force and effect. No
-        decision, action or inaction by LICENSOR shall be construed to be a waiver of
-        any rights or remedies available to it.</p>
+<clause id="_notice" obligation="normative">
+<title>Notice</title>
+<p id="_2089b793-3e73-2e15-8674-d26cb3c9e594">This document is an OGC Member approved international standard. This document is available on a royalty free, non-discriminatory basis. Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+</clause>
+</legal-statement>
 
-      <p id="_4fa1ef5b-3dd5-7a05-3c68-bca93a0f14bb">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
-    </clause>
-  </license-statement>
+<feedback-statement>
 
-  <legal-statement>
-    
-    
-    <clause>
-      <title>Notice</title>
-      <p id="_a156d1c4-313c-340a-8480-366345e3e0d2">This document is an OGC Member approved international standard. This document is available on a royalty free, non-discriminatory basis. Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.
-      </p>
-    </clause>
-    
-
-
-    
-
-  </legal-statement>
-
-
-
-
-  <feedback-statement>
-    
-    <clause id="boilerplate-standard-feedback">
-      <p id="_bbc1a653-f270-135d-9455-af930feb3587">Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://portal.opengeospatial.org/public_ogc/change_request.php">http://portal.opengeospatial.org/public_ogc/change_request.php</link></p>
-    </clause>
-    
-  </feedback-statement>
-</boilerplate>
-<preface><foreword id="_3abaa100-cc44-4fbf-4973-94fe3386b634" obligation="informative">
+<clause id="boilerplate-standard-feedback" obligation="normative">
+<p id="_bb5602d2-6eb1-e557-e221-499759fe237f">Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://ogc.standardstracker.org/"/></p>
+</clause>
+</feedback-statement>
+</boilerplate><preface><foreword id="_3abaa100-cc44-4fbf-4973-94fe3386b634" obligation="informative">
 <title>Preface</title>
 <p id="_dce78de2-ba30-97d3-db9c-3cd142c29980">This approved OGC Implementation Standard defines a Simple Features profile of the Geography Markup Language version 3.2. This Simple Features Profile has been aligned with the OGC Simple Features standard for SQL version 1.2. Simple Features include: Point, Curve (LineString), Surface (Polygon), Geometry, MultiPoint, MultiCurve, MultiSurface, and MultiGeometry. The detailed abstract model for OGC features and geometry can be found in the OGC Abstract Specification, Topic Volume 1: Features (which is equivalent to ISO 19107).</p>
 
@@ -299,7 +219,10 @@ composites and geometric aggregates</td>
 <td valign="middle" align="left">21.1 to 21.5</td>
 </tr></tbody>
 </table>
-</clause><clause type="security" id="_bc7c3e33-bb9f-e715-e5a3-e54f104dde5b" obligation="informative"><title>Security considerations</title><p id="_507e6fd3-abe8-3184-537b-fa0d346d23b7">No security considerations have been made for this document.</p></clause></preface><sections>
+</clause><clause type="security" id="_cb2d8df8-0fdc-57d9-b1f5-cc68b62987cc" obligation="informative">
+  <title>Security considerations</title>
+  <p id="_507e6fd3-abe8-3184-537b-fa0d346d23b7">No security considerations have been made for this document.</p></clause>
+</preface><sections>
 
 
 
@@ -450,7 +373,7 @@ property types</td>
 </li>
 </ol>
 
-<sourcecode id="_17404c9d-47fb-ec30-1a63-8255df688b23" unnumbered="true">&lt;xsd:element name=”MyElement” minOccurs=”0” [maxOccurs=”1”]&gt;</sourcecode>
+<sourcecode id="_1a690098-db5c-be0e-39c2-7c49d0697069" unnumbered="true">&lt;xsd:element name="MyElement" minOccurs="0" [maxOccurs="1"]&gt;</sourcecode>
 
 
 <p id="_b3d8c6c0-7823-17ec-5c59-ec939ca86dda">the brackets around maxOccurs=”1” mean that this construct is optional and can be omitted.</p>
@@ -459,7 +382,7 @@ property types</td>
 </li>
 </ol>
 
-<sourcecode id="_47871627-46e9-6234-07b1-bf1db9fa223a" unnumbered="true">&lt;xsd:element name=”MyElement” minOccurs=”0” maxOccurs=”0|1|unbounded”&gt;</sourcecode>
+<sourcecode id="_b54715c9-9ae9-2e72-b750-e00f45431dd1" unnumbered="true">&lt;xsd:element name="MyElement" minOccurs="0" maxOccurs="0|1|unbounded"&gt;</sourcecode>
 
 
 <p id="_9a4e2f16-fc5a-61a4-b815-069aba79917f">the value of maxOccurs can be one of 0, 1 or unbounded.</p>
@@ -468,7 +391,7 @@ property types</td>
 </li>
 </ol>
 
-<sourcecode id="_221e7aa8-49d9-0e8d-0eb3-76107a9ab1d2" unnumbered="true">http://…schema repository URL…/schemas/mySchema.xsd</sourcecode>
+<sourcecode id="_fe2a1fda-078a-ab87-ca63-6b40f980834a" unnumbered="true">http://...schema repository URL.../schemas/mySchema.xsd</sourcecode>
 
 
 <p id="_801d6c89-32b0-000e-f47c-fdf9c94c3fc0">the italic string “<em>…​schema repository URL…​</em>” indicates the actual schema repository URL would be substituted by the person or process creating the application schema.</p>
@@ -571,8 +494,8 @@ constraints, to obtain one or more feature instances.</p>
 
 <p id="_2ceb77ab-7c28-6ff1-a684-c9e7738d2e14">The following schema fragment shows how this annotation shall be declared in an application schema:</p>
 
-<sourcecode id="_78831cec-eb5b-999f-7483-58a863f358a5" unnumbered="true">1 &lt;xsd:annotation&gt;
-2   &lt;xsd:appinfo source=”http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd”&gt;
+<sourcecode id="_0e2b0ce4-4d80-bb37-e9b6-a7f9d1d6391c" unnumbered="true">1 &lt;xsd:annotation&gt;
+2   &lt;xsd:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd"&gt;
 3       &lt;gmlsf:ComplianceLevel&gt;0|1|2&lt;/gmlsf:ComplianceLevel&gt;
 4   &lt;/xsd:appinfo&gt;
 5 &lt;/xsd:annotation&gt;</sourcecode>
@@ -964,11 +887,11 @@ used.</p>
 <title>Internationalized string</title>
 <p id="_0910b74b-85c8-f08b-4b6b-0b4132d302a2">The following XML fragment defines a complex type that shall be included in a schema that requires the use of internationalized strings.</p>
 
-<sourcecode id="_e295c7ef-0e9b-da0a-caf6-44bf56174a74" unnumbered="true">1 &lt;xsd:complexType name=”LanguageStringType”&gt;
+<sourcecode id="_4c4eb8fb-a1f8-e955-8640-4701ac93ec65" unnumbered="true">1 &lt;xsd:complexType name="LanguageStringType"&gt;
 2   &lt;xsd:simpleContent&gt;
-3       &lt;xsd:extension base=”string”&gt;
-4           &lt;xsd:attribute ref=”xml:lang” use=”optional”/&gt;
-5           &lt;!— … additional optional attributes … —!&gt;
+3       &lt;xsd:extension base="string"&gt;
+4           &lt;xsd:attribute ref="xml:lang" use="optional"/&gt;
+5           &lt;!-- ... additional optional attributes ... --!&gt;
 5       &lt;/xsd:extension&gt;
 6   &lt;/xsd:simpleContent&gt;
 7 &lt;/xsd:complexType&gt;</sourcecode>
@@ -978,34 +901,34 @@ used.</p>
 
 <p id="_b38b7068-c53c-3317-4a6a-49b4304e3be4">Elements with internationalized string content can then be defined using the following template:</p>
 
-<sourcecode id="_a937ec43-7f1c-763a-839d-52f0d67b25eb" unnumbered="true">1 &lt;xsd:element name=”propertyName” [minOccurs=”0|1”] [maxOccurs=”1”]&gt;
+<sourcecode id="_b4eef4e9-4c95-dd70-d222-dc66094b004d" unnumbered="true">1 &lt;xsd:element name="propertyName" [minOccurs="0|1"] [maxOccurs="1"]&gt;
 2   &lt;xsd:complexType&gt;
 3       &lt;xsd:simpleContent&gt;
-3           &lt;xsd:restriction base=”xxx:LanguageStringType”&gt;
-4               &lt;xsd:maxLength value=”nCharacters”/&gt;
-5               &lt;!— — or — —&gt;
-6               &lt;xsd:length value=”nCharacters”/&gt;
-7               &lt;!—… Optional facets described in sub-clause 8.4.4.2 … —&gt;
+3           &lt;xsd:restriction base="xxx:LanguageStringType"&gt;
+4               &lt;xsd:maxLength value="nCharacters"/&gt;
+5               &lt;!-- - or - --&gt;
+6               &lt;xsd:length value="nCharacters"/&gt;
+7               &lt;!--... Optional facets described in sub-clause 8.4.4.2 ... --&gt;
 8           &lt;/xsd:restriction&gt;
 9       &lt;/xsd:simpleContent&gt;
 9   &lt;/xsd:complexType&gt;
 10 &lt;/xsd:element&gt;
 
-SHORT FORM: &lt;xsd:element name=”propertyName” type=”xxx:LanguageStringType”
-                        [minOccurs=”0|1”] [maxOccurs=”1”]/&gt;</sourcecode>
+SHORT FORM: &lt;xsd:element name="propertyName" type="xxx:LanguageStringType"
+                        [minOccurs="0|1"] [maxOccurs="1"]/&gt;</sourcecode>
 
 
 <p id="_23757425-0e03-9e1a-3896-baffcd53b13a">which is similar to the fragment defined in <xref target="declaring-elements-with-content-that-is-a-measurement"/> except for the type <em>xxx:LanguageString</em> which is a placeholder for the LanguageStringType (see <xref target="declaring-elements-with-content-that-is-a-measurement"/>) in the target namespace of the schema.</p>
 
 <p id="_c0d7b936-a292-687d-0c74-6e89c5ea76ac">Application schemas that use internationalized strings shall include the following namespace declaration:</p>
 
-<sourcecode id="_1a5e0b2b-de9c-88c1-342f-cda4c8727403" unnumbered="true">xmlns:xml=”http://www.w3.org/XML/1998/namespace”</sourcecode>
+<sourcecode id="_1b22db64-108f-cf22-ed6c-405f25c00a06" unnumbered="true">xmlns:xml="http://www.w3.org/XML/1998/namespace"</sourcecode>
 
 
 <p id="_12516282-512c-4501-98f0-d07646a4cd5d">and shall import the following schema:</p>
 
-<sourcecode id="_7dd38463-40d7-bf57-af14-9a5fb0b58992" unnumbered="true">&lt;xsd:import namespace=”http://www.w3.org/XML/1998/namespace”
-            schemaLocation=”http://www.w3.org/2001/xml.xsd”/&gt;</sourcecode>
+<sourcecode id="_0e21ee9b-a04a-4d02-d362-780ecb5ca20a" unnumbered="true">&lt;xsd:import namespace="http://www.w3.org/XML/1998/namespace"
+            schemaLocation="http://www.w3.org/2001/xml.xsd"/&gt;</sourcecode>
 
 
 <p id="_6e1331b4-5374-b406-bd8b-341a3cc39696">in order to declare the namespace for the <strong>xml:lang</strong> attribute.</p>
@@ -1246,9 +1169,9 @@ URI content in a GML application schema that complies with this profile:</p>
 <title>Declaring elements that reference other resources</title>
 <p id="_c110f943-f34a-ac57-cab4-b25c2cdae205">The following XML-Schema fragment shows how to declare an element whose value is a reference to a local or remote resource:</p>
 
-<sourcecode id="_b3da4e46-31ac-6e88-e8a6-e00d0d8b554b" unnumbered="true">1 &lt;xsd:element name=”propertyName” type=”gml:ReferenceType” minOccurs=”0|1”&gt;
+<sourcecode id="_8f71533a-b41f-eb5c-d0e7-607ba091d171" unnumbered="true">1 &lt;xsd:element name="propertyName" type="gml:ReferenceType" minOccurs="0|1"&gt;
 2   &lt;xsd:annotation&gt;
-3       &lt;xsd:appinfo source=”urn:x-gml:targetElement”&gt;…target element…&lt;/xsd:appinfo&gt;
+3       &lt;xsd:appinfo source="urn:x-gml:targetElement"&gt;...target element...&lt;/xsd:appinfo&gt;
 4   &lt;/xsd:annotation&gt;
 5 &lt;/xsd:element&gt;</sourcecode>
 
@@ -1263,11 +1186,11 @@ URI content in a GML application schema that complies with this profile:</p>
 
 <figure id="_1d208f09-6b4f-5f0a-bee5-a1dd908168be">
 <name>Example association between two features</name>
-<image src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAeAB4AAD/4RDgRXhpZgAATU0AKgAAAAgABAE7AAIAAAAHAAAISodpAAQAAAABAAAIUpydAAEAAAAOAAAQyuocAAcAAAgMAAAAPgAAAAAc6gAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE1hbnVlbAAAAAWQAwACAAAAFAAAEKCQBAACAAAAFAAAELSSkQACAAAAAzE4AACSkgACAAAAAzE4AADqHAAHAAAIDAAACJQAAAAAHOoAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMDIwOjAxOjEyIDE0OjQwOjMxADIwMjA6MDE6MTIgMTQ6NDA6MzEAAABNAGEAbgB1AGUAbAAAAP/hCxlodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvADw/eHBhY2tldCBiZWdpbj0n77u/JyBpZD0nVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkJz8+DQo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIj48cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPjxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSJ1dWlkOmZhZjViZGQ1LWJhM2QtMTFkYS1hZDMxLWQzM2Q3NTE4MmYxYiIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIi8+PHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9InV1aWQ6ZmFmNWJkZDUtYmEzZC0xMWRhLWFkMzEtZDMzZDc1MTgyZjFiIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iPjx4bXA6Q3JlYXRlRGF0ZT4yMDIwLTAxLTEyVDE0OjQwOjMxLjE3ODwveG1wOkNyZWF0ZURhdGU+PC9yZGY6RGVzY3JpcHRpb24+PHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9InV1aWQ6ZmFmNWJkZDUtYmEzZC0xMWRhLWFkMzEtZDMzZDc1MTgyZjFiIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iPjxkYzpjcmVhdG9yPjxyZGY6U2VxIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+PHJkZjpsaT5NYW51ZWw8L3JkZjpsaT48L3JkZjpTZXE+DQoJCQk8L2RjOmNyZWF0b3I+PC9yZGY6RGVzY3JpcHRpb24+PC9yZGY6UkRGPjwveDp4bXBtZXRhPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSd3Jz8+/9sAQwAHBQUGBQQHBgUGCAcHCAoRCwoJCQoVDxAMERgVGhkYFRgXGx4nIRsdJR0XGCIuIiUoKSssKxogLzMvKjInKisq/9sAQwEHCAgKCQoUCwsUKhwYHCoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq/8AAEQgBDQNuAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A+kaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACg0UhoAM8UZ9qMYOaaH9Tg0AOz7UZ9qaHB70u4UALn2oz7Um4UbhQAufajPtSbhRuFAC59qM+1JuFG4UALn2oz7Um4UbhQAufajPtSbhRuFAC59qM+1JuFG4U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kKHPB4Han0UAN28fWgqfwx09adRQAijCgYx7UtFFABRRRQAUUUUAFFFFABXEfFr/AJEV/wDr7t//AEYtdvXEfFr/AJEV/wDr7t//AEYtAHZw/wCoT6CuY8eeFL7xdoo02z1V9Pjdv3xVQ3mL2X866eH/AFCfQVJQBznhPQ9V0S2kh1bVn1LoI2ZAu0AdK6OiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEf7prhfhN/yLepf9hi8/wDRhrun+6a4X4Tf8i3qX/YYvP8A0YaAO7HSigdKKACiiigAooooAKRl3Lg0tFADFVgME596XBp1FADAm37vT0pdpyefp7U6igCPZ83IznqaVgdpxT6KAGBTtw3NKoP09qdRQAwrnrzzS7cLgU6igBuD60jIXUjoexp9FADAvQkc+tG0jjr6U+igBhTcuG5pQCG9qdRQA0qSODikC46ce9PooAaRwaTZ8wYde/vT6KACiiigAooooAKKKKACuC8e/wDI6+Bv+wpJ/wCiWrva4Lx7/wAjr4G/7Ckn/olqAO8HalpB2paACiiigAooooAKQ0tIaAA1w3hj/kqXiv8A3bf/ANBNdya4bwx/yVLxX/u2/wD6CaAO6Heigd6KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAriPi1/wAiK/8A192//oxa7euI+LX/ACIr/wDX3b/+jFoA7OH/AFCfQVJUcP8AqE+gqSgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBH+6a4X4Tf8i3qX/YYvP/AEYa7p/umuF+E3/It6l/2GLz/wBGGgDux0ooHSigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK4Lx7/AMjr4G/7Ckn/AKJau9rgvHv/ACOvgb/sKSf+iWoA7wdqWkHaloAKKKKACiiigApDS0hoADXDeGP+SpeK/wDdt/8A0E13JrzvQ9Ss7H4peKftd1FDuW3x5jhc/KfWgD0Ud6KzP+Eg0j/oJ2n/AH/X/Gj/AISHSP8AoJ2n/f8AX/GgDTor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ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z" id="_69068c53-5471-952f-3f20-792f91859541" mimetype="image/jpeg" height="auto" width="auto"/></figure>
+<image src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAeAB4AAD/4RDgRXhpZgAATU0AKgAAAAgABAE7AAIAAAAHAAAISodpAAQAAAABAAAIUpydAAEAAAAOAAAQyuocAAcAAAgMAAAAPgAAAAAc6gAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE1hbnVlbAAAAAWQAwACAAAAFAAAEKCQBAACAAAAFAAAELSSkQACAAAAAzE4AACSkgACAAAAAzE4AADqHAAHAAAIDAAACJQAAAAAHOoAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMDIwOjAxOjEyIDE0OjQwOjMxADIwMjA6MDE6MTIgMTQ6NDA6MzEAAABNAGEAbgB1AGUAbAAAAP/hCxlodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvADw/eHBhY2tldCBiZWdpbj0n77u/JyBpZD0nVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkJz8+DQo8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIj48cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPjxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSJ1dWlkOmZhZjViZGQ1LWJhM2QtMTFkYS1hZDMxLWQzM2Q3NTE4MmYxYiIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIi8+PHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9InV1aWQ6ZmFmNWJkZDUtYmEzZC0xMWRhLWFkMzEtZDMzZDc1MTgyZjFiIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iPjx4bXA6Q3JlYXRlRGF0ZT4yMDIwLTAxLTEyVDE0OjQwOjMxLjE3ODwveG1wOkNyZWF0ZURhdGU+PC9yZGY6RGVzY3JpcHRpb24+PHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9InV1aWQ6ZmFmNWJkZDUtYmEzZC0xMWRhLWFkMzEtZDMzZDc1MTgyZjFiIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iPjxkYzpjcmVhdG9yPjxyZGY6U2VxIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+PHJkZjpsaT5NYW51ZWw8L3JkZjpsaT48L3JkZjpTZXE+DQoJCQk8L2RjOmNyZWF0b3I+PC9yZGY6RGVzY3JpcHRpb24+PC9yZGY6UkRGPjwveDp4bXBtZXRhPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSd3Jz8+/9sAQwAHBQUGBQQHBgUGCAcHCAoRCwoJCQoVDxAMERgVGhkYFRgXGx4nIRsdJR0XGCIuIiUoKSssKxogLzMvKjInKisq/9sAQwEHCAgKCQoUCwsUKhwYHCoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq/8AAEQgBDQNuAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A+kaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACg0UhoAM8UZ9qMYOaaH9Tg0AOz7UZ9qaHB70u4UALn2oz7Um4UbhQAufajPtSbhRuFAC59qM+1JuFG4UALn2oz7Um4UbhQAufajPtSbhRuFAC59qM+1JuFG4U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kKHPB4Han0UAN28fWgqfwx09adRQAijCgYx7UtFFABRRRQAUUUUAFFFFABXEfFr/AJEV/wDr7t//AEYtdvXEfFr/AJEV/wDr7t//AEYtAHZw/wCoT6CuY8eeFL7xdoo02z1V9Pjdv3xVQ3mL2X866eH/AFCfQVJQBznhPQ9V0S2kh1bVn1LoI2ZAu0AdK6OiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEf7prhfhN/yLepf9hi8/wDRhrun+6a4X4Tf8i3qX/YYvP8A0YaAO7HSigdKKACiiigAooooAKRl3Lg0tFADFVgME596XBp1FADAm37vT0pdpyefp7U6igCPZ83IznqaVgdpxT6KAGBTtw3NKoP09qdRQAwrnrzzS7cLgU6igBuD60jIXUjoexp9FADAvQkc+tG0jjr6U+igBhTcuG5pQCG9qdRQA0qSODikC46ce9PooAaRwaTZ8wYde/vT6KACiiigAooooAKKKKACuC8e/wDI6+Bv+wpJ/wCiWrva4Lx7/wAjr4G/7Ckn/olqAO8HalpB2paACiiigAooooAKQ0tIaAA1w3hj/kqXiv8A3bf/ANBNdya4bwx/yVLxX/u2/wD6CaAO6Heigd6KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAriPi1/wAiK/8A192//oxa7euI+LX/ACIr/wDX3b/+jFoA7OH/AFCfQVJUcP8AqE+gqSgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBH+6a4X4Tf8i3qX/YYvP/AEYa7p/umuF+E3/It6l/2GLz/wBGGgDux0ooHSigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK4Lx7/AMjr4G/7Ckn/AKJau9rgvHv/ACOvgb/sKSf+iWoA7wdqWkHaloAKKKKACiiigApDS0hoADXDeGP+SpeK/wDdt/8A0E13JrzvQ9Ss7H4peKftd1FDuW3x5jhc/KfWgD0Ud6KzP+Eg0j/oJ2n/AH/X/Gj/AISHSP8AoJ2n/f8AX/GgDTor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ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf//Z" mimetype="image/jpeg" id="_69068c53-5471-952f-3f20-792f91859541" height="auto" width="auto"/></figure>
 
 <p id="_389cf35e-bca3-76f9-cf98-2f2102e16d3e">In this example, the BUILDING feature might contain the property declaration:</p>
 
-<sourcecode id="_14d1503b-38f1-c2bc-ed2d-6075d89527b7" unnumbered="true">&lt;xsd:element name=”partOfAirport” type=”gml:ReferenceType minOccurs=”1”&gt;
+<sourcecode id="_071203b0-7ea4-5098-ccbd-efd9094f44f4" unnumbered="true">&lt;xsd:element name="partOfAirport" type="gml:ReferenceType minOccurs="1"&gt;
     &lt;xsd:annotation&gt;
         &lt;xsd:appinfo&gt;
             &lt;gml:targetElement&gt;myns:AIRPORT&lt;/gml:targetElement&gt;
@@ -1281,13 +1204,13 @@ URI content in a GML application schema that complies with this profile:</p>
 <p id="_7326dc43-6775-98ba-5b81-351cdd5714cc">In instance documents, local objects may be identified using only the following shorthand xpointer expression template: a local resource is identified by setting the value of the <strong>xlink:href</strong> attribute to be the fragment separator ‘#’ and the <strong>gml:id</strong> value of the feature. The absence of a URI before the fragment separator indicates that the local document is
 being referenced. For example:</p>
 
-<sourcecode id="_91cfc962-a2e9-befc-240a-dfb75931a57a" unnumbered="true">xlink:href=”#o1013”</sourcecode>
+<sourcecode id="_554645a3-6bbb-ef47-abd5-e0641f99ee50" unnumbered="true">xlink:href="#o1013"</sourcecode>
 
 
 <p id="_cb63b0ce-c466-5de3-c09c-97c74ba5dd9a">Similarly, remote objects may be identified by setting the value of the <strong>xlink:href</strong> attribute to be the URI for the remote document, a fragment separator ‘#’ and the id of the
 object being referenced. For example:</p>
 
-<sourcecode id="_39544f78-daa5-ac1f-700b-c7c310d35044" unnumbered="true">xlink:href=http://…www.someserver.com…/somedoc.xml#o1013</sourcecode>
+<sourcecode id="_0deafb42-0330-3234-8fcb-bf23a0efa92b" unnumbered="true">xlink:href=http://...www.someserver.com.../somedoc.xml#o1013</sourcecode>
 
 </clause>
 
@@ -1626,19 +1549,19 @@ complex content.</p>
 <li><p id="_9f0ea83c-2c22-d847-69d9-1e02b810a81d">the attribute <strong>xmlns:xmls_prefix</strong> shall be present (line 4)</p>
 <ol id="_c933a127-d7ea-38ca-2d93-a6dcf7243fed" type="roman"><li><p id="_49a15274-44aa-7dc5-4976-6584dd85bd9b">the value <em>xmls_prefix</em> is user defined and is the alias for the XML-Schema namespace; this profile uses <strong>xsd</strong> as an example</p>
 </li>
-<li><p id="_9e3fbfa6-d43c-db1a-0bf3-a9e3f3ab9eea">its value shall be ‘<link target="http://www.w3.org/2001/XMLSchema"/>‘</p>
+<li><p id="_9e3fbfa6-d43c-db1a-0bf3-a9e3f3ab9eea">its value shall be ‘<link target="http://www.w3.org/2001/XMLSchema"><link target="http://www.w3.org/2001/XMLSchema"/></link>‘</p>
 </li>
 </ol>
 </li>
 <li><p id="_ff2baf55-4e3e-dc38-fede-c6999648c8f2">the attribute <strong>xmlns:gml</strong> shall be present (line 5)</p>
-<ol id="_f54eaee3-b701-4ae0-c057-6bb8e92476f6" type="roman"><li><p id="_f6015d1e-8ccb-07d0-bec4-c102e1b5a394">its value shall be ‘<link target="http://www.opengis.net/gml/3.2"/>‘</p>
+<ol id="_f54eaee3-b701-4ae0-c057-6bb8e92476f6" type="roman"><li><p id="_f6015d1e-8ccb-07d0-bec4-c102e1b5a394">its value shall be ‘<link target="http://www.opengis.net/gml/3.2"><link target="http://www.opengis.net/gml/3.2"/></link>‘</p>
 </li>
 <li><p id="_ec2af5c7-9d20-ec88-851b-dbfcb4b2d2ab">the namespace alias <strong>gml</strong> is recommended but may be redefined by the user; this profile uses the prefix <strong>gml</strong> as an example</p>
 </li>
 </ol>
 </li>
 <li><p id="_c0d7e602-13fe-15b5-ed35-32cc663ed00e">the attribute <strong>xmlns:gmlsf</strong> shall be present (line 6)</p>
-<ol id="_e15b870b-23c0-621c-d1be-4ccf3e3a8b3a" type="roman"><li><p id="_61b1187c-2248-6cee-46c0-a17868d51fdf">its value shall be ‘<link target="http://www.opengis.net/gmlsf"/>‘</p>
+<ol id="_e15b870b-23c0-621c-d1be-4ccf3e3a8b3a" type="roman"><li><p id="_61b1187c-2248-6cee-46c0-a17868d51fdf">its value shall be ‘<link target="http://www.opengis.net/gmlsf"><link target="http://www.opengis.net/gmlsf"/></link>‘</p>
 </li>
 <li><p id="_ee5a5296-747d-3b43-1a67-50bcdd99d555">the namespace alias shall be <strong>gmlsf</strong></p>
 </li>
@@ -1715,7 +1638,7 @@ gmlsfLevels.xsd (line 2)</p>
 
 <ol id="_f6dd0ac5-4de4-c4d5-d0d5-3b24bc7f55e6" type="arabic"><li><p id="_7d6c8067-0ff9-b6bc-21f5-790883426c37">an <strong>xsd:import</strong> element shall be present (line 1)</p>
 <ol id="_5614a5a4-41a2-d3fd-e216-733f7bab6f7b" type="alphabet"><li><p id="_82695ebb-adab-2bf5-c05f-126d5b1aea22">the attribute namespace shall be present (line 2)</p>
-<ol id="_1abd26a8-30f4-bed5-d1c9-cc56c53f0652" type="roman"><li><p id="_8ae0921a-85d0-e0a6-3f75-fe21c2a3d157">its value shall he ‘<link target="http://www.opengis.net/gml/3.2"/></p>
+<ol id="_1abd26a8-30f4-bed5-d1c9-cc56c53f0652" type="roman"><li><p id="_8ae0921a-85d0-e0a6-3f75-fe21c2a3d157">its value shall he ‘<link target="http://www.opengis.net/gml/3.2"><link target="http://www.opengis.net/gml/3.2"/></link></p>
 </li>
 </ol>
 </li>
@@ -1733,9 +1656,9 @@ gmlsfLevels.xsd (line 2)</p>
 <title>Importing and including other schemas (Level SF-0, SF-1, SF-2)</title>
 <p id="_0e57326f-2a37-d0ac-9d14-43519943bc26">A conformant schema may import other schemas as long as they too are compliant with this profile. The only exception is the GML schema which is describe in <xref target="importing-the-gml-schema-level-sf-0-sf-1-sf-2"/></p>
 
-<sourcecode id="_b86b8cac-652d-cce6-d7bd-2662f7ccfe80" unnumbered="true">1 &lt;xsd:import
-2   namespace=”target_namespace_of_schema”
-3   schemaLocation=”URI_reference_to_schema”/&gt;</sourcecode>
+<sourcecode id="_6e1bbe70-4018-4a94-4030-0316263a8376" unnumbered="true">1 &lt;xsd:import
+2   namespace="target_namespace_of_schema"
+3   schemaLocation="URI_reference_to_schema"/&gt;</sourcecode>
 
 
 <p id="_d52fad55-fd11-1957-e97e-61c9fe5999c1"><strong>Compliance rules:</strong></p>
@@ -1755,8 +1678,8 @@ gmlsfLevels.xsd (line 2)</p>
 </li>
 </ol>
 
-<sourcecode id="_31d13d64-995d-87aa-a0a3-21c7c1e6bec1" unnumbered="true">1 &lt;xsd:include
-2   schemaLocation=”URI_reference_to_schema”/&gt;</sourcecode>
+<sourcecode id="_e69bc1cc-4976-9fa1-5436-f8d384c9d266" unnumbered="true">1 &lt;xsd:include
+2   schemaLocation="URI_reference_to_schema"/&gt;</sourcecode>
 
 
 <p id="_c7038c93-3ed4-bc3f-8cf8-71d25d2d8e48"><strong>Compliance rules:</strong></p>
@@ -2020,8 +1943,8 @@ application schema (line 1)</p>
 
 <p id="_a0825c7d-eebe-358f-68d8-d3a94c2fa873">SHORT FORM</p>
 
-<sourcecode id="_dedb2580-8608-a64a-4a89-73bc8b7c917f" unnumbered="true">1 &lt;xsd:element name=”propertyName” type=”xsd:integer”
-2              [minOccurs=”0|N”] [maxOccurs=”1|N|unbounded”][nillable=”true|false”]/&gt;</sourcecode>
+<sourcecode id="_667e6778-5b59-c6cb-3a4c-7b21559d8475" unnumbered="true">1 &lt;xsd:element name="propertyName" type="xsd:integer"
+2              [minOccurs="0|N"] [maxOccurs="1|N|unbounded"][nillable="true|false"]/&gt;</sourcecode>
 
 
 <p id="_6e81ce10-bd3e-bcdc-d4c5-5cf681571678"><strong>Compliance rules:</strong></p>
@@ -2076,12 +1999,12 @@ application schema (line 1)</p>
 
 <p id="_dd0521da-0557-f7ca-e750-0975510323ba">LONG FORM</p>
 
-<sourcecode id="_1c0cc8bb-ff41-996c-e917-3139ab75dd6e" unnumbered="true">1 &lt;xsd:element name=”propertyName”
-2   [minOccurs=”0|N”] [maxOccurs=”1|N|unbounded”][nillable=”true|false”]&gt;
+<sourcecode id="_8ea0cb2c-e524-1bbd-b263-76e89d7fea20" unnumbered="true">1 &lt;xsd:element name="propertyName"
+2   [minOccurs="0|N"] [maxOccurs="1|N|unbounded"][nillable="true|false"]&gt;
 3   &lt;xsd:simpleType&gt;
-4       &lt;xsd:restriction base=”xsd:integer”&gt;
-5           [&lt;xsd:totalDigits value=”nDigits”/&gt;]
-6          &lt;!— … Optional facets describe in sub-clause 8.4.4.2 … —&gt;
+4       &lt;xsd:restriction base="xsd:integer"&gt;
+5           [&lt;xsd:totalDigits value="nDigits"/&gt;]
+6          &lt;!-- ... Optional facets describe in sub-clause 8.4.4.2 ... --&gt;
 7       &lt;/xsd:restriction&gt;
 8   &lt;/xsd:simpleType&gt;
 9 &lt;/xsd:element&gt;</sourcecode>
@@ -2162,8 +2085,8 @@ application schema (line 1)</p>
 <title>Real valued properties (Level SF-0, SF-1)</title>
 <p id="_d30b7a0a-2a65-3c8a-b990-7cf9b45039cf">SHORT FORM</p>
 
-<sourcecode id="_cbbc1fec-89f2-8234-553c-18ca8d172b94" unnumbered="true">1 &lt;xsd:element name=”propertyName” type=”xsd:double”
-2       [minOccurs=”0|N”] [maxOccurs=”0|N|unbounded”][nillable=”true|false”]/&gt;</sourcecode>
+<sourcecode id="_9ed82f1c-fd95-d876-bb84-ee22dc2e18ef" unnumbered="true">1 &lt;xsd:element name="propertyName" type="xsd:double"
+2       [minOccurs="0|N"] [maxOccurs="0|N|unbounded"][nillable="true|false"]/&gt;</sourcecode>
 
 
 <p id="_aefa9bb6-a60e-7f04-2068-63db0fc2635a"><strong>Compliance rules:</strong></p>
@@ -2218,13 +2141,13 @@ application schema (line 1)</p>
 
 <p id="_cb64a552-a23a-5050-a6ab-6225cbeb99a1">LONG FORM</p>
 
-<sourcecode id="_dc1c2ad3-b569-0905-b001-4816ee010717" unnumbered="true">1 &lt;xsd:element name=”propertyName” [minOccurs=”0|N”]
-        [maxOccurs=”1|N|unbounded”][nillable=”true|false”&gt;
+<sourcecode id="_1e5a4f45-9e8f-790a-6125-d2f9b0562042" unnumbered="true">1 &lt;xsd:element name="propertyName" [minOccurs="0|N"]
+        [maxOccurs="1|N|unbounded"][nillable="true|false"&gt;
 2   &lt;xsd :simpleType&gt;
-3       &lt;xsd:restriction base=”xsd:double|xsd:decimal”&gt;
-4           … Optional facets described in sub-clause 8.4.4.2 …
-5           [&lt;xsd:totalDigits value=”N”/&gt;]
-6           [&lt;xsd:fractionDigits value=”N” /&gt;]
+3       &lt;xsd:restriction base="xsd:double|xsd:decimal"&gt;
+4           ... Optional facets described in sub-clause 8.4.4.2 ...
+5           [&lt;xsd:totalDigits value="N"/&gt;]
+6           [&lt;xsd:fractionDigits value="N" /&gt;]
 7       &lt;/xsd:restiction&gt;
 8   &lt;/xsd :simpleType&gt;
 9 &lt;/xsd:element&gt;</sourcecode>
@@ -2295,8 +2218,8 @@ application schema (line 1)</p>
 <title>Character string valued properties (Level SF-0, SF-1)</title>
 <p id="_77e43de6-8ba8-77dc-fa39-6ab3df1a146a">SHORT FORM</p>
 
-<sourcecode id="_d04ed2cc-5e45-d2bf-2b20-1b0064df3bcb" unnumbered="true">1 &lt;xsd:element name=”propertyName” type=”xsd:string”
-2       [minOccurs=”0|N”] [maxOccurs=”1|N|unbounded”] [nillable=”true|false”]/&gt;</sourcecode>
+<sourcecode id="_1fd66985-c85e-80b1-4d06-03c2c2dca2f4" unnumbered="true">1 &lt;xsd:element name="propertyName" type="xsd:string"
+2       [minOccurs="0|N"] [maxOccurs="1|N|unbounded"] [nillable="true|false"]/&gt;</sourcecode>
 
 
 <p id="_f1d6f558-07db-c4b8-7e6e-df3436e773aa"><strong>Compliance rules:</strong></p>
@@ -2347,12 +2270,12 @@ application schema (line 1)</p>
 
 <p id="_5915b867-0396-c17f-2337-d95e59410c44">LONG FORM</p>
 
-<sourcecode id="_06cb8edd-4bfd-a225-c2eb-613f864af707" unnumbered="true">1 &lt;xsd:element name=”propertyName”
-2       [minOccurs=”0|N”] [maxOccurs=”1|N|unbounded”] [nillable=”true|false”]&gt;
+<sourcecode id="_f19a07d7-934b-b73a-b962-742f1f833932" unnumbered="true">1 &lt;xsd:element name="propertyName"
+2       [minOccurs="0|N"] [maxOccurs="1|N|unbounded"] [nillable="true|false"]&gt;
 2   &lt;xsd:simpleType&gt;
-3       &lt;xsd:restriction base=”xsd:string”&gt;
-4           &lt;xsd:maxLength value=”nCharacters”/&gt; -or- &lt;xsd:length value=”nCharacters”/&gt;
-5           … Optional facets described in sub-clause 8.4.4.2 …
+3       &lt;xsd:restriction base="xsd:string"&gt;
+4           &lt;xsd:maxLength value="nCharacters"/&gt; -or- &lt;xsd:length value="nCharacters"/&gt;
+5           ... Optional facets described in sub-clause 8.4.4.2 ...
 6       &lt;/xsd:restriction&gt;
 7   &lt;/xsd:simpleType&gt;
 8 &lt;/xsd:element&gt;</sourcecode>
@@ -2435,8 +2358,8 @@ application schema (line 1)</p>
 <title>Date valued properties (Level SF-0, SF-1)</title>
 <p id="_5ce27511-6246-f0a4-6898-dd835d389cb9">SHORT FORM</p>
 
-<sourcecode id="_1a03ae66-9fdd-7cc9-ba8a-08b8ac55964a" unnumbered="true">1 &lt;xsd:element name=”propertyName” type=”xsd:date | xsd:dateTime”
-2       [minOccurs=”0|N”] [maxOccurs=”0|N|unbounded”] [nillable=”true|false”]&gt;</sourcecode>
+<sourcecode id="_5b3cc95e-b29a-a358-c20b-78e2d593aeaf" unnumbered="true">1 &lt;xsd:element name="propertyName" type="xsd:date | xsd:dateTime"
+2       [minOccurs="0|N"] [maxOccurs="0|N|unbounded"] [nillable="true|false"]&gt;</sourcecode>
 
 
 <p id="_3aa1d581-d353-dcc6-a616-eaacd2bb7694"><strong>Compliance Rules:</strong></p>
@@ -2491,11 +2414,11 @@ application schema (line 1)</p>
 
 <p id="_36a8b549-78e7-6006-10f0-2646a0ac914e">LONG FORM</p>
 
-<sourcecode id="_51801806-8f0d-6bbb-6e3f-29bc256f291a" unnumbered="true">1 &lt;xsd:element name=”propertyName”
-2       [minOccurs=”0|N”] [maxOccurs=”0|N|unbounded”] [nillable=”true|false”]&gt;
+<sourcecode id="_6d8d7281-dd76-2ea9-4db2-608e21132eb9" unnumbered="true">1 &lt;xsd:element name="propertyName"
+2       [minOccurs="0|N"] [maxOccurs="0|N|unbounded"] [nillable="true|false"]&gt;
 3   &lt;xsd:simpleType&gt;
-4       &lt;xsd:restriction base=”xsd:date | xsd:dateTime”&gt;
-5           … Optional facets described in sub-clause 8.4.4.2. …
+4       &lt;xsd:restriction base="xsd:date | xsd:dateTime"&gt;
+5           ... Optional facets described in sub-clause 8.4.4.2. ...
 6       &lt;/xsd:restriction&gt;
 7   &lt;/xsd:simpleType&gt;
 8 &lt;/xsd:element&gt;</sourcecode>
@@ -3235,10 +3158,10 @@ application schema</p>
 <title>Internationalized string</title>
 <p id="_a6819488-9397-9a7f-d8cc-0ee540cf3fc7">TYPE DECLARATION</p>
 
-<sourcecode id="_1452bb78-d39c-8528-3a95-61941ec21152" unnumbered="true">1 &lt;xsd:complexType name=”xxx:LanguageStringType”&gt;
+<sourcecode id="_f1912f3e-7110-a4e4-1fa1-b22c0241a091" unnumbered="true">1 &lt;xsd:complexType name="xxx:LanguageStringType"&gt;
 2   &lt;xsd:simpleContent&gt;
-3       &lt;xsd:extension base=”string”&gt;
-4           &lt;xsd:attribute ref=”xml:lang” use=”optional”/&gt;
+3       &lt;xsd:extension base="string"&gt;
+4           &lt;xsd:attribute ref="xml:lang" use="optional"/&gt;
 5       &lt;/xsd:extension&gt;
 6   &lt;/xsd:simpleContent&gt;
 7 &lt;/xsd:complexType&gt;</sourcecode>
@@ -3286,8 +3209,8 @@ target namespace of the application schema (line 1)</p>
 
 <p id="_e92d0ef7-8ae4-6364-3684-6bcf4aef797a">SHORT FORM</p>
 
-<sourcecode id="_b5f94a07-9eda-2272-aadd-2def999bea20" unnumbered="true">1 &lt;xsd:element name=”propertyName” type=”xxx:LanguageStringType”
-2       [minOccurs=”0|N”] [maxOccurs=”1|N|unbounded”] [nillable=”true|false”]/&gt;</sourcecode>
+<sourcecode id="_10ae90d3-5b41-4d35-f43d-e87d9255e8f3" unnumbered="true">1 &lt;xsd:element name="propertyName" type="xxx:LanguageStringType"
+2       [minOccurs="0|N"] [maxOccurs="1|N|unbounded"] [nillable="true|false"]/&gt;</sourcecode>
 
 
 <p id="_8eecdf77-1f1d-cc2e-81a4-f44e295596ca"><strong>Compliance rules:</strong></p>
@@ -3339,13 +3262,13 @@ namespace of application schema</p>
 
 <p id="_fb725625-b8d8-6f9f-7fca-20da2f8513b5">LONG FORM</p>
 
-<sourcecode id="_dd50a632-b655-5db4-dcbc-f88ddd05e2cd" unnumbered="true">1 &lt;xsd:element name=”propertyName”
-2       [minOccurs=”0|N”] [maxOccurs=”1|N|unbounded”][nillable=”true|false”]&gt;
+<sourcecode id="_f8b45d98-494f-ba86-8edf-6a512376f300" unnumbered="true">1 &lt;xsd:element name="propertyName"
+2       [minOccurs="0|N"] [maxOccurs="1|N|unbounded"][nillable="true|false"]&gt;
 3   &lt;xsd:complexType&gt;
 4       &lt;xsd:simpleContent&gt;
-5           &lt;xsd:restriction base=”xxx:LanguageStringType”&gt;
-6               &lt;xsd:maxLength value=”nCharacters”/&gt;-or-&lt;xsd:length value=”nCharacters”/&gt;
-7               … Optional facets described in sub-clause 8.4.4.2 …
+5           &lt;xsd:restriction base="xxx:LanguageStringType"&gt;
+6               &lt;xsd:maxLength value="nCharacters"/&gt;-or-&lt;xsd:length value="nCharacters"/&gt;
+7               ... Optional facets described in sub-clause 8.4.4.2 ...
 8           &lt;/xsd:restriction&gt;
 9       &lt;/xsd:simpleContent&gt;
 10  &lt;/xsd:complexType&gt;
@@ -4391,62 +4314,62 @@ default="../Dictionaries/HydroFeatureCodeTypeDictionary.xml"/&gt;
 <title>Internationalized string example</title>
 <p id="_cc6a50ec-03f7-56a4-674c-68bf1be9f418">The following schema defines a single internationalized string element:</p>
 
-<sourcecode id="_27d46655-ef57-c934-f333-89225e945ab8" unnumbered="true">&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;
+<sourcecode id="_85946aea-172e-ca7d-70bd-6aa45ed898b0" unnumbered="true">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;schema
-    targetNamespace=”http://www.opengis.net/test”
-    xmlns=”http://www.w3.org/2001/XMLSchema”
-    xmlns:test=”http://www.opengis.net/test”
-    xmlns:xml=”http://www.w3.org/XML/1998/namespace”
-    xmlns:gml=”http://www.opengis.net/gml/3.2”
-    xmlns:gmlsf=”http://www.opengis.net/gmlsf/2.0”
-    elementFormDefault=”qualified”
-    version=”1.0”&gt;
+    targetNamespace="http://www.opengis.net/test"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:test="http://www.opengis.net/test"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+    elementFormDefault="qualified"
+    version="1.0"&gt;
 
     &lt;annotation&gt;
-        &lt;appinfo source=”http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd”&gt;
+        &lt;appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd"&gt;
             &lt;gmlsf:ComplianceLevel&gt;0&lt;/gmlsf:ComplianceLevel&gt;
         &lt;/appinfo&gt;
     &lt;/annotation&gt;
-    &lt;!— ============================================================= —&gt;
-    &lt;!— === includes and imports === —&gt;
-    &lt;!— ============================================================= —&gt;
-    &lt;import namespace=”http://www.w3.org/XML/1998/namespace”
-        schemaLocation=”http://www.w3.org/2001/xml.xsd”/&gt;
-    &lt;import namespace=”http://www.opengis.net/gml/3.2”
-        schemaLocation=”http://schemas.opengis.net/gml/3.2.1/gml.xsd”/&gt;
-    &lt;import namespace=”http://www.opengis.net/gmlsf/2.0”
-schemaLocation=”http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd”/&gt;
-    &lt;!— ============================================================= —&gt;
-    &lt;!— Language string type —&gt;
-    &lt;!— ============================================================= —&gt;
-    &lt;complexType name=”LanguageStringType”&gt;
+    &lt;!-- ============================================================= --&gt;
+    &lt;!-- === includes and imports === --&gt;
+    &lt;!-- ============================================================= --&gt;
+    &lt;import namespace="http://www.w3.org/XML/1998/namespace"
+        schemaLocation="http://www.w3.org/2001/xml.xsd"/&gt;
+    &lt;import namespace="http://www.opengis.net/gml/3.2"
+        schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/&gt;
+    &lt;import namespace="http://www.opengis.net/gmlsf/2.0"
+schemaLocation="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd"/&gt;
+    &lt;!-- ============================================================= --&gt;
+    &lt;!-- Language string type --&gt;
+    &lt;!-- ============================================================= --&gt;
+    &lt;complexType name="LanguageStringType"&gt;
         &lt;simpleContent&gt;
-            &lt;extension base=”string”&gt;
-                &lt;attribute ref=”xml:lang” use=”optional”/&gt;
+            &lt;extension base="string"&gt;
+                &lt;attribute ref="xml:lang" use="optional"/&gt;
             &lt;/extension&gt;
         &lt;/simpleContent&gt;
     &lt;/complexType&gt;
-    &lt;!— ============================================================= —&gt;
-    &lt;!— Define a feature type —&gt;
-    &lt;!— ============================================================= —&gt;
-    &lt;element name=”Description” type=”test:DescriptionType”
-        substitutionGroup=”gml:AbstractFeature”/&gt;
-    &lt;complexType name=”DescriptionType”&gt;
+    &lt;!-- ============================================================= --&gt;
+    &lt;!-- Define a feature type --&gt;
+    &lt;!-- ============================================================= --&gt;
+    &lt;element name="Description" type="test:DescriptionType"
+        substitutionGroup="gml:AbstractFeature"/&gt;
+    &lt;complexType name="DescriptionType"&gt;
         &lt;complexContent&gt;
-            &lt;extension base=”gml:AbstractFeatureType”&gt;
+            &lt;extension base="gml:AbstractFeatureType"&gt;
                 &lt;sequence&gt;
-                    &lt;element name=”descId”&gt;
+                    &lt;element name="descId"&gt;
                         &lt;simpleType&gt;
-                            &lt;restriction base=”string”&gt;
-                                &lt;maxLength value=”9”/&gt;
+                            &lt;restriction base="string"&gt;
+                                &lt;maxLength value="9"/&gt;
                             &lt;/restriction&gt;
                         &lt;/simpleType&gt;
                     &lt;/element&gt;
-                    &lt;element name=”descText” maxOccurs=”unbounded”&gt;
+                    &lt;element name="descText" maxOccurs="unbounded"&gt;
                         &lt;complexType&gt;
                             &lt;simpleContent&gt;
-                                &lt;restriction base=”test:LanguageStringType”&gt;
-                                    &lt;maxLength value=”20”/&gt;
+                                &lt;restriction base="test:LanguageStringType"&gt;
+                                    &lt;maxLength value="20"/&gt;
                                 &lt;/restriction&gt;
                             &lt;/simpleContent&gt;
                         &lt;/complexType&gt;
@@ -4455,22 +4378,22 @@ schemaLocation=”http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd”
             &lt;/extension&gt;
         &lt;/complexContent&gt;
     &lt;/complexType&gt;
-    &lt;!— ============================================================= —&gt;
-    &lt;!— Define a feature collection —&gt;
-    &lt;!— ============================================================= —&gt;
-    &lt;element name=”Descriptions”
-            type=”test:DescriptionsType”
-            substitutionGroup=”gml:AbstractGML”/&gt;
-    &lt;complexType name=”DescriptionsType”&gt;
+    &lt;!-- ============================================================= --&gt;
+    &lt;!-- Define a feature collection --&gt;
+    &lt;!-- ============================================================= --&gt;
+    &lt;element name="Descriptions"
+            type="test:DescriptionsType"
+            substitutionGroup="gml:AbstractGML"/&gt;
+    &lt;complexType name="DescriptionsType"&gt;
         &lt;complexContent&gt;
-            &lt;extension base=”gml:AbstractFeatureType”&gt;
-                &lt;sequence minOccurs=”1” maxOccurs=”unbounded”&gt;
-                    &lt;element name=”featureMember”&gt;
+            &lt;extension base="gml:AbstractFeatureType"&gt;
+                &lt;sequence minOccurs="1" maxOccurs="unbounded"&gt;
+                    &lt;element name="featureMember"&gt;
                         &lt;complexType&gt;
                             &lt;complexContent&gt;
-                                &lt;extension base=”gml:AbstractFeatureMemberType”&gt;
+                                &lt;extension base="gml:AbstractFeatureMemberType"&gt;
                                     &lt;sequence&gt;
-                                        &lt;element ref=”gml:AbstractFeature”/&gt;
+                                        &lt;element ref="gml:AbstractFeature"/&gt;
                                     &lt;/sequence&gt;
                                 &lt;/extension&gt;
                             &lt;/complexContent&gt;
@@ -4485,18 +4408,18 @@ schemaLocation=”http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd”
 
 <p id="_457a1aec-91d5-5fbd-4fc6-51bf0d294287">An instance document might be:</p>
 
-<sourcecode id="_e31d4293-bf83-5463-d0c9-cd7e74af8d52" unnumbered="true">&lt;?xml version=”1.0”?&gt;
-&lt;test:Descriptions gml:id=”ID0”
-    xmlns:test=”http://www.opengis.net/test”
-    xmlns:gml=”http://www.opengis.net/gml/3.2”
-    xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”
-    xsi:schemaLocation=”http://www.opengis.net/test ./test.xsd”&gt;
+<sourcecode id="_d263ab88-0eb3-4d36-08ce-12b7332c7fba" unnumbered="true">&lt;?xml version="1.0"?&gt;
+&lt;test:Descriptions gml:id="ID0"
+    xmlns:test="http://www.opengis.net/test"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/test ./test.xsd"&gt;
     &lt;test:featureMember&gt;
-        &lt;test:Description gml:id=”ID1”&gt;
+        &lt;test:Description gml:id="ID1"&gt;
             &lt;test:descId&gt;12345&lt;/test:descId&gt;
-            &lt;test:descText xml:lang=”en”&gt;Hello world.&lt;/test:descText&gt;
-            &lt;test:descText xml:lang=”fr”&gt;Bonjour monde.&lt;/test:descText&gt;
-            &lt;test:descText xml:lang=”el”&gt;Γειά σου κόσμος&lt;/test:descText&gt;
+            &lt;test:descText xml:lang="en"&gt;Hello world.&lt;/test:descText&gt;
+            &lt;test:descText xml:lang="fr"&gt;Bonjour monde.&lt;/test:descText&gt;
+            &lt;test:descText xml:lang="el"&gt;Γειά σου κόσμος&lt;/test:descText&gt;
         &lt;/test:Description&gt;
     &lt;/test:featureMember&gt;
 &lt;/test:Descriptions&gt;</sourcecode>
@@ -4507,44 +4430,44 @@ schemaLocation=”http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd”
 <title>Circle-by-center-point Example</title>
 <p id="_f59c8048-2606-45a6-b658-3dfeb76f2acc">The following example illustrates a schema that declares one geometric property whose value is a circle.</p>
 
-<sourcecode id="_513cb70a-afdd-6f67-a22f-dc8f91fb987e" unnumbered="true">&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;
+<sourcecode id="_a4300874-d140-3ab2-2890-f165d932d815" unnumbered="true">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;xsd:schema
-    targetNamespace=”http://www.someserver.com/rz”
-    xmlns:myns=”http://www.someserver.com/rz”
-    xmlns:xsd=”http://www.w3.org/2001/XMLSchema”
-    xmlns:gml=”http://www.opengis.net/gml/3.2”
-    elementFormDefault=”qualified”
-    xmlns:gmlsf=”http://www.opengis.net/gmlsf/2.0”
-    version=”myns:2003”&gt;
+    targetNamespace="http://www.someserver.com/rz"
+    xmlns:myns="http://www.someserver.com/rz"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    elementFormDefault="qualified"
+    xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+    version="myns:2003"&gt;
 
     &lt;xsd:annotation&gt;
-        &lt;xsd:appinfo source=”http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd”&gt;
+        &lt;xsd:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd"&gt;
             &lt;gmlsf:ComplianceLevel&gt;0&lt;/gmlsf:ComplianceLevel&gt;
         &lt;/xsd:appinfo&gt;
     &lt;/xsd:annotation&gt;
 
-    &lt;!— ============================================================= —&gt;
-    &lt;!— === includes and imports === —&gt;
-    &lt;!— ============================================================= —&gt;
-    &lt;xsd:import namespace=”http://www.w3.org/XML/1998/namespace”
-            schemaLocation=”http://www.w3.org/2001/xml.xsd”/&gt;
-    &lt;xsd:import namespace=”http://www.opengis.net/gml/3.2”
-            schemaLocation=”http://schemas.opengis.net/gml/3.2.1/gml.xsd”/&gt;
-    &lt;xsd:import namespace=”http://www.opengis.net/gmlsf/2.0”
-schemaLocation=”http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd”/&gt;
-    &lt;xsd:element name=”RadZones”
-                type=”myns:RadZonesType”
-                substitutionGroup=”gml:AbstractFeature”/&gt;
-    &lt;xsd:complexType name=”RadZonesType”&gt;
+    &lt;!-- ============================================================= --&gt;
+    &lt;!-- === includes and imports === --&gt;
+    &lt;!-- ============================================================= --&gt;
+    &lt;xsd:import namespace="http://www.w3.org/XML/1998/namespace"
+            schemaLocation="http://www.w3.org/2001/xml.xsd"/&gt;
+    &lt;xsd:import namespace="http://www.opengis.net/gml/3.2"
+            schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/&gt;
+    &lt;xsd:import namespace="http://www.opengis.net/gmlsf/2.0"
+schemaLocation="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd"/&gt;
+    &lt;xsd:element name="RadZones"
+                type="myns:RadZonesType"
+                substitutionGroup="gml:AbstractFeature"/&gt;
+    &lt;xsd:complexType name="RadZonesType"&gt;
         &lt;xsd:complexContent&gt;
-            &lt;xsd:extension base=”gml:AbstractFeatureType”&gt;
+            &lt;xsd:extension base="gml:AbstractFeatureType"&gt;
                 &lt;xsd:sequence&gt;
-                    &lt;xsd:element name=”title” type=”xsd:string”/&gt;
-                    &lt;xsd:element name=”abstract” type=”xsd:string” minOccurs=”0”/&gt;
-                    &lt;xsd:element name=”rems” type=”gml:MeasureType”/&gt;
-                    &lt;xsd:element name=”where”
-                                type=”gml:SurfacePropertyType”
-                                maxOccurs=”unbounded”/&gt;
+                    &lt;xsd:element name="title" type="xsd:string"/&gt;
+                    &lt;xsd:element name="abstract" type="xsd:string" minOccurs="0"/&gt;
+                    &lt;xsd:element name="rems" type="gml:MeasureType"/&gt;
+                    &lt;xsd:element name="where"
+                                type="gml:SurfacePropertyType"
+                                maxOccurs="unbounded"/&gt;
                 &lt;/xsd:sequence&gt;
             &lt;/xsd:extension&gt;
         &lt;/xsd:complexContent&gt;
@@ -4554,35 +4477,35 @@ schemaLocation=”http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd”
 
 <p id="_d4e9bdb0-29d9-6b8c-9106-4e3ea286535b">An instance document might be:</p>
 
-<sourcecode id="_332695fa-ad1c-4650-258d-7c320a406b59" unnumbered="true">&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;
+<sourcecode id="_836ecb85-5bc7-748a-469a-eb7b2015ace5" unnumbered="true">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;rz:RadZones
-    gml:id=”RZ001”
-    xmlns:rz=”http://www.someserver.com/rz”
-    xmlns:gml=”http://www.opengis.net/gml/3.2”
-    xmlns:xlink=”http://www.w3.org/1999/xlink”
-    xmlns:xsi=”http://www.w3.org/2001/XMLSchema-instance”
-    xsi:schemaLocation=”http://www.someserver.com/rz
+    gml:id="RZ001"
+    xmlns:rz="http://www.someserver.com/rz"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.someserver.com/rz
                         http://www.someserver.com/schemas/RadZones.xsd
                         http://www.opengis.net/gml/3.2
-                        http://schemas.opengis.net/gml/3.2.1/gml.xsd”&gt;
+                        http://schemas.opengis.net/gml/3.2.1/gml.xsd"&gt;
     &lt;rz:title&gt;Radiation Hot Spots&lt;/rz:title&gt;
     &lt;rz:abstract&gt;Radiation hot spots in the vicinity of the AnyTown nuclear reactor. Only
 readings that exceed the background radiation of 100 millirems per hour.&lt;/rz:abstract&gt;
-    &lt;rz:rems uom=”REM”&gt;170&lt;/rz:rems&gt;
+    &lt;rz:rems uom="REM"&gt;170&lt;/rz:rems&gt;
     &lt;rz:where&gt;
         &lt;gml:Surface
-            gml:id=”RZ001_1”
-            srsName=”http://www.opengis.net/def/crs/EPSG/0/4326”&gt;
+            gml:id="RZ001_1"
+            srsName="http://www.opengis.net/def/crs/EPSG/0/4326"&gt;
             &lt;gml:patches&gt;
                 &lt;gml:PolygonPatch&gt;
                     &lt;gml:exterior&gt;
                         &lt;gml:Ring&gt;
                             &lt;gml:curveMember&gt;
-                                &lt;gml:Curve gml:id=”C01”&gt;
+                                &lt;gml:Curve gml:id="C01"&gt;
                                     &lt;gml:segments&gt;
-                                        &lt;gml:CircleByCenterPoint numArc=”1”&gt;
+                                        &lt;gml:CircleByCenterPoint numArc="1"&gt;
                                             &lt;gml:pos&gt;51.389 30.099&lt;/gml:pos&gt;
-                                            &lt;gml:radius uom=”m”&gt;20000&lt;/gml:radius&gt;
+                                            &lt;gml:radius uom="m"&gt;20000&lt;/gml:radius&gt;
                                         &lt;/gml:CircleByCenterPoint&gt;
                                     &lt;/gml:segments&gt;
                                 &lt;/gml:Curve&gt;
@@ -4720,16 +4643,16 @@ count(self::gml:Surface/gml:patches/*)"&gt;
 <p id="_6ff3dbd2-ccb4-5ac2-e5a2-85436a037663"><link target="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfL2.sch"/></p>
 </annex><bibliography><references id="_normative_references" normative="true" obligation="informative">
 <title>Normative references</title><p id="_cdc64d2a-a937-72f4-1261-c3b19cc626b1">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
- <bibitem id="ogc07-036" type="standard">  <fetched>2022-09-06</fetched>  
+<bibitem id="ogc07-036" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
 <title type="title-main" format="text/plain" language="en" script="Latn">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
-  <uri type="obp">https://portal.ogc.org/files/?artifact_id=20509</uri>  <docidentifier type="OGC" primary="true">07-036</docidentifier>  <date type="published">    <on>2007-10-05</on>  </date>  <contributor>    <role type="author"/>    <person>      
+  <uri type="src"/>  <uri type="obp">https://portal.ogc.org/files/?artifact_id=20509</uri>  <docidentifier type="OGC" primary="true">07-036</docidentifier>  <date type="published">    <on>2007-10-05</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename>Clemens Portele</completename>      </name>
     </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Open Geospatial Consortium</name>
-    </organization>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">The OpenGIS® Geography Markup Language Encoding Standard (GML) The Geography Markup Language (GML) is an XML grammar for expressing geographical features. GML serves as a modeling language for geographic systems as well as an open interchange format for geographic transactions on the Internet. As with most XML based grammars, there are two parts to the grammar – the schema that describes the document and the instance document that contains the actual data. A GML document is described using a GML Schema. This allows users and developers to describe generic geographic data sets that contain points, lines and polygons. However, the developers of GML envision communities working to define community-specific application schemas [en.wikipedia.org/wiki/GML_Application_Schemas] that are specialized extensions of GML. Using application schemas, users can refer to roads, highways, and bridges instead of points, lines and polygons. If everyone in a community agrees to use the same schemas they can exchange data easily and be sure that a road is still a road when they view it.  Clients and servers with interfaces that implement the OpenGIS® Web Feature Service Interface Standard[http://www.opengeospatial.org/standards/wfs] read and write GML data. GML is also an ISO standard (ISO 19136:2007) [www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=32554 ]. See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .</abstract>  </bibitem>
- <bibitem id="ogc06-103r3" type="standard">  <fetched>2022-09-06</fetched>  
+    </organization>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">The OpenGIS® Geography Markup Language Encoding Standard (GML) The Geography Markup Language (GML) is an XML grammar for expressing geographical features. GML serves as a modeling language for geographic systems as well as an open interchange format for geographic transactions on the Internet. As with most XML based grammars, there are two parts to the grammar – the schema that describes the document and the instance document that contains the actual data. A GML document is described using a GML Schema. This allows users and developers to describe generic geographic data sets that contain points, lines and polygons. However, the developers of GML envision communities working to define community-specific application schemas [en.wikipedia.org/wiki/GML_Application_Schemas] that are specialized extensions of GML. Using application schemas, users can refer to roads, highways, and bridges instead of points, lines and polygons. If everyone in a community agrees to use the same schemas they can exchange data easily and be sure that a road is still a road when they view it.  Clients and servers with interfaces that implement the OpenGIS® Web Feature Service Interface Standard[http://www.opengeospatial.org/standards/wfs] read and write GML data. GML is also an ISO standard (ISO 19136:2007) [www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=32554 ].   See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .</abstract>  </bibitem>
+<bibitem id="ogc06-103r3" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">OpenGIS Implementation Specification for Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Simple feature access</title>
@@ -4737,39 +4660,68 @@ count(self::gml:Surface/gml:patches/*)"&gt;
 <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Common architecture</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">OpenGIS Implementation Specification for Geographic information — Simple feature access — Part 1: Common architecture</title>
-  <uri type="obp">https://portal.ogc.org/files/?artifact_id=18241</uri>  <docidentifier type="OGC" primary="true">06-103r3</docidentifier>  <date type="published">    <on>2007-01-29</on>  </date>  <contributor>    <role type="author"/>    <person>      
+  <uri type="src"/>  <uri type="obp">https://portal.ogc.org/files/?artifact_id=18241</uri>  <docidentifier type="OGC" primary="true">06-103r3</docidentifier>  <date type="published">    <on>2007-01-29</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename>John Herring</completename>      </name>
     </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Open Geospatial Consortium</name>
-    </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">The OpenGIS® Simple Features Interface Standard (SFS) provides a well-defined and common way for applications to store and access feature data in relational or object-relational databases, so that the data can be used to support other applications through a common feature model, data store and information access interface. OpenGIS Simple Features are geospatial features described using vector data elements such as points, lines and polygons.  Part 1 “Common Architecture supplies the common feature model for use by applications that will use the Simple Features data stores and access interfaces.  Part 2 provides a standard SQL implementation of the abstract model in Part 1. (Note: The OpenGIS® Simple Features Interface Standards for OLE/COM and CORBA are no longer current and are not provided here.)  The corresponding standard for the Web is the OpenGIS® Web Feature Service Interface Standard http://www.opengeospatial.org/standards/wfs.</abstract>  </bibitem>
- <bibitem id="w3cxml-0" type="standard">  <fetched>2022-09-06</fetched>  
-<title format="text/plain">Extensible Markup Language (XML) 1.0 (Third Edition)</title>
-  <uri type="src">https://www.w3.org/TR/REC-xml/</uri>  <docidentifier type="W3C" primary="true">W3C REC-xml</docidentifier>  <docnumber>REC-xml</docnumber>  <language>en</language>  <script>Latn</script>  <status>    <stage>recommendation</stage>  </status>  <relation type="hasEdition">    <bibitem>      <formattedref format="text/plain">W3C REC-xml-19980210</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xml-19980210</docidentifier>    </bibitem>
-  </relation>  <relation type="hasEdition">    <bibitem>      <formattedref format="text/plain">W3C REC-xml-20001006</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xml-20001006</docidentifier>    </bibitem>
-  </relation>  <relation type="instance">    <bibitem>      <formattedref format="text/plain">W3C REC-xml-20040204</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xml-20040204</docidentifier>    </bibitem>
-  </relation>  <relation type="hasEdition">    <bibitem>      <formattedref format="text/plain">W3C PER-xml-20031030</formattedref>      <docidentifier type="W3C" primary="true">W3C PER-xml-20031030</docidentifier>    </bibitem>
+    </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">The OpenGIS® Simple Features Interface Standard (SFS) provides a well-defined and common way for applications to store and access feature data in relational or object-relational databases, so that the data can be used to support other applications through a common feature model, data store and information access interface. OpenGIS Simple Features are geospatial features described using vector data elements such as points, lines and polygons.    Part 1 “Common Architecture supplies the common feature model for use by applications that will use the Simple Features data stores and access interfaces.   Part 2 provides a standard SQL implementation of the abstract model in Part 1. (Note: The OpenGIS® Simple Features Interface Standards for OLE/COM and CORBA are no longer current and are not provided here.)   The corresponding standard for the Web is the OpenGIS® Web Feature Service Interface Standard http://www.opengeospatial.org/standards/wfs.</abstract>  </bibitem>
+<bibitem id="w3cxml-0" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title format="text/plain">Extensible Markup Language (XML) 1.0 (Fifth Edition)</title>
+  <uri type="src">https://www.w3.org/TR/2008/REC-xml-20081126/</uri>  <docidentifier type="W3C" primary="true">W3C REC-xml-20081126</docidentifier>  <docnumber>REC-xml-20081126</docnumber>  <date type="published">    <on>2008-11-26</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+<name>World Wide Web Consortium</name>
+      <abbreviation>W3C</abbreviation>      <uri>https://www.w3.org/</uri>    </organization>  </contributor>  <contributor>    <role type="editor"/>    <person>      
+<name>        <completename language="en" script="Latn">Eve Maler</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="editor"/>    <person>      
+<name>        <completename language="en" script="Latn">François Yergeau</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="editor"/>    <person>      
+<name>        <completename language="en" script="Latn">Jean Paoli</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="editor"/>    <person>      
+<name>        <completename language="en" script="Latn">Michael Sperberg-McQueen</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="editor"/>    <person>      
+<name>        <completename language="en" script="Latn">Tim Bray</completename>      </name>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <status>    <stage>recommendation</stage>  </status>  <relation type="obsoletes">    <bibitem>      <formattedref format="text/plain">W3C PER-xml-20080205</formattedref>      <docidentifier type="W3C" primary="true">W3C PER-xml-20080205</docidentifier>    </bibitem>
+  </relation>  <relation type="updatedBy">    <description format="text/plain">errata</description>    <bibitem>      <formattedref format="text/plain">W3C xml-V10-5e-errata</formattedref>      <docidentifier type="W3C" primary="true">W3C xml-V10-5e-errata</docidentifier>    </bibitem>
+  </relation>  <relation type="editionOf">    <bibitem>      <formattedref format="text/plain">W3C REC-xml-20060816</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xml-20060816</docidentifier>    </bibitem>
   </relation>  <series>    
 <title format="text/plain">W3C REC</title>
-    <number>REC-xml</number>  </series></bibitem>
- <bibitem id="w3cxml-1" type="standard">  <fetched>2022-09-06</fetched>  
+    <number>REC-xml-20081126</number>  </series></bibitem>
+<bibitem id="w3cxml-1" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
 <title format="text/plain">XML Schema Part 1: Structures Second Edition</title>
-  <uri type="src">https://www.w3.org/TR/xmlschema-1/</uri>  <docidentifier type="W3C" primary="true">W3C xmlschema-1</docidentifier>  <docnumber>xmlschema-1</docnumber>  <language>en</language>  <script>Latn</script>  <status>    <stage>recommendation</stage>  </status>  <relation type="hasEdition">    <bibitem>      <formattedref format="text/plain">W3C REC-xmlschema-1-20010502</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xmlschema-1-20010502</docidentifier>    </bibitem>
-  </relation>  <relation type="instance">    <bibitem>      <formattedref format="text/plain">W3C REC-xmlschema-1-20041028</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xmlschema-1-20041028</docidentifier>    </bibitem>
+  <uri type="src">https://www.w3.org/TR/xmlschema-1/</uri>  <docidentifier type="W3C" primary="true">W3C xmlschema-1</docidentifier>  <docnumber>xmlschema-1</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
+<name>World Wide Web Consortium</name>
+      <abbreviation>W3C</abbreviation>      <uri>https://www.w3.org/</uri>    </organization>  </contributor>  <language>en</language>  <script>Latn</script>  <status>    <stage>recommendation</stage>  </status>  <relation type="hasEdition">    <bibitem>      <formattedref format="text/plain">W3C REC-xmlschema-1-20010502</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xmlschema-1-20010502</docidentifier>    </bibitem>
+  </relation>  <relation type="instanceOf">    <bibitem>      <formattedref format="text/plain">W3C REC-xmlschema-1-20041028</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xmlschema-1-20041028</docidentifier>    </bibitem>
   </relation>  <series>    
 <title format="text/plain">W3C REC</title>
     <number>xmlschema-1</number>  </series></bibitem>
- <bibitem id="w3cxml-2" type="standard">  <fetched>2022-09-06</fetched>  
+<bibitem id="w3cxml-2" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
 <title format="text/plain">XML Schema Part 2: Datatypes Second Edition</title>
-  <uri type="src">https://www.w3.org/TR/xmlschema-2/</uri>  <docidentifier type="W3C" primary="true">W3C xmlschema-2</docidentifier>  <docnumber>xmlschema-2</docnumber>  <language>en</language>  <script>Latn</script>  <status>    <stage>recommendation</stage>  </status>  <relation type="hasEdition">    <bibitem>      <formattedref format="text/plain">W3C REC-xmlschema-2-20010502</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xmlschema-2-20010502</docidentifier>    </bibitem>
-  </relation>  <relation type="instance">    <bibitem>      <formattedref format="text/plain">W3C REC-xmlschema-2-20041028</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xmlschema-2-20041028</docidentifier>    </bibitem>
+  <uri type="src">https://www.w3.org/TR/xmlschema-2/</uri>  <docidentifier type="W3C" primary="true">W3C xmlschema-2</docidentifier>  <docnumber>xmlschema-2</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
+<name>World Wide Web Consortium</name>
+      <abbreviation>W3C</abbreviation>      <uri>https://www.w3.org/</uri>    </organization>  </contributor>  <language>en</language>  <script>Latn</script>  <status>    <stage>recommendation</stage>  </status>  <relation type="hasEdition">    <bibitem>      <formattedref format="text/plain">W3C REC-xmlschema-2-20010502</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xmlschema-2-20010502</docidentifier>    </bibitem>
+  </relation>  <relation type="instanceOf">    <bibitem>      <formattedref format="text/plain">W3C REC-xmlschema-2-20041028</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xmlschema-2-20041028</docidentifier>    </bibitem>
   </relation>  <series>    
 <title format="text/plain">W3C REC</title>
     <number>xmlschema-2</number>  </series></bibitem>
- <bibitem id="w3c" type="standard">  <fetched>2022-09-06</fetched>  
-<title format="text/plain">Namespaces in XML</title>
-  <uri type="src">https://www.w3.org/TR/REC-xml-names/</uri>  <docidentifier type="W3C" primary="true">W3C REC-xml-names</docidentifier>  <docnumber>REC-xml-names</docnumber>  <language>en</language>  <script>Latn</script>  <status>    <stage>recommendation</stage>  </status>  <relation type="instance">    <bibitem>      <formattedref format="text/plain">W3C REC-xml-names-19990114</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xml-names-19990114</docidentifier>    </bibitem>
+<bibitem id="w3c" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title format="text/plain">Namespaces in XML 1.0 (Third Edition)</title>
+  <uri type="src">https://www.w3.org/TR/2009/REC-xml-names-20091208/</uri>  <docidentifier type="W3C" primary="true">W3C REC-xml-names-20091208</docidentifier>  <docnumber>REC-xml-names-20091208</docnumber>  <date type="published">    <on>2009-12-08</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+<name>World Wide Web Consortium</name>
+      <abbreviation>W3C</abbreviation>      <uri>https://www.w3.org/</uri>    </organization>  </contributor>  <contributor>    <role type="editor"/>    <person>      
+<name>        <completename language="en" script="Latn">Andrew Layman</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="editor"/>    <person>      
+<name>        <completename language="en" script="Latn">Dave Hollander</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="editor"/>    <person>      
+<name>        <completename language="en" script="Latn">Henry Thompson</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="editor"/>    <person>      
+<name>        <completename language="en" script="Latn">Richard Tobin</completename>      </name>
+    </person>  </contributor>  <contributor>    <role type="editor"/>    <person>      
+<name>        <completename language="en" script="Latn">Tim Bray</completename>      </name>
+    </person>  </contributor>  <language>en</language>  <script>Latn</script>  <status>    <stage>recommendation</stage>  </status>  <relation type="obsoletes">    <bibitem>      <formattedref format="text/plain">W3C PER-xml-names-20090806</formattedref>      <docidentifier type="W3C" primary="true">W3C PER-xml-names-20090806</docidentifier>    </bibitem>
+  </relation>  <relation type="updatedBy">    <description format="text/plain">errata</description>    <bibitem>      <formattedref format="text/plain">W3C xml-names-errata</formattedref>      <docidentifier type="W3C" primary="true">W3C xml-names-errata</docidentifier>    </bibitem>
+  </relation>  <relation type="editionOf">    <bibitem>      <formattedref format="text/plain">W3C REC-xml-names-20060816</formattedref>      <docidentifier type="W3C" primary="true">W3C REC-xml-names-20060816</docidentifier>    </bibitem>
   </relation>  <series>    
 <title format="text/plain">W3C REC</title>
-    <number>REC-xml-names</number>  </series></bibitem>
+    <number>REC-xml-names-20091208</number>  </series></bibitem>
 </references></bibliography>
 </ogc-standard>

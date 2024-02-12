@@ -4,7 +4,7 @@
 <name><completename>Scott Simmons</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><edition>26.0</edition><language>en</language><script>Latn</script><abstract><p>The <eref type="inline" bibitemid="OGC" citeas="OGC"/> provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. "International standards" (as defined in <eref type="inline" bibitemid="ISODIR2" citeas="ISO/IEC Directives, Part 2"/>) are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:</p>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>26.0</edition><language>en</language><script>Latn</script><abstract><p>The <eref type="inline" bibitemid="OGC" citeas="OGC"/> provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. "International standards" (as defined in <eref type="inline" bibitemid="ISODIR2" citeas="ISO/IEC Directives, Part 2"/>) are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:</p>
 
 <p>A document, established by consensus and approved by the OGC Membership, that provides, for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree of order in a given context.</p>
 
@@ -31,4 +31,4 @@
 <p>The OGC Principles of Conduct (<eref type="inline" bibitemid="OGCPOC" citeas="OGC Principles of Conduct"/>) govern personal and public interactions in any TC activity.</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2018</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><ext><doctype>policy</doctype><editorialgroup><committee>Technical Committee</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>policy</doctype><editorialgroup><committee>Technical Committee</committee></editorialgroup></ext></bibdata>

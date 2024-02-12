@@ -14,7 +14,7 @@
 <name><completename>Panagiotis (Peter) A. Vretanos</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><version><revision-date>2018-04-07</revision-date><draft>3.0.0-draft.1</draft></version><language>en</language><script>Latn</script><abstract><p>A Web Feature Service (WFS) offers the capability to create, modify and query spatial data on the Web. The WFS standard is a multi-part document. This part specifies the core capabilities that every WFS has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Examples include support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems.</p>
+<abbreviation>OGC</abbreviation></organization></contributor><version><revision-date>2018-04-07</revision-date><draft>3.0.0-draft.1</draft></version><language>en</language><script>Latn</script><abstract><p>A Web Feature Service (WFS) offers the capability to create, modify and query spatial data on the Web. The WFS standard is a multi-part document. This part specifies the core capabilities that every WFS has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Examples include support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems.</p>
 
 <p>By default, every WFS instance provides access to a single dataset. Rather than sharing the data as a complete dataset, WFS offers direct, fine-grained access to the data at the feature (object) level.</p>
 
@@ -65,6 +65,6 @@
 <td valign="middle" align="left"><xref target="_feature_2">7.14 Feature</xref></td>
 </tr></tbody>
 </table>
-</abstract><status><stage>candidate</stage></status><copyright><from>2022</from><owner><organization>
+</abstract><status><stage>candidate</stage></status><copyright><from>2024</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>web feature service</keyword><keyword>wfs</keyword><keyword>feature</keyword><keyword>property</keyword><keyword>geographic information</keyword><keyword>spatial data</keyword><keyword>spatial things</keyword><keyword>dataset</keyword><keyword>distribution</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>geojson</keyword><keyword>gml</keyword><keyword>html</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>web feature service</keyword><keyword>wfs</keyword><keyword>feature</keyword><keyword>property</keyword><keyword>geographic information</keyword><keyword>spatial data</keyword><keyword>spatial things</keyword><keyword>dataset</keyword><keyword>distribution</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>geojson</keyword><keyword>gml</keyword><keyword>html</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

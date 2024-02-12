@@ -26,6 +26,6 @@
 <name><completename>Panagiotis (Peter) A. Vretanos</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><edition>2.0</edition><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2012</from><owner><organization>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>2.0</edition><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2012</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><ext><doctype>standard</doctype><subdoctype>profile</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>standard</doctype><subdoctype>profile</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

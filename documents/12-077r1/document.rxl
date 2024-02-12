@@ -4,6 +4,6 @@
 <name><completename>Rahul Thakkar</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2012</from><owner><organization>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2012</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><ext><doctype>other</doctype><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>other</doctype><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata>

@@ -8,6 +8,6 @@
 <name><completename>Gabby Getz</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><edition>1.0</edition><version><revision-date>2018-04-07</revision-date></version><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2016-2019</from><owner><organization>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version><revision-date>2018-04-07</revision-date></version><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2016-2019</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><ext><doctype>community-standard</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>community-standard</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

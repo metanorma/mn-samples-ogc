@@ -16,7 +16,7 @@
 <name><completename>Ben Domenico</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>This OGC primer provides an overview of the OGC CF-netCDF standards suite by describing the CF-netCDF core and extensions. The CF-netCDF standard defines how to encode digital geospatial information representing space/time-varying phenomena</p>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>This OGC primer provides an overview of the OGC CF-netCDF standards suite by describing the CF-netCDF core and extensions. The CF-netCDF standard defines how to encode digital geospatial information representing space/time-varying phenomena</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2011</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>netcdf</keyword><keyword>cf-netcdf</keyword><ext><doctype>other</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>netcdf</keyword><keyword>cf-netcdf</keyword><ext><doctype>other</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

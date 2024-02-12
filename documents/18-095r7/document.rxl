@@ -4,11 +4,11 @@
 <name><completename>George Percivall</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>Data cubes for geospatial information provide the means to integrate observations and
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>Data cubes for geospatial information provide the means to integrate observations and
 other types of geospatial data for use in multiple applications through simplified access
 and efficient analytics. Using the Geospatial Coverages data structure, this Community
 Practice defines requirements for a geospatial coverages data cube infrastructure and
 guidelines for enhancements and extensions to the basic core.</p>
-</abstract><status><stage>approved</stage></status><copyright><from>2022</from><owner><organization>
+</abstract><status><stage>approved</stage></status><copyright><from>2024</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><keyword>Data Cubes</keyword><keyword>Coverages</keyword><keyword>Spatial Analytics</keyword><keyword>Geospatial</keyword><ext><doctype>community-practice</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>Data Cubes</keyword><keyword>Coverages</keyword><keyword>Spatial Analytics</keyword><keyword>Geospatial</keyword><ext><doctype>community-practice</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

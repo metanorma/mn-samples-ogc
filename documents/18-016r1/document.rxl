@@ -6,7 +6,7 @@
 <name><completename>Carl Reed, PhD</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-</organization></contributor><edition>1.1</edition><language>en</language><script>Latn</script><abstract><p>This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</p>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.1</edition><language>en</language><script>Latn</script><abstract><p>This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2018</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-</organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>CDB</keyword><keyword>Common Data Base</keyword><keyword>simulation</keyword><keyword>synthetic environment</keyword><keyword>version 1.1</keyword><ext><doctype>release-notes</doctype><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>CDB</keyword><keyword>Common Data Base</keyword><keyword>simulation</keyword><keyword>synthetic environment</keyword><keyword>version 1.1</keyword><ext><doctype>release-notes</doctype><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata>
