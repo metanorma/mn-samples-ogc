@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="2.5.1" schema-version="v1.3.0">
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="2.5.2" schema-version="v1.3.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC Web Feature Service 3.0: Part 1 - Core</title>
 <uri type="xml">https://riboseinc.github.io/ogc-wfs/ogc-wfs.xml</uri><uri type="pdf">https://riboseinc.github.io/ogc-wfs/ogc-wfs.pdf</uri><uri type="doc">https://riboseinc.github.io/ogc-wfs/ogc-wfs.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wfs-1/3.0</docidentifier><docidentifier type="ogc-internal">17-069</docidentifier><docnumber>17-069</docnumber><date type="published"><on>1000-01-01</on></date><date type="issued"><on>1000-01-01</on></date><date type="received"><on>1000-01-01</on></date><contributor><role type="author"/><organization>
@@ -79,7 +79,7 @@
 </localized-string><localized-string key="internal_external_terms_boilerplate" language="en"><p>This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
 <p>This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
 <p>For the purposes of this document, the terms and definitions given in % and the following additionally apply.</p>
-</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">Example</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">%Spellout edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of Recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="admitted" language="en">ALTERNATIVE</localized-string><localized-string key="submitters" language="en">Submitters</localized-string><localized-string key="contributors_clause" language="en">Contributors</localized-string><localized-string key="dochistory" language="en">Revision history</localized-string><localized-string key="table_of_figures" language="en">Table of Figures</localized-string><localized-string key="security_empty" language="en">No security considerations have been made for this document.</localized-string><localized-string key="submission_date" language="en">Submission Date</localized-string><localized-string key="approval_date" language="en">Approval Date</localized-string><localized-string key="publication_date" language="en">Publication Date</localized-string><localized-string key="author" language="en">Author</localized-string><localized-string key="editor" language="en">Editor</localized-string><localized-string key="contributor" language="en">Contributor</localized-string><localized-string key="stage_dict.draft" language="en">Draft</localized-string><localized-string key="stage_dict.work-item-draft" language="en">Work Item Draft</localized-string><localized-string key="stage_dict.swg-draft" language="en">Candidate SWG Draft</localized-string><localized-string key="stage_dict.oab-review" language="en">Candidate OAB Review Draft</localized-string><localized-string key="stage_dict.public-rfc" language="en">Candidate Public RFC Draft</localized-string><localized-string key="stage_dict.tc-vote" language="en">Candidate TC Vote Draft</localized-string><localized-string key="stage_dict.approved" language="en">Approved</localized-string><localized-string key="stage_dict.published" language="en">Published</localized-string><localized-string key="stage_dict.deprecated" language="en">Deprecated</localized-string><localized-string key="stage_dict.rescinded" language="en">Rescinded</localized-string><localized-string key="stage_dict.retired" language="en">Retired</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>3</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>3</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>3</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>3</value></presentation-metadata><metanorma><source><semantic__ogc-standard type="semantic" version="2.5.1" schema-version="v1.3.0">
+</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">Example</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of Recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="admitted" language="en">ALTERNATIVE</localized-string><localized-string key="submitters" language="en">Submitters</localized-string><localized-string key="contributors_clause" language="en">Contributors</localized-string><localized-string key="dochistory" language="en">Revision history</localized-string><localized-string key="table_of_figures" language="en">Table of Figures</localized-string><localized-string key="security_empty" language="en">No security considerations have been made for this document.</localized-string><localized-string key="submission_date" language="en">Submission Date</localized-string><localized-string key="approval_date" language="en">Approval Date</localized-string><localized-string key="publication_date" language="en">Publication Date</localized-string><localized-string key="author" language="en">Author</localized-string><localized-string key="editor" language="en">Editor</localized-string><localized-string key="contributor" language="en">Contributor</localized-string><localized-string key="stage_dict.draft" language="en">Draft</localized-string><localized-string key="stage_dict.work-item-draft" language="en">Work Item Draft</localized-string><localized-string key="stage_dict.swg-draft" language="en">Candidate SWG Draft</localized-string><localized-string key="stage_dict.oab-review" language="en">Candidate OAB Review Draft</localized-string><localized-string key="stage_dict.public-rfc" language="en">Candidate Public RFC Draft</localized-string><localized-string key="stage_dict.tc-vote" language="en">Candidate TC Vote Draft</localized-string><localized-string key="stage_dict.approved" language="en">Approved</localized-string><localized-string key="stage_dict.published" language="en">Published</localized-string><localized-string key="stage_dict.deprecated" language="en">Deprecated</localized-string><localized-string key="stage_dict.rescinded" language="en">Rescinded</localized-string><localized-string key="stage_dict.retired" language="en">Retired</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>3</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>3</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>3</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>3</value></presentation-metadata><metanorma><source><semantic__ogc-standard type="semantic" version="2.5.2" schema-version="v1.3.0">
 <semantic__bibdata type="standard">
 <semantic__title language="en" format="text/plain">OGC Web Feature Service 3.0: Part 1 - Core</semantic__title>
 <semantic__uri type="xml">https://riboseinc.github.io/ogc-wfs/ogc-wfs.xml</semantic__uri><semantic__uri type="pdf">https://riboseinc.github.io/ogc-wfs/ogc-wfs.pdf</semantic__uri><semantic__uri type="doc">https://riboseinc.github.io/ogc-wfs/ogc-wfs.doc</semantic__uri><semantic__docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wfs-1/3.0</semantic__docidentifier><semantic__docidentifier type="ogc-internal">17-069</semantic__docidentifier><semantic__docnumber>17-069</semantic__docnumber><semantic__date type="published"><semantic__on>1000-01-01</semantic__on></semantic__date><semantic__date type="issued"><semantic__on>1000-01-01</semantic__on></semantic__date><semantic__date type="received"><semantic__on>1000-01-01</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
@@ -5475,7 +5475,7 @@ OpenAPI fragments used to define the requirements for the
 
 
 <semantic__bibitem id="semantic__OpenAPI"><semantic__formattedref format="application/x-isodoc+xml">Open API Initiative: <semantic__strong>OpenAPI Specification 3.0.1</semantic__strong>, <semantic__link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md"/></semantic__formattedref><semantic__docidentifier>OpenAPI</semantic__docidentifier></semantic__bibitem>
-<semantic__bibitem id="semantic__rfc2616" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__rfc2616" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-03-05</semantic__fetched>  
 <semantic__title type="main" format="text/plain">Hypertext Transfer Protocol — HTTP/1.1</semantic__title>
   <semantic__uri type="src">https://www.rfc-editor.org/info/rfc2616</semantic__uri>  <semantic__docidentifier type="IETF" primary="true">RFC 2616</semantic__docidentifier>  <semantic__docidentifier type="DOI">10.17487/RFC2616</semantic__docidentifier>  <semantic__docnumber>RFC2616</semantic__docnumber>  <semantic__date type="published">    <semantic__on>1999-06</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="author"/>    <semantic__person>      
 <semantic__name>        <semantic__completename language="en" script="Latn">R. Fielding</semantic__completename>      </semantic__name>
@@ -5507,7 +5507,7 @@ OpenAPI fragments used to define the requirements for the
     <semantic__number>2616</semantic__number>  </semantic__series>  <semantic__series type="stream">    
 <semantic__title format="text/plain">IETF</semantic__title>
   </semantic__series>  <semantic__keyword>HTTP</semantic__keyword>  <semantic__keyword>Hypertext Transfer Protocol</semantic__keyword>  <semantic__keyword>World Wide Web</semantic__keyword>  <semantic__keyword>WWW</semantic__keyword>  <semantic__keyword>hypermedia</semantic__keyword></semantic__bibitem>
-<semantic__bibitem id="semantic__rfc2818" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__rfc2818" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-03-05</semantic__fetched>  
 <semantic__title type="main" format="text/plain">HTTP Over TLS</semantic__title>
   <semantic__uri type="src">https://www.rfc-editor.org/info/rfc2818</semantic__uri>  <semantic__docidentifier type="IETF" primary="true">RFC 2818</semantic__docidentifier>  <semantic__docidentifier type="DOI">10.17487/RFC2818</semantic__docidentifier>  <semantic__docnumber>RFC2818</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2000-05</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="author"/>    <semantic__person>      
 <semantic__name>        <semantic__completename language="en" script="Latn">E. Rescorla</semantic__completename>      </semantic__name>
@@ -5522,7 +5522,7 @@ OpenAPI fragments used to define the requirements for the
     <semantic__number>2818</semantic__number>  </semantic__series>  <semantic__series type="stream">    
 <semantic__title format="text/plain">IETF</semantic__title>
   </semantic__series>  <semantic__keyword>hypertext</semantic__keyword>  <semantic__keyword>transfer</semantic__keyword>  <semantic__keyword>protocol</semantic__keyword>  <semantic__keyword>transport</semantic__keyword>  <semantic__keyword>layer</semantic__keyword>  <semantic__keyword>security</semantic__keyword></semantic__bibitem>
-<semantic__bibitem id="semantic__rfc3339" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__rfc3339" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-03-05</semantic__fetched>  
 <semantic__title type="main" format="text/plain">Date and Time on the Internet: Timestamps</semantic__title>
   <semantic__uri type="src">https://www.rfc-editor.org/info/rfc3339</semantic__uri>  <semantic__docidentifier type="IETF" primary="true">RFC 3339</semantic__docidentifier>  <semantic__docidentifier type="DOI">10.17487/RFC3339</semantic__docidentifier>  <semantic__docnumber>RFC3339</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2002-07</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="author"/>    <semantic__person>      
 <semantic__name>        <semantic__completename language="en" script="Latn">G. Klyne</semantic__completename>      </semantic__name>
@@ -5538,7 +5538,7 @@ OpenAPI fragments used to define the requirements for the
     <semantic__number>3339</semantic__number>  </semantic__series>  <semantic__series type="stream">    
 <semantic__title format="text/plain">IETF</semantic__title>
   </semantic__series>  <semantic__keyword>Timestamps</semantic__keyword>  <semantic__keyword>gregorian calendar</semantic__keyword>  <semantic__keyword>iso</semantic__keyword>  <semantic__keyword>International Organization for Standardization</semantic__keyword></semantic__bibitem>
-<semantic__bibitem id="semantic__rfc3986" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__rfc3986" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-03-05</semantic__fetched>  
 <semantic__title type="main" format="text/plain">Uniform Resource Identifier (URI): Generic Syntax</semantic__title>
   <semantic__uri type="src">https://www.rfc-editor.org/info/rfc3986</semantic__uri>  <semantic__docidentifier type="IETF" primary="true">RFC 3986</semantic__docidentifier>  <semantic__docidentifier type="DOI">10.17487/RFC3986</semantic__docidentifier>  <semantic__docnumber>RFC3986</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2005-01</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="author"/>    <semantic__person>      
 <semantic__name>        <semantic__completename language="en" script="Latn">T. Berners-Lee</semantic__completename>      </semantic__name>
@@ -5559,7 +5559,7 @@ OpenAPI fragments used to define the requirements for the
     <semantic__number>3986</semantic__number>  </semantic__series>  <semantic__series type="stream">    
 <semantic__title format="text/plain">IETF</semantic__title>
   </semantic__series>  <semantic__keyword>Internet protocol</semantic__keyword>  <semantic__keyword>IP</semantic__keyword>  <semantic__keyword>uniform resource identifier</semantic__keyword>  <semantic__keyword>URI</semantic__keyword>  <semantic__keyword>www</semantic__keyword>  <semantic__keyword>world wide web</semantic__keyword></semantic__bibitem>
-<semantic__bibitem id="semantic__rfc5988" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__rfc5988" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-03-05</semantic__fetched>  
 <semantic__title type="main" format="text/plain">Web Linking</semantic__title>
   <semantic__uri type="src">https://www.rfc-editor.org/info/rfc5988</semantic__uri>  <semantic__docidentifier type="IETF" primary="true">RFC 5988</semantic__docidentifier>  <semantic__docidentifier type="DOI">10.17487/RFC5988</semantic__docidentifier>  <semantic__docnumber>RFC5988</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2010-10</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="author"/>    <semantic__person>      
 <semantic__name>        <semantic__completename language="en" script="Latn">M. Nottingham</semantic__completename>      </semantic__name>
@@ -5576,7 +5576,7 @@ OpenAPI fragments used to define the requirements for the
 <semantic__title format="text/plain">IETF</semantic__title>
   </semantic__series>  <semantic__keyword>Link</semantic__keyword>  <semantic__keyword>linking</semantic__keyword>  <semantic__keyword>http header</semantic__keyword>  <semantic__keyword>link relation</semantic__keyword>  <semantic__keyword>web</semantic__keyword></semantic__bibitem>
 <semantic__bibitem id="semantic__GMLSF"><semantic__formattedref format="application/x-isodoc+xml">van den Brink, L., Portele, C., Vretanos, P.: OGC 10-100r3, <semantic__strong>Geography Markup Language (GML) Simple Features Profile</semantic__strong>, <semantic__link target="http://portal.opengeospatial.org/files/?artifact_id=42729"/></semantic__formattedref><semantic__docidentifier>GMLSF</semantic__docidentifier></semantic__bibitem>
-<semantic__bibitem id="semantic__GeoJSON" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__GeoJSON" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-03-05</semantic__fetched>  
 <semantic__title type="main" format="text/plain">The GeoJSON Format</semantic__title>
   <semantic__uri type="src">https://www.rfc-editor.org/info/rfc7946</semantic__uri>  <semantic__docidentifier type="IETF" primary="true">RFC 7946</semantic__docidentifier>  <semantic__docidentifier type="DOI">10.17487/RFC7946</semantic__docidentifier>  <semantic__docnumber>RFC7946</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2016-08</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="author"/>    <semantic__person>      
 <semantic__name>        <semantic__completename language="en" script="Latn">H. Butler</semantic__completename>      </semantic__name>
@@ -5603,14 +5603,14 @@ OpenAPI fragments used to define the requirements for the
 <semantic__bibitem id="semantic__HTML5"><semantic__formattedref format="application/x-isodoc+xml">W3C: <semantic__strong>HTML5</semantic__strong>, W3C Recommendation, <semantic__link target="http://www.w3.org/TR/html5/"/></semantic__formattedref><semantic__docidentifier>HTML5</semantic__docidentifier><semantic__docnumber>5</semantic__docnumber></semantic__bibitem>
 <semantic__bibitem id="semantic__schema.org"><semantic__formattedref format="application/x-isodoc+xml"><semantic__strong>Schema.org</semantic__strong>: <semantic__link target="http://schema.org/docs/schemas.html"/></semantic__formattedref><semantic__docidentifier>schema.org</semantic__docidentifier></semantic__bibitem>
 <semantic__bibitem id="semantic__OGC06-121r8"><semantic__formattedref format="application/x-isodoc+xml">OGC Web Services Common, <semantic__link target="https://www.opengeospatial.org/standards/common"/></semantic__formattedref><semantic__docidentifier type="OGC">OGC 06-121r8</semantic__docidentifier><semantic__docnumber>06-121r8</semantic__docnumber></semantic__bibitem>
-<semantic__bibitem id="semantic__ISOIECDIR2" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__ISOIECDIR2" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-03-05</semantic__fetched>  
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">ISO/IEC Directives, Part 2</semantic__title>
   
 <semantic__title type="title-part" format="text/plain" language="en" script="Latn">Principles and rules for the structure and drafting of ISO and IEC documents</semantic__title>
   <semantic__uri type="src">https://www.iso.org/sites/directives/current/part2/index.xhtml</semantic__uri>  <semantic__docidentifier type="ISO" primary="true">ISO/IEC DIR 2</semantic__docidentifier>  <semantic__edition>9</semantic__edition>  <semantic__language>en</semantic__language>  <semantic__script>Latn</semantic__script>  <semantic__copyright>    <semantic__from>2021</semantic__from>    <semantic__owner>      <semantic__organization>        
 <semantic__name>International Organization for Standardization</semantic__name>
         <semantic__abbreviation>ISO</semantic__abbreviation>        <semantic__uri>www.iso.org</semantic__uri>      </semantic__organization>    </semantic__owner>  </semantic__copyright>  <semantic__relation type="partOf">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO/IEC DIR</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO/IEC DIR</semantic__docidentifier>    </semantic__bibitem>
-  </semantic__relation>  <semantic__relation type="instanceOf">    <semantic__bibitem type="standard">      <semantic__fetched>2024-02-12</semantic__fetched>      
+  </semantic__relation>  <semantic__relation type="instanceOf">    <semantic__bibitem type="standard">      <semantic__fetched>2024-03-05</semantic__fetched>      
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">ISO/IEC Directives, Part 2</semantic__title>
       
 <semantic__title type="title-part" format="text/plain" language="en" script="Latn">Principles and rules for the structure and drafting of ISO and IEC documents</semantic__title>
@@ -5619,7 +5619,7 @@ OpenAPI fragments used to define the requirements for the
             <semantic__abbreviation>ISO</semantic__abbreviation>            <semantic__uri>www.iso.org</semantic__uri>          </semantic__organization>        </semantic__owner>      </semantic__copyright>      <semantic__relation type="partOf">        <semantic__bibitem type="standard">          <semantic__formattedref format="text/plain">ISO/IEC DIR</semantic__formattedref>          <semantic__docidentifier type="ISO" primary="true">ISO/IEC DIR</semantic__docidentifier>        </semantic__bibitem>
       </semantic__relation>    </semantic__bibitem>
   </semantic__relation></semantic__bibitem>
-<semantic__bibitem id="semantic__iso19101-1" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__iso19101-1" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-03-05</semantic__fetched>  
 <semantic__title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</semantic__title>
   
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">Reference model</semantic__title>
@@ -5627,21 +5627,21 @@ OpenAPI fragments used to define the requirements for the
 <semantic__title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Fundamentals</semantic__title>
   
 <semantic__title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model — Part 1: Fundamentals</semantic__title>
-  <semantic__uri type="src">https://www.iso.org/standard/59164.html</semantic__uri>  <semantic__uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</semantic__uri>  <semantic__uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</semantic__uri>  <semantic__docidentifier type="ISO" primary="true">ISO 19101-1:2014</semantic__docidentifier>  <semantic__docidentifier type="iso-reference">ISO 19101-1:2014(E)</semantic__docidentifier>  <semantic__docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.93:ed-1</semantic__docidentifier>  <semantic__docnumber>19101</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2014-11</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="publisher"/>    <semantic__organization>      
+  <semantic__uri type="src">https://www.iso.org/standard/59164.html</semantic__uri>  <semantic__uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</semantic__uri>  <semantic__uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</semantic__uri>  <semantic__docidentifier type="ISO" primary="true">ISO 19101-1:2014</semantic__docidentifier>  <semantic__docidentifier type="iso-reference">ISO 19101-1:2014(E)</semantic__docidentifier>  <semantic__docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.93</semantic__docidentifier>  <semantic__docnumber>19101</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2014-11</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="publisher"/>    <semantic__organization>      
 <semantic__name>International Organization for Standardization</semantic__name>
-      <semantic__abbreviation>ISO</semantic__abbreviation>      <semantic__uri>www.iso.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__edition>1</semantic__edition>  <semantic__language>en</semantic__language>  <semantic__script>Latn</semantic__script>  <semantic__abstract format="text/plain" language="en" script="Latn">ISO 19101-1:2014 defines the reference model for standardization in the field of geographic information. This reference model describes the notion of interoperability and sets forth the fundamentals by which this standardization takes place. Although structured in the context of information technology and information technology standards, ISO 19101-1:2014 is independent of any application development method or technology implementation approach.</semantic__abstract>  <semantic__status>    <semantic__stage>90</semantic__stage>    <semantic__substage>93</semantic__substage>  </semantic__status>  <semantic__copyright>    <semantic__from>2014</semantic__from>    <semantic__owner>      <semantic__organization>        
+      <semantic__abbreviation>ISO</semantic__abbreviation>      <semantic__uri>www.iso.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__edition>1</semantic__edition>  <semantic__language>en</semantic__language>  <semantic__language>fr</semantic__language>  <semantic__script>Latn</semantic__script>  <semantic__abstract format="text/plain" language="en" script="Latn">ISO 19101-1:2014 defines the reference model for standardization in the field of geographic information. This reference model describes the notion of interoperability and sets forth the fundamentals by which this standardization takes place. Although structured in the context of information technology and information technology standards, ISO 19101-1:2014 is independent of any application development method or technology implementation approach.</semantic__abstract>  <semantic__status>    <semantic__stage>90</semantic__stage>    <semantic__substage>93</semantic__substage>  </semantic__status>  <semantic__copyright>    <semantic__from>2014</semantic__from>    <semantic__owner>      <semantic__organization>        
 <semantic__name>ISO</semantic__name>
       </semantic__organization>    </semantic__owner>  </semantic__copyright>  <semantic__relation type="obsoletes">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO 19101:2002</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO 19101:2002</semantic__docidentifier>    </semantic__bibitem>
   </semantic__relation>  <semantic__place>Geneva</semantic__place></semantic__bibitem>
-<semantic__bibitem id="semantic__iso19103" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-02-12</semantic__fetched>  
+<semantic__bibitem id="semantic__iso19103" type="standard" schema-version="v1.2.8">  <semantic__fetched>2024-03-05</semantic__fetched>  
 <semantic__title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</semantic__title>
   
 <semantic__title type="title-main" format="text/plain" language="en" script="Latn">Conceptual schema language</semantic__title>
   
 <semantic__title type="main" format="text/plain" language="en" script="Latn">Geographic information — Conceptual schema language</semantic__title>
-  <semantic__uri type="src">https://www.iso.org/standard/56734.html</semantic__uri>  <semantic__uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56734:en</semantic__uri>  <semantic__uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</semantic__uri>  <semantic__docidentifier type="ISO" primary="true">ISO 19103:2015</semantic__docidentifier>  <semantic__docidentifier type="iso-reference">ISO 19103:2015(E)</semantic__docidentifier>  <semantic__docidentifier type="URN">urn:iso:std:iso:19103:stage-90.92:ed-1</semantic__docidentifier>  <semantic__docnumber>19103</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2015-12</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="publisher"/>    <semantic__organization>      
+  <semantic__uri type="src">https://www.iso.org/standard/56734.html</semantic__uri>  <semantic__uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56734:en</semantic__uri>  <semantic__uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</semantic__uri>  <semantic__docidentifier type="ISO" primary="true">ISO 19103:2015</semantic__docidentifier>  <semantic__docidentifier type="iso-reference">ISO 19103:2015(E)</semantic__docidentifier>  <semantic__docidentifier type="URN">urn:iso:std:iso:19103:stage-90.92</semantic__docidentifier>  <semantic__docnumber>19103</semantic__docnumber>  <semantic__date type="published">    <semantic__on>2015-12</semantic__on>  </semantic__date>  <semantic__contributor>    <semantic__role type="publisher"/>    <semantic__organization>      
 <semantic__name>International Organization for Standardization</semantic__name>
-      <semantic__abbreviation>ISO</semantic__abbreviation>      <semantic__uri>www.iso.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__edition>1</semantic__edition>  <semantic__language>en</semantic__language>  <semantic__script>Latn</semantic__script>  <semantic__abstract format="text/plain" language="en" script="Latn">ISO 19103:2015 provides rules and guidelines for the use of a conceptual schema language within the context of geographic information. The chosen conceptual schema language is the Unified Modeling Language (UML). ISO 19103.2015 provides a profile of the Unified Modelling Language (UML). The standardization target type of this standard is UML schemas describing geographic information.</semantic__abstract>  <semantic__status>    <semantic__stage>90</semantic__stage>    <semantic__substage>92</semantic__substage>  </semantic__status>  <semantic__copyright>    <semantic__from>2015</semantic__from>    <semantic__owner>      <semantic__organization>        
+      <semantic__abbreviation>ISO</semantic__abbreviation>      <semantic__uri>www.iso.org</semantic__uri>    </semantic__organization>  </semantic__contributor>  <semantic__edition>1</semantic__edition>  <semantic__language>en</semantic__language>  <semantic__language>fr</semantic__language>  <semantic__script>Latn</semantic__script>  <semantic__abstract format="text/plain" language="en" script="Latn">ISO 19103:2015 provides rules and guidelines for the use of a conceptual schema language within the context of geographic information. The chosen conceptual schema language is the Unified Modeling Language (UML). ISO 19103.2015 provides a profile of the Unified Modelling Language (UML). The standardization target type of this standard is UML schemas describing geographic information.</semantic__abstract>  <semantic__status>    <semantic__stage>90</semantic__stage>    <semantic__substage>92</semantic__substage>  </semantic__status>  <semantic__copyright>    <semantic__from>2015</semantic__from>    <semantic__owner>      <semantic__organization>        
 <semantic__name>ISO</semantic__name>
       </semantic__organization>    </semantic__owner>  </semantic__copyright>  <semantic__relation type="obsoletes">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO/TS 19103:2005</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO/TS 19103:2005</semantic__docidentifier>    </semantic__bibitem>
   </semantic__relation>  <semantic__relation type="obsoletes">    <semantic__bibitem type="standard">      <semantic__formattedref format="text/plain">ISO/DIS 19103</semantic__formattedref>      <semantic__docidentifier type="ISO" primary="true">ISO/DIS 19103</semantic__docidentifier>    </semantic__bibitem>
@@ -5906,7 +5906,7 @@ To obtain additional rights of use, visit
 <p id="_bb5602d2-6eb1-e557-e221-499759fe237f">Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://ogc.standardstracker.org/"/></p>
 </clause>
 </feedback-statement>
-</boilerplate><preface><clause type="toc" id="_f33dab03-1e9c-4b52-a5ec-5202bacce14b" displayorder="1"><title depth="1">Contents</title></clause>
+</boilerplate><preface><clause type="toc" id="_580ca24e-f709-40c1-920d-6bdb8462e0dd" displayorder="1"><title depth="1">Contents</title></clause>
 <abstract id="_abstract" displayorder="2"><title depth="1">I.<tab/>Abstract</title><p id="_f66cfffd-a90c-469a-5558-ef773ab22ba7">A Web Feature Service (WFS) offers the capability to create, modify and query spatial data on the Web. The WFS standard is a multi-part document. This part specifies the core capabilities that every WFS has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Examples include support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems.</p>
 
 <p id="_384b67b8-e4d0-096e-a15d-668585b5c7bf">By default, every WFS instance provides access to a single dataset. Rather than sharing the data as a complete dataset, WFS offers direct, fine-grained access to the data at the feature (object) level.</p>
@@ -5958,7 +5958,7 @@ To obtain additional rights of use, visit
 <td valign="middle" align="left"><xref target="_feature_2">7.14 Feature</xref></td>
 </tr></tbody>
 </table>
-</abstract><clause id="_fb072482-04b3-44a9-8d4d-da38718face0" type="keywords" displayorder="3">
+</abstract><clause id="_6d6be268-bf8d-4d76-bd3b-cf51c5d422b0" type="keywords" displayorder="3">
 <title depth="1">II.<tab/>Keywords</title>
 <p>The following are keywords to be used by search engines and document catalogues.</p>
 <p>ogcdoc, OGC document, web feature service, wfs, feature, property, geographic information, spatial data, spatial things, dataset, distribution, API, openapi, geojson, gml, html</p></clause>
@@ -5981,7 +5981,7 @@ To obtain additional rights of use, visit
 <p id="_990f2e58-fcd4-dea3-571f-1dccd4d621bc">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. ISO shall not be held responsible for identifying any or all such patent rights.</p>
 </foreword><clause type="security" id="_1bfba592-0713-41de-d69c-a83eb10efc35" obligation="informative" displayorder="5">
   <title depth="1">IV.<tab/>Security considerations</title>
-  <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_f826f2cc-5b8e-4483-bf07-a122d0f4406b" type="submitting_orgs" displayorder="6">
+  <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_4de25aff-c652-4a83-b8be-a86d599ad561" type="submitting_orgs" displayorder="6">
 <title depth="1">V.<tab/>Submitting Organizations</title>
 <p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
  <ul><li>CubeWerx Inc.</li>
@@ -8418,8 +8418,8 @@ change. We need to update the media type after registration.</p>
 <bibitem id="schema.org"><formattedref format="application/x-isodoc+xml"><strong>Schema.org</strong>: <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>schema.org</docidentifier><biblio-tag/></bibitem>
 <bibitem id="OGC06-121r8"><formattedref format="application/x-isodoc+xml">OGC Web Services Common, <link target="https://www.opengeospatial.org/standards/common"/></formattedref><docidentifier type="OGC">OGC 06-121r8</docidentifier><docnumber>06-121r8</docnumber><biblio-tag/></bibitem>
 <bibitem id="ISOIECDIR2" type="standard" schema-version="v1.2.8"><formattedref>ISO/IEC DIR 2, <em>ISO/IEC Directives, Part 2</em>. <link target="https://www.iso.org/sites/directives/current/part2/index.xhtml">https://www.iso.org/sites/directives/current/part2/index.xhtml</link>.</formattedref><uri type="src">https://www.iso.org/sites/directives/current/part2/index.xhtml</uri><docidentifier type="ISO" primary="true">ISO/IEC DIR 2</docidentifier><biblio-tag/></bibitem>
-<bibitem id="iso19101-1" type="standard" schema-version="v1.2.8"><formattedref>ISO: ISO 19101-1:2014, <em>Geographic information — Reference model — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva (2014). <link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</link>.</formattedref><uri type="src">https://www.iso.org/standard/59164.html</uri><uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri><uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri><docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier><docidentifier type="iso-reference">iso-reference ISO 19101-1:2014(E)</docidentifier><docidentifier type="URN">URN urn:iso:std:iso:19101:-1:stage-90.93:ed-1</docidentifier><status>    <stage>90</stage>    <substage>93</substage>  </status><biblio-tag/></bibitem>
-<bibitem id="iso19103" type="standard" schema-version="v1.2.8"><formattedref>ISO: ISO 19103:2015, <em>Geographic information — Conceptual schema language</em>. International Organization for Standardization, Geneva (2015). <link target="https://www.iso.org/standard/56734.html">https://www.iso.org/standard/56734.html</link>.</formattedref><uri type="src">https://www.iso.org/standard/56734.html</uri><uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56734:en</uri><uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</uri><docidentifier type="ISO" primary="true">ISO 19103:2015</docidentifier><docidentifier type="iso-reference">iso-reference ISO 19103:2015(E)</docidentifier><docidentifier type="URN">URN urn:iso:std:iso:19103:stage-90.92:ed-1</docidentifier><status>    <stage>90</stage>    <substage>92</substage>  </status><biblio-tag/></bibitem>
+<bibitem id="iso19101-1" type="standard" schema-version="v1.2.8"><formattedref>ISO: ISO 19101-1:2014, <em>Geographic information — Reference model — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva (2014). <link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</link>.</formattedref><uri type="src">https://www.iso.org/standard/59164.html</uri><uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri><uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri><docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier><docidentifier type="iso-reference">iso-reference ISO 19101-1:2014(E)</docidentifier><docidentifier type="URN">URN urn:iso:std:iso:19101:-1:stage-90.93</docidentifier><status>    <stage>90</stage>    <substage>93</substage>  </status><biblio-tag/></bibitem>
+<bibitem id="iso19103" type="standard" schema-version="v1.2.8"><formattedref>ISO: ISO 19103:2015, <em>Geographic information — Conceptual schema language</em>. International Organization for Standardization, Geneva (2015). <link target="https://www.iso.org/standard/56734.html">https://www.iso.org/standard/56734.html</link>.</formattedref><uri type="src">https://www.iso.org/standard/56734.html</uri><uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56734:en</uri><uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</uri><docidentifier type="ISO" primary="true">ISO 19103:2015</docidentifier><docidentifier type="iso-reference">iso-reference ISO 19103:2015(E)</docidentifier><docidentifier type="URN">URN urn:iso:std:iso:19103:stage-90.92</docidentifier><status>    <stage>90</stage>    <substage>92</substage>  </status><biblio-tag/></bibitem>
 </references></sections><annex id="annex-a" obligation="informative" displayorder="18">
 <title><strong>Annex A</strong><br/>(informative)<br/><strong>Abstract Test Suite</strong></title>
 <admonition id="_ab5bb3ad-37a5-c9e4-c5c5-8b4c101d332a" type="caution"><name>CAUTION</name><p id="_df4a3a7f-a82a-804a-a321-85e119c84fd7"><link target="https://github.com/opengeospatial/WFS_FES/issues/112">ISSUE 112</link><br/>
@@ -8431,11 +8431,11 @@ GeoJSON, GML-SF0, GML-SF2, OpenAPI 3.0) are not yet covered.</p>
 <title depth="2">A.1.<tab/>Overview</title>
 <p id="_4d041a10-7ab7-705c-9920-1b9abfff4276">WFS 3.0 is not a Web Service in the traditional sense.  Rather, it defines the behavior and content of a set of RESTful micro-services exposed through an Application Programing Interface (API).  Compliance testing for WFS 3.0 and similar standards must answer three questions:</p>
 
-<ol id="_19e771b9-39eb-fdf0-6c24-9d45496fa7b6" type="arabic"><li id="_f03db8bf-79bf-48e6-a81a-47c0bc11ff11" label="1"><p id="_63b087ae-814b-38ab-754e-b6535bbb92ee">Are the capabilities advertised through the API Description compliant with the standard?</p>
+<ol id="_19e771b9-39eb-fdf0-6c24-9d45496fa7b6" type="arabic"><li id="_dfbe350e-6c49-4ea4-81fc-9a120ffa6448" label="1"><p id="_63b087ae-814b-38ab-754e-b6535bbb92ee">Are the capabilities advertised through the API Description compliant with the standard?</p>
 </li>
-<li id="_e55423f8-5161-4263-bc1d-b37d1ed2e6e7" label="2"><p id="_c28be67b-d218-8bac-ad3a-cc2e406248ef">Do the micro-services implement those capabilities as advertised?</p>
+<li id="_e34c2ba0-338f-45d9-8807-4cb9ec24b532" label="2"><p id="_c28be67b-d218-8bac-ad3a-cc2e406248ef">Do the micro-services implement those capabilities as advertised?</p>
 </li>
-<li id="_800769e3-af79-4f54-8cb8-249a529b549f" label="3"><p id="_df1630c1-0510-b8aa-6ea7-06723c9dc411">Do the resources returned by the micro-services meet the structure and content requirements of the standard?</p>
+<li id="_3f784f6d-964d-4521-b46e-98bd32e1a508" label="3"><p id="_df1630c1-0510-b8aa-6ea7-06723c9dc411">Do the resources returned by the micro-services meet the structure and content requirements of the standard?</p>
 </li>
 </ol>
 
@@ -8493,13 +8493,13 @@ GeoJSON, GML-SF0, GML-SF2, OpenAPI 3.0) are not yet covered.</p>
 <title depth="3">A.2.4.<tab/>Parameters</title>
 <p id="_3f16afb4-0227-ac4d-8b88-00a016241887">The following observations apply for WFS 3.0 parameters:</p>
 
-<ol id="_4198823d-64e6-2a29-af6a-3de5273a4f41" type="arabic"><li id="_c5298ddc-b7ac-4c81-86b7-d6f5c4e70c76" label="1"><p id="_99812588-f960-e4b0-8b29-7fc31b8f6b55">WFS 3.0 does not use cookies.</p>
+<ol id="_4198823d-64e6-2a29-af6a-3de5273a4f41" type="arabic"><li id="_eae47fe6-5601-4089-adc6-ad4b95fbd51a" label="1"><p id="_99812588-f960-e4b0-8b29-7fc31b8f6b55">WFS 3.0 does not use cookies.</p>
 </li>
-<li id="_c1e76d7e-a41c-4a27-b189-a86cc1db8e2d" label="2"><p id="_98e3d400-033f-58fc-be94-ef8f22d8cd0b">Query parameters follow common Web practice</p>
+<li id="_554498cb-2445-45df-a1a9-803135e892ac" label="2"><p id="_98e3d400-033f-58fc-be94-ef8f22d8cd0b">Query parameters follow common Web practice</p>
 </li>
-<li id="_78d008cc-77a2-43d6-993d-54689d6fbaa7" label="3"><p id="_49f0b60d-7db9-255d-f120-3872cb6da220">Header parameters are restricted to custom headers</p>
+<li id="_13fbdef7-95fc-4db3-8db4-bdbaa22c3832" label="3"><p id="_49f0b60d-7db9-255d-f120-3872cb6da220">Header parameters are restricted to custom headers</p>
 </li>
-<li id="_438ad6e9-535c-4fc4-9fb9-62fd55661669" label="4"><p id="_8606b94f-cd05-dfb4-6036-de7059b9f0d5">For path parameters, the name of the parameter must match the name of the variable in the path template in the path object</p>
+<li id="_1a3c9f74-0285-47ef-a545-b14a3d8f0249" label="4"><p id="_8606b94f-cd05-dfb4-6036-de7059b9f0d5">For path parameters, the name of the parameter must match the name of the variable in the path template in the path object</p>
 </li>
 </ol>
 
@@ -8510,23 +8510,23 @@ GeoJSON, GML-SF0, GML-SF2, OpenAPI 3.0) are not yet covered.</p>
 <title depth="3">A.2.5.<tab/>Testable Paths</title>
 <p id="_71ffc7b3-3140-6904-dd19-88240f7a5c21">A testable path is a path which corresponds to one of the paths defined in the WFS 3.0 specification. There are three alternatives for making this determination:</p>
 
-<ol id="_ec087790-10c7-3b81-faa9-0fe5eaa31667" type="arabic"><li id="_6faf8aba-e97a-4a55-9574-79fbaafff4ed" label="1"><p id="_0eb6bc5a-19ba-3085-351d-0120011d5118">The path URI matches – this is the simplest approach but may be subject to error</p>
+<ol id="_ec087790-10c7-3b81-faa9-0fe5eaa31667" type="arabic"><li id="_794b0370-f9a3-436b-ac61-1b71712c8810" label="1"><p id="_0eb6bc5a-19ba-3085-351d-0120011d5118">The path URI matches – this is the simplest approach but may be subject to error</p>
 </li>
-<li id="_7b14945f-245e-4d73-881a-b930d4ed4c50" label="2"><p id="_4cf1a31c-3be3-edab-8d34-2ad7a20ee867">Use mandatory tags in the tags field of the Operation Object</p>
+<li id="_c57a1939-9322-4652-8ff1-a6c8992bdd33" label="2"><p id="_4cf1a31c-3be3-edab-8d34-2ad7a20ee867">Use mandatory tags in the tags field of the Operation Object</p>
 </li>
-<li id="_f7ccd6d1-91e9-4f9b-b958-b9faecf192f8" label="3"><p id="_91bcfbfd-19d8-3ff8-2581-cad1781e4e7c">Use standardized operation ids for the operationId field of the Operation Object</p>
+<li id="_84badd8f-75fb-419f-9e62-4924b4627a5c" label="3"><p id="_91bcfbfd-19d8-3ff8-2581-cad1781e4e7c">Use standardized operation ids for the operationId field of the Operation Object</p>
 </li>
 </ol>
 
 <p id="_d373ecdc-37be-5aac-37bb-1084efc78b63">A testable path is validated against the rules for that path.  At a minimum that includes:</p>
 
-<ol id="_e1c2428b-35da-b2e0-3bc6-96fb51552824" type="arabic"><li id="_5321f688-82bb-4683-ac7f-4af747f5f798" label="1"><p id="_ac0af4ee-305e-5b37-38bf-c7327e98668c">Building a list of all parameters which are defined in the standard</p>
+<ol id="_e1c2428b-35da-b2e0-3bc6-96fb51552824" type="arabic"><li id="_d24a24d3-053a-4aaf-9f22-bbaf93180624" label="1"><p id="_ac0af4ee-305e-5b37-38bf-c7327e98668c">Building a list of all parameters which are defined in the standard</p>
 </li>
-<li id="_98855999-eec4-4d2c-98d8-0eaf2c063bcb" label="2"><p id="_a7d6246d-7f94-2291-c4a4-3111902367b5">Validate that the mandatory parameters are present and required</p>
+<li id="_ca2981c1-7a3a-4a2d-96ea-1c6695507306" label="2"><p id="_a7d6246d-7f94-2291-c4a4-3111902367b5">Validate that the mandatory parameters are present and required</p>
 </li>
-<li id="_f8a6f37a-40eb-470e-8de7-436defadb21d" label="3"><p id="_322acdaf-a54a-d9dc-680a-4337410d89a4">Validate type, format, etc. for each parameter in the list.</p>
+<li id="_e7f799ed-8e98-4d3e-915a-54a11c06e392" label="3"><p id="_322acdaf-a54a-d9dc-680a-4337410d89a4">Validate type, format, etc. for each parameter in the list.</p>
 </li>
-<li id="_b470de11-d94f-4ec4-998a-6383e859717a" label="4"><p id="_b685d45b-e631-c45f-74d9-44cdc6ab01f8">Validate that there are no mandatory parameters which are not on the list.</p>
+<li id="_1e477040-2001-49f0-ae85-9f75f251ddd5" label="4"><p id="_b685d45b-e631-c45f-74d9-44cdc6ab01f8">Validate that there are no mandatory parameters which are not on the list.</p>
 </li>
 </ol>
 </clause>
@@ -8666,13 +8666,13 @@ Tests: A.4.4.15<br/></td>
 <title depth="2">A.4.<tab/>Abstract Test</title>
 <p id="_b1b47953-8f1e-a6e1-d2df-47b9022ac351">The Test Approach used in the WFS 3.0 Abstract Test Suite includes four steps:</p>
 
-<ol id="_b191e51d-df74-b2f6-b58e-d871168210bc" type="arabic"><li id="_2c42677e-d6e4-464f-bc13-7d59c75db0c2" label="1"><p id="_fb6dc6e4-4970-5a97-0487-4feb0d85201d">Identify the test points</p>
+<ol id="_b191e51d-df74-b2f6-b58e-d871168210bc" type="arabic"><li id="_75958f9d-0d3e-4625-aa32-ecdc58641c01" label="1"><p id="_fb6dc6e4-4970-5a97-0487-4feb0d85201d">Identify the test points</p>
 </li>
-<li id="_d054bd97-ccd4-4292-be8e-30ba2f322ccc" label="2"><p id="_88322166-73a4-3a0b-16d4-0cdb6530e8f2">Verify that API descriptions of the test points comply with the WFS 3.0 standard</p>
+<li id="_0a1055b3-93c7-44c8-a419-96edd81c002f" label="2"><p id="_88322166-73a4-3a0b-16d4-0cdb6530e8f2">Verify that API descriptions of the test points comply with the WFS 3.0 standard</p>
 </li>
-<li id="_8dac4b71-543e-468e-b28e-979468ffc555" label="3"><p id="_70fb15fe-9a92-855b-2412-b6d02cf1b742">Verify that the micro-services at each test point behave in accordance with the WFS 3.0 standard.</p>
+<li id="_3431ee2e-7dfa-45c0-be8a-6194b432d2db" label="3"><p id="_70fb15fe-9a92-855b-2412-b6d02cf1b742">Verify that the micro-services at each test point behave in accordance with the WFS 3.0 standard.</p>
 </li>
-<li id="_6af02f0c-d758-439a-b7f2-fd2e9af7805d" label="4"><p id="_823aa240-276d-7dd7-912d-5953fea60990">Verify that the resources returned at each test point are in accordance with the WFS 3.0 standard and any referenced content standard.</p>
+<li id="_c1c42492-3d58-4424-9607-355570f42157" label="4"><p id="_823aa240-276d-7dd7-912d-5953fea60990">Verify that the resources returned at each test point are in accordance with the WFS 3.0 standard and any referenced content standard.</p>
 </li>
 </ol>
 
@@ -8696,9 +8696,9 @@ Tests: A.4.4.15<br/></td>
 
 <clause id="_c_test_method" obligation="informative">
 <title depth="5">A.4.1.1.3.<tab/>c) Test Method:</title>
-<ol id="_f0ff91de-6d1f-56f2-915b-55cdbba3aede" type="arabic"><li id="_210c3a7a-020b-4558-bdcd-f6fc6eccb162" label="1"><p id="_8f059efb-b6ce-ee14-590a-8c96e7541aae">Build all requests using the HTTP 1.1 protocol.</p>
+<ol id="_f0ff91de-6d1f-56f2-915b-55cdbba3aede" type="arabic"><li id="_eee4b622-8e82-4e9a-b867-6e9e6e7adb59" label="1"><p id="_8f059efb-b6ce-ee14-590a-8c96e7541aae">Build all requests using the HTTP 1.1 protocol.</p>
 </li>
-<li id="_26d3e0dc-1ca7-4181-8faf-8e739baaf9a6" label="2"><p id="_05953c50-5bfd-9568-6884-d41456f11809">Validate that all responses comply with the HTTP 1.1 protocol</p>
+<li id="_f57798bb-0289-4384-907d-8b1eeb225ecb" label="2"><p id="_05953c50-5bfd-9568-6884-d41456f11809">Validate that all responses comply with the HTTP 1.1 protocol</p>
 </li>
 </ol>
 </clause>
@@ -8723,9 +8723,9 @@ Tests: A.4.4.15<br/></td>
 
 <clause id="_c_test_method_2" obligation="informative">
 <title depth="5">A.4.1.2.3.<tab/>c) Test Method:</title>
-<ol id="_f81683a6-353f-edab-300e-0eaadd4f6f17" type="arabic"><li id="_04358c80-ad3f-42f6-8430-f0d6a3fc234a" label="1"><p id="_33309884-03e4-8336-3f55-4b96e1213881">Do not specify a coordinate reference system in any request.  All spatial data should be in the CRS84 reference system.</p>
+<ol id="_f81683a6-353f-edab-300e-0eaadd4f6f17" type="arabic"><li id="_080f969c-d828-43f6-9b7d-904b64ccd248" label="1"><p id="_33309884-03e4-8336-3f55-4b96e1213881">Do not specify a coordinate reference system in any request.  All spatial data should be in the CRS84 reference system.</p>
 </li>
-<li id="_6b3044e3-2e3c-4e86-84ea-029d5c307205" label="2"><p id="_150038aa-f009-4cee-0d7b-bcb0161c3997">Validate retrieved spatial data using the CRS84 reference system.</p>
+<li id="_a9090dd2-e956-4b8d-bc04-b991d4cf1144" label="2"><p id="_150038aa-f009-4cee-0d7b-bcb0161c3997">Validate retrieved spatial data using the CRS84 reference system.</p>
 </li>
 </ol>
 </clause>
@@ -8759,11 +8759,11 @@ Tests: A.4.4.15<br/></td>
 
 <clause id="_c_test_method_3" obligation="informative">
 <title depth="5">A.4.2.1.3.<tab/>c) Test Method:</title>
-<ol id="_7c99f8ad-235b-4112-6094-a0ae61171595" type="arabic"><li id="_814835ab-4e88-41d0-9cbb-40842bd3b24b" label="1"><p id="_dccd92e1-1bce-c52f-060c-a5ef9540be14">Issue an HTTP GET request to the URL {root}/</p>
+<ol id="_7c99f8ad-235b-4112-6094-a0ae61171595" type="arabic"><li id="_fbe55dc6-ad8f-4f0f-a128-a7696b44061e" label="1"><p id="_dccd92e1-1bce-c52f-060c-a5ef9540be14">Issue an HTTP GET request to the URL {root}/</p>
 </li>
-<li id="_aa81903f-a493-4253-b243-582e930dee1d" label="2"><p id="_c845387a-0614-6ab4-955a-0d64a4b681a8">Validate that a document was returned with a status code 200</p>
+<li id="_5e998c7b-748d-4a28-9ad4-405c64197a5b" label="2"><p id="_c845387a-0614-6ab4-955a-0d64a4b681a8">Validate that a document was returned with a status code 200</p>
 </li>
-<li id="_459e7f23-48c0-436d-8232-c341a50c442c" label="3"><p id="_f7112ca3-1d3a-c214-ce49-9b65644a0b58">Validate the contents of the returned document using test <xref target="landingpagevalidation">Annex A.4.2.2</xref></p>
+<li id="_178fd06d-bdcd-445f-b221-8cdef15392ee" label="3"><p id="_f7112ca3-1d3a-c214-ce49-9b65644a0b58">Validate the contents of the returned document using test <xref target="landingpagevalidation">Annex A.4.2.2</xref></p>
 </li>
 </ol>
 </clause>
@@ -8790,13 +8790,13 @@ Tests: A.4.4.15<br/></td>
 
 <clause id="_c_test_method_4" obligation="informative">
 <title depth="5">A.4.2.2.3.<tab/>c) Test Method:</title>
-<ol id="_5fac085e-1530-f54b-09bb-c4b1590a7e0e" type="arabic"><li id="_652a8268-40b0-41da-9234-733e49f415b3" label="1"><p id="_cafba90c-d393-a8e7-94db-8b8fb65cbf65">Validate the landing page against the root.yaml schema</p>
+<ol id="_5fac085e-1530-f54b-09bb-c4b1590a7e0e" type="arabic"><li id="_47aa1295-484e-48d4-b5fc-66cc9fbfc404" label="1"><p id="_cafba90c-d393-a8e7-94db-8b8fb65cbf65">Validate the landing page against the root.yaml schema</p>
 </li>
-<li id="_298ff5ec-258e-49ac-8aa3-774845804a99" label="2"><p id="_6473456b-ae7f-fae4-85f1-d00cea484432">Validate that the landing page includes a “service” link to API Definition</p>
+<li id="_5ce20cc2-91dc-484e-b508-12db716e4cdc" label="2"><p id="_6473456b-ae7f-fae4-85f1-d00cea484432">Validate that the landing page includes a “service” link to API Definition</p>
 </li>
-<li id="_088bb738-d24c-4bc4-b425-8c5ec0933350" label="3"><p id="_50f55648-e44e-5d0b-d802-33f258f2a814">Validate that the landing page includes a “conformance” link to the conformance class document</p>
+<li id="_2f434ff0-f7aa-482e-a5b9-6bbc98ce71fc" label="3"><p id="_50f55648-e44e-5d0b-d802-33f258f2a814">Validate that the landing page includes a “conformance” link to the conformance class document</p>
 </li>
-<li id="_667c6a4b-a75e-4e19-915c-e98b9432173a" label="4"><p id="_014a2d32-328c-fbd0-9c92-7136ae76b04a">Validate that the landing page includes a “data” link to the WFS contents.</p>
+<li id="_37aeca21-5da1-4bb8-8758-a3f6efe901e9" label="4"><p id="_014a2d32-328c-fbd0-9c92-7136ae76b04a">Validate that the landing page includes a “data” link to the WFS contents.</p>
 </li>
 </ol>
 </clause>
@@ -8829,11 +8829,11 @@ Tests: A.4.4.15<br/></td>
 
 <clause id="_c_test_method_5" obligation="informative">
 <title depth="5">A.4.2.3.3.<tab/>c) Test Method:</title>
-<ol id="_789f4283-35e1-1927-8deb-8b6cbe61d930" type="arabic"><li id="_69be08be-0b19-420f-a627-311bcf08e223" label="1"><p id="_2698c529-7e42-9b01-18a3-712063420459">Issue an HTTP GET request to the URL {server}/api</p>
+<ol id="_789f4283-35e1-1927-8deb-8b6cbe61d930" type="arabic"><li id="_f29f942a-40a1-427f-afca-b01e00612c9d" label="1"><p id="_2698c529-7e42-9b01-18a3-712063420459">Issue an HTTP GET request to the URL {server}/api</p>
 </li>
-<li id="_6d555972-0280-4aef-a7da-6c9be688de66" label="2"><p id="_27716dc3-9992-ee0d-62a6-ae10cbe94ce6">Validate that a document was returned with a status code 200</p>
+<li id="_cb6d2573-23ca-4239-85ab-67fbc516407e" label="2"><p id="_27716dc3-9992-ee0d-62a6-ae10cbe94ce6">Validate that a document was returned with a status code 200</p>
 </li>
-<li id="_0c6ece7d-2979-4e74-a24d-72ec4137cecf" label="3"><p id="_ab3996f6-fd60-f10b-94d7-65b06e1f19fb">Validate the contents of the returned document using test <xref target="apidefinitionvalidation">Annex A.4.2.4</xref></p>
+<li id="_61c97e99-7233-4299-b6bd-6c7a65935bc3" label="3"><p id="_ab3996f6-fd60-f10b-94d7-65b06e1f19fb">Validate the contents of the returned document using test <xref target="apidefinitionvalidation">Annex A.4.2.4</xref></p>
 </li>
 </ol>
 </clause>
@@ -8860,11 +8860,11 @@ Tests: A.4.4.15<br/></td>
 
 <clause id="_c_test_method_6" obligation="informative">
 <title depth="5">A.4.2.4.3.<tab/>c) Test Method:</title>
-<ol id="_ed923eae-67e5-b7c7-f7a8-8dcb7dd98496" type="arabic"><li id="_0ad5773b-2025-4c84-9427-3d9e6bd91eb1" label="1"><p id="_f532fb66-bf94-5075-ed29-4a5915cee1e8">Validate the API Definition document against the OpenAPI 3.0 schema</p>
+<ol id="_ed923eae-67e5-b7c7-f7a8-8dcb7dd98496" type="arabic"><li id="_008c4a29-36e8-4303-b163-531be2eb9cb4" label="1"><p id="_f532fb66-bf94-5075-ed29-4a5915cee1e8">Validate the API Definition document against the OpenAPI 3.0 schema</p>
 </li>
-<li id="_07e092c7-2d92-4bd2-abd4-43561ca41a47" label="2"><p id="_0aac4d88-dc81-9fc1-f1b6-9cd1101b94b3">Identify the Test Points as described in test <xref target="identifytestpoints">Annex A.4.3</xref></p>
+<li id="_471d9544-4860-40f2-b2e3-f3f78a186241" label="2"><p id="_0aac4d88-dc81-9fc1-f1b6-9cd1101b94b3">Identify the Test Points as described in test <xref target="identifytestpoints">Annex A.4.3</xref></p>
 </li>
-<li id="_ece68f5a-f37b-4b1d-abae-b6be1b9ba759" label="3"><p id="_fe9bffcf-1f86-d0d9-b8b3-85a9cfdde714">Process the API Definition document as described in test <xref target="processingopenapidocument">Annex A.4.4</xref></p>
+<li id="_4ece7734-edd1-4735-a183-9cb88a41780d" label="3"><p id="_fe9bffcf-1f86-d0d9-b8b3-85a9cfdde714">Process the API Definition document as described in test <xref target="processingopenapidocument">Annex A.4.4</xref></p>
 </li>
 </ol>
 </clause>
@@ -8981,9 +8981,9 @@ Tests: A.4.4.15<br/></td>
 <title depth="5">A.4.3.3.3.<tab/>c) Method:</title>
 <p id="_3b226e10-9b88-a9f2-c053-07a98fd94eba">Processing the Server Object results in a set of absolute URIs.  This set contains all of the URIs that can be created given the URI template and variables defined in that Server Object.</p>
 
-<ol id="_aed46b1a-4385-35d1-ec54-f231d210f370" type="arabic"><li id="_3e4505a3-b79b-41c5-bc90-e0e6cf6575c3" label="1"><p id="_b9fae2d6-c6a8-d21b-4df0-0ce19eeb081a">If there are no variables in the URI template, then add the URI to the return set.</p>
+<ol id="_aed46b1a-4385-35d1-ec54-f231d210f370" type="arabic"><li id="_c9f6ef13-2683-42db-8fd6-715eba4fe6c7" label="1"><p id="_b9fae2d6-c6a8-d21b-4df0-0ce19eeb081a">If there are no variables in the URI template, then add the URI to the return set.</p>
 </li>
-<li id="_d3a12491-1bba-4bd2-af82-6fe3bc0a25a9" label="2"><p id="_9214923f-0c37-58e0-46b4-6ec49790695d">For each variable in the URI template which does not have an enumerated set of valid values:</p>
+<li id="_c42b1a64-f65e-4715-a7ec-9433601eb0e7" label="2"><p id="_9214923f-0c37-58e0-46b4-6ec49790695d">For each variable in the URI template which does not have an enumerated set of valid values:</p>
 <ul id="_32fae5c0-b0da-b68c-fa0d-de5a813ffef6"><li><p id="_3b4f56b0-4602-463a-efbf-9a9a860adc99">generate a URI using the default value,</p>
 </li>
 <li><p id="_9f6c34ee-2995-890f-bb8f-5d539a6b4a77">add this URI to the return set,</p>
@@ -8992,16 +8992,16 @@ Tests: A.4.4.15<br/></td>
 </li>
 </ul>
 </li>
-<li id="_071f9384-21cb-47b2-833d-fced1f688bfc" label="3"><p id="_1d7794f1-5e24-d404-7c79-db0740b05bbe">For each variable in the URI template which has an enumerated set of valid values:</p>
+<li id="_6490826e-fe5a-4aa1-af25-209ac239e884" label="3"><p id="_1d7794f1-5e24-d404-7c79-db0740b05bbe">For each variable in the URI template which has an enumerated set of valid values:</p>
 <ul id="_25a1ba91-03ad-3f57-70a1-61e84d650dad"><li><p id="_8943d448-46b3-56c8-8902-ef61d502d3af">generate a URI for each value in the enumerated set,</p>
 </li>
 <li><p id="_cad89430-4892-ac61-a37b-49e94cf6d970">add each generated URI to the return set.</p>
 </li>
 </ul>
 </li>
-<li id="_1b4a9ae9-4529-425f-bffd-bce3378000fc" label="4"><p id="_2721615b-1afe-4331-b1f8-2ad80b55619c">Perform this processing in an iterative manner so that there is a unique URI for all possible combinations of enumerated and default values.</p>
+<li id="_8c4afaa7-8edc-4e12-a9e5-d436cea78c45" label="4"><p id="_2721615b-1afe-4331-b1f8-2ad80b55619c">Perform this processing in an iterative manner so that there is a unique URI for all possible combinations of enumerated and default values.</p>
 </li>
-<li id="_099d18fc-5fb3-4d07-8866-0f5c4e4ac4ea" label="5"><p id="_1b1bb676-f317-dbe1-60fe-000a84a7e14d">Convert all relative URIs to absolute URIs by rooting them on the URI to the server hosting the OpenAPI document.</p>
+<li id="_4e329ac7-1ddf-4e5e-8b5a-693298aa991f" label="5"><p id="_1b1bb676-f317-dbe1-60fe-000a84a7e14d">Convert all relative URIs to absolute URIs by rooting them on the URI to the server hosting the OpenAPI document.</p>
 </li>
 </ol>
 </clause>
@@ -9103,9 +9103,9 @@ Tests: A.4.4.15<br/></td>
 
 <clause id="_c_test_method_9" obligation="informative">
 <title depth="5">A.4.4.3.3.<tab/>c) Test Method:</title>
-<ol id="_d38ab661-05fd-46bd-a4c5-66eb94a38024" type="arabic"><li id="_36410ef4-93c4-4639-859c-e8e660d7422a" label="1"><p id="_df9e70b3-c1e3-36fc-92ea-2bea2423e06b">Validate the retrieved document against the classes.yaml schema.</p>
+<ol id="_d38ab661-05fd-46bd-a4c5-66eb94a38024" type="arabic"><li id="_aa77299c-4b29-4ce6-bcc8-bf9a6731859c" label="1"><p id="_df9e70b3-c1e3-36fc-92ea-2bea2423e06b">Validate the retrieved document against the classes.yaml schema.</p>
 </li>
-<li id="_621681f6-90e1-4aa8-bb05-1dc2c1d11adf" label="2"><p id="_61aa06d7-0a49-c6bd-a46b-8697f6fc89e9">Record all reported compliance classes and associate that list with the test point. This information will be used in latter tests.</p>
+<li id="_a6b48ca8-2c49-48aa-af85-b41be409435d" label="2"><p id="_61aa06d7-0a49-c6bd-a46b-8697f6fc89e9">Record all reported compliance classes and associate that list with the test point. This information will be used in latter tests.</p>
 </li>
 </ol>
 </clause>
@@ -9165,20 +9165,20 @@ retrieved</p>
 
 <clause id="_c_test_method_11" obligation="informative">
 <title depth="5">A.4.4.5.3.<tab/>c) Test Method:</title>
-<ol id="_b1304002-84e4-4c55-7ca1-5aa808ac2830" type="arabic"><li id="_a75c5d3f-bb14-4bcc-a3cd-1fce6075bd83" label="1"><p id="_a8fba997-e02a-1ea7-43d1-3c9f4d80cf63">Validate the retrieved document against the content.yaml schema.</p>
+<ol id="_b1304002-84e4-4c55-7ca1-5aa808ac2830" type="arabic"><li id="_9290d015-46db-4fe4-9ee6-dece0ceae138" label="1"><p id="_a8fba997-e02a-1ea7-43d1-3c9f4d80cf63">Validate the retrieved document against the content.yaml schema.</p>
 </li>
-<li id="_66eabe4b-3ca9-48ec-935f-6dbab4875116" label="2"><p id="_69823573-7320-ec67-547c-b6556335748b">Validate that the retrieved document includes links for:</p>
+<li id="_f11519b9-1cc4-42ab-8dfe-a9939e094dc7" label="2"><p id="_69823573-7320-ec67-547c-b6556335748b">Validate that the retrieved document includes links for:</p>
 <ul id="_a0c197a2-0a70-ab9a-94b8-74f03f3efef6"><li><p id="_6055d845-9bc2-9305-36b9-b4eb30ec6060">Itself</p>
 </li>
 <li><p id="_5241fd36-f5de-cc3d-4f16-288da7ef1602">Alternate encodings of this document in every other media type as identified by the compliance classes for this server.</p>
 </li>
 </ul>
 </li>
-<li id="_811e5ffa-3957-440c-a8d2-bd7640f338f5" label="3"><p id="_30ab0b78-9818-e858-118c-08ffdf98b2b6">Validate that each link includes a rel and type parameter</p>
+<li id="_c6a635c5-f40a-4b6c-a42a-6fe2bd7f8053" label="3"><p id="_30ab0b78-9818-e858-118c-08ffdf98b2b6">Validate that each link includes a rel and type parameter</p>
 </li>
-<li id="_9d05619c-4184-4059-b4d2-bca9423fecfa" label="4"><p id="_d9ca144f-eac5-b6bd-5a16-d3f250f13f44">Validate that the returned document includes a collections property for each collection in the dataset.</p>
+<li id="_4644ec30-9fbc-4b36-a236-9466b5d629ab" label="4"><p id="_d9ca144f-eac5-b6bd-5a16-d3f250f13f44">Validate that the returned document includes a collections property for each collection in the dataset.</p>
 </li>
-<li id="_7c7a0249-2777-4b27-b03c-fa58a94dcd8e" label="5"><p id="_e894471f-1bd1-206a-adaa-6cbda664c111">For each collections property, validate the metadata for that collection using test A.4.4.6</p>
+<li id="_4cdaca83-b00a-4621-8726-e8c022bcad21" label="5"><p id="_e894471f-1bd1-206a-adaa-6cbda664c111">For each collections property, validate the metadata for that collection using test A.4.4.6</p>
 </li>
 </ol>
 </clause>
@@ -9205,20 +9205,20 @@ retrieved</p>
 
 <clause id="_c_test_method_12" obligation="informative">
 <title depth="5">A.4.4.6.3.<tab/>c) Test Method:</title>
-<ol id="_ef56f83e-6205-efec-cb90-30f0dcd97288" type="arabic"><li id="_9d7bbd27-9f9c-4d9f-adfd-1fff0c404fd7" label="1"><p id="_622aff8b-1271-3056-f312-e3c80a6511b1">Validate the collection metadata against the collectionInfo.yaml schema</p>
+<ol id="_ef56f83e-6205-efec-cb90-30f0dcd97288" type="arabic"><li id="_37ccfddc-8aac-42f2-88be-914db36c0cb4" label="1"><p id="_622aff8b-1271-3056-f312-e3c80a6511b1">Validate the collection metadata against the collectionInfo.yaml schema</p>
 </li>
-<li id="_4cd50ebd-5c15-4d25-9051-700b4e26395e" label="2"><p id="_779f4cbb-cad7-b500-afcc-bf6377cc6f18">Validate that the collection metadata document includes links for:</p>
+<li id="_08b07a42-8ee4-42cb-b595-3b84e52d04aa" label="2"><p id="_779f4cbb-cad7-b500-afcc-bf6377cc6f18">Validate that the collection metadata document includes links for:</p>
 <ul id="_5fff71ee-5092-7e02-6be0-b22ae5f4e040"><li><p id="_57484b3c-6038-fe9d-3b09-5bcdc264c8f1">Itself</p>
 </li>
 <li><p id="_d4f76a73-2bd9-4b68-378b-a9be4f4dd9e3">Alternate encodings of this document in every other media type as identified by the compliance classes for this server.</p>
 </li>
 </ul>
 </li>
-<li id="_01de8eb3-a545-4bfe-b78e-3cd5962e5dbe" label="3"><p id="_b684922f-728e-d6ff-f911-6928fc4a839f">Validate that each link includes a rel and type parameter</p>
+<li id="_242122f0-bdf0-4386-8d25-c778ed6fc228" label="3"><p id="_b684922f-728e-d6ff-f911-6928fc4a839f">Validate that each link includes a rel and type parameter</p>
 </li>
-<li id="_98a68610-a6f8-49a0-a945-e6ecfec6d21e" label="4"><p id="_6ddc68e9-7af2-ca29-966b-dee6e8b5c9dd">Validate the extent property if it is provided</p>
+<li id="_0011b0c7-0dc4-4e51-a548-4ea894a15ae6" label="4"><p id="_6ddc68e9-7af2-ca29-966b-dee6e8b5c9dd">Validate the extent property if it is provided</p>
 </li>
-<li id="_213708ac-f638-4480-9dc9-f69ff0d53d5b" label="5"><p id="_771aa1cd-8c70-164c-d4a8-0144b3c272c7">Retrieve the collection using the name property and test A.4.4.7.</p>
+<li id="_03797151-af80-4527-ab5e-fc2e80fbbb6b" label="5"><p id="_771aa1cd-8c70-164c-d4a8-0144b3c272c7">Retrieve the collection using the name property and test A.4.4.7.</p>
 </li>
 </ol>
 </clause>
@@ -9279,9 +9279,9 @@ retrieved</p>
 
 <clause id="_c_test_method_14" obligation="informative">
 <title depth="5">A.4.4.8.3.<tab/>c) Test Method:</title>
-<ol id="_41ae8c3c-6ed3-c875-712e-7030b70d2bc2" type="arabic"><li id="_b34a9fbe-714b-4ae2-acdb-f0eb1b3396e3" label="1"><p id="_6fc44187-33a4-00f9-d398-b66d27fd5308">Validate the retrieved document against the collectionInfo.yaml schema.</p>
+<ol id="_41ae8c3c-6ed3-c875-712e-7030b70d2bc2" type="arabic"><li id="_20c86b58-438b-4549-aae1-c4bd6977aea6" label="1"><p id="_6fc44187-33a4-00f9-d398-b66d27fd5308">Validate the retrieved document against the collectionInfo.yaml schema.</p>
 </li>
-<li id="_fd2fe564-4cbd-4f61-b66a-a5bac3a40bab" label="2"><p id="_6363250d-8f5b-d93b-aae4-6b371f9f185b">Validate that this is the same document as that processed in Test A.4.4.6</p>
+<li id="_78280a9f-4878-4b6b-9dfa-de69afcacf9a" label="2"><p id="_6363250d-8f5b-d93b-aae4-6b371f9f185b">Validate that this is the same document as that processed in Test A.4.4.6</p>
 </li>
 </ol>
 </clause>
@@ -9341,7 +9341,7 @@ retrieved</p>
 
 <clause id="_c_test_method_16" obligation="informative">
 <title depth="5">A.4.4.10.3.<tab/>c) Test Method:</title>
-<ol id="_6eb8a9d5-f3a0-66b7-406b-88a389aa7299" type="arabic"><li id="_d7e4b1a8-85cc-49ab-804e-87d1e9b86711" label="1"><p id="_44c127bf-e443-3ada-9cbb-91ff498f7e22">Validate the structure of the response as follows:</p>
+<ol id="_6eb8a9d5-f3a0-66b7-406b-88a389aa7299" type="arabic"><li id="_5bd0c414-4d0d-4fd4-b338-e7a5907c09f5" label="1"><p id="_44c127bf-e443-3ada-9cbb-91ff498f7e22">Validate the structure of the response as follows:</p>
 <ul id="_2821ce30-ef42-ca2d-f2d8-98a64928e211"><li><p id="_016c7da4-33d5-ec9a-5377-65b3d7a9c925">For HTML use TBD</p>
 </li>
 <li><p id="_946030ff-4709-8f4a-91a4-f2fa37426834">For GeoJSON use featureCollectionGeoJSON.yaml</p>
@@ -9350,20 +9350,20 @@ retrieved</p>
 </li>
 </ul>
 </li>
-<li id="_9763954c-fce1-4cb5-a653-3c984664b94a" label="2"><p id="_ca31bf80-8067-1a63-798b-2fa88939f403">Validate that the following links are included in the response document:</p>
+<li id="_cab7d5fe-e14e-44f2-8567-5c70ccb73b03" label="2"><p id="_ca31bf80-8067-1a63-798b-2fa88939f403">Validate that the following links are included in the response document:</p>
 <ul id="_28789aa6-2649-2a1d-4fcd-e43912edd881"><li><p id="_997dd8f7-83c5-e3dc-a83e-9efec22b4aa7">To itself</p>
 </li>
 <li><p id="_91729168-7490-f0d8-24f8-0376ead09d07">Alternate encodings of this document in every other media type as identified by the compliance classes for this server.</p>
 </li>
 </ul>
 </li>
-<li id="_54cc660a-e869-4c7b-b45b-9cd70f60471e" label="3"><p id="_135027cc-52f2-9988-64ee-eb65736097c6">Validate that each link includes a rel and type parameter.</p>
+<li id="_ab9964d8-2a45-4cf1-adfe-9f893fdaa5d4" label="3"><p id="_135027cc-52f2-9988-64ee-eb65736097c6">Validate that each link includes a rel and type parameter.</p>
 </li>
-<li id="_c02bda6e-753b-4e00-ac6c-04ff891ec4ef" label="4"><p id="_9fdd509a-3977-200f-0333-53ff832367bd">If a property timeStamp is included in the response, validate that it is close to the current time.</p>
+<li id="_482f9098-c5ee-4fe7-be13-c8ab71133f68" label="4"><p id="_9fdd509a-3977-200f-0333-53ff832367bd">If a property timeStamp is included in the response, validate that it is close to the current time.</p>
 </li>
-<li id="_9e7afbcd-fe35-4614-ab8e-d215cbd8c00c" label="5"><p id="_0cc6c3c6-f11f-6d9f-80be-cf5145dbc504">If a property numberReturned is included in the response, validate that the number is equal to the number of features in the response.</p>
+<li id="_889335eb-5cf8-4a18-9856-c176f34e3cd6" label="5"><p id="_0cc6c3c6-f11f-6d9f-80be-cf5145dbc504">If a property numberReturned is included in the response, validate that the number is equal to the number of features in the response.</p>
 </li>
-<li id="_f0b77653-db89-4a89-a1b6-f266014bea4b" label="6"><p id="_573b1d5a-9103-d346-4b93-12fab63a8d67">If a property numberMatched is included in the response, iteratively follow the next links until no next link is included and count the aggregated number of features returned in all responses during the iteration. Validate that the value is identical to the numberReturned stated in the initial response.</p>
+<li id="_d4473a2d-7761-49e8-b20a-393555e2cf88" label="6"><p id="_573b1d5a-9103-d346-4b93-12fab63a8d67">If a property numberMatched is included in the response, iteratively follow the next links until no next link is included and count the aggregated number of features returned in all responses during the iteration. Validate that the value is identical to the numberReturned stated in the initial response.</p>
 </li>
 </ol>
 </clause>
@@ -9390,11 +9390,11 @@ retrieved</p>
 
 <clause id="_c_test_method_17" obligation="informative">
 <title depth="5">A.4.4.11.3.<tab/>c) Test Method:</title>
-<ol id="_eaa4af35-f840-5259-3f00-ea15663d073e" type="arabic"><li id="_fc548db8-28ef-4104-b2cb-716543babcdc" label="1"><p id="_0c8f5feb-f2a6-5b46-e801-629c9a139fb6">Verify that the OpenAPI document correctly describes the limit parameter for the Get Features operation.</p>
+<ol id="_eaa4af35-f840-5259-3f00-ea15663d073e" type="arabic"><li id="_0af58ec0-1119-45eb-92d7-735796a3e9e4" label="1"><p id="_0c8f5feb-f2a6-5b46-e801-629c9a139fb6">Verify that the OpenAPI document correctly describes the limit parameter for the Get Features operation.</p>
 </li>
-<li id="_35922ba6-fa98-485c-8619-45953b7932a6" label="2"><p id="_3b652dda-7ba8-ddbe-e141-99fb7ee25575">Repeat Test A.4.4.9 using different values for the limit parameter.</p>
+<li id="_93447f16-e723-4955-989d-dcba205279d9" label="2"><p id="_3b652dda-7ba8-ddbe-e141-99fb7ee25575">Repeat Test A.4.4.9 using different values for the limit parameter.</p>
 </li>
-<li id="_876a89c9-3de8-4aed-b3bf-27d825f00aa9" label="3"><p id="_f635731d-f665-3cf4-b60e-36ea4816cc8c">For each execution of Test A.4.4.9, repeat Test A.4.4.10 to validate the results.</p>
+<li id="_e490055b-acb9-4d56-a5b6-b93adf4b2b40" label="3"><p id="_f635731d-f665-3cf4-b60e-36ea4816cc8c">For each execution of Test A.4.4.9, repeat Test A.4.4.10 to validate the results.</p>
 </li>
 </ol>
 </clause>
@@ -9421,11 +9421,11 @@ retrieved</p>
 
 <clause id="_c_test_method_18" obligation="informative">
 <title depth="5">A.4.4.12.3.<tab/>c) Test Method:</title>
-<ol id="_ec5608ce-b75f-63f8-ab1c-d72b9d65074e" type="arabic"><li id="_96507121-c5c5-4847-b15b-5150e8e01df0" label="1"><p id="_28566e73-e13e-0edd-f623-09f293e27e26">Verify that the OpenAPI document correctly describes the bbox parameter for the Get Features operation.</p>
+<ol id="_ec5608ce-b75f-63f8-ab1c-d72b9d65074e" type="arabic"><li id="_572d4f2a-6952-41e3-91e5-5790ad15d307" label="1"><p id="_28566e73-e13e-0edd-f623-09f293e27e26">Verify that the OpenAPI document correctly describes the bbox parameter for the Get Features operation.</p>
 </li>
-<li id="_334413d8-27e9-4987-ab33-f6019cad0d97" label="2"><p id="_974efb8b-2da8-6fad-1454-bf498d1cc345">Repeat Test A.4.4.9 using different values for the bbox parameter.  These should include test cases which cross the meridian, equator, 180<sup>O</sup> longitude, and polar regions.</p>
+<li id="_4daf2d34-e48f-4266-92d8-0bae27b8fa2a" label="2"><p id="_974efb8b-2da8-6fad-1454-bf498d1cc345">Repeat Test A.4.4.9 using different values for the bbox parameter.  These should include test cases which cross the meridian, equator, 180<sup>O</sup> longitude, and polar regions.</p>
 </li>
-<li id="_67855358-e910-493e-87c2-be70ccc17ff2" label="3"><p id="_2665ef89-da83-0cc4-895a-3602bc921a62">For each execution of Test A.4.4.9, repeat Test A.4.4.10 to validate the results.</p>
+<li id="_75e69f9b-9e37-4cea-8be4-be0f6bed6654" label="3"><p id="_2665ef89-da83-0cc4-895a-3602bc921a62">For each execution of Test A.4.4.9, repeat Test A.4.4.10 to validate the results.</p>
 </li>
 </ol>
 </clause>
@@ -9453,11 +9453,11 @@ successfully.</p>
 
 <clause id="_c_test_method_19" obligation="informative">
 <title depth="5">A.4.4.13.3.<tab/>c) Test Method:</title>
-<ol id="_369f548f-f609-8449-e556-a0c7169d5efc" type="arabic"><li id="_5bbba757-f86e-470f-98a6-dbf7d7dc731b" label="1"><p id="_7c464dae-4283-ff2e-8fd0-ed7bfc68cf8e">Verify that the OpenAPI document correctly describes the time parameter for the Get Features operation.</p>
+<ol id="_369f548f-f609-8449-e556-a0c7169d5efc" type="arabic"><li id="_005c47d8-c572-48b7-9b41-e094a2322aa4" label="1"><p id="_7c464dae-4283-ff2e-8fd0-ed7bfc68cf8e">Verify that the OpenAPI document correctly describes the time parameter for the Get Features operation.</p>
 </li>
-<li id="_43cc19a9-d519-49fe-88f7-f00dee96b7ff" label="2"><p id="_1bce60c0-070a-bfd0-bb81-70f0139bb7d2">Repeat Test A.4.4.9 using different values for the time parameter.</p>
+<li id="_1a6ee15a-333f-465e-aca6-5a297e6dad06" label="2"><p id="_1bce60c0-070a-bfd0-bb81-70f0139bb7d2">Repeat Test A.4.4.9 using different values for the time parameter.</p>
 </li>
-<li id="_ecd1ea0b-8ede-4a42-831b-65aedb5c6b72" label="3"><p id="_7f8e86a5-29f7-b674-5f7b-acf4468c6ae0">For each execution of Test A.4.4.9, repeat Test A.4.4.10 to validate the results.</p>
+<li id="_14974943-b683-4248-be07-4c0387a76a84" label="3"><p id="_7f8e86a5-29f7-b674-5f7b-acf4468c6ae0">For each execution of Test A.4.4.9, repeat Test A.4.4.10 to validate the results.</p>
 </li>
 </ol>
 </clause>
@@ -9519,7 +9519,7 @@ successfully.</p>
 
 <clause id="_c_test_method_21" obligation="informative">
 <title depth="5">A.4.4.15.3.<tab/>c) Test Method:</title>
-<ol id="_ecf6f65d-1520-76de-8733-30fc672fb4ff" type="arabic"><li id="_f23075a4-0fde-4401-8d59-0ad40a4a100b" label="1"><p id="_26b97467-650d-4bbe-4de4-259f54a211a7">Validate the structure of the response as follows:</p>
+<ol id="_ecf6f65d-1520-76de-8733-30fc672fb4ff" type="arabic"><li id="_b303011c-6c35-48b0-8bab-a871c7294c0f" label="1"><p id="_26b97467-650d-4bbe-4de4-259f54a211a7">Validate the structure of the response as follows:</p>
 <ul id="_aa9a2645-c82c-3e59-bdf7-18cfaa5a45c5"><li><p id="_4fa63bf2-bc41-1d8f-8fb0-ceaa58cfc4eb">For HTML use TBD</p>
 </li>
 <li><p id="_24a0f136-ed93-b3f0-93f9-7f4629145200">For GeoJSON use featureGeoJSON.yaml</p>
@@ -9528,7 +9528,7 @@ successfully.</p>
 </li>
 </ul>
 </li>
-<li id="_68aa301f-7b23-43c3-b4e0-9de621156eaf" label="2"><p id="_e333dcce-617b-ea9b-c027-18e21fd7a1fb">Validate that the following links are included in the response document:</p>
+<li id="_44aaac81-d313-4eee-90ad-51ca2eec330a" label="2"><p id="_e333dcce-617b-ea9b-c027-18e21fd7a1fb">Validate that the following links are included in the response document:</p>
 <ul id="_8358c5bc-08c1-c4a8-60ab-e00f45e980f7"><li><p id="_518441ca-92e4-1dc1-82a8-7aef637f123b">To itself</p>
 </li>
 <li><p id="_42479789-b6da-a943-677c-053d6627f9f1">To the Feature Collection which contains this Feature</p>

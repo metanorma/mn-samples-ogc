@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.1" schema-version="v1.3.0">
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.2" schema-version="v1.3.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC Web Feature Service 3.0: Part 1 - Core</title>
 <uri type="xml">https://riboseinc.github.io/ogc-wfs/ogc-wfs.xml</uri><uri type="pdf">https://riboseinc.github.io/ogc-wfs/ogc-wfs.pdf</uri><uri type="doc">https://riboseinc.github.io/ogc-wfs/ogc-wfs.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wfs-1/3.0</docidentifier><docidentifier type="ogc-internal">17-069</docidentifier><docnumber>17-069</docnumber><date type="published"><on>1000-01-01</on></date><date type="issued"><on>1000-01-01</on></date><date type="received"><on>1000-01-01</on></date><contributor><role type="author"/><organization>
@@ -5395,7 +5395,7 @@ OpenAPI fragments used to define the requirements for the
 
 
 <bibitem id="OpenAPI"><formattedref format="application/x-isodoc+xml">Open API Initiative: <strong>OpenAPI Specification 3.0.1</strong>, <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md"/></formattedref><docidentifier>OpenAPI</docidentifier></bibitem>
-<bibitem id="rfc2616" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="rfc2616" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">Hypertext Transfer Protocol — HTTP/1.1</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc2616</uri>  <docidentifier type="IETF" primary="true">RFC 2616</docidentifier>  <docidentifier type="DOI">10.17487/RFC2616</docidentifier>  <docnumber>RFC2616</docnumber>  <date type="published">    <on>1999-06</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">R. Fielding</completename>      </name>
@@ -5427,7 +5427,7 @@ OpenAPI fragments used to define the requirements for the
     <number>2616</number>  </series>  <series type="stream">    
 <title format="text/plain">IETF</title>
   </series>  <keyword>HTTP</keyword>  <keyword>Hypertext Transfer Protocol</keyword>  <keyword>World Wide Web</keyword>  <keyword>WWW</keyword>  <keyword>hypermedia</keyword></bibitem>
-<bibitem id="rfc2818" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="rfc2818" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">HTTP Over TLS</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc2818</uri>  <docidentifier type="IETF" primary="true">RFC 2818</docidentifier>  <docidentifier type="DOI">10.17487/RFC2818</docidentifier>  <docnumber>RFC2818</docnumber>  <date type="published">    <on>2000-05</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">E. Rescorla</completename>      </name>
@@ -5442,7 +5442,7 @@ OpenAPI fragments used to define the requirements for the
     <number>2818</number>  </series>  <series type="stream">    
 <title format="text/plain">IETF</title>
   </series>  <keyword>hypertext</keyword>  <keyword>transfer</keyword>  <keyword>protocol</keyword>  <keyword>transport</keyword>  <keyword>layer</keyword>  <keyword>security</keyword></bibitem>
-<bibitem id="rfc3339" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="rfc3339" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">Date and Time on the Internet: Timestamps</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc3339</uri>  <docidentifier type="IETF" primary="true">RFC 3339</docidentifier>  <docidentifier type="DOI">10.17487/RFC3339</docidentifier>  <docnumber>RFC3339</docnumber>  <date type="published">    <on>2002-07</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">G. Klyne</completename>      </name>
@@ -5458,7 +5458,7 @@ OpenAPI fragments used to define the requirements for the
     <number>3339</number>  </series>  <series type="stream">    
 <title format="text/plain">IETF</title>
   </series>  <keyword>Timestamps</keyword>  <keyword>gregorian calendar</keyword>  <keyword>iso</keyword>  <keyword>International Organization for Standardization</keyword></bibitem>
-<bibitem id="rfc3986" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="rfc3986" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">Uniform Resource Identifier (URI): Generic Syntax</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc3986</uri>  <docidentifier type="IETF" primary="true">RFC 3986</docidentifier>  <docidentifier type="DOI">10.17487/RFC3986</docidentifier>  <docnumber>RFC3986</docnumber>  <date type="published">    <on>2005-01</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">T. Berners-Lee</completename>      </name>
@@ -5479,7 +5479,7 @@ OpenAPI fragments used to define the requirements for the
     <number>3986</number>  </series>  <series type="stream">    
 <title format="text/plain">IETF</title>
   </series>  <keyword>Internet protocol</keyword>  <keyword>IP</keyword>  <keyword>uniform resource identifier</keyword>  <keyword>URI</keyword>  <keyword>www</keyword>  <keyword>world wide web</keyword></bibitem>
-<bibitem id="rfc5988" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="rfc5988" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">Web Linking</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc5988</uri>  <docidentifier type="IETF" primary="true">RFC 5988</docidentifier>  <docidentifier type="DOI">10.17487/RFC5988</docidentifier>  <docnumber>RFC5988</docnumber>  <date type="published">    <on>2010-10</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">M. Nottingham</completename>      </name>
@@ -5496,7 +5496,7 @@ OpenAPI fragments used to define the requirements for the
 <title format="text/plain">IETF</title>
   </series>  <keyword>Link</keyword>  <keyword>linking</keyword>  <keyword>http header</keyword>  <keyword>link relation</keyword>  <keyword>web</keyword></bibitem>
 <bibitem id="GMLSF"><formattedref format="application/x-isodoc+xml">van den Brink, L., Portele, C., Vretanos, P.: OGC 10-100r3, <strong>Geography Markup Language (GML) Simple Features Profile</strong>, <link target="http://portal.opengeospatial.org/files/?artifact_id=42729"/></formattedref><docidentifier>GMLSF</docidentifier></bibitem>
-<bibitem id="GeoJSON" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="GeoJSON" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">The GeoJSON Format</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc7946</uri>  <docidentifier type="IETF" primary="true">RFC 7946</docidentifier>  <docidentifier type="DOI">10.17487/RFC7946</docidentifier>  <docnumber>RFC7946</docnumber>  <date type="published">    <on>2016-08</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">H. Butler</completename>      </name>
@@ -5523,14 +5523,14 @@ OpenAPI fragments used to define the requirements for the
 <bibitem id="HTML5"><formattedref format="application/x-isodoc+xml">W3C: <strong>HTML5</strong>, W3C Recommendation, <link target="http://www.w3.org/TR/html5/"/></formattedref><docidentifier>HTML5</docidentifier><docnumber>5</docnumber></bibitem>
 <bibitem id="schema.org"><formattedref format="application/x-isodoc+xml"><strong>Schema.org</strong>: <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>schema.org</docidentifier></bibitem>
 <bibitem id="OGC06-121r8"><formattedref format="application/x-isodoc+xml">OGC Web Services Common, <link target="https://www.opengeospatial.org/standards/common"/></formattedref><docidentifier type="OGC">OGC 06-121r8</docidentifier><docnumber>06-121r8</docnumber></bibitem>
-<bibitem id="ISOIECDIR2" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="ISOIECDIR2" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-main" format="text/plain" language="en" script="Latn">ISO/IEC Directives, Part 2</title>
   
 <title type="title-part" format="text/plain" language="en" script="Latn">Principles and rules for the structure and drafting of ISO and IEC documents</title>
   <uri type="src">https://www.iso.org/sites/directives/current/part2/index.xhtml</uri>  <docidentifier type="ISO" primary="true">ISO/IEC DIR 2</docidentifier>  <edition>9</edition>  <language>en</language>  <script>Latn</script>  <copyright>    <from>2021</from>    <owner>      <organization>        
 <name>International Organization for Standardization</name>
         <abbreviation>ISO</abbreviation>        <uri>www.iso.org</uri>      </organization>    </owner>  </copyright>  <relation type="partOf">    <bibitem type="standard">      <formattedref format="text/plain">ISO/IEC DIR</formattedref>      <docidentifier type="ISO" primary="true">ISO/IEC DIR</docidentifier>    </bibitem>
-  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
+  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-03-05</fetched>      
 <title type="title-main" format="text/plain" language="en" script="Latn">ISO/IEC Directives, Part 2</title>
       
 <title type="title-part" format="text/plain" language="en" script="Latn">Principles and rules for the structure and drafting of ISO and IEC documents</title>
@@ -5539,7 +5539,7 @@ OpenAPI fragments used to define the requirements for the
             <abbreviation>ISO</abbreviation>            <uri>www.iso.org</uri>          </organization>        </owner>      </copyright>      <relation type="partOf">        <bibitem type="standard">          <formattedref format="text/plain">ISO/IEC DIR</formattedref>          <docidentifier type="ISO" primary="true">ISO/IEC DIR</docidentifier>        </bibitem>
       </relation>    </bibitem>
   </relation></bibitem>
-<bibitem id="iso19101-1" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="iso19101-1" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
@@ -5547,21 +5547,21 @@ OpenAPI fragments used to define the requirements for the
 <title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Fundamentals</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model — Part 1: Fundamentals</title>
-  <uri type="src">https://www.iso.org/standard/59164.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>  <docidentifier type="iso-reference">ISO 19101-1:2014(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.93:ed-1</docidentifier>  <docnumber>19101</docnumber>  <date type="published">    <on>2014-11</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+  <uri type="src">https://www.iso.org/standard/59164.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>  <docidentifier type="iso-reference">ISO 19101-1:2014(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.93</docidentifier>  <docnumber>19101</docnumber>  <date type="published">    <on>2014-11</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>International Organization for Standardization</name>
-      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">ISO 19101-1:2014 defines the reference model for standardization in the field of geographic information. This reference model describes the notion of interoperability and sets forth the fundamentals by which this standardization takes place. Although structured in the context of information technology and information technology standards, ISO 19101-1:2014 is independent of any application development method or technology implementation approach.</abstract>  <status>    <stage>90</stage>    <substage>93</substage>  </status>  <copyright>    <from>2014</from>    <owner>      <organization>        
+      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <language>fr</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">ISO 19101-1:2014 defines the reference model for standardization in the field of geographic information. This reference model describes the notion of interoperability and sets forth the fundamentals by which this standardization takes place. Although structured in the context of information technology and information technology standards, ISO 19101-1:2014 is independent of any application development method or technology implementation approach.</abstract>  <status>    <stage>90</stage>    <substage>93</substage>  </status>  <copyright>    <from>2014</from>    <owner>      <organization>        
 <name>ISO</name>
       </organization>    </owner>  </copyright>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO 19101:2002</formattedref>      <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>    </bibitem>
   </relation>  <place>Geneva</place></bibitem>
-<bibitem id="iso19103" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="iso19103" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Conceptual schema language</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Conceptual schema language</title>
-  <uri type="src">https://www.iso.org/standard/56734.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56734:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19103:2015</docidentifier>  <docidentifier type="iso-reference">ISO 19103:2015(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19103:stage-90.92:ed-1</docidentifier>  <docnumber>19103</docnumber>  <date type="published">    <on>2015-12</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+  <uri type="src">https://www.iso.org/standard/56734.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56734:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19103:2015</docidentifier>  <docidentifier type="iso-reference">ISO 19103:2015(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19103:stage-90.92</docidentifier>  <docnumber>19103</docnumber>  <date type="published">    <on>2015-12</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>International Organization for Standardization</name>
-      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">ISO 19103:2015 provides rules and guidelines for the use of a conceptual schema language within the context of geographic information. The chosen conceptual schema language is the Unified Modeling Language (UML). ISO 19103.2015 provides a profile of the Unified Modelling Language (UML). The standardization target type of this standard is UML schemas describing geographic information.</abstract>  <status>    <stage>90</stage>    <substage>92</substage>  </status>  <copyright>    <from>2015</from>    <owner>      <organization>        
+      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <language>fr</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">ISO 19103:2015 provides rules and guidelines for the use of a conceptual schema language within the context of geographic information. The chosen conceptual schema language is the Unified Modeling Language (UML). ISO 19103.2015 provides a profile of the Unified Modelling Language (UML). The standardization target type of this standard is UML schemas describing geographic information.</abstract>  <status>    <stage>90</stage>    <substage>92</substage>  </status>  <copyright>    <from>2015</from>    <owner>      <organization>        
 <name>ISO</name>
       </organization>    </owner>  </copyright>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO/TS 19103:2005</formattedref>      <docidentifier type="ISO" primary="true">ISO/TS 19103:2005</docidentifier>    </bibitem>
   </relation>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO/DIS 19103</formattedref>      <docidentifier type="ISO" primary="true">ISO/DIS 19103</docidentifier>    </bibitem>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.1" schema-version="v1.3.0">
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.2" schema-version="v1.3.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">Technical Committee Policies and Procedures</title>
 <docidentifier type="ogc-external">http://www.opengis.net/doc/pol/tcpnp/27.0</docidentifier><docidentifier type="ogc-internal">05-020r27</docidentifier><docnumber>05-020r27</docnumber><date type="published"><on>2019-06-03</on></date><date type="issued"><on>2019-05-29</on></date><date type="received"><on>2019-03-28</on></date><contributor><role type="editor"/><person>

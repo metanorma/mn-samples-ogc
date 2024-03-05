@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.1" schema-version="v1.3.0">
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.2" schema-version="v1.3.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC Reference Model</title>
 <docidentifier type="ogc-external">http://www.opengis.net/doc/orm/2.1</docidentifier><docidentifier type="ogc-internal">08-062r7</docidentifier><docnumber>08-062r7</docnumber><date type="published"><on>2011-12-19</on></date><date type="issued"><on>2011-12-19</on></date><date type="received"><on>2011-12-19</on></date><contributor><role type="publisher"/><organization>

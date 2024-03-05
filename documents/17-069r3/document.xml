@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.1" schema-version="v1.3.0">
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.2" schema-version="v1.3.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">API - Features - Part 1: Core</title>
 <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/ogcapi-features-1/1.0</docidentifier><docidentifier type="ogc-internal">17-069r3</docidentifier><docnumber>17-069r3</docnumber><date type="published"><on>2019-10-14</on></date><date type="issued"><on>2019-09-09</on></date><date type="received"><on>2019-07-11</on></date><contributor><role type="author"/><organization>
@@ -3120,8 +3120,8 @@ Verify that all links include the <tt>rel</tt> and <tt>type</tt> link parameters
 </requirement>
 </requirement>
 </clause>
-</annex><annex id="_f31531bf-7aee-dd20-25c5-efee03572c19" obligation="" language="" script=""><references id="_bibliography" normative="false" obligation="informative">
-<title>Bibliography</title><bibitem id="wfs20" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+</annex><annex id="_2cf734c1-2953-cb98-216b-6e5bbff80993" obligation="" language="" script=""><references id="_bibliography" normative="false" obligation="informative">
+<title>Bibliography</title><bibitem id="wfs20" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">OGC® Web Feature Service 2.0 Interface Standard</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">With Corrigendum</title>
@@ -3131,7 +3131,7 @@ Verify that all links include the <tt>rel</tt> and <tt>type</tt> link parameters
 <name>        <completename>Panagiotis (Peter) A. Vretanos</completename>      </name>
     </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Open Geospatial Consortium</name>
-    </organization>  </contributor>  <edition>2</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">The Web Feature Service (WFS) represents a change in the way geographic information is created, modified and exchanged on the Internet. Rather than sharing geographic information at the file level using File Transfer Protocol (FTP), for example, the WFS offers direct fine-grained access to geographic information at the feature and feature property level.  This International Standard specifies discovery operations, query operations, locking operations, transaction operations and operations to manage stored, parameterized query expressions.  Discovery operations allow the service to be interrogated to determine its capabilities and to retrieve the application schema that defines the feature types that the service offers.  Query operations allow features or values of feature properties to be retrieved from the underlying data store based upon constraints, defined by the client, on feature properties.  Locking operations allow exclusive access to features for the purpose of modifying or deleting features.  Transaction operations allow features to be created, changed, replaced and deleted from the underlying data store.  Stored query operations allow clients to create, drop, list and described parameterized query expressions that are stored by the server and can be repeatedly invoked using different parameter values.  This International Standard defines eleven operations:  GetCapabilities (discovery operation) DescribeFeatureType (discovery operation) GetPropertyValue (query operation) GetFeature (query operation) GetFeatureWithLock (query &amp; locking operation) LockFeature (locking operation) Transaction (transaction operation) CreateStoredQuery (stored query operation) DropStoredQuery (stored query operation) ListStoredQueries (stored query operation) DescribeStoredQueries (stored query operation) In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature access service but also includes elements of a feature type service, a coordinate conversion/transformation service and geographic format conversion service.</abstract>  </bibitem><bibitem id="rfc3986" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+    </organization>  </contributor>  <edition>2</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">The Web Feature Service (WFS) represents a change in the way geographic information is created, modified and exchanged on the Internet. Rather than sharing geographic information at the file level using File Transfer Protocol (FTP), for example, the WFS offers direct fine-grained access to geographic information at the feature and feature property level.  This International Standard specifies discovery operations, query operations, locking operations, transaction operations and operations to manage stored, parameterized query expressions.  Discovery operations allow the service to be interrogated to determine its capabilities and to retrieve the application schema that defines the feature types that the service offers.  Query operations allow features or values of feature properties to be retrieved from the underlying data store based upon constraints, defined by the client, on feature properties.  Locking operations allow exclusive access to features for the purpose of modifying or deleting features.  Transaction operations allow features to be created, changed, replaced and deleted from the underlying data store.  Stored query operations allow clients to create, drop, list and described parameterized query expressions that are stored by the server and can be repeatedly invoked using different parameter values.  This International Standard defines eleven operations:  GetCapabilities (discovery operation) DescribeFeatureType (discovery operation) GetPropertyValue (query operation) GetFeature (query operation) GetFeatureWithLock (query &amp; locking operation) LockFeature (locking operation) Transaction (transaction operation) CreateStoredQuery (stored query operation) DropStoredQuery (stored query operation) ListStoredQueries (stored query operation) DescribeStoredQueries (stored query operation) In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature access service but also includes elements of a feature type service, a coordinate conversion/transformation service and geographic format conversion service.</abstract>  </bibitem><bibitem id="rfc3986" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">Uniform Resource Identifier (URI): Generic Syntax</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc3986</uri>  <docidentifier type="IETF" primary="true">RFC 3986</docidentifier>  <docidentifier type="DOI">10.17487/RFC3986</docidentifier>  <docnumber>RFC3986</docnumber>  <date type="published">    <on>2005-01</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">T. Berners-Lee</completename>      </name>
@@ -3151,51 +3151,51 @@ Verify that all links include the <tt>rel</tt> and <tt>type</tt> link parameters
 <title format="text/plain">RFC</title>
     <number>3986</number>  </series>  <series type="stream">    
 <title format="text/plain">IETF</title>
-  </series>  <keyword>Internet protocol</keyword>  <keyword>IP</keyword>  <keyword>uniform resource identifier</keyword>  <keyword>URI</keyword>  <keyword>www</keyword>  <keyword>world wide web</keyword></bibitem><bibitem id="iso19101" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+  </series>  <keyword>Internet protocol</keyword>  <keyword>IP</keyword>  <keyword>uniform resource identifier</keyword>  <keyword>URI</keyword>  <keyword>www</keyword>  <keyword>world wide web</keyword></bibitem><bibitem id="iso19101" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model</title>
-  <uri type="src">https://www.iso.org/standard/26002.html</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19101</docidentifier>  <docidentifier type="iso-reference">ISO 19101(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99:ed-1</docidentifier>  <docnumber>19101</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
+  <uri type="src">https://www.iso.org/standard/26002.html</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19101</docidentifier>  <docidentifier type="iso-reference">ISO 19101(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99</docidentifier>  <docnumber>19101</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>International Organization for Standardization</name>
-      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>95</stage>    <substage>99</substage>  </status>  <copyright>    <from>2002</from>    <owner>      <organization>        
+      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <language>fr</language>  <script>Latn</script>  <status>    <stage>95</stage>    <substage>99</substage>  </status>  <copyright>    <from>2002</from>    <owner>      <organization>        
 <name>ISO</name>
       </organization>    </owner>  </copyright>  <relation type="updates">    <bibitem type="standard">      <formattedref format="text/plain">ISO 19101-1:2014</formattedref>      <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>      <date type="circulated">        <on>2014-11-12</on>      </date>    </bibitem>
-  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
+  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-03-05</fetched>      
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
       
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model</title>
-      <uri type="src">https://www.iso.org/standard/26002.html</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>      <docidentifier type="iso-reference">ISO 19101:2002(E)</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99:ed-1</docidentifier>      <docnumber>19101</docnumber>      <date type="published">        <on>2002-07</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+      <uri type="src">https://www.iso.org/standard/26002.html</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>      <docidentifier type="iso-reference">ISO 19101:2002(E)</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99</docidentifier>      <docnumber>19101</docnumber>      <date type="published">        <on>2002-07</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
 <name>International Organization for Standardization</name>
-          <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">This International Standard defines the framework for standardization in the field of geographic information and sets forth the basic principles by which this standardization takes place. This framework identifies the scope of the standardization activity being undertaken and the context in which it takes place. The framework provides the method by which what is to be standardized can be determined and describes how the contents of the standards are related. Although structured in the context of information technology and information technology standards, this International Standard is independent of any application development method or technology implementation approach.</abstract>      <status>        <stage>95</stage>        <substage>99</substage>      </status>      <copyright>        <from>2002</from>        <owner>          <organization>            
+          <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <language>fr</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">This International Standard defines the framework for standardization in the field of geographic information and sets forth the basic principles by which this standardization takes place. This framework identifies the scope of the standardization activity being undertaken and the context in which it takes place. The framework provides the method by which what is to be standardized can be determined and describes how the contents of the standards are related. Although structured in the context of information technology and information technology standards, this International Standard is independent of any application development method or technology implementation approach.</abstract>      <status>        <stage>95</stage>        <substage>99</substage>      </status>      <copyright>        <from>2002</from>        <owner>          <organization>            
 <name>ISO</name>
           </organization>        </owner>      </copyright>      <relation type="updates">        <bibitem type="standard">          <formattedref format="text/plain">ISO 19101-1:2014</formattedref>          <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>          <date type="circulated">            <on>2014-11-12</on>          </date>        </bibitem>
       </relation>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="iso19142" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+  </relation>  <place>Geneva</place></bibitem><bibitem id="iso19142" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
-  <uri type="src">https://www.iso.org/standard/42136.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19142</docidentifier>  <docidentifier type="iso-reference">ISO 19142(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93:ed-1</docidentifier>  <docnumber>19142</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
+  <uri type="src">https://www.iso.org/standard/42136.html</uri>  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19142</docidentifier>  <docidentifier type="iso-reference">ISO 19142(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>  <docnumber>19142</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>International Organization for Standardization</name>
-      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>90</stage>    <substage>93</substage>  </status>  <copyright>    <from>2010</from>    <owner>      <organization>        
+      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <language>fr</language>  <script>Latn</script>  <status>    <stage>90</stage>    <substage>93</substage>  </status>  <copyright>    <from>2010</from>    <owner>      <organization>        
 <name>ISO</name>
-      </organization>    </owner>  </copyright>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
+      </organization>    </owner>  </copyright>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-03-05</fetched>      
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
       
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
-      <uri type="src">https://www.iso.org/standard/42136.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19142:2010</docidentifier>      <docidentifier type="iso-reference">ISO 19142:2010(E)</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93:ed-1</docidentifier>      <docnumber>19142</docnumber>      <date type="published">        <on>2010-12</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+      <uri type="src">https://www.iso.org/standard/42136.html</uri>      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19142:2010</docidentifier>      <docidentifier type="iso-reference">ISO 19142:2010(E)</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>      <docnumber>19142</docnumber>      <date type="published">        <on>2010-12</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
 <name>International Organization for Standardization</name>
-          <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">ISO 19142:2010 specifies the behaviour of a web feature service that provides transactions on and access to geographic features in a manner independent of the underlying data store. It specifies discovery operations, query operations, locking operations, transaction operations and operations to manage stored parameterized query expressions.</abstract>      <status>        <stage>90</stage>        <substage>93</substage>      </status>      <copyright>        <from>2010</from>        <owner>          <organization>            
+          <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <language>fr</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">ISO 19142:2010 specifies the behaviour of a web feature service that provides transactions on and access to geographic features in a manner independent of the underlying data store. It specifies discovery operations, query operations, locking operations, transaction operations and operations to manage stored parameterized query expressions.</abstract>      <status>        <stage>90</stage>        <substage>93</substage>      </status>      <copyright>        <from>2010</from>        <owner>          <organization>            
 <name>ISO</name>
           </organization>        </owner>      </copyright>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="dwbp" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+  </relation>  <place>Geneva</place></bibitem><bibitem id="dwbp" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title format="text/plain">Data on the Web Best Practices</title>
   <uri type="src">https://www.w3.org/TR/dwbp/</uri>  <docidentifier type="W3C" primary="true">W3C dwbp</docidentifier>  <docnumber>dwbp</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>World Wide Web Consortium</name>
@@ -3204,7 +3204,7 @@ Verify that all links include the <tt>rel</tt> and <tt>type</tt> link parameters
   </relation>  <relation type="hasEdition">    <bibitem>      <formattedref format="text/plain">W3C WD-dwbp-20151217</formattedref>      <docidentifier type="W3C" primary="true">W3C WD-dwbp-20151217</docidentifier>    </bibitem>
   </relation>  <series>    
 <title format="text/plain">W3C REC</title>
-    <number>dwbp</number>  </series></bibitem><bibitem id="spatial_data_wbp" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+    <number>dwbp</number>  </series></bibitem><bibitem id="spatial_data_wbp" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title format="text/plain">Spatial Data on the Web Best Practices</title>
   <uri type="src">https://www.w3.org/TR/sdw-bp/</uri>  <docidentifier type="W3C" primary="true">W3C sdw-bp</docidentifier>  <docnumber>sdw-bp</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>World Wide Web Consortium</name>
@@ -3213,7 +3213,7 @@ Verify that all links include the <tt>rel</tt> and <tt>type</tt> link parameters
   </relation>  <relation type="hasEdition">    <bibitem>      <formattedref format="text/plain">W3C NOTE-sdw-bp-20161025</formattedref>      <docidentifier type="W3C" primary="true">W3C NOTE-sdw-bp-20161025</docidentifier>    </bibitem>
   </relation>  <series>    
 <title format="text/plain">W3C NOTE</title>
-    <number>sdw-bp</number>  </series></bibitem><bibitem id="dcat" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+    <number>sdw-bp</number>  </series></bibitem><bibitem id="dcat" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title format="text/plain">Data Catalog Vocabulary (DCAT)</title>
   <uri type="src">https://www.w3.org/TR/vocab-dcat/</uri>  <docidentifier type="W3C" primary="true">W3C vocab-dcat</docidentifier>  <docnumber>vocab-dcat</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>World Wide Web Consortium</name>
@@ -3427,7 +3427,7 @@ Verify that all links include the <tt>rel</tt> and <tt>type</tt> link parameters
 </annex><bibliography><references id="_references" normative="true" obligation="informative">
 <title>Normative references</title><p id="_cdc64d2a-a937-72f4-1261-c3b19cc626b1">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 <bibitem id="openapi"><formattedref format="application/x-isodoc+xml">Open API Initiative: <strong>OpenAPI Specification 3.0.2</strong>, 2018 <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md"/></formattedref><docidentifier>OpenAPI Specification, version 3.0</docidentifier><docnumber>3.0</docnumber></bibitem>
-<bibitem id="gmlsf" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="gmlsf" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-main" format="text/plain" language="en" script="Latn">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
@@ -3440,7 +3440,7 @@ Verify that all links include the <tt>rel</tt> and <tt>type</tt> link parameters
     </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Open Geospatial Consortium</name>
     </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">This approved OGC Implementation Standard defines a Simple Features profile of the Geography Markup Language version 3.2. This Simple Features Profile has been aligned with the OGC Simple Features standard for SQL version 1.2. Simple Features include: Point, Curve (LineString), Surface (Polygon), Geometry, MultiPoint, MultiCurve, MultiSurface, and MultiGeometry. The detailed abstract model for OGC features and geometry can be found in the OGC Abstract Specification, Topic Volume 1: Features (which is equivalent to ISO 19107).  This Simple Features profile of GML began as a product of OGC’s Interoperability Program: a global, collaborative, hands-on engineering and testing program designed to deliver prototype technologies and proven candidate standards into the OGC’s Specification Development Program. In OGC Interoperability Initiatives, international teams of technology providers work together to solve specific geo-processing interoperability problems posed by Initiative.</abstract>  </bibitem>
-<bibitem id="rfc7946" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="rfc7946" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">The GeoJSON Format</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc7946</uri>  <docidentifier type="IETF" primary="true">RFC 7946</docidentifier>  <docidentifier type="DOI">10.17487/RFC7946</docidentifier>  <docnumber>RFC7946</docnumber>  <date type="published">    <on>2016-08</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">H. Butler</completename>      </name>
@@ -3464,7 +3464,7 @@ Verify that all links include the <tt>rel</tt> and <tt>type</tt> link parameters
     <number>7946</number>  </series>  <series type="stream">    
 <title format="text/plain">IETF</title>
   </series>  <keyword>JSON</keyword>  <keyword>Geospatial</keyword>  <keyword>JavaScript Object Notation</keyword></bibitem>
-<bibitem id="html5" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="html5" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title format="text/plain">HTML5</title>
   <uri type="src">https://www.w3.org/TR/html5/</uri>  <docidentifier type="W3C" primary="true">W3C html5</docidentifier>  <docnumber>html5</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>World Wide Web Consortium</name>
@@ -3480,7 +3480,7 @@ Verify that all links include the <tt>rel</tt> and <tt>type</tt> link parameters
 <title format="text/plain">W3C REC</title>
     <number>html5</number>  </series></bibitem>
 <bibitem id="schema"><formattedref format="application/x-isodoc+xml"><strong>Schema.org:</strong> <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>schema.org</docidentifier></bibitem>
-<bibitem id="rfc2616" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="rfc2616" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">Hypertext Transfer Protocol — HTTP/1.1</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc2616</uri>  <docidentifier type="IETF" primary="true">RFC 2616</docidentifier>  <docidentifier type="DOI">10.17487/RFC2616</docidentifier>  <docnumber>RFC2616</docnumber>  <date type="published">    <on>1999-06</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">R. Fielding</completename>      </name>
@@ -3512,7 +3512,7 @@ Verify that all links include the <tt>rel</tt> and <tt>type</tt> link parameters
     <number>2616</number>  </series>  <series type="stream">    
 <title format="text/plain">IETF</title>
   </series>  <keyword>HTTP</keyword>  <keyword>Hypertext Transfer Protocol</keyword>  <keyword>World Wide Web</keyword>  <keyword>WWW</keyword>  <keyword>hypermedia</keyword></bibitem>
-<bibitem id="rfc2818" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="rfc2818" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">HTTP Over TLS</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc2818</uri>  <docidentifier type="IETF" primary="true">RFC 2818</docidentifier>  <docidentifier type="DOI">10.17487/RFC2818</docidentifier>  <docnumber>RFC2818</docnumber>  <date type="published">    <on>2000-05</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">E. Rescorla</completename>      </name>

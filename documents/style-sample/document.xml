@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.1" schema-version="v1.3.0">
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.2" schema-version="v1.3.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC® WPS 2.0.2 Interface Standard Corrigendum 2</title>
 <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wps/2.0.2</docidentifier><docidentifier type="ogc-internal">14-065r2</docidentifier><docnumber>14-065r2</docnumber><date type="published"><on>2015-03-05</on></date><date type="confirmed"><on>2018-02-16</on></date><date type="issued"><on>2015-01-27</on></date><date type="received"><on>2014-11-25</on></date><contributor><role type="author"/><organization>
@@ -954,7 +954,7 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float"&gt;float
 </clause>
 </annex><bibliography><references id="_normative_references" normative="true" obligation="informative">
 <title>Normative references</title><p id="_307b20e2-9e40-db56-abbf-2822ab2941cc">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="ogc-06-121r9" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="ogc-06-121r9" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-main" format="text/plain" language="en" script="Latn">OGC Web Service Common Implementation Specification</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">OGC Web Service Common Implementation Specification</title>
@@ -963,7 +963,7 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float"&gt;float
     </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Open Geospatial Consortium</name>
     </organization>  </contributor>  <edition>9</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">This document specifies many of the aspects that are, or should be, common to all or multiple OGC Web Service (OWS) interface Implementation Standards. These common aspects are primarily some of the parameters and data structures used in operation requests and responses. Of course, each such Implementation Standard must specify the additional aspects of that interface, including specifying all additional parameters and data structures needed in all operation requests and responses.</abstract>  </bibitem>
-<bibitem id="ogc-08-131r3" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="ogc-08-131r3" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">The Specification Model</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Standard for Modular specifications</title>
@@ -974,7 +974,7 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float"&gt;float
     </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Open Geospatial Consortium</name>
     </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">This standard contains requirements for writing standards to be used for any document whose eventual purpose is the specification of requirements for software, services or data structures.</abstract>  </bibitem>
-<bibitem id="ietf-rfc-4646" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="ietf-rfc-4646" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">Tags for Identifying Languages</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc4646</uri>  <docidentifier type="IETF" primary="true">RFC 4646</docidentifier>  <docidentifier type="DOI">10.17487/RFC4646</docidentifier>  <docnumber>RFC4646</docnumber>  <date type="published">    <on>2006-09</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">A. Phillips</completename>      </name>
@@ -991,7 +991,7 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float"&gt;float
     <number>4646</number>  </series>  <series type="stream">    
 <title format="text/plain">IETF</title>
   </series>  <keyword>Lang-Tag</keyword></bibitem>
-<bibitem id="ietf-rfc-3986" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="ietf-rfc-3986" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">Uniform Resource Identifier (URI): Generic Syntax</title>
   <uri type="src">https://www.rfc-editor.org/info/rfc3986</uri>  <docidentifier type="IETF" primary="true">RFC 3986</docidentifier>  <docidentifier type="DOI">10.17487/RFC3986</docidentifier>  <docnumber>RFC3986</docnumber>  <date type="published">    <on>2005-01</on>  </date>  <contributor>    <role type="author"/>    <person>      
 <name>        <completename language="en" script="Latn">T. Berners-Lee</completename>      </name>
@@ -1012,7 +1012,7 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float"&gt;float
     <number>3986</number>  </series>  <series type="stream">    
 <title format="text/plain">IETF</title>
   </series>  <keyword>Internet protocol</keyword>  <keyword>IP</keyword>  <keyword>uniform resource identifier</keyword>  <keyword>URI</keyword>  <keyword>www</keyword>  <keyword>world wide web</keyword></bibitem>
-<bibitem id="iso-8601-2004" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="iso-8601-2004" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Data elements and interchange formats</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Information interchange</title>
@@ -1020,15 +1020,15 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float"&gt;float
 <title type="title-part" format="text/plain" language="en" script="Latn">Representation of dates and times</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">Data elements and interchange formats — Information interchange — Representation of dates and times</title>
-  <uri type="src">https://www.iso.org/standard/40874.html</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/04/08/40874.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 8601:2004</docidentifier>  <docidentifier type="iso-reference">ISO 8601:2004(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:8601:stage-95.99:ed-3</docidentifier>  <docnumber>8601</docnumber>  <date type="published">    <on>2004-12</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
+  <uri type="src">https://www.iso.org/standard/40874.html</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/04/08/40874.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 8601:2004</docidentifier>  <docidentifier type="iso-reference">ISO 8601:2004(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:8601:stage-95.99</docidentifier>  <docnumber>8601</docnumber>  <date type="published">    <on>2004-12</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>International Organization for Standardization</name>
-      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">ISO 8601:2004 is applicable whenever representation of dates in the Gregorian calendar, times in the 24-hour timekeeping system, time intervals and recurring time intervals or of the formats of these representations are included in information interchange. It includes — calendar dates expressed in terms of calendar year, calendar month and calendar day of the month; — ordinal dates expressed in terms of calendar year and calendar day of the year; — week dates expressed in terms of calendar year, calendar week number and calendar day of the week; — local time based upon the 24-hour timekeeping system; — Coordinated Universal Time of day; — local time and the difference from Coordinated Universal Time; — combination of date and time of day; — time intervals; — recurring time intervals. ISO 8601:2004 does not cover dates and times where words are used in the representation and dates and times where characters are not used in the representation. ISO 8601:2004 does not assign any particular meaning or interpretation to any data element that uses representations in accordance with ISO 8601:2004. Such meaning will be determined by the context of the application.</abstract>  <status>    <stage>95</stage>    <substage>99</substage>  </status>  <copyright>    <from>2004</from>    <owner>      <organization>        
+      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <language>fr</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">ISO 8601:2004 is applicable whenever representation of dates in the Gregorian calendar, times in the 24-hour timekeeping system, time intervals and recurring time intervals or of the formats of these representations are included in information interchange. It includes — calendar dates expressed in terms of calendar year, calendar month and calendar day of the month; — ordinal dates expressed in terms of calendar year and calendar day of the year; — week dates expressed in terms of calendar year, calendar week number and calendar day of the week; — local time based upon the 24-hour timekeeping system; — Coordinated Universal Time of day; — local time and the difference from Coordinated Universal Time; — combination of date and time of day; — time intervals; — recurring time intervals. ISO 8601:2004 does not cover dates and times where words are used in the representation and dates and times where characters are not used in the representation. ISO 8601:2004 does not assign any particular meaning or interpretation to any data element that uses representations in accordance with ISO 8601:2004. Such meaning will be determined by the context of the application.</abstract>  <status>    <stage>95</stage>    <substage>99</substage>  </status>  <copyright>    <from>2004</from>    <owner>      <organization>        
 <name>ISO</name>
       </organization>    </owner>  </copyright>  <relation type="obsoletes">    <bibitem type="standard">      <formattedref format="text/plain">ISO 8601:2000</formattedref>      <docidentifier type="ISO" primary="true">ISO 8601:2000</docidentifier>    </bibitem>
   </relation>  <relation type="updates">    <bibitem type="standard">      <formattedref format="text/plain">ISO 8601-1:2019</formattedref>      <docidentifier type="ISO" primary="true">ISO 8601-1:2019</docidentifier>      <date type="circulated">        <on>2019-02-25</on>      </date>    </bibitem>
   </relation>  <relation type="updates">    <bibitem type="standard">      <formattedref format="text/plain">ISO 8601-2:2019</formattedref>      <docidentifier type="ISO" primary="true">ISO 8601-2:2019</docidentifier>      <date type="circulated">        <on>2019-02-25</on>      </date>    </bibitem>
   </relation>  <place>Geneva</place></bibitem>
-<bibitem id="xml-schema-part2" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="xml-schema-part2" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title format="text/plain">XML Schema Part 2: Datatypes Second Edition</title>
   <uri type="src">https://www.w3.org/TR/xmlschema-2/</uri>  <docidentifier type="W3C" primary="true">W3C xmlschema-2</docidentifier>  <docnumber>xmlschema-2</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>World Wide Web Consortium</name>
@@ -1038,30 +1038,30 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float"&gt;float
 <title format="text/plain">W3C REC</title>
     <number>xmlschema-2</number>  </series></bibitem>
 </references><references id="_bibliography" normative="false" obligation="informative">
-<title>Bibliography</title><bibitem id="iso19101" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title>Bibliography</title><bibitem id="iso19101" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model</title>
-  <uri type="src">https://www.iso.org/standard/26002.html</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19101</docidentifier>  <docidentifier type="iso-reference">ISO 19101(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99:ed-1</docidentifier>  <docnumber>19101</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
+  <uri type="src">https://www.iso.org/standard/26002.html</uri>  <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>  <docidentifier type="ISO" primary="true">ISO 19101</docidentifier>  <docidentifier type="iso-reference">ISO 19101(E)</docidentifier>  <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99</docidentifier>  <docnumber>19101</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>International Organization for Standardization</name>
-      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <script>Latn</script>  <status>    <stage>95</stage>    <substage>99</substage>  </status>  <copyright>    <from>2002</from>    <owner>      <organization>        
+      <abbreviation>ISO</abbreviation>      <uri>www.iso.org</uri>    </organization>  </contributor>  <edition>1</edition>  <language>en</language>  <language>fr</language>  <script>Latn</script>  <status>    <stage>95</stage>    <substage>99</substage>  </status>  <copyright>    <from>2002</from>    <owner>      <organization>        
 <name>ISO</name>
       </organization>    </owner>  </copyright>  <relation type="updates">    <bibitem type="standard">      <formattedref format="text/plain">ISO 19101-1:2014</formattedref>      <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>      <date type="circulated">        <on>2014-11-12</on>      </date>    </bibitem>
-  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-02-12</fetched>      
+  </relation>  <relation type="instanceOf">    <bibitem type="standard">      <fetched>2024-03-05</fetched>      
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
       
 <title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
       
 <title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model</title>
-      <uri type="src">https://www.iso.org/standard/26002.html</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>      <docidentifier type="iso-reference">ISO 19101:2002(E)</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99:ed-1</docidentifier>      <docnumber>19101</docnumber>      <date type="published">        <on>2002-07</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
+      <uri type="src">https://www.iso.org/standard/26002.html</uri>      <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>      <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>      <docidentifier type="iso-reference">ISO 19101:2002(E)</docidentifier>      <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99</docidentifier>      <docnumber>19101</docnumber>      <date type="published">        <on>2002-07</on>      </date>      <contributor>        <role type="publisher"/>        <organization>          
 <name>International Organization for Standardization</name>
-          <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">This International Standard defines the framework for standardization in the field of geographic information and sets forth the basic principles by which this standardization takes place. This framework identifies the scope of the standardization activity being undertaken and the context in which it takes place. The framework provides the method by which what is to be standardized can be determined and describes how the contents of the standards are related. Although structured in the context of information technology and information technology standards, this International Standard is independent of any application development method or technology implementation approach.</abstract>      <status>        <stage>95</stage>        <substage>99</substage>      </status>      <copyright>        <from>2002</from>        <owner>          <organization>            
+          <abbreviation>ISO</abbreviation>          <uri>www.iso.org</uri>        </organization>      </contributor>      <edition>1</edition>      <language>en</language>      <language>fr</language>      <script>Latn</script>      <abstract format="text/plain" language="en" script="Latn">This International Standard defines the framework for standardization in the field of geographic information and sets forth the basic principles by which this standardization takes place. This framework identifies the scope of the standardization activity being undertaken and the context in which it takes place. The framework provides the method by which what is to be standardized can be determined and describes how the contents of the standards are related. Although structured in the context of information technology and information technology standards, this International Standard is independent of any application development method or technology implementation approach.</abstract>      <status>        <stage>95</stage>        <substage>99</substage>      </status>      <copyright>        <from>2002</from>        <owner>          <organization>            
 <name>ISO</name>
           </organization>        </owner>      </copyright>      <relation type="updates">        <bibitem type="standard">          <formattedref format="text/plain">ISO 19101-1:2014</formattedref>          <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>          <date type="circulated">            <on>2014-11-12</on>          </date>        </bibitem>
       </relation>      <place>Geneva</place>    </bibitem>
-  </relation>  <place>Geneva</place></bibitem><bibitem id="dcat" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+  </relation>  <place>Geneva</place></bibitem><bibitem id="dcat" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title format="text/plain">Data Catalog Vocabulary (DCAT)</title>
   <uri type="src">https://www.w3.org/TR/vocab-dcat/</uri>  <docidentifier type="W3C" primary="true">W3C vocab-dcat</docidentifier>  <docnumber>vocab-dcat</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>World Wide Web Consortium</name>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.1" schema-version="v1.3.0">
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.2" schema-version="v1.3.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
 <docidentifier type="ogc-external">http://www.opengis.net/spec/gmlsf/2.0.1</docidentifier><docidentifier type="ogc-internal">10-100r3</docidentifier><docnumber>10-100r3</docnumber><date type="published"><on>2012-04-05</on></date><date type="issued"><on>2012-04-05</on></date><date type="received"><on>2011-05-24</on></date><contributor><role type="author"/><organization>
@@ -4643,7 +4643,7 @@ count(self::gml:Surface/gml:patches/*)"&gt;
 <p id="_6ff3dbd2-ccb4-5ac2-e5a2-85436a037663"><link target="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfL2.sch"/></p>
 </annex><bibliography><references id="_normative_references" normative="true" obligation="informative">
 <title>Normative references</title><p id="_cdc64d2a-a937-72f4-1261-c3b19cc626b1">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="ogc07-036" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="ogc07-036" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-main" format="text/plain" language="en" script="Latn">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
   
 <title type="main" format="text/plain" language="en" script="Latn">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
@@ -4652,7 +4652,7 @@ count(self::gml:Surface/gml:patches/*)"&gt;
     </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Open Geospatial Consortium</name>
     </organization>  </contributor>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">The OpenGIS® Geography Markup Language Encoding Standard (GML) The Geography Markup Language (GML) is an XML grammar for expressing geographical features. GML serves as a modeling language for geographic systems as well as an open interchange format for geographic transactions on the Internet. As with most XML based grammars, there are two parts to the grammar – the schema that describes the document and the instance document that contains the actual data. A GML document is described using a GML Schema. This allows users and developers to describe generic geographic data sets that contain points, lines and polygons. However, the developers of GML envision communities working to define community-specific application schemas [en.wikipedia.org/wiki/GML_Application_Schemas] that are specialized extensions of GML. Using application schemas, users can refer to roads, highways, and bridges instead of points, lines and polygons. If everyone in a community agrees to use the same schemas they can exchange data easily and be sure that a road is still a road when they view it.  Clients and servers with interfaces that implement the OpenGIS® Web Feature Service Interface Standard[http://www.opengeospatial.org/standards/wfs] read and write GML data. GML is also an ISO standard (ISO 19136:2007) [www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=32554 ].   See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .</abstract>  </bibitem>
-<bibitem id="ogc06-103r3" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="ogc06-103r3" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="title-intro" format="text/plain" language="en" script="Latn">OpenGIS Implementation Specification for Geographic information</title>
   
 <title type="title-main" format="text/plain" language="en" script="Latn">Simple feature access</title>
@@ -4665,7 +4665,7 @@ count(self::gml:Surface/gml:patches/*)"&gt;
     </person>  </contributor>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Open Geospatial Consortium</name>
     </organization>  </contributor>  <edition>3</edition>  <language>en</language>  <script>Latn</script>  <abstract format="text/plain" language="en" script="Latn">The OpenGIS® Simple Features Interface Standard (SFS) provides a well-defined and common way for applications to store and access feature data in relational or object-relational databases, so that the data can be used to support other applications through a common feature model, data store and information access interface. OpenGIS Simple Features are geospatial features described using vector data elements such as points, lines and polygons.    Part 1 “Common Architecture supplies the common feature model for use by applications that will use the Simple Features data stores and access interfaces.   Part 2 provides a standard SQL implementation of the abstract model in Part 1. (Note: The OpenGIS® Simple Features Interface Standards for OLE/COM and CORBA are no longer current and are not provided here.)   The corresponding standard for the Web is the OpenGIS® Web Feature Service Interface Standard http://www.opengeospatial.org/standards/wfs.</abstract>  </bibitem>
-<bibitem id="w3cxml-0" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="w3cxml-0" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title format="text/plain">Extensible Markup Language (XML) 1.0 (Fifth Edition)</title>
   <uri type="src">https://www.w3.org/TR/2008/REC-xml-20081126/</uri>  <docidentifier type="W3C" primary="true">W3C REC-xml-20081126</docidentifier>  <docnumber>REC-xml-20081126</docnumber>  <date type="published">    <on>2008-11-26</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>World Wide Web Consortium</name>
@@ -4685,7 +4685,7 @@ count(self::gml:Surface/gml:patches/*)"&gt;
   </relation>  <series>    
 <title format="text/plain">W3C REC</title>
     <number>REC-xml-20081126</number>  </series></bibitem>
-<bibitem id="w3cxml-1" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="w3cxml-1" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title format="text/plain">XML Schema Part 1: Structures Second Edition</title>
   <uri type="src">https://www.w3.org/TR/xmlschema-1/</uri>  <docidentifier type="W3C" primary="true">W3C xmlschema-1</docidentifier>  <docnumber>xmlschema-1</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>World Wide Web Consortium</name>
@@ -4694,7 +4694,7 @@ count(self::gml:Surface/gml:patches/*)"&gt;
   </relation>  <series>    
 <title format="text/plain">W3C REC</title>
     <number>xmlschema-1</number>  </series></bibitem>
-<bibitem id="w3cxml-2" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="w3cxml-2" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title format="text/plain">XML Schema Part 2: Datatypes Second Edition</title>
   <uri type="src">https://www.w3.org/TR/xmlschema-2/</uri>  <docidentifier type="W3C" primary="true">W3C xmlschema-2</docidentifier>  <docnumber>xmlschema-2</docnumber>  <contributor>    <role type="publisher"/>    <organization>      
 <name>World Wide Web Consortium</name>
@@ -4703,7 +4703,7 @@ count(self::gml:Surface/gml:patches/*)"&gt;
   </relation>  <series>    
 <title format="text/plain">W3C REC</title>
     <number>xmlschema-2</number>  </series></bibitem>
-<bibitem id="w3c" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<bibitem id="w3c" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title format="text/plain">Namespaces in XML 1.0 (Third Edition)</title>
   <uri type="src">https://www.w3.org/TR/2009/REC-xml-names-20091208/</uri>  <docidentifier type="W3C" primary="true">W3C REC-xml-names-20091208</docidentifier>  <docnumber>REC-xml-names-20091208</docnumber>  <date type="published">    <on>2009-12-08</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>World Wide Web Consortium</name>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.1" schema-version="v1.3.0">
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.5.2" schema-version="v1.3.0">
 <bibdata type="standard">
 <title language="en" format="text/plain">Volume 0: Primer for the OGC CDB Standard: Model and Physical Data Store Structure</title>
 <docidentifier type="ogc-external">http://www.opengis.net/doc/BP/cdb-core-primer/1.1</docidentifier><docidentifier type="ogc-internal">15-120r5</docidentifier><docnumber>15-120r5</docnumber><date type="published"><on>2018-12-19</on></date><date type="issued"><on>2018-08-27</on></date><date type="received"><on>2018-03-20</on></date><contributor><role type="author"/><organization>
@@ -927,7 +927,7 @@ Model</td>
 </tr></tbody>
 </table>
 </annex><bibliography><references id="_normative_and_informative_references" normative="false" obligation="informative">
-<title>Bibliography</title><bibitem id="ieee-std-1278" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+<title>Bibliography</title><bibitem id="ieee-std-1278" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">IEEE Standard for Information Technology — Protocols for Distributed Interactive Simulation Applications—Entity Information and Interaction</title>
   <uri type="src">https://ieeexplore.ieee.org/document/237008</uri>  <docidentifier type="IEEE" primary="true">IEEE 1278-1993</docidentifier>  <docidentifier type="IEEE" scope="trademark" primary="true">IEEE 1278™-1993</docidentifier>  <docidentifier type="ISBN">978-1-5593-7305-0</docidentifier>  <docidentifier type="DOI">10.1109/IEEESTD.1993.115125</docidentifier>  <docnumber>IEEE 1278-1993</docnumber>  <date type="created">    <on>1993-05-12</on>  </date>  <date type="published">    <on>2002-08-06</on>  </date>  <date type="issued">    <on>1993-03-18</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Institute of Electrical and Electronics Engineers</name>
@@ -941,7 +941,7 @@ Model</td>
   </relation>  <relation type="obsoletedBy">    <bibitem>      <formattedref format="text/plain">IEEE 1278.1-1995</formattedref>      <docidentifier type="IEEE" primary="true">IEEE 1278.1-1995</docidentifier>    </bibitem>
   </relation>  <relation type="obsoletedBy">    <bibitem>      <formattedref format="text/plain">IEEE 1278.1-1995</formattedref>      <docidentifier type="IEEE" primary="true">IEEE 1278.1-1995</docidentifier>    </bibitem>
   </relation>  <relation type="obsoletedBy">    <bibitem>      <formattedref format="text/plain">IEEE 1278.1-1995</formattedref>      <docidentifier type="IEEE" primary="true">IEEE 1278.1-1995</docidentifier>    </bibitem>
-  </relation>  <keyword>Simulation</keyword>  <keyword>Protocols</keyword>  <keyword>Communication standards</keyword>  <keyword>articulated parts</keyword>  <keyword>attached parts</keyword>  <keyword>dead reckoning</keyword>  <keyword>entity coordinates</keyword>  <keyword>Euler angles</keyword>  <keyword>field</keyword>  <keyword>guise</keyword>  <keyword>PDUs</keyword>  <keyword>right-hand rule</keyword>  <keyword>simulation application</keyword>  <keyword>simulation entity</keyword></bibitem><bibitem id="ieee-std-1516" type="standard" schema-version="v1.2.8">  <fetched>2024-02-12</fetched>  
+  </relation>  <keyword>Simulation</keyword>  <keyword>Protocols</keyword>  <keyword>Communication standards</keyword>  <keyword>articulated parts</keyword>  <keyword>attached parts</keyword>  <keyword>dead reckoning</keyword>  <keyword>entity coordinates</keyword>  <keyword>Euler angles</keyword>  <keyword>field</keyword>  <keyword>guise</keyword>  <keyword>PDUs</keyword>  <keyword>right-hand rule</keyword>  <keyword>simulation application</keyword>  <keyword>simulation entity</keyword></bibitem><bibitem id="ieee-std-1516" type="standard" schema-version="v1.2.8">  <fetched>2024-03-05</fetched>  
 <title type="main" format="text/plain">IEEE Standard for Modeling and Simulation (M&amp;S) High Level ARchitecture (HLA) — Framework and Rules</title>
   <uri type="src">https://ieeexplore.ieee.org/document/893287</uri>  <docidentifier type="IEEE" primary="true">IEEE 1516-2000</docidentifier>  <docidentifier type="IEEE" scope="trademark" primary="true">IEEE 1516™-2000</docidentifier>  <docidentifier type="ISBN">978-0-7381-2620-3</docidentifier>  <docidentifier type="DOI">10.1109/IEEESTD.2000.92296</docidentifier>  <docnumber>IEEE 1516-2000</docnumber>  <date type="created">    <on>2000-12-11</on>  </date>  <date type="published">    <on>2019-04-05</on>  </date>  <date type="issued">    <on>2000-09-21</on>  </date>  <contributor>    <role type="publisher"/>    <organization>      
 <name>Institute of Electrical and Electronics Engineers</name>

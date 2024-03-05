@@ -1611,7 +1611,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
   <edition>26.0</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract>&lt;p&gt;The &lt;eref type="inline" bibitemid="OGC" citeas="OGC"/&gt; provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. "International standards" (as defined in &lt;eref type="inline" bibitemid="ISODIR2" citeas="ISO/IEC Directives, Part 2"/&gt;) are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:&lt;/p&gt;
+  <abstract>&lt;p&gt;The &lt;eref type="inline" bibitemid="OGC" citeas="OGC"/&gt; provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. "International standards" (as defined in &lt;eref type="inline" bibitemid="ISODIR2" citeas="ISO/IEC DIR 2"/&gt;) are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:&lt;/p&gt;
 
 &lt;p&gt;A document, established by consensus and approved by the OGC Membership, that provides, for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree of order in a given context.&lt;/p&gt;
 
