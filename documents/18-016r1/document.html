@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style>
   <!--
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,7 +17,8 @@ figure, figcaption, footer, header, hgroup,
 menu, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -32,7 +34,8 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   border: 0;
-  font-size: 100%; }
+  font-size: 100%;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,7 +50,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 html, body, div, span, applet, object, iframe,
 p, blockquote,
@@ -62,87 +66,115 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  font-family: "Overpass",sans-serif; }
+  font-family: "Overpass",sans-serif;
+}
 
 code, pre, tt, kbd, samp {
   font-family: "Space Mono",monospace;
-  font-variant-ligatures: none; }
+  font-variant-ligatures: none;
+}
 
 code *, pre *, tt *, kbd *, samp * {
   font-family: "Space Mono",monospace !important;
-  font-variant-ligatures: none; }
+  font-variant-ligatures: none;
+}
 
 p code, dt code, li code, label code, legend code, caption code, th code, td code,
 p tt, dt tt, li tt, label tt, legend tt, caption tt, th tt, td tt,
 p kbd, dt kbd, li kbd, label kbd, legend kbd, caption kbd, th kbd, td kbd,
 p samp, dt samp, li samp, label samp, legend samp, caption samp, th samp, td samp {
-  font-size: 0.8em; }
+  font-size: 0.8em;
+}
+
+sub, sup {
+  font-size: 0.75em;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Overpass",sans-serif; }
+  font-family: "Overpass",sans-serif;
+}
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Overpass",sans-serif; }
+  font-family: "Overpass",sans-serif;
+}
 
 blockquote, q {
-  quotes: none; }
-  blockquote::before, blockquote::after, q::before, q::after {
-    content: '';
-    content: none; }
+  quotes: none;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+  content: "";
+  content: none;
+}
 
 .h2Annex {
-  font-family: "Overpass",sans-serif; }
+  font-family: "Overpass",sans-serif;
+}
 
 dl {
   display: grid;
-  grid-template-columns: max-content auto; }
-  dl dt p, dl dd p {
-    margin-top: 0; }
-  dl dt {
-    grid-column-start: 1; }
-  dl dd {
-    grid-column-start: 2; }
+  grid-template-columns: max-content auto;
+}
+dl dt p, dl dd p {
+  margin-top: 0;
+}
+dl dt {
+  grid-column-start: 1;
+}
+dl dd {
+  grid-column-start: 2;
+}
 
 b, strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 div.document-stage-band, div.document-type-band {
-  background-color: #333333; }
+  background-color: #333333;
+}
 
 a.FootnoteRef + a.FootnoteRef::before {
   content: ", ";
-  vertical-align: super; }
+  vertical-align: super;
+}
 
 a.TableFootnoteRef + a.TableFootnoteRef::before {
   content: ", ";
-  vertical-align: super; }
+  vertical-align: super;
+}
 
 a.TableFootnoteRef, span.TableFootnoteRef,
 a.FootnoteRef, span.FootnoteRef {
-  vertical-align: super; }
+  vertical-align: super;
+}
 
 .addition {
-  color: blue; }
+  color: blue;
+}
 
 .deletion {
   color: red;
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
 ruby {
   ruby-position: over;
-  -webkit-ruby-position: before; }
+  -webkit-ruby-position: before;
+}
 
 ruby ruby {
   ruby-position: under;
-  -webkit-ruby-position: after; }
+  -webkit-ruby-position: after;
+}
 
 /* code highlighting with line numbers */
 table.rouge-line-table td.rouge-gutter {
@@ -150,13 +182,15 @@ table.rouge-line-table td.rouge-gutter {
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-  padding-right: 1em; }
+  padding-right: 1em;
+}
 
 table.rouge-line-table td.rouge-code {
   -moz-user-select: all;
   -ms-user-select: all;
   -webkit-user-select: all;
-  user-select: all; }
+  user-select: all;
+}
 
 table.rouge-line-table,
 table.rouge-line-table th,
@@ -165,370 +199,467 @@ table.rouge-line-table td {
   border: none;
   margin: 0;
   padding: 0;
-  font-size: 100%; }
+  font-size: 100%;
+}
 
 table.rouge-line-table pre {
   margin: 0;
   padding: 0;
   overflow-x: visible;
-  font-size: 100%; }
+  font-size: 100%;
+}
+
+/* header § links */
+a.header {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.header:hover {
+  color: #a53221 !important;
+  background: inherit;
+  box-shadow: none;
+}
+
+a.header:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.anchor {
+  position: absolute;
+  z-index: 1001;
+  width: 1.5ex;
+  margin-left: -1.5ex;
+  display: block;
+  text-decoration: none !important;
+  visibility: hidden;
+  text-align: center;
+  font-weight: 400;
+}
+
+a.anchor::before {
+  content: "§";
+  font-size: 0.85em;
+  display: block;
+  padding-top: 0.1em;
+}
+
+a.anchor:hover {
+  color: #a53221;
+  background: inherit;
+  box-shadow: none;
+}
+
+h1 > a.anchor:hover,
+h2 > a.anchor:hover,
+h3 > a.anchor:hover,
+h4 > a.anchor:hover,
+h5 > a.anchor:hover,
+h6 > a.anchor:hover,
+.inline-header > a.anchor:hover,
+h1:hover > a.anchor,
+h2:hover > a.anchor,
+h3:hover > a.anchor,
+h4:hover > a.anchor,
+h5:hover > a.anchor,
+h6:hover > a.anchor,
+.inline-header:hover > a.anchor {
+  visibility: visible;
+}
+
+/* collapsible snippets: collapsible before hidable */
+.hidable {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 3px 0;
+  margin: 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: "▼";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.active:after {
+  content: "▲";
+}
+
+/* collapsible: */
+.collapsible + .hidable {
+  margin-top: 0;
+}
+
+.collapsible:not(.active) + .hidable {
+  overflow: hidden;
+  padding: 0;
+}
 
 #standard-band {
-  background-color: #3D9970; }
+  background-color: #0AC442;
+}
 
 #standard {
-  border-bottom: solid 3px #3D9970; }
+  border-bottom: solid 3px #0AC442;
+}
 
-#draft-standard-band {
-  background-color: #3D9970; }
+#directive-band {
+  background-color: #540D6E;
+}
 
-#draft-standard {
-  border-bottom: solid 3px #3D9970; }
+#directive {
+  border-bottom: solid 3px #540D6E;
+}
 
-#abstract-specification-topic-band {
-  background-color: #3D9970; }
+#guide-band {
+  background-color: #D183C9;
+}
 
-#abstract-specification-topic {
-  border-bottom: solid 3px #3D9970; }
+#guide {
+  border-bottom: solid 3px #D183C9;
+}
 
-#reference-model-band {
-  background-color: #3D9970; }
+#specification-band {
+  background-color: #65AFFF;
+}
 
-#reference-model {
-  border-bottom: solid 3px #3D9970; }
+#specification {
+  border-bottom: solid 3px #65AFFF;
+}
 
-#best-practice-band {
-  background-color: #39CCCC; }
+#report-band {
+  background-color: #3A405A;
+}
 
-#best-practice {
-  border-bottom: solid 3px #39CCCC; }
+#report {
+  border-bottom: solid 3px #3A405A;
+}
 
-#discussion-paper-band {
-  background-color: #39CCCC; }
+#amendment-band {
+  background-color: #F26430;
+}
 
-#discussion-paper {
-  border-bottom: solid 3px #39CCCC; }
+#amendment {
+  border-bottom: solid 3px #F26430;
+}
 
-#white-paper-band {
-  background-color: #39CCCC; }
+#corrigendum-band {
+  background-color: #C84630;
+}
 
-#white-paper {
-  border-bottom: solid 3px #39CCCC; }
+#corrigendum {
+  border-bottom: solid 3px #C84630;
+}
 
-#technical-paper-band {
-  background-color: #39CCCC; }
+#administrative-band {
+  background-color: #BFAE48;
+}
 
-#technical-paper {
-  border-bottom: solid 3px #39CCCC; }
+#administrative {
+  border-bottom: solid 3px #BFAE48;
+}
 
-#engineering-report-band {
-  background-color: #39CCCC; }
+#advisory-band {
+  background-color: #BD9391;
+}
 
-#engineering-report {
-  border-bottom: solid 3px #39CCCC; }
-
-#release-notes-band {
-  background-color: #FFDC00; }
-
-#release-notes {
-  border-bottom: solid 3px #FFDC00; }
-
-#user-guide-band {
-  background-color: #FFDC00; }
-
-#user-guide {
-  border-bottom: solid 3px #FFDC00; }
-
-#community-practice-band {
-  background-color: #FF851B; }
-
-#community-practice {
-  border-bottom: solid 3px #FF851B; }
-
-#community-standard-band {
-  background-color: #FF851B; }
-
-#community-standard {
-  border-bottom: solid 3px #FF851B; }
-
-#other-band {
-  background-color: #0074D9; }
-
-#other {
-  border-bottom: solid 3px #0074D9; }
-
-#policy-band {
-  background-color: #0074D9; }
-
-#policy {
-  border-bottom: solid 3px #0074D9; }
-
-#change-request-supporting-document-band {
-  background-color: #0074D9; }
-
-#change-request-supporting-document {
-  border-bottom: solid 3px #0074D9; }
-
-#test-suite-band {
-  background-color: #001F3F; }
-
-#test-suite {
-  border-bottom: solid 3px #001F3F; }
-
-#candidate-band {
-  background-color: #8B9EB7; }
-
-#candidate {
-  border-bottom: solid 3px #8B9EB7; }
-
-#working-draft-band {
-  background-color: #8B9EB7; }
-
-#working-draft {
-  border-bottom: solid 3px #8B9EB7; }
+#advisory {
+  border-bottom: solid 3px #BD9391;
+}
 
 #proposal-band {
-  background-color: #8B9EB7; }
+  background-color: #39A0ED;
+}
 
 #proposal {
-  border-bottom: solid 3px #8B9EB7; }
+  border-bottom: solid 3px #39A0ED;
+}
 
-#oab-review-band {
-  background-color: #8B9EB7; }
+#working-draft-band {
+  background-color: #2D7393;
+}
 
-#oab-review {
-  border-bottom: solid 3px #8B9EB7; }
+#working-draft {
+  border-bottom: solid 3px #2D7393;
+}
 
 #committee-draft-band {
-  background-color: #8B9EB7; }
+  background-color: #2A6B7C;
+}
 
 #committee-draft {
-  border-bottom: solid 3px #8B9EB7; }
+  border-bottom: solid 3px #2A6B7C;
+}
 
-#swg-draft-band {
-  background-color: #8B9EB7; }
+#draft-standard-band {
+  background-color: #1C7F7A;
+}
 
-#swg-draft {
-  border-bottom: solid 3px #8B9EB7; }
+#draft-standard {
+  border-bottom: solid 3px #1C7F7A;
+}
 
-#public-rfc-band {
-  background-color: #48a0e7; }
+#final-draft-band {
+  background-color: #53C170;
+}
 
-#public-rfc {
-  border-bottom: solid 3px #48a0e7; }
-
-#tc-vote-band {
-  background-color: #fd06fd; }
-
-#tc-vote {
-  border-bottom: solid 3px #fd06fd; }
+#final-draft {
+  border-bottom: solid 3px #53C170;
+}
 
 #published-band {
-  background-color: #9abd48; }
+  background-color: #069E2D;
+}
 
 #published {
-  border-bottom: solid 3px #9abd48; }
+  border-bottom: solid 3px #069E2D;
+}
 
-#deprecated-band {
-  background-color: #7e0d13; }
+#withdrawn-band {
+  background-color: #004E64;
+}
 
-#deprecated {
-  border-bottom: solid 3px #7e0d13; }
+#withdrawn {
+  border-bottom: solid 3px #004E64;
+}
 
-#retired-band {
-  background-color: #7e0d13; }
+#cancelled-band {
+  background-color: #2E382E;
+}
 
-#retired {
-  border-bottom: solid 3px #7e0d13; }
-
-#legacy-band {
-  background-color: #7e0d13; }
-
-#legacy {
-  border-bottom: solid 3px #7e0d13; }
-
-#rescinded-band {
-  background-color: #7e0d13; }
-
-#rescinded {
-  border-bottom: solid 3px #7e0d13; }
+#cancelled {
+  border-bottom: solid 3px #2E382E;
+}
 
 .coverpage-maturity, .coverpage-stage {
   font-family: "Overpass",sans-serif;
   font-weight: 400;
   font-size: 1.3em;
   margin: 0 0 2em 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .icon-svg {
   width: 100%;
-  color: #5ecf86; }
+  color: #5ecf86;
+}
 
 .wrapper-top {
-  background: #00335b;
-  background: linear-gradient(130deg, #00335b 45%, #f1f8ff 100%);
+  background: rgb(0, 51, 91);
+  background: linear-gradient(130deg, rgb(0, 51, 91) 45%, rgb(241, 248, 255) 100%);
   color: #ffffff;
   padding: 5em 0;
-  width: 100%; }
+  width: 100%;
+}
 
 .wrapper-top-bottom {
   width: 0;
   height: 0;
   border-top: 100px solid #00335b;
   border-right: 100px solid transparent;
-  position: absolute; }
+  position: absolute;
+}
 
 .document-type-band {
-  top: 260px; }
+  top: 260px;
+}
 
 .document-stage-band > :first-child {
-  height: 240px; }
+  height: 240px;
+}
 
 .coverpage-metadata {
   margin-top: 35px;
   padding-top: 15px;
   margin-right: 25px;
-  border-top: solid 1px white; }
+  border-top: solid 1px white;
+}
 
 .coverpage-metadata,
 .coverpage-alt-formats {
   font-size: 12px;
   font-family: "Overpass",sans-serif;
   margin-left: 1em;
-  text-align: left; }
-  .coverpage-metadata span,
-  .coverpage-alt-formats span {
-    display: block;
-    text-align: left; }
-    .coverpage-metadata span a,
-    .coverpage-alt-formats span a {
-      color: white; }
-      .coverpage-metadata span a:hover,
-      .coverpage-alt-formats span a:hover {
-        text-decoration: underline;
-        background: none;
-        box-shadow: none !important;
-        font-weight: 400; }
-  .coverpage-metadata .value,
-  .coverpage-alt-formats .value {
-    font-size: 15px;
-    margin-bottom: 15px; }
-  .coverpage-metadata .label,
-  .coverpage-alt-formats .label {
-    font-size: 12px;
-    padding: 0; }
+  text-align: left;
+}
+.coverpage-metadata span,
+.coverpage-alt-formats span {
+  display: block;
+  text-align: left;
+}
+.coverpage-metadata span a,
+.coverpage-alt-formats span a {
+  color: white;
+}
+.coverpage-metadata span a:hover,
+.coverpage-alt-formats span a:hover {
+  text-decoration: underline;
+  background: none;
+  box-shadow: none !important;
+  font-weight: 400;
+}
+.coverpage-metadata .value,
+.coverpage-alt-formats .value {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.coverpage-metadata .label,
+.coverpage-alt-formats .label {
+  font-size: 12px;
+  padding: 0;
+}
 
 .coverpage-alt-formats span {
   display: inline;
-  text-align: left; }
-  .coverpage-alt-formats span a {
-    padding-right: 5px; }
+  text-align: left;
+}
+.coverpage-alt-formats span a {
+  padding-right: 5px;
+}
 
 .coverpage-title {
   padding-bottom: 0.5em;
   font-family: "Overpass",sans-serif;
   font-weight: 100;
   padding-left: 1em;
-  padding-right: 1em; }
-  .coverpage-title span {
-    font-family: "Overpass",sans-serif;
-    font-size: 1.8em;
-    line-height: 1; }
+  padding-right: 1em;
+}
+.coverpage-title span {
+  font-family: "Overpass",sans-serif;
+  font-size: 1.8em;
+  line-height: 1;
+}
 
 .docstage-box table {
-  width: auto; }
-
+  width: auto;
+}
 .docstage-box th {
-  background-color: #93c0d6; }
-
+  background-color: #93c0d6;
+}
 .docstage-box td {
   vertical-align: top;
   background-color: #daeef3;
   padding: 0.5em;
-  border: 0; }
-
+  border: 0;
+}
 .docstage-box th:first-child {
-  border-radius: 1em 0 0 0; }
-
+  border-radius: 1em 0 0 0;
+}
 .docstage-box th:last-child {
-  border-radius: 0 1em 0 0; }
-
+  border-radius: 0 1em 0 0;
+}
 .docstage-box tr:first-child {
-  border-radius: 0 0 0 1em; }
-
+  border-radius: 0 0 0 1em;
+}
 .docstage-box tr:last-child {
-  border-radius: 0 1em 0 0; }
-
+  border-radius: 0 1em 0 0;
+}
 .docstage-box tr:last-child > td:first-child {
-  border-radius: 0 0 0 1em; }
-
+  border-radius: 0 0 0 1em;
+}
 .docstage-box tr:last-child > td:last-child {
-  border-radius: 0 0 1em 0; }
+  border-radius: 0 0 1em 0;
+}
 
 .WordSection11 {
-  padding: 0 2em 0 3em; }
+  padding: 0 2em 0 3em;
+}
 
 .info-section {
-  padding: 0 2em 0 5em; }
+  padding: 0 2em 0 5em;
+}
 
 .prefatory-section {
-  padding: 0 3em 0 6em; }
+  padding: 0 3em 0 6em;
+}
 
 .zzSTDTitle1, .MsoCommentText {
-  display: none; }
+  display: none;
+}
 
 .coverpage {
   text-align: center;
-  padding-left: 1.5em; }
+  padding-left: 1.5em;
+}
 
 .coverpage-logo span, .coverpage-tc-name span {
   font-family: "Overpass",sans-serif;
   text-transform: none;
   font-weight: 300;
-  margin-left: 1em; }
+  margin-left: 1em;
+}
 
 .coverpage-logo img {
   width: 500px;
-  height: auto; }
+  height: auto;
+}
 
 .coverpage-tc-name {
   font-size: 1.2em;
   line-height: 1.2em;
-  margin: 0.25em 0; }
+  margin: 0.25em 0;
+}
 
 .copyright {
   padding: 1em;
   font-size: 0.9em;
-  text-align: left; }
+  text-align: left;
+}
 
 /* Document Identity */
 .coverpage-doc-identity {
   font-size: 2em;
-  line-height: 2em; }
+  line-height: 2em;
+}
 
 .coverpage-title .title-second {
-  display: none; }
+  display: none;
+}
 
 .coverpage-stage-block {
   font-family: "Overpass",sans-serif;
   font-weight: 600;
   font-size: 1.25em;
   margin: 2em 0em 2em 0em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .authors {
-  margin-top: 2em; }
-  .authors span {
-    display: block;
-    line-height: 2; }
-  .authors span.roletag {
-    display: inline-block;
-    font-size: 12px;
-    color: #00335b;
-    background-color: white;
-    padding: 2px 5px;
-    margin-left: 7px;
-    border-radius: 5px; }
+  margin-top: 2em;
+}
+.authors span {
+  display: block;
+  line-height: 2;
+}
+.authors span.roletag {
+  display: inline-block;
+  font-size: 12px;
+  color: #00335b;
+  background-color: white;
+  padding: 2px 5px;
+  margin-left: 7px;
+  border-radius: 5px;
+}
 
 /* Draft Warning */
 .coverpage-warning {
@@ -537,27 +668,46 @@ table.rouge-line-table pre {
   margin: 1em 2em;
   color: #2e81c2;
   padding: 2em 1em 1em 1em;
-  border-radius: 25px; }
-  .coverpage-warning h1 {
-    font-family: "Overpass",sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 1.2em; }
+  border-radius: 25px;
+}
+.coverpage-warning h1 {
+  font-family: "Overpass",sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
 
 @media print {
   .document-info, .copyright {
-    page-break-before: always; }
+    page-break-before: always;
+  }
   .coverpage {
-    height: 23cm; }
+    height: 23cm;
+  }
   .info-section {
-    display: none; }
+    display: none;
+  }
   .wrapper-top {
     top: 0;
     padding-top: 4cm;
-    padding-bottom: 4cm; }
+    padding-bottom: 4cm;
+  }
   .wrapper-top-bottom {
     margin-top: -5px;
-    display: none; } }
+    display: none;
+  }
+}
+/* For Requirement Test anchors */
+p.RecommendationTitle:hover > a.anchor,
+p.RecommendationTitle > a.anchor:hover,
+p.RecommendationTestTitle:hover > a.anchor,
+p.RecommendationTestTitle > a.anchor:hover {
+  visibility: visible;
+}
+
+table a.anchor {
+  margin-left: -2em;
+}
 
 body {
   margin-left: auto;
@@ -567,82 +717,100 @@ body {
   font-weight: 300;
   line-height: 1.5;
   color: #00335b;
-  background-color: #f6f8fa; }
-  body main {
-    margin: 0 3em 0 6em; }
-  @media screen and (min-width: 768px) {
-    body {
-      padding-left: 360px; } }
-  @media print {
-    body {
-      padding-left: 0; } }
+  background-color: #f6f8fa;
+}
+body main {
+  margin: 0 3em 0 6em;
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding-left: 360px;
+  }
+}
+@media print {
+  body {
+    padding-left: 0;
+  }
+}
+
 dl {
-  grid-template-columns: minmax(0, 1fr) 93%; }
-  dl pre {
-    overflow-x: scroll; }
+  grid-template-columns: minmax(0, 1fr) 93%;
+}
+dl pre {
+  overflow-x: scroll;
+}
 
 #toc ul, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul {
   margin: 0;
   padding: 0;
-  list-style: none; }
-  #toc ul li a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul li a {
-    padding: 5px 10px; }
-  #toc ul a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul a {
-    color: #00335b;
-    text-decoration: none;
-    display: block; }
-    #toc ul a:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul a:hover {
-      box-shadow: none;
-      color: white; }
-
+  list-style: none;
+}
+#toc ul li a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul li a {
+  padding: 5px 10px;
+}
+#toc ul a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul a {
+  color: #00335b;
+  text-decoration: none;
+  display: block;
+}
+#toc ul a:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul a:hover {
+  box-shadow: none;
+  color: white;
+}
 #toc .h2, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h2 {
-  padding-left: 30px; }
-
+  padding-left: 30px;
+}
 #toc .h3, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h3 {
-  padding-left: 50px; }
-
+  padding-left: 50px;
+}
 #toc .h4, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h4 {
-  padding-left: 70px; }
-
+  padding-left: 70px;
+}
 #toc .h5, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h5 {
-  padding-left: 90px; }
-
+  padding-left: 90px;
+}
 #toc .h6, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h6 {
-  padding-left: 110px; }
-
+  padding-left: 110px;
+}
 #toc .toc-active, #toc li:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover {
   background: #00335b;
-  box-shadow: inset -5px 0px 10px -5px #00335b !important; }
-  #toc .toc-active a, #toc li:hover a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover a {
-    color: white; }
-
+  box-shadow: inset -5px 0px 10px -5px #00335b !important;
+}
+#toc .toc-active a, #toc li:hover a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover a {
+  color: white;
+}
 @media print {
   #toc .toc-active, #toc li:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover {
     background: white;
-    box-shadow: none !important; }
+    box-shadow: none !important;
+  }
   #toc .toc-active a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active a {
-    color: #00335b; }
+    color: #00335b;
+  }
   #toc li:hover a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover a {
-    color: black; } }
-
+    color: black;
+  }
+}
 #toc li a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li a {
-  font-size: 14px; }
-
+  font-size: 14px;
+}
 #toc li::before, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li::before {
   content: " ";
-  display: none; }
-
+  display: none;
+}
 #toc .toc-active, #toc li:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover {
-  font-weight: 600; }
-
+  font-weight: 600;
+}
 #toc li:hover a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover a {
   background: none;
-  box-shadow: none; }
+  box-shadow: none;
+}
 
 #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 100%; }
+  font-size: 100%;
+}
 
 @media screen and (min-width: 768px) {
   nav {
@@ -653,9 +821,10 @@ dl {
     width: 323px;
     font-size: 0.9em;
     overflow: auto;
-    padding: 0 0 0 45px;
-    background-color: #f1f8ff; } }
-
+    padding: 0 0 0 30px;
+    background-color: #f1f8ff;
+  }
+}
 @media print {
   nav {
     position: relative;
@@ -664,11 +833,14 @@ dl {
     overflow: auto;
     padding: 0;
     margin-right: 0;
-    background-color: white; } }
-
+    background-color: white;
+  }
+}
 @media screen and (min-width: 768px) {
   nav {
-    margin-right: 30px; } }
+    margin-right: 30px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   #toggle {
@@ -678,62 +850,78 @@ dl {
     background-color: #00335b;
     color: white !important;
     cursor: pointer;
-    z-index: 100; }
-    #toggle span {
-      text-align: center;
-      width: 100%;
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%); } }
-
+    z-index: 100;
+  }
+  #toggle span {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
 @media screen and (max-width: 768px) {
   #toggle {
-    display: none; } }
-
+    display: none;
+  }
+}
 @media print {
   #toggle {
-    display: none; } }
+    display: none;
+  }
+}
 
 .rule {
   width: 100%;
   height: 1px;
   background-color: #00335b;
-  margin: 2em 0; }
-  @media screen and (min-width: 768px) {
-    .rule.toc {
-      display: none; } }
+  margin: 2em 0;
+}
+@media screen and (min-width: 768px) {
+  .rule.toc {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   h1.toc-contents {
-    margin-top: 1em; }
+    margin-top: 1em;
+  }
   ul#toc-list, ul#toc-list > :is(.h1, .h2, .h3, .h4, .h5, .h6) {
     padding: 0;
-    margin: 0; } }
-
+    margin: 0;
+  }
+}
 #toc-list ul {
-  margin-bottom: 0.25em; }
-
+  margin-bottom: 0.25em;
+}
 #toc-list li {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 .figure {
   line-height: 1.6em;
   padding: 1.5em;
   margin: 2em 0 1em 0;
-  overflow: auto; }
-  .figure .FigureTitle, .figure .figure-title {
-    font-weight: 700;
-    font-size: 1em;
-    text-align: center; }
-  .figure > img, .figure > svg {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    max-width: 100%;
-    height: auto; }
+  overflow: auto;
+}
+.figure .FigureTitle, .figure .figure-title {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+}
+.figure > img, .figure > svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 table div.figure {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 .document-stage-band {
   left: 0;
@@ -742,110 +930,133 @@ table div.figure {
   position: fixed;
   display: block;
   z-index: 101;
-  box-shadow: -5px 0px 10px #1d1d1d; }
-  .document-stage-band > :first-child {
-    position: relative;
-    width: 25px;
-    font-weight: 300;
-    height: 160px;
-    color: white;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    margin: 0;
-    margin-left: 6px;
-    writing-mode: tb-rl;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    white-space: nowrap;
-    display: block;
-    bottom: 0; }
-  @media print {
-    .document-stage-band {
-      display: none; } }
+  box-shadow: -5px 0px 10px #1d1d1d;
+}
+.document-stage-band > :first-child {
+  position: relative;
+  width: 25px;
+  font-weight: 300;
+  height: 160px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
+  margin-left: 6px;
+  writing-mode: tb-rl;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  white-space: nowrap;
+  display: block;
+  bottom: 0;
+}
+@media print {
+  .document-stage-band {
+    display: none;
+  }
+}
+
 .document-type-band {
   left: 0;
   top: 180px;
   height: 100%;
   position: fixed;
   display: block;
-  z-index: 102; }
-  .document-type-band > :first-child {
-    position: relative;
-    width: 25px;
-    font-weight: 400;
-    color: white;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    margin: 0;
-    margin-left: 6px;
-    writing-mode: tb-rl;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    white-space: nowrap;
-    display: block;
-    bottom: 0; }
-  @media print {
-    .document-type-band {
-      display: none; } }
-  .document-type-band .document-type {
-    top: 20px; }
+  z-index: 102;
+}
+.document-type-band > :first-child {
+  position: relative;
+  width: 25px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 0;
+  margin-left: 6px;
+  writing-mode: tb-rl;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  white-space: nowrap;
+  display: block;
+  bottom: 0;
+}
+@media print {
+  .document-type-band {
+    display: none;
+  }
+}
+.document-type-band .document-type {
+  top: 20px;
+}
 
 #governance-band p.document-type {
   font-weight: 400;
-  height: 230px !important; }
+  height: 230px !important;
+}
 
 #standard-band p {
-  height: 135px; }
+  height: 135px;
+}
 
 #proposal-band p {
-  height: 150px; }
+  height: 150px;
+}
 
 #standard-band,
 #published-band {
-  color: #7ba812; }
+  color: rgb(123, 168, 18);
+}
 
 #standard,
 #published {
-  color: #9ABD48; }
+  color: #9ABD48;
+}
 
 p {
   margin-top: 1em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #00335b;
   font-weight: 400;
   margin-top: 1.6em;
-  margin-bottom: 0.3em; }
+  margin-bottom: 0.3em;
+}
 
 h1, .h1 {
   font-size: 1.8em;
   text-transform: uppercase;
-  margin-top: 2em; }
-  h1 #content, .h1 #content {
-    margin-top: 2em; }
+  margin-top: 2em;
+}
+h1 #content, .h1 #content {
+  margin-top: 2em;
+}
 
 h2, .h2 {
   margin-top: 1.3em;
   font-size: 1.7em;
-  font-weight: 300; }
-  h2 p, .h2 p {
-    display: inline; }
+  font-weight: 300;
+}
+h2 p, .h2 p {
+  display: inline;
+}
 
 h3, .h3 {
   margin-top: 1.3em;
   font-size: 1.5em;
-  font-weight: 100; }
+  font-weight: 100;
+}
 
 h4, .h4 {
-  font-size: 1.4em; }
+  font-size: 1.4em;
+}
 
 .contact-info {
   padding: 2em;
@@ -854,49 +1065,63 @@ h4, .h4 {
   text-align: left;
   border: #00335b solid 2px;
   color: #00335b !important;
-  border-radius: 25px; }
-  .contact-info a:hover {
-    text-decoration: underline;
-    background: none;
-    box-shadow: 0 0 0 0; }
-  .contact-info a, .contact-info a:hover {
-    color: #00335b; }
-  .contact-info p, .contact-info a {
-    font-family: "Space Mono",monospace;
-    font-variant-ligatures: none;
-    font-weight: 400; }
-  .contact-info #boilerplate-name {
-    font-weight: 700;
-    font-size: 1.2em;
-    margin-bottom: 0; }
-  .contact-info #boilerplate-address {
-    font-size: 1em;
-    line-height: 1.3em;
-    margin-top: 0; }
+  border-radius: 25px;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+  background: none;
+  box-shadow: 0 0 0 0;
+}
+.contact-info a, .contact-info a:hover {
+  color: #00335b;
+}
+.contact-info p, .contact-info a {
+  font-family: "Space Mono",monospace;
+  font-variant-ligatures: none;
+  font-weight: 400;
+}
+.contact-info #boilerplate-name {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+.contact-info #boilerplate-address {
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 0;
+}
 
 ul, ol {
-  margin-left: 1.2em; }
+  margin-left: 1.2em;
+}
 
 ul > li {
-  list-style: none; }
-  ul > li::before {
-    content: "\2014";
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em; }
-  ul > li p:first-child {
-    display: inline; }
-  ul > li:first-child {
-    margin-top: 1em; }
+  list-style: none;
+}
+ul > li::before {
+  content: "—";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+ul > li p:first-child {
+  display: inline;
+}
+ul > li:first-child {
+  margin-top: 1em;
+}
 
 ul ul > li:first-child {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 ol ul > li:first-child {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 span.keyword {
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 /* Tables */
 table {
@@ -906,25 +1131,33 @@ table {
   margin-left: auto;
   margin-right: auto;
   padding-right: 2em;
-  /*color: #010d16;*/ }
-  table, table th, table td {
-    border: 1px solid black;
-    font-size: 0.95em; }
-  table th, table td {
-    padding: 1em; }
-  table td.header {
-    font-weight: 400; }
-  table thead tr th {
-    background-color: #5d99d6; }
-  table td, table th {
-    padding: 1em; }
-  table td.header {
-    font-weight: 400; }
+  /*color: #010d16;*/
+}
+table, table th, table td {
+  border: 1px solid black;
+  font-size: 0.95em;
+}
+table th, table td {
+  padding: 1em;
+}
+table td.header {
+  font-weight: 400;
+}
+table thead tr th {
+  background-color: #5d99d6;
+}
+table td, table th {
+  padding: 1em;
+}
+table td.header {
+  font-weight: 400;
+}
 
 .docstage-box table,
 .docstage-box table th,
 .docstage-box table td {
-  border: none; }
+  border: none;
+}
 
 table.modspec {
   width: 100%;
@@ -933,91 +1166,115 @@ table.modspec {
   margin-left: auto;
   margin-right: auto;
   padding-right: 2em;
-  color: #010d16; }
-  table.modspec, table.modspec th, table.modspec td {
-    border: none !important;
-    font-size: 0.95em; }
-  table.modspec th, table.modspec td {
-    padding: 1em; }
-  table.modspec td.header {
-    font-weight: 400; }
-  table.modspec tr:nth-child(even) {
-    background: #ffffff; }
-  table.modspec tr:nth-child(odd) {
-    background: #ffffff; }
-  table.modspec thead tr th {
-    background-color: #5d99d6; }
-  table.modspec td, table.modspec th {
-    padding: 1em; }
-  table.modspec td.header {
-    font-weight: 400; }
+  color: #010d16;
+}
+table.modspec, table.modspec th, table.modspec td {
+  border: none !important;
+  font-size: 0.95em;
+}
+table.modspec th, table.modspec td {
+  padding: 1em;
+}
+table.modspec td.header {
+  font-weight: 400;
+}
+table.modspec tr:nth-child(even) {
+  background: #ffffff;
+}
+table.modspec tr:nth-child(odd) {
+  background: #ffffff;
+}
+table.modspec thead tr th {
+  background-color: #5d99d6;
+}
+table.modspec td, table.modspec th {
+  padding: 1em;
+}
+table.modspec td.header {
+  font-weight: 400;
+}
 
 td > p:first-child, th > p:first-child {
-  margin-top: 0em; }
+  margin-top: 0em;
+}
 
 td > p:last-child, th > p:last-child {
-  margin-bottom: 0em; }
+  margin-bottom: 0em;
+}
 
 p.TableTitle {
   text-align: center;
   margin-top: 2.5em;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 /* Terms */
 .TermNum {
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 .TermNum, .Terms, .AltTerms {
   color: #00335b;
-  font-family: "Overpass",sans-serif; }
+  font-family: "Overpass",sans-serif;
+}
 
 h2.TermNum {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 p.AltTerms {
   font-size: 24px;
-  margin-top: 1em; }
+  margin-top: 1em;
+}
 
-span.AdmittedLabel {
+span.AdmittedLabel, span.DeprecatedLabel {
   color: #00335b;
   background-color: #CFE2F3;
   font-size: 70%;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 /* Links, selection */
 a, a:visited {
   text-decoration: none;
-  color: #2e81c2; }
+  color: #2e81c2;
+}
 
 a:hover {
   color: #00335b;
   background: #39CCCC;
-  box-shadow: 3px 0 0 #39CCCC, -3px 0 0 #39CCCC; }
+  box-shadow: 3px 0 0 #39CCCC, -3px 0 0 #39CCCC;
+}
 
 *::selection {
   background: #39CCCC;
-  color: #00335b; }
+  color: #00335b;
+}
 
 *::-moz-selection {
   background: #39CCCC;
-  color: #00335b; }
+  color: #00335b;
+}
 
 /* Bibliograhy */
 p.Biblio, p.NormRef {
   margin-top: 1em;
-  margin-left: 2em; }
+  margin-left: 2em;
+}
 
 /* Blocks */
-.SourceTitle {
+.SourceTitle, .FigureTitle {
   font-weight: 700;
   font-size: 1em;
-  text-align: center; }
+  text-align: center;
+}
 
 .ListTitle {
   font-weight: 700;
   font-size: 1em;
   text-align: center;
-  text-align: left; }
+  text-align: left;
+}
 
 pre, .sourcecode {
   font-family: "Space Mono",monospace;
@@ -1030,55 +1287,67 @@ pre, .sourcecode {
   overflow-y: auto;
   overflow-x: scroll;
   font-family: "Space Mono",monospace;
-  font-variant-ligatures: none; }
+  font-variant-ligatures: none;
+}
 
 .Admonition {
   padding: 1em 1.2em 1.2em 1.2em;
   margin: 1em 0 1em 0;
   background-color: #fcad88;
   border-top: 10px solid #eb5a06;
-  color: #290404; }
-  .Admonition .AdmonitionTitle {
-    font-weight: 700;
-    font-size: 1em;
-    text-align: center; }
-  .Admonition.Important {
-    background-color: #f58cff;
-    color: #5d1364;
-    border-top: 10px solid #9503a8; }
-  .Admonition.Warning {
-    background-color: #ff989d;
-    color: #270204;
-    border-top: 10px solid #e4010c; }
-  .Admonition p, .Admonition.Important p, .Admonition.Warning p {
-    margin: 0; }
+  color: #290404;
+}
+.Admonition .AdmonitionTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+}
+.Admonition.Important {
+  background-color: #f58cff;
+  color: #5d1364;
+  border-top: 10px solid #9503a8;
+}
+.Admonition.Warning {
+  background-color: #ff989d;
+  color: #270204;
+  border-top: 10px solid #e4010c;
+}
+.Admonition p, .Admonition.Important p, .Admonition.Warning p {
+  margin: 0;
+}
 
 .figure, pre, .pseudocode, .sourcecode {
   background-color: #e1eef1;
   color: #424242;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+}
 
 .Note {
   background-color: #fff8bb;
   color: #7d760b;
   padding: 1.2em;
-  margin: 1em 0 1em 0; }
-  .Note p {
-    margin: 0; }
+  margin: 1em 0 1em 0;
+}
+.Note p {
+  margin: 0;
+}
 
 .example {
   background-color: #e1eef1;
   color: #424242;
   padding: 1.2em;
   margin: 2em 0 1em 0;
-  padding-left: 2em; }
-  .example .example-title {
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-left: -1.5em; }
-  .example pre, .example .pseudocode {
-    background: none; }
+  padding-left: 2em;
+}
+.example .example-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-left: -1.5em;
+}
+.example pre, .example .pseudocode {
+  background: none;
+}
 
 .Quote {
   background-color: #e1eef1;
@@ -1087,33 +1356,39 @@ pre, .sourcecode {
   padding: 1.5em;
   margin-top: 2em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 .formula {
   background-color: #f6f6f6;
   padding: 1.5em;
   margin-top: 2em;
-  text-align: center; }
+  text-align: center;
+}
 
 .recommend .RecommendationTitle, .recommendtest .RecommendationTitle {
   font-weight: 700;
   font-size: 1em;
-  text-align: center; }
+  text-align: center;
+}
 
 .require .RecommendationTitle, .requiretest .RecommendationTitle {
   font-weight: 700;
   font-size: 1em;
-  text-align: center; }
+  text-align: center;
+}
 
 .permission .RecommendationTitle, .permissiontest .RecommendationTitle {
   font-weight: 700;
   font-size: 1em;
-  text-align: center; }
+  text-align: center;
+}
 
 .RecommendationTestTitle {
   font-weight: 700;
   font-size: 1em;
-  text-align: center; }
+  text-align: center;
+}
 
 /*
 .recommend {
@@ -1146,21 +1421,25 @@ pre, .sourcecode {
 .recommend .RecommendationTitle {
   font-weight: 700;
   font-size: 1em;
-  text-align: center; }
+  text-align: center;
+}
 
 .require .RecommendationTitle {
   font-weight: 700;
   font-size: 1em;
-  text-align: center; }
+  text-align: center;
+}
 
 .permission .RecommendationTitle {
   font-weight: 700;
   font-size: 1em;
-  text-align: center; }
+  text-align: center;
+}
 
 tbody td.recommend p.RecommendationTitle, tbody td.recommend p.RecommendationTitle, tbody td.recommend p.RecommendationTitle {
   font-weight: normal;
-  text-align: left; }
+  text-align: left;
+}
 
 #myBtn {
   font-family: "Space Mono",monospace;
@@ -1178,58 +1457,77 @@ tbody td.recommend p.RecommendationTitle, tbody td.recommend p.RecommendationTit
   color: white;
   cursor: pointer;
   padding: 10px 15px 10px 15px;
-  border-radius: 4px; }
-  #myBtn:hover {
-    opacity: 1; }
-  @media print {
-    #myBtn {
-      display: none; } }
+  border-radius: 4px;
+}
+#myBtn:hover {
+  opacity: 1;
+}
+@media print {
+  #myBtn {
+    display: none;
+  }
+}
+
 a.anchorjs-link:hover {
   background: none;
   color: #2e81c2;
-  box-shadow: none; }
+  box-shadow: none;
+}
 
 @page {
-  margin: 2cm 1cm; }
-
+  margin: 2cm 1cm;
+}
 @media print {
   h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
     page-break-after: avoid;
-    margin-top: 1.2em; }
+    margin-top: 1.2em;
+  }
   h1, .h1 {
     font-size: 1.5em;
-    line-height: 1.5; }
-    h1.content, .h1.content {
-      margin-top: 2em;
-      line-height: 2.5em; }
+    line-height: 1.5;
+  }
+  h1.content, .h1.content {
+    margin-top: 2em;
+    line-height: 2.5em;
+  }
   h2, .h2 {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+  }
   h3, .h3 {
-    font-size: 1em; }
+    font-size: 1em;
+  }
   .prefatory-section {
-    page-break-before: always; }
+    page-break-before: always;
+  }
   .note, .pseudocode {
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
   .Note {
     background-color: #fff495;
     color: #47430c;
     padding: 5px;
-    margin: 2em 0 1em 0; }
-    .Note p {
-      padding: 0 5px 0 5px; }
+    margin: 2em 0 1em 0;
+  }
+  .Note p {
+    padding: 0 5px 0 5px;
+  }
   nav {
-    line-height: 1; } }
-
+    line-height: 1;
+  }
+}
 /* Footnotes */
 a.footnote-number {
   vertical-align: super;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+}
 
 .footnote {
-  font-size: 0.9em; }
+  font-size: 0.9em;
+}
 
 span.hi {
-  background-color: yellow; }
+  background-color: yellow;
+}
 
 -->
 </style><style><!--pre.sourcecode table td { padding: 5px; }
@@ -1377,11 +1675,11 @@ pre.sourcecode .nt {
   <div class="coverpage-warning">
     <div class="boilerplate-legal">
 
-<div id="_notice"><h1 class="IntroTitle">Notice</h1>
+<div id="_notice"><h1 class="IntroTitle"><a class="anchor" href="#_notice"></a><a class="header" href="#_notice">Notice</a></h1>
 
-<p id="_40570159-7b31-874a-8789-26de9fe11d72">This document is not an OGC standard. This document provides release notes for an OGC standard. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
+<p id="_7cc1bfbd-9c3c-c1ca-6546-74299b1b9305">This document is not an OGC standard. This document provides release notes for an OGC standard. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
 
-<p id="_d80fd0eb-fbfd-dec3-0ddb-92472f4d5fcf">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+<p id="_e8629e34-594d-6076-a18a-23d7b5df19ba">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
 </div>
 </div>
  </div>
@@ -1402,18 +1700,16 @@ pre.sourcecode .nt {
 <div class="copyright">
   <div class="boilerplate-copyright">
 
-<div id="_copyright_notice"><h1 class="IntroTitle">Copyright notice</h1>
+<div id="_copyright_notice"><h1 class="IntroTitle"><a class="anchor" href="#_copyright_notice"></a><a class="header" href="#_copyright_notice">Copyright notice</a></h1>
 
-<p id="_f89cdf56-3e64-0a54-e756-26a53e0385c5" style="text-align:center;">Copyright © 2018 Open Geospatial Consortium<br />
-To obtain additional rights of use, visit
-<a href="https://www.ogc.org/legal">https://www.ogc.org/legal</a></p>
+<p id="_318c11f8-be6d-7e27-2db7-873225bd1a51" style="text-align:center;">Copyright © 2018 Open Geospatial Consortium<br /> To obtain additional rights of use, visit<a href="https://www.ogc.org/legal">https://www.ogc.org/legal</a></p>
 </div>
 
-<div id="_note"><h1 class="IntroTitle">Note</h1>
+<div id="_note"><h1 class="IntroTitle"><a class="anchor" href="#_note"></a><a class="header" href="#_note">Note</a></h1>
 
-<p id="_11e88dba-9912-1a89-a82d-7291bf232191" style="text-align:left;">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+<p id="_e1d5d5c4-54c3-2761-be2c-22547f01c057" style="text-align:left;">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
-<p id="_15067213-c07b-cba0-7e18-395ab2e00ab3" style="text-align:left;">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+<p id="_02892e94-7b43-630a-129c-d2e0f75ff92b" style="text-align:left;">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
 </div>
 </div>
 </div>
@@ -1424,9 +1720,9 @@ To obtain additional rights of use, visit
 </header></div><br /><div class="prefatory-section"><div class="license">
   <div class="boilerplate-license">
 
-<div id="_license_agreement"><h1 class="IntroTitle">License Agreement</h1>
+<div id="_license_agreement"><h1 class="IntroTitle"><a class="anchor" href="#_license_agreement"></a><a class="header" href="#_license_agreement">License Agreement</a></h1>
 
-<p id="_f5fe34fd-12e2-2bb7-8cd6-9d4cffa96538">Use of this document is subject to the license agreement at <a href="https://www.ogc.org/license">https://www.ogc.org/license</a></p>
+<p id="_772872dd-928c-666f-92c5-676f7f5d3071">Use of this document is subject to the license agreement at <a href="https://www.ogc.org/license">https://www.ogc.org/license</a></p>
 </div>
 </div>
 
@@ -1435,70 +1731,262 @@ To obtain additional rights of use, visit
 </div>
 
 <nav>
-  <div id="toc"><h1 class="IntroTitle">Contents</h1><ul><li class="h1"><a href="#_c80c1b40-53de-419f-8d28-c47def673816">      I.  Abstract</a></li>
-<li class="h1"><a href="#_c7fe5dfd-f740-44a2-b30d-717a208270bc">      II.  Keywords</a></li>
-<li class="h1"><a href="#_10209a22-f04c-4b66-85c4-962ced455b8c">      III.  Security considerations</a></li>
-<li class="h1"><a href="#_2c543131-dcc0-4fcc-93f4-c9db93b16e2b">      IV.  Submitting Organizations</a></li>
-<li class="h1"><a href="#_071be6bd-6de3-4ea7-bbdb-3ba3b0d5a681">      V.  Submitters</a></li>
-<li class="h1"><a href="#_f0186d16-685d-4b20-8202-645b45f47f1b">      1.  Revisions to Volume 1: CDB Core Model and Physical Data Store</a></li>
-<li class="h2"><a href="#_783c4ea4-0026-4641-89e6-9f9472f1f0ad">      1.1.  Introductory Clause “Future Work”</a></li>
-<li class="h2"><a href="#_32adacfa-3b4e-426a-bdd7-4bce7000acae">      1.2.  1.0.1 Corrigendum changes included</a></li>
-<li class="h2"><a href="#_c35d734a-fb85-431f-9919-533aade29157">      1.3.  General Change: All file extensions in Requirements are now generic</a></li>
-<li class="h2"><a href="#_9a7ce853-2db3-43bf-8dcb-b01026715f0f">      1.4.  Clause 1.4.3 CDB Metadata</a></li>
-<li class="h2"><a href="#_f35b7748-2b4c-4a41-8e71-2c5594f38330">      1.5.  Clause 1.4.4 CDB Directory File Naming and Structure</a></li>
-<li class="h2"><a href="#_34027813-d77a-4ed8-af8d-db00e56d5a49">      1.6.  Clause 1.7.1.4 System Hardware Independence</a></li>
-<li class="h2"><a href="#_547571d3-10b9-4369-be4b-64b3c8f5c4ec">      1.7.  Clause 3.1.1 Metadata Directory</a></li>
-<li class="h2"><a href="#_d8b1f03c-fe34-4395-ba83-2d82ea7bd4ad">      1.8.  Clause 3.1.1Metadata Directory</a></li>
-<li class="h2"><a href="#_ddeab065-fee8-489d-bc9e-93b15172b461">      1.9.  Clause 3.4.2.4 Examples</a></li>
-<li class="h2"><a href="#_e84296e0-29b5-4e19-9420-f60c4f02f66b">      1.10.  Clause 3.4.4.3 Examples</a></li>
-<li class="h2"><a href="#_d4d22dea-c9fd-4e22-aaed-c223e3972e89">      1.11.  Clause 3.4.4.4 Examples</a></li>
-<li class="h2"><a href="#_8f105190-eeca-4d34-8480-80c0288960ea">      1.12.  Clause 3.4.5.2 Examples</a></li>
-<li class="h2"><a href="#_9ec1e49d-8b83-4a7f-9a84-423bae5b6b45">      1.13.  Clause 5.1 enhanced to include discussion of Controlled Vocabularies</a></li>
-<li class="h2"><a href="#_74266c73-7979-4733-b1bc-a0c323aa998b">      1.14.  Clause 5.1.1 Global Metadata</a></li>
-<li class="h2"><a href="#_9367fc28-a304-4c22-85d5-6b796ef63d86">      1.15.  Clause 5.1.2 Local Metadata</a></li>
-<li class="h2"><a href="#_760b2a8a-1c55-462f-bf1b-fb4c15727c16">      1.16.  Clause 5.1.8 (Formerly Clause 5.1.6) Version Metadata</a></li>
-<li class="h2"><a href="#_7c27f792-cbf1-4182-99cb-6e0effb56f0b">      1.17.  Clause 5.1.12 Geospatial Metadata Guidance</a></li>
-<li class="h2"><a href="#_d5c8a682-cdcf-4c3d-b73b-57f2961959ad">      1.18.  Clause 5.1.12.1 Suggested Global Geospatial Metadata Elements</a></li>
-<li class="h2"><a href="#_e6635a87-81bd-4bf0-9e1b-49b323c75a0a">      1.19.  Clause 5.1.12.2 Suggested Local Geospatial Metadata Elements</a></li>
-<li class="h2"><a href="#_26e9b2f0-c913-43c2-868a-47904d0023f1">      1.20.  Clause 5.6</a></li>
-<li class="h2"><a href="#_7c864df5-a069-499b-bd71-7be6db321634">      1.21.  Clause 5.6.2.3.2 VSTI Default Read Value (Change Request 490)</a></li>
-<li class="h2"><a href="#_1c57f93c-48a6-4a2d-aa18-77982d1527e4">      1.22.  New Clause: 5.7.1.6.4 Network Vector Priority</a></li>
-<li class="h2"><a href="#_4f3e88d6-793d-461d-8397-36583675a65c">      1.23.  New Clause: 5.7.1.9 Vector Significant Size and Spatial Significance Criteria</a></li>
-<li class="h2"><a href="#_68ec514a-8ed3-4b5d-b66e-d0aa85f493e1">      1.24.  Annex A: Abstract Test Suite</a></li>
-<li class="h2"><a href="#_e9191f3a-0186-4ca5-a92a-552e59c76384">      1.25.  Table 5-1 Component Selectors for CDB Controlled Vocabularies and Metadata</a></li>
-<li class="h2"><a href="#_d20d3576-f9ec-49c0-bc24-60207cd3fb8e">      1.26.  Table 5-9: Component Selectors for GTModel Datasets</a></li>
-<li class="h2"><a href="#_e2f884ee-908f-4fcb-a3cc-0a7901915422">      1.27.  Figure 5-25. Two instances of code 65</a></li>
-<li class="h2"><a href="#_17323864-cf31-43e3-9108-dc413d77f98a">      1.28.  Table 5-27 Use of “D” has two meanings. (Change Request 471)</a></li>
-<li class="h2"><a href="#_284460bb-27aa-4824-99cd-6efdf8bcba6f">      1.29.  Table 5-27 not entirely visible (Change Request 481)</a></li>
-<li class="h2"><a href="#_ad183858-9256-47c2-a4c0-e0c63559b6b5">      1.30.  CDB_Attributes.xml Schema error (Change Request 482)</a></li>
-<li class="h1"><a href="#_1780b984-b940-436e-871c-ad9256be9fe7">      2.  Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes</a></li>
-<li class="h2"><a href="#_ce6227f8-84a4-4fc0-8661-cbcfbcd36f54">      2.1.  Annex Q: Table of Dataset Codes</a></li>
-<li class="h2"><a href="#_a3e97776-460a-42bc-ad3b-b06b23a46936">      2.2.  Annex R: Derived Datasets within the CDB</a></li>
-<li class="h1"><a href="#_1d4a6213-e3c6-4f34-8e1a-0ecc9b7d18a5">      3.  Revisions to Volume 3 Terms and Definitions</a></li>
-<li class="h1"><a href="#_6e3de6e8-893e-4ad1-8d7a-002e04c5b34e">      4.  Revisions to Volume 4: CDB Use of Shapefiles for Vector Data Storage</a></li>
-<li class="h2"><a href="#_d707163c-a932-4ef5-b1dc-ae5a86c0fc3a">      4.1.  General</a></li>
-<li class="h2"><a href="#_deb22c67-5680-449e-b670-acad0debe017">      4.2.  Clause 1: Scope</a></li>
-<li class="h2"><a href="#_f6d00738-72c8-4f67-8f32-5bdbd2899747">      4.3.  Clause 3: References</a></li>
-<li class="h2"><a href="#_a2fda34b-9017-4bc2-9efd-fa792669950e">      4.4.  Clause 4: Terms and Definitions</a></li>
-<li class="h1"><a href="#_c8140cb9-f09f-4893-9249-ca07f959c398">      5.  Revisions to Volume 5: Radar Cross-Sections</a></li>
-<li class="h2"><a href="#_80e3db41-92b2-4afd-b08f-2d960541300c">      5.1.  General</a></li>
-<li class="h2"><a href="#_4e0dcd19-06cc-4eeb-8db9-b4abb63238cd">      5.2.  Clause 4 Terms and Definitions</a></li>
-<li class="h1"><a href="#_78d8c4b2-47eb-4d88-8da6-cee2821b4144">      6.  Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP</a></li>
-<li class="h2"><a href="#_cb135644-9cfd-4797-a109-3d63af364d82">      6.1.  General</a></li>
-<li class="h2"><a href="#_f6325df3-b43a-450e-bc5f-a61ea6445cca">      6.2.  Clause 5.1 Identifiers</a></li>
-<li class="h2"><a href="#_b74f1411-1e1f-49bc-9fdf-74bd299a5004">      6.3.  Requirement Class Metadata</a></li>
-<li class="h1"><a href="#_ffe006a6-df7f-43e4-ad2f-d7f2f8dfbe66">      7.  Revisions to Volume 7 OGC CDB Data Model Guidance</a></li>
-<li class="h2"><a href="#_fc479259-2b2a-4c03-8bce-534e868bdd61">      7.1.  6.5.3 Access of a Model Interior</a></li>
-<li class="h2"><a href="#_10932cf0-5471-4dad-b158-2b81898896aa">      7.2.  Section 6.13.1 Linear Feature Radar Simulation Example</a></li>
-<li class="h2"><a href="#_c6d4bc06-065f-4bc3-9ac0-619c27bf1d2c">      7.3.  New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation</a></li>
-<li class="h1"><a href="#_5aa3ed6b-f87a-49a2-8f50-51cf4f83d339">      8.  Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance</a></li>
-<li class="h2"><a href="#_72983dc7-0670-4571-9a99-fee928563020">      8.1.  Clause 4 Terms and Definitions</a></li>
-<li class="h1"><a href="#_2fa062aa-730c-4716-8a58-4538cd464c04">      9.  Revisions to Volume 10: CDB Implementation Guidance</a></li>
-<li class="h2"><a href="#_4c4fd1a5-fae3-4002-9d36-8d91eb06fc71">      9.1.  General</a></li>
-<li class="h2"><a href="#_d8766ff6-7838-428f-8631-8fdc7fe167e0">      9.2.  Clause 4 Terms and Definitions</a></li>
-<li class="h2"><a href="#_283877f3-95cf-45fe-a9fe-02c4748d8da9">      9.3.  Clause 5: Platform Recommendations</a></li>
-<li class="h1"><a href="#_6ce78c32-adc9-4b12-a58f-be4b35c95eaa">      10.  Revisions to Volume 12: CDB Navaids Attribution and Navaids Attribution Enumeration Values</a></li>
-<li class="h2"><a href="#_2a8fedd1-e9c5-4642-bca1-93186b9bbe85">      10.1.  Abstract:</a></li></ul></div>
+  <div id="toc"><h1 class="IntroTitle"><a class="anchor" href="#_fbac7241-8808-4e04-a8f2-183f31a89098"></a><a class="header" href="#_fbac7241-8808-4e04-a8f2-183f31a89098">Contents</a></h1><ul><li class="h1"><a href="#_abstract">      
+  
+  I.  Abstract
+</a></li>
+<li class="h1"><a href="#_211d8d29-59b0-4049-9fe2-9c0d569cecad">      
+  
+  II.  Keywords
+</a></li>
+<li class="h1"><a href="#_11f014e9-c98a-c81d-eeb6-de3baa47ebea">      
+  
+  III.  Security considerations
+</a></li>
+<li class="h1"><a href="#_0fb70068-6c10-4f8a-beaf-3ad684136a66">      
+  
+  IV.  Submitting Organizations
+</a></li>
+<li class="h1"><a href="#_submitters">      
+  
+  V.  Submitters
+</a></li>
+<li class="h1"><a href="#_revisions_to_volume_1_cdb_core_model_and_physical_data_store">      
+  
+  1.  Revisions to Volume 1: CDB Core Model and Physical Data Store
+</a></li>
+<li class="h2"><a href="#_introductory_clause_future_work">      
+  
+  1.1.  Introductory Clause “Future Work”
+</a></li>
+<li class="h2"><a href="#_1_0_1_corrigendum_changes_included">      
+  
+  1.2.  1.0.1 Corrigendum changes included
+</a></li>
+<li class="h2"><a href="#_general_change_all_file_extensions_in_requirements_are_now_generic">      
+  
+  1.3.  General Change: All file extensions in Requirements are now generic
+</a></li>
+<li class="h2"><a href="#_clause_1_4_3_cdb_metadata">      
+  
+  1.4.  Clause 1.4.3 CDB Metadata
+</a></li>
+<li class="h2"><a href="#_clause_1_4_4_cdb_directory_file_naming_and_structure">      
+  
+  1.5.  Clause 1.4.4 CDB Directory File Naming and Structure
+</a></li>
+<li class="h2"><a href="#_clause_1_7_1_4_system_hardware_independence">      
+  
+  1.6.  Clause 1.7.1.4 System Hardware Independence
+</a></li>
+<li class="h2"><a href="#_clause_3_1_1_metadata_directory">      
+  
+  1.7.  Clause 3.1.1 Metadata Directory
+</a></li>
+<li class="h2"><a href="#_clause_3_1_1metadata_directory">      
+  
+  1.8.  Clause 3.1.1Metadata Directory
+</a></li>
+<li class="h2"><a href="#_clause_3_4_2_4_examples">      
+  
+  1.9.  Clause 3.4.2.4 Examples
+</a></li>
+<li class="h2"><a href="#_clause_3_4_4_3_examples">      
+  
+  1.10.  Clause 3.4.4.3 Examples
+</a></li>
+<li class="h2"><a href="#_clause_3_4_4_4_examples">      
+  
+  1.11.  Clause 3.4.4.4 Examples
+</a></li>
+<li class="h2"><a href="#_clause_3_4_5_2_examples">      
+  
+  1.12.  Clause 3.4.5.2 Examples
+</a></li>
+<li class="h2"><a href="#_clause_5_1_enhanced_to_include_discussion_of_controlled_vocabularies">      
+  
+  1.13.  Clause 5.1 enhanced to include discussion of Controlled Vocabularies
+</a></li>
+<li class="h2"><a href="#_clause_5_1_1_global_metadata">      
+  
+  1.14.  Clause 5.1.1 Global Metadata
+</a></li>
+<li class="h2"><a href="#_clause_5_1_2_local_metadata">      
+  
+  1.15.  Clause 5.1.2 Local Metadata
+</a></li>
+<li class="h2"><a href="#_clause_5_1_8_formerly_clause_5_1_6_version_metadata">      
+  
+  1.16.  Clause 5.1.8 (Formerly Clause 5.1.6) Version Metadata
+</a></li>
+<li class="h2"><a href="#_clause_5_1_12_geospatial_metadata_guidance">      
+  
+  1.17.  Clause 5.1.12 Geospatial Metadata Guidance
+</a></li>
+<li class="h2"><a href="#_clause_5_1_12_1_suggested_global_geospatial_metadata_elements">      
+  
+  1.18.  Clause 5.1.12.1 Suggested Global Geospatial Metadata Elements
+</a></li>
+<li class="h2"><a href="#_clause_5_1_12_2_suggested_local_geospatial_metadata_elements">      
+  
+  1.19.  Clause 5.1.12.2 Suggested Local Geospatial Metadata Elements
+</a></li>
+<li class="h2"><a href="#_clause_5_6">      
+  
+  1.20.  Clause 5.6
+</a></li>
+<li class="h2"><a href="#_clause_5_6_2_3_2_vsti_default_read_value_change_request_490">      
+  
+  1.21.  Clause 5.6.2.3.2 VSTI Default Read Value (Change Request 490)
+</a></li>
+<li class="h2"><a href="#_new_clause_5_7_1_6_4_network_vector_priority">      
+  
+  1.22.  New Clause: 5.7.1.6.4 Network Vector Priority
+</a></li>
+<li class="h2"><a href="#_new_clause_5_7_1_9_vector_significant_size_and_spatial_significance_criteria">      
+  
+  1.23.  New Clause: 5.7.1.9 Vector Significant Size and Spatial Significance Criteria
+</a></li>
+<li class="h2"><a href="#_annex_a_abstract_test_suite">      
+  
+  1.24.  Annex A: Abstract Test Suite
+</a></li>
+<li class="h2"><a href="#_table_5_1_component_selectors_for_cdb_controlled_vocabularies_and_metadata">      
+  
+  1.25.  Table 5-1 Component Selectors for CDB Controlled Vocabularies and Metadata
+</a></li>
+<li class="h2"><a href="#_table_5_9_component_selectors_for_gtmodel_datasets">      
+  
+  1.26.  Table 5-9: Component Selectors for GTModel Datasets
+</a></li>
+<li class="h2"><a href="#_figure_5_25_two_instances_of_code_65">      
+  
+  1.27.  Figure 5-25. Two instances of code 65
+</a></li>
+<li class="h2"><a href="#_table_5_27_use_of_d_has_two_meanings_change_request_471">      
+  
+  1.28.  Table 5-27 Use of “D” has two meanings. (Change Request 471)
+</a></li>
+<li class="h2"><a href="#_table_5_27_not_entirely_visible_change_request_481">      
+  
+  1.29.  Table 5-27 not entirely visible (Change Request 481)
+</a></li>
+<li class="h2"><a href="#_cdb_attributes_xml_schema_error_change_request_482">      
+  
+  1.30.  CDB_Attributes.xml Schema error (Change Request 482)
+</a></li>
+<li class="h1"><a href="#_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes">      
+  
+  2.  Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes
+</a></li>
+<li class="h2"><a href="#_annex_q_table_of_dataset_codes">      
+  
+  2.1.  Annex Q: Table of Dataset Codes
+</a></li>
+<li class="h2"><a href="#_annex_r_derived_datasets_within_the_cdb">      
+  
+  2.2.  Annex R: Derived Datasets within the CDB
+</a></li>
+<li class="h1"><a href="#_revisions_to_volume_3_terms_and_definitions">      
+  
+  3.  Revisions to Volume 3 Terms and Definitions
+</a></li>
+<li class="h1"><a href="#_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">      
+  
+  4.  Revisions to Volume 4: CDB Use of Shapefiles for Vector Data Storage
+</a></li>
+<li class="h2"><a href="#_general">      
+  
+  4.1.  General
+</a></li>
+<li class="h2"><a href="#_clause_1_scope">      
+  
+  4.2.  Clause 1: Scope
+</a></li>
+<li class="h2"><a href="#_clause_3_references">      
+  
+  4.3.  Clause 3: References
+</a></li>
+<li class="h2"><a href="#_clause_4_terms_and_definitions">      
+  
+  4.4.  Clause 4: Terms and Definitions
+</a></li>
+<li class="h1"><a href="#_revisions_to_volume_5_radar_cross_sections">      
+  
+  5.  Revisions to Volume 5: Radar Cross-Sections
+</a></li>
+<li class="h2"><a href="#_general_2">      
+  
+  5.1.  General
+</a></li>
+<li class="h2"><a href="#_clause_4_terms_and_definitions_2">      
+  
+  5.2.  Clause 4 Terms and Definitions
+</a></li>
+<li class="h1"><a href="#_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp">      
+  
+  6.  Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP
+</a></li>
+<li class="h2"><a href="#_general_3">      
+  
+  6.1.  General
+</a></li>
+<li class="h2"><a href="#_clause_5_1_identifiers">      
+  
+  6.2.  Clause 5.1 Identifiers
+</a></li>
+<li class="h2"><a href="#_requirement_class_metadata">      
+  
+  6.3.  Requirement Class Metadata
+</a></li>
+<li class="h1"><a href="#_revisions_to_volume_7_ogc_cdb_data_model_guidance">      
+  
+  7.  Revisions to Volume 7 OGC CDB Data Model Guidance
+</a></li>
+<li class="h2"><a href="#_6_5_3_access_of_a_model_interior">      
+  
+  7.1.  6.5.3 Access of a Model Interior
+</a></li>
+<li class="h2"><a href="#_section_6_13_1_linear_feature_radar_simulation_example">      
+  
+  7.2.  Section 6.13.1 Linear Feature Radar Simulation Example
+</a></li>
+<li class="h2"><a href="#_new_section_added_6_14_guideline_vector_priority_tile_lod_generation">      
+  
+  7.3.  New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation
+</a></li>
+<li class="h1"><a href="#_revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance">      
+  
+  8.  Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance
+</a></li>
+<li class="h2"><a href="#_clause_4_terms_and_definitions_3">      
+  
+  8.1.  Clause 4 Terms and Definitions
+</a></li>
+<li class="h1"><a href="#_revisions_to_volume_10_cdb_implementation_guidance">      
+  
+  9.  Revisions to Volume 10: CDB Implementation Guidance
+</a></li>
+<li class="h2"><a href="#_general_4">      
+  
+  9.1.  General
+</a></li>
+<li class="h2"><a href="#_clause_4_terms_and_definitions_4">      
+  
+  9.2.  Clause 4 Terms and Definitions
+</a></li>
+<li class="h2"><a href="#_clause_5_platform_recommendations">      
+  
+  9.3.  Clause 5: Platform Recommendations
+</a></li>
+<li class="h1"><a href="#_revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values">      
+  
+  10.  Revisions to Volume 12: CDB Navaids Attribution and Navaids Attribution Enumeration Values
+</a></li>
+<li class="h2"><a href="#_abstract_2">      
+  
+  10.1.  Abstract:
+</a></li></ul></div>
 
 </nav>
 
@@ -1513,190 +2001,190 @@ To obtain additional rights of use, visit
 <div class="boilerplate-feedback">
 
 </div>
-</div><br /><br /><div id="_abstract"><h1 class="AbstractTitle" id="_c80c1b40-53de-419f-8d28-c47def673816">I.  Abstract</h1><p id="_74fe3e9c-938f-0ee9-225d-c01beaf8bb66">This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</p></div><div class="Section3" id="_341ceea0-e924-434b-8f03-14900e4407a3"><h1 class="IntroTitle" id="_c7fe5dfd-f740-44a2-b30d-717a208270bc">II.  Keywords</h1><p>The following are keywords to be used by search engines and document catalogues.</p><p>ogcdoc, OGC document, CDB, Common Data Base, simulation, synthetic environment, version 1.1</p></div><div class="Section3" id="_1bfba592-0713-41de-d69c-a83eb10efc35"><h1 class="IntroTitle" id="_10209a22-f04c-4b66-85c4-962ced455b8c">III.  Security considerations</h1><p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></div><div class="Section3" id="_3697a242-4df5-4bbc-80d2-33241be5ba28"><h1 class="IntroTitle" id="_2c543131-dcc0-4fcc-93f4-c9db93b16e2b">IV.  Submitting Organizations</h1><p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p><ul><li>OGC CDB Standards Working Group</li></ul></div><div class="Section3" id="_submitters"><h1 class="IntroTitle" id="_071be6bd-6de3-4ea7-bbdb-3ba3b0d5a681">V.  Submitters</h1><table id="_6c84f1d9-1180-88e6-f288-dd71feef683b" class="MsoISOTable" style="border-width:1px;border-spacing:0;"><thead><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Name</th><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Affiliation</th></tr></thead><tbody><tr><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Carl Reed</td><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Carl Reed &#x26; Associates (Editor)</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">David Graham</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">CAE Inc. CDB Chair</td></tr></tbody></table></div><div id="_revisions_to_volume_1_cdb_core_model_and_physical_data_store"><h1 id="_f0186d16-685d-4b20-8202-645b45f47f1b">1.  Revisions to Volume 1: CDB Core Model and Physical Data Store</h1><div id="_introductory_clause_future_work"><h2 id="_783c4ea4-0026-4641-89e6-9f9472f1f0ad">1.1.  Introductory Clause “Future Work”</h2>
+</div><br /><br /><div id="_abstract"><h1 class="AbstractTitle" id="_379c134e-e682-40c3-8ded-8ab3e172d8c5"><a class="anchor" href="#_abstract"></a><a class="header" href="#_abstract">I.  Abstract</a></h1><p id="_0c5e0e61-0933-b147-fe9e-5d2dc4b7e5bc">This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</p></div><div class="Section3" id="_211d8d29-59b0-4049-9fe2-9c0d569cecad"><h1 class="IntroTitle" id="_55381506-186e-4ccf-8a53-4bb0802fc738"><a class="anchor" href="#_211d8d29-59b0-4049-9fe2-9c0d569cecad"></a><a class="header" href="#_211d8d29-59b0-4049-9fe2-9c0d569cecad">II.  Keywords</a></h1><p>The following are keywords to be used by search engines and document catalogues.</p><p>ogcdoc, OGC document, CDB, Common Data Base, simulation, synthetic environment, version 1.1</p></div><div class="Section3" id="_11f014e9-c98a-c81d-eeb6-de3baa47ebea"><h1 class="IntroTitle" id="_1135f0d8-d0dc-4767-aac5-3556430c1303"><a class="anchor" href="#_11f014e9-c98a-c81d-eeb6-de3baa47ebea"></a><a class="header" href="#_11f014e9-c98a-c81d-eeb6-de3baa47ebea">III.  Security considerations</a></h1><p id="_87632f48-a936-3f14-4cc0-36d21a86a8b8">No security considerations have been made for this document.</p></div><div class="Section3" id="_0fb70068-6c10-4f8a-beaf-3ad684136a66"><h1 class="IntroTitle" id="_543d5ae0-6e04-438e-a5ff-a491025d1597"><a class="anchor" href="#_0fb70068-6c10-4f8a-beaf-3ad684136a66"></a><a class="header" href="#_0fb70068-6c10-4f8a-beaf-3ad684136a66">IV.  Submitting Organizations</a></h1><p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p><div class="ul_wrap"><ul><li>OGC CDB Standards Working Group</li></ul></div></div><div class="Section3" id="_submitters"><h1 class="IntroTitle" id="_92e8b2d8-d195-442f-b8b3-d9f4297d74e4"><a class="anchor" href="#_submitters"></a><a class="header" href="#_submitters">V.  Submitters</a></h1><table id="_b90a77fc-53a6-2267-ad5b-fcaa17a93c7a" class="MsoISOTable" style="border-width:1px;border-spacing:0;"><thead><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Name</th><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Affiliation</th></tr></thead><tbody><tr><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Carl Reed</td><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Carl Reed &#x26; Associates (Editor)</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">David Graham</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">CAE Inc. CDB Chair</td></tr></tbody></table></div><div id="_revisions_to_volume_1_cdb_core_model_and_physical_data_store"><h1 id="_ab005a2a-b1d0-43fc-b7de-911008d4ba14"><a class="anchor" href="#_revisions_to_volume_1_cdb_core_model_and_physical_data_store"></a><a class="header" href="#_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1.  Revisions to Volume 1: CDB Core Model and Physical Data Store</a></h1><div id="_introductory_clause_future_work"><h2 id="_e58364d5-9cc4-46fd-a68b-c124c5f0c261"><a class="anchor" href="#_introductory_clause_future_work"></a><a class="header" href="#_introductory_clause_future_work">1.1.  Introductory Clause “Future Work”</a></h2>
 
-<p id="_df90a1e2-542c-f294-be33-594f55f86db2">Updated to reflect work done in CDB version 1.1 as well as new requirements identified in OGC Testbed 13.</p>
-</div><div id="_1_0_1_corrigendum_changes_included"><h2 id="_32adacfa-3b4e-426a-bdd7-4bce7000acae">1.2.  1.0.1 Corrigendum changes included</h2>
+<p id="_689197a9-34cc-914c-e949-d6ef535e5d6a">Updated to reflect work done in CDB version 1.1 as well as new requirements identified in OGC Testbed 13.</p>
+</div><div id="_1_0_1_corrigendum_changes_included"><h2 id="_5d24b853-d4d5-4044-85bb-70c533b1e566"><a class="anchor" href="#_1_0_1_corrigendum_changes_included"></a><a class="header" href="#_1_0_1_corrigendum_changes_included">1.2.  1.0.1 Corrigendum changes included</a></h2>
 
-<p id="_347e1ecb-a24a-0d7b-7799-db2f26af4c2b">All CDB 1.0.1 Corrigendum changes incorporated. See OGC document 17-064 Summary of Corrigendum Changes for CDB Volume1: Core.</p>
-</div><div id="_general_change_all_file_extensions_in_requirements_are_now_generic"><h2 id="_c35d734a-fb85-431f-9919-533aade29157">1.3.  General Change: All file extensions in Requirements are now generic</h2>
+<p id="_04cc7d47-3ba3-bf6e-0004-01c5bd227b9d">All CDB 1.0.1 Corrigendum changes incorporated. See OGC document 17-064 Summary of Corrigendum Changes for CDB Volume1: Core.</p>
+</div><div id="_general_change_all_file_extensions_in_requirements_are_now_generic"><h2 id="_2c900df3-0f58-4d39-bb07-a55eb31549d0"><a class="anchor" href="#_general_change_all_file_extensions_in_requirements_are_now_generic"></a><a class="header" href="#_general_change_all_file_extensions_in_requirements_are_now_generic">1.3.  General Change: All file extensions in Requirements are now generic</a></h2>
 
-<p id="_17846fa8-c51e-63ef-cf84-ecfc3f78fbc1">All file specific extensions stated in requirements have been made generic. For example, CDB Volume 1 Requirement formerly stated:</p>
+<p id="_68799464-d675-49e0-8ec8-13322016555b">All file specific extensions stated in requirements have been made generic. For example, CDB Volume 1 Requirement formerly stated:</p>
 
-<p id="_8a157a4c-829a-5d34-b5b0-6e247269dbae">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.flt</tt>.</p>
+<p id="_ba37958f-1b68-09b8-dd88-2969468c0da2">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.flt</tt>.</p>
 
-<p id="_24be7957-453d-e30d-97ec-ef7b60c6ebe9">This Requirement now reads:</p>
+<p id="_3b241d9e-21ce-504e-d4c8-fc84bfa1b8c7">This Requirement now reads:</p>
 
-<p id="_4a61798d-76dc-89cb-5263-eeeef2382a3d">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.&#x3c;ext&#x3e;</tt></p>
+<p id="_4e8ffd43-ec69-e5c8-1f7c-9dfcc6b42f76">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.&#x3c;ext&#x3e;</tt></p>
 
-<p id="_a483c09c-3858-c78e-1bc9-fbef3bc22e67">Where <tt>&#x3c;ext&#x3e;</tt> is the correct file name extension for the data encoded in the file. There is also a footnote that specifies what the extension was in version 1.0 of the CDB standard.</p>
-</div><div id="_clause_1_4_3_cdb_metadata"><h2 id="_9a7ce853-2db3-43bf-8dcb-b01026715f0f">1.4.  Clause 1.4.3 CDB Metadata</h2>
+<p id="_706969fd-301a-fa2b-ea49-a1bf00a80e9a">Where <tt>&#x3c;ext&#x3e;</tt> is the correct file name extension for the data encoded in the file. There is also a footnote that specifies what the extension was in version 1.0 of the CDB standard.</p>
+</div><div id="_clause_1_4_3_cdb_metadata"><h2 id="_3747d266-bdcb-4dfe-a22c-47cb7d7f72ac"><a class="anchor" href="#_clause_1_4_3_cdb_metadata"></a><a class="header" href="#_clause_1_4_3_cdb_metadata">1.4.  Clause 1.4.3 CDB Metadata</a></h2>
 
-<p id="_646c9de8-1487-531e-51b6-394434853e11">This clause was updated to:</p>
+<p id="_653708a2-9db4-0611-4fc1-15c9581d187a">This clause was updated to:</p>
 
-<ul id="_e1c52137-2be9-e506-7839-6dbb89b3068d"><li><p id="_0fcd173a-4c61-dc0c-f16f-46d8b6c84f25">Provide definitions for metadata, controlled vocabularies, and enumerations. These are in clauses 1.4.3.1, 1.4.3.2, and 1.4.3.3.</p>
+<div class="ul_wrap"><ul id="_ff21b440-6bbb-56eb-ffc9-8f6ce4eb7d1c"><li><p id="_5e3c93ba-aa93-d3d2-3dd0-382959a0c0b7">Provide definitions for metadata, controlled vocabularies, and enumerations. These are in clauses 1.4.3.1, 1.4.3.2, and 1.4.3.3.</p>
 </li>
-<li><p id="_e73ca05b-34d7-c4ec-d5aa-7066f90a64bb">Insert a table that provides more detailed information on each of the files included in the metadata folder.</p>
+<li><p id="_84a435e1-63db-4ca3-ef63-2cfd5bc64dcf">Insert a table that provides more detailed information on each of the files included in the metadata folder.</p>
 </li>
-</ul>
-</div><div id="_clause_1_4_4_cdb_directory_file_naming_and_structure"><h2 id="_f35b7748-2b4c-4a41-8e71-2c5594f38330">1.5.  Clause 1.4.4 CDB Directory File Naming and Structure</h2>
+</ul></div>
+</div><div id="_clause_1_4_4_cdb_directory_file_naming_and_structure"><h2 id="_87c54823-796d-48de-bbd0-2d6253487aaf"><a class="anchor" href="#_clause_1_4_4_cdb_directory_file_naming_and_structure"></a><a class="header" href="#_clause_1_4_4_cdb_directory_file_naming_and_structure">1.5.  Clause 1.4.4 CDB Directory File Naming and Structure</a></h2>
 
-<p id="_2f0fb3f0-e887-704b-bd65-060461d95e5c">This clause is updated to:</p>
+<p id="_20d804cc-5bae-d605-a657-ed1c8b8a0caf">This clause is updated to:</p>
 
-<ul id="_3eab66d2-8b28-9bec-dd78-724a1f446027"><li><p id="_766a126d-5056-6e30-3a52-2e7ba659d5ad">Reflect the use of generic file extensions in all Requirements and the Abstract Test Suite rather than specific file extensions.</p>
+<div class="ul_wrap"><ul id="_1ea716a6-e954-932a-c67e-09620cfae87f"><li><p id="_e03ce199-8ba7-94dc-5639-e921e9fb9203">Reflect the use of generic file extensions in all Requirements and the Abstract Test Suite rather than specific file extensions.</p>
 </li>
-<li><p id="_d27e4048-3775-b66a-d9d4-e5c73a14562d">Reflect the addition of enumerations and controlled vocabularies as concepts in the standard.</p>
+<li><p id="_f79028cd-a7f8-8339-9ec5-f08ede059333">Reflect the addition of enumerations and controlled vocabularies as concepts in the standard.</p>
 </li>
-</ul>
-</div><div id="_clause_1_7_1_4_system_hardware_independence"><h2 id="_34027813-d77a-4ed8-af8d-db00e56d5a49">1.6.  Clause 1.7.1.4 System Hardware Independence</h2>
+</ul></div>
+</div><div id="_clause_1_7_1_4_system_hardware_independence"><h2 id="_6bea8722-317e-4f72-be4d-867dd1c4d7d6"><a class="anchor" href="#_clause_1_7_1_4_system_hardware_independence"></a><a class="header" href="#_clause_1_7_1_4_system_hardware_independence">1.6.  Clause 1.7.1.4 System Hardware Independence</a></h2>
 
-<p id="_47391184-5b11-9c5e-16ed-906654e1ccc4">Slight re-wording to make the sentence grammatically correct.</p>
-</div><div id="_clause_3_1_1_metadata_directory"><h2 id="_547571d3-10b9-4369-be4b-64b3c8f5c4ec">1.7.  Clause 3.1.1 Metadata Directory</h2>
+<p id="_c0b4cb49-2342-ff18-6601-0474c05595ff">Slight re-wording to make the sentence grammatically correct.</p>
+</div><div id="_clause_3_1_1_metadata_directory"><h2 id="_9fa04bf8-b3b0-40b1-ac4c-6d92da84cf6d"><a class="anchor" href="#_clause_3_1_1_metadata_directory"></a><a class="header" href="#_clause_3_1_1_metadata_directory">1.7.  Clause 3.1.1 Metadata Directory</a></h2>
 
-<p id="_b677e7ac-75ac-28ee-55c2-672649377038">Reformatted to be more easily read and understood.</p>
-</div><div id="_clause_3_1_1metadata_directory"><h2 id="_d8b1f03c-fe34-4395-ba83-2d82ea7bd4ad">1.8.  Clause 3.1.1Metadata Directory</h2>
+<p id="_54b7f0d4-ac9c-6a04-0279-681c664c2c8d">Reformatted to be more easily read and understood.</p>
+</div><div id="_clause_3_1_1metadata_directory"><h2 id="_b4e0c66b-472b-4301-b16a-adf830566693"><a class="anchor" href="#_clause_3_1_1metadata_directory"></a><a class="header" href="#_clause_3_1_1metadata_directory">1.8.  Clause 3.1.1Metadata Directory</a></h2>
 
-<p id="_0bc0afe8-ea92-0289-9a6c-f315b819b628">A new metadata file description for global metadata – including geospatial metadata -applicable to an entire CDB data store was added. This new metadata file description needs to be read in concert with the changes in clauses 1.4.3, 5.1, and specifically 5.1.6.</p>
-</div><div id="_clause_3_4_2_4_examples"><h2 id="_ddeab065-fee8-489d-bc9e-93b15172b461">1.9.  Clause 3.4.2.4 Examples</h2>
+<p id="_bb4f7dad-b14d-8761-9552-a385ebf6c8ac">A new metadata file description for global metadata – including geospatial metadata -applicable to an entire CDB data store was added. This new metadata file description needs to be read in concert with the changes in clauses 1.4.3, 5.1, and specifically 5.1.6.</p>
+</div><div id="_clause_3_4_2_4_examples"><h2 id="_62f0a6eb-d439-44ba-9c90-90fc865e4116"><a class="anchor" href="#_clause_3_4_2_4_examples"></a><a class="header" href="#_clause_3_4_2_4_examples">1.9.  Clause 3.4.2.4 Examples</a></h2>
 
-<p id="_c0ff2220-a38d-9833-75d8-e9a99d024e4d">An example of the file path for all associated metadata is included.</p>
-</div><div id="_clause_3_4_4_3_examples"><h2 id="_e84296e0-29b5-4e19-9420-f60c4f02f66b">1.10.  Clause 3.4.4.3 Examples</h2>
+<p id="_92214340-7f54-e170-fe2f-8fbcd0d813ff">An example of the file path for all associated metadata is included.</p>
+</div><div id="_clause_3_4_4_3_examples"><h2 id="_263f870b-1d38-4e1e-835d-d56363ab848d"><a class="anchor" href="#_clause_3_4_4_3_examples"></a><a class="header" href="#_clause_3_4_4_3_examples">1.10.  Clause 3.4.4.3 Examples</a></h2>
 
-<p id="_a8b439b1-791f-5947-39d6-21f9f6f2c0b9">An example of the file path for all associated metadata is included.</p>
-</div><div id="_clause_3_4_4_4_examples"><h2 id="_d4d22dea-c9fd-4e22-aaed-c223e3972e89">1.11.  Clause 3.4.4.4 Examples</h2>
+<p id="_b5f4f779-99e4-12cc-b80f-8853a983de12">An example of the file path for all associated metadata is included.</p>
+</div><div id="_clause_3_4_4_4_examples"><h2 id="_8ebef3cd-9071-443f-b13a-cf8c973a74cf"><a class="anchor" href="#_clause_3_4_4_4_examples"></a><a class="header" href="#_clause_3_4_4_4_examples">1.11.  Clause 3.4.4.4 Examples</a></h2>
 
-<p id="_3160b4f5-0857-7233-0f71-655ceff5d767">An example of the file path for all associated metadata is included.</p>
-</div><div id="_clause_3_4_5_2_examples"><h2 id="_8f105190-eeca-4d34-8480-80c0288960ea">1.12.  Clause 3.4.5.2 Examples</h2>
+<p id="_61d6a1e4-7b6b-fe0a-f638-deb8d1d0b449">An example of the file path for all associated metadata is included.</p>
+</div><div id="_clause_3_4_5_2_examples"><h2 id="_1fcb3a16-bc38-41e4-9039-d8d4d61b9eab"><a class="anchor" href="#_clause_3_4_5_2_examples"></a><a class="header" href="#_clause_3_4_5_2_examples">1.12.  Clause 3.4.5.2 Examples</a></h2>
 
-<p id="_e012a0a6-1312-793f-0cde-4702f29b58e9">An example of the file path for associated metadata is included.</p>
-</div><div id="_clause_5_1_enhanced_to_include_discussion_of_controlled_vocabularies"><h2 id="_9ec1e49d-8b83-4a7f-9a84-423bae5b6b45">1.13.  Clause 5.1 enhanced to include discussion of Controlled Vocabularies</h2>
+<p id="_fe1ca12f-cfe5-816e-7fc6-0fed78058702">An example of the file path for associated metadata is included.</p>
+</div><div id="_clause_5_1_enhanced_to_include_discussion_of_controlled_vocabularies"><h2 id="_b3a392f7-3f56-468b-ba13-456f7c94a603"><a class="anchor" href="#_clause_5_1_enhanced_to_include_discussion_of_controlled_vocabularies"></a><a class="header" href="#_clause_5_1_enhanced_to_include_discussion_of_controlled_vocabularies">1.13.  Clause 5.1 enhanced to include discussion of Controlled Vocabularies</a></h2>
 
-<p id="_96ab3bd8-85d6-0609-6ecc-92a76ec01677">Clause 5.1 has additional wording explaining CDB use of metadata, enumerations and controlled vocabularies. This change resulted from the work in CDB 1.1 for metadata. Many elements in CDB 1.0 that were referred to as metadata are actually enumerations and controlled vocabularies.</p>
-</div><div id="_clause_5_1_1_global_metadata"><h2 id="_74266c73-7979-4733-b1bc-a0c323aa998b">1.14.  Clause 5.1.1 Global Metadata</h2>
+<p id="_03284130-ce79-7cce-ee31-b0d1b83e0798">Clause 5.1 has additional wording explaining CDB use of metadata, enumerations and controlled vocabularies. This change resulted from the work in CDB 1.1 for metadata. Many elements in CDB 1.0 that were referred to as metadata are actually enumerations and controlled vocabularies.</p>
+</div><div id="_clause_5_1_1_global_metadata"><h2 id="_9bd5c877-adc7-41df-891d-8a95be272f87"><a class="anchor" href="#_clause_5_1_1_global_metadata"></a><a class="header" href="#_clause_5_1_1_global_metadata">1.14.  Clause 5.1.1 Global Metadata</a></h2>
 
-<p id="_ffa7b67a-7a7e-eab0-8989-5c2f2c340f07">A new clause added that defines what is meant by Global Metadata in general for a CDB data store.</p>
-</div><div id="_clause_5_1_2_local_metadata"><h2 id="_9367fc28-a304-4c22-85d5-6b796ef63d86">1.15.  Clause 5.1.2 Local Metadata</h2>
+<p id="_f8d3c86a-a3b5-7b82-d5d6-06ef669a7926">A new clause added that defines what is meant by Global Metadata in general for a CDB data store.</p>
+</div><div id="_clause_5_1_2_local_metadata"><h2 id="_fd527f81-23b6-4bb0-9448-c2e212a2585c"><a class="anchor" href="#_clause_5_1_2_local_metadata"></a><a class="header" href="#_clause_5_1_2_local_metadata">1.15.  Clause 5.1.2 Local Metadata</a></h2>
 
-<p id="_9a1401b4-24df-1d23-adac-650016983fbc">A new clause added that defines what is meant by Local Metadata for a CDB data store.</p>
-</div><div id="_clause_5_1_8_formerly_clause_5_1_6_version_metadata"><h2 id="_760b2a8a-1c55-462f-bf1b-fb4c15727c16">1.16.  Clause 5.1.8 (Formerly Clause 5.1.6) Version Metadata</h2>
+<p id="_1a4bd748-e0bb-bcac-6ed6-3bb23876ddd7">A new clause added that defines what is meant by Local Metadata for a CDB data store.</p>
+</div><div id="_clause_5_1_8_formerly_clause_5_1_6_version_metadata"><h2 id="_0d19e8ad-739d-4cf5-a391-9ce3020b73bb"><a class="anchor" href="#_clause_5_1_8_formerly_clause_5_1_6_version_metadata"></a><a class="header" href="#_clause_5_1_8_formerly_clause_5_1_6_version_metadata">1.16.  Clause 5.1.8 (Formerly Clause 5.1.6) Version Metadata</a></h2>
 
-<p id="_0693f132-2661-db93-fdae-88c71e4886c8">Specification version definition enhanced to include both OGC and community versions of the standard.</p>
+<p id="_05c4738f-8b3a-a22c-d3aa-940e413e327c">Specification version definition enhanced to include both OGC and community versions of the standard.</p>
 
-<p id="_f3ca50bd-8164-90c7-6102-ced9dec645e4">Addition of a mandatory <tt>&#x3c;Metadata standard="metadata-standard-name"&#x3e;</tt> element that specifies the metadata standard used for a CDB data store. This includes a list of metadata standards commonly used in the geospatial and simulation industries. This enumeration is governed by and agreed to by the OGC CDB Standards Working Group. Other metadata standards or profiles of standards may be added upon request and with proper justification. For backwards compatibility, the Metadata_standard element can be set to “NoMetadata”.</p>
-</div><div id="_clause_5_1_12_geospatial_metadata_guidance"><h2 id="_7c27f792-cbf1-4182-99cb-6e0effb56f0b">1.17.  Clause 5.1.12 Geospatial Metadata Guidance</h2>
+<p id="_c89aaf44-c1e1-0afd-a64c-73a337032911">Addition of a mandatory <tt>&#x3c;Metadata standard="metadata-standard-name"&#x3e;</tt> element that specifies the metadata standard used for a CDB data store. This includes a list of metadata standards commonly used in the geospatial and simulation industries. This enumeration is governed by and agreed to by the OGC CDB Standards Working Group. Other metadata standards or profiles of standards may be added upon request and with proper justification. For backwards compatibility, the Metadata_standard element can be set to “NoMetadata”.</p>
+</div><div id="_clause_5_1_12_geospatial_metadata_guidance"><h2 id="_edb0b3df-6e56-4341-8c44-13d7e2ba9a7f"><a class="anchor" href="#_clause_5_1_12_geospatial_metadata_guidance"></a><a class="header" href="#_clause_5_1_12_geospatial_metadata_guidance">1.17.  Clause 5.1.12 Geospatial Metadata Guidance</a></h2>
 
-<p id="_fdc54eba-1fa3-d32b-0c6e-effd679235f0">This is a new clause that provides general implementation guidance for encoding and storing metadata in a CDB data store.</p>
-</div><div id="_clause_5_1_12_1_suggested_global_geospatial_metadata_elements"><h2 id="_d5c8a682-cdcf-4c3d-b73b-57f2961959ad">1.18.  Clause 5.1.12.1 Suggested Global Geospatial Metadata Elements</h2>
+<p id="_9141f4db-33b6-9767-317c-df83c8a940d9">This is a new clause that provides general implementation guidance for encoding and storing metadata in a CDB data store.</p>
+</div><div id="_clause_5_1_12_1_suggested_global_geospatial_metadata_elements"><h2 id="_2d591624-64ed-4cb8-b5b9-3c04280a09ca"><a class="anchor" href="#_clause_5_1_12_1_suggested_global_geospatial_metadata_elements"></a><a class="header" href="#_clause_5_1_12_1_suggested_global_geospatial_metadata_elements">1.18.  Clause 5.1.12.1 Suggested Global Geospatial Metadata Elements</a></h2>
 
-<p id="_bafd521b-1eb2-9830-4eaa-5ad182442a76">This is a new clause that provides guidance on which metadata elements should be included in the global metadata resource.</p>
-</div><div id="_clause_5_1_12_2_suggested_local_geospatial_metadata_elements"><h2 id="_e6635a87-81bd-4bf0-9e1b-49b323c75a0a">1.19.  Clause 5.1.12.2 Suggested Local Geospatial Metadata Elements</h2>
+<p id="_16de429b-e880-a730-e462-7b08d0aa41dc">This is a new clause that provides guidance on which metadata elements should be included in the global metadata resource.</p>
+</div><div id="_clause_5_1_12_2_suggested_local_geospatial_metadata_elements"><h2 id="_8166348b-3f26-41b5-bc64-3c0c16dd77d0"><a class="anchor" href="#_clause_5_1_12_2_suggested_local_geospatial_metadata_elements"></a><a class="header" href="#_clause_5_1_12_2_suggested_local_geospatial_metadata_elements">1.19.  Clause 5.1.12.2 Suggested Local Geospatial Metadata Elements</a></h2>
 
-<p id="_dfbe1191-0123-6e69-882a-64d9f01459c2">This is a new clause that provides guidance on which metadata elements should be included in a local metadata resource.</p>
-</div><div id="_clause_5_6"><h2 id="_26e9b2f0-c913-43c2-868a-47904d0023f1">1.20.  Clause 5.6</h2>
+<p id="_cf689955-2e5a-1fcc-753a-7a659cf7ef83">This is a new clause that provides guidance on which metadata elements should be included in a local metadata resource.</p>
+</div><div id="_clause_5_6"><h2 id="_41efc710-fc87-47dc-b647-21b787a78cf8"><a class="anchor" href="#_clause_5_6"></a><a class="header" href="#_clause_5_6">1.20.  Clause 5.6</a></h2>
 
-<p id="_38e8d53a-19f7-a5ed-07b8-15708388ded0">Cross walked the CDB tiled grid concept with the OGC/ISO baseline, specifically the OGC Coverage Implementation Schema (CIS) September 2017.</p>
-</div><div id="_clause_5_6_2_3_2_vsti_default_read_value_change_request_490"><h2 id="_7c864df5-a069-499b-bd71-7be6db321634">1.21.  Clause 5.6.2.3.2 VSTI Default Read Value (Change Request 490)</h2>
+<p id="_de430850-1e32-3165-7034-77b288c8c846">Cross walked the CDB tiled grid concept with the OGC/ISO baseline, specifically the OGC Coverage Implementation Schema (CIS) September 2017.</p>
+</div><div id="_clause_5_6_2_3_2_vsti_default_read_value_change_request_490"><h2 id="_075b66c4-ca26-4e40-b648-046557d67eb2"><a class="anchor" href="#_clause_5_6_2_3_2_vsti_default_read_value_change_request_490"></a><a class="header" href="#_clause_5_6_2_3_2_vsti_default_read_value_change_request_490">1.21.  Clause 5.6.2.3.2 VSTI Default Read Value (Change Request 490)</a></h2>
 
-<p id="_24da5b53-2eb1-aff0-5d3b-80bc2c797ebc">Requirement 102 is against CDB client-devices and not the CDB data store itself. This is an untestable requirement, and further, a client-device should be allowed to read and consume a CDB in any manne that it wishes. There might well be good reasons to not follow those rules in a client-device, so the spec should not impose this.</p>
+<p id="_04f3feaa-aab8-9db5-166f-dbcdbf3a9eed">Requirement 102 is against CDB client-devices and not the CDB data store itself. This is an untestable requirement, and further, a client-device should be allowed to read and consume a CDB in any manne that it wishes. There might well be good reasons to not follow those rules in a client-device, so the spec should not impose this.</p>
 
-<p id="_d746e0a7-daa6-d583-dc57-eb36642661ec">Therefore, this requirement was removed and replaced with informative guidance for client implementations. The related test 102 is removed from Annex A — Abstract Test Suite.</p>
-</div><div id="_new_clause_5_7_1_6_4_network_vector_priority"><h2 id="_1c57f93c-48a6-4a2d-aa18-77982d1527e4">1.22.  New Clause: 5.7.1.6.4 Network Vector Priority</h2>
+<p id="_4c06e374-0cfa-364c-1be7-d87a720bb62c">Therefore, this requirement was removed and replaced with informative guidance for client implementations. The related test 102 is removed from Annex A — Abstract Test Suite.</p>
+</div><div id="_new_clause_5_7_1_6_4_network_vector_priority"><h2 id="_834555c5-0bed-4782-94b1-c26cb3b365ea"><a class="anchor" href="#_new_clause_5_7_1_6_4_network_vector_priority"></a><a class="header" href="#_new_clause_5_7_1_6_4_network_vector_priority">1.22.  New Clause: 5.7.1.6.4 Network Vector Priority</a></h2>
 
-<p id="_7e128f16-7944-81f4-c991-58e1f8a81190">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for network vector priority. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1.</p>
-</div><div id="_new_clause_5_7_1_9_vector_significant_size_and_spatial_significance_criteria"><h2 id="_4f3e88d6-793d-461d-8397-36583675a65c">1.23.  New Clause: 5.7.1.9 Vector Significant Size and Spatial Significance Criteria</h2>
+<p id="_f2b3c3ab-ad56-b4cc-b4fa-cc88d93f5ed5">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for network vector priority. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1.</p>
+</div><div id="_new_clause_5_7_1_9_vector_significant_size_and_spatial_significance_criteria"><h2 id="_0b71563d-5ecf-462f-87d5-e7d03aaf4522"><a class="anchor" href="#_new_clause_5_7_1_9_vector_significant_size_and_spatial_significance_criteria"></a><a class="header" href="#_new_clause_5_7_1_9_vector_significant_size_and_spatial_significance_criteria">1.23.  New Clause: 5.7.1.9 Vector Significant Size and Spatial Significance Criteria</a></h2>
 
-<p id="_eab76300-f4f8-e81a-6080-29f777ff8cb9">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for vector significant size and spatial significance. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1. Clause 5.7.1.9 includes two sub-clauses: 5.7.1.9.1 Vector Significant Size and 5.7.1.9.2 Levels of Detail and Spatial Significance Criteria.</p>
-</div><div id="_annex_a_abstract_test_suite"><h2 id="_68ec514a-8ed3-4b5d-b66e-d0aa85f493e1">1.24.  Annex A: Abstract Test Suite</h2>
+<p id="_bd998ef0-2479-438f-5a40-da2c302313c5">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for vector significant size and spatial significance. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1. Clause 5.7.1.9 includes two sub-clauses: 5.7.1.9.1 Vector Significant Size and 5.7.1.9.2 Levels of Detail and Spatial Significance Criteria.</p>
+</div><div id="_annex_a_abstract_test_suite"><h2 id="_1743199a-668d-4180-be54-40528b846348"><a class="anchor" href="#_annex_a_abstract_test_suite"></a><a class="header" href="#_annex_a_abstract_test_suite">1.24.  Annex A: Abstract Test Suite</a></h2>
 
-<p id="_8d4f1b15-c78f-01e5-8f70-d11519255506">All tests that had specific file extensions, such as .shp or .flt, are now generic with a note as to what the extensions were in version of the CDB standard prior to version 1.1.</p>
-</div><div id="_table_5_1_component_selectors_for_cdb_controlled_vocabularies_and_metadata"><h2 id="_e9191f3a-0186-4ca5-a92a-552e59c76384">1.25.  Table 5-1 Component Selectors for CDB Controlled Vocabularies and Metadata</h2>
+<p id="_4163c406-4b35-8571-0810-86c2deea6386">All tests that had specific file extensions, such as .shp or .flt, are now generic with a note as to what the extensions were in version of the CDB standard prior to version 1.1.</p>
+</div><div id="_table_5_1_component_selectors_for_cdb_controlled_vocabularies_and_metadata"><h2 id="_ffc1afc7-6d19-4c30-8c6d-278777197541"><a class="anchor" href="#_table_5_1_component_selectors_for_cdb_controlled_vocabularies_and_metadata"></a><a class="header" href="#_table_5_1_component_selectors_for_cdb_controlled_vocabularies_and_metadata">1.25.  Table 5-1 Component Selectors for CDB Controlled Vocabularies and Metadata</a></h2>
 
-<p id="_f340ed47-4a3c-e52f-7e70-8bbc1dd6fd01">A new selector value “12” for global metadata was added.</p>
-</div><div id="_table_5_9_component_selectors_for_gtmodel_datasets"><h2 id="_d20d3576-f9ec-49c0-bc24-60207cd3fb8e">1.26.  Table 5-9: Component Selectors for GTModel Datasets</h2>
+<p id="_0e643d47-eeff-18c9-ebb1-a9f0c2612617">A new selector value “12” for global metadata was added.</p>
+</div><div id="_table_5_9_component_selectors_for_gtmodel_datasets"><h2 id="_3f92c23e-9fdd-486b-9a4f-3128374c9e9a"><a class="anchor" href="#_table_5_9_component_selectors_for_gtmodel_datasets"></a><a class="header" href="#_table_5_9_component_selectors_for_gtmodel_datasets">1.26.  Table 5-9: Component Selectors for GTModel Datasets</a></h2>
 
-<p id="_f2d3d6bd-db8c-304b-d1dc-3e7af91b5cc5">Provide correct volume and section reference to GTModel descriptor definition. Please note, while this descriptor content is called metadata, this IS NOT the metadata as defined in Volume 1 clauses 5.1.1 and 5.1.2.</p>
-</div><div id="_figure_5_25_two_instances_of_code_65"><h2 id="_e2f884ee-908f-4fcb-a3cc-0a7901915422">1.27.  Figure 5-25. Two instances of code 65</h2>
+<p id="_63c0e64d-8a6f-eda1-e643-3f923e2fb449">Provide correct volume and section reference to GTModel descriptor definition. Please note, while this descriptor content is called metadata, this IS NOT the metadata as defined in Volume 1 clauses 5.1.1 and 5.1.2.</p>
+</div><div id="_figure_5_25_two_instances_of_code_65"><h2 id="_85a61df6-41c6-4bca-af7f-09a416c8295b"><a class="anchor" href="#_figure_5_25_two_instances_of_code_65"></a><a class="header" href="#_figure_5_25_two_instances_of_code_65">1.27.  Figure 5-25. Two instances of code 65</a></h2>
 
-<p id="_322d521f-d580-e716-d679-7d66f8a433ea">After verification with the reference document, the correct lines are:</p>
+<p id="_ed6fb300-a731-5e06-200d-887b1c1dc141">After verification with the reference document, the correct lines are:</p>
 
-<ul id="_a8604eb6-7430-7957-71e9-87f3f60e2f51"><li><p id="_12720aa3-ceb7-7073-40af-645bb56b5f69"><tt>64</tt>: Gable with Monitor</p>
+<div class="ul_wrap"><ul id="_791dcc9f-4328-4f82-8d79-4d1aa5ebde96"><li><p id="_74e45d6c-069f-2085-9009-0b3cc1fb7864"><tt>64</tt>: Gable with Monitor</p>
 </li>
-<li><p id="_5591e704-bc61-30f8-2ee9-6c2004ee3d3b"><tt>65</tt>: Reserved</p>
+<li><p id="_c896ac05-d354-5a1e-6025-48e50749bb0c"><tt>65</tt>: Reserved</p>
 </li>
-</ul>
+</ul></div>
 
-<p id="_89f4e720-c0b5-c85c-717a-da1c422f5e58">The reference document is Digest Part 4, ISO 15046-10 Profile, March 1999, Annex B, Attribute and Value Codes.</p>
-</div><div id="_table_5_27_use_of_d_has_two_meanings_change_request_471"><h2 id="_17323864-cf31-43e3-9108-dc413d77f98a">1.28.  Table 5-27 Use of “D” has two meanings. (Change Request 471)</h2>
+<p id="_d8efd822-58a7-715a-10cb-aa29b4c0270d">The reference document is Digest Part 4, ISO 15046-10 Profile, March 1999, Annex B, Attribute and Value Codes.</p>
+</div><div id="_table_5_27_use_of_d_has_two_meanings_change_request_471"><h2 id="_cfff0283-d451-4cf8-8770-9077226609cd"><a class="anchor" href="#_table_5_27_use_of_d_has_two_meanings_change_request_471"></a><a class="header" href="#_table_5_27_use_of_d_has_two_meanings_change_request_471">1.28.  Table 5-27 Use of “D” has two meanings. (Change Request 471)</a></h2>
 
-<p id="_ed681300-de31-ee76-8374-23f82082411a">There was recommendation to remove the use of “D” indicating a “Deprecated Attribution Schema” and keep just one use of “D” for “Dependent on another attribute”. This recommendation was accepted and the change made to Table 5-27.</p>
-</div><div id="_table_5_27_not_entirely_visible_change_request_481"><h2 id="_284460bb-27aa-4824-99cd-6efdf8bcba6f">1.29.  Table 5-27 not entirely visible (Change Request 481)</h2>
+<p id="_6ab74771-264a-c034-f3be-9372be30d12d">There was recommendation to remove the use of “D” indicating a “Deprecated Attribution Schema” and keep just one use of “D” for “Dependent on another attribute”. This recommendation was accepted and the change made to Table 5-27.</p>
+</div><div id="_table_5_27_not_entirely_visible_change_request_481"><h2 id="_cef34be1-d975-468a-9835-5af706dfce08"><a class="anchor" href="#_table_5_27_not_entirely_visible_change_request_481"></a><a class="header" href="#_table_5_27_not_entirely_visible_change_request_481">1.29.  Table 5-27 not entirely visible (Change Request 481)</a></h2>
 
-<p id="_f4af57c4-551d-0ea1-a503-6a9655cd3af7">In version 1.0, Table 27 is not entirely visible (clipped at page edge). This comment was accepted and the change made to the table prior to insertion into Volume 1 Core.</p>
-</div><div id="_cdb_attributes_xml_schema_error_change_request_482"><h2 id="_ad183858-9256-47c2-a4c0-e0c63559b6b5">1.30.  CDB_Attributes.xml Schema error (Change Request 482)</h2>
+<p id="_108d87e4-c417-98d8-456b-7d77f7db3b35">In version 1.0, Table 27 is not entirely visible (clipped at page edge). This comment was accepted and the change made to the table prior to insertion into Volume 1 Core.</p>
+</div><div id="_cdb_attributes_xml_schema_error_change_request_482"><h2 id="_cb0d32db-3eab-4850-98a7-201adb58418a"><a class="anchor" href="#_cdb_attributes_xml_schema_error_change_request_482"></a><a class="header" href="#_cdb_attributes_xml_schema_error_change_request_482">1.30.  CDB_Attributes.xml Schema error (Change Request 482)</a></h2>
 
-<p id="_5d86d0ac-b68a-892e-0fc4-ba0102f3db5d">In: <tt>CDB_Attributes.xml</tt></p>
+<p id="_a0561170-6420-175b-7268-a4564fb12f3d">In: <tt>CDB_Attributes.xml</tt></p>
 
-<pre id="_9223898f-682b-51e6-a524-2d1a74efb886" class="sourcecode">No.:9<br />Attr short name:BOTY<br />Attr name: Boundary Type<br />Description: "...See table 5-29 for a list of accepted values..."</pre>
+<p class="collapsible active"> </p><pre id="_6d944398-0e65-29c9-77bb-afbce144e827" class="sourcecode hidable">No.:9<br />Attr short name:BOTY<br />Attr name: Boundary Type<br />Description: "...See table 5-29 for a list of accepted values..."</pre><p class="SourceTitle" style="text-align:center;">Listing</p>
 
 
-<p id="_e55a1e88-ba55-6982-20d7-24866b9ec140">The table 5-29 was corrected to be 5-19.</p>
-</div></div><div id="_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes"><h1 id="_1780b984-b940-436e-871c-ad9256be9fe7">2.  Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes</h1><div id="_annex_q_table_of_dataset_codes"><h2 id="_ce6227f8-84a4-4fc0-8661-cbcfbcd36f54">2.1.  Annex Q: Table of Dataset Codes</h2>
+<p id="_7da0301a-eebf-095e-ba9e-706ebe052bb6">The table 5-29 was corrected to be 5-19.</p>
+</div></div><div id="_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes"><h1 id="_7888e767-2161-4ff8-bada-d44830afe409"><a class="anchor" href="#_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes"></a><a class="header" href="#_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes">2.  Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes</a></h1><div id="_annex_q_table_of_dataset_codes"><h2 id="_9d254e4e-534f-4b90-911a-0fcb117bec50"><a class="anchor" href="#_annex_q_table_of_dataset_codes"></a><a class="header" href="#_annex_q_table_of_dataset_codes">2.1.  Annex Q: Table of Dataset Codes</a></h2>
 
-<p id="_03730edf-9223-86e1-59cb-dab0d366ab49">Updated to reflect the relationship between the community CDB 3.2 version and the OGC standard.</p>
-</div><div id="_annex_r_derived_datasets_within_the_cdb"><h2 id="_a3e97776-460a-42bc-ad3b-b06b23a46936">2.2.  Annex R: Derived Datasets within the CDB</h2>
+<p id="_59252f6a-ae27-c265-04e2-d37a202ae643">Updated to reflect the relationship between the community CDB 3.2 version and the OGC standard.</p>
+</div><div id="_annex_r_derived_datasets_within_the_cdb"><h2 id="_8221b038-6326-4326-9ef4-64e8c131f595"><a class="anchor" href="#_annex_r_derived_datasets_within_the_cdb"></a><a class="header" href="#_annex_r_derived_datasets_within_the_cdb">2.2.  Annex R: Derived Datasets within the CDB</a></h2>
 
-<p id="_de614c2a-cff2-2426-4cfc-dcb04b94cbeb">Some grammatical errors were corrected.</p>
-</div></div><div id="_revisions_to_volume_3_terms_and_definitions"><h1 id="_1d4a6213-e3c6-4f34-8e1a-0ecc9b7d18a5">3.  Revisions to Volume 3 Terms and Definitions</h1><p id="_625223ef-c845-f904-b73e-7b8699eb967d">Definitions were added for: depth, elevation, grid, grid point, height, metadata elements, raster, regular grid, and vector data. The definitions for dataset and metadata were slightly revised</p></div><div id="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage"><h1 id="_6e3de6e8-893e-4ad1-8d7a-002e04c5b34e">4.  Revisions to Volume 4: CDB Use of Shapefiles for Vector Data Storage</h1><div id="_general"><h2 id="_d707163c-a932-4ef5-b1dc-ae5a86c0fc3a">4.1.  General</h2>
+<p id="_10c6f899-e29b-a809-0822-9082efe9730d">Some grammatical errors were corrected.</p>
+</div></div><div id="_revisions_to_volume_3_terms_and_definitions"><h1 id="_00a38c3d-833e-4b90-841b-afb29a541cfb"><a class="anchor" href="#_revisions_to_volume_3_terms_and_definitions"></a><a class="header" href="#_revisions_to_volume_3_terms_and_definitions">3.  Revisions to Volume 3 Terms and Definitions</a></h1><p id="_40ee2706-1957-b877-4a01-76182b0fa731">Definitions were added for: depth, elevation, grid, grid point, height, metadata elements, raster, regular grid, and vector data. The definitions for dataset and metadata were slightly revised</p></div><div id="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage"><h1 id="_2c1ac19e-47f6-4b8e-a0c9-674d09bebac8"><a class="anchor" href="#_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage"></a><a class="header" href="#_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">4.  Revisions to Volume 4: CDB Use of Shapefiles for Vector Data Storage</a></h1><div id="_general"><h2 id="_50085719-1512-4f77-b514-4dedeeb07a1d"><a class="anchor" href="#_general"></a><a class="header" href="#_general">4.1.  General</a></h2>
 
-<p id="_9b36ec04-04f7-38e3-00f7-a6b86106e974">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
-</div><div id="_clause_1_scope"><h2 id="_deb22c67-5680-449e-b670-acad0debe017">4.2.  Clause 1: Scope</h2>
+<p id="_2a4954e4-aed9-78fe-e82f-5e63d96cf942">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+</div><div id="_clause_1_scope"><h2 id="_26aaa147-1476-44c3-90eb-507702a6c431"><a class="anchor" href="#_clause_1_scope"></a><a class="header" href="#_clause_1_scope">4.2.  Clause 1: Scope</a></h2>
 
-<p id="_5f66aef8-f4bc-fd5f-1e74-dd97022fb59b">The use of the word “standard” replaced with “Best Practice”.</p>
-</div><div id="_clause_3_references"><h2 id="_f6d00738-72c8-4f67-8f32-5bdbd2899747">4.3.  Clause 3: References</h2>
+<p id="_3f0e978c-348d-ff72-535c-fd551f06c19a">The use of the word “standard” replaced with “Best Practice”.</p>
+</div><div id="_clause_3_references"><h2 id="_0d6a3572-4b7e-484e-848a-ac4c3933a215"><a class="anchor" href="#_clause_3_references"></a><a class="header" href="#_clause_3_references">4.3.  Clause 3: References</a></h2>
 
-<p id="_dad6f2aa-7c16-cc59-0d56-59fc90bd4322">Proper reference to the Esri ShapeFile technical document was added.</p>
-</div><div id="_clause_4_terms_and_definitions"><h2 id="_a2fda34b-9017-4bc2-9efd-fa792669950e">4.4.  Clause 4: Terms and Definitions</h2>
+<p id="_ee7c26e9-8163-6d6f-88d1-2cbf860e0d0f">Proper reference to the Esri ShapeFile technical document was added.</p>
+</div><div id="_clause_4_terms_and_definitions"><h2 id="_b0b22045-ecdc-4160-bdf1-8d754caa1862"><a class="anchor" href="#_clause_4_terms_and_definitions"></a><a class="header" href="#_clause_4_terms_and_definitions">4.4.  Clause 4: Terms and Definitions</a></h2>
 
-<p id="_63bd0fb0-3b60-fde4-05df-cfa5fc04114c">This clause was reworded and URL to the CDB standard was added.</p>
-</div></div><div id="_revisions_to_volume_5_radar_cross_sections"><h1 id="_c8140cb9-f09f-4893-9249-ca07f959c398">5.  Revisions to Volume 5: Radar Cross-Sections</h1><div id="_general_2"><h2 id="_80e3db41-92b2-4afd-b08f-2d960541300c">5.1.  General</h2>
+<p id="_9db3aaf3-0728-60d5-d5c3-0a187d13c285">This clause was reworded and URL to the CDB standard was added.</p>
+</div></div><div id="_revisions_to_volume_5_radar_cross_sections"><h1 id="_48929c71-2d0c-4405-8586-5c2e15eb3485"><a class="anchor" href="#_revisions_to_volume_5_radar_cross_sections"></a><a class="header" href="#_revisions_to_volume_5_radar_cross_sections">5.  Revisions to Volume 5: Radar Cross-Sections</a></h1><div id="_general_2"><h2 id="_13bf23e9-99f5-4bba-a42e-7e9243dbd0b6"><a class="anchor" href="#_general_2"></a><a class="header" href="#_general_2">5.1.  General</a></h2>
 
-<p id="_902a7db6-d8c4-c70b-2789-24f56d145846">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
-</div><div id="_clause_4_terms_and_definitions_2"><h2 id="_4e0dcd19-06cc-4eeb-8db9-b4abb63238cd">5.2.  Clause 4 Terms and Definitions</h2>
+<p id="_2c1dd1cc-4b71-8a89-c8ae-4e81a353a9a2">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+</div><div id="_clause_4_terms_and_definitions_2"><h2 id="_26de381e-3f99-4646-a9b9-db5f12ca3a0e"><a class="anchor" href="#_clause_4_terms_and_definitions_2"></a><a class="header" href="#_clause_4_terms_and_definitions_2">5.2.  Clause 4 Terms and Definitions</a></h2>
 
-<p id="_5552ef04-744a-00ca-6306-70fde2b9799f">The correct URL to the CDB standard was inserted.</p>
-</div></div><div id="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp"><h1 id="_78d8c4b2-47eb-4d88-8da6-cee2821b4144">6.  Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP</h1><div id="_general_3"><h2 id="_cb135644-9cfd-4797-a109-3d63af364d82">6.1.  General</h2>
+<p id="_65ba4be1-9921-cdb5-91ce-064268f1b262">The correct URL to the CDB standard was inserted.</p>
+</div></div><div id="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp"><h1 id="_5566799d-5af0-4987-a398-f5a3ea169071"><a class="anchor" href="#_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp"></a><a class="header" href="#_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp">6.  Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP</a></h1><div id="_general_3"><h2 id="_7bf637b0-6195-436a-94ad-7ca96c393a64"><a class="anchor" href="#_general_3"></a><a class="header" href="#_general_3">6.1.  General</a></h2>
 
-<p id="_123f4916-236b-6cbc-389d-9fa338af444a">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
-</div><div id="_clause_5_1_identifiers"><h2 id="_f6325df3-b43a-450e-bc5f-a61ea6445cca">6.2.  Clause 5.1 Identifiers</h2>
+<p id="_60396614-00db-4bb9-62c8-2878b1bc4d4a">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+</div><div id="_clause_5_1_identifiers"><h2 id="_cc517aa0-fd14-4683-9fbc-1c44c67a747b"><a class="anchor" href="#_clause_5_1_identifiers"></a><a class="header" href="#_clause_5_1_identifiers">6.2.  Clause 5.1 Identifiers</a></h2>
 
-<p id="_46d82f49-0cfb-b28c-b965-8f6a7570d881">URI base updated to reflect version 1.1.</p>
-</div><div id="_requirement_class_metadata"><h2 id="_b74f1411-1e1f-49bc-9fdf-74bd299a5004">6.3.  Requirement Class Metadata</h2>
+<p id="_6ebb3a4d-8347-47f9-753a-5318a50c7e27">URI base updated to reflect version 1.1.</p>
+</div><div id="_requirement_class_metadata"><h2 id="_213da856-434d-4097-be06-9805de9d8260"><a class="anchor" href="#_requirement_class_metadata"></a><a class="header" href="#_requirement_class_metadata">6.3.  Requirement Class Metadata</a></h2>
 
-<p id="_bb0f7a06-aaac-cce9-4834-8526b7494457">This requirement class was updated to consistent with Requirement 1 (/req/core/openflight/headercrs).</p>
-</div></div><div id="_revisions_to_volume_7_ogc_cdb_data_model_guidance"><h1 id="_ffe006a6-df7f-43e4-ad2f-d7f2f8dfbe66">7.  Revisions to Volume 7 OGC CDB Data Model Guidance</h1><p id="_d22bdd5c-f877-a3f5-6315-03859d3cf10d">Note: Volume 7 was Annex A in the original CDB Specification v 3.2 submission to the OGC.</p><p id="_bb1ce327-be0f-fcd4-2682-c17784d733e6">Minor changes at various places to make sure the reader knows the difference between CDB 3.2 specification and OGC Version 1.1 standard.</p><div id="_6_5_3_access_of_a_model_interior"><h2 id="_fc479259-2b2a-4c03-8bce-534e868bdd61">7.1.  6.5.3 Access of a Model Interior</h2>
+<p id="_08ea6492-ea84-c290-7393-06209ca1b238">This requirement class was updated to consistent with Requirement 1 (/req/core/openflight/headercrs).</p>
+</div></div><div id="_revisions_to_volume_7_ogc_cdb_data_model_guidance"><h1 id="_fd23bb36-9082-4dd4-84b8-94b26ceef212"><a class="anchor" href="#_revisions_to_volume_7_ogc_cdb_data_model_guidance"></a><a class="header" href="#_revisions_to_volume_7_ogc_cdb_data_model_guidance">7.  Revisions to Volume 7 OGC CDB Data Model Guidance</a></h1><p id="_5c9f68bb-ad6e-653d-282b-ed40d2c678b1">Note: Volume 7 was Annex A in the original CDB Specification v 3.2 submission to the OGC.</p><p id="_352f453c-8977-47ad-1a0a-ebdf9893f4ca">Minor changes at various places to make sure the reader knows the difference between CDB 3.2 specification and OGC Version 1.1 standard.</p><div id="_6_5_3_access_of_a_model_interior"><h2 id="_a950edf0-9e1d-4271-bd59-e784c268038a"><a class="anchor" href="#_6_5_3_access_of_a_model_interior"></a><a class="header" href="#_6_5_3_access_of_a_model_interior">7.1.  6.5.3 Access of a Model Interior</a></h2>
 
-<p id="_0a629e91-5ef9-a364-ec56-0d5be91a2261">This section has minor changes to make wording on the use of OpenFlightgeneric and in line with the changes in CDB Volume 1.</p>
-</div><div id="_section_6_13_1_linear_feature_radar_simulation_example"><h2 id="_10932cf0-5471-4dad-b158-2b81898896aa">7.2.  Section 6.13.1 Linear Feature Radar Simulation Example</h2>
+<p id="_481ff863-7e47-90cf-c656-94b97076b379">This section has minor changes to make wording on the use of OpenFlightgeneric and in line with the changes in CDB Volume 1.</p>
+</div><div id="_section_6_13_1_linear_feature_radar_simulation_example"><h2 id="_362a9a7b-ad17-4743-8eef-776b0cd4fc52"><a class="anchor" href="#_section_6_13_1_linear_feature_radar_simulation_example"></a><a class="header" href="#_section_6_13_1_linear_feature_radar_simulation_example">7.2.  Section 6.13.1 Linear Feature Radar Simulation Example</a></h2>
 
-<p id="_cb8b6fdd-7181-029d-2540-11656f041dbb">This section has minor changes to make wording on the use of ShapeFiles generic and consistent with the changes in CDB Volume 1.</p>
-</div><div id="_new_section_added_6_14_guideline_vector_priority_tile_lod_generation"><h2 id="_c6d4bc06-065f-4bc3-9ac0-619c27bf1d2c">7.3.  New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation</h2>
+<p id="_a7221f09-05e1-942b-672c-8822a7fecbed">This section has minor changes to make wording on the use of ShapeFiles generic and consistent with the changes in CDB Volume 1.</p>
+</div><div id="_new_section_added_6_14_guideline_vector_priority_tile_lod_generation"><h2 id="_9cc75467-7fb0-43b6-b83a-30c3dad213d1"><a class="anchor" href="#_new_section_added_6_14_guideline_vector_priority_tile_lod_generation"></a><a class="header" href="#_new_section_added_6_14_guideline_vector_priority_tile_lod_generation">7.3.  New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation</a></h2>
 
-<p id="_77ceccec-6849-63bf-1ffb-520d4d2b8508">After CDB was submitted to the OGC, the CDB user community added a new Annex A sub-clause to clarify rules for vector priority in the LoD/Tile structure. This CDB user community approved clause is now incorporated in Volume 7 of the OGC CDB standard, version 1.1.</p>
-</div></div><div id="_revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance"><h1 id="_5aa3ed6b-f87a-49a2-8f50-51cf4f83d339">8.  Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance</h1><div id="_clause_4_terms_and_definitions_3"><h2 id="_72983dc7-0670-4571-9a99-fee928563020">8.1.  Clause 4 Terms and Definitions</h2>
+<p id="_9757cac6-804f-60c9-eedc-56b2e5c7dc95">After CDB was submitted to the OGC, the CDB user community added a new Annex A sub-clause to clarify rules for vector priority in the LoD/Tile structure. This CDB user community approved clause is now incorporated in Volume 7 of the OGC CDB standard, version 1.1.</p>
+</div></div><div id="_revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance"><h1 id="_4f83c034-631d-45ca-8a67-cffd45272aab"><a class="anchor" href="#_revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance"></a><a class="header" href="#_revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance">8.  Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance</a></h1><div id="_clause_4_terms_and_definitions_3"><h2 id="_4e0f0098-d039-4c40-a302-d5c4b6f99954"><a class="anchor" href="#_clause_4_terms_and_definitions_3"></a><a class="header" href="#_clause_4_terms_and_definitions_3">8.1.  Clause 4 Terms and Definitions</a></h2>
 
-<p id="_ddcd694a-2177-5dca-eb32-ef0e2baf348d">The correct URL to the CDB standard was inserted.</p>
-</div></div><div id="_revisions_to_volume_10_cdb_implementation_guidance"><h1 id="_2fa062aa-730c-4716-8a58-4538cd464c04">9.  Revisions to Volume 10: CDB Implementation Guidance</h1><div id="_general_4"><h2 id="_4c4fd1a5-fae3-4002-9d36-8d91eb06fc71">9.1.  General</h2>
+<p id="_3855d667-aa23-63d0-b363-bff8633f7b3b">The correct URL to the CDB standard was inserted.</p>
+</div></div><div id="_revisions_to_volume_10_cdb_implementation_guidance"><h1 id="_bf850a68-87f8-4f58-b077-d3823433cab8"><a class="anchor" href="#_revisions_to_volume_10_cdb_implementation_guidance"></a><a class="header" href="#_revisions_to_volume_10_cdb_implementation_guidance">9.  Revisions to Volume 10: CDB Implementation Guidance</a></h1><div id="_general_4"><h2 id="_b50393fd-6e47-4f34-b957-92e696c5c012"><a class="anchor" href="#_general_4"></a><a class="header" href="#_general_4">9.1.  General</a></h2>
 
-<p id="_f0edb8c2-558f-ba35-4f86-e2b9857240c9">Comments (artifacts) for version 1.0 were removed.</p>
-</div><div id="_clause_4_terms_and_definitions_4"><h2 id="_d8766ff6-7838-428f-8631-8fdc7fe167e0">9.2.  Clause 4 Terms and Definitions</h2>
+<p id="_0aadabea-c9d3-de92-0927-8945f65e8a4e">Comments (artifacts) for version 1.0 were removed.</p>
+</div><div id="_clause_4_terms_and_definitions_4"><h2 id="_13772636-12c0-4c15-b0d8-58b308fdafec"><a class="anchor" href="#_clause_4_terms_and_definitions_4"></a><a class="header" href="#_clause_4_terms_and_definitions_4">9.2.  Clause 4 Terms and Definitions</a></h2>
 
-<p id="_5a95dc62-4437-3acb-c6e0-3eab0c7bc1af">The correct URL to the CDB standard was inserted. Additional abbreviations were added.</p>
-</div><div id="_clause_5_platform_recommendations"><h2 id="_283877f3-95cf-45fe-a9fe-02c4748d8da9">9.3.  Clause 5: Platform Recommendations</h2>
+<p id="_e991adbb-ca14-d9c7-a9b5-a3b23ac4e407">The correct URL to the CDB standard was inserted. Additional abbreviations were added.</p>
+</div><div id="_clause_5_platform_recommendations"><h2 id="_8803210e-e873-47f0-ae1e-08dc373b70c6"><a class="anchor" href="#_clause_5_platform_recommendations"></a><a class="header" href="#_clause_5_platform_recommendations">9.3.  Clause 5: Platform Recommendations</a></h2>
 
-<p id="_5601fd0b-1679-3c02-fe41-8bb3d544955e">Correct grammatical errors.</p>
-</div></div><div id="_revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values"><h1 id="_6ce78c32-adc9-4b12-a58f-be4b35c95eaa">10.  Revisions to Volume 12: CDB Navaids Attribution and Navaids Attribution Enumeration Values</h1><div id="_abstract_2"><h2 id="_2a8fedd1-e9c5-4642-bca1-93186b9bbe85">10.1.  Abstract:</h2>
+<p id="_605c0d9f-388c-055f-8296-6ef330398646">Correct grammatical errors.</p>
+</div></div><div id="_revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values"><h1 id="_27d6b5d6-ad11-4c72-8c7a-819f1ce11b4d"><a class="anchor" href="#_revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values"></a><a class="header" href="#_revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values">10.  Revisions to Volume 12: CDB Navaids Attribution and Navaids Attribution Enumeration Values</a></h1><div id="_abstract_2"><h2 id="_49dfe634-ab68-4a11-96ea-b230938b6742"><a class="anchor" href="#_abstract_2"></a><a class="header" href="#_abstract_2">10.1.  Abstract:</a></h2>
 
-<p id="_8bce5696-4a63-13bf-1738-0e971018adea">Slight re-wording of the abstract</p>
+<p id="_4f0d18f0-ed08-29f3-5fb7-83b2f7e5586e">Slight re-wording of the abstract</p>
 </div></div></main><script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     "HTML-CSS": { preferredFont: "STIX" },
@@ -1712,21 +2200,34 @@ To obtain additional rights of use, visit
   </script>
 
   <script>
-  //TOC toggle animation
-$('#toggle').on('click', function(){
-    if( $('nav').is(':visible') ) {
-        $('nav').animate({ 'left': '-353px' }, 'slow', function(){
-            $('nav').hide();
+    //TOC toggle animation
+    (function() {
+      const jqNav = $('nav');
+      const jqBody = $('body');
+      const jqToggle = $('#toggle');
+      const animationSpeed = 'slow';
+
+      jqToggle.on('click', function() {
+        const isNavVisible = jqNav.is(':visible');
+        const fullNavWidth = jqNav.outerWidth();
+        const navLeft = isNavVisible ? '-' + fullNavWidth + 'px' : '0px';
+        const bodyMarginLeft = isNavVisible ? '0px' : fullNavWidth + 'px';
+
+        // Stop current animations
+        jqNav.stop(true, true);
+        jqBody.stop(true, true);
+
+        if(!isNavVisible) {
+            jqNav.show();
+        }
+        jqNav.animate({'left': navLeft}, animationSpeed, function() {
+          if(isNavVisible) {jqNav.hide()}
         });
-        $('body').animate({ 'margin-left': '0' }, 'slow');
-    }
-    else {
-        $('nav').show();
-        $('nav').animate({ 'left': '0px' }, 'slow');
-        $('body').animate({ 'margin-left': '298px' }, 'slow');
-    }
-});
-</script>
+        jqBody.animate({'marginLeft': bodyMarginLeft}, animationSpeed);
+
+      });
+    })();
+  </script>
 
 <script>
     // Scroll to top button
@@ -1891,4 +2392,34 @@ $('#toggle').on('click', function(){
 anchors.add('h1, h2, h3, h4');
 </script>
 
-</body></html>
+<script>
+// use .collapsible element to toggle visibility of element following it
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+<script>
+const activeBtns = document.querySelectorAll('.collapsible.active')
+
+// check if there are any active buttons, and open the content for each of them as default
+if (activeBtns.length) {
+    activeBtns.forEach(btn => {
+        const content = btn.nextElementSibling
+        content.style.maxHeight = content.scrollHeight + 'px'
+    })
+}
+</script>
+
+</html>

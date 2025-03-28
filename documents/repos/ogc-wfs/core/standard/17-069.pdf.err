@@ -1,5 +1,56 @@
-The contents of fo:region-body on page 23 exceed its viewport by 8991 millipoints. (See position 1:1490)
+The contents of fo:region-body on page 23 exceed its viewport by 8991 millipoints. (See position 1:2010)
 Page 9: Unresolved ID reference "_feature_collection" found.
 Page 13: Unresolved ID reference "rc2616" found.
 Page 13: Unresolved ID reference "rc_oas" found.
 Page 30: Unresolved ID reference "encodings" found.
+4 link targets could not be fully resolved and now points to the top of the page or are dysfunctional.
+PDF isn't valid PDF/UA-1:
+ValidationResult [flavour=ua1, totalAssertions=807032, assertions=[
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.5, testNumber=2], status=failed,
+message=Links shall contain an alternate description via their Contents key as described in ISO 32000-1:2008, 14.9.3,
+location=Location [level=CosDocument, context=root/document[0]/pages[19](1169 0 obj PDPage)/annots[5](1180 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.5, testNumber=1], status=failed,
+message=Links shall be tagged according to ISO 32000-1:2008, 14.8.4.4.2, Link Element,
+location=Location [level=CosDocument, context=root/document[0]/pages[19](1169 0 obj PDPage)/annots[5](1180 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.1, testNumber=2], status=failed,
+message=An annotation (except Widget annotations or hidden annotations, or those having rectangle outside the crop-box) shall have either Contents key or an Alt entry in the enclosing structure element,
+location=Location [level=CosDocument, context=root/document[0]/pages[19](1169 0 obj PDPage)/annots[5](1180 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.5, testNumber=2], status=failed,
+message=Links shall contain an alternate description via their Contents key as described in ISO 32000-1:2008, 14.9.3,
+location=Location [level=CosDocument, context=root/document[0]/pages[23](1351 0 obj PDPage)/annots[4](1359 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.5, testNumber=1], status=failed,
+message=Links shall be tagged according to ISO 32000-1:2008, 14.8.4.4.2, Link Element,
+location=Location [level=CosDocument, context=root/document[0]/pages[23](1351 0 obj PDPage)/annots[4](1359 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.1, testNumber=2], status=failed,
+message=An annotation (except Widget annotations or hidden annotations, or those having rectangle outside the crop-box) shall have either Contents key or an Alt entry in the enclosing structure element,
+location=Location [level=CosDocument, context=root/document[0]/pages[23](1351 0 obj PDPage)/annots[4](1359 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.5, testNumber=2], status=failed,
+message=Links shall contain an alternate description via their Contents key as described in ISO 32000-1:2008, 14.9.3,
+location=Location [level=CosDocument, context=root/document[0]/pages[23](1351 0 obj PDPage)/annots[5](1361 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.5, testNumber=1], status=failed,
+message=Links shall be tagged according to ISO 32000-1:2008, 14.8.4.4.2, Link Element,
+location=Location [level=CosDocument, context=root/document[0]/pages[23](1351 0 obj PDPage)/annots[5](1361 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.1, testNumber=2], status=failed,
+message=An annotation (except Widget annotations or hidden annotations, or those having rectangle outside the crop-box) shall have either Contents key or an Alt entry in the enclosing structure element,
+location=Location [level=CosDocument, context=root/document[0]/pages[23](1351 0 obj PDPage)/annots[5](1361 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.5, testNumber=2], status=failed,
+message=Links shall contain an alternate description via their Contents key as described in ISO 32000-1:2008, 14.9.3,
+location=Location [level=CosDocument, context=root/document[0]/pages[40](2008 0 obj PDPage)/annots[5](2016 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.5, testNumber=1], status=failed,
+message=Links shall be tagged according to ISO 32000-1:2008, 14.8.4.4.2, Link Element,
+location=Location [level=CosDocument, context=root/document[0]/pages[40](2008 0 obj PDPage)/annots[5](2016 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.18.1, testNumber=2], status=failed,
+message=An annotation (except Widget annotations or hidden annotations, or those having rectangle outside the crop-box) shall have either Contents key or an Alt entry in the enclosing structure element,
+location=Location [level=CosDocument, context=root/document[0]/pages[40](2008 0 obj PDPage)/annots[5](2016 0 obj PDLinkAnnot)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=26], status=failed,
+message=TOCI element should be contained in TOC element,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](5460 0 obj PDStructTreeRoot)/K[0](5462 0 obj SEDocument Document)/K[2](5477 0 obj SEPart Part)/K[0](5549 0 obj SESect Sect)/K[1](5551 0 obj SEDiv Div)/K[0](5553 0 obj SEDiv Div)/K[3](5562 0 obj SETOCI TOCI)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=26], status=failed,
+message=TOCI element should be contained in TOC element,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](5460 0 obj PDStructTreeRoot)/K[0](5462 0 obj SEDocument Document)/K[2](5477 0 obj SEPart Part)/K[0](5549 0 obj SESect Sect)/K[1](5551 0 obj SEDiv Div)/K[0](5553 0 obj SEDiv Div)/K[4](5563 0 obj SETOCI TOCI)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=26], status=failed,
+message=TOCI element should be contained in TOC element,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](5460 0 obj PDStructTreeRoot)/K[0](5462 0 obj SEDocument Document)/K[2](5477 0 obj SEPart Part)/K[0](5549 0 obj SESect Sect)/K[1](5551 0 obj SEDiv Div)/K[0](5553 0 obj SEDiv Div)/K[5](5564 0 obj SETOCI TOCI)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=26], status=failed,
+message=TOCI element should be contained in TOC element,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](5460 0 obj PDStructTreeRoot)/K[0](5462 0 obj SEDocument Document)/K[2](5477 0 obj SEPart Part)/K[0](5549 0 obj SESect Sect)/K[1](5551 0 obj SEDiv Div)/K[0](5553 0 obj SEDiv Div)/K[7](5566 0 obj SETOCI TOCI)], locationContext=null, errorMessage=null]], isCompliant=false]

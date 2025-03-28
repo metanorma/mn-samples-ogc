@@ -1,6 +1,6 @@
 <bibdata type="standard">
 <title language="en" format="text/plain">Conformance Test Guidelines for OpenGIS Catalog Services Specification for CORBA</title>
-<docidentifier type="ogc-internal">00-027</docidentifier><docnumber>00-027</docnumber><date type="2000-05-11"><on/></date><contributor><role type="author"/><organization>
+<docidentifier type="ogc-internal" primary="true">00-027</docidentifier><docnumber>00-027</docnumber><date type="2000-05-11"><on/></date><contributor><role type="author"/><organization>
 <name>Geodan Holding bv, the Netherlands</name>
 </organization></contributor><contributor><role type="editor"/><person>
 <name><completename>Laura Diaz</completename></name>
@@ -10,6 +10,6 @@
 <name><completename>Barend Gehrels</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2024</from><owner><organization>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2025</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>test-suite</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>test-suite</doctype><flavor>ogc</flavor><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

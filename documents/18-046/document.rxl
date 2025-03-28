@@ -1,9 +1,9 @@
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC Earth Observation Exploitation Platform Hackathon 2018 Engineering Report</title>
-<docidentifier type="ogc-external">http://www.opengis.net/doc/PER/eoep-Hack2018</docidentifier><docidentifier type="ogc-internal">18-046</docidentifier><docnumber>18-046</docnumber><date type="published"><on>2018-06-12</on></date><date type="issued"><on>2018-07-10</on></date><date type="received"><on>2018-12-20</on></date><contributor><role type="editor"/><person>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/PER/eoep-Hack2018</docidentifier><docidentifier type="ogc-internal" primary="true">18-046</docidentifier><docnumber>18-046</docnumber><date type="published"><on>2018-06-12</on></date><date type="issued"><on>2018-07-10</on></date><date type="received"><on>2018-12-20</on></date><contributor><role type="editor"/><person>
 <name><completename>Ingo Simonis</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></contributor><version><revision-date>2018-12-20</revision-date></version><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2024</from><owner><organization>
+<abbreviation>OGC</abbreviation></organization></contributor><version><revision-date>2018-12-20</revision-date></version><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2025</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>engineering-report</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>engineering-report</doctype><flavor>ogc</flavor><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

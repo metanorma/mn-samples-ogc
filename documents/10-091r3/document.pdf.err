@@ -1,0 +1,5 @@
+PDF isn't valid PDF/UA-1:
+ValidationResult [flavour=ua1, totalAssertions=145905, assertions=[
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=26], status=failed,
+message=TOCI element should be contained in TOC element,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](1584 0 obj PDStructTreeRoot)/K[0](1586 0 obj SEDocument Document)/K[2](1593 0 obj SEPart Part)/K[0](1649 0 obj SESect Sect)/K[1](1651 0 obj SEDiv Div)/K[0](1653 0 obj SEDiv Div)/K[3](1667 0 obj SETOCI TOCI)], locationContext=null, errorMessage=null]], isCompliant=false]

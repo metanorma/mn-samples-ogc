@@ -1,6 +1,6 @@
 <bibdata type="standard">
 <title language="en" format="text/plain">Technical Committee Policies and Procedures</title>
-<docidentifier type="ogc-external">http://www.opengis.net/doc/pol/tcpnp/27.0</docidentifier><docidentifier type="ogc-internal">05-020r27</docidentifier><docnumber>05-020r27</docnumber><date type="published"><on>2019-06-03</on></date><date type="issued"><on>2019-05-29</on></date><date type="received"><on>2019-03-28</on></date><contributor><role type="editor"/><person>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/pol/tcpnp/27.0</docidentifier><docidentifier type="ogc-internal" primary="true">05-020r27</docidentifier><docnumber>05-020r27</docnumber><date type="published"><on>2019-06-03</on></date><date type="issued"><on>2019-05-29</on></date><date type="received"><on>2019-03-28</on></date><contributor><role type="editor"/><person>
 <name><completename>Scott Simmons</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
@@ -32,4 +32,4 @@
 <p>The OGC <link target="http://www.opengeospatial.org/ogc/policies/conduct/">Principles of Conduct</link> govern personal and public interactions in any TC activity.</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2019</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>policy</doctype><editorialgroup><committee>Technical Committee</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>policy</doctype><flavor>ogc</flavor><editorialgroup><committee>Technical Committee</committee></editorialgroup></ext></bibdata>

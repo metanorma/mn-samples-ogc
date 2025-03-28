@@ -1,0 +1,14 @@
+PDF isn't valid PDF/UA-1:
+ValidationResult [flavour=ua1, totalAssertions=157541, assertions=[
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=26], status=failed,
+message=TOCI element should be contained in TOC element,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](1524 0 obj PDStructTreeRoot)/K[0](1526 0 obj SEDocument Document)/K[2](1532 0 obj SEPart Part)/K[0](1585 0 obj SESect Sect)/K[1](1587 0 obj SEDiv Div)/K[0](1589 0 obj SEDiv Div)/K[3](1598 0 obj SETOCI TOCI)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=26], status=failed,
+message=TOCI element should be contained in TOC element,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](1524 0 obj PDStructTreeRoot)/K[0](1526 0 obj SEDocument Document)/K[2](1532 0 obj SEPart Part)/K[0](1585 0 obj SESect Sect)/K[1](1587 0 obj SEDiv Div)/K[0](1589 0 obj SEDiv Div)/K[4](1599 0 obj SETOCI TOCI)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=26], status=failed,
+message=TOCI element should be contained in TOC element,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](1524 0 obj PDStructTreeRoot)/K[0](1526 0 obj SEDocument Document)/K[2](1532 0 obj SEPart Part)/K[0](1585 0 obj SESect Sect)/K[1](1587 0 obj SEDiv Div)/K[0](1589 0 obj SEDiv Div)/K[5](1600 0 obj SETOCI TOCI)], locationContext=null, errorMessage=null], 
+TestAssertion [ruleId=RuleId [specification=ISO 14289-1:2014, clause=7.2, testNumber=26], status=failed,
+message=TOCI element should be contained in TOC element,
+location=Location [level=CosDocument, context=root/document[0]/StructTreeRoot[0](1524 0 obj PDStructTreeRoot)/K[0](1526 0 obj SEDocument Document)/K[2](1532 0 obj SEPart Part)/K[0](1585 0 obj SESect Sect)/K[1](1587 0 obj SEDiv Div)/K[0](1589 0 obj SEDiv Div)/K[6](1601 0 obj SETOCI TOCI)], locationContext=null, errorMessage=null]], isCompliant=false]

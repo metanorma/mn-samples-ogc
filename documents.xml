@@ -1,11 +1,11 @@
-<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>OGC deliverable samples in Metanorma</title><contributor><role type='author'/><organization><name>OGC: The Open Geospatial Consortium</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>OGC deliverable samples in Metanorma</title><contributor><role type='author'/><organization><name>OGC: The Open Geospatial Consortium</name></organization></contributor><relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Conformance Test Guidelines for OpenGIS Catalog Services Specification for CORBA</title>
   <uri type="xml">documents/00-027/document.xml</uri>
   <uri type="pdf">documents/00-027/document.pdf</uri>
   <uri type="doc">documents/00-027/document.doc</uri>
   <uri type="html">documents/00-027/document.html</uri>
   <uri type="rxl">documents/00-027/document.rxl</uri>
-  <docidentifier type="ogc-internal">00-027</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">00-027</docidentifier>
   <docnumber>00-027</docnumber>
   <date type="2000-05-11"/>
   <contributor>
@@ -52,7 +52,7 @@
     <stage>approved</stage>
   </status>
   <copyright>
-    <from>2024</from>
+    <from>2025</from>
     <owner>
       <organization>
         <name>Open Geospatial Consortium</name>
@@ -64,7 +64,7 @@
     <doctype>test-suite</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Technical Committee Policies and Procedures</title>
   <uri type="xml">documents/05-020r27/document.xml</uri>
   <uri type="pdf">documents/05-020r27/document.pdf</uri>
@@ -72,7 +72,7 @@
   <uri type="html">documents/05-020r27/document.html</uri>
   <uri type="rxl">documents/05-020r27/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/pol/tcpnp/27.0</docidentifier>
-  <docidentifier type="ogc-internal">05-020r27</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">05-020r27</docidentifier>
   <docnumber>05-020r27</docnumber>
   <date type="published">
     <on>2019-06-03</on>
@@ -143,7 +143,7 @@
     <doctype>policy</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">OGC Reference Model</title>
   <uri type="xml">documents/08-062r7/document.xml</uri>
   <uri type="pdf">documents/08-062r7/document.pdf</uri>
@@ -151,7 +151,7 @@
   <uri type="html">documents/08-062r7/document.html</uri>
   <uri type="rxl">documents/08-062r7/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/orm/2.1</docidentifier>
-  <docidentifier type="ogc-internal">08-062r7</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">08-062r7</docidentifier>
   <docnumber>08-062r7</docnumber>
   <date type="published">
     <on>2011-12-19</on>
@@ -179,7 +179,7 @@
     <stage>approved</stage>
   </status>
   <copyright>
-    <from>2024</from>
+    <from>2025</from>
     <owner>
       <organization>
         <name>Open Geospatial Consortium</name>
@@ -191,7 +191,7 @@
     <doctype>reference-model</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">CF-netCDF Core and Extensions Primer</title>
   <uri type="xml">documents/10-091r3/document.xml</uri>
   <uri type="pdf">documents/10-091r3/document.pdf</uri>
@@ -199,7 +199,7 @@
   <uri type="html">documents/10-091r3/document.html</uri>
   <uri type="rxl">documents/10-091r3/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/netcdf/Primer/1.0</docidentifier>
-  <docidentifier type="ogc-internal">10-091r3</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">10-091r3</docidentifier>
   <docnumber>10-091r3</docnumber>
   <date type="published">
     <on>2011-04-05</on>
@@ -284,7 +284,7 @@
     <doctype>other</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
   <uri type="xml">documents/10-100r3/document.xml</uri>
   <uri type="pdf">documents/10-100r3/document.pdf</uri>
@@ -292,7 +292,7 @@
   <uri type="html">documents/10-100r3/document.html</uri>
   <uri type="rxl">documents/10-100r3/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/spec/gmlsf/2.0.1</docidentifier>
-  <docidentifier type="ogc-internal">10-100r3</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">10-100r3</docidentifier>
   <docnumber>10-100r3</docnumber>
   <date type="published">
     <on>2012-04-05</on>
@@ -408,7 +408,7 @@
     <subdoctype>profile</subdoctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">A Primer for Dissemination Services for Wide Area Motion Imagery</title>
   <uri type="xml">documents/12-077r1/document.xml</uri>
   <uri type="pdf">documents/12-077r1/document.pdf</uri>
@@ -416,7 +416,7 @@
   <uri type="html">documents/12-077r1/document.html</uri>
   <uri type="rxl">documents/12-077r1/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/bp/wami-primer/1.0</docidentifier>
-  <docidentifier type="ogc-internal">12-077r1</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">12-077r1</docidentifier>
   <docnumber>12-077r1</docnumber>
   <date type="published">
     <on>2012-11-28</on>
@@ -458,7 +458,7 @@
     <doctype>other</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">OGC® WPS 2.0.2 Interface Standard Corrigendum 2</title>
   <uri type="xml">documents/14-065r2/document.xml</uri>
   <uri type="pdf">documents/14-065r2/document.pdf</uri>
@@ -466,7 +466,7 @@
   <uri type="html">documents/14-065r2/document.html</uri>
   <uri type="rxl">documents/14-065r2/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wps/2.0.2</docidentifier>
-  <docidentifier type="ogc-internal">14-065r2</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">14-065r2</docidentifier>
   <docnumber>14-065r2</docnumber>
   <date type="published">
     <on>2015-03-05</on>
@@ -569,7 +569,7 @@
     <subdoctype>implementation</subdoctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Topic 21: Discrete Global Grid Systems Abstract Specification</title>
   <uri type="xml">documents/15-104r5/document.xml</uri>
   <uri type="pdf">documents/15-104r5/document.pdf</uri>
@@ -578,7 +578,7 @@
   <uri type="rxl">documents/15-104r5/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/AS/dggs/1.0</docidentifier>
   <docidentifier type="ogc-external">http://docs.opengeospatial.org/as/15-104r5/15-104r5.html</docidentifier>
-  <docidentifier type="ogc-internal">15-104r5</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">15-104r5</docidentifier>
   <docnumber>15-104r5</docnumber>
   <date type="published">
     <on>2017-08-01</on>
@@ -654,7 +654,7 @@
     <stage>approved</stage>
   </status>
   <copyright>
-    <from>2024</from>
+    <from>2025</from>
     <owner>
       <organization>
         <name>Open Geospatial Consortium</name>
@@ -678,7 +678,7 @@
     <doctype>abstract-specification-topic</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Volume 0: Primer for the OGC CDB Standard: Model and Physical Data Store Structure</title>
   <uri type="xml">documents/15-120r5/document.xml</uri>
   <uri type="pdf">documents/15-120r5/document.pdf</uri>
@@ -686,7 +686,7 @@
   <uri type="html">documents/15-120r5/document.html</uri>
   <uri type="rxl">documents/15-120r5/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/BP/cdb-core-primer/1.1</docidentifier>
-  <docidentifier type="ogc-internal">15-120r5</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">15-120r5</docidentifier>
   <docnumber>15-120r5</docnumber>
   <date type="published">
     <on>2018-12-19</on>
@@ -777,8 +777,7 @@
 &lt;p&gt;The CDB standard defines an open format for the storage, access and modification of a synthetic environment database. A &lt;strong&gt;synthetic environment&lt;/strong&gt; is a &lt;em&gt;computer simulation&lt;/em&gt; that represents activities at a high level of realism, from simulation of theaters of war to factories and manufacturing processes. These environments may be created within a single computer or a vast distributed network connected by local and wide area networks and augmented by super-realistic special effects and accurate behavioral models. SE allows visualization of and immersion into the environment being simulated&lt;fn reference="2"&gt;&lt;p&gt;"Department of Defense Modeling and Simulation (M&amp;S) Glossary", DoD 5000.59-M&lt;/p&gt;
 &lt;/fn&gt;.&lt;/p&gt;
 
-&lt;p&gt;This standard defines the organization and storage structure of a worldwide synthetic representation of the earth as well as the conventions necessary to support all of the subsystems of a full-mission simulator. The standard makes use of several commercial
-and simulation data formats endorsed by leaders of the database tools industry. A series of associated OGC Best Practice documents define rules and guidelines for data representation of real world features.&lt;/p&gt;
+&lt;p&gt;This standard defines the organization and storage structure of a worldwide synthetic representation of the earth as well as the conventions necessary to support all of the subsystems of a full-mission simulator. The standard makes use of several commercial and simulation data formats endorsed by leaders of the database tools industry. A series of associated OGC Best Practice documents define rules and guidelines for data representation of real world features.&lt;/p&gt;
 
 &lt;p&gt;The CDB synthetic environment is a representation of the natural environment including external features such as man-made structures and systems. A CDB data store can include terrain relief, terrain imagery, three-dimensional (3D) models of natural and manmade cultural features, 3D models of dynamic vehicles, the ocean surface, and the ocean bottom, including features (both natural and man-made) on the ocean floor. In addition, the data store can includes the specific attributes of the synthetic environment data as well as their relationships.&lt;/p&gt;
 
@@ -811,7 +810,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
     <subdoctype>general</subdoctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Testbed-12 OWS Context User Guide</title>
   <uri type="xml">documents/16-080/document.xml</uri>
   <uri type="pdf">documents/16-080/document.pdf</uri>
@@ -819,7 +818,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
   <uri type="html">documents/16-080/document.html</uri>
   <uri type="rxl">documents/16-080/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/PER/t12-A063</docidentifier>
-  <docidentifier type="ogc-internal">16-080</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">16-080</docidentifier>
   <docnumber>16-080</docnumber>
   <date type="published">
     <on>2017-01-23</on>
@@ -863,7 +862,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
     <doctype>user-guide</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Moving Features Encoding Extension: netCDF</title>
   <uri type="xml">documents/16-114r3/document.xml</uri>
   <uri type="pdf">documents/16-114r3/document.pdf</uri>
@@ -872,7 +871,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
   <uri type="rxl">documents/16-114r3/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/BP/moving-features-ext-netCDF/1.0</docidentifier>
   <docidentifier type="ogc-external">http://docs.opengeospatial.org/bp/16-114r3/16-114r3.html</docidentifier>
-  <docidentifier type="ogc-internal">16-114r3</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">16-114r3</docidentifier>
   <docnumber>16-114r3</docnumber>
   <date type="published">
     <on>2018-12-18</on>
@@ -918,7 +917,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
     <stage>approved</stage>
   </status>
   <copyright>
-    <from>2024</from>
+    <from>2025</from>
     <owner>
       <organization>
         <name>Open Geospatial Consortium</name>
@@ -938,7 +937,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
     <subdoctype>general</subdoctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Big Geospatial Data — an OGC White Paper</title>
   <uri type="xml">documents/16-131r2/document.xml</uri>
   <uri type="pdf">documents/16-131r2/document.pdf</uri>
@@ -946,7 +945,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
   <uri type="html">documents/16-131r2/document.html</uri>
   <uri type="rxl">documents/16-131r2/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/WP/bigdata</docidentifier>
-  <docidentifier type="ogc-internal">16-131r2</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">16-131r2</docidentifier>
   <docnumber>16-131r2</docnumber>
   <date type="published">
     <on>2017-09-25</on>
@@ -1022,7 +1021,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
     <doctype>white-paper</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">API - Features - Part 1: Core</title>
   <uri type="xml">documents/17-069r3/document.xml</uri>
   <uri type="pdf">documents/17-069r3/document.pdf</uri>
@@ -1030,7 +1029,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
   <uri type="html">documents/17-069r3/document.html</uri>
   <uri type="rxl">documents/17-069r3/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/ogcapi-features-1/1.0</docidentifier>
-  <docidentifier type="ogc-internal">17-069r3</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">17-069r3</docidentifier>
   <docnumber>17-069r3</docnumber>
   <date type="published">
     <on>2019-10-14</on>
@@ -1117,17 +1116,17 @@ and simulation data formats endorsed by leaders of the database tools industry. 
   <edition>1.0</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract>&lt;p&gt;OGC API standards define modular API building blocks to spatially enable Web APIs in a consistent way. The &lt;eref type="inline" bibitemid="openapi" citeas="OpenAPI Specification, version 3.0"&gt;OpenAPI specification&lt;/eref&gt; is used to define the API building blocks.&lt;/p&gt;
+  <abstract>&lt;p&gt;OGC API standards define modular API building blocks to spatially enable Web APIs in a consistent way. The &lt;eref type="inline" bibitemid="openapi" citeas="OpenAPI Specification, version 3.0"&gt;&lt;display-text&gt;OpenAPI specification&lt;/display-text&gt;&lt;/eref&gt; is used to define the API building blocks.&lt;/p&gt;
 
 &lt;p&gt;The OGC API family of standards is organized by resource type. This standard specifies the fundamental API building blocks for interacting with features. The spatial data community uses the term 'feature' for things in the real world that are of interest.&lt;/p&gt;
 
-&lt;p&gt;For those not familiar with the term 'feature,' the explanations on &lt;link target="https://www.w3.org/TR/sdw-bp/#spatial-things-features-and-geometry"&gt;Spatial Things, Features and Geometry&lt;/link&gt; in the &lt;eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C sdw-bp"&gt;W3C/OGC Spatial Data on the Web Best Practice document&lt;/eref&gt; provide more detail.&lt;/p&gt;
+&lt;p&gt;For those not familiar with the term 'feature,' the explanations on &lt;link target="https://www.w3.org/TR/sdw-bp/#spatial-things-features-and-geometry"&gt;Spatial Things, Features and Geometry&lt;/link&gt; in the &lt;eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C sdw-bp"&gt;&lt;display-text&gt;W3C/OGC Spatial Data on the Web Best Practice document&lt;/display-text&gt;&lt;/eref&gt; provide more detail.&lt;/p&gt;
 
 &lt;p&gt;OGC API Features provides API building blocks to create, modify and query features on the Web. OGC API Features is comprised of multiple parts, each of them is a separate standard. This part, the "Core," specifies the core capabilities and is restricted to fetching features where geometries are represented in the coordinate reference system WGS 84 with axis order longitude/latitude. Additional capabilities that address more advanced needs will be specified in additional parts. Examples include support for creating and modifying features, more complex data models, richer queries, additional coordinate reference systems, multiple datasets and collection hierarchies.&lt;/p&gt;
 
 &lt;p&gt;By default, every API implementing this standard will provide access to a single dataset. Rather than sharing the data as a complete dataset, the OGC API Features standards offer direct, fine-grained access to the data at the feature (object) level.&lt;/p&gt;
 
-&lt;p&gt;The API building blocks specified in this standard are consistent with the architecture of the Web. In particular, the API design is guided by the IETF HTTP/HTTPS RFCs, &lt;eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C sdw-bp"&gt;W3C Data on the Web Best Practices&lt;/eref&gt;, the &lt;eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C sdw-bp"&gt;W3C/OGC Spatial Data on the Web Best Practices&lt;/eref&gt; and the emerging OGC Web API Guidelines. A particular example is the use of the concepts of datasets and dataset distributions as defined in &lt;eref type="inline" bibitemid="dcat" citeas="W3C vocab-dcat"&gt;DCAT&lt;/eref&gt; and used in &lt;eref type="inline" bibitemid="schema" citeas="schema.org"&gt;schema.org&lt;/eref&gt;.&lt;/p&gt;
+&lt;p&gt;The API building blocks specified in this standard are consistent with the architecture of the Web. In particular, the API design is guided by the IETF HTTP/HTTPS RFCs, &lt;eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C sdw-bp"&gt;&lt;display-text&gt;W3C Data on the Web Best Practices&lt;/display-text&gt;&lt;/eref&gt;, the &lt;eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C sdw-bp"&gt;&lt;display-text&gt;W3C/OGC Spatial Data on the Web Best Practices&lt;/display-text&gt;&lt;/eref&gt; and the emerging OGC Web API Guidelines. A particular example is the use of the concepts of datasets and dataset distributions as defined in &lt;eref type="inline" bibitemid="dcat" citeas="W3C vocab-dcat"&gt;&lt;display-text&gt;DCAT&lt;/display-text&gt;&lt;/eref&gt; and used in &lt;eref type="inline" bibitemid="schema" citeas="schema.org"&gt;&lt;display-text&gt;schema.org&lt;/display-text&gt;&lt;/eref&gt;.&lt;/p&gt;
 
 &lt;p&gt;This standard specifies discovery and query operations that are implemented using the HTTP GET method. Support for additional methods (in particular POST, PUT, DELETE, PATCH) will be specified in additional parts.&lt;/p&gt;
 
@@ -1192,7 +1191,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
     <stage>approved</stage>
   </status>
   <copyright>
-    <from>2024</from>
+    <from>2025</from>
     <owner>
       <organization>
         <name>Open Geospatial Consortium</name>
@@ -1228,7 +1227,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
     <subdoctype>implementation</subdoctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">OGC CDB Version 1.1 Release Notes</title>
   <uri type="xml">documents/18-016r1/document.xml</uri>
   <uri type="pdf">documents/18-016r1/document.pdf</uri>
@@ -1236,7 +1235,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
   <uri type="html">documents/18-016r1/document.html</uri>
   <uri type="rxl">documents/18-016r1/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/CDB-notes/1.1</docidentifier>
-  <docidentifier type="ogc-internal">18-016r1</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">18-016r1</docidentifier>
   <docnumber>18-016r1</docnumber>
   <date type="published">
     <on>2018-12-19</on>
@@ -1295,7 +1294,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
     <doctype>release-notes</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">OGC Earth Observation Exploitation Platform Hackathon 2018 Engineering Report</title>
   <uri type="xml">documents/18-046/document.xml</uri>
   <uri type="pdf">documents/18-046/document.pdf</uri>
@@ -1303,7 +1302,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
   <uri type="html">documents/18-046/document.html</uri>
   <uri type="rxl">documents/18-046/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/PER/eoep-Hack2018</docidentifier>
-  <docidentifier type="ogc-internal">18-046</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">18-046</docidentifier>
   <docnumber>18-046</docnumber>
   <date type="published">
     <on>2018-06-12</on>
@@ -1338,7 +1337,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
     <stage>approved</stage>
   </status>
   <copyright>
-    <from>2024</from>
+    <from>2025</from>
     <owner>
       <organization>
         <name>Open Geospatial Consortium</name>
@@ -1350,7 +1349,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
     <doctype>engineering-report</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">3D Tiles Specification 1.0</title>
   <uri type="xml">documents/18-053r2/document.xml</uri>
   <uri type="pdf">documents/18-053r2/document.pdf</uri>
@@ -1359,7 +1358,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
   <uri type="rxl">documents/18-053r2/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/docs/CS/3DTiles/1.0</docidentifier>
   <docidentifier type="ogc-external">http://docs.opengeospatial.org/is/18-053r2/18-053r2.html</docidentifier>
-  <docidentifier type="ogc-internal">18-053r2</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">18-053r2</docidentifier>
   <docnumber>18-053r2</docnumber>
   <date type="published">
     <on>2019-01-31</on>
@@ -1423,7 +1422,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
     <doctype>community-standard</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Geospatial Coverages Data Cube Community Practice</title>
   <uri type="xml">documents/18-095r7/document.xml</uri>
   <uri type="pdf">documents/18-095r7/document.pdf</uri>
@@ -1431,7 +1430,7 @@ and simulation data formats endorsed by leaders of the database tools industry. 
   <uri type="html">documents/18-095r7/document.html</uri>
   <uri type="rxl">documents/18-095r7/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/CS/dataCubeCP</docidentifier>
-  <docidentifier type="ogc-internal">18-095r7</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">18-095r7</docidentifier>
   <docnumber>18-095r7</docnumber>
   <date type="published">
     <on>2020-10-14</on>
@@ -1461,16 +1460,12 @@ and simulation data formats endorsed by leaders of the database tools industry. 
   <edition>1.0</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract>&lt;p&gt;Data cubes for geospatial information provide the means to integrate observations and
-other types of geospatial data for use in multiple applications through simplified access
-and efficient analytics. Using the Geospatial Coverages data structure, this Community
-Practice defines requirements for a geospatial coverages data cube infrastructure and
-guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstract>
+  <abstract>&lt;p&gt;Data cubes for geospatial information provide the means to integrate observations and other types of geospatial data for use in multiple applications through simplified access and efficient analytics. Using the Geospatial Coverages data structure, this Community Practice defines requirements for a geospatial coverages data cube infrastructure and guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstract>
   <status>
     <stage>approved</stage>
   </status>
   <copyright>
-    <from>2024</from>
+    <from>2025</from>
     <owner>
       <organization>
         <name>Open Geospatial Consortium</name>
@@ -1486,7 +1481,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
     <doctype>community-practice</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Anchor Node Extension in IndoorGML - Seamless Navigation between Indoor and Outdoor Space</title>
   <uri type="xml">documents/19-004/document.xml</uri>
   <uri type="pdf">documents/19-004/document.pdf</uri>
@@ -1494,7 +1489,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
   <uri type="html">documents/19-004/document.html</uri>
   <uri type="rxl">documents/19-004/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/dp/indoorgml-anchornode</docidentifier>
-  <docidentifier type="ogc-internal">19-004</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">19-004</docidentifier>
   <docnumber>19-004</docnumber>
   <date type="published">
     <on>2019-12-11</on>
@@ -1553,7 +1548,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
     <stage>approved</stage>
   </status>
   <copyright>
-    <from>2024</from>
+    <from>2025</from>
     <owner>
       <organization>
         <name>Open Geospatial Consortium</name>
@@ -1573,7 +1568,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
     <doctype>discussion-paper</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">Technical Committee Policies and Procedures</title>
   <uri>http://docs.opengeospatial.org/pol/05-020r26/05-020r26.html</uri>
   <uri type="xml">documents/repos/ogc-tcpnp/ogc-tcpnp.xml</uri>
@@ -1582,7 +1577,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
   <uri type="html">documents/repos/ogc-tcpnp/ogc-tcpnp.html</uri>
   <uri type="rxl">documents/repos/ogc-tcpnp/ogc-tcpnp.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/pol/tcpnp/26.0</docidentifier>
-  <docidentifier type="ogc-internal">05-020r26</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">05-020r26</docidentifier>
   <docnumber>05-020r26</docnumber>
   <date type="published">
     <on>2018-07-24</on>
@@ -1635,7 +1630,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
 
 &lt;p&gt;The OGC Technical Committee provides an open, collaborative forum for professional discussion related to the consensus development and/or evaluation, approval, and revision of OGC international standards. The primary use of approved OGC standards is to provide the ability to build and deploy interoperable geospatial solutions in the larger Information Technology (IT) domain.&lt;/p&gt;
 
-&lt;p&gt;The OGC Principles of Conduct (&lt;eref type="inline" bibitemid="OGCPOC" citeas="OGC Principles of Conduct"/&gt;) govern personal and public interactions in any TC activity.&lt;/p&gt;</abstract>
+&lt;p&gt;The OGC Principles of Conduct (&lt;eref type="inline" bibitemid="OGCPOC" citeas="OGC Principles of Conduct"/&gt;) govern personal and public interactions in any TC activity.&lt;/p&gt;</abstract>
   <status>
     <stage>approved</stage>
   </status>
@@ -1652,7 +1647,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
     <doctype>policy</doctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">OGC Web Feature Service 3.0: Part 1 - Core</title>
   <uri type="xml">documents/repos/ogc-wfs/core/standard/17-069.xml</uri>
   <uri type="pdf">documents/repos/ogc-wfs/core/standard/17-069.pdf</uri>
@@ -1660,7 +1655,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
   <uri type="html">documents/repos/ogc-wfs/core/standard/17-069.html</uri>
   <uri type="rxl">documents/repos/ogc-wfs/core/standard/17-069.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wfs-1/3.0</docidentifier>
-  <docidentifier type="ogc-internal">17-069</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">17-069</docidentifier>
   <docnumber>17-069</docnumber>
   <date type="published">
     <on>1000-01-01</on>
@@ -1736,7 +1731,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
 
 &lt;p&gt;Query operations allow features or values of feature properties to be retrieved from the underlying data store based upon selection criteria, defined by the client, on feature properties.&lt;/p&gt;
 
-&lt;p&gt;This standard defines the resources listed in &lt;xref target="tldnr"/&gt;. For an overview of the resources, see section &lt;xref target="core-overview"&gt;7.1 Overview&lt;/xref&gt;.&lt;/p&gt;
+&lt;p&gt;This standard defines the resources listed in &lt;xref target="tldnr"/&gt;. For an overview of the resources, see section &lt;xref target="core-overview"&gt;&lt;display-text&gt;7.1 Overview&lt;/display-text&gt;&lt;/xref&gt;.&lt;/p&gt;
 
 &lt;table&gt;&lt;colgroup&gt;&lt;col width="32%"/&gt;&lt;col width="25%"/&gt;&lt;col width="10%"/&gt;&lt;col width="33%"/&gt;&lt;/colgroup&gt;
 &lt;name&gt;Overview of resources, applicable HTTP methods and links to the document sections&lt;/name&gt;
@@ -1748,38 +1743,38 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
 &lt;tbody&gt;&lt;tr&gt;&lt;td valign="middle" align="left"&gt;Landing page&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;&lt;tt&gt;/&lt;/tt&gt;&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;GET&lt;/td&gt;
-&lt;td valign="middle" align="left"&gt;&lt;xref target="_api_landing_page"&gt;7.2 API landing page&lt;/xref&gt;&lt;/td&gt;
+&lt;td valign="middle" align="left"&gt;&lt;xref target="_api_landing_page"&gt;&lt;display-text&gt;7.2 API landing page&lt;/display-text&gt;&lt;/xref&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;tr&gt;&lt;td valign="middle" align="left"&gt;API definition&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;&lt;tt&gt;/api&lt;/tt&gt;&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;GET&lt;/td&gt;
-&lt;td valign="middle" align="left"&gt;&lt;xref target="_api_definition_2"&gt;7.3 API definition&lt;/xref&gt;&lt;/td&gt;
+&lt;td valign="middle" align="left"&gt;&lt;xref target="_api_definition_2"&gt;&lt;display-text&gt;7.3 API definition&lt;/display-text&gt;&lt;/xref&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;tr&gt;&lt;td valign="middle" align="left"&gt;Conformance classes&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;&lt;tt&gt;/conformance&lt;/tt&gt;&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;GET&lt;/td&gt;
-&lt;td valign="middle" align="left"&gt;&lt;xref target="_declaration_of_conformance_classes"&gt;7.4 Declaration of conformance classes&lt;/xref&gt;&lt;/td&gt;
+&lt;td valign="middle" align="left"&gt;&lt;xref target="_declaration_of_conformance_classes"&gt;&lt;display-text&gt;7.4 Declaration of conformance classes&lt;/display-text&gt;&lt;/xref&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;tr&gt;&lt;td valign="middle" align="left"&gt;Feature collections metadata&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;&lt;tt&gt;/collections&lt;/tt&gt;&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;GET&lt;/td&gt;
-&lt;td valign="middle" align="left"&gt;&lt;xref target="_feature_collections_metadata"&gt;7.11 Feature collections metadata&lt;/xref&gt;&lt;/td&gt;
+&lt;td valign="middle" align="left"&gt;&lt;xref target="_feature_collections_metadata"&gt;&lt;display-text&gt;7.11 Feature collections metadata&lt;/display-text&gt;&lt;/xref&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;tr&gt;&lt;td valign="middle" align="left"&gt;Feature collection metadata&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;&lt;tt&gt;/collections/{name}&lt;/tt&gt;&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;GET&lt;/td&gt;
-&lt;td valign="middle" align="left"&gt;&lt;xref target="_feature_collection_metadata"&gt;7.12 Feature collection metadata&lt;/xref&gt;&lt;/td&gt;
+&lt;td valign="middle" align="left"&gt;&lt;xref target="_feature_collection_metadata"&gt;&lt;display-text&gt;7.12 Feature collection metadata&lt;/display-text&gt;&lt;/xref&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;tr&gt;&lt;td valign="middle" align="left"&gt;Feature collection&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;&lt;tt&gt;/collections/{name}/items&lt;/tt&gt;&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;GET&lt;/td&gt;
-&lt;td valign="middle" align="left"&gt;&lt;xref target="_feature_collections"&gt;7.13 Feature collections&lt;/xref&gt;&lt;/td&gt;
+&lt;td valign="middle" align="left"&gt;&lt;xref target="_feature_collections"&gt;&lt;display-text&gt;7.13 Feature collections&lt;/display-text&gt;&lt;/xref&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;tr&gt;&lt;td valign="middle" align="left"&gt;Feature&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;&lt;tt&gt;/collections/{name}/items/{fid}&lt;/tt&gt;&lt;/td&gt;
 &lt;td valign="middle" align="left"&gt;GET&lt;/td&gt;
-&lt;td valign="middle" align="left"&gt;&lt;xref target="_feature_2"&gt;7.14 Feature&lt;/xref&gt;&lt;/td&gt;
+&lt;td valign="middle" align="left"&gt;&lt;xref target="_feature_2"&gt;&lt;display-text&gt;7.14 Feature&lt;/display-text&gt;&lt;/xref&gt;&lt;/td&gt;
 &lt;/tr&gt;&lt;/tbody&gt;
 &lt;/table&gt;</abstract>
   <status>
     <stage>candidate</stage>
   </status>
   <copyright>
-    <from>2024</from>
+    <from>2025</from>
     <owner>
       <organization>
         <name>Open Geospatial Consortium</name>
@@ -1808,7 +1803,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
     <subdoctype>implementation</subdoctype>
   </ext>
 </bibdata></relation>
-<relation type='partOf'><bibdata type="standard" schema-version="v1.2.8">
+<relation type='partOf'><bibdata type="standard" schema-version="v1.2.9">
   <title format="text/plain" language="en">OGC® WPS 2.0.2 Interface Standard Corrigendum 2</title>
   <uri type="xml">documents/style-sample/document.xml</uri>
   <uri type="pdf">documents/style-sample/document.pdf</uri>
@@ -1816,7 +1811,7 @@ guidelines for enhancements and extensions to the basic core.&lt;/p&gt;</abstrac
   <uri type="html">documents/style-sample/document.html</uri>
   <uri type="rxl">documents/style-sample/document.rxl</uri>
   <docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wps/2.0.2</docidentifier>
-  <docidentifier type="ogc-internal">14-065r2</docidentifier>
+  <docidentifier type="ogc-internal" primary="true">14-065r2</docidentifier>
   <docnumber>14-065r2</docnumber>
   <date type="published">
     <on>2015-03-05</on>

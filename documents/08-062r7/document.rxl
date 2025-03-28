@@ -1,7 +1,7 @@
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC Reference Model</title>
-<docidentifier type="ogc-external">http://www.opengis.net/doc/orm/2.1</docidentifier><docidentifier type="ogc-internal">08-062r7</docidentifier><docnumber>08-062r7</docnumber><date type="published"><on>2011-12-19</on></date><date type="issued"><on>2011-12-19</on></date><date type="received"><on>2011-12-19</on></date><contributor><role type="publisher"/><organization>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/orm/2.1</docidentifier><docidentifier type="ogc-internal" primary="true">08-062r7</docidentifier><docnumber>08-062r7</docnumber><date type="published"><on>2011-12-19</on></date><date type="issued"><on>2011-12-19</on></date><date type="received"><on>2011-12-19</on></date><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></contributor><edition>2.1</edition><version><revision-date>2011-12-19</revision-date></version><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2024</from><owner><organization>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>2.1</edition><version><revision-date>2011-12-19</revision-date></version><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2025</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>reference-model</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>reference-model</doctype><flavor>ogc</flavor><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

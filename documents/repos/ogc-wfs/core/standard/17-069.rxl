@@ -1,6 +1,6 @@
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC Web Feature Service 3.0: Part 1 - Core</title>
-<uri type="xml">https://riboseinc.github.io/ogc-wfs/ogc-wfs.xml</uri><uri type="pdf">https://riboseinc.github.io/ogc-wfs/ogc-wfs.pdf</uri><uri type="doc">https://riboseinc.github.io/ogc-wfs/ogc-wfs.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wfs-1/3.0</docidentifier><docidentifier type="ogc-internal">17-069</docidentifier><docnumber>17-069</docnumber><date type="published"><on>1000-01-01</on></date><date type="issued"><on>1000-01-01</on></date><date type="received"><on>1000-01-01</on></date><contributor><role type="author"/><organization>
+<uri type="xml">https://riboseinc.github.io/ogc-wfs/ogc-wfs.xml</uri><uri type="pdf">https://riboseinc.github.io/ogc-wfs/ogc-wfs.pdf</uri><uri type="doc">https://riboseinc.github.io/ogc-wfs/ogc-wfs.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wfs-1/3.0</docidentifier><docidentifier type="ogc-internal" primary="true">17-069</docidentifier><docnumber>17-069</docnumber><date type="published"><on>1000-01-01</on></date><date type="issued"><on>1000-01-01</on></date><date type="received"><on>1000-01-01</on></date><contributor><role type="author"/><organization>
 <name>CubeWerx Inc.</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Hexagon</name>
@@ -26,7 +26,7 @@
 
 <p>Query operations allow features or values of feature properties to be retrieved from the underlying data store based upon selection criteria, defined by the client, on feature properties.</p>
 
-<p>This standard defines the resources listed in <xref target="tldnr"/>. For an overview of the resources, see section <xref target="core-overview">7.1 Overview</xref>.</p>
+<p>This standard defines the resources listed in <xref target="tldnr"/>. For an overview of the resources, see section <xref target="core-overview"><display-text>7.1 Overview</display-text></xref>.</p>
 
 <table><colgroup><col width="32%"/><col width="25%"/><col width="10%"/><col width="33%"/></colgroup>
 <name>Overview of resources, applicable HTTP methods and links to the document sections</name>
@@ -38,33 +38,33 @@
 <tbody><tr><td valign="middle" align="left">Landing page</td>
 <td valign="middle" align="left"><tt>/</tt></td>
 <td valign="middle" align="left">GET</td>
-<td valign="middle" align="left"><xref target="_api_landing_page">7.2 API landing page</xref></td>
+<td valign="middle" align="left"><xref target="_api_landing_page"><display-text>7.2 API landing page</display-text></xref></td>
 </tr><tr><td valign="middle" align="left">API definition</td>
 <td valign="middle" align="left"><tt>/api</tt></td>
 <td valign="middle" align="left">GET</td>
-<td valign="middle" align="left"><xref target="_api_definition_2">7.3 API definition</xref></td>
+<td valign="middle" align="left"><xref target="_api_definition_2"><display-text>7.3 API definition</display-text></xref></td>
 </tr><tr><td valign="middle" align="left">Conformance classes</td>
 <td valign="middle" align="left"><tt>/conformance</tt></td>
 <td valign="middle" align="left">GET</td>
-<td valign="middle" align="left"><xref target="_declaration_of_conformance_classes">7.4 Declaration of conformance classes</xref></td>
+<td valign="middle" align="left"><xref target="_declaration_of_conformance_classes"><display-text>7.4 Declaration of conformance classes</display-text></xref></td>
 </tr><tr><td valign="middle" align="left">Feature collections metadata</td>
 <td valign="middle" align="left"><tt>/collections</tt></td>
 <td valign="middle" align="left">GET</td>
-<td valign="middle" align="left"><xref target="_feature_collections_metadata">7.11 Feature collections metadata</xref></td>
+<td valign="middle" align="left"><xref target="_feature_collections_metadata"><display-text>7.11 Feature collections metadata</display-text></xref></td>
 </tr><tr><td valign="middle" align="left">Feature collection metadata</td>
 <td valign="middle" align="left"><tt>/collections/{name}</tt></td>
 <td valign="middle" align="left">GET</td>
-<td valign="middle" align="left"><xref target="_feature_collection_metadata">7.12 Feature collection metadata</xref></td>
+<td valign="middle" align="left"><xref target="_feature_collection_metadata"><display-text>7.12 Feature collection metadata</display-text></xref></td>
 </tr><tr><td valign="middle" align="left">Feature collection</td>
 <td valign="middle" align="left"><tt>/collections/{name}/items</tt></td>
 <td valign="middle" align="left">GET</td>
-<td valign="middle" align="left"><xref target="_feature_collections">7.13 Feature collections</xref></td>
+<td valign="middle" align="left"><xref target="_feature_collections"><display-text>7.13 Feature collections</display-text></xref></td>
 </tr><tr><td valign="middle" align="left">Feature</td>
 <td valign="middle" align="left"><tt>/collections/{name}/items/{fid}</tt></td>
 <td valign="middle" align="left">GET</td>
-<td valign="middle" align="left"><xref target="_feature_2">7.14 Feature</xref></td>
+<td valign="middle" align="left"><xref target="_feature_2"><display-text>7.14 Feature</display-text></xref></td>
 </tr></tbody>
 </table>
-</abstract><status><stage>candidate</stage></status><copyright><from>2024</from><owner><organization>
+</abstract><status><stage>candidate</stage></status><copyright><from>2025</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>web feature service</keyword><keyword>wfs</keyword><keyword>feature</keyword><keyword>property</keyword><keyword>geographic information</keyword><keyword>spatial data</keyword><keyword>spatial things</keyword><keyword>dataset</keyword><keyword>distribution</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>geojson</keyword><keyword>gml</keyword><keyword>html</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>web feature service</keyword><keyword>wfs</keyword><keyword>feature</keyword><keyword>property</keyword><keyword>geographic information</keyword><keyword>spatial data</keyword><keyword>spatial things</keyword><keyword>dataset</keyword><keyword>distribution</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>geojson</keyword><keyword>gml</keyword><keyword>html</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><flavor>ogc</flavor><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

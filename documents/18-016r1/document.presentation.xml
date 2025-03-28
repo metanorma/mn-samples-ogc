@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="2.5.2" schema-version="v1.3.0">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.7.2" schema-version="v2.0.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" format="text/plain">OGC CDB Version 1.1 Release Notes</title>
-<docidentifier type="ogc-external">http://www.opengis.net/doc/IS/CDB-notes/1.1</docidentifier><docidentifier type="ogc-internal">18-016r1</docidentifier><docnumber>18-016r1</docnumber><date type="published"><on>2018-12-19</on></date><date type="issued"><on>2018-08-27</on></date><date type="received"><on>2018-08-02</on></date><contributor><role type="author"/><organization>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/IS/CDB-notes/1.1</docidentifier><docidentifier type="ogc-internal" primary="true">18-016r1</docidentifier><docnumber>18-016r1</docnumber><date type="published"><on>2018-12-19</on></date><date type="issued"><on>2018-08-27</on></date><date type="received"><on>2018-08-02</on></date><contributor><role type="author"/><organization>
 <name>OGC CDB Standards Working Group</name>
 </organization></contributor><contributor><role type="editor"/><person>
 <name><completename>Carl Reed, PhD</completename></name>
@@ -11,592 +11,23 @@
 <abbreviation>OGC</abbreviation></organization></contributor><edition>1.1</edition><language current="true">en</language><script current="true">Latn</script><abstract><p>This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</p>
 </abstract><status><stage language="">published</stage><stage language="en">Published</stage></status><copyright><from>2018</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>CDB</keyword><keyword>Common Data Base</keyword><keyword>simulation</keyword><keyword>synthetic environment</keyword><keyword>version 1.1</keyword><ext><doctype>release-notes</doctype><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
-</localized-string><localized-string key="internal_terms_boilerplate" language="en"><p>This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
-<p>This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
-<p>For the purposes of this document, the following additional terms and definitions apply.</p>
-</localized-string><localized-string key="norm_with_refs_pref" language="en">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</localized-string><localized-string key="norm_empty_pref" language="en">There are no normative references in this document.</localized-string><localized-string key="external_terms_boilerplate" language="en"><p>This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
-<p>This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
-<p>For the purposes of this document, the terms and definitions given in % additionally apply.</p>
-</localized-string><localized-string key="internal_external_terms_boilerplate" language="en"><p>This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
-<p>This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
-<p>For the purposes of this document, the terms and definitions given in % and the following additionally apply.</p>
-</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">Example</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of Recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="admitted" language="en">ALTERNATIVE</localized-string><localized-string key="submitters" language="en">Submitters</localized-string><localized-string key="contributors_clause" language="en">Contributors</localized-string><localized-string key="dochistory" language="en">Revision history</localized-string><localized-string key="table_of_figures" language="en">Table of Figures</localized-string><localized-string key="security_empty" language="en">No security considerations have been made for this document.</localized-string><localized-string key="submission_date" language="en">Submission Date</localized-string><localized-string key="approval_date" language="en">Approval Date</localized-string><localized-string key="publication_date" language="en">Publication Date</localized-string><localized-string key="author" language="en">Author</localized-string><localized-string key="editor" language="en">Editor</localized-string><localized-string key="contributor" language="en">Contributor</localized-string><localized-string key="stage_dict.draft" language="en">Draft</localized-string><localized-string key="stage_dict.work-item-draft" language="en">Work Item Draft</localized-string><localized-string key="stage_dict.swg-draft" language="en">Candidate SWG Draft</localized-string><localized-string key="stage_dict.oab-review" language="en">Candidate OAB Review Draft</localized-string><localized-string key="stage_dict.public-rfc" language="en">Candidate Public RFC Draft</localized-string><localized-string key="stage_dict.tc-vote" language="en">Candidate TC Vote Draft</localized-string><localized-string key="stage_dict.approved" language="en">Approved</localized-string><localized-string key="stage_dict.published" language="en">Published</localized-string><localized-string key="stage_dict.deprecated" language="en">Deprecated</localized-string><localized-string key="stage_dict.rescinded" language="en">Rescinded</localized-string><localized-string key="stage_dict.retired" language="en">Retired</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__ogc-standard type="semantic" version="2.5.2" schema-version="v1.3.0">
-<semantic__bibdata type="standard">
-<semantic__title language="en" format="text/plain">OGC CDB Version 1.1 Release Notes</semantic__title>
-<semantic__docidentifier type="ogc-external">http://www.opengis.net/doc/IS/CDB-notes/1.1</semantic__docidentifier><semantic__docidentifier type="ogc-internal">18-016r1</semantic__docidentifier><semantic__docnumber>18-016r1</semantic__docnumber><semantic__date type="published"><semantic__on>2018-12-19</semantic__on></semantic__date><semantic__date type="issued"><semantic__on>2018-08-27</semantic__on></semantic__date><semantic__date type="received"><semantic__on>2018-08-02</semantic__on></semantic__date><semantic__contributor><semantic__role type="author"/><semantic__organization>
-<semantic__name>OGC CDB Standards Working Group</semantic__name>
-</semantic__organization></semantic__contributor><semantic__contributor><semantic__role type="editor"/><semantic__person>
-<semantic__name><semantic__completename>Carl Reed, PhD</semantic__completename></semantic__name>
-</semantic__person></semantic__contributor><semantic__contributor><semantic__role type="publisher"/><semantic__organization>
-<semantic__name>Open Geospatial Consortium</semantic__name>
-<semantic__abbreviation>OGC</semantic__abbreviation></semantic__organization></semantic__contributor><semantic__edition>1.1</semantic__edition><semantic__language>en</semantic__language><semantic__script>Latn</semantic__script><semantic__abstract><semantic__p>This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</semantic__p>
-</semantic__abstract><semantic__status><semantic__stage>approved</semantic__stage></semantic__status><semantic__copyright><semantic__from>2018</semantic__from><semantic__owner><semantic__organization>
-<semantic__name>Open Geospatial Consortium</semantic__name>
-<semantic__abbreviation>OGC</semantic__abbreviation></semantic__organization></semantic__owner></semantic__copyright><semantic__keyword>ogcdoc</semantic__keyword><semantic__keyword>OGC document</semantic__keyword><semantic__keyword>CDB</semantic__keyword><semantic__keyword>Common Data Base</semantic__keyword><semantic__keyword>simulation</semantic__keyword><semantic__keyword>synthetic environment</semantic__keyword><semantic__keyword>version 1.1</semantic__keyword><semantic__ext><semantic__doctype>release-notes</semantic__doctype><semantic__editorialgroup><semantic__committee>technical</semantic__committee><semantic__workgroup/></semantic__editorialgroup></semantic__ext></semantic__bibdata><semantic__metanorma-extension><semantic__presentation-metadata><semantic__name>TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>HTML TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>DOC TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>PDF TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata></semantic__metanorma-extension>
-<semantic__boilerplate><semantic__copyright-statement>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>CDB</keyword><keyword>Common Data Base</keyword><keyword>simulation</keyword><keyword>synthetic environment</keyword><keyword>version 1.1</keyword><ext><doctype>release-notes</doctype><flavor>ogc</flavor><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="index" language="en">Index</localized-string><localized-string key="see" language="en">see</localized-string><localized-string key="see_also" language="en">see also</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en">No terms and definitions are listed in this document.
+</localized-string><localized-string key="internal_terms_boilerplate" language="en">This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
 
-<semantic__clause id="semantic___copyright_notice" obligation="normative">
-<semantic__title>Copyright notice</semantic__title>
-<semantic__p id="semantic___f89cdf56-3e64-0a54-e756-26a53e0385c5" align="center">Copyright © 2018 Open Geospatial Consortium<semantic__br/>
-To obtain additional rights of use, visit
-<semantic__link target="https://www.ogc.org/legal"/></semantic__p>
-</semantic__clause>
+This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
 
-<semantic__clause id="semantic___note" obligation="normative">
-<semantic__title>Note</semantic__title>
-<semantic__p id="semantic___11e88dba-9912-1a89-a82d-7291bf232191" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</semantic__p>
+For the purposes of this document, the following additional terms and definitions apply.
+</localized-string><localized-string key="norm_with_refs_pref" language="en">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</localized-string><localized-string key="norm_empty_pref" language="en">There are no normative references in this document.</localized-string><localized-string key="external_terms_boilerplate" language="en">This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
 
-<semantic__p id="semantic___15067213-c07b-cba0-7e18-395ab2e00ab3" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</semantic__p>
-</semantic__clause>
-</semantic__copyright-statement>
+This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
 
-<semantic__license-statement>
+For the purposes of this document, the terms and definitions given in % additionally apply.
+</localized-string><localized-string key="internal_external_terms_boilerplate" language="en">This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
 
-<semantic__clause id="semantic___license_agreement" obligation="normative">
-<semantic__title>License Agreement</semantic__title>
-<semantic__p id="semantic___f5fe34fd-12e2-2bb7-8cd6-9d4cffa96538">Use of this document is subject to the license agreement at <semantic__link target="https://www.ogc.org/license"/></semantic__p>
-</semantic__clause>
-</semantic__license-statement>
+This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
 
-<semantic__legal-statement>
-
-<semantic__clause id="semantic___notice" obligation="normative">
-<semantic__title>Notice</semantic__title>
-<semantic__p id="semantic___40570159-7b31-874a-8789-26de9fe11d72">This document is not an OGC standard. This document provides release notes for an OGC standard. This document is subject to change without notice and may not be referred to as an OGC Standard.</semantic__p>
-
-<semantic__p id="semantic___d80fd0eb-fbfd-dec3-0ddb-92472f4d5fcf">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</semantic__p>
-</semantic__clause>
-</semantic__legal-statement>
-
-<semantic__feedback-statement>
-
-</semantic__feedback-statement>
-</semantic__boilerplate><semantic__preface><semantic__abstract id="semantic___abstract"><semantic__title>Abstract</semantic__title><semantic__p id="semantic___74fe3e9c-938f-0ee9-225d-c01beaf8bb66">This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</semantic__p>
-</semantic__abstract><semantic__clause type="security" id="semantic___1bfba592-0713-41de-d69c-a83eb10efc35" obligation="informative">
-  <semantic__title>Security considerations</semantic__title>
-  <semantic__p id="semantic___6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</semantic__p></semantic__clause>
-<semantic__submitters id="semantic___submitters">
-<semantic__title>Submitters</semantic__title>
-<semantic__table id="semantic___6c84f1d9-1180-88e6-f288-dd71feef683b" unnumbered="true"><semantic__thead><semantic__tr><semantic__th valign="middle" align="left">Name</semantic__th>
-<semantic__th valign="middle" align="left">Affiliation</semantic__th>
-</semantic__tr></semantic__thead>
-<semantic__tbody><semantic__tr><semantic__td valign="middle" align="left">Carl Reed</semantic__td>
-<semantic__td valign="middle" align="left">Carl Reed &amp; Associates (Editor)</semantic__td>
-</semantic__tr><semantic__tr><semantic__td valign="middle" align="left">David Graham</semantic__td>
-<semantic__td valign="middle" align="left">CAE Inc. CDB Chair</semantic__td>
-</semantic__tr></semantic__tbody>
-</semantic__table>
-</semantic__submitters></semantic__preface><semantic__sections>
-
-<semantic__clause id="semantic___revisions_to_volume_1_cdb_core_model_and_physical_data_store" obligation="normative">
-<semantic__title>Revisions to Volume 1: CDB Core Model and Physical Data Store</semantic__title>
-<semantic__clause id="semantic___introductory_clause_future_work" obligation="normative">
-<semantic__title>Introductory Clause “Future Work”</semantic__title>
-<semantic__p id="semantic___df90a1e2-542c-f294-be33-594f55f86db2">Updated to reflect work done in CDB version 1.1 as well as new requirements identified in OGC Testbed 13.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___1_0_1_corrigendum_changes_included" obligation="normative">
-<semantic__title>1.0.1 Corrigendum changes included</semantic__title>
-<semantic__p id="semantic___347e1ecb-a24a-0d7b-7799-db2f26af4c2b">All CDB 1.0.1 Corrigendum changes incorporated. See OGC document 17-064 Summary of Corrigendum Changes for CDB Volume1: Core.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___general_change_all_file_extensions_in_requirements_are_now_generic" obligation="normative">
-<semantic__title>General Change: All file extensions in Requirements are now generic</semantic__title>
-<semantic__p id="semantic___17846fa8-c51e-63ef-cf84-ecfc3f78fbc1">All file specific extensions stated in requirements have been made generic. For example, CDB Volume 1 Requirement formerly stated:</semantic__p>
-
-<semantic__p id="semantic___8a157a4c-829a-5d34-b5b0-6e247269dbae">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <semantic__tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.flt</semantic__tt>.</semantic__p>
-
-<semantic__p id="semantic___24be7957-453d-e30d-97ec-ef7b60c6ebe9">This Requirement now reads:</semantic__p>
-
-<semantic__p id="semantic___4a61798d-76dc-89cb-5263-eeeef2382a3d">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <semantic__tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.&#x3c;ext&#x3e;</semantic__tt></semantic__p>
-
-<semantic__p id="semantic___a483c09c-3858-c78e-1bc9-fbef3bc22e67">Where <semantic__tt>&#x3c;ext&#x3e;</semantic__tt> is the correct file name extension for the data encoded in the file. There is also a footnote that specifies what the extension was in version 1.0 of the CDB standard.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_1_4_3_cdb_metadata" obligation="normative">
-<semantic__title>Clause 1.4.3 CDB Metadata</semantic__title>
-<semantic__p id="semantic___646c9de8-1487-531e-51b6-394434853e11">This clause was updated to:</semantic__p>
-
-<semantic__ul id="semantic___e1c52137-2be9-e506-7839-6dbb89b3068d"><semantic__li><semantic__p id="semantic___0fcd173a-4c61-dc0c-f16f-46d8b6c84f25">Provide definitions for metadata, controlled vocabularies, and enumerations. These are in clauses 1.4.3.1, 1.4.3.2, and 1.4.3.3.</semantic__p>
-</semantic__li>
-<semantic__li><semantic__p id="semantic___e73ca05b-34d7-c4ec-d5aa-7066f90a64bb">Insert a table that provides more detailed information on each of the files included in the metadata folder.</semantic__p>
-</semantic__li>
-</semantic__ul>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_1_4_4_cdb_directory_file_naming_and_structure" obligation="normative">
-<semantic__title>Clause 1.4.4 CDB Directory File Naming and Structure</semantic__title>
-<semantic__p id="semantic___2f0fb3f0-e887-704b-bd65-060461d95e5c">This clause is updated to:</semantic__p>
-
-<semantic__ul id="semantic___3eab66d2-8b28-9bec-dd78-724a1f446027"><semantic__li><semantic__p id="semantic___766a126d-5056-6e30-3a52-2e7ba659d5ad">Reflect the use of generic file extensions in all Requirements and the Abstract Test Suite rather than specific file extensions.</semantic__p>
-</semantic__li>
-<semantic__li><semantic__p id="semantic___d27e4048-3775-b66a-d9d4-e5c73a14562d">Reflect the addition of enumerations and controlled vocabularies as concepts in the standard.</semantic__p>
-</semantic__li>
-</semantic__ul>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_1_7_1_4_system_hardware_independence" obligation="normative">
-<semantic__title>Clause 1.7.1.4 System Hardware Independence</semantic__title>
-<semantic__p id="semantic___47391184-5b11-9c5e-16ed-906654e1ccc4">Slight re-wording to make the sentence grammatically correct.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_3_1_1_metadata_directory" obligation="normative">
-<semantic__title>Clause 3.1.1 Metadata Directory</semantic__title>
-<semantic__p id="semantic___b677e7ac-75ac-28ee-55c2-672649377038">Reformatted to be more easily read and understood.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_3_1_1metadata_directory" obligation="normative">
-<semantic__title>Clause 3.1.1Metadata Directory</semantic__title>
-<semantic__p id="semantic___0bc0afe8-ea92-0289-9a6c-f315b819b628">A new metadata file description for global metadata – including geospatial metadata -applicable to an entire CDB data store was added. This new metadata file description needs to be read in concert with the changes in clauses 1.4.3, 5.1, and specifically 5.1.6.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_3_4_2_4_examples" obligation="normative">
-<semantic__title>Clause 3.4.2.4 Examples</semantic__title>
-<semantic__p id="semantic___c0ff2220-a38d-9833-75d8-e9a99d024e4d">An example of the file path for all associated metadata is included.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_3_4_4_3_examples" obligation="normative">
-<semantic__title>Clause 3.4.4.3 Examples</semantic__title>
-<semantic__p id="semantic___a8b439b1-791f-5947-39d6-21f9f6f2c0b9">An example of the file path for all associated metadata is included.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_3_4_4_4_examples" obligation="normative">
-<semantic__title>Clause 3.4.4.4 Examples</semantic__title>
-<semantic__p id="semantic___3160b4f5-0857-7233-0f71-655ceff5d767">An example of the file path for all associated metadata is included.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_3_4_5_2_examples" obligation="normative">
-<semantic__title>Clause 3.4.5.2 Examples</semantic__title>
-<semantic__p id="semantic___e012a0a6-1312-793f-0cde-4702f29b58e9">An example of the file path for associated metadata is included.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_5_1_enhanced_to_include_discussion_of_controlled_vocabularies" obligation="normative">
-<semantic__title>Clause 5.1 enhanced to include discussion of Controlled Vocabularies</semantic__title>
-<semantic__p id="semantic___96ab3bd8-85d6-0609-6ecc-92a76ec01677">Clause 5.1 has additional wording explaining CDB use of metadata, enumerations and controlled vocabularies. This change resulted from the work in CDB 1.1 for metadata. Many elements in CDB 1.0 that were referred to as metadata are actually enumerations and controlled vocabularies.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_5_1_1_global_metadata" obligation="normative">
-<semantic__title>Clause 5.1.1 Global Metadata</semantic__title>
-<semantic__p id="semantic___ffa7b67a-7a7e-eab0-8989-5c2f2c340f07">A new clause added that defines what is meant by Global Metadata in general for a CDB data store.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_5_1_2_local_metadata" obligation="normative">
-<semantic__title>Clause 5.1.2 Local Metadata</semantic__title>
-<semantic__p id="semantic___9a1401b4-24df-1d23-adac-650016983fbc">A new clause added that defines what is meant by Local Metadata for a CDB data store.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_5_1_8_formerly_clause_5_1_6_version_metadata" obligation="normative">
-<semantic__title>Clause 5.1.8 (Formerly Clause 5.1.6) Version Metadata</semantic__title>
-<semantic__p id="semantic___0693f132-2661-db93-fdae-88c71e4886c8">Specification version definition enhanced to include both OGC and community versions of the standard.</semantic__p>
-
-<semantic__p id="semantic___f3ca50bd-8164-90c7-6102-ced9dec645e4">Addition of a mandatory <semantic__tt>&#x3c;Metadata standard="metadata-standard-name"&#x3e;</semantic__tt> element that specifies the metadata standard used for a CDB data store. This includes a list of metadata standards commonly used in the geospatial and simulation industries. This enumeration is governed by and agreed to by the OGC CDB Standards Working Group. Other metadata standards or profiles of standards may be added upon request and with proper justification. For backwards compatibility, the Metadata_standard element can be set to “NoMetadata”.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_5_1_12_geospatial_metadata_guidance" obligation="normative">
-<semantic__title>Clause 5.1.12 Geospatial Metadata Guidance</semantic__title>
-<semantic__p id="semantic___fdc54eba-1fa3-d32b-0c6e-effd679235f0">This is a new clause that provides general implementation guidance for encoding and storing metadata in a CDB data store.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_5_1_12_1_suggested_global_geospatial_metadata_elements" obligation="normative">
-<semantic__title>Clause 5.1.12.1 Suggested Global Geospatial Metadata Elements</semantic__title>
-<semantic__p id="semantic___bafd521b-1eb2-9830-4eaa-5ad182442a76">This is a new clause that provides guidance on which metadata elements should be included in the global metadata resource.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_5_1_12_2_suggested_local_geospatial_metadata_elements" obligation="normative">
-<semantic__title>Clause 5.1.12.2 Suggested Local Geospatial Metadata Elements</semantic__title>
-<semantic__p id="semantic___dfbe1191-0123-6e69-882a-64d9f01459c2">This is a new clause that provides guidance on which metadata elements should be included in a local metadata resource.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_5_6" obligation="normative">
-<semantic__title>Clause 5.6</semantic__title>
-<semantic__p id="semantic___38e8d53a-19f7-a5ed-07b8-15708388ded0">Cross walked the CDB tiled grid concept with the OGC/ISO baseline, specifically the OGC Coverage Implementation Schema (CIS) September 2017.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_5_6_2_3_2_vsti_default_read_value_change_request_490" obligation="normative">
-<semantic__title>Clause 5.6.2.3.2 VSTI Default Read Value (Change Request 490)</semantic__title>
-<semantic__p id="semantic___24da5b53-2eb1-aff0-5d3b-80bc2c797ebc">Requirement 102 is against CDB client-devices and not the CDB data store itself. This is an untestable requirement, and further, a client-device should be allowed to read and consume a CDB in any manne that it wishes. There might well be good reasons to not follow those rules in a client-device, so the spec should not impose this.</semantic__p>
-
-<semantic__p id="semantic___d746e0a7-daa6-d583-dc57-eb36642661ec">Therefore, this requirement was removed and replaced with informative guidance for client implementations. The related test 102 is removed from Annex A — Abstract Test Suite.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___new_clause_5_7_1_6_4_network_vector_priority" obligation="normative">
-<semantic__title>New Clause: 5.7.1.6.4 Network Vector Priority</semantic__title>
-<semantic__p id="semantic___7e128f16-7944-81f4-c991-58e1f8a81190">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for network vector priority. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___new_clause_5_7_1_9_vector_significant_size_and_spatial_significance_criteria" obligation="normative">
-<semantic__title>New Clause: 5.7.1.9 Vector Significant Size and Spatial Significance Criteria</semantic__title>
-<semantic__p id="semantic___eab76300-f4f8-e81a-6080-29f777ff8cb9">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for vector significant size and spatial significance. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1. Clause 5.7.1.9 includes two sub-clauses: 5.7.1.9.1 Vector Significant Size and 5.7.1.9.2 Levels of Detail and Spatial Significance Criteria.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___annex_a_abstract_test_suite" obligation="normative">
-<semantic__title>Annex A: Abstract Test Suite</semantic__title>
-<semantic__p id="semantic___8d4f1b15-c78f-01e5-8f70-d11519255506">All tests that had specific file extensions, such as .shp or .flt, are now generic with a note as to what the extensions were in version of the CDB standard prior to version 1.1.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___table_5_1_component_selectors_for_cdb_controlled_vocabularies_and_metadata" obligation="normative">
-<semantic__title>Table 5-1 Component Selectors for CDB Controlled Vocabularies and Metadata</semantic__title>
-<semantic__p id="semantic___f340ed47-4a3c-e52f-7e70-8bbc1dd6fd01">A new selector value “12” for global metadata was added.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___table_5_9_component_selectors_for_gtmodel_datasets" obligation="normative">
-<semantic__title>Table 5-9: Component Selectors for GTModel Datasets</semantic__title>
-<semantic__p id="semantic___f2d3d6bd-db8c-304b-d1dc-3e7af91b5cc5">Provide correct volume and section reference to GTModel descriptor definition. Please note, while this descriptor content is called metadata, this IS NOT the metadata as defined in Volume 1 clauses 5.1.1 and 5.1.2.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___figure_5_25_two_instances_of_code_65" obligation="normative">
-<semantic__title>Figure 5-25. Two instances of code 65</semantic__title>
-<semantic__p id="semantic___322d521f-d580-e716-d679-7d66f8a433ea">After verification with the reference document, the correct lines are:</semantic__p>
-
-<semantic__ul id="semantic___a8604eb6-7430-7957-71e9-87f3f60e2f51"><semantic__li><semantic__p id="semantic___12720aa3-ceb7-7073-40af-645bb56b5f69"><semantic__tt>64</semantic__tt>: Gable with Monitor</semantic__p>
-</semantic__li>
-<semantic__li><semantic__p id="semantic___5591e704-bc61-30f8-2ee9-6c2004ee3d3b"><semantic__tt>65</semantic__tt>: Reserved</semantic__p>
-</semantic__li>
-</semantic__ul>
-
-<semantic__p id="semantic___89f4e720-c0b5-c85c-717a-da1c422f5e58">The reference document is Digest Part 4, ISO 15046-10 Profile, March 1999, Annex B, Attribute and Value Codes.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___table_5_27_use_of_d_has_two_meanings_change_request_471" obligation="normative">
-<semantic__title>Table 5-27 Use of “D” has two meanings. (Change Request 471)</semantic__title>
-<semantic__p id="semantic___ed681300-de31-ee76-8374-23f82082411a">There was recommendation to remove the use of “D” indicating a “Deprecated Attribution Schema” and keep just one use of “D” for “Dependent on another attribute”. This recommendation was accepted and the change made to Table 5-27.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___table_5_27_not_entirely_visible_change_request_481" obligation="normative">
-<semantic__title>Table 5-27 not entirely visible (Change Request 481)</semantic__title>
-<semantic__p id="semantic___f4af57c4-551d-0ea1-a503-6a9655cd3af7">In version 1.0, Table 27 is not entirely visible (clipped at page edge). This comment was accepted and the change made to the table prior to insertion into Volume 1 Core.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___cdb_attributes_xml_schema_error_change_request_482" obligation="normative">
-<semantic__title>CDB_Attributes.xml Schema error (Change Request 482)</semantic__title>
-<semantic__p id="semantic___5d86d0ac-b68a-892e-0fc4-ba0102f3db5d">In: <semantic__tt>CDB_Attributes.xml</semantic__tt></semantic__p>
-
-<semantic__sourcecode id="semantic___9223898f-682b-51e6-a524-2d1a74efb886" lang="xml" unnumbered="true">No.:9
-Attr short name:BOTY
-Attr name: Boundary Type
-Description: "...See table 5-29 for a list of accepted values..."</semantic__sourcecode>
-
-
-<semantic__p id="semantic___e55a1e88-ba55-6982-20d7-24866b9ec140">The table 5-29 was corrected to be 5-19.</semantic__p>
-</semantic__clause>
-</semantic__clause>
-
-<semantic__clause id="semantic___revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes" obligation="normative">
-<semantic__title>Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes</semantic__title>
-<semantic__clause id="semantic___annex_q_table_of_dataset_codes" obligation="normative">
-<semantic__title>Annex Q: Table of Dataset Codes</semantic__title>
-<semantic__p id="semantic___03730edf-9223-86e1-59cb-dab0d366ab49">Updated to reflect the relationship between the community CDB 3.2 version and the OGC standard.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___annex_r_derived_datasets_within_the_cdb" obligation="normative">
-<semantic__title>Annex R: Derived Datasets within the CDB</semantic__title>
-<semantic__p id="semantic___de614c2a-cff2-2426-4cfc-dcb04b94cbeb">Some grammatical errors were corrected.</semantic__p>
-</semantic__clause>
-</semantic__clause>
-
-<semantic__clause id="semantic___revisions_to_volume_3_terms_and_definitions" obligation="normative">
-<semantic__title>Revisions to Volume 3 Terms and Definitions</semantic__title>
-<semantic__p id="semantic___625223ef-c845-f904-b73e-7b8699eb967d">Definitions were added for: depth, elevation, grid, grid point, height, metadata elements, raster, regular grid, and vector data. The definitions for dataset and metadata were slightly revised</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage" obligation="normative">
-<semantic__title>Revisions to Volume 4: CDB Use of Shapefiles for Vector Data Storage</semantic__title>
-<semantic__clause id="semantic___general" obligation="normative">
-<semantic__title>General</semantic__title>
-<semantic__p id="semantic___9b36ec04-04f7-38e3-00f7-a6b86106e974">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_1_scope" obligation="normative">
-<semantic__title>Clause 1: Scope</semantic__title>
-<semantic__p id="semantic___5f66aef8-f4bc-fd5f-1e74-dd97022fb59b">The use of the word “standard” replaced with “Best Practice”.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_3_references" obligation="normative">
-<semantic__title>Clause 3: References</semantic__title>
-<semantic__p id="semantic___dad6f2aa-7c16-cc59-0d56-59fc90bd4322">Proper reference to the Esri ShapeFile technical document was added.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_4_terms_and_definitions" obligation="normative">
-<semantic__title>Clause 4: Terms and Definitions</semantic__title>
-<semantic__p id="semantic___63bd0fb0-3b60-fde4-05df-cfa5fc04114c">This clause was reworded and URL to the CDB standard was added.</semantic__p>
-</semantic__clause>
-</semantic__clause>
-
-<semantic__clause id="semantic___revisions_to_volume_5_radar_cross_sections" obligation="normative">
-<semantic__title>Revisions to Volume 5: Radar Cross-Sections</semantic__title>
-<semantic__clause id="semantic___general_2" obligation="normative">
-<semantic__title>General</semantic__title>
-<semantic__p id="semantic___902a7db6-d8c4-c70b-2789-24f56d145846">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_4_terms_and_definitions_2" obligation="normative">
-<semantic__title>Clause 4 Terms and Definitions</semantic__title>
-<semantic__p id="semantic___5552ef04-744a-00ca-6306-70fde2b9799f">The correct URL to the CDB standard was inserted.</semantic__p>
-</semantic__clause>
-</semantic__clause>
-
-<semantic__clause id="semantic___revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp" obligation="normative">
-<semantic__title>Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP</semantic__title>
-<semantic__clause id="semantic___general_3" obligation="normative">
-<semantic__title>General</semantic__title>
-<semantic__p id="semantic___123f4916-236b-6cbc-389d-9fa338af444a">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_5_1_identifiers" obligation="normative">
-<semantic__title>Clause 5.1 Identifiers</semantic__title>
-<semantic__p id="semantic___46d82f49-0cfb-b28c-b965-8f6a7570d881">URI base updated to reflect version 1.1.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___requirement_class_metadata" obligation="normative">
-<semantic__title>Requirement Class Metadata</semantic__title>
-<semantic__p id="semantic___bb0f7a06-aaac-cce9-4834-8526b7494457">This requirement class was updated to consistent with Requirement 1 (/req/core/openflight/headercrs).</semantic__p>
-</semantic__clause>
-</semantic__clause>
-
-<semantic__clause id="semantic___revisions_to_volume_7_ogc_cdb_data_model_guidance" obligation="normative">
-<semantic__title>Revisions to Volume 7 OGC CDB Data Model Guidance</semantic__title>
-<semantic__p id="semantic___d22bdd5c-f877-a3f5-6315-03859d3cf10d">Note: Volume 7 was Annex A in the original CDB Specification v 3.2 submission to the OGC.</semantic__p>
-
-<semantic__p id="semantic___bb1ce327-be0f-fcd4-2682-c17784d733e6">Minor changes at various places to make sure the reader knows the difference between CDB 3.2 specification and OGC Version 1.1 standard.</semantic__p>
-
-<semantic__clause id="semantic___6_5_3_access_of_a_model_interior" obligation="normative">
-<semantic__title>6.5.3 Access of a Model Interior</semantic__title>
-<semantic__p id="semantic___0a629e91-5ef9-a364-ec56-0d5be91a2261">This section has minor changes to make wording on the use of OpenFlightgeneric and in line with the changes in CDB Volume 1.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___section_6_13_1_linear_feature_radar_simulation_example" obligation="normative">
-<semantic__title>Section 6.13.1 Linear Feature Radar Simulation Example</semantic__title>
-<semantic__p id="semantic___cb8b6fdd-7181-029d-2540-11656f041dbb">This section has minor changes to make wording on the use of ShapeFiles generic and consistent with the changes in CDB Volume 1.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___new_section_added_6_14_guideline_vector_priority_tile_lod_generation" obligation="normative">
-<semantic__title>New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation</semantic__title>
-<semantic__p id="semantic___77ceccec-6849-63bf-1ffb-520d4d2b8508">After CDB was submitted to the OGC, the CDB user community added a new Annex A sub-clause to clarify rules for vector priority in the LoD/Tile structure. This CDB user community approved clause is now incorporated in Volume 7 of the OGC CDB standard, version 1.1.</semantic__p>
-</semantic__clause>
-</semantic__clause>
-
-<semantic__clause id="semantic___revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance" obligation="normative">
-<semantic__title>Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance</semantic__title>
-<semantic__clause id="semantic___clause_4_terms_and_definitions_3" obligation="normative">
-<semantic__title>Clause 4 Terms and Definitions</semantic__title>
-<semantic__p id="semantic___ddcd694a-2177-5dca-eb32-ef0e2baf348d">The correct URL to the CDB standard was inserted.</semantic__p>
-</semantic__clause>
-</semantic__clause>
-
-<semantic__clause id="semantic___revisions_to_volume_10_cdb_implementation_guidance" obligation="normative">
-<semantic__title>Revisions to Volume 10: CDB Implementation Guidance</semantic__title>
-<semantic__clause id="semantic___general_4" obligation="normative">
-<semantic__title>General</semantic__title>
-<semantic__p id="semantic___f0edb8c2-558f-ba35-4f86-e2b9857240c9">Comments (artifacts) for version 1.0 were removed.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_4_terms_and_definitions_4" obligation="normative">
-<semantic__title>Clause 4 Terms and Definitions</semantic__title>
-<semantic__p id="semantic___5a95dc62-4437-3acb-c6e0-3eab0c7bc1af">The correct URL to the CDB standard was inserted. Additional abbreviations were added.</semantic__p>
-</semantic__clause>
-
-<semantic__clause id="semantic___clause_5_platform_recommendations" obligation="normative">
-<semantic__title>Clause 5: Platform Recommendations</semantic__title>
-<semantic__p id="semantic___5601fd0b-1679-3c02-fe41-8bb3d544955e">Correct grammatical errors.</semantic__p>
-</semantic__clause>
-</semantic__clause>
-
-<semantic__clause id="semantic___revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values" obligation="normative">
-<semantic__title>Revisions to Volume 12: CDB Navaids Attribution and Navaids Attribution Enumeration Values</semantic__title>
-<semantic__clause id="semantic___abstract_2" obligation="normative">
-<semantic__title>Abstract:</semantic__title>
-<semantic__p id="semantic___8bce5696-4a63-13bf-1738-0e971018adea">Slight re-wording of the abstract</semantic__p>
-</semantic__clause>
-</semantic__clause>
-</semantic__sections>
-</semantic__ogc-standard></source></metanorma><render><preprocess-xslt format="xml">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',xml,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="xml">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="presentation">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',presentation,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="presentation">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="rxl">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',rxl,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="rxl">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="html">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',html,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="html">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="doc">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',doc,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="doc">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="pdf">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'passthrough']">
-  <xsl:if test="contains(@formats,',pdf,')"> <!-- delimited -->
-  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-  </xsl:if>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-
-<preprocess-xslt format="pdf">
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
-  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
-<xsl:template match="*[local-name() = 'math-with-linebreak']">
-
-</xsl:template>
-<xsl:template match="*[local-name() = 'math-no-linebreak']">
-<xsl:apply-templates select="node()"/>
-</xsl:template>
-
-</xsl:stylesheet>
-
-</preprocess-xslt>
-<preprocess-xslt>
-  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mn="https://www.metanorma.org/ns/ogc" version="1.0">
-    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
-    <xsl:preserve-space elements="*"/>
-    <xsl:template match="@* | node()">
-      <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
-    </xsl:template>
-    <xsl:template match="mn:note/mn:name">
-      <xsl:copy><xsl:apply-templates select="@*|node()"/><xsl:if test="normalize-space() != ''">:<mn:tab/></xsl:if></xsl:copy>
-    </xsl:template>
-  </xsl:stylesheet>
-</preprocess-xslt>
-
-</render><source-highlighter-css>sourcecode table td { padding: 5px; }
+For the purposes of this document, the terms and definitions given in % and the following additionally apply.
+</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="multiple_and" language="en">%1<enum-comma>,</enum-comma> <conn>and</conn> %2</localized-string><localized-string key="binary_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="multiple_or" language="en">%1<enum-comma>,</enum-comma> <conn>or</conn> %2</localized-string><localized-string key="chain_and" language="en">%1 <conn>and</conn> %2</localized-string><localized-string key="chain_or" language="en">%1 <conn>or</conn> %2</localized-string><localized-string key="chain_from" language="en">%1 <conn>from</conn> %2</localized-string><localized-string key="chain_to" language="en">%1 <conn>to</conn> %2</localized-string><localized-string key="nested_xref" language="en">%1<comma>,</comma> %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">Example</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of Recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="admitted" language="en">ALTERNATIVE</localized-string><localized-string key="submitters" language="en">Submitters</localized-string><localized-string key="contributors_clause" language="en">Contributors</localized-string><localized-string key="dochistory" language="en">Revision history</localized-string><localized-string key="sourcecode" language="en">Listing</localized-string><localized-string key="table_of_figures" language="en">Table of Figures</localized-string><localized-string key="security_empty" language="en">No security considerations have been made for this document.</localized-string><localized-string key="submission_date" language="en">Submission Date</localized-string><localized-string key="approval_date" language="en">Approval Date</localized-string><localized-string key="publication_date" language="en">Publication Date</localized-string><localized-string key="author" language="en">Author</localized-string><localized-string key="editor_full" language="en">Editor</localized-string><localized-string key="contributor" language="en">Contributor</localized-string><localized-string key="stage_dict.draft" language="en">Draft</localized-string><localized-string key="stage_dict.work-item-draft" language="en">Work Item Draft</localized-string><localized-string key="stage_dict.swg-draft" language="en">Candidate SWG Draft</localized-string><localized-string key="stage_dict.oab-review" language="en">Candidate OAB Review Draft</localized-string><localized-string key="stage_dict.public-rfc" language="en">Candidate Public RFC Draft</localized-string><localized-string key="stage_dict.tc-vote" language="en">Candidate TC Vote Draft</localized-string><localized-string key="stage_dict.approved" language="en">Approved</localized-string><localized-string key="stage_dict.published" language="en">Published</localized-string><localized-string key="stage_dict.deprecated" language="en">Deprecated</localized-string><localized-string key="stage_dict.rescinded" language="en">Rescinded</localized-string><localized-string key="stage_dict.retired" language="en">Retired</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>color-admonition-caution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-editor</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-important</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-note</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-safety-precaution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-tip</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-todo</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-warning</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-background-definition-description</name><value>rgb(242, 251, 255)</value></presentation-metadata><presentation-metadata><name>color-background-definition-term</name><value>rgb(215, 243, 255)</value></presentation-metadata><presentation-metadata><name>color-background-page</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-header</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-even</name><value>rgb(252, 246, 222)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-odd</name><value>rgb(254, 252, 245)</value></presentation-metadata><presentation-metadata><name>color-background-term-admitted-label</name><value>rgb(223, 236, 249)</value></presentation-metadata><presentation-metadata><name>color-background-term-deprecated-label</name><value>rgb(237, 237, 238)</value></presentation-metadata><presentation-metadata><name>color-background-term-preferred-label</name><value>rgb(249, 235, 187)</value></presentation-metadata><presentation-metadata><name>color-background-text-label-legacy</name><value>rgb(33, 60, 107)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-1</name><value>rgb(237, 193, 35)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-2</name><value>rgb(246, 223, 140)</value></presentation-metadata><presentation-metadata><name>color-text</name><value>rgb(88, 89, 91)</value></presentation-metadata><presentation-metadata><name>color-text-title</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><source-highlighter-css>sourcecode table td { padding: 5px; }
 sourcecode table pre { margin: 0; }
 sourcecode, sourcecode .w {
   color: #444444;
@@ -638,57 +69,55 @@ sourcecode .nt {
 <boilerplate><copyright-statement>
 
 <clause id="_copyright_notice" obligation="normative">
-<title depth="1">Copyright notice</title>
-<p id="_f89cdf56-3e64-0a54-e756-26a53e0385c5" align="center">Copyright © 2018 Open Geospatial Consortium<br/>
-To obtain additional rights of use, visit
-<link target="https://www.ogc.org/legal"/></p>
+<title id="_c7c2c4a8-ca0c-46c1-b8c5-951e1465e72e">Copyright notice</title><fmt-title depth="1"><semx element="title" source="_c7c2c4a8-ca0c-46c1-b8c5-951e1465e72e">Copyright notice</semx></fmt-title>
+<p id="_318c11f8-be6d-7e27-2db7-873225bd1a51" align="center">Copyright © 2018 Open Geospatial Consortium<br/> To obtain additional rights of use, visit<link target="https://www.ogc.org/legal" id="_e6755272-5ac3-46ef-be9a-7df474a9a14c"/><semx element="link" source="_e6755272-5ac3-46ef-be9a-7df474a9a14c"><fmt-link target="https://www.ogc.org/legal"/></semx></p>
 </clause>
 
 <clause id="_note" obligation="normative">
-<title depth="1">Note</title>
-<p id="_11e88dba-9912-1a89-a82d-7291bf232191" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+<title id="_a906f244-6592-4134-ae63-dac406a901d2">Note</title><fmt-title depth="1"><semx element="title" source="_a906f244-6592-4134-ae63-dac406a901d2">Note</semx></fmt-title>
+<p id="_e1d5d5c4-54c3-2761-be2c-22547f01c057" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
-<p id="_15067213-c07b-cba0-7e18-395ab2e00ab3" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+<p id="_02892e94-7b43-630a-129c-d2e0f75ff92b" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
 </clause>
 </copyright-statement>
 
 <license-statement>
 
 <clause id="_license_agreement" obligation="normative">
-<title depth="1">License Agreement</title>
-<p id="_f5fe34fd-12e2-2bb7-8cd6-9d4cffa96538">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license"/></p>
+<title id="_30e1b775-3988-46f8-871f-604382e2c63a">License Agreement</title><fmt-title depth="1"><semx element="title" source="_30e1b775-3988-46f8-871f-604382e2c63a">License Agreement</semx></fmt-title>
+<p id="_772872dd-928c-666f-92c5-676f7f5d3071">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license" id="_5665b47c-5e5a-4911-9f55-3d327bef4c63"/><semx element="link" source="_5665b47c-5e5a-4911-9f55-3d327bef4c63"><fmt-link target="https://www.ogc.org/license"/></semx></p>
 </clause>
 </license-statement>
 
 <legal-statement>
 
 <clause id="_notice" obligation="normative">
-<title depth="1">Notice</title>
-<p id="_40570159-7b31-874a-8789-26de9fe11d72">This document is not an OGC standard. This document provides release notes for an OGC standard. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
+<title id="_79cda744-d4ea-48bd-802c-04e6101b3c60">Notice</title><fmt-title depth="1"><semx element="title" source="_79cda744-d4ea-48bd-802c-04e6101b3c60">Notice</semx></fmt-title>
+<p id="_7cc1bfbd-9c3c-c1ca-6546-74299b1b9305">This document is not an OGC standard. This document provides release notes for an OGC standard. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
 
-<p id="_d80fd0eb-fbfd-dec3-0ddb-92472f4d5fcf">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+<p id="_e8629e34-594d-6076-a18a-23d7b5df19ba">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
 </clause>
 </legal-statement>
 
 <feedback-statement>
 
 </feedback-statement>
-</boilerplate><preface><clause type="toc" id="_27ae6c4a-eb0f-454a-9ef3-35a4f12670c0" displayorder="1"><title depth="1">Contents</title></clause>
-<abstract id="_abstract" displayorder="2"><title depth="1">I.<tab/>Abstract</title><p id="_74fe3e9c-938f-0ee9-225d-c01beaf8bb66">This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</p>
-</abstract><clause id="_341ceea0-e924-434b-8f03-14900e4407a3" type="keywords" displayorder="3">
-<title depth="1">II.<tab/>Keywords</title>
+</boilerplate><preface><clause type="toc" id="_fbac7241-8808-4e04-a8f2-183f31a89098" displayorder="1"><fmt-title depth="1">Contents</fmt-title></clause>
+<abstract id="_abstract" displayorder="2"><title id="_9d5f4da2-ca63-429f-9593-282b384b7e1f">Abstract</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_abstract">I</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_9d5f4da2-ca63-429f-9593-282b384b7e1f">Abstract</semx></fmt-title><fmt-xref-label><semx element="title" source="_abstract">Abstract</semx></fmt-xref-label><p id="_0c5e0e61-0933-b147-fe9e-5d2dc4b7e5bc">This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</p>
+</abstract><clause id="_211d8d29-59b0-4049-9fe2-9c0d569cecad" type="keywords" displayorder="3">
+<title id="_ec9479b1-c7bb-4b4c-a8d7-e90c0c1fbf22">Keywords</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_211d8d29-59b0-4049-9fe2-9c0d569cecad">II</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ec9479b1-c7bb-4b4c-a8d7-e90c0c1fbf22">Keywords</semx></fmt-title><fmt-xref-label><semx element="title" source="_211d8d29-59b0-4049-9fe2-9c0d569cecad">Keywords</semx></fmt-xref-label>
 <p>The following are keywords to be used by search engines and document catalogues.</p>
 <p>ogcdoc, OGC document, CDB, Common Data Base, simulation, synthetic environment, version 1.1</p></clause>
-<clause type="security" id="_1bfba592-0713-41de-d69c-a83eb10efc35" obligation="informative" displayorder="4">
-  <title depth="1">III.<tab/>Security considerations</title>
-  <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p></clause><clause id="_3697a242-4df5-4bbc-80d2-33241be5ba28" type="submitting_orgs" displayorder="5">
-<title depth="1">IV.<tab/>Submitting Organizations</title>
+<clause type="security" id="_11f014e9-c98a-c81d-eeb6-de3baa47ebea" obligation="informative" displayorder="4">
+  <title id="_10b8d146-2e91-4271-8c13-abeee480662d">Security considerations</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_11f014e9-c98a-c81d-eeb6-de3baa47ebea">III</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_10b8d146-2e91-4271-8c13-abeee480662d">Security considerations</semx></fmt-title><fmt-xref-label><semx element="title" source="_11f014e9-c98a-c81d-eeb6-de3baa47ebea">Security considerations</semx></fmt-xref-label>
+  <p id="_87632f48-a936-3f14-4cc0-36d21a86a8b8">No security considerations have been made for this document.</p></clause><clause id="_0fb70068-6c10-4f8a-beaf-3ad684136a66" type="submitting_orgs" displayorder="5">
+<title id="_bef96038-3c7b-4f11-8436-9cb08671a570">Submitting Organizations</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_0fb70068-6c10-4f8a-beaf-3ad684136a66">IV</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bef96038-3c7b-4f11-8436-9cb08671a570">Submitting Organizations</semx></fmt-title><fmt-xref-label><semx element="title" source="_0fb70068-6c10-4f8a-beaf-3ad684136a66">Submitting Organizations</semx></fmt-xref-label>
 <p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p>
  <ul><li>OGC CDB Standards Working Group</li></ul>
  </clause>
 <submitters id="_submitters" displayorder="6">
-<title depth="1">V.<tab/>Submitters</title>
-<table id="_6c84f1d9-1180-88e6-f288-dd71feef683b" unnumbered="true"><thead><tr><th valign="middle" align="left">Name</th>
+<title id="_faa826d7-9c98-4629-be23-c916fbba5aab">Submitters</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_submitters">V</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_faa826d7-9c98-4629-be23-c916fbba5aab">Submitters</semx></fmt-title><fmt-xref-label><semx element="title" source="_submitters">Submitters</semx></fmt-xref-label>
+<table id="_b90a77fc-53a6-2267-ad5b-fcaa17a93c7a" unnumbered="true"><thead><tr><th valign="middle" align="left">Name</th>
 <th valign="middle" align="left">Affiliation</th>
 </tr></thead>
 <tbody><tr><td valign="middle" align="left">Carl Reed</td>
@@ -701,324 +130,327 @@ To obtain additional rights of use, visit
 </preface><sections>
 
 <clause id="_revisions_to_volume_1_cdb_core_model_and_physical_data_store" obligation="normative" displayorder="7">
-<title depth="1">1.<tab/>Revisions to Volume 1: CDB Core Model and Physical Data Store</title>
+<title id="_97502a9f-81e6-4952-898f-2d6b35041098">Revisions to Volume 1: CDB Core Model and Physical Data Store</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_97502a9f-81e6-4952-898f-2d6b35041098">Revisions to Volume 1: CDB Core Model and Physical Data Store</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx></fmt-xref-label>
 <clause id="_introductory_clause_future_work" obligation="normative">
-<title depth="2">1.1.<tab/>Introductory Clause “Future Work”</title>
-<p id="_df90a1e2-542c-f294-be33-594f55f86db2">Updated to reflect work done in CDB version 1.1 as well as new requirements identified in OGC Testbed 13.</p>
+<title id="_a73de95b-ab6e-462e-a84b-03dcbeabd5a1">Introductory Clause “Future Work”</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_introductory_clause_future_work">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_a73de95b-ab6e-462e-a84b-03dcbeabd5a1">Introductory Clause “Future Work”</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_introductory_clause_future_work">1</semx></fmt-xref-label>
+<p id="_689197a9-34cc-914c-e949-d6ef535e5d6a">Updated to reflect work done in CDB version 1.1 as well as new requirements identified in OGC Testbed 13.</p>
 </clause>
 
 <clause id="_1_0_1_corrigendum_changes_included" obligation="normative">
-<title depth="2">1.2.<tab/>1.0.1 Corrigendum changes included</title>
-<p id="_347e1ecb-a24a-0d7b-7799-db2f26af4c2b">All CDB 1.0.1 Corrigendum changes incorporated. See OGC document 17-064 Summary of Corrigendum Changes for CDB Volume1: Core.</p>
+<title id="_bd52c7dd-ac92-4704-b620-a936de628a33">1.0.1 Corrigendum changes included</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_1_0_1_corrigendum_changes_included">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bd52c7dd-ac92-4704-b620-a936de628a33">1.0.1 Corrigendum changes included</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_1_0_1_corrigendum_changes_included">2</semx></fmt-xref-label>
+<p id="_04cc7d47-3ba3-bf6e-0004-01c5bd227b9d">All CDB 1.0.1 Corrigendum changes incorporated. See OGC document 17-064 Summary of Corrigendum Changes for CDB Volume1: Core.</p>
 </clause>
 
 <clause id="_general_change_all_file_extensions_in_requirements_are_now_generic" obligation="normative">
-<title depth="2">1.3.<tab/>General Change: All file extensions in Requirements are now generic</title>
-<p id="_17846fa8-c51e-63ef-cf84-ecfc3f78fbc1">All file specific extensions stated in requirements have been made generic. For example, CDB Volume 1 Requirement formerly stated:</p>
+<title id="_921a19a0-5251-451b-864d-d5ad7dd07873">General Change: All file extensions in Requirements are now generic</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_general_change_all_file_extensions_in_requirements_are_now_generic">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_921a19a0-5251-451b-864d-d5ad7dd07873">General Change: All file extensions in Requirements are now generic</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_general_change_all_file_extensions_in_requirements_are_now_generic">3</semx></fmt-xref-label>
+<p id="_68799464-d675-49e0-8ec8-13322016555b">All file specific extensions stated in requirements have been made generic. For example, CDB Volume 1 Requirement formerly stated:</p>
 
-<p id="_8a157a4c-829a-5d34-b5b0-6e247269dbae">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.flt</tt>.</p>
+<p id="_ba37958f-1b68-09b8-dd88-2969468c0da2">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.flt</tt>.</p>
 
-<p id="_24be7957-453d-e30d-97ec-ef7b60c6ebe9">This Requirement now reads:</p>
+<p id="_3b241d9e-21ce-504e-d4c8-fc84bfa1b8c7">This Requirement now reads:</p>
 
-<p id="_4a61798d-76dc-89cb-5263-eeeef2382a3d">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.&#x3c;ext&#x3e;</tt></p>
+<p id="_4e8ffd43-ec69-e5c8-1f7c-9dfcc6b42f76">The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.&#x3c;ext&#x3e;</tt></p>
 
-<p id="_a483c09c-3858-c78e-1bc9-fbef3bc22e67">Where <tt>&#x3c;ext&#x3e;</tt> is the correct file name extension for the data encoded in the file. There is also a footnote that specifies what the extension was in version 1.0 of the CDB standard.</p>
+<p id="_706969fd-301a-fa2b-ea49-a1bf00a80e9a">Where <tt>&#x3c;ext&#x3e;</tt> is the correct file name extension for the data encoded in the file. There is also a footnote that specifies what the extension was in version 1.0 of the CDB standard.</p>
 </clause>
 
 <clause id="_clause_1_4_3_cdb_metadata" obligation="normative">
-<title depth="2">1.4.<tab/>Clause 1.4.3 CDB Metadata</title>
-<p id="_646c9de8-1487-531e-51b6-394434853e11">This clause was updated to:</p>
+<title id="_56f6af9a-166d-4ca8-80aa-3ed315ea849d">Clause 1.4.3 CDB Metadata</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_1_4_3_cdb_metadata">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_56f6af9a-166d-4ca8-80aa-3ed315ea849d">Clause 1.4.3 CDB Metadata</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_1_4_3_cdb_metadata">4</semx></fmt-xref-label>
+<p id="_653708a2-9db4-0611-4fc1-15c9581d187a">This clause was updated to:</p>
 
-<ul id="_e1c52137-2be9-e506-7839-6dbb89b3068d"><li><p id="_0fcd173a-4c61-dc0c-f16f-46d8b6c84f25">Provide definitions for metadata, controlled vocabularies, and enumerations. These are in clauses 1.4.3.1, 1.4.3.2, and 1.4.3.3.</p>
+<ul id="_ff21b440-6bbb-56eb-ffc9-8f6ce4eb7d1c"><li><p id="_5e3c93ba-aa93-d3d2-3dd0-382959a0c0b7">Provide definitions for metadata, controlled vocabularies, and enumerations. These are in clauses 1.4.3.1, 1.4.3.2, and 1.4.3.3.</p>
 </li>
-<li><p id="_e73ca05b-34d7-c4ec-d5aa-7066f90a64bb">Insert a table that provides more detailed information on each of the files included in the metadata folder.</p>
+<li><p id="_84a435e1-63db-4ca3-ef63-2cfd5bc64dcf">Insert a table that provides more detailed information on each of the files included in the metadata folder.</p>
 </li>
 </ul>
 </clause>
 
 <clause id="_clause_1_4_4_cdb_directory_file_naming_and_structure" obligation="normative">
-<title depth="2">1.5.<tab/>Clause 1.4.4 CDB Directory File Naming and Structure</title>
-<p id="_2f0fb3f0-e887-704b-bd65-060461d95e5c">This clause is updated to:</p>
+<title id="_17de154d-7fba-47e9-86f8-c79272aca9b2">Clause 1.4.4 CDB Directory File Naming and Structure</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_1_4_4_cdb_directory_file_naming_and_structure">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_17de154d-7fba-47e9-86f8-c79272aca9b2">Clause 1.4.4 CDB Directory File Naming and Structure</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_1_4_4_cdb_directory_file_naming_and_structure">5</semx></fmt-xref-label>
+<p id="_20d804cc-5bae-d605-a657-ed1c8b8a0caf">This clause is updated to:</p>
 
-<ul id="_3eab66d2-8b28-9bec-dd78-724a1f446027"><li><p id="_766a126d-5056-6e30-3a52-2e7ba659d5ad">Reflect the use of generic file extensions in all Requirements and the Abstract Test Suite rather than specific file extensions.</p>
+<ul id="_1ea716a6-e954-932a-c67e-09620cfae87f"><li><p id="_e03ce199-8ba7-94dc-5639-e921e9fb9203">Reflect the use of generic file extensions in all Requirements and the Abstract Test Suite rather than specific file extensions.</p>
 </li>
-<li><p id="_d27e4048-3775-b66a-d9d4-e5c73a14562d">Reflect the addition of enumerations and controlled vocabularies as concepts in the standard.</p>
+<li><p id="_f79028cd-a7f8-8339-9ec5-f08ede059333">Reflect the addition of enumerations and controlled vocabularies as concepts in the standard.</p>
 </li>
 </ul>
 </clause>
 
 <clause id="_clause_1_7_1_4_system_hardware_independence" obligation="normative">
-<title depth="2">1.6.<tab/>Clause 1.7.1.4 System Hardware Independence</title>
-<p id="_47391184-5b11-9c5e-16ed-906654e1ccc4">Slight re-wording to make the sentence grammatically correct.</p>
+<title id="_286b8d4b-f3db-490d-85fd-e133482df605">Clause 1.7.1.4 System Hardware Independence</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_1_7_1_4_system_hardware_independence">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_286b8d4b-f3db-490d-85fd-e133482df605">Clause 1.7.1.4 System Hardware Independence</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_1_7_1_4_system_hardware_independence">6</semx></fmt-xref-label>
+<p id="_c0b4cb49-2342-ff18-6601-0474c05595ff">Slight re-wording to make the sentence grammatically correct.</p>
 </clause>
 
 <clause id="_clause_3_1_1_metadata_directory" obligation="normative">
-<title depth="2">1.7.<tab/>Clause 3.1.1 Metadata Directory</title>
-<p id="_b677e7ac-75ac-28ee-55c2-672649377038">Reformatted to be more easily read and understood.</p>
+<title id="_9e2aaacb-1521-4af8-9b89-6d8bb13e9b41">Clause 3.1.1 Metadata Directory</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_1_1_metadata_directory">7</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_9e2aaacb-1521-4af8-9b89-6d8bb13e9b41">Clause 3.1.1 Metadata Directory</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_1_1_metadata_directory">7</semx></fmt-xref-label>
+<p id="_54b7f0d4-ac9c-6a04-0279-681c664c2c8d">Reformatted to be more easily read and understood.</p>
 </clause>
 
 <clause id="_clause_3_1_1metadata_directory" obligation="normative">
-<title depth="2">1.8.<tab/>Clause 3.1.1Metadata Directory</title>
-<p id="_0bc0afe8-ea92-0289-9a6c-f315b819b628">A new metadata file description for global metadata – including geospatial metadata -applicable to an entire CDB data store was added. This new metadata file description needs to be read in concert with the changes in clauses 1.4.3, 5.1, and specifically 5.1.6.</p>
+<title id="_9af60f78-bbb3-495d-875e-2e7d7da4d911">Clause 3.1.1Metadata Directory</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_1_1metadata_directory">8</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_9af60f78-bbb3-495d-875e-2e7d7da4d911">Clause 3.1.1Metadata Directory</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_1_1metadata_directory">8</semx></fmt-xref-label>
+<p id="_bb4f7dad-b14d-8761-9552-a385ebf6c8ac">A new metadata file description for global metadata – including geospatial metadata -applicable to an entire CDB data store was added. This new metadata file description needs to be read in concert with the changes in clauses 1.4.3, 5.1, and specifically 5.1.6.</p>
 </clause>
 
 <clause id="_clause_3_4_2_4_examples" obligation="normative">
-<title depth="2">1.9.<tab/>Clause 3.4.2.4 Examples</title>
-<p id="_c0ff2220-a38d-9833-75d8-e9a99d024e4d">An example of the file path for all associated metadata is included.</p>
+<title id="_8f7c635d-52cc-422a-869b-45ef916d7555">Clause 3.4.2.4 Examples</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_4_2_4_examples">9</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8f7c635d-52cc-422a-869b-45ef916d7555">Clause 3.4.2.4 Examples</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_4_2_4_examples">9</semx></fmt-xref-label>
+<p id="_92214340-7f54-e170-fe2f-8fbcd0d813ff">An example of the file path for all associated metadata is included.</p>
 </clause>
 
 <clause id="_clause_3_4_4_3_examples" obligation="normative">
-<title depth="2">1.10.<tab/>Clause 3.4.4.3 Examples</title>
-<p id="_a8b439b1-791f-5947-39d6-21f9f6f2c0b9">An example of the file path for all associated metadata is included.</p>
+<title id="_dd95642e-f0e5-4637-b28d-dc8eec02755e">Clause 3.4.4.3 Examples</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_4_4_3_examples">10</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_dd95642e-f0e5-4637-b28d-dc8eec02755e">Clause 3.4.4.3 Examples</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_4_4_3_examples">10</semx></fmt-xref-label>
+<p id="_b5f4f779-99e4-12cc-b80f-8853a983de12">An example of the file path for all associated metadata is included.</p>
 </clause>
 
 <clause id="_clause_3_4_4_4_examples" obligation="normative">
-<title depth="2">1.11.<tab/>Clause 3.4.4.4 Examples</title>
-<p id="_3160b4f5-0857-7233-0f71-655ceff5d767">An example of the file path for all associated metadata is included.</p>
+<title id="_2a184609-960c-44a4-816c-29f90b03344c">Clause 3.4.4.4 Examples</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_4_4_4_examples">11</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_2a184609-960c-44a4-816c-29f90b03344c">Clause 3.4.4.4 Examples</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_4_4_4_examples">11</semx></fmt-xref-label>
+<p id="_61d6a1e4-7b6b-fe0a-f638-deb8d1d0b449">An example of the file path for all associated metadata is included.</p>
 </clause>
 
 <clause id="_clause_3_4_5_2_examples" obligation="normative">
-<title depth="2">1.12.<tab/>Clause 3.4.5.2 Examples</title>
-<p id="_e012a0a6-1312-793f-0cde-4702f29b58e9">An example of the file path for associated metadata is included.</p>
+<title id="_5506c920-06b1-4db6-b20b-6f2d48ced672">Clause 3.4.5.2 Examples</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_4_5_2_examples">12</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5506c920-06b1-4db6-b20b-6f2d48ced672">Clause 3.4.5.2 Examples</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_4_5_2_examples">12</semx></fmt-xref-label>
+<p id="_fe1ca12f-cfe5-816e-7fc6-0fed78058702">An example of the file path for associated metadata is included.</p>
 </clause>
 
 <clause id="_clause_5_1_enhanced_to_include_discussion_of_controlled_vocabularies" obligation="normative">
-<title depth="2">1.13.<tab/>Clause 5.1 enhanced to include discussion of Controlled Vocabularies</title>
-<p id="_96ab3bd8-85d6-0609-6ecc-92a76ec01677">Clause 5.1 has additional wording explaining CDB use of metadata, enumerations and controlled vocabularies. This change resulted from the work in CDB 1.1 for metadata. Many elements in CDB 1.0 that were referred to as metadata are actually enumerations and controlled vocabularies.</p>
+<title id="_ce8d56e7-6bf3-438c-a716-5a3ef2f18fbb">Clause 5.1 enhanced to include discussion of Controlled Vocabularies</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_enhanced_to_include_discussion_of_controlled_vocabularies">13</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ce8d56e7-6bf3-438c-a716-5a3ef2f18fbb">Clause 5.1 enhanced to include discussion of Controlled Vocabularies</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_enhanced_to_include_discussion_of_controlled_vocabularies">13</semx></fmt-xref-label>
+<p id="_03284130-ce79-7cce-ee31-b0d1b83e0798">Clause 5.1 has additional wording explaining CDB use of metadata, enumerations and controlled vocabularies. This change resulted from the work in CDB 1.1 for metadata. Many elements in CDB 1.0 that were referred to as metadata are actually enumerations and controlled vocabularies.</p>
 </clause>
 
 <clause id="_clause_5_1_1_global_metadata" obligation="normative">
-<title depth="2">1.14.<tab/>Clause 5.1.1 Global Metadata</title>
-<p id="_ffa7b67a-7a7e-eab0-8989-5c2f2c340f07">A new clause added that defines what is meant by Global Metadata in general for a CDB data store.</p>
+<title id="_5e803548-4dcf-434e-be8d-b620652e3690">Clause 5.1.1 Global Metadata</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_1_global_metadata">14</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5e803548-4dcf-434e-be8d-b620652e3690">Clause 5.1.1 Global Metadata</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_1_global_metadata">14</semx></fmt-xref-label>
+<p id="_f8d3c86a-a3b5-7b82-d5d6-06ef669a7926">A new clause added that defines what is meant by Global Metadata in general for a CDB data store.</p>
 </clause>
 
 <clause id="_clause_5_1_2_local_metadata" obligation="normative">
-<title depth="2">1.15.<tab/>Clause 5.1.2 Local Metadata</title>
-<p id="_9a1401b4-24df-1d23-adac-650016983fbc">A new clause added that defines what is meant by Local Metadata for a CDB data store.</p>
+<title id="_07983bd9-3fe1-494a-b997-5f64e8bd6786">Clause 5.1.2 Local Metadata</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_2_local_metadata">15</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_07983bd9-3fe1-494a-b997-5f64e8bd6786">Clause 5.1.2 Local Metadata</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_2_local_metadata">15</semx></fmt-xref-label>
+<p id="_1a4bd748-e0bb-bcac-6ed6-3bb23876ddd7">A new clause added that defines what is meant by Local Metadata for a CDB data store.</p>
 </clause>
 
 <clause id="_clause_5_1_8_formerly_clause_5_1_6_version_metadata" obligation="normative">
-<title depth="2">1.16.<tab/>Clause 5.1.8 (Formerly Clause 5.1.6) Version Metadata</title>
-<p id="_0693f132-2661-db93-fdae-88c71e4886c8">Specification version definition enhanced to include both OGC and community versions of the standard.</p>
+<title id="_25190b23-0420-4693-8693-043970ab8a7c">Clause 5.1.8 (Formerly Clause 5.1.6) Version Metadata</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_8_formerly_clause_5_1_6_version_metadata">16</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_25190b23-0420-4693-8693-043970ab8a7c">Clause 5.1.8 (Formerly Clause 5.1.6) Version Metadata</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_8_formerly_clause_5_1_6_version_metadata">16</semx></fmt-xref-label>
+<p id="_05c4738f-8b3a-a22c-d3aa-940e413e327c">Specification version definition enhanced to include both OGC and community versions of the standard.</p>
 
-<p id="_f3ca50bd-8164-90c7-6102-ced9dec645e4">Addition of a mandatory <tt>&#x3c;Metadata standard="metadata-standard-name"&#x3e;</tt> element that specifies the metadata standard used for a CDB data store. This includes a list of metadata standards commonly used in the geospatial and simulation industries. This enumeration is governed by and agreed to by the OGC CDB Standards Working Group. Other metadata standards or profiles of standards may be added upon request and with proper justification. For backwards compatibility, the Metadata_standard element can be set to “NoMetadata”.</p>
+<p id="_c89aaf44-c1e1-0afd-a64c-73a337032911">Addition of a mandatory <tt>&#x3c;Metadata standard="metadata-standard-name"&#x3e;</tt> element that specifies the metadata standard used for a CDB data store. This includes a list of metadata standards commonly used in the geospatial and simulation industries. This enumeration is governed by and agreed to by the OGC CDB Standards Working Group. Other metadata standards or profiles of standards may be added upon request and with proper justification. For backwards compatibility, the Metadata_standard element can be set to “NoMetadata”.</p>
 </clause>
 
 <clause id="_clause_5_1_12_geospatial_metadata_guidance" obligation="normative">
-<title depth="2">1.17.<tab/>Clause 5.1.12 Geospatial Metadata Guidance</title>
-<p id="_fdc54eba-1fa3-d32b-0c6e-effd679235f0">This is a new clause that provides general implementation guidance for encoding and storing metadata in a CDB data store.</p>
+<title id="_14f777b3-f8ce-4553-a5d2-a71cab12feee">Clause 5.1.12 Geospatial Metadata Guidance</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_12_geospatial_metadata_guidance">17</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_14f777b3-f8ce-4553-a5d2-a71cab12feee">Clause 5.1.12 Geospatial Metadata Guidance</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_12_geospatial_metadata_guidance">17</semx></fmt-xref-label>
+<p id="_9141f4db-33b6-9767-317c-df83c8a940d9">This is a new clause that provides general implementation guidance for encoding and storing metadata in a CDB data store.</p>
 </clause>
 
 <clause id="_clause_5_1_12_1_suggested_global_geospatial_metadata_elements" obligation="normative">
-<title depth="2">1.18.<tab/>Clause 5.1.12.1 Suggested Global Geospatial Metadata Elements</title>
-<p id="_bafd521b-1eb2-9830-4eaa-5ad182442a76">This is a new clause that provides guidance on which metadata elements should be included in the global metadata resource.</p>
+<title id="_5d2bdda7-59dc-4124-b5bd-bc6f4c2919d8">Clause 5.1.12.1 Suggested Global Geospatial Metadata Elements</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_12_1_suggested_global_geospatial_metadata_elements">18</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5d2bdda7-59dc-4124-b5bd-bc6f4c2919d8">Clause 5.1.12.1 Suggested Global Geospatial Metadata Elements</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_12_1_suggested_global_geospatial_metadata_elements">18</semx></fmt-xref-label>
+<p id="_16de429b-e880-a730-e462-7b08d0aa41dc">This is a new clause that provides guidance on which metadata elements should be included in the global metadata resource.</p>
 </clause>
 
 <clause id="_clause_5_1_12_2_suggested_local_geospatial_metadata_elements" obligation="normative">
-<title depth="2">1.19.<tab/>Clause 5.1.12.2 Suggested Local Geospatial Metadata Elements</title>
-<p id="_dfbe1191-0123-6e69-882a-64d9f01459c2">This is a new clause that provides guidance on which metadata elements should be included in a local metadata resource.</p>
+<title id="_8ca9007f-4b61-4133-a6d9-6a5091e533da">Clause 5.1.12.2 Suggested Local Geospatial Metadata Elements</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_12_2_suggested_local_geospatial_metadata_elements">19</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8ca9007f-4b61-4133-a6d9-6a5091e533da">Clause 5.1.12.2 Suggested Local Geospatial Metadata Elements</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_12_2_suggested_local_geospatial_metadata_elements">19</semx></fmt-xref-label>
+<p id="_cf689955-2e5a-1fcc-753a-7a659cf7ef83">This is a new clause that provides guidance on which metadata elements should be included in a local metadata resource.</p>
 </clause>
 
 <clause id="_clause_5_6" obligation="normative">
-<title depth="2">1.20.<tab/>Clause 5.6</title>
-<p id="_38e8d53a-19f7-a5ed-07b8-15708388ded0">Cross walked the CDB tiled grid concept with the OGC/ISO baseline, specifically the OGC Coverage Implementation Schema (CIS) September 2017.</p>
+<title id="_a565ba1a-7375-42b4-a85a-bc8b31844a7e">Clause 5.6</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_6">20</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_a565ba1a-7375-42b4-a85a-bc8b31844a7e">Clause 5.6</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_6">20</semx></fmt-xref-label>
+<p id="_de430850-1e32-3165-7034-77b288c8c846">Cross walked the CDB tiled grid concept with the OGC/ISO baseline, specifically the OGC Coverage Implementation Schema (CIS) September 2017.</p>
 </clause>
 
 <clause id="_clause_5_6_2_3_2_vsti_default_read_value_change_request_490" obligation="normative">
-<title depth="2">1.21.<tab/>Clause 5.6.2.3.2 VSTI Default Read Value (Change Request 490)</title>
-<p id="_24da5b53-2eb1-aff0-5d3b-80bc2c797ebc">Requirement 102 is against CDB client-devices and not the CDB data store itself. This is an untestable requirement, and further, a client-device should be allowed to read and consume a CDB in any manne that it wishes. There might well be good reasons to not follow those rules in a client-device, so the spec should not impose this.</p>
+<title id="_1025d26f-f5df-4a86-8573-903cc4a93479">Clause 5.6.2.3.2 VSTI Default Read Value (Change Request 490)</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_6_2_3_2_vsti_default_read_value_change_request_490">21</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_1025d26f-f5df-4a86-8573-903cc4a93479">Clause 5.6.2.3.2 VSTI Default Read Value (Change Request 490)</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_6_2_3_2_vsti_default_read_value_change_request_490">21</semx></fmt-xref-label>
+<p id="_04f3feaa-aab8-9db5-166f-dbcdbf3a9eed">Requirement 102 is against CDB client-devices and not the CDB data store itself. This is an untestable requirement, and further, a client-device should be allowed to read and consume a CDB in any manne that it wishes. There might well be good reasons to not follow those rules in a client-device, so the spec should not impose this.</p>
 
-<p id="_d746e0a7-daa6-d583-dc57-eb36642661ec">Therefore, this requirement was removed and replaced with informative guidance for client implementations. The related test 102 is removed from Annex A — Abstract Test Suite.</p>
+<p id="_4c06e374-0cfa-364c-1be7-d87a720bb62c">Therefore, this requirement was removed and replaced with informative guidance for client implementations. The related test 102 is removed from Annex A — Abstract Test Suite.</p>
 </clause>
 
 <clause id="_new_clause_5_7_1_6_4_network_vector_priority" obligation="normative">
-<title depth="2">1.22.<tab/>New Clause: 5.7.1.6.4 Network Vector Priority</title>
-<p id="_7e128f16-7944-81f4-c991-58e1f8a81190">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for network vector priority. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1.</p>
+<title id="_fb7b574a-0b1d-4098-8156-a3794d67aca3">New Clause: 5.7.1.6.4 Network Vector Priority</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_new_clause_5_7_1_6_4_network_vector_priority">22</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_fb7b574a-0b1d-4098-8156-a3794d67aca3">New Clause: 5.7.1.6.4 Network Vector Priority</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_new_clause_5_7_1_6_4_network_vector_priority">22</semx></fmt-xref-label>
+<p id="_f2b3c3ab-ad56-b4cc-b4fa-cc88d93f5ed5">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for network vector priority. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1.</p>
 </clause>
 
 <clause id="_new_clause_5_7_1_9_vector_significant_size_and_spatial_significance_criteria" obligation="normative">
-<title depth="2">1.23.<tab/>New Clause: 5.7.1.9 Vector Significant Size and Spatial Significance Criteria</title>
-<p id="_eab76300-f4f8-e81a-6080-29f777ff8cb9">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for vector significant size and spatial significance. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1. Clause 5.7.1.9 includes two sub-clauses: 5.7.1.9.1 Vector Significant Size and 5.7.1.9.2 Levels of Detail and Spatial Significance Criteria.</p>
+<title id="_1699cb0a-c182-4540-9001-f3ba446705a2">New Clause: 5.7.1.9 Vector Significant Size and Spatial Significance Criteria</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_new_clause_5_7_1_9_vector_significant_size_and_spatial_significance_criteria">23</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_1699cb0a-c182-4540-9001-f3ba446705a2">New Clause: 5.7.1.9 Vector Significant Size and Spatial Significance Criteria</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_new_clause_5_7_1_9_vector_significant_size_and_spatial_significance_criteria">23</semx></fmt-xref-label>
+<p id="_bd998ef0-2479-438f-5a40-da2c302313c5">After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for vector significant size and spatial significance. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1. Clause 5.7.1.9 includes two sub-clauses: 5.7.1.9.1 Vector Significant Size and 5.7.1.9.2 Levels of Detail and Spatial Significance Criteria.</p>
 </clause>
 
 <clause id="_annex_a_abstract_test_suite" obligation="normative">
-<title depth="2">1.24.<tab/>Annex A: Abstract Test Suite</title>
-<p id="_8d4f1b15-c78f-01e5-8f70-d11519255506">All tests that had specific file extensions, such as .shp or .flt, are now generic with a note as to what the extensions were in version of the CDB standard prior to version 1.1.</p>
+<title id="_e10b4a5e-bf29-4446-9837-f0be18402e70">Annex A: Abstract Test Suite</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_a_abstract_test_suite">24</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e10b4a5e-bf29-4446-9837-f0be18402e70">Annex A: Abstract Test Suite</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_a_abstract_test_suite">24</semx></fmt-xref-label>
+<p id="_4163c406-4b35-8571-0810-86c2deea6386">All tests that had specific file extensions, such as .shp or .flt, are now generic with a note as to what the extensions were in version of the CDB standard prior to version 1.1.</p>
 </clause>
 
 <clause id="_table_5_1_component_selectors_for_cdb_controlled_vocabularies_and_metadata" obligation="normative">
-<title depth="2">1.25.<tab/>Table 5-1 Component Selectors for CDB Controlled Vocabularies and Metadata</title>
-<p id="_f340ed47-4a3c-e52f-7e70-8bbc1dd6fd01">A new selector value “12” for global metadata was added.</p>
+<title id="_bb38603a-5983-48f1-af39-9b0b56a318f8">Table 5-1 Component Selectors for CDB Controlled Vocabularies and Metadata</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_table_5_1_component_selectors_for_cdb_controlled_vocabularies_and_metadata">25</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bb38603a-5983-48f1-af39-9b0b56a318f8">Table 5-1 Component Selectors for CDB Controlled Vocabularies and Metadata</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_table_5_1_component_selectors_for_cdb_controlled_vocabularies_and_metadata">25</semx></fmt-xref-label>
+<p id="_0e643d47-eeff-18c9-ebb1-a9f0c2612617">A new selector value “12” for global metadata was added.</p>
 </clause>
 
 <clause id="_table_5_9_component_selectors_for_gtmodel_datasets" obligation="normative">
-<title depth="2">1.26.<tab/>Table 5-9: Component Selectors for GTModel Datasets</title>
-<p id="_f2d3d6bd-db8c-304b-d1dc-3e7af91b5cc5">Provide correct volume and section reference to GTModel descriptor definition. Please note, while this descriptor content is called metadata, this IS NOT the metadata as defined in Volume 1 clauses 5.1.1 and 5.1.2.</p>
+<title id="_5878c087-a8d1-4f27-972e-a51199755587">Table 5-9: Component Selectors for GTModel Datasets</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_table_5_9_component_selectors_for_gtmodel_datasets">26</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5878c087-a8d1-4f27-972e-a51199755587">Table 5-9: Component Selectors for GTModel Datasets</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_table_5_9_component_selectors_for_gtmodel_datasets">26</semx></fmt-xref-label>
+<p id="_63c0e64d-8a6f-eda1-e643-3f923e2fb449">Provide correct volume and section reference to GTModel descriptor definition. Please note, while this descriptor content is called metadata, this IS NOT the metadata as defined in Volume 1 clauses 5.1.1 and 5.1.2.</p>
 </clause>
 
 <clause id="_figure_5_25_two_instances_of_code_65" obligation="normative">
-<title depth="2">1.27.<tab/>Figure 5-25. Two instances of code 65</title>
-<p id="_322d521f-d580-e716-d679-7d66f8a433ea">After verification with the reference document, the correct lines are:</p>
+<title id="_83941b0a-8d93-450e-a2f2-78fbd2664844">Figure 5-25. Two instances of code 65</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_figure_5_25_two_instances_of_code_65">27</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_83941b0a-8d93-450e-a2f2-78fbd2664844">Figure 5-25. Two instances of code 65</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_figure_5_25_two_instances_of_code_65">27</semx></fmt-xref-label>
+<p id="_ed6fb300-a731-5e06-200d-887b1c1dc141">After verification with the reference document, the correct lines are:</p>
 
-<ul id="_a8604eb6-7430-7957-71e9-87f3f60e2f51"><li><p id="_12720aa3-ceb7-7073-40af-645bb56b5f69"><tt>64</tt>: Gable with Monitor</p>
+<ul id="_791dcc9f-4328-4f82-8d79-4d1aa5ebde96"><li><p id="_74e45d6c-069f-2085-9009-0b3cc1fb7864"><tt>64</tt>: Gable with Monitor</p>
 </li>
-<li><p id="_5591e704-bc61-30f8-2ee9-6c2004ee3d3b"><tt>65</tt>: Reserved</p>
+<li><p id="_c896ac05-d354-5a1e-6025-48e50749bb0c"><tt>65</tt>: Reserved</p>
 </li>
 </ul>
 
-<p id="_89f4e720-c0b5-c85c-717a-da1c422f5e58">The reference document is Digest Part 4, ISO 15046-10 Profile, March 1999, Annex B, Attribute and Value Codes.</p>
+<p id="_d8efd822-58a7-715a-10cb-aa29b4c0270d">The reference document is Digest Part 4, ISO 15046-10 Profile, March 1999, Annex B, Attribute and Value Codes.</p>
 </clause>
 
 <clause id="_table_5_27_use_of_d_has_two_meanings_change_request_471" obligation="normative">
-<title depth="2">1.28.<tab/>Table 5-27 Use of “D” has two meanings. (Change Request 471)</title>
-<p id="_ed681300-de31-ee76-8374-23f82082411a">There was recommendation to remove the use of “D” indicating a “Deprecated Attribution Schema” and keep just one use of “D” for “Dependent on another attribute”. This recommendation was accepted and the change made to Table 5-27.</p>
+<title id="_de539874-c0cc-4896-b4a8-3b4dd880dd49">Table 5-27 Use of “D” has two meanings. (Change Request 471)</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_table_5_27_use_of_d_has_two_meanings_change_request_471">28</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_de539874-c0cc-4896-b4a8-3b4dd880dd49">Table 5-27 Use of “D” has two meanings. (Change Request 471)</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_table_5_27_use_of_d_has_two_meanings_change_request_471">28</semx></fmt-xref-label>
+<p id="_6ab74771-264a-c034-f3be-9372be30d12d">There was recommendation to remove the use of “D” indicating a “Deprecated Attribution Schema” and keep just one use of “D” for “Dependent on another attribute”. This recommendation was accepted and the change made to Table 5-27.</p>
 </clause>
 
 <clause id="_table_5_27_not_entirely_visible_change_request_481" obligation="normative">
-<title depth="2">1.29.<tab/>Table 5-27 not entirely visible (Change Request 481)</title>
-<p id="_f4af57c4-551d-0ea1-a503-6a9655cd3af7">In version 1.0, Table 27 is not entirely visible (clipped at page edge). This comment was accepted and the change made to the table prior to insertion into Volume 1 Core.</p>
+<title id="_cf5316d9-f1fb-479a-a7fe-62d4b03589bd">Table 5-27 not entirely visible (Change Request 481)</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_table_5_27_not_entirely_visible_change_request_481">29</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_cf5316d9-f1fb-479a-a7fe-62d4b03589bd">Table 5-27 not entirely visible (Change Request 481)</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_table_5_27_not_entirely_visible_change_request_481">29</semx></fmt-xref-label>
+<p id="_108d87e4-c417-98d8-456b-7d77f7db3b35">In version 1.0, Table 27 is not entirely visible (clipped at page edge). This comment was accepted and the change made to the table prior to insertion into Volume 1 Core.</p>
 </clause>
 
 <clause id="_cdb_attributes_xml_schema_error_change_request_482" obligation="normative">
-<title depth="2">1.30.<tab/>CDB_Attributes.xml Schema error (Change Request 482)</title>
-<p id="_5d86d0ac-b68a-892e-0fc4-ba0102f3db5d">In: <tt>CDB_Attributes.xml</tt></p>
+<title id="_680a979f-b79e-4cbb-9b97-0b563ad76d42">CDB_Attributes.xml Schema error (Change Request 482)</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_cdb_attributes_xml_schema_error_change_request_482">30</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_680a979f-b79e-4cbb-9b97-0b563ad76d42">CDB_Attributes.xml Schema error (Change Request 482)</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_1_cdb_core_model_and_physical_data_store">1</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_cdb_attributes_xml_schema_error_change_request_482">30</semx></fmt-xref-label>
+<p id="_a0561170-6420-175b-7268-a4564fb12f3d">In: <tt>CDB_Attributes.xml</tt></p>
 
-<sourcecode id="_9223898f-682b-51e6-a524-2d1a74efb886" lang="xml" unnumbered="true">No.:9
+<sourcecode id="_6d944398-0e65-29c9-77bb-afbce144e827" lang="xml" unnumbered="true"><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">Listing</span></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Listing</span> <semx element="autonum" source="_6d944398-0e65-29c9-77bb-afbce144e827">(??)</semx></fmt-xref-label><body>No.:9
 Attr short name:BOTY
 Attr name: Boundary Type
-Description: "...See table 5-29 for a list of accepted values..."</sourcecode>
+Description: "...See table 5-29 for a list of accepted values..."</body><fmt-sourcecode lang="xml" unnumbered="true">No.:9
+Attr short name:BOTY
+Attr name: Boundary Type
+Description: "...See table 5-29 for a list of accepted values..."</fmt-sourcecode></sourcecode>
 
 
-<p id="_e55a1e88-ba55-6982-20d7-24866b9ec140">The table 5-29 was corrected to be 5-19.</p>
+<p id="_7da0301a-eebf-095e-ba9e-706ebe052bb6">The table 5-29 was corrected to be 5-19.</p>
 </clause>
 </clause>
 
 <clause id="_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes" obligation="normative" displayorder="8">
-<title depth="1">2.<tab/>Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes</title>
+<title id="_e3e8925b-54b5-4e1f-8497-23f0867ec667">Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e3e8925b-54b5-4e1f-8497-23f0867ec667">Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes">2</semx></fmt-xref-label>
 <clause id="_annex_q_table_of_dataset_codes" obligation="normative">
-<title depth="2">2.1.<tab/>Annex Q: Table of Dataset Codes</title>
-<p id="_03730edf-9223-86e1-59cb-dab0d366ab49">Updated to reflect the relationship between the community CDB 3.2 version and the OGC standard.</p>
+<title id="_bf146a58-e0c6-48b6-b710-1c5d408a11a6">Annex Q: Table of Dataset Codes</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_q_table_of_dataset_codes">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bf146a58-e0c6-48b6-b710-1c5d408a11a6">Annex Q: Table of Dataset Codes</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_q_table_of_dataset_codes">1</semx></fmt-xref-label>
+<p id="_59252f6a-ae27-c265-04e2-d37a202ae643">Updated to reflect the relationship between the community CDB 3.2 version and the OGC standard.</p>
 </clause>
 
 <clause id="_annex_r_derived_datasets_within_the_cdb" obligation="normative">
-<title depth="2">2.2.<tab/>Annex R: Derived Datasets within the CDB</title>
-<p id="_de614c2a-cff2-2426-4cfc-dcb04b94cbeb">Some grammatical errors were corrected.</p>
+<title id="_d77b634c-027c-43e4-99ad-3498a2252757">Annex R: Derived Datasets within the CDB</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_r_derived_datasets_within_the_cdb">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_d77b634c-027c-43e4-99ad-3498a2252757">Annex R: Derived Datasets within the CDB</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_2_ogc_cdb_core_model_and_physical_structure_informative_annexes">2</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_annex_r_derived_datasets_within_the_cdb">2</semx></fmt-xref-label>
+<p id="_10c6f899-e29b-a809-0822-9082efe9730d">Some grammatical errors were corrected.</p>
 </clause>
 </clause>
 
 <clause id="_revisions_to_volume_3_terms_and_definitions" obligation="normative" displayorder="9">
-<title depth="1">3.<tab/>Revisions to Volume 3 Terms and Definitions</title>
-<p id="_625223ef-c845-f904-b73e-7b8699eb967d">Definitions were added for: depth, elevation, grid, grid point, height, metadata elements, raster, regular grid, and vector data. The definitions for dataset and metadata were slightly revised</p>
+<title id="_b0ef4f7c-1e12-45d2-9951-d0b985c1b6ab">Revisions to Volume 3 Terms and Definitions</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_3_terms_and_definitions">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_b0ef4f7c-1e12-45d2-9951-d0b985c1b6ab">Revisions to Volume 3 Terms and Definitions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_3_terms_and_definitions">3</semx></fmt-xref-label>
+<p id="_40ee2706-1957-b877-4a01-76182b0fa731">Definitions were added for: depth, elevation, grid, grid point, height, metadata elements, raster, regular grid, and vector data. The definitions for dataset and metadata were slightly revised</p>
 </clause>
 
 <clause id="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage" obligation="normative" displayorder="10">
-<title depth="1">4.<tab/>Revisions to Volume 4: CDB Use of Shapefiles for Vector Data Storage</title>
+<title id="_94dfce76-4acb-4c84-84ae-824218eb92c1">Revisions to Volume 4: CDB Use of Shapefiles for Vector Data Storage</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_94dfce76-4acb-4c84-84ae-824218eb92c1">Revisions to Volume 4: CDB Use of Shapefiles for Vector Data Storage</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">4</semx></fmt-xref-label>
 <clause id="_general" obligation="normative">
-<title depth="2">4.1.<tab/>General</title>
-<p id="_9b36ec04-04f7-38e3-00f7-a6b86106e974">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+<title id="_a0f4c992-4b76-443b-b190-03af842238c2">General</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">4</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_general">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_a0f4c992-4b76-443b-b190-03af842238c2">General</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">4</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_general">1</semx></fmt-xref-label>
+<p id="_2a4954e4-aed9-78fe-e82f-5e63d96cf942">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
 </clause>
 
 <clause id="_clause_1_scope" obligation="normative">
-<title depth="2">4.2.<tab/>Clause 1: Scope</title>
-<p id="_5f66aef8-f4bc-fd5f-1e74-dd97022fb59b">The use of the word “standard” replaced with “Best Practice”.</p>
+<title id="_cda593ba-e557-4f96-8fe3-3b6431cf55a7">Clause 1: Scope</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">4</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_1_scope">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_cda593ba-e557-4f96-8fe3-3b6431cf55a7">Clause 1: Scope</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">4</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_1_scope">2</semx></fmt-xref-label>
+<p id="_3f0e978c-348d-ff72-535c-fd551f06c19a">The use of the word “standard” replaced with “Best Practice”.</p>
 </clause>
 
 <clause id="_clause_3_references" obligation="normative">
-<title depth="2">4.3.<tab/>Clause 3: References</title>
-<p id="_dad6f2aa-7c16-cc59-0d56-59fc90bd4322">Proper reference to the Esri ShapeFile technical document was added.</p>
+<title id="_bc2fdb0a-6e17-40ca-8276-40b3270ad304">Clause 3: References</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">4</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_references">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bc2fdb0a-6e17-40ca-8276-40b3270ad304">Clause 3: References</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">4</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_3_references">3</semx></fmt-xref-label>
+<p id="_ee7c26e9-8163-6d6f-88d1-2cbf860e0d0f">Proper reference to the Esri ShapeFile technical document was added.</p>
 </clause>
 
 <clause id="_clause_4_terms_and_definitions" obligation="normative">
-<title depth="2">4.4.<tab/>Clause 4: Terms and Definitions</title>
-<p id="_63bd0fb0-3b60-fde4-05df-cfa5fc04114c">This clause was reworded and URL to the CDB standard was added.</p>
+<title id="_d850bb1f-348a-49e7-974c-3865919f2a90">Clause 4: Terms and Definitions</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">4</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_4_terms_and_definitions">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_d850bb1f-348a-49e7-974c-3865919f2a90">Clause 4: Terms and Definitions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_4_cdb_use_of_shapefiles_for_vector_data_storage">4</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_4_terms_and_definitions">4</semx></fmt-xref-label>
+<p id="_9db3aaf3-0728-60d5-d5c3-0a187d13c285">This clause was reworded and URL to the CDB standard was added.</p>
 </clause>
 </clause>
 
 <clause id="_revisions_to_volume_5_radar_cross_sections" obligation="normative" displayorder="11">
-<title depth="1">5.<tab/>Revisions to Volume 5: Radar Cross-Sections</title>
+<title id="_9bdb891a-1ae5-40d5-ba81-81ef00e81a91">Revisions to Volume 5: Radar Cross-Sections</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_5_radar_cross_sections">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_9bdb891a-1ae5-40d5-ba81-81ef00e81a91">Revisions to Volume 5: Radar Cross-Sections</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_5_radar_cross_sections">5</semx></fmt-xref-label>
 <clause id="_general_2" obligation="normative">
-<title depth="2">5.1.<tab/>General</title>
-<p id="_902a7db6-d8c4-c70b-2789-24f56d145846">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+<title id="_44beb0c8-9459-4aa4-aa37-7dd6e1564ccb">General</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_5_radar_cross_sections">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_general_2">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_44beb0c8-9459-4aa4-aa37-7dd6e1564ccb">General</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_5_radar_cross_sections">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_general_2">1</semx></fmt-xref-label>
+<p id="_2c1dd1cc-4b71-8a89-c8ae-4e81a353a9a2">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
 </clause>
 
 <clause id="_clause_4_terms_and_definitions_2" obligation="normative">
-<title depth="2">5.2.<tab/>Clause 4 Terms and Definitions</title>
-<p id="_5552ef04-744a-00ca-6306-70fde2b9799f">The correct URL to the CDB standard was inserted.</p>
+<title id="_9d3b59e7-c743-4198-8b83-9d7a817b3a14">Clause 4 Terms and Definitions</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_5_radar_cross_sections">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_4_terms_and_definitions_2">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_9d3b59e7-c743-4198-8b83-9d7a817b3a14">Clause 4 Terms and Definitions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_5_radar_cross_sections">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_4_terms_and_definitions_2">2</semx></fmt-xref-label>
+<p id="_65ba4be1-9921-cdb5-91ce-064268f1b262">The correct URL to the CDB standard was inserted.</p>
 </clause>
 </clause>
 
 <clause id="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp" obligation="normative" displayorder="12">
-<title depth="1">6.<tab/>Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP</title>
+<title id="_2d09b1c0-81be-499c-aa8c-022affbc587a">Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_2d09b1c0-81be-499c-aa8c-022affbc587a">Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp">6</semx></fmt-xref-label>
 <clause id="_general_3" obligation="normative">
-<title depth="2">6.1.<tab/>General</title>
-<p id="_123f4916-236b-6cbc-389d-9fa338af444a">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+<title id="_c30f0d8a-f1db-4b06-91d4-d85173d5e8f2">General</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_general_3">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c30f0d8a-f1db-4b06-91d4-d85173d5e8f2">General</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_general_3">1</semx></fmt-xref-label>
+<p id="_60396614-00db-4bb9-62c8-2878b1bc4d4a">All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
 </clause>
 
 <clause id="_clause_5_1_identifiers" obligation="normative">
-<title depth="2">6.2.<tab/>Clause 5.1 Identifiers</title>
-<p id="_46d82f49-0cfb-b28c-b965-8f6a7570d881">URI base updated to reflect version 1.1.</p>
+<title id="_71c93ee9-209a-4478-bf5d-697e5d54febc">Clause 5.1 Identifiers</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_identifiers">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_71c93ee9-209a-4478-bf5d-697e5d54febc">Clause 5.1 Identifiers</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_1_identifiers">2</semx></fmt-xref-label>
+<p id="_6ebb3a4d-8347-47f9-753a-5318a50c7e27">URI base updated to reflect version 1.1.</p>
 </clause>
 
 <clause id="_requirement_class_metadata" obligation="normative">
-<title depth="2">6.3.<tab/>Requirement Class Metadata</title>
-<p id="_bb0f7a06-aaac-cce9-4834-8526b7494457">This requirement class was updated to consistent with Requirement 1 (/req/core/openflight/headercrs).</p>
+<title id="_bb1c4a7a-326a-4efc-897e-7d0f2ed333d7">Requirement Class Metadata</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_requirement_class_metadata">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bb1c4a7a-326a-4efc-897e-7d0f2ed333d7">Requirement Class Metadata</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_6_ogc_cdb_rules_for_encoding_data_using_openflight_bp">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_requirement_class_metadata">3</semx></fmt-xref-label>
+<p id="_08ea6492-ea84-c290-7393-06209ca1b238">This requirement class was updated to consistent with Requirement 1 (/req/core/openflight/headercrs).</p>
 </clause>
 </clause>
 
 <clause id="_revisions_to_volume_7_ogc_cdb_data_model_guidance" obligation="normative" displayorder="13">
-<title depth="1">7.<tab/>Revisions to Volume 7 OGC CDB Data Model Guidance</title>
-<p id="_d22bdd5c-f877-a3f5-6315-03859d3cf10d">Note: Volume 7 was Annex A in the original CDB Specification v 3.2 submission to the OGC.</p>
+<title id="_3a82f3c5-c222-4cf2-8f04-46c48ab5d14e">Revisions to Volume 7 OGC CDB Data Model Guidance</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_7_ogc_cdb_data_model_guidance">7</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_3a82f3c5-c222-4cf2-8f04-46c48ab5d14e">Revisions to Volume 7 OGC CDB Data Model Guidance</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_7_ogc_cdb_data_model_guidance">7</semx></fmt-xref-label>
+<p id="_5c9f68bb-ad6e-653d-282b-ed40d2c678b1">Note: Volume 7 was Annex A in the original CDB Specification v 3.2 submission to the OGC.</p>
 
-<p id="_bb1ce327-be0f-fcd4-2682-c17784d733e6">Minor changes at various places to make sure the reader knows the difference between CDB 3.2 specification and OGC Version 1.1 standard.</p>
+<p id="_352f453c-8977-47ad-1a0a-ebdf9893f4ca">Minor changes at various places to make sure the reader knows the difference between CDB 3.2 specification and OGC Version 1.1 standard.</p>
 
 <clause id="_6_5_3_access_of_a_model_interior" obligation="normative">
-<title depth="2">7.1.<tab/>6.5.3 Access of a Model Interior</title>
-<p id="_0a629e91-5ef9-a364-ec56-0d5be91a2261">This section has minor changes to make wording on the use of OpenFlightgeneric and in line with the changes in CDB Volume 1.</p>
+<title id="_a8f6d098-9835-4694-9047-10e0726c731c">6.5.3 Access of a Model Interior</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_7_ogc_cdb_data_model_guidance">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_6_5_3_access_of_a_model_interior">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_a8f6d098-9835-4694-9047-10e0726c731c">6.5.3 Access of a Model Interior</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_7_ogc_cdb_data_model_guidance">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_6_5_3_access_of_a_model_interior">1</semx></fmt-xref-label>
+<p id="_481ff863-7e47-90cf-c656-94b97076b379">This section has minor changes to make wording on the use of OpenFlightgeneric and in line with the changes in CDB Volume 1.</p>
 </clause>
 
 <clause id="_section_6_13_1_linear_feature_radar_simulation_example" obligation="normative">
-<title depth="2">7.2.<tab/>Section 6.13.1 Linear Feature Radar Simulation Example</title>
-<p id="_cb8b6fdd-7181-029d-2540-11656f041dbb">This section has minor changes to make wording on the use of ShapeFiles generic and consistent with the changes in CDB Volume 1.</p>
+<title id="_1efe13af-2682-4046-b09c-c39273ac599d">Section 6.13.1 Linear Feature Radar Simulation Example</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_7_ogc_cdb_data_model_guidance">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_section_6_13_1_linear_feature_radar_simulation_example">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_1efe13af-2682-4046-b09c-c39273ac599d">Section 6.13.1 Linear Feature Radar Simulation Example</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_7_ogc_cdb_data_model_guidance">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_section_6_13_1_linear_feature_radar_simulation_example">2</semx></fmt-xref-label>
+<p id="_a7221f09-05e1-942b-672c-8822a7fecbed">This section has minor changes to make wording on the use of ShapeFiles generic and consistent with the changes in CDB Volume 1.</p>
 </clause>
 
 <clause id="_new_section_added_6_14_guideline_vector_priority_tile_lod_generation" obligation="normative">
-<title depth="2">7.3.<tab/>New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation</title>
-<p id="_77ceccec-6849-63bf-1ffb-520d4d2b8508">After CDB was submitted to the OGC, the CDB user community added a new Annex A sub-clause to clarify rules for vector priority in the LoD/Tile structure. This CDB user community approved clause is now incorporated in Volume 7 of the OGC CDB standard, version 1.1.</p>
+<title id="_a223198a-1d03-4606-8f1e-e14c6450a0b1">New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_7_ogc_cdb_data_model_guidance">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_new_section_added_6_14_guideline_vector_priority_tile_lod_generation">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_a223198a-1d03-4606-8f1e-e14c6450a0b1">New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_7_ogc_cdb_data_model_guidance">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_new_section_added_6_14_guideline_vector_priority_tile_lod_generation">3</semx></fmt-xref-label>
+<p id="_9757cac6-804f-60c9-eedc-56b2e5c7dc95">After CDB was submitted to the OGC, the CDB user community added a new Annex A sub-clause to clarify rules for vector priority in the LoD/Tile structure. This CDB user community approved clause is now incorporated in Volume 7 of the OGC CDB standard, version 1.1.</p>
 </clause>
 </clause>
 
 <clause id="_revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance" obligation="normative" displayorder="14">
-<title depth="1">8.<tab/>Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance</title>
+<title id="_91134d37-4a05-4e0b-8882-d6774fb9f8a5">Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance">8</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_91134d37-4a05-4e0b-8882-d6774fb9f8a5">Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance">8</semx></fmt-xref-label>
 <clause id="_clause_4_terms_and_definitions_3" obligation="normative">
-<title depth="2">8.1.<tab/>Clause 4 Terms and Definitions</title>
-<p id="_ddcd694a-2177-5dca-eb32-ef0e2baf348d">The correct URL to the CDB standard was inserted.</p>
+<title id="_1b1960f6-5ce4-4a1f-b2ea-4a8e02f48951">Clause 4 Terms and Definitions</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance">8</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_4_terms_and_definitions_3">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_1b1960f6-5ce4-4a1f-b2ea-4a8e02f48951">Clause 4 Terms and Definitions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_8_cdb_spatial_and_coordinate_reference_systems_guidance">8</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_4_terms_and_definitions_3">1</semx></fmt-xref-label>
+<p id="_3855d667-aa23-63d0-b363-bff8633f7b3b">The correct URL to the CDB standard was inserted.</p>
 </clause>
 </clause>
 
 <clause id="_revisions_to_volume_10_cdb_implementation_guidance" obligation="normative" displayorder="15">
-<title depth="1">9.<tab/>Revisions to Volume 10: CDB Implementation Guidance</title>
+<title id="_5fa7728f-c30b-4620-9298-d5eceb7f36b4">Revisions to Volume 10: CDB Implementation Guidance</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_10_cdb_implementation_guidance">9</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5fa7728f-c30b-4620-9298-d5eceb7f36b4">Revisions to Volume 10: CDB Implementation Guidance</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_10_cdb_implementation_guidance">9</semx></fmt-xref-label>
 <clause id="_general_4" obligation="normative">
-<title depth="2">9.1.<tab/>General</title>
-<p id="_f0edb8c2-558f-ba35-4f86-e2b9857240c9">Comments (artifacts) for version 1.0 were removed.</p>
+<title id="_e3826f7d-7870-49d0-8d6f-3fc57e95f5b5">General</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_10_cdb_implementation_guidance">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_general_4">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e3826f7d-7870-49d0-8d6f-3fc57e95f5b5">General</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_10_cdb_implementation_guidance">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_general_4">1</semx></fmt-xref-label>
+<p id="_0aadabea-c9d3-de92-0927-8945f65e8a4e">Comments (artifacts) for version 1.0 were removed.</p>
 </clause>
 
 <clause id="_clause_4_terms_and_definitions_4" obligation="normative">
-<title depth="2">9.2.<tab/>Clause 4 Terms and Definitions</title>
-<p id="_5a95dc62-4437-3acb-c6e0-3eab0c7bc1af">The correct URL to the CDB standard was inserted. Additional abbreviations were added.</p>
+<title id="_35a1dfb6-dbbd-4b6a-be63-e1ed929e314e">Clause 4 Terms and Definitions</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_10_cdb_implementation_guidance">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_4_terms_and_definitions_4">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_35a1dfb6-dbbd-4b6a-be63-e1ed929e314e">Clause 4 Terms and Definitions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_10_cdb_implementation_guidance">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_4_terms_and_definitions_4">2</semx></fmt-xref-label>
+<p id="_e991adbb-ca14-d9c7-a9b5-a3b23ac4e407">The correct URL to the CDB standard was inserted. Additional abbreviations were added.</p>
 </clause>
 
 <clause id="_clause_5_platform_recommendations" obligation="normative">
-<title depth="2">9.3.<tab/>Clause 5: Platform Recommendations</title>
-<p id="_5601fd0b-1679-3c02-fe41-8bb3d544955e">Correct grammatical errors.</p>
+<title id="_76097a20-a077-40f9-838a-6f5fedf4113b">Clause 5: Platform Recommendations</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_10_cdb_implementation_guidance">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_platform_recommendations">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_76097a20-a077-40f9-838a-6f5fedf4113b">Clause 5: Platform Recommendations</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_10_cdb_implementation_guidance">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_clause_5_platform_recommendations">3</semx></fmt-xref-label>
+<p id="_605c0d9f-388c-055f-8296-6ef330398646">Correct grammatical errors.</p>
 </clause>
 </clause>
 
 <clause id="_revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values" obligation="normative" displayorder="16">
-<title depth="1">10.<tab/>Revisions to Volume 12: CDB Navaids Attribution and Navaids Attribution Enumeration Values</title>
+<title id="_ac413a17-db67-4a9e-b3d9-73b87f590b00">Revisions to Volume 12: CDB Navaids Attribution and Navaids Attribution Enumeration Values</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values">10</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ac413a17-db67-4a9e-b3d9-73b87f590b00">Revisions to Volume 12: CDB Navaids Attribution and Navaids Attribution Enumeration Values</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values">10</semx></fmt-xref-label>
 <clause id="_abstract_2" obligation="normative">
-<title depth="2">10.1.<tab/>Abstract:</title>
-<p id="_8bce5696-4a63-13bf-1738-0e971018adea">Slight re-wording of the abstract</p>
+<title id="_e958343b-991a-4766-8d1e-380fdc51b4df">Abstract:</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values">10</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_abstract_2">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e958343b-991a-4766-8d1e-380fdc51b4df">Abstract:</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_revisions_to_volume_12_cdb_navaids_attribution_and_navaids_attribution_enumeration_values">10</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_abstract_2">1</semx></fmt-xref-label>
+<p id="_4f0d18f0-ed08-29f3-5fb7-83b2f7e5586e">Slight re-wording of the abstract</p>
 </clause>
 </clause>
 </sections>
-</ogc-standard>
+</metanorma>

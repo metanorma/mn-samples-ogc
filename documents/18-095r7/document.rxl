@@ -1,14 +1,10 @@
 <bibdata type="standard">
 <title language="en" format="text/plain">Geospatial Coverages Data Cube Community Practice</title>
-<docidentifier type="ogc-external">http://www.opengis.net/doc/CS/dataCubeCP</docidentifier><docidentifier type="ogc-internal">18-095r7</docidentifier><docnumber>18-095r7</docnumber><date type="published"><on>2020-10-14</on></date><date type="issued"><on>2020-08-28</on></date><date type="received"><on>2020-01-31</on></date><date type="2000-05-11"><on/></date><contributor><role type="editor"/><person>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/CS/dataCubeCP</docidentifier><docidentifier type="ogc-internal" primary="true">18-095r7</docidentifier><docnumber>18-095r7</docnumber><date type="published"><on>2020-10-14</on></date><date type="issued"><on>2020-08-28</on></date><date type="received"><on>2020-01-31</on></date><date type="2000-05-11"><on/></date><contributor><role type="editor"/><person>
 <name><completename>George Percivall</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>Data cubes for geospatial information provide the means to integrate observations and
-other types of geospatial data for use in multiple applications through simplified access
-and efficient analytics. Using the Geospatial Coverages data structure, this Community
-Practice defines requirements for a geospatial coverages data cube infrastructure and
-guidelines for enhancements and extensions to the basic core.</p>
-</abstract><status><stage>approved</stage></status><copyright><from>2024</from><owner><organization>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>Data cubes for geospatial information provide the means to integrate observations and other types of geospatial data for use in multiple applications through simplified access and efficient analytics. Using the Geospatial Coverages data structure, this Community Practice defines requirements for a geospatial coverages data cube infrastructure and guidelines for enhancements and extensions to the basic core.</p>
+</abstract><status><stage>approved</stage></status><copyright><from>2025</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>Data Cubes</keyword><keyword>Coverages</keyword><keyword>Spatial Analytics</keyword><keyword>Geospatial</keyword><ext><doctype>community-practice</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>Data Cubes</keyword><keyword>Coverages</keyword><keyword>Spatial Analytics</keyword><keyword>Geospatial</keyword><ext><doctype>community-practice</doctype><flavor>ogc</flavor><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata>

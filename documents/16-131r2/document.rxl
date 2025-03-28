@@ -1,6 +1,6 @@
 <bibdata type="standard">
 <title language="en" format="text/plain">Big Geospatial Data — an OGC White Paper</title>
-<docidentifier type="ogc-external">http://www.opengis.net/doc/WP/bigdata</docidentifier><docidentifier type="ogc-internal">16-131r2</docidentifier><docnumber>16-131r2</docnumber><date type="published"><on>2017-09-25</on></date><date type="issued"><on>2017-06-29</on></date><date type="received"><on>2017-06-15</on></date><contributor><role type="editor"/><person>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/WP/bigdata</docidentifier><docidentifier type="ogc-internal" primary="true">16-131r2</docidentifier><docnumber>16-131r2</docnumber><date type="published"><on>2017-09-25</on></date><date type="issued"><on>2017-06-29</on></date><date type="received"><on>2017-06-15</on></date><contributor><role type="editor"/><person>
 <name><completename>George Percivall</completename></name>
 </person></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
@@ -29,4 +29,4 @@
 <p>For information on Location Powers: <link target="http://www.locationpowers.net/pastevents/"/></p>
 </abstract><status><stage>approved</stage></status><copyright><from>2017</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC documents</keyword><keyword>Big Data</keyword><keyword>geospatial</keyword><keyword>location</keyword><keyword>open</keyword><keyword>standards</keyword><keyword>interoperability</keyword><keyword>cloud computing</keyword><ext><doctype>white-paper</doctype><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC documents</keyword><keyword>Big Data</keyword><keyword>geospatial</keyword><keyword>location</keyword><keyword>open</keyword><keyword>standards</keyword><keyword>interoperability</keyword><keyword>cloud computing</keyword><ext><doctype>white-paper</doctype><flavor>ogc</flavor><editorialgroup><committee>technical</committee><workgroup/></editorialgroup></ext></bibdata>
