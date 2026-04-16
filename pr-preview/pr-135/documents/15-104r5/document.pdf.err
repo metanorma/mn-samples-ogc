@@ -1,0 +1,2 @@
+The contents of fo:region-body on page 30 exceed its viewport by 21945 millipoints. (See position 1:2054)
+Please check the PDF and if necessary, report this issue at the following link: https://github.com/metanorma/mn-native-pdf/issues/new, and attach the XSL-FO file or fragment: '/__w/mn-samples-ogc/mn-samples-ogc/_site/documents/15-104r5/document.pdf.fo.xml'.

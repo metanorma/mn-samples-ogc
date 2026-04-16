@@ -1,0 +1,3817 @@
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="----=_NextPart_54e6729e.abeb.442c"
+
+------=_NextPart_54e6729e.abeb.442c
+Content-ID: <document.htm>
+Content-Disposition: inline; filename="document.htm"
+Content-Type: text/html; charset="utf-8"
+
+<?xml version="1.0"?>
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40" lang="en" xml:lang="en">
+  <head>
+<xml>
+<w:WordDocument>
+<w:View>Print</w:View>
+<w:Zoom>100</w:Zoom>
+<w:DoNotOptimizeForBrowser/>
+</w:WordDocument>
+</xml>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8"/>
+
+  <link rel=File-List href="cid:filelist.xml"/>
+<style><![CDATA[
+<!--
+@charset "UTF-8";
+/* Font Definitions */
+@font-face {
+  font-family: Wingdings;
+  panose-1: 5 0 0 0 0 0 0 0 0 0;
+  mso-font-charset: 2;
+  mso-generic-font-family: decorative;
+  mso-font-pitch: variable;
+  mso-font-signature: 0 268435456 0 0 -2147483648 0;
+}
+@font-face {
+  font-family: "MS Mincho";
+  panose-1: 2 2 6 9 4 2 5 8 3 4;
+  mso-font-alt: "ＭＳ 明朝";
+  mso-font-charset: 128;
+  mso-generic-font-family: modern;
+  mso-font-pitch: fixed;
+  mso-font-signature: -536870145 1791491579 134217746 0 131231 0;
+}
+@font-face {
+  font-family: "Cambria Math";
+  panose-1: 2 4 5 3 5 4 6 3 2 4;
+  mso-font-charset: 0;
+  mso-generic-font-family: roman;
+  mso-font-pitch: variable;
+  mso-font-signature: -536870145 1107305727 0 0 415 0;
+}
+@font-face {
+  font-family: "Arial Narrow";
+  panose-1: 2 11 5 6 2 2 2 3 2 4;
+  mso-font-charset: 0;
+  mso-generic-font-family: swiss;
+  mso-font-pitch: variable;
+  mso-font-signature: 3 0 0 0 1 0;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  panose-1: 2 11 5 3 3 4 3 2 2 4;
+  mso-font-alt: Arial;
+  mso-font-charset: 77;
+  mso-generic-font-family: swiss;
+  mso-font-pitch: variable;
+  mso-font-signature: 536870919 1 0 0 403 0;
+}
+@font-face {
+  font-family: Tahoma;
+  panose-1: 2 11 6 4 3 5 4 4 2 4;
+  mso-font-charset: 0;
+  mso-generic-font-family: swiss;
+  mso-font-pitch: variable;
+  mso-font-signature: -520081665 -1073717157 41 0 66047 0;
+}
+@font-face {
+  font-family: Times;
+  panose-1: 2 0 5 0 0 0 0 0 0 0;
+  mso-font-charset: 0;
+  mso-generic-font-family: auto;
+  mso-font-pitch: variable;
+  mso-font-signature: -536870145 1342185562 0 0 415 0;
+}
+@font-face {
+  font-family: "Wingdings 2";
+  panose-1: 5 2 1 2 1 5 7 7 7 7;
+  mso-font-charset: 2;
+  mso-generic-font-family: decorative;
+  mso-font-pitch: variable;
+  mso-font-signature: 0 268435456 0 0 -2147483648 0;
+}
+@font-face {
+  font-family: "@MS Mincho";
+  panose-1: 2 2 6 9 4 2 5 8 3 4;
+  mso-font-charset: 128;
+  mso-generic-font-family: modern;
+  mso-font-pitch: fixed;
+  mso-font-signature: -536870145 1791491579 134217746 0 131231 0;
+}
+p.MsoNormal, li.MsoNormal, div.MsoNormal {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin: 0cm;
+  margin-bottom: 12pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph {
+  mso-style-priority: 34;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  /* do not put in margin-left, it is specific to list level */
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-AU;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst {
+  mso-style-priority: 34;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-type: export-only;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  /* do not put in margin-left, it is specific to list level */
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-AU;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle {
+  mso-style-priority: 34;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-type: export-only;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  /* do not put in margin-left, it is specific to list level */
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-AU;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast {
+  mso-style-priority: 34;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-type: export-only;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  /* do not put in margin-left, it is specific to list level */
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-AU;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText {
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-name: "Comment Text";
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoHeader, li.MsoHeader, div.MsoHeader {
+  mso-style-unhide: no;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  tab-stops: center 216pt right 482pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoHeaderLandscape, li.MsoHeaderLandscape, div.MsoHeaderLandscape {
+  mso-style-unhide: no;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  tab-stops: center 367pt right 734pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoFooter, li.MsoFooter, div.MsoFooter {
+  mso-style-unhide: no;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  tab-stops: right 482pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoFooterLandscape, li.MsoFooterLandscape, div.MsoFooterLandscape {
+  mso-style-unhide: no;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  tab-stops: right 734pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+span.MsoCommentReference {
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-parent: "";
+  mso-ansi-font-size: 8pt;
+  mso-bidi-font-size: 8pt;
+}
+
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText {
+  mso-style-unhide: no;
+  margin-top: 9pt;
+  margin-right: 0cm;
+  margin-bottom: 0cm;
+  margin-left: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 12pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-bidi-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoTitle, li.MsoTitle, div.MsoTitle {
+  mso-style-priority: 10;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-link: "Title Char";
+  mso-style-next: Normal;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 28pt;
+  font-family: "Calibri Light", sans-serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-bidi-font-family: "Times New Roman";
+  letter-spacing: -0.5pt;
+  mso-font-kerning: 14pt;
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst {
+  mso-style-priority: 10;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-link: "Title Char";
+  mso-style-next: Normal;
+  mso-style-type: export-only;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 28pt;
+  font-family: "Calibri Light", sans-serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-bidi-font-family: "Times New Roman";
+  letter-spacing: -0.5pt;
+  mso-font-kerning: 14pt;
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle {
+  mso-style-priority: 10;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-link: "Title Char";
+  mso-style-next: Normal;
+  mso-style-type: export-only;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 28pt;
+  font-family: "Calibri Light", sans-serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-bidi-font-family: "Times New Roman";
+  letter-spacing: -0.5pt;
+  mso-font-kerning: 14pt;
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast {
+  mso-style-priority: 10;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-link: "Title Char";
+  mso-style-next: Normal;
+  mso-style-type: export-only;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-add-space: auto;
+  mso-pagination: widow-orphan;
+  font-size: 28pt;
+  font-family: "Calibri Light", sans-serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-bidi-font-family: "Times New Roman";
+  letter-spacing: -0.5pt;
+  mso-font-kerning: 14pt;
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+a:link, span.MsoHyperlink {
+  mso-style-unhide: no;
+  mso-style-parent: "";
+  color: blue;
+  text-decoration: underline;
+  text-underline: single;
+}
+
+a:visited, span.MsoHyperlinkFollowed {
+  mso-style-unhide: no;
+  mso-style-parent: "";
+  color: purple;
+  text-decoration: underline;
+  text-underline: single;
+}
+
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject {
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-parent: "Comment Text";
+  mso-style-next: "Comment Text";
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+  font-weight: bold;
+}
+
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate {
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 8pt;
+  font-family: "Tahoma", sans-serif;
+  mso-fareast-font-family: "Times New Roman";
+  mso-ansi-language: EN-US;
+  mso-fareast-language: EN-US;
+}
+
+span.blackgraphtxsidebar {
+  mso-style-name: blackgraphtxsidebar;
+  mso-style-unhide: no;
+  mso-style-parent: "";
+}
+
+span.blackgraphtx {
+  mso-style-name: blackgraphtx;
+  mso-style-unhide: no;
+  mso-style-parent: "";
+}
+
+.MsoChpDefault {
+  mso-style-type: export-only;
+  mso-default-props: yes;
+}
+
+div.figure, p.figure {
+  text-align: center;
+}
+
+h1, .h1 {
+  mso-style-priority: 1;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 1";
+  mso-style-link: "Heading 1 Char";
+  mso-style-next: Normal;
+  margin-top: 13.5pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 13.5pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 0.7cm;
+  font-size: 13pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-font-kerning: 0pt;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h1 {
+  mso-outline-level: 1;
+  mso-list: l1 level1 lfo6;
+}
+
+h1.Annex {
+  mso-style-priority: 1;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-link: "Heading 1 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12.5pt;
+  text-align: center;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  font-weight: normal;
+  mso-outline-level: 1;
+  mso-list: l1 level1 lfo6;
+  mso-hyphenate: none;
+  tab-stops: 1cm;
+  font-size: 12pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-font-kerning: 0pt;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+.h2Annex {
+  mso-style-priority: 2;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "Heading 1";
+  mso-style-link: "Heading 2 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12.5pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-outline-level: 2;
+  mso-hyphenate: none;
+  tab-stops: 1cm;
+  font-size: 12pt;
+  font-weight: bold;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h2, .h2 {
+  mso-style-priority: 2;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 2";
+  mso-style-parent: "Heading 1";
+  mso-style-link: "Heading 2 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12.5pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 1cm;
+  font-size: 12pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h2 {
+  mso-outline-level: 2;
+  mso-list: l1 level2 lfo6;
+}
+
+h3, .h3 {
+  mso-style-priority: 3;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 3";
+  mso-style-parent: "Heading 2";
+  mso-style-link: "Heading 3 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 1.3cm;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h3 {
+  mso-outline-level: 3;
+  mso-list: l1 level3 lfo6;
+}
+
+h4, .h4 {
+  mso-style-priority: 4;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 4";
+  mso-style-parent: "Heading 3";
+  mso-style-link: "Heading 4 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 1.6cm;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h4 {
+  mso-outline-level: 4;
+  mso-list: l1 level4 lfo6;
+}
+
+h5, .h5 {
+  mso-style-priority: 5;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 5";
+  mso-style-parent: "Heading 4";
+  mso-style-link: "Heading 5 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 1.9cm;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h5 {
+  mso-outline-level: 5;
+  mso-list: l1 level5 lfo6;
+}
+
+h6, .h6 {
+  mso-style-priority: 6;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-name: "Heading 6";
+  mso-style-parent: "Heading 5";
+  mso-style-link: "Heading 6 Char";
+  mso-style-next: Normal;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 2.2cm;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  color: #0E1A85;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  mso-bidi-font-weight: normal;
+}
+
+h6 {
+  mso-outline-level: 6;
+  mso-list: l1 level6 lfo6;
+}
+
+p.MsoToc1, li.MsoToc1, div.MsoToc1 {
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 1";
+  mso-style-next: Normal;
+  margin-top: 6pt;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 36pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc2, li.MsoToc2, div.MsoToc2 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 2";
+  mso-style-parent: "TOC 1";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 36pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc3, li.MsoToc3, div.MsoToc3 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 3";
+  mso-style-parent: "TOC 2";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 36pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc4, li.MsoToc4, div.MsoToc4 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 4";
+  mso-style-parent: "TOC 3";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 47.9pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc5, li.MsoToc5, div.MsoToc5 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 5";
+  mso-style-parent: "TOC 4";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 47.9pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc6, li.MsoToc6, div.MsoToc6 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 6";
+  mso-style-parent: "TOC 5";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 55pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc7, li.MsoToc7, div.MsoToc7 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 7";
+  mso-style-parent: "TOC 6";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 62.7pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc8, li.MsoToc8, div.MsoToc8 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 8";
+  mso-style-parent: "TOC 7";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 70.3pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.MsoToc9, li.MsoToc9, div.MsoToc9 {
+  mso-style-noshow: yes;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  mso-style-name: "TOC 9";
+  mso-style-parent: "TOC 8";
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 25pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  margin-bottom: 0.0001pt;
+  text-indent: -36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt 78pt right dotted 487.6pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.MsoFootnoteReference {
+  mso-style-priority: 99;
+  mso-style-name: "Footnote Reference";
+  vertical-align: super;
+}
+
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText {
+  mso-style-noshow: yes;
+  mso-style-priority: 99;
+  mso-style-link: "Footnote Text Char";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: EN-US;
+}
+
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText {
+  mso-style-noshow: yes;
+  mso-style-priority: 99;
+  mso-style-unhide: no;
+  mso-style-link: "Body Text Char";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+span.Heading1Char {
+  mso-style-name: "Heading 1 Char";
+  mso-style-priority: 1;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 1";
+  mso-ansi-font-size: 13pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: Cambria;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.Heading2Char {
+  mso-style-name: "Heading 2 Char";
+  mso-style-priority: 2;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 2";
+  mso-ansi-font-size: 12pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: Cambria;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.Heading3Char {
+  mso-style-name: "Heading 3 Char";
+  mso-style-priority: 3;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 3";
+  mso-ansi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.Heading4Char {
+  mso-style-name: "Heading 4 Char";
+  mso-style-priority: 4;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 4";
+  mso-ansi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.Heading5Char {
+  mso-style-name: "Heading 5 Char";
+  mso-style-priority: 5;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 5";
+  mso-ansi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+span.Heading6Char {
+  mso-style-name: "Heading 6 Char";
+  mso-style-priority: 6;
+  mso-style-unhide: no;
+  mso-style-locked: yes;
+  mso-style-parent: "";
+  mso-style-link: "Heading 6";
+  mso-ansi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-ascii-font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.Tablebody, li.Tablebody, div.Tablebody {
+  mso-style-name: "Table body";
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  margin-top: 3pt;
+  margin-right: 0cm;
+  margin-bottom: 3pt;
+  margin-left: 0cm;
+  line-height: 10.5pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.0pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+/* Page Definitions */
+@page {
+  size: 612pt 792pt;
+  margin: 36pt 53.85pt 21.55pt 53.85pt;
+  mso-header-margin: 42.55pt;
+  mso-footer-margin: 43.1pt;
+  mso-footnote-separator: url(cid:header.html) fs;
+  mso-footnote-continuation-separator: url(cid:header.html) fcs;
+  mso-endnote-separator: url(cid:header.html) es;
+  mso-endnote-continuation-separator: url(cid:header.html) ecs;
+}
+/* List Definitions */
+@list l0 {
+  mso-list-id: 145051656;
+  mso-list-template-ids: 2112159680;
+}
+@list l0:level1 {
+  mso-level-number-format: alpha-upper;
+  mso-level-style-link: ANNEX;
+  mso-level-suffix: none;
+  mso-level-text: "Annex %1";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-ansi-font-size: 14pt;
+  mso-bidi-font-size: 14pt;
+  font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level2 {
+  mso-level-style-link: a2;
+  mso-level-text: "%1.%2";
+  mso-level-tab-stop: 18pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level3 {
+  mso-level-style-link: a3;
+  mso-level-text: "%1.%2.%3";
+  mso-level-tab-stop: 36pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level4 {
+  mso-level-style-link: a4;
+  mso-level-text: "%1.%2.%3.%4";
+  mso-level-tab-stop: 54pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level5 {
+  mso-level-style-link: a5;
+  mso-level-text: "%1.%2.%3.%4.%5";
+  mso-level-tab-stop: 54pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level6 {
+  mso-level-style-link: a6;
+  mso-level-text: "%1.%2.%3.%4.%5.%6";
+  mso-level-tab-stop: 72pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l0:level7 {
+  mso-level-reset-level: level2;
+  mso-level-suffix: space;
+  mso-level-text: "Figure %1.%7 —";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+@list l0:level8 {
+  mso-level-reset-level: level2;
+  mso-level-suffix: space;
+  mso-level-text: "Table %1.%8 —";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+@list l0:level9 {
+  mso-level-number-format: roman-lower;
+  mso-level-text: "(%9)";
+  mso-level-tab-stop: 306pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+@list l1 {
+  mso-list-id: 866942648;
+  mso-list-template-ids: -1756330000;
+}
+@list l1:level1 {
+  mso-level-style-link: "Heading 1";
+  mso-level-text: "%1";
+  mso-level-tab-stop: 21.6pt;
+  mso-level-number-position: left;
+  margin-left: 21.6pt;
+  text-indent: -21.6pt;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level2 {
+  mso-level-style-link: "Heading 2";
+  mso-level-text: "%1.%2";
+  mso-level-tab-stop: 18pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level3 {
+  mso-level-style-link: "Heading 3";
+  mso-level-text: "%1.%2.%3";
+  mso-level-tab-stop: 36pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level4 {
+  mso-level-style-link: "Heading 4";
+  mso-level-text: "%1.%2.%3.%4";
+  mso-level-tab-stop: 54pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level5 {
+  mso-level-style-link: "Heading 5";
+  mso-level-text: "%1.%2.%3.%4.%5";
+  mso-level-tab-stop: 54pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level6 {
+  mso-level-style-link: "Heading 6";
+  mso-level-text: "%1.%2.%3.%4.%5.%6";
+  mso-level-tab-stop: 72pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-font-weight: bold;
+  mso-ansi-font-style: normal;
+}
+@list l1:level7 {
+  mso-level-text: "%1.%2.%3.%4.%5.%6.%7";
+  mso-level-tab-stop: 72pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+@list l1:level8 {
+  mso-level-text: "%1.%2.%3.%4.%5.%6.%7.%8";
+  mso-level-tab-stop: 90pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+@list l1:level9 {
+  mso-level-text: "%1.%2.%3.%4.%5.%6.%7.%8.%9";
+  mso-level-tab-stop: 90pt;
+  mso-level-number-position: left;
+  margin-left: 0cm;
+  text-indent: 0cm;
+  mso-bidi-font-family: "EB Garamond",serif;
+}
+/* ordered list */
+@list l2 {
+  mso-list-id: 525294607;
+  mso-list-template-ids: 67633181;
+}
+@list l2:level1 {
+  mso-level-number-format: alpha-lower;
+  mso-level-text: "%1)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 18pt;
+  text-indent: -18pt;
+}
+@list l2:level2 {
+  mso-level-text: "%2)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 36pt;
+  text-indent: -18pt;
+}
+@list l2:level3 {
+  mso-level-number-format: roman-lower;
+  mso-level-text: "%3)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 54pt;
+  text-indent: -18pt;
+}
+@list l2:level4 {
+  mso-level-number-format: alpha-upper;
+  mso-level-text: "%4)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 72pt;
+  text-indent: -18pt;
+}
+@list l2:level5 {
+  mso-level-number-format: roman-upper;
+  mso-level-text: "%5)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 90pt;
+  text-indent: -18pt;
+}
+@list l2:level6 {
+  mso-level-number-format: alpha-lower;
+  mso-level-text: "%6)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 108pt;
+  text-indent: -18pt;
+}
+@list l2:level7 {
+  mso-level-tab-stop: none;
+  mso-level-text: "%7)";
+  mso-level-number-position: left;
+  margin-left: 126pt;
+  text-indent: -18pt;
+}
+@list l2:level8 {
+  mso-level-number-format: roman-lower;
+  mso-level-text: "%8)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 144pt;
+  text-indent: -18pt;
+}
+@list l2:level9 {
+  mso-level-number-format: alpha-upper;
+  mso-level-text: "%9)";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 162pt;
+  text-indent: -18pt;
+}
+/* Unordered list */
+@list l3 {
+  mso-list-id: 1308196397;
+  mso-list-type: hybrid;
+  mso-list-template-ids: -277327948 -457018030 67633155 67633157 67633153 67633155 67633157 67633153 67633155 67633157;
+}
+@list l3:level1 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 18pt;
+  text-indent: -18pt;
+}
+@list l3:level2 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 36pt;
+  text-indent: -18pt;
+}
+@list l3:level3 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 54pt;
+  text-indent: -18pt;
+}
+@list l3:level4 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 72pt;
+  text-indent: -18pt;
+}
+@list l3:level5 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 90pt;
+  text-indent: -18pt;
+}
+@list l3:level6 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 108pt;
+  text-indent: -18pt;
+}
+@list l3:level7 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 126pt;
+  text-indent: -18pt;
+}
+@list l3:level8 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 144pt;
+  text-indent: -18pt;
+}
+@list l3:level9 {
+  mso-level-number-format: bullet;
+  mso-level-text: —;
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 162pt;
+  text-indent: -18pt;
+}
+/* steps ordered list: all numbers */
+@list l4 {
+  mso-list-id: 525294608;
+  mso-list-template-ids: 676331812;
+}
+@list l4:level1 {
+  mso-level-text: "%1.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 18pt;
+  text-indent: -18pt;
+}
+@list l4:level2 {
+  mso-level-text: "%2.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 36pt;
+  text-indent: -18pt;
+}
+@list l4:level3 {
+  mso-level-text: "%3.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 54pt;
+  text-indent: -18pt;
+}
+@list l4:level4 {
+  mso-level-text: "%4.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 72pt;
+  text-indent: -18pt;
+}
+@list l4:level5 {
+  mso-level-text: "%5.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 90pt;
+  text-indent: -18pt;
+}
+@list l4:level6 {
+  mso-level-text: "%6.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 108pt;
+  text-indent: -18pt;
+}
+@list l4:level7 {
+  mso-level-tab-stop: none;
+  mso-level-text: "%7.";
+  mso-level-number-position: left;
+  margin-left: 126pt;
+  text-indent: -18pt;
+}
+@list l4:level8 {
+  mso-level-text: "%8.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 144pt;
+  text-indent: -18pt;
+}
+@list l4:level9 {
+  mso-level-text: "%9.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 162pt;
+  text-indent: -18pt;
+}
+div.ListContLevel1 {
+  mso-style-priority: 34;
+  margin-left: 18pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel2 {
+  mso-style-priority: 34;
+  margin-top: 0cm;
+  margin-left: 36pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel3 {
+  mso-style-priority: 34;
+  margin-left: 54pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel4 {
+  mso-style-priority: 34;
+  margin-left: 72pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel5 {
+  mso-style-priority: 34;
+  margin-left: 90pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel6 {
+  mso-style-priority: 34;
+  margin-left: 108pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel7 {
+  mso-style-priority: 34;
+  margin-left: 126pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel8 {
+  mso-style-priority: 34;
+  margin-left: 144pt;
+  margin-right: 0cm;
+}
+
+div.ListContLevel9 {
+  mso-style-priority: 34;
+  margin-left: 162pt;
+  margin-right: 0cm;
+}
+
+table.MsoNormalTable {
+  mso-style-name: "Table Normal";
+  mso-tstyle-rowband-size: 0;
+  mso-tstyle-colband-size: 0;
+  mso-style-noshow: yes;
+  mso-style-priority: 99;
+  mso-style-parent: "";
+  mso-padding-alt: 0cm 5.4pt 0cm 5.4pt;
+  mso-para-margin: 0cm;
+  mso-para-margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+ol {
+  margin-bottom: 0cm;
+  margin-left: 18pt;
+}
+
+ul {
+  margin-bottom: 0cm;
+  margin-left: 18pt;
+}
+p.Sourcecode table td { padding: 5px; }
+p.Sourcecode table pre { margin: 0; }
+p.Sourcecode, p.Sourcecode .w {
+  color: #444444;
+}
+p.Sourcecode .cp {
+  color: #CC00A3;
+}
+p.Sourcecode .cs {
+  color: #CC00A3;
+}
+p.Sourcecode .c, p.Sourcecode .ch, p.Sourcecode .cd, p.Sourcecode .cm, p.Sourcecode .cpf, p.Sourcecode .c1 {
+  color: #1E90FF;
+}
+p.Sourcecode .kc {
+  color: #C34E00;
+}
+p.Sourcecode .kd {
+  color: #0000FF;
+}
+p.Sourcecode .kr {
+  color: #007575;
+}
+p.Sourcecode .k, p.Sourcecode .kn, p.Sourcecode .kp, p.Sourcecode .kt, p.Sourcecode .kv {
+  color: #0000FF;
+}
+p.Sourcecode .s, p.Sourcecode .sb, p.Sourcecode .sc, p.Sourcecode .ld, p.Sourcecode .sd, p.Sourcecode .s2, p.Sourcecode .se, p.Sourcecode .sh, p.Sourcecode .si, p.Sourcecode .sx, p.Sourcecode .sr, p.Sourcecode .s1, p.Sourcecode .ss {
+  color: #009C00;
+}
+p.Sourcecode .sa {
+  color: #0000FF;
+}
+p.Sourcecode .nb, p.Sourcecode .bp {
+  color: #C34E00;
+}
+p.Sourcecode .nt {
+  color: #0000FF;
+}
+
+
+-->
+]]></style><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/><style>
+  <!--
+
+
+ol
+        {margin-bottom:0cm;}
+ul
+        {margin-bottom:0cm;}
+
+table.MsoISOTable tr
+    {page-break-inside:avoid;}
+
+td { page-break-inside:avoid; }
+tr { page-break-after:avoid; }
+
+table.MsoISOTableBig tr
+    {page-break-inside:auto;}
+
+table.MsoISOTableBig td
+    {page-break-inside:auto;}
+
+span.stem
+    {font-family:"Cambria Math",serif;
+    mso-ascii-font-family:"Cambria Math";
+    font-style:italic;}
+
+dt
+    {page-break-inside:avoid;
+    page-break-after:avoid}
+
+br.section
+    {page-break-before:always;
+    mso-break-type:section-break;}
+br.pagebreak
+    {page-break-before:always;
+    mso-special-character:line-break;}
+
+span.addition {
+        color: blue;
+}
+span.deletion {
+        color: red;
+        text-decoration: line-through;
+}
+
+table.rouge-line-table {
+  border:none;
+  mso-border-alt:none;
+  mso-border-insideh:none;
+  mso-border-insidev:none;
+}
+
+td.rouge-code p.Sourcecode {
+  margin: 0px;
+}
+
+div.table_container {
+  margin-bottom: 14pt;
+}
+
+-->
+</style><style>
+  <!--
+p.Sourcecode, li.Sourcecode, div.Sourcecode, pre.Sourcecode, pre {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 6pt;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: left;
+  mso-pagination: widow-orphan;
+  tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229pt 274.8pt 320.6pt 366.4pt 412.2pt 458pt 503.8pt 549.6pt 595.4pt 641.2pt 687pt 732.8pt;
+  font-size: 10.0pt;
+  font-family: "Courier Prime",monospace;
+  mso-fareast-font-family: Calibri;
+  mso-bidi-font-family: "Courier New";
+  mso-ansi-language: EN-GB;
+}
+
+p.pseudocode, li.pseudocode, div.pseudocode {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 6pt;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: left;
+  mso-pagination: widow-orphan;
+  tab-stops: 45.8pt 91.6pt 137.4pt 183.2pt 229pt 274.8pt 320.6pt 366.4pt 412.2pt 458pt 503.8pt 549.6pt 595.4pt 641.2pt 687pt 732.8pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: Calibri;
+  mso-bidi-font-family: "Courier New";
+  mso-ansi-language: EN-GB;
+}
+
+p.Biblio, li.Biblio, div.Biblio, p.NormRef, li.NormRef, div.NormRef {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 33.15pt;
+  text-indent: -33.15pt;
+  tab-stops: 33.15pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.5pt;
+  font-weight: normal;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.FigureTitle {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: center;
+  line-height: 12pt;
+  page-break-before: avoid;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-weight: bold;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.SourceTitle {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: center;
+  line-height: 12pt;
+  page-break-before: avoid;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-weight: bold;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.AdmonitionTitle, p.RecommendationTitle, p.RecommendationTestTitle {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: center;
+  line-height: 12pt;
+  page-break-after: avoid;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-weight: bold;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.TableTitle, p.ListTitle {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 6pt;
+  margin-left: 0cm;
+  text-align: center;
+  page-break-after: avoid;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.Note, div.Note, li.Note, p.TableFootnote, div.TableFootnote, li.TableFootnote {
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  mso-style-parent: "";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 2cm;
+  mso-bidi-font-size: 11pt;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.Note, li.Note, p.TableFootnote, div.TableFootnote, li.TableFootnote {
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+p.ANNEX, li.ANNEX, div.ANNEX {
+  mso-style-name: ANNEX;
+  mso-style-priority: 10;
+  mso-style-unhide: no;
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 24pt;
+  margin-left: 0cm;
+  text-align: center;
+  text-indent: 0cm;
+  line-height: 15.5pt;
+  mso-line-height-rule: exactly;
+  page-break-before: always;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-outline-level: 1;
+  mso-list: l0 level1 lfo12;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-fareast-language: JA;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.BiblioTitle, li.BiblioTitle, div.BiblioTitle {
+  mso-style-name: "Biblio Title";
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 15.5pt;
+  margin-left: 0cm;
+  text-align: center;
+  line-height: 15.5pt;
+  mso-pagination: widow-orphan;
+  mso-outline-level: 1;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.Definition, li.Definition, div.Definition {
+  mso-style-name: Definition;
+  mso-style-priority: 9;
+  mso-style-unhide: no;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 12pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.ForewordTitle, li.ForewordTitle, div.ForewordTitle {
+  mso-style-name: "Foreword Title";
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 15.5pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 15.5pt;
+  page-break-before: always;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-outline-level: 1;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.IntroTitle, li.IntroTitle, div.IntroTitle {
+  mso-style-name: "Intro Title";
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-parent: "Foreword Title";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 15.5pt;
+  margin-left: 0cm;
+  text-align: left;
+  line-height: 15.5pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-outline-level: 1;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  page-break-before: always;
+  mso-bidi-font-weight: normal;
+}
+
+p.TitlePageSubhead, li.TitlePageSubhead, div.TitlePageSubhead {
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-parent: "Foreword Title";
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 0pt;
+  margin-left: 0cm;
+  text-align: center;
+  line-height: 15.5pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 10.5pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.Terms, li.Terms, div.Terms {
+  mso-style-name: "Term(s)";
+  mso-style-priority: 8;
+  mso-style-unhide: no;
+  mso-style-next: Definition;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-bidi-font-weight: normal;
+}
+
+p.AltTerms, li.AltTerms, div.AltTerms {
+  mso-style-name: "AltTerm(s)";
+  mso-style-priority: 8;
+  mso-style-unhide: no;
+  mso-style-next: Definition;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-bidi-font-weight: normal;
+}
+
+p.DeprecatedTerms, li.DeprecatedTerms, div.DeprecatedTerms {
+  mso-style-name: "DeprecatedTerm(s)";
+  mso-style-priority: 8;
+  mso-style-unhide: no;
+  mso-style-next: Definition;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  mso-bidi-font-weight: normal;
+}
+
+p.TermNum, li.TermNum, div.TermNum {
+  mso-style-name: TermNum;
+  mso-style-priority: 7;
+  mso-style-unhide: no;
+  mso-style-next: "Term(s)";
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  tab-stops: 20.15pt;
+  font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.zzContents, li.zzContents, div.zzContents {
+  mso-style-name: zzContents;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-next: "TOC 1";
+  margin-top: 48pt;
+  margin-right: 0cm;
+  margin-bottom: 15.5pt;
+  margin-left: 0cm;
+  line-height: 15.5pt;
+  mso-line-height-rule: exactly;
+  page-break-before: always;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.TOCTitle, li.TOCTitle, div.TOCTitle {
+  mso-style-name: zzContents;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-next: "TOC 1";
+  margin-top: 48pt;
+  margin-right: 0cm;
+  margin-bottom: 15.5pt;
+  margin-left: 0cm;
+  line-height: 15.5pt;
+  mso-line-height-rule: exactly;
+  mso-pagination: widow-orphan;
+  page-break-after: avoid;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 14pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.zzCopyright, li.zzCopyright {
+  mso-style-name: zzCopyright;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-next: Normal;
+  margin-top: 0cm;
+  margin-right: 14.2pt;
+  margin-bottom: 12pt;
+  margin-left: 14.2pt;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt 25.7pt 481.15pt;
+  padding: 0cm;
+  mso-padding-alt: 1pt 4pt 1pt 4pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+div.zzCopyright {
+  mso-element: para-border-div;
+  border: solid windowtext 1pt;
+  mso-border-top-alt: solid windowtext 0.5pt;
+  mso-border-left-alt: solid windowtext 0.5pt;
+  mso-border-right-alt: solid windowtext 0.5pt;
+  mso-border-bottom-alt: solid windowtext 0.5pt;
+  padding: 1pt 4pt 0cm 4pt;
+  margin-left: 5.1pt;
+  margin-right: 5.1pt;
+}
+
+p.zzCopyright_address {
+  margin-top: 0cm;
+  margin-right: 14.2pt;
+  margin-bottom: 0pt;
+  margin-left: 14.2pt;
+  mso-layout-grid-align: none;
+  text-autospace: none;
+  padding-left: 20pt;
+  mso-padding-alt-left: 20pt;
+  font-size: 10pt;
+  text-align: left;
+  mso-bidi-font-size: 11pt;
+}
+
+p.zzSTDTitle, li.zzSTDTitle, div.zzSTDTitle {
+  mso-style-name: zzSTDTitle;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-next: Normal;
+  margin-top: 20pt;
+  margin-right: 0cm;
+  margin-bottom: 38pt;
+  margin-left: 0cm;
+  line-height: 17.5pt;
+  mso-line-height-rule: exactly;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 16pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.zzSTDTitle1, li.zzSTDTitle1, div.zzSTDTitle1 {
+  mso-style-name: zzSTDTitle;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  mso-style-next: Normal;
+  margin-top: 0pt;
+  margin-right: 0cm;
+  margin-bottom: 18pt;
+  margin-left: 0cm;
+  line-height: 17.5pt;
+  mso-line-height-rule: exactly;
+  mso-pagination: widow-orphan;
+  mso-hyphenate: none;
+  tab-stops: 20.15pt;
+  font-size: 16pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+  font-weight: bold;
+  mso-bidi-font-weight: normal;
+}
+
+p.Quote, li.Quote, div.Quote {
+  mso-style-priority: 99;
+  margin-top: 0cm;
+  margin-right: 36pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  text-align: left;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.Quote, li.Quote {
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+}
+
+p.QuoteAttribution {
+  text-align: right;
+  mso-style-priority: 99;
+  margin-top: 0cm;
+  margin-right: 36pt;
+  margin-bottom: 0cm;
+  margin-left: 36pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+p.Admonition, li.Admonition, div.Admonition {
+  mso-style-priority: 99;
+  margin-top: 0cm;
+  margin-right: 57.6pt;
+  margin-bottom: 0cm;
+  margin-left: 57.6pt;
+  margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  border: none;
+  mso-border-alt: solid #4472C4 0.25pt;
+  mso-border-themecolor: accent1;
+  padding: 0cm;
+  mso-padding-alt: 10pt 10pt 10pt 10pt;
+  mso-ascii-font-family: "EB Garamond",serif;
+  mso-ascii-theme-font: minor-latin;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-fareast-theme-font: minor-fareast;
+  mso-hansi-font-family: "EB Garamond",serif;
+  mso-hansi-theme-font: minor-latin;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-bidi-theme-font: minor-bidi;
+  color: #4472C4;
+  mso-themecolor: accent1;
+  mso-ansi-language: EN-AU;
+}
+
+p.Admonition, li.Admonition {
+  font-size: 12pt;
+  font-family: "EB Garamond",serif;
+  font-style: italic;
+}
+
+p.Code, li.Code, div.Code {
+  mso-style-name: Code;
+  mso-style-priority: 16;
+  mso-style-unhide: no;
+  mso-style-qformat: yes;
+  margin: 0cm;
+  margin-bottom: 0.0001pt;
+  line-height: 10pt;
+  mso-pagination: widow-orphan;
+  tab-stops: 20.15pt;
+  font-size: 9pt;
+  mso-bidi-font-size: 11pt;
+  font-family: "Courier Prime",monospace;
+  mso-fareast-font-family: Calibri;
+  mso-bidi-font-family: "Source Sans Pro";
+  mso-ansi-language: EN-GB;
+}
+
+p.Formula, li.Formula, div.Formula {
+  mso-style-name: Formula;
+  mso-style-noshow: yes;
+  mso-style-unhide: no;
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 11pt;
+  margin-left: 20.15pt;
+  line-height: 12pt;
+  mso-pagination: widow-orphan;
+  tab-stops: right 487.45pt;
+  font-size: 10.5pt;
+  font-family: "EB Garamond",serif;
+  mso-fareast-font-family: "EB Garamond",serif;
+  mso-bidi-font-family: "EB Garamond",serif;
+  mso-ansi-language: EN-GB;
+}
+
+@page {
+  mso-facing-pages: yes;
+}
+@page WordSection1 {
+  size: 595.3pt 841.9pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-even-header: url(cid:header.html) eh1;
+  mso-header: url(cid:header.html) h1;
+  mso-even-footer: url(cid:header.html) ef1;
+  mso-paper-source: 0;
+}
+div.WordSection1 {
+  page: WordSection1;
+}
+
+@page WordSection2 {
+  size: 595.3pt 841.9pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-page-numbers: roman-lower;
+  mso-even-header: url(cid:header.html) eh2;
+  mso-header: url(cid:header.html) h2;
+  mso-even-footer: url(cid:header.html) ef2;
+  mso-footer: url(cid:header.html) f2;
+  mso-paper-source: 0;
+}
+@page WordSection2L {
+  size: 841.9pt 595.3pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-even-header: url(cid:header.html) eh2l;
+  mso-header: url(cid:header.html) h2l;
+  mso-even-footer: url(cid:header.html) ef2l;
+  mso-footer: url(cid:header.html) f2l;
+  mso-paper-source: 0;
+}
+@page WordSection2P {
+  size: 595.3pt 841.9pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-even-header: url(cid:header.html) eh2;
+  mso-header: url(cid:header.html) h2;
+  mso-even-footer: url(cid:header.html) ef2;
+  mso-footer: url(cid:header.html) f2;
+  mso-paper-source: 0;
+}
+div.WordSection2 {
+  page: WordSection2;
+}
+
+@page WordSection3 {
+  size: 595.3pt 841.9pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-page-numbers: 1;
+  mso-even-header: url(cid:header.html) eh2;
+  mso-header: url(cid:header.html) h2;
+  mso-even-footer: url(cid:header.html) ef3;
+  mso-footer: url(cid:header.html) f3;
+  mso-paper-source: 0;
+}
+@page WordSection3L {
+  size: 841.9pt 595.3pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-even-header: url(cid:header.html) eh2l;
+  mso-header: url(cid:header.html) h2l;
+  mso-even-footer: url(cid:header.html) ef3l;
+  mso-footer: url(cid:header.html) f3l;
+  mso-paper-source: 0;
+}
+@page WordSection3P {
+  size: 595.3pt 841.9pt;
+  margin: 39.7pt 53.85pt 1cm 53.85pt;
+  mso-header-margin: 35.45pt;
+  mso-footer-margin: 14.2pt;
+  mso-even-header: url(cid:header.html) eh2;
+  mso-header: url(cid:header.html) h2;
+  mso-even-footer: url(cid:header.html) ef3;
+  mso-footer: url(cid:header.html) f3;
+  mso-paper-source: 0;
+}
+div.WordSection3 {
+  page: WordSection3;
+}
+
+table.MsoISOTable, table.MsoISOTableBig {
+  mso-style-name: "Table ISO";
+  mso-tstyle-rowband-size: 0;
+  mso-tstyle-colband-size: 0;
+  mso-style-noshow: yes;
+  mso-style-priority: 99;
+  mso-style-parent: "";
+  mso-padding-alt: 0cm 2.85pt 0cm 2.85pt;
+  mso-para-margin: 0cm;
+  mso-para-margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  border-collapse: collapse;
+  mso-table-layout-alt: fixed;
+  border: solid windowtext 2pt;
+  mso-border-alt: solid windowtext 2pt;
+  mso-yfti-tbllook: 480;
+  mso-border-insideh: 0.75pt solid windowtext;
+  mso-border-insidev: 0.75pt solid windowtext;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+table.MsoISOTable th, table.MsoISOTableBig th {
+  border: solid windowtext 1pt;
+  mso-border-alt: solid windowtext 1pt;
+  padding: 0cm 2.85pt 0cm 2.85pt;
+}
+
+table.MsoISOTable td, table.MsoISOTableBig td {
+  border: solid windowtext 1pt;
+  mso-border-alt: solid windowtext 1pt;
+  padding: 0cm 2.85pt 0cm 2.85pt;
+}
+
+table.MsoNormalTable th, table.MsoNormalTable td {
+  border: none;
+  mso-border-alt: none;
+}
+
+table.MsoISOTable p, table.MsoISOTableBig p {
+  font-size: 10.0pt;
+}
+
+table.recommendclass, table.recommendclass p {
+  font-size: 10.0pt;
+}
+
+table.MsoTableGrid {
+  mso-style-name: "Table Grid";
+  mso-tstyle-rowband-size: 0;
+  mso-tstyle-colband-size: 0;
+  mso-style-priority: 39;
+  mso-style-unhide: no;
+  border: solid windowtext 1pt;
+  mso-border-alt: solid windowtext 0.5pt;
+  mso-padding-alt: 0cm 5.4pt 0cm 5.4pt;
+  mso-border-insideh: 0.5pt solid windowtext;
+  mso-border-insidev: 0.5pt solid windowtext;
+  mso-para-margin: 0cm;
+  mso-para-margin-bottom: 0.0001pt;
+  mso-pagination: widow-orphan;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+div.formula {
+  tab-stops: right 487.45pt;
+}
+
+body {
+  tab-interval: 36pt;
+}
+
+.coverpage_docnumber {
+  text-align: center;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.coverpage_techcommittee {
+  text-align: center;
+  font-size: 12pt;
+}
+
+.coverpage_docstage {
+  text-align: center;
+  font-size: 30pt;
+  color: #2e81c2;
+}
+
+div.coverpage_warning {
+  mso-element: para-border-div;
+  border: solid windowtext 1pt #2e81c2;
+  mso-border-alt: solid windowtext 0.5pt;
+  padding: 1pt 4pt 1pt 4pt #2e81c2;
+  font-size: 10pt;
+  margin-left: 4.25pt;
+  margin-right: 4.25pt;
+}
+
+.coverpage_warning {
+  color: #2e81c2;
+  font-size: 10pt;
+}
+
+a.TableFootnoteRef, span.TableFootnoteRef {
+  mso-style-priority: 99;
+  mso-style-parent: "Footnote Reference";
+  vertical-align: super;
+}
+
+aside {
+  font-size: 10.0pt;
+}
+
+.example-title {
+  font-weight: bold;
+  margin-left: -36pt;
+}
+
+p.example, li.example, td.example {
+  margin-right: 0pt;
+  margin-left: 0pt;
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+div.example {
+  margin-right: 36pt;
+  margin-left: 36pt;
+  margin-top: 0cm;
+  margin-bottom: 0cm;
+}
+
+p.example, li.example, div.example, td.example {
+  mso-pagination: none;
+}
+
+td.example p.MsoListParagraph {
+  font-size: 10.0pt;
+}
+
+div.example p.MsoListParagraph {
+  font-size: 10.0pt;
+}
+
+div.Note p.MsoListParagraph {
+  font-size: 10.0pt;
+}
+
+div.Note span.stem {
+  font-size: 10.0pt;
+}
+
+div.Note p.Sourcecode, div.Note pre.Sourcecode {
+  font-size: 8pt;
+  margin-left: 1cm;
+}
+
+div.Note table.dl {
+  font-size: 10.0pt;
+  margin-left: 1cm;
+}
+
+span.note_label, span.example_label, td.example_label, td.note_label {
+  font-size: 10.0pt;
+  font-family: "EB Garamond",serif;
+}
+
+table.dl {
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 11pt;
+  margin-left: 20.15pt;
+}
+
+div.license, p.license {
+  font-size: 8pt;
+  font-family: "EB Garamond",serif;
+}
+
+div.warning p {
+  margin-bottom: 6pt;
+  border: none;
+  mso-border-alt: solid windowtext 0.5pt;
+  padding: 0cm;
+  mso-padding-alt: 1pt 4pt 1pt 4pt;
+}
+
+span.fmt-hi {
+  background-color: yellow;
+}
+
+span.AdmittedLabel, span.DeprecatedLabel {
+  color: #00335b;
+  background-color: #CFE2F3;
+}
+
+-->
+</style></head>
+  <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US">
+    <div class="WordSection1"><p class="MsoNormal" align="right" style="text-align:right">
+  <b style="mso-bidi-font-weight: normal">
+    <span lang="EN-GB" style="font-size:18.0pt;mso-no-proof:yes" xml:lang="EN-GB">Open Geospatial Consortium</span>
+  </b>
+  <b style="mso-bidi-font-weight:normal">
+    <span lang="EN-GB" style="font-size:14.0pt" xml:lang="EN-GB">
+      <o:p class="MsoNormal"></o:p>
+    </span>
+  </b>
+</p>
+
+<p class="MsoNormal" align="right" style="text-align:right">
+  <span lang="EN-GB" style="mso-no-proof:yes;font-size:10.0pt" xml:lang="EN-GB">Submission Date: 2018-08-02</span>
+</p><p class="MsoNormal">&#xA0;</p></div>
+    <p class="MsoNormal">
+      <br clear="all" class="section"/>
+    </p>
+    <div class="WordSection2"><div class="license">
+  <div class="boilerplate-license">
+
+<div><a name="_45f6bdf5-80f3-f775-9740-2adafc90b1f7" id="_45f6bdf5-80f3-f775-9740-2adafc90b1f7"></a><p class="TitlePageSubhead">License Agreement</p>
+
+<p class="license"><a name="_772872dd-928c-666f-92c5-676f7f5d3071" id="_772872dd-928c-666f-92c5-676f7f5d3071"></a>Use of this document is subject to the license agreement at <a href="https://www.ogc.org/license">https://www.ogc.org/license</a></p>
+</div>
+</div>
+
+
+</div>
+
+<span lang="EN-US" style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language: EN-US;mso-bidi-language:AR-SA" xml:lang="EN-US"><br clear="all" style="mso-special-character:line-break;page-break-before:always">
+</br>
+
+</span><div class="authority"><div class="boilerplate-copyright">
+
+<div><a name="_0dd7fcba-8864-d1c9-1a66-41cb867b3e96" id="_0dd7fcba-8864-d1c9-1a66-41cb867b3e96"></a><p class="TitlePageSubhead">Copyright notice</p>
+
+<p style="text-align:center;" align="center" class="MsoNormal"><a name="_4bcb45d4-9570-659a-f07b-b1b30b9944ab" id="_4bcb45d4-9570-659a-f07b-b1b30b9944ab"></a>Copyright &#xA9; 2018 Open Geospatial Consortium<br/> To obtain additional rights of use, visit <a href="https://www.ogc.org/legal">https://www.ogc.org/legal</a></p>
+</div>
+
+<div><a name="_6908548e-204b-56e7-9062-6924cccf2315" id="_6908548e-204b-56e7-9062-6924cccf2315"></a><p class="TitlePageSubhead">Note</p>
+
+<p style="text-align:left;" align="left" class="MsoNormal"><a name="_e1d5d5c4-54c3-2761-be2c-22547f01c057" id="_e1d5d5c4-54c3-2761-be2c-22547f01c057"></a>Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p style="text-align:left;" align="left" class="MsoNormal"><a name="_02892e94-7b43-630a-129c-d2e0f75ff92b" id="_02892e94-7b43-630a-129c-d2e0f75ff92b"></a>Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</div>
+</div>
+
+
+
+<div class="boilerplate-legal">
+
+<div><a name="_17b22fa5-f312-1eb1-e77e-70984a699601" id="_17b22fa5-f312-1eb1-e77e-70984a699601"></a><p class="TitlePageSubhead">Notice</p>
+
+<p class="MsoNormal"><a name="_7cc1bfbd-9c3c-c1ca-6546-74299b1b9305" id="_7cc1bfbd-9c3c-c1ca-6546-74299b1b9305"></a>This document is not an OGC standard. This document provides release notes for an OGC standard. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
+
+<p class="MsoNormal"><a name="_e8629e34-594d-6076-a18a-23d7b5df19ba" id="_e8629e34-594d-6076-a18a-23d7b5df19ba"></a>Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+</div>
+</div>
+
+<div class="boilerplate-feedback">
+
+</div>
+</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div class="TOC"><a name="_13d7055e-30fc-845a-c60e-8972faf092d9" id="_13d7055e-30fc-845a-c60e-8972faf092d9"></a><p class="zzContents">Contents</p><p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
+<span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc854251787">Copyright notice<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc854251787 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc226012094">Note<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc226012094 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc488613287">License Agreement<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc488613287 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc785434289">Notice<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc785434289 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc305281429">I. Abstract<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc305281429 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc560792098">II. Keywords<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc560792098 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc752822578">III. Security considerations<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc752822578 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc159055965">IV. Submitting Organizations<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc159055965 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc044699876">V. Submitters<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc044699876 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc861587806">1. Revisions to Volume 1: CDB Core Model and Physical Data Store<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc861587806 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc396048489">1.1. Introductory Clause &#x201C;<tt>Future Work</tt>&#x201D;<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc396048489 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc358994212">1.2. 1.0.1 Corrigendum changes included<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc358994212 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc738409987">1.3. General Change: All file extensions in Requirements are now generic<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc738409987 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc672076620">1.4. Clause 1.4.3 CDB Metadata<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc672076620 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc669999386">1.5. Clause 1.4.4 CDB Directory File Naming and Structure<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc669999386 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc887493437">1.6. Clause 1.7.1.4 System Hardware Independence<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc887493437 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc731210993">1.7. Clause 3.1.1 Metadata Directory<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc731210993 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc698393811">1.8. Clause 3.1.1Metadata Directory<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc698393811 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc266039062">1.9. Clause 3.4.2.4 Examples<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc266039062 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc693884697">1.10. Clause 3.4.4.3 Examples<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc693884697 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc790735518">1.11. Clause 3.4.4.4 Examples<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc790735518 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc226034600">1.12. Clause 3.4.5.2 Examples<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc226034600 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc107979851">1.13. Clause 5.1 enhanced to include discussion of Controlled Vocabularies<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc107979851 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc620695972">1.14. Clause 5.1.1 Global Metadata<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc620695972 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc373860183">1.15. Clause 5.1.2 Local Metadata<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc373860183 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc860166731">1.16. Clause 5.1.8 (Formerly Clause 5.1.6) Version Metadata<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc860166731 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc287137838">1.17. Clause 5.1.12 Geospatial Metadata Guidance<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc287137838 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc587057922">1.18. Clause 5.1.12.1 Suggested Global Geospatial Metadata Elements<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc587057922 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc476765935">1.19. Clause 5.1.12.2 Suggested Local Geospatial Metadata Elements<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc476765935 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc640010798">1.20. Clause 5.6<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc640010798 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc474737657">1.21. Clause 5.6.2.3.2 VSTI Default Read Value (Change Request 490)<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc474737657 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc138843757">1.22. New Clause: 5.7.1.6.4 Network Vector Priority<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc138843757 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc452186561">1.23. New Clause: 5.7.1.9 Vector Significant Size and Spatial Significance Criteria<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc452186561 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc897074982">1.24. Annex A: Abstract Test Suite<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc897074982 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc694736541">1.25. Table 5-1 Component Selectors for CDB Controlled Vocabularies and Metadata<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc694736541 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc560695542">1.26. Table 5-9: Component Selectors for GTModel Datasets<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc560695542 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc867228911">1.27. Figure 5-25. Two instances of code 65<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc867228911 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc468169542">1.28. Table 5-27 Use of &#x201C;<tt>D</tt>&#x201D; has two meanings. (Change Request 471)<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc468169542 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc966188376">1.29. Table 5-27 not entirely visible (Change Request 481)<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc966188376 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc063681528">1.30. CDB_Attributes.xml Schema error (Change Request 482)<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc063681528 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc117143367">2. Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc117143367 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc511965636">2.1. Annex Q: Table of Dataset Codes<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc511965636 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc826318254">2.2. Annex R: Derived Datasets within the CDB<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc826318254 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc079128215">3. Revisions to Volume 3 Terms and Definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc079128215 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc385468261">4. Revisions to Volume 4: CDB Use of Shapefiles for Vector Data Storage<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc385468261 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc800865187">4.1. General<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc800865187 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc856611640">4.2. Clause 1: Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc856611640 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc569059293">4.3. Clause 3: References<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc569059293 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc753367024">4.4. Clause 4: Terms and Definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc753367024 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc317459478">5. Revisions to Volume 5: Radar Cross-Sections<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc317459478 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc921373824">5.1. General<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc921373824 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc658529354">5.2. Clause 4 Terms and Definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc658529354 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc201741394">6. Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc201741394 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc852157790">6.1. General<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc852157790 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc161681309">6.2. Clause 5.1 Identifiers<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc161681309 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc002306046">6.3. Requirement Class Metadata<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc002306046 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc580965881">7. Revisions to Volume 7 OGC CDB Data Model Guidance<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc580965881 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc496084458">7.1. 6.5.3 Access of a Model Interior<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc496084458 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc897602157">7.2. Section 6.13.1 Linear Feature Radar Simulation Example<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc897602157 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc982295633">7.3. New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc982295633 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc142019303">8. Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc142019303 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc043529242">8.1. Clause 4 Terms and Definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc043529242 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc274595818">9. Revisions to Volume 10: CDB Implementation Guidance<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc274595818 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc751984177">9.1. General<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc751984177 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc518321283">9.2. Clause 4 Terms and Definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc518321283 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc248398091">9.3. Clause 5: Platform Recommendations<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc248398091 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc221219283">10. Revisions to Volume 12: CDB Navaids Attribution and Navaids Attribution Enumeration Values<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc221219283 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc2"><span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc821029307">10.1. Abstract:<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc821029307 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
+
+<p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span><span lang="EN-GB" xml:lang="EN-GB"><o:p class="MsoNormal">&#xA0;</o:p></span></p>
+</div><p class="MsoNormal"><br clear="all" style="mso-special-character:line-break;page-break-before:always"/></p><div><a name="_af13b9ad-2aa7-cdda-2e7e-1477c0ebf3eb" id="_af13b9ad-2aa7-cdda-2e7e-1477c0ebf3eb"></a><h1 class="AbstractTitle">I.<span style="mso-tab-count:1">&#xA0; </span>Abstract</h1><p class="MsoNormal"><a name="_0c5e0e61-0933-b147-fe9e-5d2dc4b7e5bc" id="_0c5e0e61-0933-b147-fe9e-5d2dc4b7e5bc"></a>This document provides release notes for version 1.1 of the CDB Standard and related Best Practices.</p></div><div class="Section3"><a name="_2f1ba450-4c73-1efa-6cfd-c68b789959c4" id="_2f1ba450-4c73-1efa-6cfd-c68b789959c4"></a><h1 class="IntroTitle">II.<span style="mso-tab-count:1">&#xA0; </span>Keywords</h1><p class="MsoNormal">The following are keywords to be used by search engines and document catalogues.</p><p class="MsoNormal">ogcdoc, OGC document, CDB, Common Data Base, simulation, synthetic environment, version 1.1</p></div><div class="Section3"><a name="_1ee4f5b3-7c6d-4e70-be8d-5f6e15ce4b6b" id="_1ee4f5b3-7c6d-4e70-be8d-5f6e15ce4b6b"></a><h1 class="IntroTitle">III.<span style="mso-tab-count:1">&#xA0; </span>Security considerations</h1><p class="MsoNormal"><a name="_927733ee-e695-c49f-5120-5f08eaf68e0c" id="_927733ee-e695-c49f-5120-5f08eaf68e0c"></a>No security considerations have been made for this document.</p></div><div class="Section3"><a name="_28f2780f-5ea1-be5a-0373-800e7cbe7322" id="_28f2780f-5ea1-be5a-0373-800e7cbe7322"></a><h1 class="IntroTitle">IV.<span style="mso-tab-count:1">&#xA0; </span>Submitting Organizations</h1><p class="MsoNormal">The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p><div class="ul_wrap"><p style="mso-list:l3 level1 lfo1;" class="MsoListParagraphCxSpFirst"><a name="_4a0f2983-4f34-2acf-2bd0-6e25813158f9" id="_4a0f2983-4f34-2acf-2bd0-6e25813158f9"></a>OGC CDB Standards Working Group</p></div></div><div class="Section3"><a name="_e864f1e5-2b28-e38c-3525-eab60fa0fde3" id="_e864f1e5-2b28-e38c-3525-eab60fa0fde3"></a><h1 class="IntroTitle">V.<span style="mso-tab-count:1">&#xA0; </span>Submitters</h1><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;"><a name="_e294ecb8-eb44-ba1a-32d2-fb18f9688756" id="_e294ecb8-eb44-ba1a-32d2-fb18f9688756"></a><thead><tr><th valign="middle" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:avoid;">Name</th><th valign="middle" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:avoid;">Affiliation</th></tr></thead><tbody><tr><td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Carl Reed</td><td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;page-break-after:avoid;">Carl Reed &amp; Associates (Editor)</td></tr><tr><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">David Graham</td><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;page-break-after:auto;">CAE Inc. CDB Chair</td></tr></tbody></table></div></div><p class="MsoNormal">&#xA0;</p></div>
+    <p class="MsoNormal">
+      <br clear="all" class="section"/>
+    </p>
+    <div class="WordSection3">
+      <div>
+        <a name="_56bddf69-3448-8455-3fbd-51a361aba130" id="_56bddf69-3448-8455-3fbd-51a361aba130"></a>
+        <h1>1.<span style="mso-tab-count:1">&#xA0; </span>Revisions to Volume 1: CDB Core Model and Physical Data Store</h1>
+        <div><a name="_b83fbdf1-b2b7-da8b-308b-1388f8197b64" id="_b83fbdf1-b2b7-da8b-308b-1388f8197b64"></a><h2>1.1.<span style="mso-tab-count:1">&#xA0; </span>Introductory Clause &#x201C;<tt>Future Work</tt>&#x201D;</h2>
+
+<p class="MsoNormal"><a name="_689197a9-34cc-914c-e949-d6ef535e5d6a" id="_689197a9-34cc-914c-e949-d6ef535e5d6a"></a>Updated to reflect work done in CDB version 1.1 as well as new requirements identified in OGC Testbed 13.</p>
+</div>
+        <div><a name="_a9905242-984e-1df2-d291-d2886304545a" id="_a9905242-984e-1df2-d291-d2886304545a"></a><h2>1.2.<span style="mso-tab-count:1">&#xA0; </span>1.0.1 Corrigendum changes included</h2>
+
+<p class="MsoNormal"><a name="_04cc7d47-3ba3-bf6e-0004-01c5bd227b9d" id="_04cc7d47-3ba3-bf6e-0004-01c5bd227b9d"></a>All CDB 1.0.1 Corrigendum changes incorporated. See OGC document 17-064 Summary of Corrigendum Changes for CDB Volume1: Core.</p>
+</div>
+        <div><a name="_e163a439-7dfa-3ef8-84d0-85ae1c5aa29c" id="_e163a439-7dfa-3ef8-84d0-85ae1c5aa29c"></a><h2>1.3.<span style="mso-tab-count:1">&#xA0; </span>General Change: All file extensions in Requirements are now generic</h2>
+
+<p class="MsoNormal"><a name="_68799464-d675-49e0-8ec8-13322016555b" id="_68799464-d675-49e0-8ec8-13322016555b"></a>All file specific extensions stated in requirements have been made generic. For example, CDB Volume 1 Requirement formerly stated:</p>
+
+<p class="MsoNormal"><a name="_ba37958f-1b68-09b8-dd88-2969468c0da2" id="_ba37958f-1b68-09b8-dd88-2969468c0da2"></a>The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.flt</tt>.</p>
+
+<p class="MsoNormal"><a name="_3b241d9e-21ce-504e-d4c8-fc84bfa1b8c7" id="_3b241d9e-21ce-504e-d4c8-fc84bfa1b8c7"></a>This Requirement now reads:</p>
+
+<p class="MsoNormal"><a name="_4e8ffd43-ec69-e5c8-1f7c-9dfcc6b42f76" id="_4e8ffd43-ec69-e5c8-1f7c-9dfcc6b42f76"></a>The files from the GSModelGeometry and GSModelInteriorGeometry datasets SHALL have the following naming convention: <tt>LatLon_Dnnn_Snnn_Tnnn_LOD_Un_Rn_FeatureCode_FSC_MODL.&lt;ext&gt;</tt></p>
+
+<p class="MsoNormal"><a name="_706969fd-301a-fa2b-ea49-a1bf00a80e9a" id="_706969fd-301a-fa2b-ea49-a1bf00a80e9a"></a>Where <tt>&lt;ext&gt;</tt> is the correct file name extension for the data encoded in the file. There is also a footnote that specifies what the extension was in version 1.0 of the CDB standard.</p>
+</div>
+        <div><a name="_a9fc48b6-64c7-0d50-13ca-126c00bd794e" id="_a9fc48b6-64c7-0d50-13ca-126c00bd794e"></a><h2>1.4.<span style="mso-tab-count:1">&#xA0; </span>Clause 1.4.3 CDB Metadata</h2>
+
+<p class="MsoNormal"><a name="_653708a2-9db4-0611-4fc1-15c9581d187a" id="_653708a2-9db4-0611-4fc1-15c9581d187a"></a>This clause was updated to:</p>
+
+<div class="ul_wrap"><p style="mso-list:l3 level1 lfo2;" class="MsoListParagraphCxSpFirst"><a name="_e5314222-25c3-51d8-5398-b945cf1f29aa" id="_e5314222-25c3-51d8-5398-b945cf1f29aa"></a>Provide definitions for metadata, controlled vocabularies, and enumerations. These are in clauses 1.4.3.1, 1.4.3.2, and 1.4.3.3.
+</p>
+<p style="mso-list:l3 level1 lfo2;" class="MsoListParagraphCxSpLast"><a name="_669d519d-4125-14c7-a3cc-a7b2db75a0e5" id="_669d519d-4125-14c7-a3cc-a7b2db75a0e5"></a>Insert a table that provides more detailed information on each of the files included in the metadata folder.
+</p>
+</div>
+</div>
+        <div><a name="_ef7d5d7f-33c3-35ce-2f31-f20dc7019ee1" id="_ef7d5d7f-33c3-35ce-2f31-f20dc7019ee1"></a><h2>1.5.<span style="mso-tab-count:1">&#xA0; </span>Clause 1.4.4 CDB Directory File Naming and Structure</h2>
+
+<p class="MsoNormal"><a name="_20d804cc-5bae-d605-a657-ed1c8b8a0caf" id="_20d804cc-5bae-d605-a657-ed1c8b8a0caf"></a>This clause is updated to:</p>
+
+<div class="ul_wrap"><p style="mso-list:l3 level1 lfo3;" class="MsoListParagraphCxSpFirst"><a name="_a0bfe946-5507-7aa6-997e-50a83d82bcbe" id="_a0bfe946-5507-7aa6-997e-50a83d82bcbe"></a>Reflect the use of generic file extensions in all Requirements and the Abstract Test Suite rather than specific file extensions.
+</p>
+<p style="mso-list:l3 level1 lfo3;" class="MsoListParagraphCxSpLast"><a name="_f708444d-53e1-2776-309e-3b3ec9679e7b" id="_f708444d-53e1-2776-309e-3b3ec9679e7b"></a>Reflect the addition of enumerations and controlled vocabularies as concepts in the standard.
+</p>
+</div>
+</div>
+        <div><a name="_6f6b809b-89fa-aeeb-a056-eb9528d7cc61" id="_6f6b809b-89fa-aeeb-a056-eb9528d7cc61"></a><h2>1.6.<span style="mso-tab-count:1">&#xA0; </span>Clause 1.7.1.4 System Hardware Independence</h2>
+
+<p class="MsoNormal"><a name="_c0b4cb49-2342-ff18-6601-0474c05595ff" id="_c0b4cb49-2342-ff18-6601-0474c05595ff"></a>Slight re-wording to make the sentence grammatically correct.</p>
+</div>
+        <div><a name="_8bde9e0d-4bb5-065b-714e-03f9a1e91160" id="_8bde9e0d-4bb5-065b-714e-03f9a1e91160"></a><h2>1.7.<span style="mso-tab-count:1">&#xA0; </span>Clause 3.1.1 Metadata Directory</h2>
+
+<p class="MsoNormal"><a name="_54b7f0d4-ac9c-6a04-0279-681c664c2c8d" id="_54b7f0d4-ac9c-6a04-0279-681c664c2c8d"></a>Reformatted to be more easily read and understood.</p>
+</div>
+        <div><a name="_25bd2952-8ec6-8b7d-48a1-cc50680532b9" id="_25bd2952-8ec6-8b7d-48a1-cc50680532b9"></a><h2>1.8.<span style="mso-tab-count:1">&#xA0; </span>Clause 3.1.1Metadata Directory</h2>
+
+<p class="MsoNormal"><a name="_bb4f7dad-b14d-8761-9552-a385ebf6c8ac" id="_bb4f7dad-b14d-8761-9552-a385ebf6c8ac"></a>A new metadata file description for global metadata &#x2013; including geospatial metadata -applicable to an entire CDB data store was added. This new metadata file description needs to be read in concert with the changes in clauses 1.4.3, 5.1, and specifically 5.1.6.</p>
+</div>
+        <div><a name="_e39e3a13-7bdd-2eea-bd96-d591dc03d998" id="_e39e3a13-7bdd-2eea-bd96-d591dc03d998"></a><h2>1.9.<span style="mso-tab-count:1">&#xA0; </span>Clause 3.4.2.4 Examples</h2>
+
+<p class="MsoNormal"><a name="_92214340-7f54-e170-fe2f-8fbcd0d813ff" id="_92214340-7f54-e170-fe2f-8fbcd0d813ff"></a>An example of the file path for all associated metadata is included.</p>
+</div>
+        <div><a name="_6534116d-92ca-a72a-14fe-110de740833f" id="_6534116d-92ca-a72a-14fe-110de740833f"></a><h2>1.10.<span style="mso-tab-count:1">&#xA0; </span>Clause 3.4.4.3 Examples</h2>
+
+<p class="MsoNormal"><a name="_b5f4f779-99e4-12cc-b80f-8853a983de12" id="_b5f4f779-99e4-12cc-b80f-8853a983de12"></a>An example of the file path for all associated metadata is included.</p>
+</div>
+        <div><a name="_44c1b422-7c95-4349-19fd-8d9509f7d1ee" id="_44c1b422-7c95-4349-19fd-8d9509f7d1ee"></a><h2>1.11.<span style="mso-tab-count:1">&#xA0; </span>Clause 3.4.4.4 Examples</h2>
+
+<p class="MsoNormal"><a name="_61d6a1e4-7b6b-fe0a-f638-deb8d1d0b449" id="_61d6a1e4-7b6b-fe0a-f638-deb8d1d0b449"></a>An example of the file path for all associated metadata is included.</p>
+</div>
+        <div><a name="_280a7583-2b1d-49fe-2c01-781e2d6ea4d5" id="_280a7583-2b1d-49fe-2c01-781e2d6ea4d5"></a><h2>1.12.<span style="mso-tab-count:1">&#xA0; </span>Clause 3.4.5.2 Examples</h2>
+
+<p class="MsoNormal"><a name="_fe1ca12f-cfe5-816e-7fc6-0fed78058702" id="_fe1ca12f-cfe5-816e-7fc6-0fed78058702"></a>An example of the file path for associated metadata is included.</p>
+</div>
+        <div><a name="_a32765b6-a7ec-5d80-ba9a-fc30771889a7" id="_a32765b6-a7ec-5d80-ba9a-fc30771889a7"></a><h2>1.13.<span style="mso-tab-count:1">&#xA0; </span>Clause 5.1 enhanced to include discussion of Controlled Vocabularies</h2>
+
+<p class="MsoNormal"><a name="_03284130-ce79-7cce-ee31-b0d1b83e0798" id="_03284130-ce79-7cce-ee31-b0d1b83e0798"></a>Clause 5.1 has additional wording explaining CDB use of metadata, enumerations and controlled vocabularies. This change resulted from the work in CDB 1.1 for metadata. Many elements in CDB 1.0 that were referred to as metadata are actually enumerations and controlled vocabularies.</p>
+</div>
+        <div><a name="_56a11c89-8f5a-2043-57f3-6504f65d4cb9" id="_56a11c89-8f5a-2043-57f3-6504f65d4cb9"></a><h2>1.14.<span style="mso-tab-count:1">&#xA0; </span>Clause 5.1.1 Global Metadata</h2>
+
+<p class="MsoNormal"><a name="_f8d3c86a-a3b5-7b82-d5d6-06ef669a7926" id="_f8d3c86a-a3b5-7b82-d5d6-06ef669a7926"></a>A new clause added that defines what is meant by Global Metadata in general for a CDB data store.</p>
+</div>
+        <div><a name="_802de045-f725-33b5-80af-eb83ae076ad6" id="_802de045-f725-33b5-80af-eb83ae076ad6"></a><h2>1.15.<span style="mso-tab-count:1">&#xA0; </span>Clause 5.1.2 Local Metadata</h2>
+
+<p class="MsoNormal"><a name="_1a4bd748-e0bb-bcac-6ed6-3bb23876ddd7" id="_1a4bd748-e0bb-bcac-6ed6-3bb23876ddd7"></a>A new clause added that defines what is meant by Local Metadata for a CDB data store.</p>
+</div>
+        <div><a name="_d042cedd-23e5-a2be-b9ce-cea3092f1424" id="_d042cedd-23e5-a2be-b9ce-cea3092f1424"></a><h2>1.16.<span style="mso-tab-count:1">&#xA0; </span>Clause 5.1.8 (Formerly Clause 5.1.6) Version Metadata</h2>
+
+<p class="MsoNormal"><a name="_05c4738f-8b3a-a22c-d3aa-940e413e327c" id="_05c4738f-8b3a-a22c-d3aa-940e413e327c"></a>Specification version definition enhanced to include both OGC and community versions of the standard.</p>
+
+<p class="MsoNormal"><a name="_c89aaf44-c1e1-0afd-a64c-73a337032911" id="_c89aaf44-c1e1-0afd-a64c-73a337032911"></a>Addition of a mandatory <tt>&lt;Metadata standard="metadata-standard-name"&gt;</tt> element that specifies the metadata standard used for a CDB data store. This includes a list of metadata standards commonly used in the geospatial and simulation industries. This enumeration is governed by and agreed to by the OGC CDB Standards Working Group. Other metadata standards or profiles of standards may be added upon request and with proper justification. For backwards compatibility, the Metadata_standard element can be set to &#x201C;<tt>NoMetadata</tt>&#x201D;.</p>
+</div>
+        <div><a name="_4aef033c-af73-17b4-7f6e-521364ffa99c" id="_4aef033c-af73-17b4-7f6e-521364ffa99c"></a><h2>1.17.<span style="mso-tab-count:1">&#xA0; </span>Clause 5.1.12 Geospatial Metadata Guidance</h2>
+
+<p class="MsoNormal"><a name="_9141f4db-33b6-9767-317c-df83c8a940d9" id="_9141f4db-33b6-9767-317c-df83c8a940d9"></a>This is a new clause that provides general implementation guidance for encoding and storing metadata in a CDB data store.</p>
+</div>
+        <div><a name="_60551228-7c0a-6271-b055-f66b65272277" id="_60551228-7c0a-6271-b055-f66b65272277"></a><h2>1.18.<span style="mso-tab-count:1">&#xA0; </span>Clause 5.1.12.1 Suggested Global Geospatial Metadata Elements</h2>
+
+<p class="MsoNormal"><a name="_16de429b-e880-a730-e462-7b08d0aa41dc" id="_16de429b-e880-a730-e462-7b08d0aa41dc"></a>This is a new clause that provides guidance on which metadata elements should be included in the global metadata resource.</p>
+</div>
+        <div><a name="_8ca022b0-7d6d-96cb-4ada-63812dae71dc" id="_8ca022b0-7d6d-96cb-4ada-63812dae71dc"></a><h2>1.19.<span style="mso-tab-count:1">&#xA0; </span>Clause 5.1.12.2 Suggested Local Geospatial Metadata Elements</h2>
+
+<p class="MsoNormal"><a name="_cf689955-2e5a-1fcc-753a-7a659cf7ef83" id="_cf689955-2e5a-1fcc-753a-7a659cf7ef83"></a>This is a new clause that provides guidance on which metadata elements should be included in a local metadata resource.</p>
+</div>
+        <div><a name="_2d499e54-c1cc-bcbd-4b82-4ca43bacb08a" id="_2d499e54-c1cc-bcbd-4b82-4ca43bacb08a"></a><h2>1.20.<span style="mso-tab-count:1">&#xA0; </span>Clause 5.6</h2>
+
+<p class="MsoNormal"><a name="_de430850-1e32-3165-7034-77b288c8c846" id="_de430850-1e32-3165-7034-77b288c8c846"></a>Cross walked the CDB tiled grid concept with the OGC/ISO baseline, specifically the OGC Coverage Implementation Schema (CIS) September 2017.</p>
+</div>
+        <div><a name="_33a50b3c-15f7-08fd-77a4-1d1a5b3cd34d" id="_33a50b3c-15f7-08fd-77a4-1d1a5b3cd34d"></a><h2>1.21.<span style="mso-tab-count:1">&#xA0; </span>Clause 5.6.2.3.2 VSTI Default Read Value (Change Request 490)</h2>
+
+<p class="MsoNormal"><a name="_04f3feaa-aab8-9db5-166f-dbcdbf3a9eed" id="_04f3feaa-aab8-9db5-166f-dbcdbf3a9eed"></a>Requirement 102 is against CDB client-devices and not the CDB data store itself. This is an untestable requirement, and further, a client-device should be allowed to read and consume a CDB in any manne that it wishes. There might well be good reasons to not follow those rules in a client-device, so the spec should not impose this.</p>
+
+<p class="MsoNormal"><a name="_4c06e374-0cfa-364c-1be7-d87a720bb62c" id="_4c06e374-0cfa-364c-1be7-d87a720bb62c"></a>Therefore, this requirement was removed and replaced with informative guidance for client implementations. The related test 102 is removed from Annex A&#x2009;&#x2014;&#x2009;Abstract Test Suite.</p>
+</div>
+        <div><a name="_7bc4726d-e875-66f2-f969-7845c9f71b54" id="_7bc4726d-e875-66f2-f969-7845c9f71b54"></a><h2>1.22.<span style="mso-tab-count:1">&#xA0; </span>New Clause: 5.7.1.6.4 Network Vector Priority</h2>
+
+<p class="MsoNormal"><a name="_f2b3c3ab-ad56-b4cc-b4fa-cc88d93f5ed5" id="_f2b3c3ab-ad56-b4cc-b4fa-cc88d93f5ed5"></a>After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for network vector priority. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1.</p>
+</div>
+        <div><a name="_be7eb829-6532-9dbe-6cf8-08f329bd5944" id="_be7eb829-6532-9dbe-6cf8-08f329bd5944"></a><h2>1.23.<span style="mso-tab-count:1">&#xA0; </span>New Clause: 5.7.1.9 Vector Significant Size and Spatial Significance Criteria</h2>
+
+<p class="MsoNormal"><a name="_bd998ef0-2479-438f-5a40-da2c302313c5" id="_bd998ef0-2479-438f-5a40-da2c302313c5"></a>After CDB was submitted to the OGC, the CDB user community added a new sub-clause to clarify rules for vector significant size and spatial significance. This CDB user community approved clause is now incorporated in Volume 1 of the OGC CDB standard, version 1.1. Clause 5.7.1.9 includes two sub-clauses: 5.7.1.9.1 Vector Significant Size and 5.7.1.9.2 Levels of Detail and Spatial Significance Criteria.</p>
+</div>
+        <div><a name="_877169f9-3ed9-bfd4-c463-5488abc1b97d" id="_877169f9-3ed9-bfd4-c463-5488abc1b97d"></a><h2>1.24.<span style="mso-tab-count:1">&#xA0; </span>Annex A: Abstract Test Suite</h2>
+
+<p class="MsoNormal"><a name="_4163c406-4b35-8571-0810-86c2deea6386" id="_4163c406-4b35-8571-0810-86c2deea6386"></a>All tests that had specific file extensions, such as .shp or .flt, are now generic with a note as to what the extensions were in version of the CDB standard prior to version 1.1.</p>
+</div>
+        <div><a name="_6f216085-d7ad-c96b-ad0c-10a3c6b5ceda" id="_6f216085-d7ad-c96b-ad0c-10a3c6b5ceda"></a><h2>1.25.<span style="mso-tab-count:1">&#xA0; </span>Table 5-1 Component Selectors for CDB Controlled Vocabularies and Metadata</h2>
+
+<p class="MsoNormal"><a name="_0e643d47-eeff-18c9-ebb1-a9f0c2612617" id="_0e643d47-eeff-18c9-ebb1-a9f0c2612617"></a>A new selector value &#x201C;<tt>12</tt>&#x201D; for global metadata was added.</p>
+</div>
+        <div><a name="_f5828562-66ea-1239-87c1-3b0de3808b84" id="_f5828562-66ea-1239-87c1-3b0de3808b84"></a><h2>1.26.<span style="mso-tab-count:1">&#xA0; </span>Table 5-9: Component Selectors for GTModel Datasets</h2>
+
+<p class="MsoNormal"><a name="_63c0e64d-8a6f-eda1-e643-3f923e2fb449" id="_63c0e64d-8a6f-eda1-e643-3f923e2fb449"></a>Provide correct volume and section reference to GTModel descriptor definition. Please note, while this descriptor content is called metadata, this IS NOT the metadata as defined in Volume 1 clauses 5.1.1 and 5.1.2.</p>
+</div>
+        <div><a name="_94e3d658-c6fe-b84e-0d64-7552ada60bed" id="_94e3d658-c6fe-b84e-0d64-7552ada60bed"></a><h2>1.27.<span style="mso-tab-count:1">&#xA0; </span>Figure 5-25. Two instances of code 65</h2>
+
+<p class="MsoNormal"><a name="_ed6fb300-a731-5e06-200d-887b1c1dc141" id="_ed6fb300-a731-5e06-200d-887b1c1dc141"></a>After verification with the reference document, the correct lines are:</p>
+
+<div class="ul_wrap"><p style="mso-list:l3 level1 lfo4;" class="MsoListParagraphCxSpFirst"><a name="_c672fb2e-d2da-0bbf-c01f-d19bf64ee0b2" id="_c672fb2e-d2da-0bbf-c01f-d19bf64ee0b2"></a><tt>64</tt>: Gable with Monitor
+</p>
+<p style="mso-list:l3 level1 lfo4;" class="MsoListParagraphCxSpLast"><a name="_8ac4377c-2345-9758-276d-f72b5c431471" id="_8ac4377c-2345-9758-276d-f72b5c431471"></a><tt>65</tt>: Reserved
+</p>
+</div>
+
+<p class="MsoNormal"><a name="_d8efd822-58a7-715a-10cb-aa29b4c0270d" id="_d8efd822-58a7-715a-10cb-aa29b4c0270d"></a>The reference document is Digest Part 4, ISO 15046-10 Profile, March 1999, Annex B, Attribute and Value Codes.</p>
+</div>
+        <div><a name="_3d389a7b-a546-7db5-98a3-cfc19b550a3d" id="_3d389a7b-a546-7db5-98a3-cfc19b550a3d"></a><h2>1.28.<span style="mso-tab-count:1">&#xA0; </span>Table 5-27 Use of &#x201C;<tt>D</tt>&#x201D; has two meanings. (Change Request 471)</h2>
+
+<p class="MsoNormal"><a name="_6ab74771-264a-c034-f3be-9372be30d12d" id="_6ab74771-264a-c034-f3be-9372be30d12d"></a>There was recommendation to remove the use of &#x201C;D&#x201D; indicating a &#x201C;Deprecated Attribution Schema&#x201D; and keep just one use of &#x201C;D&#x201D; for &#x201C;Dependent on another attribute&#x201D;. This recommendation was accepted and the change made to Table 5-27.</p>
+</div>
+        <div><a name="_448c3539-a8fa-0c22-b4dc-1e95dcaf7ac2" id="_448c3539-a8fa-0c22-b4dc-1e95dcaf7ac2"></a><h2>1.29.<span style="mso-tab-count:1">&#xA0; </span>Table 5-27 not entirely visible (Change Request 481)</h2>
+
+<p class="MsoNormal"><a name="_108d87e4-c417-98d8-456b-7d77f7db3b35" id="_108d87e4-c417-98d8-456b-7d77f7db3b35"></a>In version 1.0, Table 27 is not entirely visible (clipped at page edge). This comment was accepted and the change made to the table prior to insertion into Volume 1 Core.</p>
+</div>
+        <div><a name="_a422dd42-618a-2041-2a4b-813861e98b45" id="_a422dd42-618a-2041-2a4b-813861e98b45"></a><h2>1.30.<span style="mso-tab-count:1">&#xA0; </span>CDB_Attributes.xml Schema error (Change Request 482)</h2>
+
+<p class="MsoNormal"><a name="_a0561170-6420-175b-7268-a4564fb12f3d" id="_a0561170-6420-175b-7268-a4564fb12f3d"></a>In: <tt>CDB_Attributes.xml</tt></p>
+
+<p class="Sourcecode"><a name="_6d944398-0e65-29c9-77bb-afbce144e827" id="_6d944398-0e65-29c9-77bb-afbce144e827"></a>No.:9<br/>Attr short name:BOTY<br/>Attr name: Boundary Type<br/>Description: "...See table 5-29 for a list of accepted values..."</p>
+
+
+<p class="MsoNormal"><a name="_7da0301a-eebf-095e-ba9e-706ebe052bb6" id="_7da0301a-eebf-095e-ba9e-706ebe052bb6"></a>The table 5-29 was corrected to be 5-19.</p>
+</div>
+      </div>
+      <div>
+        <a name="_66be111b-d2da-397b-d058-6f57a8ada529" id="_66be111b-d2da-397b-d058-6f57a8ada529"></a>
+        <h1>2.<span style="mso-tab-count:1">&#xA0; </span>Revisions to Volume 2: OGC CDB Core: Model and Physical Structure: Informative Annexes</h1>
+        <div><a name="_14de6d6a-3c52-d8b9-b9e4-d2708dd6b785" id="_14de6d6a-3c52-d8b9-b9e4-d2708dd6b785"></a><h2>2.1.<span style="mso-tab-count:1">&#xA0; </span>Annex Q: Table of Dataset Codes</h2>
+
+<p class="MsoNormal"><a name="_59252f6a-ae27-c265-04e2-d37a202ae643" id="_59252f6a-ae27-c265-04e2-d37a202ae643"></a>Updated to reflect the relationship between the community CDB 3.2 version and the OGC standard.</p>
+</div>
+        <div><a name="_71031cd7-d041-d2db-5619-c5ba8926a9d5" id="_71031cd7-d041-d2db-5619-c5ba8926a9d5"></a><h2>2.2.<span style="mso-tab-count:1">&#xA0; </span>Annex R: Derived Datasets within the CDB</h2>
+
+<p class="MsoNormal"><a name="_10c6f899-e29b-a809-0822-9082efe9730d" id="_10c6f899-e29b-a809-0822-9082efe9730d"></a>Some grammatical errors were corrected.</p>
+</div>
+      </div>
+      <div>
+        <a name="_ab31eddc-4f9f-de1f-4118-a2c532f1c3b7" id="_ab31eddc-4f9f-de1f-4118-a2c532f1c3b7"></a>
+        <h1>3.<span style="mso-tab-count:1">&#xA0; </span>Revisions to Volume 3 Terms and Definitions</h1>
+        <p class="MsoNormal"><a name="_40ee2706-1957-b877-4a01-76182b0fa731" id="_40ee2706-1957-b877-4a01-76182b0fa731"></a>Definitions were added for: depth, elevation, grid, grid point, height, metadata elements, raster, regular grid, and vector data. The definitions for dataset and metadata were slightly revised</p>
+      </div>
+      <div>
+        <a name="_d4f645db-9d60-05bf-ead0-4f81642e94f4" id="_d4f645db-9d60-05bf-ead0-4f81642e94f4"></a>
+        <h1>4.<span style="mso-tab-count:1">&#xA0; </span>Revisions to Volume 4: CDB Use of Shapefiles for Vector Data Storage</h1>
+        <div><a name="_a88833af-ba61-362e-fb22-815acb878e6d" id="_a88833af-ba61-362e-fb22-815acb878e6d"></a><h2>4.1.<span style="mso-tab-count:1">&#xA0; </span>General</h2>
+
+<p class="MsoNormal"><a name="_2a4954e4-aed9-78fe-e82f-5e63d96cf942" id="_2a4954e4-aed9-78fe-e82f-5e63d96cf942"></a>All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+</div>
+        <div><a name="_45d708f0-794b-1ef3-995d-6b5d114c5ff2" id="_45d708f0-794b-1ef3-995d-6b5d114c5ff2"></a><h2>4.2.<span style="mso-tab-count:1">&#xA0; </span>Clause 1: Scope</h2>
+
+<p class="MsoNormal"><a name="_3f0e978c-348d-ff72-535c-fd551f06c19a" id="_3f0e978c-348d-ff72-535c-fd551f06c19a"></a>The use of the word &#x201C;<tt>standard</tt>&#x201D; replaced with &#x201C;<tt>Best Practice</tt>&#x201D;.</p>
+</div>
+        <div><a name="_71c92e14-042d-d0ee-fa0e-74b816b28453" id="_71c92e14-042d-d0ee-fa0e-74b816b28453"></a><h2>4.3.<span style="mso-tab-count:1">&#xA0; </span>Clause 3: References</h2>
+
+<p class="MsoNormal"><a name="_ee7c26e9-8163-6d6f-88d1-2cbf860e0d0f" id="_ee7c26e9-8163-6d6f-88d1-2cbf860e0d0f"></a>Proper reference to the Esri ShapeFile technical document was added.</p>
+</div>
+        <div><a name="_c07a11a0-43f7-b2e4-4e33-b6447c6eb7c6" id="_c07a11a0-43f7-b2e4-4e33-b6447c6eb7c6"></a><h2>4.4.<span style="mso-tab-count:1">&#xA0; </span>Clause 4: Terms and Definitions</h2>
+
+<p class="MsoNormal"><a name="_9db3aaf3-0728-60d5-d5c3-0a187d13c285" id="_9db3aaf3-0728-60d5-d5c3-0a187d13c285"></a>This clause was reworded and URL to the CDB standard was added.</p>
+</div>
+      </div>
+      <div>
+        <a name="_63ff8053-59a5-087e-7303-cc7948c39812" id="_63ff8053-59a5-087e-7303-cc7948c39812"></a>
+        <h1>5.<span style="mso-tab-count:1">&#xA0; </span>Revisions to Volume 5: Radar Cross-Sections</h1>
+        <div><a name="_f88ae65d-ae3d-e18c-4632-78117b59d824" id="_f88ae65d-ae3d-e18c-4632-78117b59d824"></a><h2>5.1.<span style="mso-tab-count:1">&#xA0; </span>General</h2>
+
+<p class="MsoNormal"><a name="_2c1dd1cc-4b71-8a89-c8ae-4e81a353a9a2" id="_2c1dd1cc-4b71-8a89-c8ae-4e81a353a9a2"></a>All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+</div>
+        <div><a name="_53766905-71bc-a123-b0ff-98d21bf47802" id="_53766905-71bc-a123-b0ff-98d21bf47802"></a><h2>5.2.<span style="mso-tab-count:1">&#xA0; </span>Clause 4 Terms and Definitions</h2>
+
+<p class="MsoNormal"><a name="_65ba4be1-9921-cdb5-91ce-064268f1b262" id="_65ba4be1-9921-cdb5-91ce-064268f1b262"></a>The correct URL to the CDB standard was inserted.</p>
+</div>
+      </div>
+      <div>
+        <a name="_1aad26ac-eada-f2cb-dd87-2b7ff2a17009" id="_1aad26ac-eada-f2cb-dd87-2b7ff2a17009"></a>
+        <h1>6.<span style="mso-tab-count:1">&#xA0; </span>Revisions to Volume 6 OGC CDB Rules for Encoding Data using OpenFlight BP</h1>
+        <div><a name="_73e99297-85ae-581d-76da-5f6cc55b7ccb" id="_73e99297-85ae-581d-76da-5f6cc55b7ccb"></a><h2>6.1.<span style="mso-tab-count:1">&#xA0; </span>General</h2>
+
+<p class="MsoNormal"><a name="_60396614-00db-4bb9-62c8-2878b1bc4d4a" id="_60396614-00db-4bb9-62c8-2878b1bc4d4a"></a>All version 1.0 references as used in identifier URIs updated to 1.1. The version also has a few typos corrected.</p>
+</div>
+        <div><a name="_c16e83c8-4dcc-8c76-d10d-01bf6603ca85" id="_c16e83c8-4dcc-8c76-d10d-01bf6603ca85"></a><h2>6.2.<span style="mso-tab-count:1">&#xA0; </span>Clause 5.1 Identifiers</h2>
+
+<p class="MsoNormal"><a name="_6ebb3a4d-8347-47f9-753a-5318a50c7e27" id="_6ebb3a4d-8347-47f9-753a-5318a50c7e27"></a>URI base updated to reflect version 1.1.</p>
+</div>
+        <div><a name="_7f769b4f-b7b7-9705-6731-2299c9c1fcd7" id="_7f769b4f-b7b7-9705-6731-2299c9c1fcd7"></a><h2>6.3.<span style="mso-tab-count:1">&#xA0; </span>Requirement Class Metadata</h2>
+
+<p class="MsoNormal"><a name="_08ea6492-ea84-c290-7393-06209ca1b238" id="_08ea6492-ea84-c290-7393-06209ca1b238"></a>This requirement class was updated to consistent with Requirement 1 (/req/core/openflight/headercrs).</p>
+</div>
+      </div>
+      <div>
+        <a name="_2c01b5a9-15c1-ded6-d2ac-28367b4fba51" id="_2c01b5a9-15c1-ded6-d2ac-28367b4fba51"></a>
+        <h1>7.<span style="mso-tab-count:1">&#xA0; </span>Revisions to Volume 7 OGC CDB Data Model Guidance</h1>
+        <p class="MsoNormal"><a name="_5c9f68bb-ad6e-653d-282b-ed40d2c678b1" id="_5c9f68bb-ad6e-653d-282b-ed40d2c678b1"></a>Note: Volume 7 was Annex A in the original CDB Specification v 3.2 submission to the OGC.</p>
+        <p class="MsoNormal"><a name="_352f453c-8977-47ad-1a0a-ebdf9893f4ca" id="_352f453c-8977-47ad-1a0a-ebdf9893f4ca"></a>Minor changes at various places to make sure the reader knows the difference between CDB 3.2 specification and OGC Version 1.1 standard.</p>
+        <div><a name="_71b78915-3713-b53b-3081-915c6364e61b" id="_71b78915-3713-b53b-3081-915c6364e61b"></a><h2>7.1.<span style="mso-tab-count:1">&#xA0; </span>6.5.3 Access of a Model Interior</h2>
+
+<p class="MsoNormal"><a name="_481ff863-7e47-90cf-c656-94b97076b379" id="_481ff863-7e47-90cf-c656-94b97076b379"></a>This section has minor changes to make wording on the use of OpenFlightgeneric and in line with the changes in CDB Volume 1.</p>
+</div>
+        <div><a name="_6457f976-ed2b-4d41-0a5c-d064aa8b0c60" id="_6457f976-ed2b-4d41-0a5c-d064aa8b0c60"></a><h2>7.2.<span style="mso-tab-count:1">&#xA0; </span>Section 6.13.1 Linear Feature Radar Simulation Example</h2>
+
+<p class="MsoNormal"><a name="_a7221f09-05e1-942b-672c-8822a7fecbed" id="_a7221f09-05e1-942b-672c-8822a7fecbed"></a>This section has minor changes to make wording on the use of ShapeFiles generic and consistent with the changes in CDB Volume 1.</p>
+</div>
+        <div><a name="_cd160522-b22f-d0d8-1fdc-16ae580500f7" id="_cd160522-b22f-d0d8-1fdc-16ae580500f7"></a><h2>7.3.<span style="mso-tab-count:1">&#xA0; </span>New Section added: 6.14 Guideline: Vector Priority Tile-LOD Generation</h2>
+
+<p class="MsoNormal"><a name="_9757cac6-804f-60c9-eedc-56b2e5c7dc95" id="_9757cac6-804f-60c9-eedc-56b2e5c7dc95"></a>After CDB was submitted to the OGC, the CDB user community added a new Annex A sub-clause to clarify rules for vector priority in the LoD/Tile structure. This CDB user community approved clause is now incorporated in Volume 7 of the OGC CDB standard, version 1.1.</p>
+</div>
+      </div>
+      <div>
+        <a name="_3821e74d-df86-de80-5adb-1e3a02de1406" id="_3821e74d-df86-de80-5adb-1e3a02de1406"></a>
+        <h1>8.<span style="mso-tab-count:1">&#xA0; </span>Revisions to Volume 8: CDB Spatial and Coordinate Reference Systems Guidance</h1>
+        <div><a name="_20379af3-fd37-91e8-1659-97876e3c1363" id="_20379af3-fd37-91e8-1659-97876e3c1363"></a><h2>8.1.<span style="mso-tab-count:1">&#xA0; </span>Clause 4 Terms and Definitions</h2>
+
+<p class="MsoNormal"><a name="_3855d667-aa23-63d0-b363-bff8633f7b3b" id="_3855d667-aa23-63d0-b363-bff8633f7b3b"></a>The correct URL to the CDB standard was inserted.</p>
+</div>
+      </div>
+      <div>
+        <a name="_498acc8f-bcd1-54cc-3485-26dee5c381e9" id="_498acc8f-bcd1-54cc-3485-26dee5c381e9"></a>
+        <h1>9.<span style="mso-tab-count:1">&#xA0; </span>Revisions to Volume 10: CDB Implementation Guidance</h1>
+        <div><a name="_8fa40e33-5819-6b15-c39b-09d3fc534f45" id="_8fa40e33-5819-6b15-c39b-09d3fc534f45"></a><h2>9.1.<span style="mso-tab-count:1">&#xA0; </span>General</h2>
+
+<p class="MsoNormal"><a name="_0aadabea-c9d3-de92-0927-8945f65e8a4e" id="_0aadabea-c9d3-de92-0927-8945f65e8a4e"></a>Comments (artifacts) for version 1.0 were removed.</p>
+</div>
+        <div><a name="_846447b1-c77d-015d-5bb4-428543485e76" id="_846447b1-c77d-015d-5bb4-428543485e76"></a><h2>9.2.<span style="mso-tab-count:1">&#xA0; </span>Clause 4 Terms and Definitions</h2>
+
+<p class="MsoNormal"><a name="_e991adbb-ca14-d9c7-a9b5-a3b23ac4e407" id="_e991adbb-ca14-d9c7-a9b5-a3b23ac4e407"></a>The correct URL to the CDB standard was inserted. Additional abbreviations were added.</p>
+</div>
+        <div><a name="_a37303e4-52da-aa44-5d13-0fc88cc71f51" id="_a37303e4-52da-aa44-5d13-0fc88cc71f51"></a><h2>9.3.<span style="mso-tab-count:1">&#xA0; </span>Clause 5: Platform Recommendations</h2>
+
+<p class="MsoNormal"><a name="_605c0d9f-388c-055f-8296-6ef330398646" id="_605c0d9f-388c-055f-8296-6ef330398646"></a>Correct grammatical errors.</p>
+</div>
+      </div>
+      <div>
+        <a name="_775b4a93-3452-2e9b-3da9-33bc16656804" id="_775b4a93-3452-2e9b-3da9-33bc16656804"></a>
+        <h1>10.<span style="mso-tab-count:1">&#xA0; </span>Revisions to Volume 12: CDB Navaids Attribution and Navaids Attribution Enumeration Values</h1>
+        <div><a name="_b7c3ee4b-b212-c9f3-30e3-e01c4da4c12f" id="_b7c3ee4b-b212-c9f3-30e3-e01c4da4c12f"></a><h2>10.1.<span style="mso-tab-count:1">&#xA0; </span>Abstract:</h2>
+
+<p class="MsoNormal"><a name="_4f0d18f0-ed08-29f3-5fb7-83b2f7e5586e" id="_4f0d18f0-ed08-29f3-5fb7-83b2f7e5586e"></a>Slight re-wording of the abstract</p>
+</div>
+      </div>
+    </div>
+    <div style="mso-element:footnote-list"/>
+  </body>
+</html>
+
+
+------=_NextPart_54e6729e.abeb.442c
+Content-ID: <filelist.xml>
+Content-Disposition: inline; filename="filelist.xml"
+Content-Transfer-Encoding: base64
+Content-Type: application/xml
+
+PHhtbCB4bWxuczpvPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiPgog
+ICAgICAgIDxvOk1haW5GaWxlIEhSZWY9Ii4uLy9fX3cvbW4tc2FtcGxlcy1vZ2MvbW4tc2FtcGxl
+cy1vZ2MvX3NpdGUvZG9jdW1lbnRzLzE4LTAxNnIxL2RvY3VtZW50Lmh0bSIvPiAgPG86RmlsZSBI
+UmVmPSJmaWxlbGlzdC54bWwiLz4KICA8bzpGaWxlIEhSZWY9ImhlYWRlci5odG1sIi8+CjwveG1s
+Pgo=
+
+------=_NextPart_54e6729e.abeb.442c
+Content-ID: <header.html>
+Content-Disposition: inline; filename="header.html"
+Content-Transfer-Encoding: base64
+Content-Type: text/html; charset="utf-8"
+
+PGh0bWwgeG1sbnM6dj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp2bWwiDQp4bWxuczpvPSJ1
+cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiDQp4bWxuczp3PSJ1cm46c2No
+ZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTp3b3JkIg0KeG1sbnM6bT0iaHR0cDovL3NjaGVtYXMu
+bWljcm9zb2Z0LmNvbS9vZmZpY2UvMjAwNC8xMi9vbW1sIg0KeG1sbnM6bXY9Imh0dHA6Ly9tYWNW
+bWxTY2hlbWFVcmkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy9UUi9SRUMtaHRtbDQwIj4NCg0K
+PGhlYWQ+DQo8bWV0YSBuYW1lPVRpdGxlIGNvbnRlbnQ9IiI+DQo8bWV0YSBuYW1lPUtleXdvcmRz
+IGNvbnRlbnQ9IiI+DQo8bWV0YSBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZSBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9dXRmLTgiPg0KPG1ldGEgbmFtZT1Qcm9nSWQgY29udGVudD1Xb3JkLkRv
+Y3VtZW50Pg0KPG1ldGEgbmFtZT1HZW5lcmF0b3IgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUi
+Pg0KPG1ldGEgbmFtZT1PcmlnaW5hdG9yIGNvbnRlbnQ9Ik1pY3Jvc29mdCBXb3JkIDE1Ij4NCjxs
+aW5rIGlkPU1haW4tRmlsZSByZWw9TWFpbi1GaWxlIGhyZWY9Ii4uLy9fX3cvbW4tc2FtcGxlcy1v
+Z2MvbW4tc2FtcGxlcy1vZ2MvX3NpdGUvZG9jdW1lbnRzLzE4LTAxNnIxL2RvY3VtZW50Lmh0bWwi
+Pg0KPCEtLVtpZiBndGUgbXNvIDldPjx4bWw+DQogPG86c2hhcGVkZWZhdWx0cyB2OmV4dD0iZWRp
+dCIgc3BpZG1heD0iMjA0OSIvPg0KPC94bWw+PCFbZW5kaWZdLS0+DQo8L2hlYWQ+DQoNCjxib2R5
+IGxhbmc9RU4gbGluaz1ibHVlIHZsaW5rPSIjOTU0RjcyIj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVs
+ZW1lbnQ6Zm9vdG5vdGUtc2VwYXJhdG9yJyBpZD1mcz4NCg0KPHAgY2xhc3M9TXNvTm9ybWFsIHN0
+eWxlPSdtYXJnaW4tYm90dG9tOjBjbTttYXJnaW4tYm90dG9tOi4wMDAxcHQ7bGluZS1oZWlnaHQ6
+DQpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9J21zby1zcGVjaWFsLWNoYXJh
+Y3Rlcjpmb290bm90ZS1zZXBhcmF0b3InPjwhW2lmICFzdXBwb3J0Rm9vdG5vdGVzXT4NCg0KPGhy
+IGFsaWduPWxlZnQgc2l6ZT0xIHdpZHRoPSIzMyUiPg0KDQo8IVtlbmRpZl0+PC9zcGFuPjwvc3Bh
+bj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290bm90ZS1jb250
+aW51YXRpb24tc2VwYXJhdG9yJyBpZD1mY3M+DQoNCjxwIGNsYXNzPU1zb05vcm1hbCBzdHlsZT0n
+bWFyZ2luLWJvdHRvbTowY207bWFyZ2luLWJvdHRvbTouMDAwMXB0O2xpbmUtaGVpZ2h0Og0Kbm9y
+bWFsJz48c3BhbiBsYW5nPUVOLUdCPjxzcGFuIHN0eWxlPSdtc28tc3BlY2lhbC1jaGFyYWN0ZXI6
+Zm9vdG5vdGUtY29udGludWF0aW9uLXNlcGFyYXRvcic+PCFbaWYgIXN1cHBvcnRGb290bm90ZXNd
+Pg0KDQo8aHIgYWxpZ249bGVmdCBzaXplPTE+DQoNCjwhW2VuZGlmXT48L3NwYW4+PC9zcGFuPjwv
+cD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmVuZG5vdGUtc2VwYXJhdG9y
+JyBpZD1lcz4NCg0KPHAgY2xhc3M9TXNvTm9ybWFsIHN0eWxlPSdtYXJnaW4tYm90dG9tOjBjbTtt
+YXJnaW4tYm90dG9tOi4wMDAxcHQ7bGluZS1oZWlnaHQ6DQpub3JtYWwnPjxzcGFuIGxhbmc9RU4t
+R0I+PHNwYW4gc3R5bGU9J21zby1zcGVjaWFsLWNoYXJhY3Rlcjpmb290bm90ZS1zZXBhcmF0b3In
+PjwhW2lmICFzdXBwb3J0Rm9vdG5vdGVzXT4NCg0KPGhyIGFsaWduPWxlZnQgc2l6ZT0xIHdpZHRo
+PSIzMyUiPg0KDQo8IVtlbmRpZl0+PC9zcGFuPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2
+IHN0eWxlPSdtc28tZWxlbWVudDplbmRub3RlLWNvbnRpbnVhdGlvbi1zZXBhcmF0b3InIGlkPWVj
+cz4NCg0KPHAgY2xhc3M9TXNvTm9ybWFsIHN0eWxlPSdtYXJnaW4tYm90dG9tOjBjbTttYXJnaW4t
+Ym90dG9tOi4wMDAxcHQ7bGluZS1oZWlnaHQ6DQpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0I+PHNw
+YW4gc3R5bGU9J21zby1zcGVjaWFsLWNoYXJhY3Rlcjpmb290bm90ZS1jb250aW51YXRpb24tc2Vw
+YXJhdG9yJz48IVtpZiAhc3VwcG9ydEZvb3Rub3Rlc10+DQoNCjxociBhbGlnbj1sZWZ0IHNpemU9
+MT4NCg0KPCFbZW5kaWZdPjwvc3Bhbj48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHls
+ZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBpZD1laDE+DQoNCjxwIGNsYXNzPU1zb0hlYWRlciBhbGln
+bj1sZWZ0IHN0eWxlPSd0ZXh0LWFsaWduOmxlZnQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxp
+bmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1HQj5PcGVuIEdlb3NwYXRpYWwg
+Q29uc29ydGl1bSZuYnNwOzE4LTAxNnIxPC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5
+bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9aDE+DQoNCjxwIGNsYXNzPU1zb0hlYWRlciBzdHls
+ZT0nbWFyZ2luLWJvdHRvbToxOC4wcHQnPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNp
+emU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQ7Zm9udC13ZWlnaHQ6bm9ybWFsJz4N
+Ck9wZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVtJm5ic3A7MTgtMDE2cjE8L3NwYW4+PHNwYW4gbGFu
+Zz1FTi1HQg0Kc3R5bGU9J2ZvbnQtd2VpZ2h0Om5vcm1hbCc+PG86cD48L286cD48L3NwYW4+PC9w
+Pg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1lZjE+DQoN
+CjxwIGNsYXNzPU1zb0Zvb3RlciBzdHlsZT0nbWFyZ2luLXRvcDoxMi4wcHQ7bGluZS1oZWlnaHQ6
+MTIuMHB0O21zby1saW5lLWhlaWdodC1ydWxlOg0KZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0Rmll
+bGRzXT48YiBzdHlsZT0nbXNvLWJpZGktZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0KbGFuZz1F
+Ti1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48
+c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+PHNwYW4NCnN0eWxl
+PSdtc28tc3BhY2VydW46eWVzJz7CoDwvc3Bhbj5QQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1
+bjp5ZXMnPsKgwqANCjwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3BhbiBzdHlsZT0nbXNvLWVsZW1l
+bnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwvYj48IVtlbmRpZl0tLT48Yg0Kc3R5
+bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0n
+Zm9udC1zaXplOjEwLjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuIHN0eWxl
+PSdtc28tbm8tcHJvb2Y6eWVzJz4yPC9zcGFuPjwvc3Bhbj48L2I+PCEtLVtpZiBzdXBwb3J0Rmll
+bGRzXT48Yg0Kc3R5bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1F
+Ti1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQn
+PjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PC9iPjwh
+W2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1i
+aWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bh
+bj7CqSBPcGVuIEdlb3NwYXRpYWwgQ29uc29ydGl1bSZuYnNwOzIwMTgg4oCTIEFsbCByaWdodHMg
+cmVzZXJ2ZWQ8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdt
+c28tZWxlbWVudDpoZWFkZXInIGlkPWVoMj4NCjxwIGNsYXNzPU1zb0hlYWRlciBhbGlnbj1sZWZ0
+IHN0eWxlPSd0ZXh0LWFsaWduOmxlZnQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVp
+Z2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1HQj5PcGVuIEdlb3NwYXRpYWwgQ29uc29y
+dGl1bSZuYnNwOzE4LTAxNnIxPC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28t
+ZWxlbWVudDpoZWFkZXInIGlkPWVoMmw+DQo8cCBjbGFzcz1Nc29IZWFkZXJMYW5kc2NhcGUgYWxp
+Z249bGVmdCBzdHlsZT0ndGV4dC1hbGlnbjpsZWZ0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1s
+aW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+T3BlbiBHZW9zcGF0aWFs
+IENvbnNvcnRpdW0mbmJzcDsxOC0wMTZyMTwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHls
+ZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBpZD1oMj4NCjxwIGNsYXNzPU1zb0hlYWRlciBhbGlnbj1y
+aWdodCBzdHlsZT0ndGV4dC1hbGlnbjpyaWdodDtsaW5lLWhlaWdodDoxMi4wcHQ7DQptc28tbGlu
+ZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPk9wZW4gR2Vvc3BhdGlhbCBD
+b25zb3J0aXVtJm5ic3A7MTgtMDE2cjE8L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9
+J21zby1lbGVtZW50OmhlYWRlcicgaWQ9aDJsPg0KPHAgY2xhc3M9TXNvSGVhZGVyTGFuZHNjYXBl
+IGFsaWduPXJpZ2h0IHN0eWxlPSd0ZXh0LWFsaWduOnJpZ2h0O2xpbmUtaGVpZ2h0OjEyLjBwdDsN
+Cm1zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+T3BlbiBHZW9z
+cGF0aWFsIENvbnNvcnRpdW0mbmJzcDsxOC0wMTZyMTwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRp
+diBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1lZjI+DQo8cCBjbGFzcz1Nc29Gb290ZXIg
+c3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdDttc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48
+IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6
+MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1l
+bnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj48c3Bhbg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKg
+PC9zcGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqDCoA0KPC9zcGFuPlwq
+IE1FUkdFRk9STUFUIDxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwv
+c3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6
+ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28tbm8t
+cHJvb2Y6eWVzJz5paTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0K
+bGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEu
+MHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48
+IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28t
+YmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiANCnN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9z
+cGFuPsKpIE9wZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVtJm5ic3A7MjAxOCZuYnNwO+KAkyBBbGwg
+cmlnaHRzIHJlc2VydmVkPG86cD48L286cD48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBz
+dHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1lZjJsPg0KPHAgY2xhc3M9TXNvRm9vdGVyTGFu
+ZHNjYXBlIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhh
+Y3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9u
+dC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21z
+by1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+PHNwYW4NCnN0eWxlPSdtc28tc3BhY2VydW46
+eWVzJz7CoDwvc3Bhbj5QQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgwqANCjwv
+c3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJh
+dG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdm
+b250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0n
+bXNvLW5vLXByb29mOnllcyc+aWk8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+
+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1z
+aXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48
+L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtc2l6ZToxMC4w
+cHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4gDQpzdHlsZT0nbXNvLXRhYi1jb3Vu
+dDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgIDwvc3Bhbj7CqSBPcGVuIEdlb3NwYXRpYWwgQ29uc29ydGl1bSZuYnNwOzIwMTgmbmJzcDvi
+gJMgQWxsIHJpZ2h0cyByZXNlcnZlZDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoN
+CjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZjI+DQo8cCBjbGFzcz1Nc29Gb290
+ZXIgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdCc+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2Zv
+bnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+wqkgT3BlbiBHZW9zcGF0
+aWFsIENvbnNvcnRpdW0mbmJzcDsyMDE4Jm5ic3A74oCTIEFsbA0KcmlnaHRzIHJlc2VydmVkPHNw
+YW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVs
+ZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZv
+bnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwv
+c3Bhbj4gUEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoMKgDQo8L3NwYW4+XCog
+TUVSR0VGT1JNQVQgPHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9z
+cGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXpl
+OjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1uby1w
+cm9vZjp5ZXMnPmlpaTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0K
+bGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEu
+MHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48
+IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28t
+YmlkaS1mb250LXNpemU6MTEuMHB0Jz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0K
+PGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1mMmw+DQo8cCBjbGFzcz1Nc29Gb290
+ZXJMYW5kc2NhcGUgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdCc+PHNwYW4gbGFuZz1FTi1HQg0K
+c3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+wqkgT3Bl
+biBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyMDE4Jm5ic3A74oCTIEFsbA0KcmlnaHRzIHJl
+c2VydmVkPHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1
+cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21z
+by1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQt
+YmVnaW4nPjwvc3Bhbj4gUEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoMKgDQo8
+L3NwYW4+XCogTUVSR0VGT1JNQVQgPHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFy
+YXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0n
+Zm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9
+J21zby1uby1wcm9vZjp5ZXMnPmlpaTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRz
+XT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250
+LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFu
+Pjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC1zaXplOjEw
+LjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8
+L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1lZjM+DQo8cCBjbGFz
+cz1Nc29Gb290ZXIgc3R5bGU9J21hcmdpbi10b3A6MTIuMHB0O2xpbmUtaGVpZ2h0OjEyLjBwdDtt
+c28tbGluZS1oZWlnaHQtcnVsZToNCmV4YWN0bHknPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PGIg
+c3R5bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCmxhbmc9RU4tR0Igc3R5
+bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0
+eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPjxzcGFuDQpzdHlsZT0nbXNvLXNw
+YWNlcnVuOnllcyc+wqA8L3NwYW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7C
+oMKgDQo8L3NwYW4+XCogTUVSR0VGT1JNQVQgPHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxk
+LXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48L2I+PCFbZW5kaWZdLS0+PGINCnN0eWxlPSdtc28t
+YmlkaS1mb250LXdlaWdodDpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6
+ZToxMC4wcHQ7DQptc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHlsZT0nbXNvLW5v
+LXByb29mOnllcyc+Mjwvc3Bhbj48L3NwYW4+PC9iPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PGIN
+CnN0eWxlPSdtc28tYmlkaS1mb250LXdlaWdodDpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5
+bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7DQptc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiBz
+dHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwvYj48IVtlbmRpZl0t
+LT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250
+LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+wqkgT3Bl
+biBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyMDE4Jm5ic3A74oCTIEFsbCByaWdodHMgcmVz
+ZXJ2ZWQ8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28t
+ZWxlbWVudDpmb290ZXInIGlkPWVmM2w+DQo8cCBjbGFzcz1Nc29Gb290ZXJMYW5kc2NhcGUgc3R5
+bGU9J21hcmdpbi10b3A6MTIuMHB0O2xpbmUtaGVpZ2h0OjEyLjBwdDttc28tbGluZS1oZWlnaHQt
+cnVsZToNCmV4YWN0bHknPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PGIgc3R5bGU9J21zby1iaWRp
+LWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZTox
+MC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVu
+dDpmaWVsZC1iZWdpbic+PC9zcGFuPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqA8
+L3NwYW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoMKgDQo8L3NwYW4+XCog
+TUVSR0VGT1JNQVQgPHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9z
+cGFuPjwvc3Bhbj48L2I+PCFbZW5kaWZdLS0+PGINCnN0eWxlPSdtc28tYmlkaS1mb250LXdlaWdo
+dDpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7DQptc28t
+YmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHlsZT0nbXNvLW5vLXByb29mOnllcyc+Mjwv
+c3Bhbj48L3NwYW4+PC9iPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PGINCnN0eWxlPSdtc28tYmlk
+aS1mb250LXdlaWdodDpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZTox
+MC4wcHQ7DQptc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHlsZT0nbXNvLWVsZW1l
+bnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwvYj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1F
+Ti1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48
+c3Bhbg0Kc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+wqkgT3BlbiBHZW9zcGF0aWFsIENv
+bnNvcnRpdW0mbmJzcDsyMDE4Jm5ic3A74oCTIEFsbCByaWdodHMgcmVzZXJ2ZWQ8bzpwPjwvbzpw
+Pjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXIn
+IGlkPWYzPg0KPHAgY2xhc3M9TXNvRm9vdGVyIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQnPjxz
+cGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6
+ZToxMS4wcHQnPsKpIE9wZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVtJm5ic3A7MjAxOCZuYnNwO+KA
+kyBBbGwNCnJpZ2h0cyByZXNlcnZlZDxzcGFuIHN0eWxlPSdtc28tdGFiLWNvdW50OjEnPsKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFu
+Pjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxiDQpzdHlsZT0nbXNvLWJpZGktZm9udC13
+ZWlnaHQ6bm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0Ow0K
+bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxk
+LWJlZ2luJz48L3NwYW4+DQpQQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgwqAg
+PC9zcGFuPlwqIE1FUkdFRk9STUFUIDxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2Vw
+YXJhdG9yJz48L3NwYW4+PC9zcGFuPjwvYj48IVtlbmRpZl0tLT48Yg0Kc3R5bGU9J21zby1iaWRp
+LWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEw
+LjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuIHN0eWxlPSdtc28tbm8tcHJv
+b2Y6eWVzJz4zPC9zcGFuPjwvc3Bhbj48L2I+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48Yg0Kc3R5
+bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0n
+Zm9udC1zaXplOjEwLjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuIHN0eWxl
+PSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PC9iPjwhW2VuZGlmXS0tPjxz
+cGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6
+ZToxMS4wcHQnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdt
+c28tZWxlbWVudDpmb290ZXInIGlkPWYzbD4NCjxwIGNsYXNzPU1zb0Zvb3RlckxhbmRzY2FwZSBz
+dHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0Jz48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC1z
+aXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz7CqSBPcGVuIEdlb3NwYXRpYWwg
+Q29uc29ydGl1bSZuYnNwOzIwMTgmbmJzcDvigJMgQWxsDQpyaWdodHMgcmVzZXJ2ZWQ8c3BhbiBz
+dHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRz
+XT48Yg0Kc3R5bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1FTi1H
+QiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxz
+cGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPg0KUEFHRTxzcGFuIHN0
+eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoMKgIDwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3Bhbg0K
+c3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48L2I+PCFb
+ZW5kaWZdLS0+PGINCnN0eWxlPSdtc28tYmlkaS1mb250LXdlaWdodDpub3JtYWwnPjxzcGFuIGxh
+bmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7DQptc28tYmlkaS1mb250LXNpemU6MTEu
+MHB0Jz48c3BhbiBzdHlsZT0nbXNvLW5vLXByb29mOnllcyc+Mzwvc3Bhbj48L3NwYW4+PC9iPjwh
+LS1baWYgc3VwcG9ydEZpZWxkc10+PGINCnN0eWxlPSdtc28tYmlkaS1mb250LXdlaWdodDpub3Jt
+YWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7DQptc28tYmlkaS1m
+b250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3Nw
+YW4+PC9zcGFuPjwvYj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1z
+aXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48bzpwPjwvbzpwPjwvc3Bhbj48
+L3A+DQo8L2Rpdj4NCg0KPC9ib2R5Pg0KDQo8L2h0bWw+DQo=
+
+------=_NextPart_54e6729e.abeb.442c--

@@ -1,0 +1,5 @@
+WARNING: Font 'Roboto,normal,400' (font family 'Roboto', style 'normal', weight 'normal/400') doesn't exist. Replaced by 'NotoSans-Regular' (/github/home/.metanorma/fonts/NotoSans-Regular.ttf).
+WARNING: Font 'Roboto,normal,700' (font family 'Roboto', style 'normal', weight 'bold/700') doesn't exist. Replaced by 'NotoSans-Bold' (/github/home/.metanorma/fonts/NotoSans-Bold.ttf).
+WARNING: Font 'Roboto,italic,400' (font family 'Roboto', style 'italic', weight 'normal/400') doesn't exist. Replaced by 'NotoSans-Italic' (/github/home/.metanorma/fonts/NotoSans-Italic.ttf).
+WARNING: Font 'Roboto,italic,700' (font family 'Roboto', style 'italic', weight 'bold/700') doesn't exist. Replaced by 'NotoSans-BoldItalic' (/github/home/.metanorma/fonts/NotoSans-BoldItalic.ttf).
+
