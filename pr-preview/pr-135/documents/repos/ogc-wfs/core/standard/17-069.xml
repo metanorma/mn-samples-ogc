@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.3" schema-version="v2.1.5" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.6" schema-version="v2.1.6" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">OGC Web Feature Service 3.0: Part 1 - Core</title>
-<uri type="xml">https://riboseinc.github.io/ogc-wfs/ogc-wfs.xml</uri><uri type="pdf">https://riboseinc.github.io/ogc-wfs/ogc-wfs.pdf</uri><uri type="doc">https://riboseinc.github.io/ogc-wfs/ogc-wfs.doc</uri><docidentifier type="ogc-internal" primary="true">17-069</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wfs-1/3.0</docidentifier><docnumber>17-069</docnumber><date type="published"><on>1000-01-01</on></date><date type="issued"><on>1000-01-01</on></date><date type="received"><on>1000-01-01</on></date><contributor><role type="author"/><organization>
+<uri type="xml">https://riboseinc.github.io/ogc-wfs/ogc-wfs.xml</uri><uri type="pdf">https://riboseinc.github.io/ogc-wfs/ogc-wfs.pdf</uri><uri type="doc">https://riboseinc.github.io/ogc-wfs/ogc-wfs.doc</uri><docidentifier type="ogc-internal" primary="true">17-069</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wfs-1/3.0</docidentifier><docnumber>17-069</docnumber><date type="published"><on>1000-01-01</on></date><date type="issued"><on>1000-01-01</on></date><date type="received"><on>1000-01-01</on></date><date type="updated"><on>2018-04-07</on></date><contributor><role type="author"/><organization>
 <name>CubeWerx Inc.</name>
 </organization></contributor><contributor><role type="author"/><organization>
 <name>Hexagon</name>
@@ -20,7 +20,7 @@
 <name>technical</name>
 </subdivision><abbreviation>OGC</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></contributor><version><revision-date>2018-04-07</revision-date><draft>3.0.0-draft.1</draft></version><language>en</language><script>Latn</script><abstract><p>A Web Feature Service (WFS) offers the capability to create, modify and query spatial data on the Web. The WFS standard is a multi-part document. This part specifies the core capabilities that every WFS has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Examples include support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems.</p>
+<abbreviation>OGC</abbreviation></organization></contributor><version>3.0.0-draft.1</version><language>en</language><script>Latn</script><abstract><p>A Web Feature Service (WFS) offers the capability to create, modify and query spatial data on the Web. The WFS standard is a multi-part document. This part specifies the core capabilities that every WFS has to support and is restricted to read-access to spatial data. Additional capabilities that address specific needs will be specified in additional parts. Examples include support for creating and modifying data, more complex data models, richer queries, and additional coordinate reference systems.</p>
 
 <p>By default, every WFS instance provides access to a single dataset. Rather than sharing the data as a complete dataset, WFS offers direct, fine-grained access to the data at the feature (object) level.</p>
 
@@ -4875,16 +4875,16 @@ tags:
 </tr></tbody>
 </table>
 
-<pagebreak/></annex><bibliography><references id="_e38f090d-0e80-f4d9-338f-d2f6334f4ede" normative="true" obligation="informative">
+<pagebreak/></annex><bibliography><references id="_974fda7c-cd05-dac6-5569-9c863c5977b9" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
 
 <bibitem anchor="OpenAPI" id="_fa9a8d04-36c3-7d59-20f1-dbea1e625801"><formattedref format="application/x-isodoc+xml">Open API Initiative: <strong>OpenAPI Specification 3.0.1</strong>,
 <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md"/></formattedref><docidentifier>OpenAPI</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_4a3ffa7e-2833-8fc6-5e84-961d74a05631" type="standard" schema-version="v1.2.9" anchor="rfc2616">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_be3dac75-82f3-7bfc-3c2c-5a4fc4d97aca" type="standard" schema-version="v1.5.6" anchor="rfc2616">
+  <fetched>2026-06-16</fetched>
   
-<title type="main" format="text/plain">Hypertext Transfer Protocol — HTTP/1.1</title>
+<title type="main">Hypertext Transfer Protocol — HTTP/1.1</title>
 
   <uri type="src">https://www.rfc-editor.org/info/rfc2616</uri>
   <docidentifier type="IETF" primary="true">RFC 2616</docidentifier>
@@ -4897,7 +4897,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">R. Fielding</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">R.</formatted-initials>          <surname language="en" script="Latn">Fielding</surname>          <completename language="en" script="Latn">R. Fielding</completename>       </name>
 
     </person>
   </contributor>
@@ -4905,7 +4905,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">J. Gettys</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">J.</formatted-initials>          <surname language="en" script="Latn">Gettys</surname>          <completename language="en" script="Latn">J. Gettys</completename>       </name>
 
     </person>
   </contributor>
@@ -4913,7 +4913,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">J. Mogul</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">J.</formatted-initials>          <surname language="en" script="Latn">Mogul</surname>          <completename language="en" script="Latn">J. Mogul</completename>       </name>
 
     </person>
   </contributor>
@@ -4921,7 +4921,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">H. Frystyk</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">H.</formatted-initials>          <surname language="en" script="Latn">Frystyk</surname>          <completename language="en" script="Latn">H. Frystyk</completename>       </name>
 
     </person>
   </contributor>
@@ -4929,7 +4929,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">L. Masinter</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">L.</formatted-initials>          <surname language="en" script="Latn">Masinter</surname>          <completename language="en" script="Latn">L. Masinter</completename>       </name>
 
     </person>
   </contributor>
@@ -4937,7 +4937,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">P. Leach</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">P.</formatted-initials>          <surname language="en" script="Latn">Leach</surname>          <completename language="en" script="Latn">P. Leach</completename>       </name>
 
     </person>
   </contributor>
@@ -4945,7 +4945,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">T. Berners-Lee</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">T.</formatted-initials>          <surname language="en" script="Latn">Berners-Lee</surname>          <completename language="en" script="Latn">T. Berners-Lee</completename>       </name>
 
     </person>
   </contributor>
@@ -4953,7 +4953,7 @@ tags:
     <role type="publisher"/>
     <organization>
       
-<name>RFC Publisher</name>
+<name language="en">RFC Publisher</name>
 
     </organization>
   </contributor>
@@ -4961,79 +4961,109 @@ tags:
     <role type="authorizer"/>
     <organization>
       
-<name>RFC Series</name>
+<name language="en">RFC Series</name>
 
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="en">Internet Engineering Task Force</name>
+
+      <subdivision type="workgroup">
+        
+<name>HyperText Transfer Protocol</name>
+
+        <identifier>http</identifier>
+      </subdivision>
+      <abbreviation language="en">IETF</abbreviation>
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/html" language="en" script="Latn">
-    <p id="_6a428161-31c0-4d74-ba58-ee7318c0712d">HTTP has been in use by the World-Wide Web global information initiative since 1990. This specification defines the protocol referred to as “HTTP/1.1”, and is an update to RFC 2068. [STANDARDS-TRACK]</p>
+  <abstract language="en" script="Latn">
+    <p id="_3c529e77-9408-7170-86ca-567952ba23bd">HTTP has been in use by the World-Wide Web global information initiative since 1990.  This specification defines the protocol referred to as “HTTP/1.1”, and is an update to RFC 2068. [STANDARDS-TRACK]</p>
 
   </abstract>
+  <status>
+    <stage>DRAFT STANDARD</stage>
+  </status>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7230</formattedref>
+      <formattedref>RFC7230</formattedref>
       <docidentifier type="IETF" primary="true">RFC7230</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7231</formattedref>
+      <formattedref>RFC7231</formattedref>
       <docidentifier type="IETF" primary="true">RFC7231</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7232</formattedref>
+      <formattedref>RFC7232</formattedref>
       <docidentifier type="IETF" primary="true">RFC7232</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7233</formattedref>
+      <formattedref>RFC7233</formattedref>
       <docidentifier type="IETF" primary="true">RFC7233</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7234</formattedref>
+      <formattedref>RFC7234</formattedref>
       <docidentifier type="IETF" primary="true">RFC7234</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7235</formattedref>
+      <formattedref>RFC7235</formattedref>
       <docidentifier type="IETF" primary="true">RFC7235</docidentifier>
     </bibitem>
 
   </relation>
   <series>
     
-<title format="text/plain">RFC</title>
+<title>RFC</title>
 
     <number>2616</number>
   </series>
   <series type="stream">
     
-<title format="text/plain">IETF</title>
+<title>IETF</title>
 
   </series>
-  <keyword>HTTP</keyword>
-  <keyword>Hypertext Transfer Protocol</keyword>
-  <keyword>World Wide Web</keyword>
-  <keyword>WWW</keyword>
-  <keyword>hypermedia</keyword>
+  <keyword>
+    <vocab>HTTP</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Hypertext Transfer Protocol</vocab>
+  </keyword>
+  <keyword>
+    <vocab>World Wide Web</vocab>
+  </keyword>
+  <keyword>
+    <vocab>WWW</vocab>
+  </keyword>
+  <keyword>
+    <vocab>hypermedia</vocab>
+  </keyword>
 </bibitem>
-<bibitem id="_d5176ea9-31e9-001e-4f34-0ce8aa2bfc9e" type="standard" schema-version="v1.2.9" anchor="rfc2818">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_88d6fda3-0773-5774-8a20-b0f4c377542a" type="standard" schema-version="v1.5.6" anchor="rfc2818">
+  <fetched>2026-06-16</fetched>
   
-<title type="main" format="text/plain">HTTP Over TLS</title>
+<title type="main">HTTP Over TLS</title>
 
   <uri type="src">https://www.rfc-editor.org/info/rfc2818</uri>
   <docidentifier type="IETF" primary="true">RFC 2818</docidentifier>
@@ -5046,7 +5076,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">E. Rescorla</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">E.</formatted-initials>          <surname language="en" script="Latn">Rescorla</surname>          <completename language="en" script="Latn">E. Rescorla</completename>       </name>
 
     </person>
   </contributor>
@@ -5054,7 +5084,7 @@ tags:
     <role type="publisher"/>
     <organization>
       
-<name>RFC Publisher</name>
+<name language="en">RFC Publisher</name>
 
     </organization>
   </contributor>
@@ -5062,45 +5092,77 @@ tags:
     <role type="authorizer"/>
     <organization>
       
-<name>RFC Series</name>
+<name language="en">RFC Series</name>
 
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="en">Internet Engineering Task Force</name>
+
+      <subdivision type="workgroup">
+        
+<name>Transport Layer Security</name>
+
+        <identifier>tls</identifier>
+      </subdivision>
+      <abbreviation language="en">IETF</abbreviation>
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/html" language="en" script="Latn">
-    <p id="_b3c7ba63-7d57-2e85-c5c8-d2bd93edeac3">This memo describes how to use Transport Layer Security (TLS) to secure Hypertext Transfer Protocol (HTTP) connections over the Internet. This memo provides information for the Internet community.</p>
+  <abstract language="en" script="Latn">
+    <p id="_a684aac6-21f4-4a5a-a70d-5c50b34eed66">This memo describes how to use Transport Layer Security (TLS) to secure Hypertext Transfer Protocol (HTTP) connections over the Internet.  This memo provides information for the Internet community.</p>
 
   </abstract>
+  <status>
+    <stage>INFORMATIONAL</stage>
+  </status>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC9110</formattedref>
+      <formattedref>RFC9110</formattedref>
       <docidentifier type="IETF" primary="true">RFC9110</docidentifier>
     </bibitem>
 
   </relation>
   <series>
     
-<title format="text/plain">RFC</title>
+<title>RFC</title>
 
     <number>2818</number>
   </series>
   <series type="stream">
     
-<title format="text/plain">IETF</title>
+<title>IETF</title>
 
   </series>
-  <keyword>hypertext</keyword>
-  <keyword>transfer</keyword>
-  <keyword>protocol</keyword>
-  <keyword>transport</keyword>
-  <keyword>layer</keyword>
-  <keyword>security</keyword>
+  <keyword>
+    <vocab>hypertext</vocab>
+  </keyword>
+  <keyword>
+    <vocab>transfer</vocab>
+  </keyword>
+  <keyword>
+    <vocab>protocol</vocab>
+  </keyword>
+  <keyword>
+    <vocab>transport</vocab>
+  </keyword>
+  <keyword>
+    <vocab>layer</vocab>
+  </keyword>
+  <keyword>
+    <vocab>security</vocab>
+  </keyword>
 </bibitem>
-<bibitem id="_558847da-52e7-b085-cad3-bb6912414a62" type="standard" schema-version="v1.2.9" anchor="rfc3339">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_04a80161-e27a-c9d9-e8f5-0326ab60ac13" type="standard" schema-version="v1.5.6" anchor="rfc3339">
+  <fetched>2026-06-16</fetched>
   
-<title type="main" format="text/plain">Date and Time on the Internet: Timestamps</title>
+<title type="main">Date and Time on the Internet: Timestamps</title>
 
   <uri type="src">https://www.rfc-editor.org/info/rfc3339</uri>
   <docidentifier type="IETF" primary="true">RFC 3339</docidentifier>
@@ -5113,7 +5175,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">G. Klyne</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">G.</formatted-initials>          <surname language="en" script="Latn">Klyne</surname>          <completename language="en" script="Latn">G. Klyne</completename>       </name>
 
     </person>
   </contributor>
@@ -5121,7 +5183,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">C. Newman</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">C.</formatted-initials>          <surname language="en" script="Latn">Newman</surname>          <completename language="en" script="Latn">C. Newman</completename>       </name>
 
     </person>
   </contributor>
@@ -5129,7 +5191,7 @@ tags:
     <role type="publisher"/>
     <organization>
       
-<name>RFC Publisher</name>
+<name language="en">RFC Publisher</name>
 
     </organization>
   </contributor>
@@ -5137,36 +5199,64 @@ tags:
     <role type="authorizer"/>
     <organization>
       
-<name>RFC Series</name>
+<name language="en">RFC Series</name>
 
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="en">Internet Engineering Task Force</name>
+
+      <subdivision type="workgroup">
+        
+<name>Instant Messaging and Presence Protocol</name>
+
+        <identifier>impp</identifier>
+      </subdivision>
+      <abbreviation language="en">IETF</abbreviation>
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/html" language="en" script="Latn">
+  <abstract language="en" script="Latn">
     <p id="_0f7b4930-88ec-2253-676f-37145a32827a">This document defines a date and time format for use in Internet protocols that is a profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.</p>
 
   </abstract>
+  <status>
+    <stage>PROPOSED STANDARD</stage>
+  </status>
   <series>
     
-<title format="text/plain">RFC</title>
+<title>RFC</title>
 
     <number>3339</number>
   </series>
   <series type="stream">
     
-<title format="text/plain">IETF</title>
+<title>IETF</title>
 
   </series>
-  <keyword>Timestamps</keyword>
-  <keyword>gregorian calendar</keyword>
-  <keyword>iso</keyword>
-  <keyword>International Organization for Standardization</keyword>
+  <keyword>
+    <vocab>Timestamps</vocab>
+  </keyword>
+  <keyword>
+    <vocab>gregorian calendar</vocab>
+  </keyword>
+  <keyword>
+    <vocab>iso</vocab>
+  </keyword>
+  <keyword>
+    <vocab>International Organization for Standardization</vocab>
+  </keyword>
 </bibitem>
-<bibitem id="_8640dde8-c6c5-8adf-47da-1b7f62aeb934" type="standard" schema-version="v1.2.9" anchor="rfc3986">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_29210c22-c384-8bb3-ba69-56f9de2998b3" type="standard" schema-version="v1.5.6" anchor="rfc3986">
+  <fetched>2026-06-16</fetched>
   
-<title type="main" format="text/plain">Uniform Resource Identifier (URI): Generic Syntax</title>
+<title type="main">Uniform Resource Identifier (URI): Generic Syntax</title>
 
   <uri type="src">https://www.rfc-editor.org/info/rfc3986</uri>
   <docidentifier type="IETF" primary="true">RFC 3986</docidentifier>
@@ -5179,7 +5269,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">T. Berners-Lee</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">T.</formatted-initials>          <surname language="en" script="Latn">Berners-Lee</surname>          <completename language="en" script="Latn">T. Berners-Lee</completename>       </name>
 
     </person>
   </contributor>
@@ -5187,7 +5277,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">R. Fielding</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">R.</formatted-initials>          <surname language="en" script="Latn">Fielding</surname>          <completename language="en" script="Latn">R. Fielding</completename>       </name>
 
     </person>
   </contributor>
@@ -5195,7 +5285,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">L. Masinter</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">L.</formatted-initials>          <surname language="en" script="Latn">Masinter</surname>          <completename language="en" script="Latn">L. Masinter</completename>       </name>
 
     </person>
   </contributor>
@@ -5203,7 +5293,7 @@ tags:
     <role type="publisher"/>
     <organization>
       
-<name>RFC Publisher</name>
+<name language="en">RFC Publisher</name>
 
     </organization>
   </contributor>
@@ -5211,51 +5301,66 @@ tags:
     <role type="authorizer"/>
     <organization>
       
-<name>RFC Series</name>
+<name language="en">RFC Series</name>
 
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/html" language="en" script="Latn">
-    <p id="_f63c67b1-9d4c-d648-9fef-13bcf0bb80d4">A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource. This specification defines the generic URI syntax and a process for resolving URI references that might be in relative form, along with guidelines and security considerations for the use of URIs on the Internet. The URI syntax defines a grammar that is a superset of all valid URIs, allowing an implementation to parse the common components of a URI reference without knowing the scheme-specific requirements of every possible identifier. This specification does not define a generative grammar for URIs; that task is performed by the individual specifications of each URI scheme. [STANDARDS-TRACK]</p>
+  <abstract language="en" script="Latn">
+    <p id="_6f2ea8f4-a181-78de-58b1-d043f64faee3">A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.  This specification defines the generic URI syntax and a process for resolving URI references that might be in relative form, along with guidelines and security considerations for the use of URIs on the Internet.  The URI syntax defines a grammar that is a superset of all valid URIs, allowing an implementation to parse the common components of a URI reference without knowing the scheme-specific requirements of every possible identifier.  This specification does not define a generative grammar for URIs; that task is performed by the individual specifications of each URI scheme. [STANDARDS-TRACK]</p>
 
   </abstract>
+  <status>
+    <stage>INTERNET STANDARD</stage>
+  </status>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain">RFC1738</formattedref>
+      <formattedref>RFC1738</formattedref>
       <docidentifier type="IETF" primary="true">RFC1738</docidentifier>
     </bibitem>
 
   </relation>
   <series>
     
-<title format="text/plain">STD</title>
+<title>STD</title>
 
     <number>66</number>
   </series>
   <series>
     
-<title format="text/plain">RFC</title>
+<title>RFC</title>
 
     <number>3986</number>
   </series>
   <series type="stream">
     
-<title format="text/plain">IETF</title>
+<title>IETF</title>
 
   </series>
-  <keyword>Internet protocol</keyword>
-  <keyword>IP</keyword>
-  <keyword>uniform resource identifier</keyword>
-  <keyword>URI</keyword>
-  <keyword>www</keyword>
-  <keyword>world wide web</keyword>
+  <keyword>
+    <vocab>Internet protocol</vocab>
+  </keyword>
+  <keyword>
+    <vocab>IP</vocab>
+  </keyword>
+  <keyword>
+    <vocab>uniform resource identifier</vocab>
+  </keyword>
+  <keyword>
+    <vocab>URI</vocab>
+  </keyword>
+  <keyword>
+    <vocab>www</vocab>
+  </keyword>
+  <keyword>
+    <vocab>world wide web</vocab>
+  </keyword>
 </bibitem>
-<bibitem id="_ba69ccc3-54e6-66ce-2cc7-ffd432a32615" type="standard" schema-version="v1.2.9" anchor="rfc5988">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_8e2dfa57-78c6-eafb-d124-9ff91a054389" type="standard" schema-version="v1.5.6" anchor="rfc5988">
+  <fetched>2026-06-16</fetched>
   
-<title type="main" format="text/plain">Web Linking</title>
+<title type="main">Web Linking</title>
 
   <uri type="src">https://www.rfc-editor.org/info/rfc5988</uri>
   <docidentifier type="IETF" primary="true">RFC 5988</docidentifier>
@@ -5268,7 +5373,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">M. Nottingham</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">M.</formatted-initials>          <surname language="en" script="Latn">Nottingham</surname>          <completename language="en" script="Latn">M. Nottingham</completename>       </name>
 
     </person>
   </contributor>
@@ -5276,7 +5381,7 @@ tags:
     <role type="publisher"/>
     <organization>
       
-<name>RFC Publisher</name>
+<name language="en">RFC Publisher</name>
 
     </organization>
   </contributor>
@@ -5284,53 +5389,66 @@ tags:
     <role type="authorizer"/>
     <organization>
       
-<name>RFC Series</name>
+<name language="en">RFC Series</name>
 
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/html" language="en" script="Latn">
-    <p id="_b4b204a1-5fc0-6462-dc5c-acf566832010">This document specifies relation types for Web links, and defines a registry for them. It also defines the use of such links in HTTP headers with the Link header field. [STANDARDS-TRACK]</p>
+  <abstract language="en" script="Latn">
+    <p id="_8c6299b4-b15c-9e23-bfd1-42ecac5a0cae">This document specifies relation types for Web links, and defines a registry for them.  It also defines the use of such links in HTTP headers with the Link header field. [STANDARDS-TRACK]</p>
 
   </abstract>
-  <relation type="obsoletedBy">
+  <status>
+    <stage>PROPOSED STANDARD</stage>
+  </status>
+  <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain">RFC8288</formattedref>
-      <docidentifier type="IETF" primary="true">RFC8288</docidentifier>
+      <formattedref>RFC4287</formattedref>
+      <docidentifier type="IETF" primary="true">RFC4287</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="updates">
+  <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC4287</formattedref>
-      <docidentifier type="IETF" primary="true">RFC4287</docidentifier>
+      <formattedref>RFC8288</formattedref>
+      <docidentifier type="IETF" primary="true">RFC8288</docidentifier>
     </bibitem>
 
   </relation>
   <series>
     
-<title format="text/plain">RFC</title>
+<title>RFC</title>
 
     <number>5988</number>
   </series>
   <series type="stream">
     
-<title format="text/plain">IETF</title>
+<title>IETF</title>
 
   </series>
-  <keyword>Link</keyword>
-  <keyword>linking</keyword>
-  <keyword>http header</keyword>
-  <keyword>link relation</keyword>
-  <keyword>web</keyword>
+  <keyword>
+    <vocab>Link</vocab>
+  </keyword>
+  <keyword>
+    <vocab>linking</vocab>
+  </keyword>
+  <keyword>
+    <vocab>http header</vocab>
+  </keyword>
+  <keyword>
+    <vocab>link relation</vocab>
+  </keyword>
+  <keyword>
+    <vocab>web</vocab>
+  </keyword>
 </bibitem>
 <bibitem anchor="GMLSF" id="_edf4fb4f-0eb3-eb88-65ac-9683f2d17b57"><formattedref format="application/x-isodoc+xml">van den Brink, L., Portele, C., Vretanos, P.: OGC 10-100r3,
 <strong>Geography Markup Language (GML) Simple Features Profile</strong>, <link target="http://portal.opengeospatial.org/files/?artifact_id=42729"/></formattedref><docidentifier>GMLSF</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_3dcad06f-03e2-5b88-b02b-aedb2f32d21e" type="standard" schema-version="v1.2.9" anchor="GeoJSON">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_a3b4c1c8-8149-ed6d-92c8-eb4e872d9172" type="standard" schema-version="v1.5.6" anchor="GeoJSON">
+  <fetched>2026-06-16</fetched>
   
-<title type="main" format="text/plain">The GeoJSON Format</title>
+<title type="main">The GeoJSON Format</title>
 
   <uri type="src">https://www.rfc-editor.org/info/rfc7946</uri>
   <docidentifier type="IETF" primary="true">RFC 7946</docidentifier>
@@ -5343,7 +5461,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">H. Butler</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">H.</formatted-initials>          <surname language="en" script="Latn">Butler</surname>          <completename language="en" script="Latn">H. Butler</completename>       </name>
 
     </person>
   </contributor>
@@ -5351,7 +5469,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">M. Daly</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">M.</formatted-initials>          <surname language="en" script="Latn">Daly</surname>          <completename language="en" script="Latn">M. Daly</completename>       </name>
 
     </person>
   </contributor>
@@ -5359,7 +5477,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">A. Doyle</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">A.</formatted-initials>          <surname language="en" script="Latn">Doyle</surname>          <completename language="en" script="Latn">A. Doyle</completename>       </name>
 
     </person>
   </contributor>
@@ -5367,7 +5485,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">S. Gillies</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">S.</formatted-initials>          <surname language="en" script="Latn">Gillies</surname>          <completename language="en" script="Latn">S. Gillies</completename>       </name>
 
     </person>
   </contributor>
@@ -5375,7 +5493,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">S. Hagen</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">S.</formatted-initials>          <surname language="en" script="Latn">Hagen</surname>          <completename language="en" script="Latn">S. Hagen</completename>       </name>
 
     </person>
   </contributor>
@@ -5383,7 +5501,7 @@ tags:
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">T. Schaub</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">T.</formatted-initials>          <surname language="en" script="Latn">Schaub</surname>          <completename language="en" script="Latn">T. Schaub</completename>       </name>
 
     </person>
   </contributor>
@@ -5391,7 +5509,7 @@ tags:
     <role type="publisher"/>
     <organization>
       
-<name>RFC Publisher</name>
+<name language="en">RFC Publisher</name>
 
     </organization>
   </contributor>
@@ -5399,115 +5517,102 @@ tags:
     <role type="authorizer"/>
     <organization>
       
-<name>RFC Series</name>
+<name language="en">RFC Series</name>
 
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="en">Internet Engineering Task Force</name>
+
+      <subdivision type="workgroup">
+        
+<name>Geographic JSON</name>
+
+        <identifier>geojson</identifier>
+      </subdivision>
+      <abbreviation language="en">IETF</abbreviation>
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/html" language="en" script="Latn">
-    <p id="_9123bc6a-a484-d5a0-511a-64455934eacc">GeoJSON is a geospatial data interchange format based on JavaScript Object Notation (JSON). It defines several types of JSON objects and the manner in which they are combined to represent data about geographic features, their properties, and their spatial extents. GeoJSON uses a geographic coordinate reference system, World Geodetic System 1984, and units of decimal degrees.</p>
+  <abstract language="en" script="Latn">
+    <p id="_cf54cee5-fe49-ca04-7eb5-be79d88f2bc1">GeoJSON is a geospatial data interchange format based on JavaScript Object Notation (JSON).  It defines several types of JSON objects and the manner in which they are combined to represent data about geographic features, their properties, and their spatial extents.  GeoJSON uses a geographic coordinate reference system, World Geodetic System 1984, and units of decimal degrees.</p>
 
   </abstract>
+  <status>
+    <stage>PROPOSED STANDARD</stage>
+  </status>
   <series>
     
-<title format="text/plain">RFC</title>
+<title>RFC</title>
 
     <number>7946</number>
   </series>
   <series type="stream">
     
-<title format="text/plain">IETF</title>
+<title>IETF</title>
 
   </series>
-  <keyword>JSON</keyword>
-  <keyword>Geospatial</keyword>
-  <keyword>JavaScript Object Notation</keyword>
+  <keyword>
+    <vocab>JSON</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Geospatial</vocab>
+  </keyword>
+  <keyword>
+    <vocab>JavaScript Object Notation</vocab>
+  </keyword>
 </bibitem>
 <bibitem anchor="HTML5" id="_360aaef6-b7c0-203d-99ee-6cedc8140e3d"><formattedref format="application/x-isodoc+xml">W3C: <strong>HTML5</strong>, W3C Recommendation, <link target="http://www.w3.org/TR/html5/"/></formattedref><docidentifier>HTML5</docidentifier><docnumber>5</docnumber><language>en</language><script>Latn</script></bibitem>
 <bibitem anchor="schema.org" id="_3c7ea6cd-ccda-3d83-b951-95f68b19663a"><formattedref format="application/x-isodoc+xml"><strong>Schema.org</strong>: <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>schema.org</docidentifier><language>en</language><script>Latn</script></bibitem>
 <bibitem anchor="OGC06-121r8" id="_6b0881d3-67e7-0d0f-e378-bcdf0509de55"><formattedref format="application/x-isodoc+xml">OGC Web Services Common, <link target="https://www.opengeospatial.org/standards/common"/></formattedref><docidentifier type="OGC">OGC 06-121r8</docidentifier><docnumber>06-121r8</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_5661922d-0f6c-f9a0-e928-102a8d6477ae" type="standard" schema-version="v1.2.9" anchor="ISOIECDIR2">
-  <fetched>2026-04-16</fetched>
+<bibitem anchor="ISOIECDIR2" id="_6f5eb96c-0aad-0dbf-97d8-6eca39ffff43" type="standard">
+<title format="text/plain">ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards, <link target="https://www.iec.ch/members_experts/refdocs/iec/isoiecdir-2%7Bed7.0%7Den.pdf"/></title>
+<docidentifier type="ISO">ISO/IEC DIR 2</docidentifier><docnumber>2</docnumber><contributor><role type="publisher"/><organization>
+<name>ISO</name>
+</organization></contributor><contributor><role type="publisher"/><organization>
+<name>IEC</name>
+</organization></contributor><language>en</language><script>Latn</script></bibitem>
+<bibitem id="_3b38d45d-2766-f01e-7a48-add6cf8bc3ff" type="standard" schema-version="v1.5.6" anchor="iso19101-1">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">ISO/IEC Directives, Part 2</title>
-
-  
-<title type="title-part" format="text/plain" language="en" script="Latn">Principles and rules for the structure and drafting of ISO and IEC documents</title>
-
-  <uri type="src">https://www.iso.org/sites/directives/current/part2/index.xhtml</uri>
-  <docidentifier type="ISO" primary="true">ISO/IEC DIR 2</docidentifier>
-  <edition>9</edition>
-  <language>en</language>
-  <script>Latn</script>
-  <copyright>
-    <from>2021</from>
-    <owner>
-      <organization>
-        
-<name>International Organization for Standardization</name>
-
-        <abbreviation>ISO</abbreviation>
-        <uri>www.iso.org</uri>
-      </organization>
-    </owner>
-  </copyright>
-  <relation type="instanceOf">
-    <bibitem type="standard">
-      <fetched>2026-04-16</fetched>
-      
-<title type="title-main" format="text/plain" language="en" script="Latn">ISO/IEC Directives, Part 2</title>
-
-      
-<title type="title-part" format="text/plain" language="en" script="Latn">Principles and rules for the structure and drafting of ISO and IEC documents</title>
-
-      <uri type="src">https://www.iso.org/sites/directives/current/part2/index.xhtml</uri>
-      <docidentifier type="ISO" primary="true">ISO/IEC DIR 2</docidentifier>
-      <date type="published">
-        <on>2021-05-01</on>
-      </date>
-      <edition>9</edition>
-      <language>en</language>
-      <script>Latn</script>
-      <copyright>
-        <from>2021</from>
-        <owner>
-          <organization>
-            
-<name>International Organization for Standardization</name>
-
-            <abbreviation>ISO</abbreviation>
-            <uri>www.iso.org</uri>
-          </organization>
-        </owner>
-      </copyright>
-    </bibitem>
-
-  </relation>
-</bibitem>
-<bibitem id="_b6723692-501c-fa05-0636-5d288fedf801" type="standard" schema-version="v1.2.9" anchor="iso19101-1">
-  <fetched>2026-04-16</fetched>
-  
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+<title language="en" script="Latn" type="title-intro">Geographic information</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
+<title language="en" script="Latn" type="title-main">Reference model</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Fundamentals</title>
+<title language="en" script="Latn" type="title-part">Part 1: Fundamentals</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model — Part 1: Fundamentals</title>
+<title language="en" script="Latn" type="main">Geographic information — Reference model — Part 1: Fundamentals</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Information géographique</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Modèle de référence</title>
+
+  
+<title language="fr" script="Latn" type="title-part">Partie 1: Principes de base</title>
+
+  
+<title language="fr" script="Latn" type="main">Information géographique — Modèle de référence — Partie 1: Principes de base</title>
 
   <uri type="src">https://www.iso.org/standard/59164.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>
   <docidentifier type="iso-reference">ISO 19101-1:2014(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.20</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.92</docidentifier>
   <docnumber>19101</docnumber>
   <date type="published">
-    <on>2014-11</on>
+    <on>2014-11-12</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -5519,15 +5624,33 @@ tags:
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Geographic information/Geomatics</name>
+
+        <identifier>ISO/TC 211</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>1</edition>
   <language>en</language>
   <language>fr</language>
+  <language>ru</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO 19101-1:2014 defines the reference model for standardization in the field of geographic information. This reference model describes the notion of interoperability and sets forth the fundamentals by which this standardization takes place.
-Although structured in the context of information technology and information technology standards, ISO 19101-1:2014 is independent of any application development method or technology implementation approach.</abstract>
+  <script>Cyrl</script>
+  <abstract language="en" script="Latn">ISO 19101-1:2014 defines the reference model for standardization in the field of geographic information. This reference model describes the notion of interoperability and sets forth the fundamentals by which this standardization takes place. Although structured in the context of information technology and information technology standards, ISO 19101-1:2014 is independent of any application development method or technology implementation approach.</abstract>
   <status>
     <stage>90</stage>
-    <substage>20</substage>
+    <substage>92</substage>
   </status>
   <copyright>
     <from>2014</from>
@@ -5540,9 +5663,26 @@ Although structured in the context of information technology and information tec
     </owner>
   </copyright>
   <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 19101:2002</formattedref>
+    <bibitem>
+      <formattedref>ISO 19101:2002</formattedref>
       <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>
+      <date type="published">
+        <on>2002-07-04</on>
+      </date>
+    </bibitem>
+
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/WD 19101-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/WD 19101-1</docidentifier>
+    </bibitem>
+
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/AWI 19101-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/AWI 19101-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -5550,25 +5690,35 @@ Although structured in the context of information technology and information tec
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_878672cb-47a4-4e75-6e2b-4c97854f1f36" type="standard" schema-version="v1.2.9" anchor="iso19103">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_2a2beb35-6f71-9fa3-d9c8-7afa4598cf6c" type="standard" schema-version="v1.5.6" anchor="iso19103">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+<title language="en" script="Latn" type="title-intro">Geographic information</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Conceptual schema language</title>
+<title language="en" script="Latn" type="title-main">Conceptual schema language</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Conceptual schema language</title>
+<title language="en" script="Latn" type="main">Geographic information — Conceptual schema language</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Information géographique</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Langage de schéma conceptuel</title>
+
+  
+<title language="fr" script="Latn" type="main">Information géographique — Langage de schéma conceptuel</title>
 
   <uri type="src">https://www.iso.org/standard/56734.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56734:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19103:2015</docidentifier>
   <docidentifier type="iso-reference">ISO 19103:2015(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19103:stage-95.99</docidentifier>
   <docnumber>19103</docnumber>
   <date type="published">
-    <on>2015-12</on>
+    <on>2015-12-02</on>
   </date>
   <contributor>
     <role type="publisher"/>
@@ -5580,13 +5730,27 @@ Although structured in the context of information technology and information tec
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Geographic information/Geomatics</name>
+
+        <identifier>ISO/TC 211</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>1</edition>
   <language>en</language>
-  <language>fr</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">ISO 19103:2015 provides rules and guidelines for the use of a conceptual schema language within the context of geographic information. The chosen conceptual schema language is the Unified Modeling Language (UML).
-ISO 19103.2015 provides a profile of the Unified Modelling Language (UML).
-The standardization target type of this standard is UML schemas describing geographic information.</abstract>
+  <abstract language="en" script="Latn">ISO 19103:2015 provides rules and guidelines for the use of a conceptual schema language within the context of geographic information. The chosen conceptual schema language is the Unified Modeling Language (UML). ISO 19103.2015 provides a profile of the Unified Modelling Language (UML). The standardization target type of this standard is UML schemas describing geographic information.</abstract>
   <status>
     <stage>95</stage>
     <substage>99</substage>
@@ -5602,18 +5766,11 @@ The standardization target type of this standard is UML schemas describing geogr
     </owner>
   </copyright>
   <relation type="obsoletes">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO/TS 19103:2005</formattedref>
+    <bibitem>
+      <formattedref>ISO/TS 19103:2005</formattedref>
       <docidentifier type="ISO" primary="true">ISO/TS 19103:2005</docidentifier>
-    </bibitem>
-
-  </relation>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 19103:2024</formattedref>
-      <docidentifier type="ISO" primary="true">ISO 19103:2024</docidentifier>
-      <date type="circulated">
-        <on>2024-09-27</on>
+      <date type="published">
+        <on>2005-07-18</on>
       </date>
     </bibitem>
 

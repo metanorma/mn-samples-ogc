@@ -14,7 +14,7 @@ thead th { font-weight: bold; background-color: aqua; }
 
 <li><p><b><a href="#Style">Style</a></b>: Severity 2: <b>88</b> errors</p></li>
 
-<li><p><b><a href="#Metanorma_XML_Syntax">Metanorma XML Syntax</a></b>: Severity 2: <b>62</b> errors</p></li>
+<li><p><b><a href="#Metanorma_XML_Syntax">Metanorma XML Syntax</a></b>: Severity 2: <b>51</b> errors</p></li>
 </ul>
 <h2 id="AsciiDoc_Input">AsciiDoc Input</h2>
 <table border="1">
@@ -23,7 +23,7 @@ thead th { font-weight: bold; background-color: aqua; }
 <tbody>
 <tr class="severity2">
 <td></td><th><code>--</code></th><td>STANDOC_16</td>
-<td>Section not marked up as [bibliography]!</td><td><pre>#&lt;Asciidoctor::Section@3180620 {level: 1, title: &quot;References&quot;, blocks: 1}&gt;</pre></td><td>2</td></tr>
+<td>Section not marked up as [bibliography]!</td><td><pre>#&lt;Asciidoctor::Section@2120620 {level: 1, title: &quot;References&quot;, blocks: 1}&gt;</pre></td><td>2</td></tr>
 </tbody></table>
 <h2 id="Relaton">Relaton</h2>
 <table border="1">
@@ -659,7 +659,10 @@ thead th { font-weight: bold; background-color: aqua; }
 <th width="20%">Message</th><th width="40%">Context</th><th width="5%">Severity</th></thead>
 <tbody>
 <tr class="severity2">
-<td></td><th><code>XML Line 000017:261</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 000017:105</code></th><td>STANDOC_7</td>
+<td>text not allowed here; expected the element end-tag or element "draft" or "revision-date"</td><td><pre></pre></td><td>2</td></tr>
+<tr class="severity2">
+<td></td><th><code>XML Line 000017:230</code></th><td>STANDOC_7</td>
 <td>character content of element "from" invalid; must be a year</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
 <td></td><th><code>XML Line 000247:91</code></th><td>STANDOC_7</td>
@@ -755,94 +758,58 @@ thead th { font-weight: bold; background-color: aqua; }
 <td></td><th><code>XML Line 004050:92</code></th><td>STANDOC_7</td>
 <td>attribute "height" not allowed here; expected attribute "class", "columns", "keep-lines-together", "keep-with-next", "multilingual-rendering", "number",​ "source",​ "subsequence", "tag", "unnumbered" or "width"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005772:22</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
+<td></td><th><code>XML Line 005762:37</code></th><td>STANDOC_7</td>
+<td>character content of element "stage" invalid; must be equal to "approved", "candidate", "deprecated", "draft", "legacy",​ "oab-review", "public-ref", "published", "rescinded", "retired", "rfc", "swg-draft", "tc-vote" or "work-item-draft"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005772:30</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005777:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005773:38</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005773:46</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005780:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005774:25</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005774:33</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005783:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005775:24</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005775:32</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005786:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005836:19</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
+<td></td><th><code>XML Line 005831:37</code></th><td>STANDOC_7</td>
+<td>character content of element "stage" invalid; must be equal to "approved", "candidate", "deprecated", "draft", "legacy",​ "oab-review", "public-ref", "published", "rescinded", "retired", "rfc", "swg-draft", "tc-vote" or "work-item-draft"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005836:27</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005852:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005837:17</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005837:25</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005855:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005838:37</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005838:45</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005858:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005839:28</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005839:36</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005861:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005840:20</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005840:28</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005864:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005924:31</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
+<td></td><th><code>XML Line 005925:37</code></th><td>STANDOC_7</td>
+<td>character content of element "stage" invalid; must be equal to "approved", "candidate", "deprecated", "draft", "legacy",​ "oab-review", "public-ref", "published", "rescinded", "retired", "rfc", "swg-draft", "tc-vote" or "work-item-draft"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005924:39</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005953:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005925:16</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005925:24</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005956:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005926:41</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005926:49</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005959:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005927:17</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005927:25</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005962:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005928:17</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005928:25</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005965:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 <tr class="severity2">
-<td></td><th><code>XML Line 005929:28</code></th><td>STANDOC_7</td>
-<td>text not allowed here; expected element "taxon" or "vocab"</td><td><pre></pre></td><td>2</td></tr>
-<tr class="severity2">
-<td></td><th><code>XML Line 005929:36</code></th><td>STANDOC_7</td>
+<td></td><th><code>XML Line 005968:13</code></th><td>STANDOC_7</td>
 <td>element "keyword" incomplete; missing required element "taxon"</td><td><pre></pre></td><td>2</td></tr>
 </tbody></table>
 </body></html>

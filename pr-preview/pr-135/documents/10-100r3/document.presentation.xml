@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.3" schema-version="v2.1.5" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.6" schema-version="v2.1.6" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
 <docidentifier type="ogc-internal" primary="true">10-100r3</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/spec/gmlsf/2.0.1</docidentifier><docnumber>10-100r3</docnumber><date type="published"><on>2012-04-05</on></date><date type="issued"><on>2012-04-05</on></date><date type="received"><on>2011-05-24</on></date><contributor><role type="author"/><organization>
@@ -32,9 +32,9 @@
 <name>technical</name>
 </subdivision><abbreviation>OGC</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation><logo type="html-blue"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.3/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
-<logo type="html-white"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.3/lib/isodoc/ogc/html/logo.2018-white.png" mimetype="image/png"/></logo>
-<logo type="word"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.3/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
+<abbreviation>OGC</abbreviation><logo type="html-blue"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.6/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
+<logo type="html-white"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.6/lib/isodoc/ogc/html/logo.2018-white.png" mimetype="image/png"/></logo>
+<logo type="word"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.6/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
 </organization></contributor><edition language="">2.0</edition><edition language="en">edition 2.0</edition><language current="true">en</language><script current="true">Latn</script><status><stage language="">approved</stage><stage language="en">Approved</stage></status><copyright><from>2012</from><owner><organization>
 <name>Open Geospatial Consortium</name>
 <abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>standard</doctype><subdoctype>profile</subdoctype><flavor>ogc</flavor></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="executivesummary" language="en">Executive summary</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="index" language="en">Index</localized-string><localized-string key="see" language="en">see</localized-string><localized-string key="see_also" language="en">see also</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en">No terms and definitions are listed in this document.
@@ -1738,17 +1738,17 @@ SHORT FORM: &#x3c;xsd:element name="propertyName" type="xsd:double"
 
 
 
-<references id="_32dfb9a2-ffea-370e-2af2-c8846024674a" normative="true" obligation="informative" semx-id="_32dfb9a2-ffea-370e-2af2-c8846024674a" displayorder="15">
-<title id="_96fce99f-ce1f-b184-eb60-fb7c71327943" semx-id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><fmt-title depth="1" id="_09cd0b41-d231-b287-38f6-10b6b090a083"><span class="fmt-caption-label"><semx element="autonum" source="_32dfb9a2-ffea-370e-2af2-c8846024674a">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_96fce99f-ce1f-b184-eb60-fb7c71327943">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_32dfb9a2-ffea-370e-2af2-c8846024674a">3</semx></fmt-xref-label><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3" semx-id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="ogc07-036" type="standard" schema-version="v1.2.9" anchor="ogc07-036" semx-id="_b5f5701b-70f5-2eaf-4081-c62a74aebff8"><biblio-tag/><formattedref>Clemens Portele: OGC 07-036, <em>OpenGIS Geography Markup Language (GML) Encoding Standard</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/07-036/07-036.pdf">https://docs.ogc.org/is/07-036/07-036.pdf</fmt-link>.</formattedref>
-  <fetched>2026-04-16</fetched>
+<references id="_04df70b0-d840-273d-3938-7a351e106d19" normative="true" obligation="informative" semx-id="_04df70b0-d840-273d-3938-7a351e106d19" displayorder="15">
+<title id="_96fce99f-ce1f-b184-eb60-fb7c71327943" semx-id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><fmt-title depth="1" id="_09cd0b41-d231-b287-38f6-10b6b090a083"><span class="fmt-caption-label"><semx element="autonum" source="_04df70b0-d840-273d-3938-7a351e106d19">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_96fce99f-ce1f-b184-eb60-fb7c71327943">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_04df70b0-d840-273d-3938-7a351e106d19">3</semx></fmt-xref-label><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3" semx-id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<bibitem id="ogc07-036" type="standard" schema-version="v1.5.6" anchor="ogc07-036" semx-id="_06db1262-37ec-d2cb-75bb-6caddc1d46fc"><biblio-tag/><formattedref>Clemens Portele, Open Geospatial Consortium: OGC 07-036, <em>OpenGIS Geography Markup Language (GML) Encoding Standard</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/07-036/07-036/pdf">https://docs.ogc.org/is/07-036/07-036/pdf</fmt-link>.</formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
+<title language="en" script="Latn" type="title-main">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
+<title language="en" script="Latn" type="main">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
 
-  <uri type="pdf">https://docs.ogc.org/is/07-036/07-036.pdf</uri>
+  <uri type="html">https://docs.ogc.org/is/07-036/07-036/pdf</uri>
   <docidentifier type="OGC" primary="true">OGC 07-036</docidentifier><docidentifier scope="biblio-tag">OGC 07-036</docidentifier>
   <date type="published">
     <on>2007-10-05</on>
@@ -1769,30 +1769,46 @@ SHORT FORM: &#x3c;xsd:element name="propertyName" type="xsd:double"
 
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>Open Geospatial Consortium</name>
+
+      <subdivision type="technical-committee">
+        
+<name>technical</name>
+
+      </subdivision>
+      <abbreviation>OGC</abbreviation>
+    </organization>
+  </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">The OpenGIS® Geography Markup Language Encoding Standard (GML) The Geography Markup Language (GML) is an XML grammar for expressing geographical features. GML serves as a modeling language for geographic systems as well as an open interchange format for geographic transactions on the Internet. As with most XML based grammars, there are two parts to the grammar – the schema that describes the document and the instance document that contains the actual data.
+  <abstract language="en" script="Latn">The OpenGIS® Geography Markup Language Encoding Standard (GML) The Geography Markup Language (GML) is an XML grammar for expressing geographical features. GML serves as a modeling language for geographic systems as well as an open interchange format for geographic transactions on the Internet. As with most XML based grammars, there are two parts to the grammar – the schema that describes the document and the instance document that contains the actual data.
 A GML document is described using a GML Schema. This allows users and developers to describe generic geographic data sets that contain points, lines and polygons. However, the developers of GML envision communities working to define community-specific application schemas [en.wikipedia.org/wiki/GML_Application_Schemas] that are specialized extensions of GML. Using application schemas, users can refer to roads, highways, and bridges instead of points, lines and polygons. If everyone in a community agrees to use the same schemas they can exchange data easily and be sure that a road is still a road when they view it.
 
 Clients and servers with interfaces that implement the OpenGIS® Web Feature Service Interface Standard[http://www.opengeospatial.org/standards/wfs] read and write GML data. GML is also an ISO standard (ISO 19136:2007) [www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=32554 ].  
-See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .</abstract>
-  
+See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
+</abstract>
 </bibitem>
-<bibitem id="ogc06-103r3" type="standard" schema-version="v1.2.9" anchor="ogc06-103r3" semx-id="_bf8f20b9-41de-0b53-3733-80fb1d306291"><biblio-tag/><formattedref>John Herring: OGC 06-103r3, <em>OpenGIS Implementation Specification for Geographic information — Simple feature access — Part 1: Common architecture</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/06-103r3/06-103r3.pdf">https://docs.ogc.org/is/06-103r3/06-103r3.pdf</fmt-link>.</formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="ogc06-103r3" type="standard" schema-version="v1.5.6" anchor="ogc06-103r3" semx-id="_cfa79caf-4121-d5f7-c92a-56fd0446e483"><biblio-tag/><formattedref>John Herring, Open Geospatial Consortium: OGC 06-103r3, <em>OpenGIS Implementation Specification for Geographic information — Simple feature access — Part 1: Common architecture</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/06-103r3/06-103r3/pdf">https://docs.ogc.org/is/06-103r3/06-103r3/pdf</fmt-link>.</formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">OpenGIS Implementation Specification for Geographic information</title>
+<title language="en" script="Latn" type="title-intro">OpenGIS Implementation Specification for Geographic information</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Simple feature access</title>
+<title language="en" script="Latn" type="title-main">Simple feature access</title>
 
   
-<title type="title-part" format="text/plain" language="en" script="Latn">Part 1: Common architecture</title>
+<title language="en" script="Latn" type="title-part">Part 1: Common architecture</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">OpenGIS Implementation Specification for Geographic information — Simple feature access — Part 1: Common architecture</title>
+<title language="en" script="Latn" type="main">OpenGIS Implementation Specification for Geographic information — Simple feature access — Part 1: Common architecture</title>
 
-  <uri type="pdf">https://docs.ogc.org/is/06-103r3/06-103r3.pdf</uri>
+  <uri type="html">https://docs.ogc.org/is/06-103r3/06-103r3/pdf</uri>
   <docidentifier type="OGC" primary="true">OGC 06-103r3</docidentifier><docidentifier scope="biblio-tag">OGC 06-103r3</docidentifier>
   <date type="published">
     <on>2007-01-29</on>
@@ -1813,22 +1829,39 @@ See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .</abstract
 
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>Open Geospatial Consortium</name>
+
+      <subdivision type="technical-committee">
+        
+<name>technical</name>
+
+      </subdivision>
+      <abbreviation>OGC</abbreviation>
+    </organization>
+  </contributor>
   <edition>3</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">The OpenGIS® Simple Features Interface Standard (SFS) provides a well-defined and common way for applications to store and access feature data in relational or object-relational databases, so that the data can be used to support other applications through a common feature model, data store and information access interface. OpenGIS Simple Features are geospatial features described using vector data elements such as points, lines and polygons.  
+  <abstract language="en" script="Latn">The OpenGIS® Simple Features Interface Standard (SFS) provides a well-defined and common way for applications to store and access feature data in relational or object-relational databases, so that the data can be used to support other applications through a common feature model, data store and information access interface. OpenGIS Simple Features are geospatial features described using vector data elements such as points, lines and polygons.  
 
 Part 1 “Common Architecture supplies the common feature model for use by applications that will use the Simple Features data stores and access interfaces. 
 
 Part 2 provides a standard SQL implementation of the abstract model in Part 1. (Note: The OpenGIS® Simple Features Interface Standards for OLE/COM and CORBA are no longer current and are not provided here.) 
 
-The corresponding standard for the Web is the OpenGIS® Web Feature Service Interface Standard http://www.opengeospatial.org/standards/wfs.</abstract>
-  
+The corresponding standard for the Web is the OpenGIS® Web Feature Service Interface Standard http://www.opengeospatial.org/standards/wfs.
+</abstract>
 </bibitem>
-<bibitem id="w3cxml-0" type="standard" schema-version="v1.2.9" anchor="w3cxml-0" semx-id="_2d8d4fea-cf3d-41f2-1109-38f905b27ede"><biblio-tag/><formattedref>Bray T, Paoli J, Sperberg-McQueen M, Maler E, Yergeau F (eds.): W3C REC-xml-20081126, <em>Extensible Markup Language (XML) 1.0 (Fifth Edition)</em>. World Wide Web Consortium (2008). <fmt-link target="https://www.w3.org/TR/2008/REC-xml-20081126/">https://www.w3.org/TR/2008/REC-xml-20081126/</fmt-link>.</formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="w3cxml-0" type="standard" schema-version="v1.5.6" anchor="w3cxml-0" semx-id="_4c4d31e9-d8f3-9119-6ddc-358b238d1003"><biblio-tag/>
+  <fetched>2026-06-16</fetched>
+  <formattedref>World Wide Web Consortium (committee): W3C REC-xml-20081126, <em>Extensible Markup Language (XML) 1.0 (Fifth Edition)</em>. World Wide Web Consortium (2008). <fmt-link target="https://www.w3.org/TR/2008/REC-xml-20081126/">https://www.w3.org/TR/2008/REC-xml-20081126/</fmt-link>.</formattedref>
   
-<title format="text/plain">Extensible Markup Language (XML) 1.0 (Fifth Edition)</title>
+<title language="en" script="Latn">Extensible Markup Language (XML) 1.0 (Fifth Edition)</title>
 
   <uri type="src">https://www.w3.org/TR/2008/REC-xml-20081126/</uri>
   <docidentifier type="W3C" primary="true">W3C REC-xml-20081126</docidentifier><docidentifier scope="biblio-tag">W3C REC-xml-20081126</docidentifier>
@@ -1843,7 +1876,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
 <name>World Wide Web Consortium</name>
 
       <abbreviation>W3C</abbreviation>
-      <uri>https://www.w3.org/</uri>
+      <uri>https://www.w3.org</uri>
     </organization>
   </contributor>
   <contributor>
@@ -1886,6 +1919,23 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
 
     </person>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>World Wide Web Consortium</name>
+
+      <subdivision type="technical-committee">
+        
+<name>XML Core Working Group</name>
+
+      </subdivision>
+      <abbreviation>W3C</abbreviation>
+      <uri>https://www.w3.org</uri>
+    </organization>
+  </contributor>
   <language>en</language>
   <script>Latn</script>
   <status>
@@ -1894,7 +1944,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="editionOf">
     <bibitem>
       
-<title format="text/plain">Extensible Markup Language (XML) 1.0 (Fifth Edition)</title>
+<title language="en" script="Latn">Extensible Markup Language (XML) 1.0 (Fifth Edition)</title>
 
       <uri type="src">https://www.w3.org/TR/xml/</uri>
       <docidentifier type="W3C" primary="true">W3C xml</docidentifier>
@@ -1904,7 +1954,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="obsoletes">
     <bibitem>
       
-<title format="text/plain">Extensible Markup Language (XML) 1.0 (Fifth Edition)</title>
+<title language="en" script="Latn">Extensible Markup Language (XML) 1.0 (Fifth Edition)</title>
 
       <uri type="src">https://www.w3.org/TR/2008/PER-xml-20080205</uri>
       <docidentifier type="W3C" primary="true">W3C PER-xml-20080205</docidentifier>
@@ -1913,15 +1963,15 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   </relation>
   <series>
     
-<title format="text/plain">W3C Recommendation</title>
+<title language="en" script="Latn">W3C Recommendation</title>
 
     <number>REC-xml-20081126</number>
   </series>
 </bibitem>
-<bibitem id="w3cxml-1" type="standard" schema-version="v1.2.9" anchor="w3cxml-1" semx-id="_64e805f6-c3dd-6801-52f7-3499401ca014"><biblio-tag/><formattedref>W3C: W3C xmlschema-1, <em>XML Schema Part 1: Structures Second Edition</em>. World Wide Web Consortium <fmt-link target="https://www.w3.org/TR/xmlschema-1/">https://www.w3.org/TR/xmlschema-1/</fmt-link>.</formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="w3cxml-1" type="standard" schema-version="v1.5.6" anchor="w3cxml-1" semx-id="_7f9b7e68-52ea-789c-924f-1b0a9dd092a7"><biblio-tag/><formattedref>W3C: W3C xmlschema-1, <em>XML Schema Part 1: Structures Second Edition</em>. World Wide Web Consortium <fmt-link target="https://www.w3.org/TR/xmlschema-1/">https://www.w3.org/TR/xmlschema-1/</fmt-link>.</formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain">XML Schema Part 1: Structures Second Edition</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures Second Edition</title>
 
   <uri type="src">https://www.w3.org/TR/xmlschema-1/</uri>
   <docidentifier type="W3C" primary="true">W3C xmlschema-1</docidentifier><docidentifier scope="biblio-tag">W3C xmlschema-1</docidentifier>
@@ -1933,7 +1983,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
 <name>World Wide Web Consortium</name>
 
       <abbreviation>W3C</abbreviation>
-      <uri>https://www.w3.org/</uri>
+      <uri>https://www.w3.org</uri>
     </organization>
   </contributor>
   <language>en</language>
@@ -1941,7 +1991,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures Second Edition</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures Second Edition</title>
 
       <uri type="src">https://www.w3.org/TR/2004/REC-xmlschema-1-20041028/</uri>
       <docidentifier type="W3C" primary="true">W3C REC-xmlschema-1-20041028</docidentifier>
@@ -1951,7 +2001,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures Second Edition</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures Second Edition</title>
 
       <uri type="src">https://www.w3.org/TR/2004/PER-xmlschema-1-20040318/</uri>
       <docidentifier type="W3C" primary="true">W3C PER-xmlschema-1-20040318</docidentifier>
@@ -1961,7 +2011,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures</title>
 
       <uri type="src">https://www.w3.org/TR/2001/REC-xmlschema-1-20010502/</uri>
       <docidentifier type="W3C" primary="true">W3C REC-xmlschema-1-20010502</docidentifier>
@@ -1971,7 +2021,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures</title>
 
       <uri type="src">https://www.w3.org/TR/2001/PR-xmlschema-1-20010330/</uri>
       <docidentifier type="W3C" primary="true">W3C PR-xmlschema-1-20010330</docidentifier>
@@ -1981,7 +2031,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures</title>
 
       <uri type="src">https://www.w3.org/TR/2001/PR-xmlschema-1-20010316/</uri>
       <docidentifier type="W3C" primary="true">W3C PR-xmlschema-1-20010316</docidentifier>
@@ -1991,7 +2041,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures</title>
 
       <uri type="src">https://www.w3.org/TR/2000/CR-xmlschema-1-20001024/</uri>
       <docidentifier type="W3C" primary="true">W3C CR-xmlschema-1-20001024</docidentifier>
@@ -2001,7 +2051,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures</title>
 
       <uri type="src">https://www.w3.org/TR/2000/WD-xmlschema-1-20000922/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-xmlschema-1-20000922</docidentifier>
@@ -2011,7 +2061,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures</title>
 
       <uri type="src">https://www.w3.org/TR/2000/WD-xmlschema-1-20000407/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-xmlschema-1-20000407</docidentifier>
@@ -2021,7 +2071,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures</title>
 
       <uri type="src">https://www.w3.org/TR/2000/WD-xmlschema-1-20000225/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-xmlschema-1-20000225</docidentifier>
@@ -2031,7 +2081,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures</title>
 
       <uri type="src">https://www.w3.org/TR/1999/WD-xmlschema-1-19991217/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-xmlschema-1-19991217</docidentifier>
@@ -2041,7 +2091,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures</title>
 
       <uri type="src">https://www.w3.org/TR/1999/WD-xmlschema-1-19991105/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-xmlschema-1-19991105</docidentifier>
@@ -2051,7 +2101,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 1: Structures</title>
+<title language="en" script="Latn">XML Schema Part 1: Structures</title>
 
       <uri type="src">https://www.w3.org/1999/05/06-xmlschema-1/</uri>
       <docidentifier type="W3C" primary="true">W3C 06-xmlschema-1</docidentifier>
@@ -2060,15 +2110,15 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   </relation>
   <series>
     
-<title format="text/plain">W3C technicalReport</title>
+<title language="en" script="Latn">W3C technicalReport</title>
 
     <number>xmlschema-1</number>
   </series>
 </bibitem>
-<bibitem id="w3cxml-2" type="standard" schema-version="v1.2.9" anchor="w3cxml-2" semx-id="_934a8fa6-f33d-7dd4-e627-914a97d6000d"><biblio-tag/><formattedref>W3C: W3C xmlschema-2, <em>XML Schema Part 2: Datatypes Second Edition</em>. World Wide Web Consortium <fmt-link target="https://www.w3.org/TR/xmlschema-2/">https://www.w3.org/TR/xmlschema-2/</fmt-link>.</formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="w3cxml-2" type="standard" schema-version="v1.5.6" anchor="w3cxml-2" semx-id="_750d62ce-a4a1-7b21-187c-b3bc79e92d2b"><biblio-tag/><formattedref>W3C: W3C xmlschema-2, <em>XML Schema Part 2: Datatypes Second Edition</em>. World Wide Web Consortium <fmt-link target="https://www.w3.org/TR/xmlschema-2/">https://www.w3.org/TR/xmlschema-2/</fmt-link>.</formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain">XML Schema Part 2: Datatypes Second Edition</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes Second Edition</title>
 
   <uri type="src">https://www.w3.org/TR/xmlschema-2/</uri>
   <docidentifier type="W3C" primary="true">W3C xmlschema-2</docidentifier><docidentifier scope="biblio-tag">W3C xmlschema-2</docidentifier>
@@ -2080,7 +2130,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
 <name>World Wide Web Consortium</name>
 
       <abbreviation>W3C</abbreviation>
-      <uri>https://www.w3.org/</uri>
+      <uri>https://www.w3.org</uri>
     </organization>
   </contributor>
   <language>en</language>
@@ -2088,7 +2138,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes Second Edition</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes Second Edition</title>
 
       <uri type="src">https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/</uri>
       <docidentifier type="W3C" primary="true">W3C REC-xmlschema-2-20041028</docidentifier>
@@ -2098,7 +2148,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes Second Edition</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes Second Edition</title>
 
       <uri type="src">https://www.w3.org/TR/2004/PER-xmlschema-2-20040318/</uri>
       <docidentifier type="W3C" primary="true">W3C PER-xmlschema-2-20040318</docidentifier>
@@ -2108,7 +2158,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes</title>
 
       <uri type="src">https://www.w3.org/TR/2001/REC-xmlschema-2-20010502/</uri>
       <docidentifier type="W3C" primary="true">W3C REC-xmlschema-2-20010502</docidentifier>
@@ -2118,7 +2168,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes</title>
 
       <uri type="src">https://www.w3.org/TR/2001/PR-xmlschema-2-20010330/</uri>
       <docidentifier type="W3C" primary="true">W3C PR-xmlschema-2-20010330</docidentifier>
@@ -2128,7 +2178,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes</title>
 
       <uri type="src">https://www.w3.org/TR/2001/PR-xmlschema-2-20010316/</uri>
       <docidentifier type="W3C" primary="true">W3C PR-xmlschema-2-20010316</docidentifier>
@@ -2138,7 +2188,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes</title>
 
       <uri type="src">https://www.w3.org/TR/2000/CR-xmlschema-2-20001024/</uri>
       <docidentifier type="W3C" primary="true">W3C CR-xmlschema-2-20001024</docidentifier>
@@ -2148,7 +2198,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes</title>
 
       <uri type="src">https://www.w3.org/TR/2000/WD-xmlschema-2-20000922/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-xmlschema-2-20000922</docidentifier>
@@ -2158,7 +2208,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes</title>
 
       <uri type="src">https://www.w3.org/TR/2000/WD-xmlschema-2-20000407/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-xmlschema-2-20000407</docidentifier>
@@ -2168,7 +2218,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes</title>
 
       <uri type="src">https://www.w3.org/TR/2000/WD-xmlschema-2-20000225/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-xmlschema-2-20000225</docidentifier>
@@ -2178,7 +2228,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes</title>
 
       <uri type="src">https://www.w3.org/TR/1999/WD-xmlschema-2-19991217/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-xmlschema-2-19991217</docidentifier>
@@ -2188,7 +2238,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes</title>
 
       <uri type="src">https://www.w3.org/TR/1999/WD-xmlschema-2-19991105/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-xmlschema-2-19991105</docidentifier>
@@ -2198,7 +2248,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">XML Schema Part 2: Datatypes</title>
+<title language="en" script="Latn">XML Schema Part 2: Datatypes</title>
 
       <uri type="src">https://www.w3.org/1999/05/06-xmlschema-2/</uri>
       <docidentifier type="W3C" primary="true">W3C 06-xmlschema-2</docidentifier>
@@ -2207,15 +2257,16 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   </relation>
   <series>
     
-<title format="text/plain">W3C technicalReport</title>
+<title language="en" script="Latn">W3C technicalReport</title>
 
     <number>xmlschema-2</number>
   </series>
 </bibitem>
-<bibitem id="w3c" type="standard" schema-version="v1.2.9" anchor="w3c" semx-id="_8c17c280-bdd3-b1c7-c643-4b25884661e6"><biblio-tag/><formattedref>Bray T, Hollander D, Layman A, Tobin R, Thompson H (eds.): W3C REC-xml-names-20091208, <em>Namespaces in XML 1.0 (Third Edition)</em>. World Wide Web Consortium (2009). <fmt-link target="https://www.w3.org/TR/2009/REC-xml-names-20091208/">https://www.w3.org/TR/2009/REC-xml-names-20091208/</fmt-link>.</formattedref>
-  <fetched>2026-04-16</fetched>
+<bibitem id="w3c" type="standard" schema-version="v1.5.6" anchor="w3c" semx-id="_22470c72-cc84-ed9b-b8c0-e74e2ae36ccd"><biblio-tag/>
+  <fetched>2026-06-16</fetched>
+  <formattedref>World Wide Web Consortium (committee): W3C REC-xml-names-20091208, <em>Namespaces in XML 1.0 (Third Edition)</em>. World Wide Web Consortium (2009). <fmt-link target="https://www.w3.org/TR/2009/REC-xml-names-20091208/">https://www.w3.org/TR/2009/REC-xml-names-20091208/</fmt-link>.</formattedref>
   
-<title format="text/plain">Namespaces in XML 1.0 (Third Edition)</title>
+<title language="en" script="Latn">Namespaces in XML 1.0 (Third Edition)</title>
 
   <uri type="src">https://www.w3.org/TR/2009/REC-xml-names-20091208/</uri>
   <docidentifier type="W3C" primary="true">W3C REC-xml-names-20091208</docidentifier><docidentifier scope="biblio-tag">W3C REC-xml-names-20091208</docidentifier>
@@ -2230,7 +2281,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
 <name>World Wide Web Consortium</name>
 
       <abbreviation>W3C</abbreviation>
-      <uri>https://www.w3.org/</uri>
+      <uri>https://www.w3.org</uri>
     </organization>
   </contributor>
   <contributor>
@@ -2273,6 +2324,23 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
 
     </person>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>World Wide Web Consortium</name>
+
+      <subdivision type="technical-committee">
+        
+<name>XML Core Working Group</name>
+
+      </subdivision>
+      <abbreviation>W3C</abbreviation>
+      <uri>https://www.w3.org</uri>
+    </organization>
+  </contributor>
   <language>en</language>
   <script>Latn</script>
   <status>
@@ -2281,7 +2349,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="editionOf">
     <bibitem>
       
-<title format="text/plain">Namespaces in XML 1.0 (Third Edition)</title>
+<title language="en" script="Latn">Namespaces in XML 1.0 (Third Edition)</title>
 
       <uri type="src">https://www.w3.org/TR/xml-names/</uri>
       <docidentifier type="W3C" primary="true">W3C xml-names</docidentifier>
@@ -2291,7 +2359,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   <relation type="obsoletes">
     <bibitem>
       
-<title format="text/plain">Namespaces in XML 1.0 (Third Edition)</title>
+<title language="en" script="Latn">Namespaces in XML 1.0 (Third Edition)</title>
 
       <uri type="src">https://www.w3.org/TR/2009/PER-xml-names-20090806/</uri>
       <docidentifier type="W3C" primary="true">W3C PER-xml-names-20090806</docidentifier>
@@ -2300,7 +2368,7 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
   </relation>
   <series>
     
-<title format="text/plain">W3C Recommendation</title>
+<title language="en" script="Latn">W3C Recommendation</title>
 
     <number>REC-xml-names-20091208</number>
   </series>

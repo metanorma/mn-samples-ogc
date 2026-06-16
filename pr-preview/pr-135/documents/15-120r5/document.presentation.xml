@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.3" schema-version="v2.1.5" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.6" schema-version="v2.1.6" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">Volume 0: Primer for the OGC CDB Standard: Model and Physical Data Store Structure</title>
 <docidentifier type="ogc-internal" primary="true">15-120r5</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/BP/cdb-core-primer/1.1</docidentifier><docnumber>15-120r5</docnumber><date type="published"><on>2018-12-19</on></date><date type="issued"><on>2018-08-27</on></date><date type="received"><on>2018-03-20</on></date><contributor><role type="author"/><organization>
@@ -28,9 +28,9 @@
 <name>technical</name>
 </subdivision><abbreviation>OGC</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation><logo type="html-blue"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.3/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
-<logo type="html-white"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.3/lib/isodoc/ogc/html/logo.2018-white.png" mimetype="image/png"/></logo>
-<logo type="word"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.3/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
+<abbreviation>OGC</abbreviation><logo type="html-blue"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.6/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
+<logo type="html-white"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.6/lib/isodoc/ogc/html/logo.2018-white.png" mimetype="image/png"/></logo>
+<logo type="word"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.6/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
 </organization></contributor><edition language="">1.1</edition><edition language="en">edition 1.1</edition><language current="true">en</language><script current="true">Latn</script><abstract><p>The CDB standard defines a standardized model and structure for a single, "<tt>versionable</tt>", virtual representation of the earth. A CDB structured data store provides for a geospatial content and model definition repository that is plug-and-play interoperable between database authoring workstations. Moreover, a CDB structured data store can be used as a common online (or runtime) repository from which various simulator client-devices can simultaneously retrieve and modify, in real-time, relevant information to perform their respective runtime simulation tasks. In this case, a CDB is plug-and-play interoperable between CDB-compliant simulators. A CDB can be readily used by existing simulation client-devices (legacy Image Generators, Radar simulator, Computer Generated Forces, etc.) through a data publishing process that is performed on-demand in real-time.</p>
 
 <p>The application of CDB to future simulation architectures will significantly reduce runtime-source level and algorithmic correlation errors, while reducing development, update and configuration management timelines. With the addition of the High Level Architecture - -Federation Object Model (HLA/FOM)<fn reference="1" id="_8797942c-9527-7cfe-0981-c8ae0f1c9b4d" original-reference="1" target="_442876ad-87aa-503a-2cab-2028f54e1ba4"><p><link target="https://en.wikipedia.org/wiki/High-level_architecture" id="_8a90b696-4d19-0be0-1144-a1b5cc5ecbd6"/><semx element="link" source="_8a90b696-4d19-0be0-1144-a1b5cc5ecbd6"><fmt-link target="https://en.wikipedia.org/wiki/High-level_architecture"/></semx></p>
@@ -940,11 +940,11 @@ sourcecode .nt {
 <td id="_9a80836b-e6c9-2ef1-9180-cb3b75c9f92c" valign="middle" align="left" semx-id="_9a80836b-e6c9-2ef1-9180-cb3b75c9f92c">Minor corrections to typos.</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_8926ea7d-462b-3533-2834-3d77bb5bc42f" normative="false" obligation="informative" semx-id="_8926ea7d-462b-3533-2834-3d77bb5bc42f" displayorder="16">
-<title id="_f4c2bd32-4b9f-c7bf-65fa-4a5120f569d3" semx-id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><fmt-title depth="1" id="_f6fe7add-d1a9-0682-793c-fa2b1a09ca57"><semx element="title" source="_f4c2bd32-4b9f-c7bf-65fa-4a5120f569d3">Bibliography</semx></fmt-title><bibitem id="ieee-std-1278" type="standard" schema-version="v1.2.9" anchor="ieee-std-1278" semx-id="_633136db-c9f3-a9d2-244a-39cfdf794b21"><biblio-tag>[1]<tab/></biblio-tag><formattedref>IEEE: IEEE Std 1278™-1993, <em>IEEE Standard for Information Technology — Protocols for Distributed Interactive Simulation Applications—Entity Information and Interaction</em>. Institute of Electrical and Electronics Engineers (2002). <fmt-link target="https://ieeexplore.ieee.org/document/237008">https://ieeexplore.ieee.org/document/237008</fmt-link>.</formattedref>
-  <fetched>2026-04-16</fetched>
+</annex><bibliography><references id="_586c83cf-bbe5-6fd3-a88f-e4763f6c5974" normative="false" obligation="informative" semx-id="_586c83cf-bbe5-6fd3-a88f-e4763f6c5974" displayorder="16">
+<title id="_f4c2bd32-4b9f-c7bf-65fa-4a5120f569d3" semx-id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><fmt-title depth="1" id="_f6fe7add-d1a9-0682-793c-fa2b1a09ca57"><semx element="title" source="_f4c2bd32-4b9f-c7bf-65fa-4a5120f569d3">Bibliography</semx></fmt-title><bibitem id="ieee-std-1278" type="standard" schema-version="v1.5.6" anchor="ieee-std-1278" semx-id="_e5c53a5e-75fc-d0cd-d3a3-6876d3312f5b"><biblio-tag>[1]<tab/></biblio-tag><formattedref>Institute of Electrical and Electronics Engineers (committee): IEEE Std 1278™-1993, <em>IEEE Standard for Information Technology — Protocols for Distributed Interactive Simulation Applications—Entity Information and Interaction</em>. Institute of Electrical and Electronics Engineers (2002). <fmt-link target="https://ieeexplore.ieee.org/document/237008">https://ieeexplore.ieee.org/document/237008</fmt-link>.</formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="main" format="text/plain">IEEE Standard for Information Technology — Protocols for Distributed Interactive Simulation Applications—Entity Information and Interaction</title>
+<title type="main">IEEE Standard for Information Technology — Protocols for Distributed Interactive Simulation Applications—Entity Information and Interaction</title>
 
   <uri type="src">https://ieeexplore.ieee.org/document/237008</uri><docidentifier type="metanorma-ordinal">[1]</docidentifier>
   <docidentifier type="IEEE" primary="true">IEEE Std 1278-1993</docidentifier>
@@ -965,63 +965,100 @@ sourcecode .nt {
     <role type="publisher"/>
     <organization>
       
-<name>Institute of Electrical and Electronics Engineers</name>
+<name language="en" script="Latn">Institute of Electrical and Electronics Engineers</name>
 
       <abbreviation>IEEE</abbreviation>
-      <uri>http://www.ieee.org</uri>
       <address>
         <city>New York</city>
         <country>USA</country>
       </address>
+      <uri type="org">http://www.ieee.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description language="en" script="Latn">committee</description>
+    </role>
+    <organization>
+      
+<name language="en" script="Latn">Institute of Electrical and Electronics Engineers</name>
+
+      <subdivision type="committee">
+        
+<name language="en" script="Latn">Simulation Interoperability Stds Organization/Stds Activity Committee of the IEEE Computer Society</name>
+
+      </subdivision>
+      <abbreviation>IEEE</abbreviation>
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">Superseded. Revision was redesignated 1278.1. Data messages, called protocol data units (PDUs), that are exchanged between simulation applications are defined. These PDUs provide information concerning simulated entity states and the types of entity interactions that take place in a distributed interactive simulation (DIS). The messages defined are for interactions that are primarily within visual range. Future versions of this standard will contain additional PDUs required to exchange information about interactions and functions not currently supported.</abstract>
+  <abstract language="en" script="Latn">Superseded. Revision was redesignated 1278.1. Data messages, called protocol data units (PDUs), that are exchanged between simulation applications are defined. These PDUs provide information concerning simulated entity states and the types of entity interactions that take place in a distributed interactive simulation (DIS). The messages defined are for interactions that are primarily within visual range. Future versions of this standard will contain additional PDUs required to exchange information about interactions and functions not currently supported.</abstract>
   <copyright>
     <from>1993</from>
     <owner>
       <organization>
         
-<name>Institute of Electrical and Electronics Engineers</name>
+<name language="en" script="Latn">Institute of Electrical and Electronics Engineers</name>
 
         <abbreviation>IEEE</abbreviation>
-        <uri>http://www.ieee.org</uri>
+        <uri type="org">http://www.ieee.org</uri>
       </organization>
     </owner>
   </copyright>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">IEEE Std 1278.1-1995</formattedref>
+      <formattedref>IEEE Std 1278.1-1995</formattedref>
       <docidentifier type="IEEE" primary="true">IEEE Std 1278.1-1995</docidentifier>
     </bibitem>
 
   </relation>
-  <relation type="obsoletedBy">
-    <bibitem>
-      <formattedref format="text/plain">IEEE Std 1278.1-1995</formattedref>
-      <docidentifier type="IEEE" primary="true">IEEE Std 1278.1-1995</docidentifier>
-    </bibitem>
-
-  </relation>
-  <keyword>Simulation</keyword>
-  <keyword>Protocols</keyword>
-  <keyword>Communication standards</keyword>
-  <keyword>articulated parts</keyword>
-  <keyword>attached parts</keyword>
-  <keyword>dead reckoning</keyword>
-  <keyword>entity coordinates</keyword>
-  <keyword>Euler angles</keyword>
-  <keyword>field</keyword>
-  <keyword>guise</keyword>
-  <keyword>PDUs</keyword>
-  <keyword>right-hand rule</keyword>
-  <keyword>simulation application</keyword>
-  <keyword>simulation entity</keyword>
-</bibitem><bibitem id="ieee-std-1516" type="standard" schema-version="v1.2.9" anchor="ieee-std-1516" semx-id="_7adfca73-c2d0-fc77-277c-ac4bdaca47b5"><biblio-tag>[2]<tab/></biblio-tag><formattedref>IEEE: IEEE Std 1516™-2000, <em>IEEE Standard for Modeling and Simulation (M&amp;S) High Level ARchitecture (HLA) — Framework and Rules</em>. Institute of Electrical and Electronics Engineers (2019). <fmt-link target="https://ieeexplore.ieee.org/document/893287">https://ieeexplore.ieee.org/document/893287</fmt-link>.</formattedref>
-  <fetched>2026-04-16</fetched>
+  <keyword>
+    <vocab language="en" script="Latn">Simulation</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">Protocols</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">Communication standards</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">articulated parts</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">attached parts</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">dead reckoning</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">entity coordinates</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">Euler angles</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">field</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">guise</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">PDUs</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">right-hand rule</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">simulation application</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">simulation entity</vocab>
+  </keyword>
+</bibitem><bibitem id="ieee-std-1516" type="standard" schema-version="v1.5.6" anchor="ieee-std-1516" semx-id="_d5ed80b7-ed66-5dc0-2077-364cbeea4504"><biblio-tag>[2]<tab/></biblio-tag><formattedref>Institute of Electrical and Electronics Engineers (committee): IEEE Std 1516™-2000, <em>IEEE Standard for Modeling and Simulation (M&amp;S) High Level ARchitecture (HLA) — Framework and Rules</em>. Institute of Electrical and Electronics Engineers (2019). <fmt-link target="https://ieeexplore.ieee.org/document/893287">https://ieeexplore.ieee.org/document/893287</fmt-link>.</formattedref>
+  <fetched>2026-06-16</fetched>
   
-<title type="main" format="text/plain">IEEE Standard for Modeling and Simulation (M&amp;S) High Level ARchitecture (HLA) — Framework and Rules</title>
+<title type="main">IEEE Standard for Modeling and Simulation (M&amp;S) High Level ARchitecture (HLA) — Framework and Rules</title>
 
   <uri type="src">https://ieeexplore.ieee.org/document/893287</uri><docidentifier type="metanorma-ordinal">[2]</docidentifier>
   <docidentifier type="IEEE" primary="true">IEEE Std 1516-2000</docidentifier>
@@ -1042,58 +1079,114 @@ sourcecode .nt {
     <role type="publisher"/>
     <organization>
       
-<name>Institute of Electrical and Electronics Engineers</name>
+<name language="en" script="Latn">Institute of Electrical and Electronics Engineers</name>
 
       <abbreviation>IEEE</abbreviation>
-      <uri>http://www.ieee.org</uri>
       <address>
         <city>New York</city>
         <country>USA</country>
       </address>
+      <uri type="org">http://www.ieee.org</uri>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description language="en" script="Latn">committee</description>
+    </role>
+    <organization>
+      
+<name language="en" script="Latn">Institute of Electrical and Electronics Engineers</name>
+
+      <subdivision type="committee">
+        
+<name language="en" script="Latn">Simulation Interoperability Stds Organization/Stds Activity Committee of the IEEE Computer Society</name>
+
+      </subdivision>
+      <abbreviation>IEEE</abbreviation>
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">The High Level Architecture (HLA)Framework and Rules is the capstone document fora family of related HLA standards. It defines the HLA, its components, and the rules that outline theresponsibilities of HLA federates and federations to ensure a consistent implementation.Simulations are abstractions of the real world, and no one simulation can solve all of the functional needs for the modeling and simulation community. It is anticipated that technology advances will allow for new and different modeling and simulation (M&amp;S) implementations within the frameworkof the HLA. The standards contained in this architecture are interrelated and need to be considered as a product set, as a change in one is likely to have an impact on the others. As such, the HLA isan integrated approach that has been developed to provide a common architecture for simulation.</abstract>
+  <abstract language="en" script="Latn">The High Level Architecture (HLA)Framework and Rules is the capstone document fora family of related HLA standards. It defines the HLA, its components, and the rules that outline theresponsibilities of HLA federates and federations to ensure a consistent implementation.Simulations are abstractions of the real world, and no one simulation can solve all of the functional needs for the modeling and simulation community. It is anticipated that technology advances will allow for new and different modeling and simulation (M&amp;S) implementations within the frameworkof the HLA. The standards contained in this architecture are interrelated and need to be considered as a product set, as a change in one is likely to have an impact on the others. As such, the HLA isan integrated approach that has been developed to provide a common architecture for simulation.</abstract>
   <copyright>
     <from>2000</from>
     <owner>
       <organization>
         
-<name>Institute of Electrical and Electronics Engineers</name>
+<name language="en" script="Latn">Institute of Electrical and Electronics Engineers</name>
 
         <abbreviation>IEEE</abbreviation>
-        <uri>http://www.ieee.org</uri>
+        <uri type="org">http://www.ieee.org</uri>
       </organization>
     </owner>
   </copyright>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">IEEE Std 1516-2010</formattedref>
+      <formattedref>IEEE Std 1516-2010</formattedref>
       <docidentifier type="IEEE" primary="true">IEEE Std 1516-2010</docidentifier>
     </bibitem>
 
   </relation>
-  <keyword>IEEE Standards</keyword>
-  <keyword>Computer architecture</keyword>
-  <keyword>Computational modeling</keyword>
-  <keyword>Interoperability</keyword>
-  <keyword>Patents</keyword>
-  <keyword>Runtime</keyword>
-  <keyword>architecture</keyword>
-  <keyword>class attribute</keyword>
-  <keyword>federate</keyword>
-  <keyword>federation</keyword>
-  <keyword>federation execution</keyword>
-  <keyword>federation object model</keyword>
-  <keyword>framework</keyword>
-  <keyword>high level architecture</keyword>
-  <keyword>instance attribute</keyword>
-  <keyword>interaction class</keyword>
-  <keyword>joined federate</keyword>
-  <keyword>object class</keyword>
-  <keyword>object model template</keyword>
-  <keyword>rules runtime infrastructure</keyword>
+  <keyword>
+    <vocab language="en" script="Latn">IEEE Standards</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">Computer architecture</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">Computational modeling</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">Interoperability</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">Patents</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">Runtime</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">architecture</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">class attribute</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">federate</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">federation</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">federation execution</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">federation object model</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">framework</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">high level architecture</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">instance attribute</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">interaction class</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">joined federate</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">object class</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">object model template</vocab>
+  </keyword>
+  <keyword>
+    <vocab language="en" script="Latn">rules runtime infrastructure</vocab>
+  </keyword>
 </bibitem><bibitem anchor="ogc-cdb-core-vol1" id="ogc-cdb-core-vol1" semx-id="_8c2f38b5-3dbf-63fc-d76d-a50ba10ec135"><biblio-tag>[3]<tab/></biblio-tag>
   <formattedref format="application/x-isodoc+xml">Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure.</formattedref><docidentifier type="metanorma-ordinal">[3]</docidentifier>
   <docidentifier type="OGC">OGC CDB Core Standard Volume 1</docidentifier><docidentifier scope="biblio-tag">OGC CDB Core Standard Volume 1</docidentifier>

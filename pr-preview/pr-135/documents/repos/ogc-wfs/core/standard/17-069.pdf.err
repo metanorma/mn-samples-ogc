@@ -1,4 +1,4 @@
-The contents of fo:region-body on page 23 exceed its viewport by 8991 millipoints. (See position 1:2054)
+The contents of fo:region-body on page 24 exceed its viewport by 8991 millipoints. (See position 1:2054)
 Please check the PDF and if necessary, report this issue at the following link: https://github.com/metanorma/mn-native-pdf/issues/new, and attach the XSL-FO file or fragment: '/__w/mn-samples-ogc/mn-samples-ogc/_site/documents/repos/ogc-wfs/core/standard/17-069.pdf.fo.xml'.
 Page vi: Unresolved ID reference "_feature_collections_metadata" found.
 Page vi: Unresolved ID reference "_api_landing_page" found.
@@ -9,7 +9,6 @@ Page vii: Unresolved ID reference "_feature_collections" found.
 Page vii: Unresolved ID reference "_feature_2" found.
 Page 9: Unresolved ID reference "_feature_collection" found.
 Page 13: Unresolved ID reference "rc2616" found.
-Page 13: Unresolved ID reference "rc_oas" found.
-Page 30: Unresolved ID reference "_http_1_1" found.
-Page 30: Unresolved ID reference "encodings" found.
-12 link targets could not be fully resolved and now points to the top of the page or are dysfunctional.
+Page 14: Unresolved ID reference "rc_oas" found.
+Page 31: Unresolved ID reference "_http_1_1" found.
+Page 31: Unresolved ID reference "encodings" found.

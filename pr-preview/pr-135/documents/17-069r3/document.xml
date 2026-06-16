@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.3" schema-version="v2.1.5" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.6" schema-version="v2.1.6" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">API - Features - Part 1: Core</title>
 <docidentifier type="ogc-internal" primary="true">17-069r3</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/ogcapi-features-1/1.0</docidentifier><docnumber>17-069r3</docnumber><date type="published"><on>2019-10-14</on></date><date type="issued"><on>2019-09-09</on></date><date type="received"><on>2019-07-11</on></date><contributor><role type="author"/><organization>
@@ -417,7 +417,7 @@
 
 
  <termnote id="_20e92c97-8056-fc74-d5ff-7bfd9af1af04"><p id="_ca66c3fe-a918-74c8-0ef4-b93d3bef182c">For those unfamiliar with the term ‘feature’, the explanations on <link target="https://www.w3.org/TR/sdw-bp/#spatial-things-features-and-geometry">Spatial Things, Features and Geometry</link> in the <eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C sdw-bp"><display-text>W3C/OGC Spatial Data on the Web Best Practice document</display-text></eref> provide more detail.</p>
-</termnote><source status="identical" type="authoritative"><origin bibitemid="iso19101" type="inline" citeas="ISO 19101"><display-text>ISO 19101-1:2014</display-text></origin>
+</termnote><source status="identical" type="authoritative"><origin bibitemid="iso19101" type="inline" citeas="ISO 19101:2002"><display-text>ISO 19101-1:2014</display-text></origin>
 </source></term>
 
 <term id="_bd0fca4a-3463-7ad2-32fc-f1edfb5c5c3b" anchor="term-feature_collection"><preferred><expression>
@@ -584,7 +584,7 @@
 <title id="_07312b42-a993-be07-d2f8-4375a986b378">Overview</title>
 <clause id="_a88aca9a-5f16-ac35-c03b-ebb57c4dffbb" obligation="normative">
 <title id="_b3fad51d-aa88-4b6f-c0ab-25e5949169e3">Design considerations</title>
-<p id="_326a982e-15c2-0b82-4eaf-861c1b5079f0">While this is the first version of the OGC API Features series, the fine-grained access to features over the Web has been supported by the <eref type="inline" bibitemid="wfs20" citeas="OGC 09-025r2"><display-text>OGC Web Feature Service (WFS)</display-text></eref> standard (in ISO: <eref type="inline" bibitemid="iso19142" citeas="ISO 19142"><display-text>ISO 19142</display-text></eref>) and many implementations of that standard for many years. WFS uses a Remote-Procedure-Call-over-HTTP architectural style using XML for any payloads. When the WFS standard was originally designed in the late 1990s and early 2000s this was the state-of-the-art.</p>
+<p id="_326a982e-15c2-0b82-4eaf-861c1b5079f0">While this is the first version of the OGC API Features series, the fine-grained access to features over the Web has been supported by the <eref type="inline" bibitemid="wfs20" citeas="OGC 09-025r2"><display-text>OGC Web Feature Service (WFS)</display-text></eref> standard (in ISO: <eref type="inline" bibitemid="iso19142" citeas="ISO 19142:2010"><display-text>ISO 19142</display-text></eref>) and many implementations of that standard for many years. WFS uses a Remote-Procedure-Call-over-HTTP architectural style using XML for any payloads. When the WFS standard was originally designed in the late 1990s and early 2000s this was the state-of-the-art.</p>
 
 <p id="_922d79cd-9720-5ff3-59ad-84215b26bc0f">OGC API Features supports similar capabilities, but using a modernized approach that follows the current Web architecture and in particular the <eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C sdw-bp"><display-text>W3C/OGC best practices for sharing Spatial Data on the Web</display-text></eref> as well as the <eref type="inline" bibitemid="dwbp" citeas="W3C dwbp"><display-text>W3C best practices for sharing Data on the Web</display-text></eref>.</p>
 
@@ -3123,17 +3123,17 @@ explode: false</body></sourcecode></description>
 </requirement>
 </requirement>
 </clause>
-</annex><annex id="_a99c7f50-2c78-e9c5-804a-3929e8787d74" obligation="" language="" script=""><references id="_4dd2ffc0-648e-e8bd-3889-d6e7457949ce" normative="false" obligation="informative">
-<title id="_06abb18f-e097-0ef7-5f6e-cf338095df5d">Bibliography</title><bibitem id="_6f169840-4207-7885-92fe-e41793ed09a5" type="standard" schema-version="v1.2.9" anchor="wfs20">
-  <fetched>2026-04-16</fetched>
+</annex><annex id="_012b4ec8-f8dc-ce5a-4a90-b56a654ddf8d" obligation="" language="" script=""><references id="_ca8fb09a-814e-1b3d-913a-d77080630472" normative="false" obligation="informative">
+<title id="_06abb18f-e097-0ef7-5f6e-cf338095df5d">Bibliography</title><bibitem id="_b1658f2f-f809-2fa2-4292-5780ba3524e9" type="standard" schema-version="v1.5.6" anchor="wfs20">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">OGC® Web Feature Service 2.0 Interface Standard</title>
+<title language="en" script="Latn" type="title-intro">OGC® Web Feature Service 2.0 Interface Standard</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">With Corrigendum</title>
+<title language="en" script="Latn" type="title-main">With Corrigendum</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">OGC® Web Feature Service 2.0 Interface Standard — With Corrigendum</title>
+<title language="en" script="Latn" type="main">OGC® Web Feature Service 2.0 Interface Standard — With Corrigendum</title>
 
   <uri type="src">http://www.opengis.net/doc/IS/wfs/2.0.2</uri>
   <uri type="html">https://docs.ogc.org/is/09-025r2/09-025r2.html</uri>
@@ -3157,10 +3157,26 @@ explode: false</body></sourcecode></description>
 
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>Open Geospatial Consortium</name>
+
+      <subdivision type="technical-committee">
+        
+<name>technical</name>
+
+      </subdivision>
+      <abbreviation>OGC</abbreviation>
+    </organization>
+  </contributor>
   <edition>2</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">The Web Feature Service (WFS) represents a change in the way geographic information is created, modified and exchanged on the Internet. Rather than sharing geographic information at the file level using File Transfer Protocol (FTP), for example, the WFS offers direct fine-grained access to geographic information at the feature and feature property level.
+  <abstract language="en" script="Latn">The Web Feature Service (WFS) represents a change in the way geographic information is created, modified and exchanged on the Internet. Rather than sharing geographic information at the file level using File Transfer Protocol (FTP), for example, the WFS offers direct fine-grained access to geographic information at the feature and feature property level.
 
 This International Standard specifies discovery operations, query operations, locking operations, transaction operations and operations to manage stored, parameterized query expressions.
 
@@ -3188,11 +3204,10 @@ DropStoredQuery (stored query operation)
 ListStoredQueries (stored query operation)
 DescribeStoredQueries (stored query operation)
 In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature access service but also includes elements of a feature type service, a coordinate conversion/transformation service and geographic format conversion service.</abstract>
+</bibitem><bibitem id="_5e33bb3f-20f6-9ec1-fe4d-b7411dfab850" type="standard" schema-version="v1.5.6" anchor="rfc3986">
+  <fetched>2026-06-16</fetched>
   
-</bibitem><bibitem id="_b6a394a4-ca61-a638-bc8a-ad9ff83b6130" type="standard" schema-version="v1.2.9" anchor="rfc3986">
-  <fetched>2026-04-16</fetched>
-  
-<title type="main" format="text/plain">Uniform Resource Identifier (URI): Generic Syntax</title>
+<title type="main">Uniform Resource Identifier (URI): Generic Syntax</title>
 
   <uri type="src">https://www.rfc-editor.org/info/rfc3986</uri>
   <docidentifier type="IETF" primary="true">RFC 3986</docidentifier>
@@ -3205,7 +3220,7 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">T. Berners-Lee</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">T.</formatted-initials>          <surname language="en" script="Latn">Berners-Lee</surname>          <completename language="en" script="Latn">T. Berners-Lee</completename>       </name>
 
     </person>
   </contributor>
@@ -3213,7 +3228,7 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">R. Fielding</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">R.</formatted-initials>          <surname language="en" script="Latn">Fielding</surname>          <completename language="en" script="Latn">R. Fielding</completename>       </name>
 
     </person>
   </contributor>
@@ -3221,7 +3236,7 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">L. Masinter</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">L.</formatted-initials>          <surname language="en" script="Latn">Masinter</surname>          <completename language="en" script="Latn">L. Masinter</completename>       </name>
 
     </person>
   </contributor>
@@ -3229,7 +3244,7 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
     <role type="publisher"/>
     <organization>
       
-<name>RFC Publisher</name>
+<name language="en">RFC Publisher</name>
 
     </organization>
   </contributor>
@@ -3237,63 +3252,91 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
     <role type="authorizer"/>
     <organization>
       
-<name>RFC Series</name>
+<name language="en">RFC Series</name>
 
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/html" language="en" script="Latn">
-    <p id="_d2196500-209b-10bd-2503-049f35ed7f26">A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource. This specification defines the generic URI syntax and a process for resolving URI references that might be in relative form, along with guidelines and security considerations for the use of URIs on the Internet. The URI syntax defines a grammar that is a superset of all valid URIs, allowing an implementation to parse the common components of a URI reference without knowing the scheme-specific requirements of every possible identifier. This specification does not define a generative grammar for URIs; that task is performed by the individual specifications of each URI scheme. [STANDARDS-TRACK]</p>
+  <abstract language="en" script="Latn">
+    <p id="_ba5ff132-f4aa-862b-a236-0306f4045b0b">A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.  This specification defines the generic URI syntax and a process for resolving URI references that might be in relative form, along with guidelines and security considerations for the use of URIs on the Internet.  The URI syntax defines a grammar that is a superset of all valid URIs, allowing an implementation to parse the common components of a URI reference without knowing the scheme-specific requirements of every possible identifier.  This specification does not define a generative grammar for URIs; that task is performed by the individual specifications of each URI scheme. [STANDARDS-TRACK]</p>
 
   </abstract>
+  <status>
+    <stage>INTERNET STANDARD</stage>
+  </status>
   <relation type="updates">
     <bibitem>
-      <formattedref format="text/plain">RFC1738</formattedref>
+      <formattedref>RFC1738</formattedref>
       <docidentifier type="IETF" primary="true">RFC1738</docidentifier>
     </bibitem>
 
   </relation>
   <series>
     
-<title format="text/plain">STD</title>
+<title>STD</title>
 
     <number>66</number>
   </series>
   <series>
     
-<title format="text/plain">RFC</title>
+<title>RFC</title>
 
     <number>3986</number>
   </series>
   <series type="stream">
     
-<title format="text/plain">IETF</title>
+<title>IETF</title>
 
   </series>
-  <keyword>Internet protocol</keyword>
-  <keyword>IP</keyword>
-  <keyword>uniform resource identifier</keyword>
-  <keyword>URI</keyword>
-  <keyword>www</keyword>
-  <keyword>world wide web</keyword>
-</bibitem><bibitem id="_d301ef03-f1ee-06b7-685b-984456ed21fe" type="standard" schema-version="v1.2.9" anchor="iso19101">
-  <fetched>2026-04-16</fetched>
+  <keyword>
+    <vocab>Internet protocol</vocab>
+  </keyword>
+  <keyword>
+    <vocab>IP</vocab>
+  </keyword>
+  <keyword>
+    <vocab>uniform resource identifier</vocab>
+  </keyword>
+  <keyword>
+    <vocab>URI</vocab>
+  </keyword>
+  <keyword>
+    <vocab>www</vocab>
+  </keyword>
+  <keyword>
+    <vocab>world wide web</vocab>
+  </keyword>
+</bibitem><bibitem id="_a8e80f81-132d-aaf4-e5af-a40b24aab466" type="standard" schema-version="v1.5.6" anchor="iso19101">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+<title language="en" script="Latn" type="title-intro">Geographic information</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
+<title language="en" script="Latn" type="title-main">Reference model</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model</title>
+<title language="en" script="Latn" type="main">Geographic information — Reference model</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Information géographique</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Modèle de référence</title>
+
+  
+<title language="fr" script="Latn" type="main">Information géographique — Modèle de référence</title>
 
   <uri type="src">https://www.iso.org/standard/26002.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26002:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>
-  <docidentifier type="ISO" primary="true">ISO 19101</docidentifier>
-  <docidentifier type="iso-reference">ISO 19101(E)</docidentifier>
+  <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>
+  <docidentifier type="iso-reference">ISO 19101:2002(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99</docidentifier>
   <docnumber>19101</docnumber>
+  <date type="published">
+    <on>2002-07-04</on>
+  </date>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -3304,10 +3347,27 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Geographic information/Geomatics</name>
+
+        <identifier>ISO/TC 211</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>1</edition>
   <language>en</language>
-  <language>fr</language>
   <script>Latn</script>
+  <abstract language="en" script="Latn">This International Standard defines the framework for standardization in the field of geographic information and sets forth the basic principles by which this standardization takes place. This framework identifies the scope of the standardization activity being undertaken and the context in which it takes place. The framework provides the method by which what is to be standardized can be determined and describes how the contents of the standards are related. Although structured in the context of information technology and information technology standards, this International Standard is independent of any application development method or technology implementation approach.</abstract>
   <status>
     <stage>95</stage>
     <substage>99</substage>
@@ -3322,105 +3382,49 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
       </organization>
     </owner>
   </copyright>
-  <relation type="updates">
-    <bibitem type="standard">
-      <formattedref format="text/plain">ISO 19101-1:2014</formattedref>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO 19101-1:2014</formattedref>
       <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>
-      <date type="circulated">
+      <date type="published">
         <on>2014-11-12</on>
       </date>
-    </bibitem>
-
-  </relation>
-  <relation type="instanceOf">
-    <bibitem type="standard">
-      <fetched>2026-04-16</fetched>
-      
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
-
-      
-<title type="title-main" format="text/plain" language="en" script="Latn">Reference model</title>
-
-      
-<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Reference model</title>
-
-      <uri type="src">https://www.iso.org/standard/26002.html</uri>
-      <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>
-      <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>
-      <docidentifier type="iso-reference">ISO 19101:2002(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99</docidentifier>
-      <docnumber>19101</docnumber>
-      <date type="published">
-        <on>2002-07</on>
-      </date>
-      <contributor>
-        <role type="publisher"/>
-        <organization>
-          
-<name>International Organization for Standardization</name>
-
-          <abbreviation>ISO</abbreviation>
-          <uri>www.iso.org</uri>
-        </organization>
-      </contributor>
-      <edition>1</edition>
-      <language>en</language>
-      <language>fr</language>
-      <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">This International Standard defines the framework for standardization in the field of geographic information and sets forth the basic principles by which this standardization takes place.
-This framework identifies the scope of the standardization activity being undertaken and the context in which it takes place. The framework provides the method by which what is to be standardized can be determined and describes how the contents of the standards are related.
-Although structured in the context of information technology and information technology standards, this International Standard is independent of any application development method or technology implementation approach.</abstract>
-      <status>
-        <stage>95</stage>
-        <substage>99</substage>
-      </status>
-      <copyright>
-        <from>2002</from>
-        <owner>
-          <organization>
-            
-<name>ISO</name>
-
-          </organization>
-        </owner>
-      </copyright>
-      <relation type="updates">
-        <bibitem type="standard">
-          <formattedref format="text/plain">ISO 19101-1:2014</formattedref>
-          <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>
-          <date type="circulated">
-            <on>2014-11-12</on>
-          </date>
-        </bibitem>
-
-      </relation>
-      <place>
-        <city>Geneva</city>
-      </place>
     </bibitem>
 
   </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_629453ae-945a-12ef-f862-660b533413a9" type="standard" schema-version="v1.2.9" anchor="iso19142">
-  <fetched>2026-04-16</fetched>
+</bibitem><bibitem id="_bd8eadd1-11be-22a5-0777-7c07a0dd4aab" type="standard" schema-version="v1.5.6" anchor="iso19142">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+<title language="en" script="Latn" type="title-intro">Geographic information</title>
 
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
+<title language="en" script="Latn" type="title-main">Web Feature Service</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
+<title language="en" script="Latn" type="main">Geographic information — Web Feature Service</title>
+
+  
+<title language="fr" script="Latn" type="title-intro">Information géographique</title>
+
+  
+<title language="fr" script="Latn" type="title-main">Service d’accès aux entités géographiques par le web</title>
+
+  
+<title language="fr" script="Latn" type="main">Information géographique — Service d’accès aux entités géographiques par le web</title>
 
   <uri type="src">https://www.iso.org/standard/42136.html</uri>
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
-  <docidentifier type="ISO" primary="true">ISO 19142</docidentifier>
-  <docidentifier type="iso-reference">ISO 19142(E)</docidentifier>
+  <docidentifier type="ISO" primary="true">ISO 19142:2010</docidentifier>
+  <docidentifier type="iso-reference">ISO 19142:2010(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
   <docnumber>19142</docnumber>
+  <date type="published">
+    <on>2010-12-06</on>
+  </date>
   <contributor>
     <role type="publisher"/>
     <organization>
@@ -3431,10 +3435,28 @@ Although structured in the context of information technology and information tec
       <uri>www.iso.org</uri>
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <subdivision type="technical-committee" subtype="TC">
+        
+<name>Geographic information/Geomatics</name>
+
+        <identifier>ISO/TC 211</identifier>
+      </subdivision>
+      <abbreviation>ISO</abbreviation>
+    </organization>
+  </contributor>
   <edition>1</edition>
   <language>en</language>
   <language>fr</language>
   <script>Latn</script>
+  <abstract language="en" script="Latn">ISO 19142:2010 specifies the behaviour of a web feature service that provides transactions on and access to geographic features in a manner independent of the underlying data store. It specifies discovery operations, query operations, locking operations, transaction operations and operations to manage stored parameterized query expressions.</abstract>
   <status>
     <stage>90</stage>
     <substage>93</substage>
@@ -3449,70 +3471,20 @@ Although structured in the context of information technology and information tec
       </organization>
     </owner>
   </copyright>
-  <relation type="instanceOf">
-    <bibitem type="standard">
-      <fetched>2026-04-16</fetched>
-      
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
-
-      
-<title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
-
-      
-<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
-
-      <uri type="src">https://www.iso.org/standard/42136.html</uri>
-      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
-      <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
-      <docidentifier type="ISO" primary="true">ISO 19142:2010</docidentifier>
-      <docidentifier type="iso-reference">ISO 19142:2010(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
-      <docnumber>19142</docnumber>
-      <date type="published">
-        <on>2010-12</on>
-      </date>
-      <contributor>
-        <role type="publisher"/>
-        <organization>
-          
-<name>International Organization for Standardization</name>
-
-          <abbreviation>ISO</abbreviation>
-          <uri>www.iso.org</uri>
-        </organization>
-      </contributor>
-      <edition>1</edition>
-      <language>en</language>
-      <language>fr</language>
-      <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">ISO 19142:2010 specifies the behaviour of a web feature service that provides transactions on and access to geographic features in a manner independent of the underlying data store. It specifies discovery operations, query operations, locking operations, transaction operations and operations to manage stored parameterized query expressions.</abstract>
-      <status>
-        <stage>90</stage>
-        <substage>93</substage>
-      </status>
-      <copyright>
-        <from>2010</from>
-        <owner>
-          <organization>
-            
-<name>ISO</name>
-
-          </organization>
-        </owner>
-      </copyright>
-      <place>
-        <city>Geneva</city>
-      </place>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref>ISO/CD 19142</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/CD 19142</docidentifier>
     </bibitem>
 
   </relation>
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_cc82256a-b249-4df0-c5a8-79d377115433" type="standard" schema-version="v1.2.9" anchor="dwbp">
-  <fetched>2026-04-16</fetched>
+</bibitem><bibitem id="_abd2b9e7-9183-5635-6a28-592d51d666a8" type="standard" schema-version="v1.5.6" anchor="dwbp">
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain">Data on the Web Best Practices</title>
+<title language="en" script="Latn">Data on the Web Best Practices</title>
 
   <uri type="src">https://www.w3.org/TR/dwbp/</uri>
   <docidentifier type="W3C" primary="true">W3C dwbp</docidentifier>
@@ -3524,7 +3496,7 @@ Although structured in the context of information technology and information tec
 <name>World Wide Web Consortium</name>
 
       <abbreviation>W3C</abbreviation>
-      <uri>https://www.w3.org/</uri>
+      <uri>https://www.w3.org</uri>
     </organization>
   </contributor>
   <language>en</language>
@@ -3532,7 +3504,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Data on the Web Best Practices</title>
+<title language="en" script="Latn">Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2017/REC-dwbp-20170131/</uri>
       <docidentifier type="W3C" primary="true">W3C REC-dwbp-20170131</docidentifier>
@@ -3542,7 +3514,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Data on the Web Best Practices</title>
+<title language="en" script="Latn">Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2016/PR-dwbp-20161215/</uri>
       <docidentifier type="W3C" primary="true">W3C PR-dwbp-20161215</docidentifier>
@@ -3552,7 +3524,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Data on the Web Best Practices</title>
+<title language="en" script="Latn">Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2016/CR-dwbp-20160830/</uri>
       <docidentifier type="W3C" primary="true">W3C CR-dwbp-20160830</docidentifier>
@@ -3562,7 +3534,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Data on the Web Best Practices</title>
+<title language="en" script="Latn">Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2016/WD-dwbp-20160519/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-dwbp-20160519</docidentifier>
@@ -3572,7 +3544,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Data on the Web Best Practices</title>
+<title language="en" script="Latn">Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2016/WD-dwbp-20160112/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-dwbp-20160112</docidentifier>
@@ -3582,7 +3554,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Data on the Web Best Practices</title>
+<title language="en" script="Latn">Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2015/WD-dwbp-20151217/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-dwbp-20151217</docidentifier>
@@ -3592,7 +3564,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Data on the Web Best Practices</title>
+<title language="en" script="Latn">Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2015/WD-dwbp-20150625/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-dwbp-20150625</docidentifier>
@@ -3602,7 +3574,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Data on the Web Best Practices</title>
+<title language="en" script="Latn">Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2015/WD-dwbp-20150224/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-dwbp-20150224</docidentifier>
@@ -3611,14 +3583,14 @@ Although structured in the context of information technology and information tec
   </relation>
   <series>
     
-<title format="text/plain">W3C technicalReport</title>
+<title language="en" script="Latn">W3C technicalReport</title>
 
     <number>dwbp</number>
   </series>
-</bibitem><bibitem id="_3fed0d8c-6bcc-4d75-4c95-f8a6b457f319" type="standard" schema-version="v1.2.9" anchor="spatial_data_wbp">
-  <fetched>2026-04-16</fetched>
+</bibitem><bibitem id="_f186ea71-1be9-ee13-c248-4dd0ed6357f3" type="standard" schema-version="v1.5.6" anchor="spatial_data_wbp">
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain">Spatial Data on the Web Best Practices</title>
+<title language="en" script="Latn">Spatial Data on the Web Best Practices</title>
 
   <uri type="src">https://www.w3.org/TR/sdw-bp/</uri>
   <docidentifier type="W3C" primary="true">W3C sdw-bp</docidentifier>
@@ -3630,7 +3602,7 @@ Although structured in the context of information technology and information tec
 <name>World Wide Web Consortium</name>
 
       <abbreviation>W3C</abbreviation>
-      <uri>https://www.w3.org/</uri>
+      <uri>https://www.w3.org</uri>
     </organization>
   </contributor>
   <language>en</language>
@@ -3638,7 +3610,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Spatial Data on the Web Best Practices</title>
+<title language="en" script="Latn">Spatial Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2023/DNOTE-sdw-bp-20230919/</uri>
       <docidentifier type="W3C" primary="true">W3C DNOTE-sdw-bp-20230919</docidentifier>
@@ -3648,7 +3620,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Spatial Data on the Web Best Practices</title>
+<title language="en" script="Latn">Spatial Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2017/NOTE-sdw-bp-20170928/</uri>
       <docidentifier type="W3C" primary="true">W3C NOTE-sdw-bp-20170928</docidentifier>
@@ -3658,7 +3630,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Spatial Data on the Web Best Practices</title>
+<title language="en" script="Latn">Spatial Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2017/NOTE-sdw-bp-20170511/</uri>
       <docidentifier type="W3C" primary="true">W3C NOTE-sdw-bp-20170511</docidentifier>
@@ -3668,7 +3640,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Spatial Data on the Web Best Practices</title>
+<title language="en" script="Latn">Spatial Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2017/NOTE-sdw-bp-20170330/</uri>
       <docidentifier type="W3C" primary="true">W3C NOTE-sdw-bp-20170330</docidentifier>
@@ -3678,7 +3650,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Spatial Data on the Web Best Practices</title>
+<title language="en" script="Latn">Spatial Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2017/NOTE-sdw-bp-20170216/</uri>
       <docidentifier type="W3C" primary="true">W3C NOTE-sdw-bp-20170216</docidentifier>
@@ -3688,7 +3660,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Spatial Data on the Web Best Practices</title>
+<title language="en" script="Latn">Spatial Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2017/NOTE-sdw-bp-20170105/</uri>
       <docidentifier type="W3C" primary="true">W3C NOTE-sdw-bp-20170105</docidentifier>
@@ -3698,7 +3670,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Spatial Data on the Web Best Practices</title>
+<title language="en" script="Latn">Spatial Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2016/NOTE-sdw-bp-20161025/</uri>
       <docidentifier type="W3C" primary="true">W3C NOTE-sdw-bp-20161025</docidentifier>
@@ -3708,7 +3680,7 @@ Although structured in the context of information technology and information tec
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">Spatial Data on the Web Best Practices</title>
+<title language="en" script="Latn">Spatial Data on the Web Best Practices</title>
 
       <uri type="src">https://www.w3.org/TR/2016/WD-sdw-bp-20160119/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-sdw-bp-20160119</docidentifier>
@@ -3717,7 +3689,7 @@ Although structured in the context of information technology and information tec
   </relation>
   <series>
     
-<title format="text/plain">W3C technicalReport</title>
+<title language="en" script="Latn">W3C technicalReport</title>
 
     <number>sdw-bp</number>
   </series>
@@ -3931,18 +3903,18 @@ Although structured in the context of information technology and information tec
 <td id="_acf2e785-8bde-abcd-7102-087c7ebf4512" valign="middle" align="left">Edits for publication</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_40afe818-6d6f-3c19-9b61-892e3d88006f" normative="true" obligation="informative">
+</annex><bibliography><references id="_6bb30033-19ba-9a85-617a-3dde56851ff7" normative="true" obligation="informative">
 <title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 <bibitem anchor="openapi" id="_b938fdeb-4800-86a4-6018-ccdfba5f1a05"><formattedref format="application/x-isodoc+xml">Open API Initiative: <strong>OpenAPI Specification 3.0.2</strong>, 2018 <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md"/></formattedref><docidentifier>OpenAPI Specification, version 3.0</docidentifier><docnumber>3.0</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_591f3e26-de79-14bf-5a60-22b381e753c2" type="standard" schema-version="v1.2.9" anchor="gmlsf">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_03f8a310-c02c-ba62-7378-c132eeba1206" type="standard" schema-version="v1.5.6" anchor="gmlsf">
+  <fetched>2026-06-16</fetched>
   
-<title type="title-main" format="text/plain" language="en" script="Latn">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
+<title language="en" script="Latn" type="title-main">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
 
   
-<title type="main" format="text/plain" language="en" script="Latn">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
+<title language="en" script="Latn" type="main">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
 
-  <uri type="pdf">https://docs.ogc.org/profile/10-100r3/10-100r3.pdf</uri>
+  <uri type="html">https://docs.ogc.org/profile/10-100r3/10-100r3/pdf</uri>
   <docidentifier type="OGC" primary="true">10-100r3</docidentifier>
   <date type="published">
     <on>2011-05-11</on>
@@ -3979,18 +3951,34 @@ Although structured in the context of information technology and information tec
 
     </organization>
   </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name>Open Geospatial Consortium</name>
+
+      <subdivision type="technical-committee">
+        
+<name>technical</name>
+
+      </subdivision>
+      <abbreviation>OGC</abbreviation>
+    </organization>
+  </contributor>
   <edition>3</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/plain" language="en" script="Latn">This approved OGC Implementation Standard defines a Simple Features profile of the Geography Markup Language version 3.2. This Simple Features Profile has been aligned with the OGC Simple Features standard for SQL version 1.2. Simple Features include: Point, Curve (LineString), Surface (Polygon), Geometry, MultiPoint, MultiCurve, MultiSurface, and MultiGeometry. The detailed abstract model for OGC features and geometry can be found in the OGC Abstract Specification, Topic Volume 1: Features (which is equivalent to ISO 19107).
+  <abstract language="en" script="Latn">This approved OGC Implementation Standard defines a Simple Features profile of the Geography Markup Language version 3.2. This Simple Features Profile has been aligned with the OGC Simple Features standard for SQL version 1.2. Simple Features include: Point, Curve (LineString), Surface (Polygon), Geometry, MultiPoint, MultiCurve, MultiSurface, and MultiGeometry. The detailed abstract model for OGC features and geometry can be found in the OGC Abstract Specification, Topic Volume 1: Features (which is equivalent to ISO 19107).
 
-This Simple Features profile of GML began as a product of OGC’s Interoperability Program: a global, collaborative, hands-on engineering and testing program designed to deliver prototype technologies and proven candidate standards into the OGC’s Specification Development Program. In OGC Interoperability Initiatives, international teams of technology providers work together to solve specific geo-processing interoperability problems posed by Initiative.</abstract>
-  
+This Simple Features profile of GML began as a product of OGC’s Interoperability Program: a global, collaborative, hands-on engineering and testing program designed to deliver prototype technologies and proven candidate standards into the OGC’s Specification Development Program. In OGC Interoperability Initiatives, international teams of technology providers work together to solve specific geo-processing interoperability problems posed by Initiative. 
+</abstract>
 </bibitem>
-<bibitem id="_84399729-813c-e76d-23e7-f3f98e9c2225" type="standard" schema-version="v1.2.9" anchor="rfc7946">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_b64d0eb5-c2f5-9885-8cb4-3f4730f0c9eb" type="standard" schema-version="v1.5.6" anchor="rfc7946">
+  <fetched>2026-06-16</fetched>
   
-<title type="main" format="text/plain">The GeoJSON Format</title>
+<title type="main">The GeoJSON Format</title>
 
   <uri type="src">https://www.rfc-editor.org/info/rfc7946</uri>
   <docidentifier type="IETF" primary="true">RFC 7946</docidentifier>
@@ -4003,7 +3991,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">H. Butler</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">H.</formatted-initials>          <surname language="en" script="Latn">Butler</surname>          <completename language="en" script="Latn">H. Butler</completename>       </name>
 
     </person>
   </contributor>
@@ -4011,7 +3999,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">M. Daly</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">M.</formatted-initials>          <surname language="en" script="Latn">Daly</surname>          <completename language="en" script="Latn">M. Daly</completename>       </name>
 
     </person>
   </contributor>
@@ -4019,7 +4007,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">A. Doyle</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">A.</formatted-initials>          <surname language="en" script="Latn">Doyle</surname>          <completename language="en" script="Latn">A. Doyle</completename>       </name>
 
     </person>
   </contributor>
@@ -4027,7 +4015,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">S. Gillies</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">S.</formatted-initials>          <surname language="en" script="Latn">Gillies</surname>          <completename language="en" script="Latn">S. Gillies</completename>       </name>
 
     </person>
   </contributor>
@@ -4035,7 +4023,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">S. Hagen</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">S.</formatted-initials>          <surname language="en" script="Latn">Hagen</surname>          <completename language="en" script="Latn">S. Hagen</completename>       </name>
 
     </person>
   </contributor>
@@ -4043,7 +4031,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">T. Schaub</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">T.</formatted-initials>          <surname language="en" script="Latn">Schaub</surname>          <completename language="en" script="Latn">T. Schaub</completename>       </name>
 
     </person>
   </contributor>
@@ -4051,7 +4039,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="publisher"/>
     <organization>
       
-<name>RFC Publisher</name>
+<name language="en">RFC Publisher</name>
 
     </organization>
   </contributor>
@@ -4059,35 +4047,61 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="authorizer"/>
     <organization>
       
-<name>RFC Series</name>
+<name language="en">RFC Series</name>
 
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="en">Internet Engineering Task Force</name>
+
+      <subdivision type="workgroup">
+        
+<name>Geographic JSON</name>
+
+        <identifier>geojson</identifier>
+      </subdivision>
+      <abbreviation language="en">IETF</abbreviation>
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/html" language="en" script="Latn">
-    <p id="_ea677b93-3b16-d2b7-223d-0e5629dca86b">GeoJSON is a geospatial data interchange format based on JavaScript Object Notation (JSON). It defines several types of JSON objects and the manner in which they are combined to represent data about geographic features, their properties, and their spatial extents. GeoJSON uses a geographic coordinate reference system, World Geodetic System 1984, and units of decimal degrees.</p>
+  <abstract language="en" script="Latn">
+    <p id="_8bafffe3-0ee7-7cf7-4602-f59f5ea4381b">GeoJSON is a geospatial data interchange format based on JavaScript Object Notation (JSON).  It defines several types of JSON objects and the manner in which they are combined to represent data about geographic features, their properties, and their spatial extents.  GeoJSON uses a geographic coordinate reference system, World Geodetic System 1984, and units of decimal degrees.</p>
 
   </abstract>
+  <status>
+    <stage>PROPOSED STANDARD</stage>
+  </status>
   <series>
     
-<title format="text/plain">RFC</title>
+<title>RFC</title>
 
     <number>7946</number>
   </series>
   <series type="stream">
     
-<title format="text/plain">IETF</title>
+<title>IETF</title>
 
   </series>
-  <keyword>JSON</keyword>
-  <keyword>Geospatial</keyword>
-  <keyword>JavaScript Object Notation</keyword>
+  <keyword>
+    <vocab>JSON</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Geospatial</vocab>
+  </keyword>
+  <keyword>
+    <vocab>JavaScript Object Notation</vocab>
+  </keyword>
 </bibitem>
-<bibitem id="_1067eac8-ce22-14a2-6b5c-37c33bc8f1c4" type="standard" schema-version="v1.2.9" anchor="html5">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_24498e17-1cc2-6ce6-5da9-d2c0435338f7" type="standard" schema-version="v1.5.6" anchor="html5">
+  <fetched>2026-06-16</fetched>
   
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
   <uri type="src">https://www.w3.org/TR/html5/</uri>
   <docidentifier type="W3C" primary="true">W3C html5</docidentifier>
@@ -4099,7 +4113,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
 <name>World Wide Web Consortium</name>
 
       <abbreviation>W3C</abbreviation>
-      <uri>https://www.w3.org/</uri>
+      <uri>https://www.w3.org</uri>
     </organization>
   </contributor>
   <language>en</language>
@@ -4107,7 +4121,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2018/SPSD-html5-20180327/</uri>
       <docidentifier type="W3C" primary="true">W3C SPSD-html5-20180327</docidentifier>
@@ -4117,7 +4131,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2014/REC-html5-20141028/</uri>
       <docidentifier type="W3C" primary="true">W3C REC-html5-20141028</docidentifier>
@@ -4127,7 +4141,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2014/PR-html5-20140916/</uri>
       <docidentifier type="W3C" primary="true">W3C PR-html5-20140916</docidentifier>
@@ -4137,7 +4151,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2014/CR-html5-20140731/</uri>
       <docidentifier type="W3C" primary="true">W3C CR-html5-20140731</docidentifier>
@@ -4147,7 +4161,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2014/WD-html5-20140617/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20140617</docidentifier>
@@ -4157,7 +4171,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2014/CR-html5-20140429/</uri>
       <docidentifier type="W3C" primary="true">W3C CR-html5-20140429</docidentifier>
@@ -4167,7 +4181,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2012/CR-html5-20121217/</uri>
       <docidentifier type="W3C" primary="true">W3C CR-html5-20121217</docidentifier>
@@ -4177,7 +4191,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2012/WD-html5-20121025/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20121025</docidentifier>
@@ -4187,7 +4201,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2012/WD-html5-20120329/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20120329</docidentifier>
@@ -4197,7 +4211,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2011/WD-html5-20110525/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20110525</docidentifier>
@@ -4207,7 +4221,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2011/WD-html5-20110405/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20110405</docidentifier>
@@ -4217,7 +4231,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2011/WD-html5-20110113/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20110113</docidentifier>
@@ -4227,7 +4241,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2010/WD-html5-20101019/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20101019</docidentifier>
@@ -4237,7 +4251,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2010/WD-html5-20100624/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20100624</docidentifier>
@@ -4247,7 +4261,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML5</title>
+<title language="en" script="Latn">HTML5</title>
 
       <uri type="src">https://www.w3.org/TR/2010/WD-html5-20100304/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20100304</docidentifier>
@@ -4257,7 +4271,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML 5</title>
+<title language="en" script="Latn">HTML 5</title>
 
       <uri type="src">https://www.w3.org/TR/2009/WD-html5-20090825/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20090825</docidentifier>
@@ -4267,7 +4281,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML 5</title>
+<title language="en" script="Latn">HTML 5</title>
 
       <uri type="src">https://www.w3.org/TR/2009/WD-html5-20090423/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20090423</docidentifier>
@@ -4277,7 +4291,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML 5</title>
+<title language="en" script="Latn">HTML 5</title>
 
       <uri type="src">https://www.w3.org/TR/2009/WD-html5-20090212/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20090212</docidentifier>
@@ -4287,7 +4301,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML 5</title>
+<title language="en" script="Latn">HTML 5</title>
 
       <uri type="src">https://www.w3.org/TR/2008/WD-html5-20080610/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20080610</docidentifier>
@@ -4297,7 +4311,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   <relation type="hasEdition">
     <bibitem>
       
-<title format="text/plain">HTML 5</title>
+<title language="en" script="Latn">HTML 5</title>
 
       <uri type="src">https://www.w3.org/TR/2008/WD-html5-20080122/</uri>
       <docidentifier type="W3C" primary="true">W3C WD-html5-20080122</docidentifier>
@@ -4306,16 +4320,16 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   </relation>
   <series>
     
-<title format="text/plain">W3C technicalReport</title>
+<title language="en" script="Latn">W3C technicalReport</title>
 
     <number>html5</number>
   </series>
 </bibitem>
 <bibitem anchor="schema" id="_aaa16b44-0983-0a61-8619-b02201cd9085"><formattedref format="application/x-isodoc+xml"><strong>Schema.org:</strong> <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>schema.org</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_73378d26-99fb-fff1-42b7-0a5710542035" type="standard" schema-version="v1.2.9" anchor="rfc2616">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_9cf5ff65-0b47-9726-be6e-2644e8d44c3d" type="standard" schema-version="v1.5.6" anchor="rfc2616">
+  <fetched>2026-06-16</fetched>
   
-<title type="main" format="text/plain">Hypertext Transfer Protocol — HTTP/1.1</title>
+<title type="main">Hypertext Transfer Protocol — HTTP/1.1</title>
 
   <uri type="src">https://www.rfc-editor.org/info/rfc2616</uri>
   <docidentifier type="IETF" primary="true">RFC 2616</docidentifier>
@@ -4328,7 +4342,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">R. Fielding</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">R.</formatted-initials>          <surname language="en" script="Latn">Fielding</surname>          <completename language="en" script="Latn">R. Fielding</completename>       </name>
 
     </person>
   </contributor>
@@ -4336,7 +4350,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">J. Gettys</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">J.</formatted-initials>          <surname language="en" script="Latn">Gettys</surname>          <completename language="en" script="Latn">J. Gettys</completename>       </name>
 
     </person>
   </contributor>
@@ -4344,7 +4358,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">J. Mogul</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">J.</formatted-initials>          <surname language="en" script="Latn">Mogul</surname>          <completename language="en" script="Latn">J. Mogul</completename>       </name>
 
     </person>
   </contributor>
@@ -4352,7 +4366,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">H. Frystyk</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">H.</formatted-initials>          <surname language="en" script="Latn">Frystyk</surname>          <completename language="en" script="Latn">H. Frystyk</completename>       </name>
 
     </person>
   </contributor>
@@ -4360,7 +4374,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">L. Masinter</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">L.</formatted-initials>          <surname language="en" script="Latn">Masinter</surname>          <completename language="en" script="Latn">L. Masinter</completename>       </name>
 
     </person>
   </contributor>
@@ -4368,7 +4382,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">P. Leach</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">P.</formatted-initials>          <surname language="en" script="Latn">Leach</surname>          <completename language="en" script="Latn">P. Leach</completename>       </name>
 
     </person>
   </contributor>
@@ -4376,7 +4390,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">T. Berners-Lee</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">T.</formatted-initials>          <surname language="en" script="Latn">Berners-Lee</surname>          <completename language="en" script="Latn">T. Berners-Lee</completename>       </name>
 
     </person>
   </contributor>
@@ -4384,7 +4398,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="publisher"/>
     <organization>
       
-<name>RFC Publisher</name>
+<name language="en">RFC Publisher</name>
 
     </organization>
   </contributor>
@@ -4392,79 +4406,109 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="authorizer"/>
     <organization>
       
-<name>RFC Series</name>
+<name language="en">RFC Series</name>
 
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="en">Internet Engineering Task Force</name>
+
+      <subdivision type="workgroup">
+        
+<name>HyperText Transfer Protocol</name>
+
+        <identifier>http</identifier>
+      </subdivision>
+      <abbreviation language="en">IETF</abbreviation>
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/html" language="en" script="Latn">
-    <p id="_061ed3ea-3e38-0d8c-8edd-cb6f0e4251ce">HTTP has been in use by the World-Wide Web global information initiative since 1990. This specification defines the protocol referred to as “HTTP/1.1”, and is an update to RFC 2068. [STANDARDS-TRACK]</p>
+  <abstract language="en" script="Latn">
+    <p id="_917aef03-d6de-9a5d-8078-9ee4d1395d0f">HTTP has been in use by the World-Wide Web global information initiative since 1990.  This specification defines the protocol referred to as “HTTP/1.1”, and is an update to RFC 2068. [STANDARDS-TRACK]</p>
 
   </abstract>
+  <status>
+    <stage>DRAFT STANDARD</stage>
+  </status>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7230</formattedref>
+      <formattedref>RFC7230</formattedref>
       <docidentifier type="IETF" primary="true">RFC7230</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7231</formattedref>
+      <formattedref>RFC7231</formattedref>
       <docidentifier type="IETF" primary="true">RFC7231</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7232</formattedref>
+      <formattedref>RFC7232</formattedref>
       <docidentifier type="IETF" primary="true">RFC7232</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7233</formattedref>
+      <formattedref>RFC7233</formattedref>
       <docidentifier type="IETF" primary="true">RFC7233</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7234</formattedref>
+      <formattedref>RFC7234</formattedref>
       <docidentifier type="IETF" primary="true">RFC7234</docidentifier>
     </bibitem>
 
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC7235</formattedref>
+      <formattedref>RFC7235</formattedref>
       <docidentifier type="IETF" primary="true">RFC7235</docidentifier>
     </bibitem>
 
   </relation>
   <series>
     
-<title format="text/plain">RFC</title>
+<title>RFC</title>
 
     <number>2616</number>
   </series>
   <series type="stream">
     
-<title format="text/plain">IETF</title>
+<title>IETF</title>
 
   </series>
-  <keyword>HTTP</keyword>
-  <keyword>Hypertext Transfer Protocol</keyword>
-  <keyword>World Wide Web</keyword>
-  <keyword>WWW</keyword>
-  <keyword>hypermedia</keyword>
+  <keyword>
+    <vocab>HTTP</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Hypertext Transfer Protocol</vocab>
+  </keyword>
+  <keyword>
+    <vocab>World Wide Web</vocab>
+  </keyword>
+  <keyword>
+    <vocab>WWW</vocab>
+  </keyword>
+  <keyword>
+    <vocab>hypermedia</vocab>
+  </keyword>
 </bibitem>
-<bibitem id="_ebc5195d-bd56-29ad-cd55-81bc61a62760" type="standard" schema-version="v1.2.9" anchor="rfc2818">
-  <fetched>2026-04-16</fetched>
+<bibitem id="_71773d3c-56b2-b204-cb36-35d9e3bf1220" type="standard" schema-version="v1.5.6" anchor="rfc2818">
+  <fetched>2026-06-16</fetched>
   
-<title type="main" format="text/plain">HTTP Over TLS</title>
+<title type="main">HTTP Over TLS</title>
 
   <uri type="src">https://www.rfc-editor.org/info/rfc2818</uri>
   <docidentifier type="IETF" primary="true">RFC 2818</docidentifier>
@@ -4477,7 +4521,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="author"/>
     <person>
       
-<name>          <completename language="en" script="Latn">E. Rescorla</completename>       </name>
+<name>                    <formatted-initials language="en" script="Latn">E.</formatted-initials>          <surname language="en" script="Latn">Rescorla</surname>          <completename language="en" script="Latn">E. Rescorla</completename>       </name>
 
     </person>
   </contributor>
@@ -4485,7 +4529,7 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="publisher"/>
     <organization>
       
-<name>RFC Publisher</name>
+<name language="en">RFC Publisher</name>
 
     </organization>
   </contributor>
@@ -4493,45 +4537,76 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <role type="authorizer"/>
     <organization>
       
-<name>RFC Series</name>
+<name language="en">RFC Series</name>
 
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="author">
+      <description>committee</description>
+    </role>
+    <organization>
+      
+<name language="en">Internet Engineering Task Force</name>
+
+      <subdivision type="workgroup">
+        
+<name>Transport Layer Security</name>
+
+        <identifier>tls</identifier>
+      </subdivision>
+      <abbreviation language="en">IETF</abbreviation>
     </organization>
   </contributor>
   <language>en</language>
   <script>Latn</script>
-  <abstract format="text/html" language="en" script="Latn">
-    <p id="_cac4354e-0e1e-5d56-2970-91852a400c24">This memo describes how to use Transport Layer Security (TLS) to secure Hypertext Transfer Protocol (HTTP) connections over the Internet. This memo provides information for the Internet community.</p>
+  <abstract language="en" script="Latn">
+    <p id="_aed71a74-49ec-6b6b-6bf8-74e163773fa7">This memo describes how to use Transport Layer Security (TLS) to secure Hypertext Transfer Protocol (HTTP) connections over the Internet.  This memo provides information for the Internet community.</p>
 
   </abstract>
+  <status>
+    <stage>INFORMATIONAL</stage>
+  </status>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref format="text/plain">RFC9110</formattedref>
+      <formattedref>RFC9110</formattedref>
       <docidentifier type="IETF" primary="true">RFC9110</docidentifier>
     </bibitem>
 
   </relation>
   <series>
     
-<title format="text/plain">RFC</title>
+<title>RFC</title>
 
     <number>2818</number>
   </series>
   <series type="stream">
     
-<title format="text/plain">IETF</title>
+<title>IETF</title>
 
   </series>
-  <keyword>hypertext</keyword>
-  <keyword>transfer</keyword>
-  <keyword>protocol</keyword>
-  <keyword>transport</keyword>
-  <keyword>layer</keyword>
-  <keyword>security</keyword>
+  <keyword>
+    <vocab>hypertext</vocab>
+  </keyword>
+  <keyword>
+    <vocab>transfer</vocab>
+  </keyword>
+  <keyword>
+    <vocab>protocol</vocab>
+  </keyword>
+  <keyword>
+    <vocab>transport</vocab>
+  </keyword>
+  <keyword>
+    <vocab>layer</vocab>
+  </keyword>
+  <keyword>
+    <vocab>security</vocab>
+  </keyword>
 </bibitem>
 
-<bibitem id="_45adda15-d935-b8d2-2429-ed4e69ecd9a1" schema-version="v1.2.9" anchor="rfc3339">
-  <title type="title-main" format="text/plain">Date and Time on the Internet: Timestamps</title>
-  <title type="main" format="text/plain">Date and Time on the Internet: Timestamps</title>
+<bibitem id="_4c48b157-c0f7-f8f2-52b1-7719e7f6e4b5" schema-version="v1.5.6" anchor="rfc3339">
+  <title language="en" type="main">Date and Time on the Internet: Timestamps</title>
   <uri type="src">http://tools.ietf.org/rfc/rfc3339.txt</uri>
   <docidentifier type="IETF">RFC 3339</docidentifier>
   <date type="published">
@@ -4559,9 +4634,8 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   </contributor><language>en</language><script>Latn</script>
 </bibitem>
 
-<bibitem id="_3cb899ae-4c03-59a1-df44-56acce7a97ca" schema-version="v1.2.9" anchor="rfc8288">
-  <title type="title-main" format="text/plain">Web Linking</title>
-  <title type="main" format="text/plain">Web Linking</title>
+<bibitem id="_f4e9d71b-dd06-ac43-afbd-e6a0425db2ba" schema-version="v1.5.6" anchor="rfc8288">
+  <title language="en" type="main">Web Linking</title>
   <uri type="src">http://tools.ietf.org/rfc/rfc8288.txt</uri>
   <docidentifier type="IETF">RFC 8288</docidentifier>
   <date type="published">

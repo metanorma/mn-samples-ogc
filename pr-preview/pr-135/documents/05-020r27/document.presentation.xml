@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.3" schema-version="v2.1.5" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="presentation" version="2.9.6" schema-version="v2.1.6" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">Technical Committee Policies and Procedures</title>
 <docidentifier type="ogc-internal" primary="true">05-020r27</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/pol/tcpnp/27.0</docidentifier><docnumber>05-020r27</docnumber><date type="published"><on>2019-06-03</on></date><date type="issued"><on>2019-05-29</on></date><date type="received"><on>2019-03-28</on></date><contributor><role type="editor"/><person>
@@ -10,9 +10,9 @@
 <name>Technical Committee</name>
 </subdivision><abbreviation>OGC</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation><logo type="html-blue"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.3/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
-<logo type="html-white"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.3/lib/isodoc/ogc/html/logo.2018-white.png" mimetype="image/png"/></logo>
-<logo type="word"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.3/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
+<abbreviation>OGC</abbreviation><logo type="html-blue"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.6/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
+<logo type="html-white"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.6/lib/isodoc/ogc/html/logo.2018-white.png" mimetype="image/png"/></logo>
+<logo type="word"><image src="/usr/local/bundle/gems/metanorma-ogc-2.9.6/lib/isodoc/ogc/html/logo.2018.png" mimetype="image/png"/></logo>
 </organization></contributor><edition language="">27.0</edition><edition language="en">edition 27.0</edition><language current="true">en</language><script current="true">Latn</script><abstract><p>The <link target="http://www.opengeospatial.org/" id="_3c157924-5631-d12d-a51b-8b8dabb01183">OGC</link><semx element="link" source="_3c157924-5631-d12d-a51b-8b8dabb01183"><fmt-link target="http://www.opengeospatial.org/">OGC</fmt-link></semx> provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. "<tt>International standards</tt>"<fn reference="1" id="_1667aeaa-67e7-8d04-82fd-8573aed20668" original-reference="1" target="_deb51fc1-4470-0669-f7c3-d6fae72d12c3"><p>As defined in ISO/IEC Directives, Part 2</p>
 <fmt-fn-label><span class="fmt-caption-label"><sup><semx element="autonum" source="_1667aeaa-67e7-8d04-82fd-8573aed20668">1</semx></sup></span></fmt-fn-label></fn> are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:</p>
 
