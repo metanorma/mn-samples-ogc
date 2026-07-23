@@ -1,0 +1,15 @@
+---
+# Subset used by the metanorma-cli release smoke gate (metanorma-cli#391):
+# carried over from the 2023 samples-smoke-matrix subset.
+metanorma:
+  source:
+    files:
+      - sources/00-027/document.adoc
+      - sources/05-020r27/document.adoc
+      - sources/08-062r7/document.adoc
+      - sources/10-091r3/document.adoc
+      - sources/style-sample/document.adoc
+
+  collection:
+    organization: "OGC: The Open Geospatial Consortium"
+    name: "OGC deliverable samples in Metanorma (CI smoke subset)"
