@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.10" schema-version="v2.1.6" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">API - Features - Part 1: Core</title>
 <docidentifier type="ogc-internal" primary="true">17-069r3</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/ogcapi-features-1/1.0</docidentifier><docnumber>17-069r3</docnumber><date type="published"><on>2019-10-14</on></date><date type="issued"><on>2019-09-09</on></date><date type="received"><on>2019-07-11</on></date><contributor><role type="author"/><organization>
@@ -101,7 +101,7 @@
 <p>The other approach targets developers that are not familiar with the OGC API standards, but want to interact with spatial data provided by an API that happens to implement OGC API Features. In this case the developer will study and use the API definition - typically an OpenAPI document - to understand the API and implement the code to interact with the API. This assumes familiarity with the API definition language and the related tooling, but it should not be necessary to study the OGC API standards.</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2026</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>OGC API</keyword><keyword>ISO</keyword><keyword>ISO/TC 211</keyword><keyword>geographic information</keyword><keyword>Geospatial API</keyword><keyword>Web Feature Service</keyword><keyword>WFS</keyword><keyword>feature</keyword><keyword>features</keyword><keyword>property</keyword><keyword>geographic information</keyword><keyword>spatial data</keyword><keyword>spatial things</keyword><keyword>dataset</keyword><keyword>distribution</keyword><keyword>API</keyword><keyword>OpenAPI</keyword><keyword>GeoJSON</keyword><keyword>GML</keyword><keyword>HTML</keyword><keyword>schema.org</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><flavor>ogc</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword><vocab>ogcdoc</vocab></keyword><keyword><vocab>OGC document</vocab></keyword><keyword><vocab>OGC API</vocab></keyword><keyword><vocab>ISO</vocab></keyword><keyword><vocab>ISO/TC 211</vocab></keyword><keyword><vocab>geographic information</vocab></keyword><keyword><vocab>Geospatial API</vocab></keyword><keyword><vocab>Web Feature Service</vocab></keyword><keyword><vocab>WFS</vocab></keyword><keyword><vocab>feature</vocab></keyword><keyword><vocab>features</vocab></keyword><keyword><vocab>property</vocab></keyword><keyword><vocab>geographic information</vocab></keyword><keyword><vocab>spatial data</vocab></keyword><keyword><vocab>spatial things</vocab></keyword><keyword><vocab>dataset</vocab></keyword><keyword><vocab>distribution</vocab></keyword><keyword><vocab>API</vocab></keyword><keyword><vocab>OpenAPI</vocab></keyword><keyword><vocab>GeoJSON</vocab></keyword><keyword><vocab>GML</vocab></keyword><keyword><vocab>HTML</vocab></keyword><keyword><vocab>schema.org</vocab></keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><flavor>ogc</flavor><stage>approved</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>2018</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(237, 193, 35)</color-secondary-shade-1><color-secondary-shade-2>rgb(246, 223, 140)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -648,11 +648,11 @@
 </clause>
 </clause>
 
-<clause id="_97695d7e-7f65-2d1b-e425-ebb8c25c2660" anchor="rc_core" obligation="normative">
+<clause id="_e3f684d1-881a-9316-39b0-2b6c5d9c6519" anchor="rc_core" obligation="normative">
 <title id="_7c917cae-b44a-e151-9caa-58be11e5d34f">Requirements Class “Core”</title>
-<clause id="_8582887d-300c-74b9-b601-90cbdd81f64f" anchor="overview" obligation="normative">
+<clause id="_d6cede8c-440b-1691-30ea-67168920aaf0" anchor="overview" obligation="normative">
 <title id="_4022aa9b-b8f1-6220-ff9e-57ab84cfeef7">Overview</title>
-<requirement id="_bcfca68a-3acd-bb53-7d07-ae39e0b17736" anchor="core" model="ogc" obligation="requirement" type="class"><inherit><eref type="inline" bibitemid="rfc2616" citeas="IETF RFC 2616"><display-text>RFC 2616 (HTTP/1.1)</display-text></eref></inherit><inherit><eref type="inline" bibitemid="rfc2818" citeas="IETF RFC 2818"><display-text>RFC 2818 (HTTP over TLS)</display-text></eref></inherit><inherit><eref type="inline" bibitemid="rfc3339" citeas="IETF RFC 3339"><display-text>RFC 3339 (Date and Time on the Internet: Timestamps)</display-text></eref></inherit><inherit><eref type="inline" bibitemid="rfc8288" citeas="IETF RFC 8288"><display-text>RFC 8288 (Web Linking)</display-text></eref></inherit> <subject>Web API</subject>
+<requirement id="_f3e60453-4acf-24cb-563e-e8944c325852" anchor="core" model="ogc" obligation="requirement" type="class"><subject>Web API</subject><inherit><eref type="inline" bibitemid="rfc2616" citeas="IETF RFC 2616"><display-text>RFC 2616 (HTTP/1.1)</display-text></eref></inherit><inherit><eref type="inline" bibitemid="rfc2818" citeas="IETF RFC 2818"><display-text>RFC 2818 (HTTP over TLS)</display-text></eref></inherit><inherit><eref type="inline" bibitemid="rfc3339" citeas="IETF RFC 3339"><display-text>RFC 3339 (Date and Time on the Internet: Timestamps)</display-text></eref></inherit><inherit><eref type="inline" bibitemid="rfc8288" citeas="IETF RFC 8288"><display-text>RFC 8288 (Web Linking)</display-text></eref></inherit> 
 
 </requirement>
 
@@ -1413,7 +1413,7 @@ properties:
 </clause>
 </clause>
 
-<clause id="_dea8de27-84c0-f728-a621-29939ba116aa" anchor="features" obligation="normative">
+<clause id="_25f356b1-23cc-55d4-dae5-4f672dbe63df" anchor="features" obligation="normative">
 <title id="_fd7a6515-2737-30d8-018f-2c7595de0ea4">Features</title>
 <clause id="_f0c013c2-2b99-c2bb-9d2b-f6dacd77de87" obligation="normative">
 <title id="_99f88b45-1617-9cfe-0ae4-e2ef76dd8d99">Operation</title>
@@ -1655,7 +1655,7 @@ example: 'name=A*'</body></sourcecode>
 <p id="_0152d864-3a9a-73bf-1399-edcbc6d2cda2">Any combination of <tt>bbox</tt>, <tt>datetime</tt> and parameters for filtering on feature properties is allowed. Note that the requirements on these parameters imply that only features matching all the predicates are in the result set; i.e., the logical operator between the predicates is ‘AND.’</p>
 </clause>
 
-<clause id="_959e6bec-9df6-b137-5aa6-caba2a6a0c05" obligation="normative">
+<clause id="_ecb1ef3b-a562-0740-b508-190734a8ebe5" obligation="normative">
 <title id="_f48e1926-511e-349c-5cfc-835a9bce6e5b">Response</title>
 <requirement id="_a8b437df-09cc-7b6d-4421-9280dfef4873" anchor="req_core_fc_response" model="ogc"><requirement id="_9ef5793f-0ad5-2611-c3c6-8b1466b3ee8f" model="ogc" type="general"> <description><p id="_dd234e80-d407-bf0f-4d94-1f6f6d37d37a">A successful execution of the operation SHALL be reported as a response with a HTTP status code <tt>200</tt>.</p></description>
 </requirement>
@@ -1748,7 +1748,7 @@ example: 'name=A*'</body></sourcecode>
 <note id="_0d909078-d33c-5a94-cc10-3d799fdeb7af"><p id="_254101fb-0378-61f2-320b-efa56fbf9907">The representation of the links and the other properties in the payload depends on the encoding of the feature collection.</p>
 </note>
 
-<example id="_49183254-408f-a6a4-9ae7-84b2aa67dca9" unnumbered="true">
+<example id="_487d94c4-72b3-1993-fedd-7e6afe9c271b" unnumbered="true">
 <name id="_2500fcbe-d285-7c7d-c4ec-2f11eb7749b9">Links</name>
 <p id="_1664f233-d14e-1d57-b9ed-61ce1dbd714e">If the request is to return building features and “10” is the default <tt>limit</tt>, the links in the response could be (in this example represented as link headers and using an additional parameter <tt>offset</tt> to implement <tt>next</tt> links — and the optional <tt>prev</tt> links):</p>
 
@@ -1767,17 +1767,17 @@ Link: &lt;link:++http://data.example.org/collections/buildings/items.json?offset
 
 <p id="_5730795f-0721-3512-5a00-41eccbc859cf">If an explicit <tt>limit</tt> of “50” is used, the links in the response could be:</p>
 
-<sourcecode id="_9d7becaf-4b8f-8bf7-07ea-f6e526cfb189" unnumbered="true"><body>Link: &lt;link:++http://data.example.org/collections/buildings/items.json?limit=50&gt;;++[] rel="self"; type="application/geo+json"
+<sourcecode id="_c484914c-391c-542e-dd34-acb0c89ffb16" unnumbered="true"><body>Link: &lt;link:++http://data.example.org/collections/buildings/items.json?limit=50&gt;;++[] rel="self"; type="application/geo+json"
 Link: &lt;link:++http://data.example.org/collections/buildings/items.html?limit=50&gt;;++[] rel="alternate"; type="text/html"
-Link: &lt;link:++http://data.example.org/collections/buildings/items.json?limit=50&amp;#x26;offset=50&amp;#x3e;;++[] rel="next"; type="application/geo+json"</body></sourcecode>
+Link: &lt;link:++http://data.example.org/collections/buildings/items.json?limit=50&amp;offset=50&gt;;++[] rel="next"; type="application/geo+json"</body></sourcecode>
 
 
 <p id="_ed4b7d11-451b-9d0a-afc7-01f059a532f7">Following the <tt>next</tt> link could return:</p>
 
-<sourcecode id="_e6d4f915-056b-11ce-2172-eca2fa0b66a8" unnumbered="true"><body>Link: &lt;link:++http://data.example.org/collections/buildings/items.json?limit=50&amp;#x26;offset=50&amp;#x3e;;++[] rel="self"; type="application/geo+json"
-Link: &lt;link:++http://data.example.org/collections/buildings/items.html?limit=50&amp;#x26;offset=50&amp;#x3e;;++[] rel="alternate"; type="text/html"
-Link: &lt;link:++http://data.example.org/collections/buildings/items.json?limit=50&amp;#x26;offset=0&amp;#x3e;;++[] rel="prev"; type="application/geo+json"
-Link: &lt;link:++http://data.example.org/collections/buildings/items.json?limit=50&amp;#x26;offset=100&amp;#x3e;;++[] rel="next"; type="application/geo+json"</body></sourcecode>
+<sourcecode id="_8ead85b6-36d8-d3b3-6e17-b0fef05a8330" unnumbered="true"><body>Link: &lt;link:++http://data.example.org/collections/buildings/items.json?limit=50&amp;offset=50&gt;;++[] rel="self"; type="application/geo+json"
+Link: &lt;link:++http://data.example.org/collections/buildings/items.html?limit=50&amp;offset=50&gt;;++[] rel="alternate"; type="text/html"
+Link: &lt;link:++http://data.example.org/collections/buildings/items.json?limit=50&amp;offset=0&gt;;++[] rel="prev"; type="application/geo+json"
+Link: &lt;link:++http://data.example.org/collections/buildings/items.json?limit=50&amp;offset=100&gt;;++[] rel="next"; type="application/geo+json"</body></sourcecode>
 
 </example>
 </clause>
@@ -1859,7 +1859,7 @@ Link: &lt;link:++http://data.example.org/collections/buildings.html&gt;;++[] rel
 </clause>
 </clause>
 
-<clause id="_4ceb9be2-e101-5c5a-e4a6-664f13fb9af7" obligation="normative">
+<clause id="_ea7fadb0-5787-d98b-f527-2576b98f3042" obligation="normative">
 <title id="_f556675a-a575-948e-37c3-3aa574b118a3">Requirements classes for encodings</title>
 <clause id="_6cc99b9e-44b0-6646-2499-bbf8641e98cf" obligation="normative">
 <title id="_089da7a4-23cf-ba57-10cd-c2935b71c3a4">Overview</title>
@@ -1880,7 +1880,7 @@ Link: &lt;link:++http://data.example.org/collections/buildings.html&gt;;++[] rel
 <p id="_f7df7a77-b3ad-17a4-1603-757d734379b8">The <xref target="rc_core"><display-text>Core</display-text></xref> requirements class includes recommendations to support <xref target="rc_html"><display-text>HTML</display-text></xref> and <xref target="rc_geojson"><display-text>GeoJSON</display-text></xref> as encodings, where practical. <xref target="overview_cl6"><display-text>Clause 6 (Overview)</display-text></xref> includes a discussion about recommended encodings.</p>
 </clause>
 
-<clause id="_08e15928-9ad6-dda8-3062-e6b4e335659d" obligation="normative">
+<clause id="_891da371-8490-e9ad-9283-e3312973a387" obligation="normative">
 <title id="_a34d65ec-1377-c0af-abad-2e0e46dcbc4e">Requirements Class “HTML”</title>
 <p id="_fc2d8be5-4e7a-25a2-c58e-6e9bf2ea764a">Geographic information that is only accessible in formats like GeoJSON or GML has two issues:</p>
 
@@ -1894,7 +1894,7 @@ Link: &lt;link:++http://data.example.org/collections/buildings.html&gt;;++[] rel
 
 <p id="_1c13ee30-71c6-27ed-28d5-b46b658f001c">This is discussed in detail in <link target="https://www.w3.org/TR/sdw-bp/#indexable-by-search-engines">Best Practice 2: Make your spatial data indexable by search engines [SDWBP</link>]. This standard therefore <xref target="rc_html"><display-text>recommends supporting HTML as an encoding</display-text></xref>.</p>
 
-<requirement id="_3474bc16-9d61-dfab-2bb6-311758efb8e5" anchor="rc_html" model="ogc" obligation="requirement" type="class"><inherit><xref target="core"><display-text>Conformance Class “Core”</display-text></xref></inherit><inherit><eref type="inline" bibitemid="html5" citeas="W3C html5"><display-text>HTML5</display-text></eref></inherit><inherit><eref type="inline" bibitemid="schema" citeas="schema.org"><display-text>Schema.org</display-text></eref></inherit> <subject>Web API</subject>
+<requirement id="_b1275af9-585c-4a8a-18f2-f3b8a6cff30e" anchor="rc_html" model="ogc" obligation="requirement" type="class"><subject>Web API</subject><inherit><xref target="core"><display-text>Conformance Class “Core”</display-text></xref></inherit><inherit><eref type="inline" bibitemid="html5" citeas="W3C html5"><display-text>HTML5</display-text></eref></inherit><inherit><eref type="inline" bibitemid="schema" citeas="schema.org"><display-text>Schema.org</display-text></eref></inherit> 
 
 </requirement>
 
@@ -1915,11 +1915,11 @@ Link: &lt;link:++http://data.example.org/collections/buildings.html&gt;;++[] rel
 </recommendation>
 </clause>
 
-<clause id="_1866bcbc-22a7-c640-caca-a2df183bdb04" obligation="normative">
+<clause id="_a8e73c76-e55e-7ea5-e307-f97eaf82e6c0" obligation="normative">
 <title id="_c9a16dc2-11f6-f76f-6f92-08c2713219e9">Requirements Class “GeoJSON”</title>
 <p id="_4326866a-0d95-1be9-d76d-51c7a366615d">GeoJSON is a commonly used format that is simple to understand and well supported by tools and software libraries. Since most Web developers are comfortable with using a JSON-based format supporting GeoJSON is recommended, if the feature data can be represented in GeoJSON for the intended use.</p>
 
-<requirement id="_0814c2ce-03ed-f990-468d-40a7d189ff1b" anchor="rc_geojson" model="ogc" obligation="requirement" type="class"><inherit><xref target="core"><display-text>Conformance Class “Core”</display-text></xref></inherit><inherit><eref type="inline" bibitemid="rfc7946" citeas="IETF RFC 7946"><display-text>GeoJSON</display-text></eref></inherit> <subject>Web API</subject>
+<requirement id="_97776cf2-2c01-b791-d3dc-aa98b640566e" anchor="rc_geojson" model="ogc" obligation="requirement" type="class"><subject>Web API</subject><inherit><xref target="core"><display-text>Conformance Class “Core”</display-text></xref></inherit><inherit><eref type="inline" bibitemid="rfc7946" citeas="IETF RFC 7946"><display-text>GeoJSON</display-text></eref></inherit> 
 
 </requirement>
 
@@ -2039,13 +2039,13 @@ Link: &lt;link:++http://data.example.org/collections/buildings.html&gt;;++[] rel
 </example>
 </clause>
 
-<clause id="_370e4bf9-d0e1-9588-1d5c-c6e5aace1acc" obligation="normative">
+<clause id="_eed8c2b4-66d2-b0c8-687d-caeda45d1ee8" obligation="normative">
 <title id="_092fc3cb-186d-db40-0b30-037111f7fc55">Requirements Class “Geography Markup Language (GML), Simple Features Profile, Level 0”</title>
 <p id="_a1fdf0e2-dd87-59a4-c445-949eb90c44d6">In addition to HTML and GeoJSON, a significant volume of feature data is available in XML-based formats, notably GML. Therefore, this standard specifies requirements classes for GML. The Simple Features Profile, Level 0, is the simplest profile of GML and is typically supported by tools.</p>
 
 <p id="_6e0bede6-c9db-b6de-d79d-e5cdb3d82078">The GML Simple Features Profile is restricted to data with 2D geometries with linear/planar interpolation (points, line strings, polygons). In addition, the Level 0 profile is limited to features that can be stored in a tabular data structure.</p>
 
-<requirement id="_17f2e13b-6169-b3d4-06a6-22cb5129c3cb" anchor="rc_gmlsf0" model="ogc" obligation="requirement" type="class"><inherit><xref target="core"><display-text>Conformance Class “Core”</display-text></xref></inherit><inherit><eref type="inline" bibitemid="gmlsf" citeas="OGC 10-100r3"><display-text>Geography Markup Language (GML), Simple Features Profile, Level 0</display-text></eref></inherit> <subject>Web API</subject>
+<requirement id="_10d13911-04dd-5094-2885-ba3417bc9c7a" anchor="rc_gmlsf0" model="ogc" obligation="requirement" type="class"><subject>Web API</subject><inherit><xref target="core"><display-text>Conformance Class “Core”</display-text></xref></inherit><inherit><eref type="inline" bibitemid="gmlsf" citeas="OGC 10-100r3"><display-text>Geography Markup Language (GML), Simple Features Profile, Level 0</display-text></eref></inherit> 
 
 </requirement>
 
@@ -2126,11 +2126,11 @@ Link: &lt;link:++http://data.example.org/collections/buildings.html&gt;;++[] rel
 <p id="_d9899334-3879-d04c-135b-b758f0ffdc89">See <xref target="examples"/> for links to example responses in XML.</p>
 </clause>
 
-<clause id="_9ed32796-340a-4642-8646-d5135d2bd6d8" obligation="normative">
+<clause id="_f5b11b89-df34-fb33-2033-f84ededfedfe" obligation="normative">
 <title id="_6545a812-f39b-22ac-0eeb-763391800a36">Requirements Class “Geography Markup Language (GML), Simple Features Profile, Level 2”</title>
 <p id="_c42a837a-636c-a836-559d-d0b99178a72a">The difference between this requirements class and the <xref target="rc_gmlsf0"><display-text>Level 0</display-text></xref> requirements class is that non-spatial feature properties are not restricted to atomic values (strings, numbers, etc.).</p>
 
-<requirement id="_2001eeb2-7386-df29-7902-14bf2741449e" anchor="rc_gmlsf2" model="ogc" obligation="requirement" type="class"><inherit><xref target="core"><display-text>Conformance Class “Core”</display-text></xref></inherit><inherit><eref type="inline" bibitemid="gmlsf" citeas="OGC 10-100r3"><display-text>Geography Markup Language (GML), Simple Features Profile, Level 2</display-text></eref></inherit> <subject>Web API</subject>
+<requirement id="_951afcd0-48b4-e563-d957-fc9cf95b7ed5" anchor="rc_gmlsf2" model="ogc" obligation="requirement" type="class"><subject>Web API</subject><inherit><xref target="core"><display-text>Conformance Class “Core”</display-text></xref></inherit><inherit><eref type="inline" bibitemid="gmlsf" citeas="OGC 10-100r3"><display-text>Geography Markup Language (GML), Simple Features Profile, Level 2</display-text></eref></inherit> 
 
 </requirement>
 
@@ -2156,13 +2156,13 @@ Link: &lt;link:++http://data.example.org/collections/buildings.html&gt;;++[] rel
 </clause>
 </clause>
 
-<clause id="_39255198-b2ba-56f0-30ab-9a796ffea43b" obligation="normative">
+<clause id="_e0b07ad3-a6c6-70a0-6757-5d8a7ffbc60b" obligation="normative">
 <title id="_a83be359-6b4a-b977-faac-3e8c1912bd0d">Requirements class “OpenAPI 3.0”</title>
-<clause id="_f99c3226-25e5-b8b0-1836-48fcd8a9d6ef" anchor="two_approaches_oas" obligation="normative">
+<clause id="_6b8a0ff7-7082-60b7-4d23-efd86f375916" anchor="two_approaches_oas" obligation="normative">
 <title id="_7f909830-cd99-813c-8454-75956ad2b6d9">Basic requirements</title>
 <p id="_9e0e1855-ee45-591a-3ebf-868cf29d7501">Servers conforming to this requirements class define their API by an <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#oasDocument">OpenAPI Document</link>.</p>
 
-<requirement id="_cfaa199f-8f67-bd50-caec-e781e9ed8673" anchor="rc_oas30" model="ogc" obligation="requirement" type="class"><inherit><xref target="core"><display-text>Conformance Class “Core”</display-text></xref></inherit><inherit><eref type="inline" bibitemid="openapi" citeas="OpenAPI Specification, version 3.0"><display-text>OpenAPI Specification 3.0.2</display-text></eref></inherit> <subject>Web API</subject>
+<requirement id="_844ddc82-33c7-4058-1ab2-7982a3d9095c" anchor="rc_oas30" model="ogc" obligation="requirement" type="class"><subject>Web API</subject><inherit><xref target="core"><display-text>Conformance Class “Core”</display-text></xref></inherit><inherit><eref type="inline" bibitemid="openapi" citeas="OpenAPI Specification, version 3.0"><display-text>OpenAPI Specification 3.0.2</display-text></eref></inherit> 
 
 </requirement>
 
@@ -3123,9 +3123,9 @@ explode: false</body></sourcecode></description>
 </requirement>
 </requirement>
 </clause>
-</annex><annex id="_755ea32b-9f7b-939c-e5d7-3233c5513b71" obligation="" language="" script=""><references id="_22e13e1f-052a-7f4c-3ee3-ef9e3ee5b75e" normative="false" obligation="informative">
-<title id="_06abb18f-e097-0ef7-5f6e-cf338095df5d">Bibliography</title><bibitem id="_e43627d8-9893-fcf3-5695-6dd878c8d9ec" type="standard" schema-version="v1.5.6" anchor="wfs20">
-  <fetched>2026-07-27</fetched>
+</annex><annex id="_68f74081-77d1-7cd2-8e46-2d0ad87b7020" obligation="" language="" script=""><references id="_5309b667-52c7-b13c-f8ec-895e7b6b0cc0" normative="false" obligation="informative">
+<title id="_06abb18f-e097-0ef7-5f6e-cf338095df5d">Bibliography</title><bibitem id="_0075af81-6fdb-755a-39d4-4285304e9f44" type="standard" schema-version="v1.5.6" anchor="wfs20">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC® Web Feature Service 2.0 Interface Standard</title>
 
@@ -3204,8 +3204,8 @@ DropStoredQuery (stored query operation)
 ListStoredQueries (stored query operation)
 DescribeStoredQueries (stored query operation)
 In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature access service but also includes elements of a feature type service, a coordinate conversion/transformation service and geographic format conversion service.</abstract>
-</bibitem><bibitem id="_18ecc66d-4593-845e-97d4-66df8e1eb979" type="standard" schema-version="v1.5.6" anchor="rfc3986">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_cb7f6c13-9756-509c-af84-074a2874c965" type="standard" schema-version="v1.5.6" anchor="rfc3986">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">Uniform Resource Identifier (URI): Generic Syntax</title>
 
@@ -3307,8 +3307,8 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
   <keyword>
     <vocab>world wide web</vocab>
   </keyword>
-</bibitem><bibitem id="_c4b22dc6-e2a8-7d13-1788-933483a53bd7" type="standard" schema-version="v1.5.6" anchor="iso19101">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_6d5ddcae-e3e5-49a8-e9e8-a98a87f14c60" type="standard" schema-version="v1.5.6" anchor="iso19101">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3331,6 +3331,7 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26002:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19101</docidentifier>
+  <docidentifier type="iso-undated">ISO 19101</docidentifier>
   <docidentifier type="iso-reference">ISO 19101(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99</docidentifier>
   <docnumber>19101</docnumber>
@@ -3412,6 +3413,7 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26002:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26002.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19101:2002</docidentifier>
+      <docidentifier type="iso-undated">ISO 19101</docidentifier>
       <docidentifier type="iso-reference">ISO 19101:2002(E)</docidentifier>
       <docidentifier type="URN">urn:iso:std:iso:19101:stage-95.99</docidentifier>
       <docnumber>19101</docnumber>
@@ -3482,8 +3484,8 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_3d135c82-2ed8-c6f9-a8f9-d38dbbcc860d" type="standard" schema-version="v1.5.6" anchor="iso19142">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_3f76f749-aa19-ec4e-a620-4acf7e9b9a5d" type="standard" schema-version="v1.5.6" anchor="iso19142">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3506,6 +3508,7 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19142</docidentifier>
+  <docidentifier type="iso-undated">ISO 19142</docidentifier>
   <docidentifier type="iso-reference">ISO 19142(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
   <docnumber>19142</docnumber>
@@ -3585,6 +3588,7 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19142:2010</docidentifier>
+      <docidentifier type="iso-undated">ISO 19142</docidentifier>
       <docidentifier type="iso-reference">ISO 19142:2010(E)</docidentifier>
       <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
       <docnumber>19142</docnumber>
@@ -3653,8 +3657,8 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_79e42707-a58e-2b0c-e803-d1a732fb266d" type="standard" schema-version="v1.5.6" anchor="dwbp">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_4412d754-4b54-0181-e292-d90e9aa1bdca" type="standard" schema-version="v1.5.6" anchor="dwbp">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn">Data on the Web Best Practices</title>
 
@@ -3759,8 +3763,8 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
 
     <number>dwbp</number>
   </series>
-</bibitem><bibitem id="_5d3c0c3d-3262-07fa-f509-4dd500dfa688" type="standard" schema-version="v1.5.6" anchor="spatial_data_wbp">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_104c1743-8fe0-f825-c3a0-ee8e7a5a4dd2" type="standard" schema-version="v1.5.6" anchor="spatial_data_wbp">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn">Spatial Data on the Web Best Practices</title>
 
@@ -4075,11 +4079,11 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
 <td id="_acf2e785-8bde-abcd-7102-087c7ebf4512" valign="middle" align="left">Edits for publication</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_d40d9333-1168-9fa6-ca31-02814af69eff" normative="true" obligation="informative">
+</annex><bibliography><references id="_066f17e5-b1a7-8a0b-e877-3a76ca07f83f" normative="true" obligation="informative">
 <title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 <bibitem anchor="openapi" id="_b938fdeb-4800-86a4-6018-ccdfba5f1a05"><formattedref format="application/x-isodoc+xml">Open API Initiative: <strong>OpenAPI Specification 3.0.2</strong>, 2018 <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md"/></formattedref><docidentifier>OpenAPI Specification, version 3.0</docidentifier><docnumber>3.0</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_84263a47-16d7-ae9a-3585-b22a3d10b7ee" type="standard" schema-version="v1.5.6" anchor="gmlsf">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_5ff56f19-68eb-b7c9-0893-e07a5b9965cd" type="standard" schema-version="v1.5.6" anchor="gmlsf">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
 
@@ -4147,8 +4151,8 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
 This Simple Features profile of GML began as a product of OGC’s Interoperability Program: a global, collaborative, hands-on engineering and testing program designed to deliver prototype technologies and proven candidate standards into the OGC’s Specification Development Program. In OGC Interoperability Initiatives, international teams of technology providers work together to solve specific geo-processing interoperability problems posed by Initiative. 
 </abstract>
 </bibitem>
-<bibitem id="_0ed3cb96-60fc-9247-6efa-f841941a3b8c" type="standard" schema-version="v1.5.6" anchor="rfc7946">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_7459d052-3b6a-8d1a-da15-4b497e01ea31" type="standard" schema-version="v1.5.6" anchor="rfc7946">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">The GeoJSON Format</title>
 
@@ -4270,8 +4274,8 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <vocab>JavaScript Object Notation</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_89970577-4037-d734-f499-4697f8949977" type="standard" schema-version="v1.5.6" anchor="html5">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_891f1a92-054f-8824-9541-f575d08120f9" type="standard" schema-version="v1.5.6" anchor="html5">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn">HTML5</title>
 
@@ -4498,8 +4502,8 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   </series>
 </bibitem>
 <bibitem anchor="schema" id="_aaa16b44-0983-0a61-8619-b02201cd9085"><formattedref format="application/x-isodoc+xml"><strong>Schema.org:</strong> <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>schema.org</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_96069812-09d5-6886-9f5f-1a81b04a2d87" type="standard" schema-version="v1.5.6" anchor="rfc2616">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_5997b0a9-e9f6-0857-b2c0-4cd9d7dde02a" type="standard" schema-version="v1.5.6" anchor="rfc2616">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">Hypertext Transfer Protocol — HTTP/1.1</title>
 
@@ -4677,8 +4681,8 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <vocab>hypermedia</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_7bce5ef0-e3af-f7e8-7848-d8fbbf7ab01e" type="standard" schema-version="v1.5.6" anchor="rfc2818">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_99d92979-f8ce-70c1-9da3-e84da2706402" type="standard" schema-version="v1.5.6" anchor="rfc2818">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">HTTP Over TLS</title>
 

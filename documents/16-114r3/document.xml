@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.10" schema-version="v2.1.6" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">Moving Features Encoding Extension: netCDF</title>
 <docidentifier type="ogc-internal" primary="true">16-114r3</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/BP/moving-features-ext-netCDF/1.0</docidentifier><docidentifier type="ogc-external">http://docs.opengeospatial.org/bp/16-114r3/16-114r3.html</docidentifier><docnumber>16-114r3</docnumber><date type="published"><on>2018-12-18</on></date><date type="issued"><on>2018-03-13</on></date><date type="received"><on>2016-11-08</on></date><contributor><role type="author"/><organization>
@@ -17,7 +17,7 @@
 <abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>The netCDF Moving Features encoding extension is a summary of conventions that supports efficient exchange of simple moving features as binary files. This Best Practice is a complement to the <em>Moving Features Encoding Part I: XML Core</em> and an alternative to the <em>Simple Comma Separated Values (CSV)</em> extension. Compared to the CSV encoding, this netCDF encoding offers more compact storage and better performance at the cost of additional restrictions on the kinds of features that can be stored.</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2026</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Best Practice</keyword><keyword>moving features</keyword><keyword>netCDF</keyword><keyword>CF convention</keyword><keyword>trajectory</keyword><ext><doctype>best-practice</doctype><subdoctype>general</subdoctype><flavor>ogc</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword><vocab>ogcdoc</vocab></keyword><keyword><vocab>OGC document</vocab></keyword><keyword><vocab>Best Practice</vocab></keyword><keyword><vocab>moving features</vocab></keyword><keyword><vocab>netCDF</vocab></keyword><keyword><vocab>CF convention</vocab></keyword><keyword><vocab>trajectory</vocab></keyword><ext><doctype>best-practice</doctype><subdoctype>general</subdoctype><flavor>ogc</flavor><stage>approved</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>2018</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(237, 193, 35)</color-secondary-shade-1><color-secondary-shade-2>rgb(246, 223, 140)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -1114,10 +1114,10 @@ public class TestMovingFeatureNetCDF {
 <td id="_74e369d5-0a6f-0890-c011-cf48efdb3a40" valign="middle" align="center">Best Practice</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_40a139e6-42b7-9b29-a665-37e87f070f0e" normative="true" obligation="informative">
+</annex><bibliography><references id="_cf4a00c7-c397-3b21-1ba0-6e96ba247346" normative="true" obligation="informative">
 <title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_0ac61320-4133-e480-09fd-3892fab87070" type="standard" schema-version="v1.5.6" anchor="ogc14-083r2">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_3b70503d-4f77-da3c-1b5c-5cd7292dfaaf" type="standard" schema-version="v1.5.6" anchor="ogc14-083r2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC® Moving Features Encoding Part I: XML Core</title>
 
@@ -1191,8 +1191,8 @@ public class TestMovingFeatureNetCDF {
   <script>Latn</script>
   <abstract language="en" script="Latn">This OGC® Standard specifies standard encoding representations of movement of geographic features. The primary use case is information exchange.</abstract>
 </bibitem>
-<bibitem id="_6e1d8057-7b05-f91f-cc2e-67e9acbae28b" type="standard" schema-version="v1.5.6" anchor="ogc14-084r2">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_64269924-e792-fd0f-0a30-1f25dc7c2114" type="standard" schema-version="v1.5.6" anchor="ogc14-084r2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC® Moving Features Encoding Extension: Simple Comma Separated Values (CSV)</title>
 
@@ -1266,8 +1266,8 @@ public class TestMovingFeatureNetCDF {
   <script>Latn</script>
   <abstract language="en" script="Latn">This OGC® Standard specifies standard encoding representations of movement of geographic features. The primary use case is information exchange.</abstract>
 </bibitem>
-<bibitem id="_c8208a21-992c-074d-143a-b1f25080ca7e" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_04424494-5b34-b791-7d53-3959e26552af" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Network Common Data Form (NetCDF)  Core Encoding Standard version 1.0</title>
 
@@ -1318,8 +1318,8 @@ public class TestMovingFeatureNetCDF {
 NetCDF is a data model for array-oriented scientific data. A freely distributed collection of access libraries implementing support for that data model, and a machine-independent format are available. Together, the interfaces, libraries, and format support the crea-tion, access, and sharing of multi-dimensional scientific data.
 </abstract>
 </bibitem>
-<bibitem id="_48047f74-f1a8-7fe2-da6d-02934c8dbaca" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_54f0cbfb-ae67-b924-d23a-a0ea7a55837c" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</title>
 
@@ -1368,8 +1368,8 @@ NetCDF is a data model for array-oriented scientific data. A freely distributed 
   <script>Latn</script>
   <abstract language="en" script="Latn">This document defines an OGC® Standard for encoding binary representations of space-time varying geo-referenced data. Specifically, this standard specifies the netCDF classic and 64-bit offset file binary encoding formats. This standard specifies a set of requirements that every netCDF classic or 64-bit offset binary encoding must fulfil.</abstract>
 </bibitem>
-<bibitem id="_66b2737d-a244-b6b4-3d3b-ede0302ab555" type="standard" schema-version="v1.5.6" anchor="ogc11-165r2">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_9138290f-0e2e-b999-f75e-1928e33b8bf5" type="standard" schema-version="v1.5.6" anchor="ogc11-165r2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">CF-netCDF3 Data Model Extension standard</title>
 
@@ -1432,8 +1432,8 @@ This standard deals with multi-dimensional gridded data and multi-dimensional mu
 In particular, this extension standard encoding profile is limited to multi-point, and regular and warped grids; however, irregular grids are important in the CF-netCDF community and work is underway to expand the CF-netCDF to encompass other coverages types, including irregular gridded datasets.
 </abstract>
 </bibitem>
-<bibitem id="_f56ad3ef-b28e-0615-2c07-3b1644245612" type="standard" schema-version="v1.5.6" anchor="iso19101">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_09d3f275-7f8a-6b0f-da2c-13dbda2c3d7f" type="standard" schema-version="v1.5.6" anchor="iso19101">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1462,6 +1462,7 @@ In particular, this extension standard encoding profile is limited to multi-poin
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO 19101-1</docidentifier>
   <docidentifier type="iso-reference">ISO 19101-1:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.92</docidentifier>
   <docnumber>19101</docnumber>
@@ -1535,8 +1536,8 @@ In particular, this extension standard encoding profile is limited to multi-poin
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref>ISO/AWI 19101-1</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/AWI 19101-1</docidentifier>
+      <formattedref>ISO/CD 19101-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/CD 19101-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -1544,8 +1545,8 @@ In particular, this extension standard encoding profile is limited to multi-poin
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_63f808b9-9880-68b0-caf3-f54925d35005" type="standard" schema-version="v1.5.6" anchor="iso19141">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_d9578450-7927-c398-996c-5962f52e36f9" type="standard" schema-version="v1.5.6" anchor="iso19141">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1568,6 +1569,7 @@ In particular, this extension standard encoding profile is limited to multi-poin
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:41445:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/14/41445.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19141:2008</docidentifier>
+  <docidentifier type="iso-undated">ISO 19141</docidentifier>
   <docidentifier type="iso-reference">ISO 19141:2008(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19141:stage-90.93</docidentifier>
   <docnumber>19141</docnumber>
@@ -1624,8 +1626,8 @@ In particular, this extension standard encoding profile is limited to multi-poin
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_729c5338-8031-7be9-20ef-f5846d7a2d6e" type="standard" schema-version="v1.5.6" anchor="iso19107">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_66ba2342-2c71-c163-39e9-81c8d60e5cc2" type="standard" schema-version="v1.5.6" anchor="iso19107">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1648,6 +1650,7 @@ In particular, this extension standard encoding profile is limited to multi-poin
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26012:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26012.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19107:2003</docidentifier>
+  <docidentifier type="iso-undated">ISO 19107</docidentifier>
   <docidentifier type="iso-reference">ISO 19107:2003(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19107:stage-95.99</docidentifier>
   <docnumber>19107</docnumber>
@@ -1703,8 +1706,8 @@ In particular, this extension standard encoding profile is limited to multi-poin
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_5802dbd5-c073-bc7f-5734-cc7a3772a056" type="standard" schema-version="v1.5.6" anchor="iso19123">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_327daa20-d695-4dd5-ec8f-39fd73657133" type="standard" schema-version="v1.5.6" anchor="iso19123">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1727,6 +1730,7 @@ In particular, this extension standard encoding profile is limited to multi-poin
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40121:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40121.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19123:2005</docidentifier>
+  <docidentifier type="iso-undated">ISO 19123</docidentifier>
   <docidentifier type="iso-reference">ISO 19123:2005(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19123:stage-95.99</docidentifier>
   <docnumber>19123</docnumber>

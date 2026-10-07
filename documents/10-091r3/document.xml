@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.10" schema-version="v2.1.6" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">CF-netCDF Core and Extensions Primer</title>
 <docidentifier type="ogc-internal" primary="true">10-091r3</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/netcdf/Primer/1.0</docidentifier><docnumber>10-091r3</docnumber><date type="published"><on>2011-04-05</on></date><date type="issued"><on>2011-04-05</on></date><date type="received"><on>2011-04-05</on></date><contributor><role type="author"/><organization>
@@ -25,7 +25,7 @@
 <abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>This OGC primer provides an overview of the OGC CF-netCDF standards suite by describing the CF-netCDF core and extensions. The CF-netCDF standard defines how to encode digital geospatial information representing space/time-varying phenomena</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2011</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>netcdf</keyword><keyword>cf-netcdf</keyword><ext><doctype>other</doctype><flavor>ogc</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword><vocab>ogcdoc</vocab></keyword><keyword><vocab>netcdf</vocab></keyword><keyword><vocab>cf-netcdf</vocab></keyword><ext><doctype>other</doctype><flavor>ogc</flavor><stage>approved</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>2018</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(237, 193, 35)</color-secondary-shade-1><color-secondary-shade-2>rgb(246, 223, 140)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -458,9 +458,9 @@
 </table>
 </annex><bibliography><references id="_08e4a7cd-1a73-9a2a-4dac-fc841681bf21" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_1e0e85f2-a241-464a-90af-046b5883d60f">There are no normative references in this document.</p>
-</references><references id="_e769c18d-6818-07d3-59f7-99eb74e313f0" normative="false" obligation="informative">
-<title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem id="_3f15ea88-9f0f-7507-ee3f-86677c13f07b" type="standard" schema-version="v1.5.6" anchor="ogc07-036">
-  <fetched>2026-07-27</fetched>
+</references><references id="_c28ee29a-d7fc-f16f-5c41-a9280e483d00" normative="false" obligation="informative">
+<title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem id="_9bfe7404-dacc-6c43-3003-7aeb00064b99" type="standard" schema-version="v1.5.6" anchor="ogc07-036">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
 
@@ -512,8 +512,8 @@ A GML document is described using a GML Schema. This allows users and developers
 Clients and servers with interfaces that implement the OpenGIS® Web Feature Service Interface Standard[http://www.opengeospatial.org/standards/wfs] read and write GML data. GML is also an ISO standard (ISO 19136:2007) [www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=32554 ].  
 See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
 </abstract>
-</bibitem><bibitem id="_bee8e1e1-8670-c29a-d0bf-fc7620a069bc" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_7dc11430-73c1-576c-cbe7-0590e46785c6" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</title>
 
@@ -561,8 +561,8 @@ See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document defines an OGC® Standard for encoding binary representations of space-time varying geo-referenced data. Specifically, this standard specifies the netCDF classic and 64-bit offset file binary encoding formats. This standard specifies a set of requirements that every netCDF classic or 64-bit offset binary encoding must fulfil.</abstract>
-</bibitem><bibitem id="_6ce32ad5-ddad-768d-ac8a-ec57b15e517a" type="standard" schema-version="v1.5.6" anchor="ogc06-121r3">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_308fbd5e-779c-a84c-1846-c8cccfb73971" type="standard" schema-version="v1.5.6" anchor="ogc06-121r3">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Web Service Common Implementation Specification</title>
 
@@ -610,8 +610,8 @@ See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">The OpenGIS® Web Services Common (WS-Common) Interface Standard specifies parameters and data structures that are common to all OGC Web Service (OWS) Standards. The standard normalizes the ways in which operation requests and responses handle such elements as bounding boxes, exception processing, URL requests, URN expressions, and key value encoding. Among its uses, this document serves as a normative reference for other OGC Web Service standards, including the OpenGIS Web Map Service (WMS) [http://www.opengeospatial.org/standards/wms], Web Feature Service (WFS) [http://www.opengeospatial.org/standards/wfs], and Web Coverage Service (WCS) [http://www.opengeospatial.org/standards/wcs] standards. Rather than continuing to repeat this material in each such standard, each standard will normatively reference parts of this document.</abstract>
-</bibitem><bibitem id="_5fb3dd18-632a-ff9c-abd3-74b2e8412bd9" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_1e7d0a60-7c17-3243-af32-411a6895be73" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Network Common Data Form (NetCDF)  Core Encoding Standard version 1.0</title>
 

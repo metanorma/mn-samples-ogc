@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.10" schema-version="v2.1.6" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">Anchor Node Extension in IndoorGML - Seamless Navigation between Indoor and Outdoor Space</title>
 <docidentifier type="ogc-internal" primary="true">19-004</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/dp/indoorgml-anchornode</docidentifier><docnumber>19-004</docnumber><date type="published"><on>2019-12-11</on></date><date type="issued"><on>2019-02-28</on></date><date type="received"><on>2019-02-05</on></date><contributor><role type="author"/><organization>
@@ -21,7 +21,7 @@
 <abbreviation>OGC</abbreviation></organization></contributor><language>en</language><script>Latn</script><abstract><p>This OGC discussion paper provides an extension module of OGC Indoor Geography Markup Language (IndoorGML) for the seamless navigation between indoor and outdoor spaces. The OGC IndoorGML standard has an issue on the data model that affects the connection of indoor and outdoor spaces via an "Anchor Node," which is a conceptual part for connecting indoor and outdoor spaces. This discussion paper aims to show use cases of how IndoorGML can connect with other geospatial standards that represent outdoor spaces (and road networks), such as OGC City Geography Markup Language (CityGML) and version 5.0 of the Geographic Data Files (GDF) format.</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2026</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>OGC</keyword><keyword>IndoorGML</keyword><keyword>Indoor space</keyword><keyword>Outdoor space</keyword><keyword>Seamless navigation</keyword><keyword>CityGML</keyword><ext><doctype>discussion-paper</doctype><flavor>ogc</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword><vocab>ogcdoc</vocab></keyword><keyword><vocab>OGC document</vocab></keyword><keyword><vocab>OGC</vocab></keyword><keyword><vocab>IndoorGML</vocab></keyword><keyword><vocab>Indoor space</vocab></keyword><keyword><vocab>Outdoor space</vocab></keyword><keyword><vocab>Seamless navigation</vocab></keyword><keyword><vocab>CityGML</vocab></keyword><ext><doctype>discussion-paper</doctype><flavor>ogc</flavor><stage>approved</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>2018</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(237, 193, 35)</color-secondary-shade-1><color-secondary-shade-2>rgb(246, 223, 140)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -2014,13 +2014,11 @@ schemaLocation="http://schemas.opengis.net/indoorgml/1.0/indoorgmlnavi.xsd"/&gt;
 &lt;!-- ====================================================================== --&gt;
 &lt;/xs:schema&gt;</body></sourcecode>
 
-</annex><annex id="_d9539f38-294b-8ebe-ce87-57aa6fb70c39" anchor="annexB" obligation="normative">
+</annex><annex id="_af97d217-af9f-13eb-ca3e-33fbf99a31e8" anchor="annexB" obligation="normative">
 <title id="_721c59b8-07ee-4ef4-1f36-08395dda466b">SeamlessNavigation Module Example Document</title>
 <p id="_f9ab690c-1265-5468-71ce-3198a3bf9704">The following are examples of the SeamlessNavigation module documents generated as described in <xref target="japan_use_case"/></p>
 
-<sourcecode id="_c8c383bb-c343-554c-fa2b-6f0b0d69cdc1" lang="xml" unnumbered="true">
-<name id="_056fea30-5a4e-b69e-fe0d-d3fb5ad2503c"><em>cityTransSample.gml</em></name>
-<body>&lt;CityModel xmlns="http://www.opengis.net/citygml/2.0"
+<sourcecode id="_75b7744f-c83a-fdc3-f67e-51a5545aa1bf" lang="xml" unnumbered="true"><name id="_056fea30-5a4e-b69e-fe0d-d3fb5ad2503c"><em>cityTransSample.gml</em></name><body>&lt;CityModel xmlns="http://www.opengis.net/citygml/2.0"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:xlink="http://www.w3.org/1999/xlink"
 xmlns:gml="http://www.opengis.net/gml"
@@ -2047,9 +2045,7 @@ xsi:schemaLocation="http://www.opengis.net/citygml/2.0 http://schemas.opengis.ne
 &lt;/CityModel&gt;</body></sourcecode>
 
 
-<sourcecode id="_e6725c07-5685-3b19-8797-ab5e38885afe" lang="xml" unnumbered="true">
-<name id="_e4a2e69f-2647-0c2e-6bff-a08b1049cb77"><em>seamlessNaviSample.gml</em></name>
-<body>&lt;gml:FeatureCollection
+<sourcecode id="_f08883b2-9d66-9fcb-cf2d-e0f8f0d3f52a" lang="xml" unnumbered="true"><name id="_e4a2e69f-2647-0c2e-6bff-a08b1049cb77"><em>seamlessNaviSample.gml</em></name><body>&lt;gml:FeatureCollection
 xmlns:gml="http://www.opengis.net/gml/3.2"
 xmlns:xlink="http://www.w3.org/1999/xlink"
 xmlns="http://www.opengis.net/indoorgml/1.0/seamlessNavi"
@@ -2200,10 +2196,10 @@ http://www.opengis.net/indoorgml/1.0/seamlessNavi seamlessnavi.xsd"&gt;
 <td id="_5b60983c-8561-c17f-449f-da005b84c0cf" valign="middle" align="left">final version</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_c984c67a-6a99-b287-8619-6538f16e92a1" anchor="references" normative="true" obligation="informative">
+</annex><bibliography><references id="_9563a2e4-8797-613d-7acd-54c78a6cf693" anchor="references" normative="true" obligation="informative">
 <title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_0ac29e7f-b667-1bfb-2396-edadaa30b19c" type="standard" schema-version="v1.5.6" anchor="gdf5">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_f53398fd-de7e-f7eb-f91e-75392c9fa3f8" type="standard" schema-version="v1.5.6" anchor="gdf5">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Intelligent transport systems</title>
 
@@ -2232,6 +2228,7 @@ http://www.opengis.net/indoorgml/1.0/seamlessNavi seamlessnavi.xsd"&gt;
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:54610:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/46/54610.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 14825:2011</docidentifier>
+  <docidentifier type="iso-undated">ISO 14825</docidentifier>
   <docidentifier type="iso-reference">ISO 14825:2011(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:14825:stage-95.99</docidentifier>
   <docnumber>14825</docnumber>
@@ -2297,8 +2294,8 @@ http://www.opengis.net/indoorgml/1.0/seamlessNavi seamlessnavi.xsd"&gt;
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_2b15bd13-4825-ac1e-620b-a87a4d7cdbc7" type="standard" schema-version="v1.5.6" anchor="ogc14-005r5">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_6639bbe9-8644-fd07-d850-960f4a5a7b14" type="standard" schema-version="v1.5.6" anchor="ogc14-005r5">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC® IndoorGML</title>
 
@@ -2391,8 +2388,8 @@ http://www.opengis.net/indoorgml/1.0/seamlessNavi seamlessnavi.xsd"&gt;
   <script>Latn</script>
   <abstract language="en" script="Latn">This OGC® IndoorGML standard specifies an open data model and XML schema for indoor spatial information. IndoorGML is an application schema of OGC® GML 3.2.1. While there are several 3D building modelling standards such as CityGML, KML, and IFC, which deal with interior space of buildings from geometric, cartographic, and semantic viewpoints, IndoorGML intentionally focuses on modelling indoor spaces for navigation purposes.</abstract>
 </bibitem>
-<bibitem id="_a90f98a6-699f-9a20-2446-b8f6f6d6a250" type="standard" schema-version="v1.5.6" anchor="ogc12-019">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_79ba548e-66af-538a-84f6-b52375048796" type="standard" schema-version="v1.5.6" anchor="ogc12-019">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC City Geography Markup Language (CityGML) Encoding Standard</title>
 

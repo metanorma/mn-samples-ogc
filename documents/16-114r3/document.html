@@ -132,6 +132,10 @@ dl dd {
   grid-column-start: 2;
 }
 
+dl:has(dt .stem) {
+  grid-template-columns: fit-content(8em) auto;
+}
+
 b, strong {
   font-weight: bold;
 }
@@ -1762,68 +1766,68 @@ pre.sourcecode .nt {
 <nav>
   <div id="toc"><h1 class="IntroTitle"><a class="anchor" href="#_13d7055e-30fc-845a-c60e-8972faf092d9"></a><a class="header" href="#_13d7055e-30fc-845a-c60e-8972faf092d9">Contents</a></h1><ul><li class="h1"><a href="#_5499e97a-bde5-0813-d283-491ec92a8afe">      
   
-  I.  Abstract
+  I<span class="fmt-clause-delim">.</span>  Abstract
 </a></li>
 <li class="h1"><a href="#_09f27adf-4bf7-ad65-d2e5-463ba73ae0b2">      
   
-  II.  Keywords
+  II<span class="fmt-clause-delim">.</span>  Keywords
 </a></li>
 <li class="h1"><a href="#_4ebf6eef-f480-aca5-f0f4-7b41268154bb">      
   
-  III.  Preface
+  III<span class="fmt-clause-delim">.</span>  Preface
 </a></li>
 <li class="h1"><a href="#_66483a88-7faa-42b6-a2bb-1020dfa1cca6">      
   
-  IV.  Security considerations
+  IV<span class="fmt-clause-delim">.</span>  Security considerations
 </a></li>
 <li class="h1"><a href="#_5574d325-360e-ca16-6d8e-f417f58d823a">      
   
-  V.  Submitting Organizations
+  V<span class="fmt-clause-delim">.</span>  Submitting Organizations
 </a></li>
 <li class="h1"><a href="#_c6790cd7-95da-6282-f8b0-220e640d2f2f">      
   
-  VI.  Submitters
+  VI<span class="fmt-clause-delim">.</span>  Submitters
 </a></li>
 <li class="h1"><a href="#_fb7ca6d6-43ba-6ae3-82e9-6d5b10cd9f3d">      
   
-  VII.  Reference notes
+  VII<span class="fmt-clause-delim">.</span>  Reference notes
 </a></li>
 <li class="h1"><a href="#_c18986a2-cf9d-a967-fc1d-0f8eeedda7f9">      
   
-  1.  Scope
+  1<span class="fmt-clause-delim">.</span>  Scope
 </a></li>
 <li class="h1"><a href="#_b281edf6-d76d-1ae6-fe52-275b53688110">      
   
-  2.  Conformance
+  2<span class="fmt-clause-delim">.</span>  Conformance
 </a></li>
-<li class="h1"><a href="#_567dd64d-4ab3-41df-9d67-4f308c798a70">      3.  Normative references</a></li>
+<li class="h1"><a href="#_fe6c8252-d878-432f-b15e-e1f242fd47bf">      3<span class="fmt-clause-delim">.</span>  Normative references</a></li>
 <li class="h1"><a href="#_8d4ccb77-3425-8fc1-df53-351821588b57">      
   
-  4.  Terms and definitions
+  4<span class="fmt-clause-delim">.</span>  Terms and definitions
 </a></li>
 <li class="h1"><a href="#_33d12f91-ddde-0beb-2dd7-520406f0119b">      
   
-  6.  Conventions
+  6<span class="fmt-clause-delim">.</span>  Conventions
 </a></li>
 <li class="h2"><a href="#_4d469f8a-81ae-c4b1-cd6c-c82b8824658e">      
   
-  6.1.  Abbreviated terms
+  6.1<span class="fmt-clause-delim">.</span>  Abbreviated terms
 </a></li>
 <li class="h1"><a href="#_65599ed0-e117-44f2-1043-4a49f6a9db77">      
   
-  7.  Data model
+  7<span class="fmt-clause-delim">.</span>  Data model
 </a></li>
 <li class="h1"><a href="#_e64bf8bc-603f-6d82-ef3a-0d29905823e2">      
   
-  8.  Data structure and file format
+  8<span class="fmt-clause-delim">.</span>  Data structure and file format
 </a></li>
 <li class="h2"><a href="#_1d4b7ab2-1609-3553-4bad-5b675153f740">      
   
-  8.1.  NetCDF global attributes
+  8.1<span class="fmt-clause-delim">.</span>  NetCDF global attributes
 </a></li>
 <li class="h2"><a href="#trajectory_lines">      
   
-  8.2.  Trajectory lines (data body)
+  8.2<span class="fmt-clause-delim">.</span>  Trajectory lines (data body)
 </a></li>
 <li class="h1"><a href="#annexA">      Annex A  Conformance test</a></li>
 <li class="h1"><a href="#annexB">      Annex B  Revision history</a></li></ul></div>
@@ -1841,12 +1845,12 @@ pre.sourcecode .nt {
 <div class="boilerplate-feedback">
 
 </div>
-</div><br /><br /><div id="_5499e97a-bde5-0813-d283-491ec92a8afe"><h1 class="AbstractTitle" id="_94e46aa9-7632-467a-abad-3934731173a6"><a class="anchor" href="#_5499e97a-bde5-0813-d283-491ec92a8afe"></a><a class="header" href="#_5499e97a-bde5-0813-d283-491ec92a8afe">I.  Abstract</a></h1><p id="_879c8680-46a3-e9e4-a2f5-c3900b3d41e0">The netCDF Moving Features encoding extension is a summary of conventions that supports efficient exchange of simple moving features as binary files. This Best Practice is a complement to the <i>Moving Features Encoding Part I: XML Core</i> and an alternative to the <i>Simple Comma Separated Values (CSV)</i> extension. Compared to the CSV encoding, this netCDF encoding offers more compact storage and better performance at the cost of additional restrictions on the kinds of features that can be stored.</p></div><div class="Section3" id="_09f27adf-4bf7-ad65-d2e5-463ba73ae0b2"><h1 class="IntroTitle" id="_12e8d478-5b84-42b5-8e77-43c533cfabe0"><a class="anchor" href="#_09f27adf-4bf7-ad65-d2e5-463ba73ae0b2"></a><a class="header" href="#_09f27adf-4bf7-ad65-d2e5-463ba73ae0b2">II.  Keywords</a></h1><p>The following are keywords to be used by search engines and document catalogues.</p><p>ogcdoc, OGC document, Best Practice, moving features, netCDF, CF convention, trajectory</p></div><br /><div id="_4ebf6eef-f480-aca5-f0f4-7b41268154bb"><h1 class="ForewordTitle" id="_d99999ab-b444-46a6-928d-7c29eed411f6"><a class="anchor" href="#_4ebf6eef-f480-aca5-f0f4-7b41268154bb"></a><a class="header" href="#_4ebf6eef-f480-aca5-f0f4-7b41268154bb">III.  Preface</a></h1><p id="_4c14a98d-e849-2778-4439-c30a00cf48f9">This document does not define any new Moving Features elements, rather it provides a method to encode discrete sampling geometries as netCDF files. This Best Practice combines two existing OGC specifications:</p><div class="ul_wrap"><ul id="_5bc26a52-357d-f17e-db5b-3657737b556f"><li id="_3d082553-05d5-e01f-9d6e-fafb8564a864"><p id="_8c96e947-b5f8-0a31-c3cf-260397e11c70">The <i>Network Common Data Form (netCDF)</i> standard <a href="#ogc10-092r3">[OGC 10-092r3]</a>, which provides the binary encoding of array-oriented scientific data; and</p>
+</div><br /><br /><div id="_5499e97a-bde5-0813-d283-491ec92a8afe"><h1 class="AbstractTitle" id="_431e1858-8780-43bc-a986-52f48aa832df"><a class="anchor" href="#_5499e97a-bde5-0813-d283-491ec92a8afe"></a><a class="header" href="#_5499e97a-bde5-0813-d283-491ec92a8afe">I<span class="fmt-clause-delim">.</span>  Abstract</a></h1><p id="_879c8680-46a3-e9e4-a2f5-c3900b3d41e0">The netCDF Moving Features encoding extension is a summary of conventions that supports efficient exchange of simple moving features as binary files. This Best Practice is a complement to the <i>Moving Features Encoding Part I: XML Core</i> and an alternative to the <i>Simple Comma Separated Values (CSV)</i> extension. Compared to the CSV encoding, this netCDF encoding offers more compact storage and better performance at the cost of additional restrictions on the kinds of features that can be stored.</p></div><div class="Section3" id="_09f27adf-4bf7-ad65-d2e5-463ba73ae0b2"><h1 class="IntroTitle" id="_ebfd2912-6865-4fae-b266-893413ace5b1"><a class="anchor" href="#_09f27adf-4bf7-ad65-d2e5-463ba73ae0b2"></a><a class="header" href="#_09f27adf-4bf7-ad65-d2e5-463ba73ae0b2">II<span class="fmt-clause-delim">.</span>  Keywords</a></h1><p>The following are keywords to be used by search engines and document catalogues.</p><p>ogcdoc, OGC document, Best Practice, moving features, netCDF, CF convention, trajectory</p></div><br /><div id="_4ebf6eef-f480-aca5-f0f4-7b41268154bb"><h1 class="ForewordTitle" id="_05dba316-91a3-4d71-97e9-30fea38d1841"><a class="anchor" href="#_4ebf6eef-f480-aca5-f0f4-7b41268154bb"></a><a class="header" href="#_4ebf6eef-f480-aca5-f0f4-7b41268154bb">III<span class="fmt-clause-delim">.</span>  Preface</a></h1><p id="_4c14a98d-e849-2778-4439-c30a00cf48f9">This document does not define any new Moving Features elements, rather it provides a method to encode discrete sampling geometries as netCDF files. This Best Practice combines two existing OGC specifications:</p><div class="ul_wrap"><ul id="_5bc26a52-357d-f17e-db5b-3657737b556f"><li id="_3d082553-05d5-e01f-9d6e-fafb8564a864"><p id="_8c96e947-b5f8-0a31-c3cf-260397e11c70">The <i>Network Common Data Form (netCDF)</i> standard <a href="#ogc10-092r3">[OGC 10-092r3]</a>, which provides the binary encoding of array-oriented scientific data; and</p>
 </li>
 <li id="_29ca73f6-dde7-91a7-62a2-1536060252e2"><p id="_aa07e7a3-aec6-9516-dc58-223c0ad031f5">A subset of the <i>Climate and Forecast (CF)</i> conventions <a href="#ogc11-165r2">[OGC 11-165r2]</a>, which provides standard names and layout for the arrays to encode in a netCDF file.</p>
 </li>
-</ul></div><p id="_f74f5787-3204-7a51-2f5e-267a2b4f280b">This encoding is intended to provide a faster and more compact alternative to the Moving Features CSV encoding using a format readable by existing software.</p></div><div class="Section3" id="_66483a88-7faa-42b6-a2bb-1020dfa1cca6"><h1 class="IntroTitle" id="_07b575ba-551b-4c6c-be2c-dcaa3e49d757"><a class="anchor" href="#_66483a88-7faa-42b6-a2bb-1020dfa1cca6"></a><a class="header" href="#_66483a88-7faa-42b6-a2bb-1020dfa1cca6">IV.  Security considerations</a></h1><p id="_92832722-4a99-fafa-be54-6f8a13c23c19">No security considerations have been made for this document.</p></div><div class="Section3" id="_5574d325-360e-ca16-6d8e-f417f58d823a"><h1 class="IntroTitle" id="_aa3e0830-ad45-4b30-b06d-35d9ee3874c3"><a class="anchor" href="#_5574d325-360e-ca16-6d8e-f417f58d823a"></a><a class="header" href="#_5574d325-360e-ca16-6d8e-f417f58d823a">V.  Submitting Organizations</a></h1><p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p><div class="ul_wrap"><ul id="_4c27125d-9fd2-44bd-38ab-36b9e0109a4f"><li id="_da56e4ac-928b-cddb-c411-6d8454aa87f4">Central Research Laboratory, Hitachi Ltd.</li>
-<li id="_75363a44-616f-0ab7-3a97-618338512abd">Geomatys</li></ul></div></div><div class="Section3" id="_c6790cd7-95da-6282-f8b0-220e640d2f2f"><h1 class="IntroTitle" id="_69f99238-cf37-4375-a790-404244dd085d"><a class="anchor" href="#_c6790cd7-95da-6282-f8b0-220e640d2f2f"></a><a class="header" href="#_c6790cd7-95da-6282-f8b0-220e640d2f2f">VI.  Submitters</a></h1><p id="_0a6674b9-899a-bf26-3491-d22892eb4e3f">All questions regarding this submission should be directed to the editor or the submitters:</p><table id="_c7fec594-ea71-c7b6-7a14-edcaee9808f6" class="MsoISOTable" style="border-width:1px;border-spacing:0;"><tbody><tr><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Name</td><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Affiliation</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Martin Desruisseaux</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Geomatys</td></tr></tbody></table></div><div class="Section3" id="_fb7ca6d6-43ba-6ae3-82e9-6d5b10cd9f3d"><h1 class="IntroTitle" id="_341887f9-0c0e-4030-945b-ea598e5d5190"><a class="anchor" href="#_fb7ca6d6-43ba-6ae3-82e9-6d5b10cd9f3d"></a><a class="header" href="#_fb7ca6d6-43ba-6ae3-82e9-6d5b10cd9f3d">VII.  Reference notes</a></h1><p id="_ba1245e1-fe58-99b0-74ea-9d121eb2edeb">The OGC 11-165r2 CF-netCDF standard is based on Climate and Forecast (CF) conventions version 1.6. The Attribute Convention for Data Discovery (ACDD) adds additional attributes that provide useful metadata for Catalog Service on the Web (CSW). The National Centers for Environmental Information (NCEI) document is used as a guideline when an ambiguity needs to be resolved.</p><p id="_39772dde-4f5c-63d4-648c-25335140af33">This document references OGC 11-165r2 when possible, but the on-line CF, ACDD, or NCEI documents may be referenced when additional information is considered relevant to moving feature binary encoding.</p></div><div id="_c18986a2-cf9d-a967-fc1d-0f8eeedda7f9"><h1 id="_16d8006b-fc9c-4aed-aa48-fc1e41957232"><a class="anchor" href="#_c18986a2-cf9d-a967-fc1d-0f8eeedda7f9"></a><a class="header" href="#_c18986a2-cf9d-a967-fc1d-0f8eeedda7f9">1.  Scope</a></h1><p id="_8204302d-9fef-6906-2f5b-2a27b2559fb7">This OGC<sup>®</sup> Best Practice gives guidelines for encoding in netCDF files the geometries of features that move as rigid bodies. This is an alternative to the encoding defined by the <i>OGC Moving Features Encoding Extension: Simple Comma Separated Values (CSV)</i> standard. netCDF encoding can store moving features with the following characteristics:</p><div class="ul_wrap"><ul id="_12868989-097a-7203-9cf8-d3af7f78a9a8"><li id="_a588733e-794f-fa71-0800-3896565a3dd4"><p id="_e6677349-924f-e33d-1cc0-1b6c3fc85406">Each moving feature can be described with the Schema for Moving Features (ISO 19141:2008);</p>
+</ul></div><p id="_f74f5787-3204-7a51-2f5e-267a2b4f280b">This encoding is intended to provide a faster and more compact alternative to the Moving Features CSV encoding using a format readable by existing software.</p></div><div class="Section3" id="_66483a88-7faa-42b6-a2bb-1020dfa1cca6"><h1 class="IntroTitle" id="_78e41f26-9016-430e-bdd4-135015152790"><a class="anchor" href="#_66483a88-7faa-42b6-a2bb-1020dfa1cca6"></a><a class="header" href="#_66483a88-7faa-42b6-a2bb-1020dfa1cca6">IV<span class="fmt-clause-delim">.</span>  Security considerations</a></h1><p id="_92832722-4a99-fafa-be54-6f8a13c23c19">No security considerations have been made for this document.</p></div><div class="Section3" id="_5574d325-360e-ca16-6d8e-f417f58d823a"><h1 class="IntroTitle" id="_51e0d08a-d83a-4e1e-a71b-858a27b83281"><a class="anchor" href="#_5574d325-360e-ca16-6d8e-f417f58d823a"></a><a class="header" href="#_5574d325-360e-ca16-6d8e-f417f58d823a">V<span class="fmt-clause-delim">.</span>  Submitting Organizations</a></h1><p>The following organizations submitted this Document to the Open Geospatial Consortium (OGC):</p><div class="ul_wrap"><ul id="_4c27125d-9fd2-44bd-38ab-36b9e0109a4f"><li id="_da56e4ac-928b-cddb-c411-6d8454aa87f4">Central Research Laboratory, Hitachi Ltd.</li>
+<li id="_75363a44-616f-0ab7-3a97-618338512abd">Geomatys</li></ul></div></div><div class="Section3" id="_c6790cd7-95da-6282-f8b0-220e640d2f2f"><h1 class="IntroTitle" id="_ec3b88ae-99b4-48e8-9098-ddd4af7fe3b0"><a class="anchor" href="#_c6790cd7-95da-6282-f8b0-220e640d2f2f"></a><a class="header" href="#_c6790cd7-95da-6282-f8b0-220e640d2f2f">VI<span class="fmt-clause-delim">.</span>  Submitters</a></h1><p id="_0a6674b9-899a-bf26-3491-d22892eb4e3f">All questions regarding this submission should be directed to the editor or the submitters:</p><table id="_c7fec594-ea71-c7b6-7a14-edcaee9808f6" class="MsoISOTable" style="border-width:1px;border-spacing:0;"><tbody><tr><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Name</td><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Affiliation</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Martin Desruisseaux</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Geomatys</td></tr></tbody></table></div><div class="Section3" id="_fb7ca6d6-43ba-6ae3-82e9-6d5b10cd9f3d"><h1 class="IntroTitle" id="_b60f37b3-4b9a-4ec4-bc1b-374a4e592f94"><a class="anchor" href="#_fb7ca6d6-43ba-6ae3-82e9-6d5b10cd9f3d"></a><a class="header" href="#_fb7ca6d6-43ba-6ae3-82e9-6d5b10cd9f3d">VII<span class="fmt-clause-delim">.</span>  Reference notes</a></h1><p id="_ba1245e1-fe58-99b0-74ea-9d121eb2edeb">The OGC 11-165r2 CF-netCDF standard is based on Climate and Forecast (CF) conventions version 1.6. The Attribute Convention for Data Discovery (ACDD) adds additional attributes that provide useful metadata for Catalog Service on the Web (CSW). The National Centers for Environmental Information (NCEI) document is used as a guideline when an ambiguity needs to be resolved.</p><p id="_39772dde-4f5c-63d4-648c-25335140af33">This document references OGC 11-165r2 when possible, but the on-line CF, ACDD, or NCEI documents may be referenced when additional information is considered relevant to moving feature binary encoding.</p></div><div id="_c18986a2-cf9d-a967-fc1d-0f8eeedda7f9"><h1 id="_c7bc968d-a613-45f5-b4b7-ac0239b6f01d"><a class="anchor" href="#_c18986a2-cf9d-a967-fc1d-0f8eeedda7f9"></a><a class="header" href="#_c18986a2-cf9d-a967-fc1d-0f8eeedda7f9">1<span class="fmt-clause-delim">.</span>  Scope</a></h1><p id="_8204302d-9fef-6906-2f5b-2a27b2559fb7">This OGC<sup>®</sup> Best Practice gives guidelines for encoding in netCDF files the geometries of features that move as rigid bodies. This is an alternative to the encoding defined by the <i>OGC Moving Features Encoding Extension: Simple Comma Separated Values (CSV)</i> standard. netCDF encoding can store moving features with the following characteristics:</p><div class="ul_wrap"><ul id="_12868989-097a-7203-9cf8-d3af7f78a9a8"><li id="_a588733e-794f-fa71-0800-3896565a3dd4"><p id="_e6677349-924f-e33d-1cc0-1b6c3fc85406">Each moving feature can be described with the Schema for Moving Features (ISO 19141:2008);</p>
 </li>
 <li id="_3b6549aa-72d1-fd87-fac4-3dd2af71c08e"><p id="_529c7740-97ec-ce17-d408-d2857187be1c">The number of features simultaneously encoded with this format can be massive (many thousands of features);</p>
 </li>
@@ -1856,7 +1860,7 @@ pre.sourcecode .nt {
 </li>
 <li id="_024b6e3f-83bd-0ff9-79b6-6821f20c6dcb"><p id="_2fa7e918-0253-7ee5-31c7-51f3ac639260">Foliation order is sequential, i.e., trajectory elements that are parts of one track are ordered by time.</p>
 </li>
-</ul></div><p id="_231d54fe-8db2-b70d-87cc-1b43bcd5986b">Deforming features such as floodwater and geometric complexes are out of scope.</p><p id="_03c17167-09ec-c029-02a1-2a0936a00b13">This OGC document describes relevant attributes from the Climate and Forecast (CF) conventions in sufficient detail that client applications do not need to deal with the entire scope of CF conventions. Applications only need to understand a restricted subset of CF conventions in order to be able to interpret moving features in netCDF files.</p></div><div id="_b281edf6-d76d-1ae6-fe52-275b53688110"><h1 id="_0cb9a3e7-9a01-4d0f-9521-c4f92f556bc7"><a class="anchor" href="#_b281edf6-d76d-1ae6-fe52-275b53688110"></a><a class="header" href="#_b281edf6-d76d-1ae6-fe52-275b53688110">2.  Conformance</a></h1><p id="_9db1d825-427e-23c8-602d-129544e833bb">Conformance with this specification shall be checked using all the relevant tests specified in <a href="#annexA">Annex A (normative)</a>.</p></div><div><h1 id="_567dd64d-4ab3-41df-9d67-4f308c798a70">3.  Normative references</h1>
+</ul></div><p id="_231d54fe-8db2-b70d-87cc-1b43bcd5986b">Deforming features such as floodwater and geometric complexes are out of scope.</p><p id="_03c17167-09ec-c029-02a1-2a0936a00b13">This OGC document describes relevant attributes from the Climate and Forecast (CF) conventions in sufficient detail that client applications do not need to deal with the entire scope of CF conventions. Applications only need to understand a restricted subset of CF conventions in order to be able to interpret moving features in netCDF files.</p></div><div id="_b281edf6-d76d-1ae6-fe52-275b53688110"><h1 id="_6b5ffd0e-575b-45e3-b818-2f281919075c"><a class="anchor" href="#_b281edf6-d76d-1ae6-fe52-275b53688110"></a><a class="header" href="#_b281edf6-d76d-1ae6-fe52-275b53688110">2<span class="fmt-clause-delim">.</span>  Conformance</a></h1><p id="_9db1d825-427e-23c8-602d-129544e833bb">Conformance with this specification shall be checked using all the relevant tests specified in <a href="#annexA">Annex A (normative)</a>.</p></div><div><h1 id="_fe6c8252-d878-432f-b15e-e1f242fd47bf">3<span class="fmt-clause-delim">.</span>  Normative references</h1>
 <p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 <p id="ogc14-083r2" class="NormRef">Akinori Asahara, Ryosuke Shibasaki, Nobuhiro Ishimaru, David Burggraf, Open Geospatial Consortium: OGC 14-083r2, <i>OGC® Moving Features Encoding Part I: XML Core</i>. Open Geospatial Consortium (2015). <a href="http://www.opengis.net/doc/IS/movingfeatures/xmlcore/1.0.0">http://www.opengis.net/doc/IS/movingfeatures/xmlcore/1.0.0</a>.</p>
 <p id="ogc14-084r2" class="NormRef">Akinori Asahara, Ryosuke Shibasaki, Nobuhiro Ishimaru, David Burggraf, Open Geospatial Consortium: OGC 14-084r2, <i>OGC® Moving Features Encoding Extension: Simple Comma Separated Values (CSV)</i>. Open Geospatial Consortium (2015). <a href="http://www.opengis.net/doc/IS/movingfeatures/csv-extension/1.0.0">http://www.opengis.net/doc/IS/movingfeatures/csv-extension/1.0.0</a>.</p>
@@ -1870,7 +1874,7 @@ pre.sourcecode .nt {
 <p id="netcdf" class="NormRef"><i>Lawrence Livermore National Laboratory: NetCDF CF Metadata Conventions</i>. <a href="http://cfconventions.org/">http://cfconventions.org/</a></p>
 <p id="acdd" class="NormRef"><i>ESIP: Attribute Convention for Data Discovery (ACDD)</i>. <a href="http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery">http://wiki.esipfed.org/index.php/Attribute_Convention_for_Data_Discovery</a></p>
 <p id="noaa" class="NormRef"><i>NOAA: NCEI netCDF Templates</i>. <a href="http://www.nodc.noaa.gov/data/formats/netcdf/">http://www.nodc.noaa.gov/data/formats/netcdf/</a></p>
-</div><div id="_8d4ccb77-3425-8fc1-df53-351821588b57"><h1 id="_c6452683-7e24-46fc-94b5-ab7f2ea5def7"><a class="anchor" href="#_8d4ccb77-3425-8fc1-df53-351821588b57"></a><a class="header" href="#_8d4ccb77-3425-8fc1-df53-351821588b57">4.  Terms and definitions</a></h1>
+</div><div id="_8d4ccb77-3425-8fc1-df53-351821588b57"><h1 id="_be5903ad-eb43-4d98-9b41-e6209a1f8fd0"><a class="anchor" href="#_8d4ccb77-3425-8fc1-df53-351821588b57"></a><a class="header" href="#_8d4ccb77-3425-8fc1-df53-351821588b57">4<span class="fmt-clause-delim">.</span>  Terms and definitions</a></h1>
 <p id="_8c49041f-8363-1e0b-0484-6e1046987489">This document uses the terms defined in <a href="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</a>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
 
 <p id="_7bbae1f8-9cf5-3d71-b33b-b85f9ba4c251">This document also uses terms defined in the OGC Standard for Modular specifications (<a href="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</a>), also known as the ‘ModSpec’. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
@@ -1878,7 +1882,7 @@ pre.sourcecode .nt {
 <p id="_548e409e-2890-5c36-8c0d-528166f290d6">For the purposes of this document, the following additional terms and definitions apply.</p>
 <p id="_a61bff40-277d-3c7d-68b4-d0bc60dceb25">This document uses the terms defined in Sub-clause 5.3 of OGC 06-121r8, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.</p>
 
-<div id="term-Moving-feature"><h2 class="TermNum" style="text-align:left;" id="_15789b96-6e43-44f8-b024-38cf33584115"><a class="anchor" href="#term-Moving-feature"></a><a class="header" href="#term-Moving-feature">4.1. <b>
+<div id="term-Moving-feature"><h2 class="TermNum" style="text-align:left;" id="_ceb9e2a1-7f62-4285-a76b-9ddef473fc26"><a class="anchor" href="#term-Moving-feature"></a><a class="header" href="#term-Moving-feature">4.1<span class="fmt-clause-delim">.</span> <b>
   <dfn>Moving feature</dfn>
 </b></a></h2></div>
 <p id="_4655bd32-1eec-dba6-4a83-a4020bf6aab8">Representation, using a local origin and local ordinate <b>vectors</b>, of a <b>geometric object</b> at a given reference time.</p>
@@ -1886,7 +1890,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19141">ISO 19141:2008</a>]</p>
 
-<div id="term-Vector"><h2 class="TermNum" style="text-align:left;" id="_dbcbb669-3d9f-463f-a9c7-72495179b639"><a class="anchor" href="#term-Vector"></a><a class="header" href="#term-Vector">4.2. <b>
+<div id="term-Vector"><h2 class="TermNum" style="text-align:left;" id="_9f67d755-b7e6-4404-9e62-1a82a92e7a7a"><a class="anchor" href="#term-Vector"></a><a class="header" href="#term-Vector">4.2<span class="fmt-clause-delim">.</span> <b>
   <dfn>Vector</dfn>
 </b></a></h2></div>
 <p id="_6915d232-be08-59f0-6ead-3aa0985e62ec">Quantity having direction as well as magnitude.</p>
@@ -1894,7 +1898,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19123">ISO 19123:2005</a>]</p>
 
-<div id="term-Geometric-object"><h2 class="TermNum" style="text-align:left;" id="_bd669692-54e2-4aa4-a7f1-7dab5c2921a2"><a class="anchor" href="#term-Geometric-object"></a><a class="header" href="#term-Geometric-object">4.3. <b>
+<div id="term-Geometric-object"><h2 class="TermNum" style="text-align:left;" id="_c291db1e-2b88-4618-a898-5e2f32a9f19b"><a class="anchor" href="#term-Geometric-object"></a><a class="header" href="#term-Geometric-object">4.3<span class="fmt-clause-delim">.</span> <b>
   <dfn>Geometric object</dfn>
 </b></a></h2></div>
 <p id="_c9e62aaa-eea7-e2e1-2790-18bb6c70339b">Spatial object representing a geometric set.</p>
@@ -1902,7 +1906,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19107">ISO 19107:2003</a>]</p>
 
-<div id="term-Geometric-primitive"><h2 class="TermNum" style="text-align:left;" id="_266a697b-2805-434f-bc07-210b2cbb894a"><a class="anchor" href="#term-Geometric-primitive"></a><a class="header" href="#term-Geometric-primitive">4.4. <b>
+<div id="term-Geometric-primitive"><h2 class="TermNum" style="text-align:left;" id="_da64be04-8d99-4250-97d1-552aaf1c1dd4"><a class="anchor" href="#term-Geometric-primitive"></a><a class="header" href="#term-Geometric-primitive">4.4<span class="fmt-clause-delim">.</span> <b>
   <dfn>Geometric primitive</dfn>
 </b></a></h2></div>
 <p id="_455c0034-9c02-a42a-8243-32fa10fb9f9a"><b>Geometric object</b> representing a single, connected, homogeneous element of space.</p>
@@ -1910,7 +1914,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19107">ISO 19107:2003</a>]</p>
 
-<div id="term-Period"><h2 class="TermNum" style="text-align:left;" id="_ca90bf7e-21f9-46c0-949f-4da415384bd2"><a class="anchor" href="#term-Period"></a><a class="header" href="#term-Period">4.5. <b>
+<div id="term-Period"><h2 class="TermNum" style="text-align:left;" id="_dc806c7c-ee5a-4681-8f10-954b4f2020da"><a class="anchor" href="#term-Period"></a><a class="header" href="#term-Period">4.5<span class="fmt-clause-delim">.</span> <b>
   <dfn>Period</dfn>
 </b></a></h2></div>
 <p id="_30035c94-2608-5ca7-f88a-c801c46215ea">1-dimensional <b>geometric primitive</b> representing extent in time.</p>
@@ -1918,7 +1922,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19141">ISO 19141:2008</a>]</p>
 
-<div id="term-Instant"><h2 class="TermNum" style="text-align:left;" id="_e40cbda4-9ff0-42dc-b630-a5e3703807d6"><a class="anchor" href="#term-Instant"></a><a class="header" href="#term-Instant">4.6. <b>
+<div id="term-Instant"><h2 class="TermNum" style="text-align:left;" id="_2232c326-b0e6-46f8-9873-1aababaf3c53"><a class="anchor" href="#term-Instant"></a><a class="header" href="#term-Instant">4.6<span class="fmt-clause-delim">.</span> <b>
   <dfn>Instant</dfn>
 </b></a></h2></div>
 <p id="_a3795c11-d457-7b5b-4c02-5b58c7675ac5">0-dimensional <b>geometric primitive</b> representing a position in time.</p>
@@ -1926,7 +1930,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19141">ISO 19141:2008</a>]</p>
 
-<div id="term-Point"><h2 class="TermNum" style="text-align:left;" id="_f674e5ab-3a58-4aba-acfc-f586c5611cbf"><a class="anchor" href="#term-Point"></a><a class="header" href="#term-Point">4.7. <b>
+<div id="term-Point"><h2 class="TermNum" style="text-align:left;" id="_5c22d809-1559-49e7-8b6e-f4175f881407"><a class="anchor" href="#term-Point"></a><a class="header" href="#term-Point">4.7<span class="fmt-clause-delim">.</span> <b>
   <dfn>Point</dfn>
 </b></a></h2></div>
 <p id="_6e50ab9d-cf40-6116-937e-a77ce4e50c62">0-dimensional <b>geometric primitive</b> representing a position.</p>
@@ -1934,7 +1938,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19107">ISO 19107:2003</a>]</p>
 
-<div id="term-Trajectory"><h2 class="TermNum" style="text-align:left;" id="_027f8eb8-4ade-4b5f-9f7a-d315b3bdc383"><a class="anchor" href="#term-Trajectory"></a><a class="header" href="#term-Trajectory">4.8. <b>
+<div id="term-Trajectory"><h2 class="TermNum" style="text-align:left;" id="_3178301a-249e-4e1f-8fa5-5a6548d240ff"><a class="anchor" href="#term-Trajectory"></a><a class="header" href="#term-Trajectory">4.8<span class="fmt-clause-delim">.</span> <b>
   <dfn>Trajectory</dfn>
 </b></a></h2></div>
 <p id="_aaaad0e1-b0c9-efdf-db00-a1db4a567d53">Path of a moving <b>point</b> described by a one parameter set of points.</p>
@@ -1942,7 +1946,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19141">ISO 19141:2008</a>]</p>
 
-<div id="term-Foliation"><h2 class="TermNum" style="text-align:left;" id="_0e466118-3361-4f33-ad3f-71afe5af3747"><a class="anchor" href="#term-Foliation"></a><a class="header" href="#term-Foliation">4.9. <b>
+<div id="term-Foliation"><h2 class="TermNum" style="text-align:left;" id="_c721962e-deb0-4eab-b480-e08f1d944dd8"><a class="anchor" href="#term-Foliation"></a><a class="header" href="#term-Foliation">4.9<span class="fmt-clause-delim">.</span> <b>
   <dfn>Foliation</dfn>
 </b></a></h2></div>
 <p id="_0693984b-d457-0c4c-7f1a-a12ac26c463b"><b>One parameter set of geometries</b> such that each point in the <b>prism</b> of the set is in one and only one <b>trajectory</b> and in one and only one <b>leaf</b>.</p>
@@ -1950,7 +1954,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19141">ISO 19141:2008</a>]</p>
 
-<div id="term-One-parameter-set-of-geometries"><h2 class="TermNum" style="text-align:left;" id="_d8b1fd80-25a5-4eb3-9c7e-fef94fd08855"><a class="anchor" href="#term-One-parameter-set-of-geometries"></a><a class="header" href="#term-One-parameter-set-of-geometries">4.10. <b>
+<div id="term-One-parameter-set-of-geometries"><h2 class="TermNum" style="text-align:left;" id="_88d4d756-209d-4120-83f5-787524b6a285"><a class="anchor" href="#term-One-parameter-set-of-geometries"></a><a class="header" href="#term-One-parameter-set-of-geometries">4.10<span class="fmt-clause-delim">.</span> <b>
   <dfn>One parameter set of geometries</dfn>
 </b></a></h2></div>
 <p id="_8c5e194c-2ff2-a763-adeb-4979caf31b06">Function <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2038,7 +2042,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19141">ISO 19141:2008</a>]</p>
 
-<div id="term-Prism-_one-parameter-set-of-geometries_"><h2 class="TermNum" style="text-align:left;" id="_6faf28aa-8519-401b-8ab7-30293b374449"><a class="anchor" href="#term-Prism-_one-parameter-set-of-geometries_"></a><a class="header" href="#term-Prism-_one-parameter-set-of-geometries_">4.11. <b>
+<div id="term-Prism-_one-parameter-set-of-geometries_"><h2 class="TermNum" style="text-align:left;" id="_67dee862-495c-418d-b870-eb4c4170b954"><a class="anchor" href="#term-Prism-_one-parameter-set-of-geometries_"></a><a class="header" href="#term-Prism-_one-parameter-set-of-geometries_">4.11<span class="fmt-clause-delim">.</span> <b>
   <dfn>Prism (one parameter set of geometries)</dfn>
 </b></a></h2></div>
 <p id="_fb5f77e5-3a5b-cb5f-4876-037bf7310163">Set of points in the union of the geometries (or the union of the trajectories) of a one parameter set of geometries.</p>
@@ -2046,7 +2050,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19141">ISO 19141:2008</a>]</p>
 
-<div id="term-Leaf-_one-parameter-set-of-geometries_"><h2 class="TermNum" style="text-align:left;" id="_79ababcd-8c9f-4dad-9cd3-132cb7e44282"><a class="anchor" href="#term-Leaf-_one-parameter-set-of-geometries_"></a><a class="header" href="#term-Leaf-_one-parameter-set-of-geometries_">4.12. <b>
+<div id="term-Leaf-_one-parameter-set-of-geometries_"><h2 class="TermNum" style="text-align:left;" id="_a5dce30a-71a1-4805-bbdc-6d2364f14c4e"><a class="anchor" href="#term-Leaf-_one-parameter-set-of-geometries_"></a><a class="header" href="#term-Leaf-_one-parameter-set-of-geometries_">4.12<span class="fmt-clause-delim">.</span> <b>
   <dfn>Leaf (one parameter set of geometries)</dfn>
 </b></a></h2></div>
 <p id="_9750c98a-cf31-e972-0288-aac8e4f3c433">Geometry at a particular value of the parameter.</p>
@@ -2054,21 +2058,21 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#iso19141">ISO 19141:2008</a>]</p>
 
-<div id="term-Dataset"><h2 class="TermNum" style="text-align:left;" id="_a19aecd1-29a8-4cd3-b2a3-c7ae85ffdaef"><a class="anchor" href="#term-Dataset"></a><a class="header" href="#term-Dataset">4.13. <b>
+<div id="term-Dataset"><h2 class="TermNum" style="text-align:left;" id="_8309d1e9-62b2-43ef-b263-4de6cfd80791"><a class="anchor" href="#term-Dataset"></a><a class="header" href="#term-Dataset">4.13<span class="fmt-clause-delim">.</span> <b>
   <dfn>Dataset</dfn>
 </b></a></h2></div>
 <p id="_58047afa-76d0-f595-5ee4-08807e508251">An identifiable collection of data.</p>
 
 
 
-<div id="term-Attribute"><h2 class="TermNum" style="text-align:left;" id="_71fdf144-7d8b-427b-9715-4684568c8e2a"><a class="anchor" href="#term-Attribute"></a><a class="header" href="#term-Attribute">4.14. <b>
+<div id="term-Attribute"><h2 class="TermNum" style="text-align:left;" id="_610fee18-96a1-48ce-a9e9-f1de72ef76ff"><a class="anchor" href="#term-Attribute"></a><a class="header" href="#term-Attribute">4.14<span class="fmt-clause-delim">.</span> <b>
   <dfn>Attribute</dfn>
 </b></a></h2></div>
 <p id="_cd04cee3-3175-c1b2-154e-8052bc7d3c90">NetCDF attributes hold metadata. An attribute contains information about properties of a variable or an entire <b>dataset</b>.</p>
 
 
 
-<div id="term-Global-attribute"><h2 class="TermNum" style="text-align:left;" id="_8231819d-dc60-40a3-a6c6-6c24fe0694d0"><a class="anchor" href="#term-Global-attribute"></a><a class="header" href="#term-Global-attribute">4.15. <b>
+<div id="term-Global-attribute"><h2 class="TermNum" style="text-align:left;" id="_0cba9b21-0bd8-4cc9-b20c-fa0857016a1c"><a class="anchor" href="#term-Global-attribute"></a><a class="header" href="#term-Global-attribute">4.15<span class="fmt-clause-delim">.</span> <b>
   <dfn>Global attribute</dfn>
 </b></a></h2></div>
 <p id="_b3d18009-c779-205f-0687-c61a80799231">Global <b>attributes</b> apply to a whole <b>dataset</b> and may be used to record properties of all the data in a file, such as processing history or conventions used.</p>
@@ -2076,7 +2080,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#ogc10-090r3">OGC 10-090r3</a>]</p>
 
-<div id="term-Variable-attribute"><h2 class="TermNum" style="text-align:left;" id="_174efe01-c05e-40b1-b0fd-d7d59cb6b50b"><a class="anchor" href="#term-Variable-attribute"></a><a class="header" href="#term-Variable-attribute">4.16. <b>
+<div id="term-Variable-attribute"><h2 class="TermNum" style="text-align:left;" id="_42e82658-243d-4356-b100-d907a381aaf6"><a class="anchor" href="#term-Variable-attribute"></a><a class="header" href="#term-Variable-attribute">4.16<span class="fmt-clause-delim">.</span> <b>
   <dfn>Variable attribute</dfn>
 </b></a></h2></div>
 <p id="_eba7c740-77ce-88f1-21ee-14c9d5b6df32">Variable <b>attributes</b> record the properties of one <b>variable</b>.</p>
@@ -2084,7 +2088,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#ogc10-090r3">OGC 10-090r3</a>]</p>
 
-<div id="term-Variable"><h2 class="TermNum" style="text-align:left;" id="_9c4fff34-9622-49ad-bdfd-8053868f8e4e"><a class="anchor" href="#term-Variable"></a><a class="header" href="#term-Variable">4.17. <b>
+<div id="term-Variable"><h2 class="TermNum" style="text-align:left;" id="_90d19787-91d2-40da-9900-6d615df512f7"><a class="anchor" href="#term-Variable"></a><a class="header" href="#term-Variable">4.17<span class="fmt-clause-delim">.</span> <b>
   <dfn>Variable</dfn>
 </b></a></h2></div>
 <p id="_7bfa9fd4-d92b-5927-e2db-ccb572db8838">A netCDF variable has a name, type, <b>shape</b>, <b>attributes</b>, and values. In face, much of the netCDF specification consists of defining the specific characteristics of variables. Variables hold data values. In the netCDF model, a variable can hold a multidimensional array of values of the same type.</p>
@@ -2092,7 +2096,7 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#ogc10-090r3">OGC 10-090r3</a>]</p>
 
-<div id="term-Shape"><h2 class="TermNum" style="text-align:left;" id="_10a45f30-8b6a-4d92-aea1-8d9fd3ad1cd8"><a class="anchor" href="#term-Shape"></a><a class="header" href="#term-Shape">4.18. <b>
+<div id="term-Shape"><h2 class="TermNum" style="text-align:left;" id="_36fa37a5-635d-41e6-a05b-f59ae877276c"><a class="anchor" href="#term-Shape"></a><a class="header" href="#term-Shape">4.18<span class="fmt-clause-delim">.</span> <b>
   <dfn>Shape</dfn>
 </b></a></h2></div>
 <p id="_a65de48f-b310-1058-e065-f3206c5b4883">The shape of a <b>variable</b> is specified with a list of zero or more <b>dimensions</b>.</p>
@@ -2100,14 +2104,14 @@ pre.sourcecode .nt {
 
  <p>[<b>SOURCE:</b> <a href="#ogc10-090r3">OGC 10-090r3</a>]</p>
 
-<div id="term-Dimension"><h2 class="TermNum" style="text-align:left;" id="_e670c969-4609-4630-bf96-c9963fcedc78"><a class="anchor" href="#term-Dimension"></a><a class="header" href="#term-Dimension">4.19. <b>
+<div id="term-Dimension"><h2 class="TermNum" style="text-align:left;" id="_a6c5b046-7efd-4114-b7e7-598a2283faa4"><a class="anchor" href="#term-Dimension"></a><a class="header" href="#term-Dimension">4.19<span class="fmt-clause-delim">.</span> <b>
   <dfn>Dimension</dfn>
 </b></a></h2></div>
 <p id="_6eaf6692-ba3e-59f2-0e02-2e1afd2b9923">NetCDF dimensions are used to specify variable <b>shapes</b>, common grids, and coordinate systems.</p>
 
 
  <p>[<b>SOURCE:</b> <a href="#ogc10-090r3">OGC 10-090r3</a>]</p>
-</div><div id="_33d12f91-ddde-0beb-2dd7-520406f0119b"><h1 id="_f3645159-4b74-4346-b3e2-fc2050dad363"><a class="anchor" href="#_33d12f91-ddde-0beb-2dd7-520406f0119b"></a><a class="header" href="#_33d12f91-ddde-0beb-2dd7-520406f0119b">6.  Conventions</a></h1><p id="_db5d1dc7-8418-7eae-4e0c-b6c0d8a9e357">This section provides details and examples for conventions used in the document.</p><div id="_4d469f8a-81ae-c4b1-cd6c-c82b8824658e"><h2 id="_ed832d2a-c43c-40bc-9eea-6c9486bb51e0"><a class="anchor" href="#_4d469f8a-81ae-c4b1-cd6c-c82b8824658e"></a><a class="header" href="#_4d469f8a-81ae-c4b1-cd6c-c82b8824658e">6.1.  Abbreviated terms</a></h2>
+</div><div id="_33d12f91-ddde-0beb-2dd7-520406f0119b"><h1 id="_3c80a0ba-56ae-469a-a2cb-7c15aeb15f5a"><a class="anchor" href="#_33d12f91-ddde-0beb-2dd7-520406f0119b"></a><a class="header" href="#_33d12f91-ddde-0beb-2dd7-520406f0119b">6<span class="fmt-clause-delim">.</span>  Conventions</a></h1><p id="_db5d1dc7-8418-7eae-4e0c-b6c0d8a9e357">This section provides details and examples for conventions used in the document.</p><div id="_4d469f8a-81ae-c4b1-cd6c-c82b8824658e"><h2 id="_5cf5d818-c64c-4437-929e-5dcb03408017"><a class="anchor" href="#_4d469f8a-81ae-c4b1-cd6c-c82b8824658e"></a><a class="header" href="#_4d469f8a-81ae-c4b1-cd6c-c82b8824658e">6.1<span class="fmt-clause-delim">.</span>  Abbreviated terms</a></h2>
 
 <p id="_dd17e3c6-9733-60d0-7c59-241bbb5b61a4">The following symbols and abbreviated terms are used in this Best Practice:</p>
 
@@ -2126,7 +2130,7 @@ pre.sourcecode .nt {
 </dd><dt id="symbol-OGC">    <b>OGC</b></dt><dd id="_d95ed45a-53e6-0f26-8224-b8ef7d99e574"><p id="_5517ccd1-9066-9606-33ce-ec15bb160150">Open Geospatial Consortium</p>
 </dd><dt id="symbol-WKT">    <b>WKT</b></dt><dd id="_9896a961-923c-1cb4-ab3d-53dd236e0bae"><p id="_ee982ab2-9c54-5542-4168-1f83bda52124">Well Known Text</p>
 </dd></dl></div>
-</div></div><div id="_65599ed0-e117-44f2-1043-4a49f6a9db77"><h1 id="_5cc2a59a-de89-4f5b-bf64-653b1bd12785"><a class="anchor" href="#_65599ed0-e117-44f2-1043-4a49f6a9db77"></a><a class="header" href="#_65599ed0-e117-44f2-1043-4a49f6a9db77">7.  Data model</a></h1><p id="_440c5c6c-a67a-a7d4-55c1-67eb6f1ebcdc">The data model used by the binary encoding is equivalent to that used by the CSV encoding. <a href="#fig1">Figure 1</a> shows an example for trajectories of three moving points <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
+</div></div><div id="_65599ed0-e117-44f2-1043-4a49f6a9db77"><h1 id="_aec32801-2d62-44ae-a91e-7440893a3c8b"><a class="anchor" href="#_65599ed0-e117-44f2-1043-4a49f6a9db77"></a><a class="header" href="#_65599ed0-e117-44f2-1043-4a49f6a9db77">7<span class="fmt-clause-delim">.</span>  Data model</a></h1><p id="_440c5c6c-a67a-a7d4-55c1-67eb6f1ebcdc">The data model used by the binary encoding is equivalent to that used by the CSV encoding. <a href="#fig1">Figure 1</a> shows an example for trajectories of three moving points <span class="stem"><math xmlns="http://www.w3.org/1998/Math/MathML">
   <mstyle displaystyle="false">
     <mi>A</mi>
   </mstyle>
@@ -2228,29 +2232,29 @@ pre.sourcecode .nt {
     <mo>=</mo>
     <mn>2</mn>
   </mstyle>
-</math></span>.</p></div><div id="_e64bf8bc-603f-6d82-ef3a-0d29905823e2"><h1 id="_0fcd2ff0-0c4e-473a-890c-65434cb8374f"><a class="anchor" href="#_e64bf8bc-603f-6d82-ef3a-0d29905823e2"></a><a class="header" href="#_e64bf8bc-603f-6d82-ef3a-0d29905823e2">8.  Data structure and file format</a></h1><p id="_f986f1cd-072b-a6e0-f8bb-f50e8e360731">The binary encoding of arrays and attributes is defined by OGC 10-092r3 – <i>NetCDF Binary Encoding Extension Standard: netCDF Classic and 64-bit Offset Format</i>. That netCDF standard defines only a “container” format – it does not define the meaning of attributes stored in the file (the “schema” in XML terminology).</p><p id="_001050f4-b420-31a3-15c8-eb7aa7158e3c">The full content of OGC 10-092r3 standard is needed for Moving Feature Simple Binary; this Best Practice does not propose any addition or subset of OGC 10-092r3.</p><table id="_4adc8657-a8e2-8199-f787-89df53fa48e7" class="MsoISOTable" style="border-width:1px;border-spacing:0;"><tbody><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Requirement 1</th></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;"><a href="http://www.opengis.net/spec/mf_binary/1.0/req/netcdf_valid">http://www.opengis.net/spec/mf_binary/1.0/req/netcdf_valid</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">All Moving Features binary files <i>shall</i> be compliant with the netCDF binary encoding as specified by the OGC 10-092r3 standard.</td></tr></tbody></table><p id="_fbaf92a6-b0dd-99c3-5486-1b1537ef4982">Meanings of attributes in a netCDF file are defined by a separated standard, OGC 11-165r2 – <i>CF-netCDF3 Data Model Extension</i>. All remaining requirements and recommendations in this Moving Feature Simple Binary document apply to a subset of those CF conventions.</p><div id="_1d4b7ab2-1609-3553-4bad-5b675153f740"><h2 id="_a3949621-2342-4fff-a4b9-ec981ad10581"><a class="anchor" href="#_1d4b7ab2-1609-3553-4bad-5b675153f740"></a><a class="header" href="#_1d4b7ab2-1609-3553-4bad-5b675153f740">8.1.  NetCDF global attributes</a></h2>
+</math></span>.</p></div><div id="_e64bf8bc-603f-6d82-ef3a-0d29905823e2"><h1 id="_c1c98980-1941-45b3-95d9-0989ad1bac63"><a class="anchor" href="#_e64bf8bc-603f-6d82-ef3a-0d29905823e2"></a><a class="header" href="#_e64bf8bc-603f-6d82-ef3a-0d29905823e2">8<span class="fmt-clause-delim">.</span>  Data structure and file format</a></h1><p id="_f986f1cd-072b-a6e0-f8bb-f50e8e360731">The binary encoding of arrays and attributes is defined by OGC 10-092r3 – <i>NetCDF Binary Encoding Extension Standard: netCDF Classic and 64-bit Offset Format</i>. That netCDF standard defines only a “container” format – it does not define the meaning of attributes stored in the file (the “schema” in XML terminology).</p><p id="_001050f4-b420-31a3-15c8-eb7aa7158e3c">The full content of OGC 10-092r3 standard is needed for Moving Feature Simple Binary; this Best Practice does not propose any addition or subset of OGC 10-092r3.</p><table id="_4adc8657-a8e2-8199-f787-89df53fa48e7" class="MsoISOTable" style="border-width:1px;border-spacing:0;"><tbody><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Requirement 1</th></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;"><a href="http://www.opengis.net/spec/mf_binary/1.0/req/netcdf_valid">http://www.opengis.net/spec/mf_binary/1.0/req/netcdf_valid</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">All Moving Features binary files <i>shall</i> be compliant with the netCDF binary encoding as specified by the OGC 10-092r3 standard.</td></tr></tbody></table><p id="_fbaf92a6-b0dd-99c3-5486-1b1537ef4982">Meanings of attributes in a netCDF file are defined by a separated standard, OGC 11-165r2 – <i>CF-netCDF3 Data Model Extension</i>. All remaining requirements and recommendations in this Moving Feature Simple Binary document apply to a subset of those CF conventions.</p><div id="_1d4b7ab2-1609-3553-4bad-5b675153f740"><h2 id="_e4855dc0-e9e1-4271-a9df-1ac071546da3"><a class="anchor" href="#_1d4b7ab2-1609-3553-4bad-5b675153f740"></a><a class="header" href="#_1d4b7ab2-1609-3553-4bad-5b675153f740">8.1<span class="fmt-clause-delim">.</span>  NetCDF global attributes</a></h2>
 
 <p id="_b8bf58c0-5144-35a4-8f0d-e5bad084969a">Global attributes apply to the netCDF file as a whole. They specify a succinct description of what is in the dataset, the kind of sampling geometry, the geographic bounding box, the vertical extent, the time period, the coordinate reference systems used and many other metadata (see CF convention). Some global attributes are merely a convenience for information that may otherwise be tedious to compute; those attributes are presented in <a href="#convenience_global_attributes">Clause 8.1.2</a>.</p>
 
-<div id="_55519e40-e88f-1ffd-16c2-b3569d2f9d20"><h3><a class="anchor" href="#_55519e40-e88f-1ffd-16c2-b3569d2f9d20"></a><a class="header" href="#_55519e40-e88f-1ffd-16c2-b3569d2f9d20">8.1.1.  Non-redundant global attributes</a></h3>
+<div id="_55519e40-e88f-1ffd-16c2-b3569d2f9d20"><h3><a class="anchor" href="#_55519e40-e88f-1ffd-16c2-b3569d2f9d20"></a><a class="header" href="#_55519e40-e88f-1ffd-16c2-b3569d2f9d20">8.1.1<span class="fmt-clause-delim">.</span>  Non-redundant global attributes</a></h3>
 
 <p id="_aa931194-e5a8-1027-411d-216a3b15f107">This sub-section presents some global attributes that do not duplicate information provided by other attributes.</p>
 
-<div id="_7366e872-38c2-ee55-c87a-718932e6cc44"><h4><a class="anchor" href="#_7366e872-38c2-ee55-c87a-718932e6cc44"></a><a class="header" href="#_7366e872-38c2-ee55-c87a-718932e6cc44">8.1.1.1.  Identification of conventions</a></h4>
+<div id="_7366e872-38c2-ee55-c87a-718932e6cc44"><h4><a class="anchor" href="#_7366e872-38c2-ee55-c87a-718932e6cc44"></a><a class="header" href="#_7366e872-38c2-ee55-c87a-718932e6cc44">8.1.1.1<span class="fmt-clause-delim">.</span>  Identification of conventions</a></h4>
 
 <p id="_262d77c6-848d-ca19-0e30-c73727e9b1ac">To identify that the file uses the CF convention, OGC 11-162r2 §7.3.2.1 requires that the <tt>Conventions</tt> global attribute is set to the <tt>"CF-1.6"</tt> string value. This Best Practice uses also some attribute convention for data discovery, which is notified by the <tt>"ACDD-1.3"</tt> string value.</p>
 
 <table id="_82b40286-58e2-2841-898b-3233ab63e9a7" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:100%;"><tbody><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Requirement 2 (from OGC 11-162r2)</th></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;"><a href="http://www.opengis.net/spec/mf_binary/1.0/req/conventions">http://www.opengis.net/spec/mf_binary/1.0/req/conventions</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">The file <i>shall</i> define the global attribute <tt>Conventions</tt> to a string of comma-separated values containing at least the <tt>"CF-1.6"</tt> element. The list of values should contain also the <tt>"ACDD-1.3"</tt> element. A complete string value containing the two elements is <tt>"CF-1.6, ACDD-1.3"</tt>.</td></tr></tbody></table>
 </div>
 
-<div id="_d50aaf96-049a-ca31-0c4a-0ba736c24cd0"><h4><a class="anchor" href="#_d50aaf96-049a-ca31-0c4a-0ba736c24cd0"></a><a class="header" href="#_d50aaf96-049a-ca31-0c4a-0ba736c24cd0">8.1.1.2.  Feature type</a></h4>
+<div id="_d50aaf96-049a-ca31-0c4a-0ba736c24cd0"><h4><a class="anchor" href="#_d50aaf96-049a-ca31-0c4a-0ba736c24cd0"></a><a class="header" href="#_d50aaf96-049a-ca31-0c4a-0ba736c24cd0">8.1.1.2<span class="fmt-clause-delim">.</span>  Feature type</a></h4>
 
 <p id="_cab61d93-15aa-674f-04b0-cb75f3564ff3">The CF conventions allow different kinds of sampling geometry such as point, time series, profile, or trajectory. This binary encoding Best Practice focuses on trajectories. This choice constraint the data layout to a series of data points along a path through space with monotonically increasing times (OGC 11-165r2 §7.5.2.3).</p>
 
 <table id="_bb5b2baa-de29-26f9-8553-2d1523487840" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:100%;"><tbody><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Requirement 3 (from OGC 11-162r2)</th></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;"><a href="http://www.opengis.net/spec/mf_binary/1.0/req/featureType">http://www.opengis.net/spec/mf_binary/1.0/req/featureType</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">The file <i>shall</i> define the global attribute <tt>featureType</tt> to the string value <tt>"trajectory"</tt>.</td></tr></tbody></table>
 </div>
 
-<div id="_09c93fc3-f9b5-61aa-abef-57df29046a92"><h4><a class="anchor" href="#_09c93fc3-f9b5-61aa-abef-57df29046a92"></a><a class="header" href="#_09c93fc3-f9b5-61aa-abef-57df29046a92">8.1.1.3.  Title</a></h4>
+<div id="_09c93fc3-f9b5-61aa-abef-57df29046a92"><h4><a class="anchor" href="#_09c93fc3-f9b5-61aa-abef-57df29046a92"></a><a class="header" href="#_09c93fc3-f9b5-61aa-abef-57df29046a92">8.1.1.3<span class="fmt-clause-delim">.</span>  Title</a></h4>
 
 <p id="_00af83ef-fd79-577c-fef2-b6d13e7938f3">Both CF convention and ACDD recommend the inclusion of a title in the global attributes.</p>
 
@@ -2258,11 +2262,11 @@ pre.sourcecode .nt {
 </div>
 </div>
 
-<div id="convenience_global_attributes"><h3><a class="anchor" href="#convenience_global_attributes"></a><a class="header" href="#convenience_global_attributes">8.1.2.  Convenience global attributes for data discovery</a></h3>
+<div id="convenience_global_attributes"><h3><a class="anchor" href="#convenience_global_attributes"></a><a class="header" href="#convenience_global_attributes">8.1.2<span class="fmt-clause-delim">.</span>  Convenience global attributes for data discovery</a></h3>
 
 <p id="_f759a148-1e5b-9b9b-f05d-cb2716cd0cdb">This sub-section presents global attributes that duplicate information available in other attributes, but in a more convenient manner. For example, the <i>geographic bounding box</i> attributes (<a href="#geographic_bounding_box">Clause 8.1.2.1</a>) duplicate information provided by the <i>geospatial bounds</i> attributes (<a href="#geospatial_bounds">Clause 8.1.2.2</a> to <a href="#temporal_bounds">Clause 8.1.2.4</a>), but may avoid the need to apply an inverse map projection. The geospatial bounds attributes themselves duplicate attributes associated to coordinate variables. But the attributes described in this sub-section make it easier to discover the data. Indeed, all attributes in this sub-section come from the Attribute Convention for Data Discovery (ACDD). By contrast, most attributes in other sections come from the Climate and Forecast (CF) convention.</p>
 
-<div id="geographic_bounding_box"><h4><a class="anchor" href="#geographic_bounding_box"></a><a class="header" href="#geographic_bounding_box">8.1.2.1.  Geographic bounding box</a></h4>
+<div id="geographic_bounding_box"><h4><a class="anchor" href="#geographic_bounding_box"></a><a class="header" href="#geographic_bounding_box">8.1.2.1<span class="fmt-clause-delim">.</span>  Geographic bounding box</a></h4>
 
 <p id="_685b382d-19d9-1516-a28a-f5b3ea340081">The geographic bounding box is given in longitude and latitude regardless of the Coordinate Reference System (CRS) used by the trajectories. Since those metadata are used for discovery purpose only, the geodetic datum is unspecified. Coordinate precision may be of only two decimal places of a degree.</p>
 
@@ -2284,7 +2288,7 @@ pre.sourcecode .nt {
 <p id="_2d4e5f75-1755-01ce-4675-8687ba0cf3dc">This <i>geographic</i> bounding box is redundant with the <i>geospatial</i> bounds defined below. The geographic bounding box is optional metadata for easier discovery of a dataset without the need to parse Well Known Text, lookup EPSG codes, and reproject envelopes.</p>
 </div>
 
-<div id="geospatial_bounds"><h4><a class="anchor" href="#geospatial_bounds"></a><a class="header" href="#geospatial_bounds">8.1.2.2.  Geospatial (not necessarily geographic) bounds</a></h4>
+<div id="geospatial_bounds"><h4><a class="anchor" href="#geospatial_bounds"></a><a class="header" href="#geospatial_bounds">8.1.2.2<span class="fmt-clause-delim">.</span>  Geospatial (not necessarily geographic) bounds</a></h4>
 
 <p id="_d4449c15-b580-4630-36d2-3c51767d9271">The horizontal part of the spatial boundary of moving features is specified as geometry in Well Known Text (WKT) format. The Coordinate Reference System is specified in <a href="#spatial_reference_system">Clause 8.1.2.5</a>.</p>
 
@@ -2293,7 +2297,7 @@ pre.sourcecode .nt {
 <table id="_78779547-f931-2222-e195-68ffe91a60eb" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:100%;"><tbody><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Recommendation 3 (from ACDD)</th></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;"><a href="http://www.opengis.net/spec/mf_binary/1.0/req/spatialBounds">http://www.opengis.net/spec/mf_binary/1.0/req/spatialBounds</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">The file should define the global attribute <tt>geospatial_bounds</tt> to a Well Known Text (WKT) that specifies the horizontal part of a geometry encompassing all moving features in the dataset. The geometry may be a polygon. Meaning and order of values for each point’s coordinates depend on the Coordinate Reference System (<a href="#spatial_reference_system">Clause 8.1.2.5</a>).</td></tr></tbody></table>
 </div>
 
-<div id="vertical_bounds"><h4><a class="anchor" href="#vertical_bounds"></a><a class="header" href="#vertical_bounds">8.1.2.3.  Vertical bounds</a></h4>
+<div id="vertical_bounds"><h4><a class="anchor" href="#vertical_bounds"></a><a class="header" href="#vertical_bounds">8.1.2.3<span class="fmt-clause-delim">.</span>  Vertical bounds</a></h4>
 
 <p id="_d782573b-5e77-e9d5-ed12-2271cb963a2e">If the feature trajectories are three-dimensional, then the vertical part of the spatial boundary of moving features is specified as a range of floating-point values. The Coordinate Reference System is specified in <a href="#spatial_reference_system">Clause 8.1.2.5</a>.</p>
 
@@ -2302,14 +2306,14 @@ pre.sourcecode .nt {
 <table id="_ff340f96-72ca-48d4-00ff-7cad99267dcf" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:100%;"><tbody><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Recommendation 4 (from ACDD)</th></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;"><a href="http://www.opengis.net/spec/mf_binary/1.0/req/verticalBounds">http://www.opengis.net/spec/mf_binary/1.0/req/verticalBounds</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">If the moving features feature trajectories are three-dimensional, then the file should define the global attribute <tt>geospatial_vertical_min</tt> and <tt>geospatial_vertical_max</tt> to the numerically smaller and larger vertical limit, respectively. Values type should be floating point. Meaning of values depends on the Coordinate Reference System (<a href="#spatial_reference_system">Clause 8.1.2.5</a>).</td></tr></tbody></table>
 </div>
 
-<div id="temporal_bounds"><h4><a class="anchor" href="#temporal_bounds"></a><a class="header" href="#temporal_bounds">8.1.2.4.  Temporal bounds</a></h4>
+<div id="temporal_bounds"><h4><a class="anchor" href="#temporal_bounds"></a><a class="header" href="#temporal_bounds">8.1.2.4<span class="fmt-clause-delim">.</span>  Temporal bounds</a></h4>
 
 <p id="_6f5cd392-47a3-be69-fa7e-a07072a338fd">The times of the first and last data point in the file are specified as a range of dates. Dates are formatted as specified by ISO 8601:2004, preferably the extended date-time format (<i>YYYY-MM-DD</i> T <i>hh:mm:ss</i> optionally followed by the time zone).</p>
 
 <table id="_995f5f74-36be-0ad9-916a-83f3f73d2b7f" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:100%;"><tbody><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Recommendation 5 (from ACDD)</th></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;"><a href="http://www.opengis.net/spec/mf_binary/1.0/req/temporalBounds">http://www.opengis.net/spec/mf_binary/1.0/req/temporalBounds</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">The file should define the global attribute <tt>time_coverage_start</tt> to the time of the first data point, and <tt>time_coverage_end</tt> to the time of the last data point. Dates are encoded as strings in ISO 8701:2004 format.</td></tr></tbody></table>
 </div>
 
-<div id="spatial_reference_system"><h4><a class="anchor" href="#spatial_reference_system"></a><a class="header" href="#spatial_reference_system">8.1.2.5.  Spatial Reference System</a></h4>
+<div id="spatial_reference_system"><h4><a class="anchor" href="#spatial_reference_system"></a><a class="header" href="#spatial_reference_system">8.1.2.5<span class="fmt-clause-delim">.</span>  Spatial Reference System</a></h4>
 
 <p id="_9b6004dd-45b3-1329-aad2-4e5941429ae6">The Coordinate Reference System (CRS) of the geospatial and vertical bounds (<a href="#geospatial_bounds">Clause 8.1.2.2</a> and <a href="#vertical_bounds">Clause 8.1.2.3</a>) is specified by an authority code, preferably from the EPSG geodetic dataset. For two-dimensional trajectories, only one CRS should be specified. For three-dimensional trajectories, a single three-dimensional CRS or two distinct CRS (one horizontal and one vertical) may be specified depending on the nature of the vertical heights.</p>
 
@@ -2337,7 +2341,7 @@ pre.sourcecode .nt {
 </td></tr></tbody></table>
 </div>
 </div>
-</div><div id="trajectory_lines"><h2 id="_e58e05ae-80de-441e-a7a4-82fc2da58bec"><a class="anchor" href="#trajectory_lines"></a><a class="header" href="#trajectory_lines">8.2.  Trajectory lines (data body)</a></h2>
+</div><div id="trajectory_lines"><h2 id="_bb81c7ba-b9b1-4bdb-a590-5018f45c3f26"><a class="anchor" href="#trajectory_lines"></a><a class="header" href="#trajectory_lines">8.2<span class="fmt-clause-delim">.</span>  Trajectory lines (data body)</a></h2>
 
 <p id="_2348f3d4-b663-a8d5-cc6f-47583d9ad4b0">The CF convention proposes four different ways to organize the feature coordinates and attributes in a netCDF file. This best-practice paper chooses the <i>Contiguous Ragged Array</i> representation, which has the following characteristics:</p>
 
@@ -2364,25 +2368,25 @@ pre.sourcecode .nt {
 </ul></div>
 </td></tr></tbody></table>
 
-<div id="_5c0531d5-7f22-1878-f5e4-a89d7ea3c292"><h3><a class="anchor" href="#_5c0531d5-7f22-1878-f5e4-a89d7ea3c292"></a><a class="header" href="#_5c0531d5-7f22-1878-f5e4-a89d7ea3c292">8.2.1.  NetCDF dimensions</a></h3>
+<div id="_5c0531d5-7f22-1878-f5e4-a89d7ea3c292"><h3><a class="anchor" href="#_5c0531d5-7f22-1878-f5e4-a89d7ea3c292"></a><a class="header" href="#_5c0531d5-7f22-1878-f5e4-a89d7ea3c292">8.2.1<span class="fmt-clause-delim">.</span>  NetCDF dimensions</a></h3>
 
 <p id="_a1e3e160-baf3-5c4d-6fe6-3dde4b167c3d">The ragged array representation needs three netCDF dimensions, described below.</p>
 
-<div id="max_length_of_feature_ids"><h4><a class="anchor" href="#max_length_of_feature_ids"></a><a class="header" href="#max_length_of_feature_ids">8.2.1.1.  Maximal length of feature identifiers</a></h4>
+<div id="max_length_of_feature_ids"><h4><a class="anchor" href="#max_length_of_feature_ids"></a><a class="header" href="#max_length_of_feature_ids">8.2.1.1<span class="fmt-clause-delim">.</span>  Maximal length of feature identifiers</a></h4>
 
 <p id="_906cc379-4403-90f3-abca-1babe9cf1130">If each feature is identified by a string value, then the netCDF file needs to declare the maximal number of characters allowed in those identifiers. Identifiers shorter than the maximal length will be padded by spaces of null characters (readers must be prepared to handle both).</p>
 
 <table id="_66f352a3-2773-c45f-1a20-88893b6feb6e" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:100%;"><tbody><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Requirement 5 (from OGC 11-162r2)</th></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;"><a href="http://www.opengis.net/spec/mf_binary/1.0/req/identifierLength">http://www.opengis.net/spec/mf_binary/1.0/req/identifierLength</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">If features are identified by string values, then the file <i>shall</i> define a netCDF dimension for identifier characters (the <i>identifier char dimension</i>). The name of this dimension can be any name compliant with the requirements in <a href="#trajectory_lines">Clause 8.2</a>. The length of this dimension is the maximum number of characters than can be stored in a feature identifier.</td></tr></tbody></table>
 </div>
 
-<div id="feature_instance_dimension"><h4><a class="anchor" href="#feature_instance_dimension"></a><a class="header" href="#feature_instance_dimension">8.2.1.2.  Feature instance dimension</a></h4>
+<div id="feature_instance_dimension"><h4><a class="anchor" href="#feature_instance_dimension"></a><a class="header" href="#feature_instance_dimension">8.2.1.2<span class="fmt-clause-delim">.</span>  Feature instance dimension</a></h4>
 
 <p id="_292bdd95-213a-d663-384b-5d6952152374">The netCDF file shall declare a dimension for information about each feature as a whole (i.e., information that does not depend on the time). The length of this dimension is the maximal number of features that can be stored in the file. It is acceptable to declare a length larger than needed in order to reserve room for future feature additions, provided that values in the count variable (<a href="#count_variable">Clause 8.2.2.2</a>) are set to zero for all missing features.</p>
 
 <table id="_dfd3b922-e16f-a73c-93a7-69bcda3b7eba" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:100%;"><tbody><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Requirement 6 (from OGC 11-162r2)</th></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;"><a href="http://www.opengis.net/spec/mf_binary/1.0/req/instanceDimension">http://www.opengis.net/spec/mf_binary/1.0/req/instanceDimension</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">The file <i>shall</i> define a netCDF dimension for feature instances (the <i>instance dimension</i>). The name of this dimension can be any name compliant with the requirements in <a href="#trajectory_lines">Clause 8.2</a>. The length of this dimension is the maximum number of features that can be stored in the file.</td></tr></tbody></table>
 </div>
 
-<div id="sample_dimension"><h4><a class="anchor" href="#sample_dimension"></a><a class="header" href="#sample_dimension">8.2.1.3.  Sample dimension</a></h4>
+<div id="sample_dimension"><h4><a class="anchor" href="#sample_dimension"></a><a class="header" href="#sample_dimension">8.2.1.3<span class="fmt-clause-delim">.</span>  Sample dimension</a></h4>
 
 <p id="_0d0b62d6-e55a-9c1a-e8f1-c0eff0a06f38">The netCF file shall declare a dimension for the actual data (time, geospatial coordinates and feature attributes). This dimension could have a fixed length, but it is more convenient to declare this dimension length as unlimited if new data need to be appended. Note that a netCDF file can have only one dimension of unlimited length.</p>
 
@@ -2390,7 +2394,7 @@ pre.sourcecode .nt {
 </div>
 </div>
 
-<div id="_aa968c44-a27f-40d2-85e4-24e50eb3d02c"><h3><a class="anchor" href="#_aa968c44-a27f-40d2-85e4-24e50eb3d02c"></a><a class="header" href="#_aa968c44-a27f-40d2-85e4-24e50eb3d02c">8.2.2.  NetCDF variables</a></h3>
+<div id="_aa968c44-a27f-40d2-85e4-24e50eb3d02c"><h3><a class="anchor" href="#_aa968c44-a27f-40d2-85e4-24e50eb3d02c"></a><a class="header" href="#_aa968c44-a27f-40d2-85e4-24e50eb3d02c">8.2.2<span class="fmt-clause-delim">.</span>  NetCDF variables</a></h3>
 
 <p id="_829b92e1-c27c-19e9-c992-61eeb35fee97">In the continuous ragged array representation, the netCDF file shall contain the following variables:</p>
 
@@ -2420,7 +2424,7 @@ pre.sourcecode .nt {
 </li>
 </ul></div>
 
-<div id="feature_ids"><h4><a class="anchor" href="#feature_ids"></a><a class="header" href="#feature_ids">8.2.2.1.  Feature identifiers</a></h4>
+<div id="feature_ids"><h4><a class="anchor" href="#feature_ids"></a><a class="header" href="#feature_ids">8.2.2.1<span class="fmt-clause-delim">.</span>  Feature identifiers</a></h4>
 
 <p id="_edcd086d-3a65-f77d-177d-92e388159a65">Each trajectory should have identifying text that specifies the moving feature. The text can be a person ID, a vehicle ID, etc. While the identifier is usually a string, integer types are also allowed.</p>
 
@@ -2443,7 +2447,7 @@ pre.sourcecode .nt {
 </td></tr></tbody></table>
 </div>
 
-<div id="count_variable"><h4><a class="anchor" href="#count_variable"></a><a class="header" href="#count_variable">8.2.2.2.  Count variable</a></h4>
+<div id="count_variable"><h4><a class="anchor" href="#count_variable"></a><a class="header" href="#count_variable">8.2.2.2<span class="fmt-clause-delim">.</span>  Count variable</a></h4>
 
 <p id="_b575a58c-a111-9ef3-cc03-1dab051ed1f6">The netCDF file shall contain a variable holding the number of points in each trajectory. The length of this variable is the maximum number of features that the netCDF file can contain.</p>
 
@@ -2464,7 +2468,7 @@ pre.sourcecode .nt {
 </td></tr></tbody></table>
 </div>
 
-<div id="auxiliary_coordinate_variables"><h4><a class="anchor" href="#auxiliary_coordinate_variables"></a><a class="header" href="#auxiliary_coordinate_variables">8.2.2.3.  Auxiliary coordinate variables</a></h4>
+<div id="auxiliary_coordinate_variables"><h4><a class="anchor" href="#auxiliary_coordinate_variables"></a><a class="header" href="#auxiliary_coordinate_variables">8.2.2.3<span class="fmt-clause-delim">.</span>  Auxiliary coordinate variables</a></h4>
 
 <p id="_8fe0496b-afdd-5989-6d03-24cc9e696f78">Trajectory coordinates are specified in one variable for each spatiotemporal dimension. Those “<i>auxiliary</i> coordinate variables” are not subject to the usual restrictions of netCDF “coordinate variables”. In particular:</p>
 
@@ -2550,7 +2554,7 @@ pre.sourcecode .nt {
 <p id="_dad724a4-f243-d651-0124-41a51e04a7be">In addition to the attributes listed in above requirement, some non-standards attributes may help parsers to identify the coordinate system. In particular, the <tt>_CoordinateAxisType</tt> attribute may be set to <tt>"Lon"</tt>, <tt>"Lat"</tt>, <tt>"Height"</tt> or <tt>"Time"</tt> values for a geographic CRS, or to the <tt>"GeoX"</tt>, <tt>"GeoY"</tt>, <tt>"GeoZ"</tt> or <tt>"Time"</tt> values for other kind of CRS.</p>
 </div>
 
-<div id="_a627147c-1fc3-97b9-2657-42fa829a10fe"><h4><a class="anchor" href="#_a627147c-1fc3-97b9-2657-42fa829a10fe"></a><a class="header" href="#_a627147c-1fc3-97b9-2657-42fa829a10fe">8.2.2.4.  Feature attribute variables</a></h4>
+<div id="_a627147c-1fc3-97b9-2657-42fa829a10fe"><h4><a class="anchor" href="#_a627147c-1fc3-97b9-2657-42fa829a10fe"></a><a class="header" href="#_a627147c-1fc3-97b9-2657-42fa829a10fe">8.2.2.4<span class="fmt-clause-delim">.</span>  Feature attribute variables</a></h4>
 
 <p id="_5451dbf6-e8e1-f6e0-e62d-3404ffcbb0d6">If the file contains additional attributes for the moving features, they can be declared in array having the same length than the auxiliary coordinate variables. Elements in those variables are mapped to features and time in the same way than the values in auxiliary coordinate variables (<a href="#auxiliary_coordinate_variables">Clause 8.2.2.3</a>).</p>
 
@@ -2571,7 +2575,7 @@ pre.sourcecode .nt {
 <table id="_c9058b0f-8b5d-a06b-0648-0701789ef5c6" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:100%;"><tbody><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Requirement 13 (from OGC 11-162r2)</th></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;"><a href="http://www.opengis.net/spec/mf_binary/1.0/req/units">http://www.opengis.net/spec/mf_binary/1.0/req/units</a></td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">If the variable represents a dimensional quantity, then it <i>shall</i> define a <tt>units</tt> attribute to a string value that can be recognized by UNIDATA’s udunits package, with the addition of <tt>"level"</tt>, <tt>"layer"</tt> and <tt>"sigma_level"</tt> string values. That unit shall be consistent with the unit given in the CF Standard Name Table for the <tt>standard_name</tt> attribute value, if the later attribute exists for this variable.</td></tr></tbody></table>
 </div>
 
-<div id="_8fef2c38-fec7-49f5-69ff-03965ec9b2d8"><h4><a class="anchor" href="#_8fef2c38-fec7-49f5-69ff-03965ec9b2d8"></a><a class="header" href="#_8fef2c38-fec7-49f5-69ff-03965ec9b2d8">8.2.2.5.  Feature attribute variables as character strings</a></h4>
+<div id="_8fef2c38-fec7-49f5-69ff-03965ec9b2d8"><h4><a class="anchor" href="#_8fef2c38-fec7-49f5-69ff-03965ec9b2d8"></a><a class="header" href="#_8fef2c38-fec7-49f5-69ff-03965ec9b2d8">8.2.2.5<span class="fmt-clause-delim">.</span>  Feature attribute variables as character strings</a></h4>
 
 <p id="_a7f52f66-08fd-349f-1460-d3d35222b0ce">If the values of a feature attribute variable are character strings, then there is a choice:</p>
 
@@ -2600,7 +2604,7 @@ pre.sourcecode .nt {
 </td></tr></tbody></table>
 </div>
 </div>
-</div></div><br /><div id="annexA" class="Section3"><h1 class="Annex" id="_e594ceb8-16b3-434f-be7b-7cf0da1fcd78"><a class="anchor" href="#annexA"></a><a class="header" href="#annexA"><b>Annex A</b><br />(normative)<br /><b>Conformance test</b></a></h1><p style="display:none;" class="variant-title-toc">Annex A  Conformance test</p><p id="_790efe46-1fd9-4eaa-6a28-74813320ebdb">Moving Features encoded in a netCDF file may be tested with the UCAR library, for example using the Java code below (replace “myFile.nc” and “myAttribute” by character strings applicable to the data to be tested). As of version 4.6.4 of UCAR netCDF library, this test requires the non-standard <tt>_CoordinateAxisType</tt> attribute on the auxiliary coordinate variables (see the note after requirement 10). For that reason, this test is non-normative.</p><details open="open"><figure id="_173bbae8-9a6f-99f8-23cc-1bd39cdbe16e" class="sourcecode" spellcheck="false" translation="no"><pre><span class="kn">import</span> <span class="nn">java.util.Formatter</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.constants.FeatureType</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.FeatureCollection</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.FeatureDataset</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.FeatureDatasetFactoryManager</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.FeatureDatasetPoint</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.PointFeature</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.PointFeatureIterator</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.TrajectoryFeature</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.TrajectoryFeatureCollection</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.unidata.geoloc.EarthLocation</span><span class="o">;</span><br /><br /><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestMovingFeatureNetCDF</span> <span class="o">{</span><br />    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span><br />        <span class="k">try</span> <span class="o">(</span><span class="nc">FeatureDatasetPoint</span> <span class="n">fp</span> <span class="o">=</span> <span class="o">(</span><span class="nc">FeatureDatasetPoint</span><span class="o">)</span> <span class="nc">FeatureDatasetFactoryManager</span><br />            <span class="o">.</span><span class="na">open</span><span class="o">(</span><span class="nc">FeatureType</span><span class="o">.</span><span class="na">TRAJECTORY</span><span class="o">,</span> <span class="err">“</span><span class="n">myFile</span><span class="o">.</span><span class="na">nc</span><span class="err">”</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="k">new</span> <span class="nc">Formatter</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">)))</span><br />        <span class="o">{</span><br />            <span class="k">for</span> <span class="o">(</span><span class="nc">FeatureCollection</span> <span class="n">fc</span> <span class="o">:</span> <span class="n">fp</span><span class="o">.</span><span class="na">getPointFeatureCollectionList</span><span class="o">())</span> <span class="o">{</span><br />                <span class="nc">TrajectoryFeatureCollection</span> <span class="n">tfc</span> <span class="o">=</span> <span class="o">(</span><span class="nc">TrajectoryFeatureCollection</span><span class="o">)</span> <span class="n">fc</span><span class="o">;</span><br />                <span class="k">while</span> <span class="o">(</span><span class="n">tfc</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span><br />                    <span class="nc">TrajectoryFeature</span> <span class="n">tf</span> <span class="o">=</span> <span class="n">tfc</span><span class="o">.</span><span class="na">next</span><span class="o">();</span><br />                    <span class="nc">PointFeatureIterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="na">getPointFeatureIterator</span><span class="o">(-</span><span class="mi">1</span><span class="o">);</span><br />                    <span class="k">while</span> <span class="o">(</span><span class="n">it</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span><br />                        <span class="nc">PointFeature</span> <span class="n">f</span> <span class="o">=</span> <span class="n">it</span><span class="o">.</span><span class="na">next</span><span class="o">();</span><br />                        <span class="nc">EarthLocation</span> <span class="n">loc</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span> <span class="nf">getLocation</span><span class="o">();</span><br />                        <span class="kt">double</span> <span class="n">time</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span> <span class="nf">getObservationTime</span><span class="o">();</span><br />                        <span class="nc">Object</span> <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="na">getDataAll</span><span class="o">().</span><span class="na">getScalarObject</span><span class="o">(</span><span class="err">“</span><span class="n">myAttribute</span><span class="err">”</span><span class="o">);</span><br />                        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">loc</span> <span class="o">+</span> <span class="s">" at "</span> <span class="o">+</span> <span class="n">time</span> <span class="o">+</span> <span class="s">" = "</span> <span class="o">+</span> <span class="n">value</span><span class="o">);</span><br />                    <span class="o">}</span><br />                    <span class="n">it</span><span class="o">.</span><span class="na">finish</span><span class="o">();</span><br />                <span class="o">}</span><br />            <span class="o">}</span><br />        <span class="o">}</span><br />    <span class="o">}</span><br /><span class="o">}</span></pre></figure></details></div><br /><div id="annexB" class="Section3"><h1 class="Annex" id="_8db4bdd4-f35e-4fcb-9ed7-7cfebddf2033"><a class="anchor" href="#annexB"></a><a class="header" href="#annexB"><b>Annex B</b><br />(informative)<br /><b>Revision history</b></a></h1><p style="display:none;" class="variant-title-toc">Annex B  Revision history</p><table id="_112d8ee6-7bb2-45f8-b77c-d087c9bb0201" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:100%;"><thead><tr><th style="font-weight:bold;text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Date</th><th style="font-weight:bold;text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Release</th><th style="font-weight:bold;text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Author</th><th style="font-weight:bold;text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Paragraph modified</th><th style="font-weight:bold;text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Description</th></tr></thead><tbody><tr><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">2016-06-16</td><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">r1</td><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Martin Desruisseaux</td><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">All</td><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">First draft</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">2016-09-19</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">r2</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Martin Desruisseaux</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">§7.2.2, annex A</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Clarification</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">2016-12-12</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">r2</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Dorian Ginane</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">§i, Annex A</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Discussion Paper</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">2018-09-05</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">R3</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Scott Simmons</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">All</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Best Practice</td></tr></tbody></table></div></main><script type="text/x-mathjax-config">
+</div></div><br /><div id="annexA" class="Section3"><h1 class="Annex" id="_ce9fcba2-1100-4d37-ad44-fad9a6aa4a62"><a class="anchor" href="#annexA"></a><a class="header" href="#annexA"><b>Annex A</b><br />(normative)<br /><b>Conformance test</b></a></h1><p style="display:none;" class="variant-title-toc">Annex A  Conformance test</p><p id="_790efe46-1fd9-4eaa-6a28-74813320ebdb">Moving Features encoded in a netCDF file may be tested with the UCAR library, for example using the Java code below (replace “myFile.nc” and “myAttribute” by character strings applicable to the data to be tested). As of version 4.6.4 of UCAR netCDF library, this test requires the non-standard <tt>_CoordinateAxisType</tt> attribute on the auxiliary coordinate variables (see the note after requirement 10). For that reason, this test is non-normative.</p><details open="open"><figure id="_173bbae8-9a6f-99f8-23cc-1bd39cdbe16e" class="sourcecode" spellcheck="false" translation="no"><pre><span class="kn">import</span> <span class="nn">java.util.Formatter</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.constants.FeatureType</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.FeatureCollection</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.FeatureDataset</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.FeatureDatasetFactoryManager</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.FeatureDatasetPoint</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.PointFeature</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.PointFeatureIterator</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.TrajectoryFeature</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.nc2.ft.TrajectoryFeatureCollection</span><span class="o">;</span><br /><span class="kn">import</span> <span class="nn">ucar.unidata.geoloc.EarthLocation</span><span class="o">;</span><br /><br /><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestMovingFeatureNetCDF</span> <span class="o">{</span><br />    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span><br />        <span class="k">try</span> <span class="o">(</span><span class="nc">FeatureDatasetPoint</span> <span class="n">fp</span> <span class="o">=</span> <span class="o">(</span><span class="nc">FeatureDatasetPoint</span><span class="o">)</span> <span class="nc">FeatureDatasetFactoryManager</span><br />            <span class="o">.</span><span class="na">open</span><span class="o">(</span><span class="nc">FeatureType</span><span class="o">.</span><span class="na">TRAJECTORY</span><span class="o">,</span> <span class="err">“</span><span class="n">myFile</span><span class="o">.</span><span class="na">nc</span><span class="err">”</span><span class="o">,</span> <span class="kc">null</span><span class="o">,</span> <span class="k">new</span> <span class="nc">Formatter</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">)))</span><br />        <span class="o">{</span><br />            <span class="k">for</span> <span class="o">(</span><span class="nc">FeatureCollection</span> <span class="n">fc</span> <span class="o">:</span> <span class="n">fp</span><span class="o">.</span><span class="na">getPointFeatureCollectionList</span><span class="o">())</span> <span class="o">{</span><br />                <span class="nc">TrajectoryFeatureCollection</span> <span class="n">tfc</span> <span class="o">=</span> <span class="o">(</span><span class="nc">TrajectoryFeatureCollection</span><span class="o">)</span> <span class="n">fc</span><span class="o">;</span><br />                <span class="k">while</span> <span class="o">(</span><span class="n">tfc</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span><br />                    <span class="nc">TrajectoryFeature</span> <span class="n">tf</span> <span class="o">=</span> <span class="n">tfc</span><span class="o">.</span><span class="na">next</span><span class="o">();</span><br />                    <span class="nc">PointFeatureIterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="na">getPointFeatureIterator</span><span class="o">(-</span><span class="mi">1</span><span class="o">);</span><br />                    <span class="k">while</span> <span class="o">(</span><span class="n">it</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span><br />                        <span class="nc">PointFeature</span> <span class="n">f</span> <span class="o">=</span> <span class="n">it</span><span class="o">.</span><span class="na">next</span><span class="o">();</span><br />                        <span class="nc">EarthLocation</span> <span class="n">loc</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span> <span class="nf">getLocation</span><span class="o">();</span><br />                        <span class="kt">double</span> <span class="n">time</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span> <span class="nf">getObservationTime</span><span class="o">();</span><br />                        <span class="nc">Object</span> <span class="n">value</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="na">getDataAll</span><span class="o">().</span><span class="na">getScalarObject</span><span class="o">(</span><span class="err">“</span><span class="n">myAttribute</span><span class="err">”</span><span class="o">);</span><br />                        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">loc</span> <span class="o">+</span> <span class="s">" at "</span> <span class="o">+</span> <span class="n">time</span> <span class="o">+</span> <span class="s">" = "</span> <span class="o">+</span> <span class="n">value</span><span class="o">);</span><br />                    <span class="o">}</span><br />                    <span class="n">it</span><span class="o">.</span><span class="na">finish</span><span class="o">();</span><br />                <span class="o">}</span><br />            <span class="o">}</span><br />        <span class="o">}</span><br />    <span class="o">}</span><br /><span class="o">}</span></pre></figure></details></div><br /><div id="annexB" class="Section3"><h1 class="Annex" id="_bf27e26f-4300-4f30-974d-01a4899226fa"><a class="anchor" href="#annexB"></a><a class="header" href="#annexB"><b>Annex B</b><br />(informative)<br /><b>Revision history</b></a></h1><p style="display:none;" class="variant-title-toc">Annex B  Revision history</p><table id="_112d8ee6-7bb2-45f8-b77c-d087c9bb0201" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:100%;"><thead><tr><th style="font-weight:bold;text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Date</th><th style="font-weight:bold;text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Release</th><th style="font-weight:bold;text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Author</th><th style="font-weight:bold;text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Paragraph modified</th><th style="font-weight:bold;text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Description</th></tr></thead><tbody><tr><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">2016-06-16</td><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">r1</td><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Martin Desruisseaux</td><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">All</td><td style="text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">First draft</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">2016-09-19</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">r2</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Martin Desruisseaux</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">§7.2.2, annex A</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Clarification</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">2016-12-12</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">r2</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Dorian Ginane</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">§i, Annex A</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Discussion Paper</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">2018-09-05</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">R3</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Scott Simmons</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">All</td><td style="text-align:center;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">Best Practice</td></tr></tbody></table></div></main><script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     "HTML-CSS": {
       preferredFont: "STIX",

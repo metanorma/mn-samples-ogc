@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.10" schema-version="v2.1.6" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">OGC Web Feature Service 3.0: Part 1 - Core</title>
 <uri type="xml">https://riboseinc.github.io/ogc-wfs/ogc-wfs.xml</uri><uri type="pdf">https://riboseinc.github.io/ogc-wfs/ogc-wfs.pdf</uri><uri type="doc">https://riboseinc.github.io/ogc-wfs/ogc-wfs.doc</uri><docidentifier type="ogc-internal" primary="true">17-069</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/IS/wfs-1/3.0</docidentifier><docnumber>17-069</docnumber><date type="published"><on>1000-01-01</on></date><date type="issued"><on>1000-01-01</on></date><date type="received"><on>1000-01-01</on></date><date type="updated"><on>2018-04-07</on></date><contributor><role type="author"/><organization>
@@ -73,7 +73,7 @@
 </table>
 </abstract><status><stage>candidate</stage></status><copyright><from>2026</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>web feature service</keyword><keyword>wfs</keyword><keyword>feature</keyword><keyword>property</keyword><keyword>geographic information</keyword><keyword>spatial data</keyword><keyword>spatial things</keyword><keyword>dataset</keyword><keyword>distribution</keyword><keyword>API</keyword><keyword>openapi</keyword><keyword>geojson</keyword><keyword>gml</keyword><keyword>html</keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><flavor>ogc</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>false</stage-published></semantic-metadata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword><vocab>ogcdoc</vocab></keyword><keyword><vocab>OGC document</vocab></keyword><keyword><vocab>web feature service</vocab></keyword><keyword><vocab>wfs</vocab></keyword><keyword><vocab>feature</vocab></keyword><keyword><vocab>property</vocab></keyword><keyword><vocab>geographic information</vocab></keyword><keyword><vocab>spatial data</vocab></keyword><keyword><vocab>spatial things</vocab></keyword><keyword><vocab>dataset</vocab></keyword><keyword><vocab>distribution</vocab></keyword><keyword><vocab>API</vocab></keyword><keyword><vocab>openapi</vocab></keyword><keyword><vocab>geojson</vocab></keyword><keyword><vocab>gml</vocab></keyword><keyword><vocab>html</vocab></keyword><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><flavor>ogc</flavor><stage>candidate</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>false</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>2018</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(237, 193, 35)</color-secondary-shade-1><color-secondary-shade-2>rgb(246, 223, 140)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>3</toc-heading-levels><html-toc-heading-levels>3</html-toc-heading-levels><doc-toc-heading-levels>3</doc-toc-heading-levels><pdf-toc-heading-levels>3</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -513,7 +513,7 @@ provided by a server.<note id="_85cf721e-4466-1194-b09d-9a826b7f70cc"><p id="_df
 </clause>
 </clause>
 
-<clause id="_3dc280d3-201a-5d6b-8022-724f4d55c321" obligation="normative">
+<clause id="_38659c2c-ff44-d89f-3303-f71553c8fc53" obligation="normative">
 <title id="_b3890f38-5f44-cf2e-d595-cec6ab8cbbbd">Requirement Class “Core”</title>
 <clause id="_b6402ebd-8c68-e1ec-6e12-d46690918b3d" anchor="core-overview" obligation="normative">
 <title id="_4022aa9b-b8f1-6220-ff9e-57ab84cfeef7">Overview</title>
@@ -587,7 +587,7 @@ provided by a server.<note id="_85cf721e-4466-1194-b09d-9a826b7f70cc"><p id="_df
 <admonition id="_da066847-94d4-6656-34bc-e9dba60a3347" type="caution"><p id="_ffd7623e-f086-a5b7-e2af-b23380b2f310"><link target="https://github.com/opengeospatial/WFS_FES/issues/90">ISSUE 90</link><br/> More flexible path structure under  <tt>/collections</tt>?</p>
 </admonition></clause>
 
-<clause id="_5cd82ecc-3877-d973-a634-09443540f5ae" obligation="normative">
+<clause id="_3b77a065-129b-75f3-c5a0-33712edbfbee" obligation="normative">
 <title id="_5b31c22b-1d88-3ff5-2540-569485df8168">API landing page</title>
 <clause id="_692a11eb-5b94-9ed8-0f05-94ca2adc584e" obligation="normative">
 <title id="_3cfc5cf6-07de-81f6-1f58-c969ddacaa2b">Operation</title>
@@ -600,7 +600,7 @@ provided by a server.<note id="_85cf721e-4466-1194-b09d-9a826b7f70cc"><p id="_df
 </table>
 </clause>
 
-<clause id="_20425a2d-a7ce-106e-edb6-7e06f2d17423" obligation="normative">
+<clause id="_77aa0d2f-328b-8a2d-86dd-b7bb0b7a32fa" obligation="normative">
 <title id="_8599393c-a24a-eabb-54d3-3ebe0c14d168">Response</title>
 <table id="_17f5a504-f8e1-4b06-9cad-408bd1b6ed29" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_6f7cb92a-fa28-1efc-070e-252f81ea20a8"><td id="_fc54bfaa-5e0d-43d0-d3a7-0eb4ca428a75" valign="middle" align="left"><strong>Requirement 2</strong></td>
 <td id="_318a3486-a3a9-7870-182b-c211a0aad2d2" valign="middle" align="left"><p id="_b9a85fd5-e257-b07d-885f-2544bbb65d20">/req/core/root-success<br/></p>
@@ -622,9 +622,7 @@ provided by a server.<note id="_85cf721e-4466-1194-b09d-9a826b7f70cc"><p id="_df
 
 <admonition id="_a73cbb06-085d-34b6-1df9-6710879616b6" type="caution"><p id="_20ab0385-6523-2143-f7d8-aa500b96d7a8"><link target="https://github.com/opengeospatial/WFS_FES/issues/101">ISSUE 101</link><br/> Landing page: Can we reuse existing relation types instead of ‘conformance’ and ‘data’?</p>
 </admonition>
-<sourcecode id="_02156ce3-4da6-7ffa-f1f0-f69eea5e9af8" lang="YAML">
-<name id="_bcb1dacc-87b3-216e-f393-957f78965122"><link target="https://raw.githubusercontent.com/opengeospatial/WFS_FES/master/core/openapi/schemas/root.yaml">Schema for the landing page</link></name>
-<body>type: object
+<sourcecode id="_2f62159c-f3a2-c5e6-fb7c-23a956e6b394" lang="YAML"><name id="_bcb1dacc-87b3-216e-f393-957f78965122"><link target="https://raw.githubusercontent.com/opengeospatial/WFS_FES/master/core/openapi/schemas/root.yaml">Schema for the landing page</link></name><body>type: object
 required:
   - links
 properties:
@@ -706,7 +704,7 @@ properties:
 </clause>
 </clause>
 
-<clause id="_1cea2f4a-ca2a-2325-8cef-bb912cddcf8f" obligation="normative">
+<clause id="_04dcac33-9a2e-8e23-5d34-ff0158ec809c" obligation="normative">
 <title id="_ec1840eb-4621-3c13-7d78-b2950b5b2069">Declaration of conformance classes</title>
 <clause id="_130a7292-b74b-2bfc-5757-4fa0db8d70ea" obligation="normative">
 <title id="_9eb18892-509b-bf4d-e41f-f24d77190629">Operation</title>
@@ -721,7 +719,7 @@ properties:
 </table>
 </clause>
 
-<clause id="_74072a7d-a0d7-d515-6c91-72bdd1e0b09d" obligation="normative">
+<clause id="_92d0d894-9c3f-fda2-aba2-72dbb1276261" obligation="normative">
 <title id="_042bf124-c9bc-25e5-c8ef-30889f75bd5a">Response</title>
 <table id="_7104c191-21d1-3cff-363f-d2be6fa26487" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_d63e89e1-a95d-17df-e234-4eb91fb3c67f"><td id="_ab3a9268-4226-670f-2614-129459b1e219" valign="middle" align="left"><strong>Requirement 6</strong></td>
 <td id="_88b8e911-9c0c-a6ca-9df0-f42e77b33a2a" valign="middle" align="left"><p id="_4e07032c-9165-4a03-cd89-778c463c9024">/req/core/conformance-success<br/></p>
@@ -733,9 +731,7 @@ properties:
 </tr></tbody>
 </table>
 
-<sourcecode id="_d549b97d-e701-9aac-1f31-a89d8f45d6e9" lang="YAML">
-<name id="_f4ebf8ca-095b-c1c2-ea5f-b19ab9b40cd5"><link target="https://raw.githubusercontent.com/opengeospatial/WFS_FES/master/core/openapi/schemas/req-classes.yaml">Schema for the list of requirements classes</link></name>
-<body>type: object
+<sourcecode id="_d00995d3-4fa9-dfb3-9c1b-e8e8434ef850" lang="YAML"><name id="_f4ebf8ca-095b-c1c2-ea5f-b19ab9b40cd5"><link target="https://raw.githubusercontent.com/opengeospatial/WFS_FES/master/core/openapi/schemas/req-classes.yaml">Schema for the list of requirements classes</link></name><body>type: object
 required:
   - conformsTo
 properties:
@@ -937,7 +933,7 @@ URIs in the browser address bar, can study the API definition.<note id="_446d089
 </table>
 </clause>
 
-<clause id="_8227eaec-5543-128b-1813-3d1a1193b4ff" obligation="normative">
+<clause id="_4458200a-a5fb-ec5e-6920-e4c5269cf8ec" obligation="normative">
 <title id="_f7951d27-6887-4f5e-2b8f-3ef3a3b2163b">Feature collections metadata</title>
 <clause id="_ffe490a0-f8fa-6f82-4211-29322f5f83e9" obligation="normative">
 <title id="_19b6e84e-b2c8-7cc3-b89a-ac39847ff746">Operation</title>
@@ -950,7 +946,7 @@ URIs in the browser address bar, can study the API definition.<note id="_446d089
 </table>
 </clause>
 
-<clause id="_85f47918-e062-e5e0-8ce0-ac0c7c086cbc" obligation="normative">
+<clause id="_f3035e2b-0c92-3e71-7c07-f72ba732ba29" obligation="normative">
 <title id="_8e485128-1070-3944-f9f0-e70b11e79094">Response</title>
 <table id="_de704962-d8cc-7d23-94cc-91fd20261f94" width="90%"><colgroup><col width="25%"/><col width="75%"/></colgroup><tbody><tr id="_bf6af58f-5a91-45ac-bf33-091e90a040fa"><td id="_76e95a6c-d6ee-6363-50ed-bf46f00310f4" valign="middle" align="left"><strong>Requirement 10</strong></td>
 <td id="_9e5d20c7-702e-1bdf-18d1-0ef93433abfd" valign="middle" align="left"><p id="_c68afd39-4492-0754-3d21-86e2ead2eea5">/req/core/fc-md-success<br/></p>
@@ -962,9 +958,7 @@ URIs in the browser address bar, can study the API definition.<note id="_446d089
 </tr></tbody>
 </table>
 
-<sourcecode id="_3ea2af8a-3ef0-21fa-0a80-9a0c2b809f2a" lang="YAML">
-<name id="_37911c01-ecb0-dcbb-4f2f-0a2bc72f0df4"><link target="https://raw.githubusercontent.com/opengeospatial/WFS_FES/master/core/openapi/schemas/content.yaml">Schema for the metadata about feature collections</link></name>
-<body>type: object
+<sourcecode id="_7a706497-b7e2-c044-7a36-722e9c428fc7" lang="YAML"><name id="_37911c01-ecb0-dcbb-4f2f-0a2bc72f0df4"><link target="https://raw.githubusercontent.com/opengeospatial/WFS_FES/master/core/openapi/schemas/content.yaml">Schema for the metadata about feature collections</link></name><body>type: object
 required:
   - links
   - collections
@@ -1043,9 +1037,7 @@ properties:
 </tr></tbody>
 </table>
 
-<sourcecode id="_d80fc14c-b84c-347b-d22f-5c7d78831f7b" lang="YAML">
-<name id="_55152e15-592e-d0ca-d394-81f7bc9c4dbe"><link target="https://raw.githubusercontent.com/opengeospatial/WFS_FES/master/core/openapi/schemas/collectionInfo.yaml">Schema for the metadata about a feature collection</link></name>
-<body>type: object
+<sourcecode id="_41611ca4-23f7-030b-d174-84953ea5f6fa" lang="YAML"><name id="_55152e15-592e-d0ca-d394-81f7bc9c4dbe"><link target="https://raw.githubusercontent.com/opengeospatial/WFS_FES/master/core/openapi/schemas/collectionInfo.yaml">Schema for the metadata about a feature collection</link></name><body>type: object
 required:
   - name
   - links
@@ -4875,14 +4867,14 @@ tags:
 </tr></tbody>
 </table>
 
-<pagebreak/></annex><bibliography><references id="_153c33b1-4136-8778-a318-baf682799e5a" normative="true" obligation="informative">
+<pagebreak/></annex><bibliography><references id="_2b61a3cd-aa54-5614-2a96-8e118f864540" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
 
 <bibitem anchor="OpenAPI" id="_fa9a8d04-36c3-7d59-20f1-dbea1e625801"><formattedref format="application/x-isodoc+xml">Open API Initiative: <strong>OpenAPI Specification 3.0.1</strong>,
 <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md"/></formattedref><docidentifier>OpenAPI</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_f5246e4d-52ba-bb2e-60fb-2421905fd2d3" type="standard" schema-version="v1.5.6" anchor="rfc2616">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_4472f4a6-6820-2b66-0880-72b6f6703099" type="standard" schema-version="v1.5.6" anchor="rfc2616">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">Hypertext Transfer Protocol — HTTP/1.1</title>
 
@@ -5060,8 +5052,8 @@ tags:
     <vocab>hypermedia</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_5761ae75-0ccd-de3f-4344-1cd352321af7" type="standard" schema-version="v1.5.6" anchor="rfc2818">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_df54e683-0838-aae8-0cb6-caf34a20eb34" type="standard" schema-version="v1.5.6" anchor="rfc2818">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">HTTP Over TLS</title>
 
@@ -5159,8 +5151,8 @@ tags:
     <vocab>security</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_b2f26f07-2771-fb0b-da10-5e1ee2290c9c" type="standard" schema-version="v1.5.6" anchor="rfc3339">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_283bafc5-ad3c-d7c5-c5b0-b781fc4e243d" type="standard" schema-version="v1.5.6" anchor="rfc3339">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">Date and Time on the Internet: Timestamps</title>
 
@@ -5253,8 +5245,8 @@ tags:
     <vocab>International Organization for Standardization</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_37d38145-9b71-ad88-6923-7c2296ba1685" type="standard" schema-version="v1.5.6" anchor="rfc3986">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_1436d924-f92e-9452-264d-25324a59de99" type="standard" schema-version="v1.5.6" anchor="rfc3986">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">Uniform Resource Identifier (URI): Generic Syntax</title>
 
@@ -5357,8 +5349,8 @@ tags:
     <vocab>world wide web</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_f05dfdab-4802-a2bd-0b69-b0f21ad86f64" type="standard" schema-version="v1.5.6" anchor="rfc5988">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_81b76dd1-37cd-d2db-f871-18e9284c7232" type="standard" schema-version="v1.5.6" anchor="rfc5988">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">Web Linking</title>
 
@@ -5445,8 +5437,8 @@ tags:
 </bibitem>
 <bibitem anchor="GMLSF" id="_edf4fb4f-0eb3-eb88-65ac-9683f2d17b57"><formattedref format="application/x-isodoc+xml">van den Brink, L., Portele, C., Vretanos, P.: OGC 10-100r3,
 <strong>Geography Markup Language (GML) Simple Features Profile</strong>, <link target="http://portal.opengeospatial.org/files/?artifact_id=42729"/></formattedref><docidentifier>GMLSF</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_0c95b39d-6488-1a85-d9ce-03cf7045e984" type="standard" schema-version="v1.5.6" anchor="GeoJSON">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_751a169d-ecdd-0f3d-4a40-6913bddf1e5b" type="standard" schema-version="v1.5.6" anchor="GeoJSON">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">The GeoJSON Format</title>
 
@@ -5578,8 +5570,8 @@ tags:
 </organization></contributor><contributor><role type="publisher"/><organization>
 <name>IEC</name>
 </organization></contributor><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_80231ad0-0025-cb87-beeb-24a55cdae318" type="standard" schema-version="v1.5.6" anchor="iso19101-1">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_77902294-53e3-7137-e19f-6c8a7d1f33ef" type="standard" schema-version="v1.5.6" anchor="iso19101-1">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -5608,6 +5600,7 @@ tags:
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO 19101-1</docidentifier>
   <docidentifier type="iso-reference">ISO 19101-1:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.92</docidentifier>
   <docnumber>19101</docnumber>
@@ -5681,8 +5674,8 @@ tags:
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref>ISO/AWI 19101-1</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/AWI 19101-1</docidentifier>
+      <formattedref>ISO/CD 19101-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/CD 19101-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -5690,8 +5683,8 @@ tags:
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_1ce3bd2f-5094-ccf9-9501-121cbe134fe4" type="standard" schema-version="v1.5.6" anchor="iso19103">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_e5cd8632-12dc-3036-44b2-a12aab8bc235" type="standard" schema-version="v1.5.6" anchor="iso19103">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -5714,6 +5707,7 @@ tags:
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56734:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19103:2015</docidentifier>
+  <docidentifier type="iso-undated">ISO 19103</docidentifier>
   <docidentifier type="iso-reference">ISO 19103:2015(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19103:stage-95.99</docidentifier>
   <docnumber>19103</docnumber>

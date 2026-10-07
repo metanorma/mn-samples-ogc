@@ -126,7 +126,7 @@
   <edition>27.0</edition>
   <language>en</language>
   <script>Latn</script>
-  <abstract><p>The OGC provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. “International standards”<fn reference="1"><p>As defined in ISO/IEC Directives, Part 2</p>
+  <abstract><p>The <link target="http://www.opengeospatial.org/">OGC</link> provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. “International standards”<fn reference="1"><p>As defined in ISO/IEC Directives, Part 2</p>
 </fn> are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:</p>
 
 <p>A document, established by consensus and approved by the OGC Membership, that provides, for common and repeated use, rules, guidelines or characteristics for activities or their results, aimed at the achievement of the optimum degree of order in a given context.</p>
@@ -151,7 +151,7 @@
 
 <p>The OGC Technical Committee provides an open, collaborative forum for professional discussion related to the consensus development and/or evaluation, approval, and revision of OGC international standards. The primary use of approved OGC standards is to provide the ability to build and deploy interoperable geospatial solutions in the larger Information Technology (IT) domain.</p>
 
-<p>The OGC Principles of Conduct govern personal and public interactions in any TC activity.</p>
+<p>The OGC <link target="http://www.opengeospatial.org/ogc/policies/conduct/">Principles of Conduct</link> govern personal and public interactions in any TC activity.</p>
 </abstract>
   <status>
     <stage>approved</stage>
@@ -331,9 +331,15 @@
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>ogcdoc</vocab>
+  </keyword>
+  <keyword>
+    <vocab>netcdf</vocab>
+  </keyword>
+  <keyword>
+    <vocab>cf-netcdf</vocab>
+  </keyword>
   <ext>
     <doctype>other</doctype>
     <flavor>ogc</flavor>
@@ -651,13 +657,27 @@
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>TBD</vocab>
+  </keyword>
+  <keyword>
+    <vocab>geoprocessing</vocab>
+  </keyword>
+  <keyword>
+    <vocab>ogcdoc</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC document</vocab>
+  </keyword>
+  <keyword>
+    <vocab>processes</vocab>
+  </keyword>
+  <keyword>
+    <vocab>processing</vocab>
+  </keyword>
+  <keyword>
+    <vocab>WPS</vocab>
+  </keyword>
   <ext>
     <doctype>standard</doctype>
     <subdoctype>implementation</subdoctype>
@@ -770,18 +790,42 @@
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>ogcdoc</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC document</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Discrete Global Grid System</vocab>
+  </keyword>
+  <keyword>
+    <vocab>DGGS</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Digital Earth</vocab>
+  </keyword>
+  <keyword>
+    <vocab>DGGScore</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Spatial Reference System</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Global Data Structure</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Geographic Information Systems</vocab>
+  </keyword>
+  <keyword>
+    <vocab>DE-9IM</vocab>
+  </keyword>
+  <keyword>
+    <vocab>standard</vocab>
+  </keyword>
+  <keyword>
+    <vocab>specification</vocab>
+  </keyword>
   <ext>
     <doctype>abstract-specification-topic</doctype>
     <flavor>ogc</flavor>
@@ -892,7 +936,7 @@
   <script>Latn</script>
   <abstract><p>The CDB standard defines a standardized model and structure for a single, “versionable”, virtual representation of the earth. A CDB structured data store provides for a geospatial content and model definition repository that is plug-and-play interoperable between database authoring workstations. Moreover, a CDB structured data store can be used as a common online (or runtime) repository from which various simulator client-devices can simultaneously retrieve and modify, in real-time, relevant information to perform their respective runtime simulation tasks. In this case, a CDB is plug-and-play interoperable between CDB-compliant simulators. A CDB can be readily used by existing simulation client-devices (legacy Image Generators, Radar simulator, Computer Generated Forces, etc.) through a data publishing process that is performed on-demand in real-time.</p>
 
-<p>The application of CDB to future simulation architectures will significantly reduce runtime-source level and algorithmic correlation errors, while reducing development, update and configuration management timelines. With the addition of the High Level Architecture - -Federation Object Model (HLA/FOM)<fn reference="1"><p/>
+<p>The application of CDB to future simulation architectures will significantly reduce runtime-source level and algorithmic correlation errors, while reducing development, update and configuration management timelines. With the addition of the High Level Architecture - -Federation Object Model (HLA/FOM)<fn reference="1"><p><link target="https://en.wikipedia.org/wiki/High-level_architecture"/></p>
 </fn> and DIS protocols, the application of the CDB standard provides a Common Environment to which inter-connected simulators share a common view of the simulated environment.</p>
 
 <p>The CDB standard defines an open format for the storage, access and modification of a synthetic environment database. A <strong>synthetic environment</strong> is a <em>computer simulation</em> that represents activities at a high level of realism, from simulation of theaters of war to factories and manufacturing processes. These environments may be created within a single computer or a vast distributed network connected by local and wide area networks and augmented by super-realistic special effects and accurate behavioral models. SE allows visualization of and immersion into the environment being simulated<fn reference="2"><p>"Department of Defense Modeling and Simulation (M&amp;S) Glossary", DoD 5000.59-M</p>
@@ -918,15 +962,33 @@
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>ogcdoc</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC document</vocab>
+  </keyword>
+  <keyword>
+    <vocab>CDB</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Common Data Base</vocab>
+  </keyword>
+  <keyword>
+    <vocab>simulation</vocab>
+  </keyword>
+  <keyword>
+    <vocab>synthetic environment</vocab>
+  </keyword>
+  <keyword>
+    <vocab>virtual</vocab>
+  </keyword>
+  <keyword>
+    <vocab>primer</vocab>
+  </keyword>
+  <keyword>
+    <vocab>data store</vocab>
+  </keyword>
   <ext>
     <doctype>best-practice</doctype>
     <subdoctype>general</subdoctype>
@@ -1074,13 +1136,27 @@
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>ogcdoc</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC document</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Best Practice</vocab>
+  </keyword>
+  <keyword>
+    <vocab>moving features</vocab>
+  </keyword>
+  <keyword>
+    <vocab>netCDF</vocab>
+  </keyword>
+  <keyword>
+    <vocab>CF convention</vocab>
+  </keyword>
+  <keyword>
+    <vocab>trajectory</vocab>
+  </keyword>
   <ext>
     <doctype>best-practice</doctype>
     <subdoctype>general</subdoctype>
@@ -1157,7 +1233,7 @@
 
 
 
-<p>For information on Location Powers: </p>
+<p>For information on Location Powers: <link target="http://www.locationpowers.net/pastevents/"/></p>
 </abstract>
   <status>
     <stage>approved</stage>
@@ -1171,15 +1247,33 @@
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>ogcdoc</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC documents</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Big Data</vocab>
+  </keyword>
+  <keyword>
+    <vocab>geospatial</vocab>
+  </keyword>
+  <keyword>
+    <vocab>location</vocab>
+  </keyword>
+  <keyword>
+    <vocab>open</vocab>
+  </keyword>
+  <keyword>
+    <vocab>standards</vocab>
+  </keyword>
+  <keyword>
+    <vocab>interoperability</vocab>
+  </keyword>
+  <keyword>
+    <vocab>cloud computing</vocab>
+  </keyword>
   <ext>
     <doctype>white-paper</doctype>
     <flavor>ogc</flavor>
@@ -1296,7 +1390,7 @@
 
 <p>The OGC API family of standards is organized by resource type. This standard specifies the fundamental API building blocks for interacting with features. The spatial data community uses the term 'feature' for things in the real world that are of interest.</p>
 
-<p>For those not familiar with the term 'feature,' the explanations on Spatial Things, Features and Geometry in the <eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C&#xA0;sdw-bp">W3C/OGC Spatial Data on the Web Best Practice document</eref> provide more detail.</p>
+<p>For those not familiar with the term 'feature,' the explanations on <link target="https://www.w3.org/TR/sdw-bp/#spatial-things-features-and-geometry">Spatial Things, Features and Geometry</link> in the <eref type="inline" bibitemid="spatial_data_wbp" citeas="W3C&#xA0;sdw-bp">W3C/OGC Spatial Data on the Web Best Practice document</eref> provide more detail.</p>
 
 <p>OGC API Features provides API building blocks to create, modify and query features on the Web. OGC API Features is comprised of multiple parts, each of them is a separate standard. This part, the "Core," specifies the core capabilities and is restricted to fetching features where geometries are represented in the coordinate reference system WGS 84 with axis order longitude/latitude. Additional capabilities that address more advanced needs will be specified in additional parts. Examples include support for creating and modifying features, more complex data models, richer queries, additional coordinate reference systems, multiple datasets and collection hierarchies.</p>
 
@@ -1376,29 +1470,75 @@ GET
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>ogcdoc</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC document</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC API</vocab>
+  </keyword>
+  <keyword>
+    <vocab>ISO</vocab>
+  </keyword>
+  <keyword>
+    <vocab>ISO/TC 211</vocab>
+  </keyword>
+  <keyword>
+    <vocab>geographic information</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Geospatial API</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Web Feature Service</vocab>
+  </keyword>
+  <keyword>
+    <vocab>WFS</vocab>
+  </keyword>
+  <keyword>
+    <vocab>feature</vocab>
+  </keyword>
+  <keyword>
+    <vocab>features</vocab>
+  </keyword>
+  <keyword>
+    <vocab>property</vocab>
+  </keyword>
+  <keyword>
+    <vocab>geographic information</vocab>
+  </keyword>
+  <keyword>
+    <vocab>spatial data</vocab>
+  </keyword>
+  <keyword>
+    <vocab>spatial things</vocab>
+  </keyword>
+  <keyword>
+    <vocab>dataset</vocab>
+  </keyword>
+  <keyword>
+    <vocab>distribution</vocab>
+  </keyword>
+  <keyword>
+    <vocab>API</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OpenAPI</vocab>
+  </keyword>
+  <keyword>
+    <vocab>GeoJSON</vocab>
+  </keyword>
+  <keyword>
+    <vocab>GML</vocab>
+  </keyword>
+  <keyword>
+    <vocab>HTML</vocab>
+  </keyword>
+  <keyword>
+    <vocab>schema.org</vocab>
+  </keyword>
   <ext>
     <doctype>standard</doctype>
     <subdoctype>implementation</subdoctype>
@@ -1474,13 +1614,27 @@ GET
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>ogcdoc</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC document</vocab>
+  </keyword>
+  <keyword>
+    <vocab>CDB</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Common Data Base</vocab>
+  </keyword>
+  <keyword>
+    <vocab>simulation</vocab>
+  </keyword>
+  <keyword>
+    <vocab>synthetic environment</vocab>
+  </keyword>
+  <keyword>
+    <vocab>version 1.1</vocab>
+  </keyword>
   <ext>
     <doctype>release-notes</doctype>
     <flavor>ogc</flavor>
@@ -1706,10 +1860,18 @@ GET
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>Data Cubes</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Coverages</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Spatial Analytics</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Geospatial</vocab>
+  </keyword>
   <ext>
     <doctype>community-practice</doctype>
     <flavor>ogc</flavor>
@@ -1803,14 +1965,30 @@ GET
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>ogcdoc</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC document</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC</vocab>
+  </keyword>
+  <keyword>
+    <vocab>IndoorGML</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Indoor space</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Outdoor space</vocab>
+  </keyword>
+  <keyword>
+    <vocab>Seamless navigation</vocab>
+  </keyword>
+  <keyword>
+    <vocab>CityGML</vocab>
+  </keyword>
   <ext>
     <doctype>discussion-paper</doctype>
     <flavor>ogc</flavor>
@@ -2057,22 +2235,54 @@ GET
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>ogcdoc</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC document</vocab>
+  </keyword>
+  <keyword>
+    <vocab>web feature service</vocab>
+  </keyword>
+  <keyword>
+    <vocab>wfs</vocab>
+  </keyword>
+  <keyword>
+    <vocab>feature</vocab>
+  </keyword>
+  <keyword>
+    <vocab>property</vocab>
+  </keyword>
+  <keyword>
+    <vocab>geographic information</vocab>
+  </keyword>
+  <keyword>
+    <vocab>spatial data</vocab>
+  </keyword>
+  <keyword>
+    <vocab>spatial things</vocab>
+  </keyword>
+  <keyword>
+    <vocab>dataset</vocab>
+  </keyword>
+  <keyword>
+    <vocab>distribution</vocab>
+  </keyword>
+  <keyword>
+    <vocab>API</vocab>
+  </keyword>
+  <keyword>
+    <vocab>openapi</vocab>
+  </keyword>
+  <keyword>
+    <vocab>geojson</vocab>
+  </keyword>
+  <keyword>
+    <vocab>gml</vocab>
+  </keyword>
+  <keyword>
+    <vocab>html</vocab>
+  </keyword>
   <ext>
     <doctype>standard</doctype>
     <subdoctype>implementation</subdoctype>
@@ -2189,13 +2399,27 @@ GET
       </organization>
     </owner>
   </copyright>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
-  <keyword/>
+  <keyword>
+    <vocab>TBD</vocab>
+  </keyword>
+  <keyword>
+    <vocab>geoprocessing</vocab>
+  </keyword>
+  <keyword>
+    <vocab>ogcdoc</vocab>
+  </keyword>
+  <keyword>
+    <vocab>OGC document</vocab>
+  </keyword>
+  <keyword>
+    <vocab>processes</vocab>
+  </keyword>
+  <keyword>
+    <vocab>processing</vocab>
+  </keyword>
+  <keyword>
+    <vocab>WPS</vocab>
+  </keyword>
   <ext>
     <doctype>standard</doctype>
     <subdoctype>implementation</subdoctype>

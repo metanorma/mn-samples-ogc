@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.10" schema-version="v2.1.6" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">Geospatial Coverages Data Cube Community Practice</title>
 <docidentifier type="ogc-internal" primary="true">18-095r7</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/CS/dataCubeCP</docidentifier><docnumber>18-095r7</docnumber><date type="published"><on>2020-10-14</on></date><date type="issued"><on>2020-08-28</on></date><date type="received"><on>2020-01-31</on></date><date type="2000-05-11"/><contributor><role type="editor"/><person>
@@ -13,7 +13,7 @@
 <abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>Data cubes for geospatial information provide the means to integrate observations and other types of geospatial data for use in multiple applications through simplified access and efficient analytics. Using the Geospatial Coverages data structure, this Community Practice defines requirements for a geospatial coverages data cube infrastructure and guidelines for enhancements and extensions to the basic core.</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2026</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>Data Cubes</keyword><keyword>Coverages</keyword><keyword>Spatial Analytics</keyword><keyword>Geospatial</keyword><ext><doctype>community-practice</doctype><flavor>ogc</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword><vocab>Data Cubes</vocab></keyword><keyword><vocab>Coverages</vocab></keyword><keyword><vocab>Spatial Analytics</vocab></keyword><keyword><vocab>Geospatial</vocab></keyword><ext><doctype>community-practice</doctype><flavor>ogc</flavor><stage>approved</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>2018</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(237, 193, 35)</color-secondary-shade-1><color-secondary-shade-2>rgb(246, 223, 140)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -860,13 +860,13 @@ Compliance Testing web site<fn id="_9fafb6ef-a371-f947-d6f7-9a83278689f0" refere
 <td id="_04d66821-4f49-e6f0-88f1-67cc2d8a6955" valign="middle" align="left">Edits based on comments received from public review</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_6e39d08c-ad6b-6739-18e0-047f83a58950" normative="true" obligation="informative">
+</annex><bibliography><references id="_5a9c44cb-1606-e932-fa8d-d131df3bf2b8" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title>
 <p id="_1e0cd368-a692-2696-c284-1bfd7afd848c">The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.</p>
 
 
-<bibitem id="_bd0ebaae-6d52-429e-815f-ded1cf34fa9b" type="standard" schema-version="v1.5.6" anchor="OGC_2006">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_9968bd6d-8e01-1a63-5a53-d7565b5fdbff" type="standard" schema-version="v1.5.6" anchor="OGC_2006">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Topic 6</title>
 
@@ -917,8 +917,8 @@ Compliance Testing web site<fn id="_9fafb6ef-a371-f947-d6f7-9a83278689f0" refere
   <script>Latn</script>
   <abstract language="en" script="Latn">This International Standard defines a conceptual schema for the spatial characteristics of coverages. Coverages support mapping from a spatial, temporal or spatiotemporal domain to feature attribute values where feature attribute types are common to all geographic positions within the domain. A coverage domain consists of a collection of direct positions in a coordinate space that may be defined in terms of up to three spatial dimensions as well as a temporal dimension.</abstract>
 </bibitem>
-<bibitem id="_eb6cf034-fbec-994c-ba09-e8b432250845" type="standard" schema-version="v1.5.6" anchor="OGC_2011">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_fe48b141-2f7b-22ff-e161-0886cbc08326" type="standard" schema-version="v1.5.6" anchor="OGC_2011">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC® SWE Common Data Model Encoding Standard</title>
 
@@ -967,8 +967,8 @@ Compliance Testing web site<fn id="_9fafb6ef-a371-f947-d6f7-9a83278689f0" refere
   <script>Latn</script>
   <abstract language="en" script="Latn">This standard defines low level data models for exchanging sensor related data between nodes of the OGC® Sensor Web Enablement (SWE) framework. These models allow applications and/or servers to structure, encode and transmit sensor datasets in a self describing and semantically enabled way.</abstract>
 </bibitem>
-<bibitem id="_1788430b-d767-0b61-5117-538a7389de7f" type="standard" schema-version="v1.5.6" anchor="OGC_2017">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_94a60c85-1e9a-c569-f79f-a36d92df5616" type="standard" schema-version="v1.5.6" anchor="OGC_2017">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Coverage Implementation Schema</title>
 
@@ -1038,8 +1038,8 @@ This Coverage Implementation Schema (CIS) specifies the OGC coverage model by es
 
 Coverages can be encoded in any suitable format (such as GML, JSON, GeoTIFF, or Net­CDF) and can be partitioned, e.g., for a time-interleaved representation. Coverages are independent from service definitions and, therefore, can be accessed through a variety of OGC services types, such as the Web Coverage Service (WCS) Standard [8]. The coverage structure can serve a wide range of coverage application domains, thereby contributing to harmon­ization and interoperability between and across these domains.</abstract>
 </bibitem>
-<bibitem id="_c9450251-544c-dd78-d4aa-51633eed0076" type="standard" schema-version="v1.5.6" anchor="WCS_2012">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_7fc5da59-4448-a49c-b2eb-a6b667c59395" type="standard" schema-version="v1.5.6" anchor="WCS_2012">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC Web Coverage Service (WCS) 2.1 Interface Standard</title>
 
@@ -1095,8 +1095,8 @@ This document specifies the WCS core. Every implementation of a WCS shall adhere
 This WCS 2.1 standard extends WCS 2.0 in a backwards compatible manner by accommodating coverages as per the OGC Coverage Implementation Schema (CIS) 1.1 in addition to CIS 1.0 coverages as addressed by WCS 2.0.
 </abstract>
 </bibitem>
-<bibitem id="_ce180e48-86e2-0e44-435e-ce45482b27ce" type="standard" schema-version="v1.5.6" anchor="WCS-P_2014">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_37ca731a-8be8-d8b8-b91c-2a4ad65f159f" type="standard" schema-version="v1.5.6" anchor="WCS-P_2014">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC® Web Coverage Service WCS Interface Standard</title>
 
@@ -1157,8 +1157,8 @@ This WCS 2.1 standard extends WCS 2.0 in a backwards compatible manner by accomm
   <script>Latn</script>
   <abstract language="en" script="Latn">The OGC Web Coverage Service (WCS)– Processing Extension defines an extension to the WCS Core [OGC 09-110], the ProcessCoverages request type, which allows clients to initi-ate server-side processing and filtering of coverages and to download the resulting coverage or value sets based on the query language defined in the Web Coverage Processing Service (WCPS) interface standard [OGC 08-068].</abstract>
 </bibitem>
-<bibitem id="_375e87b9-2118-ad4e-f55b-a8393f5fe8eb" type="standard" schema-version="v1.5.6" anchor="WCPS_2009">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_4591a6a0-8216-ae6a-1cea-2e9fa9d7cdb3" type="standard" schema-version="v1.5.6" anchor="WCPS_2009">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Web Coverage Processing Service (WCPS) Language Interface Standard</title>
 
@@ -1207,8 +1207,8 @@ This WCS 2.1 standard extends WCS 2.0 in a backwards compatible manner by accomm
   <script>Latn</script>
   <abstract language="en" script="Latn">The OGC® Web Coverage Processing Service (WCPS) defines a protocol-independent language for the extraction, processing, and analysis of multi-dimensional coverages representing sensor, image, or statistics data.</abstract>
 </bibitem>
-<bibitem id="_30d3d567-88fa-12f3-74d9-b659a971efa3" type="standard" schema-version="v1.5.6" anchor="WMS_2006">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_02d4decf-983d-74ec-89b2-32e0b60bbc33" type="standard" schema-version="v1.5.6" anchor="WMS_2006">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Web Map Service (WMS) Implementation Specification</title>
 
@@ -1256,8 +1256,8 @@ This WCS 2.1 standard extends WCS 2.0 in a backwards compatible manner by accomm
   <script>Latn</script>
   <abstract language="en" script="Latn">The OpenGIS® Web Map Service Interface Standard (WMS) provides a simple HTTP interface for requesting geo-registered map images from one or more distributed geospatial databases. A WMS request defines the geographic layer(s) and area of interest to be processed. The response to the request is one or more geo-registered map images (returned as JPEG, PNG, etc) that can be displayed in a browser application. The interface also supports the ability to specify whether the returned images should be transparent so that layers from multiple servers can be combined or not. &lt;p&gt;NOTE: WMS 1.3 and ISO 19128 are the same documents.</abstract>
 </bibitem>
-<bibitem id="_db8e1ffe-fe8b-8ad3-8a9f-89cff0b9017b" type="standard" schema-version="v1.5.6" anchor="WMTS_2010">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_b11a4043-bc79-7603-9049-99e0f90274ad" type="standard" schema-version="v1.5.6" anchor="WMTS_2010">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Web Map Tile Service Implementation Standard</title>
 

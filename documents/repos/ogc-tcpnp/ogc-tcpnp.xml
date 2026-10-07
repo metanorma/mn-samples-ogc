@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.10" schema-version="v2.1.6" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">Technical Committee Policies and Procedures</title>
 <uri>http://docs.opengeospatial.org/pol/05-020r26/05-020r26.html</uri><uri type="xml">https://riboseinc.github.io/ogc-tcpnp/ogc-tcpnp.xml</uri><uri type="pdf">https://riboseinc.github.io/ogc-tcpnp/ogc-tcpnp.pdf</uri><uri type="doc">https://riboseinc.github.io/ogc-tcpnp/ogc-tcpnp.doc</uri><docidentifier type="ogc-internal" primary="true">05-020r26</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/pol/tcpnp/26.0</docidentifier><docnumber>05-020r26</docnumber><date type="published"><on>2018-07-24</on></date><date type="issued"><on>2018-06-05</on></date><date type="received"><on>2018-02-14</on></date><contributor><role type="editor"/><person>
@@ -37,7 +37,7 @@
 <p>The OGC Principles of Conduct (<eref type="inline" bibitemid="OGCPOC" citeas="OGC Principles of Conduct"/>) govern personal and public interactions in any TC activity.</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2018</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>policy</doctype><flavor>ogc</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>policy</doctype><flavor>ogc</flavor><stage>approved</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>2018</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(237, 193, 35)</color-secondary-shade-1><color-secondary-shade-2>rgb(246, 223, 140)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -2496,9 +2496,9 @@
 </ul>
 </termnote><source status="identical" type="authoritative"><origin bibitemid="OMBA119" type="inline" citeas="OMB Circular A-119"/></source></term>
 </terms>
-</annex><bibliography><references id="_d675a473-7b67-8c0b-da81-dd9a8859c461" normative="false" obligation="informative">
-<title id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><bibitem id="_edfabe70-6786-1203-7d6c-0bf4f09dd868" type="standard" schema-version="v1.5.6" anchor="OGC06135">
-  <fetched>2026-07-27</fetched>
+</annex><bibliography><references id="_40aa5c5c-eaa4-4dea-c1b5-8149a18524ea" normative="false" obligation="informative">
+<title id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><bibitem id="_1bfe6db7-633c-36b5-0883-04b1b1e1069e" type="standard" schema-version="v1.5.6" anchor="OGC06135">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">Specification best practices</title>
 
@@ -2546,8 +2546,8 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document describes a variety of Best Practices and Specification development guidance that the Members have discussed and approved over the years. These Best Practices have not been captured in other formal OGC documents other than meeting notes.</abstract>
-</bibitem><bibitem id="_80dd7db7-5542-74fd-34ca-a7108da2cb04" type="standard" schema-version="v1.5.6" anchor="OGC09048">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_9cf5ca20-b6bf-6162-ed17-7bc866d39337" type="standard" schema-version="v1.5.6" anchor="OGC09048">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC Name Type Specification</title>
 
@@ -2610,8 +2610,8 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document specifies a rule for constructing OGC names that may be used for identifying definitions.</abstract>
-</bibitem><bibitem id="_636c15e7-4298-799f-0ef4-eccfeab35726" type="standard" schema-version="v1.5.6" anchor="OGC09046">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_1ca858c4-8125-861d-4ce8-eaa6292e3874" type="standard" schema-version="v1.5.6" anchor="OGC09046">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Naming Authority – Policies and Procedures </title>
 
@@ -2668,8 +2668,8 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document describes the procedures used by the OGC Naming Authority for the assignment and registration of OGC names.</abstract>
-</bibitem><bibitem id="_851b12a0-ac50-7adc-af9d-9ef6478506b0" type="standard" schema-version="v1.5.6" anchor="OGC09047">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_3b50ca10-8254-0cb2-c3f6-8600c4ac75ee" type="standard" schema-version="v1.5.6" anchor="OGC09047">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC-NA Name type specification</title>
 
@@ -2721,8 +2721,8 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document specifies a rule for constructing OGC names that may be used for identifying documents and elements within a document.</abstract>
-</bibitem><bibitem id="_4ef962f8-5088-4079-44a0-a16a7e1ad16b" type="standard" schema-version="v1.5.6" anchor="OGC08125">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_ca9a34ec-9db8-f6dc-4194-5a26cf58b883" type="standard" schema-version="v1.5.6" anchor="OGC08125">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC® KML Standard Development Best Practices</title>
 
@@ -2789,8 +2789,8 @@
 <name>ISO</name>
 </organization></contributor><contributor><role type="publisher"/><organization>
 <name>IEC</name>
-</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem id="_2886cc9e-2c70-7ced-fc73-545c670eb610" type="standard" schema-version="v1.5.6" anchor="ISO191011">
-  <fetched>2026-07-27</fetched>
+</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem id="_db2bcf5a-2a12-d47b-0b3f-a221f9005780" type="standard" schema-version="v1.5.6" anchor="ISO191011">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2819,6 +2819,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19101-1</docidentifier>
+  <docidentifier type="iso-undated">ISO 19101-1</docidentifier>
   <docidentifier type="iso-reference">ISO 19101-1(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.92</docidentifier>
   <docnumber>19101</docnumber>
@@ -2888,8 +2889,8 @@
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref>ISO/AWI 19101-1</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/AWI 19101-1</docidentifier>
+      <formattedref>ISO/CD 19101-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/CD 19101-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -2923,6 +2924,7 @@
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>
+      <docidentifier type="iso-undated">ISO 19101-1</docidentifier>
       <docidentifier type="iso-reference">ISO 19101-1:2014(E)</docidentifier>
       <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.92</docidentifier>
       <docnumber>19101</docnumber>
@@ -2996,8 +2998,8 @@
       </relation>
       <relation type="obsoletedBy">
         <bibitem>
-          <formattedref>ISO/AWI 19101-1</formattedref>
-          <docidentifier type="ISO" primary="true">ISO/AWI 19101-1</docidentifier>
+          <formattedref>ISO/CD 19101-1</formattedref>
+          <docidentifier type="ISO" primary="true">ISO/CD 19101-1</docidentifier>
         </bibitem>
 
       </relation>
@@ -3010,8 +3012,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_ab15713d-33fd-e16d-863c-d600e10a5a28" type="standard" schema-version="v1.5.6" anchor="ISO191012">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_f55d7f15-c8fd-ef42-1138-b821535da481" type="standard" schema-version="v1.5.6" anchor="ISO191012">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3040,6 +3042,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:69325:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/06/93/69325.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19101-2</docidentifier>
+  <docidentifier type="iso-undated">ISO 19101-2</docidentifier>
   <docidentifier type="iso-reference">ISO 19101-2(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19101:-2:stage-90.93</docidentifier>
   <docnumber>19101</docnumber>
@@ -3128,6 +3131,7 @@
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:69325:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/06/93/69325.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19101-2:2018</docidentifier>
+      <docidentifier type="iso-undated">ISO 19101-2</docidentifier>
       <docidentifier type="iso-reference">ISO 19101-2:2018(E)</docidentifier>
       <docidentifier type="URN">urn:iso:std:iso:19101:-2:stage-90.93</docidentifier>
       <docnumber>19101</docnumber>
@@ -3199,8 +3203,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_126e69ab-c100-27f2-140d-277bc71b5adc" type="standard" schema-version="v1.5.6" anchor="ISO19106">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_aa6e0a30-7da7-b57c-293b-3922fa3b68f2" type="standard" schema-version="v1.5.6" anchor="ISO19106">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3223,6 +3227,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26011:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26011.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19106</docidentifier>
+  <docidentifier type="iso-undated">ISO 19106</docidentifier>
   <docidentifier type="iso-reference">ISO 19106(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19106:stage-90.93</docidentifier>
   <docnumber>19106</docnumber>
@@ -3294,6 +3299,7 @@
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26011:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26011.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19106:2004</docidentifier>
+      <docidentifier type="iso-undated">ISO 19106</docidentifier>
       <docidentifier type="iso-reference">ISO 19106:2004(E)</docidentifier>
       <docidentifier type="URN">urn:iso:std:iso:19106:stage-90.93</docidentifier>
       <docnumber>19106</docnumber>
@@ -3354,8 +3360,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_4c4dcd10-e1c2-0550-5743-1422daab72dc" type="standard" schema-version="v1.5.6" anchor="ISO19109">
-  <fetched>2026-07-27</fetched>
+</bibitem><bibitem id="_eb685528-8023-8fc2-e3d1-9b4fc485e4ba" type="standard" schema-version="v1.5.6" anchor="ISO19109">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3378,6 +3384,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59193:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59193.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19109</docidentifier>
+  <docidentifier type="iso-undated">ISO 19109</docidentifier>
   <docidentifier type="iso-reference">ISO 19109(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19109:stage-95.99</docidentifier>
   <docnumber>19109</docnumber>
@@ -3462,6 +3469,7 @@
       <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59193:en</uri>
       <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59193.detail.rss</uri>
       <docidentifier type="ISO" primary="true">ISO 19109:2015</docidentifier>
+      <docidentifier type="iso-undated">ISO 19109</docidentifier>
       <docidentifier type="iso-reference">ISO 19109:2015(E)</docidentifier>
       <docidentifier type="URN">urn:iso:std:iso:19109:stage-95.99</docidentifier>
       <docnumber>19109</docnumber>

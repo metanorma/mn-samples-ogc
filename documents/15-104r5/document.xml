@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.10" schema-version="v2.1.6" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">Topic 21: Discrete Global Grid Systems Abstract Specification</title>
 <docidentifier type="ogc-internal" primary="true">15-104r5</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/AS/dggs/1.0</docidentifier><docidentifier type="ogc-external">http://docs.opengeospatial.org/as/15-104r5/15-104r5.html</docidentifier><docnumber>15-104r5</docnumber><date type="published"><on>2017-08-01</on></date><date type="issued"><on>2017-06-13</on></date><date type="received"><on>2015-09-30</on></date><contributor><role type="author"/><organization>
@@ -27,7 +27,7 @@
 <abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>This document specifies the core Abstract Specification and extension mechanisms for Discrete Global Grid Systems (DGGS). <em>A DGGS is a spatial reference system that uses a hierarchical tessellation of cells to partition and address the globe. DGGS are characterized by the properties of their cell structure, geo-encoding, quantization strategy and associated mathematical functions.</em> The OGC DGGS Abstract Specification supports the specification of standardized DGGS infrastructures that enable the integrated analysis of very large, multi-source, multi-resolution, multi-dimensional, distributed geospatial data. Interoperability between OGC DGGS implementations is anticipated through implementation standards, and extension interface encodings of OGC Web Services.</p>
 </abstract><status><stage>approved</stage></status><copyright><from>2026</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>ogcdoc</keyword><keyword>OGC document</keyword><keyword>Discrete Global Grid System</keyword><keyword>DGGS</keyword><keyword>Digital Earth</keyword><keyword>DGGScore</keyword><keyword>Spatial Reference System</keyword><keyword>Global Data Structure</keyword><keyword>Geographic Information Systems</keyword><keyword>DE-9IM</keyword><keyword>standard</keyword><keyword>specification</keyword><ext><doctype>abstract-specification-topic</doctype><flavor>ogc</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword><vocab>ogcdoc</vocab></keyword><keyword><vocab>OGC document</vocab></keyword><keyword><vocab>Discrete Global Grid System</vocab></keyword><keyword><vocab>DGGS</vocab></keyword><keyword><vocab>Digital Earth</vocab></keyword><keyword><vocab>DGGScore</vocab></keyword><keyword><vocab>Spatial Reference System</vocab></keyword><keyword><vocab>Global Data Structure</vocab></keyword><keyword><vocab>Geographic Information Systems</vocab></keyword><keyword><vocab>DE-9IM</vocab></keyword><keyword><vocab>standard</vocab></keyword><keyword><vocab>specification</vocab></keyword><ext><doctype>abstract-specification-topic</doctype><flavor>ogc</flavor><stage>approved</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>2018</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(237, 193, 35)</color-secondary-shade-1><color-secondary-shade-2>rgb(246, 223, 140)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -2149,10 +2149,10 @@
 <td id="_7d73e49c-ce38-8d00-6355-469da03ce335" valign="middle" align="left"/><td id="_ea27b95c-ff48-6b07-9719-749956f18b4a" valign="middle" align="left">Responding to Chris Little’s editorial review</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_926478e7-9cd0-aae8-1eb0-b570db521046" normative="true" obligation="informative">
+</annex><bibliography><references id="_5cbc2cb9-de25-a40a-bfb0-c72232d535a2" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_e1da6c9c-cdcc-8344-f3eb-3944be1dec2e" type="standard" schema-version="v1.5.6" anchor="iso19101">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_a2c11dae-a0df-3d86-9f87-d21f9d1c4116" type="standard" schema-version="v1.5.6" anchor="iso19101">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2181,6 +2181,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:59164:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/91/59164.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19101-1:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO 19101-1</docidentifier>
   <docidentifier type="iso-reference">ISO 19101-1:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19101:-1:stage-90.92</docidentifier>
   <docnumber>19101</docnumber>
@@ -2254,8 +2255,8 @@
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref>ISO/AWI 19101-1</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/AWI 19101-1</docidentifier>
+      <formattedref>ISO/CD 19101-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/CD 19101-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -2263,8 +2264,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_4fee7f3b-bf7a-8863-3e73-2e85bd02ff27" type="standard" schema-version="v1.5.6" anchor="iso19103">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_91626b88-b64a-0d71-1957-fd03fc1f9a7c" type="standard" schema-version="v1.5.6" anchor="iso19103">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2287,6 +2288,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:56734:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/67/56734.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19103:2015</docidentifier>
+  <docidentifier type="iso-undated">ISO 19103</docidentifier>
   <docidentifier type="iso-reference">ISO 19103:2015(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19103:stage-95.99</docidentifier>
   <docnumber>19103</docnumber>
@@ -2352,8 +2354,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_c19a33b4-41d0-88a3-8ef3-73668e4a8627" type="standard" schema-version="v1.5.6" anchor="iso19107">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_21ed2093-a917-b117-c8b5-87a3a587befb" type="standard" schema-version="v1.5.6" anchor="iso19107">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2376,6 +2378,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26012:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26012.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19107:2003</docidentifier>
+  <docidentifier type="iso-undated">ISO 19107</docidentifier>
   <docidentifier type="iso-reference">ISO 19107:2003(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19107:stage-95.99</docidentifier>
   <docnumber>19107</docnumber>
@@ -2431,8 +2434,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_06e2783f-764a-4441-1fd7-29d380add2c6" type="standard" schema-version="v1.5.6" anchor="iso19111">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_5d485a1a-5647-658b-95ff-84bdc031b6a5" type="standard" schema-version="v1.5.6" anchor="iso19111">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2455,6 +2458,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:41126:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/11/41126.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19111:2007</docidentifier>
+  <docidentifier type="iso-undated">ISO 19111</docidentifier>
   <docidentifier type="iso-reference">ISO 19111:2007(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19111:stage-95.99</docidentifier>
   <docnumber>19111</docnumber>
@@ -2528,8 +2532,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_d0220abf-3e6a-00a3-6748-f84a84fcc4e4" type="standard" schema-version="v1.5.6" anchor="iso19112">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_b5c64b54-3891-1f5d-ced0-b82824e76e0b" type="standard" schema-version="v1.5.6" anchor="iso19112">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2552,6 +2556,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:26017:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/02/60/26017.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19112:2003</docidentifier>
+  <docidentifier type="iso-undated">ISO 19112</docidentifier>
   <docidentifier type="iso-reference">ISO 19112:2003(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19112:stage-95.99</docidentifier>
   <docnumber>19112</docnumber>
@@ -2614,8 +2619,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_fe4ba302-2f5d-a154-df5c-69dc21b61075" type="standard" schema-version="v1.5.6" anchor="iso19115">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_0a60d131-fe0d-0550-932e-7b729c75b61f" type="standard" schema-version="v1.5.6" anchor="iso19115">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2644,6 +2649,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:53798:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/05/37/53798.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19115-1:2014</docidentifier>
+  <docidentifier type="iso-undated">ISO 19115-1</docidentifier>
   <docidentifier type="iso-reference">ISO 19115-1:2014(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19115:-1:stage-90.92</docidentifier>
   <docnumber>19115</docnumber>
@@ -2718,8 +2724,8 @@
   </relation>
   <relation type="obsoletedBy">
     <bibitem>
-      <formattedref>ISO/AWI 19115-1</formattedref>
-      <docidentifier type="ISO" primary="true">ISO/AWI 19115-1</docidentifier>
+      <formattedref>ISO/CD 19115-1</formattedref>
+      <docidentifier type="ISO" primary="true">ISO/CD 19115-1</docidentifier>
     </bibitem>
 
   </relation>
@@ -2727,8 +2733,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_94aa4f5a-8472-8d7b-36b8-a9076961f83a" type="standard" schema-version="v1.5.6" anchor="iso19123">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_95aa1a12-534c-4548-b243-c960a02463a2" type="standard" schema-version="v1.5.6" anchor="iso19123">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2751,6 +2757,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40121:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40121.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19123:2005</docidentifier>
+  <docidentifier type="iso-undated">ISO 19123</docidentifier>
   <docidentifier type="iso-reference">ISO 19123:2005(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19123:stage-95.99</docidentifier>
   <docnumber>19123</docnumber>
@@ -2814,8 +2821,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_f7556a90-fc35-b348-11cf-a03c4ab35c1e" type="standard" schema-version="v1.5.6" anchor="iso19125">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_67c347b3-e048-82e7-6e3f-a76c983187bc" type="standard" schema-version="v1.5.6" anchor="iso19125">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2844,6 +2851,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:40114:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/01/40114.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19125-1:2004</docidentifier>
+  <docidentifier type="iso-undated">ISO 19125-1</docidentifier>
   <docidentifier type="iso-reference">ISO 19125-1:2004(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19125:-1:stage-90.93</docidentifier>
   <docnumber>19125</docnumber>
@@ -2906,8 +2914,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_0d3ad6b8-b9bf-721d-fd3f-d7ce3558d080" type="standard" schema-version="v1.5.6" anchor="iso19136">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_cd87608b-7ee6-22ae-c8a3-77b609a2471c" type="standard" schema-version="v1.5.6" anchor="iso19136">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2930,6 +2938,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32554:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/25/32554.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19136:2007</docidentifier>
+  <docidentifier type="iso-undated">ISO 19136</docidentifier>
   <docidentifier type="iso-reference">ISO 19136:2007(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19136:stage-95.99</docidentifier>
   <docnumber>19136</docnumber>
@@ -2993,8 +3002,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_3d909186-47db-7442-11d2-5a969afab8e5" type="standard" schema-version="v1.5.6" anchor="iso19143">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_9f5b8071-0cc6-6396-ee37-f3bb1d203365" type="standard" schema-version="v1.5.6" anchor="iso19143">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3017,6 +3026,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42137:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42137.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO 19143:2010</docidentifier>
+  <docidentifier type="iso-undated">ISO 19143</docidentifier>
   <docidentifier type="iso-reference">ISO 19143:2010(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso:19143:stage-90.93</docidentifier>
   <docnumber>19143</docnumber>
@@ -3081,8 +3091,8 @@
   </place>
 </bibitem>
 <bibitem anchor="iso19156" id="_0f0ba3fa-e8fc-69aa-9e8d-d4d5a36d77db"><formattedref format="application/x-isodoc+xml">ISO: ISO 19156:2011(E), <em>Geographic information – Observations and Measurements</em>, 2011</formattedref><docidentifier type="ISO">ISO 19156:2011(E)</docidentifier><docnumber>19156:2011(E)</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_b04b5e8c-c2fa-9886-76b8-d1c9f17842c9" type="standard" schema-version="v1.5.6" anchor="iso19501">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_4375c043-f19a-b6a3-a974-485f5da669b4" type="standard" schema-version="v1.5.6" anchor="iso19501">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -3111,6 +3121,7 @@
   <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:32620:en</uri>
   <uri type="rss">https://www.iso.org/contents/data/standard/03/26/32620.detail.rss</uri>
   <docidentifier type="ISO" primary="true">ISO/IEC 19501:2005</docidentifier>
+  <docidentifier type="iso-undated">ISO/IEC 19501</docidentifier>
   <docidentifier type="iso-reference">ISO/IEC 19501:2005(E)</docidentifier>
   <docidentifier type="URN">urn:iso:std:iso-iec:19501:stage-90.93</docidentifier>
   <docnumber>19501</docnumber>
@@ -3176,8 +3187,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_e649aa20-2d3c-7e3a-038c-8225ec50013b" type="standard" schema-version="v1.5.6" anchor="ogc06103">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_e5f2f393-3ea8-91dd-17ca-f89c31bcc310" type="standard" schema-version="v1.5.6" anchor="ogc06103">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">OpenGIS Implementation Specification for Geographic information</title>
 
@@ -3233,8 +3244,8 @@
   <script>Latn</script>
   <abstract language="en" script="Latn">The OpenGIS® Simple Features Interface Standard (SFS) provides a well-defined and common way for applications to store and access feature data in relational or object-relational databases, so that the data can be used to support other applications through a common feature model, data store and information access interface. OpenGIS Simple Features are geospatial features described using vector data elements such as points, lines and polygons.  </abstract>
 </bibitem>
-<bibitem id="_9d0ecbba-973f-32c4-188f-39f520d9214d" type="standard" schema-version="v1.5.6" anchor="ogc07036">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_1417a685-3d45-e64f-b83c-93727ad953cb" type="standard" schema-version="v1.5.6" anchor="ogc07036">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
 
@@ -3287,8 +3298,8 @@ Clients and servers with interfaces that implement the OpenGIS® Web Feature Ser
 See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
 </abstract>
 </bibitem>
-<bibitem id="_18cc8407-f111-c78d-afbc-978241f882f4" type="standard" schema-version="v1.5.6" anchor="ogc08015">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_7424095c-b503-0b27-7da7-7155868ab35d" type="standard" schema-version="v1.5.6" anchor="ogc08015">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Topic 2</title>
 
@@ -3341,8 +3352,8 @@ See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
   <abstract language="en" script="Latn">This document is consistent with the second edition (2007) of ISO 19111, Geographic Information — Spatial referencing by coordinates  [ISO 19111:2007]</abstract>
 <formattedref>OGC: OGC 08-015r2, <em>Abstract Specification<fn id="_1007dd82-2fd5-80c7-ca68-a8f91b0ba189" reference="4"><p id="_90c92a79-322b-96af-ebd6-c680219199a7">The OGC Abstract Specifications are available from <link target="http://www.opengeospatial.org/docs/as"/></p>
 </fn> – Topic 2: Spatial referencing by coordinates.</em> Version 4.0.0. <em>(identical in normative content to ISO 19111:2007)</em>, 2010</formattedref></bibitem>
-<bibitem id="_01f585b9-c4b3-4dbd-ef57-b8c49b6eb7fa" type="standard" schema-version="v1.5.6" anchor="ogc10004">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_74992419-c445-365e-e979-352961148524" type="standard" schema-version="v1.5.6" anchor="ogc10004">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">Topic 20</title>
 

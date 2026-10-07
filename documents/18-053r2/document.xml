@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.10" schema-version="v2.1.6" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">3D Tiles Specification 1.0</title>
 <docidentifier type="ogc-internal" primary="true">18-053r2</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/docs/CS/3DTiles/1.0</docidentifier><docidentifier type="ogc-external">http://docs.opengeospatial.org/is/18-053r2/18-053r2.html</docidentifier><docnumber>18-053r2</docnumber><date type="published"><on>2019-01-31</on></date><date type="issued"><on>2018-12-14</on></date><date type="received"><on>2018-06-04</on></date><date type="updated"><on>2018-04-07</on></date><contributor><role type="editor"/><person>
@@ -16,7 +16,7 @@
 <name>Open Geospatial Consortium</name>
 <abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><version>2018-04-07</version><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2016-2019</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>community-standard</doctype><flavor>ogc</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>community-standard</doctype><flavor>ogc</flavor><stage>approved</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>2018</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(237, 193, 35)</color-secondary-shade-1><color-secondary-shade-2>rgb(246, 223, 140)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -5711,13 +5711,13 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
 </td>
 </tr></tbody>
 </table>
-</annex><bibliography><clause id="_aea48a07-2a47-cbf8-1236-e9488b319bf6" obligation="informative">
+</annex><bibliography><clause id="_f714b1bd-24a0-6dd3-2579-86da8dc2f30f" obligation="informative">
 <title id="_3be6e2bf-2a72-9834-8982-7cbd311906b8">Normative references</title><p id="_65d2856b-3ae9-0f16-fd2b-ffa0d7236af5">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<references id="_2fbb9fbf-64d6-7110-d622-c334343aa333" normative="true" obligation="informative">
+<references id="_7b7f236a-7a24-8cf4-98e2-2b72f5787526" normative="true" obligation="informative">
 <title id="_c8698bd8-d4e0-e7f8-0c24-b7cee94f25ee">Normative</title>
 <bibitem anchor="EPSG" id="_d3fda99b-ba29-6128-9744-aced14310e00"><formattedref format="application/x-isodoc+xml">EPSG: 4979, 2007. <link target="http://spatialreference.org/ref/epsg/wgs-84-3/">http://spatialreference.org/ref/epsg/wgs-84-3/</link></formattedref><docidentifier>EPSG WGS-84-3</docidentifier><docnumber>84-3</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_d2d4cc66-2675-a085-8857-e0b902645b5e" type="standard" schema-version="v1.5.6" anchor="IETF_RFC2397">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_f0884559-2789-c7c6-4aab-5bfb239d84f1" type="standard" schema-version="v1.5.6" anchor="IETF_RFC2397">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">The “data” URL scheme</title>
 
@@ -5785,8 +5785,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
     <vocab>media type</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_047bf3f4-1514-45fa-4a4a-b3b3ab32f0bd" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3629">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_10119fee-3b90-bb61-3103-1a281ddbb570" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3629">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">UTF-8, a transformation format of ISO 10646</title>
 
@@ -5863,8 +5863,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
     <vocab>Format</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_43b89ba5-4585-3806-e6f7-b06982c33814" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3986">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_cc4af75d-3360-8b9d-5a13-7c4f9b1f0e70" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3986">
+  <fetched>2026-10-07</fetched>
   
 <title type="main">Uniform Resource Identifier (URI): Generic Syntax</title>
 
@@ -5968,8 +5968,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
   </keyword>
 </bibitem>
 <bibitem anchor="Khronos_Group" id="_6d552168-be18-0ab6-d70c-e3b976d2e60d"><formattedref format="application/x-isodoc+xml">Khronos Group: glTF 2.0 — Runtime 3D Asset Delivery, 2017. <link target="https://github.com/KhronosGroup/glTF/blob/master/README.md">https://github.com/KhronosGroup/glTF/blob/master/README.md</link></formattedref><docidentifier>Khronos Group glTF 2.0 — Runtime 3D Asset Delivery</docidentifier><docnumber>2.0 — Runtime 3D Asset Delivery</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_fb16a958-2ac3-1b12-1855-a82cbbbbb5c1" type="standard" schema-version="v1.5.6" anchor="OGC">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_e8e4892e-3879-b4fa-bdee-ee13f7a32ea1" type="standard" schema-version="v1.5.6" anchor="OGC">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">Geographic information — Well known text representation of coordinate reference systems</title>
 
@@ -6021,8 +6021,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
 The jointly developed draft has also been submitted by ISO TC211 for publication as an International Standard document. The version incorporates comments made during both the OGC Public Comment Period as well as the ISO ballot for DIS (ISO TC211 document N3750). 
 </abstract>
 </bibitem>
-<bibitem id="_d8a03da5-9df4-3887-879c-6910cc788159" type="standard" schema-version="v1.5.6" anchor="W3C">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_0f907a86-221d-c20f-531f-6fe7d690e7d6" type="standard" schema-version="v1.5.6" anchor="W3C">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn">CSS Color Module Level 3</title>
 

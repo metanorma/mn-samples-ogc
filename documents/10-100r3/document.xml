@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.10" schema-version="v2.1.6" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
 <docidentifier type="ogc-internal" primary="true">10-100r3</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/spec/gmlsf/2.0.1</docidentifier><docnumber>10-100r3</docnumber><date type="published"><on>2012-04-05</on></date><date type="issued"><on>2012-04-05</on></date><date type="received"><on>2011-05-24</on></date><contributor><role type="author"/><organization>
@@ -34,7 +34,7 @@
 <name>Open Geospatial Consortium</name>
 <abbreviation>OGC</abbreviation></organization></contributor><edition>2.0</edition><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2012</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>standard</doctype><subdoctype>profile</subdoctype><flavor>ogc</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>standard</doctype><subdoctype>profile</subdoctype><flavor>ogc</flavor><stage>approved</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>2018</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(237, 193, 35)</color-secondary-shade-1><color-secondary-shade-2>rgb(246, 223, 140)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -4603,10 +4603,10 @@ count(self::gml:Surface/gml:patches/*)"&gt;
 <p id="_67f657bb-a9ef-b33d-4395-57d86a589ba5">This Schematron schema can also be found at:</p>
 
 <p id="_d2a2a9f9-22af-1fed-7fc2-1c8d1ea21b5c"><link target="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfL2.sch"/></p>
-</annex><bibliography><references id="_e1ab1598-8db7-2999-7de6-a7f08082cf61" normative="true" obligation="informative">
+</annex><bibliography><references id="_7ec881be-c615-072a-8609-f0d148155724" normative="true" obligation="informative">
 <title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_f8b994a9-779a-0e95-20e1-03fdb6f3e3e6" type="standard" schema-version="v1.5.6" anchor="ogc07-036">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_6534451e-6857-0092-0d00-ee4235dcbcd9" type="standard" schema-version="v1.5.6" anchor="ogc07-036">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
 
@@ -4659,8 +4659,8 @@ Clients and servers with interfaces that implement the OpenGIS® Web Feature Ser
 See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
 </abstract>
 </bibitem>
-<bibitem id="_c20a358b-a974-4a25-f1f2-d013dbfa9b9d" type="standard" schema-version="v1.5.6" anchor="ogc06-103r3">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_ded0e757-0318-8952-9371-6115e3dadd2d" type="standard" schema-version="v1.5.6" anchor="ogc06-103r3">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-intro">OpenGIS Implementation Specification for Geographic information</title>
 
@@ -4722,8 +4722,8 @@ Part 2 provides a standard SQL implementation of the abstract model in Part 1. (
 The corresponding standard for the Web is the OpenGIS® Web Feature Service Interface Standard http://www.opengeospatial.org/standards/wfs.
 </abstract>
 </bibitem>
-<bibitem id="_08a93aee-dc1e-f4c1-9603-4d7ee14c516e" type="standard" schema-version="v1.5.6" anchor="w3cxml-0">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_31657e48-589e-b552-d807-233b36a0bb4d" type="standard" schema-version="v1.5.6" anchor="w3cxml-0">
+  <fetched>2026-10-07</fetched>
   <formattedref>W3C REC-xml-20081126</formattedref>
   
 <title language="en" script="Latn">Extensible Markup Language (XML) 1.0 (Fifth Edition)</title>
@@ -4833,8 +4833,8 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
     <number>REC-xml-20081126</number>
   </series>
 </bibitem>
-<bibitem id="_ff813a82-f6fc-a79d-89fb-5e9d58dd94e5" type="standard" schema-version="v1.5.6" anchor="w3cxml-1">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_dc418aaf-6b23-a924-25b6-e88e5a5dec83" type="standard" schema-version="v1.5.6" anchor="w3cxml-1">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn">XML Schema Part 1: Structures Second Edition</title>
 
@@ -4980,8 +4980,8 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
     <number>xmlschema-1</number>
   </series>
 </bibitem>
-<bibitem id="_619201cb-313b-f26c-2fb5-7eb32cc6410b" type="standard" schema-version="v1.5.6" anchor="w3cxml-2">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_c414115a-0ed0-4aa4-5e29-4997e01d297f" type="standard" schema-version="v1.5.6" anchor="w3cxml-2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn">XML Schema Part 2: Datatypes Second Edition</title>
 
@@ -5127,8 +5127,8 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
     <number>xmlschema-2</number>
   </series>
 </bibitem>
-<bibitem id="_f5f7011a-320b-6041-25ba-3232fb462d6c" type="standard" schema-version="v1.5.6" anchor="w3c">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_0ea43ef5-a162-afb5-725d-e02b2cffe473" type="standard" schema-version="v1.5.6" anchor="w3c">
+  <fetched>2026-10-07</fetched>
   <formattedref>W3C REC-xml-names-20091208</formattedref>
   
 <title language="en" script="Latn">Namespaces in XML 1.0 (Third Edition)</title>

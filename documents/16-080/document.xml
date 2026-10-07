@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.9.10" schema-version="v2.1.6" flavor="ogc">
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
 <bibdata type="standard">
 <title language="en" type="main">Testbed-12 OWS Context User Guide</title>
 <docidentifier type="ogc-internal" primary="true">16-080</docidentifier><docidentifier type="ogc-external">http://www.opengis.net/doc/PER/t12-A063</docidentifier><docnumber>16-080</docnumber><date type="published"><on>2017-01-23</on></date><date type="issued"><on>2017-06-29</on></date><date type="received"><on>2017-06-29</on></date><contributor><role type="editor"/><person>
@@ -12,7 +12,7 @@
 <name>Open Geospatial Consortium</name>
 <abbreviation>OGC</abbreviation></organization></contributor><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2017</from><owner><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>user-guide</doctype><flavor>ogc</flavor></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>user-guide</doctype><flavor>ogc</flavor><stage>approved</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>true</stage-published></semantic-metadata>
 <presentation-metadata><document-scheme>2018</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(237, 193, 35)</color-secondary-shade-1><color-secondary-shade-2>rgb(246, 223, 140)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
 <boilerplate><copyright-statement>
 
@@ -1831,13 +1831,13 @@ href="file:\\home\gdal_eg/cea.tif"/&gt;
 </clause>
 </clause>
 </clause>
-</sections><bibliography><references id="_ea471f04-7d38-d287-f7cd-a78e8a276905" normative="true" obligation="informative">
+</sections><bibliography><references id="_1f73b92f-a826-c761-ea87-4f2356a3006e" normative="true" obligation="informative">
 <title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title>
 <p id="_02416d9f-bcf4-b0cb-7b18-fa40a3661f10">The following normative references are used in this document.</p>
 
 
-<bibitem id="_81fd172c-fe90-a67f-2a88-bd2f22c9f5ee" type="standard" schema-version="v1.5.6" anchor="OGC12-080r2">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_190595ac-de9e-d9db-4bc1-04eb8da8f297" type="standard" schema-version="v1.5.6" anchor="OGC12-080r2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC OWS Context Conceptual Model</title>
 
@@ -1900,8 +1900,8 @@ This document concentrates on describing the OWS Context Model in abstract terms
 The abbreviation owc is used throughout this document for OWS Context.
 </abstract>
 </bibitem>
-<bibitem id="_198571d3-d5d8-c417-962b-0be09434c3f6" type="standard" schema-version="v1.5.6" anchor="OGC12-084r2">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_edad4900-4e90-1450-a7de-2166e299aba2" type="standard" schema-version="v1.5.6" anchor="OGC12-084r2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC OWS Context Atom Encoding Standard</title>
 
@@ -1960,8 +1960,8 @@ The abbreviation owc is used throughout this document for OWS Context.
   <abstract language="en" script="Latn">This standard describes the Atom encoding of the OWC Context conceptual model. The goal of this standard is to provide a definition of how to encode a context document, which can be extended to allow a context referencing a fully configured service set to be defined and consistently interpreted by clients.
 </abstract>
 </bibitem>
-<bibitem id="_5e99bf9e-84a4-246b-0426-1580f824f9da" type="standard" schema-version="v1.5.6" anchor="OGC14-055r2">
-  <fetched>2026-07-27</fetched>
+<bibitem id="_f9b54631-4e09-2e4d-5280-26aacbfe1837" type="standard" schema-version="v1.5.6" anchor="OGC14-055r2">
+  <fetched>2026-10-07</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC OWS Context GeoJSON Encoding Standard</title>
 
