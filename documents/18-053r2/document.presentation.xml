@@ -6563,13 +6563,13 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
 
 
 
-<clause id="_f714b1bd-24a0-6dd3-2579-86da8dc2f30f" obligation="informative" semx-id="_f714b1bd-24a0-6dd3-2579-86da8dc2f30f" displayorder="9">
-<title id="_dd7af67f-7669-9a14-df64-c703494fe3f0" semx-id="_3be6e2bf-2a72-9834-8982-7cbd311906b8">Normative references</title><fmt-title depth="1" id="_f899e628-eb0c-4fd3-010f-ea228cdf2b04"><span class="fmt-caption-label"><semx element="autonum" source="_f714b1bd-24a0-6dd3-2579-86da8dc2f30f">3</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_dd7af67f-7669-9a14-df64-c703494fe3f0">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_f714b1bd-24a0-6dd3-2579-86da8dc2f30f">3</semx></fmt-xref-label><p id="_65d2856b-3ae9-0f16-fd2b-ffa0d7236af5" semx-id="_65d2856b-3ae9-0f16-fd2b-ffa0d7236af5">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<references id="_7b7f236a-7a24-8cf4-98e2-2b72f5787526" normative="true" obligation="informative" semx-id="_7b7f236a-7a24-8cf4-98e2-2b72f5787526">
-<title id="_5d50168f-4926-a793-23bc-11ff2cec5b30" semx-id="_c8698bd8-d4e0-e7f8-0c24-b7cee94f25ee">Normative</title><fmt-title depth="2" id="_dbc51e2b-7ec9-981e-2d06-06ab44162e5b"><span class="fmt-caption-label"><semx element="autonum" source="_f714b1bd-24a0-6dd3-2579-86da8dc2f30f">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_7b7f236a-7a24-8cf4-98e2-2b72f5787526">1</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5d50168f-4926-a793-23bc-11ff2cec5b30">Normative</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_f714b1bd-24a0-6dd3-2579-86da8dc2f30f">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_7b7f236a-7a24-8cf4-98e2-2b72f5787526">1</semx></fmt-xref-label>
+<clause id="_f5b1167b-39cf-1b04-f60f-fa6c588f3a20" obligation="informative" semx-id="_f5b1167b-39cf-1b04-f60f-fa6c588f3a20" displayorder="9">
+<title id="_dd7af67f-7669-9a14-df64-c703494fe3f0" semx-id="_3be6e2bf-2a72-9834-8982-7cbd311906b8">Normative references</title><fmt-title depth="1" id="_f899e628-eb0c-4fd3-010f-ea228cdf2b04"><span class="fmt-caption-label"><semx element="autonum" source="_f5b1167b-39cf-1b04-f60f-fa6c588f3a20">3</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_dd7af67f-7669-9a14-df64-c703494fe3f0">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_f5b1167b-39cf-1b04-f60f-fa6c588f3a20">3</semx></fmt-xref-label><p id="_65d2856b-3ae9-0f16-fd2b-ffa0d7236af5" semx-id="_65d2856b-3ae9-0f16-fd2b-ffa0d7236af5">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<references id="_28bb68e0-6f19-88f5-537c-006cf3494a22" normative="true" obligation="informative" semx-id="_28bb68e0-6f19-88f5-537c-006cf3494a22">
+<title id="_5d50168f-4926-a793-23bc-11ff2cec5b30" semx-id="_c8698bd8-d4e0-e7f8-0c24-b7cee94f25ee">Normative</title><fmt-title depth="2" id="_dbc51e2b-7ec9-981e-2d06-06ab44162e5b"><span class="fmt-caption-label"><semx element="autonum" source="_f5b1167b-39cf-1b04-f60f-fa6c588f3a20">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_28bb68e0-6f19-88f5-537c-006cf3494a22">1</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5d50168f-4926-a793-23bc-11ff2cec5b30">Normative</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_f5b1167b-39cf-1b04-f60f-fa6c588f3a20">3</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_28bb68e0-6f19-88f5-537c-006cf3494a22">1</semx></fmt-xref-label>
 <bibitem anchor="EPSG" id="EPSG" semx-id="_d3fda99b-ba29-6128-9744-aced14310e00"><biblio-tag/><formattedref format="application/x-isodoc+xml">EPSG: 4979, 2007. <link target="http://spatialreference.org/ref/epsg/wgs-84-3/" id="_1714bf17-6298-59a2-63aa-27403793988c">http://spatialreference.org/ref/epsg/wgs-84-3/</link><semx element="link" source="_1714bf17-6298-59a2-63aa-27403793988c"><fmt-link target="http://spatialreference.org/ref/epsg/wgs-84-3/">http://spatialreference.org/ref/epsg/wgs-84-3/</fmt-link></semx></formattedref><docidentifier>EPSG WGS-84-3</docidentifier><docidentifier scope="biblio-tag">EPSG WGS-84-3</docidentifier><docnumber>84-3</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="IETF_RFC2397" type="standard" schema-version="v1.5.6" anchor="IETF_RFC2397" semx-id="_f0884559-2789-c7c6-4aab-5bfb239d84f1"><biblio-tag/><formattedref>Masinter L: IETF RFC 2397, <em>The “data” URL scheme</em>. RFC Publisher (1998). <fmt-link target="https://www.rfc-editor.org/info/rfc2397">https://www.rfc-editor.org/info/rfc2397</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="IETF_RFC2397" type="standard" schema-version="v1.5.6" anchor="IETF_RFC2397" semx-id="_fd47c733-892d-ce83-94d5-b2b44297c241"><biblio-tag/><formattedref>Masinter L: IETF RFC 2397, <em>The “data” URL scheme</em>. RFC Publisher (1998). <fmt-link target="https://www.rfc-editor.org/info/rfc2397">https://www.rfc-editor.org/info/rfc2397</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title type="main">The “data” URL scheme</title>
 
@@ -6637,8 +6637,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
     <vocab>media type</vocab>
   </keyword>
 </bibitem>
-<bibitem id="IETF_RFC3629" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3629" semx-id="_10119fee-3b90-bb61-3103-1a281ddbb570"><biblio-tag/><formattedref>Yergeau F: IETF RFC 3629, <em>UTF-8, a transformation format of ISO 10646</em>. RFC Publisher (2003). <fmt-link target="https://www.rfc-editor.org/info/rfc3629">https://www.rfc-editor.org/info/rfc3629</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="IETF_RFC3629" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3629" semx-id="_b72ac75a-2494-8ca6-f688-0d2c82fcda32"><biblio-tag/><formattedref>Yergeau F: IETF RFC 3629, <em>UTF-8, a transformation format of ISO 10646</em>. RFC Publisher (2003). <fmt-link target="https://www.rfc-editor.org/info/rfc3629">https://www.rfc-editor.org/info/rfc3629</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title type="main">UTF-8, a transformation format of ISO 10646</title>
 
@@ -6715,8 +6715,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
     <vocab>Format</vocab>
   </keyword>
 </bibitem>
-<bibitem id="IETF_RFC3986" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3986" semx-id="_cc4af75d-3360-8b9d-5a13-7c4f9b1f0e70"><biblio-tag/><formattedref>Berners-Lee T, Fielding R, Masinter L: IETF RFC 3986, <em>Uniform Resource Identifier (URI): Generic Syntax</em>. RFC Publisher (2005). <fmt-link target="https://www.rfc-editor.org/info/rfc3986">https://www.rfc-editor.org/info/rfc3986</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="IETF_RFC3986" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3986" semx-id="_e47b2c0b-de06-227d-1774-4cabd02b5a7b"><biblio-tag/><formattedref>Berners-Lee T, Fielding R, Masinter L: IETF RFC 3986, <em>Uniform Resource Identifier (URI): Generic Syntax</em>. RFC Publisher (2005). <fmt-link target="https://www.rfc-editor.org/info/rfc3986">https://www.rfc-editor.org/info/rfc3986</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title type="main">Uniform Resource Identifier (URI): Generic Syntax</title>
 
@@ -6820,8 +6820,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
   </keyword>
 </bibitem>
 <bibitem anchor="Khronos_Group" id="Khronos_Group" semx-id="_6d552168-be18-0ab6-d70c-e3b976d2e60d"><biblio-tag/><formattedref format="application/x-isodoc+xml">Khronos Group: glTF 2.0 — Runtime 3D Asset Delivery, 2017. <link target="https://github.com/KhronosGroup/glTF/blob/master/README.md" id="_2f189df2-6a0f-a509-f016-f36e14fbaf4a">https://github.com/KhronosGroup/glTF/blob/master/README.md</link><semx element="link" source="_2f189df2-6a0f-a509-f016-f36e14fbaf4a"><fmt-link target="https://github.com/KhronosGroup/glTF/blob/master/README.md">https://github.com/KhronosGroup/glTF/blob/master/README.md</fmt-link></semx></formattedref><docidentifier>Khronos Group glTF 2.0 — Runtime 3D Asset Delivery</docidentifier><docidentifier scope="biblio-tag">Khronos Group glTF 2.0 — Runtime 3D Asset Delivery</docidentifier><docnumber>2.0 — Runtime 3D Asset Delivery</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="OGC" type="standard" schema-version="v1.5.6" anchor="OGC" semx-id="_e8e4892e-3879-b4fa-bdee-ee13f7a32ea1"><biblio-tag/><formattedref>Roger Lott, Open Geospatial Consortium: OGC 12-063r5, <em>Geographic information — Well known text representation of coordinate reference systems</em>. Open Geospatial Consortium (2015). <fmt-link target="http://www.opengis.net/doc/IS/wkt-crs/1.0.0">http://www.opengis.net/doc/IS/wkt-crs/1.0.0</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="OGC" type="standard" schema-version="v1.5.6" anchor="OGC" semx-id="_a083824b-78e9-cc3d-e8a1-1c16a8d28480"><biblio-tag/><formattedref>Roger Lott, Open Geospatial Consortium: OGC 12-063r5, <em>Geographic information — Well known text representation of coordinate reference systems</em>. Open Geospatial Consortium (2015). <fmt-link target="http://www.opengis.net/doc/IS/wkt-crs/1.0.0">http://www.opengis.net/doc/IS/wkt-crs/1.0.0</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-main">Geographic information — Well known text representation of coordinate reference systems</title>
 
@@ -6873,8 +6873,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
 The jointly developed draft has also been submitted by ISO TC211 for publication as an International Standard document. The version incorporates comments made during both the OGC Public Comment Period as well as the ISO ballot for DIS (ISO TC211 document N3750). 
 </abstract>
 </bibitem>
-<bibitem id="W3C" type="standard" schema-version="v1.5.6" anchor="W3C" semx-id="_0f907a86-221d-c20f-531f-6fe7d690e7d6"><biblio-tag/><formattedref>W3C: W3C css-color-3, <em>CSS Color Module Level 3</em>. World Wide Web Consortium <fmt-link target="https://www.w3.org/TR/css-color-3/">https://www.w3.org/TR/css-color-3/</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="W3C" type="standard" schema-version="v1.5.6" anchor="W3C" semx-id="_aa544085-44c7-80a5-35b7-48bf4cbc78b7"><biblio-tag/><formattedref>W3C: W3C css-color-3, <em>CSS Color Module Level 3</em>. World Wide Web Consortium <fmt-link target="https://www.w3.org/TR/css-color-3/">https://www.w3.org/TR/css-color-3/</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn">CSS Color Module Level 3</title>
 

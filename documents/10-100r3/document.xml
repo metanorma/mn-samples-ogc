@@ -4603,10 +4603,10 @@ count(self::gml:Surface/gml:patches/*)"&gt;
 <p id="_67f657bb-a9ef-b33d-4395-57d86a589ba5">This Schematron schema can also be found at:</p>
 
 <p id="_d2a2a9f9-22af-1fed-7fc2-1c8d1ea21b5c"><link target="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfL2.sch"/></p>
-</annex><bibliography><references id="_7ec881be-c615-072a-8609-f0d148155724" normative="true" obligation="informative">
+</annex><bibliography><references id="_8b6cbb4c-b96a-eca3-516b-399a2ffab0be" normative="true" obligation="informative">
 <title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_6534451e-6857-0092-0d00-ee4235dcbcd9" type="standard" schema-version="v1.5.6" anchor="ogc07-036">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_91df9103-5e44-829b-d590-fb677881c697" type="standard" schema-version="v1.5.6" anchor="ogc07-036">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
 
@@ -4659,8 +4659,8 @@ Clients and servers with interfaces that implement the OpenGIS® Web Feature Ser
 See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
 </abstract>
 </bibitem>
-<bibitem id="_ded0e757-0318-8952-9371-6115e3dadd2d" type="standard" schema-version="v1.5.6" anchor="ogc06-103r3">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_7bdd6380-57cf-9a21-a6a6-2b0a06731e8d" type="standard" schema-version="v1.5.6" anchor="ogc06-103r3">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-intro">OpenGIS Implementation Specification for Geographic information</title>
 
@@ -4722,8 +4722,8 @@ Part 2 provides a standard SQL implementation of the abstract model in Part 1. (
 The corresponding standard for the Web is the OpenGIS® Web Feature Service Interface Standard http://www.opengeospatial.org/standards/wfs.
 </abstract>
 </bibitem>
-<bibitem id="_31657e48-589e-b552-d807-233b36a0bb4d" type="standard" schema-version="v1.5.6" anchor="w3cxml-0">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_c6e4cefd-aced-849f-733f-4bd59736d2a7" type="standard" schema-version="v1.5.6" anchor="w3cxml-0">
+  <fetched>2026-10-15</fetched>
   <formattedref>W3C REC-xml-20081126</formattedref>
   
 <title language="en" script="Latn">Extensible Markup Language (XML) 1.0 (Fifth Edition)</title>
@@ -4833,8 +4833,8 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
     <number>REC-xml-20081126</number>
   </series>
 </bibitem>
-<bibitem id="_dc418aaf-6b23-a924-25b6-e88e5a5dec83" type="standard" schema-version="v1.5.6" anchor="w3cxml-1">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_a04dbff0-4cae-73b4-6b9f-703504b1a48d" type="standard" schema-version="v1.5.6" anchor="w3cxml-1">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn">XML Schema Part 1: Structures Second Edition</title>
 
@@ -4980,8 +4980,8 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
     <number>xmlschema-1</number>
   </series>
 </bibitem>
-<bibitem id="_c414115a-0ed0-4aa4-5e29-4997e01d297f" type="standard" schema-version="v1.5.6" anchor="w3cxml-2">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_ba4eb750-0ef3-e7dc-9a26-9bc03703eb9f" type="standard" schema-version="v1.5.6" anchor="w3cxml-2">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn">XML Schema Part 2: Datatypes Second Edition</title>
 
@@ -5127,8 +5127,8 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
     <number>xmlschema-2</number>
   </series>
 </bibitem>
-<bibitem id="_0ea43ef5-a162-afb5-725d-e02b2cffe473" type="standard" schema-version="v1.5.6" anchor="w3c">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_4d3f0210-751e-48e4-80eb-8521ad522eda" type="standard" schema-version="v1.5.6" anchor="w3c">
+  <fetched>2026-10-15</fetched>
   <formattedref>W3C REC-xml-names-20091208</formattedref>
   
 <title language="en" script="Latn">Namespaces in XML 1.0 (Third Edition)</title>

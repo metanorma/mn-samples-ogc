@@ -2196,10 +2196,10 @@ http://www.opengis.net/indoorgml/1.0/seamlessNavi seamlessnavi.xsd"&gt;
 <td id="_5b60983c-8561-c17f-449f-da005b84c0cf" valign="middle" align="left">final version</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_9563a2e4-8797-613d-7acd-54c78a6cf693" anchor="references" normative="true" obligation="informative">
+</annex><bibliography><references id="_da7ea56e-d1f0-82b2-b7e0-1d453e8dc462" anchor="references" normative="true" obligation="informative">
 <title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_f53398fd-de7e-f7eb-f91e-75392c9fa3f8" type="standard" schema-version="v1.5.6" anchor="gdf5">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_b76385a8-e860-2ed1-118c-f4b9d85fdcc6" type="standard" schema-version="v1.5.6" anchor="gdf5">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-intro">Intelligent transport systems</title>
 
@@ -2294,8 +2294,8 @@ http://www.opengis.net/indoorgml/1.0/seamlessNavi seamlessnavi.xsd"&gt;
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_6639bbe9-8644-fd07-d850-960f4a5a7b14" type="standard" schema-version="v1.5.6" anchor="ogc14-005r5">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_668ed9db-dbd4-10fa-29c0-c6607a23113e" type="standard" schema-version="v1.5.6" anchor="ogc14-005r5">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC® IndoorGML</title>
 
@@ -2388,8 +2388,8 @@ http://www.opengis.net/indoorgml/1.0/seamlessNavi seamlessnavi.xsd"&gt;
   <script>Latn</script>
   <abstract language="en" script="Latn">This OGC® IndoorGML standard specifies an open data model and XML schema for indoor spatial information. IndoorGML is an application schema of OGC® GML 3.2.1. While there are several 3D building modelling standards such as CityGML, KML, and IFC, which deal with interior space of buildings from geometric, cartographic, and semantic viewpoints, IndoorGML intentionally focuses on modelling indoor spaces for navigation purposes.</abstract>
 </bibitem>
-<bibitem id="_79ba548e-66af-538a-84f6-b52375048796" type="standard" schema-version="v1.5.6" anchor="ogc12-019">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_e33428f5-96da-d8bb-9a34-289d7b05748e" type="standard" schema-version="v1.5.6" anchor="ogc12-019">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC City Geography Markup Language (CityGML) Encoding Standard</title>
 

@@ -4867,14 +4867,14 @@ tags:
 </tr></tbody>
 </table>
 
-<pagebreak/></annex><bibliography><references id="_2b61a3cd-aa54-5614-2a96-8e118f864540" normative="true" obligation="informative">
+<pagebreak/></annex><bibliography><references id="_e159b986-b04a-1377-3873-c3ee89206682" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
 
 <bibitem anchor="OpenAPI" id="_fa9a8d04-36c3-7d59-20f1-dbea1e625801"><formattedref format="application/x-isodoc+xml">Open API Initiative: <strong>OpenAPI Specification 3.0.1</strong>,
 <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md"/></formattedref><docidentifier>OpenAPI</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_4472f4a6-6820-2b66-0880-72b6f6703099" type="standard" schema-version="v1.5.6" anchor="rfc2616">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_fec992a8-2da5-84d6-8b08-dba30a1c9d6a" type="standard" schema-version="v1.5.6" anchor="rfc2616">
+  <fetched>2026-10-15</fetched>
   
 <title type="main">Hypertext Transfer Protocol — HTTP/1.1</title>
 
@@ -5052,8 +5052,8 @@ tags:
     <vocab>hypermedia</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_df54e683-0838-aae8-0cb6-caf34a20eb34" type="standard" schema-version="v1.5.6" anchor="rfc2818">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_fe59f476-0d90-3588-b355-6232706d9dbc" type="standard" schema-version="v1.5.6" anchor="rfc2818">
+  <fetched>2026-10-15</fetched>
   
 <title type="main">HTTP Over TLS</title>
 
@@ -5151,8 +5151,8 @@ tags:
     <vocab>security</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_283bafc5-ad3c-d7c5-c5b0-b781fc4e243d" type="standard" schema-version="v1.5.6" anchor="rfc3339">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_af25e0ce-c945-4434-b956-97b711e2c0c3" type="standard" schema-version="v1.5.6" anchor="rfc3339">
+  <fetched>2026-10-15</fetched>
   
 <title type="main">Date and Time on the Internet: Timestamps</title>
 
@@ -5245,8 +5245,8 @@ tags:
     <vocab>International Organization for Standardization</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_1436d924-f92e-9452-264d-25324a59de99" type="standard" schema-version="v1.5.6" anchor="rfc3986">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_37a73694-120d-1493-cea3-931bf3e54742" type="standard" schema-version="v1.5.6" anchor="rfc3986">
+  <fetched>2026-10-15</fetched>
   
 <title type="main">Uniform Resource Identifier (URI): Generic Syntax</title>
 
@@ -5349,8 +5349,8 @@ tags:
     <vocab>world wide web</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_81b76dd1-37cd-d2db-f871-18e9284c7232" type="standard" schema-version="v1.5.6" anchor="rfc5988">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_1d21f555-5373-01d1-6b52-0a89d6561008" type="standard" schema-version="v1.5.6" anchor="rfc5988">
+  <fetched>2026-10-15</fetched>
   
 <title type="main">Web Linking</title>
 
@@ -5437,8 +5437,8 @@ tags:
 </bibitem>
 <bibitem anchor="GMLSF" id="_edf4fb4f-0eb3-eb88-65ac-9683f2d17b57"><formattedref format="application/x-isodoc+xml">van den Brink, L., Portele, C., Vretanos, P.: OGC 10-100r3,
 <strong>Geography Markup Language (GML) Simple Features Profile</strong>, <link target="http://portal.opengeospatial.org/files/?artifact_id=42729"/></formattedref><docidentifier>GMLSF</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_751a169d-ecdd-0f3d-4a40-6913bddf1e5b" type="standard" schema-version="v1.5.6" anchor="GeoJSON">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_980fd38f-99f3-5999-20c4-363985f854ff" type="standard" schema-version="v1.5.6" anchor="GeoJSON">
+  <fetched>2026-10-15</fetched>
   
 <title type="main">The GeoJSON Format</title>
 
@@ -5570,8 +5570,8 @@ tags:
 </organization></contributor><contributor><role type="publisher"/><organization>
 <name>IEC</name>
 </organization></contributor><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_77902294-53e3-7137-e19f-6c8a7d1f33ef" type="standard" schema-version="v1.5.6" anchor="iso19101-1">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_2bc94803-a199-b89a-175f-fab0e5bdc215" type="standard" schema-version="v1.5.6" anchor="iso19101-1">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -5683,8 +5683,8 @@ tags:
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_e5cd8632-12dc-3036-44b2-a12aab8bc235" type="standard" schema-version="v1.5.6" anchor="iso19103">
-  <fetched>2026-10-07</fetched>
+<bibitem id="_a730cccc-fb13-f607-9527-ed903c0d9f6d" type="standard" schema-version="v1.5.6" anchor="iso19103">
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 

@@ -1397,10 +1397,10 @@ sourcecode .nt {
 
 
 
-<references id="_cf4a00c7-c397-3b21-1ba0-6e96ba247346" normative="true" obligation="informative" semx-id="_cf4a00c7-c397-3b21-1ba0-6e96ba247346" displayorder="11">
-<title id="_575115e2-c3d2-4d0b-1bc9-89f55f807a53" semx-id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><fmt-title depth="1" id="_4dbbc77f-2ba2-7541-c754-72ef485077fb"><span class="fmt-caption-label"><semx element="autonum" source="_cf4a00c7-c397-3b21-1ba0-6e96ba247346">3</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_575115e2-c3d2-4d0b-1bc9-89f55f807a53">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_cf4a00c7-c397-3b21-1ba0-6e96ba247346">3</semx></fmt-xref-label><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3" semx-id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="ogc14-083r2" type="standard" schema-version="v1.5.6" anchor="ogc14-083r2" semx-id="_3b70503d-4f77-da3c-1b5c-5cd7292dfaaf"><biblio-tag/><formattedref>Akinori Asahara, Ryosuke Shibasaki, Nobuhiro Ishimaru, David Burggraf, Open Geospatial Consortium: OGC 14-083r2, <em>OGC® Moving Features Encoding Part I: XML Core</em>. Open Geospatial Consortium (2015). <fmt-link target="http://www.opengis.net/doc/IS/movingfeatures/xmlcore/1.0.0">http://www.opengis.net/doc/IS/movingfeatures/xmlcore/1.0.0</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<references id="_e614b100-cd49-7e0a-4bb9-1c469e848534" normative="true" obligation="informative" semx-id="_e614b100-cd49-7e0a-4bb9-1c469e848534" displayorder="11">
+<title id="_575115e2-c3d2-4d0b-1bc9-89f55f807a53" semx-id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><fmt-title depth="1" id="_4dbbc77f-2ba2-7541-c754-72ef485077fb"><span class="fmt-caption-label"><semx element="autonum" source="_e614b100-cd49-7e0a-4bb9-1c469e848534">3</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_575115e2-c3d2-4d0b-1bc9-89f55f807a53">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_e614b100-cd49-7e0a-4bb9-1c469e848534">3</semx></fmt-xref-label><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3" semx-id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<bibitem id="ogc14-083r2" type="standard" schema-version="v1.5.6" anchor="ogc14-083r2" semx-id="_68e704a6-23f1-33ac-b08e-79c2e7fa2c38"><biblio-tag/><formattedref>Akinori Asahara, Ryosuke Shibasaki, Nobuhiro Ishimaru, David Burggraf, Open Geospatial Consortium: OGC 14-083r2, <em>OGC® Moving Features Encoding Part I: XML Core</em>. Open Geospatial Consortium (2015). <fmt-link target="http://www.opengis.net/doc/IS/movingfeatures/xmlcore/1.0.0">http://www.opengis.net/doc/IS/movingfeatures/xmlcore/1.0.0</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC® Moving Features Encoding Part I: XML Core</title>
 
@@ -1474,8 +1474,8 @@ sourcecode .nt {
   <script>Latn</script>
   <abstract language="en" script="Latn">This OGC® Standard specifies standard encoding representations of movement of geographic features. The primary use case is information exchange.</abstract>
 </bibitem>
-<bibitem id="ogc14-084r2" type="standard" schema-version="v1.5.6" anchor="ogc14-084r2" semx-id="_64269924-e792-fd0f-0a30-1f25dc7c2114"><biblio-tag/><formattedref>Akinori Asahara, Ryosuke Shibasaki, Nobuhiro Ishimaru, David Burggraf, Open Geospatial Consortium: OGC 14-084r2, <em>OGC® Moving Features Encoding Extension: Simple Comma Separated Values (CSV)</em>. Open Geospatial Consortium (2015). <fmt-link target="http://www.opengis.net/doc/IS/movingfeatures/csv-extension/1.0.0">http://www.opengis.net/doc/IS/movingfeatures/csv-extension/1.0.0</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="ogc14-084r2" type="standard" schema-version="v1.5.6" anchor="ogc14-084r2" semx-id="_2ea75246-7908-3fa5-40cb-7601d678ba9f"><biblio-tag/><formattedref>Akinori Asahara, Ryosuke Shibasaki, Nobuhiro Ishimaru, David Burggraf, Open Geospatial Consortium: OGC 14-084r2, <em>OGC® Moving Features Encoding Extension: Simple Comma Separated Values (CSV)</em>. Open Geospatial Consortium (2015). <fmt-link target="http://www.opengis.net/doc/IS/movingfeatures/csv-extension/1.0.0">http://www.opengis.net/doc/IS/movingfeatures/csv-extension/1.0.0</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC® Moving Features Encoding Extension: Simple Comma Separated Values (CSV)</title>
 
@@ -1549,8 +1549,8 @@ sourcecode .nt {
   <script>Latn</script>
   <abstract language="en" script="Latn">This OGC® Standard specifies standard encoding representations of movement of geographic features. The primary use case is information exchange.</abstract>
 </bibitem>
-<bibitem id="ogc10-090r3" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3" semx-id="_04424494-5b34-b791-7d53-3959e26552af"><biblio-tag/><formattedref>Ben Domenico, Open Geospatial Consortium: OGC 10-090r3, <em>OGC Network Common Data Form (NetCDF) Core Encoding Standard version 1.0</em>. Open Geospatial Consortium (2011). <fmt-link target="https://docs.ogc.org/is/10-090r3/10-090r3/pdf">https://docs.ogc.org/is/10-090r3/10-090r3/pdf</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="ogc10-090r3" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3" semx-id="_7e5fb0ba-7cf0-0f2a-a17e-398745bd5e76"><biblio-tag/><formattedref>Ben Domenico, Open Geospatial Consortium: OGC 10-090r3, <em>OGC Network Common Data Form (NetCDF) Core Encoding Standard version 1.0</em>. Open Geospatial Consortium (2011). <fmt-link target="https://docs.ogc.org/is/10-090r3/10-090r3/pdf">https://docs.ogc.org/is/10-090r3/10-090r3/pdf</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Network Common Data Form (NetCDF)  Core Encoding Standard version 1.0</title>
 
@@ -1601,8 +1601,8 @@ sourcecode .nt {
 NetCDF is a data model for array-oriented scientific data. A freely distributed collection of access libraries implementing support for that data model, and a machine-independent format are available. Together, the interfaces, libraries, and format support the crea-tion, access, and sharing of multi-dimensional scientific data.
 </abstract>
 </bibitem>
-<bibitem id="ogc10-092r3" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3" semx-id="_54f0cbfb-ae67-b924-d23a-a0ea7a55837c"><biblio-tag/><formattedref>Ben Domenico, Open Geospatial Consortium: OGC 10-092r3, <em>NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</em>. Open Geospatial Consortium (2011). <fmt-link target="https://docs.ogc.org/is/10-092r3/10-092r3/pdf">https://docs.ogc.org/is/10-092r3/10-092r3/pdf</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="ogc10-092r3" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3" semx-id="_e63bb93e-5622-0753-9432-16af615d426b"><biblio-tag/><formattedref>Ben Domenico, Open Geospatial Consortium: OGC 10-092r3, <em>NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</em>. Open Geospatial Consortium (2011). <fmt-link target="https://docs.ogc.org/is/10-092r3/10-092r3/pdf">https://docs.ogc.org/is/10-092r3/10-092r3/pdf</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-main">NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</title>
 
@@ -1651,8 +1651,8 @@ NetCDF is a data model for array-oriented scientific data. A freely distributed 
   <script>Latn</script>
   <abstract language="en" script="Latn">This document defines an OGC® Standard for encoding binary representations of space-time varying geo-referenced data. Specifically, this standard specifies the netCDF classic and 64-bit offset file binary encoding formats. This standard specifies a set of requirements that every netCDF classic or 64-bit offset binary encoding must fulfil.</abstract>
 </bibitem>
-<bibitem id="ogc11-165r2" type="standard" schema-version="v1.5.6" anchor="ogc11-165r2" semx-id="_9138290f-0e2e-b999-f75e-1928e33b8bf5"><biblio-tag/><formattedref>Ben Domenico, Stefano Nativi, Open Geospatial Consortium: OGC 11-165r2, <em>CF-netCDF3 Data Model Extension standard</em>. Open Geospatial Consortium (2013). <fmt-link target="http://www.opengis.net/doc/is/netcdf-data-model-extension/1.0.0">http://www.opengis.net/doc/is/netcdf-data-model-extension/1.0.0</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="ogc11-165r2" type="standard" schema-version="v1.5.6" anchor="ogc11-165r2" semx-id="_38fc3b7f-44be-16b0-d728-b80734f98001"><biblio-tag/><formattedref>Ben Domenico, Stefano Nativi, Open Geospatial Consortium: OGC 11-165r2, <em>CF-netCDF3 Data Model Extension standard</em>. Open Geospatial Consortium (2013). <fmt-link target="http://www.opengis.net/doc/is/netcdf-data-model-extension/1.0.0">http://www.opengis.net/doc/is/netcdf-data-model-extension/1.0.0</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-main">CF-netCDF3 Data Model Extension standard</title>
 
@@ -1715,8 +1715,8 @@ This standard deals with multi-dimensional gridded data and multi-dimensional mu
 In particular, this extension standard encoding profile is limited to multi-point, and regular and warped grids; however, irregular grids are important in the CF-netCDF community and work is underway to expand the CF-netCDF to encompass other coverages types, including irregular gridded datasets.
 </abstract>
 </bibitem>
-<bibitem id="iso19101" type="standard" schema-version="v1.5.6" anchor="iso19101" semx-id="_09d3f275-7f8a-6b0f-da2c-13dbda2c3d7f"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19101-1:2014, <em>Geographic information — Reference model — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva (2014). <fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="iso19101" type="standard" schema-version="v1.5.6" anchor="iso19101" semx-id="_c4a0653b-dda1-0cc3-3276-da8dbc7a56c4"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19101-1:2014, <em>Geographic information — Reference model — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva (2014). <fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1828,8 +1828,8 @@ In particular, this extension standard encoding profile is limited to multi-poin
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19141" type="standard" schema-version="v1.5.6" anchor="iso19141" semx-id="_d9578450-7927-c398-996c-5962f52e36f9"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19141:2008, <em>Geographic information — Schema for moving features</em>. International Organization for Standardization, Geneva (2008). <fmt-link target="https://www.iso.org/standard/41445.html">https://www.iso.org/standard/41445.html</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="iso19141" type="standard" schema-version="v1.5.6" anchor="iso19141" semx-id="_9b187990-9ffd-a53b-abb9-5188784d9af1"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19141:2008, <em>Geographic information — Schema for moving features</em>. International Organization for Standardization, Geneva (2008). <fmt-link target="https://www.iso.org/standard/41445.html">https://www.iso.org/standard/41445.html</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1909,8 +1909,8 @@ In particular, this extension standard encoding profile is limited to multi-poin
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19107" type="standard" schema-version="v1.5.6" anchor="iso19107" semx-id="_66ba2342-2c71-c163-39e9-81c8d60e5cc2"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19107:2003, <em>Geographic information — Spatial schema</em>. International Organization for Standardization, Geneva (2003). <fmt-link target="https://www.iso.org/standard/26012.html">https://www.iso.org/standard/26012.html</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="iso19107" type="standard" schema-version="v1.5.6" anchor="iso19107" semx-id="_e1d598d6-b3b2-5e8e-c7b6-645d50e5e55d"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19107:2003, <em>Geographic information — Spatial schema</em>. International Organization for Standardization, Geneva (2003). <fmt-link target="https://www.iso.org/standard/26012.html">https://www.iso.org/standard/26012.html</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1989,8 +1989,8 @@ In particular, this extension standard encoding profile is limited to multi-poin
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19123" type="standard" schema-version="v1.5.6" anchor="iso19123" semx-id="_327daa20-d695-4dd5-ec8f-39fd73657133"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19123:2005, <em>Geographic information — Schema for coverage geometry and functions</em>. International Organization for Standardization, Geneva (2005). <fmt-link target="https://www.iso.org/standard/40121.html">https://www.iso.org/standard/40121.html</fmt-link>.</formattedref>
-  <fetched>2026-10-07</fetched>
+<bibitem id="iso19123" type="standard" schema-version="v1.5.6" anchor="iso19123" semx-id="_36655eb7-6d1f-9fa6-4b37-0eb5e71f7889"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19123:2005, <em>Geographic information — Schema for coverage geometry and functions</em>. International Organization for Standardization, Geneva (2005). <fmt-link target="https://www.iso.org/standard/40121.html">https://www.iso.org/standard/40121.html</fmt-link>.</formattedref>
+  <fetched>2026-10-15</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
