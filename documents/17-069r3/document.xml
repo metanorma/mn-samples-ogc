@@ -3123,9 +3123,9 @@ explode: false</body></sourcecode></description>
 </requirement>
 </requirement>
 </clause>
-</annex><annex id="_8196f97f-addf-674e-9676-5b8c309a84dc" obligation="" language="" script=""><references id="_2d28914c-6223-2a5d-5d61-5284a247d5af" normative="false" obligation="informative">
-<title id="_06abb18f-e097-0ef7-5f6e-cf338095df5d">Bibliography</title><bibitem id="_32334bfa-62e9-c514-cf38-83f8a79d6256" type="standard" schema-version="v1.5.6" anchor="wfs20">
-  <fetched>2026-10-15</fetched>
+</annex><annex id="_0cc58bb6-99fb-1c2f-ba8a-e6286568a2fb" obligation="" language="" script=""><references id="_6b61aece-c717-6f4e-d4c3-52e83db58043" normative="false" obligation="informative">
+<title id="_06abb18f-e097-0ef7-5f6e-cf338095df5d">Bibliography</title><bibitem id="_856dcd96-6f42-5051-6650-0625ead109aa" type="standard" schema-version="v1.5.6" anchor="wfs20">
+  <fetched>2026-10-21</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC® Web Feature Service 2.0 Interface Standard</title>
 
@@ -3204,8 +3204,8 @@ DropStoredQuery (stored query operation)
 ListStoredQueries (stored query operation)
 DescribeStoredQueries (stored query operation)
 In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature access service but also includes elements of a feature type service, a coordinate conversion/transformation service and geographic format conversion service.</abstract>
-</bibitem><bibitem id="_ef0c0fb2-faa2-867c-1c3e-fb9af86bc3a1" type="standard" schema-version="v1.5.6" anchor="rfc3986">
-  <fetched>2026-10-15</fetched>
+</bibitem><bibitem id="_2dec09bf-b01a-421b-35bb-b215a28bf0c3" type="standard" schema-version="v1.5.6" anchor="rfc3986">
+  <fetched>2026-10-21</fetched>
   
 <title type="main">Uniform Resource Identifier (URI): Generic Syntax</title>
 
@@ -3307,8 +3307,8 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
   <keyword>
     <vocab>world wide web</vocab>
   </keyword>
-</bibitem><bibitem id="_e81c9c33-23bb-345f-83de-1b836e14836d" type="standard" schema-version="v1.5.6" anchor="iso19101">
-  <fetched>2026-10-15</fetched>
+</bibitem><bibitem id="_792ba7b6-3af0-fce2-d34b-ce9b680164ba" type="standard" schema-version="v1.5.6" anchor="iso19101">
+  <fetched>2026-10-21</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3484,8 +3484,8 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_5a0cd7c2-0d55-74ac-06e5-2095adb4f289" type="standard" schema-version="v1.5.6" anchor="iso19142">
-  <fetched>2026-10-15</fetched>
+</bibitem><bibitem id="_2998d7f7-f93d-4c3d-81bc-e99f3e15e111" type="standard" schema-version="v1.5.6" anchor="iso19142">
+  <fetched>2026-10-21</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3657,8 +3657,8 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_bb9d022f-1226-70e6-ecdb-753fe9524184" type="standard" schema-version="v1.5.6" anchor="dwbp">
-  <fetched>2026-10-15</fetched>
+</bibitem><bibitem id="_c1bcf7da-7b66-eec6-9afe-9e52fae1a313" type="standard" schema-version="v1.5.6" anchor="dwbp">
+  <fetched>2026-10-21</fetched>
   
 <title language="en" script="Latn">Data on the Web Best Practices</title>
 
@@ -3763,8 +3763,8 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
 
     <number>dwbp</number>
   </series>
-</bibitem><bibitem id="_24ba1e76-5fde-6625-6f15-628a93e2af92" type="standard" schema-version="v1.5.6" anchor="spatial_data_wbp">
-  <fetched>2026-10-15</fetched>
+</bibitem><bibitem id="_02f52504-e7da-f12f-b32e-0185f4fc1b6c" type="standard" schema-version="v1.5.6" anchor="spatial_data_wbp">
+  <fetched>2026-10-21</fetched>
   
 <title language="en" script="Latn">Spatial Data on the Web Best Practices</title>
 
@@ -4079,11 +4079,11 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
 <td id="_acf2e785-8bde-abcd-7102-087c7ebf4512" valign="middle" align="left">Edits for publication</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_54d78b69-3460-c06b-722e-d37bedeee892" normative="true" obligation="informative">
+</annex><bibliography><references id="_8adbb9eb-194c-d729-601d-5998eb861bef" normative="true" obligation="informative">
 <title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 <bibitem anchor="openapi" id="_b938fdeb-4800-86a4-6018-ccdfba5f1a05"><formattedref format="application/x-isodoc+xml">Open API Initiative: <strong>OpenAPI Specification 3.0.2</strong>, 2018 <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md"/></formattedref><docidentifier>OpenAPI Specification, version 3.0</docidentifier><docnumber>3.0</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_b3494046-2b9d-ec5a-7e6d-d194476dd4df" type="standard" schema-version="v1.5.6" anchor="gmlsf">
-  <fetched>2026-10-15</fetched>
+<bibitem id="_6b407b46-1814-b19c-db61-79b836587fe9" type="standard" schema-version="v1.5.6" anchor="gmlsf">
+  <fetched>2026-10-21</fetched>
   
 <title language="en" script="Latn" type="title-main">Geography Markup Language (GML) simple features profile (with Corrigendum)</title>
 
@@ -4151,8 +4151,8 @@ In the taxonomy of services defined in ISO 19119, the WFS is primarily a feature
 This Simple Features profile of GML began as a product of OGC’s Interoperability Program: a global, collaborative, hands-on engineering and testing program designed to deliver prototype technologies and proven candidate standards into the OGC’s Specification Development Program. In OGC Interoperability Initiatives, international teams of technology providers work together to solve specific geo-processing interoperability problems posed by Initiative. 
 </abstract>
 </bibitem>
-<bibitem id="_d691b3a6-b447-d24b-72ac-b6fec2354c4a" type="standard" schema-version="v1.5.6" anchor="rfc7946">
-  <fetched>2026-10-15</fetched>
+<bibitem id="_93e418bc-7e33-488f-0652-ed94577d8139" type="standard" schema-version="v1.5.6" anchor="rfc7946">
+  <fetched>2026-10-21</fetched>
   
 <title type="main">The GeoJSON Format</title>
 
@@ -4274,8 +4274,8 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <vocab>JavaScript Object Notation</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_db1df629-7fc1-0e99-5f81-a8668f1bfa8c" type="standard" schema-version="v1.5.6" anchor="html5">
-  <fetched>2026-10-15</fetched>
+<bibitem id="_535e3e55-5ba3-42ad-629c-b8d9b31e2050" type="standard" schema-version="v1.5.6" anchor="html5">
+  <fetched>2026-10-21</fetched>
   
 <title language="en" script="Latn">HTML5</title>
 
@@ -4502,8 +4502,8 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
   </series>
 </bibitem>
 <bibitem anchor="schema" id="_aaa16b44-0983-0a61-8619-b02201cd9085"><formattedref format="application/x-isodoc+xml"><strong>Schema.org:</strong> <link target="http://schema.org/docs/schemas.html"/></formattedref><docidentifier>schema.org</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_87861c06-c848-658a-8037-48e08ebdc582" type="standard" schema-version="v1.5.6" anchor="rfc2616">
-  <fetched>2026-10-15</fetched>
+<bibitem id="_cfc8f018-db5a-6282-a8c5-2b6968905267" type="standard" schema-version="v1.5.6" anchor="rfc2616">
+  <fetched>2026-10-21</fetched>
   
 <title type="main">Hypertext Transfer Protocol — HTTP/1.1</title>
 
@@ -4681,8 +4681,8 @@ This Simple Features profile of GML began as a product of OGC’s Interoperabili
     <vocab>hypermedia</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_c7a25c4a-3c18-91af-cbf3-74ecb00e61bd" type="standard" schema-version="v1.5.6" anchor="rfc2818">
-  <fetched>2026-10-15</fetched>
+<bibitem id="_8b69a53d-edf6-6117-78fe-6db66191ce7a" type="standard" schema-version="v1.5.6" anchor="rfc2818">
+  <fetched>2026-10-21</fetched>
   
 <title type="main">HTTP Over TLS</title>
 
