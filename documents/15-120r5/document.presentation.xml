@@ -940,9 +940,9 @@ sourcecode .nt {
 <td id="_9a80836b-e6c9-2ef1-9180-cb3b75c9f92c" valign="middle" align="left" semx-id="_9a80836b-e6c9-2ef1-9180-cb3b75c9f92c">Minor corrections to typos.</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_429a4c10-9135-bdf9-36ca-d7e503f96d42" normative="false" obligation="informative" semx-id="_429a4c10-9135-bdf9-36ca-d7e503f96d42" displayorder="16">
-<title id="_f4c2bd32-4b9f-c7bf-65fa-4a5120f569d3" semx-id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><fmt-title depth="1" id="_f6fe7add-d1a9-0682-793c-fa2b1a09ca57"><semx element="title" source="_f4c2bd32-4b9f-c7bf-65fa-4a5120f569d3">Bibliography</semx></fmt-title><bibitem id="ieee-std-1278" type="standard" schema-version="v1.5.6" anchor="ieee-std-1278" semx-id="_a9ca9337-18ef-c42d-0d08-83ae9741e301"><biblio-tag>[1]<tab/></biblio-tag><formattedref>Institute of Electrical and Electronics Engineers (committee): IEEE Std 1278™-1993, <em>IEEE Standard for Information Technology — Protocols for Distributed Interactive Simulation Applications—Entity Information and Interaction</em>. Institute of Electrical and Electronics Engineers (2002). <fmt-link target="https://ieeexplore.ieee.org/document/237008">https://ieeexplore.ieee.org/document/237008</fmt-link>.</formattedref>
-  <fetched>2026-10-21</fetched>
+</annex><bibliography><references id="_1b98e579-c560-0906-9ee3-f3550bae8d8e" normative="false" obligation="informative" semx-id="_1b98e579-c560-0906-9ee3-f3550bae8d8e" displayorder="16">
+<title id="_f4c2bd32-4b9f-c7bf-65fa-4a5120f569d3" semx-id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><fmt-title depth="1" id="_f6fe7add-d1a9-0682-793c-fa2b1a09ca57"><semx element="title" source="_f4c2bd32-4b9f-c7bf-65fa-4a5120f569d3">Bibliography</semx></fmt-title><bibitem id="ieee-std-1278" type="standard" schema-version="v1.5.6" anchor="ieee-std-1278" semx-id="_83f38b7f-9bf8-6588-c010-4ac98ccc14b8"><biblio-tag>[1]<tab/></biblio-tag><formattedref>Institute of Electrical and Electronics Engineers (committee): IEEE Std 1278™-1993, <em>IEEE Standard for Information Technology — Protocols for Distributed Interactive Simulation Applications—Entity Information and Interaction</em>. Institute of Electrical and Electronics Engineers (2002). <fmt-link target="https://ieeexplore.ieee.org/document/237008">https://ieeexplore.ieee.org/document/237008</fmt-link>.</formattedref>
+  <fetched>2026-10-24</fetched>
   
 <title type="main">IEEE Standard for Information Technology — Protocols for Distributed Interactive Simulation Applications—Entity Information and Interaction</title>
 
@@ -1055,8 +1055,8 @@ sourcecode .nt {
   <keyword>
     <vocab language="en" script="Latn">simulation entity</vocab>
   </keyword>
-</bibitem><bibitem id="ieee-std-1516" type="standard" schema-version="v1.5.6" anchor="ieee-std-1516" semx-id="_fba8f4d0-3dd4-e7fa-9ff5-18a3bb88d62e"><biblio-tag>[2]<tab/></biblio-tag><formattedref>Institute of Electrical and Electronics Engineers (committee): IEEE Std 1516™-2000, <em>IEEE Standard for Modeling and Simulation (M&amp;S) High Level ARchitecture (HLA) — Framework and Rules</em>. Institute of Electrical and Electronics Engineers (2019). <fmt-link target="https://ieeexplore.ieee.org/document/893287">https://ieeexplore.ieee.org/document/893287</fmt-link>.</formattedref>
-  <fetched>2026-10-21</fetched>
+</bibitem><bibitem id="ieee-std-1516" type="standard" schema-version="v1.5.6" anchor="ieee-std-1516" semx-id="_145fc908-b704-d1a0-d29a-52dae7a4c995"><biblio-tag>[2]<tab/></biblio-tag><formattedref>Institute of Electrical and Electronics Engineers (committee): IEEE Std 1516™-2000, <em>IEEE Standard for Modeling and Simulation (M&amp;S) High Level ARchitecture (HLA) — Framework and Rules</em>. Institute of Electrical and Electronics Engineers (2019). <fmt-link target="https://ieeexplore.ieee.org/document/893287">https://ieeexplore.ieee.org/document/893287</fmt-link>.</formattedref>
+  <fetched>2026-10-24</fetched>
   
 <title type="main">IEEE Standard for Modeling and Simulation (M&amp;S) High Level ARchitecture (HLA) — Framework and Rules</title>
 

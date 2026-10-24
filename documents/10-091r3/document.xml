@@ -458,9 +458,9 @@
 </table>
 </annex><bibliography><references id="_08e4a7cd-1a73-9a2a-4dac-fc841681bf21" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_1e0e85f2-a241-464a-90af-046b5883d60f">There are no normative references in this document.</p>
-</references><references id="_806751b3-ae9a-965a-b017-6b62ebe095fc" normative="false" obligation="informative">
-<title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem id="_a5a1c682-8428-c29b-cac3-af96321c8fa5" type="standard" schema-version="v1.5.6" anchor="ogc07-036">
-  <fetched>2026-10-21</fetched>
+</references><references id="_417a15d0-082b-d2e0-43e2-c6587660e294" normative="false" obligation="informative">
+<title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem id="_19946d68-bfea-8bbe-2bbc-79850107282c" type="standard" schema-version="v1.5.6" anchor="ogc07-036">
+  <fetched>2026-10-24</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
 
@@ -512,8 +512,8 @@ A GML document is described using a GML Schema. This allows users and developers
 Clients and servers with interfaces that implement the OpenGIS® Web Feature Service Interface Standard[http://www.opengeospatial.org/standards/wfs] read and write GML data. GML is also an ISO standard (ISO 19136:2007) [www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=32554 ].  
 See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
 </abstract>
-</bibitem><bibitem id="_cef83800-81f0-322d-141e-fe13ed6c27ff" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3">
-  <fetched>2026-10-21</fetched>
+</bibitem><bibitem id="_8d912ae0-9cc6-f11a-a65f-090006fea49f" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3">
+  <fetched>2026-10-24</fetched>
   
 <title language="en" script="Latn" type="title-main">NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</title>
 
@@ -561,8 +561,8 @@ See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document defines an OGC® Standard for encoding binary representations of space-time varying geo-referenced data. Specifically, this standard specifies the netCDF classic and 64-bit offset file binary encoding formats. This standard specifies a set of requirements that every netCDF classic or 64-bit offset binary encoding must fulfil.</abstract>
-</bibitem><bibitem id="_c7cc218e-41cf-8684-8374-e25f48bd82b6" type="standard" schema-version="v1.5.6" anchor="ogc06-121r3">
-  <fetched>2026-10-21</fetched>
+</bibitem><bibitem id="_1fd7ef45-9764-efd8-b94b-fa25c686db50" type="standard" schema-version="v1.5.6" anchor="ogc06-121r3">
+  <fetched>2026-10-24</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Web Service Common Implementation Specification</title>
 
@@ -610,8 +610,8 @@ See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">The OpenGIS® Web Services Common (WS-Common) Interface Standard specifies parameters and data structures that are common to all OGC Web Service (OWS) Standards. The standard normalizes the ways in which operation requests and responses handle such elements as bounding boxes, exception processing, URL requests, URN expressions, and key value encoding. Among its uses, this document serves as a normative reference for other OGC Web Service standards, including the OpenGIS Web Map Service (WMS) [http://www.opengeospatial.org/standards/wms], Web Feature Service (WFS) [http://www.opengeospatial.org/standards/wfs], and Web Coverage Service (WCS) [http://www.opengeospatial.org/standards/wcs] standards. Rather than continuing to repeat this material in each such standard, each standard will normatively reference parts of this document.</abstract>
-</bibitem><bibitem id="_674a8f72-4d52-c10d-4d24-8ad8f1008c9c" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3">
-  <fetched>2026-10-21</fetched>
+</bibitem><bibitem id="_930f48f2-3282-5bbc-3d86-ee518cfe4977" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3">
+  <fetched>2026-10-24</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Network Common Data Form (NetCDF)  Core Encoding Standard version 1.0</title>
 
