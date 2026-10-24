@@ -17,6 +17,8 @@ metanorma:
       - sources/16-131r2/document.adoc
       - repos/ogc-wfs/sources/core/standard/17-069.adoc
       - sources/17-069r3/document.adoc
+      - sources/ogcapi-features-1/document.adoc
+      - sources/ogcapi-tiles-1/document.adoc
       - sources/18-016r1/document.adoc
       - sources/18-046/document.adoc
       - sources/18-053r2/document.adoc
