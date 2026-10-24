@@ -10,6 +10,7 @@
 :issued-date: 2026-10-24
 :fullname: Open Geospatial Consortium
 :organization: Open Geospatial Consortium
+:mn-document-class: ogc
 
 == Scope
 
