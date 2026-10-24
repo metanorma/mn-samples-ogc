@@ -1,0 +1,24 @@
+= OGC API - Tiles (OpenAPI-driven sections sample)
+:doctype: standard
+:docsubtype: implementation
+:edition: 1.0
+:language: en
+:status: draft
+:committee: technical
+:docnumber: 99-902
+:received-date: 2026-10-24
+:issued-date: 2026-10-24
+:fullname: Open Geospatial Consortium
+:organization: Open Geospatial Consortium
+
+== Scope
+
+This sample demonstrates the paths-bearing OpenAPI corpus: the normative
+sections below are generated from the bundled OGC API - Tiles OpenAPI 3.0
+definition (copied verbatim from the opengeospatial/ogcapi-tiles release
+artifacts) through metanorma-plugin-openapi and lutaml-openapi, exercising
+the 3.0 normalization path and the Paths renderer.
+
+[openapi,path=openapi/ogcapi-tiles-1-bundled.json]
+--
+--
