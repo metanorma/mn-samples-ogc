@@ -6,9 +6,9 @@ gem "metanorma-cli", github: "metanorma/metanorma-cli", branch: "main"
 # riding main until the first releases train
 gem "metanorma-plugin-openapi", github: "metanorma/metanorma-plugin-openapi", branch: "main"
 gem "lutaml-openapi", github: "lutaml/lutaml-openapi", branch: "main"
-# registers the metanorma-plugin-openapi block in the ogc flavor
-# (metanorma-ogc#1026 — drop for the release carrying it)
-gem "metanorma-ogc", github: "metanorma/metanorma-ogc", branch: "feat/openapi-block"
+# main carries the openapi preprocessor registration (#1026) and
+# the plugin prerelease floor (#1027)
+gem "metanorma-ogc", github: "metanorma/metanorma-ogc", branch: "main"
 gem "relaton", "~> 3.0.0.pre.alpha"
 gem "relaton-render", "~> 3.0.0.pre.alpha"
 gem "pubid", "~> 2.0.0.pre.alpha"
