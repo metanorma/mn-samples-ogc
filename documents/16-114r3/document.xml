@@ -1114,10 +1114,10 @@ public class TestMovingFeatureNetCDF {
 <td id="_74e369d5-0a6f-0890-c011-cf48efdb3a40" valign="middle" align="center">Best Practice</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_b483322c-3d06-78b6-90de-e8376bd9b27b" normative="true" obligation="informative">
+</annex><bibliography><references id="_1ea365d0-af94-e8f9-8989-041feb866779" normative="true" obligation="informative">
 <title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_b2563650-2b6f-f040-6735-efb35fd10fec" type="standard" schema-version="v1.5.6" anchor="ogc14-083r2">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_1e0bced0-19ea-27ad-fb68-439fca33f794" type="standard" schema-version="v1.5.6" anchor="ogc14-083r2">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC® Moving Features Encoding Part I: XML Core</title>
 
@@ -1191,8 +1191,8 @@ public class TestMovingFeatureNetCDF {
   <script>Latn</script>
   <abstract language="en" script="Latn">This OGC® Standard specifies standard encoding representations of movement of geographic features. The primary use case is information exchange.</abstract>
 </bibitem>
-<bibitem id="_36037979-edbf-e3cb-afab-a8d8ad39555b" type="standard" schema-version="v1.5.6" anchor="ogc14-084r2">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_27221c57-aa4c-4990-59c6-d0db02327b4c" type="standard" schema-version="v1.5.6" anchor="ogc14-084r2">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC® Moving Features Encoding Extension: Simple Comma Separated Values (CSV)</title>
 
@@ -1266,8 +1266,8 @@ public class TestMovingFeatureNetCDF {
   <script>Latn</script>
   <abstract language="en" script="Latn">This OGC® Standard specifies standard encoding representations of movement of geographic features. The primary use case is information exchange.</abstract>
 </bibitem>
-<bibitem id="_852467ec-6963-b092-cd31-2037b135cf44" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_34d509ba-f67a-a8d2-9138-0ad525efcce5" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Network Common Data Form (NetCDF)  Core Encoding Standard version 1.0</title>
 
@@ -1318,8 +1318,8 @@ public class TestMovingFeatureNetCDF {
 NetCDF is a data model for array-oriented scientific data. A freely distributed collection of access libraries implementing support for that data model, and a machine-independent format are available. Together, the interfaces, libraries, and format support the crea-tion, access, and sharing of multi-dimensional scientific data.
 </abstract>
 </bibitem>
-<bibitem id="_cd221754-8a82-3a0a-ef3c-eaba352b783e" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_7abf20da-e1ab-bf8a-e56e-9b542eb70dda" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-main">NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</title>
 
@@ -1368,8 +1368,8 @@ NetCDF is a data model for array-oriented scientific data. A freely distributed 
   <script>Latn</script>
   <abstract language="en" script="Latn">This document defines an OGC® Standard for encoding binary representations of space-time varying geo-referenced data. Specifically, this standard specifies the netCDF classic and 64-bit offset file binary encoding formats. This standard specifies a set of requirements that every netCDF classic or 64-bit offset binary encoding must fulfil.</abstract>
 </bibitem>
-<bibitem id="_90ea2e47-71b3-eabd-d98e-204b393d0268" type="standard" schema-version="v1.5.6" anchor="ogc11-165r2">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_1f2f1d49-1d93-7950-be9a-0f3ea386ac85" type="standard" schema-version="v1.5.6" anchor="ogc11-165r2">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-main">CF-netCDF3 Data Model Extension standard</title>
 
@@ -1432,8 +1432,8 @@ This standard deals with multi-dimensional gridded data and multi-dimensional mu
 In particular, this extension standard encoding profile is limited to multi-point, and regular and warped grids; however, irregular grids are important in the CF-netCDF community and work is underway to expand the CF-netCDF to encompass other coverages types, including irregular gridded datasets.
 </abstract>
 </bibitem>
-<bibitem id="_a4b526a7-b35c-8321-67fc-35eb73b534d9" type="standard" schema-version="v1.5.6" anchor="iso19101">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_1af08d78-a999-2a7f-2fce-91638367ea54" type="standard" schema-version="v1.5.6" anchor="iso19101">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1545,8 +1545,8 @@ In particular, this extension standard encoding profile is limited to multi-poin
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_bc2c477e-034a-75c4-f8f7-b57e6f357479" type="standard" schema-version="v1.5.6" anchor="iso19141">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_22c7434f-3bfe-314f-87cc-6bad87ca8cc9" type="standard" schema-version="v1.5.6" anchor="iso19141">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1626,8 +1626,8 @@ In particular, this extension standard encoding profile is limited to multi-poin
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_3cabcdf2-adae-dd23-0680-3e8794a0b560" type="standard" schema-version="v1.5.6" anchor="iso19107">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_e6a531f0-1ad9-d770-c8da-3e4d94afac02" type="standard" schema-version="v1.5.6" anchor="iso19107">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -1706,8 +1706,8 @@ In particular, this extension standard encoding profile is limited to multi-poin
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_2eb56dfa-7881-eff0-2d3f-caf1ab58e38c" type="standard" schema-version="v1.5.6" anchor="iso19123">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_c769b22f-1903-4fce-c0c4-29635556022a" type="standard" schema-version="v1.5.6" anchor="iso19123">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 

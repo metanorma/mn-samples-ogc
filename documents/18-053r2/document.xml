@@ -5711,13 +5711,13 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
 </td>
 </tr></tbody>
 </table>
-</annex><bibliography><clause id="_204ec865-a897-af4e-4be8-eec6d7b2882a" obligation="informative">
+</annex><bibliography><clause id="_5b9f966d-e5c0-7f58-8f66-48189ec4971b" obligation="informative">
 <title id="_3be6e2bf-2a72-9834-8982-7cbd311906b8">Normative references</title><p id="_65d2856b-3ae9-0f16-fd2b-ffa0d7236af5">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<references id="_e4ad9d14-2c9a-5ebf-04bf-0386b3c47cc3" normative="true" obligation="informative">
+<references id="_41b6ce14-59a7-6f06-2889-1933dcb80415" normative="true" obligation="informative">
 <title id="_c8698bd8-d4e0-e7f8-0c24-b7cee94f25ee">Normative</title>
 <bibitem anchor="EPSG" id="_d3fda99b-ba29-6128-9744-aced14310e00"><formattedref format="application/x-isodoc+xml">EPSG: 4979, 2007. <link target="http://spatialreference.org/ref/epsg/wgs-84-3/">http://spatialreference.org/ref/epsg/wgs-84-3/</link></formattedref><docidentifier>EPSG WGS-84-3</docidentifier><docnumber>84-3</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_7858f578-794c-24ae-8bd3-eb64df3f9219" type="standard" schema-version="v1.5.6" anchor="IETF_RFC2397">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_d040f006-c923-6ddd-1d19-04ace08f0e0b" type="standard" schema-version="v1.5.6" anchor="IETF_RFC2397">
+  <fetched>2026-10-25</fetched>
   
 <title type="main">The “data” URL scheme</title>
 
@@ -5785,8 +5785,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
     <vocab>media type</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_1c70ef79-b2b9-2488-1a9c-b8548d7e9311" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3629">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_093a8483-81cf-c6f8-c361-ed4752a471f2" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3629">
+  <fetched>2026-10-25</fetched>
   
 <title type="main">UTF-8, a transformation format of ISO 10646</title>
 
@@ -5863,8 +5863,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
     <vocab>Format</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_b3903218-f7df-a458-3b14-8b875993ba42" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3986">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_bfaf1baa-c783-ef3e-8693-f992dd1c7def" type="standard" schema-version="v1.5.6" anchor="IETF_RFC3986">
+  <fetched>2026-10-25</fetched>
   
 <title type="main">Uniform Resource Identifier (URI): Generic Syntax</title>
 
@@ -5968,8 +5968,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
   </keyword>
 </bibitem>
 <bibitem anchor="Khronos_Group" id="_6d552168-be18-0ab6-d70c-e3b976d2e60d"><formattedref format="application/x-isodoc+xml">Khronos Group: glTF 2.0 — Runtime 3D Asset Delivery, 2017. <link target="https://github.com/KhronosGroup/glTF/blob/master/README.md">https://github.com/KhronosGroup/glTF/blob/master/README.md</link></formattedref><docidentifier>Khronos Group glTF 2.0 — Runtime 3D Asset Delivery</docidentifier><docnumber>2.0 — Runtime 3D Asset Delivery</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_2dba5914-fed4-b376-55cf-98ba62fe8822" type="standard" schema-version="v1.5.6" anchor="OGC">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_f361000c-671b-0c8b-d498-234e89a6112c" type="standard" schema-version="v1.5.6" anchor="OGC">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-main">Geographic information — Well known text representation of coordinate reference systems</title>
 
@@ -6021,8 +6021,8 @@ ${temperatures['values'][0]} === 70 // Same as (temperatures[values])[0] and tem
 The jointly developed draft has also been submitted by ISO TC211 for publication as an International Standard document. The version incorporates comments made during both the OGC Public Comment Period as well as the ISO ballot for DIS (ISO TC211 document N3750). 
 </abstract>
 </bibitem>
-<bibitem id="_3353906b-77f5-46b2-f764-31731d425b8a" type="standard" schema-version="v1.5.6" anchor="W3C">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_159bde5b-02cc-e174-17fc-de090409eff2" type="standard" schema-version="v1.5.6" anchor="W3C">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn">CSS Color Module Level 3</title>
 

@@ -2149,10 +2149,10 @@
 <td id="_7d73e49c-ce38-8d00-6355-469da03ce335" valign="middle" align="left"/><td id="_ea27b95c-ff48-6b07-9719-749956f18b4a" valign="middle" align="left">Responding to Chris Little’s editorial review</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_3b0f24a6-bb8e-dfb2-a502-0abeba110fb9" normative="true" obligation="informative">
+</annex><bibliography><references id="_539bfb28-d04a-7559-0008-cbf6d41bf236" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_1417ba92-1f16-db66-fa47-42a93c2bbb39" type="standard" schema-version="v1.5.6" anchor="iso19101">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_b281ca86-e8b3-af74-2261-f40f8357efe9" type="standard" schema-version="v1.5.6" anchor="iso19101">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2264,8 +2264,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_73757bbb-7e0b-82d5-1f90-89e898ec5ab2" type="standard" schema-version="v1.5.6" anchor="iso19103">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_b2e64047-8723-f709-3425-2078ea223b8d" type="standard" schema-version="v1.5.6" anchor="iso19103">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2354,8 +2354,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_1a1e0279-ef37-472c-d268-0dd42d2aa2ab" type="standard" schema-version="v1.5.6" anchor="iso19107">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_99c90009-ccf8-bf3f-94ec-5c8223e9c285" type="standard" schema-version="v1.5.6" anchor="iso19107">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2434,8 +2434,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_0e442155-28f1-2705-7ec1-dd08cf93dcba" type="standard" schema-version="v1.5.6" anchor="iso19111">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_8761aaab-416c-df49-de19-253d53b9da78" type="standard" schema-version="v1.5.6" anchor="iso19111">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2532,8 +2532,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_a5b9ad7b-ffcd-d9fb-0795-fab597bac597" type="standard" schema-version="v1.5.6" anchor="iso19112">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_855d04ea-af36-f6fc-6afe-8ec947d58ca2" type="standard" schema-version="v1.5.6" anchor="iso19112">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2619,8 +2619,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_2ce2b8d7-fe49-327f-8f4f-4420d4866c38" type="standard" schema-version="v1.5.6" anchor="iso19115">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_52d6ec62-6328-586a-c4dd-8b96f38ea034" type="standard" schema-version="v1.5.6" anchor="iso19115">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2733,8 +2733,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_fcde828c-81d1-96ff-d2fd-14fa86bda6a1" type="standard" schema-version="v1.5.6" anchor="iso19123">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_d97f8c43-8046-52e1-e445-6287b5f1904b" type="standard" schema-version="v1.5.6" anchor="iso19123">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2821,8 +2821,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_6102882c-dde1-fc82-c5fa-c3ceb5540188" type="standard" schema-version="v1.5.6" anchor="iso19125">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_a9b72b45-4b97-a6fa-09b7-5aa0d980d5ab" type="standard" schema-version="v1.5.6" anchor="iso19125">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2914,8 +2914,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_4952ce42-fec8-920c-6d84-c6eb5249c895" type="standard" schema-version="v1.5.6" anchor="iso19136">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_84f7575e-14fa-61cf-e86e-fe2902cb3f51" type="standard" schema-version="v1.5.6" anchor="iso19136">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3002,8 +3002,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_1c2112b9-8c54-72af-4187-e5547fdefaa4" type="standard" schema-version="v1.5.6" anchor="iso19143">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_452e6f25-e9b1-6630-1476-0802b67bd9d7" type="standard" schema-version="v1.5.6" anchor="iso19143">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3091,8 +3091,8 @@
   </place>
 </bibitem>
 <bibitem anchor="iso19156" id="_0f0ba3fa-e8fc-69aa-9e8d-d4d5a36d77db"><formattedref format="application/x-isodoc+xml">ISO: ISO 19156:2011(E), <em>Geographic information – Observations and Measurements</em>, 2011</formattedref><docidentifier type="ISO">ISO 19156:2011(E)</docidentifier><docnumber>19156:2011(E)</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="_d2a8cff8-86a4-cc60-c8bc-a7e8563d3164" type="standard" schema-version="v1.5.6" anchor="iso19501">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_dc398dd7-37f8-dc3f-4a8b-95ca6f4ae64f" type="standard" schema-version="v1.5.6" anchor="iso19501">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -3187,8 +3187,8 @@
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_35e50956-88f7-05c4-20e5-38330b1d5229" type="standard" schema-version="v1.5.6" anchor="ogc06103">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_c3bedb13-fc2f-1cca-2777-21538a518b84" type="standard" schema-version="v1.5.6" anchor="ogc06103">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">OpenGIS Implementation Specification for Geographic information</title>
 
@@ -3244,8 +3244,8 @@
   <script>Latn</script>
   <abstract language="en" script="Latn">The OpenGIS® Simple Features Interface Standard (SFS) provides a well-defined and common way for applications to store and access feature data in relational or object-relational databases, so that the data can be used to support other applications through a common feature model, data store and information access interface. OpenGIS Simple Features are geospatial features described using vector data elements such as points, lines and polygons.  </abstract>
 </bibitem>
-<bibitem id="_851f31a2-b366-9e27-b26d-51b43cd6b68a" type="standard" schema-version="v1.5.6" anchor="ogc07036">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_04f96821-7d50-fbd7-2bfa-b13b2c395c0f" type="standard" schema-version="v1.5.6" anchor="ogc07036">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
 
@@ -3298,8 +3298,8 @@ Clients and servers with interfaces that implement the OpenGIS® Web Feature Ser
 See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
 </abstract>
 </bibitem>
-<bibitem id="_d82f710f-95fc-4d6b-6bd1-a030f4f39635" type="standard" schema-version="v1.5.6" anchor="ogc08015">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_36805ef8-2416-e95d-9d9e-f29259633f69" type="standard" schema-version="v1.5.6" anchor="ogc08015">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Topic 2</title>
 
@@ -3352,8 +3352,8 @@ See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
   <abstract language="en" script="Latn">This document is consistent with the second edition (2007) of ISO 19111, Geographic Information — Spatial referencing by coordinates  [ISO 19111:2007]</abstract>
 <formattedref>OGC: OGC 08-015r2, <em>Abstract Specification<fn id="_1007dd82-2fd5-80c7-ca68-a8f91b0ba189" reference="4"><p id="_90c92a79-322b-96af-ebd6-c680219199a7">The OGC Abstract Specifications are available from <link target="http://www.opengeospatial.org/docs/as"/></p>
 </fn> – Topic 2: Spatial referencing by coordinates.</em> Version 4.0.0. <em>(identical in normative content to ISO 19111:2007)</em>, 2010</formattedref></bibitem>
-<bibitem id="_0f2905f8-f17c-ec69-1576-17d5005f2304" type="standard" schema-version="v1.5.6" anchor="ogc10004">
-  <fetched>2026-10-24</fetched>
+<bibitem id="_79a891e0-33df-9075-b2e2-5af1b91c0f35" type="standard" schema-version="v1.5.6" anchor="ogc10004">
+  <fetched>2026-10-25</fetched>
   
 <title language="en" script="Latn" type="title-intro">Topic 20</title>
 

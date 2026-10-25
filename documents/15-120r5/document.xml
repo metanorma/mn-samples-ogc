@@ -863,9 +863,9 @@
 <td id="_9a80836b-e6c9-2ef1-9180-cb3b75c9f92c" valign="middle" align="left">Minor corrections to typos.</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_1b98e579-c560-0906-9ee3-f3550bae8d8e" normative="false" obligation="informative">
-<title id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><bibitem id="_83f38b7f-9bf8-6588-c010-4ac98ccc14b8" type="standard" schema-version="v1.5.6" anchor="ieee-std-1278">
-  <fetched>2026-10-24</fetched>
+</annex><bibliography><references id="_d77f41d0-68e5-b3f4-418b-e8b2839825cf" normative="false" obligation="informative">
+<title id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><bibitem id="_6bc484eb-9261-3e03-c4c4-00d0271f0954" type="standard" schema-version="v1.5.6" anchor="ieee-std-1278">
+  <fetched>2026-10-25</fetched>
   
 <title type="main">IEEE Standard for Information Technology — Protocols for Distributed Interactive Simulation Applications—Entity Information and Interaction</title>
 
@@ -978,8 +978,8 @@
   <keyword>
     <vocab language="en" script="Latn">simulation entity</vocab>
   </keyword>
-</bibitem><bibitem id="_145fc908-b704-d1a0-d29a-52dae7a4c995" type="standard" schema-version="v1.5.6" anchor="ieee-std-1516">
-  <fetched>2026-10-24</fetched>
+</bibitem><bibitem id="_7484ca27-c07c-81a3-3369-00a26e13eaef" type="standard" schema-version="v1.5.6" anchor="ieee-std-1516">
+  <fetched>2026-10-25</fetched>
   
 <title type="main">IEEE Standard for Modeling and Simulation (M&amp;S) High Level ARchitecture (HLA) — Framework and Rules</title>
 
