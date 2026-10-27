@@ -1831,13 +1831,13 @@ href="file:\\home\gdal_eg/cea.tif"/&gt;
 </clause>
 </clause>
 </clause>
-</sections><bibliography><references id="_c8a50002-d92e-a604-b651-ecae913bc0ba" normative="true" obligation="informative">
+</sections><bibliography><references id="_7bf237ac-2711-6c96-522f-a6903d04e2b5" normative="true" obligation="informative">
 <title id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title>
 <p id="_02416d9f-bcf4-b0cb-7b18-fa40a3661f10">The following normative references are used in this document.</p>
 
 
-<bibitem id="_f160a12e-e304-f940-bbd6-e7f3c62a0104" type="standard" schema-version="v1.5.6" anchor="OGC12-080r2">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_8f8eb225-53de-1d03-31e0-de3f7eea3034" type="standard" schema-version="v1.5.6" anchor="OGC12-080r2">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC OWS Context Conceptual Model</title>
 
@@ -1900,8 +1900,8 @@ This document concentrates on describing the OWS Context Model in abstract terms
 The abbreviation owc is used throughout this document for OWS Context.
 </abstract>
 </bibitem>
-<bibitem id="_0aeaf092-bcd7-432f-fcac-a8b0a004ab0e" type="standard" schema-version="v1.5.6" anchor="OGC12-084r2">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_2826c17e-df93-8fb5-c812-2ae454f852ff" type="standard" schema-version="v1.5.6" anchor="OGC12-084r2">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC OWS Context Atom Encoding Standard</title>
 
@@ -1960,8 +1960,8 @@ The abbreviation owc is used throughout this document for OWS Context.
   <abstract language="en" script="Latn">This standard describes the Atom encoding of the OWC Context conceptual model. The goal of this standard is to provide a definition of how to encode a context document, which can be extended to allow a context referencing a fully configured service set to be defined and consistently interpreted by clients.
 </abstract>
 </bibitem>
-<bibitem id="_7fc61af8-aeb7-533c-f599-867617fa56ff" type="standard" schema-version="v1.5.6" anchor="OGC14-055r2">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_a82282c6-94cf-fb36-bcee-c72009650dc6" type="standard" schema-version="v1.5.6" anchor="OGC14-055r2">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC OWS Context GeoJSON Encoding Standard</title>
 

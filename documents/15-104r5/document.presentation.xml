@@ -2019,10 +2019,10 @@ sourcecode .nt {
 
 
 
-<references id="_539bfb28-d04a-7559-0008-cbf6d41bf236" normative="true" obligation="informative" semx-id="_539bfb28-d04a-7559-0008-cbf6d41bf236" displayorder="12">
-<title id="_8e3fc175-180f-3974-af67-97c2074ff58b" semx-id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><fmt-title depth="1" id="_bc99abc7-758b-fa29-a943-a817541d1884"><span class="fmt-caption-label"><semx element="autonum" source="_539bfb28-d04a-7559-0008-cbf6d41bf236">3</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8e3fc175-180f-3974-af67-97c2074ff58b">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_539bfb28-d04a-7559-0008-cbf6d41bf236">3</semx></fmt-xref-label><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025" semx-id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="iso19101" type="standard" schema-version="v1.5.6" anchor="iso19101" semx-id="_b281ca86-e8b3-af74-2261-f40f8357efe9"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19101-1:2014, <em>Geographic information — Reference model — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva (2014). <fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<references id="_65cb0ce2-24e6-5fdd-f43b-59379c4aa480" normative="true" obligation="informative" semx-id="_65cb0ce2-24e6-5fdd-f43b-59379c4aa480" displayorder="12">
+<title id="_8e3fc175-180f-3974-af67-97c2074ff58b" semx-id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><fmt-title depth="1" id="_bc99abc7-758b-fa29-a943-a817541d1884"><span class="fmt-caption-label"><semx element="autonum" source="_65cb0ce2-24e6-5fdd-f43b-59379c4aa480">3</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8e3fc175-180f-3974-af67-97c2074ff58b">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_65cb0ce2-24e6-5fdd-f43b-59379c4aa480">3</semx></fmt-xref-label><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025" semx-id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<bibitem id="iso19101" type="standard" schema-version="v1.5.6" anchor="iso19101" semx-id="_8c5edde2-d68a-6a02-025d-a1121eb3c1ea"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19101-1:2014, <em>Geographic information — Reference model — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva (2014). <fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2134,8 +2134,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19103" type="standard" schema-version="v1.5.6" anchor="iso19103" semx-id="_b2e64047-8723-f709-3425-2078ea223b8d"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19103:2015, <em>Geographic information — Conceptual schema language</em>. International Organization for Standardization, Geneva (2015). <fmt-link target="https://www.iso.org/standard/56734.html">https://www.iso.org/standard/56734.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19103" type="standard" schema-version="v1.5.6" anchor="iso19103" semx-id="_ef698e06-fd45-5e50-af17-971fdb626de2"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19103:2015, <em>Geographic information — Conceptual schema language</em>. International Organization for Standardization, Geneva (2015). <fmt-link target="https://www.iso.org/standard/56734.html">https://www.iso.org/standard/56734.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2224,8 +2224,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19107" type="standard" schema-version="v1.5.6" anchor="iso19107" semx-id="_99c90009-ccf8-bf3f-94ec-5c8223e9c285"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19107:2003, <em>Geographic information — Spatial schema</em>. International Organization for Standardization, Geneva (2003). <fmt-link target="https://www.iso.org/standard/26012.html">https://www.iso.org/standard/26012.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19107" type="standard" schema-version="v1.5.6" anchor="iso19107" semx-id="_e4ea8692-a651-1f03-5c4f-7850383bb7d4"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19107:2003, <em>Geographic information — Spatial schema</em>. International Organization for Standardization, Geneva (2003). <fmt-link target="https://www.iso.org/standard/26012.html">https://www.iso.org/standard/26012.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2304,8 +2304,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19111" type="standard" schema-version="v1.5.6" anchor="iso19111" semx-id="_8761aaab-416c-df49-de19-253d53b9da78"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19111:2007, <em>Geographic information — Spatial referencing by coordinates</em>. International Organization for Standardization, Geneva (2007). <fmt-link target="https://www.iso.org/standard/41126.html">https://www.iso.org/standard/41126.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19111" type="standard" schema-version="v1.5.6" anchor="iso19111" semx-id="_0f154e9d-26ac-828c-35b7-2a107169fbf0"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19111:2007, <em>Geographic information — Spatial referencing by coordinates</em>. International Organization for Standardization, Geneva (2007). <fmt-link target="https://www.iso.org/standard/41126.html">https://www.iso.org/standard/41126.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2402,8 +2402,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19112" type="standard" schema-version="v1.5.6" anchor="iso19112" semx-id="_855d04ea-af36-f6fc-6afe-8ec947d58ca2"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19112:2003, <em>Geographic information — Spatial referencing by geographic identifiers</em>. International Organization for Standardization, Geneva (2003). <fmt-link target="https://www.iso.org/standard/26017.html">https://www.iso.org/standard/26017.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19112" type="standard" schema-version="v1.5.6" anchor="iso19112" semx-id="_fd2f81c1-648c-c7d4-c80c-927074c13bf7"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19112:2003, <em>Geographic information — Spatial referencing by geographic identifiers</em>. International Organization for Standardization, Geneva (2003). <fmt-link target="https://www.iso.org/standard/26017.html">https://www.iso.org/standard/26017.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2489,8 +2489,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19115" type="standard" schema-version="v1.5.6" anchor="iso19115" semx-id="_52d6ec62-6328-586a-c4dd-8b96f38ea034"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19115-1:2014, <em>Geographic information — Metadata — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva (2014). <fmt-link target="https://www.iso.org/standard/53798.html">https://www.iso.org/standard/53798.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19115" type="standard" schema-version="v1.5.6" anchor="iso19115" semx-id="_45375e3d-4afa-866a-b83d-ea9ecc4744ea"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19115-1:2014, <em>Geographic information — Metadata — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva (2014). <fmt-link target="https://www.iso.org/standard/53798.html">https://www.iso.org/standard/53798.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2603,8 +2603,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19123" type="standard" schema-version="v1.5.6" anchor="iso19123" semx-id="_d97f8c43-8046-52e1-e445-6287b5f1904b"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19123:2005, <em>Geographic information — Schema for coverage geometry and functions</em>. International Organization for Standardization, Geneva (2005). <fmt-link target="https://www.iso.org/standard/40121.html">https://www.iso.org/standard/40121.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19123" type="standard" schema-version="v1.5.6" anchor="iso19123" semx-id="_fabafe7b-b0b5-82c8-f76d-1e20596b04e7"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19123:2005, <em>Geographic information — Schema for coverage geometry and functions</em>. International Organization for Standardization, Geneva (2005). <fmt-link target="https://www.iso.org/standard/40121.html">https://www.iso.org/standard/40121.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2691,8 +2691,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19125" type="standard" schema-version="v1.5.6" anchor="iso19125" semx-id="_a9b72b45-4b97-a6fa-09b7-5aa0d980d5ab"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19125-1:2004, <em>Geographic information — Simple feature access — Part 1: Common architecture</em>. International Organization for Standardization, Geneva (2004). <fmt-link target="https://www.iso.org/standard/40114.html">https://www.iso.org/standard/40114.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19125" type="standard" schema-version="v1.5.6" anchor="iso19125" semx-id="_581cb4c9-f745-f931-fa8a-6f8fa332377b"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19125-1:2004, <em>Geographic information — Simple feature access — Part 1: Common architecture</em>. International Organization for Standardization, Geneva (2004). <fmt-link target="https://www.iso.org/standard/40114.html">https://www.iso.org/standard/40114.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2784,8 +2784,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19136" type="standard" schema-version="v1.5.6" anchor="iso19136" semx-id="_84f7575e-14fa-61cf-e86e-fe2902cb3f51"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19136:2007, <em>Geographic information — Geography Markup Language (GML)</em>. International Organization for Standardization, Geneva (2007). <fmt-link target="https://www.iso.org/standard/32554.html">https://www.iso.org/standard/32554.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19136" type="standard" schema-version="v1.5.6" anchor="iso19136" semx-id="_49ea7c89-597f-2d45-fae1-6ec053a8631d"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19136:2007, <em>Geographic information — Geography Markup Language (GML)</em>. International Organization for Standardization, Geneva (2007). <fmt-link target="https://www.iso.org/standard/32554.html">https://www.iso.org/standard/32554.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2872,8 +2872,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19143" type="standard" schema-version="v1.5.6" anchor="iso19143" semx-id="_452e6f25-e9b1-6630-1476-0802b67bd9d7"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19143:2010, <em>Geographic information — Filter encoding</em>. International Organization for Standardization, Geneva (2010). <fmt-link target="https://www.iso.org/standard/42137.html">https://www.iso.org/standard/42137.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19143" type="standard" schema-version="v1.5.6" anchor="iso19143" semx-id="_e1168f2c-a8c9-d1e3-e140-cb0ff4aeb6a4"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19143:2010, <em>Geographic information — Filter encoding</em>. International Organization for Standardization, Geneva (2010). <fmt-link target="https://www.iso.org/standard/42137.html">https://www.iso.org/standard/42137.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -2961,8 +2961,8 @@ sourcecode .nt {
   </place>
 </bibitem>
 <bibitem anchor="iso19156" id="iso19156" semx-id="_0f0ba3fa-e8fc-69aa-9e8d-d4d5a36d77db"><biblio-tag/><formattedref format="application/x-isodoc+xml">ISO: ISO 19156:2011(E), <em>Geographic information – Observations and Measurements</em>, 2011</formattedref><docidentifier type="ISO">ISO 19156:2011(E)</docidentifier><docidentifier scope="biblio-tag">ISO 19156:2011(E)</docidentifier><docnumber>19156:2011(E)</docnumber><language>en</language><script>Latn</script></bibitem>
-<bibitem id="iso19501" type="standard" schema-version="v1.5.6" anchor="iso19501" semx-id="_dc398dd7-37f8-dc3f-4a8b-95ca6f4ae64f"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO/IEC 19501:2005, <em>Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2</em>. International Organization for Standardization, International Electrotechnical Commission, Geneva (2005). <fmt-link target="https://www.iso.org/standard/32620.html">https://www.iso.org/standard/32620.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19501" type="standard" schema-version="v1.5.6" anchor="iso19501" semx-id="_318ae4b1-26cf-1f70-0533-d9d4293d904f"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO/IEC 19501:2005, <em>Information technology — Open Distributed Processing — Unified Modeling Language (UML) Version 1.4.2</em>. International Organization for Standardization, International Electrotechnical Commission, Geneva (2005). <fmt-link target="https://www.iso.org/standard/32620.html">https://www.iso.org/standard/32620.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Information technology</title>
 
@@ -3057,8 +3057,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="ogc06103" type="standard" schema-version="v1.5.6" anchor="ogc06103" semx-id="_c3bedb13-fc2f-1cca-2777-21538a518b84"><biblio-tag/><formattedref>John Herring, Open Geospatial Consortium: OGC 06-103r4, <em>OpenGIS Implementation Specification for Geographic information — Simple feature access — Part 1: Common architecture</em>. Open Geospatial Consortium (2011). <fmt-link target="http://www.opengis.net/doc/is/sfa/1.2.1">http://www.opengis.net/doc/is/sfa/1.2.1</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="ogc06103" type="standard" schema-version="v1.5.6" anchor="ogc06103" semx-id="_e3483ae0-257a-2d0f-8f45-da6d0cab9a06"><biblio-tag/><formattedref>John Herring, Open Geospatial Consortium: OGC 06-103r4, <em>OpenGIS Implementation Specification for Geographic information — Simple feature access — Part 1: Common architecture</em>. Open Geospatial Consortium (2011). <fmt-link target="http://www.opengis.net/doc/is/sfa/1.2.1">http://www.opengis.net/doc/is/sfa/1.2.1</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">OpenGIS Implementation Specification for Geographic information</title>
 
@@ -3114,8 +3114,8 @@ sourcecode .nt {
   <script>Latn</script>
   <abstract language="en" script="Latn">The OpenGIS® Simple Features Interface Standard (SFS) provides a well-defined and common way for applications to store and access feature data in relational or object-relational databases, so that the data can be used to support other applications through a common feature model, data store and information access interface. OpenGIS Simple Features are geospatial features described using vector data elements such as points, lines and polygons.  </abstract>
 </bibitem>
-<bibitem id="ogc07036" type="standard" schema-version="v1.5.6" anchor="ogc07036" semx-id="_04f96821-7d50-fbd7-2bfa-b13b2c395c0f"><biblio-tag/><formattedref>Clemens Portele, Open Geospatial Consortium: OGC 07-036, <em>OpenGIS Geography Markup Language (GML) Encoding Standard</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/07-036/07-036/pdf">https://docs.ogc.org/is/07-036/07-036/pdf</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="ogc07036" type="standard" schema-version="v1.5.6" anchor="ogc07036" semx-id="_d61aa12c-0b28-8b9c-8353-bb785024d5a3"><biblio-tag/><formattedref>Clemens Portele, Open Geospatial Consortium: OGC 07-036, <em>OpenGIS Geography Markup Language (GML) Encoding Standard</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/07-036/07-036/pdf">https://docs.ogc.org/is/07-036/07-036/pdf</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
 
@@ -3168,8 +3168,8 @@ Clients and servers with interfaces that implement the OpenGIS® Web Feature Ser
 See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
 </abstract>
 </bibitem>
-<bibitem id="ogc08015" type="standard" schema-version="v1.5.6" anchor="ogc08015" semx-id="_36805ef8-2416-e95d-9d9e-f29259633f69"><biblio-tag/>
-  <fetched>2026-10-25</fetched>
+<bibitem id="ogc08015" type="standard" schema-version="v1.5.6" anchor="ogc08015" semx-id="_6e80318b-8012-20a1-7244-be8d44e22b83"><biblio-tag/>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Topic 2</title>
 
@@ -3221,8 +3221,8 @@ See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
   <script>Latn</script>
   <abstract language="en" script="Latn">This document is consistent with the second edition (2007) of ISO 19111, Geographic Information — Spatial referencing by coordinates  [ISO 19111:2007]</abstract>
 <formattedref>Roger Lott, Open Geospatial Consortium: OGC 08-015r2, <em>Topic 2 — Spatial referencing by coordinates</em>. Open Geospatial Consortium (2010). <fmt-link target="https://docs.ogc.org/as/08-015r2/08-015r2/pdf">https://docs.ogc.org/as/08-015r2/08-015r2/pdf</fmt-link>.</formattedref></bibitem>
-<bibitem id="ogc10004" type="standard" schema-version="v1.5.6" anchor="ogc10004" semx-id="_79a891e0-33df-9075-b2e2-5af1b91c0f35"><biblio-tag/>
-  <fetched>2026-10-25</fetched>
+<bibitem id="ogc10004" type="standard" schema-version="v1.5.6" anchor="ogc10004" semx-id="_e0ad9f38-c0f0-0fa8-8a12-7cdb07aa371a"><biblio-tag/>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Topic 20</title>
 

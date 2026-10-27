@@ -2687,13 +2687,13 @@ href="file:\\home\gdal_eg/cea.tif"/&#x3e;
 </clause>
 </clause>
 </clause>
-<references id="_c8a50002-d92e-a604-b651-ecae913bc0ba" normative="true" obligation="informative" semx-id="_c8a50002-d92e-a604-b651-ecae913bc0ba" displayorder="4">
-<title id="_8e3fc175-180f-3974-af67-97c2074ff58b" semx-id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><fmt-title depth="1" id="_dee6e95a-5e1a-66d4-4361-e95302b5c365"><span class="fmt-caption-label"><semx element="autonum" source="_c8a50002-d92e-a604-b651-ecae913bc0ba">1</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8e3fc175-180f-3974-af67-97c2074ff58b">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_c8a50002-d92e-a604-b651-ecae913bc0ba">1</semx></fmt-xref-label>
+<references id="_7bf237ac-2711-6c96-522f-a6903d04e2b5" normative="true" obligation="informative" semx-id="_7bf237ac-2711-6c96-522f-a6903d04e2b5" displayorder="4">
+<title id="_8e3fc175-180f-3974-af67-97c2074ff58b" semx-id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><fmt-title depth="1" id="_dee6e95a-5e1a-66d4-4361-e95302b5c365"><span class="fmt-caption-label"><semx element="autonum" source="_7bf237ac-2711-6c96-522f-a6903d04e2b5">1</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8e3fc175-180f-3974-af67-97c2074ff58b">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_7bf237ac-2711-6c96-522f-a6903d04e2b5">1</semx></fmt-xref-label>
 <p id="_02416d9f-bcf4-b0cb-7b18-fa40a3661f10" semx-id="_02416d9f-bcf4-b0cb-7b18-fa40a3661f10">The following normative references are used in this document.</p>
 
 
-<bibitem id="OGC12-080r2" type="standard" schema-version="v1.5.6" anchor="OGC12-080r2" semx-id="_f160a12e-e304-f940-bbd6-e7f3c62a0104"><biblio-tag/><formattedref>Roger Brackin, Pedro Gonçalves, Open Geospatial Consortium: OGC 12-080r2, <em>OGC OWS Context Conceptual Model</em>. Open Geospatial Consortium (2014). <fmt-link target="http://www.opengis.net/doc/IS/owc-conceptual/1.0.0">http://www.opengis.net/doc/IS/owc-conceptual/1.0.0</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="OGC12-080r2" type="standard" schema-version="v1.5.6" anchor="OGC12-080r2" semx-id="_8f8eb225-53de-1d03-31e0-de3f7eea3034"><biblio-tag/><formattedref>Roger Brackin, Pedro Gonçalves, Open Geospatial Consortium: OGC 12-080r2, <em>OGC OWS Context Conceptual Model</em>. Open Geospatial Consortium (2014). <fmt-link target="http://www.opengis.net/doc/IS/owc-conceptual/1.0.0">http://www.opengis.net/doc/IS/owc-conceptual/1.0.0</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC OWS Context Conceptual Model</title>
 
@@ -2756,8 +2756,8 @@ This document concentrates on describing the OWS Context Model in abstract terms
 The abbreviation owc is used throughout this document for OWS Context.
 </abstract>
 </bibitem>
-<bibitem id="OGC12-084r2" type="standard" schema-version="v1.5.6" anchor="OGC12-084r2" semx-id="_0aeaf092-bcd7-432f-fcac-a8b0a004ab0e"><biblio-tag/><formattedref>Roger Brackin, Pedro Gonçalves, Open Geospatial Consortium: OGC 12-084r2, <em>OGC OWS Context Atom Encoding Standard</em>. Open Geospatial Consortium (2014). <fmt-link target="http://www.opengis.net/doc/IS/ows-context-atom/1.0.0">http://www.opengis.net/doc/IS/ows-context-atom/1.0.0</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="OGC12-084r2" type="standard" schema-version="v1.5.6" anchor="OGC12-084r2" semx-id="_2826c17e-df93-8fb5-c812-2ae454f852ff"><biblio-tag/><formattedref>Roger Brackin, Pedro Gonçalves, Open Geospatial Consortium: OGC 12-084r2, <em>OGC OWS Context Atom Encoding Standard</em>. Open Geospatial Consortium (2014). <fmt-link target="http://www.opengis.net/doc/IS/ows-context-atom/1.0.0">http://www.opengis.net/doc/IS/ows-context-atom/1.0.0</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC OWS Context Atom Encoding Standard</title>
 
@@ -2816,8 +2816,8 @@ The abbreviation owc is used throughout this document for OWS Context.
   <abstract language="en" script="Latn">This standard describes the Atom encoding of the OWC Context conceptual model. The goal of this standard is to provide a definition of how to encode a context document, which can be extended to allow a context referencing a fully configured service set to be defined and consistently interpreted by clients.
 </abstract>
 </bibitem>
-<bibitem id="OGC14-055r2" type="standard" schema-version="v1.5.6" anchor="OGC14-055r2" semx-id="_7fc61af8-aeb7-533c-f599-867617fa56ff"><biblio-tag/><formattedref>Pedro Gonçalves, Roger Brackin, Open Geospatial Consortium: OGC 14-055r2, <em>OGC OWS Context GeoJSON Encoding Standard</em>. Open Geospatial Consortium (2017). <fmt-link target="http://www.opengis.net/doc/IS/ows-context-geojson/1.0.0">http://www.opengis.net/doc/IS/ows-context-geojson/1.0.0</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="OGC14-055r2" type="standard" schema-version="v1.5.6" anchor="OGC14-055r2" semx-id="_a82282c6-94cf-fb36-bcee-c72009650dc6"><biblio-tag/><formattedref>Pedro Gonçalves, Roger Brackin, Open Geospatial Consortium: OGC 14-055r2, <em>OGC OWS Context GeoJSON Encoding Standard</em>. Open Geospatial Consortium (2017). <fmt-link target="http://www.opengis.net/doc/IS/ows-context-geojson/1.0.0">http://www.opengis.net/doc/IS/ows-context-geojson/1.0.0</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC OWS Context GeoJSON Encoding Standard</title>
 

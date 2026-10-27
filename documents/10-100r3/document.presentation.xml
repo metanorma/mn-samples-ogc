@@ -1738,10 +1738,10 @@ SHORT FORM: &#x3c;xsd:element name="propertyName" type="xsd:double"
 
 
 
-<references id="_fe4170d8-64ec-06d0-c3e5-951f6cb3528f" normative="true" obligation="informative" semx-id="_fe4170d8-64ec-06d0-c3e5-951f6cb3528f" displayorder="15">
-<title id="_96fce99f-ce1f-b184-eb60-fb7c71327943" semx-id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><fmt-title depth="1" id="_09cd0b41-d231-b287-38f6-10b6b090a083"><span class="fmt-caption-label"><semx element="autonum" source="_fe4170d8-64ec-06d0-c3e5-951f6cb3528f">3</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_96fce99f-ce1f-b184-eb60-fb7c71327943">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_fe4170d8-64ec-06d0-c3e5-951f6cb3528f">3</semx></fmt-xref-label><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3" semx-id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="ogc07-036" type="standard" schema-version="v1.5.6" anchor="ogc07-036" semx-id="_d3a73d28-34ed-4dab-83dc-8350b198194b"><biblio-tag/><formattedref>Clemens Portele, Open Geospatial Consortium: OGC 07-036, <em>OpenGIS Geography Markup Language (GML) Encoding Standard</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/07-036/07-036/pdf">https://docs.ogc.org/is/07-036/07-036/pdf</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<references id="_89791327-f506-2582-d60e-715aa9720848" normative="true" obligation="informative" semx-id="_89791327-f506-2582-d60e-715aa9720848" displayorder="15">
+<title id="_96fce99f-ce1f-b184-eb60-fb7c71327943" semx-id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><fmt-title depth="1" id="_09cd0b41-d231-b287-38f6-10b6b090a083"><span class="fmt-caption-label"><semx element="autonum" source="_89791327-f506-2582-d60e-715aa9720848">3</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_96fce99f-ce1f-b184-eb60-fb7c71327943">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_89791327-f506-2582-d60e-715aa9720848">3</semx></fmt-xref-label><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3" semx-id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<bibitem id="ogc07-036" type="standard" schema-version="v1.5.6" anchor="ogc07-036" semx-id="_78806691-0f85-e01b-90da-5f4b7aaa5972"><biblio-tag/><formattedref>Clemens Portele, Open Geospatial Consortium: OGC 07-036, <em>OpenGIS Geography Markup Language (GML) Encoding Standard</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/07-036/07-036/pdf">https://docs.ogc.org/is/07-036/07-036/pdf</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
 
@@ -1794,8 +1794,8 @@ Clients and servers with interfaces that implement the OpenGIS® Web Feature Ser
 See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
 </abstract>
 </bibitem>
-<bibitem id="ogc06-103r3" type="standard" schema-version="v1.5.6" anchor="ogc06-103r3" semx-id="_fbc01d1e-3681-9077-ca58-35b198b33748"><biblio-tag/><formattedref>John Herring, Open Geospatial Consortium: OGC 06-103r3, <em>OpenGIS Implementation Specification for Geographic information — Simple feature access — Part 1: Common architecture</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/06-103r3/06-103r3/pdf">https://docs.ogc.org/is/06-103r3/06-103r3/pdf</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="ogc06-103r3" type="standard" schema-version="v1.5.6" anchor="ogc06-103r3" semx-id="_0e99ba29-4f97-9353-6135-8d92862e4ccc"><biblio-tag/><formattedref>John Herring, Open Geospatial Consortium: OGC 06-103r3, <em>OpenGIS Implementation Specification for Geographic information — Simple feature access — Part 1: Common architecture</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/06-103r3/06-103r3/pdf">https://docs.ogc.org/is/06-103r3/06-103r3/pdf</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">OpenGIS Implementation Specification for Geographic information</title>
 
@@ -1857,8 +1857,8 @@ Part 2 provides a standard SQL implementation of the abstract model in Part 1. (
 The corresponding standard for the Web is the OpenGIS® Web Feature Service Interface Standard http://www.opengeospatial.org/standards/wfs.
 </abstract>
 </bibitem>
-<bibitem id="w3cxml-0" type="standard" schema-version="v1.5.6" anchor="w3cxml-0" semx-id="_ce51a152-3368-10b7-d2ab-2fd7575928e2"><biblio-tag/>
-  <fetched>2026-10-25</fetched>
+<bibitem id="w3cxml-0" type="standard" schema-version="v1.5.6" anchor="w3cxml-0" semx-id="_a52161bd-b130-193d-476d-0d397f87699c"><biblio-tag/>
+  <fetched>2026-10-27</fetched>
   <formattedref>World Wide Web Consortium (committee): W3C REC-xml-20081126, <em>Extensible Markup Language (XML) 1.0 (Fifth Edition)</em>. World Wide Web Consortium (2008). <fmt-link target="https://www.w3.org/TR/2008/REC-xml-20081126/">https://www.w3.org/TR/2008/REC-xml-20081126/</fmt-link>.</formattedref>
   
 <title language="en" script="Latn">Extensible Markup Language (XML) 1.0 (Fifth Edition)</title>
@@ -1968,8 +1968,8 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
     <number>REC-xml-20081126</number>
   </series>
 </bibitem>
-<bibitem id="w3cxml-1" type="standard" schema-version="v1.5.6" anchor="w3cxml-1" semx-id="_ec970b67-95d1-8ca2-6e02-c7f7337c1e5e"><biblio-tag/><formattedref>W3C: W3C xmlschema-1, <em>XML Schema Part 1: Structures Second Edition</em>. World Wide Web Consortium <fmt-link target="https://www.w3.org/TR/xmlschema-1/">https://www.w3.org/TR/xmlschema-1/</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="w3cxml-1" type="standard" schema-version="v1.5.6" anchor="w3cxml-1" semx-id="_c06c8644-bf91-0d03-c7ca-9434b4d2089b"><biblio-tag/><formattedref>W3C: W3C xmlschema-1, <em>XML Schema Part 1: Structures Second Edition</em>. World Wide Web Consortium <fmt-link target="https://www.w3.org/TR/xmlschema-1/">https://www.w3.org/TR/xmlschema-1/</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn">XML Schema Part 1: Structures Second Edition</title>
 
@@ -2115,8 +2115,8 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
     <number>xmlschema-1</number>
   </series>
 </bibitem>
-<bibitem id="w3cxml-2" type="standard" schema-version="v1.5.6" anchor="w3cxml-2" semx-id="_5c4212ed-1d2c-3a5e-0c09-3bc0bb70da8a"><biblio-tag/><formattedref>W3C: W3C xmlschema-2, <em>XML Schema Part 2: Datatypes Second Edition</em>. World Wide Web Consortium <fmt-link target="https://www.w3.org/TR/xmlschema-2/">https://www.w3.org/TR/xmlschema-2/</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="w3cxml-2" type="standard" schema-version="v1.5.6" anchor="w3cxml-2" semx-id="_506ed004-7d2b-e29b-d143-9f4f5ccc4326"><biblio-tag/><formattedref>W3C: W3C xmlschema-2, <em>XML Schema Part 2: Datatypes Second Edition</em>. World Wide Web Consortium <fmt-link target="https://www.w3.org/TR/xmlschema-2/">https://www.w3.org/TR/xmlschema-2/</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn">XML Schema Part 2: Datatypes Second Edition</title>
 
@@ -2262,8 +2262,8 @@ The corresponding standard for the Web is the OpenGIS® Web Feature Service Inte
     <number>xmlschema-2</number>
   </series>
 </bibitem>
-<bibitem id="w3c" type="standard" schema-version="v1.5.6" anchor="w3c" semx-id="_420f9d95-0e57-dfdb-5a5c-1cc153e23867"><biblio-tag/>
-  <fetched>2026-10-25</fetched>
+<bibitem id="w3c" type="standard" schema-version="v1.5.6" anchor="w3c" semx-id="_fa34c076-18e2-f6d5-b84c-9dfee2c0c86a"><biblio-tag/>
+  <fetched>2026-10-27</fetched>
   <formattedref>World Wide Web Consortium (committee): W3C REC-xml-names-20091208, <em>Namespaces in XML 1.0 (Third Edition)</em>. World Wide Web Consortium (2009). <fmt-link target="https://www.w3.org/TR/2009/REC-xml-names-20091208/">https://www.w3.org/TR/2009/REC-xml-names-20091208/</fmt-link>.</formattedref>
   
 <title language="en" script="Latn">Namespaces in XML 1.0 (Third Edition)</title>

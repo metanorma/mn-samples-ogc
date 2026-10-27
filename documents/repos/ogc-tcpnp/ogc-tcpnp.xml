@@ -2496,9 +2496,9 @@
 </ul>
 </termnote><source status="identical" type="authoritative"><origin bibitemid="OMBA119" type="inline" citeas="OMB Circular A-119"/></source></term>
 </terms>
-</annex><bibliography><references id="_f70a663d-80bc-9fe9-1d0f-4f278631ae84" normative="false" obligation="informative">
-<title id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><bibitem id="_5c108ac0-4fe8-438a-99e2-484cca0c102e" type="standard" schema-version="v1.5.6" anchor="OGC06135">
-  <fetched>2026-10-25</fetched>
+</annex><bibliography><references id="_40b06d3c-3eae-0665-f1fa-b27e63dee785" normative="false" obligation="informative">
+<title id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><bibitem id="_957e3afa-f2ac-f257-e04c-fb0e25c76511" type="standard" schema-version="v1.5.6" anchor="OGC06135">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">Specification best practices</title>
 
@@ -2546,8 +2546,8 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document describes a variety of Best Practices and Specification development guidance that the Members have discussed and approved over the years. These Best Practices have not been captured in other formal OGC documents other than meeting notes.</abstract>
-</bibitem><bibitem id="_e6414d6e-1651-35fb-b561-203cc6875281" type="standard" schema-version="v1.5.6" anchor="OGC09048">
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="_1bcb861e-951f-077e-f2c1-64a6587bbaad" type="standard" schema-version="v1.5.6" anchor="OGC09048">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC Name Type Specification</title>
 
@@ -2610,8 +2610,8 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document specifies a rule for constructing OGC names that may be used for identifying definitions.</abstract>
-</bibitem><bibitem id="_07c1533c-3932-cac9-556d-a416cfff50d3" type="standard" schema-version="v1.5.6" anchor="OGC09046">
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="_b73df10e-c7d5-26f4-d89b-2960af494694" type="standard" schema-version="v1.5.6" anchor="OGC09046">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Naming Authority – Policies and Procedures </title>
 
@@ -2668,8 +2668,8 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document describes the procedures used by the OGC Naming Authority for the assignment and registration of OGC names.</abstract>
-</bibitem><bibitem id="_c6543ff9-fc10-d3b2-db6b-b2f0844e881c" type="standard" schema-version="v1.5.6" anchor="OGC09047">
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="_174954cb-34b3-5b17-7aa9-017f497897fa" type="standard" schema-version="v1.5.6" anchor="OGC09047">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC-NA Name type specification</title>
 
@@ -2721,8 +2721,8 @@
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document specifies a rule for constructing OGC names that may be used for identifying documents and elements within a document.</abstract>
-</bibitem><bibitem id="_67a5ae91-9f4b-f6b6-639e-b405e0699b04" type="standard" schema-version="v1.5.6" anchor="OGC08125">
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="_1b61dabb-d324-6a87-a6e3-d931110204c8" type="standard" schema-version="v1.5.6" anchor="OGC08125">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC® KML Standard Development Best Practices</title>
 
@@ -2789,8 +2789,8 @@
 <name>ISO</name>
 </organization></contributor><contributor><role type="publisher"/><organization>
 <name>IEC</name>
-</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem id="_ff15a4bc-e0c2-4aa0-de9f-fa430b3d1c7d" type="standard" schema-version="v1.5.6" anchor="ISO191011">
-  <fetched>2026-10-25</fetched>
+</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem id="_fc4acd10-cf1d-69a0-915b-c61c336e1224" type="standard" schema-version="v1.5.6" anchor="ISO191011">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3012,8 +3012,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_74a24ed0-0694-839b-855a-6c537818e22f" type="standard" schema-version="v1.5.6" anchor="ISO191012">
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="_749401a0-45c1-7a4c-abf3-c365b9eac396" type="standard" schema-version="v1.5.6" anchor="ISO191012">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3203,8 +3203,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_c17480bf-5781-8650-ce57-9185436e4964" type="standard" schema-version="v1.5.6" anchor="ISO19106">
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="_d28697f2-b317-d3ab-28a4-41f334996902" type="standard" schema-version="v1.5.6" anchor="ISO19106">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3360,8 +3360,8 @@
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="_34fd5a8f-23c8-698f-5a23-4b9b07a2bf22" type="standard" schema-version="v1.5.6" anchor="ISO19109">
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="_041aaa5d-160c-a468-9313-9dcb9efe71dc" type="standard" schema-version="v1.5.6" anchor="ISO19109">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 

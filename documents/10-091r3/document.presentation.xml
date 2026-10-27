@@ -530,9 +530,9 @@ sourcecode .nt {
 <td id="_e4cc16bd-4d78-4bf6-cf99-899c197a47f1" valign="middle" align="left" semx-id="_e4cc16bd-4d78-4bf6-cf99-899c197a47f1">Prepare for publication</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_2e5e11bb-2b2c-7da3-eb56-9e63a6e78b21" normative="false" obligation="informative" semx-id="_2e5e11bb-2b2c-7da3-eb56-9e63a6e78b21" displayorder="20">
-<title id="_b1bae69f-7769-efdd-3091-a594f21e3d01" semx-id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><fmt-title depth="1" id="_ef643f91-fb9d-1009-60be-079b7f598293"><semx element="title" source="_b1bae69f-7769-efdd-3091-a594f21e3d01">Bibliography</semx></fmt-title><bibitem id="ogc07-036" type="standard" schema-version="v1.5.6" anchor="ogc07-036" semx-id="_f75ac6ce-13f3-8d69-5d1d-5fed11cc58bb"><biblio-tag>[1]<tab/></biblio-tag><formattedref>Clemens Portele, Open Geospatial Consortium: OGC 07-036, <em>OpenGIS Geography Markup Language (GML) Encoding Standard</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/07-036/07-036/pdf">https://docs.ogc.org/is/07-036/07-036/pdf</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</annex><bibliography><references id="_85aa0922-3f22-e0c5-a9e4-7d9bfb524905" normative="false" obligation="informative" semx-id="_85aa0922-3f22-e0c5-a9e4-7d9bfb524905" displayorder="20">
+<title id="_b1bae69f-7769-efdd-3091-a594f21e3d01" semx-id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><fmt-title depth="1" id="_ef643f91-fb9d-1009-60be-079b7f598293"><semx element="title" source="_b1bae69f-7769-efdd-3091-a594f21e3d01">Bibliography</semx></fmt-title><bibitem id="ogc07-036" type="standard" schema-version="v1.5.6" anchor="ogc07-036" semx-id="_03d4a139-bbf9-4715-a4ed-56c15ffb10c3"><biblio-tag>[1]<tab/></biblio-tag><formattedref>Clemens Portele, Open Geospatial Consortium: OGC 07-036, <em>OpenGIS Geography Markup Language (GML) Encoding Standard</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/07-036/07-036/pdf">https://docs.ogc.org/is/07-036/07-036/pdf</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Geography Markup Language (GML) Encoding Standard</title>
 
@@ -584,8 +584,8 @@ A GML document is described using a GML Schema. This allows users and developers
 Clients and servers with interfaces that implement the OpenGIS® Web Feature Service Interface Standard[http://www.opengeospatial.org/standards/wfs] read and write GML data. GML is also an ISO standard (ISO 19136:2007) [www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=32554 ].  
 See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
 </abstract>
-</bibitem><bibitem id="ogc10-092r3" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3" semx-id="_c647d2db-4eb9-ac6d-979b-28dc7aa26949"><biblio-tag>[2]<tab/></biblio-tag><formattedref>Ben Domenico, Open Geospatial Consortium: OGC 10-092r3, <em>NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</em>. Open Geospatial Consortium (2011). <fmt-link target="https://docs.ogc.org/is/10-092r3/10-092r3/pdf">https://docs.ogc.org/is/10-092r3/10-092r3/pdf</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="ogc10-092r3" type="standard" schema-version="v1.5.6" anchor="ogc10-092r3" semx-id="_1d67c466-19e8-1a17-98a0-bb008b0ce02c"><biblio-tag>[2]<tab/></biblio-tag><formattedref>Ben Domenico, Open Geospatial Consortium: OGC 10-092r3, <em>NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</em>. Open Geospatial Consortium (2011). <fmt-link target="https://docs.ogc.org/is/10-092r3/10-092r3/pdf">https://docs.ogc.org/is/10-092r3/10-092r3/pdf</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</title>
 
@@ -633,8 +633,8 @@ See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document defines an OGC® Standard for encoding binary representations of space-time varying geo-referenced data. Specifically, this standard specifies the netCDF classic and 64-bit offset file binary encoding formats. This standard specifies a set of requirements that every netCDF classic or 64-bit offset binary encoding must fulfil.</abstract>
-</bibitem><bibitem id="ogc06-121r3" type="standard" schema-version="v1.5.6" anchor="ogc06-121r3" semx-id="_1913dc45-9ad3-6a21-5d69-d01a2e31565f"><biblio-tag>[3]<tab/></biblio-tag><formattedref>Arliss Whiteside, Open Geospatial Consortium: OGC 06-121r3, <em>OpenGIS Web Service Common Implementation Specification</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/06-121r3/06-121r3/pdf">https://docs.ogc.org/is/06-121r3/06-121r3/pdf</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="ogc06-121r3" type="standard" schema-version="v1.5.6" anchor="ogc06-121r3" semx-id="_58392d4a-a2b4-9e07-4773-d651cb49efcd"><biblio-tag>[3]<tab/></biblio-tag><formattedref>Arliss Whiteside, Open Geospatial Consortium: OGC 06-121r3, <em>OpenGIS Web Service Common Implementation Specification</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/is/06-121r3/06-121r3/pdf">https://docs.ogc.org/is/06-121r3/06-121r3/pdf</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Web Service Common Implementation Specification</title>
 
@@ -682,8 +682,8 @@ See also the GML pages on OGC Network: http://www.ogcnetwork.net/gml .
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">The OpenGIS® Web Services Common (WS-Common) Interface Standard specifies parameters and data structures that are common to all OGC Web Service (OWS) Standards. The standard normalizes the ways in which operation requests and responses handle such elements as bounding boxes, exception processing, URL requests, URN expressions, and key value encoding. Among its uses, this document serves as a normative reference for other OGC Web Service standards, including the OpenGIS Web Map Service (WMS) [http://www.opengeospatial.org/standards/wms], Web Feature Service (WFS) [http://www.opengeospatial.org/standards/wfs], and Web Coverage Service (WCS) [http://www.opengeospatial.org/standards/wcs] standards. Rather than continuing to repeat this material in each such standard, each standard will normatively reference parts of this document.</abstract>
-</bibitem><bibitem id="ogc10-090r3" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3" semx-id="_6fd5d586-7893-2be8-da32-64c2d173ed78"><biblio-tag>[4]<tab/></biblio-tag><formattedref>Ben Domenico, Open Geospatial Consortium: OGC 10-090r3, <em>OGC Network Common Data Form (NetCDF) Core Encoding Standard version 1.0</em>. Open Geospatial Consortium (2011). <fmt-link target="https://docs.ogc.org/is/10-090r3/10-090r3/pdf">https://docs.ogc.org/is/10-090r3/10-090r3/pdf</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="ogc10-090r3" type="standard" schema-version="v1.5.6" anchor="ogc10-090r3" semx-id="_01e742ca-772d-1f09-758c-0fa6e171f1ec"><biblio-tag>[4]<tab/></biblio-tag><formattedref>Ben Domenico, Open Geospatial Consortium: OGC 10-090r3, <em>OGC Network Common Data Form (NetCDF) Core Encoding Standard version 1.0</em>. Open Geospatial Consortium (2011). <fmt-link target="https://docs.ogc.org/is/10-090r3/10-090r3/pdf">https://docs.ogc.org/is/10-090r3/10-090r3/pdf</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Network Common Data Form (NetCDF)  Core Encoding Standard version 1.0</title>
 

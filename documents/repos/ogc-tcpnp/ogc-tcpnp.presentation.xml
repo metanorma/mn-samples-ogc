@@ -2554,9 +2554,9 @@ sourcecode .nt {
 </ul>
 </termnote><source status="identical" type="authoritative" id="_d6a9ee37-a61d-7670-7000-f3709843228e"><origin bibitemid="OMBA119" type="inline" citeas="OMB Circular A-119"/></source><fmt-termsource status="identical" type="authoritative">[<strong>SOURCE:</strong> <semx element="source" source="_d6a9ee37-a61d-7670-7000-f3709843228e"><origin bibitemid="OMBA119" type="inline" citeas="OMB Circular A-119" id="_a2d08006-a302-d71d-390e-a882b2ec9549"/><semx element="origin" source="_a2d08006-a302-d71d-390e-a882b2ec9549"><fmt-xref type="inline" target="OMBA119">OMB Circular A-119</fmt-xref></semx></semx>]</fmt-termsource></term>
 </terms>
-</annex><bibliography><references id="_f70a663d-80bc-9fe9-1d0f-4f278631ae84" normative="false" obligation="informative" semx-id="_f70a663d-80bc-9fe9-1d0f-4f278631ae84" displayorder="19">
-<title id="_8e1065aa-c024-9f64-1d01-24406ca61ca6" semx-id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><fmt-title depth="1" id="_fadc84f6-ca15-fcd1-f06f-4d5cf17f39e0"><semx element="title" source="_8e1065aa-c024-9f64-1d01-24406ca61ca6">Bibliography</semx></fmt-title><bibitem id="OGC06135" type="standard" schema-version="v1.5.6" anchor="OGC06135" semx-id="_5c108ac0-4fe8-438a-99e2-484cca0c102e"><biblio-tag>[1]<tab/></biblio-tag><formattedref>Carl Reed, Open Geospatial Consortium: OGC 06-135r1, <em>Specification best practices</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/bp/06-135r1/06-135r1/pdf">https://docs.ogc.org/bp/06-135r1/06-135r1/pdf</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</annex><bibliography><references id="_40b06d3c-3eae-0665-f1fa-b27e63dee785" normative="false" obligation="informative" semx-id="_40b06d3c-3eae-0665-f1fa-b27e63dee785" displayorder="19">
+<title id="_8e1065aa-c024-9f64-1d01-24406ca61ca6" semx-id="_2b4ed339-a7ed-1bbb-9576-55fcbc1ace3a">Bibliography</title><fmt-title depth="1" id="_fadc84f6-ca15-fcd1-f06f-4d5cf17f39e0"><semx element="title" source="_8e1065aa-c024-9f64-1d01-24406ca61ca6">Bibliography</semx></fmt-title><bibitem id="OGC06135" type="standard" schema-version="v1.5.6" anchor="OGC06135" semx-id="_957e3afa-f2ac-f257-e04c-fb0e25c76511"><biblio-tag>[1]<tab/></biblio-tag><formattedref>Carl Reed, Open Geospatial Consortium: OGC 06-135r1, <em>Specification best practices</em>. Open Geospatial Consortium (2007). <fmt-link target="https://docs.ogc.org/bp/06-135r1/06-135r1/pdf">https://docs.ogc.org/bp/06-135r1/06-135r1/pdf</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">Specification best practices</title>
 
@@ -2604,8 +2604,8 @@ sourcecode .nt {
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document describes a variety of Best Practices and Specification development guidance that the Members have discussed and approved over the years. These Best Practices have not been captured in other formal OGC documents other than meeting notes.</abstract>
-</bibitem><bibitem id="OGC09048" type="standard" schema-version="v1.5.6" anchor="OGC09048" semx-id="_e6414d6e-1651-35fb-b561-203cc6875281"><biblio-tag>[2]<tab/></biblio-tag><formattedref>Simon Cox, Gobe Hobona, Open Geospatial Consortium: OGC 09-048r5, <em>OGC Name Type Specification — definitions — part 1 – basic name</em>. Open Geospatial Consortium (2019). <fmt-link target="http://www.opengis.net/doc/POL-NTS/DEF-1/1.2">http://www.opengis.net/doc/POL-NTS/DEF-1/1.2</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="OGC09048" type="standard" schema-version="v1.5.6" anchor="OGC09048" semx-id="_1bcb861e-951f-077e-f2c1-64a6587bbaad"><biblio-tag>[2]<tab/></biblio-tag><formattedref>Simon Cox, Gobe Hobona, Open Geospatial Consortium: OGC 09-048r5, <em>OGC Name Type Specification — definitions — part 1 – basic name</em>. Open Geospatial Consortium (2019). <fmt-link target="http://www.opengis.net/doc/POL-NTS/DEF-1/1.2">http://www.opengis.net/doc/POL-NTS/DEF-1/1.2</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC Name Type Specification</title>
 
@@ -2668,8 +2668,8 @@ sourcecode .nt {
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document specifies a rule for constructing OGC names that may be used for identifying definitions.</abstract>
-</bibitem><bibitem id="OGC09046" type="standard" schema-version="v1.5.6" anchor="OGC09046" semx-id="_07c1533c-3932-cac9-556d-a416cfff50d3"><biblio-tag>[3]<tab/></biblio-tag><formattedref>Simon Cox, Gobe Hobona, Open Geospatial Consortium: OGC 09-046r5, <em>OGC Naming Authority – Policies and Procedures</em>. Open Geospatial Consortium (2019). <fmt-link target="http://www.opengis.net/doc/POL/OGC-NA/1.2">http://www.opengis.net/doc/POL/OGC-NA/1.2</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="OGC09046" type="standard" schema-version="v1.5.6" anchor="OGC09046" semx-id="_b73df10e-c7d5-26f4-d89b-2960af494694"><biblio-tag>[3]<tab/></biblio-tag><formattedref>Simon Cox, Gobe Hobona, Open Geospatial Consortium: OGC 09-046r5, <em>OGC Naming Authority – Policies and Procedures</em>. Open Geospatial Consortium (2019). <fmt-link target="http://www.opengis.net/doc/POL/OGC-NA/1.2">http://www.opengis.net/doc/POL/OGC-NA/1.2</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Naming Authority – Policies and Procedures </title>
 
@@ -2726,8 +2726,8 @@ sourcecode .nt {
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document describes the procedures used by the OGC Naming Authority for the assignment and registration of OGC names.</abstract>
-</bibitem><bibitem id="OGC09047" type="standard" schema-version="v1.5.6" anchor="OGC09047" semx-id="_c6543ff9-fc10-d3b2-db6b-b2f0844e881c"><biblio-tag>[4]<tab/></biblio-tag><formattedref>Simon Cox, Open Geospatial Consortium: OGC 09-047r3, <em>OGC-NA Name type specification — documents</em>. Open Geospatial Consortium (2011). <fmt-link target="http://www.opengis.net/doc/POL-NTS/DOC/1.2">http://www.opengis.net/doc/POL-NTS/DOC/1.2</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="OGC09047" type="standard" schema-version="v1.5.6" anchor="OGC09047" semx-id="_174954cb-34b3-5b17-7aa9-017f497897fa"><biblio-tag>[4]<tab/></biblio-tag><formattedref>Simon Cox, Open Geospatial Consortium: OGC 09-047r3, <em>OGC-NA Name type specification — documents</em>. Open Geospatial Consortium (2011). <fmt-link target="http://www.opengis.net/doc/POL-NTS/DOC/1.2">http://www.opengis.net/doc/POL-NTS/DOC/1.2</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC-NA Name type specification</title>
 
@@ -2779,8 +2779,8 @@ sourcecode .nt {
   <language>en</language>
   <script>Latn</script>
   <abstract language="en" script="Latn">This document specifies a rule for constructing OGC names that may be used for identifying documents and elements within a document.</abstract>
-</bibitem><bibitem id="OGC08125" type="standard" schema-version="v1.5.6" anchor="OGC08125" semx-id="_67a5ae91-9f4b-f6b6-639e-b405e0699b04"><biblio-tag>[5]<tab/></biblio-tag><formattedref>Tim Wilson, David Burggraf, Open Geospatial Consortium: OGC 08-125r1, <em>OGC® KML Standard Development Best Practices</em>. Open Geospatial Consortium (2009). <fmt-link target="https://docs.ogc.org/bp/08-125r1/08-125r1/pdf">https://docs.ogc.org/bp/08-125r1/08-125r1/pdf</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="OGC08125" type="standard" schema-version="v1.5.6" anchor="OGC08125" semx-id="_1b61dabb-d324-6a87-a6e3-d931110204c8"><biblio-tag>[5]<tab/></biblio-tag><formattedref>Tim Wilson, David Burggraf, Open Geospatial Consortium: OGC 08-125r1, <em>OGC® KML Standard Development Best Practices</em>. Open Geospatial Consortium (2009). <fmt-link target="https://docs.ogc.org/bp/08-125r1/08-125r1/pdf">https://docs.ogc.org/bp/08-125r1/08-125r1/pdf</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC® KML Standard Development Best Practices</title>
 
@@ -2847,8 +2847,8 @@ sourcecode .nt {
 <name>ISO</name>
 </organization></contributor><contributor><role type="publisher"/><organization>
 <name>IEC</name>
-</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem id="ISO191011" type="standard" schema-version="v1.5.6" anchor="ISO191011" semx-id="_ff15a4bc-e0c2-4aa0-de9f-fa430b3d1c7d"><biblio-tag>[8]<tab/></biblio-tag><formattedref>International Organization for Standardization (committee): ISO 19101-1, <em>Geographic information — Reference model — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva <fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</organization></contributor><language>en</language><script>Latn</script></bibitem><bibitem id="ISO191011" type="standard" schema-version="v1.5.6" anchor="ISO191011" semx-id="_fc4acd10-cf1d-69a0-915b-c61c336e1224"><biblio-tag>[8]<tab/></biblio-tag><formattedref>International Organization for Standardization (committee): ISO 19101-1, <em>Geographic information — Reference model — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva <fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3070,8 +3070,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ISO191012" type="standard" schema-version="v1.5.6" anchor="ISO191012" semx-id="_74a24ed0-0694-839b-855a-6c537818e22f"><biblio-tag>[9]<tab/></biblio-tag><formattedref>International Organization for Standardization (committee): ISO 19101-2, <em>Geographic information — Reference model — Part 2: Imagery</em>. International Organization for Standardization, Geneva <fmt-link target="https://www.iso.org/standard/69325.html">https://www.iso.org/standard/69325.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="ISO191012" type="standard" schema-version="v1.5.6" anchor="ISO191012" semx-id="_749401a0-45c1-7a4c-abf3-c365b9eac396"><biblio-tag>[9]<tab/></biblio-tag><formattedref>International Organization for Standardization (committee): ISO 19101-2, <em>Geographic information — Reference model — Part 2: Imagery</em>. International Organization for Standardization, Geneva <fmt-link target="https://www.iso.org/standard/69325.html">https://www.iso.org/standard/69325.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3261,8 +3261,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ISO19106" type="standard" schema-version="v1.5.6" anchor="ISO19106" semx-id="_c17480bf-5781-8650-ce57-9185436e4964"><biblio-tag>[10]<tab/></biblio-tag><formattedref>International Organization for Standardization (committee): ISO 19106, <em>Geographic information — Profiles</em>. International Organization for Standardization, Geneva <fmt-link target="https://www.iso.org/standard/26011.html">https://www.iso.org/standard/26011.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="ISO19106" type="standard" schema-version="v1.5.6" anchor="ISO19106" semx-id="_d28697f2-b317-d3ab-28a4-41f334996902"><biblio-tag>[10]<tab/></biblio-tag><formattedref>International Organization for Standardization (committee): ISO 19106, <em>Geographic information — Profiles</em>. International Organization for Standardization, Geneva <fmt-link target="https://www.iso.org/standard/26011.html">https://www.iso.org/standard/26011.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3418,8 +3418,8 @@ sourcecode .nt {
   <place>
     <city>Geneva</city>
   </place>
-</bibitem><bibitem id="ISO19109" type="standard" schema-version="v1.5.6" anchor="ISO19109" semx-id="_34fd5a8f-23c8-698f-5a23-4b9b07a2bf22"><biblio-tag>[11]<tab/></biblio-tag><formattedref>International Organization for Standardization (committee): ISO 19109, <em>Geographic information — Rules for application schema</em>. International Organization for Standardization, Geneva <fmt-link target="https://www.iso.org/standard/59193.html">https://www.iso.org/standard/59193.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+</bibitem><bibitem id="ISO19109" type="standard" schema-version="v1.5.6" anchor="ISO19109" semx-id="_041aaa5d-160c-a468-9313-9dcb9efe71dc"><biblio-tag>[11]<tab/></biblio-tag><formattedref>International Organization for Standardization (committee): ISO 19109, <em>Geographic information — Rules for application schema</em>. International Organization for Standardization, Geneva <fmt-link target="https://www.iso.org/standard/59193.html">https://www.iso.org/standard/59193.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 

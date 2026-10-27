@@ -3359,10 +3359,10 @@ sourcecode .nt {
 
 
 
-<references id="references" anchor="references" normative="true" obligation="informative" semx-id="_6a4225ed-ab80-489a-6eb9-55e8a81e2017" displayorder="7">
+<references id="references" anchor="references" normative="true" obligation="informative" semx-id="_a2fe5549-9c59-b583-8610-c2956605fbd0" displayorder="7">
 <title id="_8e3fc175-180f-3974-af67-97c2074ff58b" semx-id="_461cd77a-5cfe-f57e-70ab-04e5c4142c2b">Normative references</title><fmt-title depth="1" id="_dee6e95a-5e1a-66d4-4361-e95302b5c365"><span class="fmt-caption-label"><semx element="autonum" source="references">1</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8e3fc175-180f-3974-af67-97c2074ff58b">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="references">1</semx></fmt-xref-label><p id="_02b1c060-f2f9-4bc4-035d-e49887f749e3" semx-id="_02b1c060-f2f9-4bc4-035d-e49887f749e3">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="gdf5" type="standard" schema-version="v1.5.6" anchor="gdf5" semx-id="_7538280d-8fb7-b1b8-258a-a770d694dd2e"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 14825:2011, <em>Intelligent transport systems — Geographic Data Files (GDF) — GDF5.0</em>. International Organization for Standardization, Geneva (2011). <fmt-link target="https://www.iso.org/standard/54610.html">https://www.iso.org/standard/54610.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="gdf5" type="standard" schema-version="v1.5.6" anchor="gdf5" semx-id="_b83fd616-2e41-ece7-d9ac-a9bd3be72833"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 14825:2011, <em>Intelligent transport systems — Geographic Data Files (GDF) — GDF5.0</em>. International Organization for Standardization, Geneva (2011). <fmt-link target="https://www.iso.org/standard/54610.html">https://www.iso.org/standard/54610.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Intelligent transport systems</title>
 
@@ -3457,8 +3457,8 @@ sourcecode .nt {
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="ogc14-005r5" type="standard" schema-version="v1.5.6" anchor="ogc14-005r5" semx-id="_6850666c-20da-d1f9-7bff-e1fd0d8ae271"><biblio-tag/><formattedref>Jiyeong Lee, Ki-Joune Li, Sisi Zlatanova, Thomas H. Kolbe, Claus Nagel, Thomas Becker, Open Geospatial Consortium: OGC 14-005r5, <em>OGC® IndoorGML — with Corrigendum</em>. Open Geospatial Consortium (2018). <fmt-link target="http://www.opengis.net/doc/IS/indoorgml/1.0.3">http://www.opengis.net/doc/IS/indoorgml/1.0.3</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="ogc14-005r5" type="standard" schema-version="v1.5.6" anchor="ogc14-005r5" semx-id="_a01a7be2-ea5d-4662-0a46-3b747d252965"><biblio-tag/><formattedref>Jiyeong Lee, Ki-Joune Li, Sisi Zlatanova, Thomas H. Kolbe, Claus Nagel, Thomas Becker, Open Geospatial Consortium: OGC 14-005r5, <em>OGC® IndoorGML — with Corrigendum</em>. Open Geospatial Consortium (2018). <fmt-link target="http://www.opengis.net/doc/IS/indoorgml/1.0.3">http://www.opengis.net/doc/IS/indoorgml/1.0.3</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC® IndoorGML</title>
 
@@ -3551,8 +3551,8 @@ sourcecode .nt {
   <script>Latn</script>
   <abstract language="en" script="Latn">This OGC® IndoorGML standard specifies an open data model and XML schema for indoor spatial information. IndoorGML is an application schema of OGC® GML 3.2.1. While there are several 3D building modelling standards such as CityGML, KML, and IFC, which deal with interior space of buildings from geometric, cartographic, and semantic viewpoints, IndoorGML intentionally focuses on modelling indoor spaces for navigation purposes.</abstract>
 </bibitem>
-<bibitem id="ogc12-019" type="standard" schema-version="v1.5.6" anchor="ogc12-019" semx-id="_0982a0dc-0cb4-a932-998d-c62b00d7e5e0"><biblio-tag/><formattedref>Gerhard Gröger, Thomas H. Kolbe, Claus Nagel, Karl-Heinz Häfele, Open Geospatial Consortium: OGC 12-019, <em>OGC City Geography Markup Language (CityGML) Encoding Standard</em>. Open Geospatial Consortium (2012). <fmt-link target="http://www.opengis.net/spec/citygml/2.0">http://www.opengis.net/spec/citygml/2.0</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="ogc12-019" type="standard" schema-version="v1.5.6" anchor="ogc12-019" semx-id="_b0eff30b-0de5-80df-a6c2-ca97931f7a72"><biblio-tag/><formattedref>Gerhard Gröger, Thomas H. Kolbe, Claus Nagel, Karl-Heinz Häfele, Open Geospatial Consortium: OGC 12-019, <em>OGC City Geography Markup Language (CityGML) Encoding Standard</em>. Open Geospatial Consortium (2012). <fmt-link target="http://www.opengis.net/spec/citygml/2.0">http://www.opengis.net/spec/citygml/2.0</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC City Geography Markup Language (CityGML) Encoding Standard</title>
 

@@ -956,10 +956,10 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float"&gt;float
 
 </clause>
 </clause>
-</annex><bibliography><references id="_eb99b067-93f8-c624-350d-bfce383f70ec" normative="true" obligation="informative">
+</annex><bibliography><references id="_3df13cd4-c233-3e7b-ce83-f6b800bda583" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-<bibitem id="_a9ef63ba-8226-11e6-8f0a-7119f0c80b39" type="standard" schema-version="v1.5.6" anchor="ogc-06-121r9">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_2a3b8849-5faa-4513-57d8-8463ef866915" type="standard" schema-version="v1.5.6" anchor="ogc-06-121r9">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Web Service Common Implementation Specification</title>
 
@@ -1016,8 +1016,8 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float"&gt;float
   <script>Latn</script>
   <abstract language="en" script="Latn">This document specifies many of the aspects that are, or should be, common to all or multiple OGC Web Service (OWS) interface Implementation Standards. These common aspects are primarily some of the parameters and data structures used in operation requests and responses. Of course, each such Implementation Standard must specify the additional aspects of that interface, including specifying all additional parameters and data structures needed in all operation requests and responses.</abstract>
 </bibitem>
-<bibitem id="_81a345a2-5793-5bb0-0669-983573d62633" type="standard" schema-version="v1.5.6" anchor="ogc-08-131r3">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_85298c5c-28c8-57af-dddd-c4562359f042" type="standard" schema-version="v1.5.6" anchor="ogc-08-131r3">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">The Specification Model</title>
 
@@ -1070,8 +1070,8 @@ ows:reference="http://www.w3.org/2001/XMLSchema#float"&gt;float
   <abstract language="en" script="Latn">This standard contains requirements for writing standards to be used for any document whose
 eventual purpose is the specification of requirements for software, services or data structures. </abstract>
 </bibitem>
-<bibitem id="_96a13486-e297-3efa-a7b2-ad11bd0f9d1a" type="standard" schema-version="v1.5.6" anchor="ietf-rfc-4646">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_1208691b-7b5c-df4d-36a5-b717f86c7f0a" type="standard" schema-version="v1.5.6" anchor="ietf-rfc-4646">
+  <fetched>2026-10-27</fetched>
   
 <title type="main">Tags for Identifying Languages</title>
 
@@ -1162,8 +1162,8 @@ eventual purpose is the specification of requirements for software, services or 
     <vocab>Lang-Tag</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_cbeb9237-9f68-4648-e8ba-c0adf46a3fe4" type="standard" schema-version="v1.5.6" anchor="ietf-rfc-3986">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_b7e6023d-a225-34e8-994f-0c8cdce017b7" type="standard" schema-version="v1.5.6" anchor="ietf-rfc-3986">
+  <fetched>2026-10-27</fetched>
   
 <title type="main">Uniform Resource Identifier (URI): Generic Syntax</title>
 
@@ -1266,8 +1266,8 @@ eventual purpose is the specification of requirements for software, services or 
     <vocab>world wide web</vocab>
   </keyword>
 </bibitem>
-<bibitem id="_5577b31e-70d1-3090-8e0d-0e9394c01934" type="standard" schema-version="v1.5.6" anchor="iso-8601-2004">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_5731be3a-efcc-e0b7-54b3-5e040c590ac9" type="standard" schema-version="v1.5.6" anchor="iso-8601-2004">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Data elements and interchange formats</title>
 
@@ -1362,8 +1362,8 @@ eventual purpose is the specification of requirements for software, services or 
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="_b006b9d6-e332-9ccf-484c-2df2c6d92851" type="standard" schema-version="v1.5.6" anchor="xml-schema-part2">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_f626f607-20c5-32e4-7067-c5abdd122efe" type="standard" schema-version="v1.5.6" anchor="xml-schema-part2">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn">XML Schema Part 2: Datatypes Second Edition</title>
 
@@ -1509,9 +1509,9 @@ eventual purpose is the specification of requirements for software, services or 
     <number>xmlschema-2</number>
   </series>
 </bibitem>
-</references><references id="_3a1d5ce2-d7f2-31f8-4ca8-96ce43a18b98" normative="false" obligation="informative">
-<title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem id="_5336be16-bbe3-8bc6-9474-de0cb0dada71" type="standard" schema-version="v1.5.6" anchor="iso19101">
-  <fetched>2026-10-25</fetched>
+</references><references id="_34d7ccda-c425-c034-c402-656c100e6dfb" normative="false" obligation="informative">
+<title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title><bibitem id="_9bdbb11a-8808-c541-6394-163f285ee514" type="standard" schema-version="v1.5.6" anchor="iso19101">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 

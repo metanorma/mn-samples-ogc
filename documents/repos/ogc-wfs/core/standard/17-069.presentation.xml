@@ -2509,14 +2509,14 @@ content:
 
 
 
-<references id="_1a6abab8-036c-3969-2644-f1311d45a2bc" normative="true" obligation="informative" semx-id="_1a6abab8-036c-3969-2644-f1311d45a2bc" displayorder="10">
-<title id="_96fce99f-ce1f-b184-eb60-fb7c71327943" semx-id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><fmt-title depth="1" id="_09cd0b41-d231-b287-38f6-10b6b090a083"><span class="fmt-caption-label"><semx element="autonum" source="_1a6abab8-036c-3969-2644-f1311d45a2bc">3</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_96fce99f-ce1f-b184-eb60-fb7c71327943">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_1a6abab8-036c-3969-2644-f1311d45a2bc">3</semx></fmt-xref-label><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025" semx-id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<references id="_d06b02b1-93f2-0170-0e49-7b096e25807a" normative="true" obligation="informative" semx-id="_d06b02b1-93f2-0170-0e49-7b096e25807a" displayorder="10">
+<title id="_96fce99f-ce1f-b184-eb60-fb7c71327943" semx-id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><fmt-title depth="1" id="_09cd0b41-d231-b287-38f6-10b6b090a083"><span class="fmt-caption-label"><semx element="autonum" source="_d06b02b1-93f2-0170-0e49-7b096e25807a">3</semx><span class="fmt-clause-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_96fce99f-ce1f-b184-eb60-fb7c71327943">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_d06b02b1-93f2-0170-0e49-7b096e25807a">3</semx></fmt-xref-label><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025" semx-id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
 
 <bibitem anchor="OpenAPI" id="OpenAPI" semx-id="_fa9a8d04-36c3-7d59-20f1-dbea1e625801"><biblio-tag/><formattedref format="application/x-isodoc+xml">Open API Initiative: <strong>OpenAPI Specification 3.0.1</strong>,
 <link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md" id="_0f2595f5-3a63-5839-3ac7-6986eeb6728f"/><semx element="link" source="_0f2595f5-3a63-5839-3ac7-6986eeb6728f"><fmt-link target="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md"/></semx></formattedref><docidentifier>OpenAPI</docidentifier><docidentifier scope="biblio-tag">OpenAPI</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="rfc2616" type="standard" schema-version="v1.5.6" anchor="rfc2616" semx-id="_980f350d-df6f-d0a6-076a-0c55fdc183c6"><biblio-tag/><formattedref>Fielding R, Gettys J, Mogul J, Frystyk H, Masinter L, Leach P, Berners-Lee T, Internet Engineering Task Force: IETF RFC 2616, <em>Hypertext Transfer Protocol — HTTP/1.1</em>. RFC Publisher (1999). <fmt-link target="https://www.rfc-editor.org/info/rfc2616">https://www.rfc-editor.org/info/rfc2616</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="rfc2616" type="standard" schema-version="v1.5.6" anchor="rfc2616" semx-id="_8e4f4e02-c4c9-f29f-4719-6179bb33d3e3"><biblio-tag/><formattedref>Fielding R, Gettys J, Mogul J, Frystyk H, Masinter L, Leach P, Berners-Lee T, Internet Engineering Task Force: IETF RFC 2616, <em>Hypertext Transfer Protocol — HTTP/1.1</em>. RFC Publisher (1999). <fmt-link target="https://www.rfc-editor.org/info/rfc2616">https://www.rfc-editor.org/info/rfc2616</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title type="main">Hypertext Transfer Protocol — HTTP/1.1</title>
 
@@ -2694,8 +2694,8 @@ content:
     <vocab>hypermedia</vocab>
   </keyword>
 </bibitem>
-<bibitem id="rfc2818" type="standard" schema-version="v1.5.6" anchor="rfc2818" semx-id="_91153dc0-8e6b-e699-71d4-caca8fe94f29"><biblio-tag/><formattedref>Rescorla E, Internet Engineering Task Force: IETF RFC 2818, <em>HTTP Over TLS</em>. RFC Publisher (2000). <fmt-link target="https://www.rfc-editor.org/info/rfc2818">https://www.rfc-editor.org/info/rfc2818</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="rfc2818" type="standard" schema-version="v1.5.6" anchor="rfc2818" semx-id="_e9513d3f-43af-db21-602e-6321edf04f4f"><biblio-tag/><formattedref>Rescorla E, Internet Engineering Task Force: IETF RFC 2818, <em>HTTP Over TLS</em>. RFC Publisher (2000). <fmt-link target="https://www.rfc-editor.org/info/rfc2818">https://www.rfc-editor.org/info/rfc2818</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title type="main">HTTP Over TLS</title>
 
@@ -2793,8 +2793,8 @@ content:
     <vocab>security</vocab>
   </keyword>
 </bibitem>
-<bibitem id="rfc3339" type="standard" schema-version="v1.5.6" anchor="rfc3339" semx-id="_9de09e95-b732-49c1-91af-d53a81d5ceff"><biblio-tag/><formattedref>Klyne G, Newman C, Internet Engineering Task Force: IETF RFC 3339, <em>Date and Time on the Internet: Timestamps</em>. RFC Publisher (2002). <fmt-link target="https://www.rfc-editor.org/info/rfc3339">https://www.rfc-editor.org/info/rfc3339</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="rfc3339" type="standard" schema-version="v1.5.6" anchor="rfc3339" semx-id="_e7b1d263-8838-d0ba-16b1-d02962efa47e"><biblio-tag/><formattedref>Klyne G, Newman C, Internet Engineering Task Force: IETF RFC 3339, <em>Date and Time on the Internet: Timestamps</em>. RFC Publisher (2002). <fmt-link target="https://www.rfc-editor.org/info/rfc3339">https://www.rfc-editor.org/info/rfc3339</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title type="main">Date and Time on the Internet: Timestamps</title>
 
@@ -2887,8 +2887,8 @@ content:
     <vocab>International Organization for Standardization</vocab>
   </keyword>
 </bibitem>
-<bibitem id="rfc3986" type="standard" schema-version="v1.5.6" anchor="rfc3986" semx-id="_ef80cf13-1734-309d-03a0-ce32527b3234"><biblio-tag/><formattedref>Berners-Lee T, Fielding R, Masinter L: IETF RFC 3986, <em>Uniform Resource Identifier (URI): Generic Syntax</em>. RFC Publisher (2005). <fmt-link target="https://www.rfc-editor.org/info/rfc3986">https://www.rfc-editor.org/info/rfc3986</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="rfc3986" type="standard" schema-version="v1.5.6" anchor="rfc3986" semx-id="_3fffa8f2-2b2b-701f-765f-7e4e4d373810"><biblio-tag/><formattedref>Berners-Lee T, Fielding R, Masinter L: IETF RFC 3986, <em>Uniform Resource Identifier (URI): Generic Syntax</em>. RFC Publisher (2005). <fmt-link target="https://www.rfc-editor.org/info/rfc3986">https://www.rfc-editor.org/info/rfc3986</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title type="main">Uniform Resource Identifier (URI): Generic Syntax</title>
 
@@ -2991,8 +2991,8 @@ content:
     <vocab>world wide web</vocab>
   </keyword>
 </bibitem>
-<bibitem id="rfc5988" type="standard" schema-version="v1.5.6" anchor="rfc5988" semx-id="_af5f7b07-96c5-22a0-4618-7a467d289d64"><biblio-tag/><formattedref>Nottingham M: IETF RFC 5988, <em>Web Linking</em>. RFC Publisher (2010). <fmt-link target="https://www.rfc-editor.org/info/rfc5988">https://www.rfc-editor.org/info/rfc5988</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="rfc5988" type="standard" schema-version="v1.5.6" anchor="rfc5988" semx-id="_9c6d680a-63c0-5742-88bc-5d6f7e0037f8"><biblio-tag/><formattedref>Nottingham M: IETF RFC 5988, <em>Web Linking</em>. RFC Publisher (2010). <fmt-link target="https://www.rfc-editor.org/info/rfc5988">https://www.rfc-editor.org/info/rfc5988</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title type="main">Web Linking</title>
 
@@ -3079,8 +3079,8 @@ content:
 </bibitem>
 <bibitem anchor="GMLSF" id="GMLSF" semx-id="_edf4fb4f-0eb3-eb88-65ac-9683f2d17b57"><biblio-tag/><formattedref format="application/x-isodoc+xml">van den Brink, L., Portele, C., Vretanos, P.: OGC 10-100r3,
 <strong>Geography Markup Language (GML) Simple Features Profile</strong>, <link target="http://portal.opengeospatial.org/files/?artifact_id=42729" id="_0cd87a56-7dc1-0631-6f2f-cbb97e0d5ead"/><semx element="link" source="_0cd87a56-7dc1-0631-6f2f-cbb97e0d5ead"><fmt-link target="http://portal.opengeospatial.org/files/?artifact_id=42729"/></semx></formattedref><docidentifier>GMLSF</docidentifier><docidentifier scope="biblio-tag">GMLSF</docidentifier><language>en</language><script>Latn</script></bibitem>
-<bibitem id="GeoJSON" type="standard" schema-version="v1.5.6" anchor="GeoJSON" semx-id="_e7e86273-ff82-77a2-8c46-dc28104374ef"><biblio-tag/><formattedref>Butler H, Daly M, Doyle A, Gillies S, Hagen S, Schaub T, Internet Engineering Task Force: IETF RFC 7946, <em>The GeoJSON Format</em>. RFC Publisher (2016). <fmt-link target="https://www.rfc-editor.org/info/rfc7946">https://www.rfc-editor.org/info/rfc7946</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="GeoJSON" type="standard" schema-version="v1.5.6" anchor="GeoJSON" semx-id="_eecd4814-e24a-0db7-a241-39636de4c681"><biblio-tag/><formattedref>Butler H, Daly M, Doyle A, Gillies S, Hagen S, Schaub T, Internet Engineering Task Force: IETF RFC 7946, <em>The GeoJSON Format</em>. RFC Publisher (2016). <fmt-link target="https://www.rfc-editor.org/info/rfc7946">https://www.rfc-editor.org/info/rfc7946</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title type="main">The GeoJSON Format</title>
 
@@ -3212,8 +3212,8 @@ content:
 </organization></contributor><contributor><role type="publisher"/><organization>
 <name>IEC</name>
 </organization></contributor><language>en</language><script>Latn</script></bibitem>
-<bibitem id="iso19101-1" type="standard" schema-version="v1.5.6" anchor="iso19101-1" semx-id="_af49a3b8-ee40-4d24-2f4e-60730f23a530"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19101-1:2014, <em>Geographic information — Reference model — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva (2014). <fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19101-1" type="standard" schema-version="v1.5.6" anchor="iso19101-1" semx-id="_f5aa4e70-3dff-098a-b7de-b4bc9e92d0d0"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19101-1:2014, <em>Geographic information — Reference model — Part 1: Fundamentals</em>. International Organization for Standardization, Geneva (2014). <fmt-link target="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 
@@ -3325,8 +3325,8 @@ content:
     <city>Geneva</city>
   </place>
 </bibitem>
-<bibitem id="iso19103" type="standard" schema-version="v1.5.6" anchor="iso19103" semx-id="_20dc4612-4c43-ebdf-10b0-4b91e57fb274"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19103:2015, <em>Geographic information — Conceptual schema language</em>. International Organization for Standardization, Geneva (2015). <fmt-link target="https://www.iso.org/standard/56734.html">https://www.iso.org/standard/56734.html</fmt-link>.</formattedref>
-  <fetched>2026-10-25</fetched>
+<bibitem id="iso19103" type="standard" schema-version="v1.5.6" anchor="iso19103" semx-id="_953e0237-29ba-0eed-bf78-262e9b664a4d"><biblio-tag/><formattedref>International Organization for Standardization (committee): ISO 19103:2015, <em>Geographic information — Conceptual schema language</em>. International Organization for Standardization, Geneva (2015). <fmt-link target="https://www.iso.org/standard/56734.html">https://www.iso.org/standard/56734.html</fmt-link>.</formattedref>
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Geographic information</title>
 

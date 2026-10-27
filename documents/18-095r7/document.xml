@@ -860,13 +860,13 @@ Compliance Testing web site<fn id="_9fafb6ef-a371-f947-d6f7-9a83278689f0" refere
 <td id="_04d66821-4f49-e6f0-88f1-67cc2d8a6955" valign="middle" align="left">Edits based on comments received from public review</td>
 </tr></tbody>
 </table>
-</annex><bibliography><references id="_cf6719ad-c631-872f-8c19-5140121b0498" normative="true" obligation="informative">
+</annex><bibliography><references id="_c51e386f-f89c-1d34-7891-6b587f879d65" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title>
 <p id="_1e0cd368-a692-2696-c284-1bfd7afd848c">The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.</p>
 
 
-<bibitem id="_3837413e-2d3d-0337-19c2-5e26a88bec70" type="standard" schema-version="v1.5.6" anchor="OGC_2006">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_c1aa8dce-34ac-b398-f6a9-da3a9db57963" type="standard" schema-version="v1.5.6" anchor="OGC_2006">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">Topic 6</title>
 
@@ -917,8 +917,8 @@ Compliance Testing web site<fn id="_9fafb6ef-a371-f947-d6f7-9a83278689f0" refere
   <script>Latn</script>
   <abstract language="en" script="Latn">This International Standard defines a conceptual schema for the spatial characteristics of coverages. Coverages support mapping from a spatial, temporal or spatiotemporal domain to feature attribute values where feature attribute types are common to all geographic positions within the domain. A coverage domain consists of a collection of direct positions in a coordinate space that may be defined in terms of up to three spatial dimensions as well as a temporal dimension.</abstract>
 </bibitem>
-<bibitem id="_f1cedb1d-1c88-4606-dc9c-fe05e72471ec" type="standard" schema-version="v1.5.6" anchor="OGC_2011">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_6fc8c685-1ba6-b3eb-5b58-f316c99f60e0" type="standard" schema-version="v1.5.6" anchor="OGC_2011">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC® SWE Common Data Model Encoding Standard</title>
 
@@ -967,8 +967,8 @@ Compliance Testing web site<fn id="_9fafb6ef-a371-f947-d6f7-9a83278689f0" refere
   <script>Latn</script>
   <abstract language="en" script="Latn">This standard defines low level data models for exchanging sensor related data between nodes of the OGC® Sensor Web Enablement (SWE) framework. These models allow applications and/or servers to structure, encode and transmit sensor datasets in a self describing and semantically enabled way.</abstract>
 </bibitem>
-<bibitem id="_7cd5c964-57db-92b3-2f18-e2a2f0a31af3" type="standard" schema-version="v1.5.6" anchor="OGC_2017">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_85ca95fd-5f7b-4b56-6ef7-1adfd2b15eb0" type="standard" schema-version="v1.5.6" anchor="OGC_2017">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OGC Coverage Implementation Schema</title>
 
@@ -1038,8 +1038,8 @@ This Coverage Implementation Schema (CIS) specifies the OGC coverage model by es
 
 Coverages can be encoded in any suitable format (such as GML, JSON, GeoTIFF, or Net­CDF) and can be partitioned, e.g., for a time-interleaved representation. Coverages are independent from service definitions and, therefore, can be accessed through a variety of OGC services types, such as the Web Coverage Service (WCS) Standard [8]. The coverage structure can serve a wide range of coverage application domains, thereby contributing to harmon­ization and interoperability between and across these domains.</abstract>
 </bibitem>
-<bibitem id="_82be1675-4a27-7c63-1512-fd54ea929254" type="standard" schema-version="v1.5.6" anchor="WCS_2012">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_0fc2ee9a-fa5b-e32c-9712-db3cfdc4223c" type="standard" schema-version="v1.5.6" anchor="WCS_2012">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC Web Coverage Service (WCS) 2.1 Interface Standard</title>
 
@@ -1095,8 +1095,8 @@ This document specifies the WCS core. Every implementation of a WCS shall adhere
 This WCS 2.1 standard extends WCS 2.0 in a backwards compatible manner by accommodating coverages as per the OGC Coverage Implementation Schema (CIS) 1.1 in addition to CIS 1.0 coverages as addressed by WCS 2.0.
 </abstract>
 </bibitem>
-<bibitem id="_00ed7319-5e35-b4d8-4d6a-532aae991c61" type="standard" schema-version="v1.5.6" anchor="WCS-P_2014">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_c24a0048-34c9-99bf-7c09-84f81fde3131" type="standard" schema-version="v1.5.6" anchor="WCS-P_2014">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-intro">OGC® Web Coverage Service WCS Interface Standard</title>
 
@@ -1157,8 +1157,8 @@ This WCS 2.1 standard extends WCS 2.0 in a backwards compatible manner by accomm
   <script>Latn</script>
   <abstract language="en" script="Latn">The OGC Web Coverage Service (WCS)– Processing Extension defines an extension to the WCS Core [OGC 09-110], the ProcessCoverages request type, which allows clients to initi-ate server-side processing and filtering of coverages and to download the resulting coverage or value sets based on the query language defined in the Web Coverage Processing Service (WCPS) interface standard [OGC 08-068].</abstract>
 </bibitem>
-<bibitem id="_4d3671d7-df34-33aa-1d41-8cebcea1b834" type="standard" schema-version="v1.5.6" anchor="WCPS_2009">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_e8de7b26-4239-6c66-f81b-f0346172b421" type="standard" schema-version="v1.5.6" anchor="WCPS_2009">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Web Coverage Processing Service (WCPS) Language Interface Standard</title>
 
@@ -1207,8 +1207,8 @@ This WCS 2.1 standard extends WCS 2.0 in a backwards compatible manner by accomm
   <script>Latn</script>
   <abstract language="en" script="Latn">The OGC® Web Coverage Processing Service (WCPS) defines a protocol-independent language for the extraction, processing, and analysis of multi-dimensional coverages representing sensor, image, or statistics data.</abstract>
 </bibitem>
-<bibitem id="_503f3481-5626-7216-f6ec-4023a4195f93" type="standard" schema-version="v1.5.6" anchor="WMS_2006">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_8c504c03-9b7f-116d-d489-645c3661fd4f" type="standard" schema-version="v1.5.6" anchor="WMS_2006">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Web Map Service (WMS) Implementation Specification</title>
 
@@ -1256,8 +1256,8 @@ This WCS 2.1 standard extends WCS 2.0 in a backwards compatible manner by accomm
   <script>Latn</script>
   <abstract language="en" script="Latn">The OpenGIS® Web Map Service Interface Standard (WMS) provides a simple HTTP interface for requesting geo-registered map images from one or more distributed geospatial databases. A WMS request defines the geographic layer(s) and area of interest to be processed. The response to the request is one or more geo-registered map images (returned as JPEG, PNG, etc) that can be displayed in a browser application. The interface also supports the ability to specify whether the returned images should be transparent so that layers from multiple servers can be combined or not. &lt;p&gt;NOTE: WMS 1.3 and ISO 19128 are the same documents.</abstract>
 </bibitem>
-<bibitem id="_4b78e4c4-21d9-61a2-1bc2-2cba03f80d8e" type="standard" schema-version="v1.5.6" anchor="WMTS_2010">
-  <fetched>2026-10-25</fetched>
+<bibitem id="_b6823cd7-3deb-7ab8-8252-c842dff0e1cb" type="standard" schema-version="v1.5.6" anchor="WMTS_2010">
+  <fetched>2026-10-27</fetched>
   
 <title language="en" script="Latn" type="title-main">OpenGIS Web Map Tile Service Implementation Standard</title>
 
