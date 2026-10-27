@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.0" schema-version="v2.2.0" flavor="ogc">
+<bibdata type="standard">
+<title language="en" type="main">OGC API - Tiles (OpenAPI-driven sections sample)</title>
+<docidentifier type="ogc-internal" primary="true">99-902</docidentifier><docnumber>99-902</docnumber><date type="issued"><on>2026-10-24</on></date><date type="received"><on>2026-10-24</on></date><contributor><role type="editor"/><person>
+<name><completename>Open Geospatial Consortium</completename></name>
+</person></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>Open Geospatial Consortium</name>
+<subdivision type="Committee">
+<name>technical</name>
+</subdivision><abbreviation>OGC</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><status><stage>draft</stage></status><copyright><from>2026</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><flavor>ogc</flavor><stage>draft</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>false</stage-published></semantic-metadata>
+<presentation-metadata><document-scheme>2026</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(0, 177, 255)</color-secondary-shade-1><color-secondary-shade-2>rgb(0, 177, 255)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_2cd773fc-8495-2dfa-91a1-d57da3fc5833" obligation="normative">
+<title id="_19604a82-a482-3c87-1356-705ef7b11f09">Copyright notice</title>
+<p id="_f3c4258f-6b29-424c-cd01-337c0e916a04" align="center">Copyright © 2026 Open Geospatial Consortium<br/> To obtain additional rights of use, visit <link target="https://www.ogc.org/legal"/></p>
+</clause>
+
+<clause id="_6908548e-204b-56e7-9062-6924cccf2315" obligation="normative">
+<title id="_db83e2f6-5841-eaeb-0d35-1277ee9d3f6a">Note</title>
+<p id="_e1d5d5c4-54c3-2761-be2c-22547f01c057" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_02892e94-7b43-630a-129c-d2e0f75ff92b" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</clause>
+</copyright-statement>
+
+<license-statement>
+
+<clause id="_45f6bdf5-80f3-f775-9740-2adafc90b1f7" obligation="normative">
+<title id="_3788828e-41fb-3895-6acc-52071643abed">License Agreement</title>
+<p id="_772872dd-928c-666f-92c5-676f7f5d3071">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license"/></p>
+</clause>
+</license-statement>
+
+<legal-statement>
+
+<clause id="_d969cbc1-a2ce-fc29-9ca8-2b6bf8626cdf" obligation="normative">
+<title id="_58a63032-6943-6f37-087e-470a8982dad8">Notice for Drafts</title>
+<p id="_da556f2c-cb53-8902-19fe-a5f8a6222f48">This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
+
+<p id="_e8629e34-594d-6076-a18a-23d7b5df19ba">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+</clause>
+</legal-statement>
+
+<feedback-statement>
+
+<clause id="_4b48acd6-973f-402f-97b5-d1794d313105" anchor="boilerplate-standard-feedback" obligation="normative"><p id="_cb0581b2-acf2-995c-21c5-080c40d2dfd0">Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://ogc.standardstracker.org/"/></p>
+</clause>
+</feedback-statement>
+</boilerplate><preface><clause type="security" id="_11f014e9-c98a-c81d-eeb6-de3baa47ebea" obligation="informative">
+  <title id="_4d477b3a-b165-d2d5-db7e-e8925fda06e7">Security considerations</title>
+  <p id="_87632f48-a936-3f14-4cc0-36d21a86a8b8">No security considerations have been made for this document.</p></clause>
+</preface><sections><clause id="_8812521d-47c5-4262-f5b7-f9926bcd711b" type="scope" obligation="normative">
+<title id="_6770b367-e1d0-8e49-8515-6b9fe405d4ad">Scope</title>
+<p id="_ce07eb7c-49ec-df58-15ec-2a61623398c3">This sample demonstrates the paths-bearing OpenAPI corpus: the normative sections below are generated from the bundled OGC API — Tiles OpenAPI 3.0 definition (copied verbatim from the opengeospatial/ogcapi-tiles release artifacts) through metanorma-plugin-openapi and lutaml-openapi, exercising the 3.0 normalization path and the Paths renderer.</p>
+
+</clause>
+</sections>
+</metanorma>
