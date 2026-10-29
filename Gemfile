@@ -9,9 +9,6 @@ gem "lutaml-openapi", github: "lutaml/lutaml-openapi", branch: "main"
 # main carries the openapi preprocessor registration (#1026) and
 # the plugin prerelease floor (#1027)
 gem "metanorma-ogc", github: "metanorma/metanorma-ogc", branch: "main"
-gem "relaton", "~> 3.0"
-gem "relaton-render", "~> 3.0"
-gem "pubid", "~> 2.0"
 gem "moxml", github: "lutaml/moxml", branch: "main"
 
 # released standoc caps relaton-cli ~> 2.1; main carries the widened floors
@@ -40,3 +37,4 @@ gem "suma", github: "metanorma/suma", branch: "main"
 gem "isodoc", github: "metanorma/isodoc", branch: "main"
 # isodoc main requires sassc-embedded without declaring it
 gem "sassc-embedded"
+gem "relaton-cli", "~> 3.0"
