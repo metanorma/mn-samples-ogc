@@ -10,7 +10,6 @@ gem "lutaml-openapi", github: "lutaml/lutaml-openapi", branch: "main"
 # the plugin prerelease floor (#1027)
 gem "metanorma-ogc", github: "metanorma/metanorma-ogc", branch: "main"
 gem "relaton", "~> 3.0"
-gem "relaton-render", "~> 3.0"
 gem "pubid", "~> 2.0"
 gem "moxml", github: "lutaml/moxml", branch: "main"
 
