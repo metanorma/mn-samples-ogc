@@ -1,0 +1,5 @@
+WARNING: font '/config/fonts/google/fira_code/FiraCode[wght].ttf' from the fontist manifest file is the variable font and doesn't supported by Apache FOP!
+WARNING: font '/config/fonts/google/overpass/Overpass-Italic[wght].ttf' from the fontist manifest file is the variable font and doesn't supported by Apache FOP!
+WARNING: font '/config/fonts/google/overpass/Overpass[wght].ttf' from the fontist manifest file is the variable font and doesn't supported by Apache FOP!
+Page vi: Unresolved ID reference "_deb51fc1-4470-0669-f7c3-d6fae72d12c3" found.
+Page 75: Unresolved ID reference "_3da20dc0-d759-ed2d-7e57-7196925967ad" found.

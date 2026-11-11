@@ -1,0 +1,4 @@
+WARNING: font '/config/fonts/google/fira_code/FiraCode[wght].ttf' from the fontist manifest file is the variable font and doesn't supported by Apache FOP!
+WARNING: font '/config/fonts/google/overpass/Overpass-Italic[wght].ttf' from the fontist manifest file is the variable font and doesn't supported by Apache FOP!
+WARNING: font '/config/fonts/google/overpass/Overpass[wght].ttf' from the fontist manifest file is the variable font and doesn't supported by Apache FOP!
+Page #1: Font "Fira Code,normal,700" not found. Substituting with "Fira Code,normal,400".

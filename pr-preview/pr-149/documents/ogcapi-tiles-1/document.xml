@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metanorma xmlns="https://www.metanorma.org/ns/standoc" type="semantic" version="2.10.2" schema-version="v2.3.0" flavor="ogc">
+<bibdata type="standard">
+<title language="en" type="main">OGC API - Tiles (OpenAPI-driven sections sample)</title>
+<docidentifier type="ogc-internal" primary="true">99-902</docidentifier><docnumber>99-902</docnumber><date type="issued"><on>2026-10-24</on></date><date type="received"><on>2026-10-24</on></date><contributor><role type="editor"/><person>
+<name><completename>Open Geospatial Consortium</completename></name>
+</person></contributor><contributor><role type="author"><description>committee</description></role><organization>
+<name>Open Geospatial Consortium</name>
+<subdivision type="Committee">
+<name>technical</name>
+</subdivision><abbreviation>OGC</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><status><stage>draft</stage></status><copyright><from>2026</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><ext><doctype>standard</doctype><subdoctype>implementation</subdoctype><flavor>ogc</flavor><stage>draft</stage></ext></bibdata><metanorma-extension><semantic-metadata><stage-published>false</stage-published></semantic-metadata>
+<presentation-metadata><document-scheme>2026</document-scheme><color-admonition-caution>rgb(79, 129, 189)</color-admonition-caution><color-admonition-editor>rgb(79, 129, 189)</color-admonition-editor><color-admonition-important>rgb(79, 129, 189)</color-admonition-important><color-admonition-note>rgb(79, 129, 189)</color-admonition-note><color-admonition-safety-precaution>rgb(79, 129, 189)</color-admonition-safety-precaution><color-admonition-tip>rgb(79, 129, 189)</color-admonition-tip><color-admonition-todo>rgb(79, 129, 189)</color-admonition-todo><color-admonition-warning>rgb(79, 129, 189)</color-admonition-warning><color-background-definition-description>rgb(242, 251, 255)</color-background-definition-description><color-background-definition-term>rgb(215, 243, 255)</color-background-definition-term><color-background-page>rgb(33, 55, 92)</color-background-page><color-background-table-header>rgb(33, 55, 92)</color-background-table-header><color-background-table-row-even>rgb(252, 246, 222)</color-background-table-row-even><color-background-table-row-odd>rgb(254, 252, 245)</color-background-table-row-odd><color-background-term-admitted-label>rgb(223, 236, 249)</color-background-term-admitted-label><color-background-term-deprecated-label>rgb(237, 237, 238)</color-background-term-deprecated-label><color-background-term-preferred-label>rgb(249, 235, 187)</color-background-term-preferred-label><color-background-text-label-legacy>rgb(33, 60, 107)</color-background-text-label-legacy><color-secondary-shade-1>rgb(0, 177, 255)</color-secondary-shade-1><color-secondary-shade-2>rgb(0, 177, 255)</color-secondary-shade-2><color-text>rgb(88, 89, 91)</color-text><color-text-title>rgb(33, 55, 92)</color-text-title><toc-heading-levels>2</toc-heading-levels><html-toc-heading-levels>2</html-toc-heading-levels><doc-toc-heading-levels>2</doc-toc-heading-levels><pdf-toc-heading-levels>2</pdf-toc-heading-levels></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_2cd773fc-8495-2dfa-91a1-d57da3fc5833" obligation="normative">
+<title id="_19604a82-a482-3c87-1356-705ef7b11f09">Copyright notice</title>
+<p id="_f3c4258f-6b29-424c-cd01-337c0e916a04" align="center">Copyright © 2026 Open Geospatial Consortium<br/> To obtain additional rights of use, visit <link target="https://www.ogc.org/legal"/></p>
+</clause>
+
+<clause id="_6908548e-204b-56e7-9062-6924cccf2315" obligation="normative">
+<title id="_db83e2f6-5841-eaeb-0d35-1277ee9d3f6a">Note</title>
+<p id="_e1d5d5c4-54c3-2761-be2c-22547f01c057" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_02892e94-7b43-630a-129c-d2e0f75ff92b" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</clause>
+</copyright-statement>
+
+<license-statement>
+
+<clause id="_45f6bdf5-80f3-f775-9740-2adafc90b1f7" obligation="normative">
+<title id="_3788828e-41fb-3895-6acc-52071643abed">License Agreement</title>
+<p id="_772872dd-928c-666f-92c5-676f7f5d3071">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license"/></p>
+</clause>
+</license-statement>
+
+<legal-statement>
+
+<clause id="_d969cbc1-a2ce-fc29-9ca8-2b6bf8626cdf" obligation="normative">
+<title id="_58a63032-6943-6f37-087e-470a8982dad8">Notice for Drafts</title>
+<p id="_da556f2c-cb53-8902-19fe-a5f8a6222f48">This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
+
+<p id="_e8629e34-594d-6076-a18a-23d7b5df19ba">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+</clause>
+</legal-statement>
+
+<feedback-statement>
+
+<clause id="_4b48acd6-973f-402f-97b5-d1794d313105" anchor="boilerplate-standard-feedback" obligation="normative"><p id="_cb0581b2-acf2-995c-21c5-080c40d2dfd0">Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://ogc.standardstracker.org/"/></p>
+</clause>
+</feedback-statement>
+</boilerplate><preface><clause type="security" id="_11f014e9-c98a-c81d-eeb6-de3baa47ebea" obligation="informative">
+  <title id="_4d477b3a-b165-d2d5-db7e-e8925fda06e7">Security considerations</title>
+  <p id="_87632f48-a936-3f14-4cc0-36d21a86a8b8">No security considerations have been made for this document.</p></clause>
+</preface><sections><clause id="_655fd921-f349-91a9-6ad1-a6a2fe078a34" type="scope" obligation="normative">
+<title id="_f70b6ff6-6131-0e24-81e1-850dbe94b63d">Scope</title>
+<p id="_f6bb342f-23d1-63c6-f8f2-8be13f99efea">This sample demonstrates the paths-bearing OpenAPI corpus: the normative sections below are generated from the bundled OGC API — Tiles OpenAPI 3.0 definition (copied verbatim from the opengeospatial/ogcapi-tiles release artifacts) through metanorma-plugin-openapi and lutaml-openapi, exercising the 3.0 normalization path and the Paths renderer.</p>
+</clause>
+
+<clause id="_899d95a6-6579-1315-f384-d58642f928d8" obligation="normative">
+<title id="_9ea25bee-4fda-d146-bfe2-b0767404d5c6">OGC API — Tiles</title>
+<p id="_9942d356-d187-079e-dee9-b4fb82e61b5a">API version: 3.0.0 Example API Definition for OGC API — Tiles — Part 1: Core</p>
+</clause>
+
+<clause id="_5c0e6341-28ce-7b29-cda1-ba91f3e46acd" obligation="normative">
+<title id="_09e8df70-783e-9ba7-1449-4e9f615c9207">Schemas</title>
+<clause id="_ed0a533d-30d8-6f45-adbd-ce2df373af8b" obligation="normative">
+<title id="_2a84f89e-a0e5-c329-2112-838fc1e9e0c0">confClasses</title>
+<p id="_27c13a07-ecfa-5b8a-5c3a-30b5764438ba">Type: <tt>object</tt></p>
+
+<table id="_13f010ed-39a1-80e8-87c7-34432efe3926"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_7679b738-f852-d3b7-4939-a32827a06f37">Properties of confClasses</name>
+<thead><tr id="_6d6ec2ba-131b-8471-07d6-f8ab269b66a9"><th id="_09c67793-dc2d-2438-895f-e760879b2c7d" valign="middle" align="left">Name</th>
+<th id="_5cb42933-0fcf-6a2f-4ef4-b8a6d0652d4c" valign="middle" align="left">Type</th>
+<th id="_da8d205f-857a-5147-29d8-14f3d904b71c" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_d3390373-d2ac-0dbd-c49a-0a1c2219cf28"><td id="_b790aa10-9db1-aead-652b-cc8a7e9eb340" valign="middle" align="left">conformsTo</td>
+<td id="_eda36291-a941-fbf0-e274-5bfb4bc67fcd" valign="middle" align="left"><tt>array</tt></td>
+<td id="_774a9adf-a131-969a-3442-116b26503cf6" valign="middle" align="left"/></tr></tbody>
+</table>
+</clause>
+
+<clause id="_a42afb76-1177-dc02-431c-d57da5b023fa" obligation="normative">
+<title id="_b95f8c04-5490-838e-c213-60cc01947d28">link</title>
+<p id="_85edfaa0-0f05-95d1-c374-790cc899096b">Type: <tt>object</tt></p>
+
+<table id="_7f2ebc6f-8f23-4eb1-3ab8-fbb84b1d76d8"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_c7786538-1d5f-5358-c624-c117ccd78f0e">Properties of link</name>
+<thead><tr id="_5aaa2a8a-90ce-cc60-3caa-641a94778b11"><th id="_b5c5c861-b7ae-b456-0b67-9572ee294d88" valign="middle" align="left">Name</th>
+<th id="_6fa41cb3-c17a-15be-e6a1-b89a1cd841ce" valign="middle" align="left">Type</th>
+<th id="_5507b7ca-3980-90ea-b562-0e83f8b56e87" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_1d92d0a3-8b39-b943-5804-cf8a73d3d088"><td id="_b68135a6-e66f-0e50-01a6-0014e23f9b52" valign="middle" align="left">href</td>
+<td id="_217c53a0-bb2c-90fd-bd18-992dcd1a819a" valign="middle" align="left"><tt>string</tt></td>
+<td id="_857211c3-ab44-3f09-5537-208d5352c956" valign="middle" align="left">Supplies the URI to a remote resource (or resource fragment).</td>
+</tr><tr id="_a1798bc6-8004-31df-4644-e0871944d6aa"><td id="_f784f547-cf19-0a97-19dd-5bc9a395845a" valign="middle" align="left">hreflang</td>
+<td id="_05d0c115-2178-6e2e-c228-3217b116a90a" valign="middle" align="left"><tt>string</tt></td>
+<td id="_9f4d0e1a-9898-8233-8c77-69c47aac0875" valign="middle" align="left">A hint indicating what the language of the result of dereferencing the link should be.</td>
+</tr><tr id="_e9eb6f09-eeab-81a3-ec95-6f0abbb05d81"><td id="_6d0bd323-e76c-abd0-474d-29742b40a662" valign="middle" align="left">length</td>
+<td id="_e2fbfe76-9946-426c-f2ce-4043ba00a4a8" valign="middle" align="left"><tt>integer</tt></td>
+<td id="_fd64aba4-a9fa-b947-2948-d16e65b758e1" valign="middle" align="left"/></tr><tr id="_ec587d1b-fb37-f520-1733-81035a17b298"><td id="_c7c5b0e0-6f9d-41ee-edc3-a1a94a35321c" valign="middle" align="left">rel</td>
+<td id="_313cee14-4231-9ab9-18d6-cd1b394811e9" valign="middle" align="left"><tt>string</tt></td>
+<td id="_8c716907-fdd4-95b4-701f-85cf51ce7445" valign="middle" align="left">The type or semantics of the relation.</td>
+</tr><tr id="_16e9eb7a-ea11-e166-d212-670f06c855f8"><td id="_3dc43baf-66dc-c47f-ee61-b8b5abcd9277" valign="middle" align="left">templated</td>
+<td id="_83e5205e-0e64-8dd8-a09a-b610af5a88a1" valign="middle" align="left"><tt>boolean</tt></td>
+<td id="_ce826de8-7ab6-f1e2-c465-f3081b406026" valign="middle" align="left">This flag set to true if the link is a URL template.</td>
+</tr><tr id="_7d0d9648-6536-186e-e070-285fbc9f8999"><td id="_3e86a957-9050-7c39-7c82-f9505b873d87" valign="middle" align="left">title</td>
+<td id="_4bf41070-faba-7b25-2c6f-63c9239bbdc0" valign="middle" align="left"><tt>string</tt></td>
+<td id="_c8060c8d-365c-799e-565a-1e28d575cb08" valign="middle" align="left">Used to label the destination of a link such that it can be used as a human-readable identifier.</td>
+</tr><tr id="_171b1317-1c0e-b149-8544-7883793e0672"><td id="_7f98e027-e4c1-536a-07f0-793eb148d516" valign="middle" align="left">type</td>
+<td id="_57c1719e-41ab-e6e2-f7b4-c71b3a23ca85" valign="middle" align="left"><tt>string</tt></td>
+<td id="_a4ea7342-405d-256f-1e97-fb27a5e3f091" valign="middle" align="left">A hint indicating what the media type of the result of dereferencing the link should be.</td>
+</tr><tr id="_61f3566b-6aaa-89ed-36e3-532a4cf12622"><td id="_6ca18f7b-5fc7-139d-2fbf-9e95e45a38b3" valign="middle" align="left">varBase</td>
+<td id="_7e36078d-ce00-28cc-7792-f568656b3933" valign="middle" align="left"><tt>string</tt></td>
+<td id="_9a6015cb-92d6-5298-3ba5-62de45474eca" valign="middle" align="left">A base path to retrieve semantic information about the variables used in URL template.</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_2179a5cf-43d8-e81d-e35e-8ce321c6e870" obligation="normative">
+<title id="_a2624297-c9ae-0ce2-ef6d-f1f87f98ba74">landingPage</title>
+<p id="_8baa228c-ed80-6c6f-2e26-a5b48ece9133">Type: <tt>object</tt></p>
+
+<table id="_f0692bc6-914d-2686-c316-71480c6c06b6"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_af4d9163-717e-932f-15d5-55585a4ab212">Properties of landingPage</name>
+<thead><tr id="_37e6b7cc-d28e-4f7e-b290-ccae43628c18"><th id="_ae613a24-68db-ac43-0b1d-a1667423fdcf" valign="middle" align="left">Name</th>
+<th id="_a3df84be-15d1-eba7-48b2-1b764fe7e8ee" valign="middle" align="left">Type</th>
+<th id="_58c7d890-f8bc-de16-42f9-9883ad87dae4" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_155c50d8-9edb-6429-12d9-c8d4e4c84e37"><td id="_65a338da-8346-c5da-8e9c-9055f49b7916" valign="middle" align="left">attribution</td>
+<td id="_ff916a60-acd8-2be9-ad99-5b7768c33674" valign="middle" align="left"><tt>string</tt></td>
+<td id="_26094e69-0d47-004e-8c45-b3ebbae4ef8d" valign="middle" align="left">The <tt>attribution</tt> should be short and intended for presentation to a user, for example, in a corner of a map. Parts of the text can be links to other resources if additional information is needed. The string can include HTML markup.</td>
+</tr><tr id="_4118303b-254e-a524-ebd3-7c1e42525765"><td id="_fc66cfe3-55af-6b5b-8a32-731e925c0d6d" valign="middle" align="left">description</td>
+<td id="_19e54113-7938-6a7e-8684-4dd48582ad8d" valign="middle" align="left"><tt>string</tt></td>
+<td id="_f03b6382-2373-7684-54ad-02f68c9912ab" valign="middle" align="left"/></tr><tr id="_a51c6777-4aae-fdb2-ce69-6a0974e45e28"><td id="_7f75c31a-98c0-e152-c71b-761b22155cd3" valign="middle" align="left">links</td>
+<td id="_2de3f1d2-2340-0cec-73c8-23ec5ff0b9a4" valign="middle" align="left"><tt>array</tt></td>
+<td id="_79cfac2c-57cc-4021-33be-7a8ca86a66e9" valign="middle" align="left"/></tr><tr id="_70522b1a-b42e-9e1d-3a00-3052e7fc3796"><td id="_f4470cf9-126f-004d-b85a-326e2d1354de" valign="middle" align="left">title</td>
+<td id="_9ea2df07-d797-214c-cd23-fb5428483548" valign="middle" align="left"><tt>string</tt></td>
+<td id="_c48202bb-3cfc-52b1-69e9-6734ebd5aaad" valign="middle" align="left">While a title is not required, implementors are strongly advised to include one.</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_b2a2306b-8e77-73a1-8dca-31db867dfe16" obligation="normative">
+<title id="_ef5869f0-3015-8540-bb71-dabe78b5bc7e">exception</title>
+<p id="_4727ccd5-d76c-bf05-90e0-48ac81a104f0">JSON schema for exceptions based on RFC 7807</p>
+
+<p id="_a19cda05-7d40-0966-75ab-dc83f2f947da">Type: <tt>object</tt></p>
+
+<table id="_fdadf84b-f5b5-796e-c449-9fc406e80ee5"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_ca22022d-06ab-b02e-af5b-5e5158285ecd">Properties of exception</name>
+<thead><tr id="_afeada2a-d469-593a-fe5b-c97d30f135a2"><th id="_7dc2b9ce-3f03-f8c8-88b3-655120e017c9" valign="middle" align="left">Name</th>
+<th id="_58cf2237-3e13-e2a7-a52d-542c24817759" valign="middle" align="left">Type</th>
+<th id="_c843b0ed-0c42-ea56-40b6-41f5f30b0176" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_8c934da8-fa88-fcfa-9d9c-53df7c98f051"><td id="_3c9043e7-e9d5-6f7b-983c-13c62a8f1193" valign="middle" align="left">detail</td>
+<td id="_523230b4-b909-a44e-af45-4ef87f1ad606" valign="middle" align="left"><tt>string</tt></td>
+<td id="_c6ace8a1-a399-0982-2f3b-ae0e81ed05e3" valign="middle" align="left"/></tr><tr id="_1397985d-a212-97fc-5528-66341cf149f4"><td id="_4d81210b-5eb1-bc7d-bc01-3613a9a4d4a9" valign="middle" align="left">instance</td>
+<td id="_a24c0ec7-54c0-3bc2-4f20-9f8b8ec69e2b" valign="middle" align="left"><tt>string</tt></td>
+<td id="_07843596-a257-430b-34a7-3b53c61629d5" valign="middle" align="left"/></tr><tr id="_7b3a04e9-8866-4386-6060-c42cf33de3fc"><td id="_23f790d3-3932-189b-9d2a-b433915aac6b" valign="middle" align="left">status</td>
+<td id="_f6c1e126-304d-d5ee-fe7d-0aabd8a1341e" valign="middle" align="left"><tt>integer</tt></td>
+<td id="_18127376-6156-173b-c542-df4499641b0f" valign="middle" align="left"/></tr><tr id="_569c8e99-13e5-32be-11ef-c1ccf2055c15"><td id="_1c23bc09-4136-fab5-a898-dad8c89ed453" valign="middle" align="left">title</td>
+<td id="_6562fa5f-e2da-fd5a-ab31-0ca9a517f271" valign="middle" align="left"><tt>string</tt></td>
+<td id="_0b211c78-c55c-4f66-1f78-8c41e34e4bb9" valign="middle" align="left"/></tr><tr id="_39e3a648-f5a4-58a7-bcad-8ae9b4ccec47"><td id="_3229d347-9427-8ca1-95d6-f823bb21568a" valign="middle" align="left">type</td>
+<td id="_c89e99bf-6a45-546a-ebd9-5b36ce0e5d56" valign="middle" align="left"><tt>string</tt></td>
+<td id="_661014e9-2d83-97c8-b25b-7387d432d2b5" valign="middle" align="left"/></tr></tbody>
+</table>
+</clause>
+
+<clause id="_000c1eb5-1419-a738-f3ff-a1d10369f47e" obligation="normative">
+<title id="_28bd6d28-2b4b-5361-38cd-0b53350cc7de">collections</title>
+<p id="_f2e7e0ab-4c59-4903-361f-8914cc17e198">Type: <tt>object</tt></p>
+
+<table id="_29171028-2405-6b16-d6a2-912295a411b4"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_f3d77bf2-941a-e86a-11c5-1e4688dd5ca8">Properties of collections</name>
+<thead><tr id="_62c43b94-727a-86c9-9fd4-3ee7bc788993"><th id="_029b5cc5-8d5f-035a-de3b-31a99f76fbf9" valign="middle" align="left">Name</th>
+<th id="_27932f84-25ab-d13c-eb47-a6879dcbe02e" valign="middle" align="left">Type</th>
+<th id="_4bc948f9-4849-d18c-1eaf-27995c67d019" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_a41c74ad-d7a8-bc6b-f9b4-d27cf33de6ac"><td id="_a9831991-b9eb-cd78-8781-a39e72c4afe7" valign="middle" align="left">collections</td>
+<td id="_6158f856-000b-2809-7d20-f7c25a3c7500" valign="middle" align="left"><tt>array</tt></td>
+<td id="_ab8190ae-9a6f-c7f0-1d51-cc3fea8d102d" valign="middle" align="left"/></tr><tr id="_88efa4be-b5b1-ff19-43a7-8ecce3425cfb"><td id="_0dcffd47-0a70-74ba-e54c-bfaab2c6bc44" valign="middle" align="left">links</td>
+<td id="_d3d7055b-7833-7ba9-2de0-7656f82d3f6e" valign="middle" align="left"><tt>array</tt></td>
+<td id="_5f03b25e-6223-40a3-f900-d1acc0004f04" valign="middle" align="left"/></tr><tr id="_af13b84d-8d75-7c07-2edb-5bac38fc36d9"><td id="_e40dbb88-36ff-6c3f-c9f4-cfc53637d8be" valign="middle" align="left">numberMatched</td>
+<td id="_3ae47f65-2f74-e4e7-859d-d8622259458b" valign="middle" align="left"><tt>integer</tt></td>
+<td id="_e2ddb09b-18ad-0b7d-11ab-94637f636ebd" valign="middle" align="left"/></tr><tr id="_bf5c1492-a4f8-987a-a962-efb99d0e3e49"><td id="_134320af-2b41-cadf-759e-5962dce0c95f" valign="middle" align="left">numberReturned</td>
+<td id="_a427370b-bbf3-cddf-4c86-657b5a6af7af" valign="middle" align="left"><tt>integer</tt></td>
+<td id="_6b741f29-0239-08c3-8162-994b1bf9b134" valign="middle" align="left"/></tr><tr id="_e6e633a2-e021-5e17-b53f-b619e7149b60"><td id="_35b3f8e0-c1c0-6086-9ca1-183731c822eb" valign="middle" align="left">timeStamp</td>
+<td id="_d57fd1e7-dec6-5213-0a4e-1b76a14585ee" valign="middle" align="left"><tt>string</tt></td>
+<td id="_509198b6-333a-c392-69a8-eb351c1d8000" valign="middle" align="left"/></tr></tbody>
+</table>
+</clause>
+
+<clause id="_6814b5db-e4b4-5a8a-c3aa-3f1e82cd5ea0" obligation="normative">
+<title id="_2094d30f-81bb-6f1a-9033-a418b54ab198">collectionInfo</title>
+<p id="_81c4ed69-4eb2-65af-a746-334cea1887a3">Type: <tt>object</tt></p>
+
+<table id="_563e5333-ef4f-620a-3ad5-1c15f94cb7a8"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_0c6002a3-7c57-7dbf-9264-b038d757b66f">Properties of collectionInfo</name>
+<thead><tr id="_aaf9505b-e23d-97bf-530a-ffd343b06393"><th id="_8425f7b1-3dca-3620-7a3a-1f4e45f93960" valign="middle" align="left">Name</th>
+<th id="_3596cac6-3522-4c7c-ff3a-9449eb70fb5a" valign="middle" align="left">Type</th>
+<th id="_d64ef563-dee9-87e0-fa68-1498a129c495" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_e6c1ac25-e2f8-4438-b392-7122b9c68ffd"><td id="_6cd2e2b7-e53e-72b9-ede3-45d90e700f88" valign="middle" align="left">crs</td>
+<td id="_5cf73b4d-9666-61bf-c348-a8c73baa0414" valign="middle" align="left"><tt>array</tt></td>
+<td id="_8ba55e06-f448-4685-87d3-923d1d8e3e91" valign="middle" align="left">the list of coordinate reference systems supported by the API; the first item is the default coordinate reference system</td>
+</tr><tr id="_15899f59-0de3-4f1b-b7c4-86d632097bbc"><td id="_f7411682-033c-e4a4-8dcd-6eecb7393835" valign="middle" align="left">dataType</td>
+<td id="_67b21cb6-e432-fa6c-2791-ea98ba671d37" valign="middle" align="left">``</td>
+<td id="_88336dd1-f77a-9ebb-2272-9a0108fb02d2" valign="middle" align="left"/></tr><tr id="_91c1c244-4b1f-44d5-ed67-de7d80e18314"><td id="_424ea442-49c5-72ab-a5d4-fdc7d0d88f4d" valign="middle" align="left">description</td>
+<td id="_280abcbd-7882-f536-fdc1-a7526c238cbd" valign="middle" align="left"><tt>string</tt></td>
+<td id="_71bd6cfd-7c58-1361-4a1f-8fdb7de4b1f1" valign="middle" align="left">a description of the data in the collection</td>
+</tr><tr id="_1ebc963e-1833-37bf-27c3-491828631ad4"><td id="_37b1cdbc-7235-4f00-3795-b146a6bc0530" valign="middle" align="left">extent</td>
+<td id="_c265c81d-8673-06a0-d537-c2fc4c20946d" valign="middle" align="left">``</td>
+<td id="_7b8d2620-97d8-cc94-badb-b17c18c9fe37" valign="middle" align="left"/></tr><tr id="_b9884687-9640-a690-2559-33113d523ea1"><td id="_7398932f-0025-6041-72a6-7e5471b35690" valign="middle" align="left">geometryDimension</td>
+<td id="_1c3d7125-588e-3aca-23c3-05dcc2ee7933" valign="middle" align="left"><tt>integer</tt></td>
+<td id="_029896e1-475f-f256-1b91-d22b58d68c50" valign="middle" align="left">The geometry dimension of the features shown in this layer (0: points, 1: curves, 2: surfaces, 3: solids), unspecified: mixed or unknown</td>
+</tr><tr id="_1e4c5f09-6996-0d45-d19e-e21a507f26e1"><td id="_922f5d0c-f387-e471-13c2-5a50f2a6b860" valign="middle" align="left">id</td>
+<td id="_869a1ee0-1c7d-4962-e028-e79ed1826956" valign="middle" align="left"><tt>string</tt></td>
+<td id="_4715b122-45f5-fc0f-ffeb-a409df67cf93" valign="middle" align="left">identifier of the collection used, for example, in URIs</td>
+</tr><tr id="_df3a3992-0641-6c1a-60c0-16aa1abdf16a"><td id="_36f49163-5dbb-04f6-18fd-ed31d825591f" valign="middle" align="left">itemType</td>
+<td id="_b652c51a-d717-5ebf-8e9b-5edd967b82a2" valign="middle" align="left"><tt>string</tt></td>
+<td id="_f7041983-fa1c-5fbf-4387-e2705e19e500" valign="middle" align="left">indicator about the type of the items in the collection if the collection has an accessible /collections/{collectionId}/items endpoint</td>
+</tr><tr id="_c6ddf1fe-5df2-1001-b28f-22cdc681d6e0"><td id="_2593bc7c-2576-ea00-3007-48a02e298ff1" valign="middle" align="left">links</td>
+<td id="_be1ae8cd-9a93-1c13-b32a-b979372e6ec1" valign="middle" align="left"><tt>array</tt></td>
+<td id="_6afada7d-f9c2-9f20-9a82-bb0eacf90e38" valign="middle" align="left"/></tr><tr id="_d3fd8499-0b63-7e57-50ea-10947a9b82fb"><td id="_5fee4bf5-12ea-20f6-7e5e-81949e679bdc" valign="middle" align="left">maxCellSize</td>
+<td id="_9928061c-f797-4073-92d0-7c37a13638df" valign="middle" align="left"><tt>number</tt></td>
+<td id="_b01118b2-a3b0-c8b9-8f96-48c1c93bb5fd" valign="middle" align="left">Maximum cell size for usage of the collection</td>
+</tr><tr id="_ec8f4c90-9494-1f07-970e-59c69c8ef8e5"><td id="_c4be2430-b4bb-1611-67f2-c0c41696dbd3" valign="middle" align="left">maxScaleDenominator</td>
+<td id="_7845291f-a6af-ca81-f89d-4a7625b8b235" valign="middle" align="left"><tt>number</tt></td>
+<td id="_b7a25e48-b812-add7-05f9-a93bd01f8b03" valign="middle" align="left">Maximum scale denominator for usage of the collection</td>
+</tr><tr id="_cb02bfe5-334e-ea51-b49e-cbbdb0f8a9ee"><td id="_ad71b6b9-f824-8cd3-65c5-02f3c87a19cd" valign="middle" align="left">minCellSize</td>
+<td id="_850164a2-7e34-e5ae-37f4-b25b388b7e8a" valign="middle" align="left"><tt>number</tt></td>
+<td id="_236c9162-019f-7655-3d13-1929042496c3" valign="middle" align="left">Minimum cell size for usage of the collection</td>
+</tr><tr id="_cda4e006-f13d-dd31-4115-1f1b2ff64703"><td id="_276ebea9-9666-5014-cb29-af90d2f8be2f" valign="middle" align="left">minScaleDenominator</td>
+<td id="_e6cd222d-275c-f3db-8425-4974b9faa248" valign="middle" align="left"><tt>number</tt></td>
+<td id="_f12dfb67-0837-d607-b0d2-b213707d6d0b" valign="middle" align="left">Minimum scale denominator for usage of the collection</td>
+</tr><tr id="_989748ce-6da1-b053-8b52-fbda88136ac2"><td id="_5a12ac15-c56f-bd94-9a9d-865d0821edfe" valign="middle" align="left">title</td>
+<td id="_89a52eb9-29ea-0b1c-ca3b-3fb21791e6e9" valign="middle" align="left"><tt>string</tt></td>
+<td id="_4aae2dab-fb69-e72d-e354-78b51d955d05" valign="middle" align="left">human readable title of the collection</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_eadb2a4b-7361-92df-98cc-d57222022c5b" obligation="normative">
+<title id="_bb434a0a-9dab-e83b-aaaf-6d5ee9d2f7a3">extent</title>
+<p id="_05013b45-2292-c8ed-04b3-7d2831f62701">The extent of the data in the collection. In the Core only spatial and temporal extents are specified. Extensions may add additional members to represent other extents, for example, thermal or pressure ranges.</p>
+
+<p id="_793a4abf-8694-5468-d26c-43a90f56f327">The first item in the array describes the overall extent of the data. All subsequent items describe more precise extents, e.g., to identify clusters of data. Clients only interested in the overall extent will only need to access the first item in each array.</p>
+
+<p id="_4a5a6a2c-4883-ec84-0c48-7b4a21b466f7">Type: <tt>object</tt></p>
+
+<table id="_84fa3cc2-d804-2e11-e2f1-e0645b467fd8"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_7f531fb1-e8dd-c3e6-3353-07efda532aa2">Properties of extent</name>
+<thead><tr id="_b768ae59-18c0-66f7-273f-7bcb7115b45f"><th id="_861aeed9-8498-2fd7-559f-9b4ba183c22d" valign="middle" align="left">Name</th>
+<th id="_91b388d0-0bbc-e479-1ddc-5838723ee319" valign="middle" align="left">Type</th>
+<th id="_97515e3b-d3d4-249e-e78f-1a9ca549afb3" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_f57e6645-5fa0-acba-6d0f-2145e2113c10"><td id="_853dfb8b-f64d-f132-d905-c7eea52afc39" valign="middle" align="left">spatial</td>
+<td id="_3b879a87-cf3a-b0c0-2886-972e3b4ca4cc" valign="middle" align="left"><tt>object</tt></td>
+<td id="_44eefac9-8fbe-e0ff-0274-c2a4ac288154" valign="middle" align="left">The spatial extent of the data in the collection.</td>
+</tr><tr id="_b91e2803-3ec7-ccf0-4295-9c601bbef4e7"><td id="_f96ea41d-c213-8f2a-6b70-f1594772cc33" valign="middle" align="left">temporal</td>
+<td id="_d1066102-a450-a888-e7ee-7e8b2aaa7713" valign="middle" align="left"><tt>object</tt></td>
+<td id="_76cdeade-fe65-aa6e-7dc9-6a9a0ea53f75" valign="middle" align="left">The temporal extent of the features in the collection.</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_e9722b1e-487a-6280-fd43-20a53af19087" obligation="normative">
+<title id="_e3d86d35-1e6c-a9e5-c465-492cf478a087">extent-uad</title>
+<p id="_4263869e-2e51-39fb-c812-80bfeffb1e3e">The extent module only addresses spatial and temporal extents. This module extends extent by specifying how intervals and crs properties can be used to specify additional geometries.</p>
+</clause>
+
+<clause id="_d2c19b98-9ffb-e807-8db7-68935795f9d2" obligation="normative">
+<title id="_2037eeaf-8e96-2fe0-d43a-f1d17f33d303">crs</title>
+</clause>
+
+<clause id="_e862c313-237c-6702-ca35-4df766ad9f98" obligation="normative">
+<title id="_8a5b16b2-b134-01d5-01cd-de3df3557a90">dataType</title>
+</clause>
+
+<clause id="_f24d57d5-eb08-135d-1d71-89418762858d" obligation="normative">
+<title id="_720f6a5d-afcb-698d-3397-b6a1d45200ea">timeStamp</title>
+<p id="_878b3d95-6ecb-2317-0a9b-296a9868718d">This property indicates the time and date when the response was generated using RFC 3339 notation.</p>
+
+<p id="_ebda2451-cecd-f315-c42c-2094ebdba1dd">Type: <tt>string</tt></p>
+</clause>
+
+<clause id="_b728ec8e-e031-8a48-855e-e8534e0499cf" obligation="normative">
+<title id="_1fc305f5-4f14-b5a9-af76-1364eedb54a6">numberReturned</title>
+<p id="_64487a1a-403f-05be-b01b-b9732d84643b">The number of features in the feature collection. A server may omit this information in a response, if the information about the number of features is not known or difficult to compute. If the value is provided, the value shall be identical to the number of items in the “features” array.</p>
+
+<p id="_6f8380c9-2217-82ab-5cc8-435fce78c4b8">Type: <tt>integer</tt></p>
+</clause>
+
+<clause id="_94b45787-f0ef-06f8-670d-34ff586f4a05" obligation="normative">
+<title id="_825015fb-7089-8f72-0540-d989a3f828b7">numberMatched</title>
+<p id="_9be5c4f8-c6dd-f992-30a1-5292f651fa17">The number of features of the feature type that match the selection parameters like  <tt>bbox</tt>.</p>
+
+<p id="_95c2f45d-d2a2-b93c-4739-64a1a2bff240">Type: <tt>integer</tt></p>
+</clause>
+
+<clause id="_548b7883-432d-65ff-d8e1-71599ef1882a" obligation="normative">
+<title id="_dd1afc3e-73ce-e00f-bddb-dc81bfb82916">tileSet</title>
+<p id="_9b48a64b-aba6-1fba-bb1a-eb9fb00feaeb">A resource describing a tileset based on the OGC TileSet Metadata Standard. At least one of the ‘TileMatrixSet’,  or a link with ‘rel’ <link target="http://www.opengis.net/def/rel/ogc/1.0/tiling-scheme"/></p>
+
+<p id="_e3cd6b22-dc1a-8be3-9d2d-65358d71b2ff">Type: <tt>object</tt></p>
+
+<table id="_06d118b3-0899-a2d0-b5f7-a71a8c524ead"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_e336a9ba-94a9-bf6e-0e08-49a5c9273170">Properties of tileSet</name>
+<thead><tr id="_15765e9a-52af-13a0-d419-1b468dee470a"><th id="_24916903-6398-1bff-37d4-f68d3efedaf4" valign="middle" align="left">Name</th>
+<th id="_0bb2cd2b-4e06-7a34-2240-4b8e2cf1535a" valign="middle" align="left">Type</th>
+<th id="_a088f6c1-2169-527a-13f1-9a3dcf57aa19" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_ebeb917a-4d55-aec6-2dd0-0a71e0ced616"><td id="_7d88b805-f975-3cba-8edf-ef47fee0de53" valign="middle" align="left">accessConstraints</td>
+<td id="_a5c98dab-78b6-66fb-b451-4613874b684c" valign="middle" align="left"><tt>string</tt></td>
+<td id="_8fe9e437-a118-8f77-2fde-2fbfe9bcc2da" valign="middle" align="left">Restrictions on the availability of the Tile Set that the user needs to be aware of before using or redistributing the Tile Set</td>
+</tr><tr id="_d70a12c1-e5d7-6231-77a7-2523f8ce30e7"><td id="_89f1e8ca-ce8b-7a1d-17f0-fcf1964ff394" valign="middle" align="left">attribution</td>
+<td id="_93c8c01a-b8a0-0b17-a6bc-5c22df8535c7" valign="middle" align="left"><tt>string</tt></td>
+<td id="_5f113ba9-6260-f52f-315e-03a57aabcd61" valign="middle" align="left">Short reference to recognize the author or provider</td>
+</tr><tr id="_c5cc9fde-57a4-e4ea-1717-31bf893fa925"><td id="_92556597-3674-e46e-a017-43c419c9ac67" valign="middle" align="left">boundingBox</td>
+<td id="_9844ed5e-f332-ae2c-6165-0baf87fab609" valign="middle" align="left">``</td>
+<td id="_0aa0e013-f58b-0787-d1d3-a7d77e2175ae" valign="middle" align="left"/></tr><tr id="_750c41d2-9487-ccc2-982d-5ad3010b589d"><td id="_c661b9cb-636a-39ca-9453-2fefddba184e" valign="middle" align="left">centerPoint</td>
+<td id="_5a88e3a1-2ed6-a31e-5713-8f08528bf636" valign="middle" align="left">``</td>
+<td id="_1d98db9b-5b7d-1b17-952c-b00902397f5d" valign="middle" align="left"/></tr><tr id="_07476e9f-e5bd-8b93-350b-bca13d15f127"><td id="_5c61e4c0-5110-81fb-a1a4-a3d5d49e6708" valign="middle" align="left">created</td>
+<td id="_749a463d-01cc-a511-3c76-f2b2b7a26414" valign="middle" align="left">``</td>
+<td id="_5b7a68d1-e96d-52e7-c4f2-296276af5f7e" valign="middle" align="left"/></tr><tr id="_682fed4b-ac97-ac44-4920-898bd6f512e5"><td id="_8826d6f1-eb28-b7bc-60b4-94705cffa8cf" valign="middle" align="left">crs</td>
+<td id="_9e3f6899-973f-643b-6bd2-4540ce9a853c" valign="middle" align="left">``</td>
+<td id="_2ec4b39a-d5ef-5c1f-bcff-24dab02ee96b" valign="middle" align="left"/></tr><tr id="_0d0454ab-afb6-535b-0fcb-727a13f96eca"><td id="_db4863cd-0c86-a5b7-ae89-0b2441e4bf63" valign="middle" align="left">dataType</td>
+<td id="_5230ad14-f9bb-29cb-0f9e-f870b1c55aaa" valign="middle" align="left">``</td>
+<td id="_f543c960-d2a3-9a73-3c8c-c906729e02db" valign="middle" align="left"/></tr><tr id="_0224e624-5351-9591-5fb6-ef6fee62547b"><td id="_fbe165df-ec51-f0e4-4185-7b611afc53a2" valign="middle" align="left">description</td>
+<td id="_4e24882d-069a-8ad3-a85b-9644d1a3be49" valign="middle" align="left"><tt>string</tt></td>
+<td id="_07ae3e40-2373-baf0-d98d-2117c333e7e1" valign="middle" align="left">Brief narrative description of this tile set</td>
+</tr><tr id="_7a63540c-6efd-9361-b631-e901ee88e3f6"><td id="_67506f81-9d36-c819-f8df-0d8087adf7b2" valign="middle" align="left">epoch</td>
+<td id="_f6775922-2dd3-9d19-527f-5f4938105c68" valign="middle" align="left"><tt>number</tt></td>
+<td id="_fc649066-7455-7fbe-6ed9-6378f43d1885" valign="middle" align="left">Epoch of the Coordinate Reference System (CRS)</td>
+</tr><tr id="_cc67f6bd-f0c9-4977-8f62-a7cff0830fbf"><td id="_0bd07f73-978c-f9a7-3e0e-0d9143b51e9c" valign="middle" align="left">keywords</td>
+<td id="_eb8461a6-e145-2342-653f-65cd0ea83154" valign="middle" align="left"><tt>array</tt></td>
+<td id="_e12e0659-a0c0-6a1f-1058-726a36d3d638" valign="middle" align="left">keywords about this tileset</td>
+</tr><tr id="_da5f97a7-de1a-df94-744e-00cd08a096c3"><td id="_940d5cea-d643-b93a-d8eb-fd9ced65b019" valign="middle" align="left">layers</td>
+<td id="_238d338a-e261-8025-9364-d930a28f68b4" valign="middle" align="left"><tt>array</tt></td>
+<td id="_bb22e4d8-1dfd-bb25-b920-e4e7ddfae079" valign="middle" align="left"/></tr><tr id="_a6155c83-4e92-8998-8fb3-2004ce7b5be8"><td id="_4f569c0a-ce6b-9c7a-4e53-555ca412058b" valign="middle" align="left">license</td>
+<td id="_a761d0cd-7a21-bd92-cc57-a79f6e7ed829" valign="middle" align="left"><tt>string</tt></td>
+<td id="_430b7c90-586f-0e90-3480-13181501f893" valign="middle" align="left">License applicable to the tiles</td>
+</tr><tr id="_3909763c-9fcb-fa29-ed40-b8ba873a4ebd"><td id="_7b43277a-fdda-3026-e390-a2b7a97d3fc5" valign="middle" align="left">links</td>
+<td id="_03dfe5e4-b3e5-8285-863f-60e7f2bc5cb4" valign="middle" align="left"><tt>array</tt></td>
+<td id="_658f9942-255a-37e1-b5bd-6b7d31654bf9" valign="middle" align="left">Links to related resources. Possible link ‘rel’ values are: ‘http://www.opengis.net/def/rel/ogc/1.0/dataset’ for a URL pointing to the dataset, ‘item’ for a URL template to get a tile; ‘alternate’ for a URL pointing to another representation of the TileSetMetadata (e.g a TileJSON file); ‘http://www.opengis.net/def/rel/ogc/1.0/tiling-scheme’ for a definition of the TileMatrixSet; ‘http://www.opengis.net/def/rel/ogc/1.0/geodata’ for pointing to a single collection (if the tileset represents a single collection)</td>
+</tr><tr id="_e0b44cd4-0bf9-cbe7-c948-6d8e4e9c0221"><td id="_a6237801-479f-a152-b045-fba06ec2e0ab" valign="middle" align="left">mediaTypes</td>
+<td id="_38bcc093-d439-5b14-1a80-babf95e661eb" valign="middle" align="left"><tt>array</tt></td>
+<td id="_e16b0193-f1af-cab2-1795-4371763883c0" valign="middle" align="left">Media types available for the tiles</td>
+</tr><tr id="_9f935392-58e5-4e6d-979e-9ee6f9cdb34a"><td id="_bb512a00-638f-d58d-fcca-dcd2ab26a77c" valign="middle" align="left">pointOfContact</td>
+<td id="_2adf403d-0b20-c1fd-02a2-92ec28ba2b47" valign="middle" align="left"><tt>string</tt></td>
+<td id="_f02f6204-683e-536d-8379-7038ce23b8b1" valign="middle" align="left">Useful information to contact the authors or custodians for the Tile Set</td>
+</tr><tr id="_446d2a2e-6984-2e2d-1849-9b6ad158989c"><td id="_27ec81e8-bc07-bd85-99f6-c57103792b8c" valign="middle" align="left">style</td>
+<td id="_3af9f200-89a9-4892-66a7-00bb1b2934c3" valign="middle" align="left">``</td>
+<td id="_b4fc4e9b-ae27-f08a-263d-2cb3616e774f" valign="middle" align="left"/></tr><tr id="_f87efef0-f947-6b8e-c49c-698e4fca4e07"><td id="_3f7cb4c0-1a25-6456-b905-eedd26a5284a" valign="middle" align="left">tileMatrixSetLimits</td>
+<td id="_6ce824d9-9cb2-fc6b-d854-9c3d303a30fc" valign="middle" align="left"><tt>array</tt></td>
+<td id="_25a20cf2-5e13-aae0-51e1-13d7ca7e3ed4" valign="middle" align="left">Limits for the TileRow and TileCol values for each TileMatrix in the tileMatrixSet. If missing, there are no limits other that the ones imposed by the TileMatrixSet. If present the TileMatrices listed are limited and the rest not available at all</td>
+</tr><tr id="_5bd4889d-1bd0-cfee-92f3-5dc36a873a2c"><td id="_3c2e6b62-2ada-0307-8551-08931e249688" valign="middle" align="left">tileMatrixSetURI</td>
+<td id="_99156a84-db10-1ae4-86cb-07159fd92cf5" valign="middle" align="left"><tt>string</tt></td>
+<td id="_505c35db-9b7a-60d2-eeb1-ae79aef1ba39" valign="middle" align="left">Reference to a Tile Matrix Set on an offical source for Tile Matrix Sets such as the OGC NA definition server (<link target="http://www.opengis.net/def/tms/"/>). Required if the tile matrix set is registered on an open official source.</td>
+</tr><tr id="_e8d7eaa3-ecfd-db5e-2858-6d30ade5ddf7"><td id="_c43d8779-0ee4-d02c-e482-0ef3d2bec3ce" valign="middle" align="left">title</td>
+<td id="_89c7a5b8-ec3f-f5e9-cf3d-7abdcfcc282b" valign="middle" align="left"><tt>string</tt></td>
+<td id="_d2a30827-7375-8d08-bf8e-be480d2501c4" valign="middle" align="left">A title for this tileset</td>
+</tr><tr id="_2adfc3ab-1fd2-7e32-6555-a5214fea5457"><td id="_f4def1d4-48ab-03fa-8e18-b8293ac19155" valign="middle" align="left">updated</td>
+<td id="_898a288d-e39f-749e-cdb4-d3343c734118" valign="middle" align="left">``</td>
+<td id="_e9b2baa8-1ba8-05db-45b0-39249d9aa59d" valign="middle" align="left"/></tr><tr id="_6f6c1964-33a2-dc59-da48-417d18e1eaef"><td id="_d592394f-a0c7-143e-5bdc-2312fec426cf" valign="middle" align="left">version</td>
+<td id="_f734f43f-de87-14c7-05ff-372c66c8ac7b" valign="middle" align="left"><tt>string</tt></td>
+<td id="_a17879ad-c89c-fca1-0ffa-729e396b0635" valign="middle" align="left">Version of the Tile Set. Changes if the data behind the tiles has been changed</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_8de66968-94aa-e052-9054-74b4c1939273" obligation="normative">
+<title id="_94d68512-cbd3-e684-dffb-55b75ad93cdc">tileSet-item</title>
+<p id="_9de7b677-cd2a-b021-e4c6-a348af63ee09">A minimal tileset element for use within a list of tilesets linking to full description of those tilesets.</p>
+
+<p id="_30bff02d-641e-c3c1-6e29-f251f20e01d1">Type: <tt>object</tt></p>
+
+<table id="_4f941d4d-d263-3a8b-d802-cecf9320965e"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_be148ff6-9f3a-94ab-92f2-451b1e95d7d1">Properties of tileSet-item</name>
+<thead><tr id="_0982c559-69ed-41eb-17e4-080237627ab4"><th id="_84d58cc8-9605-cd46-bddb-3fc2f5ff537c" valign="middle" align="left">Name</th>
+<th id="_57eb1ab3-7bf0-7136-f534-048123e1737a" valign="middle" align="left">Type</th>
+<th id="_29f11c46-1ab3-bd89-2e70-198f5b38bfde" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_8b2462d7-0eb1-1829-37cf-4c6890e4c929"><td id="_74284584-a6f4-3a5b-e4ec-bafc161f0025" valign="middle" align="left">crs</td>
+<td id="_94e3f603-3021-f136-016a-b9dad6ef0179" valign="middle" align="left">``</td>
+<td id="_c5bc3a6d-b12e-418c-70e6-0af06c285bbd" valign="middle" align="left"/></tr><tr id="_62b97a5d-75fb-c099-7497-93597b5312d5"><td id="_879e129d-2128-2cbe-811e-7302bf8700a3" valign="middle" align="left">dataType</td>
+<td id="_0db9f790-a8ef-00a5-be66-7096ae69e68d" valign="middle" align="left">``</td>
+<td id="_2f120a9f-c4f4-8362-5f73-3234372d650a" valign="middle" align="left"/></tr><tr id="_3e149230-dca9-f21c-ff4e-e312937eff4f"><td id="_0afdbc15-94ce-26c4-9f8b-e634b40f67e6" valign="middle" align="left">links</td>
+<td id="_9ad50a48-8be1-ca48-5545-2efb6fc85860" valign="middle" align="left"><tt>array</tt></td>
+<td id="_eb1708e5-35ab-7460-ade2-eecfdd5b800b" valign="middle" align="left">Links to related resources. A ‘self’ link to the tileset as well as a ‘http://www.opengis.net/def/rel/ogc/1.0/tiling-scheme’ link to a definition of the TileMatrixSet are required.</td>
+</tr><tr id="_8039440e-b448-53c6-a8f1-29543c8bf6ce"><td id="_849c1b76-f567-0af7-1fd4-45196078701c" valign="middle" align="left">tileMatrixSetURI</td>
+<td id="_4a411c11-7a3d-66fd-083c-e332f2f2d4b9" valign="middle" align="left"><tt>string</tt></td>
+<td id="_ff3e173d-8388-adfe-ed54-17c6a4c2af9f" valign="middle" align="left">Reference to a Tile Matrix Set on an offical source for Tile Matrix Sets such as the OGC NA definition server (<link target="http://www.opengis.net/def/tms/"/>). Required if the tile matrix set is registered on an open official source.</td>
+</tr><tr id="_b260d8ce-682e-dd4e-4097-c3d1c081e4cd"><td id="_c95e4d7f-feea-8bdd-e5ac-5b79eaa33c29" valign="middle" align="left">title</td>
+<td id="_a694b364-3ddf-7046-9249-874eac0b37ab" valign="middle" align="left"><tt>string</tt></td>
+<td id="_bc6a0b80-ff82-633d-a26f-2c622035c7f6" valign="middle" align="left">A title for this tileset</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_2a232178-e881-1bed-ba0d-e103057c567d" obligation="normative">
+<title id="_a43562bc-871d-9886-d302-44c7bdcf57e4">tileMatrixSet</title>
+<p id="_65ead336-cd33-779b-1928-79eea44905d4">A definition of a tile matrix set following the Tile Matrix Set standard. For tileset metadata, such a description (in <tt>tileMatrixSet</tt> property) is only required for offline use, as an alternative to a link with a <tt><link target="http://www.opengis.net/def/rel/ogc/1.0/tiling-scheme"/></tt> relation type.</p>
+
+<p id="_47e516b2-08cf-b6eb-cb8b-be025d2e24c3">Type: <tt>object</tt></p>
+
+<table id="_ebda0424-ef93-05d4-2985-775c8a541650"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_510431c5-6f5e-3ca4-30d4-698cf8d6f847">Properties of tileMatrixSet</name>
+<thead><tr id="_8f0c241a-b8eb-8677-ad5c-5547bb3acb6e"><th id="_4a4c5a1b-bf62-5c9a-6bea-fedb1a3b1ed2" valign="middle" align="left">Name</th>
+<th id="_1c48fa24-ba32-2088-cb21-cb32dc9f287f" valign="middle" align="left">Type</th>
+<th id="_38eb14a7-908d-19a9-e99d-9d9839066d38" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_a49f611e-fa06-375d-1a7e-b139e623dcd0"><td id="_76540773-c833-e022-cecf-014c53582191" valign="middle" align="left">boundingBox</td>
+<td id="_abf09d07-c732-feab-6092-3b05f1a2502f" valign="middle" align="left">``</td>
+<td id="_2e29c9f7-b0db-8bac-a183-bc7a92da0a56" valign="middle" align="left"/></tr><tr id="_c83434af-d9a8-d79e-5cb5-b6940f422fcd"><td id="_a19e9b78-228a-78ed-2712-87d8b945d614" valign="middle" align="left">crs</td>
+<td id="_c6a44de8-97a4-e8d8-0e89-43753782f554" valign="middle" align="left">``</td>
+<td id="_308d906d-26b1-2b6c-cb22-f133b6286fd9" valign="middle" align="left"/></tr><tr id="_6d688308-4a1d-954f-9f11-cc41d5532277"><td id="_37b0ddb9-b5de-0e9f-cd30-f85e61bafdfc" valign="middle" align="left">description</td>
+<td id="_8463509f-3beb-4021-dec3-3901d5a1234a" valign="middle" align="left"><tt>string</tt></td>
+<td id="_af8eb341-e868-a6ff-babf-06aafc652468" valign="middle" align="left">Brief narrative description of this tile matrix set, normally available for display to a human</td>
+</tr><tr id="_591fd951-8847-71a3-d129-225187b34129"><td id="_8b13fd1b-6449-16af-7c42-704bc3a6e3c9" valign="middle" align="left">id</td>
+<td id="_bca6b78e-e9ee-3f87-690e-8991eef50825" valign="middle" align="left"><tt>string</tt></td>
+<td id="_2e297048-b0f6-02f4-9e5c-290e8b7feabd" valign="middle" align="left">Tile matrix set identifier. Implementation of ‘identifier’</td>
+</tr><tr id="_a0e9b2d4-4c5f-97d1-bafc-b017ab2fa63f"><td id="_0cd5bfed-e486-77be-d69a-74e024ed197c" valign="middle" align="left">keywords</td>
+<td id="_8a7b8240-3f83-9fa2-52a6-9057e0552843" valign="middle" align="left"><tt>array</tt></td>
+<td id="_e4385279-d0db-8af7-e5ad-06030f1b61d6" valign="middle" align="left">Unordered list of one or more commonly used or formalized word(s) or phrase(s) used to describe this tile matrix set</td>
+</tr><tr id="_fcaff6d0-0b7d-bd08-9758-8d76b1b0c0e8"><td id="_59350924-4ef7-cb16-630d-50d697950bd6" valign="middle" align="left">orderedAxes</td>
+<td id="_7f7a196a-ff97-3428-3fc0-37fd24e34e5f" valign="middle" align="left"><tt>array</tt></td>
+<td id="_9b164253-538f-3f85-fadc-1c0210b00b0d" valign="middle" align="left"/></tr><tr id="_5ab46422-1064-c0a7-4ae1-4ff425555eb8"><td id="_3f184e0a-ecf2-23ea-9342-2c9ad16daa1f" valign="middle" align="left">tileMatrices</td>
+<td id="_ed7b6a5e-0d94-9edb-8ba0-74ba336121f0" valign="middle" align="left"><tt>array</tt></td>
+<td id="_4e3e35b7-18d4-886b-009d-e9995c710f2e" valign="middle" align="left">Describes scale levels and its tile matrices</td>
+</tr><tr id="_7e858613-95fe-4fa2-5629-1ba0a9f2da9a"><td id="_7e88178d-8f20-e7b2-84a2-ba9b3dcd43e3" valign="middle" align="left">title</td>
+<td id="_e81b39fa-c8d9-6ede-61d1-4b2a72a13611" valign="middle" align="left"><tt>string</tt></td>
+<td id="_71a8879d-3b49-4474-0b07-06fcd7133b31" valign="middle" align="left">Title of this tile matrix set, normally used for display to a human</td>
+</tr><tr id="_caef4853-0730-a5ac-62e8-c4329635031b"><td id="_7051cca4-3a75-2170-5024-0382407b9136" valign="middle" align="left">uri</td>
+<td id="_c408c717-6bd2-31ad-6ac7-0d2bf3862db3" valign="middle" align="left"><tt>string</tt></td>
+<td id="_f8c127ee-34ba-7f43-5bf1-8ae795077dee" valign="middle" align="left">Reference to an official source for this tileMatrixSet</td>
+</tr><tr id="_558f5640-b5be-1895-64d1-04dfb71af152"><td id="_3618cadb-3d3e-08f5-e349-472537f1f756" valign="middle" align="left">wellKnownScaleSet</td>
+<td id="_53f41e26-6855-3842-c586-6668344c9478" valign="middle" align="left"><tt>string</tt></td>
+<td id="_b937289a-7d4f-2a43-dcba-b3c359df4f49" valign="middle" align="left">Reference to a well-known scale set</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_ef2d8470-2d29-8374-a984-13d1e9040832" obligation="normative">
+<title id="_a8f49ac0-9e75-ddb0-c0e4-0f57c57109a8">tileMatrixSet-item</title>
+<p id="_16f3c1e5-30e4-3bd0-f1c2-06419d332092">A minimal tile matrix set element for use within a list of tile matrix sets linking to a full definition.</p>
+
+<p id="_cf3cb42f-0ca2-ceb3-841d-efb1aee09229">Type: <tt>object</tt></p>
+
+<table id="_834c40ad-194e-17db-f1f8-9b1888151b46"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_85640c82-229b-3614-2c3f-9c970fdf46ee">Properties of tileMatrixSet-item</name>
+<thead><tr id="_09add4f9-fd9d-c6d6-f915-8f55db8b02e5"><th id="_609fb423-7084-a3cc-2c25-2e1a96bcc616" valign="middle" align="left">Name</th>
+<th id="_56c46990-4a2c-4976-37fd-6597bdb498d5" valign="middle" align="left">Type</th>
+<th id="_a13350e6-0e78-58d9-884e-b49f1f1bc5f4" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_b956fa60-1e2a-67d1-ca68-c16d9d7722cb"><td id="_c58c7f7d-1a7c-0d1a-3a06-2d835cd29443" valign="middle" align="left">crs</td>
+<td id="_a277b148-459b-3925-226e-fbbe25f4e7af" valign="middle" align="left">``</td>
+<td id="_ddbe5f08-2556-6780-5b85-e8e2db54de90" valign="middle" align="left"/></tr><tr id="_f45bb5fe-24cd-7472-29a7-31dab5fe7853"><td id="_5d30cc68-c573-4905-5b19-0b56741bbb01" valign="middle" align="left">id</td>
+<td id="_0d679145-ca66-c3d8-195b-cf2c3ebaa6f5" valign="middle" align="left"><tt>string</tt></td>
+<td id="_6f881994-a956-787d-174b-4b18eb4086be" valign="middle" align="left">Optional local tile matrix set identifier, e.g. for use as unspecified <tt>{tileMatrixSetId}</tt> parameter. Implementation of ‘identifier’</td>
+</tr><tr id="_107444bc-4f52-9b56-2db8-3a0dbec8a455"><td id="_0cb6f9f2-0f9f-0fc1-a1f5-59d0d98f2421" valign="middle" align="left">links</td>
+<td id="_75244f5a-044a-bc3f-4248-fb351fc4d669" valign="middle" align="left"><tt>array</tt></td>
+<td id="_5867b294-0077-50d4-e8b8-20eeadbb9fb6" valign="middle" align="left">Links to related resources. A ‘self’ link to the tile matrix set definition is required.</td>
+</tr><tr id="_c5bc5965-7069-3d36-ed23-2363f43eef97"><td id="_e8be417e-f37b-cd0d-6acb-575781ca72f8" valign="middle" align="left">title</td>
+<td id="_4f0f2359-3e9a-670a-1c11-d65f71a54e70" valign="middle" align="left"><tt>string</tt></td>
+<td id="_467d94e1-4bee-e1de-1735-f183bc21b8d6" valign="middle" align="left">Title of this tile matrix set, normally used for display to a human</td>
+</tr><tr id="_08f7a700-f072-b772-19d7-5ed468167163"><td id="_46ee1570-714c-9473-4e6b-8c1cc44780ec" valign="middle" align="left">uri</td>
+<td id="_70cd8182-aa7f-4ec1-7990-9651da6f6b7c" valign="middle" align="left"><tt>string</tt></td>
+<td id="_3baf4488-b509-db56-1454-2bfca449d075" valign="middle" align="left">Reference to an official source for this tileMatrixSet</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_da078842-8c88-0a51-f31d-8a1128cb96d3" obligation="normative">
+<title id="_6720a9f2-30e8-22b5-0403-194575132164">tileMatrixLimits</title>
+<p id="_87ff8c6a-204c-07d7-f9e6-e8848cada6bd">The limits for an individual tile matrix of a TileSet’s TileMatrixSet, as defined in the OGC 2D TileMatrixSet and TileSet Metadata Standard</p>
+
+<p id="_0d6ceaa9-3f79-43d2-07e9-4e0906c2909e">Type: <tt>object</tt></p>
+
+<table id="_6839c964-69df-d810-52fb-de942b32c210"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_63dccab6-38d8-d1ff-df6e-3446b5ac4d61">Properties of tileMatrixLimits</name>
+<thead><tr id="_43a026ae-f09c-e112-8fc4-d8f5da436b8d"><th id="_92a21ad3-be0d-0155-b341-d8369942b19f" valign="middle" align="left">Name</th>
+<th id="_4d711120-5edd-d087-d8ea-67eae7d784f4" valign="middle" align="left">Type</th>
+<th id="_9cf304df-efe5-3267-ee1c-f76b1c26e511" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_871e9239-3b13-ec54-1e48-08edbbe603aa"><td id="_d970a1d3-69a0-08c4-9239-70f6695fe2f2" valign="middle" align="left">maxTileCol</td>
+<td id="_77fa6145-1bd6-86eb-bd16-9b26b63b0527" valign="middle" align="left"><tt>integer</tt></td>
+<td id="_20719e7a-08f6-e067-2d27-f2880ad24358" valign="middle" align="left"/></tr><tr id="_c87d9b9f-98ca-b3f8-389b-3331bd154f0c"><td id="_3396d546-b789-e961-05d8-d29745b2806e" valign="middle" align="left">maxTileRow</td>
+<td id="_5abb89cc-24b6-0c00-2474-ece27d8d6643" valign="middle" align="left"><tt>integer</tt></td>
+<td id="_0bc1dbbd-1f64-a3db-0f6a-6bb8065d8bf1" valign="middle" align="left"/></tr><tr id="_b67b8596-affe-d8b0-cff8-ece9683e8576"><td id="_3b55d896-2a8e-636e-688e-79b59bb55dbb" valign="middle" align="left">minTileCol</td>
+<td id="_4e29be42-cbd4-d20b-915c-da27e7ad1ca6" valign="middle" align="left"><tt>integer</tt></td>
+<td id="_b7836acb-8a1f-ebf0-ff74-7cea07add1ee" valign="middle" align="left"/></tr><tr id="_b7f43db7-d131-284c-48ee-e24642b4342b"><td id="_584703bd-6d3b-2838-d860-3ab651e02a46" valign="middle" align="left">minTileRow</td>
+<td id="_912968a8-899a-f8fe-274b-754f75605115" valign="middle" align="left"><tt>integer</tt></td>
+<td id="_d3aca53b-9da3-3c0e-3cc2-13db91289a5f" valign="middle" align="left"/></tr><tr id="_bd0951de-59b7-909e-0211-16ffae6471ef"><td id="_c6da533e-9a10-7cfe-7879-e2654a7e81f1" valign="middle" align="left">tileMatrix</td>
+<td id="_2936b082-4fa9-2e98-b314-e85331e610f9" valign="middle" align="left"><tt>string</tt></td>
+<td id="_98d95d84-023a-78b6-9f1c-bdf5110e97f6" valign="middle" align="left"/></tr></tbody>
+</table>
+</clause>
+
+<clause id="_52e5faa5-3f0e-1587-9045-e826624786db" obligation="normative">
+<title id="_8b37b690-0c8c-5dd7-0211-56dd6426bd2d">2DPoint</title>
+<p id="_ed81794c-f1b6-0c45-e0e5-faa5e8c536dc">A 2D Point in the CRS indicated elsewhere</p>
+
+<p id="_99829d9d-28ac-ac08-4bb1-8ae5c2e2f56e">Type: <tt>array</tt></p>
+</clause>
+
+<clause id="_06d6b4ec-a2f3-c382-d90e-1f973c9c2246" obligation="normative">
+<title id="_6756a4bb-abd0-9a62-21f6-775db2303d5e">2DBoundingBox</title>
+<p id="_1ead4343-8ad5-1978-1caf-4de2575200ec">Minimum bounding rectangle surrounding a 2D resource in the CRS indicated elsewhere</p>
+
+<p id="_f27442e4-7e0d-dda5-0043-5492500eb839">Type: <tt>object</tt></p>
+
+<table id="_a30b3464-428a-0591-1a50-0f61fbf52c88"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_7b3fa2b2-19fc-c04e-6891-fbae8e359170">Properties of 2DBoundingBox</name>
+<thead><tr id="_cbc5816a-6eda-96b8-f0a3-0dfdfe26d90c"><th id="_4a237e1b-2227-7aa0-97eb-f58ccc2e5011" valign="middle" align="left">Name</th>
+<th id="_1a788ca1-fa0e-4b5c-46d4-56d315673e73" valign="middle" align="left">Type</th>
+<th id="_7350f1ec-4ae3-6cfe-6058-07de3ae413a2" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_96ec2afd-5186-d372-4494-b3a6f7f3828d"><td id="_41fcede9-89ed-ce26-fa34-98f55ce98cf2" valign="middle" align="left">crs</td>
+<td id="_7d4749d2-44f0-4f88-fced-246e9d4ddc8c" valign="middle" align="left">``</td>
+<td id="_25948d07-2613-5e8f-dd5b-70c41194bc28" valign="middle" align="left"/></tr><tr id="_f126f8e3-94dd-d4d4-275e-26fa574de043"><td id="_005cea42-b086-022f-3a9c-8b680e2821fe" valign="middle" align="left">lowerLeft</td>
+<td id="_cae2313c-d0c0-89ab-d037-c93f15374d80" valign="middle" align="left">``</td>
+<td id="_5792fd40-1f07-1213-b949-4e315e707d79" valign="middle" align="left"/></tr><tr id="_2217adfe-dbfd-5824-6785-330d2c9bf3be"><td id="_9049364e-e251-970c-e8a8-f905f6136ba0" valign="middle" align="left">orderedAxes</td>
+<td id="_046465e0-daf4-3578-1227-e93e81b1c783" valign="middle" align="left"><tt>array</tt></td>
+<td id="_4c8db489-4c67-790f-5261-34c570de88ef" valign="middle" align="left"/></tr><tr id="_ece8beaf-8bd4-ba94-f71f-267d801e137b"><td id="_bbc820f7-0c89-fc61-3625-a4c91ad57e33" valign="middle" align="left">upperRight</td>
+<td id="_c3a2b5bb-529f-4bab-d558-8d4edd4e4227" valign="middle" align="left">``</td>
+<td id="_220d52cf-7e0a-7ae2-7440-99df5ee600b8" valign="middle" align="left"/></tr></tbody>
+</table>
+</clause>
+
+<clause id="_3918fbad-a920-e9aa-76f1-76531c2cab64" obligation="normative">
+<title id="_b6c819c0-69c2-3004-82e4-dc26a3e0a40e">FeatureCollection</title>
+<p id="_53820cc6-5a6e-0f6a-b76c-abcce79631b3">Type: <tt>object</tt></p>
+
+<table id="_64cca43f-aee2-f981-0182-31903a29b0b4"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_338e4a68-10a7-4457-2f26-c7714fc25858">Properties of FeatureCollection</name>
+<thead><tr id="_04bf09da-5281-e8c7-b4a2-d596d18c727b"><th id="_93a24a69-b6f4-d222-55ec-fd1816157047" valign="middle" align="left">Name</th>
+<th id="_a282999d-e7d7-cd53-2a6f-68fd460e7701" valign="middle" align="left">Type</th>
+<th id="_68c68d0e-bc52-a5db-86b1-57a9e98b07fd" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_8a17d7fc-54e3-9404-c6aa-d80c193fde13"><td id="_984708fb-30d8-1354-3b6a-c1c884cdebdf" valign="middle" align="left">bbox</td>
+<td id="_f4ab8d0e-1cbe-39f8-bc6c-65149e82f9e7" valign="middle" align="left"><tt>array</tt></td>
+<td id="_b550ca7d-5861-d1fa-9ade-0294bd359e77" valign="middle" align="left"/></tr><tr id="_4f5e5ebf-a339-9c04-71e0-561ce909c97a"><td id="_fb8694c8-bbd8-a7fd-f132-1ad4ce7a30df" valign="middle" align="left">features</td>
+<td id="_7e301c9a-772d-4173-f322-19a620d9b9c0" valign="middle" align="left"><tt>array</tt></td>
+<td id="_b010530e-34be-e758-772a-9bbda87a3785" valign="middle" align="left"/></tr><tr id="_abc7af03-0627-eb03-9b03-80d003e99d9b"><td id="_1447d879-8bf9-7998-9ce9-148dc403fdb4" valign="middle" align="left">type</td>
+<td id="_1f2f61f5-be20-5f9c-ecd0-aa1e7cc44f66" valign="middle" align="left"><tt>string</tt></td>
+<td id="_b9ab74ad-12e0-6ec5-ac89-ef10213e6e88" valign="middle" align="left"/></tr></tbody>
+</table>
+</clause>
+
+<clause id="_c0701551-aa8e-80d9-6216-bb95c1e154ee" obligation="normative">
+<title id="_304df79b-75de-6cf0-f142-0db158d81baa">enumeration</title>
+<p id="_8bb120ef-6873-dfe8-5afd-822bdaa97d95">Type: <tt>object</tt></p>
+
+<table id="_e300a17c-b4a6-05af-687e-641e86c66314"><colgroup><col width="20%"/><col width="10%"/><col width="70%"/></colgroup>
+<name id="_876d63a2-9f74-8d1f-8661-9ee35fd2d5ca">Properties of enumeration</name>
+<thead><tr id="_4e6d8d93-1b98-a9e3-2a41-4b4c30b0ca61"><th id="_d42da21a-4764-79c6-fe25-c74e376f5b7d" valign="middle" align="left">Name</th>
+<th id="_31f19816-1bcc-8663-1c82-f4c623e320eb" valign="middle" align="left">Type</th>
+<th id="_430d3174-0058-8a86-b531-af6520556888" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_94696ba9-f93d-2b08-9d32-f3e7d945bab8"><td id="_a88b2ff5-a2e2-348c-b8b1-9057d8d03d9a" valign="middle" align="left">enum</td>
+<td id="_7049c087-d955-a096-796b-20572e43e39c" valign="middle" align="left"><tt>array</tt></td>
+<td id="_a0a0f2ed-8045-f01b-1728-91b5b7d03c69" valign="middle" align="left"/></tr><tr id="_e64186a0-6df4-0b51-d075-82d1794e3603"><td id="_f13e9117-b659-8a7a-db5d-58f0e79608d2" valign="middle" align="left">type</td>
+<td id="_87887c53-089b-1a5a-55c1-3115e8d88438" valign="middle" align="left"><tt>string</tt></td>
+<td id="_614a8477-b0e6-b38b-814d-91c409b99aad" valign="middle" align="left"/></tr></tbody>
+</table>
+</clause>
+
+<clause id="_df20ff0f-6cff-04fb-dcba-3ebacb6d20d3" obligation="normative">
+<title id="_6988ce0d-b309-3537-f3b5-f2b194388bed">all-collections</title>
+<p id="_24589777-b766-cc89-fb30-7f1eb7c4f708">Type: <tt>string</tt></p>
+</clause>
+
+<clause id="_b6ee4978-5930-5a28-c88f-40f05a2e1955" obligation="normative">
+<title id="_896a7695-3fbc-e9ff-772b-e33539456459">vectorTiles-collections</title>
+<p id="_40c293ab-011e-74be-e144-2a94e671594b">Type: <tt>string</tt></p>
+</clause>
+
+<clause id="_b2a07f7d-c56f-94b5-afe3-f78efd4ee3f3" obligation="normative">
+<title id="_b3712eba-0261-a2a7-ec33-0c85e0437816">coverage-collections</title>
+<p id="_909a91d5-b6d8-6cd7-cd75-5a36567d5425">Type: <tt>string</tt></p>
+</clause>
+
+<clause id="_b8e8a9cf-4064-ecd8-a5f1-532ef2fa9de6" obligation="normative">
+<title id="_21adf5f2-b647-bf7d-fac6-7c598cc4bd4d">styles</title>
+<p id="_bc7148bb-6507-ef75-737a-328e595da2f3">Type: <tt>string</tt></p>
+</clause>
+
+<clause id="_60185756-a58f-5b79-4624-d22664746a30" obligation="normative">
+<title id="_9af8d76c-351e-816b-fbe4-9309e2271c26">tileMatrixSets</title>
+<p id="_9fbdbb97-779d-e43d-ee11-c02886621776">Type: <tt>string</tt></p>
+</clause>
+</clause>
+
+<clause id="_b2f3f4b1-f02e-b408-d2ab-2e01fddd97fe" obligation="normative">
+<title id="_b781b727-7416-5abf-0a03-a189fc528ecd">Paths</title>
+<clause id="_8be49707-e4a0-1fa4-123d-a45a7ee8a0b2" obligation="normative">
+<title id="_f27ef438-ea13-3f1a-fa19-2cb4184e7d91">GET /</title>
+<p id="_ef3e6dd9-0500-87bb-9c12-2c3d197f8e5c">Retrieve the OGC API landing page for this service. === GET /api</p>
+
+<p id="_f40b4cac-b6cc-182d-a387-2316f1c6c067">Retrieve this API definition. === GET /api/all-collections</p>
+
+<p id="_001a2fa3-3669-cd71-4f16-036e25e4ed15">Retrieve the list of collections available from this API implementation &amp; deployment. === GET /api/coverage-collections</p>
+
+<p id="_2a21bde3-b701-0896-75ba-40648a807319">Retrieve the list of coverages collections available from this API implementation &amp; deployment. === GET /api/styles</p>
+
+<p id="_9d70d801-380f-4112-685d-e4072053281a">Retrieve the list of dataset styles available from this API implementation &amp; deployment. === GET /api/tileMatrixSets</p>
+
+<p id="_227ad6b2-f684-6752-6ce3-f1dff796082a">Retrieve the list of shared TileMatrixSets available from this API implementation &amp; deployment. === GET /api/vectorTiles-collections</p>
+
+<p id="_3a2d46eb-629e-8b95-4982-fd5a1624d91a">Retrieve the list of collections supporting vector tiles available from this API implementation &amp; deployment. === GET /collections</p>
+
+<p id="_c78d4f36-37b8-d5e4-869c-e80ba1f52d25">Retrieve the list of geospatial data collections available from this service. === GET /collections/{collectionId}</p>
+
+<p id="_8f747a85-92a7-336b-f23a-ccd689c91886">Retrieve the description of a collection available from this service. === GET /collections/{collectionId}/coverage/tiles</p>
+
+<p id="_ae9441d3-2b44-fedc-41a9-53b734f431c6">Retrieve the list of available coverage tilesets for the specified collection. === GET /collections/{collectionId}/coverage/tiles/{tileMatrixSetId}</p>
+
+<p id="_482a8a0c-108a-d331-ce1a-08a000920a6c">Retrieve the coverage tileset metadata for the specified collection and tiling scheme (tile matrix set) === GET /collections/{collectionId}/coverage/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}</p>
+
+<p id="_d7cba3c5-2ecb-bfda-d386-e7693962ca2f">Retrieve coverage tiles === GET /collections/{collectionId}/map/tiles</p>
+
+<p id="_31037356-3d9d-2074-e926-99f9cb519ee3">Retrieve a list of all map tilesets for specified collection. === GET /collections/{collectionId}/map/tiles/{tileMatrixSetId}</p>
+
+<p id="_5ab2f8df-ea66-37fe-fadc-92cbad2169c0">Retrieve a map tile set metadata for the specified collection and tiling scheme (tile matrix set) === GET /collections/{collectionId}/map/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}</p>
+
+<p id="_66745ff7-94b0-eb49-ee85-d61993c6fdbb">Retrieve a map tile from the specified collection === GET /collections/{collectionId}/styles/{styleId}/map/tiles</p>
+
+<p id="_f250f125-1f3f-7ad2-b041-39c96c8054e9">Retrieve a list of styled map tilesets for the specified collection === GET /collections/{collectionId}/styles/{styleId}/map/tiles/{tileMatrixSetId}</p>
+
+<p id="_12f88d1b-1634-9aec-1ece-fca912a8c40d">Retrieve the map tileset metadata for the specified collection, style and tiling scheme (tile matrix set). === GET /collections/{collectionId}/styles/{styleId}/map/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}</p>
+
+<p id="_d4b16ccf-afb1-de2c-523b-bf4096b7f391">Retrieve a map tile for a specified collection and style === GET /collections/{collectionId}/styles/{styleId}/tiles</p>
+
+<p id="_3b5d0560-8290-c6c5-3c01-665ce5f7c9e5">Retrieve a list of vector tilesets for the specified collection intended for use with a specified style === GET /collections/{collectionId}/styles/{styleId}/tiles/{tileMatrixSetId}</p>
+
+<p id="_9ea3c0d6-1dad-5def-22ab-ab514e34df15">Retrieve the vector tileset metadata for the specified collection, style and tiling scheme (tile matrix set). === GET /collections/{collectionId}/styles/{styleId}/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}</p>
+
+<p id="_1a7585fc-5400-1756-8b2e-bbdc7c60bcf7">Retrieve vector tiles for a specified collection, intended for use with a specified style === GET /collections/{collectionId}/tiles</p>
+
+<p id="_62c17dbd-6c6e-1eae-c27e-5624dc2574e2">Retrieve a list of available vector tilesets for the specified collection. === GET /collections/{collectionId}/tiles/{tileMatrixSetId}</p>
+
+<p id="_9dcc9fe2-aa80-2cc1-5aee-f0ad0e3203e4">Retrieve the vector tileset metadata for the specified collection and tiling scheme (tile matrix set) === GET /collections/{collectionId}/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}</p>
+
+<p id="_5d3b3a4f-6f8e-08c4-7530-f12235696a02">Retrieve a vector tile from a collection. === GET /conformance</p>
+
+<p id="_895c07b5-0422-7169-1848-280fbbd4e048">Retrieve the set of OGC API conformance classes that are supported by this service. === GET /map/tiles</p>
+
+<p id="_6ec162ea-75ef-9eeb-bc18-4db76e251218">Retrieve the list of all default map tilesets for the whole dataset === GET /map/tiles/{tileMatrixSetId}</p>
+
+<p id="_9eeb88e3-f9aa-f73d-fa7f-1211ccc459ce">Retrieve a default map tileset of the whole dataset for the specified tiling scheme (tile matrix set) === GET /map/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}</p>
+
+<p id="_100b12c0-cc5d-37c4-62e3-2606cc2e0ad0">Retrieve a default map tile of the whole dataset === GET /styles/{styleId}/map/tiles</p>
+
+<p id="_88bb79eb-6270-d121-d199-c0669ee679b5">Retrieve the list of styled map tilesets for the whole dataset === GET /styles/{styleId}/map/tiles/{tileMatrixSetId}</p>
+
+<p id="_92a57d73-078f-fa01-a139-1ceba64f1a25">Retrieve a styled map tileset of the whole dataset for the specified tiling scheme (tile matrix set) === GET /styles/{styleId}/map/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}</p>
+
+<p id="_f84d12eb-219b-7771-56c5-aa4dba6d4465">Retrieve a styled map tiles === GET /styles/{styleId}/tiles</p>
+
+<p id="_44b5ba1f-a87b-d793-a135-8c7835de08b3">Retrieve the list of vector tilesets intended for use with a specified style for the whole dataset === GET /styles/{styleId}/tiles/{tileMatrixSetId}</p>
+
+<p id="_c509595f-0cb3-e790-351c-0b6893f56258">Retrieve a vector tileset intended for use with a specified style of the whole dataset for the specified tiling scheme (tile matrix set) === GET /styles/{styleId}/tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}</p>
+
+<p id="_ea7a641a-fdd8-0488-fc2b-cbcfe8939670">Retrieve vector tiles intended for use with a specified style === GET /tileMatrixSets</p>
+
+<p id="_0162220a-7a25-f954-b135-fecced3700dc">Retrieve the list of available tiling schemes (tile matrix sets) === GET /tileMatrixSets/{tileMatrixSetId}</p>
+
+<p id="_77ec5dcc-02e9-913c-6afa-ce71c9bdc591">Retrieve the definition of the specified tiling scheme (tile matrix set) === GET /tiles</p>
+
+<p id="_807acce5-793f-6319-9cd4-db0a61bc0cde">Retrieve a list of available vector tilesets for the dataset === GET /tiles/{tileMatrixSetId}</p>
+
+<p id="_06a4a73d-ad56-b5d7-af03-cdb74fa1412b">Retrieve the vector tileset metadata for the whole dataset and the specified tiling scheme (tile matrix set) === GET /tiles/{tileMatrixSetId}/{tileMatrix}/{tileRow}/{tileCol}</p>
+
+<p id="_775edadf-1f47-c0c3-cc24-7f0dc3fffeba">Retrieve a vector tile including one or more collections from the dataset.</p>
+</clause>
+</clause>
+</sections>
+</metanorma>
